@@ -1,0 +1,3294 @@
+=== page 1 ===
+VT LEG 270379.1
+No. 48. An act relating to a universal and unified health system.
+(H.202)
+It is hereby enacted by the General Assembly of the State of Vermont:
+Sec. 1. INTENT
+(a) It is the intent of the general assembly to create Green Mountain Care to
+contain costs and to provide, as a public good, comprehensive, affordable,
+high-quality, publicly financed health care coverage for all Vermont residents
+in a seamless manner regardless of income, assets, health status, or availability
+of other health coverage. It is the intent of the general assembly to achieve
+health care reform through the coordinated efforts of an independent board,
+state government, and the citizens of Vermont, with input from health care
+professionals, businesses, and members of the public.
+(b) It is also the intent of the general assembly to maximize the receipt of
+federal funds, including those available pursuant to the Patient Protection and
+Affordable Care Act (Public Law 111-148), as amended by the federal Health
+Care and Education Reconciliation Act of 2010 (Public Law 111-152), and to
+create a reasonable plan to implement Green Mountain Care as set forth
+in this act.
+Sec. 1a. PRINCIPLES FOR HEALTH CARE REFORM
+The general assembly adopts the following principles as a framework for
+reforming health care in Vermont:
+=== page 2 ===
+No. 48 Page 2 of 141
+VT LEG 270379.1
+(1) The state of Vermont must ensure universal access to and coverage
+for high-quality, medically necessary health services for all Vermonters.
+Systemic barriers, such as cost, must not prevent people from accessing
+necessary health care. All Vermonters must receive affordable and appropriate
+health care at the appropriate time in the appropriate setting.
+(2) Overall health care costs must be contained and growth in health
+care spending in Vermont must balance the health care needs of the population
+with the ability to pay for such care.
+(3) The health care system must be transparent in design, efficient in
+operation, and accountable to the people it serves. The state must ensure
+public participation in the design, implementation, evaluation, and
+accountability mechanisms of the health care system.
+(4) Primary care must be preserved and enhanced so that Vermonters
+have care available to them, preferably within their own communities. Other
+aspects of Vermont’s health care infrastructure, including the educational and
+research missions of the state’s academic medical center and other
+postsecondary educational institutions, the nonprofit missions of the
+community hospitals, and the critical access designation of rural hospitals,
+must be supported in such a way that all Vermonters, including those in rural
+areas, have access to necessary health services and that these health services
+are sustainable.
+=== page 3 ===
+No. 48 Page 3 of 141
+VT LEG 270379.1
+(5) Every Vermonter should be able to choose his or her health care
+providers.
+(6) Vermonters should be aware of the costs of the health services they
+receive. Costs should be transparent and easy to understand.
+(7) Individuals have a personal responsibility to maintain their own
+health and to use health resources wisely, and all individuals should have a
+financial stake in the health services they receive.
+(8) The health care system must recognize the primacy of the
+relationship between patients and their health care practitioners, respecting the
+professional judgment of health care practitioners and the informed decisions
+of patients.
+(9) Vermont’s health delivery system must seek continuous
+improvement of health care quality and safety and of the health of the
+population and promote healthy lifestyles. The system therefore must be
+evaluated regularly for improvements in access, quality, and cost containment.
+(10) Vermont’s health care system must include mechanisms for
+containing all system costs and eliminating unnecessary expenditures,
+including by reducing administrative costs and by reducing costs that do not
+contribute to efficient, high-quality health services or improve health
+outcomes. Efforts to reduce overall health care costs should identify sources of
+excess cost growth.
+=== page 4 ===
+No. 48 Page 4 of 141
+VT LEG 270379.1
+(11) The financing of health care in Vermont must be sufficient, fair,
+predictable, transparent, sustainable, and shared equitably.
+(12) The system must consider the effects of payment reform on
+individuals and on health care professionals and suppliers. It must enable
+health care professionals to provide, on a solvent basis, effective and efficient
+health services that are in the public interest.
+(13) Vermont’s health care system must operate as a partnership
+between consumers, employers, health care professionals, hospitals, and the
+state and federal government.
+(14) State government must ensure that the health care system satisfies
+the principles expressed in this section.
+Sec 1b. 3 V.S.A. § 2222a is amended to read:
+§ 2222a. HEALTH CARE SYSTEM REFORM; IMPROVING QUALITY
+AND AFFORDABILITY
+(a) The secretary director of health care reform in the agency of
+administration shall be responsible for the coordination of health care system
+reform initiatives efforts among executive branch agencies, departments, and
+offices, and for coordinating with the Green Mountain Care board established
+in 18 V.S.A. chapter 220.
+(b) The secretary director shall ensure that those executive branch agencies,
+departments, and offices responsible for the development, improvement, and
+=== page 5 ===
+No. 48 Page 5 of 141
+VT LEG 270379.1
+implementation of Vermont’s health care system reform do so in a manner that
+is coordinated, timely, equitable, patient-centered, and evidence-based, and
+that seeks to inform and improve the quality and affordability of patient care
+and public health, contain costs, and attract and retain well-paying jobs in this
+state.
+(c) Vermont’s health care system reform initiativesefforts include:
+(1) The state’s chronic care infrastructure, disease prevention, and
+management program contained in the blueprint for health established by
+chapter 13 of Title 18 V.S.A. chapter 13, the goal of which is to achieve a
+unified, comprehensive, statewide system of care that improves the lives of all
+Vermonters with or at risk for a chronic condition or disease.
+(2) The Vermont health information technology project pursuant to
+chapter 219 of Title 18 V.S.A. chapter 219.
+(3) The multi-payer data collection project pursuant to 18 V.S.A.
+§ 9410.
+(4) The common claims administration project pursuant to 18 V.S.A.
+§ 9408.
+(5) The consumer price and quality information system pursuant to
+18 V.S.A. § 9410.
+(6) Any The information technology work done by the quality assurance
+system pursuant to 18 V.S.A. § 9416.
+=== page 6 ===
+No. 48 Page 6 of 141
+VT LEG 270379.1
+(7) The public health promotion programs of the agency of human
+services, including primary prevention for chronic disease, community
+assessments, school wellness programs, public health information technology,
+data and surveillance systems, healthy retailers, healthy community design,
+and alcohol and substance abuse treatment and prevention programs.
+(8) Medicaid, the Vermont health access plan, Dr. Dynasaur, premium
+assistance programs for employer-sponsored insurance, VPharm, and Vermont
+Rx, which are established in chapter 19 of Title 33 and provide health care
+coverage to elderly, disabled, and low to middle income Vermonters. The
+creation of a universal health care system to provide affordable, high-quality
+health care coverage to all Vermonters and to include federal funds to the
+maximum extent allowable under federal law and waivers from federal law.
+(9) Catamount Health, established in 8 V.S.A. § 4080f, which provides a
+comprehensive benefit plan with a sliding-scale premium based on income to
+uninsured Vermonters. A reformation of the payment system for health
+services to encourage quality and efficiency in the delivery of health care as set
+forth in 18 V.S.A. chapter 220.
+(10) The uniform hospital uncompensated car policies. A strategic
+approach to workforce needs set forth in 18 V.S.A. chapter 222, including
+retraining programs for workers displaced through increased efficiency and
+=== page 7 ===
+No. 48 Page 7 of 141
+VT LEG 270379.1
+reduced administration in the health care system and ensuring an adequate
+health care workforce to provide access to health care for all Vermonters.
+(11) A plan for public financing of health care coverage for all
+Vermonters.
+(d) The secretary shall report to the commission on health care reform, the
+health access oversight committee, the house committee on health care, the
+senate committee on health and welfare, and the governor on or before
+December 1, 2006, with a five-year strategic plan for implementing Vermont’s
+health care system reform initiatives, together with any recommendations for
+administration or legislation. Annually, beginning January 15, 2007, the
+secretary shall report to the general assembly on the progress of the reform
+initiatives.
+(e) The secretary of administration director of health care reform or
+designee shall provide information and testimony on the activities included in
+this section to the health access oversight committee, the commission on health
+care reform, and to any legislative committee upon request.
+* * * Road Map to a Universal and a Unified Health System * * *
+Sec. 2. STRATEGIC PLAN; UNIVERSAL AND UNIFIED HEALTH
+SYSTEM
+(a) Vermont must begin to plan now for health care reform, including
+simplified administration processes, payment reform, and delivery reform, in
+=== page 8 ===
+No. 48 Page 8 of 141
+VT LEG 270379.1
+order to have a publicly financed program of universal and unified health care
+operational after the occurrence of specific events, including the receipt of a
+waiver from the federal Exchange requirement from the U.S. Department of
+Health and Human Services. A waiver will be available in 2017 under the
+provisions of existing law in the Patient Protection and Affordable Care Act
+(Public Law 111-148) (“Affordable Care Act”), as amended by the federal
+Health Care and Education Reconciliation Act of 2010 (Public Law 111-152),
+and may be available in 2014 under the provisions of two bills, H.R. 844 and
+S.248, introduced in the 112th Congress. In order to begin the planning efforts,
+the director of health care reform in the agency of administration shall
+establish a strategic plan, which shall include time lines and allocations of the
+responsibilities associated with health care system reform, to further the
+containment of health care costs, to further Vermont’s existing health care
+system reform efforts as described in 3 V.S.A. § 2222a and to further the
+following:
+(1) As provided in Sec. 4 of this act, all Vermont residents shall be
+eligible for Green Mountain Care, a universal health care program that will
+provide health benefits through a single payment system. To the maximum
+extent allowable under federal law and waivers from federal law, Green
+Mountain Care shall include health coverage provided under the health benefit
+exchange established under 33 V.S.A. chapter 18, subchapter 1; under
+=== page 9 ===
+No. 48 Page 9 of 141
+VT LEG 270379.1
+Medicaid; under Medicare; by employers that choose to participate; and to
+state employees and municipal employees, including teachers. In the event of
+a modification to the Affordable Care Act by congressional, judicial, or federal
+administrative action which prohibits implementation of the health benefit
+exchange; eliminates federal funds available to individuals, employees, or
+employers; or eliminates the waiver under Section 1332 of the Affordable Care
+Act, the director of health care reform shall continue, and adjust as appropriate,
+the planning and cost-containment activities provided in this act related to
+Green Mountain Care and to creation of a unified, simplified administration
+system for health insurers offering health benefit plans, including identifying
+the financing impacts of such a modification on the state and its effects on the
+activities proposed in this act.
+(2)(A) As provided in Sec. 4 of this act, no later than November 1, 2013,
+the Vermont health benefit exchange established in 33 V.S.A. chapter 18,
+subchapter 1 shall begin enrolling individuals and small employers for
+coverage beginning January 1, 2014. The intent of the general assembly is to
+establish the Vermont health benefit exchange in a manner such that it may
+become the foundation for Green Mountain Care.
+(B) No later than February 15, 2012, the director of health care
+reform or designee shall provide the house committee on health care and the
+senate committees on finance and on health and welfare the following
+=== page 10 ===
+No. 48 Page 10 of 141
+VT LEG 270379.1
+information related to the Vermont health benefit exchange, to the extent
+available:
+(i) a list of the federal health benefits required under the
+Affordable Care Act as defined in 33 V.S.A. chapter 18, subchapter 1,
+including covered services and cost-sharing;
+(ii) a comparison of the federal health benefits with the Vermont
+health insurance benefit requirements provided for in 8 V.S.A. chapter 107;
+(iii) information relating to the silver, gold, and platinum benefit
+levels of qualified health benefit plans that may be available in the Vermont
+health benefit exchange;
+(iv) a draft of qualified health benefit plan choices that may be
+available in the Vermont health benefit exchange;
+(v) in collaboration with the three insurers with the largest number
+of lives, premium estimates for draft plan choices described in subdivision (iv)
+of this subdivision (B); and
+(vi) the status of related tax credits, including small employer tax
+credits, and of cost-sharing subsidies.
+(C) The director shall deliver to the general assembly by January 15,
+2015 a report including:
+(i) the qualified health benefit plans available in and outside the
+exchange, current and projected premiums, and enrollment data;
+=== page 11 ===
+No. 48 Page 11 of 141
+VT LEG 270379.1
+(ii) recommendations for any statutory changes needed to improve
+the functioning of the exchange, including those needed to reduce premiums
+and administrative costs for qualified health benefit plans and others the
+director determines are necessary to achieve cost-effectiveness; and
+(iii) Vermont’s efforts to obtain a waiver from the exchange
+requirement under Section 1332 of the Affordable Care Act.
+(3) As provided in Sec. 4 of this act, no later than November 1, 2016,
+the Vermont health benefit exchange established in 33 V.S.A. chapter 18,
+subchapter 1 shall begin enrolling large employers for coverage beginning
+January 1, 2017.
+(4) The director shall supervise and oversee, as appropriate, the planning
+efforts, reports of which are due on January 15, 2012, as provided in Secs. 8
+and 10 through 13 of this act, including integration of multiple payers into the
+Vermont health benefit exchange; a continuation of the planning necessary to
+ensure an adequate, well-trained primary care workforce; necessary retraining
+for any employees dislocated from health care professionals or from health
+insurers due to the simplification in the administration of health care; and
+unification of health system planning, regulation, and public health.
+(5) The director shall supervise the planning efforts, reports of which are
+due January 15, 2013, as provided in Sec. 9 of this act, to establish the
+financing necessary for Green Mountain Care, for recruitment and retention
+=== page 12 ===
+No. 48 Page 12 of 141
+VT LEG 270379.1
+programs for health care professionals, and for covering the uninsured and
+underinsured through Medicaid and the Vermont health benefit exchange.
+(6) The director, in collaboration with the agency of human services,
+shall obtain waivers, exemptions, agreements, legislation, or a combination
+thereof to ensure that, to the extent possible under federal law, all federal
+payments provided within the state for health services are paid directly to
+Green Mountain Care. Green Mountain Care shall assume responsibility for
+the benefits and services previously paid for by the federal programs, including
+Medicaid, Medicare, and, after implementation, the Vermont health benefit
+exchange. In obtaining the waivers, exemptions, agreements, legislation, or
+combination thereof, the secretary shall negotiate with the federal government
+a federal contribution for health care services in Vermont that reflects medical
+inflation, the state gross domestic product, the size and age of the population,
+the number of residents living below the poverty level, the number of
+Medicare-eligible individuals, and other factors that may be advantageous to
+Vermont and that do not decrease in relation to the federal contribution to other
+states as a result of the waivers, exemptions, agreements, or savings from
+implementation of Green Mountain Care.
+(7) No later than January 15, 2012, the secretary of administration or
+designee shall submit to the house committees on health care and on judiciary
+and the senate committees on health and welfare and on judiciary a proposal
+=== page 13 ===
+No. 48 Page 13 of 141
+VT LEG 270379.1
+for potential improvement or reforms to the medical malpractice system for
+Vermont. The proposal shall be designed to address any findings of defensive
+medicine, reduce health care costs and medical errors, and protect patients’
+rights, and shall include the secretary’s or designee’s consideration of a
+no-fault system and of confidential pre-suit mediation. In designing the
+proposal, the secretary or designee shall consider the findings and
+recommendations contained in the majority and minority reports of the medical
+malpractice study committee established by Sec. 292 of No. 122 of the Acts of
+the 2003 Adj. Sess. (2004).
+(b) The Green Mountain Care board established in 18 V.S.A. chapter 220,
+in collaboration with the director of health care reform in the agency of
+administration, shall develop a work plan for the board, which may include any
+necessary processes for implementation of the board’s duties, a time line for
+implementation of the board’s duties, and a plan for ensuring sufficient staff to
+implement the board’s duties. The work plan shall be provided to the house
+committee on health care and the senate committee on health and welfare no
+later than January 15, 2012.
+=== page 14 ===
+No. 48 Page 14 of 141
+VT LEG 270379.1
+* * * Cost Containment, Budgeting, and Payment Reform * * *
+Sec. 3. 18 V.S.A. chapter 220 is added to read:
+CHAPTER 220. GREEN MOUNTAIN CARE BOARD
+Subchapter 1. Green Mountain Care Board
+§ 9371. PRINCIPLES FOR HEALTH CARE REFORM
+The general assembly adopts the following principles as a framework for
+reforming health care in Vermont:
+(1) The state of Vermont must ensure universal access to and coverage
+for high-quality, medically necessary health services for all Vermonters.
+Systemic barriers, such as cost, must not prevent people from accessing
+necessary health care. All Vermonters must receive affordable and appropriate
+health care at the appropriate time in the appropriate setting.
+(2) Overall health care costs must be contained and growth in health
+care spending in Vermont must balance the health care needs of the population
+with the ability to pay for such care.
+(3) The health care system must be transparent in design, efficient in
+operation, and accountable to the people it serves. The state must ensure
+public participation in the design, implementation, evaluation, and
+accountability mechanisms of the health care system.
+(4) Primary care must be preserved and enhanced so that Vermonters
+have care available to them, preferably within their own communities. Other
+=== page 15 ===
+No. 48 Page 15 of 141
+VT LEG 270379.1
+aspects of Vermont’s health care infrastructure, including the educational and
+research missions of the state’s academic medical center and other
+postsecondary educational institutions, the nonprofit missions of the
+community hospitals, and the critical access designation of rural hospitals,
+must be supported in such a way that all Vermonters, including those in rural
+areas, have access to necessary health services and that these health services
+are sustainable.
+(5) Every Vermonter should be able to choose his or her health care
+providers.
+(6) Vermonters should be aware of the costs of the health services they
+receive. Costs should be transparent and easy to understand.
+(7) Individuals have a personal responsibility to maintain their own
+health and to use health resources wisely, and all individuals should have a
+financial stake in the health services they receive.
+(8) The health care system must recognize the primacy of the
+relationship between patients and their health care practitioners, respecting the
+professional judgment of health care practitioners and the informed decisions
+of patients.
+(9) Vermont’s health delivery system must seek continuous
+improvement of health care quality and safety and of the health of the
+=== page 16 ===
+No. 48 Page 16 of 141
+VT LEG 270379.1
+population and promote healthy lifestyles. The system therefore must be
+evaluated regularly for improvements in access, quality, and cost containment.
+(10) Vermont’s health care system must include mechanisms for
+containing all system costs and eliminating unnecessary expenditures,
+including by reducing administrative costs and by reducing costs that do not
+contribute to efficient, high-quality health services or improve health
+outcomes. Efforts to reduce overall health care costs should identify sources of
+excess cost growth.
+(11) The financing of health care in Vermont must be sufficient, fair,
+predictable, transparent, sustainable, and shared equitably.
+(12) The system must consider the effects of payment reform on
+individuals and on health care professionals and suppliers. It must enable
+health care professionals to provide, on a solvent basis, effective and efficient
+health services that are in the public interest.
+(13) Vermont’s health care system must operate as a partnership
+between consumers, employers, health care professionals, hospitals, and the
+state and federal government.
+(14) State government must ensure that the health care system satisfies
+the principles expressed in this section.
+=== page 17 ===
+No. 48 Page 17 of 141
+VT LEG 270379.1
+§ 9372. PURPOSE
+It is the intent of the general assembly to create an independent board to
+promote the general good of the state by:
+(1) improving the health of the population;
+(2) reducing the per-capita rate of growth in expenditures for health
+services in Vermont across all payers while ensuring that access to care and
+quality of care are not compromised;
+(3) enhancing the patient and health care professional experience of
+care;
+(4) recruiting and retaining high-quality health care professionals; and
+(5) achieving administrative simplification in health care financing and
+delivery.
+§ 9373. DEFINITIONS
+As used in this chapter:
+(1) “Board” means the Green Mountain Care board established in this
+chapter.
+(2) “Chronic care” means health services provided by a health care
+professional for an established clinical condition that is expected to last a year
+or more and that requires ongoing clinical management attempting to restore
+the individual to highest function, minimize the negative effects of the
+=== page 18 ===
+No. 48 Page 18 of 141
+VT LEG 270379.1
+condition, prevent complications related to chronic conditions, engage in
+advanced care planning, and promote appropriate access to palliative care.
+(3) “Chronic care management” means a system of coordinated health
+care interventions and communications for individuals with chronic conditions,
+including significant patient self-care efforts, systemic supports for licensed
+health care practitioners and their patients, and a plan of care emphasizing
+prevention of complications, utilizing evidence-based practice guidelines,
+patient empowerment strategies, and evaluation of clinical, humanistic, and
+economic outcomes on an ongoing basis with the goal of improving overall
+health.
+(4) “Global payment” means a payment from a health insurer, Medicaid,
+Medicare, or other payer for the health services of a defined population of
+patients for a defined period of time. Such payments may be adjusted to
+account for the population’s underlying risk factors, including severity of
+illness and socioeconomic factors that may influence the cost of health care for
+the population.
+(5) “Green Mountain Care” means the public–private universal health
+care program designed to provide health benefits through a simplified,
+uniform, single administrative system pursuant to 33 V.S.A. chapter 18,
+subchapter 2.
+=== page 19 ===
+No. 48 Page 19 of 141
+VT LEG 270379.1
+(6) “Health care professional” means an individual, partnership,
+corporation, facility, or institution licensed or certified or otherwise authorized
+by Vermont law to provide professional health services.
+(7) “Health care system” means the local, state, regional, or national
+system of delivering health services, including administrative costs, capital
+expenditures, preventive care and wellness services.
+(8) “Health insurer” means any health insurance company, nonprofit
+hospital and medical service corporation, managed care organization, and, to
+the extent permitted under federal law, any administrator of a health benefit
+plan offered by a public or a private entity. The term does not include
+Medicaid, the Vermont health access plan, or any other state health care
+assistance program financed in whole or in part through a federal program.
+(9) “Health service” means any treatment or procedure delivered by a
+health care professional to maintain an individual’s physical or mental health
+or to diagnose or treat an individual’s physical or mental health condition,
+including services ordered by a health care professional, chronic care
+management, preventive care, wellness services, and medically necessary
+services to assist in activities of daily living.
+(10) “Integrated delivery system” means a group of health care
+professionals, associated either through employment by a single entity or
+=== page 20 ===
+No. 48 Page 20 of 141
+VT LEG 270379.1
+through a contractual arrangement, that provides health services for a defined
+population of patients and is compensated through a global payment.
+(11) “Manufacturers of prescribed products” shall have the same
+meaning as “manufacturers” in section 4631a of this title.
+(12) “Payment reform” means modifying the method of payment from a
+fee-for-service basis to one or more alternative methods for compensating
+health care professionals, health care provider bargaining groups created
+pursuant to section 9409 of this title, integrated delivery systems, and other
+health care professional arrangements, manufacturers of prescribed products,
+medical supply companies, and other companies providing health services or
+health supplies for the provision of high-quality and efficient health services,
+products, and supplies while measuring quality and efficiency. The term may
+include shared savings agreements, bundled payments, episode-based
+payments, and global payments.
+(13) “Preventive care” means health services provided by health care
+professionals to identify and treat asymptomatic individuals who have risk
+factors or preclinical disease, but in whom the disease is not clinically
+apparent, including immunizations and screening, counseling, treatment, and
+medication determined by scientific evidence to be effective in preventing or
+detecting a condition.
+=== page 21 ===
+No. 48 Page 21 of 141
+VT LEG 270379.1
+(14) “Wellness services” means health services, programs, or activities
+that focus on the promotion or maintenance of good health.
+§ 9374. BOARD MEMBERSHIP; AUTHORITY
+(a)(1) On July 1, 2011, the Green Mountain Care board is created and shall
+consist of a chair and four members. The chair and all of the members shall be
+state employees and shall be exempt from the state classified system. The
+chair shall receive compensation equal to that of a superior judge, and the
+compensation for the remaining members shall be two-thirds of the amount
+received by the chair.
+(2) The chair and the members of the board shall be nominated by the
+Green Mountain Care board nominating committee established in subchapter 2
+of this chapter using the qualifications described in section 9392 of this chapter
+and shall be otherwise appointed and confirmed in the manner of a superior
+judge. The governor shall not appoint a nominee who was denied confirmation
+by the senate within the past six years.
+(b)(1) The initial term of the chair shall be seven years, and the term of the
+chair shall be six years thereafter.
+(2) The term of each member other than the chair shall be six years,
+except that of the members first appointed, one each shall serve a term of three
+years, four years, five years, and six years.
+=== page 22 ===
+No. 48 Page 22 of 141
+VT LEG 270379.1
+(3) Subject to the nomination and appointment process, a member may
+serve more than one term.
+(4) Members of the board may be removed only for cause. The board
+shall adopt rules pursuant to 3 V.S.A. chapter 25 to define the basis and
+process for removal.
+(c)(1) No board member shall, during his or her term or terms on the board,
+be an officer of, director of, organizer of, employee of, consultant to, or
+attorney for any person subject to supervision or regulation by the board;
+provided that for a health care practitioner, the employment restriction in this
+subdivision shall apply only to administrative or managerial employment or
+affiliation with a hospital or other health care facility, as defined in section
+9432 of this title, and shall not be construed to limit generally the ability of the
+health care practitioner to practice his or her profession.
+(2) No board member shall participate in creating or applying any law,
+rule, or policy or in making any other determination if the board member,
+individually or as a fiduciary, or the board member’s spouse, parent, or child
+wherever residing or any other member of the board member’s family residing
+in his or her household has an economic interest in the matter before the board
+or has any more than a de minimus interest that could be substantially affected
+by the proceeding.
+=== page 23 ===
+No. 48 Page 23 of 141
+VT LEG 270379.1
+(3) The prohibitions contained in subdivisions (1) and (2) of this
+subsection shall not be construed to prohibit a board member from, or require a
+board member to recuse himself or herself from board activities as a result of,
+any of the following:
+(A) being an insurance policyholder or from receiving health services
+on the same terms as are available to the public generally;
+(B) owning a stock, bond, or other security in an entity subject to
+supervision or regulation by the board that is purchased by or through a mutual
+fund, blind trust, or other mechanism where a person other than the board
+member chooses the stock, bond, or security; or
+(C) receiving retirement benefits through a defined benefit plan from
+an entity subject to supervision or regulation by the board.
+(4) No board member shall, during his or her term or terms on the board,
+solicit, engage in negotiations for, or otherwise discuss future employment or a
+future business relationship of any kind with any person subject to supervision
+or regulation by the board.
+(5) No board member may appear before the board or any other state
+agency on behalf of a person subject to supervision or regulation by the board
+for a period of one year following his or her last day as a member of the Green
+Mountain Care board.
+=== page 24 ===
+No. 48 Page 24 of 141
+VT LEG 270379.1
+(d) The chair shall have general charge of the offices and employees of the
+board but may hire a director to oversee the administration and operation.
+(e)(1) The board shall establish a consumer, patient, business, and health
+care professional advisory group to provide input and recommendations to the
+board. Members of such advisory group who are not state employees or whose
+participation is not supported through their employment or association shall
+receive per diem compensation and reimbursement of expenses pursuant to
+32 V.S.A. § 1010, provided that the total amount expended for such
+compensation shall not exceed $5,000.00 per year.
+(2) The board may establish additional advisory groups and
+subcommittees as needed to carry out its duties. The board shall appoint
+diverse health care professionals to the additional advisory groups and
+subcommittees as appropriate.
+(f) In carrying out its duties pursuant to this chapter, the board shall seek
+the advice of the state health care ombudsman established in 8 V.S.A.
+§ 4089w. The state health care ombudsman shall advise the board regarding
+the policies, procedures, and rules established pursuant to this chapter. The
+ombudsman shall represent the interests of Vermont patients and Vermont
+consumers of health insurance and may suggest policies, procedures, or rules
+to the board in order to protect patients’ and consumers’ interests.
+=== page 25 ===
+No. 48 Page 25 of 141
+VT LEG 270379.1
+§ 9375. DUTIES
+(a) The board shall execute its duties consistent with the principles
+expressed in 18 V.S.A. § 9371.
+(b) The board shall have the following duties:
+(1) Oversee the development and implementation, and evaluate the
+effectiveness, of health care payment and delivery system reforms designed to
+control the rate of growth in health care costs and maintain health care quality
+in Vermont, including ensuring that the payment reform pilot projects set forth
+in chapter 13, subchapter 2 of this title are consistent with such reforms.
+(A) Implement by rule, pursuant to 3 V.S.A. chapter 25,
+methodologies for achieving payment reform and containing costs, which may
+include the creation of health care professional cost-containment targets, global
+payments, bundled payments, global budgets, risk-adjusted capitated
+payments, or other uniform payment methods and amounts for integrated
+delivery systems, health care professionals, or other provider arrangements.
+(B) Prior to the initial adoption of the rules described in subdivision
+(A) of this subdivision (1), report the board’s proposed methodologies to the
+house committee on health care and the senate committee on health and
+welfare.
+(C) In developing methodologies pursuant to subdivision (A) of this
+subdivision (1), engage Vermonters in seeking ways to equitably distribute
+=== page 26 ===
+No. 48 Page 26 of 141
+VT LEG 270379.1
+health services while acknowledging the connection between fair and
+sustainable payment and access to health care.
+(D) Nothing in this subdivision (1) shall be construed to limit the
+authority of other agencies or departments of state government to engage in
+additional cost-containment activities to the extent permitted by state and
+federal law.
+(2) Review and approve Vermont’s statewide health information
+technology plan pursuant to section 9351 of this title to ensure that the
+necessary infrastructure is in place to enable the state to achieve the principles
+expressed in section 9371 of this title.
+(3) Review and approve the health care workforce development strategic
+plan created in chapter 222 of this title.
+(4) Review the health resource allocation plan created in chapter 221 of
+this title.
+(5) Set rates for health care professionals pursuant to section 9376 of
+this title, to be implemented over time, and make adjustments to the rules on
+reimbursement methodologies as needed.
+(6) Review and approve recommendations from the commissioner of
+banking, insurance, securities, and health care administration, within 10
+business days of receipt of such recommendations and taking into
+consideration the requirements in the underlying statutes, changes in health
+=== page 27 ===
+No. 48 Page 27 of 141
+VT LEG 270379.1
+care delivery, changes in payment methods and amounts, and other issues at
+the discretion of the board, on:
+(A) any insurance rate increases pursuant to 8 V.S.A. chapter 107,
+beginning January 1, 2012;
+(B) hospital budgets pursuant to chapter 221, subchapter 7 of this
+title, beginning July 1, 2012; and
+(C) certificates of need pursuant to chapter 221, subchapter 5 of this
+title, beginning July 1, 2012.
+(7) Prior to the adoption of rules, review and approve, with
+recommendations from the commissioner of Vermont health access, the benefit
+package or packages for qualified health benefit plans pursuant to 33 V.S.A.
+chapter 18, subchapter 1 no later than January 1, 2013. The board shall report
+to the house committee on health care and the senate committee on health and
+welfare within 15 days following its approval of the initial benefit package and
+any subsequent substantive changes to the benefit package.
+(8) Develop and maintain a method for evaluating systemwide
+performance and quality, including identification of the appropriate process
+and outcome measures:
+(A) for determining public and health care professional satisfaction
+with the health system;
+(B) for utilization of health services;
+=== page 28 ===
+No. 48 Page 28 of 141
+VT LEG 270379.1
+(C) in consultation with the department of health and the director of
+the Blueprint for Health, for quality of health services and the effectiveness of
+prevention and health promotion programs;
+(D) for cost-containment and limiting the growth in health care
+expenditures;
+(E) for determining the adequacy of the supply and distribution of
+health care resources in this state;
+(F) to address access to and quality of mental health and substance
+abuse services; and
+(G) for other measures as determined by the board.
+(c) The board shall have the following duties related to Green
+Mountain Care:
+(1) Prior to implementing Green Mountain Care, consider
+recommendations from the agency of human services, and define the Green
+Mountain Care benefit package within the parameters established in 33 V.S.A.
+chapter 18, subchapter 2, to be adopted by the agency by rule.
+(2) When providing its recommendations for the benefit package
+pursuant to subdivision (1) of this subsection, the agency of human services
+shall present a report on the benefit package proposal to the house committee
+on health care and the senate committee on health and welfare. The report
+shall describe the covered services to be included in the Green Mountain Care
+=== page 29 ===
+No. 48 Page 29 of 141
+VT LEG 270379.1
+benefit package and any cost-sharing requirements. If the general assembly is
+not in session at the time that the agency makes its recommendations, the
+agency shall send its report electronically or by first class mail to each member
+of the house committee on health care and the senate committee on health
+and welfare.
+(3) Prior to implementing Green Mountain Care and annually after
+implementation, recommend to the general assembly and the governor a
+three-year Green Mountain Care budget pursuant to 32 V.S.A. chapter 5, to be
+adjusted annually in response to realized revenues and expenditures, that
+reflects any modifications to the benefit package and includes recommended
+appropriations, revenue estimates, and necessary modifications to tax rates and
+other assessments.
+(d) Annually on or before January 15, the board shall submit a report of its
+activities for the preceding state fiscal year to the house committee on health
+care and the senate committee on health and welfare. The report shall include
+any changes to the payment rates for health care professionals pursuant to
+section 9376 of this title, any new developments with respect to health
+information technology, the evaluation criteria adopted pursuant to subdivision
+(b)(8) of this section and any related modifications, the results of the
+systemwide performance and quality evaluations required by subdivision
+(b)(8) of this section and any resulting recommendations, the process and
+=== page 30 ===
+No. 48 Page 30 of 141
+VT LEG 270379.1
+outcome measures used in the evaluation, any recommendations for
+modifications to Vermont statutes, and any actual or anticipated impacts on the
+work of the board as a result of modifications to federal laws, regulations, or
+programs. The report shall identify how the work of the board comports with
+the principles expressed in section 9371 of this title.
+(e) All reports prepared by the board shall be available to the public and
+shall be posted on the board’s website.
+§ 9376. PAYMENT AMOUNTS; METHODS
+(a) It is the intent of the general assembly to ensure payments to health care
+professionals that are consistent with efficiency, economy, and quality of care
+and will permit them to provide, on a solvent basis, effective and efficient
+health services that are in the public interest. It is also the intent of the general
+assembly to eliminate the shift of costs between the payers of health services to
+ensure that the amount paid to health care professionals is sufficient to enlist
+enough providers to ensure that health services are available to all Vermonters
+and are distributed equitably.
+(b)(1) The board shall set reasonable rates for health care professionals,
+health care provider bargaining groups created pursuant to section 9409 of this
+title, manufacturers of prescribed products, medical supply companies, and
+other companies providing health services or health supplies based on
+methodologies pursuant to section 9375 of this title, in order to have a
+=== page 31 ===
+No. 48 Page 31 of 141
+VT LEG 270379.1
+consistent reimbursement amount accepted by these persons. In its discretion,
+the board may implement rate-setting for different groups of health care
+professionals over time and need not set rates for all types of health care
+professionals. In establishing rates, the board may consider legitimate
+differences in costs among health care professionals, such as the cost of
+providing a specific necessary service or services that may not be available
+elsewhere in the state, and the need for health care professionals in particular
+areas of the state, particularly in underserved geographic or practice
+shortage areas.
+(2) Nothing in this subsection shall be construed to limit the ability of
+a health care professional to accept less than the rate established in
+subdivision (1) of this subsection from a patient without health insurance or
+other coverage for the service or services received.
+(c) The board shall approve payment methodologies that encourage
+cost-containment; provision of high-quality, evidence-based health services in
+an integrated setting; patient self-management; access to primary care health
+services for underserved individuals, populations, and areas; and healthy
+lifestyles. Such methodologies shall be consistent with payment reform and
+with evidence-based practices, and may include fee-for-service payments if the
+board determines such payments to be appropriate.
+=== page 32 ===
+No. 48 Page 32 of 141
+VT LEG 270379.1
+(d) To the extent required to avoid federal antitrust violations and in
+furtherance of the policy identified in subsection (a) of this section, the board
+shall facilitate and supervise the participation of health care professionals and
+health care provider bargaining groups in the process described in subsection
+(b) of this section.
+§ 9377. PAYMENT REFORM; PILOTS
+(a) It is the intent of the general assembly to achieve the principles stated in
+section 9371 of this title. In order to achieve this goal and to ensure the
+success of health care reform, it is the intent of the general assembly that
+payment reform be implemented and that payment reform be carried out as
+described in this section. It is also the intent of the general assembly to ensure
+sufficient state involvement and action in the design and implementation of the
+payment reform pilot projects described in this section to comply with federal
+and state antitrust provisions by replacing competition between payers and
+others with state-supervised cooperation and regulation.
+(b)(1) The board shall be responsible for payment and delivery system
+reform, including setting the overall policy goals for the pilot projects
+established in chapter 13, subchapter 2 of this title.
+(2) The director of payment reform in the department of Vermont health
+access shall develop and implement the payment reform pilot projects in
+accordance with policies established by the board, and the board shall evaluate
+=== page 33 ===
+No. 48 Page 33 of 141
+VT LEG 270379.1
+the effectiveness of such pilot projects in order to inform the payment and
+delivery system reform.
+(3) Payment reform pilot projects shall be developed and implemented
+to manage the costs of the health care delivery system, improve health
+outcomes for Vermonters, provide a positive health care experience for
+patients and health care professionals, and further the following objectives:
+(A) payment reform pilot projects should align with the Blueprint for
+Health strategic plan and the statewide health information technology plan;
+(B) health care professionals should coordinate patient care through a
+local entity or organization facilitating this coordination or another structure
+which results in the coordination of patient care and a sustained focus on
+disease prevention and promotion of wellness that includes individuals,
+employers, and communities;
+(C) health insurers, Medicaid, Medicare, and all other payers should
+reimburse health care professionals for coordinating patient care through
+consistent payment methodologies, which may include a global budget; a
+system of cost containment limits, health outcome measures, and patient
+consumer satisfaction targets which may include risk-sharing or other
+incentives designed to reduce costs while maintaining or improving health
+outcomes and patient consumer satisfaction; or another payment method
+providing an incentive to coordinate care and control cost growth;
+=== page 34 ===
+No. 48 Page 34 of 141
+VT LEG 270379.1
+(D) the scope of services in any capitated payment should be broad
+and comprehensive, including prescription drugs, diagnostic services, acute
+and sub-acute home health services, services received in a hospital, mental
+health and substance abuse services, and services from a licensed health care
+practitioner; and
+(E) health insurers, Medicaid, Medicare, and all other payers should
+reimburse health care professionals for providing the full spectrum of
+evidence-based health services.
+(4) In addition to the objectives identified in subdivision (a)(3) of this
+section, the design and implementation of payment reform pilot projects may
+consider:
+(A) alignment with the requirements of federal law to ensure the full
+participation of Medicare in multipayer payment reform; and
+(B) with input from long-term care providers, the inclusion of home
+health services and long-term care services as part of capitated payments.
+(c) To the extent required to avoid federal antitrust violations, the board
+shall facilitate and supervise the participation of health care professionals,
+health care facilities, and insurers in the planning and implementation of the
+payment reform pilot projects, including by creating a shared incentive pool if
+appropriate. The board shall ensure that the process and implementation
+include sufficient state supervision over these entities to comply with federal
+=== page 35 ===
+No. 48 Page 35 of 141
+VT LEG 270379.1
+antitrust provisions and shall refer to the attorney general for appropriate action
+the activities of any individual or entity that the board determines, after notice
+and an opportunity to be heard, violate state or federal antitrust laws without a
+countervailing benefit of improving patient care, improving access to health
+care, increasing efficiency, or reducing costs by modifying payment methods.
+(d) The board or designee shall apply for grant funding, if available, for the
+evaluation of the pilot projects described in this section.
+§ 9378. PUBLIC PROCESS
+The Green Mountain Care board shall provide a process for soliciting public
+input. The process may include receiving written comments on proposed new
+or amended rules or holding public hearings or both.
+§ 9379. AGENCY COOPERATION
+The secretary of administration shall ensure that, in accordance with state
+and federal privacy laws, the Green Mountain Care board has access to data
+and analysis held by any executive branch agency which is necessary to carry
+out the board’s duties as described in this chapter.
+§ 9380. RULES
+The board may adopt rules pursuant to 3 V.S.A. chapter 25 as needed to
+carry out the provisions of this chapter.
+=== page 36 ===
+No. 48 Page 36 of 141
+VT LEG 270379.1
+§ 9381. APPEALS
+(a) The Green Mountain Care board shall adopt procedures for
+administrative appeals of its actions, orders, or other determinations. Such
+procedures shall provide for the issuance of a final order and the creation of a
+record sufficient to serve as the basis for judicial review pursuant to subsection
+(b) of this section.
+(b) Any person aggrieved by a final action, order, or other determination of
+the Green Mountain Care board may, upon exhaustion of all administrative
+appeals available pursuant to subsection (a) of this section, appeal to the
+supreme court pursuant to the Vermont Rules of Appellate Procedure.
+Subchapter 2. Green Mountain Care Board Nominating Committee
+§ 9390. GREEN MOUNTAIN CARE BOARD NOMINATING
+COMMITTEE CREATED; COMPOSITION
+(a) A Green Mountain Care board nominating committee is created for the
+nomination of the chair and members of the Green Mountain Care board.
+(b)(1) The committee shall consist of nine members who shall be selected
+as follows:
+(A) Two members appointed by the governor.
+(B) Two members of the senate, who shall not be members of the
+same party, to be appointed by the committee on committees.
+=== page 37 ===
+No. 48 Page 37 of 141
+VT LEG 270379.1
+(C) Two members of the house of representatives, who shall not be
+members of the same party, to be appointed by the speaker of the house of
+representatives.
+(D) One member each to be appointed by the governor, the president
+pro tempore of the senate, and the speaker of the house, with knowledge of or
+expertise in health care policy, health care delivery, or health care financing, to
+complement that of the remaining members of the committee.
+(2) The members of the committee shall serve for terms of two years
+and may serve for no more than three consecutive terms. All appointments
+shall be made between January 1 and February 1 of each odd-numbered year,
+except to fill a vacancy. Members shall serve until their successors are
+appointed.
+(3) The members shall elect their own chair who shall serve for a term
+of two years.
+(c) For committee meetings held when the general assembly is not in
+session, the legislative members of the Green Mountain Care board nominating
+committee shall be entitled to per diem compensation and reimbursement of
+expenses in accordance with the provisions of 2 V.S.A. § 406. Committee
+members who are not legislators shall be entitled to per diem compensation
+and reimbursement of expenses on the same basis as that applicable to the
+=== page 38 ===
+No. 48 Page 38 of 141
+VT LEG 270379.1
+legislative members, and their compensation and reimbursements shall be paid
+out of the budget of the Green Mountain Care board.
+(d) The Green Mountain Care board nominating committee shall use the
+qualifications described in section 9392 of this title for the nomination of
+candidates for the chair and members of the Green Mountain Care board. The
+nominating committee shall adopt procedures for a nomination process based
+on the rules adopted by the judicial nominating board, and shall make such
+procedures available to the public.
+(e) A quorum of the committee shall consist of five members.
+(f) The board is authorized to use the staff and services of appropriate state
+agencies and departments as necessary to conduct investigations of applicants.
+§ 9391. NOMINATION AND APPOINTMENT PROCESS
+(a) Whenever a vacancy occurs on the Green Mountain Care board, or
+when an incumbent does not declare that he or she will be a candidate to
+succeed himself or herself, the Green Mountain Care board nominating
+committee shall select for consideration by the committee, by majority vote,
+provided that a quorum is present, from the applications for membership on the
+Green Mountain Care board as many candidates as it deems qualified for the
+position or positions to be filled. The committee shall base its determinations
+on the qualifications set forth in section 9392 of this section.
+=== page 39 ===
+No. 48 Page 39 of 141
+VT LEG 270379.1
+(b) The committee shall submit to the governor the names of the persons it
+deems qualified to be appointed to fill the position or positions.
+(c) The governor shall make an appointment to the Green Mountain Care
+board from the list of qualified candidates submitted pursuant to subsection (b)
+of this section. The appointment shall be subject to the consent of the senate.
+(d) All proceedings of the committee, including the names of candidates
+considered by the committee and information about any candidate submitted
+by any source, shall be confidential.
+§ 9392. QUALIFICATIONS FOR NOMINEES
+The Green Mountain Care board nominating committee shall assess
+candidates using the following criteria:
+(1) commitment to the principles expressed in section 9371 of this title.
+(2) knowledge of or expertise in health care policy, health care delivery,
+or health care financing, and openness to alternative approaches to health care.
+(3) possession of desirable personal characteristics, including integrity,
+impartiality, health, empathy, experience, diligence, neutrality, administrative
+and communication skills, social consciousness, public service, and regard for
+the public good.
+(4) knowledge, expertise, and characteristics that complement those of
+the remaining members of the board.
+=== page 40 ===
+No. 48 Page 40 of 141
+VT LEG 270379.1
+(5) impartiality and the ability to remain free from undue influence by a
+personal, business, or professional relationship with any person subject to
+supervision or regulation by the board.
+Sec. 3a. 8 V.S.A. § 4089w(b) is amended to read:
+(b) The health care ombudsman office shall:
+* * *
+(5) Analyze and monitor the development and implementation of
+federal, state and local laws, regulations, and policies relating to patients and
+health insurance consumers, including the activities and policies of the Green
+Mountain Care board established in 18 V.S.A. chapter 220, and recommend
+changes it deems necessary.
+* * *
+Sec. 3b. GREEN MOUNTAIN CARE BOARD AND EXCHANGE
+POSITIONS
+(a) On July 1, 2011, five exempt positions are created on the Green
+Mountain Care board, including:
+(1) one chair, Green Mountain Care board; and
+(2) four members, Green Mountain Care board.
+(b)(1) On or before January 1, 2012, up to nine positions and appropriate
+amounts for personal services and operating expenses shall be transferred from
+=== page 41 ===
+No. 48 Page 41 of 141
+VT LEG 270379.1
+the department of banking, insurance, securities, and health care administration
+to the Green Mountain Care board.
+(2) One exempt attorney position shall be transferred from the
+administrative division in the department of banking, insurance, securities, and
+health care administration to the Green Mountain Care board.
+(c) On July 1, 2011, one classified administrative assistant position is
+created for the Green Mountain Care board.
+(d) On or after November 1, 2011, one exempt deputy commissioner
+position is created in the department of Vermont health access to support the
+functions provided for in Sec. 4 of this act establishing 33 V.S.A. chapter 18,
+subchapter 1. The salary and benefits for this position shall be funded from
+federal funds provided to establish the Vermont health benefit exchange.
+(e) On July 1, 2011, one exempt position, director of health care reform, is
+created in the agency of administration.
+* * *
+Sec. 3c. 18 V.S.A. chapter 13 is amended to read:
+CHAPTER 13. CHRONIC CARE INFRASTRUCTURE
+AND PREVENTION MEASURES
+§ 701. DEFINITIONS
+For the purposes of this chapter:
+=== page 42 ===
+No. 48 Page 42 of 141
+VT LEG 270379.1
+(1) “Blueprint for Health” or “Blueprint” means the state’s program for
+integrating a system of health care for patients, improving the health of the
+overall population, and improving control over health care costs by promoting
+health maintenance, prevention, and care coordination and management.
+(2) “Board” means the Green Mountain Care board established in
+chapter 220 of this title.
+(3) “Chronic care” means health services provided by a health care
+professional for an established clinical condition that is expected to last a year
+or more and that requires ongoing clinical management attempting to restore
+the individual to highest function, minimize the negative effects of the
+condition, prevent complications related to chronic conditions, engage in
+advanced care planning, and promote appropriate access to palliative care.
+Examples of chronic conditions include diabetes, hypertension, cardiovascular
+disease, cancer, asthma, pulmonary disease, substance abuse, mental illness,
+spinal cord injury, hyperlipidemia, and chronic pain.
+(3)(4) “Chronic care information system” means the electronic database
+developed under the Blueprint for Health that shall include information on all
+cases of a particular disease or health condition in a defined population of
+individuals.
+(4)(5) “Chronic care management” means a system of coordinated
+health care interventions and communications for individuals with chronic
+=== page 43 ===
+No. 48 Page 43 of 141
+VT LEG 270379.1
+conditions, including significant patient self-care efforts, systemic supports for
+licensed health care practitioners and their patients, and a plan of care
+emphasizing prevention of complications utilizing evidence-based practice
+guidelines, patient empowerment strategies, and evaluation of clinical,
+humanistic, and economic outcomes on an ongoing basis with the goal of
+improving overall health.
+(6) “Global payment” means a payment from a health insurer, Medicaid,
+Medicare, or other payer for the health services of a defined population of
+patients for a defined period of time. Such payments may be adjusted to
+account for the population’s underlying risk factors, including severity of
+illness and socioeconomic factors that may influence the cost of health care for
+the population.
+(5)(7) “Health care professional” means an individual, partnership,
+corporation, facility, or institution licensed or certified or authorized by law to
+provide professional health care services.
+(6)(8) “Health benefit plan” shall have the same meaning as in 8 V.S.A.
+§ 4088h.
+(7)(9) “Health insurer” shall have the same meaning as in section 9402
+of this title.
+(10) “Health service” means any treatment or procedure delivered by a
+health care professional to maintain an individual’s physical or mental health
+=== page 44 ===
+No. 48 Page 44 of 141
+VT LEG 270379.1
+or to diagnose or treat an individual’s physical or mental health condition,
+including services ordered by a health care professional, chronic care
+management, preventive care, wellness services, and medically necessary
+services to assist in activities of daily living.
+(8)(11) “Hospital” shall have the same meaning as in section 9456 of
+this title.
+(12) “Integrated delivery system” means a group of health care
+professionals, associated either through employment by a single entity or
+through a contractual arrangement, that provides health services for a defined
+population of patients and is compensated through a global payment.
+(13) “Payment reform” means modifying the method of payment from a
+fee for-service basis to one or more alternative methods for compensating
+health care professionals, health care provider bargaining groups created
+pursuant to section 9409 of this title, integrated delivery systems and other
+health care professional arrangements, manufacturers of prescribed products,
+medical supply companies, and other companies providing health services or
+health supplies, for the provision of high-quality and efficient health services,
+products, and supplies while measuring quality and efficiency. The term may
+include shared savings agreements, bundled payments, episode-based
+payments, and global payments.
+=== page 45 ===
+No. 48 Page 45 of 141
+VT LEG 270379.1
+(14) “Preventive care” means health services provided by health care
+professionals to identify and treat asymptomatic individuals who have risk
+factors or preclinical disease, but in whom the disease is not clinically
+apparent, including immunizations and screening, counseling, treatment, and
+medication determined by scientific evidence to be effective in preventing or
+detecting a condition.
+(15) “Wellness services” means health services, programs, or activities
+that focus on the promotion or maintenance of good health.
+Subchapter 1. Blueprint for Health
+§ 702. BLUEPRINT FOR HEALTH; STRATEGIC PLAN
+* * *
+Subchapter 2. Payment Reform
+§ 721. PURPOSE
+It is the intent of the general assembly to achieve the principles stated in
+section 9371 of this title. In order to achieve this goal and to ensure the
+success of health care reform, it is the intent of the general assembly that
+payment reform be implemented and that payment reform be carried out as
+described in this section. It is also the intent of the general assembly to ensure
+sufficient state involvement and action in the design and implementation of the
+payment reform pilot projects described in this section to comply with federal
+=== page 46 ===
+No. 48 Page 46 of 141
+VT LEG 270379.1
+and state antitrust provisions by replacing competition between payers and
+others with state-supervised cooperation and regulation.
+§ 722. PILOT PROJECTS
+(a) The Green Mountain Care board shall be responsible for payment
+reform and delivery system reform, including setting the overall policy goals
+for the pilot projects as provided in this subchapter. The director of payment
+reform in the department of Vermont health access shall develop and
+implement the payment reform pilot projects consistent with policies
+established by the board and the board shall evaluate the effectiveness of the
+pilot projects in order to inform the payment and delivery system reform.
+Whenever health insurers are involved, the director and the Green Mountain
+Care board shall collaborate with the commissioner of banking, insurance,
+securities, and health care administration.
+(b) The director of payment reform shall convene a broad-based group of
+stakeholders, including health care professionals who provide health services,
+health insurers, professional organizations, community and nonprofit groups,
+consumers, businesses, school districts, the state health care ombudsman, and
+state and local governments to advise the director in developing and
+implementing the pilot projects and the Green Mountain Care board in setting
+overall policy goals.
+=== page 47 ===
+No. 48 Page 47 of 141
+VT LEG 270379.1
+(c) Payment reform pilot projects shall be developed and implemented to
+manage the costs of the health care delivery system, improve health outcomes
+for Vermonters, provide a positive health care experience for patients and
+health care professionals, and further the following objectives:
+(1) payment reform pilot projects should align with the Blueprint for
+Health strategic plan and the statewide health information technology plan;
+(2) health care professionals should coordinate patient care through a
+local entity or organization facilitating this coordination or another structure
+which results in the coordination of patient care and a sustained focus on
+disease prevention and promotion of wellness that includes individuals,
+employers, and communities;
+(3) health insurers, Medicaid, Medicare, and all other payers should
+reimburse health care professionals for coordinating patient care through
+consistent payment methodologies, which may include a global budget; a
+system of cost containment limits, health outcome measures, and patient
+consumer satisfaction targets which may include risk-sharing or other
+incentives designed to reduce costs while maintaining or improving health
+outcomes and patient consumer satisfaction; or another payment method
+providing an incentive to coordinate care and control cost growth;
+(4) the scope of services in any capitated payment should be broad and
+comprehensive, including prescription drugs, diagnostic services, acute and
+=== page 48 ===
+No. 48 Page 48 of 141
+VT LEG 270379.1
+sub-acute home health services, services received in a hospital, mental health
+and substance abuse services, and services from a licensed health care
+practitioner; and
+(5) health insurers, Medicaid, Medicare, and all other payers should
+reimburse health care professionals for providing the full spectrum of
+evidence-based health services.
+(d) In addition to the objectives identified in subsection (c) of this section,
+the design and implementation of payment reform pilot projects may consider:
+(1) alignment with the requirements of federal law to ensure the full
+participation of Medicare in multipayer payment reform; and
+(2) with input from long-term care providers, the inclusion of home
+health services and long-term care services as part of capitated payments.
+(e) The first pilot project shall become operational no later than January 1,
+2012, and two or more additional pilot projects shall become operational no
+later than July 1, 2012.
+(f) The Green Mountain Care board shall ensure that payment reform pilot
+projects are consistent with the board’s overall efforts to control the rate of
+growth in health care costs while maintaining or improving health care quality.
+§ 723. HEALTH INSURER PARTICIPATION
+(a)(1) Health insurers shall participate in the development of the payment
+reform strategic plan for the pilot projects and in the implementation of the
+=== page 49 ===
+No. 48 Page 49 of 141
+VT LEG 270379.1
+pilot projects, including providing incentives, fees, or payment methods, as
+required in this section. This requirement may be enforced by the department
+of banking, insurance, securities, and health care administration to the same
+extent as the requirement to participate in the Blueprint for Health pursuant to
+8 V.S.A. § 4088h.
+(2) The board may establish procedures to exempt or limit the
+participation of health insurers offering a stand-alone dental plan or specific
+disease or other limited-benefit coverage or participation by insurers with a
+minimal number of covered lives as defined by the board, in consultation with
+the commissioner of banking, insurance, securities, and health care
+administration. Health insurers shall be exempt from participation if the
+insurer offers only benefit plans which are paid directly to the individual
+insured or the insured’s assigned beneficiaries and for which the amount of the
+benefit is not based upon potential medical costs or actual costs incurred.
+(b) In the event that the secretary of human services is denied permission
+from the Centers for Medicare and Medicaid Services to include financial
+participation by Medicare in the pilot projects, health insurers shall not be
+required to cover the costs associated with individuals covered by Medicare.
+§ 724. ANTITRUST PROTECTION
+To the extent required to avoid federal antitrust violations, the director shall
+facilitate and supervise the participation of health care professionals, health
+=== page 50 ===
+No. 48 Page 50 of 141
+VT LEG 270379.1
+care facilities, and insurers in the planning and implementation of the payment
+reform pilot projects, including by creating a shared incentive pool if
+appropriate. The director shall ensure that the process and implementation
+include sufficient state supervision over these entities to comply with federal
+antitrust provisions and shall refer to the attorney general for appropriate action
+the activities of any individual or entity that the director determines, after
+notice and an opportunity to be heard, violate state or federal antitrust laws
+without a countervailing benefit of improving patient care, improving access to
+health care, increasing efficiency, or reducing costs by modifying payment
+methods.
+§ 725. ADMINISTRATION; RULES
+(a) The director of payment reform shall apply for grant funding, if
+available, for the design and implementation evaluation of the pilot projects
+described in this section.
+(b) The agency of human services may adopt rules pursuant to 3 V.S.A.
+chapter 25 as needed to carry out the provisions of this chapter.
+(c) After implementation of the pilot projects described in this subchapter,
+health insurers shall have appeal rights pursuant to section 9381 of this title.
+=== page 51 ===
+No. 48 Page 51 of 141
+VT LEG 270379.1
+Sec. 3d. 18 V.S.A. § 4631a is amended to read:
+§ 4631a. EXPENDITURES BY MANUFACTURERS OF PRESCRIBED
+PRODUCTS
+(a) As used in this section:
+* * *
+(5) “Gift” means:
+(A) Anything of value provided for free to a health care provider for
+free or to a member of the Green Mountain Care board established in chapter
+220 of this title; or
+(B) Except as otherwise provided in subdivision (a)(1)(A)(ii) of this
+section, any payment, food, entertainment, travel, subscription, advance,
+service, or anything else of value provided to a health care provider or to a
+member of the Green Mountain Care board established in chapter 220 of this
+title, unless:
+(i) it is an allowable expenditure as defined in subdivision (a)(1)
+of this section; or
+(ii) the health care provider or board member reimburses the cost
+at fair market value.
+* * *
+(b)(1) It is unlawful for any manufacturer of a prescribed product or any
+wholesale distributor of medical devices, or any agent thereof, to offer or give
+=== page 52 ===
+No. 48 Page 52 of 141
+VT LEG 270379.1
+any gift to a health care provider or to a member of the Green Mountain Care
+board established in chapter 220 of this title.
+* * *
+Sec. 3e. 18 V.S.A. § 4632 is amended to read:
+§ 4632. DISCLOSURE OF ALLOWABLE EXPENDITURES AND GIFTS
+BY MANUFACTURERS OF PRESCRIBED PRODUCTS
+(a)(1) Annually on or before October 1 of each year, every manufacturer of
+prescribed products shall disclose to the office of the attorney general for the
+fiscal year ending the previous June 30th the value, nature, purpose, and
+recipient information of:
+(A) any allowable expenditure or gift permitted under subdivision
+4631a(b)(2) of this title to any health care provider or to a member of the
+Green Mountain Care board established in chapter 220 of this title, except:
+(i) royalties and licensing fees as described in subdivision
+4631a(a)(1)(F) of this title;
+(ii) rebates and discounts for prescribed products provided in the
+normal course of business as described in subdivision 4631a(b)(2)(F) of this
+title;
+(iii) payments for clinical trials as described in subdivision
+4631a(a)(1)(C) of this title, which shall be disclosed after the earlier of the date
+of the approval or clearance of the prescribed product by the Food and Drug
+=== page 53 ===
+No. 48 Page 53 of 141
+VT LEG 270379.1
+Administration or two calendar years after the date the payment was made.
+For a clinical trial for which disclosure is delayed under this subdivision (iii),
+the manufacturer shall identify to the attorney general the clinical trial, the start
+date, and the web link to the clinical trial registration on the national clinical
+trials registry;
+(iv) interview expenses as described in subdivision 4631a(a)(1)(G)
+of this title; and
+(v) coffee or other snacks or refreshments at a booth at a
+conference or seminar.
+* * *
+(5) The office of the attorney general shall report annually on the
+disclosures made under this section to the general assembly and the governor
+on or before April 1. The report shall include:
+(A) Information on allowable expenditures and gifts required to be
+disclosed under this section, which shall be presented in both present
+information in aggregate form; and by selected types of health care providers
+or individual health care providers, as prioritized each year by the office; and
+showing the amounts expended on the Green Mountain Care board established
+in chapter 220 of this title.
+(B) Information on violations and enforcement actions brought
+pursuant to this section and section 4631a of this title.
+=== page 54 ===
+No. 48 Page 54 of 141
+VT LEG 270379.1
+(6) After issuance of the report required by subdivision (5) of this
+subsection and except as otherwise provided in subdivision (2)(A)(i) of this
+subsection, the office of the attorney general shall make all disclosed data used
+for the report publicly available and searchable through an Internet website.
+* * *
+* * * Public–Private Universal Health Care System * * *
+Sec. 4. 33 V.S.A. chapter 18 is added to read
+CHAPTER 18. PUBLIC–PRIVATE UNIVERSAL
+HEALTH CARE SYSTEM
+Subchapter 1. Vermont Health Benefit Exchange
+§ 1801. PURPOSE
+(a) It is the intent of the general assembly to establish a Vermont health
+benefit exchange which meets the policy established in 18 V.S.A. § 9401 and,
+to the extent allowable under federal law or a waiver of federal law, becomes
+the mechanism to create Green Mountain Care.
+(b) The purpose of the Vermont health benefit exchange is to facilitate the
+purchase of affordable, qualified health benefit plans in the individual and
+group markets in this state in order to reduce the number of uninsured and
+underinsured; to reduce disruption when individuals lose employer-based
+insurance; to reduce administrative costs in the insurance market; to contain
+=== page 55 ===
+No. 48 Page 55 of 141
+VT LEG 270379.1
+costs; to promote health, prevention, and healthy lifestyles by individuals; and
+to improve quality of health care.
+(c) Nothing in this chapter shall be construed to reduce, diminish, or
+otherwise infringe upon the benefits provided to eligible individuals under
+Medicare.
+§ 1802. DEFINITIONS
+For purposes of this subchapter:
+(1) “Affordable Care Act” means the federal Patient Protection and
+Affordable Care Act (Public Law 111-148), as amended by the federal Health
+Care and Education Reconciliation Act of 2010 (Public Law 111-152), and as
+further amended.
+(2) “Commissioner” means the commissioner of the department of
+Vermont health access.
+(3) “Health benefit plan” means a policy, contract, certificate, or
+agreement offered or issued by a health insurer to provide, deliver, arrange for,
+pay for, or reimburse any of the costs of health services. This term does not
+include coverage only for accident or disability income insurance, liability
+insurance, coverage issued as a supplement to liability insurance, workers’
+compensation or similar insurance, automobile medical payment insurance,
+credit-only insurance, coverage for on-site medical clinics, or other similar
+insurance coverage where benefits for health services are secondary or
+=== page 56 ===
+No. 48 Page 56 of 141
+VT LEG 270379.1
+incidental to other insurance benefits as provided under the Affordable Care
+Act. The term also does not include stand-alone dental or vision benefits;
+long-term care insurance; specific disease or other limited benefit coverage,
+Medicare supplemental health benefits, Medicare Advantage plans, and other
+similar benefits excluded under the Affordable Care Act.
+(4) “Health insurer” shall have the same meaning as in 18 V.S.A.
+§ 9402.
+(5) “Qualified employer” means an employer that:
+(A) has its principal place of business in this state and elects to
+provide coverage for its eligible employees through the Vermont health benefit
+exchange, regardless of where an employee resides; or
+(B) elects to provide coverage through the Vermont health benefit
+exchange for all of its eligible employees who are principally employed in
+this state.
+(6) “Qualified entity” means an entity with experience in individual and
+group health insurance, benefit administration, or other experience relevant to
+health benefit program eligibility, enrollment, or support.
+(7) “Qualified health benefit plan” means a health benefit plan which
+meets the requirements set forth in section 1806 of this title.
+(8) “Qualified individual” means an individual, including a minor, who
+is a Vermont resident and, at the time of enrollment:
+=== page 57 ===
+No. 48 Page 57 of 141
+VT LEG 270379.1
+(A) is not incarcerated, or is only incarcerated awaiting disposition of
+charges; and
+(B) is, or is reasonably expected to be during the time of enrollment,
+a citizen or national of the United States or an immigrant lawfully present in
+the United States as defined by federal law.
+§ 1803. VERMONT HEALTH BENEFIT EXCHANGE
+(a)(1) The department of Vermont health access shall establish the
+Vermont health benefit exchange, which shall be administered by the
+department in consultation with the advisory committee established in
+section 402 of this title.
+(2) The Vermont health benefit exchange shall be considered a division
+within the department of Vermont health access and shall be headed by a
+deputy commissioner as provided in 3 V.S.A. chapter 53.
+(b)(1)(A) The Vermont health benefit exchange shall provide qualified
+individuals and qualified employers with qualified health benefit plans,
+including the multistate plans required by the Affordable Care Act, with
+effective dates beginning on or before January 1, 2014. The Vermont health
+benefit exchange may contract with qualified entities or enter into
+intergovernmental agreements to facilitate the functions provided by the
+Vermont health benefit exchange.
+=== page 58 ===
+No. 48 Page 58 of 141
+VT LEG 270379.1
+(B) Prior to contracting with any health insurer, the Vermont health
+benefit exchange shall consider the insurer’s historic rate increase information
+required under section 1806 of this title, along with the information and the
+recommendations provided to the Vermont health benefit exchange by the
+commissioner of banking, insurance, securities, and health care administration
+under Section 2794(b)(1)(B) of the federal Public Health Service Act.
+(2) To the extent allowable under federal law, the Vermont health
+benefit exchange may offer health benefits to populations in addition to those
+eligible under Subtitle D of Title I of the Affordable Care Act, including:
+(A) to individuals and employers who are not qualified individuals or
+qualified employers as defined by this subchapter and by the Affordable
+Care Act;
+(B) Medicaid benefits to individuals who are eligible, upon approval
+by the Centers for Medicare and Medicaid Services and provided that
+including these individuals in the health benefit exchange would not reduce
+their Medicaid benefits;
+(C) Medicare benefits to individuals who are eligible, upon approval
+by the Centers for Medicare and Medicaid Services and provided that
+including these individuals in the health benefit exchange would not reduce
+their Medicare benefits; and
+(D) state employees and municipal employees, including teachers.
+=== page 59 ===
+No. 48 Page 59 of 141
+VT LEG 270379.1
+(3) To the extent allowable under federal law, the Vermont health
+benefit exchange may offer health benefits to employees for injuries arising out
+of or in the course of employment in lieu of medical benefits provided pursuant
+to 21 V.S.A. chapter 9 (workers’ compensation).
+(c)(1) The Vermont health benefit exchange may determine an appropriate
+method to provide a unified, simplified administration system for health
+insurers offering qualified health benefit plans. The exchange may include
+claims administration, benefit management, billing, or other components in the
+unified system and may achieve simplification by contracting with a single
+entity for administration and management of all qualified health benefit plans,
+by licensing or requiring the use of particular software, by requiring health
+insurers to conform to a standard set of systems and rules, or by another
+method determined by the commissioner.
+(2) The Vermont health benefit exchange may offer certain services,
+such as wellness programs and services designed to simplify administrative
+processes, to health insurers offering plans outside the exchange, to workers’
+compensation insurers, to employers, and to other entities.
+(d) The Vermont health benefit exchange may enter into
+information-sharing agreements with federal and state agencies and other state
+exchanges to carry out its responsibilities under this subchapter provided such
+agreements include adequate protections with respect to the confidentiality of
+=== page 60 ===
+No. 48 Page 60 of 141
+VT LEG 270379.1
+the information to be shared and provided such agreements comply with all
+applicable state and federal laws and regulations.
+§ 1804. QUALIFIED EMPLOYERS
+[Reserved.]
+§ 1805. DUTIES AND RESPONSIBILITIES
+The Vermont health benefit exchange shall have the following duties and
+responsibilities consistent with the Affordable Care Act:
+(1) Offering coverage for health services through qualified health
+benefit plans, including by creating a process for:
+(A) the certification, decertification, and recertification of qualified
+health benefit plans as described in section 1806 of this title;
+(B) enrolling qualified individuals in qualified health benefit plans,
+including through open enrollment periods as provided in the Affordable Care
+Act, and ensuring that individuals may transfer coverage between qualified
+health benefit plans and other sources of coverage as seamlessly as possible;
+(C) collecting premium payments made for qualified health benefit
+plans from employers and individuals on a pretax basis, including collecting
+premium payments from multiple employers of one individual for a single plan
+covering that individual; and
+(D) creating a simplified and uniform system for the administration
+of health benefits.
+=== page 61 ===
+No. 48 Page 61 of 141
+VT LEG 270379.1
+(2) Determining eligibility for and enrolling individuals in Medicaid,
+Dr. Dynasaur, VPharm, and VermontRx pursuant to chapter 19 of this title, as
+well as any other public health benefit program.
+(3) Creating and maintaining consumer assistance tools, including a
+website through which enrollees and prospective enrollees of qualified health
+benefit plans may obtain standardized comparative information on such plans,
+a toll-free telephone hotline to respond to requests for assistance, and
+interactive online communication tools, in a manner that complies with the
+Americans with Disabilities Act.
+(4) Creating standardized forms and formats for presenting health
+benefit options in the Vermont health benefit exchange, including the use of
+the uniform outline of coverage established under Section 2715 of the federal
+Public Health Services Act.
+(5) Assigning a quality and wellness rating to each qualified health
+benefit plan offered through the Vermont health benefit exchange and
+determining each qualified health benefit plan’s level of coverage in
+accordance with regulations issued by the U.S. Department of Health and
+Human Services.
+(6) Determining enrollee premiums and subsidies as required by the
+secretary of the U.S. Treasury or of the U.S. Department of Health and Human
+Services and informing consumers of eligibility for premiums and subsidies,
+=== page 62 ===
+No. 48 Page 62 of 141
+VT LEG 270379.1
+including by providing an electronic calculator to determine the actual cost of
+coverage after application of any premium tax credit under Section 36B of the
+Internal Revenue Code of 1986 and any cost-sharing reduction under Section
+1402 of the Affordable Care Act.
+(7) Transferring to the secretary of the U.S. Department of the Treasury
+the name and taxpayer identification number of each individual who was an
+employee of an employer but who was determined to be eligible for the
+premium tax credit under Section 36B of the Internal Revenue Code of 1986
+for the following reasons:
+(A) The employer did not provide minimum essential coverage; or
+(B) The employer provided the minimum essential coverage, but it
+was determined under Section 36B(c)(2)(C) of the Internal Revenue Code to
+be either unaffordable to the employee or not to provide the required minimum
+actuarial value.
+(8) Performing duties required by the secretary of the U.S. Department
+of Health and Human Services or the secretary of the U.S. Department of the
+Treasury related to determining eligibility for the individual responsibility
+requirement exemptions, including:
+(A) Granting a certification attesting that an individual is exempt
+from the individual responsibility requirement or from the penalty for violating
+that requirement, if there is no affordable qualified health benefit plan
+=== page 63 ===
+No. 48 Page 63 of 141
+VT LEG 270379.1
+available through the Vermont health benefit exchange or the individual’s
+employer for that individual or if the individual meets the requirements for any
+exemption from the individual responsibility requirement or from the penalty
+pursuant to Section 5000A of the Internal Revenue Code of 1986; and
+(B) Transferring to the secretary of the U.S. Department of the
+Treasury a list of the individuals who are issued a certification under
+subdivision (8)(A) of this section, including the name and taxpayer
+identification number of each individual.
+(9)(A) Transferring to the secretary of the U.S. Department of the
+Treasury the name and taxpayer identification number of each individual who
+notifies the Vermont health benefit exchange that he or she has changed
+employers and of each individual who ceases coverage under a qualified health
+benefit plan during a plan year and the effective date of that cessation; and
+(B) Communicating to each employer the name of each of its
+employees and the effective date of the cessation reported to the U.S.
+Department of the Treasury under this subdivision.
+(10) Establishing a navigator program as described in section 1807 of
+this title.
+(11) Reviewing the rate of premium growth within and outside the
+Vermont health benefit exchange.
+=== page 64 ===
+No. 48 Page 64 of 141
+VT LEG 270379.1
+(12) Consistent with federal law, crediting the amount of any free choice
+voucher provided pursuant to Section 10108 of the Affordable Care Act to the
+monthly premium of the plan in which a qualified employee is enrolled and
+collecting the amount credited from the offering employer.
+(13) Providing consumers and health care professionals with satisfaction
+surveys and other mechanisms for evaluating the performance of qualified
+health benefit plans and informing the commissioner of Vermont health access
+and the commissioner of banking, insurance, securities, and health care
+administration of such performance.
+(14) Ensuring consumers have easy and simple access to the relevant
+grievance and appeals processes pursuant to 8 V.S.A. chapter 107 and 3 V.S.A.
+§ 3090 (human services board).
+(15) Consulting with the advisory committee established in section 402
+of this title to obtain information and advice as necessary to fulfill the duties
+outlined in this subchapter.
+(16) Referring consumers to the office of health care ombudsman for
+assistance with grievances, appeals, and other issues involving the Vermont
+health benefit exchange.
+§ 1806. QUALIFIED HEALTH BENEFIT PLANS
+(a) Prior to contracting with a health insurer to offer a qualified health
+benefit plan, the commissioner shall determine that making the plan available
+=== page 65 ===
+No. 48 Page 65 of 141
+VT LEG 270379.1
+through the Vermont health benefit exchange is in the best interest of
+individuals and qualified employers in this state. In determining the best
+interest, the commissioner shall consider affordability; promotion of
+high-quality care, prevention, and wellness; promotion of access to health care;
+participation in the state’s health care reform efforts; and such other criteria as
+the commissioner, in his or her discretion, deems appropriate.
+(b) A qualified health benefit plan shall provide the following benefits:
+(1)(A) The essential benefits package required by Section 1302(a) of the
+Affordable Care Act and any additional benefits required by the secretary of
+human services by rule after consultation with the advisory committee
+established in section 402 of this title and after approval from the Green
+Mountain Care board established in 18 V.S.A. chapter 220.
+(B) Notwithstanding subdivision (1)(A) of this subsection, a health
+insurer or a stand-alone dental insurer, including a nonprofit dental service
+corporation, may offer a plan that provides only limited dental benefits, either
+separately or in conjunction with a qualified health benefit plan, if it meets the
+requirements of Section 9832(c)(2)(A) of the Internal Revenue Code and
+provides pediatric dental benefits meeting the requirements of Section
+1302(b)(1)(J) of the Affordable Care Act.
+(2) At least the silver level of coverage as defined by Section 1302 of
+the Affordable Care Act and the cost-sharing limitations for individuals
+=== page 66 ===
+No. 48 Page 66 of 141
+VT LEG 270379.1
+provided in Section 1302 of the Affordable Care Act, as well as any more
+restrictive cost-sharing requirements specified by the secretary of human
+services by rule after consultation with the advisory committee established in
+section 402 of this title and after approval from the Green Mountain Care
+board established in 18 V.S.A. chapter 220.
+(3) For qualified health benefit plans offered to employers, a deductible
+which meets the limitations provided in Section 1302 of the Affordable Care
+Act and any more restrictive deductible requirements specified by the secretary
+of human services by rule after consultation with the advisory committee
+established in section 402 of this title and after approval from the Green
+Mountain Care board established in 18 V.S.A. chapter 220.
+(c) A qualified health benefit plan shall meet the following minimum
+prevention, quality, and wellness requirements:
+(1) standards for marketing practices, network adequacy, essential
+community providers in underserved areas, appropriate services to enable
+access for underserved individuals or populations, accreditation, quality
+improvement, and information on quality measures for health benefit plan
+performance, as provided in Section 1311 of the Affordable Care Act and any
+more restrictive requirements provided by 8 V.S.A. chapter 107;
+(2) quality and wellness standards, including a requirement for joint
+quality improvement activities with other plans, as specified in rule by the
+=== page 67 ===
+No. 48 Page 67 of 141
+VT LEG 270379.1
+secretary of human services, after consultation with the commissioners of
+health and of banking, insurance, securities, and health care administration and
+with the advisory committee established in section 402 of this title; and
+(3) standards for participation in the Blueprint for Health as provided in
+18 V.S.A. chapter 13.
+(d) A health insurer offering a qualified health benefit plan shall use the
+uniform enrollment forms and descriptions of coverage provided by the
+commissioner of Vermont health access and the commissioner of banking,
+insurance, securities, and health care administration.
+(e)(1) A health insurer offering a qualified health benefit plan shall comply
+with the following insurance and consumer information requirements:
+(A)(i) Obtain premium approval through the rate review process
+provided in 8 V.S.A. chapter 107; and
+(ii) Submit to the commissioner of banking, insurance, securities,
+and health care administration a justification for any premium increase before
+implementation of that increase and prominently post this information on the
+health insurer’s website.
+(B) Offer at least one qualified health benefit plan at the silver level
+and at least one qualified health benefit plan at the gold level that meet the
+requirements of Section 1302 of the Affordable Care Act and any additional
+requirements specified by the secretary of human services by rule. In addition,
+=== page 68 ===
+No. 48 Page 68 of 141
+VT LEG 270379.1
+a health insurer may choose to offer one or more qualified health benefit plans
+at the platinum level that meet the requirements of Section 1302 of the
+Affordable Care Act and any additional requirements specified by the secretary
+of human services by rule.
+(C) Charge the same premium rate for a health benefit plan without
+regard to whether the plan is offered through the Vermont health benefit
+exchange and without regard to whether the plan is offered directly from the
+carrier or through an insurance agent.
+(D) Provide accurate and timely disclosure of information to the
+public and to the Vermont health benefit exchange relating to claims denials,
+enrollment data, rating practices, out-of-network coverage, enrollee and
+participant rights provided by Title I of the Affordable Care Act, and other
+information as required by the commissioner of Vermont health access or by
+the commissioner of banking, insurance, securities, and health care
+administration. The commissioner of banking, insurance, securities, and health
+care administration shall define, by rule, the acceptable time frame for
+provision of information in accordance with this subdivision.
+(E) Provide information in a timely manner to an individual, upon
+request, regarding the cost-sharing amounts for that individual’s health benefit
+plan.
+=== page 69 ===
+No. 48 Page 69 of 141
+VT LEG 270379.1
+(2) A health insurer offering a qualified health benefit plan shall comply
+with all other insurance requirements for health insurers as provided in
+8 V.S.A. chapter 107 and as specified by rule by the commissioner of banking,
+insurance, securities, and health care administration.
+(f) Consistent with Section 1311(e)(1)(B) of the Affordable Care Act, the
+Vermont health benefit exchange shall not exclude a health benefit plan:
+(1) on the basis that the plan is a fee-for-service plan;
+(2) through the imposition of premium price controls by the Vermont
+health benefit exchange; or
+(3) on the basis that the health benefit plan provides for treatments
+necessary to prevent patients’ deaths in circumstances the Vermont health
+benefit exchange determines are inappropriate or too costly.
+§ 1807. NAVIGATORS
+(a)(1) The Vermont health benefit exchange shall establish a navigator
+program to assist individuals and employers in enrolling in a qualified health
+benefit plan offered under the Vermont health benefit exchange. The Vermont
+health benefit exchange shall select individuals and entities qualified to serve
+as navigators and shall award grants to navigators for the performance of
+their duties.
+(2) The Vermont health benefit exchange shall ensure that navigators
+are available to provide assistance in person or through interactive technology
+=== page 70 ===
+No. 48 Page 70 of 141
+VT LEG 270379.1
+to individuals in all regions of the state in a manner that complies with the
+Americans with Disabilities Act.
+(3) Consistent with Section 1311(i)(4) of the Affordable Care Act,
+health insurers shall not serve as navigators, and no navigator shall receive any
+compensation from a health insurer in connection with enrolling individuals or
+employees in qualified health benefit plans.
+(b) Navigators shall have the following duties:
+(1) Conduct public education activities to raise awareness of the
+availability of qualified health benefit plans;
+(2) Distribute fair and impartial information concerning enrollment in
+qualified health benefit plans and concerning the availability of premium tax
+credits and cost-sharing reductions;
+(3) Facilitate enrollment in qualified health benefit plans, Medicaid,
+Dr. Dynasaur, VPharm, VermontRx, and other public health benefit programs;
+(4) Provide referrals to the office of health care ombudsman and any
+other appropriate agency for any enrollee with a grievance, complaint, or
+question regarding his or her health benefit plan, coverage, or a determination
+under that plan or coverage;
+(5) Provide information in a manner that is culturally and linguistically
+appropriate to the needs of the population being served by the Vermont health
+benefit exchange; and
+=== page 71 ===
+No. 48 Page 71 of 141
+VT LEG 270379.1
+(6) Distribute information to health care professionals, community
+organizations, and others to facilitate the enrollment of individuals who are
+eligible for Medicaid, Dr. Dynasaur, VPharm, VermontRx, other public health
+benefit programs, or the Vermont health benefit exchange in order to ensure
+that all eligible individuals are enrolled.
+§ 1808. FINANCIAL INTEGRITY
+(a) The Vermont health benefit exchange shall:
+(1) Keep an accurate accounting of all activities, receipts, and
+expenditures and submit this information annually as required by federal law;
+(2) Cooperate with the secretary of the U.S. Department of Health and
+Human Services or the inspector general of the U.S. Department of Health and
+Human Services in any investigation into the affairs of the Vermont health
+benefit exchange, any examination of the properties and records of the
+Vermont health benefit exchange, or any requirement for periodic reports in
+relation to the activities undertaken by the Vermont health benefit exchange.
+(b) In carrying out its activities under this subchapter, the Vermont health
+benefit exchange shall not use any funds intended for the administrative and
+operational expenses of the Vermont health benefit exchange for staff retreats,
+promotional giveaways, excessive executive compensation, or promotion of
+federal or state legislative or regulatory modifications.
+=== page 72 ===
+No. 48 Page 72 of 141
+VT LEG 270379.1
+§ 1809. PUBLICATION OF COSTS AND SATISFACTION SURVEYS
+(a) The Vermont health benefit exchange shall publish the average costs of
+licensing, regulatory fees, and any other payments required by the exchange, as
+well as the administrative costs of the exchange on a website intended to
+educate consumers about such costs. This information shall include
+information on monies lost to waste, fraud, and abuse.
+(b) The Vermont health benefit exchange shall publish the deidentified
+results of the satisfaction surveys and other evaluation mechanisms required
+pursuant to subdivision 1805(13) of this title on a website intended to enable
+consumers to compare the qualified health benefit plans offered through the
+exchange.
+§ 1810. RULES
+The secretary of human services may adopt rules pursuant to 3 V.S.A.
+chapter 25 as needed to carry out the duties and functions established in this
+subchapter.
+Subchapter 2. Green Mountain Care
+§ 1821. PURPOSE
+The purpose of Green Mountain Care is to provide, as a public good,
+comprehensive, affordable, high-quality, publicly financed health care
+coverage for all Vermont residents in a seamless and equitable manner
+=== page 73 ===
+No. 48 Page 73 of 141
+VT LEG 270379.1
+regardless of income, assets, health status, or availability of other health
+coverage. Green Mountain Care shall contain costs by:
+(1) providing incentives to residents to avoid preventable health
+conditions, promote health, and avoid unnecessary emergency room visits;
+(2) establishing innovative payment mechanisms to health care
+professionals, such as global payments;
+(3) encouraging the management of health services through the
+Blueprint for Health; and
+(4) reducing unnecessary administrative expenditures.
+§ 1822. IMPLEMENTATION; WAIVER
+(a) Green Mountain Care shall be implemented 90 days following the last
+to occur of:
+(1) Receipt of a waiver under Section 1332 of the Affordable Care Act
+pursuant to subsection (b) of this section.
+(2) Enactment of a law establishing the financing for Green Mountain
+Care.
+(3) Approval by the Green Mountain Care board of the initial Green
+Mountain Care benefit package pursuant to 18 V.S.A. § 9375.
+(4) Enactment of the appropriations for the initial Green Mountain Care
+benefit package proposed by the Green Mountain Care board pursuant to
+18 V.S.A. § 9375.
+=== page 74 ===
+No. 48 Page 74 of 141
+VT LEG 270379.1
+(5) A determination by the Green Mountain Care Board that each of the
+following conditions will be met:
+(A) Each Vermont resident covered by Green Mountain Care will
+receive benefits with an actuarial value of 80 percent or greater.
+(B) When implemented, Green Mountain Care will not have a
+negative aggregate impact on Vermont’s economy.
+(C) The financing for Green Mountain Care is sustainable.
+(D) Administrative expenses will be reduced.
+(E) Cost-containment efforts will result in a reduction in the rate of
+growth in Vermont’s per-capita health care spending.
+(F) Health care professionals will be reimbursed at levels sufficient to
+allow Vermont to recruit and retain high-quality health care professionals.
+(b) As soon as allowed under federal law, the secretary of administration
+shall seek a waiver to allow the state to suspend operation of the Vermont
+health benefit exchange and to enable Vermont to receive the appropriate
+federal fund contribution in lieu of the federal premium tax credits,
+cost-sharing subsidies, and small business tax credits provided in the
+Affordable Care Act. The secretary may seek a waiver from other provisions
+of the Affordable Care Act as necessary to ensure the operation of Green
+Mountain Care.
+=== page 75 ===
+No. 48 Page 75 of 141
+VT LEG 270379.1
+§ 1823. DEFINITIONS
+For purposes of this subchapter:
+(1) “Agency” means the agency of human services.
+(2) “Board” means the Green Mountain Care board established in
+18 V.S.A. chapter 220.
+(3) “CHIP funds” means federal funds available under Title XXI of the
+Social Security Act.
+(4) “Chronic care” means health services provided by a health care
+professional for an established clinical condition that is expected to last a year
+or more and that requires ongoing clinical management attempting to restore
+the individual to highest function, minimize the negative effects of the
+condition, prevent complications related to chronic conditions, engage in
+advanced care planning, and promote appropriate access to palliative care.
+Examples of chronic conditions include diabetes, hypertension, cardiovascular
+disease, cancer, asthma, pulmonary disease, substance abuse, mental illness,
+spinal cord injury, and hyperlipidemia.
+(5) “Chronic care management” means a system of coordinated health
+care interventions and communications for individuals with chronic conditions,
+including significant patient self-care efforts, systemic supports for licensed
+health care practitioners and their patients, and a plan of care emphasizing
+prevention of complications utilizing evidence-based practice guidelines,
+=== page 76 ===
+No. 48 Page 76 of 141
+VT LEG 270379.1
+patient empowerment strategies, and evaluation of clinical, humanistic, and
+economic outcomes on an ongoing basis with the goal of improving
+overall health.
+(6) “Health care professional” means an individual, partnership,
+corporation, facility, or institution licensed or certified or otherwise authorized
+by Vermont law to provide professional health services.
+(7) “Health service” means any treatment or procedure delivered by a
+health care professional to maintain an individual’s physical or mental health
+or to diagnose or treat an individual’s physical or mental health condition,
+including services ordered by a health care professional, chronic care
+management, preventive care, wellness services, and medically necessary
+services to assist in activities of daily living.
+(8) “Hospital” shall have the same meaning as in 18 V.S.A. § 1902 and
+may include hospitals located outside the state.
+(9) “Preventive care” means health services provided by health care
+professionals to identify and treat asymptomatic individuals who have risk
+factors or preclinical disease, but in whom the disease is not clinically
+apparent, including immunizations and screening, counseling, treatment, and
+medication determined by scientific evidence to be effective in preventing or
+detecting a condition.
+=== page 77 ===
+No. 48 Page 77 of 141
+VT LEG 270379.1
+(10) “Primary care” means health services provided by health care
+professionals specifically trained for and skilled in first-contact and continuing
+care for individuals with signs, symptoms, or health concerns, not limited by
+problem origin, organ system, or diagnosis, and shall include family planning,
+prenatal care, and mental health and substance abuse treatment.
+(11) “Secretary” means the secretary of human services.
+(12) “Vermont resident” means an individual domiciled in Vermont as
+evidenced by an intent to maintain a principal dwelling place in Vermont
+indefinitely and to return to Vermont if temporarily absent, coupled with an act
+or acts consistent with that intent. An individual shall not be considered to be
+a Vermont resident if he or she is 18 years of age or older and is claimed as a
+dependent on the tax return of a resident of another state.
+(13) “Wellness services” means health services, programs, or activities
+that focus on the promotion or maintenance of good health.
+§ 1824. ELIGIBILITY
+(a)(1) Upon implementation, all Vermont residents shall be eligible for
+Green Mountain Care, regardless of whether an employer offers health
+insurance for which they are eligible. The agency shall establish standards by
+rule for proof and verification of residency.
+(2)(A) Except as otherwise provided in subdivision (C) of this
+subdivision (2), if an individual is determined to be eligible for Green
+=== page 78 ===
+No. 48 Page 78 of 141
+VT LEG 270379.1
+Mountain Care based on information later found to be false, the agency shall
+make reasonable efforts to recover from the individual the amounts expended
+for his or her care. In addition, if the individual knowingly provided the false
+information, he or she shall be assessed an administrative penalty of not more
+than $5,000.00.
+(B) The agency shall include information on the Green Mountain
+Care application to provide notice to applicants of the penalty for knowingly
+providing false information as established in subdivision (2)(A) of this
+subsection.
+(C) An individual determined to be eligible for Green Mountain Care
+whose health services are paid in whole or in part by Medicaid funds who
+commits fraud shall be subject to the provisions of chapter 1, subchapter 5 of
+this title in lieu of the administrative penalty described in subdivision (A) of
+this subdivision (2).
+(D) Nothing in this section shall be construed to limit or restrict
+prosecutions under any applicable provision of law.
+(3)(A) Except as otherwise provided in this section, a person who is not
+a Vermont resident shall not be eligible for Green Mountain Care.
+(B) Except as otherwise provided in subdivision (C) of this
+subdivision (3), an individual covered under Green Mountain Care shall inform
+the agency within 60 days of becoming a resident of another state.
+=== page 79 ===
+No. 48 Page 79 of 141
+VT LEG 270379.1
+An individual who obtains or attempts to obtain health services through Green
+Mountain Care more than 60 days after becoming a resident of another state
+shall reimburse the agency for the amounts expended for his or her care and
+shall be assessed an administrative penalty of not more than $1,000.00 for a
+first violation and not more than $2,000.00 for any subsequent violation.
+(C) An individual whose health services are paid in whole or in part
+by Medicaid funds who obtains or attempts to obtain health services through
+Green Mountain Care more than 60 days after becoming a resident of another
+state shall be subject to the provisions of chapter 1, subchapter 5 of this title in
+lieu of the administrative penalty described in subdivision (B) of this
+subdivision (3).
+(D) Nothing in this section shall be construed to limit or restrict
+prosecutions under any applicable provision of law.
+(b) The agency shall establish a procedure to enroll residents in Green
+Mountain Care.
+(c)(1) The agency shall establish by rule a process to allow health care
+professionals to presume an individual is eligible based on the information
+provided on a simplified application.
+(2) After submission of the application, the agency shall collect
+additional information as necessary to determine whether Medicaid, Medicare,
+CHIP, or other federal funds may be applied toward the cost of the health
+=== page 80 ===
+No. 48 Page 80 of 141
+VT LEG 270379.1
+services provided, but shall provide payment for any health services received
+by the individual from the time the application is submitted.
+(3) If an individual presumed eligible for Green Mountain Care pursuant
+to subdivision (1) of this subsection is later determined not to be eligible for
+the program, the agency shall make reasonable efforts to recover from the
+individual the amounts expended for his or her care.
+(d) The agency shall adopt rules pursuant to 3 V.S.A. chapter 25 to ensure
+that Vermont residents who are temporarily out of the state and who intend to
+return and reside in Vermont remain eligible for Green Mountain Care while
+outside Vermont.
+(e) A nonresident visiting Vermont, or his or her insurer, shall be billed for
+all services received. The agency may enter into intergovernmental
+arrangements or contracts with other states and countries to provide reciprocal
+coverage for temporary visitors and shall adopt rules pursuant to 3 V.S.A.
+chapter 25 to carry out the purposes of this subsection.
+§ 1825. HEALTH BENEFITS
+(a)(1) Green Mountain Care shall include primary care, preventive care,
+chronic care, acute episodic care, and hospital services and shall include at
+least the same covered services as those included in the benefit package in
+effect for the lowest cost Catamount Health plan offered on January 1, 2011.
+=== page 81 ===
+No. 48 Page 81 of 141
+VT LEG 270379.1
+(2) It is the intent of the general assembly that Green Mountain Care
+provide a level of coverage that includes benefits that are actuarially equivalent
+to at least 87 percent of the full actuarial value of the covered health services.
+(3) The Green Mountain Care board shall consider whether to impose
+cost-sharing requirements; if so, whether to make the cost-sharing
+requirements income-sensitized; and the impact of any cost-sharing
+requirements on an individual’s ability to access care. The board shall
+consider waiving any cost-sharing requirement for evidence-based primary and
+preventive care; for palliative care; and for chronic care for individuals
+participating in chronic care management and, where circumstances warrant,
+for individuals with chronic conditions who are not participating in a chronic
+care management program.
+(4)(A) The Green Mountain Care board established in 18 V.S.A. chapter
+220 shall consider whether to include dental, vision, and hearing benefits in the
+Green Mountain Care benefit package.
+(B) The Green Mountain Care board shall consider whether to
+include long-term care benefits in the Green Mountain Care benefit package.
+(5) Green Mountain Care shall not limit coverage of preexisting
+conditions.
+=== page 82 ===
+No. 48 Page 82 of 141
+VT LEG 270379.1
+(6) The Green Mountain Care board shall approve the benefit package
+and present it to the general assembly as part of its recommendations for the
+Green Mountain Care budget.
+(b)(1)(A) For individuals eligible for Medicaid or CHIP, the benefit
+package shall include the benefits required by federal law, as well as any
+additional benefits provided as part of the Green Mountain Care benefit
+package.
+(B) Upon implementation of Green Mountain Care, the benefit
+package for individuals eligible for Medicaid or CHIP shall also include any
+optional Medicaid benefits pursuant to 42 U.S.C. § 1396d or services
+covered under the state plan for CHIP as provided in 42 U.S.C. § 1397cc for
+which these individuals are eligible on January 1, 2014. Beginning with the
+second year of Green Mountain Care and going forward, the Green Mountain
+Care board may, consistent with federal law, modify these optional benefits, as
+long as at all times the benefit package for these individuals contains at least
+the benefits described in subdivision (A) of this subdivision (b)(1).
+(2) For children eligible for benefits paid for with Medicaid funds, the
+benefit package shall include early and periodic screening, diagnosis, and
+treatment services as defined under federal law.
+(3) For individuals eligible for Medicare, the benefit package shall
+include the benefits provided to these individuals under federal law, as well as
+=== page 83 ===
+No. 48 Page 83 of 141
+VT LEG 270379.1
+any additional benefits provided as part of the Green Mountain Care benefit
+package.
+§ 1826. BLUEPRINT FOR HEALTH
+(a) It is the intent of the general assembly that within five years following
+the implementation of Green Mountain Care, each individual enrolled in Green
+Mountain Care will have a primary health care professional who is involved
+with the Blueprint for Health established in 18 V.S.A. chapter 13.
+(b) Consistent with the provisions of 18 V.S.A. chapter 13, if an individual
+enrolled in Green Mountain Care does not have a medical home through the
+Blueprint for Health, the individual may choose a primary health care
+professional who is not participating in the Blueprint to serve as the
+individual’s primary care point of contact.
+(c) The agency shall determine a method to approve a specialist as a
+patient’s primary health care professional for the purposes of establishing a
+medical home or primary care point of contact for the patient. The agency
+shall approve a specialist as a patient’s medical home or primary care point of
+contact on a case-by-case basis and only for a patient who receives the
+majority of his or her health care from that specialist.
+(d) Green Mountain Care shall be integrated with the Blueprint for Health
+established in 18 V.S.A. chapter 13.
+=== page 84 ===
+No. 48 Page 84 of 141
+VT LEG 270379.1
+§ 1827. ADMINISTRATION; ENROLLMENT
+(a)(1) The agency shall, under an open bidding process, solicit bids from
+and award contracts to public or private entities for administration of certain
+elements of Green Mountain Care, such as claims administration and provider
+relations.
+(2) The agency shall ensure that entities awarded contracts pursuant to
+this subsection do not have a financial incentive to restrict individuals’ access
+to health services. The agency may establish performance measures that
+provide incentives for contractors to provide timely, accurate, transparent, and
+courteous services to individuals enrolled in Green Mountain Care and to
+health care professionals.
+(3) When considering contract bids pursuant to this subsection, the
+agency shall consider the interests of the state relating to the economy, the
+location of the entity, and the need to maintain and create jobs in Vermont.
+The agency may utilize an econometric model to evaluate the net costs of each
+contract bid.
+(b) Nothing in this subchapter shall require an individual with health
+coverage other than Green Mountain Care to terminate that coverage.
+(c) An individual enrolled in Green Mountain Care may elect to maintain
+supplemental health insurance if the individual so chooses.
+=== page 85 ===
+No. 48 Page 85 of 141
+VT LEG 270379.1
+(d) Except for cost-sharing, Vermonters shall not be billed any additional
+amount for health services covered by Green Mountain Care.
+(e) The agency shall seek permission from the Centers for Medicare and
+Medicaid Services to be the administrator for the Medicare program in
+Vermont. If the agency is unsuccessful in obtaining such permission, Green
+Mountain Care shall be the secondary payer with respect to any health service
+that may be covered in whole or in part by Title XVIII of the Social Security
+Act (Medicare).
+(f) Green Mountain Care shall be the secondary payer with respect to any
+health service that may be covered in whole or in part by any other health
+benefit plan, including private health insurance, retiree health benefits, or
+federal health benefit plans offered by the Veterans’ Administration, by the
+military, or to federal employees.
+(g) The agency may seek a waiver under Section 1115 of the Social
+Security Act to include Medicaid and under Section 2107(e)(2)(A) of the
+Social Security Act to include CHIP in Green Mountain Care. If the agency is
+unsuccessful in obtaining one or both of these waivers, Green Mountain Care
+shall be the secondary payer with respect to any health service that may be
+covered in whole or in part by Title XIX of the Social Security Act (Medicaid)
+or Title XXI of the Social Security Act (CHIP), as applicable.
+=== page 86 ===
+No. 48 Page 86 of 141
+VT LEG 270379.1
+(h) Any prescription drug coverage offered by Green Mountain Care shall
+be consistent with the standards and procedures applicable to the pharmacy
+best practices and cost control program established in sections 1996 and 1998
+of this title.
+(i) Green Mountain Care shall maintain a robust and adequate network of
+health care professionals located in Vermont or regularly serving Vermont
+residents, including mental health and substance abuse professionals. The
+agency shall contract with outside entities as needed to allow for the
+appropriate portability of coverage under Green Mountain Care for Vermont
+residents who are temporarily out of the state.
+(j) The agency shall make available the necessary information, forms,
+access to eligibility or enrollment systems, and billing procedures to health
+care professionals to ensure immediate enrollment for individuals in Green
+Mountain Care at the point of service or treatment.
+(k) An individual aggrieved by an adverse decision of the agency or plan
+administrator may appeal to the human services board as provided in 3 V.S.A.
+§ 3090.
+(l) The agency, in collaboration with the department of banking, insurance,
+securities, and health care administration, shall monitor the extent to which
+residents of other states move to Vermont for the purpose of receiving health
+services and the impact, positive or negative, of any such migration on
+=== page 87 ===
+No. 48 Page 87 of 141
+VT LEG 270379.1
+Vermont’s health care system and on the state’s economy, and make
+appropriate recommendations to the general assembly based on its findings.
+§ 1828. BUDGET PROPOSAL
+The Green Mountain Care board, in collaboration with the agencies of
+administration and of human services, shall be responsible for developing each
+year a three-year Green Mountain Care budget for proposal to the general
+assembly and to the governor, to be adjusted annually in response to realized
+revenues and expenditures, that reflects any modifications to the benefit
+package and includes recommended appropriations, revenue estimates, and
+necessary modifications to tax rates and other assessments.
+§ 1829. GREEN MOUNTAIN CARE FUND
+(a) The Green Mountain Care fund is established in the state treasury as a
+special fund to be the single source to finance health care coverage for Green
+Mountain Care.
+(b) Into the fund shall be deposited:
+(1) transfers or appropriations from the general fund, authorized by the
+general assembly;
+(2) if authorized by a waiver from federal law, federal funds for
+Medicaid, Medicare, and the Vermont health benefit exchange established in
+chapter 18, subchapter 1 of this title; and
+=== page 88 ===
+No. 48 Page 88 of 141
+VT LEG 270379.1
+(3) the proceeds from grants, donations, contributions, taxes, and any
+other sources of revenue as may be provided by statute or by rule.
+(c) The fund shall be administered pursuant to 32 V.S.A. chapter 7,
+subchapter 5, except that interest earned on the fund and any remaining
+balance shall be retained in the fund. The agency shall maintain records
+indicating the amount of money in the fund at any time.
+(d) All monies received by or generated to the fund shall be used only for:
+(1) the administration and delivery of health services covered by Green
+Mountain Care as provided in this subchapter; and
+(2) expenses related to the duties and operation of the Green Mountain
+Care board pursuant to 18 V.S.A. chapter 220.
+§ 1830. COLLECTIVE BARGAINING RIGHTS
+Nothing in this subchapter shall be construed to limit the ability of
+collective bargaining units to negotiate for coverage of health services pursuant
+to 3 V.S.A. § 904 or any other provision of law.
+§ 1831. PUBLIC PROCESS
+The agency of human services shall provide a process for soliciting public
+input on the Green Mountain Care benefit package on an ongoing basis,
+including a mechanism by which members of the public may request inclusion
+of particular benefits or services. The process may include receiving written
+=== page 89 ===
+No. 48 Page 89 of 141
+VT LEG 270379.1
+comments on proposed new or amended rules or holding public hearings
+or both.
+§ 1832. RULEMAKING
+The secretary of human services may adopt rules pursuant to 3 V.S.A.
+chapter 25 to carry out the purposes of this subchapter. When establishing
+rules relating to the Green Mountain Care benefit package, the secretary shall
+ensure that the rules are consistent with the benefit package defined by the
+Green Mountain Care board pursuant to section 1825 of this title and to
+18 V.S.A. chapter 220.
+Sec. 4a. HOUSEHOLD HEALTH INSURANCE SURVEY
+The department of banking, insurance, securities, and health care
+administration shall include questions on its household health insurance survey
+that enable the department to determine the extent to which residents of other
+states move to Vermont for the purpose of receiving health services. The
+department shall provide its findings to the agency of human services to enable
+the agency to monitor migration into the state as required in 33 V.S.A. § 1827.
+Sec. 4b. EXCHANGE IMPLEMENTATION
+(a) The commissioner of Vermont health access shall make a reasonable
+effort to maintain contracts with at least two health insurers to provide
+qualified health benefit plans, in addition to the multistate plans required by the
+Affordable Care Act, in the Vermont health benefit exchange in 2014 if at least
+=== page 90 ===
+No. 48 Page 90 of 141
+VT LEG 270379.1
+two health insurers are interested in participating and meet the requirements of
+33 V.S.A. § 1806; provided that the commissioner shall not be required to
+solicit participation by insurers outside the state in order to contract with two
+insurers.
+(b) Nothing in this section shall be construed to require the commissioner
+to contract with a health insurer to provide a plan that does not meet the
+requirements specified in 33 V.S.A. chapter 18, subchapter 1.
+Sec. 4c. HEALTH COVERAGE FINDINGS AND STUDY
+(a) The general assembly finds that:
+(1) Federal law requires certain health care providers to provide
+emergency treatment to all individuals, regardless of immigration status.
+(2) Federal law prohibits coverage of undocumented immigrants
+through Medicaid and through the Vermont health benefit exchange. Federal
+funds would not be available to cover undocumented immigrants through
+Green Mountain Care.
+(3) Federal law requires that employers provide health insurance
+coverage for certain immigrants working seasonally in Vermont. Dairy
+workers, however, are not included in this category because they are
+year-round workers.
+=== page 91 ===
+No. 48 Page 91 of 141
+VT LEG 270379.1
+(4) Some employers of undocumented immigrants pay employment
+taxes for these workers, and these workers do not derive health care benefits
+from the government.
+(b) No later than January 15, 2013, the Green Mountain Care board shall
+examine and report to the general assembly on:
+(1) The potential costs of services provided to undocumented
+immigrants by health care professionals if these immigrants are not covered
+through Green Mountain Care, including any increased costs of care delayed
+due to the lack of coverage for primary care; and
+(2) The potential costs of providing coverage for health services to
+undocumented immigrants through Green Mountain Care, including any state
+funds necessary to fund the services.
+(c) The secretary of administration or designee shall work with Vermont’s
+congressional delegation to:
+(1) provide a mechanism for legal status under federal immigration law
+for nonseasonal farm workers; and
+(2) clarify any impacts of covering or not covering undocumented
+immigrants through Green Mountain Care on the receipt of a waiver under
+section 1332 of the Affordable Care Act.
+=== page 92 ===
+No. 48 Page 92 of 141
+VT LEG 270379.1
+Sec. 5. 33 V.S.A. § 401 is amended to read:
+§ 401. COMPOSITION OF DEPARTMENT
+The department of Vermont health access, created under 3 V.S.A. § 3088,
+shall consist of the commissioner of Vermont health access, the medical
+director, a health care eligibility unit; and all divisions within the department,
+including the divisions of managed care; health care reform; the Vermont
+health benefit exchange; and Medicaid policy, fiscal, and support services.
+Sec. 6. TRANSFER OF POSITIONS; HEALTH CARE ELIGIBILITY UNIT
+After March 15, 2012 but not later than July 1, 2013, the secretary of
+administration shall transfer to and place under the supervision of the
+commissioner of Vermont health access all employees, professional and
+support staff, consultants, positions, and all balances of all appropriation
+amounts for personal services and operating expenses for the administration of
+health care eligibility currently contained in the department for children and
+families. No later than January 15, 2012, the secretary shall provide to the
+house committees on health care and on human services and the senate
+committee on health and welfare a plan for transferring the positions and
+funds.
+=== page 93 ===
+No. 48 Page 93 of 141
+VT LEG 270379.1
+* * * Consumer and Health Care Professional
+Advisory Committee * * *
+Sec. 7. 33 V.S.A. § 402 is added to read:
+§ 402. MEDICAID AND EXCHANGE ADVISORY COMMITTEE
+(a) A Medicaid and exchange advisory committee is created for the purpose
+of advising the commissioner of Vermont health access with respect to policy
+development and program administration for the Vermont health benefit
+exchange, Medicaid, and Medicaid-funded programs, consistent with the
+requirements of federal law.
+(b)(1) The commissioner of Vermont health access shall appoint members
+of the advisory committee established by this section, who shall serve
+staggered three-year terms. The total membership of the advisory committee
+shall be 22 members. The commissioner may remove members of the
+committee who fail to attend three consecutive meetings and may appoint
+replacements. The commissioner may reappoint members to serve more than
+one term.
+(2)(A) The commissioner of Vermont health access shall appoint one
+representative of health insurers licensed to do business in Vermont to serve on
+the advisory committee. The commissioner of health shall also serve on the
+advisory committee.
+=== page 94 ===
+No. 48 Page 94 of 141
+VT LEG 270379.1
+(B) Of the remaining members of the advisory committee,
+one-quarter of the members shall be from each of the following constituencies:
+(i) beneficiaries of Medicaid or Medicaid-funded programs.
+(ii) individuals, self-employed individuals, and representatives of
+small businesses eligible for or enrolled in the Vermont health benefit
+exchange.
+(iii) advocates for consumer organizations.
+(iv) health care professionals and representatives from a broad
+range of health care professionals.
+(3) Members whose participation is not supported through their
+employment or association shall receive per diem compensation pursuant to
+32 V.S.A. § 1010 and reimbursement of travel expenses. In addition, members
+who are eligible for Medicaid or who are enrolled in a qualified health benefit
+plan in the Vermont health benefit exchange and whose income does not
+exceed 300 percent of the federal poverty level shall also receive
+reimbursement of expenses, including costs of child care, personal assistance
+services, and any other service necessary for participation in the advisory
+committee and approved by the commissioner.
+(c)(1) The advisory committee shall have an opportunity to review and
+comment on agency policy initiatives pertaining to quality improvement
+initiatives and to health care benefits and eligibility for individuals receiving
+=== page 95 ===
+No. 48 Page 95 of 141
+VT LEG 270379.1
+services through Medicaid, programs funded with Medicaid funds under a
+Section 1115 waiver, or the Vermont health benefit exchange. It also shall
+have the opportunity to comment on proposed rules prior to commencement of
+the rulemaking process pursuant to 3 V.S.A. chapter 25 and on waiver or
+waiver amendment applications prior to submission to the Centers for
+Medicare and Medicaid Services.
+(2) Prior to the annual budget development process, the department of
+Vermont health access shall engage the advisory committee in setting
+priorities, including consideration of scope of benefits, beneficiary eligibility,
+health care professional reimbursement rates, funding outlook, financing
+options, and possible budget recommendations.
+(d)(1) The advisory committee shall make policy recommendations on
+proposals of the department of Vermont health access to the department, the
+Green Mountain Care board, the health access oversight committee, the senate
+committee on health and welfare, and the house committees on health care and
+on human services. When the general assembly is not in session, the
+commissioner shall respond in writing to these recommendations, a copy of
+which shall be provided to the members of each of the legislative committees
+of jurisdiction and to the Green Mountain Care board.
+=== page 96 ===
+No. 48 Page 96 of 141
+VT LEG 270379.1
+(2) During the legislative session, the commissioner shall provide the
+advisory committee at regularly scheduled meetings with updates on the status
+of policy and budget proposals.
+(e) The commissioner shall convene the advisory committee at least 10
+times during each calendar year. If at least one-third of the members of the
+advisory committee so choose, the members may convene up to four additional
+meetings per calendar year on their own initiative by sending a request to the
+commissioner. The department shall provide the committee with staffing and
+independent technical assistance as needed to enable it to make effective
+recommendations.
+(f) A majority of the members of the committee shall constitute a quorum,
+and all action shall be taken upon a majority vote of the members present and
+voting.
+Sec. 8. INTEGRATION PLAN
+(a) No later than January 15, 2012, the secretary of administration or
+designee shall present a factual report and make recommendations to the house
+committee on health care and the senate committees on health and welfare and
+on finance on the following issues:
+(1) How to fully integrate or align Medicaid, Medicare, private
+insurance, associations, state employees, and municipal employees into or with
+=== page 97 ===
+No. 48 Page 97 of 141
+VT LEG 270379.1
+the Vermont health benefit exchange and Green Mountain Care established in
+33 V.S.A. chapter 18, including:
+(A) Whether it is advisable to establish a basic health program for
+individuals with incomes above 133 percent of the federal poverty level (FPL)
+and at or below 200 percent of FPL pursuant to Section 1331 of the Patient
+Protection and Affordable Care Act (Public Law 111-148), as amended by the
+federal Health Care and Education Reconciliation Act of 2010 (Public Law
+111-152), and as further amended (“Affordable Care Act”), to ensure that the
+health coverage is comprehensive and affordable for this population.
+(B)(i) The statutory changes necessary to integrate the private
+insurance markets with the Vermont health benefit exchange, including
+whether to impose a moratorium on the issuance of new association policies
+prior to 2014, as well as whether to continue exemptions for associations
+pursuant to 8 V.S.A. § 4080a(h)(3) after implementation of the Vermont health
+benefit exchange and if so, what criteria to use.
+(ii) The advantages and disadvantages for the state, for the
+Vermont health benefit exchange, for employers, and for employees, of
+defining a small employer for purposes of the Vermont health benefit exchange
+for the period from January 1, 2014 through December 31, 2015 as an
+employer with up to 50 employees or as an employer with up to 100
+employees, including an analysis of the impacts of the definition on teachers,
+=== page 98 ===
+No. 48 Page 98 of 141
+VT LEG 270379.1
+municipal employees, and associations. For purposes of the analysis pursuant
+to this subdivision, “employer” means all for-profit entities, nonprofit entities,
+public entities, and individuals who are self-employed.
+(iii) The advantages and disadvantages for the state, for the
+Vermont health benefit exchange, for employers, for employees, and for
+individuals of allowing qualified health benefit plans to be sold to individuals
+and small groups both inside and outside the Vermont health benefit exchange.
+(iv) The advantages and disadvantages for the state, for the
+Vermont health benefit exchange, for employers, for employees, and for
+individuals of allowing nonqualified health benefit plans that comply with the
+provisions of the Affordable Care Act to be sold to individuals and small
+groups outside the exchange.
+(C) In consultation with the Green Mountain Care board, the design
+of a common benefit package for the Vermont health benefit exchange. When
+creating the common benefit package, the secretary shall compare the essential
+benefits package defined under federal regulations implementing the
+Affordable Care Act with Vermont’s insurance mandates, consider the
+affordability of cost-sharing both with and without the cost-sharing subsidy
+provided under federal regulations implementing the Affordable Care Act, and
+determine the feasibility and appropriate design of cost-sharing amounts for
+evidence-based health services with proven effectiveness.
+=== page 99 ===
+No. 48 Page 99 of 141
+VT LEG 270379.1
+(D) The impact of the availability of supplemental insurance plans on
+offerings in the small and individual group markets.
+(E) The potential for purchasing prescription drugs in Green
+Mountain Care through Medicaid, the 340B drug pricing program, or another
+bulk purchasing mechanism.
+(2) Once Green Mountain Care is implemented, whether to allow
+employers and individuals to purchase coverage for supplemental health
+services from Green Mountain Care or to allow private insurers to provide
+supplemental insurance plans.
+(3) How to enable parents to make coverage under Green Mountain
+Care available to an adult child up to age 26 who would not otherwise be
+eligible for coverage under the program, including a recommendation on the
+amount of and mechanism for collecting a financial contribution for such
+coverage and information on the difference in costs to the system between
+allowing all adult children up to age 26 to be eligible and limiting eligibility to
+adult children attending a college or university.
+(4) whether it is necessary or advisable to implement a financial reserve
+requirement or reinsurance mechanism to reduce the state’s exposure to
+financial risk in the operation of Green Mountain Care; if so, how to
+accomplish such implementation; and the impact, if any, on the state’s bond
+rating.
+=== page 100 ===
+No. 48 Page 100 of 141
+VT LEG 270379.1
+(5) How to fully align the administration of Medicaid, Medicare,
+Dr. Dynasaur, the Catamount Health premium assistance program, the
+Vermont health access program, and other public or private health benefit
+programs in order to simplify the administrative aspects of health care
+delivery. In his or her recommendations, the secretary or designee shall
+estimate the cost-savings associated with such administrative simplification
+and identify any federal waivers or other agreements needed to accomplish the
+purposes of this subdivision (5).
+(b) The commissioner of labor, in consultation with the commissioner of
+Vermont health access, the commissioner of banking, insurance, securities, and
+health care administration, and interested stakeholders, shall evaluate the
+feasibility of integrating or aligning Vermont’s workers’ compensation system
+with Green Mountain Care, including providing any covered services in
+addition to those in the Green Mountain Care benefit package that may be
+appropriate for injuries arising out of and in the course of employment. No
+later than January 15, 2012, the commissioner of labor shall report the results
+of the evaluation and, if integration or alignment has been found to be feasible,
+make recommendations on how to achieve it.
+(c) The commissioner of Vermont health access, in consultation with the
+commissioner of banking, insurance, securities, and health care administration;
+the commissioner of taxes; and the commissioner of motor vehicles shall
+=== page 101 ===
+No. 48 Page 101 of 141
+VT LEG 270379.1
+review the requirements for maintaining minimum essential coverage under
+Section 1501 of the Affordable Care Act, including the enforcement
+mechanisms provided in that act. No later than January 15, 2012, the
+commissioner of Vermont health access shall recommend to the house
+committee on health care and the senate committees on finance and on health
+and welfare any additional enforcement mechanisms necessary to ensure that
+most, if not all, Vermonters will obtain sufficient health benefit coverage.
+Sec. 9. FINANCING PLANS
+(a) The secretary of administration or designee shall recommend two plans
+for sustainable financing to the house committees on health care and on ways
+and means and the senate committees on health and welfare and on finance no
+later than January 15, 2013.
+(1) One plan shall recommend the amounts and necessary mechanisms
+to finance any initiatives which must be implemented by January 1, 2014 in
+order to provide coverage to all Vermonters in the absence of a waiver from
+certain federal health care reform provisions established in Section 1332 of the
+Patient Protection and Affordable Care Act (Public Law 111-148), as amended
+by the federal Health Care and Education Reconciliation Act of 2010 (Public
+Law 111-152), and as further amended (“Affordable Care Act”).
+(2) The second plan shall recommend the amounts and necessary
+mechanisms to finance Green Mountain Care and any systems improvements
+=== page 102 ===
+No. 48 Page 102 of 141
+VT LEG 270379.1
+needed to achieve a public-private universal health care system. The secretary
+shall recommend whether nonresidents employed by Vermont businesses
+should be eligible for Green Mountain Care and solutions to other cross-border
+issues.
+(b) In developing both financing plans, the secretary shall consider the
+following:
+(1) all financing sources, including adjustments to the income tax, a
+payroll tax, consumption taxes, provider assessments required under 33 V.S.A.
+chapter 19, the employer assessment required by 21 V.S.A. chapter 25, other
+new or existing taxes, and additional options as determined by the secretary;
+(2) the impacts of the various financing sources, including levels of
+deductibility of any tax or assessment system contemplated and consistency
+with the principles of equity expressed in 18 V.S.A. § 9371;
+(3) issues involving federal law and taxation;
+(4) impacts of tax system changes:
+(A) on individuals, households, businesses, public sector entities, and
+the nonprofit community, including the circumstances under which a particular
+tax change may result in the potential for double payments, such as premiums
+and tax obligations;
+(B) over time, on changing revenue needs; and
+=== page 103 ===
+No. 48 Page 103 of 141
+VT LEG 270379.1
+(C) for a transitional period, while the tax system and health care cost
+structure are changing;
+(5) growth in health care spending relative to needs and capacity to pay;
+(6) anticipated federal funds that may be used for health services and
+how to maximize the amount of federal funding available for this purpose;
+(7) the amounts required to maintain existing state insurance benefit
+requirements and other appropriate considerations in order to determine the
+state contribution toward federal premium tax credits available in the Vermont
+health benefit exchange pursuant to the Affordable Care Act;
+(8) additional funds needed to support recruitment and retention
+programs for high-quality health care professionals in order to address the
+shortage of primary care professionals and other specialty care professionals in
+this state;
+(9) additional funds needed to provide coverage for the uninsured who
+are eligible for Medicaid, Dr. Dynasaur, and the Vermont health benefit
+exchange in 2014;
+(10) funding mechanisms to ensure that operations of both the Vermont
+health benefit exchange and Green Mountain Care are self-sustaining;
+(11) how to maximize the flow of federal funds to the state for
+individuals eligible for Medicare, such as enrolling eligible individuals in
+=== page 104 ===
+No. 48 Page 104 of 141
+VT LEG 270379.1
+Medicare and paying or supplementing the cost-sharing requirements on their
+behalf;
+(12) the use of financial or other incentives to encourage healthy
+lifestyles and patient self-management for individuals enrolled in Green
+Mountain Care;
+(13) preserving retirement health benefits while enabling retirees to
+participate in Green Mountain Care;
+(14) the implications of Green Mountain Care on funds set aside to pay
+for future retiree health benefits; and
+(15) changes in federal health funding through reduced payments to
+health care professionals or through limitations or restrictions on the
+availability of grant funding or federal matching funds available to states
+through the Medicaid program.
+(c) In developing the financing plan for Green Mountain Care, the secretary
+of administration or designee shall consult with interested stakeholders,
+including health care professionals, employers, and members of the public, to
+determine the potential impact of various financing sources on Vermont
+businesses and on the state’s economy and economic climate. No later than
+February 1, 2012, the secretary or designee shall report his or her findings on
+the impact on businesses and the economy and any related recommendations to
+the house committees on health care and on commerce and to the senate
+=== page 105 ===
+No. 48 Page 105 of 141
+VT LEG 270379.1
+committees on health and welfare, on finance and on economic development,
+housing and general affairs.
+(d) In addition to the consultation required by subsection (c) of this section,
+in developing the financing plan for Green Mountain Care, the secretary of
+administration or designee shall solicit input from interested stakeholders,
+including health care professionals, employers, and members of the public and
+shall provide opportunities for public engagement in the design of the
+financing plan.
+(e) The secretary of administration or designee shall consider strategies to
+address individuals who receive health coverage through the Veterans
+Administration, TRICARE, the Federal Employees Health Benefits Program,
+the government of a foreign nation, or from another federal governmental or
+foreign source.
+Sec. 10. HEALTH INFORMATION TECHNOLOGY PLAN
+(a) The secretary of administration or designee, in consultation with the
+Green Mountain Care board and the commissioner of Vermont health access,
+shall review the health information technology plan required by 18 V.S.A.
+§ 9351 to ensure that the plan reflects the creation of the Vermont health
+benefit exchange; the transition to a public-private universal health care system
+pursuant to 33 V.S.A. chapter 18, subchapter 2; and any necessary
+development or modifications to public health information technology and data
+=== page 106 ===
+No. 48 Page 106 of 141
+VT LEG 270379.1
+and to public health surveillance systems, to ensure that there is progress
+toward full implementation.
+(b) In conducting this review, the secretary of administration may issue a
+request for proposals for an independent design and implementation plan
+which would describe how to integrate existing health information systems to
+carry out the purposes of this act, detail how to develop the necessary capacity
+in health information systems, determine the funding needed for such
+development, and quantify the funding sources available for such development.
+The health information technology plan or design and implementation plan
+shall also include a review of the multi-payer database established in 18 V.S.A.
+§ 9410 to determine whether there are systems modifications needed to use the
+database to reduce fraud, waste, and abuse; and shall include other systems
+analysis as specified by the secretary.
+(c) The secretary shall make recommendations to the house committee on
+health care and the senate committee on health and welfare based on the design
+and implementation plan no later than January 15, 2012.
+Sec. 11. HEALTH SYSTEM PLANNING, REGULATION, AND PUBLIC
+HEALTH
+(a) No later than January 15, 2012, the secretary of administration or
+designee shall make recommendations to the house committee on health care
+and the senate committee on health and welfare on how to unify Vermont’s
+=== page 107 ===
+No. 48 Page 107 of 141
+VT LEG 270379.1
+current efforts around health system planning, regulation, and public health,
+including:
+(1) How best to align the agency of human services’ public health
+promotion activities with Medicaid, the Vermont health benefit exchange
+functions, Green Mountain Care, and activities of the Green Mountain Care
+board established in 18 V.S.A. chapter 220.
+(2) After reviewing current resources, including the community health
+assessments, how to create an integrated system of community health
+assessments, health promotion, and planning, including by:
+(A) improving the use and usefulness of the health resource
+allocation plan established in 18 V.S.A. § 9405 in order to ensure that health
+resource planning is effective and efficient; and
+(B) recommending a plan to institute a public health impact
+assessment process to ensure appropriate consideration of the impacts on
+public health resulting from major policy or planning decisions made by
+municipalities, local entities, and state agencies.
+(3) In collaboration with the director of the Blueprint for Health
+established in 18 V.S.A. chapter 13 and health care professionals, how to
+coordinate quality assurance efforts across state government and private
+payers; optimize quality assurance programs; and ensure that health care
+professionals in Vermont utilize, are informed of, and engage in
+=== page 108 ===
+No. 48 Page 108 of 141
+VT LEG 270379.1
+evidence-based practice, using standards and algorithms such as those
+developed by the National Committee for Quality Assurance.
+(4) How to reorganize and consolidate health care-related functions in
+agencies and departments across state government in order to ensure integrated
+and efficient administration of all of Vermont’s health care programs and
+initiatives.
+(b) No later than January 15, 2012, the commissioner of banking,
+insurance, securities, and health care administration shall review the hospital
+budget review process provided in 18 V.S.A. chapter 221, subchapter 7, and
+the certificate of need process provided in 18 V.S.A. chapter 221, subchapter 5
+and recommend to the house committee on health care and the senate
+committee on health and welfare statutory modifications needed to enable the
+participation of the Green Mountain Care board as set forth in 18 V.S.A.
+§ 9375.
+Sec. 12. PAYMENT REFORM; REGULATORY PROCESSES
+No later than March 15, 2012, the Green Mountain Care board established
+in 18 V.S.A. chapter 220, in consultation with the commissioner of banking,
+insurance, securities, and health care administration and the commissioner of
+Vermont health access, shall recommend to the house committee on health
+care and the senate committee on health and welfare any necessary
+modifications to the regulatory processes for health care professionals and
+=== page 109 ===
+No. 48 Page 109 of 141
+VT LEG 270379.1
+managed care organizations in order to align these processes with the payment
+reform strategic plan.
+Sec. 12a. 18 V.S.A. chapter 222 is added to read:
+CHAPTER 222. ACCESS TO HEALTH CARE PROFESSIONALS
+§ 9491. HEALTH CARE WORKFORCE; STRATEGIC PLAN
+(a) The director of health care reform in the agency of administration shall
+oversee the development of a current health care workforce development
+strategic plan that continues efforts to ensure that Vermont has the health care
+workforce necessary to provide care to all Vermont residents. The director of
+health care reform may designate an entity responsible for convening meetings
+and for preparing the draft strategic plan. The Green Mountain Care board
+established in chapter 220 of this title shall review the draft strategic plan and
+shall approve the final plan and any subsequent modifications.
+(b) The director or designee shall collaborate with the area health education
+centers, the workforce development council established in 10 V.S.A. § 541, the
+prekindergarten-16 council established in 16 V.S.A. § 2905, the department of
+labor, the department of health, the department of Vermont health access and
+other interested parties, to develop and maintain the plan. The director of
+health care reform shall ensure that the strategic plan includes
+recommendations on how to develop Vermont’s health care workforce,
+including:
+=== page 110 ===
+No. 48 Page 110 of 141
+VT LEG 270379.1
+(1) the current capacity and capacity issues of the health care workforce
+and delivery system in Vermont, including the shortages of health care
+professionals, specialty practice areas that regularly face shortages of qualified
+health care professionals, issues with geographic access to services, and unmet
+health care needs of Vermonters.
+(2) the resources needed to ensure that the health care workforce and the
+delivery system are able to provide sufficient access to services given
+demographic factors in the population and in the workforce as well as other
+factors, and able to participate fully in health care reform initiatives, including
+how to ensure that all Vermont residents have a medical home through the
+Blueprint for Health pursuant to chapter 13 of this title and how to transition to
+electronic medical records.
+(3) how state government, universities and colleges, the state’s
+educational system, entities providing education and training programs related
+to the health care workforce, and others may develop the resources in the
+health care workforce and delivery system to educate, recruit, and retain health
+care professionals to achieve Vermont’s health care reform principles and
+purposes.
+(4) review data on the extent to which individual health care
+professionals begin and cease to practice in their applicable fields in Vermont.
+=== page 111 ===
+No. 48 Page 111 of 141
+VT LEG 270379.1
+(5) identify factors which either hinder or assist in recruitment or
+retention of health care professionals, including an examination of the
+processes for prior authorizations, and make recommendations for further
+improving recruitment and retention efforts.
+(6) assess the availability of state and federal funds for health care
+workforce development.
+(c) Beginning January 15, 2013, the director or designee shall provide the
+strategic plan approved by the Green Mountain Care board to the general
+assembly and shall provide periodic updates on modifications as necessary.
+Sec. 13. WORKFORCE ISSUES
+(a)(1) Currently, Vermont has a shortage of primary care professionals, and
+many practices are closed to new patients. It also experiences periodic and
+geographic shortages of specialty care professionals necessary to ensure that
+Vermonters have reasonable access to a broad range of health services within
+the state. In order to ensure sufficient patient access now and in the future, it is
+necessary to plan for the implementation of Green Mountain Care and utilize
+Vermont’s health care professionals to the fullest extent of their professional
+competence.
+(2) The board of nursing, the board of medical practice, and the office of
+professional regulation shall collaborate to determine how to optimize the
+primary care workforce by reviewing the licensure process, scope of practice
+=== page 112 ===
+No. 48 Page 112 of 141
+VT LEG 270379.1
+requirements, reciprocity of licensure, and efficiency of the licensing process,
+and by identifying any other barriers to augmenting Vermont’s primary care
+workforce. No later than January 15, 2012, the boards and office shall provide
+to the house committee on health care and the senate committee on health and
+welfare joint recommendations for improving the primary care workforce
+through the boards’ and office’s rules and procedures, including specific
+recommendations to modify scopes of practice to enable health care
+professionals to perform to the fullest extent of their professional competence.
+(b) The director of health care reform or designee, in collaboration with the
+department of labor, and the agency of human services, the prekindergarten-16
+council established in 16 V.S.A. § 2905, the workforce development council,
+and other interested parties, shall create a plan to address the retraining needs
+of employees who may become dislocated due to a reduction in health care
+administrative functions when the Vermont health benefit exchange and Green
+Mountain Care are implemented. The plan shall include consideration of new
+training programs and scholarships or other financial assistance necessary to
+ensure adequate resources for training programs and to ensure that employees
+have access to these programs. The department and agency shall provide
+information to employers whose workforce may be reduced in order to ensure
+that the employees are informed of available training opportunities. The
+=== page 113 ===
+No. 48 Page 113 of 141
+VT LEG 270379.1
+department shall provide the plan to the house committee on health care and
+the senate committee on health and welfare no later than January 15, 2012.
+Sec. 13a. PRIOR AUTHORIZATIONS
+The Green Mountain Care board shall consider:
+(1) compensating health care providers for the completion of requests
+for prior authorization; and
+(2) exempting from prior authorization requirements for specific
+services in Green Mountain Care those health care professionals whose prior
+authorization requests are routinely granted for those services.
+* * * Cost Estimates * * *
+Sec. 14. COST ESTIMATES; MEETINGS
+(a) No later than April 21, 2011, the legislative joint fiscal office and the
+department of banking, insurance, securities, and health care administration
+shall provide to the house committee on health care and the senate committee
+on health and welfare an initial, draft estimate of the costs of Vermont’s
+current health care system compared to the costs of a reformed health care
+system upon implementation of Green Mountain Care and the additional
+provisions of this act. To the extent possible, the estimates shall be based on
+the department of banking, insurance, securities, and health care
+administration’s expenditure report and additional data available in the
+multi-payer database established in 18 V.S.A. § 9410.
+=== page 114 ===
+No. 48 Page 114 of 141
+VT LEG 270379.1
+(b) The legislative joint fiscal office and the department of banking,
+insurance, securities, and health care administration shall report their final
+estimates of the costs described in subsection (a) of this section to the
+committees of jurisdiction no later than November 1, 2011.
+(c) The house committee on health care and the senate committee on health
+and welfare may meet while the legislature is not in session to receive updates
+on reports and work in progress related to the provisions of this act. To the
+extent practicable, such meetings shall coincide with scheduled meetings of the
+joint fiscal committee.
+* * * Rate Review * * *
+Sec. 15. 8 V.S.A. § 4062 is amended to read:
+§ 4062. FILING AND APPROVAL OF POLICY FORMS AND PREMIUMS
+(a)(1) No policy of health insurance or certificate under a policy not
+exempted by subdivision 3368(a)(4) of this title shall be delivered or issued for
+delivery in this state nor shall any endorsement, rider, or application which
+becomes a part of any such policy be used, until a copy of the form, premium
+rates, and rules for the classification of risks pertaining thereto have been filed
+with the commissioner of banking, insurance, securities, and health care
+administration; nor shall any such form, premium rate, or rule be so used until
+the expiration of 30 days after having been filed, or in the case of a request for
+a rate increase, until a decision by the Green Mountain Care board as provided
+=== page 115 ===
+No. 48 Page 115 of 141
+VT LEG 270379.1
+herein, unless the commissioner shall sooner give his or her written approval
+thereto. Prior to approving a rate increase, the commissioner shall seek
+approval for such rate increase from the Green Mountain Care board
+established in 18 V.S.A. chapter 220, which shall approve or disapprove the
+rate increase within 10 business days. The commissioner shall apply the
+decision of the Green Mountain Care board as to rates referred to the board.
+(2) The commissioner shall review policies and rates to determine
+whether a policy or rate is affordable, promotes quality care, promotes access
+to health care, and is not unjust, unfair, inequitable, misleading, or contrary to
+the laws of this state. The commissioner shall notify in writing the insurer
+which has filed any such form, premium rate, or rule if it contains any
+provision which is unjust, unfair, inequitable, misleading, or contrary to the
+law of this state does not meet the standards expressed in this section. In such
+notice, the commissioner shall state that a hearing will be granted within 20
+days upon written request of the insurer. In all other cases, the commissioner
+shall give his or her approval.
+(3) After the expiration of such 30 days from the filing of any such
+form, premium rate or rule, the review period provided herein or at any time
+after having given written approval, the commissioner may, after a hearing of
+which at least 20 days days’written notice has been given to the insurer using
+such form, premium rate, or rule, withdraw approval on any of the grounds
+=== page 116 ===
+No. 48 Page 116 of 141
+VT LEG 270379.1
+stated in this section. Such disapproval shall be effected by written order of
+the commissioner which shall state the ground for disapproval and the date, not
+less than 30 days after such hearing when the withdrawal of approval shall
+become effective.
+(b) In conjunction with a rate filing required by subsection (a) of this
+section, an insurer shall file a plain language summary of any requested rate
+increase of five percent or greater. If, during the plan year, the insurer files for
+rate increases that are cumulatively five percent or greater, the insurer shall file
+a summary applicable to the cumulative rate increase. All summaries shall
+include a brief justification of any rate increase requested, the information that
+the Secretary of the U.S. Department of Health and Human Services (HHS)
+requires for rate increases over 10 percent, and any other information required
+by the commissioner. The plain language summary shall be in the format
+required by the Secretary of HHS pursuant to the Patient Protection and
+Affordable Care Act of 2010, Public Law 111-148, as amended by the Health
+Care and Education Reconciliation Act of 2010, Public Law 111-152, and shall
+include notification of the public comment period established in subsection (c)
+of this section. In addition, the insurer shall post the summaries on its website.
+(c)(1) The commissioner shall provide information to the public on the
+department’s website about the public availability of the filings and summaries
+required under this section.
+=== page 117 ===
+No. 48 Page 117 of 141
+VT LEG 270379.1
+(2) Beginning no later than January 1, 2012, the commissioner shall post
+the filings pursuant to subsection (a) of this section and summaries pursuant to
+subsection (b) of this section on the department’s website within five days of
+filing. The department shall provide an electronic mechanism for the public to
+comment on proposed rate increases over five percent. The public shall have
+21 days from the posting of the summaries and filings to provide public
+comment. The department shall review and consider the public comments
+prior to the expiration of the review period pursuant to subsection (a) of this
+section. The department shall provide the Green Mountain Care board with the
+public comments for their consideration in approving any rate increases.
+(d)(1) The following provisions of this section shall not apply to policies
+for specific disease, accident, injury, hospital indemnity, dental care, disability
+income, or other limited benefit coverage, but shall apply to long-term care
+policies:
+(A) the requirement in subdivision (a)(1) for the Green Mountain
+Care board’s approval for any rate increase;
+(B) the review standards in subdivision (a)(2) of this section as to
+whether a policy or rate is affordable, promotes quality care, and promotes
+access to health care; and
+(C) subsections (b) and (c) of this section.
+=== page 118 ===
+No. 48 Page 118 of 141
+VT LEG 270379.1
+(2) The exemptions from the provisions described in subdivisions (1)(A)
+through (C) of this subsection shall also apply to benefit plans that are paid
+directly to an individual insured or to his or her assigns and for which the
+amount of the benefit is not based on potential medical costs or actual costs
+incurred.
+Sec. 15a. 8 V.S.A. § 4512(b) is amended to read:
+(b) Subject to the approval of the commissioner, a hospital service
+corporation may establish, maintain and operate a medical service plan as
+defined in section 4583 of this title. The commissioner may refuse approval if
+the commissioner finds that the rates submitted are excessive, inadequate, or
+unfairly discriminatory or fail to meet the standards of affordability, promotion
+of quality care, and promotion of access pursuant to section 4062 of this title.
+The contracts of a hospital service corporation which operates a medical
+service plan under this subsection shall be governed by chapter 125 of this title
+to the extent that they provide for medical service benefits, and by this chapter
+to the extent that the contracts provide for hospital service benefits.
+Sec. 15b. 8 V.S.A. § 4515a is amended to read:
+§ 4515a. FORM AND RATE FILING; FILING FEES
+Every contract or certificate form, or amendment thereof, including the rates
+charged therefor by the corporation shall be filed with the commissioner for his
+or her approval prior to issuance or use. Prior to approval, there shall be a
+=== page 119 ===
+No. 48 Page 119 of 141
+VT LEG 270379.1
+public comment period pursuant to section 4062 of this title. In addition, each
+such filing shall be accompanied by payment to the commissioner of a
+nonrefundable fee of $50.00 and the plain language summary of rate increases
+pursuant to section 4062 of this title.
+Sec. 15c. 8 V.S.A. § 4587 is amended to read:
+§ 4587. FILING AND APPROVAL OF CONTRACTS
+A medical service corporation which has received a permit from the
+commissioner of banking, insurance, securities, and health care administration
+under section 4584 of this title shall not thereafter issue a contract to a
+subscriber or charge a rate therefor which is different from copies of contracts
+and rates originally filed with such commissioner and approved by him or her
+at the time of the issuance to such medical service corporation of its permit,
+until it has filed copies of such contracts which it proposes to issue and the
+rates it proposes to charge therefor and the same have been approved by such
+commissioner. Prior to approval, there shall be a public comment period
+pursuant to section 4062 of this title. Each such filing of a contract or the rate
+therefor shall be accompanied by payment to the commissioner of a
+nonrefundable fee of $50.00. A medical service corporation shall file a plain
+language summary of rate increases pursuant to section 4062 of this title.
+=== page 120 ===
+No. 48 Page 120 of 141
+VT LEG 270379.1
+Sec. 15d. 8 V.S.A. § 5104(a) is amended to read:
+(a)(1) A health maintenance organization which has received a certificate
+of authority under section 5102 of this title shall file and obtain approval of all
+policy forms and rates as provided in sections 4062 and 4062a of this title.
+This requirement shall include the filing of administrative retentions for any
+business in which the organization acts as a third party administrator or in any
+other administrative processing capacity. The commissioner may request and
+shall receive any information that is needed to determine whether to approve
+the policy form or rate. In addition to any other information requested, the
+commissioner shall require the filing of information on costs for providing
+services to the organization’s Vermont members affected by the policy form or
+rate, including but not limited to Vermont claims experience, and
+administrative and overhead costs allocated to the service of Vermont
+members. Prior to approval, there shall be a public comment period pursuant
+to section 4062 of this title. A health maintenance organization shall file a
+summary of rate filings pursuant to section 4062 of this title.
+(2) The commissioner shall refuse to approve the form of evidence of
+coverage, filing or rate if it contains any provision which is unjust, unfair,
+inequitable, misleading or contrary to the law of the state or plan of operation,
+or if the rates are excessive, inadequate or unfairly discriminatory, or fail to
+meet the standards of affordability, promotion of quality care, and promotion
+=== page 121 ===
+No. 48 Page 121 of 141
+VT LEG 270379.1
+of access pursuant to section 4062 of this title. No evidence of coverage shall
+be offered to any potential member unless the person making the offer has first
+been licensed as an insurance agent in accordance with chapter 131 of this title.
+* * * Health Benefit Information * * *
+Sec. 16. 21 V.S.A. § 2004 is added to read:
+§ 2004. HEALTH BENEFIT COSTS
+(a) Employers shall provide their employees with an annual statement
+indicating:
+(1) the total monthly premium cost paid for any employer-sponsored
+health benefit plan;
+(2) the employer’s share and the employee’s share of the total monthly
+premium; and
+(3) any amount the employer contributes toward the employee’s
+cost-sharing requirement or other out-of-pocket expenses.
+(b) Notwithstanding the provisions of subsection (a) of this section, an
+employer who reports the cost of coverage under an employer-sponsored
+health benefit plan as required by 26 U.S.C. § 6051(a)(14) shall be deemed to
+be in full compliance with the requirements of this section.
+Sec. 16a. 33 V.S.A. § 1901(g) is added to read:
+(g) The department of Vermont health access shall post prominently on its
+website the total per-member per-month cost for each of its Medicaid and
+=== page 122 ===
+No. 48 Page 122 of 141
+VT LEG 270379.1
+Medicaid waiver programs and the amount of the state’s share and the
+beneficiary’s share of such cost.
+* * * Consumer Protection * * *
+Sec. 17. REVIEW OF BAN ON DISCRETIONARY CLAUSES
+(a) It is the intent of the general assembly to determine the advantages and
+disadvantages of enacting a National Association of Insurance Commissioners
+(NAIC) model act prohibiting insurers from using discretionary clauses in their
+health benefit contracts. The purpose of the NAIC model act is to prohibit
+insurance clauses that purport to reserve discretion to the insurer to interpret
+the terms of the policy, or to provide standards of interpretation or review that
+are inconsistent with the laws of this state.
+(b) No later than January 15, 2012, the commissioner of banking,
+insurance, securities, and health care administration shall provide a report to
+the house committee on health care and the senate committee on health and
+welfare on the advantages and disadvantages of Vermont adopting the NAIC
+model act.
+* * * Single Formulary * * *
+Sec. 18. SINGLE FORMULARY RECOMMENDATIONS
+No later than January 15, 2012, the department of Vermont health access,
+after consultation with health insurers, third-party administrators, and the drug
+utilization and review board, shall provide recommendations to the house
+=== page 123 ===
+No. 48 Page 123 of 141
+VT LEG 270379.1
+committee on health care and the senate committee on health and welfare
+regarding:
+(1) A single prescription drug formulary to be used by all payers of
+health services which allows for some variations for Medicaid due to the
+availability of rebates and discounts and which allows health care professionals
+prescribing drugs purchased pursuant to Section 340B of the Public Health
+Service Act to use the 340B formulary. The recommendations shall address
+the feasibility of requesting a waiver from Medicare Part D in order to ensure
+Medicare participation in the formulary, as well as the feasibility of enabling
+all prescription drugs purchased by or on behalf of Vermont residents to be
+purchased through the Medicaid program or pursuant to the 340B drug pricing
+program.
+(2) A single mechanism for negotiating rebates and discounts across
+payers using a single formulary, and the advantages and disadvantages of using
+a single formulary to achieve uniformity of coverage.
+(3) A uniform set of drug management rules aligned with Medicare to
+the extent possible, to minimize administrative burdens and promote
+uniformity of benefit management. The standards for pharmacy benefit
+management shall address timely decisions, access to clinical peers, access to
+evidence-based rationales, exemption processes, and tracking and reporting
+data on prescriber satisfaction.
+=== page 124 ===
+No. 48 Page 124 of 141
+VT LEG 270379.1
+* * * Repeal of Public Oversight Commission * * *
+Sec. 19. 18 V.S.A. § 9402 is amended to read:
+§ 9402. DEFINITIONS
+As used in this chapter, unless otherwise indicated:
+* * *
+(15) “Public oversight commission” means the commission established
+in section 9407 of this title.
+(16) “Unified health care budget” means the budget established in
+accordance with section 9406 of this title.
+(17)(16) “State health plan” means the plan developed under section
+9405 of this title.
+Sec. 20. 18 V.S.A. § 9405 is amended to read:
+§ 9405. STATE HEALTH PLAN; HEALTH RESOURCE ALLOCATION
+PLAN
+* * *
+(b) On or before July 1, 2005, the commissioner, in consultation with the
+secretary of human services, shall submit to the governor a four-year health
+resource allocation plan. The plan shall identify Vermont needs in health care
+services, programs, and facilities; the resources available to meet those needs;
+and the priorities for addressing those needs on a statewide basis.
+* * *
+=== page 125 ===
+No. 48 Page 125 of 141
+VT LEG 270379.1
+(2) In the preparation of the plan, the commissioner shall assemble an
+advisory committee of no fewer than nine nor more than 13 members who
+shall reflect a broad distribution of diverse perspectives on the health care
+system, including health care professionals, payers, third-party payers, and
+consumer representatives, and up to three members of the public oversight
+commission. The advisory committee shall review drafts and provide
+recommendations to the commissioner during the development of the plan.
+Upon adoption of the plan, the advisory committee shall be dissolved.
+(3) The commissioner, with the advisory committee, shall conduct at
+least five public hearings, in different regions of the state, on the plan as
+proposed and shall give interested persons an opportunity to submit their views
+orally and in writing. To the extent possible, the commissioner shall arrange
+for hearings to be broadcast on interactive television. Not less than 30 days
+prior to any such hearing, the commissioner shall publish in the manner
+prescribed in 1 V.S.A. § 174 the time and place of the hearing and the place
+and period during which to direct written comments to the commissioner. In
+addition, the commissioner may create and maintain a website to allow
+members of the public to submit comments electronically and review
+comments submitted by others.
+(4) The commissioner shall develop a mechanism for receiving ongoing
+public comment regarding the plan and for revising it every four years or as
+=== page 126 ===
+No. 48 Page 126 of 141
+VT LEG 270379.1
+needed. The public oversight commission shall recommend revisions to the
+plan at least every four years and at any other time it determines revisions are
+warranted.
+* * *
+Sec. 21. 18 V.S.A. § 9405a is amended to read:
+§ 9405a. PUBLIC PARTICIPATION AND STRATEGIC PLANNING
+Each hospital shall have a protocol for meaningful public participation in its
+strategic planning process for identifying and addressing health care needs that
+the hospital provides or could provide in its service area. Needs identified
+through the process shall be integrated with the hospital’s long-term planning
+and shall be described as a component of its four-year capital expenditure
+projections provided to the public oversight commission under subdivision
+9407(b)(2) of this title. The process shall be updated as necessary to continue
+to be consistent with such planning and capital expenditure projections, and
+identified needs shall be summarized in the hospital’s community report.
+Sec. 22. 18 V.S.A. § 9405b is amended to read:
+§ 9405b. HOSPITAL COMMUNITY REPORTS
+(a) The commissioner, in consultation with representatives from the public
+oversight commission, hospitals, other groups of health care professionals, and
+members of the public representing patient interests, shall adopt rules
+=== page 127 ===
+No. 48 Page 127 of 141
+VT LEG 270379.1
+establishing a standard format for community reports, as well as the contents,
+which shall include:
+* * *
+(c) The community reports shall be provided to the public oversight
+commission and the commissioner. The commissioner shall publish the
+reports on a public website and shall develop and include a format for
+comparisons of hospitals within the same categories of quality and financial
+indicators.
+Sec. 23. 18 V.S.A. § 9433(c) is amended to read:
+(c) The commissioner shall consult with hospitals, nursing homes and
+professional associations and societies, the public oversight commission, the
+secretary of human services, and other interested parties in matters of policy
+affecting the administration of this subchapter.
+Sec. 24. 18 V.S.A. § 9440 is amended to read:
+§ 9440. PROCEDURES
+* * *
+(c) The application process shall be as follows:
+* * *
+(4) Within 90 days of receipt of an application, the commissioner shall
+notify the applicant that the application contains all necessary information
+required and is complete, or that the application review period is complete
+=== page 128 ===
+No. 48 Page 128 of 141
+VT LEG 270379.1
+notwithstanding the absence of necessary information. The commissioner may
+extend the 90-day application review period for an additional 60 days, or for a
+period of time in excess of 150 days with the consent of the applicant. The
+time during which the applicant is responding to the commissioner’s notice
+that additional information is required shall not be included within the
+maximum review period permitted under this subsection. The public oversight
+commission may recommend, or the commissioner may determine that the
+certificate of need application shall be denied if the applicant has failed to
+provide all necessary information required to review the application.
+* * *
+(d) The review process shall be as follows:
+(1) The public oversight commission commissioner shall review:
+(A) The application materials provided by the applicant.
+(B) The assessment of the applicant’s materials provided by the
+department.
+(C) Any information, evidence, or arguments raised by interested
+parties or amicus curiae, and any other public input.
+(2) The public oversight commission department shall hold a public
+hearing during the course of a review.
+(3) The public oversight commission shall make a written findings and a
+recommendation to the commissioner in favor of or against each application. A
+=== page 129 ===
+No. 48 Page 129 of 141
+VT LEG 270379.1
+record shall be maintained of all information reviewed in connection with each
+application.
+(4) A review shall be completed and the The commissioner shall make a
+final decision within 120 days after the date of notification under subdivision
+(c)(4) of this section. Whenever it is not practicable to complete a review
+within 120 days, the commissioner may extend the review period up to an
+additional 30 days. Any review period may be extended with the written
+consent of the applicant and all other applicants in the case of a review cycle
+process.
+(5)(4) After reviewing each application and after considering the
+recommendations of the public oversight commission, the commissioner shall
+make a decision either to issue or to deny the application for a certificate of
+need. The decision shall be in the form of an approval in whole or in part, or
+an approval subject to such conditions as the commissioner may impose in
+furtherance of the purposes of this subchapter, or a denial. In granting a partial
+approval or a conditional approval the commissioner shall not mandate a new
+health care project not proposed by the applicant or mandate the deletion of
+any existing service. Any partial approval or conditional approval must be
+directly within the scope of the project proposed by the applicant and the
+criteria used in reviewing the application.
+=== page 130 ===
+No. 48 Page 130 of 141
+VT LEG 270379.1
+(6)(A)(5) If the commissioner proposes to render a final decision
+denying an application in whole or in part, or approving a contested
+application, the commissioner shall serve the parties with notice of a proposed
+decision containing proposed findings of fact and conclusions of law, and shall
+provide the parties an opportunity to file exceptions and present briefs and oral
+argument to the commissioner. The commissioner may also permit the parties
+to present additional evidence.
+(B) If the commissioner’s proposed decision is contrary to the
+recommendation of the public oversight commission:
+(i) the notice of proposed decision shall contain findings of fact
+and conclusions of law demonstrating that the commissioner fully considered
+all the findings and conclusions of the public oversight commission and
+explaining why his or her proposed decision is contrary to the recommendation
+of the public oversight commission and necessary to further the policies and
+purposes of this subchapter; and
+(ii) the commissioner shall permit the parties to present additional
+evidence.
+(7)(6) Notice of the final decision shall be sent to the applicant,
+competing applicants, and interested parties. The final decision shall include
+written findings and conclusions stating the basis of the decision.
+=== page 131 ===
+No. 48 Page 131 of 141
+VT LEG 270379.1
+(8)(7) The commissioner shall establish rules governing the compilation
+of the record used by the public oversight commission and the commissioner in
+connection with decisions made on applications filed and certificates issued
+under this subchapter.
+(e) The commissioner shall adopt rules governing procedures for the
+expeditious processing of applications for replacement, repair, rebuilding, or
+reequipping of any part of a health care facility or health maintenance
+organization destroyed or damaged as the result of fire, storm, flood, act of
+God, or civil disturbance, or any other circumstances beyond the control of the
+applicant where the commissioner finds that the circumstances require action
+in less time than normally required for review. If the nature of the emergency
+requires it, an application under this subsection may be reviewed by the
+commissioner only, without notice and opportunity for public hearing or
+intervention by any party.
+(f) Any applicant, competing applicant, or interested party aggrieved by a
+final decision of the commissioner under this section may appeal the decision
+to the supreme court. If the commissioner’s decision is contrary to the
+recommendation of the public oversight commission, the standard of review on
+appeal shall require that the commissioner’s decision be supported by a
+preponderance of the evidence in the record.
+* * *
+=== page 132 ===
+No. 48 Page 132 of 141
+VT LEG 270379.1
+Sec. 25. 18 V.S.A. § 9440a is amended to read:
+§ 9440a. APPLICATIONS, INFORMATION, AND TESTIMONY; OATH
+REQUIRED
+(a) Each application filed under this subchapter, any written information
+required or permitted to be submitted in connection with an application or with
+the monitoring of an order, decision, or certificate issued by the commissioner,
+and any testimony taken before the public oversight commission, the
+commissioner, or a hearing officer appointed by the commissioner shall be
+submitted or taken under oath. The form and manner of the submission shall
+be prescribed by the commissioner. The authority granted to the commissioner
+under this section is in addition to any other authority granted to the
+commissioner under law.
+(b) Each application shall be filed by the applicant’s chief executive officer
+under oath, as provided by subsection (a) of this section. The commissioner
+may direct that information submitted with the application be submitted under
+oath by persons with personal knowledge of such information.
+(c) A person who knowingly makes a false statement under oath or who
+knowingly submits false information under oath to the commissioner or the
+public oversight commission or a hearing officer appointed by the
+commissioner or who knowingly testifies falsely in any proceeding before the
+commissioner or the public oversight commission or a hearing officer
+=== page 133 ===
+No. 48 Page 133 of 141
+VT LEG 270379.1
+appointed by the commissioner shall be guilty of perjury and punished as
+provided in 13 V.S.A. § 2901.
+Sec. 25a. 18 V.S.A. § 9456(h) is amended to read:
+(h)(1) If a hospital violates a provision of this section, the commissioner
+may maintain an action in the superior court of the county in which the
+hospital is located to enjoin, restrain or prevent such violation.
+* * *
+(3)(A) The commissioner shall require the officers and directors of a
+hospital to file under oath, on a form and in a manner prescribed by the
+commissioner, any information designated by the commissioner and required
+pursuant to this subchapter. The authority granted to the commissioner under
+this subsection is in addition to any other authority granted to the
+commissioner under law.
+(B) A person who knowingly makes a false statement under oath or
+who knowingly submits false information under oath to the commissioner or to
+the public oversight commission or to a hearing officer appointed by the
+commissioner or who knowingly testifies falsely in any proceeding before the
+commissioner or the public oversight commission or a hearing officer
+appointed by the commissioner shall be guilty of perjury and punished as
+provided in 13 V.S.A. § 2901.
+=== page 134 ===
+No. 48 Page 134 of 141
+VT LEG 270379.1
+* * * Conforming Revisions * * *
+Sec. 26. 18 V.S.A. § 5 is amended to read:
+§ 5. DUTIES OF DEPARTMENT OF HEALTH
+The department of health is hereby designated as the sole state agency for
+the purposes of shall:
+(1) Conducting Conduct studies, developing develop state plans, and
+administering administer programs and state plans for hospital survey and
+construction, hospital operation and maintenance, medical care, and treatment
+of alcoholics and alcoholic rehabilitation substance abuse.
+(2) Providing Provide methods of administration and such other action
+as may be necessary to comply with the requirements of federal acts and
+regulations as relate to studies, developing development of plans and
+administering administration of programs in the fields of health, public health,
+health education, hospital construction and maintenance, and medical care.
+(3) Appointing Appoint advisory councils, with the approval of the
+governor.
+(4) Cooperating Cooperate with necessary federal agencies in securing
+federal funds now or which may hereafter become available to the state for all
+prevention, public health, wellness, and medical programs.
+(5) Seek accreditation through the Public Health Accreditation Board.
+=== page 135 ===
+No. 48 Page 135 of 141
+VT LEG 270379.1
+(6) Create a state health improvement plan and facilitate local health
+improvement plans in order to encourage the design of healthy communities
+and to promote policy initiatives that contribute to community, school, and
+workplace wellness, which may include providing assistance to employers for
+wellness program grants, encouraging employers to promote employee
+engagement in healthy behaviors, and encouraging the appropriate use of the
+health care system.
+Sec. 27. 18 V.S.A. § 9410(a)(1) is amended to read:
+(a)(1) The commissioner shall establish and maintain a unified health care
+data base to enable the commissioner and the Green Mountain Care board to
+carry out the their duties under this chapter, chapter 220 of this title, and
+Title 8, including:
+(A) Determining the capacity and distribution of existing resources.
+(B) Identifying health care needs and informing health care policy.
+(C) Evaluating the effectiveness of intervention programs on
+improving patient outcomes.
+(D) Comparing costs between various treatment settings and
+approaches.
+(E) Providing information to consumers and purchasers of health
+care.
+=== page 136 ===
+No. 48 Page 136 of 141
+VT LEG 270379.1
+(F) Improving the quality and affordability of patient health care and
+health care coverage.
+Sec. 28. Sec. 10 of No. 128 of the Acts of the 2009 Adj. Sess. (2010) is
+amended to read:
+Sec. 10. IMPLEMENTATION OF CERTAIN FEDERAL HEALTH
+CARE REFORM PROVISIONS
+(a) From the effective date of this act through July 1, 2011 2014, the
+commissioner of health shall undertake such planning steps and other actions
+as are necessary to secure grants and other beneficial opportunities for
+Vermont provided by the Patient Protection and Affordable Care Act of 2010,
+Public Law 111-148, as amended by the Health Care and Education
+Reconciliation Act of 2010, Public Law 111-152.
+(b) From the effective date of this act through July 1, 2011 2014, the
+commissioner of Vermont health access shall undertake such planning steps as
+are necessary to ensure Vermont’s participation in beneficial opportunities
+created by the Patient Protection and Affordable Care Act of 2010, Public Law
+111-148, as amended by the Health Care and Education Reconciliation Act
+of 2010, Public Law 111-152.
+=== page 137 ===
+No. 48 Page 137 of 141
+VT LEG 270379.1
+Sec. 29. Sec. 31(d) of No. 128 of the Acts of the 2009 Adj. Sess. (2010) is
+amended to read:
+(d) Term of committee. The committee shall cease to exist on Janua ry 31,
+2011 June 30, 2011.
+Sec. 30. Sec. 14 of No. 128 of the Acts of the 2009 Adj. Sess. (2010) is
+amended to read:
+Sec. 14. PAYMENT REFORM; PILOTS
+* * *
+(4)(A) No later than February 1, 2011, the director of payment reform
+shall provide a strategic plan for the pilot projects to the house committee on
+health care and the senate committee on health and welfare. The strategic plan
+shall provide:
+(i)(A) A description of the proposed payment reform pilot projects,
+including a description of the possible organizational model or models for
+health care providers or professionals to coordinate patient care, a detailed
+design of the financial model or models, and an estimate of savings to the
+health care system from cost reductions due to reduced administration, from a
+reduction in health care inflation, or from other sources.
+(ii)(B) An ongoing program evaluation and improvement protocol.
+=== page 138 ===
+No. 48 Page 138 of 141
+VT LEG 270379.1
+(iii)(C) An implementation time line for pilot projects, with the first
+project to become operational no later than January 1, 2012, and with two or
+more additional pilot projects to become operational no later than July 1, 2012.
+(B) The director shall not implement the pilot projects until the
+strategic plan has been approved or modified by the general assembly.
+Sec. 31. GREEN MOUNTAIN CARE BOARD NOMINATIONS;
+APPOINTMENTS
+(a) Notwithstanding the provisions of 18 V.S.A. § 9390(b)(2), no later than
+June 1, 2011, the governor, the speaker of the house of representatives, and the
+president pro tempore of the senate shall appoint the members of the Green
+Mountain Care board nominating committee. The members shall serve until
+their replacements are appointed pursuant to 18 V.S.A. § 9390 between
+January 1, 2013 and February 1, 2013.
+(b) The governor shall appoint the members of the Green Mountain Care
+board pursuant to the process set forth in 18 V.S.A. chapter 220, subchapter 2,
+to begin employment no earlier than October 1, 2011. In making the initial
+appointments to the board, the governor shall ensure that the skills and
+qualifications of the board members complement those of the other members
+of the board.
+=== page 139 ===
+No. 48 Page 139 of 141
+VT LEG 270379.1
+Sec. 32. REPEAL
+(a) 33 V.S.A. § 1901c (Medical care advisory committee) is repealed
+effective July 1, 2012.
+(b) 18 V.S.A. § 9407 (public oversight commission) is repealed effective
+July 1, 2011.
+Sec. 33. APPROPRIATIONS
+(a) In fiscal year 2012, the sum of $703,693.00 in general funds and
+$321,231.00 in federal funds is appropriated to the Green Mountain Care board
+to carry out its functions.
+(b) In fiscal year 2012, the sum of $25,000.00 is appropriated from the
+general fund to the secretary of administration for the medical malpractice
+proposal pursuant to Sec. 2(e) of this act.
+(c) In fiscal year 2012, the sum of $138,000.00 is appropriated from the
+general fund to the agency of administration for salary and benefits for the
+director of health care reform.
+Sec. 33a. COMPENSATION
+For fiscal year 2012, the salary for the chair of the Green Mountain Care
+board shall be $116,688.00.
+Sec. 34. EFFECTIVE DATES
+(a) Secs. 1 (intent), 1a (principles), and 2 (strategic plan); 3 (18 V.S.A.
+chapter 220, subchapter 2 (Green Mountain Care board nominating
+=== page 140 ===
+No. 48 Page 140 of 141
+VT LEG 270379.1
+committee); 8 (integration plan), and 9 (financing plans); 10 (HIT); 11 (health
+planning); 12 (regulatory process); 13 (workforce); 14 (cost estimates); 17
+(discretionary clauses); 18 (single formulary); 26 (department of health);
+28 (ACA grants); 29 (primary care workforce committee); 30 (approval of
+pilot projects); and 31 (initial Green Mountain Care board nominating
+committee appointments) of this act and this section shall take effect on
+passage.
+(b) Sec. 1b (agency of administration), and Secs. 3, 18 V.S.A. chapter 220,
+subchapter 1 (Green Mountain Care board), 3a (health care ombudsman), 3b
+(positions), 3c (payment reform), 3d and 3e (manufacturers of prescribed
+products), 4c (health care coverage study), 5 (DVHA), 6 (health care
+eligibility), 12a (health care workforce strategic plan); 13a (prior
+authorizations), 19–25a and 32 (repeal of public oversight commission), 33
+(appropriations), and 33a (compensation) shall take effect on July 1, 2011.
+(c)(1) Secs. 4 (Vermont health benefit exchange; Green Mountain Care), 4a
+(household health insurance survey), and 4b (exchange implementation) shall
+take effect on July 1, 2011.
+(2) The Vermont health benefit exchange shall begin enrolling
+individuals no later than November 1, 2013 and shall be fully operational no
+later than January 1, 2014.
+=== page 141 ===
+No. 48 Page 141 of 141
+VT LEG 270379.1
+(3) Green Mountain Care shall be implemented as set forth in 33 V.S.A.
+§ 1822.
+(d) Sec. 7, 3 V.S.A. § 402 (Medicaid and exchange advisory board), shall
+take effect on July 1, 2012.
+(e) Secs. 15-15d (rate review) shall take effect on January 1, 2012 and shall
+apply to all filings on and after January 1, 2012.
+(f) Sec. 27 (VHCURES) shall take effect on October 1, 2011.
+(g) Secs. 16 (health benefit information) and 16a (Medicaid program costs)
+shall take effect on January 1, 2012, and the reporting requirement shall apply
+to each calendar year, beginning with 2012.
+Approved: May 26, 2011

@@ -1,0 +1,188 @@
+=== page 1 ===
+VT LEG #298816 v.1 
+Hsiao Report Overview (Act 128 of 2010) 
+Report Released January 2011 
+NOTE: Keep in mind, that while the Affordable Care Act had passed, at the 
+time much of the details and potential impacts were not yet known. 
+ 
+Charged with coming up with three options 
+1) Government-run Single Payer system  
+2) Public Option 
+3) Public-Private Single Payer (Dr. Hsiao’s recommended option) 
+ Essential health benefits package 
+ Limited vision and dental (if enough savings) 
+ Excluded long-term care 
+ Medicaid and Medicare benefits would not change 
+ Includes workers compensation 
+ Governed by an independent board with representation from the 
+major health care payers (employers, the state, workers) along with 
+beneficiaries and consumers. 
+ Contract out provider relations and claims administration 
+ 
+Design parameters 
+ Models assumed that single-payer would be implemented in 2015 
+ Lock-in federal funds for Vermont 
+ No overall increase in health spending – funds needed would have to come 
+from savings 
+ No overall increase of spending for employers and workers (financing) 
+ No reduction in overall net income for physicians, hospitals and other 
+providers 
+ Payment method change as the strategic entry point to establish 
+integrated delivery. 
+ No change for Medicare beneficiaries 
+ 
+Structural Components 
+ Change to a single-payer system to reduce: 
+o Administrative costs 
+o Waste in health care delivery 
+ Tort reform 
+ Blueprint and medical homes 
+ Financing – introduce payroll tax contribution 
+ Payment – incentive structure for providers 
+ Change in delivery system – ACOs, integrate delivery 
+ Regulations 
+ 
+ 
+Act 128 Report Overview 
+Prepared by Nolan Langweil, JFO 
+April 3, 2014 
+=== page 2 ===
+VT LEG #298816 v.1 
+Estimated savings under proposals 
+The Act 128 report estimated accumulated savings between 16.1% and 25.3% 
+depending on the option (option 1, option 2, or option 3).  Assumed single-
+payer would be implemented in 2015. 
+ 
+   
+ 
+Caveats & considerations concerning estimated savings: 
+ At the time, the report admitted there was uncertainty around the 
+assumptions and estimates.  Since there is little to no experience with this 
+type of system domestically, much of the assumptions rely on empirical 
+evidence from peer-reviewed journals.   
+ It should also be noted that some of the estimated savings would accrue 
+immediately while others would accrue and/or be realized over time. 
+ Dr. Hsiao also cautioned that the saving approaches are not necessarily a 
+“menu” of savings options. While some of the initiatives, if not 
+implemented will yield less savings (i.e. Medical Malpractice), others are 
+fundamental to the underlying plan (i.e. integrated delivery reform).    
+ Report recognized that “these savings are inherently uncertain and the true 
+impact would depend largely on how the proposed system in 
+implemented.” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== page 3 ===
+VT LEG #298816 v.1 
+ 
+Identified sources of savings under proposals 
+ 
+ 
+ 
+ 
+1) Administrative savings 
+ Insurer administrative costs 
+o Insurance functions - reduction of need for marketing, sales, 
+underwriting, etc. 
+o Provider relations – less time spent on things such as negotiating 
+provider payments, etc. 
+o Claims payment activities – decreased costs in claims administration 
+such as claims review, authorization, adjudication, auditing, etc. 
+o Recommended moving to an electronic system of claims recording and 
+the issuance of smart cards for processing purposes. 
+ 
+ Provider administrative costs 
+o Direct – reductions in time spent on billing and collection from multiple 
+payers, verifying insurance, dealing with drug formularies, seeking prior 
+authorization, collecting varied cost-shares, etc. 
+o Indirect – Fewer staff needed to handle payer matters due to 
+simplification. 
+ 
+2) Savings from Fraud and abuse 
+ According to the report, under a single payer plan it should be easier to 
+implement a comprehensive state level all-claims database for fraud and 
+abuse protection. 
+ 
+3) Integrated delivery system, the Blueprint, and medical homes 
+ 
+4) Tort Reform 
+
+=== page 4 ===
+VT LEG #298816 v.1 
+ Recommended moving to a no-fault medical malpractice system. 
+ Savings would stem from changes to medical practice patterns resulting 
+from less defensive medicine. 
+ 
+Use of savings under proposals 
+ Cover remaining uninsured 
+ Bring all Vermonters up to standard, essential benefit package 
+ Provide some additional vision and dental coverage for all Vermonters 
+ $50 million for increased supply of primary care workforce and upgrades of 
+community hospitals 
+ 
+ 
+ 
+ 
+Financing the proposals 
+ Payroll tax contribution (by both employers and employees) 
+o Exempted employer and employee share for low wage workers.  
+ But recommends this exemption be phased out. 
+o Recommended Vermont residents who work out-of-state for 
+employers who do not offer health coverage, should pay the 
+employers payroll tax contribution. 
+o Estimated no additional cost to most employers and workers. 
+o Payroll was capped at $106,800 – same cap as social security payroll 
+contribution that is indexed to GDP. 
+ Federal grant equal to the amount of exchange subsidies and small 
+business tax credits the state would have received under the ACA. 
+ Assumes enhanced Medicaid match for New Adult Medicaid population 
+under the ACA 
+Dr. Hsiao 
+Recommended 
+Option 3. 
+=== page 5 ===
+VT LEG #298816 v.1 
+ Assumes federal match for increases in Medicaid reimbursement rates laid 
+out in plan. 
+ Assumes estimated savings would be reinvested (above) 
+ 
+ 
+ 
+ 
+Payroll tax based on the following basic principles: 
+ Equity – financing should take into consideration ability to pay 
+ Risk Pooling – pooling healthy and less healthy people into one risk pool 
+so that large unpredictable individual risks are distributed across all 
+members of the pool. 
+ Minimize adverse economic effects – Financing should be designed to 
+minimize potential adverse effects on the overall economy, labor market, 
+and household incomes.  
+ Work within federal tax laws – financing should be designed to maintain 
+favorable tax treatments/exemptions for Vermont employers and workers 
+– estimated at the time to be about $500 million for Vermont  
+ Incentivize health promotion and health lifestyle choices  
+ Maximize federal funds 
+ 
+Payment to providers 
+ Establish uniform payment method and rates for all payers 
+ Move to capitation plus pay-for-performance wherever possible to 
+promote integrated delivery 
+ Move towards ACOs 
+ 
+ 
+The Full Act 128 - Hsiao Report and other related documents can be found 
+on the Joint Fiscal Office website: 
+http://www.leg.state.vt.us/jfo/healthcaresystemdesign.aspx  
+Dr. Hsiao 
+Recommended 
+Option 3. 

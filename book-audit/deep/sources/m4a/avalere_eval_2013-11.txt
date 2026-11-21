@@ -1,0 +1,1085 @@
+=== page 1 ===
+ 
+ 
+ 
+ 
+ 
+To: Vermont Partners for Health Care Reform   
+ 
+From: Avalere Health 
+ 
+Date: November 14, 2013 
+ 
+Re: Evaluation of Vermont Health Care Reform Financing Plan 
+ 
+ 
+EXECUTIVE SUMMARY 
+ 
+The State of Vermont commissioned a study to estimate the cost of the single-payer plan 
+contemplated by Act 48 – named Green Mountain Care (GMC) – and then to lay out options for 
+financing that cost. The analysis (hereinafter, the “Financing Plan”) concluded that the State 
+would need to raise $1.61 billion from Vermont taxpayers in 2017 to fund the plan.  The amount 
+to be raised is comparable to Vermont’s tax collections from all sources today.  Some of the 
+new tax burden would be offset by the elimination of direct costs for private health coverage, 
+since the State expects to become the health insurer for most Vermonters.  
+ 
+The Financing Plan did not designate specific revenue sources for the single-payer plan.  The 
+Governor is due to issue a report in 2014, and the General Assembly will consider the 
+Administration’s recommendations for revenue sources to fund the program in early 2015.  
+ 
+Avalere Health was retained by Vermont Partners for Health Care Reform, a group comprised of 
+Vermont health care providers, a health plan provider and employers, to make an independent 
+assessment of the Financing Plan’s cost estimate and its key assumptions.  To inform the 
+appraisal, Avalere conducted an extensive review of Vermont’s health reform documentation 
+and interviewed key Vermont stakeholders.  Avalere’s evaluation assessed the validity of the 
+assumptions of the Financing Plan, identified outstanding questions not directly addressed in 
+the Financing Plan, and outlined potential impacts the Financing Plan may have on providers, 
+payers, employers, and consumers in Vermont. 
+ 
+To furnish generous coverage to Vermonters for the least cost, the Financing Plan’s cost of 
+$1.61 billion is based on key assumptions in order to seek savings by offsetting expected 
+growth in coverage and consumption of health services.  The authors of the Financing Plan 
+made pivotal assumptions on such factors as: 
+ 
+=== page 2 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 2 
+ 
+ 
+ 
+© Avalere Health LLC 
+• How many people will receive coverage 
+• How frequently people will utilize various health care services 
+• How much each of these services will cost 
+• How much savings can be found from administrative simplification 
+ 
+As acknowledged by the analysts who prepared the Financing Plan, each of these assumptions 
+has a wide potential range of outcomes, and small changes in the assumptions can lead to 
+large differences in total costs, especially when compounded across several years.  Changes in 
+key assumptions such as provider payment rates and administrative savings could 
+fundamentally increase the cost of the single-payer plan that the General Assembly will be 
+considering in 2015.   
+ 
+While Avalere did not produce a different model, we evaluated alternatives provided in the 
+Financing Plan regarding alternatives for provider payment rates and administrative savings.  
+Avalere believes that a more appropriate expected cost, assuming the same program scale 
+expected by the Financing Plan, could be $1.9 to $2.2 billion, or about 20 to 35 percent higher 
+than the current estimate. 
+ 
+Table 1: Potentially Higher Costs for GMC from Varying Key Assumptions 
+$ in millions Financing Plan 
+(Mid-Range) Alternative Assumptions 
+Provider payment rates 105% Medicare 115% Medicare 125% Medicare 
+   - Net change in payments ($155) $73 $301 
+Implied provider payment 
+reduction -16% -11% -6% 
+     
+Administrative cost savings    
+   - Payers ($126) ($50) $0 
+     
+Amount to be financed $1,611 $1,915 $2,193 
+Source: Financing Plan and Avalere analysis 
+ 
+Assessment of Key Financing Plan Assumptions  
+ 
+ GMC’s plan to pay providers at 105 percent of Medicare may jeopardize access to 
+health care services.  The Financing Plan specifically assumes that GMC will pay providers 
+at 105 percent of Medicare rates beginning in 2017.  Since GMC does not replace Medicare, 
+the average payment for providers would be 103 percent of Medicare.  We estimate that 
+providers in Vermont today receive 122 percent of Medicare, on average, so it appears that 
+=== page 3 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 3 
+ 
+ 
+ 
+© Avalere Health LLC 
+the Financing Plan is asking providers to absorb a cut in payment of 16 percent or nearly 
+one dollar in six.  This measure could create a disincentive for health care practitioners to 
+work in Vermont if payments to providers in other states prove to be higher in comparison. 
+ 
+Moreover, Medicare payment may be an unreliable benchmark.  Medicare rates do not 
+accurately reflect different providers’ costs.  For example, the Medicare Payment Advisory 
+Commission (MedPAC) estimates that the average acute-care hospital has a Medicare 
+margin of -5.8 percent – that is, a loss.  The Green Mountain Care Board (GMCB) 
+acknowledges that hospital costs are often above Medicare payments, noting that estimates 
+range from 79 to 100 percent of costs; the GMCB also notes that some categories of 
+expenditures are not covered by Medicare.  For physicians, Medicare’s payment formula is 
+subject to annual machinations by Congress; if Congress should fail to reconcile payment in 
+any year, physicians whose payments are tied to Medicare policy may see a dramatic drop. 
+ 
+ The Financing Plan assumes that utilization will continue to increase and provider 
+payment will need to be reduced to help offset higher health care costs.  The 
+Financing Plan assumes that the GMC plan offered to Vermont residents will have an 
+actuarial value level of 87 percent and the Financing Plan forecasts spending from 2011 to 
+2017 using data from sources such as the Medicare Trustees Report, National Health 
+Expenditure Projections, and state Medicaid data.  Much of this data is developed by 
+actuaries who are not looking just at Vermont, and do not include projections of the potential 
+effects of state-based reforms.  Health care utilization in Vermont slowed down significantly 
+during the 2010-2011 period.  On a per capita basis, the annual growth rate for total health 
+care costs in Vermont dropped significantly from 7-8 percent per year in 2008 and 2009 to 
+4.2 percent in 2010 and 0.9 percent in 2011.  The GMCB estimates per capita spending will 
+return to much higher levels in 2012-2014, and the Financing Plan uses similar assumptions 
+to forecast per capita spending rates through 2017. 
+ 
+ The plan assumes large administrative savings that may not be feasible to achieve. 
+Act 48 presumes that private insurers in Vermont will be replaced by a state agency that 
+would run Green Mountain Care. The Financing Plan assumes that this agency’s 
+administrative costs will amount to roughly 7 percent of total health spending rather than the 
+12 percent that is the national average for private insurers today.  
+ 
+More recent estimates from the GMCB suggest that the average administrative ratio for 
+private plans in Vermont for 2013 is actually 6.7 percent. Since private insurance companies 
+in Vermont – in particular, the state’s dominant private insurer, Blue Cross Blue Shield of 
+Vermont – have already reduced the administrative margin to levels below the mid-point 
+target in the Financing Plan, it may not be feasible for the state-run program to achieve 
+additional savings.   
+=== page 4 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 4 
+ 
+ 
+ 
+© Avalere Health LLC 
+ 
+In addition, Vermont’s health care providers may not realize the projected administrative 
+cost savings due to their continued interactions with Medicare beneficiaries, with people 
+covered by employer plans exempted from state regulation under ERISA, and with patients 
+from out of state, all of whom will be outside of Vermont’s single-payer program. 
+ 
+ The Financing Plan assumes most employers will stop offering coverage to 
+employees.  The Financing Plan assumes that nearly 70 percent of Vermont residents will 
+have primary coverage through Green Mountain Care by 2017. This includes all Medicaid 
+beneficiaries plus most people who purchase insurance individually. It also includes 84 
+percent of people who currently have employer-sponsored coverage. Whereas one of the 
+Affordable Care Act’s goals is to increase employer-sponsored coverage via a penalty for 
+non-coverage, the incentives for employers in GMC are unknown since Act 48 does not 
+specify any rules and the source of financing is as yet undetermined. As such, it is difficult to 
+say if the estimates for the number of people to be covered by GMC are accurate, which in 
+turn makes it difficult to accept some of the assumptions regarding savings. 
+Outstanding Questions 
+ 
+ The Financing Plan is one of several pieces of a plan that has been developed to help 
+Vermont build a framework for establishing Green Mountain Care. It must be read in 
+conjunction with other documents including the Blueprint for Health materials, the State 
+Innovations Model grant proposal and operating plan, the Healthcare Workforce Strategic 
+Plan, GMC Board meeting minutes and other relevant health care reform foundation.  There 
+remains considerable uncertainty regarding the effects that reforms included in these other 
+documents will have on spending growth.  If these reforms have the effect of reducing 
+utilization patterns, total spending in Vermont may be lower than the levels estimated by the 
+Financing Plan. 
+ 
+ The Financing Plan aims to replace the current fee-for-service payment system with a 
+system of global payments by 2017. The Financing Plan report does not describe details of 
+the new provider payment system.  Instead, the plan assumes a reimbursement rate of 105 
+percent of Medicare.  Other documents issued by or on behalf of State agencies do touch 
+on new payment models but they lack specificity sufficient to evaluate their potential impact. 
+ 
+ Payment rates for out-of-state care will be contingent on making arrangements with out- of-
+state providers, which are yet to be determined. Additionally, out-of-state care is likely to 
+affect the administrative savings projections, as providers will likely still have to deal with 
+out-of-state payers and continue administrative functions for out-of-state patients. 
+=== page 5 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 5 
+ 
+ 
+ 
+© Avalere Health LLC 
+Evaluation of Stakeholder Impact 
+ 
+ Private insurers. If GMC becomes the primary insurer for most Vermonters who are not 
+already covered by public programs – Medicare and Medicaid, mainly – there will be no role, 
+or at minimum a radical change to the business model, for Vermont’s private insurers. Of 
+note, the nonprofit Blue Cross Blue Shield of Vermont would have little reason to exist. 
+ 
+ Health care practitioners. As proposed, the Financing Plan could create a significant 
+disincentive for health care practitioners to work in Vermont due to reduced compensation 
+and increased payment uncertainty compared to what they might earn in other states.  
+ 
+ Hospitals. The Financing Plan assumes there will be an instantaneous cut in provider 
+payment rates at the start of 2017 and it does not consider the differences among hospitals 
+and other health care facilities relative to the benchmark Medicare payment rate. Some 
+facilities could suffer gravely if actual policy conforms to the assumption. 
+ 
+ Employers. GMC will have differential impacts on employers.  Some may see their workers 
+gain coverage at a cost that is lower than what they pay today.  Depending on the form of 
+assessments used to finance GMC, other employers could continue to pay to insure their 
+workers while also contributing to pay for the health costs of other businesses’ employees. 
+ 
+ Consumers. GMC will likely increase the demand for health care services in Vermont and 
+residents may also be subject to broad-based taxes to help fund GMC.  Some consumers 
+will see a net improvement in their direct and indirect costs of health care while others will 
+pay more. 
+Conclusion 
+ 
+The authors of the Financing Plan took care to note that they made many assumptions and that 
+there is variability around each of their point estimates.  Avalere agrees that these factors make 
+the projected funding need of $1.61 billion uncertain.  Applying what we consider to be more 
+reasonable assumptions for provider payment rates and administrative savings, we conclude 
+that funding needs could be $1.9 to $2.2 billion. 
+ 
+Only when the Governor issues his proposal for ways to raise the necessary funding will it be 
+possible to assess the effects on the costs – taxes and others – and benefits to different groups 
+of Vermont residents and businesses in general.  We can say that the effects on the health care 
+sector appear to be adverse: for providers it appears that average payments will be significantly 
+lower and for health insurers there appears to be no basis to continue to operate in the state.    
+ 
+=== page 6 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 6 
+ 
+ 
+ 
+© Avalere Health LLC 
+I. Background of Evaluation Report 
+ 
+The State of Vermont released its Health Care Reform Financing Plan (hereinafter referred to 
+as the “Financing Plan”) in January 2013.1  A group of Vermont organizations – Fletcher Allen 
+Health Care, Blue Cross Blue Shield of Vermont, the Vermont Business Roundtable, the 
+Vermont Chamber of Commerce, the Vermont Medical Society, the Vermont Association of 
+Hospitals and Health Systems, and the Vermont Assembly of Home Health and Hospice 
+Agencies – collectively referred to as “Vermont Partners for Health Care Reform,” retained 
+Avalere Health (“Avalere”) to objectively evaluate the Financing Plan’s potential effects on 
+health care administration, financing, and delivery in Vermont.   
+ 
+Our focus was the portion of the plan due to be implemented in 2017 in which a large portion of 
+Vermont’s population would become insured for health care by one public payer that would be 
+called Green Mountain Care (GMC). Our evaluation concentrated on discerning whether the 
+Financing Plan was valid and if the proposed financing amount, $1.6 billion, is adequate for the 
+financing of a single payer system in Vermont in 2017. 
+ 
+As part of the evaluation, Avalere conducted an extensive document review to understand the 
+background of the proposed reform and the unique aspects of Vermont’s health care system.  
+Additionally, Avalere interviewed several stakeholder groups in Vermont, identified by the 
+Vermont Partners, to gain deeper insight about their concerns and perceived impacts of GMC.  
+Among those interviewed were State agency officials and leaders of the Green Mountain Care 
+Board, an existing body that today regulates many aspects of health care delivery and financing 
+in Vermont.  We also spoke with representatives of the consulting organizations that produced 
+the Financing Plan under contract to the State. 
+ 
+Avalere completed an analysis of the Financing Plan by examining the assumptions used to 
+develop the plan, identifying outstanding questions not addressed in the plan, and describing 
+the plan’s potential impact on Vermont’s health care providers, health plans, employers and 
+consumers.   
+ 
+ 
+II. Assessment of Financing Plan’s Assumptions   
+ 
+The Financing Plan projects the total spending for all Vermont residents in 2017 will reach $5.4 
+billion without GMC and $5.5 billion with GMC.  It calls for new public funding of $1.61 billion 
+beginning in 2017 to pay for the program, essentially to replace current spending by employers 
+and individuals on private health insurance premiums and a portion of consumers’ out-of-pocket 
+                                                 
+1 http://www.leg.state.vt.us/reports/2013ExternalReports/286250.pdf 
+=== page 7 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 7 
+ 
+ 
+ 
+© Avalere Health LLC 
+costs. Whether businesses or individuals would be taxed to pay for Green Mountain Care is not 
+specified; a number of financing options are listed in the report for policymakers’ consideration.  
+ 
+The authors of the Financing Plan made pivotal assumptions on such factors as: 
+ How many people will receive coverage 
+ How frequently people will utilize various health care services 
+ How much each of these services will cost 
+ How much savings can be found from administrative simplification 
+As acknowledged by the analysts who prepared the Financing Plan, each of these assumptions 
+has a wide potential range of outcomes, and small changes in the assumptions can lead to 
+large differences in total costs, especially when compounded across several years.  In addition, 
+the same total spending estimate can be achieved by reducing the growth rate on one of the 
+assumptions and increasing the growth rates on the other assumptions.   
+ 
+Both the analysts who modeled the plan and the State officials who commissioned the analysis 
+told us that all figures used in the Financing Plan are planning assumptions, not definitive policy.  
+Although not reflected in the Financing Plan, the State officials said that policy decisions will be 
+made over the span of time before GMC goes live and that most particulars will be negotiated 
+with the affected stakeholders.   
+ 
+A. The Financing Plan assumes most employers will stop offering coverage to 
+employees without assessing the potential incentives 
+ 
+The Financing Plan assumes that nearly 70 percent of Vermont residents will have primary 
+coverage through Green Mountain Care by 2017.  This includes all Medicaid beneficiaries plus 
+most people who purchase insurance individually.  It also includes 84 percent of people who 
+currently have employer-sponsored coverage.  GMC is proposed to start in 2017, three years 
+after the expansion of health insurance due to the federal Affordable Care Act (ACA).   
+ 
+Whereas one of the ACA’s goals is to increase employer-sponsored coverage via a penalty for 
+non-coverage, the incentives for employers in GMC are unknown since Act 48 does not specify 
+any rules and the source of financing is as yet undetermined.  As such, it is difficult to say if the 
+estimates for the number of people to be covered by GMC are accurate, which in turn makes it 
+difficult to accept some of the assumptions regarding savings tied to administrative 
+simplification. 
+ 
+=== page 8 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 8 
+ 
+ 
+ 
+© Avalere Health LLC 
+Table 1: Assumed Coverage Shift from Launch of GMC 
+Employer Category 
+Percent of Enrollment 
+Shifting to GMC 
+Small group members 70-100% 
+Large group members  
+   Health system employees 80-100% 
+   State government 100% 
+   National group members 50-90% 
+Local employers 70-100% 
+Source: Financing Plan 
+ 
+In conversations with employers in Vermont, we observed a sense of uncertainty about the 
+launch of the GMC plan.  Most expressed discontent with the growth of commercial insurance 
+costs, noting that they cannot afford to keep paying ever-rising premiums.  Yet they could not 
+say if they will drop health benefits for workers in favor of the GMC plan in 2017 because they 
+did not know how the State would finance the costs.  If the program is financed via a new payroll 
+tax, most small, locally-based employers would likely drop existing coverage in favor of the 
+GMC plan.  If the new program is financed by other means, some employers may decide to 
+keep their current coverage.  
+ 
+Larger employers based out of state, especially those that self-insure, are more reluctant to 
+move employees to a state-run program, as it would create inconsistencies across their 
+populations and could have adverse financial consequences for their self-insurance risk pools. 
+State officials acknowledge that Vermont has no power to regulate the actions of self-insured 
+employers, whose health benefits programs are governed by the federal Employee Retirement 
+Income Security Act (ERISA). 
+ 
+The Financing Plan does not attempt to factor these different choices into the assumptions 
+regarding employer behavior, and instead uses a possible range of dropping assumptions 
+specific to the large group market.  Of note, the Financing Plan finds that there would be higher 
+overall costs for the GMC plan if fewer employers drop coverage.  Fewer employers dropping 
+coverage would also limit the estimated administrative cost savings that providers may 
+experience under GMC. (See below for a complete analysis of the administrative savings.) 
+ 
+B. The Financing Plan uses Medicare payment rates as a benchmark for future 
+provider payment under GMC, despite evidence that Medicare often pays below 
+cost 
+ 
+Medicare payment rates do not accurately reflect providers’ costs.  In conversations with 
+State officials, one of the explanations they gave for using Medicare as the base for GMC rates 
+was that Medicare payments represent the cost of care.  However, Medicare rates vary 
+=== page 9 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 9 
+ 
+ 
+ 
+© Avalere Health LLC 
+substantially by provider type, and also reflect the efforts of federal policymakers to adjust 
+payments for other reasons.  
+ 
+For example, the Medicare Payment Advisory Commission (MedPAC) estimates that the 
+average acute care hospital has a Medicare margin of -5.8 percent – that is, a loss.2  The Green 
+Mountain Care Board3 (GMCB) acknowledges that hospital costs are often above Medicare 
+payments, noting that estimates range from 79 to 100 percent of costs; the GMCB also notes 
+that some categories of expenditures are not covered by Medicare.4   
+ 
+Conversely, MedPAC estimates that Medicare payment rates for other services, notably skilled 
+nursing facilities, range above the average cost.  MedPAC also notes that the average Medicaid 
+reimbursement to skilled nursing facilities (SNFs) is well below cost, so these facilities subsidize 
+Medicaid patients with Medicare revenues.  Given the large variation in Medicare payment 
+rates, it would be a challenge to apply the same Medicare-based payment methodology for 
+GMC that includes both commercial and Medicaid markets. 
+ 
+Table 2: Estimated National Medicare Margins for Health Care Providers 
+ Medicare Margin 
+Provider Type 2009 2010 2011 
+Acute Care Hospitals -5.4% -4.7% -5.8% 
+Skilled Nursing Facilities 18.0% 18.5% 22%-24% 
+Source: MedPAC “Report to the Congress: Medicare Payment Policy”. March 2013. 
+ 
+ 
+The Financing Plan assumes a payment rate that would significantly cut overall payment 
+for most providers.  The Financing Plan includes the current estimated payment rates 
+compared to Medicare for commercial plans (155 percent) and Medicaid (82 percent).  While 
+the Financing Plan also includes the overall distribution of individuals by plan type, to determine 
+the current average payment rate one also needs to account for utilization differences.  We 
+used data from the GMCB about all hospitals’ payer mix in the state to determine that Medicare 
+currently accounts for 38 percent of patients, Medicaid accounts for 16 percent, and commercial 
+plans account the remaining 46 percent of patients.  Overall, these numbers indicate the current 
+average effective payment rate for hospitals in the state is 122 percent of Medicare.  However, 
+applying the assumed 105 percent rate used in the Financing Plan, the average yield would fall 
+to 103 percent overall (Table 3). 
+ 
+                                                 
+2 Medicare Payment and Advisory Commission. “Report to the Congress: Medicare Payment Policy”.  March 2013. 
+3 Green Mountain Care Board is a regulatory body that oversees many aspects of health care in Vermont. It was created well before 
+the passage of Act 48 and its name does not mean that it is responsible for the future program called Green Mountain Care. 
+4 Green Mountain Care Board. “Vermont Hospital Cost Shift Report”. April, 2013.  Available at 
+http://gmcboard.vermont.gov/sites/gmcboard/files/CostShift2013.pdf.  
+=== page 10 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 10 
+ 
+ 
+ 
+© Avalere Health LLC 
+Table 3: Estimated Average Payment Yield at Vermont Hospitals, 2012 and 2017E 
+Coverage 
+Group Coverage Mix Patient Mix Yield as Percent of Medicare Rate  
+2012 2017E (GMC) 
+Commercial 59% 46% 155% 105% 
+Medicaid 21% 16% 82% 105% 
+Medicare 20% 38% 100% 100% 
+Average   122% 103% 
+Source: Financing Plan & GMCB "Vermont Community Hospitals Financial and Statistical Trends Fiscal Year 2012 Actuals” 
+Note: we have included the uninsured with Medicaid; this assumes that the mix of uninsured who pay full charges and the mix who 
+do not pay anything equate to the same average reimbursement as Medicaid. 
+ 
+As mentioned earlier, State officials we interviewed told us the assumption about provider 
+payment will be subject to discussions with stakeholders.  Nevertheless, the State has used the 
+assumption of paying providers at 105 percent of Medicare in several published reports, most 
+notably the recent Medicaid waiver extension that it filed with the U.S. Department of Health and 
+Human Services. In that filing, the State said that it expected providers would be paid at 105 
+percent of Medicare rates in the Medicaid program starting in 2017 “to eliminate historical cost 
+shifting.”5  
+ 
+Distributive impact of these payment changes is unclear. In addition to lowering the overall 
+payment for hospitals in the state markedly, applying the same Medicare benchmark to all 
+hospitals could affect each of Vermont’s 14 hospitals quite differently.   
+ 
+Each hospital in the state has a different payment-to-cost ratio.  A recent report on Vermont 
+hospitals found that, excluding Medicare payments, commercial and Medicaid payments ranged 
+from 36 percent higher than average to 17 percent below average.  The same report found that 
+hospitals with higher than average payments also had higher than average costs.  The GMCB’s 
+most recent report on these hospitals demonstrates that many of the hospitals with higher than 
+average payments already have negative operating margins.   
+ 
+Normalizing all payment ratios across the state to Medicare rates would likely result in some 
+hospitals shutting down service lines due to substantial declines in profitability.   
+ 
+                                                 
+5 State of Vermont Agency of Human Services. “Global Commitment to Health Section 1115(a) Demonstration Wavier Extension 
+Request to CMS”. 11-W-00194/1. Dated May 17, 2013. 
+=== page 11 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 11 
+ 
+ 
+ 
+© Avalere Health LLC 
+Table 4: Vermont Hospitals Payment Variation and Operating Margin 
+Hospital 
+Hospital Payments 
+Relative to 
+State Average 
+Hospital Costs 
+Relative to 
+State Average 
+Average 
+Operating 
+Margin, FY 2012 
+Brattleboro Memorial Hospital -3% -5% 5.3% 
+Central Vermont Hospital -7% -12% 3.1% 
+Copley Hospital 13% 1% 0.2% 
+Fletcher Allen Health Care -4% 5% 3.4% 
+Gifford Medical Center 14% -2% 2.6% 
+Grace Cottage Hospital -17% 8% -8.9% 
+Mount Ascutney Hospital 36% 76% -10.0% 
+North Country Hospital -9% -20% -1.8% 
+Northeastern VT Regional Hospital -7% -33% 3.2% 
+Northwestern Medical Center -8% -8% 9.0% 
+Porter Medical Center 15% 17% -9.8% 
+Rutland Regional Medical Center 16% 10% -0.1% 
+Southwestern Vermont Medical Center 1% -18% 3.3% 
+Springfield Hospital -6% -10% 1.0% 
+Medicaid-only -23% -2%  
+Commercial-only 20% 1%  
+Source: Vermont Association of Hospitals and Health Systems-Network Services Organization. “Vermont Health Systems Payment 
+Variation Report, Phase 1 Draft Report”.  June 2013; GMCB "Vermont Community Hospitals Financial and Statistical Trends Fiscal 
+Year 2012 Actuals” 
+ 
+Providers currently paid on the basis of costs will need to be considered in determining 
+the payment policy.  Vermont has eight Critical Access Hospitals (CAHs).  CAHs are rural 
+community hospitals that receive cost-based reimbursement, meaning they are paid for the 
+costs they actually incur.  Federally qualified health centers (FQHCs) include all organizations 
+receiving grants under Section 330 of the Public Health Service Act.  FQHCs are “safety net” 
+providers of outpatient care such as community health centers, public housing centers, 
+outpatient health programs funded by the Indian Health Service, and programs serving migrants 
+and the homeless.   
+ 
+Generally, Medicare pays FQHCs (which are considered suppliers of Medicare services) an all-
+inclusive per visit payment amount based on reasonable costs as reported on its annual cost 
+report.  It is important for the State to consider how such providers will fit into the GMC payment 
+structure.  It is unclear whether the Financing Plan assumes that these providers will be paid at 
+cost or if their rates also reflect the 105 percent of Medicare structure. 
+ 
+Effects of change in payment rates on physicians and other providers even less clear. 
+While the State collects a variety of data on hospital payments and costs, there is less detail 
+regarding the cost structure for physicians and other providers.  Part of this is due to the nature 
+of physician offices; for an independent physician, his or her ‘operating margin’ is actually the 
+=== page 12 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 12 
+ 
+ 
+ 
+© Avalere Health LLC 
+take-home salary.  Hospital-employed physicians, on the other hand, rely on relatively healthy 
+hospital margins to support their compensation.  Already in Vermont, a large percentage of 
+physicians have migrated to hospital employment due to the financial strains of running a 
+private practice.   
+ 
+A shift in payment to Medicare-linked levels could have similar adverse redistributive effects on 
+physicians in the state, although the exact effect is difficult to determine.  Medicare pays 
+physician and other health professionals using a set fee schedule. Under current law, the fees 
+are governed by a sustainable growth rate (SGR) formula that, left unadjusted, would cut 
+physician fees considerably. This SGR formula has called for a cut in physician reimbursement 
+every year since 2002, and with the exception of that first year, Congress has intervened to 
+prevent the mandated cut. Most recently, an estimated 27 percent payment cut to Medicare’s 
+physician fees under the SGR was overridden until the end of calendar year 2013.6 If Congress 
+ever fails to act and prevent the SGR cut and physician payment in Vermont is tied to Medicare, 
+Vermont physicians in GMC could face serious cuts in the future.  
+ 
+Act 48 directs GMC to consider payment reform to modify the method of payment from 
+fee-for-service to one or more alternative methods.  While the Financing Plan illustrates the 
+impact of setting provider payment rates at 105 percent of Medicare payment rates, it does not 
+specify what form payment will actually take. Nor does it assume that changes to the structure 
+of payments will alter the trend in health spending.  The ultimate payment methodology is to be 
+determined over the next several years.   
+ 
+Vermont has already started implementing new payment models, including the expansive 
+Blueprint for Health primary-care medical homes (PCMHs), various accountable care 
+organizations (ACOs), Medicare bundled payment initiatives, the St. Johnsbury Oncology pilot, 
+and other new models of health care delivery and payment. The results from the emerging 
+reform programs should inform the development of a future payment structure in Vermont. 
+ 
+C. Slower than expected growth in utilization of health care spending due to Vermont-
+specific reforms could compound provider operating issues with reduced payment 
+ 
+The Financing plan assumes that the GMC plan offered to Vermont residents will have an 
+actuarial value level of 87 percent and that adult dental, adult vision, and comprehensive long-
+term services and supports will not be benefits covered by GMC in the base plan.  Given this 
+design baseline, the Financing Plan forecasts spending from 2011 to 2017 using data from 
+sources such as the Medicare Trustees Report, National Health Expenditure Projections, and 
+state Medicaid data.  Much of this data is developed by actuaries who are not looking just at 
+Vermont, and do not include projections of the potential effects of state-based reforms.   
+                                                 
+6 Medicare Payment and Advisory Commission. “Report to the Congress: Medicare Payment Policy”.  March 2013 
+=== page 13 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 13 
+ 
+ 
+ 
+© Avalere Health LLC 
+ 
+A national debate has emerged over the past several months regarding the expected growth 
+rate for health care over the next several years and the possible effect of delivery reforms. One 
+camp believes payment reforms will have a lasting effect, leading to lower growth rates despite 
+an increase in coverage.7 A separate camp believes the recent slowdown in the national 
+spending trend is more directly tied to the broad economy, and that rates will climb as the 
+economy regains strength.8 Most actuaries, in projecting future cost growth, do not give 
+significant credit to reform efforts, given the dearth of solid evidence on the effects of these 
+reforms.  
+ 
+Health care utilization in Vermont slowed down significantly during the 2010-2011 period.  
+On a per capita basis, the annual growth rate for total health care costs in Vermont dropped 
+significantly from 7-8 percent per year in 2008 and 2009 to 4.2 percent in 2010 and 0.9 percent 
+in 2011.  The GMCB estimates per capita spending will return to much higher levels in 2012-
+2014, and the Financing Plan uses similar assumptions to forecast per capita spending rates 
+through 2017.   
+ 
+Figure 1: Historical and Estimated Per Capita Health Care Costs, 2008-2017 
+ 
+Source: Financing Plan & 2011 Vermont Health Care Expenditure Analysis 
+ 
+                                                 
+7 Cutler, David and Nikhil Sahni. “If Slow Growth of Health Care Persists, Projections May Be Off By $770 Billion”. Health Affairs 
+2013: 32(5); 841-850. 
+8 Kaiser Family Foundation. “Assessing the Effects of the Economy on the Recent Slowdown in Health Spending”. April 22, 2013.  
+Available online at http://kff.org/health-costs/issue-brief/assessing-the-effects-of-the-economy-on-the-recent-slowdown-in-health-
+spending-2/.  
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+2008 2009 2010 2011 2012E2013E2014E2015E2016E2017E
+Percent Annual Growth 
+GMCB
+Financing Plan
+=== page 14 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 14 
+ 
+ 
+ 
+© Avalere Health LLC 
+The PCMHs operating in the Blueprint for Health have started to see some limited success 
+among commercial and Medicaid patients.  While still early, the results shown in the 2012 
+Annual Report9 suggest that efforts to target high-cost individuals might succeed in slowing 
+down the overall utilization rate. The two Medicaid groups enrolled in Blueprint programs grew 
+at a slower rate than the non-Blueprint group, while the two commercial groups in Blueprint 
+actually saw declines in total costs. 
+ 
+Figure 2: 2010-2011 Growth for Blueprint for Health Groups versus Non-Blueprint Groups 
+ 
+Source: Vermont Blueprint for Health, 2012 Annual Report 
+ 
+Building on these efforts, in February 2013, Vermont received a $45 million grant under the 
+federal government’s State Innovation Models (SIM) initiative to support health care innovations, 
+including three provider payment models: 1) shared savings accountable care payments, 2) 
+bundled payments, and 3) pay-for-performance models.  The State’s description of the initiative 
+says the grant will support investments in Vermont’s health system infrastructure, including 
+improvements that will help facilitate data exchange and integration across providers and the 
+use of telemedicine. 
+ 
+In addition to the delivery reform activities, there has been increasing regulatory pressure on 
+hospitals to reduce spending.  The GMCB is responsible for approving budgets for all hospitals 
+in Vermont.  In recent years, the hospital budget review has focused on containing hospital cost 
+                                                 
+9 Department of Vermont Health Access. “Vermont Blueprint for Health, 2012 Annual Report”. February 15, 2013. 
+Commercial
+Group 1
+Commercial
+Group 2
+Commercial
+Control
+Medicaid
+Group 1
+Medicaid
+Group 2
+Medicaid
+Control
+Series 1 0% -3% 1% 1% 6% 10%
+-4%
+-2%
+0%
+2%
+4%
+6%
+8%
+10%
+12%
+2010-2011 Percent Change in Expenditures 
+=== page 15 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 15 
+ 
+ 
+ 
+© Avalere Health LLC 
+growth by limiting both annual payment increases and net patient revenue increases.  According 
+to data from the GMCB, growth in hospital net revenues declined from approximately 7-9 
+percent per year in 2006-2009 to 5 percent in each of 2010 and 2011, and then further to 1.9 
+percent in 2012.  Building on the recent experience, the GMCB established a revenue growth 
+target for hospitals at 3 percent per year from 2014 to 2016.  
+ 
+Figure 3: Historical and Budgeted Net Revenue Growth at Vermont Hospitals 
+ 
+Source: Green Mountain Care Board 
+ 
+As noted above, there remains considerable uncertainty regarding the effects of reform models 
+on spending growth.  There is also a continuing debate about the underlying secular growth rate 
+for health care.  What is known about slower growth in utilization is it tends to negatively affect 
+providers’ operating margins, given the relatively fixed costs associated with many types of 
+providers.  
+ 
+If either secular trends or specific reforms should produce lower cost growth than used by the 
+authors of the Financing Plan, and the State shifts reimbursement to 105 percent of Medicare, 
+the actual amount of reduced provider payments relative to the expectations in the Financing 
+Plan could be much greater.  While this may allow Vermont to adjust provider payment less 
+drastically, providers would still be operating in an environment of diminished aggregate 
+revenue. 
+ 
+0.0%
+1.0%
+2.0%
+3.0%
+4.0%
+5.0%
+6.0%
+7.0%
+8.0%
+9.0%
+10.0%
+2006 2007 2008 2009 2010 2011 2012 2013E 2014E 2015E 2016E
+=== page 16 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 16 
+ 
+ 
+ 
+© Avalere Health LLC 
+D. While reducing administrative cost savings represents an attractive opportunity 
+for GMC, the Financing Plan’s estimates seem too aggressive 
+ 
+The Financing Plan projects total administrative cost for payers to decline by $126 million, a 
+supposed mid-range estimate, reducing the financing cost for GMC.  On the other hand, the 
+expected administrative savings amount for hospitals and physicians, $153 million, is presumed 
+to accrue to providers and therefore is not reflected as a GMC cost offset in the Financing Plan.  
+ 
+The estimated current administrative cost ratio for payers might be too high.  The 
+Financing Plan estimates that, by moving most Vermont residents from a number of private 
+payers to one public payer, administrative costs can be reduced by approximately $126 million, 
+with a range of $39.1-$211.3 million depending on the specific savings assumption used.  
+These estimates, however, start with an assumption that the weighted average private insurer 
+administrative costs as a percentage of total spending was 11.9 percent, relying on a report 
+from December 2009.10  
+ 
+More recent estimates from the GMCB suggest that the average administrative ratio for private 
+plans in Vermont for 2013 is 6.7 percent, a result of efforts by the GMCB and the insurers 
+themselves to control health plan costs. One of the primary drivers of this decline in the 
+administrative cost ratio is the growth in enrollment and low increases in operating costs for 
+Blue Cross Blue Shield of Vermont (BCBS-VT), the state’s largest private insurer.  As BCBS-VT 
+continues to gain market share, its below-average administrative ratio will likely continue to 
+lower the average cost of administration for insurers operating in the state.   
+ 
+Table 5: Private Carrier Administrative Costs Already Below Financing Plan Target 
+Commercial insurer 2011 2012 2013** 
+Covered lives    
+MVP 35,460 29,871 26,204 
+BCBS-VT 97,386 116,977 130,579 
+TVHP* 39,023 40,241 34,151 
+Total 171,869 187,089 190,934 
+Administrative costs as a percentage of premiums 
+MVP 16.9% 15.1% 15.0% 
+BCBS-VT 5.0% 5.0% 4.3% 
+TVHP* 12.3% 10.9% 11.2% 
+Total Average 8.7% 7.5% 6.7% 
+Source: GMCB Carriers’ Administrative Costs, accessed July 10, 2013 
+*TVHP is a subsidiary of BCBS-VT 
+** All figures for 2013 were projections. BCBS-VT’s enrollment is actually much greater. 
+ 
+                                                 
+10 Vermont Department of Banking, Insurance, Securities and health Care Administration. “Health Plan Administrative Cost Report.” 
+December 2009. 
+=== page 17 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 17 
+ 
+ 
+ 
+© Avalere Health LLC 
+Since private insurance has already reduced the administrative margin to levels below the mid-
+point target in the Financing Plan, it may not be feasible for the state-run program to achieve 
+additional savings.  
+ 
+For providers, reducing administrative costs relies on reducing labor costs, which may 
+not be feasible.  As the Financing Plan notes, the bulk of administrative costs for providers is 
+related to dealing with payers.  As such, the Financing Plan uses published studies regarding 
+the effect of a single-payer market to estimate the savings that could be found from reducing the 
+number of payers in Vermont.  At the core of this assumption is that these administrative costs 
+are linear: if 50 percent of enrollment shifts into a single plan, then 50 percent of administrative 
+costs related to dealing with payers could be eliminated.   
+ 
+However, there are two factors that we believe were not fully considered in the Financing Plan:   
+ 
+ Payer market is already consolidated: Vermont has only three major commercial 
+health insurers - Blue Cross Blue Shield of Vermont, Cigna, and MVP. Based on a report 
+by the Vermont Legislative Joint Fiscal Office (JFO) and the Department of Banking, 
+Insurance, Securities and Health Care Administration (BISHCA),11 billing and insurance 
+related activities for the state’s largest provider, Fletcher Allen Health Care, represented 
+only 4 percent of its total costs.  This is significantly lower than the Financing Plan’s 
+assumption, which is estimated to be 6.6 percent of revenue.  While eliminating one or 
+two payers may result in some simplification, it is difficult to imagine that one-third to 
+two-thirds of such costs could be eliminated.  Vermont providers will still have to deal 
+with a number of other non-GMC insurance plans, including Medicare, multiple Federal 
+Employees Health Benefits Plan (FEHPB) insurers, commercial insurers covering 
+employer plans outside of the GMC, and non-Vermont residents who receive health care 
+services from Vermont-based providers. 
+ Administrative costs are personnel costs: The nature of administrative costs for most 
+providers is realized in labor expense.  Providers employ personnel to complete claims 
+forms, connect with insurers to work through billing issues, and obtain prior approval for 
+medical procedures, among other administrative functions.  In the short term, these 
+costs are essentially fixed, as the staff is still needed to deal with the remaining 
+administrative tasks.  As one interviewee noted, providers may be able to shift the 
+responsibilities for these employees to patient-facing duties; however, shifting staff 
+responsibilities would not result in lower total costs, but rather simply a reallocation of 
+existing costs. 
+ 
+                                                 
+11 Costs of Vermont’s Health Care System Comparison of Baseline and Reformed System, Final Report, November 1, 2011 
+=== page 18 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 18 
+ 
+ 
+ 
+© Avalere Health LLC 
+III. Financing Plan Gaps 
+ 
+The Financing Plan does not address or resolve some key concepts or questions.  In this 
+section we outline some of the gaps in the Financing Plan that will need bridging before GMC is 
+to be activated.   
+ 
+A. How payments will actually be made under the reform plan is not specified 
+ 
+Payment rate design is one of the core questions posed by constituents in the state.  While the 
+Financing Plan illustrates the impact of setting the payment rate at 105 percent of Medicare 
+payment rates, most of the provider groups do not consider this level of reimbursement to be a 
+sustainable payment methodology.  State officials noted in meetings that the Financing Plan 
+uses this assumption as a starting point.  They say that the ultimate payment formula could 
+differ in both structure and amounts.  However, the reimbursement rate of 105 percent of 
+Medicare is one of the key assumptions used in determining the Financing Plan’s $1.61 billion 
+revenue need and, as noted earlier, the State has used this assumption in other formal 
+documents.  
+ 
+Act 48 directs GMC to consider payment reform to modify the method of payment from a fee-
+for-service basis to one or more alternative methods.  While Vermont is still in the early stages 
+of testing the various delivery and payment models, based on the outline provided by the State, 
+the goal for 2017 is to replace the current fee-for-service payment system with global payments 
+to hospitals and physicians. 
+ 
+Figure 4: Payment Reform Model Timeline 
+ 
+Source: Health Care Reform in Vermont, Presentation to HFMA Region 1 Annual Conference, May 16, 2013 
+ 
+These new payment models will need to be defined more clearly. In our experience, payment 
+systems must be designed to make sure that risks are fully understood and that financial 
+performance of the risk-bearing entity is actually within its control.  Moreover, providers need to 
+deploy new tools and to learn new behaviors when they take on risk that traditionally has been 
+ 
+Pilots 2013-2016 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+              Blueprint Integrated Health Service Delivery Embedded 
+Global 
+Payments 
+to Hospitals 
+and 
+Physicians 
+Current 
+Fee-for-
+Service 
+Rates 
+Enhanced 
+PCP 
+Payments 
+Blueprint 
+for Health 
+PCP / 
+Specialists 
+“Expanded 
+Blueprint” 
+Model  
+Shared 
+Savings 
+Models 
+Population 
+Based 
+Payments 
+Current Payment Models 
+=== page 19 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 19 
+ 
+ 
+ 
+© Avalere Health LLC 
+held by insurers.  Without additional clarity regarding the specific payment structure, it is difficult 
+to assume that the cost for GMC has been accounted for in its entirety.  
+ 
+B. Out-of-State Care: Impact on GMC Payment Rate and Administrative Costs 
+ 
+The Financing Plan assumes that Vermont will be able to negotiate consistent payment rates as 
+a percentage of the Medicare payment schedule for approximately 90 percent of the current 
+commercial medical claims. This assumption is based on the expectation that the following 
+percentages of medical claim costs will be able to be negotiated: 100 percent of Vermont costs, 
+75 percent of costs from neighboring states, and 0 percent of costs from all other states. 
+ 
+Looking at commercial claims data for Vermont residents from 2011, about one-quarter of the 
+commercial payments were made to providers located outside of Vermont.  New Hampshire has 
+the largest share of out-of-state claims.  The vast majority of the inpatient discharges from New 
+Hampshire come from the Dartmouth Hitchcock Medical Center.12   
+ 
+Depending on GMC’s success in negotiating payment rates with the key providers, the out-of-
+state provider payment rates under GMC could be higher or lower than the Financing Plan’s 
+assumption.  The Financing Plan’s assumption that GMC will be able to negotiate rates on 75 
+percent of the medical costs from neighboring states seems to be aggressive without assuming 
+GMC will access an existing health plan’s contracted provider network.  And if GMC is to access 
+such a network, it will likely pay a fee to do so.  No such fee is mentioned in the Financing Plan. 
+ 
+Table 6: 2011 Commercial Claim Payments for Vermont Residents by Location of 
+Provider 
+State of 
+Provider Inpatient Outpatient 
+Other 
+Facilities Professional 
+Home/ 
+Ambulatory/ 
+DME Pharmacy Total 
+VT 67% 78% 60% 76% 45% 73% 74% 
+NH 22% 18% 23% 14% 10% 3% 17% 
+MA 6% 3% 61% 0% 36% 9% 3% 
+NY 2% 0% 2% 2% 12% 1% 1% 
+FL 0% 0% 3% 1% 3% 1% 0% 
+Other 3% 1% 10% 5% 27% 15% 4% 
+Source: Email correspondence from Steven Kappel 
+ 
+Also, based on the Financing Plan’s assumption, it is not clear how out-of-state services affect 
+the administrative cost under GMC.  GMC will need to contract with out-of-state providers, while 
+                                                 
+12 2011 Vermont Health Care Expenditure Analysis, Green Mountain Care Board, April, 2013 
+ 
+=== page 20 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 20 
+ 
+ 
+ 
+© Avalere Health LLC 
+providers in Vermont will continue to see patients from other states who have a variety of 
+medical coverage sources. 
+ 
+IV. Stakeholder Impact Analysis 
+ 
+The Financing Plan has profound implications for many Vermont stakeholders, including 
+providers, payers, employers, and consumers.  In this section we appraise the Financing Plan’s 
+impact on each of these groups.  
+ 
+A. Providers 
+ 
+The Financing Plan raises a number of questions for providers.  Among key topics are: 1) the 
+impact GMC will have on Vermont’s health care workforce; 2) the effect GMC will have on 
+Vermont providers delivering care to patients not covered by GMC; and 3) the ability of 
+providers to sustain their operations under the proposed payment framework.  
+ 
+The Financing Plan could greatly affect the health care workforce in the state.  In its current 
+form, the Financing Plan proposes to pay providers at 105 percent of Medicare rates, which we 
+have noted amounts to a deep cut in average payment rates. The Financing Plan assumes that 
+the growth in covered lives and reduction in administrative costs will help offset the decrease in 
+average provider payment rates.  However, providers’ administrative costs may not come down 
+as anticipated, and the assumed conversion of uninsured to insured patients may not fully offset 
+the reduction in payment rates.   
+ 
+Given this, it may become challenging for Vermont to retain a highly qualified and talented 
+health care workforce and to attract new highly qualified health care professionals.  The State 
+produced a Healthcare Workforce Strategic Plan in accordance with Act 48 (Section 12a) to 
+help address issues related to workforce planning, recruitment, and retention under GMC. 
+Although the Healthcare Workforce Strategic Plan recommends actions the GMC Board should 
+take in developing a health care workforce under GMC, neither the Healthcare Workforce 
+Strategic Plan nor the Financing Plan speculate upon GMC’s impact on the health care 
+workforce should the economics of practicing in Vermont become more challenging.   
+ 
+B. Payers 
+ 
+The underlying goal of GMC in 2017 is for Vermont to transition to a single-payer system.  The 
+Financing Plan plainly lays out this assumption: “GMC will provide the administrative functions 
+currently performed separately by each private and public health plan through a unified system.”   
+ 
+=== page 21 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 21 
+ 
+ 
+ 
+© Avalere Health LLC 
+When we asked State officials if this statement means that health insurers would cease to 
+function in Vermont, they confirmed that insurers would not be needed with respect to Vermont 
+residents covered by GMC.  They suggested that they intend to explore alternative roles and/or 
+services existing health insurance carriers may be able to perform under a single-payer system.   
+ 
+Vermont is served primarily by three commercial health insurers, and the impact of GMC on 
+each one would likely vary: 
+ MVP Health Care is a regional health plan serving upstate New York, Vermont and 
+New Hampshire, with about 500,000 people enrolled in its medical insurance products.  
+Of those, approximately 26,000 (5 percent) are Vermont residents. The loss of most of 
+its Vermont enrollees would result in a significant reduction in operating earnings. 
+Market forces already cost MVP about 13 percent of its enrollment in 2012. 
+ Cigna is a global company (2012 revenues: $29 billion) that does not depend on 
+Vermont business – approximately 60,000 of its roughly 13 million U.S. medical lives 
+are in the state.  Also, a large fraction of Cigna’s business is with self-insured 
+employers who, as noted earlier, might exempt themselves from GMC. So Cigna as a 
+corporation would not notice much impact.  
+ Blue Cross Blue Shield of Vermont relies almost exclusively upon providing health 
+insurance and related services to Vermont residents.13  With approximately 220,000 
+enrollees, it covers more than 70 percent of the privately insured people in the state.  If 
+GMC actually captures the population expected by the Financing Plan, it is very 
+possible that BCBS-VT would go out of business.  At minimum, the company would 
+shrink significantly and it would have to alter its business model radically. 
+ 
+The elimination of private health insurers in Vermont – in particular, Blue Cross Blue Shield of 
+Vermont, the only payer operating entirely in the state – could result in the loss of a significant 
+number jobs in the state.   
+ 
+C. Employers 
+ 
+The local employers we spoke with were cautiously hopeful that GMC might unburden them of 
+the ever-rising expense of providing health care coverage to their workers.  Yet the Financing 
+Plan does not say whether employers will be expected to help with the funding of GMC through 
+an employment-based tax such as a payroll tax, or if funding will come from more diverse 
+sources such as an income tax or other assessments.  This uncertainty makes it difficult for 
+employers to fully understand what the impact GMC will be for them.  
+ 
+                                                 
+13 Each Blue Cross Blue Shield plan is an independent company licensed to use the name and trademarks by the national Blue 
+Cross Blue Shield Association.  The Vermont plan is not a unit of a larger corporation, 
+=== page 22 ===
+Evaluation of Vermont Health Care Reform Financing Plan 
+November 14, 2013 
+Page 22 
+ 
+ 
+ 
+© Avalere Health LLC 
+Although employers’ roles in GMC have not been clearly defined yet, it can be inferred that 
+GMC may have positive or negative effects on an employer depending on the company’s size, 
+location, and insurance status.  For instance, GMC may be favorable for smaller companies that 
+are solely based in Vermont and pay high health care premiums today.  Such organizations 
+could save money if the responsibility for insuring workers for health costs shifted to GMC.  
+Again, though, the savings depends entirely on the financing mechanism used to pay for GMC.   
+ 
+In contrast, GMC may be unfavorable for large employers that operate in multiple states and 
+self-insure for employee health care coverage.  Such organizations cannot be required to 
+participate in GMC as they are governed by the federal ERISA law, though they may still be 
+called upon to help fund GMC since they conduct business in Vermont.  This will create a 
+significant disincentive for such organizations to continue doing business in Vermont. At 
+minimum, these employers might seek exemption from any payroll tax meant to fund GMC, 
+which could leave other employers or taxpayers shouldering a larger burden. 
+ 
+D. Consumers 
+ 
+According to the Financing Plan, a large proportion of Vermont residents will be covered by 
+GMC, if not as primary insurer then as a source of secondary, or supplemental, coverage.    
+ 
+By furnishing coverage at 87 percent actuarial value, GMC will reduce cost-sharing for many 
+consumers.  This will eliminate a key barrier to health care access, yet consumers may 
+experience longer wait times to receive health care services due to the increased volumes of 
+patients.  Access to care could be constrained further if the supply of health care practitioners 
+and facilities is diminished as a result of reduced payment. 
+ 
+Consumers may be affected by additional taxes that are administered in the state to help with 
+the financing of GMC.  The changes from today will vary markedly for individual consumers 
+depending on their income levels – which could matter if an income-based tax is established to 
+finance the program – and how much they pay toward premiums and in out-of-pocket costs 
+now. 

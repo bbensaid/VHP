@@ -1,0 +1,476 @@
+=== page 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Green Mountain Care: A Comprehensive Model for 
+Building Vermont’s Universal Health Care System 
+ 
+Report Appendices 
+ 
+Submitted by Governor Peter Shumlin to the Vermont 
+State Legislature December 30, 2014 
+=== page 2 ===
+ 
+1 
+ 
+Appendices – Table of Contents 
+ 
+A.  Population Information 
+ A-1.  5-Year Comparison of Vermont Populations under ACA and GMC 
+ A-2.  Coverage for Vermont Populations under GMC 
+ A-3.  Legislative Council Memorandum on Residency  
+ 
+B.  GMC Benefits Information 
+ B-1:  Detailed Information on Benefit Design 
+ B-2.  Recommended GMC Cost-Sharing Designs 
+ B-3.  Vermont Essential Health Benefits Detail 
+ B-4.  GMC Plan Designs Considered 
+ B-5.  Presentation to GMCB Dec 4, 2014 
+ B-6.  Presentation to GMCB Dec 11, 2014 
+ B-7.  Presentation by Ellen Meara, Ph.D on Health Economics: Value Based Benefit 
+Design 
+ B-8.  Department of Human Resources Benefit Summary SELECTCARE 2014 
+ B-9.  Scenarios Illustrating Benefit Designs 
+ B-10.  GMC Secondary:  Adding a Out-Of-Pocket Limit To Medicare 
+ 
+C.  Microsimulation Modeling 
+ C-1.  GMSIM Description 
+ C-2.  Microsimulation Assumptions 
+ 
+D.  Actuarial Modeling 
+ D-1.  Actuarial Cost Analysis and Assumptions 
+ D-2.  Memorandum on Reserves and Reinsurance 
+ 
+E.  Waivers 
+ E-1.  All-Payer Waiver Concept Paper 
+ E-2.  Affordable Care Act Waiver Background 
+ 
+F.  Financing Background Information 
+ F-1.  Medicaid 
+ F-2.  Detailed Information on Financing 
+ F-3.  Alternative Financing Concepts 
+ F-4.  GMC Public Premium Exclusions and Credits 
+ 
+ 
+ 
+=== page 3 ===
+  
+ 
+1 
+ 
+Appendix A-1:  5-Year Comparison of Vermont Populations under ACA and GMC 
+ 
+ 2017 2018 2019 2020 2021 
+ ACA GMC ACA GMC ACA GMC ACA GMC ACA GMC 
+Non-group Insurance 49,000 - 51,000 - 50,000 - 49,000 - 49,000 - 
+Medicaid Primary 141,000 - 142,000 - 141,000 - 141,000 - 140,000 - 
+Employer Sponsored 
+Insurance 
+296,000 31,000 289,000 15,000 287,000 2,000 286,000 2,000 283,000 2,000 
+   Private ESI 216,000 31,000 212,000 15,000 211,000 2,000 210,000 2,000 208,000 2,000 
+   State ESI 26,000 - 26,000 - 26,000 - 25,000 - 25,000 - 
+   Local ESI 14,000 - 14,000 - 13,000 - 13,000 - 13,000 - 
+   Muni ESI 40,000 - 38,000 - 37,000 - 37,000 - 37,000 - 
+Federal Government 
+Employee Insurance 
+10,000 - 10,000 - 10,000 - 10,000 - 10,000 - 
+Uninsured 17,000 - 18,000 - 18,000 - 18,000 - 18,000 - 
+Medicare 140,000 140,000 144,000 144,000 148,000 148,000 152,000 152,000 156,000 156,000 
+Individuals Supplementing 
+Medicare 
+36,000 36,000 37,000 37,000 38,000 38,000 39,000 39,000 41,000 41,000 
+Medicaid/GMC Medicare 
+Supplementation 
+37,000 37,000 37,000 37,000 38,000 38,000 39,000 39,000 40,000 40,000 
+Employer Medicare 
+Supplementation 
+22,000 22,000 23,000 23,000 24,000 24,000 25,000 25,000 25,000 25,000 
+Military Insurance 10,000 10,000 10,000 10,000 10,000 10,000 10,000 10,000 10,000 10,000 
+GMC Enrollment - 519,000 - 533,000 - 544,000 - 542,000 - 538,000 
+Population of Commuters in 
+on GMC 
+61,000 61,000 64,000 64,000 66,000 66,000 66,000 66,000 65,000 65,000 
+=== page 4 ===
+  
+ 
+2 
+ 
+ 
+Appendix A-2:  Coverage for Vermont Populations under GMC 
+ 
+Description  Primary 
+Coverage 
+Secondary Coverage Contribution to 
+GMC 
+Considerations 
+Medicare:     
+Seniors (over age 65) Medicare Vermont’s Current 
+Medicare wrap 
+programs, such as 
+VPharm, QMB, and 
+SLMB would stay the 
+same. 
+None Medicare Supplemental Insurance would remain 
+available.  
+Individuals with disabilities 
+(over 24 months) 
+Medicare Vermont’s Current 
+Medicare wrap 
+programs, such as 
+VPharm, QMB, and 
+SLMB would stay the 
+same. 
+None Medicare Supplemental Insurance would remain 
+available. 
+Military:     
+Active duty military1  TRICARE None while on 
+TRICARE 
+None while on 
+TRICARE 
+GMC coverage is suspended.  GMC would be 
+available as soon as the individual drops or is no 
+longer eligible for coverage.  Individuals who are 
+eligible for enhanced benefits from Medicaid would 
+maintain enhanced benefits through GMC. 
+                                                        
+1 In order for TRICARE to be primary coverage, a state statutory change is needed. This is because, under federal law, TRICARE is always secondary, except to 
+Medicaid. 
+=== page 5 ===
+  
+ 
+3 
+ 
+Description  Primary 
+Coverage 
+Secondary Coverage Contribution to 
+GMC 
+Considerations 
+National Guard TRICARE, 
+while on 
+active duty 
+None while on 
+TRICARE 
+None while on 
+TRICARE 
+Vermonters with the Guard would have GMC 
+coverage while not on active duty & can suspend 
+that coverage during the time period they are on 
+active duty. 
+Veterans VA insurance, 
+if applicable 
+None while using VA 
+insurance 
+None while 
+using VA 
+insurance 
+Insurance provisions expire in August 2017 or 
+sooner.2  Veterans may use the VA Hospital for 
+services as well, but are not required to under GMC. 
+Public employees:     
+Federal employees taking 
+federal insurance (FEHB) 
+Federal 
+employee 
+insurance 
+GMC Full 
+contribution 
+ 
+State employees GMC Depends on 
+bargaining 
+agreement 
+Full 
+contribution 
+ 
+Public education employees GMC Depends on 
+bargaining 
+agreement 
+Full 
+contribution 
+ 
+Municipal employees GMC Depends on 
+bargaining 
+agreement 
+Full 
+contribution 
+ 
+Employees in the private 
+sector: 
+    
+Employees not taking 
+private employer sponsored 
+insurance (ESI) 
+GMC N/A Full 
+contribution 
+ 
+                                                        
+2 Veterans Access, Choice, and Accountability Act of 2014 § 101(p) states that the Veteran’s Choice pro gram will end after amounts in Veteran’s Choice Fund 
+are exhausted or after three years from enactment, whichever is first.  The bill was enacted on August 7, 2014.   
+=== page 6 ===
+  
+ 
+4 
+ 
+Description  Primary 
+Coverage 
+Secondary Coverage Contribution to 
+GMC 
+Considerations 
+Employees taking private 
+employer sponsored 
+insurance (ESI) 
+ESI GMC Full 
+contribution 
+ 
+Non-residents working for a 
+Vermont employer 
+GMC, ESI, or 
+Exchange 
+coverage from 
+state of 
+residence 
+N/A Optional 
+contribution 
+Non-residents working for a Vermont employer may 
+purchase GMC coverage. 
+Retirees:     
+Retiree not on Medicare 
+with no other coverage 
+GMC N/A Full 
+contribution 
+ 
+Retiree not on Medicare 
+with private employer 
+coverage 
+Employer 
+retiree 
+coverage 
+N/A No contribution GMC creates a ten year window where non-
+Medicare retirees with employer coverage are 
+exempt from GMC coverage and taxes.   
+ 
+Retiree on Medicare Medicare or 
+retiree plan 
+Medicare 
+supplemental or 
+retiree plan 
+No contribution  
+Resident state or education 
+employee retiree 
+GMC if not on 
+Medicare, 
+otherwise, 
+Medicare 
+Depends on 
+bargaining 
+agreement, but 
+retirees on Medicare 
+will have state retiree 
+plan 
+Full 
+contribution to 
+GMC if not on 
+Medicare, 
+otherwise no 
+contribution 
+ 
+=== page 7 ===
+  
+ 
+5 
+ 
+Description  Primary 
+Coverage 
+Secondary Coverage Contribution to 
+GMC 
+Considerations 
+Non-resident state or 
+education employee retiree 
+State retiree 
+plan if not on 
+Medicare, 
+otherwise, 
+Medicare 
+If on Medicare, state 
+retiree plan 
+No contribution 
+to GMC 
+ 
+ 
+ 
+ 
+ 
+ 
+=== page 8 ===
+ 
+ 
+ 
+ 
+ 
+Appendix A-3. Legislative Council Memorandum on Residency 
+=== page 9 ===
+Page 1 
+VT LEG 202044.v1 
+MEMORANDUM 
+To: Senate Health & Welfare Committee 
+ 
+From: Robin Lunge, Bill Russell 
+ 
+Date: April 6, 2006 
+Subject: Durational Residency Requirements for Health Care Coverage 
+ 
+The U.S. Supreme Court has imposed strict constitutional limits on the imposition of 
+residency requirements as a condition for receipt of state benefits.   In short, a state may 
+establish residency requirements to insure that benefits of state citizenship inure only to 
+citizens of the state.  However, durational residency requirements – those that require a 
+period of residency in the state prior to receipt of benefits – are extremely problematical 
+and probably prohibited.1  
+ 
+The Court’s decisions are based on a constitutional “right to travel” protected by both the 
+Equal Protection Clause of the 14th Amendment and the Privileges or Immunities Clause 
+of that amendment.2    
+ 
+Equal Protection Cases 
+ 
+In the earlier cases decided in the 1970s, the Court’s holding was based on the Equal 
+Protection Clause.  In those cases, the court found that the right to travel was such a 
+fundamental right that it would apply a “strict scrutiny” analysis to balance the purported 
+governmental justification underlying any state residency requirement with the burden of 
+that right.  Significantly, based on that analysis, the Court struck down an Arizona statute 
+which required one year of residency within the county as a condition of eligibility for 
+non-emergency medical care at public expense. The Court held that restricting medical 
+care for indigents from other states severely burdened the right to travel under the Equal 
+Protection Clause.3  
+ 
+However, in some of the Court’s Equal Protection Clause decisions in the decade of the 
+1970s, a durational residency requirement was upheld because the right to travel was 
+                                                 
+1 Durational requirements would include any restrictions in coverage of pre -existing conditions and 
+requirements for “credible coverage” (defined in ERISA and HIPAA) which apply only to recent residents 
+of Vermont.   
+2 Although the word “travel” is found nowhere in the text of the Constitution, the Court found that the 
+“right to travel from one state to another is firmly embedded in our jurisprudence.”  In fact, “the right is so 
+important that it is a virtually unconditional personal right, guaranteed by the constitution to us all.” Saenz 
+v. Roe, 526 U.S. 489, 498 (1999) 
+3 Memorial Hospital v. Maricopa County, 415 U.S. 250 (1974). 
+=== page 10 ===
+Page 2 
+VT LEG 202044.v1 
+apparently not sufficiently burdened by those requirements.  These decisions are not 
+easily reconcilable.  They include upholding durational residency requirements for the 
+following:  
+ 
+ In-state college tuition rates.  “The state can establish such reasonable criteria for 
+in-state status as to make virtually certain that students who are not in fact bona fide 
+residents of the state, but have come there solely for educational purposes, cannot take 
+advantage of the in-state rates.”4   
+ 
+ Divorce. The Court upheld a one-year residency requirement for the ability to 
+obtain a divorce in state courts.5   
+ 
+ Voting in political party primaries. The Court upheld political party registration 
+restrictions that amounted to a durational residency requirement for voting in primary 
+elections.6   
+ 
+ 
+ 
+Privileges or Immunities Cases 
+ 
+However, whatever possibility that may have existed for sustaining some durational 
+residency requirements under the 14th Amendment’s Equal Protection Clause (above) 
+seems to have been foreclosed by the Court’s more recent rulings under the Privileges or 
+Immunities Clause.  
+ 
+The controlling decision is Saenz v. Roe, 526 US 489 (1999), in which the U.S. Supreme 
+Court struck down a California statute imposing durational residency requirements by 
+limiting welfare benefits in a recipient’s first year of residency to the amount of benefits 
+that the recipient would have received from the state of former residence. In this decision, 
+the Court asserted and expanded upon the “right to travel.”  It includes “for those 
+travelers who elect to become permanent residents, the right to be treated like other 
+citizens of that state.”7 It is therefore constitutionally impermissible for a state to establish 
+two classes of benefits for new and older residents.  Newly arrived citizens have the same 
+right to enjoy the “privileges or immunities” as other citizens of the same state.  This 
+“citizenship clause” does not allow for degrees of citizenship based on length of 
+residence.8  
+ 
+In short, “it appears that the Court’s invocation of the Privileges or Immunities Clause 
+prohibits durational residency requirements in every context.”9  In dissent, Chief Justice 
+Rehnquist eschewed this rationale based on creating a “conflated” right to travel.  The 
+                                                 
+4 Vlandis v. Kline, 412 U.S. 441(1973). 
+5 Sosna v. Iowa, 419 U.S. 393 (1975).  
+6 Rosario v. Rockefeller, 410 U.S. 752 (1973). 
+7 Saenz v. Roe, 526 US 489, 500 (1999) 
+8  Id. at 504. 
+9  Id. at 514-516, (Rehnquist, C.J, dissenting) (stating that virtually all classifications of citizenship based 
+on the length of state residency will violate the Privileges and Immunities Clause of the 14th Amendment).  
+=== page 11 ===
+Page 3 
+VT LEG 202044.v1 
+right, he asserted, is properly defined as the right of a person to become a citizen of 
+another state.  There is no infringement on travel.   
+ 
+Chief Justice Rehnquist also stresses the irreconcilability of the Court’s durational 
+residency decisions. “If states can require individuals to reside in-state for a year before 
+exercising the right to educational benefits, the right to terminate a marriage, or the right 
+to vote in primary elections, then states may surely do the same for welfare benefits . . . 
+he durational residency requirement challenged here is a permissible exercise of the 
+state’s power to assure that services provided for its residents are enjoyed only by 
+residents.”10  
+ 
+A “Wait and See” Approach 
+ 
+In California, Senate Bill 840 would provide comprehensive universal health care to all 
+Californians, including undocumented residents, using a single-payer publicly financed 
+mechanism.   Included in the bill is the provision which, after two years of plan 
+implementation, would give the commissioner the discretion to impose a waiting period 
+on eligibility if the commissioner determines that “large numbers of people are 
+emigrating to the state for the purpose of obtaining health care through the California 
+Health Insurance System.”  (SB 840 §140200(c)(10)(G)).  Additionally, the bill specifies 
+that any implementation of a waiting period must be done on a statewide basis.  (SB 840 
+§140204(d)).   
+ 
+Conclusion 
+ 
+Durational residency requirements in state legislation (those that distinguish among 
+residents of a state based on length of residency) are difficult to support for at least two 
+reasons. 
+ 
+First, if federal funds (such as Medicaid) are involved, federal requirements usually 
+prohibit different classes of eligibility based on length of residence in the state.  
+ 
+Second, the U.S. Supreme Court has held that a citizen’s “right to travel”, protected by 
+the 14th Amendment, is infringed by denying newly arrived residents the same benefits a 
+state provides to longer term residents. Like any constitutional right, this right to travel is 
+not absolute. Some infringement may be permissible, but only by a showing of an 
+extremely compelling state interest.11    
+ 
+Applying these considerations to the health care legislation proposed last year: 
+ 
+We recommended no durational residency requirement for pharmaceutical programs in 
+H.516.  These programs intermingle federal funds. Also, while VT has provided 
+                                                 
+10 Id. at 520 – but this of course is in dissent. 
+11 In the most recent controlling decision, Saenez v. Roe, 526 US 489 (1996), California was unable to show 
+that the fiscal savings to the state gained through a differential in welfare benefits paid to short term 
+residents was not enough of a compelling state interest to justify infringing the right to travel. 
+=== page 12 ===
+Page 4 
+VT LEG 202044.v1 
+generally better pharmaceutical benefits than most other states, there is little evidence 
+that this has caused a migration into the state causing a significant enough fiscal impact 
+to the state to justify infringing the right to travel. These programs would use Medicaid 
+funds for their support. 
+ 
+We recommended a reasonable durational residency requirement for the House-passed 
+universal access health care program in H.524.  This program would be state funded; 
+Medicaid would be separate. And, what is at stake is more than a minor impact on the 
+state’s finances; arguably there is a compelling state interest. The health care system, 
+every citizen’s medical care, the state’s entire budget, and the state’s economy as a whole 
+may be impacted sufficiently to justify some infringement on the constitutional right to 
+travel. 
+ 

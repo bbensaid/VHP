@@ -1,0 +1,285 @@
+Congressional Budget Office \
+Nonpartisan Analysis for the U.S. Congress
+
+TESTIMONY
+
+A Single-Payer Health
+Care System That Is
+Based on Medicare's
+Fee-for-Service Program
+
+Phillip L. Swagel
+Director
+
+Before the Committee on the Budget
+United States Senate
+
+MAY 12 | 2022
+Chairman Sanders, Ranking Member Graham, and
+Members of the Committee, thank you for inviting me
+to today's hearing. There are various ways to achieve
+near-universal health insurance coverage using some
+form of automatic coverage.' A single-payer system
+
+is one approach, and it could be implemented in
+different ways."
+
+Today, I will discuss how single-payer health care systems
+based on the Medicare fee-for-service program would
+affect our nation's health care and budget and its econ-
+omy. The Congressional Budget Office has analyzed.
+
+five options in detail among many possibilities.? Those
+options illustrate the effects of differences in providers'
+payment rates, patients' cost sharing, and the system's
+coverage of long-term services and supports. The system
+proposed by Chairman Sanders in S. 1129, the Medicare
+for All Act of 2019, is like the options in some ways and
+different in others; CBO has not analyzed S. 1129.
+
+Effects on Health Care and
+
+the Budget
+
+For the single-payer options analyzed, CBO found the
+following effects relative to what would occur under
+current law:
+
+® Federal subsidies for health care in 2030 would be
+significantly larger, with the increases in subsidies
+ranging from $1.5 trillion to $3.0 trillion.
+
+# National health expenditures would change by
+amounts ranging from a decrease of $0.7 trillion to
+an increase of $0.3 trillion depending on the system's
+design features. The most important factors tending
+to reduce national health expenditures are lower
+payment rates for providers and reductions in payers'
+administrative spending. The most important factor
+tending to increase those expenditures is increased use
+of care-especially if long-term services and supports
+are a covered benefit.
+
+ 
+
+1. See Congressional Budget Office, Policies to Achieve Near-
+Universal Health Insurance Coverage (October 2020),
+www.cbo.gov/publication/56620.
+
+2. See Congressional Budget Office, Key Design Components and
+Considerations for Establishing a Single-Payer Health Care System
+(May 2019), www.cbo.gov/publication/55150.
+
+3. See CBO's Single-Payer Health Care Systems Team, How CBO
+Analyzes the Costs of Proposals for Single-Payer Health Care Systems
+That Are Based on Medicare' Fee-for-Service Program, Working
+Paper 2020-08 (Congressional Budget Office, December 2020),
+www.cbo.gov/publication/56811.
+
+® Health insurance coverage would increase, as virtually
+all U.S. residents would be enrolled in the system.
+
+® 'The total amount of out-of-pocket costs would.
+
+be smaller.
+
+= 'The supply of personal health care-that is, medical
+services and goods provided to individuals-would
+increase because of fewer restrictions on utilization, less
+money and time spent by providers on administration,
+and providers' responses to increased demand for care.
+The amount of care used would rise, and in that sense,
+overall access to care would be greater.
+
+® 'The increase in demand for personal health care
+would exceed the increase in supply, resulting in
+greater unmet demand than the amount under
+current law. Those effects on overall access to care and
+unmet demand would occur simultaneously because
+people would use more care and would have used
+even more if it were supplied. The increase in unmet
+demand would correspond to increased congestion
+in the health care system, including delays and
+forgone care.
+
+Differences in payment rates for health care could have
+large effects. To illustrate the potential size of such
+effects, CBO estimated the outcomes for single-payer
+systems under scenarios in which payment rates dif-
+fered and the other specifications remained the same.
+
+In the higher-rate scenario, the average payment rates
+for health care providers under the single-payer system
+would be close to the average of the rates that the agency
+projects for all payers in 2030 under current law. In the
+lower-rate scenario, rates would be 13 percent lower for
+hospitals and 7 percent lower for physicians, on average.
+Also, prices for prescription drugs would be 23 percent
+lower, on average. The differences between the scenarios
+were related to the differences between payment rates for
+private insurers and for Medicare and Medicaid under
+current law. Relative to what would occur under the
+higher-rate scenario, the outcomes under the lower-rate
+scenario would be as follows:
+
+= Federal subsidies for health care would be 12 percent
+lower.
+
+® National health expenditures would be 9 percent lower.
+
+8 'The supply of personal health care would be
+2 percent lower, with the demand for such care
+
+roughly unchanged.
+
+® Asa result, the demand for personal health care that
+was not met would increase by 2 percentage points.
+2 - ASINGLE-PAYER HEALTH CARE SYSTEM THAT IS BASED ON MEDICARE'S FEE-FOR-SERVICE PROGRAM
+
+MAY 12, 2022
+
+ 
+
+In the long term, payments lower than those projected
+under current law might cause fewer people to enter
+health care professions and fewer new drugs to be devel-
+oped. If providers were unable to adjust to slower growth
+in payment rates by operating more efficiently and
+remaining financially viable, they could cease to operate,
+possibly leading to greater congestion in the health care
+system. Although effects in the long term are especially
+hard to predict, I want to emphasize that all of CBO's
+estimates of the effects of a single-payer system are inher-
+ently uncertain.
+
+Effects on the Economy
+
+Turning to the economic effects, I will describe the
+outcomes under the five options CBO analyzed if the
+system was financed by either a payroll tax or an income
+tax-and the estimates differ depending on the type of
+tax. CBO made these projections:
+
+= Gross domestic product (GDP) would be
+approximately 1 percent to 10 percent lower by 2030
+than the amount projected under current law, and
+aggregate nonhealth consumption per capita would
+change by amounts ranging from an increase of
+3 percent to a decline of 7 percent.
+
+® Lifetime nonhealth consumption would rise among
+lower-income households and decline among higher-
+income households relative to the levels under current
+law, and the number of lifetime hours people choose
+to work would be lower for most households across
+the income distribution.
+
+The net reductions in GDP would occur primarily
+because of the effects of increased taxes on labor and
+capital income. Taxes on labor income reduce after-tax
+wages, so they reduce the return on each additional hour
+worked. They also lower people's expected future income,
+which creates an incentive to work more to make up for
+their lost after-tax income. On average, the former effect
+is greater than the latter in CBO's assessment; therefore,
+higher labor taxes tend to reduce the number of hours
+worked in the economy. Higher taxes on capital income,
+such as dividends and capital gains, lower the average
+
+ 
+
+4, See Jaeger Nelson, Economic Effects of Five Illustrative Single-Payer
+Health Care Systems, Working Paper 2022-02 (Congressional
+Budget Office, February 2022), www.cbo.gov/publication/57637.
+
+after-tax rate of return on private wealth holdings (or
+the return on investment), which reduces the incentive
+to save and invest and leads to reductions in the capital
+stock. Those effects lead, in turn, to lower income.
+
+If the system was financed through other types of taxes,
+government borrowing, or reductions in other types of
+government spending, the net effect on the economy
+and the distributional implications would be different.
+Perpetually financing any of the single-payer systems
+CBO analyzed through increased borrowing-without
+a corresponding increase in revenues or a reduction in
+other spending at some point in the future-would be
+unsustainable.
+
+In addition to the effects of its financing, a single-payer
+system would have the following economic effects:
+
+® 'The composition of workers' labor compensation
+would change because employers would no longer
+provide health care benefits and would pass along the
+savings to employees, increasing their taxable wages.
+
+® Households' health insurance premiums would be
+eliminated, and their out-of-pocket health care costs
+
+would decline.
+
+® Because administrative expenses in the health care
+sector would decline, productive resources for other
+sectors would be freed up and would ultimately
+increase economywide productivity.
+
+= Reduced payment rates would cause providers to find
+ways of providing care with fewer resources. Some
+of the reduction in payment rates would initially
+lower wages for workers in the health care sector and
+throughout the supply chain. In the long run, that
+effect on wages would diminish as labor markets
+
+adjusted.
+
+® Longevity and labor productivity would increase as
+people's health outcomes improved.
+
+= Long-term services and supports, if included in the
+system, would further reduce out-of-pocket spending,
+provide payments for care that is currently unpaid,
+increase wages among workers providing care, and
+allow some unpaid caregivers to increase the hours
+they work at their primary occupation.
+TESTIMONY A SINGLE-PAYER HEALTH CARE SYSTEM THAT IS BASED ON MEDICARE'S FEE-FOR-SERVICE PROGRAM 3
+
+ 
+
+ 
+
+ 
+
+This testimony summarizes information provided in two of the
+Congressional Budget Office's working papers: How CBO Analyzes the
+Costs of Proposals for Single-Payer Health Care Systems That Are Based on
+Medicare' Fee-for-Service Program and Economic Effects of Five Illustrative
+Single-Payer Health Care Systems. In keeping with CBO's mandate to
+provide objective, impartial analysis, neither the working papers nor this
+testimony makes any recommendations.
+
+The testimony was reviewed by Leigh Angres, Alice Burns, Chad Chirico,
+Carrie Colla, Devrim Demirel, Berna Demiralp, Mark Doms, Noelia
+Duchovny, Theresa Gullo, Tamara Hayford, Grace Hwang, Deborah
+Kilroe, John Kitchen, Jeffrey Kling, Leo Lex, Paul Masi, Sarah Masi, John
+McClelland, Alexandra Minicozzi, Eamon Molloy, Jaeger Nelson, Karen
+Stockley, Robert Sunshine, Emily Vreeland, Jeffrey Werling, and Chapin
+White. John Skeen was the editor. The testimony is available on CBO's
+website at www.cbo.gov/publication/57973.
+
+@ h--S
+Phillip L. Swagel
+Director
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

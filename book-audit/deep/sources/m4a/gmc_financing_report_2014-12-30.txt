@@ -1,0 +1,2586 @@
+=== page 1 ===
+	  
+	  
+	  	   	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   	  
+State  of  Vermont  
+Green  Mountain  Care:	  	  
+A	  Comprehensive	  Model	  	  
+for	  Building	  Vermont’s	  	  
+Universal	  Health	  Care	  System	  
+Submitted	  by	  Governor	  Peter	  Shumlin	  to	  the	  Vermont	  State	  Legislature	  
+December	  30,	  2014	  
+=== page 2 ===
+ 
+ 
+Acknowledgements 
+ 
+ 
+This report is the culmination of several years of work by the staff of the health reform 
+office in the Agency of Administration. Special thanks go to Robin Lunge, Director of 
+Health Care Reform; Michael Costa, Deputy Director for Health Care Reform Financing; 
+Devon Green, Special Counsel for Health Care Reform, and Marisa Melamed, Executive 
+Assistant, for their dedication and tireless work, including nights, weekends, and 
+holidays. 
+  
+Thanks also go to Anya Rader Wallack for assisting with the writing and editing of this 
+report, as well as her many diverse contributions to this project over the years. This 
+report would not have been possible without the assistance of our contractors and 
+actuaries – thank you for always prioritizing what we needed and being fast and 
+responsive. And, thank you to the members of the Governor’s Business and Consumer 
+Advisory Councils for your time, candor, and thoughtful contributions to one of the most 
+challenging public policy issues faced by every state at this time.  
+ 
+=== page 3 ===
+PETER SHUMLIN 
+       Governor 
+ 
+State of Vermont 
+OFFICE OF THE GOVERNOR 
+ 
+December 30, 2014 
+ 
+ 
+Dear Vermonters: 
+ 
+Today we are releasing the Green Mountain Care financing report we developed that led me to 
+the difficult conclusion that now is not the time to move forward with a publicly-financed health 
+care system in Vermont. In the coming weeks we will be publishing additional materials from 
+our research on the website http://hcr.vermont.gov/library.  Vermonters will have access to all of 
+the analysis that we used to come to the difficult decision we made. 
+  
+I hope this report gives us a common understanding of the detailed assumptions and facts needed 
+for the work we must do over the coming legislative session to continue long-lasting, meaningful 
+health care reform in Vermont.  I also hope these materials provide a foundation for future 
+efforts to usher in a publicly-financed health care system that is more equitable than the one we 
+have now, when the time is right. 
+  
+Listening to the public discussion following the announcement that we will not move forward 
+with public financing of health care in Vermont at this time, I have been struck by how many 
+people on both sides of the debate have mistakenly declared that this decision means our work on 
+health care reform is finished.  Let me be clear: We will continue to move forward reforming the 
+health care system in Vermont. We will do so because we must; as a state, we simply can’t 
+afford not to.  If health care costs continue to grow as they have, they will consume every other 
+opportunity for economic improvement for businesses, families, and individuals. 
+  
+I have supported a universal, publicly financed health care system my entire public life, and 
+believe that all Vermonters deserve health care as a right, regardless of employment or income.  
+Our current way of paying for health care is inequitable. I wanted to fix this at the state level, and 
+I thought we could. I have learned that the limitations of state-based financing – limitations of 
+federal law, limitations of our tax capacity, and sensitivity of our economy – make that unwise 
+and untenable at this time. 
+ 
+109 STATE STREET • THE PAVILION • MONTPELIER, VT 05609-0101 • WWW.VERMONT.GOV 
+TELEPHONE: 802.828.3333 • FAX: 802.828.3339 • TDD: 802.828.3345 
+
+=== page 4 ===
+  
+We must continue to make great strides, as a state, in addressing some of the other flaws in our 
+health care system – unsustainable costs, funding priorities that are misaligned with promoting 
+good health, and a complex and inefficient system of service delivery and record-keeping.  I 
+commit myself to working with the legislature, providers, advocates, and everyone willing to 
+engage to continue to make meaningful improvements to Vermont’s health care system and to 
+improve access for those Vermonters who are left out today. 
+  
+We must continue to pursue the goals of reducing the number of uninsured Vermonters and 
+support high-quality primary care for all Vermonters. We must strengthen the Green Mountain 
+Care Board so we have better path to long-term cost containment.  We must implement an all- 
+payer payment system that is transparent and fair, rewards quality not quantity, and reduces the 
+cost-shift to private payers.  We must continue build-out of a cutting-edge system of health 
+information exchange, with appropriate oversight to assure that it meets the needs of Vermonters 
+and their health care providers and invests our dollars wisely.  
+  
+My goal as Governor, what brings me to work every day, is helping make life better for all 
+Vermonters.  That means working together to focus on what we can solve, not fighting over what 
+we cannot. While I do not believe the time is right for moving Vermont to a publicly financed 
+universal coverage system based on what we learned, I believe even more strongly that together 
+we must press forward. 
+  
+I know many Vermonters are disappointed my decision not to pursue public financing. I know 
+others are mistrustful of any reform following years of contentious debate about health care both 
+nationwide and here in Vermont. But we can’t allow disappointment or cynicism to cloud the 
+areas where consensus exists or grind to a halt reforms that we all agree must happen.  There is 
+too much at stake for our economy, our kids and our future to do anything else. 
+ 
+       Sincerely, 
+       
+       Peter Shumlin 
+       Governor 
+
+=== page 5 ===
+ 
+1 
+ 
+Table of Contents 
+ 
+ 
+ 
+Executive Summary            
+ 
+Chapter 1:  Background: Why Green Mountain Care?                                                     7 
+ 
+Chapter 2:  Who would be covered?                                                                             11 
+ 
+Chapter 3:  What benefits would be covered?                                                               16 
+ 
+Chapter 4:  How would the program operate?                                                               20 
+ 
+Chapter 5:        Who would provide health care services and how would they get paid?  29                                
+ 
+Chapter 6:  What would GMC cost and how would we pay for it?                        32 
+ 
+Chapter 7:        How would public financing impact Vermont businesses and families?    48 
+ 
+ 
+Appendices 
+ 
+A. Population Information 
+ 
+B. GMC Benefits Information 
+ 
+C. Microsimulation Modeling  
+ 
+D. Actuarial Analysis and Modeling 
+ 
+E. Waivers  
+ 
+F. Financing Background Information 
+ 
+  
+=== page 6 ===
+ 
+2 
+ 
+Executive Summary 
+ 
+On December 17, 2014, after receiving our recommendations on the policy choices necessary 
+to implement public financing, the Governor announced that he could not recommend that the 
+legislature move forward with public financing at this time. Given the current economic climate 
+and other factors, the risk of economic shock is too high. The policy choices that are necessary– 
+such as a transition plan for small businesses that this report will show to be absolutely critical – 
+are not affordable at this time, and lower-cost alternative plans that strip out these policy 
+features were not acceptable to the Governor. The Governor also indicated, however, that we 
+would provide our complete report on Green Mountain Care coverage and financing to show 
+the promise of Green Mountain Care as a future step and to provide complete information to 
+the public regarding the analysis. 
+ 
+Act 48 of the 2011 legislative session established Green Mountain Care (GMC) as a universal, 
+publically financed health coverage program for all Vermonters. The law required Vermont’s 
+Executive Branch to develop a plan for financing and operating GMC. This report fulfills that 
+mandate and describes the proposals considered by the administration for GMC design and 
+implementation.  
+ 
+In developing our recommended design of GMC, we kept in mind six central goals: 
+ 
+ Cover all Vermonters; 
+ Provide coverage that is comprehensive; 
+ Simplify the system for Vermonters and their health care providers; 
+ Provide for excellent customer service and capable administration; 
+ Spread costs fairly; 
+ Ensure that the program is financially sustainable for Vermont and does not hurt our 
+economy. 
+ 
+Chapters in the report describe how GMC, if approved by the legislature and the federal 
+government, would address these goals and: 
+ 
+ Replace employer and family premium payments with a fair and equitable system of 
+tax-based funding; 
+ Pay for benefits that cover the needs of Vermonters and encourage healthy choices; 
+ Guarantee health care cost control; 
+ Pay health care professionals and organizations fairly while encouraging better 
+coordination of care and a stronger emphasis on keeping Vermonters as healthy as 
+possible; 
+ Operate as a public-private partnership, maximizing the strengths of the private sector 
+to administer the program; 
+=== page 7 ===
+ 
+3 
+ 
+ Interface with existing programs of universal coverage, such as Medicare, to assure that 
+those programs are maintained and protected. 
+ 
+Green Mountain Care would make Vermont’s health care system more fair, equitable and 
+sustainable. GMC would: 
+ 
+ Guarantee that all Vermonters have coverage, regardless of their income or employer 
+and that the out-of-state employees who commute to work at Vermont businesses have 
+access to coverage; 
+ Fund coverage with a combination of an 11.5 percent payroll tax, which does not 
+include a preferred phase in over 3 years for small businesses, and income-based family 
+contributions, rather than premiums; 
+ Cover a broad array of benefits, consistent with what most employers now cover; 
+ Limit Vermonters’ out-of-pocket costs for care to an average of six percent of total 
+costs, equivalent to what state employees and teachers currently enjoy; 
+ Simplify enrollment so that Vermonters go through one door, regardless of income, to 
+obtain coverage; 
+ Change provider payment so that doctors and other professionals are paid for the 
+outcomes of their work, and not simply the volume of services they provide, and 
+innovative networks of providers are rewarded for managing overall costs and quality of 
+care; 
+ Replace the funds generated by the current provider tax, employer assessment and 
+claims tax to ensure a transparent financing system without these types of hidden taxes; 
+ Be governed by an annual process that determines a reasonable growth in health care 
+costs to support a high-quality health care system. 
+ 
+ 
+GMC is intended to cover all Vermonters, except those who have coverage from Medicare or 
+TRICARE (military coverage). We estimated that 519,000 Vermonters would be covered by GMC 
+in the first year of the program and 538,000 in the fifth year.  
+ 
+GMC would provide a wide array of benefits, consistent with what most employers provide 
+today and include primary, preventive and chronic care, urgent care and hospital services. GMC 
+would cover vision and dental care for Vermonters up to age 21, as required by the Affordable 
+Care Act. GMC would not cover long-term services and supports. 
+ 
+Under our proposal, cost-sharing in GMC would be limited to, on average, 6 percent of total 
+costs, meaning GMC would have an actuarial value of about 94 percent. Cost-sharing 
+requirements would be limited by an out-of-pocket maximum expense for all Vermonters, 
+unlike the coverage provided to state employees today. 
+ 
+=== page 8 ===
+ 
+4 
+ 
+GMC should operate through a public-private partnership between state government and a 
+designated entity1 with the ability to contract with providers, implement innovative payment 
+policy, contract with an out-of-state provider network, establish reserves against insurance risk 
+and provide excellent customer service. 
+ 
+This could include a process by which the state, the designated entity, the Green Mountain 
+Care Board and the legislature interact to assure that GMC payments and payment 
+methodologies are consistent with GMCB-established cost control trends, GMCB payment 
+reform policy and available state revenues. This process could include implementation of an all-
+payer rate setting system under which consistent and transparent payments would be made to 
+providers for Vermonters covered by Medicare and GMC. These payment methodologies would 
+continue the shift away from volume-based payments toward payments that increase provider 
+responsibility for managing total costs and quality of care and improving the health of 
+Vermonters.  
+ 
+We estimated that GMC would cost $4.3 billion in the first year of the program and $5.2 billion 
+in the fifth year. These cost estimates are based on current health care expenditures in 
+Vermont, trended forward to 2017 and inflated at a rate of four percent per year after that. 
+Importantly, these cost estimates do not include a specific one-time reduction in provider 
+payments to account for potential reduced administrative costs under GMC. We do not believe 
+that such a reduction can be accurately estimated, and instead proposed that the GMCB 
+annually consider efficiency gains in Vermont’s health care system, including administrative 
+cost reductions, in setting actual annual growth rates for GMC. At a growth rate of four percent, 
+GMC would yield savings of $378 Million over the first five years of the program relative to 
+current predicted trends. 
+ 
+We estimated available state and federal funds for GMC. We determined the amount of state 
+Medicaid funds available to support GMC by taking current revenue sources, removing the 
+revenue associated with the employer assessment, the claims tax, and certain Medicaid 
+premiums, and then trended the revenue forward. Federal Medicaid funds were based on 
+projections of those who would be income-eligible through a Section 1115 Medicaid waiver 
+with an assumption that any lost state revenue would be replaced through the new GMC 
+revenue sources to ensure the required state match. Federal funds also would come from a 
+“pass-through” of funds currently paid to Vermont residents in the form of refundable tax 
+credits and cost-sharing reductions. This pass-though would have to be authorized through a 
+new Affordable Care Act Section 1332 waiver. The 2013 estimates of available federal ACA 
+funds were downgraded significantly as we entered into actual discussions with the federal 
+government about such a waiver. In addition, microsimulation modeling improved our ability to 
+estimate these funds with greater specificity. 
+ 
+We found that GMC could be paid for under these assumptions and program designs with two 
+new sources of funding to cover the remaining costs of GMC and replace employer-based 
+                                                        
+1 This concept is explained in more detail in chapter four. 
+=== page 9 ===
+ 
+5 
+ 
+premiums: a payroll tax on all Vermont employers and a “public premium,” which is an income-
+based payment that would be made by all Vermonters on a sliding scale. We estimated the 
+payroll tax at 11.5 percent for the preferred policy choices we are including in this report. 
+Additionally, to fully fund GMC, the highest-income Vermonters would pay 9.5 percent of 
+income through a public premium, up to a maximum of $27,500, while lower-income 
+Vermonters would pay based on a sliding scale tied to a lower percentage of income ranging 
+from 0 up to 9.5 percent.  
+ 
+Estimates of the costs, available state and federal revenues and necessary new revenues for 
+GMC were derived from actuarial and microsimulation modeling. The modeling approximated 
+the impact of the assumed changes in the sources and uses of health care financing on the 
+distribution of health care costs across Vermont households, employers, state government and 
+the federal government.  
+ 
+Our estimated GMC revenues do not include any phase-in of the taxes described above.2 We 
+modeled phase-ins and exemptions that would cushion the blow of the GMC taxes for Vermont 
+employers, but found those modifications to the taxes to be unaffordable and would raise the 
+proposed tax rates significantly.  
+ 
+Legislative action would be necessary to implement the program described in this report. 
+Specifically, it would be necessary for the legislature to approve GMC revenue sources, changes 
+to the statutes governing the GMCB, changes to the processes required under Act 48, and 
+modifications to eligibility to include commuters to Vermont businesses. 
+ 
+Green Mountain Care Board approval and action also would be necessary to implement the 
+recommendations contained in this report. The Board is responsible for approval of the benefits 
+to be covered through GMC, is the lead agency responsible for implementing the cost-control 
+and payment reform elements of this plan, and is required to rule, prior to program 
+implementation, on specific statutory tests of whether GMC is likely to have a beneficial effect 
+on Vermont. The GMCB also has a central role in designing and administering the all-payer rate 
+setting system that is assumed as an underpinning of GMC. 
+ 
+We assumed a four percent rate of growth in health care costs over the first five years of Green 
+Mountain Care. We believe this is a reasonable assumption and an achievable rate of growth, 
+but it would require an explicit agreement through an all-payer waiver between the state, the 
+federal government and Vermont’s health care providers to continue our efforts to change 
+provider payment and achieve efficiency in our system. 
+ 
+Lastly, the program described in this report, and the financing proposed for it, would only work 
+if Vermont has federal approval of necessary waivers and we are able to maintain current 
+federal financial support for health care spending in Vermont. We have embedded in this 
+proposal certain assumptions about federal approval and federal financial participation that we 
+                                                        
+2 See Appendix F for discussion of these items. 
+=== page 10 ===
+ 
+6 
+ 
+believe are reasonable, but actual federal concurrence with those assumptions has not yet 
+been received. 
+ 
+The chapters in this report explain how GMC would work, and what we predicted to be its 
+impact on Vermont. Chapter 1 provides background on why Vermont would want to pursue a 
+universal, publicly financed system of health care. Chapters 2 through 6 explain in more detail 
+how the program would work, what it would cost and how it would be financed. Chapter 7 
+explains the predicted impacts of GMC on the distribution of health care costs in Vermont. 
+Those interested in additional detail will find substantial additional information and analysis in 
+the appendices. 
+ 
+Given the promise of GMC for Vermonters, we must preserve for another day the vision of 
+universal publically financed health care paid for based on ability to pay. As a part of his budget 
+proposal and legislative agenda for the 2015 legislative session, Governor Shumlin will propose 
+changes designed to strengthen the Green Mountain Care Board, continue progress on 
+payment and delivery reform, increase access to primary care and other vital health care 
+services for all Vermonters, and better integrate information technology utilization and 
+oversight statewide. 
+ 
+ 
+ 
+  
+=== page 11 ===
+ 
+7 
+ 
+Chapter One: Background  
+Green Mountain Care: What’s in it for Vermont? 
+The Vermont legislature passed Act 48 because it recognized a problem: Vermont’s health care 
+system is broken. It is less broken than the system in many other U.S states, but it is broken 
+nonetheless. It provides good care to those who have the good fortune to access it, but today 
+our disjointed system: 
+ Leaves people out: At last report about seven percent of Vermonters have no health 
+insurance at all.3 And, ironically, when they receive health care services, they likely 
+receive the largest bills, because they pay full charges without the negotiated discounts 
+commonly provided to insurers.4  
+ Is unfair in how it distributes costs: Two Vermonters in the exact same family and job 
+situation, with exactly the same means to pay, can face very different costs, depending 
+on whether their employers offer coverage, how comprehensive that coverage is, and 
+whether they get public subsidies.  
+ Sacrifices wage growth and cripples business: Of those Vermonters who do have 
+coverage, about 44 percent5 get it through their work. This places a huge financial and 
+administrative burden on their employers. Health care cost increases are a drag on wage 
+growth, and a major reason why wages have been stagnant in recent decades.6  
+ Is horribly complex: Anyone who has dealt with signing up for insurance, or 
+understanding a health care provider’s bill, knows how complicated and frustrating the 
+current system of insurance and billing is. It wastes Vermonters’ time, wastes providers’ 
+time, wastes money and is nonsensical. 
+ Is terribly expensive and grows faster than our economy: Health care costs have 
+grown, on average, at 7.3 percent per year between 1991 and 20097 in Vermont. Our 
+state economy has grown at 4.2 percent.8 This means that health care has been growing 
+almost twice as fast as our economy. 
+                                                        
+3 http://www.dfr.vermont.gov/sites/default/files/VHHIS_2012_Final_Report.pdf 
+4 http://www.dfr.vermont.gov/sites/default/files/VHHIS_2012_Final_Report.pdf ; 
+http://content.healthaffairs.org/content/26/3/780.short; 
+http://www.nejm.org/doi/full/10.1056/NEJMp1205225; 
+http://content.healthaffairs.org/content/32/6/1101.short 
+5 2014 Population Estimates by Julie Peper, Wakely Consulting Group. 
+6 http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1932381 ; http://www.wsj.com/articles/mark-
+warshawsky-and-andrew-biggs-income-inequality-and-rising-health-care-costs-1412568847 
+7 http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-
+Reports/NationalHealthExpendData/Downloads/res-tables.pdf  
+8http://www.bea.gov/iTable/iTable.cfm?reqid=70&step=1&isuri=1&acrdn=1#reqid=70&step=1&isuri=1&7003=20
+0&7004=sic&7035=-1&7005=-1&7006=50000&7001=1200&7036=-
+1&7002=1&7090=70&7007=1997,1996,1995,1994,1993&7093=levels  
+=== page 12 ===
+ 
+8 
+ 
+ Encourages waste and inefficiency: With our current fee-for-service approach we pay 
+for health care by the unit. In general, there is no reward for keeping people healthy or 
+managing care well. An estimated 30 percent of health care services provided to 
+Americans are unnecessary.9 That is potentially worth more than $1.4 billion10 in 
+Vermont.  
+ 
+The legislature included in Act 48 several mechanisms for addressing these problems. In Act 48, 
+the legislature: 
+ 
+ Established the Green Mountain Care Board (GMCB) to control health care cost growth, 
+change provider payment and oversee other major changes in Vermont’s health care 
+system; 
+ Created Vermont Health Connect to comply with the federal Affordable Care Act and 
+draw down federal funds to make health insurance more affordable for low and 
+moderate income Vermonters; and 
+ Codified Green Mountain Care (GMC) as a program of universal, publicly funded 
+coverage for Vermonters.  
+ 
+The legislature specified certain parameters of GMC, including residency requirements for 
+coverage, minimum benefit levels and general administrative responsibility for the program. 
+The legislature delegated specific parameters of GMC to the executive branch and the GMCB to 
+develop, including the specific benefits to be covered, specifics of how the program would be 
+administered and the actual revenue sources to be used to fund the program. 
+ 
+We have worked since the passage of Act 48 to further define the design parameters, program 
+requirements, implementation steps and partnerships necessary to fully implement Green 
+Mountain Care, including the necessary funds for the program and our recommended funding 
+sources. In doing so, we have kept in mind six central goals: 
+ 
+ Cover all Vermonters; 
+ Provide coverage that is comprehensive; 
+ Simplify the system for Vermonters, employers, and health care providers; 
+ Provide for excellent customer service and capable administration; 
+ Spread costs fairly; 
+ Ensure that the program is financially sustainable for Vermont and does not hurt our 
+economy, employers, or employees. 
+ 
+                                                        
+9 http://news.medicine.duke.edu/wp-content/uploads/2013/08/Eliminating-Waste-in-US-Healthcare-Berwick.pdf 
+10 http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-
+Reports/NationalHealthExpendData/Downloads/res-tables.pdf  
+=== page 13 ===
+ 
+9 
+ 
+During this same time period, the GMCB has worked to establish appropriate health care cost 
+growth through the hospital budget and health insurance rate review processes. Hospital 
+budget growth was limited to 2.7 percent in 2014 and 3.1 percent in 2015 – an average of 2.9 
+percent.11 In 2015, the GMCB reduced proposed rates for Vermonters insured under small 
+group and individual plans by a total of $6.9 million through the insurance rate review 
+process.12  
+ 
+Vermont also launched Vermont Health Connect, the state’s health benefits exchange, which 
+supports delivery of Qualified Health Plans, Advanced Premium Tax Credits, Vermont Premium 
+Assistance, Cost-sharing Reductions, and provides eligible Vermonters access to Medicaid. The 
+roll-out of all ACA exchanges has been challenging, but has resulted in expansion of coverage to 
+many Vermonters.13 The implementation of the legislature’s decision to supplement federal 
+premium and cost-sharing subsidies to make insurance more affordable for Vermonters was 
+budgeted at $11.5 million for 2014.14 
+Vermont also has made great progress since 2011 to implement innovative health care 
+payment and delivery changes that would increase the sustainability and effectiveness of our 
+health care system for decades to come. The state received a $45 million State Innovation 
+Model (SIM) grant in 2013. That grant has supported three core activities aimed at improving 
+Vermont’s health care system: 
+ Enhancements to the state’s system of interoperable electronic medical records through 
+the Vermont Health Information Exchange, which is maintained by Vermont Information 
+Technology Leaders (VITL); 
+ Implementation of all-payer shared savings programs, a first step away from fee-for-
+service payment, for the state’s Accountable Care Organizations (ACOs); 
+ Development of a common system of care coordination and care management across 
+Vermont’s Blueprint for Health primary care practices, our three ACOs, and other key 
+health, long-term services, and social services providers. 
+ 
+Despite this progress, it is difficult to fully address the problems to which Act 48 was responding 
+through any means other than an explicit public commitment to cover everyone, fund the 
+system fairly and create a transparent process for determining where our health care dollars 
+go. Decades of health reform have shown that to be true. Efforts to expand coverage, control 
+costs, simplify health insurance and improve the health of Vermonters have fallen short in a 
+                                                        
+11 Hospital budget data provided by the Green Mountain Care Board, 2014.  
+12 Proposed versus approved 2015 VHC Health Insurance Premiums in total dollars. Data provided by the GMCB, 
+2014. 
+13 The updated Vermont Household Insurance Survey Results are expected to be available in 2015 and will include 
+new statistics on the uninsured in Vermont. 
+14 We expect this budgeted amount to be reduced in FY15 Budget Adjustment. For more information, see BAA 
+documents when available. 
+=== page 14 ===
+ 
+10 
+ 
+system where coverage is arbitrarily linked to either employment or low-income status. This is 
+why the legislature endorsed moving to Green Mountain Care. 
+ 
+Green Mountain Care could address several central problems in the current health care system 
+that have not been addressed by other efforts in Vermont to date. Green Mountain Care could: 
+ 
+ Guarantee that all Vermonters have coverage, regardless of their income or employer 
+and that the out-of-state employees who commute to work at Vermont businesses have 
+access to coverage; 
+ Fund coverage with a combination of an 11.5 percent payroll tax, which does not 
+include a preferred phase in over 3 years for small businesses, and income-based family 
+contributions, rather than premiums; 
+ Cover a broad array of benefits, consistent with what most employers now cover; 
+ Limit Vermonters’ out-of-pocket costs for care to an average of six percent of total 
+costs, equivalent to what state employees and teachers currently enjoy; 
+ Simplify enrollment so that Vermonters go through one door, regardless of income, to 
+obtain coverage; 
+ Change provider payment so that doctors and other professionals are paid for the 
+outcomes of their work, and not simply the volume of services they provide, and 
+innovative networks of providers are rewarded for managing overall costs and quality of 
+care; 
+ Replace the funds generated by the current provider tax, employer assessment and 
+claims tax to ensure a transparent financing system without these types of hidden taxes; 
+ Be governed by an annual process that determines a reasonable growth in health care 
+costs to support a high-quality health care system. 
+ 
+The recommended design of Green Mountain Care and other options considered by the 
+administration are described in more detail in the chapters that follow.  
+  
+=== page 15 ===
+ 
+11 
+ 
+Chapter Two: Who would be covered? 
+Green Mountain Care (GMC) would provide universal health care coverage to all Vermont 
+residents except those who are enrolled in Medicare or TRICARE, ensuring universal health care 
+coverage for all Vermonters. For Vermonters who are only able to rely on TRICARE when on 
+active duty or part of the year, GMC would be there for them at all other times.15  
+ 
+We also would propose covering non-residents who commute into Vermont to work for 
+Vermont businesses. This ensures simplicity for businesses along Vermont’s borders and 
+ensures that they are not faced with the necessity of having residents covered by GMC and 
+non-resident employees covered in some other manner.16 These commuters would contribute 
+to GMC through the public premium described in Chapter 6. 
+ 
+Employers could choose to continue offering health coverage to their employees. The 
+employee could choose either: 
+ 
+ the employer-sponsored health insurance, and Green Mountain Care would act as 
+secondary coverage, or  
+ Green Mountain Care.  
+ 
+Regardless, the employee would still financially contribute to Green Mountain Care through the 
+tax system, much in the way parents who choose to send their children to private school still 
+pay taxes supporting public education. 
+We estimate that 31,000 Vermonters would continue to have employer-sponsored coverage in 
+the first year of GMC, dropping to 2,000 in year five. In all, we estimate that 519,000 individuals 
+would be covered by GMC in the first year of the program, including 61,000 commuters 
+working for Vermont businesses. In year three, GMC would reach maturity with enrollment of 
+544,000 individuals, which is reduced to 538,000 in year five due to Vermont’s aging 
+population.17  
+The table below shows the estimates of who would be covered by source of coverage in the 
+first year of GMC compared to the status quo. 
+ 
+                                                        
+15 More information on how the public premium works for those on TRICARE for only part of the year, see 
+Appendix F-4 Public Premium Exclusions and Credits. 
+16 This policy priority requires a change in Act 48, which currently only provides GMC coverage for residents.  
+17 All population numbers are based on the 94%AV Best Policies output from the microsimulation model.  
+=== page 16 ===
+ 
+12 
+ 
+Table 1: Source of Coverage 2017 
+Source of Primary 
+Coverage 
+ACA GMC 
+Green Mountain Care n/a 519,000 
+Medicare  140,000 140,000 
+TRICARE and Veterans 10,000 10,000 
+Federal employees 10,000 (in GMC) 
+Employees with ESI 296,000 31,000 
+Individual market 49,000 (in GMC) 
+Medicaid 141,000 (in GMC) 
+Uninsured 17,000 (in GMC) 
+Non-resident 
+commuters 
+61,000 (in GMC) 
+ 
+ 
+The primary requirement for GMC coverage is a showing of Vermont residency. Resident is 
+defined as: 
+ 
+“…an individual domiciled in Vermont as evidenced by an intent to maintain a 
+principal dwelling place in Vermont indefinitely and to return to Vermont if 
+temporarily absent, coupled with an act or acts consistent with that intent. An 
+individual shall not be considered to be a Vermont resident if he or she is 18 
+years of age or older and is claimed as a dependent on the tax return of a 
+resident of another state.18 
+ 
+At the time of passage of Act 48, residency definitions were debated by the legislature and 
+several options were considered and rejected. The legislature landed on this particular 
+definition because it is similar to federal health care programs, such as Medicaid. The 
+legislature considered a requirement that an individual reside in Vermont for a specified period 
+of time (“durational residency requirement”), for GMC coverage. However, this type of 
+requirement has been held to be unconstitutional for programs involving federal funding by the 
+United States Supreme Court.19  
+ 
+ 
+                                                        
+18 33 V.S.A. 1823(12) 
+19 See Shapiro v. Thompson, 394 U.S. 618, 22 L.Ed. 2d 606 (1969); and Appendix A-3 Vermont Legislative Council 
+Memorandum to House Health Care. 
+=== page 17 ===
+ 
+13 
+ 
+Impact of GMC on Certain Populations 
+This section describes several special populations, describes their current coverage, and 
+discusses how their coverage would be impacted by GMC. These groups include Medicare, state 
+employees, teachers, municipal employees, state and teacher retirees (resident and non-
+resident), non-resident employees of Vermont businesses, and employees who work for self-
+insured companies. We have provided a summary chart in Appendix A of impacts on specific 
+populations for those interested in further detail. 
+ 
+Medicare Beneficiaries 
+Vermonters who have Medicare would remain on Medicare. The supplemental market would 
+also remain active. These Vermonters would not pay the public premium as part of funding 
+Green Mountain Care.  
+ 
+We examined a number of approaches for providing supplemental coverage for Vermonters 
+who have Medicare as their primary coverage. Three options for expanding coverage were 
+presented in the 2013 Green Mountain Care report authored by the University of 
+Massachusetts and Wakely Consulting Group.20  Any additional analysis of these options should 
+be postponed until GMC primary coverage is determined by the Green Mountain Care Board. It 
+would be important at that time to determine whether further integration of Medicare with 
+GMC is affordable and makes sense for Vermont Medicare beneficiaries and the state. For more 
+information, see Appendix B. 
+Medicaid-eligible Vermonters 
+Under Act 48, Vermonters who qualify for Medicaid coverage would continue to receive 
+coverage through Green Mountain Care, including Medicaid benefits.21 This means that 
+Vermonters in Green Mountain Care who are eligible for Medicaid would receive the enhanced 
+coverage available under Medicaid today, including transportation and no or low out-of-pocket 
+costs for care, in order to ensure that lack of income is not a barrier to health care.  
+ 
+In order to ensure that all Vermonters have a similar experience under Green Mountain Care, 
+Vermont would work towards an eligibility process for enhanced benefits funded by Medicaid 
+that is as seamless as possible and uses data that is already available to the state, where 
+available.  
+ 
+                                                        
+20 This report is available here: 
+http://hcr.vermont.gov/sites/hcr/files/2013/Health%20Care%20Reform%20Financing%20Plan_typos%26formattin
+g%20corrected_012913.pdf . Medicare is discussed in detail in Appendices 6 and 7. 
+ 
+21 33 V.S.A. § 1825(b)(1)(B) 
+=== page 18 ===
+ 
+14 
+ 
+State Employees 
+ 
+Currently, approximately 26,000 state employees and dependents are covered by the state 
+through a self-insured employer plan administered by Blue Cross Blue Shield of Vermont. Under 
+Act 48, state employees would be covered by GMC as their primary coverage, but supplemental 
+coverage may be provided if bargaining leads to that conclusion.22 
+ 
+Education Employees 
+ 
+Similarly, nearly 43,00023 teachers and school employees obtain coverage through the Vermont 
+Education Health Initiative (VEHI), would be covered by GMC. VEHI is currently a municipal trust 
+established under 24 V.S.A. § 4942.24 The coverage for a given school district is bargained at the 
+local level between the school board and the Vermont National Education Association (NEA). 
+Under Act 48, education employees would be covered by GMC as their primary coverage, but 
+supplemental coverage may be provided as a result of bargaining between the school district 
+and the union.25  
+ 
+State and Education Retirees 
+ 
+Retired employees of the state or a school currently receive retiree health care from the state 
+of Vermont. This program is run by the Treasurer’s Office.  
+ 
+After implementation of Green Mountain Care, state and education retirees would continue to 
+have the same level of coverage as they do today regardless of residency. If they are Vermont 
+residents without Medicare, they would have coverage through Green Mountain Care.  
+ 
+For Vermonters with Medicare and non-resident retirees, the coverage would stay the same 
+and be maintained through a private insurer, just like today.  
+ 
+Municipal Employees 
+ 
+Town and city employees historically were covered through an association run by the Vermont 
+League of Cities and Towns. Currently, municipalities purchase a Vermont Health Connect plan 
+as a small employer, a large group insurance plan as a large employer or, in the case of one city, 
+                                                        
+22 33 V.S.A. 1830. 
+23 VEHI Annual Summary Report for the year ending June 30, 2014. Available here: 
+http://vehi.org/media/doc/VEHI_Annual_Report_Final.pdf 
+24 There are currently two school districts that receive coverage through small group insurance plans provided by 
+Vermont Health Connect. Under the Affordable Care Act, once a school district’s insurance plan loses 
+“grandfather” status, the district must purchase insurance through either the small or large group insura nce 
+market. 
+ 
+25 33 V.S.A. 1830. 
+=== page 19 ===
+ 
+15 
+ 
+have become self-insured. After implementation of Green Mountain Care, these employees 
+would have GMC primary coverage the same as any employee of a Vermont business.  
+ 
+Non-resident employees of Vermont business 
+ 
+We would propose allowing nonresident employees of Vermont businesses to also receive 
+coverage from GMC. Employers and members of the legislature had raised the issue of how 
+nonresidents who work for Vermont businesses would be covered. This is most often an issue 
+for employers who are located near the New Hampshire, New York, or Massachusetts borders, 
+although there are some Vermont companies that have business sites out of state or employ 
+nonresidents remotely. Currently, these businesses either purchase an insurance product with 
+an out-of-state-network that covers the states where their employees live or purchase a 
+different insurance product in each state where they have employees. In our modeling, we 
+assumed that out of state residents who work for Vermont employers could participate in 
+Green Mountain Care and would pay the public premium in order to minimize hassle and 
+complexity for border employers and employees.  
+ 
+Self-Insured Businesses 
+ 
+Any business could continue to provide health benefits to their employees as provided for 
+under the federal Employment Retirement Income Security Act of 1974 (ERISA). This includes 
+the ability to self-insure, which is commonly done today by large, multi-state or national 
+businesses. These types of companies are commonly described as “ERISA companies,” although 
+ERISA covers all businesses of any size or type. Under Green Mountain Care, businesses could 
+continue to choose to offer coverage. At the same time, employees would also have a choice—
+they could have GMC as their coverage and decline their employer-sponsored coverage or take 
+their employer-sponsored coverage as primary and GMC as secondary coverage. 
+  
+=== page 20 ===
+ 
+16 
+ 
+Chapter Three: What benefits would be covered? 
+There are three primary components of a benefits package: 
+ Covered services 
+o What services are paid for in whole or in part? 
+ Cost-sharing 
+o How much does an individual pay out-of-pocket when they get services? 
+o Do individuals pay out-of-pocket through co-pays, deductibles, or co-insurance? 
+ Network of health care providers  
+o Are there restrictions on the specific providers an individual can use? 
+Our recommendations regarding each of these components are described below. 
+Covered Services 
+Green Mountain Care would cover primary, preventive, and chronic care, as well as urgent care 
+and hospital services. These are the categories of services customarily covered by a good health 
+insurance policy in today’s market. GMC would also cover dental and vision up to age 21 as 
+required by the ACA. GMC would not cover long-term care, adult dental services, adult vision 
+care, or hearing, though some of these services would be covered for Vermonters who would 
+otherwise be eligible for the Medicaid program. Federal and state law requires that Vermont 
+continue to cover an expanded range of benefits for people who are Medicaid-eligible. 
+Vermonters, including Vermont employers, would be able to purchase supplemental coverage 
+if desired.  
+ 
+We propose a package of covered services for Green Mountain Care that mirrors the coverage 
+most insured Vermonters have today. Under this proposal, GMC would cover: 
+ Preventive care without any out-of-pocket cost; 
+ Ambulatory patient services (outpatient care without being admitted to a hospital); 
+ Emergency services; 
+ Hospitalization; 
+ Pregnancy, maternity, and newborn care (care before and after a baby is born); 
+ Mental health and substance use disorder services, including behavioral health 
+treatment (this includes counseling and psychotherapy); 
+ Prescription drugs; 
+ Rehabilitative and habilitative services and devices (services and devices to help people 
+with injuries, disabilities, or chronic conditions gain or recover mental and physical 
+skills); 
+ Laboratory services; 
+ Preventive and wellness services and chronic disease management; and 
+ Pediatric dental and vision services. 
+ 
+=== page 21 ===
+ 
+17 
+ 
+Medicaid benefits would remain the same for Vermonters who are Medicaid-eligible, meaning 
+that Medicaid-eligible Vermonters receive some benefits beyond the GMC “core,” such as 
+screening and diagnostic testing for children and some transportation services. 
+We suggest these services because they meet the federal standards under the Affordable Care 
+Act, and they are very similar, if not better than the covered services many Vermonters have 
+today.26 As required by Act 48, we considered including adult dental, adult vision, hearing, and 
+long term care services. After costing out these benefits and reviewing the literature, we do not 
+recommend covering these benefits during the first phase of Green Mountain Care.27 For more 
+information and background on these services, see Appendix B. 
+Cost-Sharing 
+Cost-sharing is typically measured through actuarial value (AV). Actuarial value is the average 
+amount as a percentage of total health care costs that a health plan would pay. The higher the 
+AV, the less an individual would pay out-of-pocket in co-pays, deductibles, and co-insurance 
+and the more paid for through public financing. 
+ 
+We recommend that GMC benefits be pegged to a 94 percent actuarial value, meaning the 
+average amount of the cost of covered services covered through public financing is 94 percent, 
+while the average amount of costs covered through consumer cost-sharing (out-of-pocket 
+expenses) would be six percent. This coverage is consistent with that provided by public sector 
+employers and many large private sector employers. Our reasoning for choosing this level of 
+actuarial value is: 
+ It is consistent with the current norm in Vermont. As of 2013 more than 50 percent of 
+Vermonters who had purchased health insurance or had health care coverage through 
+their employer had a similar level of cost-sharing.28 In addition, 18 percent of 
+Vermonters had even lower costs through Medicaid.  
+ It greatly reduces the extent to which Vermonters need to seek supplemental coverage 
+to maintain their current level of coverage when they are covered by GMC 
+ It thereby reduces the potential complexity of the interface between primary and 
+secondary coverage after implementation of GMC 
+ It eliminates the variation in coverage across the market, ensuring that all Vermonters 
+have access to affordable coverage regardless of health status. 
+ 
+The chart below shows a comparison of the current state employee plan and two plan designs 
+developed as options for Green Mountain Care at a 94% AV in 2017: 
+                                                        
+26 See Appendix B for a chart comparing covered services. 
+27 See Appendix B for PowerPoint presentations to the GMCB. 
+28 Wakely Consulting Group based on Vermont data. 
+=== page 22 ===
+ 
+18 
+ 
+Table 2: Plan Comparisons at 94% Actuarial Value 
+Plan Type  State Plan – Original 
+2014 
+94% AV Option 1 
+2017 
+94% AV Option 2 
+2017 
+Deductible  $0 - Med;  
+$25 - Rx 
+$0 - Med,  
+$75 - Rx (non-
+generics) 
+$100 - Med; 
+$0 - Rx 
+Out-of-pocket Maximum  unlimited - Med;  
+$775 - Rx (non-
+preferred brand 
+excluded) 
+$5,000 - Med;  
+$1,300 - Rx 
+$650 - Med;  
+$200 - Rx 
+Inpatient hospital visit $250 $300 20% 
+Outpatient Surgery  $0  $150  20% 
+ER Visit  $50 $75 20% 
+Medical devices  $0  $0  20% 
+Lab/X-Rays  $0  $0  20% 
+Physician/mental health 
+office visit 
+ $20 $25 $10 
+Specialist office visit  $20 $35 $20 
+Generic prescription drugs  10% $10  $5 
+Brand prescription drugs  20% 20% $15 
+Non-Brand prescription drugs  40% 40% $30 
+      
+DEDUCTIBLE APPLIES TO YELLOW HIGHLIGHTED CELLS   
+ 
+Act 48 requires that we provide information to the Green Mountain Care Board about 80% AV 
+plans, 87% AV plans, and no cost-sharing (e.g. 100% AV). These plan designs and their costs are 
+in Appendix B.  
+Provider Networks 
+We have not assumed restrictions on provider networks in any of our plan designs, and GMC 
+would be available to Vermonters who are out of state through a national network. We do 
+expect that, to live within cost constraints and improve care for Vermonters, it may be 
+necessary to require Vermonters to identify a primary care provider who coordinates their care. 
+Also, as is true of both private and public insurers today, GMC might require specific licensing 
+and/or credentialing in order to contract with a specific provider.  
+ 
+=== page 23 ===
+ 
+19 
+ 
+Supplemental Insurance Market  
+Supplemental health insurance policies are typically designed to add on more comprehensive 
+health coverage. They “wrap around” and complement basic health insurance.29 Supplemental 
+plans can either cover services that are not offered by the plan or supplement cost-sharing 
+under the plan. Supplemental insurance covering additional services includes adult dental and 
+vision. We do not anticipate this market changing. Supplemental insurance covering alternative 
+cost-sharing includes “Medigap” plans for persons with Medicare. We do not anticipate this 
+market changing, either. 
+While supplemental policies can fill in gaps in coverage, they can also lead some consumers to 
+pay for more protection than is necessary. Some consumers are “over-insured” and are paying 
+for coverage they are unlikely to use. Supplemental insurance offerings should be tailored to 
+complement comprehensive health coverage and to offer coverage for services that are beyond 
+the scope of the comprehensive plan, but are not duplicative or unnecessary. Because the 
+recommended GMC benefit package is relatively generous, it is unlikely that individuals would 
+need or desire further coverage, other than dental or vision coverage.  
+ 
+  
+                                                        
+29 Insurance Basics. Supplemental Policies. www.healthcare.gov. 
+=== page 24 ===
+ 
+20 
+ 
+Chapter Four:30 How would the program operate? 
+ 
+This chapter describes our proposal for how GMC would operate, including the role of state 
+government, the role of private contractors or entities, the process for determining provider 
+payment, and the process for determining the overall GMC budget. 
+ 
+GMC should be operated as a public-private partnership between the state of Vermont and a 
+strong private sector partner under either a “designated public utility” or a “designated 
+facilitator” model. Both are described in more detail below. The state has a responsibility and 
+state statutory obligation to provide appropriate oversight and governance for the program, 
+and the state is required by federal law to perform certain functions with respect to 
+administering federal funds and fulfilling the requirements of the Medicaid program. However, 
+we believe the right private sector partner would bring strengths to GMC, including: 
+ 
+ Appropriate financial reserves to guard against the insurance risk inherent in the 
+program; 
+ Proven expertise in administering health care coverage for a broad array of Vermonters; 
+ A track record of negotiating fair and reasonable health care provider payment; and 
+ Access to a national and international contracted provider network. 
+ 
+The designated entity would assume primary responsibility for provider contracting and 
+provider payment, within parameters defined by the Green Mountain Care Board (GMCB). 
+Specifically, as described more fully in chapter 5, we suggest a process whereby the GMCB 
+outlines general rules for provider payment consistent with the statutory authority granted 
+them in Act 48 and the legislative directive to shift away from volume-based provider payment 
+mechanisms. The GMCB also would outline: 
+ 
+ The expected rate of increase in GMC expenditures for the coming year, taking into 
+account cost pressures and revenue constraints; 
+ Allowed administrative costs for the designated entity; 
+ Performance measurement requirements for the designated entity. 
+ 
+The designated entity would be responsible for contract negotiations with health care 
+providers, adhering to the GMCB requirements for both the overall rate of growth in 
+expenditures and the general methodology for provider payment.  The resulting total cost 
+would come before the GMCB in the form of a “rate case,” similar to a rate filing received by 
+                                                        
+30 Act 144 of 2014, Sec. 7, the Secretary of Human Services is required to report to the General Assembly on or 
+before January 15, 2015 the elements of Green Mountain Care, such as claims administration and provider 
+relations, for which the Agency plans to solicit bids for administration pursuant to 33 V.S.A. § 1827(a), as well as 
+the dates by which the Agency will solicit bids for administration of those elements and by which  it will award the 
+contracts. This chapter is meant to fulfil the requirement to describe the operational design of GMC. The 
+administration does not intend to solicit bids at this time. 
+=== page 25 ===
+ 
+21 
+ 
+the GMCB today. The GMCB would approve, disapprove or modify the rate filing and would 
+monitor the program for adherence to cost and other performance requirements.  
+ 
+Lastly, under Act 48, the GMCB is responsible for setting a three year budget for Green 
+Mountain Care. We would propose some adjustments to today’s consensus revenue process, 
+specifically that the consensus process include the Green Mountain Care taxes and the addition 
+of a consensus health care expenditure projection. Using these tools, the GMCB would develop 
+a three-year rolling budget and would propose either cost reductions or an inflation factor to 
+provide the legislature with a balanced budget. This process is described in greater detail later 
+in this chapter. 
+ 
+We would recommend that further analysis be done to determine whether the state 
+designated entity should be considered for executing the following functions, subject to 
+discussion with that entity and a full assessment of state and federal requirements related to 
+Medicaid administration in the context of both operational efficiency and service quality: 
+ 
+ Enrollment 
+ Claims adjudication 
+ Provider reimbursement 
+ Coordination of benefits and subrogation 
+ Primary care provider selection and referral management  
+ Medical necessity determination 
+ Adjudicating out-of-state coverage for non-emergent care 
+ Setting payment terms for covered services, within parameters established by the Green 
+Mountain Care Board 
+ Negotiating provider payments, including developing population-based payments to 
+ACOs 
+ Data analysis, reporting and settlement with at-risk providers 
+ Hospital, physician and other provider credentialing & network enrollment, including 
+contracting a national network and covering services out-of-country 
+ Ongoing budgeting for medical and administrative costs related to the services paid for 
+under GMC 
+ Financial management, including: 
+o reserving 
+o reinsurance 
+o cash flow management  
+o retroactive provider settlements 
+o actuarial analyses, projections and reporting 
+o budgeting for GMC administrative costs 
+ Program integrity, including some fraud and abuse detection 
+ Customer service 
+ 
+=== page 26 ===
+ 
+22 
+ 
+We would suggest that the state retain at least the following functions related to GMC: 
+ 
+ Eligibility determination, including determination of eligibility for federal Medicaid 
+matching funds for Vermonters covered by GMC 
+ Interface with federal agencies responsible for GMC oversight and funding 
+ Oversight of provider payment policy 
+ Oversight of the total GMC budget and alignment of the budget with available state and 
+federal funding (as described in further detail below) 
+ Oversight of the financial health and adequacy of reserves of the designated entity 
+ Overall evaluation of the performance of GMC and the designated entity in terms of 
+costs, quality of care and consumer experience 
+ Appeals and grievances 
+ 
+Certain functions currently performed by the state (through the Department of Vermont Health 
+Access) and by insurance carriers warrant further analysis, as they might reasonably transfer to 
+ACOs as providers assume more responsibility and capability for managing medical risk in the 
+future. These include: 
+ 
+ Care management and care coordination 
+ High-cost case management 
+ Chronic illness management 
+ Pre-authorization for referrals and drugs 
+ Pre-certification for certain types of care 
+ Utilization management 
+ 
+In addition, as ACOs evolve, there would be a need for continued examination of the 
+appropriate state role in overseeing the degree to which those entities assume insurance risk, 
+and the degree to which insurers could reduce their need for financial reserves as risk is 
+transferred to ACOs. Responsibility for this determination would fall to the GMCB and the 
+Department of Financial Regulation. 
+ 
+Designated Entity Models 
+ 
+The designated public utility and designated facilitator models are discussed in more detail 
+below.  
+ 
+Public utility model 
+ 
+Under current law, public utilities are private companies formed under general corporate law. 
+They must seek and obtain a certificate of public good from the Public Service Board before 
+operating as a utility and once in operation are heavily regulated by the Public Service Board 
+under Title 30. The Public Service Board has jurisdiction over virtually every facet of the 
+=== page 27 ===
+ 
+23 
+ 
+operation of a public utility’s business, including the rates charged, quality of service, and 
+overall financial management.31  
+Utilizing a public utility model to make a given entity the vendor for GMC would likely consist of 
+these fundamental characteristics: (1) operation under a certificate of public good; (2) 
+operation under the jurisdiction of GMCB; and (3) strict regulation by GMCB of all (or nearly all) 
+aspects of the entity’s business. This could be achieved through changes to the statutes 
+governing GMCB as well as those governing the entity.32  
+Designated facilitator model 
+ 
+Within the public service statutes, the Public Service Board has jurisdiction over the sale to 
+electric companies of electricity generated from renewable resources and cogeneration.33 The 
+Public Service Board issued a rule designed to encourage such development of electricity.34 
+Included in the rule is a provision stating that “the Board may by order designate one or more 
+Purchasing Agents. Such an order may define appropriate terms and conditions, including the 
+rights, authority, duties and obligations of the Purchasing Agent, and the authority of the Board 
+to regulate and supervise the Purchasing Agent.”35 Generally, a purchasing agent serves as an 
+intermediary between power producers and purchasing utilities.36 The rule goes on to provide 
+permissive criteria the Public Service Board may use in designating a purchasing agent.37 Finally, 
+the rule contemplates that the designated purchasing agent would be given the opportunity to 
+accept the designation.38  
+To follow this model, statutes governing GMCB or the executive branch could be amended to 
+include the authority to designate a vendor. Because of the breadth of services it would 
+provide, the GMC vendor would be more of a “facilitator” than simply a “purchasing agent.” 
+Once a state agency or the GMCB issues an order designating the facilitator, the law could 
+either allow the entity the option of accepting the designation or could require the entity to 
+accept the designation. If voluntary and it accepts, the state and the entity would negotiate a 
+contract for specific services to be provided. The role of the facilitator could be described in the 
+statute, the order designating the facilitator, or in the contract between the parties. 
+                                                        
+31 30 V.S.A. §§ 209, 218, 249. 
+32 For example, Blue Cross Blue Shield of Vermont is a nonprofit hospital service corporation. These types of 
+companies have specific enabling legislation in 8 V.S.A. Chapters 123 and 125. BCBSVT is the only nonprofit 
+hospital service corporation operating in Vermont.  
+33 30 V.S.A. § 209(a)(8).  
+34 Public Service Board Rule 4.100: Small Power Production and Cogeneration.  
+35 Rule 4.102(C). 
+36 Petition of Vermont Electric Power Producers, Inc., 165 Vt. 282, 285 (1996).  
+37 Rule 4.102(C). 
+38 Id. 
+=== page 28 ===
+ 
+24 
+ 
+Medicaid Operational Integration 
+We anticipate that operational integration of Medicaid and Green Mountain Care would 
+happen in phases, staged according to the readiness of the state’s new integrated eligibility and 
+MMIS systems.  
+ 
+Provider Contracting and Provider Payment 
+We are assuming that Green Mountain Care would operate in the context of an “all-payer 
+system,” whereby health care provider payment rates in Vermont would be standardized across 
+all payers, including Medicare, to achieve fairness, consistency and transparency in provider 
+pricing while encouraging a deliberate shift from volume-based to outcomes-based provider 
+payment. This plan is described in more detail in Chapter 5.  
+ 
+We suggest that the designated entity assume primary responsibility for provider contracting 
+and provider payment under GMC, within parameters defined by the Green Mountain Care 
+Board (GMCB). The GMCB would outline general rules for provider payment consistent with the 
+statutory authority granted them in Act 48 and the legislative direction to shift away from 
+volume-based provider payment mechanisms. The GMCB also would outline: 
+ 
+ The expected rate of increase in GMC expenditures for the coming year, taking into 
+account cost pressures and revenue constraints; 
+ Allowed administrative costs for the designated entity; 
+ Performance measurement requirements for the designated entity. 
+ 
+The designated entity then would commence contract negotiations with health care providers, 
+attempting to adhere to the GMCB requirements for both the overall rate of growth in 
+expenditures and the general methodology for provider payment.  The designated entity would 
+bring the resulting total cost proposal for GMC to the GMCB in the form of a “rate case,” similar 
+to a rate filing received by the GMCB today. The GMCB would approve, disapprove or modify 
+the rate filing and would monitor the program for adherence to cost and other performance 
+requirements. This process is illustrated below. Later in this chapter we describe how this 
+process would interface with legislative and executive branch revenue forecasting and 
+budgeting processes. 
+ 
+ 
+ 
+ 
+ 
+  
+=== page 29 ===
+ 
+25 
+ 
+ 
+ 
+Figure 1: Green Mountain Care Provider Rate Oversight and Negotiation 
+ 
+ 
+ 
+Budgeting and Budget/Revenue Reconciliation 
+ 
+Green Mountain Care offers the promise of guaranteed coverage to all Vermonters, consistent 
+cost control, transparency and fairness in the distribution of health care costs and a more 
+explicit reflection of public policy goals such as health promotion and prevention in our health 
+care spending. However, it also would create a very explicit tension between growth in public 
+revenue sources and growth in health care costs, which have not been aligned historically in 
+Vermont or the United States.  
+ 
+To address this tension, and provide for appropriate balance of interests in setting the GMC 
+budget, we proposed: 
+ 
+ Three risk mitigation strategies to ensure that the state is prepared if expenditures are 
+higher than expected or revenues are lower than expected; and 
+ A consensus process for projecting revenues and expenditures. 
+ 
+GMCB sets rules for 
+provider payment, 
+allowed rates of cost 
+increase, allowed 
+administrative costs, and 
+quality measurement 
+requirements 
+Designated entity 
+negotiates provider 
+payment rates for both 
+ACOs and non-ACO 
+providers consistent with 
+GMCB rules 
+Designated entity 
+submits a rate filing that 
+reflects negotiated rates 
+to GMCB for review  
+GMCB approves, 
+disapproves or modifies 
+rate filing 
+GMCB monitors program 
+and designated entity 
+performance/compliance 
+with their rules 
+
+=== page 30 ===
+ 
+26 
+ 
+Each of these is explained below. 
+ 
+Risk Mitigation 
+ 
+We would recommend that GMC utilize three risk management strategies39:  
+ 
+ Insurance reserves to cover insurance claims risk; 
+ Revenue reserves for the Green Mountain Care Fund; and 
+ A budget and revenue cycle that includes an adjustable tax rate to provide sufficient 
+revenue to correct any systemic financial imbalances.   
+ 
+These strategies are described below. 
+ 
+Insurance and revenue reserves 
+ 
+We determined that the State would need to have access to reserves to account for claims risk 
+and unexpected slowdowns in the economy.  We asked our actuarial firm to calculate the 
+needed reserves as though GMC was an insured product. They estimated that Green Mountain 
+Care requires between $70 and $117 million in reserve capital depending on the level of 
+capitation achieved through the all payer waiver.40  We looked at providing these reserve funds 
+in two ways, insurance reserves and revenue reserves.   
+ 
+We would recommend leveraging a relationship with the GMC administrator in a way that 
+would allow Vermont to use or acquire insurance reserves without raising additional revenue 
+for year one.  Failure to leverage or acquire reserves would increase the GMC public financing 
+amount by a commensurate amount.   
+ 
+Revenue reserves protect the State against an unexpected slowdown in state tax collection. All 
+major state revenue funds carry reserves, and we would recommend that Green Mountain Care 
+Fund also carry revenue reserves.    
+ 
+Major state revenue funds are required to carry a five percent reserve under state law.  We 
+calculated the minimum amount in reserves by looking at five percent on the amount of state 
+taxes in the Green Mountain Care Fund.  Stated another way, it would be a reserve of the entire 
+fund value excluding federal contributions.  This would have the additional effect of providing 
+reserves for Medicaid, which do not exist under the current system.  This calculation resulted in 
+a reserve of approximately $146.2 million. 
+ 
+                                                        
+39 We considered reinsurance as a fourth risk mitigation strategy. We rejected this approach based on the advice of 
+our actuaries. See Appendix D. 
+40 For more detail, see Appendix D. 
+=== page 31 ===
+ 
+27 
+ 
+We would recommend a one-time bond issue to ensure that reserves beyond the minimum are 
+fully available at program launch.  The bond issue would raise $200 million, setting reserves 
+above the statutory minimum.  Repayment of the bond would cost $44 million annually for the 
+first five years of operation. Failure to acquire these reserves through bonding would increase 
+the GMC public financing required.41  
+ 
+Budget and revenue Cycle 
+ 
+It would be necessary to reconcile GMC outlays with the state’s revenue and budget cycles. We 
+would recommend managing the GMC budget and revenue cycle as follows.  
+ 
+Recommendation 1: Inclusion of GMC Taxes in State Revenue Forecast 
+ 
+GMC represents a significant enlargement of the State balance sheet. The GMC Special Fund 
+should be added to the State’s consensus revenue process and adopted by the Emergency 
+Board. In this way, we can best understand the fund’s revenue outlook in the same manner as 
+other state funds. 
+ 
+Recommendation 2: Create a Consensus Health Care Expenditure Forecast 
+ 
+Similarly, a forecast should be developed to anticipate the relationship between GMC revenues 
+and expenditures over a five-year period. We would need to determine the proper relationship 
+between the administration, legislature, Green Mountain Care Board, and the designated entity 
+for the production of this forecast and whether it ought to be approved by the Emergency 
+Board or some other body.  
+ 
+These two forecasts would help execute the budgeting requirements set forth in Act 48, which 
+require the Green Mountain Care Board, in collaboration with others, to develop a Green 
+Mountain Care budget including recommended appropriations, revenue estimates, and 
+necessary modifications to tax rates and other assessments.  
+ 
+Recommendation 3: Amend Act 48 of 2011 Budget Requirements 
+ 
+Act 48 requires a budget for Green Mountain Care every three years. We would recommend 
+modifying this requirement by having an annual budget and three-year cost projection. This 
+rolling three-year budget would seek to align GMC budgeting with the current state budget and 
+appropriation process while providing appropriate planning for the future.   
+ 
+                                                        
+41 Reliance on bond funding for reserves involves a number of considerations, including whether such a bond for 
+reserves would impact Vermont’s current bond rating. 
+=== page 32 ===
+ 
+28 
+ 
+Recommendation 4: Create a Legislatively Directed Process to Adjust Tax Rates over Time 
+ 
+Health care spending tends to grow faster than the economy. This could cause a gap between 
+GMC health care expenditures and revenues, which track more closely with inflation over time. 
+We would recommend that the legislature create a methodology in statute that ensures that 
+health care expenditures and GMC revenues align as closely as possible.  
+ 
+We would recommend the following multi-step process.  
+ 
+ Step 1: The Green Mountain Care Board would determine the cost of GMC given the 
+benefits package, health care expenditure forecasts, input from the designated entity 
+regarding provider contracts and rates, and the state budget.   
+ Step 2: The Board would use the consensus revenue forecast to determine revenues 
+available for the next year. 
+ Step 3: The Board would certify whether revenues and expenses aligned. If aligned, no 
+further action would be needed.  
+ Step 4: If there was a revenue shortfall, the Board would certify the fiscal gap.  
+ Step 5: The Commissioner of Taxes would be required to appear before the Board and 
+present adjusted tax rates that split the fiscal gap equally between the payroll tax and 
+individual tax.  
+ 
+The legislature would maintain its authority and control by setting forth the methodology and 
+creating guard rails that set a lower and upper boundary for potential tax adjustments. These 
+guardrails would limit the maximum possible growth in tax rates.  
+ 
+The guardrails would set the annual tax rate adjustment at no less than 0% and no more than 
+5%. The inability to reduce the rate from the previous year without further direct legislative 
+action insulates Vermonters from rate shock if expenditures vary significantly from year to year. 
+The maximum rate ensures that taxpayers are protected in case of escalating costs. The Board 
+and designated entity would need to find cost savings if the fiscal gap exceeds the maximum tax 
+adjustment.  
+  
+Recommendation 5: Create a Methodology for Reserves 
+ 
+We would recommend that Commissioner of the Department of Financial Regulation partner 
+with the designated entity to create a methodology for monitoring reserves, using reserves, 
+and rebating reserves to taxpayers if they are in excess of what is necessary. This methodology 
+would need to be approved by the legislature. 
+ 
+This overall approach to managing risk is designed to ensure that GMC has sufficient revenue to 
+pay for the health care of all Vermont residents and maintain access to appropriate health care 
+facilities and providers. 
+  
+=== page 33 ===
+ 
+29 
+ 
+Chapter Five: Who would provide health care services and how would 
+they get paid? 
+ 
+The primary functions of Green Mountain Care would be to provide guaranteed coverage to 
+Vermonters for the health care services they need and to pay health care professionals for 
+those services. GMC must pay providers fairly and in a timely manner for the services 
+Vermonters need. This is essential to maintain access to services, improve quality of services, 
+and ensure our ability, as a state, to recruit and retain the providers we need over the long 
+term. How we structure these payments, and the incentives we embed in payments, also would 
+have an impact on total cost of the program, quality of services and, ultimately, the health of 
+Vermonters.  
+ 
+There would be three central elements to determining provider payment under GMC: 
+ 
+ What process would we use to determine provider payment? 
+ What methodology would we use? 
+ What amount would we pay? 
+ 
+Our recommendations on each of these elements are described below. 
+ 
+We assume Green Mountain Care would pay providers both in and out of state. Today, most 
+Vermonters have insurance coverage that provides an out of state network and about a third of 
+all Vermont residents seek care at Dartmouth-Hitchcock Medical Center in New Hampshire. 
+Consistent with the operational design described in Chapter 4, we would expect that the 
+designated entity would contract with out-of-state providers as necessary to meet the needs of 
+Vermonters. 
+ 
+Process to Determine Provider Payment 
+We would recommend that provider payment be determined though an all-payer rate setting 
+process overseen by the Green Mountain Care Board (GMCB). The GMCB has expressed its 
+intent to begin designing an all-payer system under their existing regulatory authority, and the 
+state has begun discussions with the federal government regarding federal permissions 
+necessary to include Medicare in a Vermont all-payer system. Design and implementation of 
+such a system would take an estimated one to two years.  
+ 
+We believe the all-payer payment system is an essential underpinning of GMC in that it would 
+standardize and make more rational and transparent the details of and variations in provider 
+payment. The all-payer system also would require an all-payer waiver from the federal Center 
+for Medicare and Medicaid Services (CMS), which would operationalize an agreement between 
+the state, the federal government and providers about reasonable rates of growth in health 
+care costs and expected changes in provider payment methods.  
+ 
+=== page 34 ===
+ 
+30 
+ 
+We anticipate that an all-payer system would determine both: 
+ 
+ General rules for payments to Accountable Care Organizations (ACOs). The vast majority 
+of Vermont’s health care providers, and many long-term services and supports 
+providers, currently are involved in the shared savings programs as participants in ACOs.  
+• General rules for fee-for-service payments to providers who are excluded from or 
+choose not to participate in ACOs, and for services to visitors. 
+ 
+Each type of payment would be standardized according to GMCB parameters, and each would 
+be subject to an overall growth cap, across all payers. The growth cap would function as both 
+ceiling and floor – i.e., Medicaid and Medicare would grow at the same rate as other payers. 
+For ACOs, the GMCB would set rules, as they have for the Medicaid and commercial shared 
+savings programs, for such details as risk-sharing between ACO and GMC, risk adjustment and 
+overall calculation of ACO payments. The GMCB and/or DFR might set additional requirement 
+for ACOs with regard to risk assumption and reserves. 
+ 
+For non-ACO providers, the GMCB would require a transparent, standardized and “fair” fee 
+schedule that is consistent with policy goals such as adequate support for primary care, 
+prevention and population health management. 
+ 
+We believe that it is appropriate to use a process involving a third party vendor and the Green 
+Mountain Care Board to determine provider payment levels and provider payment 
+methodology for Green Mountain Care. This process can assure that GMC payments and 
+payment methodologies are consistent with GMCB cost control trends, consistent with GMCB 
+payment reform policy, and appropriately reflective of provider market dynamics.  
+ 
+Payment Methodology 
+The methodology to be used for provider payment ultimately would be determined by the 
+Green Mountain Care Board. However, we believe it is essential to continue to build on the 
+work of the Green Mountain Care Board, the Vermont Health Care Innovation Project and 
+Vermont’s three Accountable Care Organizations and continue to move away from fee-for-
+service provider payment, toward payment models under which providers assume greater 
+responsibility for managing total costs and quality of care for Vermonters, and are rewarded for 
+such outcomes. Continuing this shift would be essential to the long-term viability of GMC and 
+its success at improving Vermonters’ health. 
+ 
+=== page 35 ===
+ 
+31 
+ 
+Reimbursement Amounts 
+The precise amount to be paid for GMC services would be a function of both the general rules 
+established through the all-payer rate setting process and the contract negotiations of the 
+designated entity. We have assumed in our analyses of GMC costs that current provider 
+payment amounts and utilization would be trended forward, in aggregate and on average, at a 
+rate of 3.3 and 6.6 percent for Medicaid and Commercial populations between 2012 and 
+2017.42 All populations covered by GMC are assumed to trend at a rate of four percent beyond 
+2017.  
+ 
+While there might be some changes in specific reimbursement methods or levels for providers, 
+and some standardization across provider categories, overall payments would be inflated at a 
+reasonable amount, consistent with GMCB policy. The trend from 2012 to 2017 was developed 
+in consensus with the RAND Corporation, which was hired by the legislature’s Joint Fiscal Office. 
+The trend from 2017 and beyond of four percent was developed based on assumptions about 
+the success of payment and delivery system reform, as well as experience of Maryland, the only 
+state that currently has an all-payer waiver to support its all-payer rate setting system. More 
+information about the trend is available in Appendix D.  
+  
+                                                        
+42 Our actuaries applied the trends at the sub-population level to reflect current differences in morbidity and 
+utilization in these populations. 
+=== page 36 ===
+ 
+32 
+ 
+Chapter Six: What would GMC cost and how would we pay for it? 
+ 
+This chapter describes our estimates of the costs of Green Mountain Care and our 
+recommendations for financing mechanisms to cover those costs. 
+ 
+Introduction: Vermont Health Care Spending in Context 
+Vermont residents spend billions of dollars on health care today, and this spending is expected 
+to grow annually at a rate that exceeds the rate of growth in our economy. Vermont residents 
+spent $5.123 billion on health care in 2012.43  
+ 
+This aggregate health care spending number incorporates billions in spending by Vermont 
+residents on insurance premiums, out-of-pocket expenses, and taxes paid that were spent by 
+federal, state, and local governments on health care. For example, in 2012, Vermonters spent 
+$1.886 billion in private insurance premiums and paid $715 million out-of-pocket for health 
+care.44 These big numbers convey two points. First, Vermonters already make a substantial and 
+growing financial commitment to health care, regardless of the implementation of Green 
+Mountain Care. Second, Green Mountain Care’s financing system would incorporate and 
+replace a vast pool of existing health care spending as Green Mountain Care would replace 
+most private insurance premiums and some out-of-pocket spending for Vermonters.   
+ 
+Green Mountain Care Costs 
+We estimate that the total cost of Green Mountain Care would be $4.34 billion in 2017, with 
+another $187 million paid out-of-pocket. All costs except for out-of-pocket costs would be paid 
+from the Green Mountain Care Fund, created by Act 48 of 2011. These costs are detailed in 
+Table 3 below.  
+ 
+The coverage cost represents the aggregate per member per year premium equivalent for all 
+enrollees and an administrative cost that would be retained by the designated entity that 
+functions as the claims payer.45 State operations costs represent an estimate for those 
+administrative costs not borne by the payer. These expenses include repayment of bonds 
+issued for revenue reserves and health care innovation funding, including the cost of operating 
+the Green Mountain Care Board, continuation of Health Information Technology Fund, and the 
+estimated non Medicaid cost of Vermont Health Connect. Also, we include an unallocated 
+contingency for unexpected operational expenses. We consider these assumptions 
+conservative, as Green Mountain Care and the development of the designated entity would 
+result in efficiencies for state government that save taxpayers money; however, we are not 
+prepared at this time to estimate and book these savings until GMC operations are further 
+developed in final detail.   
+                                                        
+43 2012 GMCB Expenditure Analysis, see 
+http://gmcboard.vermont.gov/sites/gmcboard/files/GMCB_2012_Expenditure_Analysis_Res_Prov_2014_2_20.pdf   
+44 2012 GMCB Expenditure Analysis 
+45 A detailed breakdown of PMPM costs and administrative costs can be found in Appendix D  
+=== page 37 ===
+ 
+33 
+ 
+ 
+ 
+Table 3: 2017 Annualized Green Mountain Care Cost 
+GMC Plan Costs Excludes Out-of-pocket Costs Value in Millions 
+Coverage46  
+GMC Primary (Non Medicaid Eligible)  2,171 
+GMC Medicaid Primary 1,126 
+State Medicaid Fixed Costs 680 
+Medicaid Dual Eligible 259 
+Employer Sponsored Insurance Wrap 28 
+Total Cost of Coverage  4,26347 
+State Operations Cost  
+Bonding for Revenue Reserves 44 
+Health Care Innovation Spending  23 
+Contingency   10 
+Total GMC Cost 4,340 
+  
+Given these expenses, Table 4 sets forth the total GMC costs from 2017 – 2021. 
+ 
+Table 4: Green Mountain Care Costs, 2017 – 2021 
+GMC Plan Costs  
+(Value in Millions) 
+Excludes Out-of-pocket Costs 
+2017 2018 2019 2020 2021 
+Coverage 4,263 4,501 4,741 4,921 5,096 
+Total State Operations Cost 77 78 79 80 81 
+Total GMC Cost 4,340 4,579 4,820 5,001 5,177 
+Annual Growth Rate  5.58% 5.33% 3.80% 3.56% 
+ 
+Green Mountain Care health care coverage costs are trended forward at 4% annually; however, 
+total costs do not grow at a flat four percent rate. Growth exceeds four percent annually the 
+first two years as people move from employer-sponsored insurance to GMC. Costs grow by less 
+than 4% annually in 2020 and 2021 as the GMC population shrinks due to more Vermonters 
+growing older and moving to Medicare. State operational costs are trended forward at 3%.  
+ 
+                                                        
+46 Includes administrative costs paid to designated entity.  
+47 Total Cost of Coverage is $1 million less than sum of all cost categories due to rounding.   
+=== page 38 ===
+ 
+34 
+ 
+ 
+Green Mountain Care Revenues 
+The state would use the Green Mountain Care Fund established in Act 48 of 2011 for the 
+purposes of managing revenues and spending related to GMC. The Green Mountain Care Fund 
+would capture three revenue sources:  
+ Federal funds  
+ Existing state revenues 
+ Green Mountain Care taxes, which would replace private insurance premiums 
+The amount of Green Mountain Care taxes needed is determined by subtracting federal funding 
+and existing state revenues from the total cost, leaving a net amount to be funded by new state 
+tax revenue sources. We estimate that amount to be $2.580 billion. We would suggest two new 
+state tax revenue sources to cover these costs: 
+ A payroll tax levied on employers only, based on the amount of their payroll; and 
+ A public premium paid by individual Vermonters based on their income and family 
+size.48  
+Federal funds include those funds provided through the Affordable Care Act Section 1332 
+waiver, such as advanced premium tax credit subsidies, cost-sharing subsidies, and employer 
+tax credits that are passed to Vermont by the federal government49 and federal funds used for 
+current health programs, such as Medicaid. Existing state revenues include some current state 
+Medicaid revenue. The payroll tax and public premium are new revenue sources that replace 
+existing health care spending.  
+  
+                                                        
+48 The public premium would function as an income tax and would be deductible as such on federal taxes as 
+described in Chapter 7. 
+49 For details on the funds available through the ACA waiver, see Appendix E -2. 
+=== page 39 ===
+ 
+35 
+ 
+Table 5 summarizes these funding sources: 
+ 
+Table 5: 2017 Annualized Green Mountain Care Revenues 
+GMC FUND REVENUES   
+Excludes Out-of-Pocket Costs   
+Federal Funds Value in Millions 
+Federal: Medicaid Match  1,310 
+Federal: ACA Waiver Funds  106 
+TOTAL Federal Funds 1,416 
+Existing State Funds  
+State Medicaid Revenue 344 
+New GMC Taxes  
+GMC Payroll Tax 1,510 
+GMC Public Premium 1,247 
+TOTAL State Funds 3,101 
+TOTAL GMC REVENUES 4,517 
+ 
+Below we address our assumptions about each of these revenue sources in more detail.  
+ 
+Federal Funds 
+Vermont’s health care system relies on substantial federal funding today. Green Mountain Care 
+would draw down a greater level of federal support, because more Vermonters would be 
+covered and federal funding would be maximized. Vermont would receive funding under the 
+waiver provisions of the Affordable Care Act and under existing Section 1115 Medicaid waivers.  
+ 
+Under the Affordable Care Act Section 1332 waiver (ACA waiver), the state may receive funding 
+that would have been paid to Vermont residents and businesses in the form of advanced 
+premium tax credits, cost-sharing reductions, and small business tax credit payments had the 
+ACA’s requirement to have an Exchange selling health insurance not been waived.50    
+ 
+Currently, the federal government provides advanced payment of the premium tax credit and 
+cost-sharing reduction payments directly to insurers on behalf of eligible individuals. Under the 
+ACA waiver, Vermont would waive this requirement because residents would move from 
+paying premiums for insurance plans through Vermont Health Connect to having publicly-
+financed health care coverage under Green Mountain Care.51 Under the ACA waiver, the federal 
+                                                        
+50 ACA § 1332(a)(3); 42 U.S.C. § 18052(a)(3). 
+51 ACA § 1332(a)(2); 42 U.S.C. § 18052(a)(2). 
+=== page 40 ===
+ 
+36 
+ 
+government would pay Vermont the aggregate amount of the premium tax credits and cost-
+sharing reduction payments that would have otherwise been paid under the ACA.52 
+ 
+We estimate that Vermont would receive $106 million in federal pass through funding related 
+to advanced premium tax credits and cost-sharing reductions. The estimate assumes that 
+federal funds for all non-Medicaid eligible Vermont residents who would have received 
+premium tax credits and cost-sharing subsidies would be provided to the state. The estimate is 
+based on current discussions with multiple federal agencies regarding the waiver; however, our 
+federal partners have not yet approved Vermont’s methodology for calculating pass through 
+funding. This amount represents a substantial reduction from previous estimates. Specifically, 
+the 2013 report estimated federal contributions via the ACA waiver at $267 million.53  
+ 
+In addition to the premium tax credit and cost-sharing reduction payments, the ACA waiver also 
+allows for states to collect the small business health care tax credit that would have otherwise 
+gone to small employers participating in Vermont Health Connect.54 Vermont employers with 
+25 or fewer FTEs and average wages of less than $50,000 per employee per year would be 
+eligible for up to 50 percent of their contribution to employees’ insurance premiums (35 
+percent for tax-exempt businesses) if they purchase coverage through Vermont Health 
+Connect. We did not include the small business health care tax credit in our estimates, 
+however, because the credit is limited to two consecutive years starting in 2014,55 and we 
+estimate that employers who take the credit will do so in the years before implementation of 
+GMC, resulting in little to no revenue after 2017. 
+ 
+Table 6: Projected ACA Waiver Funds, 2017 – 2021 
+Year (Values in Millions) 2017 2018 2019 2020 2021 
+Tax Credits (APTC & CSR)  106 118 122 125 132 
+  
+Additionally, the federal government would continue to match state Medicaid spending. To 
+determine the federal Medicaid match in Green Mountain Care, we projected the populations 
+in GMC that would be eligible for a federal match. Certain populations receive higher dollar 
+matches from the federal government, so these populations were separately identified. 
+Detailed descriptions of the populations and applicable Federal Medical Assistance Percentages 
+(FMAP) rates are included in Appendix C and Appendix F.  
+ 
+                                                        
+52 ACA § 1332(a)(3); 42 U.S.C. § 18052(a)(3). The ACA does not define how the premium tax credits  and cost 
+sharing reductions payments would be calculated. After analyzing various options, Vermont proposed that the 
+federal government calculate the aggregate amount of the premium tax credits and cost sharing reduction 
+payments by using a modified formula that the federal government is already using with the Basic Health Plan 
+(BHP). See Appendix E-2 for more information on the methodology of these calculations.  
+53 
+http://hcr.vermont.gov/sites/hcr/files/2013/Health%20Care%20Reform%20Financing%20Plan_typos%26formattin
+g%20corrected_012913.pdf  
+54 ACA § 1332(a)(3); 42 U.S.C. § 18052(a)(3). 
+55 ACA § 1421(a); I.R.C. § 45R(e)(2). 
+=== page 41 ===
+ 
+37 
+ 
+The total federal contribution is calculated as the product of the federal match rate and the 
+projected cost of the populations. Overall, we estimate that the state would draw down $1.31 
+billion in federal Medicaid dollars in 2017, a $285 million increase. We estimate that this federal 
+funding source would grow to $1.505 billion by 2021. The increase in revenue is attributed to 
+expanded Medicaid enrollment. Specifically, we assume that nearly all Vermont residents who 
+are Medicaid eligible actually enroll instead of being uninsured or taking non-Medicaid 
+insurance. The estimate is based on our actuarial and economic analysis and current discussions 
+with multiple federal agencies and the state’s current Section 1115 Medicaid waiver. As noted 
+above, this estimate assumes current federal rules and provisions of Vermont’s current Section 
+1115 Medicaid waivers would continue to apply.  
+ 
+Existing State Revenues 
+Most existing state revenue that supports Medicaid would be used to pay for Green Mountain 
+Care. In our analysis we found that state Medicaid funding estimates face three types of 
+downward pressure.  
+ 
+First, some current state Medicaid revenue sources would either go away entirely or be 
+substantially reduced after implementation of Green Mountain Care. Specifically, the revenue 
+sources are: 
+ 
+ the claims tax, which is generated by taxing private health insurance claims; and 
+ the employer assessment, which taxes employers who do not provide health care 
+coverage, whose employees are uninsured, or whose employees have Medicaid or 
+purchase as individuals through Vermont Health Connect.  
+These revenue sources are substantially reduced as Vermonters move from private insurance to 
+GMC, resulting in fewer insurance claims to tax. We assumed that the claims tax and the 
+employer assessment would be repealed.  
+ 
+Second, previous estimates of State Medicaid revenue assumed that the State would make 
+progress toward reducing the cost shift prior to implementation of Green Mountain Care. This 
+did not happen due to persistent State budget pressures related to less robust than forecast 
+economic growth.  
+ 
+Third, we assume repeal of provider taxes, which provide substantial support to the State’s 
+Medicaid program today. Provider taxes would be by and large circular in a universal system. 
+We would, in essence, be paying providers for the provider tax that we use to support the 
+payment to providers. Repeal of the provider tax requires an additional $150 million in 
+replacement revenue. 
+ 
+Overall, we estimate that $344 million in current state Medicaid revenue would be applied to 
+Green Mountain Care. This is a substantial downgrade from the $637 million estimated in the 
+previous report. For more information about how existing Medicaid revenues change, see 
+Appendix F.  
+=== page 42 ===
+ 
+38 
+ 
+ 
+Green Mountain Care Taxes  
+Most private insurance premiums would be replaced by Green Mountain Care taxes with the 
+implementation of GMC. Vermont businesses would pay a payroll tax and each tax filer would 
+pay a public premium, an income tax based on their income and family size. Both taxes would 
+be directed entirely to the Green Mountain Care Fund.   
+ 
+Payroll Tax 
+The employer payroll tax would be levied at a rate of 11.5% on all Vermont businesses on their 
+qualifying Vermont payroll. Qualifying payroll is all payroll except wages for any individual 
+employee in excess of $200,000 with that amount adjusted annually for inflation. The tax would 
+not paid on behalf of any individual employee. Accordingly, employee age, residency, and 
+insurance status are irrelevant in calculating the tax. The tax would be deductible from federal 
+taxes.  
+ 
+We chose the payroll tax due to its simplicity, large tax base, and steady growth rate. 
+Businesses are easily able to calculate payroll and remit or withhold a variety of payroll taxes 
+today. This makes it potentially simple in contrast to a per employee fee, which would prompt 
+questions about how to count and characterize employees. The large base keeps rates lower. 
+The steady growth rate attempts to ensure predictable revenue growth over time.   
+ 
+We estimate the payroll tax would generate $1.51 billion in 2017 and grow annually. Our 
+annual revenue estimates are shown in Table 7 below.  
+ 
+Table 7: Estimated GMC Payroll Tax Revenue, 2017 – 2021 
+Year 2017 2018 2019 2020 2021 
+Payroll Tax Revenue (Millions)  $1,510 $1,542 $1,574 $1,606 $1,639 
+ 
+Self-Employed Exemption 
+The only exemption to the payroll tax would be an exclusion for the self-employed. Self 
+employed Vermonters would pay the public premium only, not the payroll tax. This is in 
+contrast to Social Security, which makes the self-employed pay both the employer and 
+employee share. We suggest this exemption to promote simplicity in administration of the tax 
+and keep the tax burden lower for the self-employed.  
+ 
+The payroll tax would be collected by the Vermont Department of Taxes. The Commissioner 
+would develop policies, procedures, forms, and regulations necessary to implement the tax.  
+ 
+Public Premium 
+The public premium is the primary individual tax we would recommend to support GMC, 
+replacing private insurance premiums for most Vermonters. The tax would be based on a tax 
+filer’s income and family size. The tax would be calculated as a percentage of Adjusted Gross 
+Income (AGI). This percentage is based on the tax filer’s AGI as a percent of the federal poverty 
+=== page 43 ===
+ 
+39 
+ 
+level (FPL). Taxpayers would use the number of personal exemptions (dependents) to 
+determine family size and FPL. Next, a percentage of income would be assigned for tax 
+liability.56  
+  
+The recommended design of the public premium tries to balance three competing concerns. 
+First, the ACA waiver requires that the tax must be at least as affordable as the ACA for all 
+taxpayers at or below 400% FPL. The ACA measures the affordability of health care based on 
+the relationship between income and FPL, and the public premium as an FPL based income tax 
+is meant to mirror the federal affordability calculation. Second, the tax should take into account 
+ability to pay. Simply, taxpayers with more income by and large should pay more. Third, the tax 
+design acknowledges that insurance is currently a product where people of very different 
+income pay the same amount of money. The tax design balances these competing concerns by 
+creating a tax that meets the federal requirements and takes into account ability to pay without 
+being a general income tax, as the maximum tax is capped at the federal threshold for a high 
+value health plan, commonly known as the Cadillac Tax threshold. The public premium 
+calculation is discussed in more detail below.  
+ 
+The public premium is designed to create three types of taxpayers. First, we have a sliding scale 
+based on income. These taxpayers are on The Ramp. Second, we have taxpayers who pay the 
+maximum percentage of their income, the Maximum Percentage Payer. Third, we have 
+taxpayers who pay the maximum GMC tax, the Maximum Dollar Amount Payer.  
+   
+The Ramp 
+In order to account for ability to pay, and meet federal affordability requirements, the tax 
+would be calculated on a sliding scale based on FPL up to 400% FPL. The minimum premium is 
+2.5% of AGI at 138% of FPL, starting where Medicaid eligibility ends. The ramp begins to climb 
+after 150% FPL and moves in a straight line from 2.5% of AGI at 150% FPL to 9.5% of AGI at 
+400% FPL. 400% FPL was selected as the end of the ramp to ensure that all Vermonters were 
+below the affordability threshold set forth by the ACA. By 2016, the ACA sets 9.66% of income 
+as affordable for health care at 400% FPL.57   
+ 
+Max Percentage Payer 
+The sliding scale stops at 400% of FPL, projected to be $102,220 for a family of four by 2017. 
+Taxpayers between 400% FPL and approximately $289,475 AGI pay 9.5% of income. While the 
+percentage stays the same, taxpayers with a higher income would pay more. 
+ 
+                                                        
+56 We would recommend changing the calculation for a single person. We would use the FPL for a family of 2 so 
+that the single person would pay slightly less.  Stated another way, all families have at least two people for the 
+purpose of determining FPL. This would be done to minimize the change in cost for single person households who 
+otherwise would be exposed to disproportionate cost increases.  
+57IRS Rev. Proc. 2014-62 at http://www.irs.gov/pub/irs-drop/rp-14-62.pdf.  
+=== page 44 ===
+ 
+40 
+ 
+Max Dollar Amount Payer 
+Taxpayers with income greater than approximately $289,475 AGI would pay a flat $27,500 
+maximum tax. This amount declines as a percentage of income for every dollar in income 
+beyond approximately $289,475. This $27,500 maximum GMC individual tax would be pegged 
+to the Cadillac Tax threshold.58 
+ 
+Figure 2 on the next page compares the Green Mountain Care public premium to the 
+affordability requirements of the ACA. This is done to demonstrate the cost of the tax 
+compared to the ACA affordability requirements and ensure that it meets federal affordability 
+requirements.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                        
+58 ACA § 9001; IRC § 4980I. 
+=== page 45 ===
+ 
+41 
+ 
+Figure 2: Public Premium Distribution Compared to ACA Silver Plan Premium Affordability 
+ 
+    
+The red line is not what people have today. Instead, it represents what would happen if every 
+Vermonter bought a silver level plan (70% AV) in the Exchange. The green line is what 
+Vermonters would pay as a percentage of income under the public premium (94% AV).59  
+ 
+Overall, figure 2 demonstrates several important points about the distribution of the tax. The 
+system takes into account ability to pay as those who make more pay more in the case of 98.8% 
+of taxpayers. Also, while people would likely focus on the maximum tax liability potentially due, 
+the distribution of the tax is far less than the maximum amount for nearly all Vermonters. We 
+estimate that more than 74.5% of Vermonters would pay less than $5,000 in tax and nearly 96% 
+pay less than $15,000. Only 1.2 % of taxpayers, 4,349 households, would pay the maximum tax. 
+Table 8 sets forth the distribution of tax liability for the public premium.   
+ 
+                                                        
+59 The silver level plan is the benchmark for affordability for ACA waiver purposes. Comparisons to what 
+Vermonters pay today are in Chapter 7, which covers economic analysis.   
+
+=== page 46 ===
+ 
+42 
+ 
+Table 8: Distribution of Public Premium Tax Liability 
+Public Premium Distribution by Cost Number of Households % of Households 
+<$5,000 271,398  74.50 
+$5,000 - $10,000 54,532  14.97 
+$10,000 - $15,000 23,697  6.50 
+$15,000 - $20,000 7,002  1.92 
+$20,000 - $25,000 2,391  0.66 
+>$25,000 5,295  1.45 
+ 
+The tax is based on FPL, not solely income. Accordingly, larger families would pay less even if 
+they have the same income, as FPL is reduced for each additional dependent. This is consistent 
+with the subsidy calculations in the ACA and the general logic of tax filings, where larger 
+families are allowed to deduct more money for each dependent. This is different than the 
+typical logic of health insurance premiums where couples and families tend to pay more than 
+single or couple filers. Table 9 demonstrates this FPL effect within the public premium.  
+ 
+Table 9: Distribution of Public Premium by Income and Family Size60 
+Number of 
+Exemptions 
+1 2 3 4 5 6 Average 
+AGI        
+Under $25,000 $242 $120 $0 $0 $0 $0 $152 
+$25,000 - $49,999 $2,475 $1,866 $1,389 $681 $207 $180 $1,682 
+$50,000 - $74,999 $5,724 $5,273 $4,302 $3,214 $2,808 $2,220 $4,396 
+$75,000 - $99,999 $7,873 $8,302 $8,075 $6,861 $5,561 $4,419 $7,312 
+$100,000 - $124,999 $10,276 $10,521 $10,714 $10,667 $9,640 $7,929 $10,345 
+$125,000 - $149,999 $12,727 $12,851 $12,924 $12,985 $12,793 $11,925 $12,848 
+$150,000 - $199,999 $16,854 $16,157 $16,325 $16,363 $16,786 $15,252 $16,344 
+$200,000 - $299,999 $27,500 $22,947 $22,668 $22,937 $23,935 $21,088 $23,197 
+$300,000 - $499,999 $27,500 $27,500 $27,500 $27,500 $27,500 $27,500 $27,500 
+$500,000 - $999,999 * $27,500 * $27,500 * * $27,500 
+$100,000,000 +  * $27,500 $27,500 $27,500 * * $27,500 
+Average $2,279 $6,865 $6,551 $8,160 $5,757 $4,195 $5,285 
+ 
+                                                        
+60 The * symbol indicates a value of three or fewer taxpayers.  
+=== page 47 ===
+ 
+43 
+ 
+Tax Deductibility 
+ 
+The major tax goals of the system are to promote equity and maintain to the greatest extent 
+possible the value of the employer-sponsored insurance exclusion, which makes health care 
+premium spending exempt from federal and state income taxes and federal payroll taxes. A 
+payroll tax system enables employers’ contributions to remain tax exempt. Based on analysis of 
+applicable federal law and discussions with United States Treasury, the public premium would 
+be deductible for federal purposes on Schedule A as an income tax. This means that Vermont 
+taxpayers who itemize on their federal tax return could reduce their federal tax liability for 
+public premium paid subject to general federal limitations on itemized deductions. For 
+example, a Vermonter charged the maximum public premium who itemizes at the federal level 
+and is in the highest federal tax bracket could see a 39.6% reduction in their GMC effective 
+public premium tax liability. 
+ 
+Not all Vermonters itemize their deductions. On average, approximately a third of Vermonters 
+itemize and these tend to be the highest income Vermonters. The system is designed to 
+maintain equity and protect against the loss of the employer-sponsored insurance exclusion in 
+the following way.  
+ 
+First, the sliding scale is designed to keep public premium liability as low as possible for non-
+itemizers who tend to be low and middle income. Second, the deductibility of the public 
+premium on Schedule A mimics the employer-sponsored insurance exclusion by making health 
+care spending tax preferred for higher income Vermonters. The ultimate test of the efficacy of 
+this approach is to measure total federal taxes paid with and without GMC. Overall, we 
+estimate that Vermonters would pay $191 million less in federal income taxes under GMC than 
+the ACA. Furthermore, even after accounting for increased federal payroll taxes due to higher 
+wages, Vermonters would pay $159 million less in federal taxes under GMC than under the 
+ACA. In this way, the strategy succeeds in addressing the legitimate concern about forfeiting the 
+value of the employer-sponsored insurance exclusion set forth in I.R.C. 106. The resulting tax 
+liability for Vermonters after GMC implementation is discussed more fully in Chapter 7 of the 
+report.  
+ 
+Exemptions, Reductions, and Credits  
+ 
+As indicated above, the public premium would be compulsory unless an individual qualifies for 
+a specific tax exclusion, reduction, or credit. It is important to note that taking employer-
+sponsored insurance does not generally relieve a taxpayer from the tax. In this way, the GMC 
+tax mirrors the distinction between public and private schools. People are welcome to send 
+their children to private schools, but this does not reduce their property taxes. Similarly, 
+employers would be welcome to offer insurance within GMC and employees could take it; 
+however, this generally would not change an employee’s tax liability.  
+ 
+=== page 48 ===
+ 
+44 
+ 
+While the general rule is that everyone would pay the tax, some Vermont residents would be 
+either excluded from the tax, charged a reduced tax liability, or receive a credit. For example, 
+Medicare enrollees would be exempt from the finance provisions of Green Mountain Care.  
+Overall, these special populations include Vermonters with coverage from Medicare, TRICARE, 
+and certain retirees.  
+ 
+Table 10: Populations Exempt from Financing or Eligible for a Credit  
+Description  Primary 
+Coverage 
+Contribution 
+to GMC 
+Considerations 
+Seniors (over age 
+65) 
+Medicare None  Medicare Supplemental Insurance would 
+remain available. Current Medicare wrap 
+programs, such as VPharm stay the same 
+Individuals with 
+disabilities (over 
+24 months) 
+Medicare None Same as above. 
+Non Medicare 
+Retirees, excluding 
+state and teacher 
+retirees 
+ESI None GMC creates a ten year window where non-
+Medicare retirees with employer coverage are 
+exempt from GMC coverage and taxes.  
+Military:    
+Active duty 
+military61  
+TRICARE None while on 
+TRICARE 
+GMC coverage is suspended. GMC is available 
+as soon as the individual drops or is no longer 
+eligible for coverage. Individuals who are 
+eligible for enhanced benefits from Medicaid 
+would maintain enhanced benefits through 
+GMC 
+National Guard TRICARE, while 
+on active duty.  
+None while on 
+TRICARE 
+Vermonters with the Guard would have GMC 
+coverage while not on active duty & can 
+suspend that coverage during the time period 
+they are on active duty. 
+Veterans VA facilities 
+and new 
+insurance, if 
+applicable 
+None while 
+using VA 
+insurance 
+New VA Insurance provisions expires in August 
+2017. Veterans may use the VA Hospital for 
+services as well, but are not required to under 
+GMC. 
+ 
+Appendix F includes a description of the tax credit mechanism to be used to ensure that 
+members of special populations comply with Green Mountain Care tax laws.  
+ 
+ 
+ 
+                                                        
+61 In order for TRICARE to be primary coverage, a state statutory change is needed. This is because, under federal 
+law, TRICARE is always secondary, except to Medicaid. 
+=== page 49 ===
+ 
+45 
+ 
+Revenue Collection 
+The public premium would be collected by the Vermont Department of Taxes. The 
+Commissioner would develop policies, procedures, forms, and regulations necessary to 
+implement the tax. We would recommend that the Commissioner make these rules consistent 
+with existing income tax withholding and payment laws and regulations. Specifically, the public 
+premium ought to be subject to mandatory paycheck withholding and estimated payments, 
+similar to the Personal Income Tax. This mirrors the current employer-sponsored insurance 
+exclusion for taxpayers and ensures proper cash flow for the program. 
+ 
+Out-of-Pocket Costs 
+ 
+Like today, Green Mountain Care would feature cost-sharing. Vermont residents would be 
+required to pay co-payments at the point of service. The recommended plan AV is 94%, 
+meaning that on average the plan would cover 94% of expenses and leave 6% to be covered by 
+the resident at the time of care. This is an important aspect of the system financing, even if it is 
+not a public revenue stream.  
+ 
+In 2017, total out-of-pocket costs are estimated at $187 million, a $258 million reduction from 
+the ACA. The out-of-pocket savings would increase annually. Table 11 sets forth aggregate out-
+of-pockets costs from 2017 to 2021.   
+ 
+Table 11: Estimated ACA and GMC out-of-pocket Spending, 2017 – 2021 (Values in Millions) 
+Year 2017 2018 2019 2020 2021 
+ACA $445 $465 $491 $517 $543 
+GMC $187 $167 $173 $190 $185 
+Change -$258 -$298 -$318 -$327 -$358 
+ 
+The total out-of-pocket cost yields an average estimated out-of-pocket cost of $810 per family. 
+This is a reduction of $700 per family. Yet, it is critical to understand that out-of-pocket costs 
+are not distributed equally. Many individuals and families use very little health care in any given 
+year. Others use a lot of health care during any given year. Table 12 demonstrates the 
+distribution of GMC plan out-of-pocket costs by decile of utilization.  
+ 
+=== page 50 ===
+ 
+46 
+ 
+Table 12: Estimated Distribution of GMC Out-of-pocket Costs by Decile for 2017 
+Range of Out-of-
+pocket Costs 
+Percent of Members 
+$0-$100 31% 
+$101-$200 19% 
+$201-$300 10% 
+$301-$400 6% 
+$401-$500 4% 
+$501-$600 3% 
+$601-$700 3% 
+$701-$800 3% 
+$801-$850 20% 
+  
+Beyond its effect on individuals, we expect that Green Mountain Care would reduce health care 
+providers’ uncompensated care. Individuals who are uninsured, or who are responsible for 
+paying a deductible or coinsurance, may owe a balance to their health care provider for care 
+they received. If an individual does not have sufficient resources to pay an amount owed, a 
+health care provider may waive the fee and write off the claim to charity care. In other cases, 
+the provider may write off an uncollected amount to bad debt. Charity care and bad debt 
+together are referred to as “uncompensated care.” One study of hospital uncompensated care 
+found that 75% of uncompensated care was incurred by individuals with family incomes below 
+100% FPL and 97% of uncompensated care was incurred by individuals with family incomes 
+below 300% FPL.62  
+ 
+Under Green Mountain Care, all Vermont residents would have comprehensive health coverage 
+with low cost-sharing requirements. Individuals who currently have high cost-sharing 
+requirements through an employer health plan would no longer incur large health care debts. 
+The reduction in individuals’ out-of-pocket costs for health care would in turn reduce the 
+amount of uncompensated care experienced by Vermont health care providers. Providers and 
+the designated entity should monitor whether the reduction in uncompensated care or bad 
+debt occurs in GMC and work with the Green Mountain Care Board to determine whether this 
+should impact provider rates.   
+ 
+Balance Sheet 
+ 
+Table 13 applies the cost and revenue estimates and reveals a difficult financial picture for 
+GMC. The system would nearly balance for the first three years, including surplus in years 1 and 
+                                                        
+62 Weissman, J.S., Dryfoos, P. and K. London, “Income levels of bad-debt and free-care patients in Massachusetts 
+hospitals,” Health Affairs 18:4 (1999). 
+=== page 51 ===
+ 
+47 
+ 
+2. Yet, the system would fall into deficit in year 4 and 5. This affirms the primacy of cost 
+containment in a publicly financed system. Any publicly financed system where expenditures 
+rise faster than revenue would require tax increases or new tax sources in future years. Our 
+best estimates for cost containment are that we can narrow the gap between revenues and 
+expenditures to a greater degree than in today’s system. However, health care costs, even at a 
+4% trend, would continue to rise at a higher rate than revenues. This is true to an even greater 
+extent in today’s world, which is why premiums increase every year more than wages or 
+inflation. Even with our best estimates of cost-containment, we would need to accept some 
+increases in tax rates in the same way that we accept increases in insurance premiums today.   
+ 
+It is important to note that this balance sheet does not include a phase-in of the payroll tax, 
+which is a policy priority of the Governor’s. See Appendix F-2 for discussion of the phase in. 
+ 
+Table 13: GMC Balance Sheet63 
+Year 2017 2018 2019 2020 2021 
+Spending 
+Cost of GMC Coverage and Operations -4,340 -4,579 -4820 -5,001 -5,177 
+Revenue 
+Federal Funding 
+Federal Medicaid Match 1,310 1,364 1,413 1,445 1,505 
+Federal ACA Waiver Funding 106 118 122 125 132 
+State Funding 
+State Medicaid 344 341 350 358 366 
+New Revenue Needed -2,580 -2,756 -2,935 -3,073 -3,174 
+Payroll Tax 1,510 1,542 1,574 1,606 1,639 
+Public Premium 1,247 1,306 1,359 1,372 1,381 
+GMC Fund Fiscal Position 177 92 -2 -95 -154 
+ 
+  
+                                                        
+63 The balance sheet changed slightly since Governor Shumlin’s announcement on December 17.  Changes reflect a 
+technical correction to State Medicaid revenue and a $1 million change to federal ACA funding for both 2020 and 
+2021.  These changes impact the new revenue needed and the GMC Fund fiscal position.   
+=== page 52 ===
+ 
+48 
+ 
+Chapter Seven: How would public financing impact Vermont businesses 
+and families? 
+Coverage, finance, and cost containment would affect the distribution of health care costs from 
+the ACA to GMC. In this chapter, we describe the potential changes to health care spending by 
+employers, local and state governments, individuals, and families. Embedded within these 
+figures are projected income changes and changes in tax liability. Also, we discuss savings 
+estimates based on the ability to hold GMC costs below projected national growth trends 
+beginning in 2017.      
+Effect on Employers 
+The economic modeling compared the projected health care spending of Vermont firms under 
+the ACA to their projected health care spending under GMC. Today, health care spending varies 
+substantially by firm. In Green Mountain Care, all firms would pay a uniform 11.5% payroll tax. 
+The payroll tax would change the level and distribution of health care spending for Vermont 
+firms.  
+Overall, as modeled, GMC would increase health care spending by Vermont employers $109 
+million from $1.595 billion to $1.704 billion. On average, nearly all private firms would pay 
+more under this design of GMC. The largest aggregate increase would occur in Vermont’s 
+smallest firms, those with fewer than 10 employees. The largest per employee increase would 
+occur in small firms with between 10 and 49 employees. In contrast, public employers would 
+spend less under GMC than under the ACA. We estimate that the federal government saves 
+money as GMC enrollees choose to drop insurance rather than pay for both federal insurance 
+and GMC taxes. We assume military insurance is unchanged.    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+=== page 53 ===
+ 
+49 
+ 
+Table 14: Employer Spending on Healthcare (Total $ in Millions, per employee in $)64 
+Firm Size ACA 
+Spending  
+Per Employee 
+ACA Spending 
+Total GMC 
+Spending 
+Per Employee 
+GMC Spending 
+Total 
+Change 
+from ACA 
+Per 
+Employee 
+Change 
+From ACA 
+Under 10 242 1,005 437 1,819 196 814 
+10-49 121 3,013 174 4,337 53 1,324 
+50-99 56 3,580 70 4,467 14 887 
+100-249 90 4,940 97 5,312 7 372 
+250-500 89 5,279 87 5,164 -2 -115 
+500-999 75 5,699 77 5,851 2 152 
+1000-4999 280 5,733 294 6,004 13 271 
+5000+  92 5,422 98 5,744 5 322 
+Federal  46 3,946 0 - -46 -3,946 
+State 183 7,502 111 4,578 -71 -2,924 
+Local 66 4,374 62 4,088 -4 -286 
+Municipal 205 6,178 146 4,380 -60 -1,798 
+ 
+The distribution of health care spending by employers today depends on the firm’s choice to 
+offer coverage, the number of employees that enroll in employer coverage, the value of plan 
+benefits, and in some cases the health of the workers. Accordingly, the impact of GMC on any 
+specific employer depends greatly on whether the firm offers insurance today. Most classes of 
+firms that offer health insurance today would spend less in GMC than under the ACA. This does 
+not hold true for Vermont’s largest firms, those with more than 1,000 employees.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                        
+64 For the employer tables, the employer category local represents local government employees.  The municipal 
+category represents education employees.  The labeling was kept this way to ensure fidelity with the underlying 
+modeling output documents.   
+=== page 54 ===
+ 
+50 
+ 
+Table 15: Employer Spending on Healthcare for Firms Offering Prior to GMC  
+(Total $ in Millions, Per Employee in $) 
+Firm Size Total ACA 
+Spending  
+Per Employee 
+ACA Spending 
+Total GMC 
+Spending 
+Per 
+Employee 
+GMC 
+Spending 
+Total 
+Change 
+from ACA 
+Per Employee 
+Change From ACA 
+Under 10 242 5,286 208 4,542  -34 -744 
+10-49 121 5,994 93 4,578  -29 -1,416 
+50-99 56 5,050 50 4,474  -6 -576 
+100-249 90 5,363 89 5,290  -1 -73 
+250-500 89 5,640 84 5,306  -5 -334 
+500-999 75 6,160 74 6,086  -1 -74 
+1000-4999 280 5,845 289 6,030  9 186 
+5000+  92 5,503 96 5,735  4 232 
+Federal  46 3,946 0 -   -46 -3,946 
+State 183 8,942 101 4,929  -82 -4,013 
+Local 66 5,916 50 4,492  -16 -1,424 
+Municipal 205 7,268 128 4,521  -78 -2,747 
+ 
+Firms that do not offer insurance under the ACA would see a much larger change under GMC. 
+Overall, firms that do not offer insurance incur $393 million in new expense under GMC. The 
+majority of this cost ($230 million) would be paid by businesses with fewer than ten employees. 
+More than three quarter of this expense ($312 million) would be paid by firms with fewer than 
+50 employees.  
+=== page 55 ===
+ 
+51 
+ 
+Table 16 Employer Spending on Healthcare for Firms Not Offering Prior to GMC  
+(Total $ in Millions, Per Employee in $) 
+Firm Size Total ACA 
+Spending  
+Per Employee 
+ACA Spending 
+Total 
+GMC 
+Spending 
+Per Employee 
+GMC Spending 
+Total 
+Change 
+from ACA 
+Per 
+Employee 
+Change 
+From ACA 
+Under 10 0 0 230 1,179 230 1,179 
+10-49 0 0 82 4,094 82 4,094 
+50-99 0 0 20 4,451 20 4,451 
+100-249 0 0 8 5,561 8 5,561 
+250-500 0 0 3 3,087 3 3,087 
+500-999 0 0 3 2,952 3 2,952 
+1000-4999 0 0 4 4,649 4 4,649 
+5000+  0 0 2 6,355 2 6,355 
+Federal  0 0 0 - - - 
+State 0 0 11 2,748 11 2,748 
+Local 0 0 12 2,942 12 2,942 
+Municipal 0 0 18 3,582 18 3,582 
+    
+The new and large cost placed on small businesses reveals just how critical it is to offer a 
+transition strategy for these businesses. Simply put, many small businesses pay little or nothing 
+today. They need a strategy to transition to GMC. 
+One additional effect of GMC on employers would be how it could change the amount paid by 
+employers to their employees. We assumed that employers that pay less under GMC than 
+under the ACA would gradually pay their employees more in wages.65 Additional wages would 
+have a major impact on Vermont households, which is discussed in the next portion of this 
+chapter.66       
+Impact on Vermont Households 
+GMC would change the health care spending, income, and taxes paid by Vermont households. 
+Overall, Vermonters would receive more in wages under GMC. Additional wages would boost 
+income and consumption of goods and services. In turn, increased wages and consumption 
+                                                        
+65 See wage “stickiness” assumptions in Appendix C. 
+66 Our assumptions around wage stickiness mean that some firms would collect considerable savings that are not 
+immediately passed back to employees via higher wages. Additional macroeconomic analysis is needed to 
+determine the impact of this unallocated cash on Vermont’s firms and the Vermont economy.  Additionally, firms 
+that pay more under GMC than under the ACA would be forced to adjust to changed circumstances. 
+Macroeconomic analysis is needed to determine the effect of this on the economy.   
+=== page 56 ===
+ 
+52 
+ 
+would increase taxes paid by households. Ultimately, we are focused on net family income, 
+which measures family resources available after all health care spending, wage effects, and 
+taxes paid described above occurs.   
+ 
+Net Family Spending  
+ 
+Overall, we estimate that over time Vermont residents would have higher net family income on 
+average under GMC. This is due to higher income, lower health care costs, and lower federal tax 
+liability under GMC than without GMC.  
+ 
+Table 17: Average Change in Net Family Income from ACA to GMC, 2017 – 2021 
+ 2017 2018 2019 2020 2021 
+Change in Net Family Income -460 310 1,210 1,450 1,880 
+ 
+ 
+The public premium amount would change based on income and family size. Accordingly, net 
+family income would change at various income levels. Table 18 on the next page sets forth 
+average net family income changes by income class. Families with incomes of less than 
+$150,000 per year would on average see higher net family income under GMC. Families with 
+incomes of more than $150,000 per year would on average see decreased net family income in 
+GMC.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+=== page 57 ===
+ 
+53 
+ 
+Table 18: Average Change in Net Family Income from ACA to GMC by Income Class, 2017 
+Average Change in Net Family Income by Income Class 
+Income Class Average Change in Net Family Income 
+<$10000 1,203 
+$10k - $19,999 952 
+$20k - $29,999 909 
+$30k - $39,999 2,012 
+$40k - $49,999 1,677 
+$50k - $74,999 2,645 
+$75k - $99,990 2,452 
+$100k - $149,999 739 
+$150k - $249,999 -2,120 
+$250,000 + -5,841 
+  
+ 
+The table above tries to answer the question of whether Vermont household are better off 
+economically under GMC than under the ACA. Table 19 on the next page depicts all the 
+different component parts of that economic calculation. For each income class, you can see the 
+change in health care spending, change in income, and change in tax liability that ultimately 
+drives the net family spending result.    
+=== page 58 ===
+ 
+54 
+ 
+Table 19: Changes in Net Family Income by Income Class, including Health Care Spending, Wage Effects, and Tax Changes, 2017 
+ACA GMC 
+Income 
+Class 
+Number 
+of 
+Families  
+Average 
+ACA 
+Out-of-
+pocket 
+Average 
+ACA 
+Premium 
+Total 
+ACA 
+Cost 
+Average 
+GMC 
+Out-of-
+pocket 
+Average 
+GMC 
+Spending on 
+Private 
+Insurance 
+Average 
+GMC 
+Individual 
+Tax 
+Average 
+GMC 
+Income 
+Change 
+Average 
+Change in 
+Federal Tax  
+Average 
+Change in 
+State Tax 
+Average 
+Change in 
+Net Family 
+Income 
+<$10,000 46,919 870 369 1,239 464 23 0 488 55 -17 1,203 
+$10,000- 
+$19,999 
+53,288 808 580 1,389 829 32 53 537 48 12 952 
+$20,000 - 
+$29,999 
+45,161 725 813 1,538 713 136 410 727 90 7 909 
+$30,000 -
+$39,999 
+36,596 1,218 1,489 2,706 558 66 1,087 1,205 170 18 2,012 
+$40,000 - 
+$49,999 
+29,495 1,332 1,714 3,046 389 110 1,980 1,289 150 29 1,677 
+$50,000 - 
+$74,999 
+55,155 1,707 3,482 5,189 1,080 268 3,475 2,639 274 86 2,645 
+$75,000 - 
+$99,999 
+37,671 2,081 4,843 6,924 894 454 5,971 2,821 -89 64 2,452 
+$100,000 - 
+$149,999 
+35,929 2,175 5,010 7,185 847 424 9,359 2,636 -1,564 16 739 
+$150,000 - 
+$249,999 
+15,841 2,152 5,179 7,330 842 744 14,466 2,137 -4,506 41 -2,120 
+$250,000+  8,261 2,368 5,756 8,124 872 182 21,877 828 -8,043 -94 -5,841 
+ 
+ 
+ 
+=== page 59 ===
+55 
+ 
+The overall economic picture in Table 19 shows the merits of the public premium. 
+Overall health care costs would decrease for low and middle income Vermonters. This, 
+in tandem with wage growth, would increase net family income exceeding any 
+additional tax burden. Higher income Vermonters would have losses minimized by the 
+favorable tax treatment of the public premium as an itemized deduction.     
+Trend and Cost Containment 
+Cost containment is a key component to the economic viability of GMC. The goal is for 
+the GMCB and designated entity to create a regulatory environment that would produce 
+a sustainable health care spending trend that comes in under a maximum annual 
+growth rate. Specifically, the GMCB could work with the designated entity and provider 
+community to hit a target health care growth rate of not more than 4% from 2017 to 
+2021. This target trend is compared to our benchmark, the National Health Expenditure 
+(NHE) trends published by the Office of the Actuary at the Center for Medicare and 
+Medicaid Services. CMS projects health care expenditures to grow, on average, 5.8 and 
+5.1 percent annually for Medicaid and Commercial populations from 2017 to 2021.  
+Hitting this trend target would be the method for saving money in GMC. Each year costs 
+stay at or below the trend, GMC would save money compared to the status quo. This 
+trend approach is markedly different than the approach used in the universal health 
+care reports published by Dr. William Hsaio in 2011 and the University of 
+Massachusetts/Wakely Consulting in 2013.  These reports quantified administrative 
+savings that occurred upon implementation and reduced the revenue needed to 
+operate the program from the start date of the program.67 Specifically, the Hsaio report 
+booked $580 million in administrative savings for the first year of the program, and the 
+UMASS/WakeIy report identified $122 million in reductions delivered through lower 
+provider rates. In contrast, we accrue savings over time as Vermont follows a more 
+sustainable fiscal trajectory. We consider this approach most prudent as it allows health 
+care providers time to adjust to the new coverage, finance, and regulatory environment 
+and the flexibility to determine how best to manage their costs. This would minimize 
+dislocations for the provider community, their workers, and patients.  
+Overall, we estimate that GMC would save $378 million over the first five years if it hits 
+the 4% trend target as opposed to growing at the benchmark rate.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                        
+67 2013 UMass-Wakely Report: 
+http://hcr.vermont.gov/sites/hcr/files/2013/Health%20Care%20Reform%20Financing%20Plan_typos%26f
+ormatting%20corrected_012913.pdf ;  Dr. Hsaio’s report: 
+http://www.leg.state.vt.us/jfo/healthcaresystemdesign.aspx  
+=== page 60 ===
+ 
+56 
+ 
+Table 20: Anticipated GMC Savings Based on 4% Trend, 2017 – 2021 
+Year GMC Cost at NHE 
+Growth 
+GMC Cost at 4% 
+Trend 
+Difference 
+2017 4,263 4,263 0 
+2018 4,512 4,501 11 
+2019 4,806 4,741 65 
+2020 5,042 4,921 121 
+2021 5,277 5,096 181 
+Total Savings    378 
+ 
+The trend is set at four percent, but overall spending does not grow at exactly this 
+amount due to changes in population. Each year, some people would migrate from 
+employer-sponsored insurance to Green Mountain Care. Other people would migrate 
+from Green Mountain Care to Medicare. Cost growth estimates exceeds trend the first 
+two years as more people move into GMC from their employer-sponsored insurance. 
+Cost growth estimates are below trend in the fourth and fifth year as more people age 
+and are covered by Medicare.  
+Retirees and Health Care 
+Vermont’s State Treasurer administers the retirement systems for state employees and 
+teachers. Vermont must account for both the current and future projected cost of these 
+benefits.68 These liabilities are known as Other Post Employment Benefits (OPEB) 
+liabilities. We estimate that Green Mountain Care has the potential to decrease OPEB 
+liabilities substantially.  
+As described in Chapter 3, all non-Medicare state and local government retirees that are 
+Vermont residents would receive GMC as primary coverage. Accordingly, the State’s 
+projected future OPEB liability would be reduced as the health care costs of resident, 
+non-Medicare retirees transition from the retirement system to Green Mountain Care. 
+The retirement system would be responsible for out of state retirees, Medicare retiree 
+benefits, and any additional benefit to retirees beyond GMC that the retirement system 
+chooses to offer. At 94% AV, we expect that most resident, non-Medicare liability would 
+be eliminated. OPEB liability would likely be substantially reduced even under 87AV and 
+80AV benefit scenarios.  
+State Revenues 
+We estimated that increased income due to GMC would stimulate spending. This would 
+in turn result in increased state tax revenue. Specifically, we estimated that the State of 
+                                                        
+68 States are required to report Other Post Employment Benefits (OPEB) liability per Government 
+Accounting Standard Bulletin (GASB) 45. Specifically, states are required to report projected non -pension 
+costs related to post-retirement medical, pharmacy, dental, vision, life, long-term disability and long-term 
+care benefits.  
+=== page 61 ===
+ 
+57 
+ 
+Vermont would collect $34 million in additional state tax revenue in 2017, rising 
+annually thereafter. We did not allocate that increased revenue to GMC. Instead, we left 
+the allocation of that increased revenue as a policy choice for a future Administration 
+and Legislature.   
+Conclusion 
+Overall, the economic modeling of Green Mountain Care demonstrates promise and 
+peril. On average, Vermont households would benefit, but this benefit takes time to 
+materialize. Households with income below $100,000 would benefit the most. The 
+public premium shows the ability to tax based on the ability to pay while minimizing 
+sticker shock to higher income households through tax deductions available through the 
+federal income tax code. Businesses would pay more overall, but the firm specific 
+results depend heavily on whether the firm offers insurance today.  
+Based on our analysis, the economic shock and transition issues were too great for us to 
+recommend that Vermont proceed with public financing at this time. In the event Green 
+Mountain Care is considered in the future, we would recommend additional 
+macroeconomic analysis to understand business sector effects, job gains or losses, and 
+the overall impact on Vermont’s economy.  
