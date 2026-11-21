@@ -27,6 +27,7 @@ SRC = {
     'yahoo': "Yahoo News (A. Romano), final 2026 midterm election results, Nov 20, 2026 — https://www.yahoo.com/news/politics/article/final-2026-midterm-election-results-democrats-clinch-56-seat-senate-majority-with-peltolas-alaska-win-what-they-can--and-cant--do-next-184618858.html",
     'baldwin': "Sen. Tammy Baldwin, press release on the Medicare at 50 Act, Nov 10, 2026 (republished by Urban Milwaukee) — https://urbanmilwaukee.com/?p=1237070",
     'book1': "Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 1 — https://healthtransformationreview.org/read/chapter-01",
+    'book8': "Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 8 — https://healthtransformationreview.org/read/chapter-08",
     'hub': "HTR, Medicare for All: the five-pillar test — https://healthtransformationreview.org/policy/medicare-for-all",
     'act48page': "HTR, Vermont Act 48 and Green Mountain Care — https://healthtransformationreview.org/policy/medicare-for-all/vermont-act-48",
     'modeler': "HTR, Single-Payer Modeler — https://healthtransformationreview.org/policy/medicare-for-all/modeler",
