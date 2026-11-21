@@ -341,370 +341,370 @@
 326	[8] CMS — Vermont All-Payer ACO Model — Supports Vermont VAPCOM all-payer model design and OneCare Vermont description.
 
 ## vbc-fundamentals-module-3-economics-pillar
-327	Value-Based Care Fundamentals — Module 3: The Economics Pillar — Following the Money in Value-Based Care
-328	Here is a question that sounds simple but is genuinely hard to answer: if a hospital successfully reduces its patients’ hospitalization rate by 15% through better care management, is that good news or bad news for the hospital’s finances?
-329	But in a world where 40% of that hospital’s revenue still comes from fee-for-service Medicare and Medicaid payments, fewer hospitalizations means fewer inpatient admissions, which means fewer billed days, which means lower revenue.
-330	The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core.
-331	This projected spend is your “benchmark.” If your ACO’s actual spending on that population comes in below the benchmark, the difference is “savings.” You share those savings with CMS according to a pre-agreed formula — typically retaining 40–75% depending on your risk track and quality performance, with CMS keeping the remainder.
-332	CMS has revised the benchmark methodology repeatedly in response to this problem — adding regional adjustments for agreement periods beginning in 2017, reworking them in the 2018 Pathways to Success rule, and, in the CY2023 Physician Fee Schedule rule, adding a prior-savings adjustment and an administratively set growth factor (the Accountable Care Prospective Trend) to blunt the ratchet effect — but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved.
-333	One of the most consequential decisions a provider organization makes when entering a shared savings arrangement is whether to accept only upside risk — where you share in savings if you beat the benchmark but owe nothing if you miss it — or two-sided risk, where you both share savings and repay losses if spending exceeds the benchmark.
-334	Upside-only arrangements (MSSP Track 1 and its successors) are appropriate for organizations beginning their VBC journey: they provide financial experience with population cost management without the catastrophic downside scenario of a major loss repayment obligation.
-335	Two-sided arrangements (the MSSP ENHANCED Track, and CMMI’s ACO REACH Model — the 2023 successor to Global and Professional Direct Contracting, which runs through December 31, 2026 and is to be succeeded by the Long-term Enhanced ACO Design (LEAD) Model from January 1, 2027) offer higher shared savings percentages — sometimes up to 80% of savings — but require the organization to maintain actuarial reserves sufficient to cover a loss scenario, typically modeled at 1–3% of benchmark spending.
-336	"MSSP Basic Track (Upside Only)": "$62.5M",
-337	"MSSP Enhanced Track (Two-Sided)": "$62.5M",
-338	"ACO REACH (Full Risk)": "$62.5M"
-339	"MSSP Basic Track (Upside Only)": "$58.8M",
-340	"MSSP Enhanced Track (Two-Sided)": "$58.8M",
-341	"ACO REACH (Full Risk)": "$58.8M"
-342	"MSSP Basic Track (Upside Only)": "$3.7M",
-343	"MSSP Enhanced Track (Two-Sided)": "$3.7M",
-344	"ACO REACH (Full Risk)": "$3.7M"
-345	"Metric": "Provider Shared Savings %",
-346	"MSSP Basic Track (Upside Only)": "40-50%",
-347	"MSSP Enhanced Track (Two-Sided)": "75%",
-348	"ACO REACH (Full Risk)": "Up to 100%"
-349	"MSSP Basic Track (Upside Only)": "$1.5-1.9M",
-350	"MSSP Enhanced Track (Two-Sided)": "$2.8M",
-351	"MSSP Basic Track (Upside Only)": "$0 (no downside)",
-352	"MSSP Enhanced Track (Two-Sided)": "Up to $1.9M",
-353	"ACO REACH (Full Risk)": "Up to $3.7M"
-354	"MSSP Enhanced Track (Two-Sided)": "~$1.2M",
-355	"ACO REACH (Full Risk)": "~$2.5M"
-356	"MSSP Basic Track (Upside Only)": "$800K-$1.2M",
-357	"MSSP Enhanced Track (Two-Sided)": "$800K-$1.2M",
-358	"ACO REACH (Full Risk)": "$800K-$1.2M"
-359	"MSSP Basic Track (Upside Only)": "$700K-$1.1M",
-360	"MSSP Enhanced Track (Two-Sided)": "$1.6-$2.0M",
-361	Shared Savings Contract Economics: MSSP Track Comparison for a Hypothetical 5,000-Beneficiary ACO
-362	For a health system with $30 million in unrestricted net assets, maintaining a $2.5 million actuarial reserve for ACO REACH participation represents a 8.3% allocation of available capital to a risk management buffer — a rational investment if leadership has high confidence in the organization’s ability to manage population cost, but a significant commitment that requires board-level approval and careful opportunity cost analysis against other capital needs.
-363	Rather than holding a provider accountable for the total cost of care across an entire attributed population, bundled payments establish a single target price for all the care associated with a specific clinical episode — typically defined as a procedure or hospitalization plus 90 days of post-acute care.
-364	BPCI Advanced, CMS’s voluntary bundled payment model, ran from October 1, 2018 through December 31, 2025, with 29 inpatient and 3 outpatient clinical episode categories at launch, ranging from major joint replacement and cardiac procedures to pneumonia and chronic obstructive pulmonary disease hospitalizations.
-365	Its final evaluation (The Lewin Group for CMS, August 2026) found that participants reduced Medicare episode payments in every model year — by $743 per episode on average in Model Years 1 and 2 and by about $1,000 per episode in Model Years 3 through 6 — and that the model produced about $800 million in net Medicare savings across its eight model years: net losses in Model Years 1–3, when reconciliation payments to participants exceeded the spending reductions, were outweighed by net savings once CMS redesigned target pricing in Model Year 4 (2021).
-366	Readmission rates were similar to the comparison group, although patients in Model Years 7–8 reported less favorable changes in functional status.
-367	Critically, the savings came primarily from post-acute care — fewer patients discharged to skilled nursing or inpatient rehabilitation facilities, skilled nursing stays about three days shorter, and skilled nursing payments about $500 lower per episode — rather than from reductions in the procedural care itself, confirming the bundled payment hypothesis that the primary driver of unnecessary cost in high-volume episodes is the post-acute care tail, not the procedure.
-368	CMS concluded that BPCI Advanced did not meet its criteria for expansion, and carried its lessons into the mandatory Transforming Episode Accountability Model (TEAM), which began January 1, 2026.
-369	Capitation: The Most Advanced — and Most Misunderstood — VBC Model
-370	Capitation is the payment model that most completely aligns provider incentives with patient health outcomes, and the one that generates the most anxiety among providers who have not operated under it before.
-371	This concern is real and has historical basis: the managed care capitation models of the 1990s were frequently criticized for exactly this failure, and some HMO capitation arrangements did produce documented under-treatment in specific service categories.
-372	But the lesson of the 1990s HMO experience is not that capitation is inherently dangerous.
-373	The capitation model that exists in 2026 is substantively different from the managed care capitation of 1996.
-374	The single most common financial mistake health systems make in VBC transitions is underestimating the revenue disruption of the transition period — the window, typically 18 to 36 months, during which care management investments have begun reducing utilization but VBC contract revenue has not yet scaled to replace the lost fee-for-service volume.
-375	Consider a regional health system generating $400 million in annual net patient revenue, with 30% of that revenue from inpatient admissions billed on a fee-for-service basis.
-376	The system joins MSSP and invests $2 million in care management infrastructure — care coordinators, a risk stratification platform, a post-discharge follow-up program — that begins generating measurable results in year one, reducing its attributed Medicare population’s hospitalization rate by 12%.
-377	That 12% reduction represents approximately 240 avoided admissions.
-378	At an average net revenue of $8,500 per admission, it also represents a $2.04 million reduction in fee-for-service inpatient revenue.
-379	The system’s MSSP shared savings payment for year one, based on total population savings, might be $1.4 million.
-380	Net financial impact of year one VBC investment: negative $640,000.
-381	CMS’s own results show what is achievable at scale: in Performance Year 2024, Shared Savings Program ACOs generated gross savings of $651 per assigned beneficiary (shared between ACOs and Medicare) and net Medicare savings of $245, and 75% of the 476 participating ACOs earned performance payments.
-382	Present this model honestly to your board, or the VBC investment will be defunded the first time a quarterly loss appears.
-383	One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure — not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes.
-384	The evidence is strongest on outcomes and quality: Baicker and Chandra (Health Affairs, 2004) found that states with more general practitioners per capita delivered higher-quality care to Medicare beneficiaries at lower spending, while states with more specialists spent more for lower quality; and Basu and colleagues (JAMA Internal Medicine, 2019) found that every 10 additional primary care physicians per 100,000 people was associated with a 51.5-day increase in life expectancy.
-385	Supply alone is not a cost-control lever, however — a 2009 Health Affairs analysis found that simply having more primary care physicians did not slow spending growth — which is why payment models that reward primary care for total cost matter.
-386	Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient less likely to generate a costly admission for a diabetic complication.
-387	"Study": "Coleman et al., Archives of Internal Medicine, 2006 — randomized trial, 750 adults aged 65+",
-388	"Finding": "30-day rehospitalization 8.3% vs 11.9% for controls; mean hospital costs at 180 days $2,058 vs $2,546",
-389	"Financial result": "About $488 lower hospital cost per patient over 180 days (program cost not netted out)"
-390	"Study": "Kangovi et al., Health Affairs, 2020 — economic analysis of a randomized trial",
-391	"Finding": "Fewer hospitalizations among Medicaid patients; about $1.4 million saved to Medicaid",
-392	"Financial result": "$2.47 returned to Medicaid for every $1 invested, within one fiscal year"
-393	"Study": "Mathematica, CPC+ Final Evaluation Report, December 2023 — five model years",
-394	"Study": "Mathematica, PCF Third Annual Report, 2025 — performance years 2021–2022",
-395	"Financial result": "Medicare expenditures up 1% including model payments — a net cost, not savings"
-396	An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns — because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months.
-397	The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.
-398	Post-discharge transition support has some of the strongest trial evidence in care management: in Coleman’s randomized trial of 750 older adults, transition coaching cut 30-day rehospitalizations from 11.9% to 8.3% and lowered six-month hospital costs, because the cost of coaching is small relative to the cost of a readmission.
-399	Community health worker programs are the intervention most directly connected to social determinants of health — addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change — and Penn’s IMPaCT program returned $2.47 to Medicaid for every dollar invested, within a single fiscal year.
-400	Advanced primary care transformation is the most comprehensive intervention, but the federal evidence is sobering: neither CPC+ nor Primary Care First produced net Medicare savings once their enhanced payments were counted, and CPC+ practices with incentives to control total cost of care, such as Shared Savings Program participants, did better at lowering costs — which is why primary care investment pays off most reliably inside a total-cost-of-care arrangement rather than as a stand-alone add-on.
-401	Module 3 Summary: The Economics of VBC Reward Patience, Infrastructure, and Precision
-402	The economic case for making these investments nonetheless is visible in CMS’s own results: in Performance Year 2024, Shared Savings Program ACOs generated gross savings of $651 per assigned beneficiary and net Medicare savings of $245, with physician-led, low-revenue ACOs outperforming hospital-led ones ($319 versus $180 net per beneficiary) — returns that depend on care management infrastructure maturing and on the organization’s ability to identify and target high-risk patients.
-403	Module 4 examines the technology infrastructure that makes this financial performance possible.
-404	If your unrestricted net assets are below $15 million, upside-only MSSP participation is the appropriate starting point.
-405	If your unrestricted net assets exceed $30 million and you have three or more years of MSSP experience, a formal analysis of ENHANCED track participation, or of CMMI’s LEAD Model (the ACO REACH successor beginning January 1, 2027), is warranted.
-406	Module 3 Key Takeaway: The economics of value-based care favor organizations that plan in five-year cycles, invest in care management infrastructure before scaling VBC contract volume, and understand the specific financial mechanics of their contract type at the level of the benchmark calculation and the savings distribution formula.
-407	Module 3 of the HTR Academy Value-Based Care Fundamentals course examines the financial mechanics of value-based care from first principles.
+327	Here is a question that sounds simple but is genuinely hard to answer: if a hospital successfully reduces its patients’ hospitalization rate by 15% through better care management, is that good news or bad news for the hospital’s finances?
+328	But in a world where 40% of that hospital’s revenue still comes from fee-for-service Medicare and Medicaid payments, fewer hospitalizations means fewer inpatient admissions, which means fewer billed days, which means lower revenue.
+329	The Medicare Shared Savings Program is the most widely adopted VBC model in the United States, and shared savings is the financial mechanism at its core.
+330	This projected spend is your “benchmark.” If your ACO’s actual spending on that population comes in below the benchmark, the difference is “savings.” You share those savings with CMS according to a pre-agreed formula — typically retaining 40–75% depending on your risk track and quality performance, with CMS keeping the remainder.
+331	CMS has revised the benchmark methodology repeatedly in response to this problem — adding regional adjustments for agreement periods beginning in 2017, reworking them in the 2018 Pathways to Success rule, and, in the CY2023 Physician Fee Schedule rule, adding a prior-savings adjustment and an administratively set growth factor (the Accountable Care Prospective Trend) to blunt the ratchet effect — but the fundamental tension between historical benchmarking and equitable VBC participation for already-efficient providers remains unresolved.
+332	One of the most consequential decisions a provider organization makes when entering a shared savings arrangement is whether to accept only upside risk — where you share in savings if you beat the benchmark but owe nothing if you miss it — or two-sided risk, where you both share savings and repay losses if spending exceeds the benchmark.
+333	Upside-only arrangements (MSSP Track 1 and its successors) are appropriate for organizations beginning their VBC journey: they provide financial experience with population cost management without the catastrophic downside scenario of a major loss repayment obligation.
+334	Two-sided arrangements (the MSSP ENHANCED Track, and CMMI’s ACO REACH Model — the 2023 successor to Global and Professional Direct Contracting, which runs through December 31, 2026 and is to be succeeded by the Long-term Enhanced ACO Design (LEAD) Model from January 1, 2027) offer higher shared savings percentages — sometimes up to 80% of savings — but require the organization to maintain actuarial reserves sufficient to cover a loss scenario, typically modeled at 1–3% of benchmark spending.
+335	"MSSP Basic Track (Upside Only)": "$62.5M",
+336	"MSSP Enhanced Track (Two-Sided)": "$62.5M",
+337	"ACO REACH (Full Risk)": "$62.5M"
+338	"MSSP Basic Track (Upside Only)": "$58.8M",
+339	"MSSP Enhanced Track (Two-Sided)": "$58.8M",
+340	"ACO REACH (Full Risk)": "$58.8M"
+341	"MSSP Basic Track (Upside Only)": "$3.7M",
+342	"MSSP Enhanced Track (Two-Sided)": "$3.7M",
+343	"ACO REACH (Full Risk)": "$3.7M"
+344	"Metric": "Provider Shared Savings %",
+345	"MSSP Basic Track (Upside Only)": "40-50%",
+346	"MSSP Enhanced Track (Two-Sided)": "75%",
+347	"ACO REACH (Full Risk)": "Up to 100%"
+348	"MSSP Basic Track (Upside Only)": "$1.5-1.9M",
+349	"MSSP Enhanced Track (Two-Sided)": "$2.8M",
+350	"MSSP Basic Track (Upside Only)": "$0 (no downside)",
+351	"MSSP Enhanced Track (Two-Sided)": "Up to $1.9M",
+352	"ACO REACH (Full Risk)": "Up to $3.7M"
+353	"MSSP Enhanced Track (Two-Sided)": "~$1.2M",
+354	"ACO REACH (Full Risk)": "~$2.5M"
+355	"MSSP Basic Track (Upside Only)": "$800K-$1.2M",
+356	"MSSP Enhanced Track (Two-Sided)": "$800K-$1.2M",
+357	"ACO REACH (Full Risk)": "$800K-$1.2M"
+358	"MSSP Basic Track (Upside Only)": "$700K-$1.1M",
+359	"MSSP Enhanced Track (Two-Sided)": "$1.6-$2.0M",
+360	Shared Savings Contract Economics: MSSP Track Comparison for a Hypothetical 5,000-Beneficiary ACO
+361	For a health system with $30 million in unrestricted net assets, maintaining a $2.5 million actuarial reserve for ACO REACH participation represents a 8.3% allocation of available capital to a risk management buffer — a rational investment if leadership has high confidence in the organization’s ability to manage population cost, but a significant commitment that requires board-level approval and careful opportunity cost analysis against other capital needs.
+362	Rather than holding a provider accountable for the total cost of care across an entire attributed population, bundled payments establish a single target price for all the care associated with a specific clinical episode — typically defined as a procedure or hospitalization plus 90 days of post-acute care.
+363	BPCI Advanced, CMS’s voluntary bundled payment model, ran from October 1, 2018 through December 31, 2025, with 29 inpatient and 3 outpatient clinical episode categories at launch, ranging from major joint replacement and cardiac procedures to pneumonia and chronic obstructive pulmonary disease hospitalizations.
+364	Its final evaluation (The Lewin Group for CMS, August 2026) found that participants reduced Medicare episode payments in every model year — by $743 per episode on average in Model Years 1 and 2 and by about $1,000 per episode in Model Years 3 through 6 — and that the model produced about $800 million in net Medicare savings across its eight model years: net losses in Model Years 1–3, when reconciliation payments to participants exceeded the spending reductions, were outweighed by net savings once CMS redesigned target pricing in Model Year 4 (2021).
+365	Readmission rates were similar to the comparison group, although patients in Model Years 7–8 reported less favorable changes in functional status.
+366	Critically, the savings came primarily from post-acute care — fewer patients discharged to skilled nursing or inpatient rehabilitation facilities, skilled nursing stays about three days shorter, and skilled nursing payments about $500 lower per episode — rather than from reductions in the procedural care itself, confirming the bundled payment hypothesis that the primary driver of unnecessary cost in high-volume episodes is the post-acute care tail, not the procedure.
+367	CMS concluded that BPCI Advanced did not meet its criteria for expansion, and carried its lessons into the mandatory Transforming Episode Accountability Model (TEAM), which began January 1, 2026.
+368	Capitation: The Most Advanced — and Most Misunderstood — VBC Model
+369	Capitation is the payment model that most completely aligns provider incentives with patient health outcomes, and the one that generates the most anxiety among providers who have not operated under it before.
+370	This concern is real and has historical basis: the managed care capitation models of the 1990s were frequently criticized for exactly this failure, and some HMO capitation arrangements did produce documented under-treatment in specific service categories.
+371	But the lesson of the 1990s HMO experience is not that capitation is inherently dangerous.
+372	The capitation model that exists in 2026 is substantively different from the managed care capitation of 1996.
+373	The single most common financial mistake health systems make in VBC transitions is underestimating the revenue disruption of the transition period — the window, typically 18 to 36 months, during which care management investments have begun reducing utilization but VBC contract revenue has not yet scaled to replace the lost fee-for-service volume.
+374	Consider a regional health system generating $400 million in annual net patient revenue, with 30% of that revenue from inpatient admissions billed on a fee-for-service basis.
+375	The system joins MSSP and invests $2 million in care management infrastructure — care coordinators, a risk stratification platform, a post-discharge follow-up program — that begins generating measurable results in year one, reducing its attributed Medicare population’s hospitalization rate by 12%.
+376	That 12% reduction represents approximately 240 avoided admissions.
+377	At an average net revenue of $8,500 per admission, it also represents a $2.04 million reduction in fee-for-service inpatient revenue.
+378	The system’s MSSP shared savings payment for year one, based on total population savings, might be $1.4 million.
+379	Net financial impact of year one VBC investment: negative $640,000.
+380	CMS’s own results show what is achievable at scale: in Performance Year 2024, Shared Savings Program ACOs generated gross savings of $651 per assigned beneficiary (shared between ACOs and Medicare) and net Medicare savings of $245, and 75% of the 476 participating ACOs earned performance payments.
+381	Present this model honestly to your board, or the VBC investment will be defunded the first time a quarterly loss appears.
+382	One of the most powerful and counterintuitive findings in health economics is that investment in primary care produces returns that are comparable to, and in many cases superior to, investment in specialty care infrastructure — not in terms of individual clinical case intensity, but in terms of total population health spending and outcomes.
+383	The evidence is strongest on outcomes and quality: Baicker and Chandra (Health Affairs, 2004) found that states with more general practitioners per capita delivered higher-quality care to Medicare beneficiaries at lower spending, while states with more specialists spent more for lower quality; and Basu and colleagues (JAMA Internal Medicine, 2019) found that every 10 additional primary care physicians per 100,000 people was associated with a 51.5-day increase in life expectancy.
+384	Supply alone is not a cost-control lever, however — a 2009 Health Affairs analysis found that simply having more primary care physicians did not slow spending growth — which is why payment models that reward primary care for total cost matter.
+385	Under a capitated or shared savings VBC model, the same investment in primary care capacity is a direct cost reduction strategy: every diabetic patient who sees their primary care provider quarterly and maintains target HbA1c levels is a patient less likely to generate a costly admission for a diabetic complication.
+386	"Study": "Coleman et al., Archives of Internal Medicine, 2006 — randomized trial, 750 adults aged 65+",
+387	"Finding": "30-day rehospitalization 8.3% vs 11.9% for controls; mean hospital costs at 180 days $2,058 vs $2,546",
+388	"Financial result": "About $488 lower hospital cost per patient over 180 days (program cost not netted out)"
+389	"Study": "Kangovi et al., Health Affairs, 2020 — economic analysis of a randomized trial",
+390	"Finding": "Fewer hospitalizations among Medicaid patients; about $1.4 million saved to Medicaid",
+391	"Financial result": "$2.47 returned to Medicaid for every $1 invested, within one fiscal year"
+392	"Study": "Mathematica, CPC+ Final Evaluation Report, December 2023 — five model years",
+393	"Study": "Mathematica, PCF Third Annual Report, 2025 — performance years 2021–2022",
+394	"Financial result": "Medicare expenditures up 1% including model payments — a net cost, not savings"
+395	An organization implementing a care coordinator program without a functioning risk stratification system to identify which patients the coordinator should prioritize will see substantially lower returns — because care management applied uniformly across a population is far less efficient than care management targeted to the patients most likely to have high-cost events in the next 12 months.
+396	The technology readiness discussion in Module 4 is therefore directly connected to the economics of VBC investment: organizations that build population health data infrastructure before scaling care management programs generate significantly better returns than those that sequence these investments in reverse order.
+397	Post-discharge transition support has some of the strongest trial evidence in care management: in Coleman’s randomized trial of 750 older adults, transition coaching cut 30-day rehospitalizations from 11.9% to 8.3% and lowered six-month hospital costs, because the cost of coaching is small relative to the cost of a readmission.
+398	Community health worker programs are the intervention most directly connected to social determinants of health — addressing food insecurity, housing instability, and transportation barriers that drive utilization patterns that clinical care alone cannot change — and Penn’s IMPaCT program returned $2.47 to Medicaid for every dollar invested, within a single fiscal year.
+399	Advanced primary care transformation is the most comprehensive intervention, but the federal evidence is sobering: neither CPC+ nor Primary Care First produced net Medicare savings once their enhanced payments were counted, and CPC+ practices with incentives to control total cost of care, such as Shared Savings Program participants, did better at lowering costs — which is why primary care investment pays off most reliably inside a total-cost-of-care arrangement rather than as a stand-alone add-on.
+400	Module 3 Summary: The Economics of VBC Reward Patience, Infrastructure, and Precision
+401	The economic case for making these investments nonetheless is visible in CMS’s own results: in Performance Year 2024, Shared Savings Program ACOs generated gross savings of $651 per assigned beneficiary and net Medicare savings of $245, with physician-led, low-revenue ACOs outperforming hospital-led ones ($319 versus $180 net per beneficiary) — returns that depend on care management infrastructure maturing and on the organization’s ability to identify and target high-risk patients.
+402	Module 4 examines the technology infrastructure that makes this financial performance possible.
+403	If your unrestricted net assets are below $15 million, upside-only MSSP participation is the appropriate starting point.
+404	If your unrestricted net assets exceed $30 million and you have three or more years of MSSP experience, a formal analysis of ENHANCED track participation, or of CMMI’s LEAD Model (the ACO REACH successor beginning January 1, 2027), is warranted.
+405	Module 3 Key Takeaway: The economics of value-based care favor organizations that plan in five-year cycles, invest in care management infrastructure before scaling VBC contract volume, and understand the specific financial mechanics of their contract type at the level of the benchmark calculation and the savings distribution formula.
+406	Module 3 of the HTR Academy Value-Based Care Fundamentals course examines the financial mechanics of value-based care from first principles.
 
 ## bundled-payment-mechanics
-408	An episode of care is a clinically meaningful window of time tied to a specific health event — typically an inpatient anchor stay or a qualifying outpatient procedure, plus a defined follow-up period (most commonly 90 days) during which related care is included in the bundle.
-409	CMS BPCI Advanced (2018–2025) covered 31 inpatient and 4 outpatient clinical episode types — CMS BPCI Advanced Model Overview 2021
-410	Episodes in BPCI Advanced extend 90 days past hospital discharge or outpatient procedure completion — CMS BPCI Advanced Fact Sheet
-411	BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 (2022) alone; about $800 million net across all eight model years — CMS BPCI Advanced evaluation reports (2024; final report 2026)
-412	BPCI Advanced Net Savings, Model Year 5
-413	In the CMS Bundled Payments for Care Improvement Advanced (BPCI Advanced) model — the largest federal voluntary bundled payment program, which ran from 2018 until it ended on December 31, 2025 — an episode begins either with an inpatient admission identified by a Medicare Severity-Diagnosis Related Group (MS-DRG) code, called the Anchor Stay, or with a qualifying outpatient procedure in a hospital outpatient department, called the Anchor Procedure.
-414	The episode ends 90 days after the patient is discharged or the procedure is completed.
-415	The episode window covers the anchor event plus 90 days.
-416	A hospital participating as an ACH is accountable for the full 90-day episode cost for every eligible patient admitted.
-417	The 35 BPCI Advanced clinical episodes span eight clinical service line groups: cardiac care, cardiac procedures, gastrointestinal surgery, gastrointestinal care, neurological care, medical and critical care, spinal procedures, and orthopedics.
-418	Participants do not have to take on all 35 — they can select the episode types where they have the most clinical volume, existing care-coordination infrastructure, and confidence in their ability to manage costs.
-419	Covers 35 clinical episode types
-420	CMS's TEAM model began Jan 1, 2026, covering 5 procedure types
-421	Applies to ~741 hospitals in selected Core-Based Statistical Areas
-422	Setting an accurate target price is the most technically demanding element of any bundled payment program.
-423	A hip replacement patient discharged to a skilled nursing facility costs Medicare roughly twice as much over 90 days as the same patient discharged directly home with home health support.
-424	A 90-day episode means that any readmission within three months of the initial procedure falls inside the bundle and adds directly to the participant's cost.
-425	Participants invest in post-discharge nurse navigator programs, 24/7 patient hotlines, medication reconciliation, and remote monitoring to catch warning signs before they become emergency department visits.
-426	Analyses of BPCI Advanced performance in lower-extremity joint replacement (one of the highest-volume episodes in the model) are a large part of why the model as a whole saved Medicare an estimated net $344 million in Model Year 5 (about $800 million net across all eight model years, per the 2026 final evaluation).
-427	The Comprehensive Care for Joint Replacement (CJR) model — launched in 2016 as a mandatory program in randomly selected metropolitan statistical areas — was the first federal mandatory bundle and provided critical evidence that bundles can generate savings at scale without quality deterioration.
-428	CJR saved Medicare an estimated $63 million between 2016 and 2018.
-429	The next generation mandatory model is the Transforming Episode Accountability Model (TEAM), which CMS launched on January 1, 2026, to run through December 31, 2030.
-430	TEAM requires approximately 741 acute care hospitals in selected Core-Based Statistical Areas to accept financial risk for five surgical episode types: lower extremity joint replacement, surgical hip femur fracture treatment, spinal fusion, coronary artery bypass graft, and major bowel procedure.
-431	Unlike BPCI Advanced's 90-day window, TEAM episodes end 30 days after discharge, reflecting a sharper focus on the immediate post-acute transition.
-432	BPCI Advanced (2018–2025) — the largest federal voluntary bundled payment program — covered 35 clinical episode types across 8 service line groups, with episodes defined as an anchor event plus 90 days of follow-up.
-433	BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 alone and about $800 million net across its eight model years, with roughly $1,000 lower spending per episode, with quality metrics remaining stable.
-434	CMS is moving toward mandatory models: TEAM began January 1, 2026, covering five surgical episode types at approximately 741 hospitals in selected markets.
-435	BPCI Advanced episodes extend 90 days after the patient is discharged from the Anchor Stay or after the Anchor Procedure is completed in an outpatient setting.
-436	This 90-day window is designed to capture the full cost of post-acute recovery, where spending variation is greatest and coordination opportunities are highest.
-437	30 days after the anchor event is completed
-438	90 days after discharge from the anchor stay or completion of the anchor procedure
-439	[1] CMS: BPCI Advanced Model Overview — https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced — Episode structure, episode types, and model mechanics
-440	[2] CMS BPCI Advanced Model Year 5 Fact Sheet (November 2021) — https://www.cms.gov/priorities/innovation/media/document/bpci-advanced-model-overview-fact-sheet-my5 — Model Year 5 participation and clinical episode service line groups
-441	[3] CMS BPCI Advanced Fifth Annual Report (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/bpci-adv-ar5-aag — $344M net savings in Model Year 5
-442	[4] HFMA: How CMS Sets the Target Price for Bundles Under BPCI-A — https://www.hfma.org/payment-reimbursement-and-managed-care/bundled-payment/how-cms-sets-the-target-price-for-bundles-under-bpcia/ — Target price methodology, risk adjustment, and discount rate
-443	[5] CMS: TEAM (Transforming Episode Accountability Model) — https://www.cms.gov/priorities/innovation/innovation-models/team-model — TEAM launch date, 5 procedure types, 741 hospitals, 2026–2030
-444	[6] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR savings of $63M between 2016 and 2018
+407	An episode of care is a clinically meaningful window of time tied to a specific health event — typically an inpatient anchor stay or a qualifying outpatient procedure, plus a defined follow-up period (most commonly 90 days) during which related care is included in the bundle.
+408	CMS BPCI Advanced (2018–2025) covered 31 inpatient and 4 outpatient clinical episode types — CMS BPCI Advanced Model Overview 2021
+409	Episodes in BPCI Advanced extend 90 days past hospital discharge or outpatient procedure completion — CMS BPCI Advanced Fact Sheet
+410	BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 (2022) alone; about $800 million net across all eight model years — CMS BPCI Advanced evaluation reports (2024; final report 2026)
+411	BPCI Advanced Net Savings, Model Year 5
+412	In the CMS Bundled Payments for Care Improvement Advanced (BPCI Advanced) model — the largest federal voluntary bundled payment program, which ran from 2018 until it ended on December 31, 2025 — an episode begins either with an inpatient admission identified by a Medicare Severity-Diagnosis Related Group (MS-DRG) code, called the Anchor Stay, or with a qualifying outpatient procedure in a hospital outpatient department, called the Anchor Procedure.
+413	The episode ends 90 days after the patient is discharged or the procedure is completed.
+414	The episode window covers the anchor event plus 90 days.
+415	A hospital participating as an ACH is accountable for the full 90-day episode cost for every eligible patient admitted.
+416	The 35 BPCI Advanced clinical episodes span eight clinical service line groups: cardiac care, cardiac procedures, gastrointestinal surgery, gastrointestinal care, neurological care, medical and critical care, spinal procedures, and orthopedics.
+417	Participants do not have to take on all 35 — they can select the episode types where they have the most clinical volume, existing care-coordination infrastructure, and confidence in their ability to manage costs.
+418	Covers 35 clinical episode types
+419	CMS's TEAM model began Jan 1, 2026, covering 5 procedure types
+420	Applies to ~741 hospitals in selected Core-Based Statistical Areas
+421	Setting an accurate target price is the most technically demanding element of any bundled payment program.
+422	A hip replacement patient discharged to a skilled nursing facility costs Medicare roughly twice as much over 90 days as the same patient discharged directly home with home health support.
+423	A 90-day episode means that any readmission within three months of the initial procedure falls inside the bundle and adds directly to the participant's cost.
+424	Participants invest in post-discharge nurse navigator programs, 24/7 patient hotlines, medication reconciliation, and remote monitoring to catch warning signs before they become emergency department visits.
+425	Analyses of BPCI Advanced performance in lower-extremity joint replacement (one of the highest-volume episodes in the model) are a large part of why the model as a whole saved Medicare an estimated net $344 million in Model Year 5 (about $800 million net across all eight model years, per the 2026 final evaluation).
+426	The Comprehensive Care for Joint Replacement (CJR) model — launched in 2016 as a mandatory program in randomly selected metropolitan statistical areas — was the first federal mandatory bundle and provided critical evidence that bundles can generate savings at scale without quality deterioration.
+427	CJR saved Medicare an estimated $63 million between 2016 and 2018.
+428	The next generation mandatory model is the Transforming Episode Accountability Model (TEAM), which CMS launched on January 1, 2026, to run through December 31, 2030.
+429	TEAM requires approximately 741 acute care hospitals in selected Core-Based Statistical Areas to accept financial risk for five surgical episode types: lower extremity joint replacement, surgical hip femur fracture treatment, spinal fusion, coronary artery bypass graft, and major bowel procedure.
+430	Unlike BPCI Advanced's 90-day window, TEAM episodes end 30 days after discharge, reflecting a sharper focus on the immediate post-acute transition.
+431	BPCI Advanced (2018–2025) — the largest federal voluntary bundled payment program — covered 35 clinical episode types across 8 service line groups, with episodes defined as an anchor event plus 90 days of follow-up.
+432	BPCI Advanced saved Medicare a net ~$344 million in Model Year 5 alone and about $800 million net across its eight model years, with roughly $1,000 lower spending per episode, with quality metrics remaining stable.
+433	CMS is moving toward mandatory models: TEAM began January 1, 2026, covering five surgical episode types at approximately 741 hospitals in selected markets.
+434	BPCI Advanced episodes extend 90 days after the patient is discharged from the Anchor Stay or after the Anchor Procedure is completed in an outpatient setting.
+435	This 90-day window is designed to capture the full cost of post-acute recovery, where spending variation is greatest and coordination opportunities are highest.
+436	30 days after the anchor event is completed
+437	90 days after discharge from the anchor stay or completion of the anchor procedure
+438	[1] CMS: BPCI Advanced Model Overview — https://www.cms.gov/priorities/innovation/innovation-models/bpci-advanced — Episode structure, episode types, and model mechanics
+439	[2] CMS BPCI Advanced Model Year 5 Fact Sheet (November 2021) — https://www.cms.gov/priorities/innovation/media/document/bpci-advanced-model-overview-fact-sheet-my5 — Model Year 5 participation and clinical episode service line groups
+440	[3] CMS BPCI Advanced Fifth Annual Report (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/bpci-adv-ar5-aag — $344M net savings in Model Year 5
+441	[4] HFMA: How CMS Sets the Target Price for Bundles Under BPCI-A — https://www.hfma.org/payment-reimbursement-and-managed-care/bundled-payment/how-cms-sets-the-target-price-for-bundles-under-bpcia/ — Target price methodology, risk adjustment, and discount rate
+442	[5] CMS: TEAM (Transforming Episode Accountability Model) — https://www.cms.gov/priorities/innovation/innovation-models/team-model — TEAM launch date, 5 procedure types, 741 hospitals, 2026–2030
+443	[6] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR savings of $63M between 2016 and 2018
 
 ## bundled-payment-evidence
-445	The most consistent evidence for bundled payment effectiveness comes from lower-extremity joint replacement — hip and knee arthroplasty.
-446	A landmark NEJM study evaluating the first two years of the CJR mandatory model found statistically significant episode cost reductions without deterioration in mortality, readmission, or patient-reported function.
-447	Analyses of BPCI orthopedic episodes found per-episode spending declines averaging roughly $1,166, with the reductions concentrated in SNF costs.
-448	Hip and knee replacement under BPCI Model 2 — Dummit et al., JAMA 2016
-449	Net Medicare savings from Comprehensive Care for Joint Replacement, performance years 2016–2018, after reconciliation payments — CMS third annual evaluation
-450	Gross reduction in CJR episode payments, PY2016–2018, before $90.5M in reconciliation payments — CMS third annual evaluation
-451	A 2024 study published in JAMA Cardiology evaluating BPCI Model 2 participation for heart failure (18 BPCI hospitals versus 211 comparison hospitals) found that hospital participation was not associated with improvement in process-of-care quality measures, nor with reductions in 30-day or 90-day risk-adjusted all-cause mortality or readmission rates.
-452	First, medical episodes have much higher cost variance — a heart failure patient can cost $8,000 or $80,000 depending on comorbidities and complications that are difficult to predict or control at admission.
-453	A study published in JAMA Cardiology in early 2024 analyzing BPCI participation for heart failure episodes found that bundled payment participation was not associated with improved quality performance or outcomes on key measures including 30-day and 90-day readmission and mortality rates.
-454	BPCI Heart Failure Episode — PubMed Study (2024)
-455	CMS has published multiple annual evaluation reports for BPCI Advanced, providing the most detailed longitudinal evidence available on a voluntary federal bundled payment program.
-456	In Model Year 5 (2022), BPCI Advanced generated approximately $344 million in net Medicare savings — a roughly 4% reduction in episode spending compared to the risk-adjusted target price benchmark.
-457	The model ended on December 31, 2025, and its final evaluation (August 2026) put net Medicare savings at about $800 million across all eight model years, after net losses in Model Years 1–3.
-458	The fourth annual CMS evaluation report (2023) confirmed that savings persisted through the later model years but that per-episode savings rates were compressing over time — consistent with the "ratchet effect" where target prices are adjusted downward as participants demonstrate efficiency.
-459	CJR: $61.6M net Medicare savings in its first three years (mandatory model)
-460	BPCI Advanced: ~$344M net Medicare savings in Model Year 5
-461	What the Evidence Shows: Surgical vs.
-462	Facilities that discharge patients to a broad, undifferentiated network of post-acute providers lose the ability to standardize care in the 90-day tail of the episode — where cost variation is highest and provider accountability is most diffuse.
-463	The most significant is generalizability: can the savings demonstrated by self-selected high performers in voluntary programs be replicated across a broader, less-selected population of hospitals forced to participate in mandatory models?
-464	Early evidence from the CJR mandatory model is cautiously optimistic — savings were achieved across a heterogeneous set of hospitals — but TEAM's mandatory extension to five episode types beginning in 2026 will provide the most definitive test yet.
-465	BPCI Advanced generated approximately $344 million in net Medicare savings in Model Year 5 and about $800 million net across all eight model years (2018–2025), with quality metrics remaining stable.
-466	[1] CMS BPCI Advanced Fourth Evaluation Report (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/bpci-adv-ar4 — Longitudinal savings and quality findings through Year 4
-467	[2] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR mandatory model savings and quality outcomes
-468	[3] PubMed: Bundled Payments for Care Improvement and Quality of Care in Heart Failure (2024) — https://pubmed.ncbi.nlm.nih.gov/38170516/ — Heart failure bundle showing no improvement in quality or outcomes
-469	[4] Penn LDI: Future Bundled Payment Models Need to Engage Physician Group Practices — https://ldi.upenn.edu/our-work/research-updates/future-bundled-payment-models-need-to-engage-physician-group-practices/ — PGP participation gaps and policy implications
-470	[5] Fierce Healthcare: Study Finds Bundled Payments for Hip and Knee Procedures Lowered Costs — https://www.fiercehealthcare.com/hospitals-health-systems/study-finds-bundled-payments-for-hip-and-knee-procedures-lowered-costs-but — $1,166 per-episode reduction in joint replacement
-471	[6] Altarum Healthcare Value Hub: Bundled Payments — What Does the Evidence Say? — https://www.healthcarevaluehub.org/advocate-resources/publications/bundled-payments-what-does-evidence-say — Summary of evidence across episode types
+444	The most consistent evidence for bundled payment effectiveness comes from lower-extremity joint replacement — hip and knee arthroplasty.
+445	A landmark NEJM study evaluating the first two years of the CJR mandatory model found statistically significant episode cost reductions without deterioration in mortality, readmission, or patient-reported function.
+446	Analyses of BPCI orthopedic episodes found per-episode spending declines averaging roughly $1,166, with the reductions concentrated in SNF costs.
+447	Hip and knee replacement under BPCI Model 2 — Dummit et al., JAMA 2016
+448	Net Medicare savings from Comprehensive Care for Joint Replacement, performance years 2016–2018, after reconciliation payments — CMS third annual evaluation
+449	Gross reduction in CJR episode payments, PY2016–2018, before $90.5M in reconciliation payments — CMS third annual evaluation
+450	A 2024 study published in JAMA Cardiology evaluating BPCI Model 2 participation for heart failure (18 BPCI hospitals versus 211 comparison hospitals) found that hospital participation was not associated with improvement in process-of-care quality measures, nor with reductions in 30-day or 90-day risk-adjusted all-cause mortality or readmission rates.
+451	First, medical episodes have much higher cost variance — a heart failure patient can cost $8,000 or $80,000 depending on comorbidities and complications that are difficult to predict or control at admission.
+452	A study published in JAMA Cardiology in early 2024 analyzing BPCI participation for heart failure episodes found that bundled payment participation was not associated with improved quality performance or outcomes on key measures including 30-day and 90-day readmission and mortality rates.
+453	BPCI Heart Failure Episode — PubMed Study (2024)
+454	CMS has published multiple annual evaluation reports for BPCI Advanced, providing the most detailed longitudinal evidence available on a voluntary federal bundled payment program.
+455	In Model Year 5 (2022), BPCI Advanced generated approximately $344 million in net Medicare savings — a roughly 4% reduction in episode spending compared to the risk-adjusted target price benchmark.
+456	The model ended on December 31, 2025, and its final evaluation (August 2026) put net Medicare savings at about $800 million across all eight model years, after net losses in Model Years 1–3.
+457	The fourth annual CMS evaluation report (2023) confirmed that savings persisted through the later model years but that per-episode savings rates were compressing over time — consistent with the "ratchet effect" where target prices are adjusted downward as participants demonstrate efficiency.
+458	CJR: $61.6M net Medicare savings in its first three years (mandatory model)
+459	BPCI Advanced: ~$344M net Medicare savings in Model Year 5
+460	What the Evidence Shows: Surgical vs.
+461	Facilities that discharge patients to a broad, undifferentiated network of post-acute providers lose the ability to standardize care in the 90-day tail of the episode — where cost variation is highest and provider accountability is most diffuse.
+462	The most significant is generalizability: can the savings demonstrated by self-selected high performers in voluntary programs be replicated across a broader, less-selected population of hospitals forced to participate in mandatory models?
+463	Early evidence from the CJR mandatory model is cautiously optimistic — savings were achieved across a heterogeneous set of hospitals — but TEAM's mandatory extension to five episode types beginning in 2026 will provide the most definitive test yet.
+464	BPCI Advanced generated approximately $344 million in net Medicare savings in Model Year 5 and about $800 million net across all eight model years (2018–2025), with quality metrics remaining stable.
+465	[1] CMS BPCI Advanced Fourth Evaluation Report (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/bpci-adv-ar4 — Longitudinal savings and quality findings through Year 4
+466	[2] NEJM: Two-Year Evaluation of Mandatory Bundled Payments for Joint Replacement — https://www.nejm.org/doi/full/10.1056/NEJMsa1809010 — CJR mandatory model savings and quality outcomes
+467	[3] PubMed: Bundled Payments for Care Improvement and Quality of Care in Heart Failure (2024) — https://pubmed.ncbi.nlm.nih.gov/38170516/ — Heart failure bundle showing no improvement in quality or outcomes
+468	[4] Penn LDI: Future Bundled Payment Models Need to Engage Physician Group Practices — https://ldi.upenn.edu/our-work/research-updates/future-bundled-payment-models-need-to-engage-physician-group-practices/ — PGP participation gaps and policy implications
+469	[5] Fierce Healthcare: Study Finds Bundled Payments for Hip and Knee Procedures Lowered Costs — https://www.fiercehealthcare.com/hospitals-health-systems/study-finds-bundled-payments-for-hip-and-knee-procedures-lowered-costs-but — $1,166 per-episode reduction in joint replacement
+470	[6] Altarum Healthcare Value Hub: Bundled Payments — What Does the Evidence Say? — https://www.healthcarevaluehub.org/advocate-resources/publications/bundled-payments-what-does-evidence-say — Summary of evidence across episode types
 
 ## oncology-care-model
-472	Chemotherapy drug prices have risen dramatically — targeted therapies can cost $100,000 or more per patient per year — and utilization is intensive, with patients receiving not just drugs but frequent lab work, imaging, supportive care, and hospitalizations for complications.
-473	When a patient calls at 2 a.m. with fever and chills during neutropenia, the default in a fragmented system is to send them to the ER for a costly workup, even when a phone triage protocol with a nurse practitioner might safely manage the situation.
-474	CMS recognized this problem and launched the Oncology Care Model (OCM) in 2016 as the first cancer-focused alternative payment model in the federal portfolio.
-475	OCM ran through June 30, 2022, involving 122 oncology practices and five commercial payer partners.
-476	It was succeeded by the Enhancing Oncology Model (EOM), which launched July 1, 2023, with a refined episode structure and narrower scope focused on seven high-cost cancer types.
-477	The Oncology Care Model was the first alternative payment model specifically designed for cancer care.
-478	It ran from 2016 to 2022, covering chemotherapy episodes for any cancer type treated at participating practices, and served as the proof-of-concept for the successor Enhancing Oncology Model launched in 2023.
-479	Number of oncology practices in OCM at model conclusion June 2022 — CMS OCM Final Evaluation 2024
-480	OCM and EOM episodes last 6 months from start of chemotherapy — CMS OCM Design Documents
-481	Enhancing Oncology Model focuses on 7 specific cancer types: breast, lung, CLL, colorectal, lymphoma, myeloma, prostate — CMS EOM 2023
-482	The episode lasts six months from the date of the first chemotherapy claim.
-483	Unlike a surgical bundle anchored to a single procedure, a six-month oncology episode encompasses a dynamic, evolving clinical situation: cycles of chemotherapy, supportive care, scans to assess treatment response, management of side effects, and potentially a treatment switch if the first regimen fails.
-484	First, the monthly enhanced oncology services (MEOS) payment: $160 per beneficiary per month for each month of the six-month episode, regardless of outcomes.
-485	Over a full six-month episode, a single patient generated $960 in MEOS payments to the practice.
-486	CMS pays the practice $160 per beneficiary per month for each of the six months — regardless of spending or outcomes.
-487	Total: up to $960 per episode.
-488	Practice must provide 24/7 patient access, care coordination, evidence-based treatment planning, electronic care plans, and patient navigation as conditions of MEOS receipt.
-489	CMS specified six practice redesign activities that all participating practices had to implement: (1) 24/7 patient access to an appropriate clinician with real-time access to the practice's medical records; (2) the core functions of patient navigation — helping patients understand their diagnoses, manage treatment side effects, and navigate the healthcare system; (3) a documented care plan for each patient containing the 13 components of the Institute of Medicine Care Management Plan; (4) treatment with therapies consistent with nationally recognized clinical guidelines; (5) use of certified electronic health record technology; and (6) use of data for continuous quality improvement, including clinical and quality data reported to CMS.
-490	The 24/7 access requirement was among the most impactful changes.
-491	Navigators schedule and track appointments, coordinate transportation, connect patients with financial assistance programs, manage prescription adherence, and serve as the first point of contact when something goes wrong.
-492	The University of Alabama at Birmingham's Patient Care Connect Program, funded by a CMS Innovation Center award, placed lay navigators — community hires with bachelor's degrees, not licensed clinicians — across 2 academic and 10 community cancer centers in five Southeastern states to support older patients from diagnosis through survivorship or end of life.
-493	A propensity-matched study of Medicare beneficiaries from 2012 to 2015 (Rocque et al., JAMA Oncology, 2017) found that, compared with non-navigated patients, navigated patients' costs fell by $781 more per quarter, with larger quarterly declines in ED visits (6.0%), hospitalizations (7.9%), and ICU admissions (10.6%).
-494	The final OCM evaluation (Abt Global, May 2024), covering all 11 performance periods through the model's June 2022 conclusion, revealed a complex picture of modest relative savings overwhelmed by incentive payments.
-495	Total episode payments rose $616 less in OCM episodes than in comparison episodes — a 2.1 percent relative reduction.
-496	This looks like success on its face, but the MEOS payments alone could reach $960 per six-month episode, and they were paid whether or not a practice met its benchmark.
-497	When MEOS payments and performance-based payments were included in the net calculation, the OCM program resulted in an estimated net loss to Medicare of $639 million over its six years of operation.
-498	$616 relative reduction per episode vs. comparison group (2.1%)
-499	MEOS: $160 per month, paid whether or not benchmarks were met
-500	Net loss to Medicare: ~$639 million over 6 years
-501	CMS launched the Enhancing Oncology Model (EOM) on July 1, 2023, incorporating lessons from the OCM evaluation.
-502	The most consequential design change was the shift from a universal chemotherapy trigger to a narrow focus on seven high-cost, high-volume cancer types: high-risk breast cancer, lung cancer, chronic leukemia (CLL), small intestine/colorectal cancer, lymphoma, multiple myeloma, and high-risk prostate cancer.
-503	EOM retained the six-month episode structure and the Monthly Enhanced Oncology Services (MEOS) payment, but cut it to $70 per beneficiary per month at launch ($100 for beneficiaries dually eligible for Medicaid), down from OCM's $160, to improve net savings potential.
-504	CMS raised it to $110 ($140 for dual-eligible beneficiaries) effective January 1, 2025.
-505	In 2025 CMS amended EOM agreements, citing executive orders effective January 20, 2025: it stopped requiring or accepting health equity plans and changed the social-needs data collection requirements.
-506	A second cohort of EOM participants launched July 1, 2025, indicating continued CMS commitment to the oncology VBC program.
-507	The $160 MEOS payment per month is the fixed cover charge — it pays for the kitchen staff and service setup.
-508	The OCM's estimated $639 million net loss to Medicare reflects a payment design issue — the $160 MEOS was set too high relative to achievable savings — not a failure of the care coordination concept.
-509	The Oncology Care Model (2016–2022) was the first federal alternative payment model for cancer care, using six-month chemotherapy episodes triggered by the start of systemic treatment.
-510	OCM paid practices $160 per beneficiary per month (MEOS) to fund care coordination infrastructure, including 24/7 patient access, patient navigation, and evidence-based treatment planning.
-511	The final OCM evaluation found a $616 (2.1%) relative reduction in episode payments, but MEOS and performance-based payments outweighed it, for an estimated net loss of $639 million to Medicare over six years.
-512	The Enhancing Oncology Model (EOM), launched July 1, 2023, applies lessons from OCM with a narrower focus on 7 high-cost cancer types, a reduced monthly payment ($70/beneficiary/month at launch, raised to $110 in 2025), and mandatory two-sided risk from the start.
-513	EOM launched with formal health equity requirements — social-needs screening, sociodemographic data collection, and a health equity plan — but CMS dropped the equity plan requirement in a 2025 amendment.
-514	The final OCM evaluation found that total episode payments rose $616 less per episode (2.1%) in OCM than in comparison episodes.
-515	But MEOS payments — $160 per month, paid whether or not a practice met its benchmark — plus performance-based payments exceeded those savings in every performance period, so Medicare lost an estimated $639 million over the model's six years.
-516	EOM launched with a reduced monthly payment of $70 per beneficiary per month.
-517	[1] CMS: Oncology Care Model — https://www.cms.gov/priorities/innovation/innovation-models/oncology-care — Model overview, episode structure, MEOS payment, and participation statistics
-518	[2] CMS OCM Final Evaluation Report At-A-Glance (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/ocm-final-eval-report-2024-aag — Net loss of $639M, $616 (2.1%) per-episode relative reduction, quality findings
-519	[3] CMS OCM Evaluation PP1–9 Executive Summary (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/ocm-evaluation-pp1-9-exec-sum — Comprehensive evaluation findings including equity improvements
-520	[4] ASCO Post: Oncology Care Model Studies Find Significant Savings but Minor Quality Improvement (2023) — https://ascopost.com/issues/december-10-2023/oncology-care-model-studies-find-significant-savings-but-minor-quality-improvement/ — Independent analysis of OCM savings and quality results
-521	[5] CMS: Enhancing Oncology Model (EOM) — https://www.cms.gov/priorities/innovation/innovation-models/eom — EOM structure, 7 cancer types, July 2023 launch, second cohort July 2025, MEOS $110 ($140 dual-eligible) from 2025
-522	[6] PMC: Design Challenges of an Episode-Based Payment Model in Oncology: The CMS Oncology Care Model — https://pmc.ncbi.nlm.nih.gov/articles/PMC5508445/ — MEOS $160 calculation, 24/7 access requirements, care coordination design rationale
+471	Chemotherapy drug prices have risen dramatically — targeted therapies can cost $100,000 or more per patient per year — and utilization is intensive, with patients receiving not just drugs but frequent lab work, imaging, supportive care, and hospitalizations for complications.
+472	When a patient calls at 2 a.m. with fever and chills during neutropenia, the default in a fragmented system is to send them to the ER for a costly workup, even when a phone triage protocol with a nurse practitioner might safely manage the situation.
+473	CMS recognized this problem and launched the Oncology Care Model (OCM) in 2016 as the first cancer-focused alternative payment model in the federal portfolio.
+474	OCM ran through June 30, 2022, involving 122 oncology practices and five commercial payer partners.
+475	It was succeeded by the Enhancing Oncology Model (EOM), which launched July 1, 2023, with a refined episode structure and narrower scope focused on seven high-cost cancer types.
+476	The Oncology Care Model was the first alternative payment model specifically designed for cancer care.
+477	It ran from 2016 to 2022, covering chemotherapy episodes for any cancer type treated at participating practices, and served as the proof-of-concept for the successor Enhancing Oncology Model launched in 2023.
+478	Number of oncology practices in OCM at model conclusion June 2022 — CMS OCM Final Evaluation 2024
+479	OCM and EOM episodes last 6 months from start of chemotherapy — CMS OCM Design Documents
+480	Enhancing Oncology Model focuses on 7 specific cancer types: breast, lung, CLL, colorectal, lymphoma, myeloma, prostate — CMS EOM 2023
+481	The episode lasts six months from the date of the first chemotherapy claim.
+482	Unlike a surgical bundle anchored to a single procedure, a six-month oncology episode encompasses a dynamic, evolving clinical situation: cycles of chemotherapy, supportive care, scans to assess treatment response, management of side effects, and potentially a treatment switch if the first regimen fails.
+483	First, the monthly enhanced oncology services (MEOS) payment: $160 per beneficiary per month for each month of the six-month episode, regardless of outcomes.
+484	Over a full six-month episode, a single patient generated $960 in MEOS payments to the practice.
+485	CMS pays the practice $160 per beneficiary per month for each of the six months — regardless of spending or outcomes.
+486	Total: up to $960 per episode.
+487	Practice must provide 24/7 patient access, care coordination, evidence-based treatment planning, electronic care plans, and patient navigation as conditions of MEOS receipt.
+488	CMS specified six practice redesign activities that all participating practices had to implement: (1) 24/7 patient access to an appropriate clinician with real-time access to the practice's medical records; (2) the core functions of patient navigation — helping patients understand their diagnoses, manage treatment side effects, and navigate the healthcare system; (3) a documented care plan for each patient containing the 13 components of the Institute of Medicine Care Management Plan; (4) treatment with therapies consistent with nationally recognized clinical guidelines; (5) use of certified electronic health record technology; and (6) use of data for continuous quality improvement, including clinical and quality data reported to CMS.
+489	The 24/7 access requirement was among the most impactful changes.
+490	Navigators schedule and track appointments, coordinate transportation, connect patients with financial assistance programs, manage prescription adherence, and serve as the first point of contact when something goes wrong.
+491	The University of Alabama at Birmingham's Patient Care Connect Program, funded by a CMS Innovation Center award, placed lay navigators — community hires with bachelor's degrees, not licensed clinicians — across 2 academic and 10 community cancer centers in five Southeastern states to support older patients from diagnosis through survivorship or end of life.
+492	A propensity-matched study of Medicare beneficiaries from 2012 to 2015 (Rocque et al., JAMA Oncology, 2017) found that, compared with non-navigated patients, navigated patients' costs fell by $781 more per quarter, with larger quarterly declines in ED visits (6.0%), hospitalizations (7.9%), and ICU admissions (10.6%).
+493	The final OCM evaluation (Abt Global, May 2024), covering all 11 performance periods through the model's June 2022 conclusion, revealed a complex picture of modest relative savings overwhelmed by incentive payments.
+494	Total episode payments rose $616 less in OCM episodes than in comparison episodes — a 2.1 percent relative reduction.
+495	This looks like success on its face, but the MEOS payments alone could reach $960 per six-month episode, and they were paid whether or not a practice met its benchmark.
+496	When MEOS payments and performance-based payments were included in the net calculation, the OCM program resulted in an estimated net loss to Medicare of $639 million over its six years of operation.
+497	$616 relative reduction per episode vs. comparison group (2.1%)
+498	MEOS: $160 per month, paid whether or not benchmarks were met
+499	Net loss to Medicare: ~$639 million over 6 years
+500	CMS launched the Enhancing Oncology Model (EOM) on July 1, 2023, incorporating lessons from the OCM evaluation.
+501	The most consequential design change was the shift from a universal chemotherapy trigger to a narrow focus on seven high-cost, high-volume cancer types: high-risk breast cancer, lung cancer, chronic leukemia (CLL), small intestine/colorectal cancer, lymphoma, multiple myeloma, and high-risk prostate cancer.
+502	EOM retained the six-month episode structure and the Monthly Enhanced Oncology Services (MEOS) payment, but cut it to $70 per beneficiary per month at launch ($100 for beneficiaries dually eligible for Medicaid), down from OCM's $160, to improve net savings potential.
+503	CMS raised it to $110 ($140 for dual-eligible beneficiaries) effective January 1, 2025.
+504	In 2025 CMS amended EOM agreements, citing executive orders effective January 20, 2025: it stopped requiring or accepting health equity plans and changed the social-needs data collection requirements.
+505	A second cohort of EOM participants launched July 1, 2025, indicating continued CMS commitment to the oncology VBC program.
+506	The $160 MEOS payment per month is the fixed cover charge — it pays for the kitchen staff and service setup.
+507	The OCM's estimated $639 million net loss to Medicare reflects a payment design issue — the $160 MEOS was set too high relative to achievable savings — not a failure of the care coordination concept.
+508	The Oncology Care Model (2016–2022) was the first federal alternative payment model for cancer care, using six-month chemotherapy episodes triggered by the start of systemic treatment.
+509	OCM paid practices $160 per beneficiary per month (MEOS) to fund care coordination infrastructure, including 24/7 patient access, patient navigation, and evidence-based treatment planning.
+510	The final OCM evaluation found a $616 (2.1%) relative reduction in episode payments, but MEOS and performance-based payments outweighed it, for an estimated net loss of $639 million to Medicare over six years.
+511	The Enhancing Oncology Model (EOM), launched July 1, 2023, applies lessons from OCM with a narrower focus on 7 high-cost cancer types, a reduced monthly payment ($70/beneficiary/month at launch, raised to $110 in 2025), and mandatory two-sided risk from the start.
+512	EOM launched with formal health equity requirements — social-needs screening, sociodemographic data collection, and a health equity plan — but CMS dropped the equity plan requirement in a 2025 amendment.
+513	The final OCM evaluation found that total episode payments rose $616 less per episode (2.1%) in OCM than in comparison episodes.
+514	But MEOS payments — $160 per month, paid whether or not a practice met its benchmark — plus performance-based payments exceeded those savings in every performance period, so Medicare lost an estimated $639 million over the model's six years.
+515	EOM launched with a reduced monthly payment of $70 per beneficiary per month.
+516	[1] CMS: Oncology Care Model — https://www.cms.gov/priorities/innovation/innovation-models/oncology-care — Model overview, episode structure, MEOS payment, and participation statistics
+517	[2] CMS OCM Final Evaluation Report At-A-Glance (2024) — https://www.cms.gov/priorities/innovation/data-and-reports/2024/ocm-final-eval-report-2024-aag — Net loss of $639M, $616 (2.1%) per-episode relative reduction, quality findings
+518	[3] CMS OCM Evaluation PP1–9 Executive Summary (2023) — https://www.cms.gov/priorities/innovation/data-and-reports/2023/ocm-evaluation-pp1-9-exec-sum — Comprehensive evaluation findings including equity improvements
+519	[4] ASCO Post: Oncology Care Model Studies Find Significant Savings but Minor Quality Improvement (2023) — https://ascopost.com/issues/december-10-2023/oncology-care-model-studies-find-significant-savings-but-minor-quality-improvement/ — Independent analysis of OCM savings and quality results
+520	[5] CMS: Enhancing Oncology Model (EOM) — https://www.cms.gov/priorities/innovation/innovation-models/eom — EOM structure, 7 cancer types, July 2023 launch, second cohort July 2025, MEOS $110 ($140 dual-eligible) from 2025
+521	[6] PMC: Design Challenges of an Episode-Based Payment Model in Oncology: The CMS Oncology Care Model — https://pmc.ncbi.nlm.nih.gov/articles/PMC5508445/ — MEOS $160 calculation, 24/7 access requirements, care coordination design rationale
 
 ## vbc-quality-measures-hedis-ecqm
-523	The Healthcare Effectiveness Data and Information Set (HEDIS) is maintained by the National Committee for Quality Assurance (NCQA) and represents the most widely used quality measurement framework in American healthcare.
-524	HEDIS comprises approximately 90 measures across 6 domains: effectiveness of care, access and availability of care, patient experience, utilization, health plan descriptive information, and measures reported using Electronic Clinical Data Systems (ECDS).
-525	Administrative data has 100% population coverage and low collection cost but is subject to coding completeness variations and cannot capture clinical nuances not reflected in billing codes.
-526	NCQA has been progressively expanding electronic HEDIS (eHEDIS) — versions of HEDIS measures calculated directly from structured EHR data rather than claims or medical record abstraction. eHEDIS has the potential to reduce the administrative burden of HEDIS collection while improving data accuracy, since clinical values like HbA1c results and blood pressure readings can be captured directly rather than inferred from billing codes.
-527	Electronic Clinical Quality Measures (eCQMs) are a parallel quality measure infrastructure developed by CMS and the Office of the National Coordinator for Health IT (ONC) specifically for use with certified EHR technology. eCQMs are specified in Health Quality Measure Format (HQMF), with measure logic written in Clinical Quality Language (CQL) since the 2019 reporting period — a machine-readable specification that allows EHR systems to calculate measure results automatically from structured clinical data.
-528	The FHIR plumbing that digital measurement depends on is being laid by two 2020 rules: the CMS Interoperability and Patient Access final rule, which required CMS-regulated payers (Medicare Advantage, Medicaid, CHIP and federal-exchange plans) to offer FHIR-based Patient Access APIs, and the ONC Cures Act final rule, which required certified EHRs to support standardized FHIR APIs.
-529	Since 2023, CMS's consensus-based entity (CBE) contract has been held by Battelle, which runs measure endorsement and pre-rulemaking review through the Partnership for Quality Measurement (PQM).
-530	Process measures assess whether a specific evidence-based clinical action was taken — for example, whether a diabetic patient received an HbA1c test within the measurement year.
-531	Outcome measures assess whether patients achieved a desired health state — for example, whether a diabetic patient achieved HbA1c control below 8%.
-532	A 2016 Health Affairs study (Casalino et al.) estimated that US physician practices spend more than $15.4 billion a year, about 785 hours per physician, reporting quality measures to CMS and commercial payers.
-533	Many of these measures are similar but not identical — measuring hemoglobin A1c with slightly different age cutoffs or different denominator specifications across programs — requiring separate data collection and reporting workflows for technically similar clinical concepts.
-534	Progress on all three fronts has been substantial since the 21st Century Cures Act's interoperability provisions took effect, but the transition from a claims-based to a digital quality measurement ecosystem will take years and significant investment to complete.
-535	One of the most significant evolution in quality measurement over the past five years has been the growing imperative to stratify quality data by race, ethnicity, language, income, and disability status.
-536	Aggregate quality scores can conceal dramatic disparities: a health plan that achieves the 75th percentile on overall HbA1c control may have excellent performance for white, commercially insured members and significantly lower performance for Black, Hispanic, or Medicaid-enrolled members.
-537	NCQA introduced the Health Equity Accreditation program in 2021 and has been adding race and ethnicity stratification to HEDIS measures.
-538	CMS finalized a Health Equity Index reward for the Medicare Advantage Star Ratings (later renamed Excellent Health Outcomes for All), then cancelled it in the CY2027 final rule of April 2026 and kept the historical reward factor, a reminder that equity incentives in federal programs remain politically contingent.
-539	The Enhancing Oncology Model launched in 2023 requiring participants to screen for health-related social needs, collect sociodemographic data and submit health equity plans; a 2025 amendment dropped the equity plan requirement.
-540	The transition to digital quality measures represents the most promising path forward — enabling richer, more frequent, more equitable quality intelligence at lower operational cost — but requires sustained investment in health information infrastructure and regulatory alignment that the market alone will not produce.
+522	The Healthcare Effectiveness Data and Information Set (HEDIS) is maintained by the National Committee for Quality Assurance (NCQA) and represents the most widely used quality measurement framework in American healthcare.
+523	HEDIS comprises approximately 90 measures across 6 domains: effectiveness of care, access and availability of care, patient experience, utilization, health plan descriptive information, and measures reported using Electronic Clinical Data Systems (ECDS).
+524	Administrative data has 100% population coverage and low collection cost but is subject to coding completeness variations and cannot capture clinical nuances not reflected in billing codes.
+525	NCQA has been progressively expanding electronic HEDIS (eHEDIS) — versions of HEDIS measures calculated directly from structured EHR data rather than claims or medical record abstraction. eHEDIS has the potential to reduce the administrative burden of HEDIS collection while improving data accuracy, since clinical values like HbA1c results and blood pressure readings can be captured directly rather than inferred from billing codes.
+526	Electronic Clinical Quality Measures (eCQMs) are a parallel quality measure infrastructure developed by CMS and the Office of the National Coordinator for Health IT (ONC) specifically for use with certified EHR technology. eCQMs are specified in Health Quality Measure Format (HQMF), with measure logic written in Clinical Quality Language (CQL) since the 2019 reporting period — a machine-readable specification that allows EHR systems to calculate measure results automatically from structured clinical data.
+527	The FHIR plumbing that digital measurement depends on is being laid by two 2020 rules: the CMS Interoperability and Patient Access final rule, which required CMS-regulated payers (Medicare Advantage, Medicaid, CHIP and federal-exchange plans) to offer FHIR-based Patient Access APIs, and the ONC Cures Act final rule, which required certified EHRs to support standardized FHIR APIs.
+528	Since 2023, CMS's consensus-based entity (CBE) contract has been held by Battelle, which runs measure endorsement and pre-rulemaking review through the Partnership for Quality Measurement (PQM).
+529	Process measures assess whether a specific evidence-based clinical action was taken — for example, whether a diabetic patient received an HbA1c test within the measurement year.
+530	Outcome measures assess whether patients achieved a desired health state — for example, whether a diabetic patient achieved HbA1c control below 8%.
+531	A 2016 Health Affairs study (Casalino et al.) estimated that US physician practices spend more than $15.4 billion a year, about 785 hours per physician, reporting quality measures to CMS and commercial payers.
+532	Many of these measures are similar but not identical — measuring hemoglobin A1c with slightly different age cutoffs or different denominator specifications across programs — requiring separate data collection and reporting workflows for technically similar clinical concepts.
+533	Progress on all three fronts has been substantial since the 21st Century Cures Act's interoperability provisions took effect, but the transition from a claims-based to a digital quality measurement ecosystem will take years and significant investment to complete.
+534	One of the most significant evolution in quality measurement over the past five years has been the growing imperative to stratify quality data by race, ethnicity, language, income, and disability status.
+535	Aggregate quality scores can conceal dramatic disparities: a health plan that achieves the 75th percentile on overall HbA1c control may have excellent performance for white, commercially insured members and significantly lower performance for Black, Hispanic, or Medicaid-enrolled members.
+536	NCQA introduced the Health Equity Accreditation program in 2021 and has been adding race and ethnicity stratification to HEDIS measures.
+537	CMS finalized a Health Equity Index reward for the Medicare Advantage Star Ratings (later renamed Excellent Health Outcomes for All), then cancelled it in the CY2027 final rule of April 2026 and kept the historical reward factor, a reminder that equity incentives in federal programs remain politically contingent.
+538	The Enhancing Oncology Model launched in 2023 requiring participants to screen for health-related social needs, collect sociodemographic data and submit health equity plans; a 2025 amendment dropped the equity plan requirement.
+539	The transition to digital quality measures represents the most promising path forward — enabling richer, more frequent, more equitable quality intelligence at lower operational cost — but requires sustained investment in health information infrastructure and regulatory alignment that the market alone will not produce.
 
 ## vbc-patient-reported-outcomes
-541	They are the most patient-centered form of quality evidence available, and their use in value-based care is expanding rapidly.
-542	First, they measure outcomes that patients actually care about — the FDA increasingly asks oncology drug sponsors to collect core PRO data (symptoms, symptomatic side effects and physical function) alongside tumor response, as set out in its June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials.
-543	PROMIS, developed by the NIH beginning in 2004 and now maintained by Northwestern University's Health Measures organization, is the most comprehensive and methodologically rigorous PRO instrument system available in American healthcare.
-544	Third, it implements Computerized Adaptive Testing (CAT), where an algorithm selects the most informative questions from the item bank based on the patient's answers to previous questions, achieving precise measurement with typically 4 to 12 questions per domain, fewer than traditional fixed-length instruments require.
-545	PROMIS is normed to the US general population with a mean T-score of 50 and standard deviation of 10, meaning a patient with a PROMIS Physical Function score of 40 is approximately one standard deviation below the population mean.
-546	This general-population norming allows direct comparison across conditions: a patient with knee osteoarthritis who scores 35 on physical function can be compared to a patient with heart failure or multiple sclerosis on the same scale, enabling cross-condition burden measurement that condition-specific instruments cannot provide.
-547	The most commonly used domains in clinical practice include: Physical Function (assessment of physical activities of daily living and higher-level physical activity); Pain Interference (the degree to which pain disrupts daily activities and participation); Fatigue (the subjective experience of tiredness, weakness, and lack of energy); Depression (mood, affect, and somatic symptoms associated with depressive disorders); Anxiety (subjective fear, apprehension, and tension); and Social Function (ability to participate in social activities and roles).
-548	Global Health short forms — a 10-item instrument covering physical and mental health global assessments — provide a rapid screening tool that is widely used in population health management contexts.
-549	Their short forms, the HOOS JR and KOOS JR, are the instruments behind CMS's hip and knee replacement PRO measures: voluntary PRO data submission in the Comprehensive Care for Joint Replacement (CJR) model since 2016, and the Hospital IQR Program's THA/TKA patient-reported outcome performance measure.
-550	The FDA's June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials set out which PRO domains sponsors should collect, signaling that PROs are becoming a permanent component of oncology evidence.
-551	The CJR bundled payment model rewarded hospitals for voluntarily submitting HOOS JR and KOOS JR data for hip and knee replacement beginning in 2016, and the Hospital IQR Program has since adopted a THA/TKA PRO performance measure built on the same instruments.
-552	The Enhancing Oncology Model (2023) requires participating practices to implement electronic PRO collection for symptom monitoring.
-553	The most clinically impactful application of digital PRO collection is real-time symptom monitoring in oncology.
-554	A randomized trial by Ethan Basch and colleagues, published in the Journal of Clinical Oncology (2016) with survival results in JAMA (2017), demonstrated that weekly web-based symptom monitoring — where patients report symptoms between clinic visits and clinicians receive alerts for concerning symptom escalation — reduced emergency department visits, improved quality of life, and extended overall survival in cancer patients receiving systemic treatment.
-555	Patient burden is the most commonly cited: completing multiple PRO instruments at each visit, particularly for patients with multiple chronic conditions who may be asked to complete instruments by multiple providers, creates fatigue and declining response rates over time.
-556	Patient-reported outcomes represent the most direct measurement of whether healthcare is achieving what patients come to clinicians for: less pain, better function, improved quality of life, and the ability to live according to their values.
+540	They are the most patient-centered form of quality evidence available, and their use in value-based care is expanding rapidly.
+541	First, they measure outcomes that patients actually care about — the FDA increasingly asks oncology drug sponsors to collect core PRO data (symptoms, symptomatic side effects and physical function) alongside tumor response, as set out in its June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials.
+542	PROMIS, developed by the NIH beginning in 2004 and now maintained by Northwestern University's Health Measures organization, is the most comprehensive and methodologically rigorous PRO instrument system available in American healthcare.
+543	Third, it implements Computerized Adaptive Testing (CAT), where an algorithm selects the most informative questions from the item bank based on the patient's answers to previous questions, achieving precise measurement with typically 4 to 12 questions per domain, fewer than traditional fixed-length instruments require.
+544	PROMIS is normed to the US general population with a mean T-score of 50 and standard deviation of 10, meaning a patient with a PROMIS Physical Function score of 40 is approximately one standard deviation below the population mean.
+545	This general-population norming allows direct comparison across conditions: a patient with knee osteoarthritis who scores 35 on physical function can be compared to a patient with heart failure or multiple sclerosis on the same scale, enabling cross-condition burden measurement that condition-specific instruments cannot provide.
+546	The most commonly used domains in clinical practice include: Physical Function (assessment of physical activities of daily living and higher-level physical activity); Pain Interference (the degree to which pain disrupts daily activities and participation); Fatigue (the subjective experience of tiredness, weakness, and lack of energy); Depression (mood, affect, and somatic symptoms associated with depressive disorders); Anxiety (subjective fear, apprehension, and tension); and Social Function (ability to participate in social activities and roles).
+547	Global Health short forms — a 10-item instrument covering physical and mental health global assessments — provide a rapid screening tool that is widely used in population health management contexts.
+548	Their short forms, the HOOS JR and KOOS JR, are the instruments behind CMS's hip and knee replacement PRO measures: voluntary PRO data submission in the Comprehensive Care for Joint Replacement (CJR) model since 2016, and the Hospital IQR Program's THA/TKA patient-reported outcome performance measure.
+549	The FDA's June 2021 draft guidance on core patient-reported outcomes in cancer clinical trials set out which PRO domains sponsors should collect, signaling that PROs are becoming a permanent component of oncology evidence.
+550	The CJR bundled payment model rewarded hospitals for voluntarily submitting HOOS JR and KOOS JR data for hip and knee replacement beginning in 2016, and the Hospital IQR Program has since adopted a THA/TKA PRO performance measure built on the same instruments.
+551	The Enhancing Oncology Model (2023) requires participating practices to implement electronic PRO collection for symptom monitoring.
+552	The most clinically impactful application of digital PRO collection is real-time symptom monitoring in oncology.
+553	A randomized trial by Ethan Basch and colleagues, published in the Journal of Clinical Oncology (2016) with survival results in JAMA (2017), demonstrated that weekly web-based symptom monitoring — where patients report symptoms between clinic visits and clinicians receive alerts for concerning symptom escalation — reduced emergency department visits, improved quality of life, and extended overall survival in cancer patients receiving systemic treatment.
+554	Patient burden is the most commonly cited: completing multiple PRO instruments at each visit, particularly for patients with multiple chronic conditions who may be asked to complete instruments by multiple providers, creates fatigue and declining response rates over time.
+555	Patient-reported outcomes represent the most direct measurement of whether healthcare is achieving what patients come to clinicians for: less pain, better function, improved quality of life, and the ability to live according to their values.
 
 ## risk-adjustment-hcc
-557	A Medicare Advantage plan enrolling a 70-year-old with diabetes, heart failure, and chronic kidney disease should receive substantially more per month than a plan enrolling a healthy 65-year-old.
-558	CMS has used the CMS-HCC risk adjustment model in Medicare Advantage since 2004.
-559	The output is a risk score — a number expressing how expensive a patient is expected to be relative to the average Medicare beneficiary, who has a risk score of 1.0.
-560	A score of 1.4 means the plan receives 40 percent more per month than average; a score of 0.7 means 30 percent less.
-561	A score of 1.0 represents the average Medicare beneficiary cost baseline — Source: CMS
-562	Up from 86 under V24; V28 fully phased in for 2026 payment — Source: CMS
-563	It assigns ICD-10 diagnosis codes to condition categories that have been grouped by clinical and cost similarity.
-564	The word "hierarchical" reflects an important design choice: when multiple conditions in the same disease family are present, only the most severe applies.
-565	A patient diagnosed with both "Type 2 diabetes without complications" and "Type 2 diabetes with chronic kidney disease" counts only in the more severe CKD category, not in both.
-566	Age and sex interact with conditions — the same diabetes diagnosis carries different coefficients for a 68-year-old versus a 78-year-old, reflecting different baseline risk levels.
-567	Medicare Advantage plans submit ICD-10 diagnosis codes gathered from all encounters, hospitalizations, and health assessments during the prior calendar year.
-568	CMS maps each submitted ICD-10 code to one of the HCC categories using a published crosswalk table.
-569	Not all diagnosis codes map to an HCC — roughly 7,770 of the roughly 75,000 ICD-10 codes map under the current V28 model.
-570	Within each disease family, the hierarchy rule is applied — only the most severe condition category is retained when multiple related diagnoses are present.
-571	Model V28: The 2024 Overhaul
-572	CMS substantially revised the HCC model beginning in 2024 with the introduction of Version 28 (V28), which replaced the longstanding Version 24 (V24).
-573	The transition was phased over three years: V28 applied to 33 percent of payment in 2024, 67 percent in 2025, and 100 percent beginning January 1, 2026.
-574	V28 expanded the number of condition categories from 86 to 115, reflecting advances in clinical knowledge and updated cost data from more recent Medicare claims.
-575	V28 reduced the number of valid ICD-10 codes that map to HCCs from 9,797 under V24 to 7,770 under V28 — a reduction of over 2,000 mappable codes.
-576	The net effect of V28 is projected to reduce average Medicare Advantage risk scores by approximately 3.12 percent.
-577	A 3 percent reduction in average risk scores across the entire Medicare Advantage program — which covers over 33 million beneficiaries — translates to billions of dollars in reduced annual payments.
-578	Under the old V24 model, certain conditions like "atherosclerosis of the extremities with intermittent claudication" and "angina pectoris" mapped to HCCs that contributed meaningfully to risk scores.
-579	Under V28, these and hundreds of similar codes were removed or recategorized because they showed weak predictive validity in claims data analysis.
-580	Plans that had been aggressively coding these conditions through in-home health risk assessments saw the largest payment reductions.
-581	CMS structured the 3-year phase-in specifically to allow time for plans to adjust their clinical documentation workflows rather than face an immediate financial cliff.
-582	CMS-HCC V28 Transition Impact
-583	In October 2024, HHS OIG published a report estimating that diagnoses reported only on HRAs and HRA-linked chart reviews — and not on any other service records — resulted in approximately $7.5 billion in risk-adjusted payments for 2023 that lacked adequate clinical documentation support.
-584	Nearly two-thirds of that total came from in-home HRAs and HRA-linked chart reviews, often administered by MA companies or their vendors, and just 20 MA companies drove 80 percent of it.
-585	In 2023, CMS finalized updated RADV audit methodology that significantly strengthened the extrapolation approach — meaning that if an audit finds a certain percentage of diagnoses are unsupported, CMS can recover overpayments estimated across the plan's entire enrolled population, not just the audited sample.
-586	Humana challenged the rule, and in September 2025 a federal district court in Texas vacated it; CMS appealed in November 2025.
-587	OIG estimated $7.5 billion in risk-adjusted payments lacking adequate documentation support — OIG Report OEI-03-23-00380, October 2024
-588	HRA-Only Overpayment (2023)
-589	MedPAC estimated higher MA coding intensity will increase payments to MA plans by about $22 billion in 2026 — MedPAC comment letter, Feb 2026
-590	Coding Intensity Cost (2026 est.)
-591	The CMS-HCC model maps ICD-10 diagnosis codes to condition categories, each carrying an additive cost coefficient calibrated from fee-for-service Medicare claims data.
-592	The "hierarchical" principle means only the most severe condition within a disease family counts, preventing double-counting while allowing additive scoring across unrelated diseases.
-593	CMS transitioned from V24 to V28 in 2024–2026, expanding HCC categories from 86 to 115 and removing over 2,000 mappable codes that lacked predictive validity or were being manipulated.
-594	OIG estimated that HRA-only diagnoses generated approximately $7.5 billion in unsupported payments in 2023 — a primary driver of ongoing federal oversight and RADV audit reforms.
-595	The hierarchical structure means that when a patient has multiple diagnoses within the same disease family — for example, both diabetes without complications and diabetes with kidney disease — only the most severe category contributes to the risk score.
-596	To prevent double-counting within a disease family by applying only the most severe condition category
-597	[1] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — CMS-HCC model context and Medicare Advantage overview
-598	[2] Commonwealth Fund: How Risk Adjustment Affects Payment for Medicare Advantage Plans — https://www.commonwealthfund.org/publications/explainer/2026/jan/how-risk-adjustment-affects-payment-medicare-advantage-plans — Core explanation of risk adjustment mechanics
-599	[3] OIG HHS: Medicare Advantage — Questionable Use of Health Risk Assessments Continues To Drive Up Payments to Plans by Billions (October 2024) — https://oig.hhs.gov/reports/all/2024/medicare-advantage-questionable-use-of-health-risk-assessments-continues-to-drive-up-payments-to-plans-by-billions/ — $7.5 billion HRA-only overpayment estimate for 2023
-600	[4] RAAPID (vendor blog): CMS-HCC Risk Adjustment Model V28 — https://www.raapidinc.com/blogs/cms-hcc-model-v28/ — V28 expansion to 115 HCCs, reduction of mappable codes from 9,797 to 7,770
-601	[5] MedPAC: Comment Letter on MA Part D CY2027 — https://www.medpac.gov/wp-content/uploads/2026/02/02252026_MedPAC_MA_Part-D-AN-CY-2027_comment-letter_v3_SEC.pdf — MedPAC estimate that higher MA coding intensity will add about $22 billion to MA payments in 2026
+556	A Medicare Advantage plan enrolling a 70-year-old with diabetes, heart failure, and chronic kidney disease should receive substantially more per month than a plan enrolling a healthy 65-year-old.
+557	CMS has used the CMS-HCC risk adjustment model in Medicare Advantage since 2004.
+558	The output is a risk score — a number expressing how expensive a patient is expected to be relative to the average Medicare beneficiary, who has a risk score of 1.0.
+559	A score of 1.4 means the plan receives 40 percent more per month than average; a score of 0.7 means 30 percent less.
+560	A score of 1.0 represents the average Medicare beneficiary cost baseline — Source: CMS
+561	Up from 86 under V24; V28 fully phased in for 2026 payment — Source: CMS
+562	It assigns ICD-10 diagnosis codes to condition categories that have been grouped by clinical and cost similarity.
+563	The word "hierarchical" reflects an important design choice: when multiple conditions in the same disease family are present, only the most severe applies.
+564	A patient diagnosed with both "Type 2 diabetes without complications" and "Type 2 diabetes with chronic kidney disease" counts only in the more severe CKD category, not in both.
+565	Age and sex interact with conditions — the same diabetes diagnosis carries different coefficients for a 68-year-old versus a 78-year-old, reflecting different baseline risk levels.
+566	Medicare Advantage plans submit ICD-10 diagnosis codes gathered from all encounters, hospitalizations, and health assessments during the prior calendar year.
+567	CMS maps each submitted ICD-10 code to one of the HCC categories using a published crosswalk table.
+568	Not all diagnosis codes map to an HCC — roughly 7,770 of the roughly 75,000 ICD-10 codes map under the current V28 model.
+569	Within each disease family, the hierarchy rule is applied — only the most severe condition category is retained when multiple related diagnoses are present.
+570	Model V28: The 2024 Overhaul
+571	CMS substantially revised the HCC model beginning in 2024 with the introduction of Version 28 (V28), which replaced the longstanding Version 24 (V24).
+572	The transition was phased over three years: V28 applied to 33 percent of payment in 2024, 67 percent in 2025, and 100 percent beginning January 1, 2026.
+573	V28 expanded the number of condition categories from 86 to 115, reflecting advances in clinical knowledge and updated cost data from more recent Medicare claims.
+574	V28 reduced the number of valid ICD-10 codes that map to HCCs from 9,797 under V24 to 7,770 under V28 — a reduction of over 2,000 mappable codes.
+575	The net effect of V28 is projected to reduce average Medicare Advantage risk scores by approximately 3.12 percent.
+576	A 3 percent reduction in average risk scores across the entire Medicare Advantage program — which covers over 33 million beneficiaries — translates to billions of dollars in reduced annual payments.
+577	Under the old V24 model, certain conditions like "atherosclerosis of the extremities with intermittent claudication" and "angina pectoris" mapped to HCCs that contributed meaningfully to risk scores.
+578	Under V28, these and hundreds of similar codes were removed or recategorized because they showed weak predictive validity in claims data analysis.
+579	Plans that had been aggressively coding these conditions through in-home health risk assessments saw the largest payment reductions.
+580	CMS structured the 3-year phase-in specifically to allow time for plans to adjust their clinical documentation workflows rather than face an immediate financial cliff.
+581	CMS-HCC V28 Transition Impact
+582	In October 2024, HHS OIG published a report estimating that diagnoses reported only on HRAs and HRA-linked chart reviews — and not on any other service records — resulted in approximately $7.5 billion in risk-adjusted payments for 2023 that lacked adequate clinical documentation support.
+583	Nearly two-thirds of that total came from in-home HRAs and HRA-linked chart reviews, often administered by MA companies or their vendors, and just 20 MA companies drove 80 percent of it.
+584	In 2023, CMS finalized updated RADV audit methodology that significantly strengthened the extrapolation approach — meaning that if an audit finds a certain percentage of diagnoses are unsupported, CMS can recover overpayments estimated across the plan's entire enrolled population, not just the audited sample.
+585	Humana challenged the rule, and in September 2025 a federal district court in Texas vacated it; CMS appealed in November 2025.
+586	OIG estimated $7.5 billion in risk-adjusted payments lacking adequate documentation support — OIG Report OEI-03-23-00380, October 2024
+587	HRA-Only Overpayment (2023)
+588	MedPAC estimated higher MA coding intensity will increase payments to MA plans by about $22 billion in 2026 — MedPAC comment letter, Feb 2026
+589	Coding Intensity Cost (2026 est.)
+590	The CMS-HCC model maps ICD-10 diagnosis codes to condition categories, each carrying an additive cost coefficient calibrated from fee-for-service Medicare claims data.
+591	The "hierarchical" principle means only the most severe condition within a disease family counts, preventing double-counting while allowing additive scoring across unrelated diseases.
+592	CMS transitioned from V24 to V28 in 2024–2026, expanding HCC categories from 86 to 115 and removing over 2,000 mappable codes that lacked predictive validity or were being manipulated.
+593	OIG estimated that HRA-only diagnoses generated approximately $7.5 billion in unsupported payments in 2023 — a primary driver of ongoing federal oversight and RADV audit reforms.
+594	The hierarchical structure means that when a patient has multiple diagnoses within the same disease family — for example, both diabetes without complications and diabetes with kidney disease — only the most severe category contributes to the risk score.
+595	To prevent double-counting within a disease family by applying only the most severe condition category
+596	[1] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — CMS-HCC model context and Medicare Advantage overview
+597	[2] Commonwealth Fund: How Risk Adjustment Affects Payment for Medicare Advantage Plans — https://www.commonwealthfund.org/publications/explainer/2026/jan/how-risk-adjustment-affects-payment-medicare-advantage-plans — Core explanation of risk adjustment mechanics
+598	[3] OIG HHS: Medicare Advantage — Questionable Use of Health Risk Assessments Continues To Drive Up Payments to Plans by Billions (October 2024) — https://oig.hhs.gov/reports/all/2024/medicare-advantage-questionable-use-of-health-risk-assessments-continues-to-drive-up-payments-to-plans-by-billions/ — $7.5 billion HRA-only overpayment estimate for 2023
+599	[4] RAAPID (vendor blog): CMS-HCC Risk Adjustment Model V28 — https://www.raapidinc.com/blogs/cms-hcc-model-v28/ — V28 expansion to 115 HCCs, reduction of mappable codes from 9,797 to 7,770
+600	[5] MedPAC: Comment Letter on MA Part D CY2027 — https://www.medpac.gov/wp-content/uploads/2026/02/02252026_MedPAC_MA_Part-D-AN-CY-2027_comment-letter_v3_SEC.pdf — MedPAC estimate that higher MA coding intensity will add about $22 billion to MA payments in 2026
 
 ## social-risk-adjustment
-602	Social risk factors — including income level, housing stability, food security, education, transportation access, and social support — are estimated to influence up to 80 percent of health outcomes.
-603	The National Quality Forum (NQF) established an expert panel in 2014 to examine whether quality measures should be adjusted for social risk factors.
-604	In 2017, the NQF completed a multi-stakeholder trial that tested social risk adjustment across multiple quality measures.
-605	The Hospital Readmissions Reduction Program (HRRP), created by the ACA in 2010 with penalties beginning in fiscal year 2013, penalizes hospitals with higher-than-expected 30-day readmissions for conditions including heart failure, pneumonia, and hip/knee replacement.
-606	Congress partially addressed this in the 21st Century Cures Act of 2016, which required a peer-grouping system — applied from fiscal year 2019 — that compares hospitals to others with similar shares of low-income patients — a form of social risk adjustment for HRRP.
-607	The most significant step was the peer-grouping adjustment for HRRP, enacted in the 21st Century Cures Act of 2016 and applied from fiscal year 2019, which compares hospitals' readmission rates to peers with similar socioeconomic patient mixes rather than to the national average.
-608	In 2024, CMS issued regulations requiring hospitals participating in federal payment programs to screen all patients for five social determinants: food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety.
-609	For Medicare Advantage, CMS introduced the Health Equity Index (HEI) as part of the Star Ratings system, taking effect for 2027 star ratings based on 2024–2025 performance data.
-610	NQF expert panel recommends adjustment for social risk under defined circumstances, providing the first major policy endorsement of the concept.
-611	2017 — NQF Trial Findings
-612	Under the 21st Century Cures Act (2016), CMS begins comparing hospitals within socioeconomic peer groups based on dual-eligible shares rather than against the national average.
-613	FY2019 — HRRP Peer Grouping Takes Effect
-614	2024 — SDOH Screening Mandate
-615	2027 — Health Equity Index (HEI)
-616	The most practical obstacle to comprehensive social risk adjustment is data.
-617	Unlike clinical diagnoses, which are captured through standardized ICD-10 codes in medical claims, social risk factors are inconsistently documented across health systems, insurers, and geographic regions.
-618	Poverty is not an ICD-10 code.
-619	The 2024 SDOH screening mandates represent an attempt to solve this data problem at the population level by requiring consistent, standardized screening across all Medicare- and Medicaid-participating hospitals.
-620	The NQF's 2014 expert panel endorsed social risk adjustment under defined circumstances, and a 2017 multi-stakeholder trial confirmed it is feasible and that social factors are significant predictors of outcomes.
-621	Congress partially adopted social risk adjustment for the Hospital Readmissions Reduction Program in the 21st Century Cures Act (2016) by creating socioeconomic peer groups rather than comparing all hospitals to a single national benchmark.
-622	CMS's 2024 SDOH screening mandate requires hospitals to screen patients for five social domains, building the data infrastructure needed for more systematic social risk adjustment in the future.
-623	The CMS Health Equity Index, effective for 2027 Star Ratings, rewards Medicare Advantage plans for achieving equitable outcomes across social risk subgroups — an "accountability for equity" approach rather than benchmark adjustment.
-624	The 21st Century Cures Act of 2016 required peer groups within HRRP (applied from fiscal year 2019) based on hospitals' shares of dual-eligible beneficiaries, so each hospital is compared to peers serving similar proportions of low-income patients rather than the national average.
-625	Which policy change did Congress make to the Hospital Readmissions Reduction Program in the 21st Century Cures Act (2016) to address social risk concerns?
-626	[1] NQF: Social Risk Trial Final Report — https://www.qualityforum.org/Publications/2017/07/Social_Risk_Trial_Final_Report.aspx — NQF 2017 trial findings on feasibility of social risk adjustment
-627	[2] Health Affairs: Adjusting Quality Measures For Social Risk Factors Can Promote Equity — https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.01764 — Peer-reviewed analysis of pros and cons of social risk adjustment
-628	[3] CMS: Social Determinants of Health Roadmap — https://www.cms.gov/newsroom/press-releases/cms-issues-new-roadmap-states-address-social-determinants-health-improve-outcomes-lower-costs — CMS SDOH policy framework and state strategies
-629	[4] Case Management Society of America: 2024 SDOH Requirements — https://cmsatoday.com/2024/12/30/2024-sdoh-social-determinants-of-health-sdoh-requirements-and-what-lies-ahead-in-2025/ — 2024 CMS SDOH screening mandate and five-domain requirements
-630	[5] AJMC: Understanding the Social Risk Factor Adjustment's Effect on Star Ratings — https://www.ajmc.com/view/understanding-the-social-risk-factor-adjustment-s-effect-on-star-ratings — Social risk factor adjustment and Health Equity Index in Medicare Advantage
+601	Social risk factors — including income level, housing stability, food security, education, transportation access, and social support — are estimated to influence up to 80 percent of health outcomes.
+602	The National Quality Forum (NQF) established an expert panel in 2014 to examine whether quality measures should be adjusted for social risk factors.
+603	In 2017, the NQF completed a multi-stakeholder trial that tested social risk adjustment across multiple quality measures.
+604	The Hospital Readmissions Reduction Program (HRRP), created by the ACA in 2010 with penalties beginning in fiscal year 2013, penalizes hospitals with higher-than-expected 30-day readmissions for conditions including heart failure, pneumonia, and hip/knee replacement.
+605	Congress partially addressed this in the 21st Century Cures Act of 2016, which required a peer-grouping system — applied from fiscal year 2019 — that compares hospitals to others with similar shares of low-income patients — a form of social risk adjustment for HRRP.
+606	The most significant step was the peer-grouping adjustment for HRRP, enacted in the 21st Century Cures Act of 2016 and applied from fiscal year 2019, which compares hospitals' readmission rates to peers with similar socioeconomic patient mixes rather than to the national average.
+607	In 2024, CMS issued regulations requiring hospitals participating in federal payment programs to screen all patients for five social determinants: food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety.
+608	For Medicare Advantage, CMS introduced the Health Equity Index (HEI) as part of the Star Ratings system, taking effect for 2027 star ratings based on 2024–2025 performance data.
+609	NQF expert panel recommends adjustment for social risk under defined circumstances, providing the first major policy endorsement of the concept.
+610	2017 — NQF Trial Findings
+611	Under the 21st Century Cures Act (2016), CMS begins comparing hospitals within socioeconomic peer groups based on dual-eligible shares rather than against the national average.
+612	FY2019 — HRRP Peer Grouping Takes Effect
+613	2024 — SDOH Screening Mandate
+614	2027 — Health Equity Index (HEI)
+615	The most practical obstacle to comprehensive social risk adjustment is data.
+616	Unlike clinical diagnoses, which are captured through standardized ICD-10 codes in medical claims, social risk factors are inconsistently documented across health systems, insurers, and geographic regions.
+617	Poverty is not an ICD-10 code.
+618	The 2024 SDOH screening mandates represent an attempt to solve this data problem at the population level by requiring consistent, standardized screening across all Medicare- and Medicaid-participating hospitals.
+619	The NQF's 2014 expert panel endorsed social risk adjustment under defined circumstances, and a 2017 multi-stakeholder trial confirmed it is feasible and that social factors are significant predictors of outcomes.
+620	Congress partially adopted social risk adjustment for the Hospital Readmissions Reduction Program in the 21st Century Cures Act (2016) by creating socioeconomic peer groups rather than comparing all hospitals to a single national benchmark.
+621	CMS's 2024 SDOH screening mandate requires hospitals to screen patients for five social domains, building the data infrastructure needed for more systematic social risk adjustment in the future.
+622	The CMS Health Equity Index, effective for 2027 Star Ratings, rewards Medicare Advantage plans for achieving equitable outcomes across social risk subgroups — an "accountability for equity" approach rather than benchmark adjustment.
+623	The 21st Century Cures Act of 2016 required peer groups within HRRP (applied from fiscal year 2019) based on hospitals' shares of dual-eligible beneficiaries, so each hospital is compared to peers serving similar proportions of low-income patients rather than the national average.
+624	Which policy change did Congress make to the Hospital Readmissions Reduction Program in the 21st Century Cures Act (2016) to address social risk concerns?
+625	[1] NQF: Social Risk Trial Final Report — https://www.qualityforum.org/Publications/2017/07/Social_Risk_Trial_Final_Report.aspx — NQF 2017 trial findings on feasibility of social risk adjustment
+626	[2] Health Affairs: Adjusting Quality Measures For Social Risk Factors Can Promote Equity — https://www.healthaffairs.org/doi/10.1377/hlthaff.2020.01764 — Peer-reviewed analysis of pros and cons of social risk adjustment
+627	[3] CMS: Social Determinants of Health Roadmap — https://www.cms.gov/newsroom/press-releases/cms-issues-new-roadmap-states-address-social-determinants-health-improve-outcomes-lower-costs — CMS SDOH policy framework and state strategies
+628	[4] Case Management Society of America: 2024 SDOH Requirements — https://cmsatoday.com/2024/12/30/2024-sdoh-social-determinants-of-health-sdoh-requirements-and-what-lies-ahead-in-2025/ — 2024 CMS SDOH screening mandate and five-domain requirements
+629	[5] AJMC: Understanding the Social Risk Factor Adjustment's Effect on Star Ratings — https://www.ajmc.com/view/understanding-the-social-risk-factor-adjustment-s-effect-on-star-ratings — Social risk factor adjustment and Health Equity Index in Medicare Advantage
 
 ## medicare-star-ratings
-631	The Star Ratings system, formally established under the Medicare Modernization Act and expanded significantly by the ACA, provides that signal on a scale of 1 to 5 stars.
-632	Second, it is a financial incentive mechanism: plans with 4 or more stars receive quality bonus payments that can total hundreds of millions of dollars annually for large insurers.
-633	Each annual cycle of measure updates and cut-point changes produces winners and losers among the nation's more than 700 Medicare Advantage contracts — and the financial consequences can run into the hundreds of millions of dollars per percentage point of star rating change.
-634	Medicare Advantage Star Ratings simultaneously function as a consumer choice signal published on Medicare Plan Finder and as a financial incentive mechanism that awards billions of dollars in quality bonus payments to plans achieving 4 or more stars.
-635	The overall star rating for a Medicare Advantage Prescription Drug (MA-PD) plan is computed from performance across nine domains, with a maximum of 42 individual measures (40 unique measures, with 2 duplicated across Part C and Part D calculations).
-636	Cut points — the thresholds separating 1-star from 2-star, 2-star from 3-star, and so on — are recalculated each year based on the distribution of plan performance during the measurement period.
-637	This means that achieving a 4-star rating requires hitting a different absolute performance threshold each year, depending on how the industry as a whole performed.
-638	In a year when most plans improved, cut points shift upward, and a plan that maintained the same absolute score might drop from 4 to 3 stars.
-639	Plans that achieve at least 4 stars receive a quality bonus payment (QBP) that increases their county-level benchmark rate by 5 percentage points.
-640	For a large Medicare Advantage plan enrolling hundreds of thousands of beneficiaries, a 5-percentage-point benchmark increase can mean hundreds of millions of dollars in additional annual revenue — the difference between profitability and loss in many markets.
-641	Plans with 3 stars or below retain 50 percent of the rebate to fund additional benefits.
-642	Plans with 3.5 to 4 stars retain 65 percent.
-643	Plans with 4.5 or 5 stars retain 70 percent.
-644	Higher-rated plans therefore have both higher benchmarks and higher rebate retention — a compounding financial advantage that makes the 4-star threshold the most consequential boundary in Medicare Advantage finance.
-645	Medicare Advantage quality bonus payments reached at least $11.8 billion in 2024 and are projected to total at least $12.7 billion in 2025, according to KFF analysis.
-646	Medicare Advantage quality bonus payments projected at a minimum of $12.7 billion in 2025 — KFF Analysis 2024
-647	Plans achieving 4+ stars receive a 5 percentage point benchmark rate increase — CMS QBP Formula
-648	Benchmark Increase (4+ Stars)
-649	Plans rated 4.5-5 stars retain 70% of rebate to fund supplemental benefits — CMS 2025
-650	Rebate Retention (4.5-5 Stars)
-651	Only 7 MA plans achieved a 5-star rating in 2025, down from 38 in 2024 — CMS Star Ratings Release October 2024
-652	The 2025 Ratings Shock and the Tukey Method
-653	The 2025 Medicare Advantage Star Ratings, released in October 2024, produced a striking decline across the industry.
-654	The average plan star rating fell from 4.07 in 2024 to 3.92 in 2025 — the first time the average had fallen below 4.0 since the early years of the program.
-655	More dramatically, only 7 plans achieved a 5-star rating in 2025, compared with 38 in 2024.
-656	The share of MA prescription drug plans achieving 4 or more stars dropped from 43 percent to 40 percent.
-657	Plans that had maintained 4-star status for multiple years suddenly found themselves at 3.5 or 3 stars — with all the financial consequences that implies.
-658	Achieving and maintaining 4-star status has become one of the highest-priority strategic objectives for Medicare Advantage plans.
-659	That is essentially what happened to Medicare Advantage plans in 2025.
-660	The Medicare Advantage Star Ratings system uses up to 42 measures across 9 domains, with measures triple-weighted for patient experience, care coordination, and medication adherence having the greatest impact on overall ratings.
-661	Plans achieving 4 or more stars receive a 5 percentage point benchmark increase and up to 70 percent rebate retention, creating a compounding financial advantage worth hundreds of millions of dollars for large plans.
-662	Medicare Advantage quality bonus payments totaled at least $11.8 billion in 2024 and are projected to reach at least $12.7 billion in 2025, representing a substantial federal subsidy embedded within the Medicare Advantage program.
-663	The 2025 ratings saw a sharp industrywide decline — average star ratings fell from 4.07 to 3.92 and the number of 5-star plans dropped from 38 to 7 — driven by CMS adoption of the Tukey Outlier Deletion Method for cut-point calculation.
-664	Plans achieving at least 4 stars receive a 5 percentage point increase to their county benchmark rate, which increases the per-member-per-month payment they receive.
-665	They also retain 65–70 percent of their rebate (the difference between benchmark and bid) rather than 50 percent, allowing them to fund richer supplemental benefits.
-666	The combination of higher benchmarks and higher rebate retention makes the 4-star threshold the single most financially consequential quality boundary in Medicare Advantage.
-667	The plan receives a direct cash grant from CMS equal to 5 percent of its total revenue
-668	The plan's county benchmark rate is increased by 5 percentage points, boosting per-member payments and rebate retention
-669	What is the primary financial effect of achieving a 4-star Medicare Advantage rating versus a 3.5-star rating?
-670	[1] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — 2025 star ratings results, number of 5-star plans, average rating decline
-671	[2] KFF: Medicare Advantage Quality Bonus Payments Will Total at Least $12.7 Billion in 2025 — https://www.kff.org/medicare/medicare-advantage-quality-bonus-payments/ — Quality bonus payment totals and formula details
-672	[3] Health Management: The Release of 2025 Medicare Advantage Star Ratings — https://www.healthmanagement.com/blog/2025-medicare-advantage-star-ratings/ — Analysis of 2025 rating declines and Tukey method impact
-673	[4] Urban Institute: Quality Bonus Payments in Medicare Advantage — https://www.urban.org/sites/default/files/2024-07/Quality%20Bonus%20Payments%20in%20Medicare%20Advantage.pdf — Detailed formula analysis: benchmark increases and rebate retention percentages
-674	[5] CMS: 2025 Part C & D Star Ratings Technical Notes — https://www.cms.gov/files/document/2025-star-ratings-technical-notes.pdf — Official CMS methodology documentation for star ratings calculation
+630	The Star Ratings system, formally established under the Medicare Modernization Act and expanded significantly by the ACA, provides that signal on a scale of 1 to 5 stars.
+631	Second, it is a financial incentive mechanism: plans with 4 or more stars receive quality bonus payments that can total hundreds of millions of dollars annually for large insurers.
+632	Each annual cycle of measure updates and cut-point changes produces winners and losers among the nation's more than 700 Medicare Advantage contracts — and the financial consequences can run into the hundreds of millions of dollars per percentage point of star rating change.
+633	Medicare Advantage Star Ratings simultaneously function as a consumer choice signal published on Medicare Plan Finder and as a financial incentive mechanism that awards billions of dollars in quality bonus payments to plans achieving 4 or more stars.
+634	The overall star rating for a Medicare Advantage Prescription Drug (MA-PD) plan is computed from performance across nine domains, with a maximum of 42 individual measures (40 unique measures, with 2 duplicated across Part C and Part D calculations).
+635	Cut points — the thresholds separating 1-star from 2-star, 2-star from 3-star, and so on — are recalculated each year based on the distribution of plan performance during the measurement period.
+636	This means that achieving a 4-star rating requires hitting a different absolute performance threshold each year, depending on how the industry as a whole performed.
+637	In a year when most plans improved, cut points shift upward, and a plan that maintained the same absolute score might drop from 4 to 3 stars.
+638	Plans that achieve at least 4 stars receive a quality bonus payment (QBP) that increases their county-level benchmark rate by 5 percentage points.
+639	For a large Medicare Advantage plan enrolling hundreds of thousands of beneficiaries, a 5-percentage-point benchmark increase can mean hundreds of millions of dollars in additional annual revenue — the difference between profitability and loss in many markets.
+640	Plans with 3 stars or below retain 50 percent of the rebate to fund additional benefits.
+641	Plans with 3.5 to 4 stars retain 65 percent.
+642	Plans with 4.5 or 5 stars retain 70 percent.
+643	Higher-rated plans therefore have both higher benchmarks and higher rebate retention — a compounding financial advantage that makes the 4-star threshold the most consequential boundary in Medicare Advantage finance.
+644	Medicare Advantage quality bonus payments reached at least $11.8 billion in 2024 and are projected to total at least $12.7 billion in 2025, according to KFF analysis.
+645	Medicare Advantage quality bonus payments projected at a minimum of $12.7 billion in 2025 — KFF Analysis 2024
+646	Plans achieving 4+ stars receive a 5 percentage point benchmark rate increase — CMS QBP Formula
+647	Benchmark Increase (4+ Stars)
+648	Plans rated 4.5-5 stars retain 70% of rebate to fund supplemental benefits — CMS 2025
+649	Rebate Retention (4.5-5 Stars)
+650	Only 7 MA plans achieved a 5-star rating in 2025, down from 38 in 2024 — CMS Star Ratings Release October 2024
+651	The 2025 Ratings Shock and the Tukey Method
+652	The 2025 Medicare Advantage Star Ratings, released in October 2024, produced a striking decline across the industry.
+653	The average plan star rating fell from 4.07 in 2024 to 3.92 in 2025 — the first time the average had fallen below 4.0 since the early years of the program.
+654	More dramatically, only 7 plans achieved a 5-star rating in 2025, compared with 38 in 2024.
+655	The share of MA prescription drug plans achieving 4 or more stars dropped from 43 percent to 40 percent.
+656	Plans that had maintained 4-star status for multiple years suddenly found themselves at 3.5 or 3 stars — with all the financial consequences that implies.
+657	Achieving and maintaining 4-star status has become one of the highest-priority strategic objectives for Medicare Advantage plans.
+658	That is essentially what happened to Medicare Advantage plans in 2025.
+659	The Medicare Advantage Star Ratings system uses up to 42 measures across 9 domains, with measures triple-weighted for patient experience, care coordination, and medication adherence having the greatest impact on overall ratings.
+660	Plans achieving 4 or more stars receive a 5 percentage point benchmark increase and up to 70 percent rebate retention, creating a compounding financial advantage worth hundreds of millions of dollars for large plans.
+661	Medicare Advantage quality bonus payments totaled at least $11.8 billion in 2024 and are projected to reach at least $12.7 billion in 2025, representing a substantial federal subsidy embedded within the Medicare Advantage program.
+662	The 2025 ratings saw a sharp industrywide decline — average star ratings fell from 4.07 to 3.92 and the number of 5-star plans dropped from 38 to 7 — driven by CMS adoption of the Tukey Outlier Deletion Method for cut-point calculation.
+663	Plans achieving at least 4 stars receive a 5 percentage point increase to their county benchmark rate, which increases the per-member-per-month payment they receive.
+664	They also retain 65–70 percent of their rebate (the difference between benchmark and bid) rather than 50 percent, allowing them to fund richer supplemental benefits.
+665	The combination of higher benchmarks and higher rebate retention makes the 4-star threshold the single most financially consequential quality boundary in Medicare Advantage.
+666	The plan receives a direct cash grant from CMS equal to 5 percent of its total revenue
+667	The plan's county benchmark rate is increased by 5 percentage points, boosting per-member payments and rebate retention
+668	What is the primary financial effect of achieving a 4-star Medicare Advantage rating versus a 3.5-star rating?
+669	[1] CMS: 2025 Medicare Advantage and Part D Star Ratings Fact Sheet — https://www.cms.gov/newsroom/fact-sheets/2025-medicare-advantage-part-d-star-ratings — 2025 star ratings results, number of 5-star plans, average rating decline
+670	[2] KFF: Medicare Advantage Quality Bonus Payments Will Total at Least $12.7 Billion in 2025 — https://www.kff.org/medicare/medicare-advantage-quality-bonus-payments/ — Quality bonus payment totals and formula details
+671	[3] Health Management: The Release of 2025 Medicare Advantage Star Ratings — https://www.healthmanagement.com/blog/2025-medicare-advantage-star-ratings/ — Analysis of 2025 rating declines and Tukey method impact
+672	[4] Urban Institute: Quality Bonus Payments in Medicare Advantage — https://www.urban.org/sites/default/files/2024-07/Quality%20Bonus%20Payments%20in%20Medicare%20Advantage.pdf — Detailed formula analysis: benchmark increases and rebate retention percentages
+673	[5] CMS: 2025 Part C & D Star Ratings Technical Notes — https://www.cms.gov/files/document/2025-star-ratings-technical-notes.pdf — Official CMS methodology documentation for star ratings calculation
+674	How CMS calculates 1-5 star ratings for Medicare Advantage plans, what the financial stakes are, and how plans manage their star strategy.
 
 ## star-ratings-equity-critique
 675	In 2024, about 13.7 million Medicare beneficiaries received the low-income subsidy — roughly a quarter of the 53 million Part D enrollees.
@@ -900,9 +900,9 @@
 857	[7] Finkelstein A, Zhou A, Taubman S, Doyle J, "Health Care Hotspotting — A Randomized, Controlled Trial," New England Journal of Medicine 2020;382:152-162 — Camden Coalition care-transitions program: 180-day readmissions 62.3% vs. 61.7%, no significant effect
 858	[8] Jones C, Finison K, et al., "Vermont's Community-Oriented All-Payer Medical Home Model Reduces Expenditures and Utilization While Delivering High-Quality Care," Population Health Management 2016;19:196-205 — https://pmc.ncbi.nlm.nih.gov/articles/PMC4913508/
 859	[9] KFF, "Racial Disparities in Life Expectancy" (analysis of NCHS United States Life Tables, 2023) — https://www.kff.org/racial-equity-and-health-policy/racial-disparities-in-life-expectancy/ — Black 74.0 vs.
+860	Value-based care was designed, in part, as a health equity intervention — rewarding good outcomes rather than high volume should help the patients who need the most help.
 
 ## vbc-fundamentals-module-2-policy-pillar
-860	Value-Based Care Fundamentals — Module 2: The Policy Pillar — Laws, Rules, and the Regulatory Architecture That Makes (or Breaks) Value-Based Care
 861	Healthcare is one of the most heavily regulated industries in the United States, and for good reason: the decisions made in healthcare settings involve life and death, profound information asymmetry between providers and patients, and the expenditure of trillions of dollars of public funds.
 862	What you do need is a working knowledge of four things: the major federal legislation that authorized and funds VBC programs, the agency — CMS and its Innovation Center — that designs and operates most federal VBC models, the specific legal waivers that allow VBC arrangements to operate outside standard fee-for-service rules, and the state-level Medicaid policy environment that governs VBC adoption for the Medicaid population, which accounts for about 18% of all U.S. healthcare spending and the majority of payer mix for rural and safety-net hospitals.
 863	The Center for Medicare and Medicaid Innovation, universally known as CMMI, was established by Section 3021 of the Affordable Care Act in 2010 with a mandatory appropriation of $10 billion over ten years and a statutory mission to test, evaluate, and scale new payment and delivery models that reduce spending while preserving or improving quality.
@@ -973,55 +973,51 @@
 928	Module 2 Key Takeaway: The U.S. healthcare policy environment was built for fee-for-service, but it has been systematically modified over the past 15 years to enable value-based care.
 929	CMMI’s model authority, MACRA’s APM incentive structure, the 2020 VBC legal exceptions, and state Medicaid waiver programs together constitute a policy architecture that makes advanced VBC legally and financially feasible for most U.S. healthcare organizations.
 930	The organizations that understand this architecture and align their strategy to it are the ones that will be best positioned as CMS accelerates its stated goal of having 100% of Medicare beneficiaries in an accountable care relationship by 2030.
-931	The consolidated references below point to the primary, authoritative sources for the AHEAD Model, MACRA's APM framework, the 2020 value-based care legal exceptions, and CMS's stated accountable-care goal.
-932	HHS OIG / CMS — 2020 Value-Based Care Stark Law & Anti-Kickback final rules
-933	CMS — Innovation Center Strategy Refresh (accountable care goal by 2030)
-934	Module 2 of the HTR Academy Value-Based Care Fundamentals course examines the federal and state policy architecture that governs value-based care adoption in the United States.
-935	Building on Module 1’s conceptual foundation, this module explains in plain language how MACRA, the ACA’s Innovation Center, and state Medicaid waiver programs create the legal and financial scaffolding for VBC models, identifies the regulatory barriers that slow adoption for rural and safety-net providers, and equips learners to read and interpret the policy signals that will shape their organization’s VBC strategy through 2030.
+931	Module 2 of the HTR Academy Value-Based Care Fundamentals course examines the federal and state policy architecture that governs value-based care adoption in the United States.
+932	Building on Module 1’s conceptual foundation, this module explains in plain language how MACRA, the ACA’s Innovation Center, and state Medicaid waiver programs create the legal and financial scaffolding for VBC models, identifies the regulatory barriers that slow adoption for rural and safety-net providers, and equips learners to read and interpret the policy signals that will shape their organization’s VBC strategy through 2030.
 
 ## vbc-fundamentals-module-4-technology-pillar
-936	Value-Based Care Fundamentals — Module 4: The Technology Pillar — Data, AI, and the Digital Infrastructure That Makes VBC Work
-937	This is, only slightly exaggerated, the state of health information exchange in the United States as recently as 2019, and in many rural markets as recently as 2024.
-938	The third layer is analytics and intelligence: the population health management platforms, risk stratification tools, and increasingly AI-powered predictive models that transform raw clinical data into actionable care management intelligence — identifying which patients are at highest risk of imminent high-cost events, which chronic disease patients are overdue for interventions, and which populations are generating the most preventable utilization.
-939	The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate “meaningful use” — a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access.
-940	Certified EHR adoption among non-federal acute-care hospitals rose from roughly 10% in 2008 to about 96% by 2021 (Health Affairs; ONC), one of the most rapid technology adoption curves in any industry, and it created the clinical data foundation that value-based care analytics requires.
-941	These include structured problem lists and medication lists that use standardized coding (ICD-10 for diagnoses, RxNorm for medications, SNOMED CT for clinical concepts) rather than free-text notes; care gap reporting that identifies patients overdue for preventive services or chronic disease monitoring; patient panel management tools that allow care coordinators to view their entire assigned patient population sorted by risk level; and FHIR API connectivity that allows the EHR to exchange data with external systems using the standardized data format that the 21st Century Cures Act mandated in 2020.
-942	Federal data show the gap is real: in 2023, 70% of non-federal acute care hospitals engaged in all four domains of interoperable exchange (sending, receiving, finding, and integrating patient data), but only 43% did so routinely, and small, rural, critical access, and independent hospitals engaged less often than better-resourced hospitals (ONC Data Brief No. 71, 2024).
-943	The 21st Century Cures Act: The Law That Changed EHR Interoperability Requirements
-944	The 21st Century Cures Act, enacted in December 2016 with its implementing regulations finalized in 2020, made two changes to the EHR landscape that are directly relevant to VBC technology readiness.
-945	First, it prohibited “information blocking” — defined as any practice that unreasonably restricts the access, exchange, or use of electronic health information — and established civil monetary penalties of up to $1 million per violation for health IT developers, networks, and exchanges that engage in information blocking.
-946	Second, it mandated that all certified EHR systems implement standardized FHIR (Fast Healthcare Interoperability Resources) application programming interfaces by 2022, enabling third-party developers to build population health applications that connect directly to EHR data without requiring custom integrations.
-947	The 21st Century Cures Act’s information blocking prohibition changed the competitive dynamics of health IT in a way that CMS’s interoperability rules alone could not have.
-948	When health IT developers and exchanges face penalties of up to $1 million per violation for restricting data access, and providers face their own federal disincentives, the legal calculus of data hoarding changes overnight.
-949	The importance of HIE to VBC has been recognized in federal policy through TEFCA — the Trusted Exchange Framework and Common Agreement — which ONC published in January 2022 as the national framework for interoperable health information exchange.
-950	TEFCA establishes a set of technical and legal standards that health information networks must meet to become Qualified Health Information Networks (QHINs), and creates a framework under which QHINs are required to share data with each other upon request, effectively creating a nationwide health information exchange network for the first time.
-951	By early 2026, eleven networks had been designated as QHINs — eHealth Exchange, Epic Nexus, Health Gorilla, KONZA National Network, and MedAllies (December 2023); CommonWell Health Alliance and Kno2 (February 2024); Netsmart; eClinicalWorks; Surescripts; and Oracle Health Information Network (November 2025).
-952	A rural Critical Access Hospital that lacks FHIR R4 API implementation, state HIE connectivity, and a population health platform is not technically capable of the patient data workflows that MSSP ACO participation requires — not because of organizational will or leadership quality, but because the digital infrastructure that enables those workflows has not been built.
-953	The federal programs designed to address this gap — including the FCC’s Rural Health Care Program, capped at about $724 million for funding year 2025, ONC’s Health IT Certification Program, and HRSA’s Rural Health Information Technology funding stream — are necessary but insufficient at their current funding levels to close the rural-urban technology gap within a policy-relevant timeframe.
-954	In a VBC model managing 10,000 attributed patients, a care management team cannot proactively reach out to every patient every month.
-955	They need a system that identifies the 300 or 400 patients most likely to have a preventable hospital admission, emergency department visit, or serious clinical deterioration in the next 90 days, so that care coordination resources can be concentrated where they will have the greatest impact.
-956	These models incorporate diagnosis trajectories (the sequence and pattern of diagnoses over time, not just their presence or absence), medication adherence signals derived from pharmacy data and EHR medication reconciliation records, laboratory value trends (a gradually rising HbA1c over three visits is a stronger predictor of near-term hospitalization than a single elevated value), social determinants of health flags derived from screening questionnaires and zip-code-level data, and behavioral health diagnoses and substance use disorder flags that are strongly predictive of high-cost medical utilization.
-957	A landmark 2019 study published in Science by Obermeyer et al. found that a widely used commercial risk stratification algorithm systematically underestimated the health needs of Black patients because it used healthcare costs as a proxy for health need — and because Black patients historically had lower healthcare costs not because they were healthier, but because structural barriers limited their access to care.
-958	Obermeyer and colleagues (Science, 2019) showed that a widely used commercial risk-prediction algorithm systematically underestimated the health needs of Black patients, because it was trained on historical cost data shaped by unequal access — the model learned to encode access barriers as lower predicted need.
-959	The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality.
-960	Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability.
-961	Telehealth surged from about 0.2% of outpatient evaluation-and-management visits in February 2020 to a peak of roughly 50.7% in April 2020 — on the order of 78 times the pre-pandemic level (CDC MMWR; HHS ASPE) — demonstrating both latent demand and the clinical feasibility of delivering much of primary care and chronic disease management by video or phone.
-962	The scale of Medicare adoption is documented: the HHS Office of Inspector General found that more than 28 million Medicare beneficiaries — over 2 in 5 — used telehealth in the first year of the pandemic, using 88 times more telehealth services than the year before, with office visits making up just under half of that use.
-963	The same review found urban beneficiaries more likely than rural ones to use telehealth — a reminder that the rural populations with the most to gain also face the broadband and device barriers that limit uptake.
-964	Congress answered with a series of short-term extensions rather than a permanent fix: the Consolidated Appropriations Act, 2023 carried the flexibilities through 2024, later stopgap bills carried them into 2025, they briefly lapsed during the funding gaps of late 2025 and January 31, 2026, and the Consolidated Appropriations Act, 2026 (H.R. 7148, enacted February 2026) extended them — including home as an originating site, audio-only visits, and FQHC/RHC distant-site services — through December 31, 2027.
-965	An ACO serving a rural population where 40% of attributed patients live more than 30 miles from the nearest primary care office cannot achieve the visit frequency that effective chronic disease management requires without telehealth as a structural component of its care model.
-966	For healthcare leaders assessing their organization’s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place.
-967	Phase 1 — Data Foundation (Months 1–6): Audit your EHR’s structured data quality.
-968	Implement standardized coding for diagnoses (ICD-10), medications (RxNorm), and procedures (CPT).
-969	Phase 2 — Connectivity (Months 4–12): Activate your state HIE connection and configure admission-discharge-transfer (ADT) alert feeds so that care coordinators receive real-time notifications when attributed patients are admitted to or discharged from any participating hospital in your market.
-970	Phase 3 — Panel Management (Months 9–18): Implement a population health management platform that allows care coordinators to view and filter their attributed patient panel by risk level, care gap status, and recent utilization events.
-971	Phase 4 — Predictive Intelligence (Months 18–36): Implement AI-powered risk stratification once your EHR data quality and HIE connectivity are sufficient to feed the model with the multi-modal data it requires for accurate predictions.
-972	Phase 5 — Continuous Improvement (Ongoing): Establish a quarterly data quality review cycle that monitors EHR documentation completeness, risk model accuracy, care gap closure rates, and population health outcome trends.
-973	Module 4 Summary: Technology Is the Operating System of Value-Based Care
-974	The federal investment framework for closing this gap — TEFCA for interoperability standards, the 21st Century Cures Act’s information blocking prohibition and FHIR mandate, the FCC’s Healthcare Connect Fund for rural broadband, ONC’s certification program for EHR capabilities, and HRSA’s rural health IT funding stream — represents the most coherent federal technology infrastructure investment in healthcare history.
-975	The 21st Century Cures Act’s information blocking prohibition and FHIR API mandate are the legal and technical foundations of modern health IT interoperability.
-976	Health IT developers, health information exchanges, and networks that engage in information blocking face civil monetary penalties of up to $1 million per violation; health care providers face separate federal disincentives, such as losing Promoting Interoperability credit under MIPS, under a 2024 HHS rule.
-977	Module 4 Key Takeaway: Technology readiness is the most concrete and actionable dimension of VBC preparation because it can be assessed objectively, sequenced rationally, and funded through a combination of organizational capital and federal programs.
-978	Attempting to manage population cost without the data infrastructure to know who your highest-risk patients are and what is happening to them across the care continuum is the most common cause of VBC financial underperformance — and the most preventable.
-979	Module 4 of the HTR Academy Value-Based Care Fundamentals course examines the technology infrastructure that value-based care requires to function — and what happens when that infrastructure is missing.
-980	This module explains, in plain language, what interoperable electronic health records, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why many rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda — including the 21st Century Cures Act, the CMS Interoperability Rule, and the TEFCA framework — is building the data infrastructure that VBC depends upon.
+933	This is, only slightly exaggerated, the state of health information exchange in the United States as recently as 2019, and in many rural markets as recently as 2024.
+934	The third layer is analytics and intelligence: the population health management platforms, risk stratification tools, and increasingly AI-powered predictive models that transform raw clinical data into actionable care management intelligence — identifying which patients are at highest risk of imminent high-cost events, which chronic disease patients are overdue for interventions, and which populations are generating the most preventable utilization.
+935	The United States made a massive federal investment in EHR adoption through the HITECH Act of 2009, which appropriated $27 billion in Medicare and Medicaid incentive payments to encourage providers to implement certified EHR systems and demonstrate “meaningful use” — a defined set of capabilities including electronic prescribing, clinical decision support, and patient portal access.
+936	Certified EHR adoption among non-federal acute-care hospitals rose from roughly 10% in 2008 to about 96% by 2021 (Health Affairs; ONC), one of the most rapid technology adoption curves in any industry, and it created the clinical data foundation that value-based care analytics requires.
+937	These include structured problem lists and medication lists that use standardized coding (ICD-10 for diagnoses, RxNorm for medications, SNOMED CT for clinical concepts) rather than free-text notes; care gap reporting that identifies patients overdue for preventive services or chronic disease monitoring; patient panel management tools that allow care coordinators to view their entire assigned patient population sorted by risk level; and FHIR API connectivity that allows the EHR to exchange data with external systems using the standardized data format that the 21st Century Cures Act mandated in 2020.
+938	Federal data show the gap is real: in 2023, 70% of non-federal acute care hospitals engaged in all four domains of interoperable exchange (sending, receiving, finding, and integrating patient data), but only 43% did so routinely, and small, rural, critical access, and independent hospitals engaged less often than better-resourced hospitals (ONC Data Brief No. 71, 2024).
+939	The 21st Century Cures Act: The Law That Changed EHR Interoperability Requirements
+940	The 21st Century Cures Act, enacted in December 2016 with its implementing regulations finalized in 2020, made two changes to the EHR landscape that are directly relevant to VBC technology readiness.
+941	First, it prohibited “information blocking” — defined as any practice that unreasonably restricts the access, exchange, or use of electronic health information — and established civil monetary penalties of up to $1 million per violation for health IT developers, networks, and exchanges that engage in information blocking.
+942	Second, it mandated that all certified EHR systems implement standardized FHIR (Fast Healthcare Interoperability Resources) application programming interfaces by 2022, enabling third-party developers to build population health applications that connect directly to EHR data without requiring custom integrations.
+943	The 21st Century Cures Act’s information blocking prohibition changed the competitive dynamics of health IT in a way that CMS’s interoperability rules alone could not have.
+944	When health IT developers and exchanges face penalties of up to $1 million per violation for restricting data access, and providers face their own federal disincentives, the legal calculus of data hoarding changes overnight.
+945	The importance of HIE to VBC has been recognized in federal policy through TEFCA — the Trusted Exchange Framework and Common Agreement — which ONC published in January 2022 as the national framework for interoperable health information exchange.
+946	TEFCA establishes a set of technical and legal standards that health information networks must meet to become Qualified Health Information Networks (QHINs), and creates a framework under which QHINs are required to share data with each other upon request, effectively creating a nationwide health information exchange network for the first time.
+947	By early 2026, eleven networks had been designated as QHINs — eHealth Exchange, Epic Nexus, Health Gorilla, KONZA National Network, and MedAllies (December 2023); CommonWell Health Alliance and Kno2 (February 2024); Netsmart; eClinicalWorks; Surescripts; and Oracle Health Information Network (November 2025).
+948	A rural Critical Access Hospital that lacks FHIR R4 API implementation, state HIE connectivity, and a population health platform is not technically capable of the patient data workflows that MSSP ACO participation requires — not because of organizational will or leadership quality, but because the digital infrastructure that enables those workflows has not been built.
+949	The federal programs designed to address this gap — including the FCC’s Rural Health Care Program, capped at about $724 million for funding year 2025, ONC’s Health IT Certification Program, and HRSA’s Rural Health Information Technology funding stream — are necessary but insufficient at their current funding levels to close the rural-urban technology gap within a policy-relevant timeframe.
+950	In a VBC model managing 10,000 attributed patients, a care management team cannot proactively reach out to every patient every month.
+951	They need a system that identifies the 300 or 400 patients most likely to have a preventable hospital admission, emergency department visit, or serious clinical deterioration in the next 90 days, so that care coordination resources can be concentrated where they will have the greatest impact.
+952	These models incorporate diagnosis trajectories (the sequence and pattern of diagnoses over time, not just their presence or absence), medication adherence signals derived from pharmacy data and EHR medication reconciliation records, laboratory value trends (a gradually rising HbA1c over three visits is a stronger predictor of near-term hospitalization than a single elevated value), social determinants of health flags derived from screening questionnaires and zip-code-level data, and behavioral health diagnoses and substance use disorder flags that are strongly predictive of high-cost medical utilization.
+953	A landmark 2019 study published in Science by Obermeyer et al. found that a widely used commercial risk stratification algorithm systematically underestimated the health needs of Black patients because it used healthcare costs as a proxy for health need — and because Black patients historically had lower healthcare costs not because they were healthier, but because structural barriers limited their access to care.
+954	Obermeyer and colleagues (Science, 2019) showed that a widely used commercial risk-prediction algorithm systematically underestimated the health needs of Black patients, because it was trained on historical cost data shaped by unequal access — the model learned to encode access barriers as lower predicted need.
+955	The COVID-19 pandemic produced one technology outcome that has proven durably beneficial for value-based care: the rapid normalization of telehealth as a routine care delivery modality.
+956	Between March and June 2020, CMS issued emergency waivers that allowed Medicare to reimburse telehealth visits at parity with in-person visits, removed geographic restrictions that had historically limited telehealth to rural areas, and authorized audio-only visits for patients without video capability.
+957	Telehealth surged from about 0.2% of outpatient evaluation-and-management visits in February 2020 to a peak of roughly 50.7% in April 2020 — on the order of 78 times the pre-pandemic level (CDC MMWR; HHS ASPE) — demonstrating both latent demand and the clinical feasibility of delivering much of primary care and chronic disease management by video or phone.
+958	The scale of Medicare adoption is documented: the HHS Office of Inspector General found that more than 28 million Medicare beneficiaries — over 2 in 5 — used telehealth in the first year of the pandemic, using 88 times more telehealth services than the year before, with office visits making up just under half of that use.
+959	The same review found urban beneficiaries more likely than rural ones to use telehealth — a reminder that the rural populations with the most to gain also face the broadband and device barriers that limit uptake.
+960	Congress answered with a series of short-term extensions rather than a permanent fix: the Consolidated Appropriations Act, 2023 carried the flexibilities through 2024, later stopgap bills carried them into 2025, they briefly lapsed during the funding gaps of late 2025 and January 31, 2026, and the Consolidated Appropriations Act, 2026 (H.R. 7148, enacted February 2026) extended them — including home as an originating site, audio-only visits, and FQHC/RHC distant-site services — through December 31, 2027.
+961	An ACO serving a rural population where 40% of attributed patients live more than 30 miles from the nearest primary care office cannot achieve the visit frequency that effective chronic disease management requires without telehealth as a structural component of its care model.
+962	For healthcare leaders assessing their organization’s VBC technology readiness, the most common mistake is attempting to deploy advanced analytics capabilities before the foundational data quality and connectivity infrastructure is in place.
+963	Phase 1 — Data Foundation (Months 1–6): Audit your EHR’s structured data quality.
+964	Implement standardized coding for diagnoses (ICD-10), medications (RxNorm), and procedures (CPT).
+965	Phase 2 — Connectivity (Months 4–12): Activate your state HIE connection and configure admission-discharge-transfer (ADT) alert feeds so that care coordinators receive real-time notifications when attributed patients are admitted to or discharged from any participating hospital in your market.
+966	Phase 3 — Panel Management (Months 9–18): Implement a population health management platform that allows care coordinators to view and filter their attributed patient panel by risk level, care gap status, and recent utilization events.
+967	Phase 4 — Predictive Intelligence (Months 18–36): Implement AI-powered risk stratification once your EHR data quality and HIE connectivity are sufficient to feed the model with the multi-modal data it requires for accurate predictions.
+968	Phase 5 — Continuous Improvement (Ongoing): Establish a quarterly data quality review cycle that monitors EHR documentation completeness, risk model accuracy, care gap closure rates, and population health outcome trends.
+969	Module 4 Summary: Technology Is the Operating System of Value-Based Care
+970	The federal investment framework for closing this gap — TEFCA for interoperability standards, the 21st Century Cures Act’s information blocking prohibition and FHIR mandate, the FCC’s Healthcare Connect Fund for rural broadband, ONC’s certification program for EHR capabilities, and HRSA’s rural health IT funding stream — represents the most coherent federal technology infrastructure investment in healthcare history.
+971	The 21st Century Cures Act’s information blocking prohibition and FHIR API mandate are the legal and technical foundations of modern health IT interoperability.
+972	Health IT developers, health information exchanges, and networks that engage in information blocking face civil monetary penalties of up to $1 million per violation; health care providers face separate federal disincentives, such as losing Promoting Interoperability credit under MIPS, under a 2024 HHS rule.
+973	Module 4 Key Takeaway: Technology readiness is the most concrete and actionable dimension of VBC preparation because it can be assessed objectively, sequenced rationally, and funded through a combination of organizational capital and federal programs.
+974	Attempting to manage population cost without the data infrastructure to know who your highest-risk patients are and what is happening to them across the care continuum is the most common cause of VBC financial underperformance — and the most preventable.
+975	Module 4 of the HTR Academy Value-Based Care Fundamentals course examines the technology infrastructure that value-based care requires to function — and what happens when that infrastructure is missing.
+976	This module explains, in plain language, what interoperable electronic health records, health information exchange, and AI-powered risk stratification tools actually do in a VBC context, why many rural Critical Access Hospitals remain technology-unready for advanced VBC participation, and how the federal interoperability agenda — including the 21st Century Cures Act, the CMS Interoperability Rule, and the TEFCA framework — is building the data infrastructure that VBC depends upon.

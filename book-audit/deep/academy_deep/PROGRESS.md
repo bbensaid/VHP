@@ -21,3 +21,5 @@ VERIFIED_FACTS.md, the rest against the cited source or a web search. Fixes go o
 | medicaid-managed-care-operations | 399 | enrollment 78M→73M; unsourced insurer-loss claim deleted | done |
 | transformation-portfolio-management | 406 | none needed | done |
 | health-equity-sdoh | 417 | infant mortality 5.4→5.6; Joint Commission 2026 NPG update | done |
+| revenue-cycle-management | 474 (2026-11-20 dump) | AR>90 benchmark 15%→10% (internal contradiction; NCDS source) | done 2026-11-20 |
+| hie-health-reform-onboarding | 559 | info-blocking count (unsourced "nearly 1,600 to OIG" → 2,450 claims, healthit.gov July 2026); HIPAA cap $1.9M → $1.5M statutory / $2,134,831 (89 FR 64815); HCP-LAN 2024 downside 28.5% removed (CY2023 figure) | done 2026-11-20 |

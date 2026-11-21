@@ -1,0 +1,27 @@
+{
+ "tag": "hie-facts",
+ "note": "Info blocking: healthit.gov 'Information Blocking Claims: By the Numbers' (updated July 2026): 2,450 possible claims since Apr 5, 2021; HHS crackdown press release Sep 3, 2025. HIPAA CMP: 89 FR 64815 (Aug 8, 2024), annual cap $2,134,831; HITECH statutory $50,000/$1.5M. HCP-LAN 2024 downside share is not 28.5% (that is CY2023) — removed.",
+ "pairs": [
+  [
+   "As of February 2026, OIG had received nearly 1,600 complaints, reflecting the breadth of perceived violations across the industry.",
+   "As of HHS's July 2026 update, the Report Information Blocking Portal had logged 2,450 possible claims of information blocking since April 5, 2021, reflecting the breadth of perceived violations across the industry."
+  ],
+  [
+   "OIG had received nearly 1,600 complaints as of February 2026, with active enforcement actions commencing in September 2025.",
+   "HHS's information blocking portal had logged 2,450 possible claims by its July 2026 update, and HHS announced an active enforcement stance in September 2025."
+  ],
+  [
+   "By February 2026 nearly 1,600 complaints had been submitted; by July 31, 2026, ONC had logged",
+   "By July 31, 2026, ONC had logged"
+  ],
+  [
+   "with annual caps up to $1.9 million per violation category (inflation-adjusted).",
+   "with a $1.5 million annual cap per violation category; HHS adjusts these amounts for inflation each year (the annual cap was $2,134,831 as of August 2024)."
+  ],
+  [
+   "in HCP-LAN Categories 3 and 4 (28.5% with downside risk),",
+   "in HCP-LAN Categories 3 and 4,"
+  ]
+ ],
+ "residue": "nearly 1,600 complaints|1\\.9 million per violation"
+}

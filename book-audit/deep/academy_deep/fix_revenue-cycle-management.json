@@ -1,0 +1,15 @@
+{
+ "tag": "rcm-ar90",
+ "note": "Align AR>90 benchmark with the course's KPI lesson and its cited source (NCDS RCM Benchmarks 2026: AR>90 <10%).",
+ "pairs": [
+  [
+   "High performers keep less than about 15 percent of total AR in the 90+ day bucket.",
+   "High performers keep less than about 10 percent of total AR in the 90+ day bucket."
+  ],
+  [
+   "high performers keep less than ~15% of AR in the 90+ day bucket",
+   "high performers keep less than ~10% of AR in the 90+ day bucket"
+  ]
+ ],
+ "residue": "less than (about|~)15( percent|%) of (total )?AR"
+}
