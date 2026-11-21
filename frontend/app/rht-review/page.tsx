@@ -2,7 +2,7 @@
 // Data: lib/rht-review.ts (CMS documents only). Vermont has a full Year 1 review; every other
 // state page is built from the same CMS documents until its own review is written.
 import Link from "next/link";
-import { RHT_STATES, RHT_AS_OF, CMS_DOCS, usdM, change } from "@/lib/rht-review";
+import { RHT_STATES, RHT_AS_OF, CMS_DOCS, change, stateNotes } from "@/lib/rht-review";
 import { Ext, Section, Stat, SourceNote } from "@/components/rht-review/ui";
 import RhtStatesTable from "@/components/rht-review/RhtStatesTable";
 
@@ -55,7 +55,7 @@ export default function RhtReviewIndex() {
       </Section>
 
       <Section label="State by state" title="Awards, money put to work, and policy commitments">
-        <RhtStatesTable states={RHT_STATES} />
+        <RhtStatesTable states={RHT_STATES} withNotes={RHT_STATES.filter((s) => stateNotes(s.slug)).map((s) => s.slug)} />
         <SourceNote>
           “Put to work” is the amount each state reported to CMS as obligated through July 31, 2026, as a share of its Year 1 award. Commitments counts the
           state-policy actions CMS lists the state as having committed to; CMS counts some sub-commitments separately, so its own totals can be higher.

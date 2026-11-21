@@ -8,7 +8,7 @@ type Key = "state" | "fy2026" | "fy2027" | "change" | "ptw" | "commit";
 
 const m = (n: number) => `$${(n / 1e6).toFixed(1)}M`;
 
-export default function RhtStatesTable({ states }: { states: RhtState[] }) {
+export default function RhtStatesTable({ states, withNotes = [] }: { states: RhtState[]; withNotes?: string[] }) {
   const [key, setKey] = useState<Key>("state");
   const [desc, setDesc] = useState(false);
   const rows = useMemo(() => {
@@ -65,6 +65,7 @@ export default function RhtStatesTable({ states }: { states: RhtState[] }) {
                 <td className="py-2 pr-3">
                   <Link href={`/rht-review/${s.slug}`} className="font-semibold text-teal-700 hover:underline">{s.state}</Link>
                   {s.slug === "vermont" && <span className="ml-2 text-[10px] font-black uppercase text-amber-700">Full review</span>}
+                  {withNotes.includes(s.slug) && <span className="ml-2 text-[10px] font-black uppercase text-teal-700">Review notes</span>}
                 </td>
                 <td className="py-2 pr-3 text-right">{m(s.fy2026)}</td>
                 <td className="py-2 pr-3 text-right">{m(s.fy2027)}</td>

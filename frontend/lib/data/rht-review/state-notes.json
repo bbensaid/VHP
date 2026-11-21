@@ -3,31 +3,178 @@
  "new-hampshire": {
   "asOf": "2026-11-20",
   "notes": [
-   {"text": "New Hampshire's program is run by the Governor's Office of New Opportunities & Rural Transformational Health (GO-NORTH), which Gov. Kelly Ayotte set up in January 2026 as an independent entity under the governor's office rather than having the Department of Health and Human Services administer the money.", "src": "nh1"},
-   {"text": "GO-NORTH routes most Year 1 money through five funding hubs that have received or been allocated $161.2 million of the $204 million: Foundation for Healthy Communities (an affiliate of the New Hampshire Hospital Association) $66.5M; Community Development Finance Authority $48.3M; Community Behavioral Health Association $21.6M; University System of New Hampshire $15.7M; Community College System of New Hampshire $9.1M.", "src": "nh1"},
-   {"text": "Outside the hubs: $20 million to Health Strategies – Endowment for Health; $1.7 million to NORC at the University of Chicago for independent evaluation; $14.7 million in budget lines (a “TBD Healthcare System Pilot” and two DHHS contracts) that the reporters could not explain.", "src": "nh1"},
-   {"text": "GO-NORTH's director says the state has awarded more than $11 million to rural emergency medical services organizations to expand emergency services and launch Mobile Integrated Health programs.", "src": "nh1"},
-   {"text": "CMS records New Hampshire as having put its entire Year 1 award to work by July 31, 2026 (state-reported obligations). The same reporting notes that the Executive Council approved the first-year distribution plan in March and that many requests for proposals were not released until October and November 2026.", "src": "nh1"}
+   {
+    "text": "New Hampshire's program is run by the Governor's Office of New Opportunities & Rural Transformational Health (GO-NORTH), which Gov. Kelly Ayotte set up in January 2026 as an independent entity under the governor's office rather than having the Department of Health and Human Services administer the money.",
+    "src": "nh1"
+   },
+   {
+    "text": "GO-NORTH routes most Year 1 money through five funding hubs that have received or been allocated $161.2 million of the $204 million: Foundation for Healthy Communities (an affiliate of the New Hampshire Hospital Association) $66.5M; Community Development Finance Authority $48.3M; Community Behavioral Health Association $21.6M; University System of New Hampshire $15.7M; Community College System of New Hampshire $9.1M.",
+    "src": "nh1"
+   },
+   {
+    "text": "Outside the hubs: $20 million to Health Strategies – Endowment for Health; $1.7 million to NORC at the University of Chicago for independent evaluation; $14.7 million in budget lines (a “TBD Healthcare System Pilot” and two DHHS contracts) that the reporters could not explain.",
+    "src": "nh1"
+   },
+   {
+    "text": "GO-NORTH's director says the state has awarded more than $11 million to rural emergency medical services organizations to expand emergency services and launch Mobile Integrated Health programs.",
+    "src": "nh1"
+   },
+   {
+    "text": "CMS records New Hampshire as having put its entire Year 1 award to work by July 31, 2026 (state-reported obligations). The same reporting notes that the Executive Council approved the first-year distribution plan in March and that many requests for proposals were not released until October and November 2026.",
+    "src": "nh1"
+   }
   ],
   "quotes": [
-   {"q": "We were among the first states in the country to have our first-year budget fully approved and obligated", "who": "Donnalee Lozeau, GO-NORTH director", "src": "nh1"},
-   {"q": "This money needs to already be put to work. We’re still just releasing RFPs (request for proposals).", "who": "Karen Liot Hill, Executive Councilor (District 2), recalling the governor's March meeting", "src": "nh1"}
+   {
+    "q": "We were among the first states in the country to have our first-year budget fully approved and obligated",
+    "who": "Donnalee Lozeau, GO-NORTH director",
+    "src": "nh1"
+   },
+   {
+    "q": "This money needs to already be put to work. We’re still just releasing RFPs (request for proposals).",
+    "who": "Karen Liot Hill, Executive Councilor (District 2), recalling the governor's March meeting",
+    "src": "nh1"
+   }
   ],
   "sources": {
-   "nh1": {"label": "Granite State News Collaborative, “N.H. rural health program director says program is progressing ‘very well’” (Nov 19, 2026)", "url": "https://www.collaborativenh.org/granite-solutions-coronavirus-1/2026/11/19/nh-rural-health-program-director-says-program-is-progressing-very-well"}
+   "nh1": {
+    "label": "Granite State News Collaborative, “N.H. rural health program director says program is progressing ‘very well’” (Nov 19, 2026)",
+    "url": "https://www.collaborativenh.org/granite-solutions-coronavirus-1/2026/11/19/nh-rural-health-program-director-says-program-is-progressing-very-well"
+   }
   }
  },
  "maine": {
   "asOf": "2026-11-20",
   "notes": [
-   {"text": "In July 2026 Maine's Department of Health and Human Services released $30 million of RHT funds to 11 hospitals chosen on key financial indicators to boost financial stability: Cary Medical Center, MaineHealth Franklin Hospital, Houlton Regional Hospital, MaineGeneral Medical Center – Alfond Center for Health, Millinocket Regional Hospital, Mount Desert Island Hospital, Northern Light AR Gould Hospital, Northern Light CA Dean Hospital, Northern Maine Medical Center, MaineHealth Pen Bay Hospital and Penobscot Valley Hospital.", "src": "me1"},
-   {"text": "Participating hospitals receive technical assistance, must submit plans to the state by January 2027, and must implement projects by August 2027.", "src": "me1"},
-   {"text": "Maine's Year 2 award is roughly $350,000 more than Year 1. Year 2 priorities include more school-based health centers and mobile health units, integrating primary care into behavioral health clinics, tribal traditional healing practices, and better electronic medical records for jails.", "src": "me2"}
+   {
+    "text": "In July 2026 Maine's Department of Health and Human Services released $30 million of RHT funds to 11 hospitals chosen on key financial indicators to boost financial stability: Cary Medical Center, MaineHealth Franklin Hospital, Houlton Regional Hospital, MaineGeneral Medical Center – Alfond Center for Health, Millinocket Regional Hospital, Mount Desert Island Hospital, Northern Light AR Gould Hospital, Northern Light CA Dean Hospital, Northern Maine Medical Center, MaineHealth Pen Bay Hospital and Penobscot Valley Hospital.",
+    "src": "me1"
+   },
+   {
+    "text": "Participating hospitals receive technical assistance, must submit plans to the state by January 2027, and must implement projects by August 2027.",
+    "src": "me1"
+   },
+   {
+    "text": "Maine's Year 2 award is roughly $350,000 more than Year 1. Year 2 priorities include more school-based health centers and mobile health units, integrating primary care into behavioral health clinics, tribal traditional healing practices, and better electronic medical records for jails.",
+    "src": "me2"
+   }
   ],
   "quotes": [],
   "sources": {
-   "me1": {"label": "Maine Public, “11 Maine hospitals selected for Rural Health Transformation funds to boost financial stability” (Jul 31, 2026)", "url": "https://www.mainepublic.org/health/2026-07-31/11-maine-hospitals-selected-for-rural-health-transformation-funds-to-boost-financial-stability"},
-   "me2": {"label": "Maine Public, “Maine awarded more than $190 million for rural health care in second year of federal grant program” (Nov 12, 2026)", "url": "https://www.mainepublic.org/health/2026-11-12/maine-awarded-more-than-190-million-for-rural-health-care-in-second-year-of-federal-grant-program"}
+   "me1": {
+    "label": "Maine Public, “11 Maine hospitals selected for Rural Health Transformation funds to boost financial stability” (Jul 31, 2026)",
+    "url": "https://www.mainepublic.org/health/2026-07-31/11-maine-hospitals-selected-for-rural-health-transformation-funds-to-boost-financial-stability"
+   },
+   "me2": {
+    "label": "Maine Public, “Maine awarded more than $190 million for rural health care in second year of federal grant program” (Nov 12, 2026)",
+    "url": "https://www.mainepublic.org/health/2026-11-12/maine-awarded-more-than-190-million-for-rural-health-care-in-second-year-of-federal-grant-program"
+   }
+  }
+ },
+ "connecticut": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "In September 2026 the Department of Social Services finalized $50 million in grant agreements: $46 million to four rural hospital systems — $20.23 million for Day Kimball Hospital in Putnam, $13.12 million for Sharon Hospital, and $12.65 million for Hartford HealthCare's Windham Hospital (Willimantic) and Charlotte Hungerford Hospital (Torrington) — and $3.98 million to Mathematica for technical assistance to those hospitals.",
+    "src": "ct1"
+   },
+   {
+    "text": "The remaining $104 million of the Year 1 award is going to more than 100 contracts across 30 projects overseen by 10 state agencies, according to CT Mirror.",
+    "src": "ct2"
+   }
+  ],
+  "quotes": [
+   {
+    "q": "We were awarded $54 million above the base of $100 million because of the work that we've done",
+    "who": "Andrea Barton Reeves, Commissioner, Department of Social Services",
+    "src": "ct2"
+   }
+  ],
+  "sources": {
+   "ct1": {
+    "label": "Office of the Governor, Connecticut, “Governor Lamont Announces Connecticut's Rural Health Transformation Program Invests $50 Million…” (Sep 16, 2026)",
+    "url": "https://portal.ct.gov/governor/news/press-releases/2026/09-2026/governor-lamont-announces-rural-health-transformation-program-invests-50-million"
+   },
+   "ct2": {
+    "label": "CT Mirror, “Four rural CT hospitals receive $46 million in federal health grants” (Sep 16, 2026)",
+    "url": "https://ctmirror.org/2026/09/16/ct-rural-health-transformation-grants-awarded/"
+   }
+  }
+ },
+ "massachusetts": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "In October 2026 the Executive Office of Health and Human Services opened applications (due Oct. 26) under which six rural hospitals — Athol Hospital, Martha's Vineyard Hospital, Fairview Hospital (Great Barrington), North Adams Regional Hospital, Nantucket Cottage Hospital and Baystate Wing Hospital (Palmer) — can each request up to $2.5 million in capital funding; money is also available to rural health clinics, community groups, health centers, nursing facilities and rural municipalities.",
+    "src": "ma1"
+   },
+   {
+    "text": "CMS's July 31, 2026 report shows Massachusetts had put 46% of its Year 1 award to work at that date.",
+    "src": "cms"
+   }
+  ],
+  "quotes": [
+   {
+    "q": "under the CMS rules, we have to have all the money obligated — all $162 million — by the end of October,",
+    "who": "Eliza Lake, director of health policy and strategic initiatives, EOHHS",
+    "src": "ma1"
+   }
+  ],
+  "sources": {
+   "ma1": {
+    "label": "Boston Globe, “Six rural hospitals in Mass. eligible for up to $2.5 million each in federal aid” (Oct 13, 2026)",
+    "url": "https://www.bostonglobe.com/2026/10/13/business/six-rural-hospitals-massachusetts-federal-aid/"
+   },
+   "cms": {
+    "label": "CMS, RHTP Obligated Funds Report (data as of Jul 31, 2026)",
+    "url": "https://www.medicaid.gov/resources-for-states/rural-health/rhtp-resources/RHTP-Obligated-Funds-20261014.pdf"
+   }
+  }
+ },
+ "rhode-island": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "In September 2026 CMS announced $5.48 million of Rhode Island's award committed to 14 local education agencies and schools for healthcare-focused career and technical education, including $928,574 for a K-12 Biomedical Sciences pathway, $1,360,343 for a pipeline anchored by an on-campus physical therapy clinic, and $710,619 for the state's first Pre-Medicine CTE program.",
+    "src": "ri1"
+   }
+  ],
+  "quotes": [],
+  "sources": {
+   "ri1": {
+    "label": "CMS, “Trump Administration Announces $5.48 Million to Strengthen Healthcare Workforce Pipeline in Rural Rhode Island” (Sep 4, 2026)",
+    "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-5-48-million-strengthen-healthcare-workforce-pipeline-rural-rhode"
+   }
+  }
+ },
+ "new-york": {
+  "asOf": "2026-11-20",
+  "notes": [
+   {
+    "text": "CMS's July 31, 2026 report lists $0 put to work for New York at that date.",
+    "src": "cms"
+   },
+   {
+    "text": "On September 4, 2026 the governor announced more than $76 million through the Rural Community Health Integration Initiative for 90 awards to 56 organizations — about $22.7 million in planning awards and $53.5 million in implementation awards — part of the more than $212 million New York received for Year 1.",
+    "src": "ny1"
+   }
+  ],
+  "quotes": [
+   {
+    "q": "Where someone lives should not determine whether they can access high-quality healthcare.",
+    "who": "Dr. James McDonald, New York State Health Commissioner",
+    "src": "ny1"
+   }
+  ],
+  "sources": {
+   "ny1": {
+    "label": "Office of the Governor, New York, “Governor Hochul Announces $76 Million to Strengthen Rural Healthcare Across New York State” (Sep 4, 2026)",
+    "url": "https://www.governor.ny.gov/news/governor-hochul-announces-76-million-strengthen-rural-healthcare-across-new-york-state"
+   },
+   "cms": {
+    "label": "CMS, RHTP Obligated Funds Report (data as of Jul 31, 2026)",
+    "url": "https://www.medicaid.gov/resources-for-states/rural-health/rhtp-resources/RHTP-Obligated-Funds-20261014.pdf"
+   }
   }
  }
 }
