@@ -1,0 +1,764 @@
+[
+ {
+  "id": "medicare-star-ratings",
+  "slug": "medicare-star-ratings",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Medicare Advantage Star Rating Domains",
+  "keys": [
+   "Domain",
+   "Focus",
+   "Weight"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Domain",
+   "Focus",
+   "Weight"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "measure-stewardship",
+  "slug": "measure-stewardship",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Major Quality Measurement Organizations",
+  "keys": [
+   "Domain",
+   "Organization",
+   "Primary_Role"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Organization",
+   "Domain",
+   "Primary_Role"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "hospital-compare-star-ratings",
+  "slug": "hospital-compare-star-ratings",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "The Five Star Rating Measure Groups",
+  "keys": [
+   "Captures",
+   "Measure_Group",
+   "Weight"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Measure_Group",
+   "Captures",
+   "Weight"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "mips-quality-payment",
+  "slug": "mips-quality-payment",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "MIPS Performance Categories (2024 Weights)",
+  "keys": [
+   "Category",
+   "How_Scored",
+   "Weight"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Category",
+   "Weight",
+   "How_Scored"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "ehr-data-quality",
+  "slug": "ehr-data-quality",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Core Data Quality Dimensions",
+  "keys": [
+   "Dimension",
+   "Failure_Example",
+   "Question"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Dimension",
+   "Question",
+   "Failure_Example"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "icd10-cpt-hcpcs",
+  "slug": "icd10-cpt-hcpcs",
+  "type": "academyModule",
+  "key": "s4t1",
+  "title": "The Three Code Sets at a Glance",
+  "keys": [
+   "Answers",
+   "Code_Set",
+   "Format",
+   "Maintained_By"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Code_Set",
+   "Answers",
+   "Format",
+   "Maintained_By"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "payer-contracts",
+  "slug": "payer-contracts",
+  "type": "academyModule",
+  "key": "s4t1",
+  "title": "Common Reimbursement Methodologies",
+  "keys": [
+   "Methodology",
+   "Pays",
+   "Typical_Use"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Methodology",
+   "Pays",
+   "Typical_Use"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "why-claims-denied",
+  "slug": "why-claims-denied",
+  "type": "academyModule",
+  "key": "s4t1",
+  "title": "Common CARC Denial Codes",
+  "keys": [
+   "Code",
+   "Meaning",
+   "Typical_Category"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Code",
+   "Meaning",
+   "Typical_Category"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "appeals-process",
+  "slug": "appeals-process",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "The Five Levels of Medicare Appeal",
+  "keys": [
+   "Decided_By",
+   "Level",
+   "Name"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Level",
+   "Name",
+   "Decided_By"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "ar-management",
+  "slug": "ar-management",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Standard AR Aging Buckets",
+  "keys": [
+   "Bucket",
+   "Collectibility",
+   "Priority"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Bucket",
+   "Collectibility",
+   "Priority"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "performance-dashboards",
+  "slug": "performance-dashboards",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "The Five HFMA MAP Key Groups",
+  "keys": [
+   "Course_Module",
+   "Covers",
+   "Group"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Group",
+   "Covers",
+   "Course_Module"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "risk-stratification-models",
+  "slug": "risk-stratification-models",
+  "type": "academyModule",
+  "key": "s4t1",
+  "title": "Common Risk Stratification Tools",
+  "keys": [
+   "Common_Use",
+   "Tool",
+   "What_It_Does"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Tool",
+   "What_It_Does",
+   "Common_Use"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "care-planning-patient-engagement",
+  "slug": "care-planning-patient-engagement",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "The Four Levels of Patient Activation (PAM)",
+  "keys": [
+   "Level",
+   "Patient_State",
+   "Tailored_Approach"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Level",
+   "Patient_State",
+   "Tailored_Approach"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "population-health-dashboards",
+  "slug": "population-health-dashboards",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Core Population Health Dashboard Metrics",
+  "keys": [
+   "Metric",
+   "What_It_Shows",
+   "Why_It_Matters"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Metric",
+   "What_It_Shows",
+   "Why_It_Matters"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "dna-genes-variants",
+  "slug": "dna-genes-variants",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Common Types of Genetic Variants",
+  "keys": [
+   "Example",
+   "Variant_Type",
+   "What_Changes"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Variant_Type",
+   "What_Changes",
+   "Example"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "types-of-genetic-tests",
+  "slug": "types-of-genetic-tests",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Genetic Test Methods by Breadth",
+  "keys": [
+   "Best_For",
+   "Examines",
+   "Method"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Method",
+   "Examines",
+   "Best_For"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "pharmacogenomics-drug-therapy",
+  "slug": "pharmacogenomics-drug-therapy",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "CYP Metabolizer Phenotypes",
+  "keys": [
+   "Active_Drug",
+   "Enzyme_Activity",
+   "Phenotype",
+   "Prodrug"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Phenotype",
+   "Enzyme_Activity",
+   "Active_Drug",
+   "Prodrug"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "oncology-genomics",
+  "slug": "oncology-genomics",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Example Actionable Driver Alterations",
+  "keys": [
+   "Alteration",
+   "Common_Cancer",
+   "Targeted_Therapy"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Alteration",
+   "Common_Cancer",
+   "Targeted_Therapy"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "sdoh-screening-tools",
+  "slug": "sdoh-screening-tools",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Common SDOH Screening Tools",
+  "keys": [
+   "Best_For",
+   "Developer",
+   "Length",
+   "Tool"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Tool",
+   "Developer",
+   "Length",
+   "Best_For"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "real-data-collection",
+  "slug": "real-data-collection",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "Common REaL Data Problems and Better Approaches",
+  "keys": [
+   "Better_Approach",
+   "Common_Problem",
+   "Field"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Field",
+   "Common_Problem",
+   "Better_Approach"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "medicare-coverage-benefits",
+  "slug": "medicare-coverage-benefits",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "2026 Part A Cost-Sharing",
+  "keys": [
+   "Amount_2026",
+   "Notes",
+   "Service"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Service",
+   "Amount_2026",
+   "Notes"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "continuum-of-integration",
+  "slug": "continuum-of-integration",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "SAMHSA-HRSA Six Levels of Integrated Healthcare (2013)",
+  "keys": [
+   "Category",
+   "Description",
+   "Level"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Level",
+   "Category",
+   "Description"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "collaborative-care-model",
+  "slug": "collaborative-care-model",
+  "type": "academyModule",
+  "key": "s5t1",
+  "title": "Medicare Collaborative Care (CoCM) Billing Codes",
+  "keys": [
+   "Code",
+   "Covers"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Code",
+   "Covers"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "hospital-vbp-hrrp-hacrp",
+  "slug": "hospital-vbp-hrrp-hacrp",
+  "type": "academyModule",
+  "key": "s4t1",
+  "title": "The Three Hospital Quality Programs at a Glance",
+  "keys": [
+   "Adjustment",
+   "Focus",
+   "Program",
+   "Started"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Program",
+   "Started",
+   "Focus",
+   "Adjustment"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "asam-criteria-levels-of-care",
+  "slug": "asam-criteria-levels-of-care",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "ASAM Broad Levels of Care",
+  "keys": [
+   "Description",
+   "Level",
+   "Setting"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Level",
+   "Setting",
+   "Description"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "opioid-treatment-programs",
+  "slug": "opioid-treatment-programs",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "The Three Medications for Opioid Use Disorder",
+  "keys": [
+   "Mechanism",
+   "Medication",
+   "Note"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Medication",
+   "Mechanism",
+   "Note"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "welcome-htr-framework",
+  "slug": "welcome-htr-framework",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "The Five Pillars at a Glance",
+  "keys": [
+   "Diagnostic_Question",
+   "Pillar",
+   "What_It_Delivers"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Pillar",
+   "Diagnostic_Question",
+   "What_It_Delivers"
+  ],
+  "source_files": [
+   "content/_lesson_welcome_htr_framework.py"
+  ],
+  "order": [
+   "Pillar",
+   "Diagnostic_Question",
+   "What_It_Delivers"
+  ],
+  "order_basis": "source file"
+ },
+ {
+  "id": "welcome-htr-framework",
+  "slug": "welcome-htr-framework",
+  "type": "academyModule",
+  "key": "s7t1",
+  "title": "Recommended Starting Points",
+  "keys": [
+   "In_the_Academy",
+   "On_the_Platform",
+   "Role"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Role",
+   "On_the_Platform",
+   "In_the_Academy"
+  ],
+  "source_files": [
+   "content/_lesson_welcome_htr_framework.py"
+  ],
+  "order": [
+   "Role",
+   "On_the_Platform",
+   "In_the_Academy"
+  ],
+  "order_basis": "source file"
+ },
+ {
+  "id": "care-manager-roles-models",
+  "slug": "care-manager-roles-models",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Types of Care Management",
+  "keys": [
+   "Intensity",
+   "Population",
+   "Program"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [
+   "content/course_population_health.json",
+   "content/courses_tier2.json"
+  ],
+  "order": [
+   "Program",
+   "Population",
+   "Intensity"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "clearinghouses-edi",
+  "slug": "clearinghouses-edi",
+  "type": "academyModule",
+  "key": "s3t1",
+  "title": "Key HIPAA X12 EDI Transactions",
+  "keys": [
+   "Name",
+   "Purpose",
+   "Transaction"
+  ],
+  "alphabetical": true,
+  "source_order": null,
+  "source_files": [],
+  "order": [
+   "Transaction",
+   "Name",
+   "Purpose"
+  ],
+  "order_basis": "row-label first (no source file)"
+ },
+ {
+  "id": "hea-sdoh-burden-scoring",
+  "slug": "hea-sdoh-burden-scoring",
+  "type": "academyModule",
+  "key": "l4t1",
+  "title": "Three SDOH Instruments, Side by Side",
+  "keys": [
+   "Built_By",
+   "Factors",
+   "Level",
+   "Tool"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Tool",
+   "Level",
+   "Built_By",
+   "Factors"
+  ],
+  "source_files": [
+   "content/_lessons_health_equity_analytics.py"
+  ],
+  "order": [
+   "Tool",
+   "Level",
+   "Built_By",
+   "Factors"
+  ],
+  "order_basis": "source file"
+ },
+ {
+  "id": "hea-measurement-foundations",
+  "slug": "hea-measurement-foundations",
+  "type": "academyModule",
+  "key": "l1t1",
+  "title": "CMS Framework for Health Equity 2022\u20132032 \u2014 Five Priorities",
+  "keys": [
+   "Focus",
+   "Priority"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Priority",
+   "Focus"
+  ],
+  "source_files": [
+   "content/_lessons_health_equity_analytics.py"
+  ],
+  "order": [
+   "Priority",
+   "Focus"
+  ],
+  "order_basis": "source file"
+ },
+ {
+  "id": "hea-disparity-decomposition",
+  "slug": "hea-disparity-decomposition",
+  "type": "academyModule",
+  "key": "l2t1",
+  "title": "Worked Example: Two Ways to Report the Same Gap",
+  "keys": [
+   "Rate_Difference",
+   "Rate_Ratio",
+   "Scenario"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Scenario",
+   "Rate_Difference",
+   "Rate_Ratio"
+  ],
+  "source_files": [
+   "content/_lessons_health_equity_analytics.py"
+  ],
+  "order": [
+   "Scenario",
+   "Rate_Difference",
+   "Rate_Ratio"
+  ],
+  "order_basis": "source file"
+ },
+ {
+  "id": "tl-running-the-sequencing-test",
+  "slug": "tl-running-the-sequencing-test",
+  "type": "academyModule",
+  "key": "s2t1",
+  "title": "The seven verdicts the test produces",
+  "keys": [
+   "Gate",
+   "Meaning",
+   "Status",
+   "Verdict"
+  ],
+  "alphabetical": true,
+  "source_order": [
+   "Verdict",
+   "Gate",
+   "Status",
+   "Meaning"
+  ],
+  "source_files": [
+   "content/_lesson_tl_sequencing_test.py"
+  ],
+  "order": [
+   "Verdict",
+   "Gate",
+   "Status",
+   "Meaning"
+  ],
+  "order_basis": "source file"
+ }
+]

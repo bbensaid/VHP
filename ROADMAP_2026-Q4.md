@@ -87,7 +87,7 @@ affected transcripts with Piper and re-upload to `narration-audio`. Local and fr
   the existing welcome lesson + Reading the Book With the Platform Open, Your First Research
   Lab Session, Getting Good Answers From the AI Analyst, Your Learning Path and the Lab
   Workbook. Source: `frontend/content/_course_start_here.py`, `frontend/scripts/start-here-course.mjs`.
-- **Open: 35 older Academy tables have scrambled (alphabetical) columns** — Sanity sorted the
+- **DONE 2026-11-20: the older Academy tables with scrambled (alphabetical) columns** (34 tables / 33 lessons; source order for 6, row-label-first for 28; frontend/scripts/_fix_table_order.mjs; plan book-audit/deep/academy_tables.json; headers now render without underscores) — Sanity sorted the
   object keys. Fix = re-post each table as a JSON string with the intended column order, taken
   from the lesson's source script where one exists.
 - **Open: the AI Analyst's index contains a PDF sourced from Anna's Archive** (Culyer,

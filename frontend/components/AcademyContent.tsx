@@ -317,7 +317,7 @@ const components: PortableTextComponents = {
               <thead>
                 <tr className="bg-slate-50">
                   {headers.map((h) => (
-                    <th key={h} className="px-5 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest whitespace-nowrap border-b-2 border-slate-200">{h}</th>
+                    <th key={h} className="px-5 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest whitespace-nowrap border-b-2 border-slate-200">{h.replace(/_/g, " ")}</th>
                   ))}
                 </tr>
               </thead>
