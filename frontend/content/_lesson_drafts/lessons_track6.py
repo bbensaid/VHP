@@ -451,7 +451,7 @@ LESSONS = [
                     },
                     {
                         "value": "$195M",
-                        "label": "Vermont's FY2026 Rural Health Transformation Program award (an annual amount, not a five-year total) — its workforce initiatives include training programs, tuition and conditional financial assistance with 5-year service commitments, workforce housing, and scope-of-practice changes",
+                        "label": "Vermont's FY2026 Rural Health Transformation Program award (an annual amount, not a five-year total; the FY2027 award is $190M) — its workforce initiatives include training programs, tuition and conditional financial assistance with 5-year service commitments, workforce housing, and scope-of-practice changes",
                         "source": "Vermont RHT Program Application, November 2025",
                     },
                     {

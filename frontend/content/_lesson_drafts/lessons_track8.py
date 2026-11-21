@@ -375,7 +375,7 @@ LESSONS = [
             {
                 "type": "text",
                 "heading": "What's Hard to Reverse",
-                "body": "Federal agreements. The AHEAD State Agreement, signed with CMS in January 2025, was meant to bind Vermont into a federal-state model running through 2035. It proved less durable than its form suggested: after CMS renegotiated the terms and capped the expected EAST Fund near $10 million (from roughly $138 million), Vermont withdrew in July 2026, before its performance period began.\n\nCapital already committed. The Rural Health Transformation Program's $195 million FY2026 award -- an annual amount in a program that runs through FY2030, not a five-year total -- is federal capital already flowing into Vermont's system. The CIN infrastructure, IT upgrades, and analytics platforms it buys create constituencies for their own continuation once built.\n\nThe reform cascade. Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, expanded GMCB authority, the AHS HSA-coordinator model -- that are now constituencies for the next reform. Dismantling Act 68 would mean dismantling those institutions too.\n\nThe financial crisis itself. Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened. The case for transformation rests on a reality that is not politically manufactured.",
+                "body": "Federal agreements. The AHEAD State Agreement, signed with CMS in January 2025, was meant to bind Vermont into a federal-state model running through 2035. It proved less durable than its form suggested: after CMS renegotiated the terms and capped the expected EAST Fund near $10 million (from roughly $138 million), Vermont withdrew in July 2026, before its performance period began.\n\nCapital already committed. The Rural Health Transformation Program's $195 million FY2026 award -- fully committed by the state by October 30, 2026 -- and its $190 million FY2027 award are annual amounts in a program that runs through FY2030, federal capital already flowing into Vermont's system. The CIN infrastructure, IT upgrades, and analytics platforms it buys create constituencies for their own continuation once built.\n\nThe reform cascade. Act 167, Act 51, and Act 68 built legitimacy incrementally; each act created institutions -- the Health Care Delivery Advisory Committee, expanded GMCB authority, the AHS HSA-coordinator model -- that are now constituencies for the next reform. Dismantling Act 68 would mean dismantling those institutions too.\n\nThe financial crisis itself. Oliver Wyman's projection of 13 of 14 hospitals in operating losses by 2028 does not disappear if Act 68 is weakened. The case for transformation rests on a reality that is not politically manufactured.",
             },
             {
                 "type": "text",
@@ -398,7 +398,7 @@ LESSONS = [
                     },
                     {
                         "label": "Capital",
-                        "left": "$195M FY2026 RHT Program award (an annual amount, not a five-year total) committed and flowing.",
+                        "left": "$195M FY2026 RHT Program award fully committed by October 30, 2026; $190M FY2027 award announced November 9, 2026.",
                         "right": "The January 2028 Strategic Plan's actual content remains discretionary in practice, even where required in form.",
                     },
                     {

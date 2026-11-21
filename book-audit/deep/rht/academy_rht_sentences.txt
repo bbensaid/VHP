@@ -1,0 +1,94 @@
+transformation-leadership | tl-running-the-sequencing-test | Running the Sequencing Test: A Portfolio Register Workshop
+    Vermont has never published such a definition, so the book's Chapter 15 assembled one by reading Act 68, the AHEAD State Agreement, the Rural Health Transformation Program application, and the AHS transformation reports for every initiative carrying a named owner and a dated obligation.
+transformation-leadership | tl-running-the-sequencing-test | Running the Sequencing Test: A Portfolio Register Workshop
+    One component is flagged as running ahead of its gate: RHT Program deployment, which the book places in the Economics pillar and describes as active.
+five-pillars-one-imperative | dependency-logic-execution-sequence | Dependency Logic and the Execution Sequence
+    Vermont's technology build is paid for by the Rural Health Transformation Program — a $195 million FY2026 award, an annual amount rather than a five-year total — and was to have been supplemented by the EAST Fund under the AHEAD State Agreement, before Vermont withdrew from AHEAD in July 2026.
+five-pillars-one-imperative | legislative-architecture-reform-cascade | Legislative Architecture: Act 167 → Act 51 → Act 68
+    AHS reports against them, GMCB's budget review references them, and Vermont's Rural Health Transformation Program application maps each proposed initiative to them.
+five-pillars-one-imperative | cmmi-waivers-federal-state-interface | CMMI Models, Waivers, and the Federal–State Interface
+    The state redirected its attention to the Rural Health Transformation Program, under which Vermont's FY2026 award is $195 million -- an annual amount, not a five-year total.
+five-pillars-one-imperative | data-infrastructure-as-the-gate | Data Infrastructure as the Gate
+    Vermont's Rural Health Transformation portfolio makes the dependency concrete.
+five-pillars-one-imperative | global-budgets-reference-based-pricing | Global Budgets and Reference-Based Pricing
+    The Rural Health Transformation Program separately provides transformation capital -- a $195 million FY2026 award, an annual amount rather than a five-year total -- for workforce, telehealth, and community infrastructure.
+five-pillars-one-imperative | global-budgets-reference-based-pricing | Global Budgets and Reference-Based Pricing
+    Because the performance period had not yet begun, the withdrawal changed nothing operationally for Vermont hospitals or providers: Act 68's global budget mandate rests on state statutory authority, not the federal AHEAD agreement, and Vermont's near-term transformation capital comes from the Rural Health Transformation Program, which does not depend on AHEAD either.
+five-pillars-one-imperative | global-budgets-reference-based-pricing | Global Budgets and Reference-Based Pricing
+    The population-health limits are equally real, and Vermont's planned response -- pairing the budget with the EAST Fund and Rural Health Transformation Program from day one -- was a direct answer to the specific gap Maryland's evaluators identified, though the EAST Fund half fell away when Vermont withdrew from AHEAD in July 2026.
+five-pillars-one-imperative | global-budgets-reference-based-pricing | Global Budgets and Reference-Based Pricing
+    Vermont tried to build the lesson into its design from day one: the EAST Fund and Rural Health Transformation Program were to pair the fixed-revenue budget with community investment, rather than adding it years later as Maryland did.
+five-pillars-one-imperative | regionalization-right-sizing-hospital-system | Regionalization and Right-Sizing a Hospital System
+    Fragmented transport is simultaneously a patient safety risk and an operating cost, which is why community paramedicine and mobile integrated health, a centralized interfacility transfer tool, and telehealth to avoid unnecessary transfers are named priorities in Vermont's Rural Health Transformation Program application.
+five-pillars-one-imperative | regionalization-right-sizing-hospital-system | Regionalization and Right-Sizing a Hospital System
+    Vermont's RHT Program application responds on exactly these grounds: a statewide community paramedicine and mobile integrated health model, a centralized tool showing bed capacity and service availability to guide interfacility transfers, and expanded telehealth to reduce transfers that do not need to happen at all.
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    Source: Vermont Rural Health Transformation Program Application, November 2025
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    Source: Vermont RHT Program Application, November 2025
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    Vermont's FY2026 Rural Health Transformation Program award (an annual amount, not a five-year total) — its workforce initiatives include training programs, tuition and conditional financial assistance with 5-year service commitments, workforce housing, and scope-of-practice changes
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    $195M
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    The medium instruments are loan repayment and service obligations, which work on a 2 to 5 year horizon and are the main vehicle for Vermont's RHT workforce investment: tuition and conditional financial assistance — including no-cost tuition for critical occupations such as registered nursing — carrying 5-year in-state service commitments, plus workforce housing.
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    This is what makes on-site clinical training infrastructure — keeping medical students and residents in rural communities during training — a workforce investment rather than an educational one, and it is why Vermont's RHT application funds it directly.
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    The constraint is staffing depth, not model knowledge, which is why the RHT training investments, including a licensed nursing assistant training hub, are the enabling condition rather than a nice addition.
+five-pillars-one-imperative | workforce-as-the-binding-constraint | Workforce as the Binding Constraint
+    Chapter 11 develops Vermont's workforce crisis as its most binding operational constraint, with the RHT Program's supply-side response.
+five-pillars-one-imperative | calibrate-for-the-gap-not-the-average | Calibrate for the Gap, Not the Average
+    Source: AHS November 2025 Transformation Report; Vermont Rural Health Transformation Program Application
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    Source: HTR analysis of Act 68, the AHEAD State Agreement, the RHT Program application, and AHS Transformation Reports, early 2026
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    The 19-component inventory used in this lesson is HTR's own, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves.
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    They inherit an order from the pillar dependency structure this course established earlier: the Economics components -- RBP implementation, global-budget implementation, RHT Program deployment -- cannot be productively worked before the Technology components that make them measurable.
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    Source: PMI Pulse of the Profession (2017); Vermont RHT Program Application
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    Annual cost of a staffed Portfolio Management Office as a share of the RHT capital it coordinates ($195M in FY2026)
+five-pillars-one-imperative | transformation-as-portfolio-management | Transformation as Portfolio Management
+    Source: PMI salary data; Vermont RHT Program organizational design
+five-pillars-one-imperative | political-sustainability-across-election-cycles | Political Sustainability Across Election Cycles
+    The Rural Health Transformation Program's $195 million FY2026 award -- an annual amount in a program that runs through FY2030, not a five-year total -- is federal capital already flowing into Vermont's system.
+five-pillars-one-imperative | political-sustainability-across-election-cycles | Political Sustainability Across Election Cycles
+    $195M FY2026 RHT Program award (an annual amount, not a five-year total) committed and flowing.
+welcome-htr-framework | welcome-htr-framework | Welcome & the HTR Framework
+    What does qualify looks like what Vermont is attempting: mandatory reference-based pricing that removes the ability of dominant hospitals to charge commercial payers three to four times Medicare; statutory hospital global budgets that change every hospital's incentive from maximizing volume to managing population health; a Statewide Health Care Delivery Strategic Plan with specific, measurable commitments; and Rural Health Transformation Program capital to build the community infrastructure that payment reform needs.
+transformation-portfolio-management | tpm-defining-the-portfolio | Defining the Portfolio: The Component Inventory
+    It was assembled by reading Act 68, the AHEAD State Agreement, Vermont's Rural Health Transformation Program application and the AHS transformation reports, and listing every initiative that carries a named owner and a dated obligation.
+transformation-portfolio-management | tpm-defining-the-portfolio | Defining the Portfolio: The Component Inventory
+    Vermont has never published a portfolio definition; HTR's 19-component inventory was built from Act 68, the AHEAD agreement, the RHT application and AHS reports.
+transformation-portfolio-management | tpm-ten-knowledge-areas | The Ten Knowledge Areas as a Portfolio-Office Checklist
+    In cost, Rural Health Transformation Program spending is tracked for federal compliance, not for portfolio performance.
+transformation-portfolio-management | tpm-ten-knowledge-areas | The Ten Knowledge Areas as a Portfolio-Office Checklist
+    [{"Knowledge area": "Integration", "Operational gap": "Dependency map, sequence and scorecard exist analytically; operational integration does not"}, {"Knowledge area": "Scope", "Operational gap": "No formal work-breakdown structure for any pillar"}, {"Knowledge area": "Schedule", "Operational gap": "Statutory deadlines tracked in isolation, not as an integrated master schedule"}, {"Knowledge area": "Cost", "Operational gap": "RHT spending tracked for federal compliance, not portfolio performance"}, {"Knowledge area": "Quality", "Operational gap": "Measured program by program, no portfolio aggregation"}, {"Knowledge area": "Resource", "Operational gap": "Staff overcommitted, no formal resource leveling"}, {"Knowledge area": "Communications", "Operational gap": "Reporting runs component by component"}, {"Knowledge area": "Risk", "Operational gap": "Analyzed but not managed through a maintained register"}, {"Knowledge area": "Procurement", "Operational gap": "Contracts let one component at a time"}, {"Knowledge area": "Stakeholder", "Operational gap": "Stakeholders engaged component by component"}]
+transformation-portfolio-management | tpm-dependency-sequence | Portfolio Sequence Is Dependency Sequence
+    RHT Program deployment is implementing ahead of its gate.
+transformation-portfolio-management | tpm-dependency-sequence | Portfolio Sequence Is Dependency Sequence
+    RHT Program deployment (Economics, gate held by Technology)
+transformation-portfolio-management | tpm-dependency-sequence | Portfolio Sequence Is Dependency Sequence
+    RHT deployment running ahead of its gate, for example, may be justified by federal spending deadlines.
+transformation-portfolio-management | tpm-benefits-realization | Benefits Realization: Tracing Every Component to a Goal
+    [{"Act 167 goal": "High-quality, accessible care", "Contributing components": "Blueprint PCMH; CCBHC; HEROI; CIN", "2028 target": "90%+ BH follow-up; readmission <12%; access gap <6 pts"}, {"Act 167 goal": "Financial sustainability", "Contributing components": "RBP; global budgets; HCC gap closure; PMO", "2028 target": "No hospital in structural operating loss; deficit trajectory reversed"}, {"Act 167 goal": "Affordability", "Contributing components": "RBP methodology; global budgets", "2028 target": "Premium growth <5%/yr; TCOC growth below CPI+1%"}, {"Act 167 goal": "Robust workforce", "Contributing components": "RHT workforce investments; AI-scribe grants", "2028 target": "Primary-care FTE gap <200 (from 370); travel-nurse cost <5% of labor"}, {"Act 167 goal": "Health equity", "Contributing components": "HEROI; HRSN screening; social-risk adjustment; SDOH data", "2028 target": "BIPOC access >87%; NEK uninsurance <5%; gaps documented and targeted"}]
+transformation-portfolio-management | tpm-business-case | The Business Case for a Portfolio Office
+    At under 1% a year of the $195 million first-year Rural Health Transformation Program award alone, before counting any savings from reference-based pricing, the office is a small fraction of the investment it protects.
+transformation-portfolio-management | tpm-business-case | The Business Case for a Portfolio Office
+    [{"Investment": "Portfolio Manager (PfMP, senior)", "Annual cost": "$180K-$220K", "Total (4-5 yr)": "~$0.9M-$1.1M", "Benefit": "R-10 avoided; single accountability for Jan 2028"}, {"Investment": "Two PMO analysts", "Annual cost": "$120K-$160K", "Total (4-5 yr)": "~$0.48M-$0.64M", "Benefit": "Master schedule; risk register; dashboard"}, {"Investment": "Portfolio-management software", "Annual cost": "$50K-$100K", "Total (4-5 yr)": "~$0.25M-$0.5M", "Benefit": "Visibility; resource optimization; Act 68 audit trail"}, {"Investment": "Five pillar program managers (shared)", "Annual cost": "$500K-$850K", "Total (4-5 yr)": "~$2.5M-$4.2M", "Benefit": "Pillar delivery accountability; critical-path management"}, {"Investment": "Total", "Annual cost": "~$850K-$1.3M", "Total (4-5 yr)": "~$4M-$6.4M", "Benefit": "Under 1% a year of the $195M first-year RHT award"}]
+transformation-portfolio-management | tpm-business-case | The Business Case for a Portfolio Office
+    The book notes in answering the third objection that Rural Health Transformation Program funds are contingent on demonstrated progress, so a portfolio that misses its components risks clawback.
+transformation-portfolio-management | tpm-business-case | The Business Case for a Portfolio Office
+    That is under 1% a year of the $195M first-year Rural Health Transformation Program award it coordinates, before counting pricing savings.
+transformation-portfolio-management | tpm-business-case | The Business Case for a Portfolio Office
+    [4] Centers for Medicare & Medicaid Services, CMS Launches Landmark $50 Billion Rural Health Transformation Program (press release, September 15, 2025) — https://www.cms.gov/newsroom/press-releases/cms-launches-landmark-50-billion-rural-health-transformation-program — the federal program whose award the office coordinates
+transformation-portfolio-management | tpm-objections-and-oversight | Answering the Objections, and the Question Oversight Should Ask
+    The Rural Health Transformation Program is a federal grant with deliverables and reporting obligations; the withdrawn AHEAD agreement still carries federal closeout requirements; Act 68 has a statutory deliverable in January 2028.
+transformation-portfolio-management | tpm-objections-and-oversight | Answering the Objections, and the Question Oversight Should Ask
+    Lesson 13 gave the full answer: Rural Health Transformation Program funds depend on demonstrated progress, the office costs a small fraction of the value it protects, and the alternative is a partial transformation that costs far more.
+transformation-portfolio-management | tpm-objections-and-oversight | Answering the Objections, and the Question Oversight Should Ask
+    [{"Objection": "We already manage this (HCAC, monthly reports)", "Short answer": "The HCAC is a governance body; it needs a portfolio office to supply schedule, risk, resource and earned-value data"}, {"Objection": "Government doesn't run projects like the private sector", "Short answer": "A time-bounded, financed portfolio with binding deadlines and federal obligations needs professional delivery"}, {"Objection": "We can't afford it", "Short answer": "RHT funds depend on progress; the office is a small fraction of the value it protects"}, {"Objection": "Hospitals won't accept being managed by AHS", "Short answer": "The Portfolio Manager manages AHS's contribution, not the hospitals"}, {"Objection": "We already have consultants", "Short answer": "Contractors add capacity, not authority, and each contract is another component to sequence"}]
+transformation-portfolio-management | tpm-capstone | Capstone: Build and Run Your Own Transformation Portfolio
+    If you are using Vermont's portfolio with the Fall 2026 scores, you should find twelve components on track, the RHT Program deployment running ahead of its gate, three components late by dependency order, and the four Technology components as the pressure points.
