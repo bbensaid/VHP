@@ -1,0 +1,15 @@
+{
+ "tag": "fp-workforce",
+ "note": "Align with book (Ch11 Fig, App A): RHT application citing Vermont Medical Society — 112 FM, 190 IM, 52 OB/GYN, 2 peds within 370 FTE",
+ "pairs": [
+  [
+   "The state projects a shortfall of 370 primary care FTEs by 2030 — 112 in family medicine and 190 in other primary care specialties.",
+   "The state projects a shortfall of 370 primary care FTEs by 2030 — including 112 in family medicine, 190 in internal medicine and 52 in OB/GYN."
+  ],
+  [
+   "Projected Vermont primary care shortfall by 2030 — 112 family medicine, 190 other primary care",
+   "Projected Vermont primary care shortfall by 2030 — including 112 family medicine, 190 internal medicine, 52 OB/GYN"
+  ]
+ ],
+ "residue": "190 (in )?other primary care"
+}
