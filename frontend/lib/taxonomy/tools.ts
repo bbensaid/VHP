@@ -400,6 +400,15 @@ export const TOOLS: readonly Tool[] = [
     desc: "Model cross-pillar impact of payment reform, care delivery change, technology adoption, workforce strategy, equity interventions, and policy shifts.",
   },
   {
+    id: "single-payer-modeler",
+    label: "Single-Payer Modeler",
+    href: "/policy/medicare-for-all/modeler",
+    pillars: ["policy", "economics"],
+    // Ch 2 links the Act 48 single-payer case; Ch 14 links the Medicare for All test.
+    chapters: ["2", "14"],
+    desc: "Model a single payer for each of Vermont's 14 hospitals: one rate for every patient, or S.1506's cost-based global budgets, on GMCB FY2027 budgets with CBO's national ranges.",
+  },
+  {
     id: "the-wire",
     label: "The Wire",
     href: "/the-wire",

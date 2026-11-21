@@ -22,6 +22,20 @@ Academy course and in the book must trace to a file here. Extracted facts with p
 
 | vt_greenmountaincare_org_home.html / _full.txt | greenmountaincare.org (302 → dvha.vermont.gov/members), 2026-11-21 | https://www.greenmountaincare.org/ |
 
+## Phase 4: Single-Payer Modeler inputs (2026-11-21)
+
+| File | What it is | URL |
+|---|---|---|
+| cms_cost_report_2023_vt.json, cms_cost_report_2024_vt.json | CMS Hospital Provider Cost Report, Vermont rows (API filter State Code=VT). The Modeler uses "Cost of Uncompensated Care", 2024 release. The "Net Revenue from Medicaid" field was judged unreliable (e.g. NMC $12.1M → $2.9M year to year) and is NOT used | https://data.cms.gov/provider-compliance/cost-reports/hospital-provider-cost-report |
+| rand_vt_2024-08.pdf/.txt | RAND Hospital Price Transparency Project, Vermont findings for the GMCB (Aug 2024): overall 283%, systems 148–321% (the older GMCB URL for this deck now 404s) | https://gmcboard.vermont.gov/sites/gmcb/files/documents/RAND%20hospital_August-2024-VT.pdf |
+| sutter_gmcb_hosp_budget_overview_2026-01-16.pdf/.txt | GMCB hospital budget overview to House Health Care, Jan 16, 2026 (checked for payer mix: none) | legislature.vermont.gov …/House Health Care/Orientation/W~Matthew Sutter~GMCB Testimony Slides - Hospital Budget Overview~1-16-2026.pdf |
+| ../gmcb_fy27_staff_overview_2026-08.txt | GMCB FY27 Staff Overview: p.27 submitted expense, p.31 operating margin, p.77 commercial price 453% | https://gmcboard.vermont.gov/sites/gmcb/files/documents/FY27%20-%20AUG%20-%20Staff%20Overview%20(Final).pdf |
+| ../gmcb_rbp_report_2024-12-16.txt | GMCB RBP Data Analysis report (VSEA/VEHI 289%; Oliver Wyman "200% of Medicare or less for PPS") | https://gmcboard.vermont.gov/sites/gmcb/files/documents/GMCB_RBP_Report_Draft_12_16_24_PDFA.pdf |
+
+Per-hospital commercial prices and payer mix were NOT obtainable as data; the Modeler applies one statewide price and
+treats non-commercial revenue as Medicare-rate (stated on screen). Inputs are asserted against these files by
+frontend/scripts/test-m4a-modeler.cjs (npm run test:m4a).
+
 ## Federal law
 
 | File | What it is | URL |

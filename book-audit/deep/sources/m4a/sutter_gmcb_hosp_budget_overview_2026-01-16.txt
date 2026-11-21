@@ -1,0 +1,331 @@
+=== page 1 ===
+1 
+Hospital Budget 
+Overview 
+January 16, 2026 
+Matthew Sutter, Director of Health Systems Finances 
+Green Mountain Care Board 
+=== page 2 ===
+2 
+Agenda 
+• Background 
+• A (very) short history of hospital regulation in 
+Vermont 
+• Budget review process 
+• Overview 
+• Benchmarks 
+• Review of last year’s decisions 
+• Next steps… 
+• Reference-based pricing 
+=== page 3 ===
+3 
+Why regulate hospital budgets? 
+Hospital spending is a major driver of health care spending 
+0% 
+5% 
+10% 
+15% 
+20% 
+25% 
+30% 
+35% 
+40% 
+45% 
+50% 
+Hospital Phsyician & 
+Clinical 
+Prescription 
+Drugs & Non-
+Durables 
+Other Health 
+Residential & PC 
+Nursing & 
+Continuing Care 
+Dental Other 
+Professional 
+Services 
+Home Health Durables 
+Sector Contributions & Trends, 2018-2022 
+VHCURES-Based Estimates for Vermont Residents 
+2018 
+2022 
+=== page 4 ===
+4 
+Hospital budget regulation in Vermont 
+Title 18 
+Established the 
+hospital budget 
+review process 
+to slow the rising 
+costs of health care 
+and ensure hospital 
+budgets were 
+reasonable and fair. 
+1983 
+Act 48 
+Gave Vermont new 
+tools to apply to the 
+hospital budget 
+review process 
+designed to manage 
+costs, including the 
+creation of the Green 
+Mountain Care Board. 
+2011 
+Act 171 
+Assigned the Green 
+Mountain Care Board 
+responsibility for 
+hospital budget 
+oversight. 
+2012 
+Act 68 
+Tasked the Green 
+Mountain Care Board 
+with achieving 
+payment reform 
+through the 
+implementation of 
+reference-based 
+pricing 
+2025 
+=== page 5 ===
+5 
+Budget review: Overview 
+• The Board is tasked with establishing hospital budgets that 
+meet the state’s statutory objectives 
+• These objectives tie back to increasing access, improving 
+quality, and containing costs. 
+• Each year the Board establishes benchmarks for hospital use 
+in developing and preparing budgets, and to guide the board 
+in its decision making 
+• Each hospital bears the burden of persuading the Board that 
+its proposed budget aligns with the state’s statutory 
+objectives. 
+• The Board also votes on standard budget conditions that 
+apply to all hospitals. These conditions are incorporated into 
+the budget orders 
+
+=== page 6 ===
+6 
+Budget review: Benchmarks 
+1. Net Patient 
+Revenue growth % 
+2. Commercial 
+reimbursement 
+rate increase 
+3. Operating expense 
+growth % 
+Example P&L 
+Current year 
+approved budget 
+Submitted 
+budget % Change 
+Gross revenue $100,000 $110,000 10.0% 
+Deductions -$50,000 -$55,000 10.0% 
+Net patient revenue (NPR) $50,000 $55,000 10.0% 
+Fixed prospective payments (FPP) $20,000 $18,000 -10.0% 
+NPR + FPP $70,000 $73,000 4.3% 
+Other operating revenue $40,000 $41,000 2.5% 
+Total operating revenue $110,000 $114,000 3.6% 
+Total operating expenses $105,000 $110,000 4.8% 
+Operating income $5,000 $4,000 
+Operating margin 4.5% 3.5% 
+Importantly, hospital budget guidance established the same benchmarks for all hospitals. 
+=== page 7 ===
+7 
+What have 
+we targeted 
+through a 
+revenue 
+benchmark? 
+What is the 
+goal? 
+Tethering the allowed revenue 
+growth to Vermont’s All-Payer Model 
+targets would, in theory, produce
+budgets that met the state objective 
+of containing costs in our system. 
+But what has happened is… 
+=== page 8 ===
+8 
+Hospital NPR+FPP vs. 
+4.2% growth target 
+$3,832,882,154 
+$2,445,815,519 
+$3,541,874,486 
+ $-
+ $500,000,000
+ $1,000,000,000
+ $1,500,000,000
+ $2,000,000,000
+ $2,500,000,000
+ $3,000,000,000
+ $3,500,000,000
+ $4,000,000,000
+ $4,500,000,000 
+2017A 2018A 2019A 2020A 2021A 2022A 2023A 2024A 2025P 2026S 
+Starting in 2017, if we trend 
+forward NPR+FPP using a 4.2% 
+target from the All-Payer Model, 
+the expected system-wide NPR 
+would be $3.54B in FY26 
+Total NPR+FPP in the FY26 budget 
+submissions was $3.83B, a $291M 
+difference. 
+Note: 2025P reflects projections submitted to the GMCB in July 2025; 2026S reflects hospitals proposed FY26 budgets 
+=== page 9 ===
+9 
+Hospital NPR+FPP vs. 
+4.2% growth target 
+If we split it out by hospital type, 
+the difference is more apparent at 
+the academic medical center 
+compared to mid-size or critical 
+access hospitals. 
+Note: 2025P reflects projections submitted to the GMCB in July 2025; 2026S reflects hospitals proposed FY26 budgets 
+$1,986,591,292 
+$743,585,705 
+$1,753,865,476 
+$678,437,026 
+ $-
+ $500,000,000
+ $1,000,000,000
+ $1,500,000,000
+ $2,000,000,000
+ $2,500,000,000 
+2017A 2018A 2019A 2020A 2021A 2022A 2023A 2024A 2025P 2026S 
+
+=== page 10 ===
+10 
+Hospital NPR+FPP vs. 
+4.2% growth target 
+$684,469,312 
+$72,933,762 
+$(60,164,838)
+ $(400,000,000)
+ $(200,000,000)
+ $-
+ $200,000,000
+ $400,000,000
+ $600,000,000
+ $800,000,000
+ 2017  2018  2019  2020  2021  2022  2023  2024  2025  2026 
+Academic Medical Center 
+Critical Access Hospitals 
+Mid-size Community 
+Hospitals 
+• Cumulative NPR over/(under) 
+the 4.2% APM target through 
+FY26 proposed budgets 
+• Academic Medical Center: 
+$684M 
+• Mid-size Community 
+Hospitals: (-$60M) 
+• Critical Access Hospitals: 
+$72M 
+Note: 2025P reflects projections submitted to the GMCB in July 2025; 2026S reflects hospitals proposed FY26 budgets 
+=== page 11 ===
+11 
+FY2026 Hospital Budgets 
+Hospital Benchmark 
+Hospital 
+Proposed Approved 
+Approved vs. 
+Submitted % 
+Brattleboro Memorial Hospital 3.0% 3.0% 2.4% -0.6% 
+Central Vermont Medical Center 3.0% 3.0% 2.9% -0.1% 
+Copley Hospital 3.0% 4.2% 3.0% -1.2% 
+Gifford Medical Center 3.0% 3.0% 3.0% 0.0% 
+Grace Cottage Hospital 3.0% 0.0% 0.0% 0.0% 
+Mt. Ascutney Hospital & Health Ctr 3.0% 3.0% 3.0% 0.0% 
+North Country Hospital 3.0% 0.5% 0.5% 0.0% 
+Northeastern VT Regional Hospital 3.0% 3.0% 3.0% 0.0% 
+Northwestern Medical Center 3.0% 2.6% 2.6% 0.0% 
+Porter Medical Center 3.0% 3.0% 2.9% -0.1% 
+Rutland Regional Medical Center 3.0% 1.5% 1.5% 0.0% 
+Southwestern VT Medical Center 3.0% 5.2% 3.0% -2.2% 
+Springfield Hospital 3.0% 3.0% 3.0% 0.0% 
+The University of Vermont Medical Center 3.0% 2.4% -6.4% -8.9% 
+Total VT Community Hospitals 3.0% 2.6% -2.0% -4.7% 
+Commercial Rate 
+Increases 
+=== page 12 ===
+12 
+Legislative and regulatory actions taken in 2025 
+removed approximately $231M from the system 
+How has Vermont slowed hospital revenue 
+growth? 
+
+=== page 13 ===
+13 
+FY2026 Hospital Budgets 
+Hospital 
+FY26 Budgets 
+DCOH Operating 
+Income 
+Operating 
+Margin 
+Reduced NPR from 
+submitted 
+BMH* 72 -$14.5M -12.5% -$1.9M 
+CVMC 80 751K 0.2% -$0.1M 
+Copley 65 2.8M 2.2% -$0.7M 
+Gifford 90 156M 2.3% 
+Grace 81 255K 0.8% 
+Mt. Ascutney 187 591K 0.7% 
+North Country 189 754K 0.7% 
+NVRH 82 1.11M 0.8% 
+Northwestern** 203 -5.08M -3.5% 
+Porter 112 10.1M 7.2% -$0.03M 
+Rutland 154 -4.97M -1.4% 
+SVMC 45 -4.33M -1.9% -$3.3M 
+Springfield 33 25K 0.0% 
+UVMMC 127 23.6M 1.0% -$88.5M 
+*   BMH figures reflect resubmission as of 12/1. 
+** Northwestern figures reflect a midyear adjustment from 12/17. 
+NMC’s original budget had ~$8M operating losses and 199 DCOH. 
+DCOH 
+S&P Global Ratings 
+Highly Vulnerable <80 
+Vulnerable 80-110 
+Adequate 110-160 
+Strong 160-205 
+Very Strong 205-275 
+Extremely Strong >275 
+Source: FY26 HBR Metric Inventory 
+=== page 14 ===
+14 
+Next steps? 
+The Vermont legislature passed Act 68 
+(2025) directing the GMCB to implement 
+hospital reference-based pricing (RBP) 
+through its provider rate setting 
+authority, as soon as practicable, but not 
+later than hospital FY27. Act 68 (2025): An act 
+relating to health care 
+payment and delivery 
+system reform 
+=== page 15 ===
+15 
+Reference-based pricing 
+• A transition year to rate-setting. 
+• No longer having the same benchmarks for all 
+hospitals. The benchmark for price 
+growth/reduction to factor in existing prices. 
+FY2028 
+and on… 
+• Implementing RBP through provider rate-setting 
+FY2027 
+=== page 16 ===
+16 
+Accessibility 
+Requests 
+To receive this information in an 
+alternative format or for other 
+accessibility requests, please contact: 
+Kristen LaJeunesse 
+Communication & Information Officer 
+Green Mountain Care Board 
+Kristen.LaJeunesse@vermont.gov 
+(802) 622-4134 

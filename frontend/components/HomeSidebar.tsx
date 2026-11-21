@@ -115,7 +115,7 @@ const PILLAR_CONFIG: Record<FrameworkId, PillarSidebarConfig> = {
       { href: "/policy/feasibility", label: "Policy Feasibility Studies" },
       { href: "/policy/medicare-for-all", label: "Medicare for All" },
     ],
-    labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "policy-impact-assessment", "innovation-leaderboard"],
+    labToolIds: ["policy-simulator", "medicaid-wr-calculator", "hr1-cliff", "policy-impact-assessment", "single-payer-modeler", "innovation-leaderboard"],
   },
   economics: {
     intelligenceItems: [
