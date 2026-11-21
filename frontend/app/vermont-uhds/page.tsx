@@ -316,8 +316,8 @@ export default function VermontUHDSPage() {
           </Link>{" "}
           as a parallel funding stream. That understates the coupling: RHT pays for a portfolio of
           care-redesign shared services, and the UHDS is the substrate nearly every one of them
-          runs on. Year 1 (FFY2026) award: <strong>$195,053,740</strong>; later years&apos; awards are
-          set annually through FY2030.
+          runs on. Year 1 (FFY2026) award: <strong>$195,053,740</strong>; Year 2 (FFY2027): <strong>$189,996,036</strong>{" "}
+          (CMS, Nov 9, 2026). Awards are set annually through FY2030; see the <Link href="/rht-review/vermont" className="underline">Year 1 review</Link>.
         </p>
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-xs border border-slate-200 rounded-xl overflow-hidden">

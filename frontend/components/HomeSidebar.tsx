@@ -206,6 +206,8 @@ const PROGRAM_ICON: Record<string, React.ComponentType<{ className?: string }>> 
   "vermont-act-68-simulator":    TableCellsIcon,
   "ahead-model":                 DocumentTextIcon,
   "vermont-rht-program":         DocumentTextIcon,
+  "rht-review-vermont":          TableCellsIcon,
+  "rht-review":                  TableCellsIcon,
   "vermont-hospital-profiles":   TableCellsIcon,
   "bed-capacity":                TableCellsIcon,
   "vermont-legislative-resources": BookOpenIcon,

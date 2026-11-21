@@ -1,3 +1,4 @@
+import { RHT_STATES } from "@/lib/rht-review";
 import { MetadataRoute } from "next";
 import { headers } from "next/headers";
 import { resolveBrand } from "@/lib/brand";
@@ -115,6 +116,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   { path: "/vermont-legislative-resources",   priority: 0.7, changeFrequency: "monthly" },
   { path: "/vermont-medicaid",                priority: 0.7, changeFrequency: "monthly" },
   { path: "/vermont-rht-program",             priority: 0.7, changeFrequency: "monthly" },
+  { path: "/rht-review",                      priority: 0.8, changeFrequency: "monthly" },
   { path: "/vermont-sash",                    priority: 0.7, changeFrequency: "monthly" },
   { path: "/vermont-sdoh",                    priority: 0.7, changeFrequency: "monthly" },
   { path: "/vermont-uhds",                    priority: 0.7, changeFrequency: "monthly" },
@@ -157,6 +159,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const brand = resolveBrand(host);
 
   const dynamicRoutes: typeof staticRoutes = [
+    ...RHT_STATES.map((s) => ({ path: `/rht-review/${s.slug}`, priority: s.slug === "vermont" ? 0.8 : 0.6, changeFrequency: "monthly" as const })),
     ...BRIEFINGS.map((b) => ({ path: `/briefings/${b.slug}`, priority: 0.8, changeFrequency: "monthly" as const })),
     ...getAllTracks().map((t) => ({ path: `/read/${t.slug}`, priority: 0.7, changeFrequency: "monthly" as const })),
     ...(await publishedCourseSlugs()).map((slug) => ({ path: `/academy/tracks/${slug}`, priority: 0.7, changeFrequency: "weekly" as const })),

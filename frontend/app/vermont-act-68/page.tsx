@@ -319,7 +319,7 @@ export default function VermontAct68Page() {
                 including work requirements and six-month eligibility redeterminations (both from January 1, 2027), and caps on state provider
                 taxes. Vermont's hospitals, already financially fragile, absorb these Medicaid revenue reductions
                 at the same time they are executing Act 68 transformation plans. Vermont's Rural Health
-                Transformation Program award ($195M for FY2026; later years' awards are set annually through FY2030) partially offsets this pressure, but the RHT Program is
+                Transformation Program awards ($195M for FY2026 and $190M for FY2027; awards continue annually through FY2030) partially offset this pressure, but the RHT Program is
                 time-limited (FY2026–2030) while Medicaid cuts are permanent and back-loaded after 2030.
               </p>
             </div>
@@ -333,7 +333,7 @@ export default function VermontAct68Page() {
                 "Vermont Medicaid covers ~19% of insured population — Medicaid revenue cuts affect every Vermont hospital's financial position",
                 "Work requirements beginning January 1, 2027 may reduce Medicaid enrollment, shrinking the insured base global budgets are designed to manage",
                 "Six-month eligibility redeterminations (from January 1, 2027) increase DVHA administrative burden during the same period AHS is restructuring",
-                "Vermont's RHT Program ($195M for FY2026; awards set annually through FY2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
+                "Vermont's RHT Program ($195M for FY2026, $190M for FY2027; awards set annually through FY2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="text-rose-500 shrink-0 mt-0.5">•</span>
@@ -451,7 +451,7 @@ export default function VermontAct68Page() {
             },
             {
               term: "Rural Health Transformation (RHT) Program",
-              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont's FY2026 award was $195,053,740 (CMS, December 29, 2025); later years' awards are set annually through FY2030. Vermont's plan funds transformation projects — data analytics, e-Consult, remote monitoring, regionalization grants — not operating revenue replacement.",
+              def: "The $50B federal program (FY2026–FY2030) included in H.R. 1 to offset the impact of its Medicaid cuts on rural hospitals. Vermont's FY2026 award was $195,053,740 (CMS, December 29, 2025) and its FY2027 award $189,996,036 (CMS, November 9, 2026); awards are set annually through FY2030. Vermont's plan funds transformation projects — data analytics, e-Consult, remote monitoring, regionalization grants — not operating revenue replacement.",
             },
             {
               term: "Reform Cascade",

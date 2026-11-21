@@ -36,7 +36,7 @@ const HR1_PROVISIONS: Provision[] = [
     status: "enacted",
     impact: "Opportunity",
     impactColor: "text-emerald-700 bg-emerald-100 border-emerald-200",
-    desc: "$10B a year to all 50 states, FY2026–FY2030 — half split equally, half scored by CMS. Vermont: $195M for FY2026 (December 2025), later years set annually. Vermont's plan funds telehealth and e-Consult, AI scribes, remote monitoring and a clinically integrated network — not broadband.",
+    desc: "$10B a year to all 50 states, FY2026–FY2030 — half split equally, half scored by CMS. Vermont: $195M for FY2026 (December 2025) and $190M for FY2027 (November 2026). Vermont's plan funds telehealth and e-Consult, AI scribes, remote monitoring and a clinically integrated network — not broadband.",
     date: "July 4, 2025",
     tools: [{ label: "Vermont RHT Program", href: "/vermont-rht-program" }],
   },
@@ -78,7 +78,7 @@ const HR1_PROVISIONS: Provision[] = [
 const HR1_STATS = [
   { label: "$911B", sub: "10-year Medicaid cuts" },
   { label: "$50B", sub: "Rural Health Transformation Program" },
-  { label: "$195M", sub: "Vermont RHT award per year (FY2026)" },
+  { label: "$385M", sub: "Vermont RHT awards, FY2026 + FY2027" },
   { label: "Post-2030", sub: "Medicaid cliff inflection point" },
 ];
 

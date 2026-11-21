@@ -167,7 +167,7 @@ function RegulationBody() {
         <p className="text-slate-500 text-sm mb-6">Dated deadlines already set in law or rule</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { quarter: "Late 2026", color: "bg-white border-blue-200", items: ["Rural Health Transformation Program FY2027 awards (CMS)", "ACO REACH ends December 31, 2026", "IRA round-two negotiated prices (15 drugs) take effect January 1, 2027"] },
+            { quarter: "Late 2026", color: "bg-white border-blue-200", items: ["Rural Health Transformation Program FY2027 awards (CMS, announced Nov 9, 2026)", "ACO REACH ends December 31, 2026", "IRA round-two negotiated prices (15 drugs) take effect January 1, 2027"] },
             { quarter: "2027", color: "bg-white border-amber-200", items: ["Medicaid work requirements due from January 1, 2027 (states may seek extensions)", "LEAD Model replaces ACO REACH from January 2027", "Payer prior-authorization FHIR APIs due January 2027 (CMS-0057-F)"] },
             { quarter: "End of 2027", color: "bg-white border-emerald-200", items: ["Medicare telehealth flexibilities expire December 31, 2027 unless extended", "Vermont: reference-pricing maximum rates and first hospital global budgets in FY2028", "Enhanced premium tax credits: no extension enacted as of October 2026"] },
           ].map((q) => (

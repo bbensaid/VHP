@@ -135,8 +135,8 @@ GOLDEN_DATASET = [
             "Vermont's transformation. It is not a single issue but a cluster of interconnected "
             "problems cascading across the system. Vermont's unemployment rate was 2.5% in August "
             "2025, below the 4.3% national rate — an extremely tight labor market that limits "
-            "healthcare recruitment. The RHT Program invests roughly $195 million a year in workforce, "
-            "including tuition assistance, recruitment incentives with five-year service obligations, "
+            "healthcare recruitment. The RHT Program (a $195 million first-year award) funds workforce "
+            "investments, including tuition assistance, recruitment incentives with five-year service obligations, "
             "and scope-of-practice expansion for nurses and APRNs. That is the supply-side response; "
             "workforce redistribution planning is the demand-side response."
         ),

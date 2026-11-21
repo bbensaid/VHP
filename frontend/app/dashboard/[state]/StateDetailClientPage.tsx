@@ -10,6 +10,7 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { ArrowLeftIcon, ChartBarIcon, ListBulletIcon, BuildingLibraryIcon, ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { CMS_HOSPITAL_SOURCE, type CmsHospital } from "@/lib/cms-hospitals";
 import { INDICATORS, INDICATOR_SOURCES, STATE_INDICATORS, rankOf } from "@/lib/data/state-indicators";
+import { RHT_STATES } from "@/lib/rht-review";
 
 const RHT_ABSTRACTS_URL = "https://www.cms.gov/files/document/rht-program-state-provided-abstracts.pdf";
 const PILLAR_LABEL: Record<string, string> = {
@@ -23,11 +24,12 @@ interface ClientPageProps {
   hospitals: CmsHospital[];
 }
 
-function StateDetailClientPageInner({ code, rht, hospitals }: ClientPageProps) {
+function StateDetailClientPageInner({ code, stateSlug, rht, hospitals }: ClientPageProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const s = STATE_INDICATORS[code];
+  const rhtReview = RHT_STATES.find((x) => x.slug === stateSlug);
   const [activeTab, setActiveTab] = useState(searchParams.get("tab") || "indicators");
 
   useEffect(() => {
@@ -68,6 +70,8 @@ function StateDetailClientPageInner({ code, rht, hospitals }: ClientPageProps) {
         <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 tracking-tight mb-3">{s.name}</h1>
         <div className="flex flex-wrap gap-2 text-xs font-bold">
           <span className="bg-indigo-50 text-indigo-700 border border-indigo-100 rounded-full px-3 py-1">RHT FY2026 award: ${(s.rhtAwardFY26 / 1e6).toFixed(1)}M</span>
+          {rhtReview && <span className="bg-indigo-50 text-indigo-700 border border-indigo-100 rounded-full px-3 py-1">RHT FY2027 award: ${(rhtReview.fy2027 / 1e6).toFixed(1)}M</span>}
+          {rhtReview && <Link href={`/rht-review/${rhtReview.slug}`} className="bg-teal-50 text-teal-700 border border-teal-200 rounded-full px-3 py-1 hover:bg-teal-100">RHT Program review →</Link>}
           <span className="bg-slate-50 text-slate-700 border border-slate-200 rounded-full px-3 py-1">Medicaid expansion: {s.medicaidExpansion ? "adopted" : "not adopted"} (KFF)</span>
           {s.ahead && <span className="bg-slate-50 text-slate-700 border border-slate-200 rounded-full px-3 py-1">AHEAD Model: {s.ahead}</span>}
         </div>

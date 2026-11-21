@@ -267,7 +267,8 @@ export const CHAPTERS: readonly Chapter[] = [
     pillar: null,
     platformLinks: [
       { label: "Vermont Act 68 (2025)", href: "/vermont-act-68" },
-      { label: "Vermont RHT Program ($195M)", href: "/vermont-rht-program" },
+      { label: "Vermont RHT Program ($195M + $190M)", href: "/vermont-rht-program" },
+      { label: "RHT Year 1 Review", href: "/rht-review/vermont" },
       { label: "AHEAD Model", href: "/ahead-model" },
       { label: "Vermont Designated Agencies", href: "/vermont-designated-agencies" },
     ],

@@ -4,7 +4,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 export const metadata = {
   title: "Vermont Rural Health Transformation Program | HTR",
   description:
-    "Vermont's $195M FY2026 Rural Health Transformation Program award — the federal capital investment enabling Vermont's Act 68 transformation agenda. Investment categories, strategic rationale, the post-2030 Medicaid cliff, and how RHT funds are being deployed across Vermont's 14-hospital network.",
+    "Vermont's Rural Health Transformation Program awards — $195M for FY2026 and $190M for FY2027 — the federal capital investment enabling Vermont's Act 68 transformation agenda. Investment categories, strategic rationale, the post-2030 Medicaid cliff, and how RHT funds are being deployed across Vermont's 14-hospital network.",
 };
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -100,18 +100,18 @@ export default function VermontRHTProgramPage() {
           Vermont Rural Health Transformation Program
         </h1>
         <p className="ty-hero text-slate-600 leading-relaxed max-w-3xl mb-6">
-          Vermont's $195 million FY2026 award from the federal Rural Health Transformation Program (H.R. 1, 2025),
-          with later years' awards set annually through FY2030 —
+          Vermont's awards from the federal Rural Health Transformation Program (H.R. 1, 2025): $195 million for FY2026
+          and $190 million for FY2027, with awards continuing annually through FY2030 —
           the capital investment funding Vermont's Act 68 transformation infrastructure.
           A five-year fund ($10B a year nationally, FY2026–FY2030, arriving before most of the H.R. 1 cuts) for technology, clinical care redesign,
           EMS, and shared services across Vermont's 14-hospital network.
         </p>
         <div className="flex flex-wrap gap-3">
-          <ExternalLink href="https://www.hrsa.gov/rural-health/rht">
-            HRSA RHT Program Overview
+          <ExternalLink href="https://www.medicaid.gov/resources-for-states/rural-health">
+            CMS RHT Program
           </ExternalLink>
-          <ExternalLink href="https://humanservices.vermont.gov">
-            Vermont AHS (Program Administrator)
+          <ExternalLink href="https://healthcarereform.vermont.gov/hr1rural-health-transformation-fund">
+            Vermont AHS RHT Program page
           </ExternalLink>
           <Link
             href="/vermont-act-68"
@@ -122,18 +122,31 @@ export default function VermontRHTProgramPage() {
         </div>
       </div>
 
+      {/* ── YEAR 1 REVIEW ─────────────────────────────────────────────────── */}
+      <Link
+        href="/rht-review/vermont"
+        className="block bg-amber-50 border border-amber-200 rounded-xl p-5 mb-12 hover:border-amber-400 transition-colors"
+      >
+        <span className="text-[10px] font-black uppercase tracking-widest text-amber-700">New · Year 1 review</span>
+        <p className="text-sm font-bold text-slate-900 mt-1">
+          What did Vermont do with its first $195 million? 242 signed agreements, where the money moved from the January plan,
+          what had been spent by July, and why Year 2 is $5.1 million smaller →
+        </p>
+      </Link>
+
       {/* ── KEY NUMBERS ───────────────────────────────────────────────────── */}
       <section className="mb-16">
         <SectionHeader label="The Award" title="Vermont's RHT Program at a Glance" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <StatBox value="$195M" label="Vermont FY2026 Award" sub="Announced Dec 29, 2025 · later years set annually" />
+          <StatBox value="$195M" label="Vermont FY2026 Award" sub="Announced Dec 29, 2025" />
+          <StatBox value="$190M" label="Vermont FY2027 Award" sub="Announced Nov 9, 2026 · −$5.1M" />
           <StatBox value="$50B" label="National Program" sub="$10B/year FY2026–FY2030" />
-          <StatBox value="47" label="States Funded" sub="All state applicants received awards" />
+          <StatBox value="50" label="States Funded" sub="Every state received an award" />
           <StatBox value="5 yrs" label="Program Duration" sub="Front-loaded ahead of the cuts; ends FY2030" />
           <StatBox value="15%" label="Provider Payment Cap" sub="Max % of funds to providers" />
           <StatBox value="$911B" label="Medicaid Cuts (H.R. 1)" sub="10-year CBO estimate — the backdrop" />
-          <StatBox value="FY2030" label="RHT Expiration" sub="Medicaid cuts backload after this" />
-          <StatBox value="14" label="Vermont Hospitals" sub="All non-profit; all benefit" />
+          <StatBox value="Sep 30, 2032" label="Last Spending Date" sub="Unspent funds return to the Treasury" />
+          <StatBox value="14" label="Vermont Hospitals" sub="All non-profit" />
         </div>
       </section>
 
@@ -151,7 +164,7 @@ export default function VermontRHTProgramPage() {
           new care delivery activities, and structural transformation — not backfilling provider losses
           from the Medicaid cuts that H.R. 1 simultaneously imposes. Georgetown University's Center
           for Children and Families documented that provider payments are capped at 15% of each
-          state's award. Vermont's award — $195M for FY2026 — invested wisely in structural efficiency, positions
+          state's award. Vermont's awards — $195M for FY2026 and $190M for FY2027 — invested wisely in structural efficiency, positions
           Vermont to absorb post-2030 Medicaid revenue reductions through lower structural costs.
           Invested in operating revenue replacement, it leaves Vermont facing the same Medicaid cliff
           without structural improvements.
@@ -200,26 +213,26 @@ export default function VermontRHTProgramPage() {
       <section className="mb-16">
         <SectionHeader label="Investment Strategy" title="How Vermont Is Deploying Its Award" />
         <p className="text-sm text-slate-600 leading-relaxed mb-6 max-w-3xl">
-          Vermont's RHT Program application is notable among the 47 state applications for its
-          specificity — structured around five investment categories directly linked to identified
-          gaps in Vermont's transformation infrastructure.
+          Vermont's plan is structured around five initiatives. The cards below describe what the plan proposed and,
+          where agreements have been signed, how much: totals are from the state's list of executed Year 1
+          agreements (October 30, 2026 update); the <Link href="/rht-review/vermont" className="underline text-teal-700">Year 1 review</Link> has every agreement.
         </p>
         <div className="space-y-4">
           <InvestmentCard
             icon="🖥️"
             category="AI Scribe & Clinical Documentation Technology"
-            amount="$1.03M first-year grants"
+            amount="$5.23M signed · 26 agreements"
             description="Grants to providers — aimed at smaller, rural, and independent practices that cannot afford what larger practices buy — to purchase AI scribe technology that transcribes clinician–patient conversations and drafts clinical notes and follow-up materials. The application's own claim is 'over two hours' of daily administrative work automated; the strongest published evidence is smaller (below)."
             outcomes={[
               "Measured effect: about 16 fewer documentation minutes per 8 scheduled patient hours (JAMA, 2026); a UCLA randomized trial found a 9.5% cut in time-in-note for one product (NEJM AI, 2025)",
               "Targets the access gap between independent practices and large systems that already license scribes",
-              "First-year line: $1,030,000 (JFO, Feb 2026); applications were due June 5, 2026, so effects are not yet measurable",
+              "Budgeted at $1,030,000 in January 2026; $5.23M signed across 26 agreements by October 30, 2026; no effects measured yet",
             ]}
           />
           <InvestmentCard
             icon="📡"
             category="Remote Patient Monitoring (RPM) Equipment"
-            amount="$0.9M first-year grants"
+            amount="$1.82M signed · 10 agreements"
             description="Grants for RPM equipment in home health, primary care/specialty, and community paramedicine settings. Vermont's aging population — with high CHF, COPD, and diabetes rates among the 65+ cohort — is precisely the population where RPM produces the largest clinical and financial benefit."
             outcomes={[
               "Prevents hospital admissions and readmissions for Vermont's highest-cost chronic disease populations",
@@ -231,7 +244,7 @@ export default function VermontRHTProgramPage() {
           <InvestmentCard
             icon="🌐"
             category="Telehealth & e-Consult Technology"
-            amount="Technology grants"
+            amount="$9.74M telehealth + $5.64M e-Consult signed"
             description="Grants to rural independent practices for secure telehealth platforms, connected diagnostic tools, and related infrastructure — the application states the funds will not be used for broadband — plus a statewide e-Consult platform giving primary care an interoperable route to specialists. Access still depends on connectivity: 80% of Vermonters outside Chittenden County have broadband vs. 85% inside it, and 9.9% of locations lack 100/20 Mbps service (Department of Public Service, 2025)."
             outcomes={[
               "Telehealth platforms, connected diagnostic tools, and technical assistance on selection, cybersecurity, and compliance for independent practices",
@@ -242,7 +255,7 @@ export default function VermontRHTProgramPage() {
           <InvestmentCard
             icon="🔗"
             category="Vermont Clinically Integrated Network (CIN) & Shared Services"
-            amount="Infrastructure + operations"
+            amount="$33.9M signed across shared services"
             description="Creation of a Clinically Integrated Network linking Vermont's 14 hospitals and community providers into a shared clinical and data infrastructure."
             outcomes={[
               "Shared analytics platform for transformation and regionalization planning across all 14 hospitals",
@@ -255,7 +268,7 @@ export default function VermontRHTProgramPage() {
           <InvestmentCard
             icon="🚑"
             category="EMS Transformation & Community Paramedicine"
-            amount="EMS grants"
+            amount="$5.24M signed · 7 agreements"
             description="Vermont licenses about 174 ambulance and first-response services across 13 EMS districts (EMS Advisory Committee, 2020) — fragmentation that complicates transfers (one provider told Oliver Wyman a single transfer can mean calling up to 31 of them) and drives unnecessary ED utilization. RHT funds EMS regionalization and community paramedicine programs that enable treat-and-refer capability, keeping patients out of ED for non-emergency conditions."
             outcomes={[
               "EMS regionalization reduces operational fragmentation across Vermont's EMS services and 13 districts",
@@ -267,7 +280,7 @@ export default function VermontRHTProgramPage() {
           <InvestmentCard
             icon="🧬"
             category="Shared EMR & Interoperability"
-            amount="Shared EMR + interoperability grants"
+            amount="$8.05M signed · 3 agreements"
             description="Two application lines carry interoperability: incentives for voluntary adoption of a shared EMR that complements and keeps contributing data to the Vermont Health Information Exchange (VHIE), and regionalization grants that may buy tools and technical assistance to connect different EMR systems. Neither line names FHIR or specific vendor platforms."
             outcomes={[
               "Shared EMR: seamless data exchange, better image and lab sharing, stronger cybersecurity, and advanced analytics (application text)",
@@ -287,7 +300,7 @@ export default function VermontRHTProgramPage() {
             KFF's analysis is explicit: the RHT Program is temporary and front-loaded — $10B a year
             nationally from FY2026 through FY2030, arriving before most of the cuts — while nearly
             two-thirds (64%) of the federal Medicaid reductions occur after FY2030. Vermont received
-            $195M for FY2026, with later awards set annually until FY2030; the Medicaid cuts accelerate after
+            $195M for FY2026 and $190M for FY2027, with awards set annually until FY2030; the Medicaid cuts accelerate after
             2030 with no offsetting capital fund. States that use RHT for structural transformation
             will be able to absorb post-2030 Medicaid revenue reductions. States that use RHT for
             revenue replacement will face the Medicaid cliff without structural improvement.
@@ -305,11 +318,11 @@ export default function VermontRHTProgramPage() {
             <tbody className="divide-y divide-slate-100">
               {[
                 ["FY2026", "Active — $10B/year nationally; Vermont: $195M (FY2026 award)", "Modest — work requirements and six-month redeterminations begin Jan 1, 2027"],
-                ["FY2027", "Active", "Accelerating — first full year of work requirements and six-month redeterminations"],
+                ["FY2027", "Active — Vermont: $190M (FY2027 award, Nov 9, 2026)", "Accelerating — first full year of work requirements and six-month redeterminations"],
                 ["FY2028", "Active", "Significant — provider tax caps, state-directed payment restrictions"],
                 ["FY2029", "Active", "Significant — full H.R. 1 provisions in effect"],
                 ["FY2030", "Final year — fund expires", "Significant — near full run rate of cuts"],
-                ["FY2031+", "No RHT funds — program expired", "Full $911B cut trajectory — back-loaded acceleration"],
+                ["FY2031+", "No new awards; funds must be spent by Sep 30, 2032", "Full $911B cut trajectory — back-loaded acceleration"],
               ].map(([period, rht, cuts]) => (
                 <tr key={period}>
                   <td className="py-3 pr-4 font-bold text-slate-700">{period}</td>
@@ -358,7 +371,8 @@ export default function VermontRHTProgramPage() {
             { href: "/vermont-act-167", label: "Vermont Act 167 (2022)", desc: "The enabling framework that initiated Vermont's reform cascade.", color: "border-violet-200 hover:border-violet-400" },
             { href: "/vermont-vcci", label: "Vermont VCCI", desc: "RHT investment directly funds VCCI care management infrastructure — the intensive case management program for Vermont's top 5% highest-cost Medicaid members.", color: "border-teal-200 hover:border-teal-400" },
             { href: "/vermont-blueprint", label: "Blueprint for Health", desc: "RHT capital funds Community Health Team expansion and Mental Health Integration — the Blueprint programs that receive VCCI medium-risk referrals.", color: "border-emerald-200 hover:border-emerald-400" },
-            { href: "/vermont-legislative-resources", label: "Legislative Reports Library", desc: "AHS Act 68 monthly transformation reports track RHT investment milestones and performance against transformation benchmarks.", color: "border-indigo-200 hover:border-indigo-400" },
+            { href: "/rht-review/vermont", label: "RHT Year 1 Review", desc: "Every Year 1 agreement, the January plan against what was signed, CMS's view of spending, and the Year 2 award.", color: "border-amber-200 hover:border-amber-400" },
+            { href: "/vermont-legislative-resources", label: "Legislative Reports Library", desc: "Vermont legislative and agency reports on health care reform.", color: "border-indigo-200 hover:border-indigo-400" },
           ].map((p) => (
             <Link key={p.href} href={p.href} className={`group block bg-white border rounded-xl p-5 transition-all hover:shadow-md ${p.color}`}>
               <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-teal-700 transition-colors">{p.label}</h4>

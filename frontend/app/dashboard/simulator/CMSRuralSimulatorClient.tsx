@@ -100,7 +100,7 @@ export default function CMSRuralSimulatorClient() {
           <p className="text-slate-600 max-w-2xl text-sm leading-relaxed mb-6">
             The $50 billion federal program created by Public Law 119-21 (H.R. 1) pays out $10 billion a year from 2026
             through 2030. CMS awarded all 50 states for FY2026: half of the money split equally, half by CMS&apos;s scoring
-            of rurality, state policy actions and the strength of each plan. Later years&apos; awards are set annually.
+            of rurality, state policy actions and the strength of each plan. FY2027 awards (Nov 9, 2026) also reflect each state&apos;s progress on its plan; see the <Link href="/rht-review" className="underline">state-by-state review</Link>.
           </p>
           <div className="flex flex-wrap gap-3">
             {[['$50B', 'FY2026–2030'], ['$10B', 'Per year'], ['50', 'States awarded'], ['$147M–$281M', 'FY2026 range']].map(([v, l]) => (
