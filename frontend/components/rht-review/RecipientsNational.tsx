@@ -18,6 +18,7 @@ export function loadAllRecipients(): Rec[] {
 const BASIS: Record<string, string> = {
   alabama: "Announced grants (two rounds; $1M+ printed rounded)",
   alaska: "Preliminary notices of intent to award",
+  maryland: "Pillar 2 award offers, Budget Period 1",
   florida: "Year 1 awardees list",
   mississippi: "Announced awards",
   "new-jersey": "Funding allocations, Jul 31, 2026",
@@ -186,8 +187,9 @@ export default function RecipientsNational() {
         Each list is the state&apos;s own publication (linked under each state&apos;s name), parsed by HTR and checked against the source&apos;s count or printed total where it prints one.
         &ldquo;vs Year 1 award&rdquo; divides the listed sum by the state&apos;s FY2026 CMS award; a list can include money from more than one budget period, so it is not a spending rate.
         Recipient types are HTR&apos;s classification from organization names and can misplace a few. Other states either have not published an itemised list with amounts or
-        publish it in a form HTR could not read reliably (for example Georgia&apos;s first $12.73 million went to five named subgrantees with no per-award amounts, and Oklahoma&apos;s
-        recipients sit behind an interactive menu); those states are not shown rather than estimated.
+        publish it in a form HTR could not read reliably (for example Georgia&apos;s first $12.73 million went to five named subgrantees with no per-award amounts, Oklahoma&apos;s
+        recipients sit behind an interactive menu, and Wyoming&apos;s advisory-committee approval sheet clips some recipient names and shows others only as a tax ID);
+        those states are not shown rather than estimated.
       </SourceNote>
     </div>
   );

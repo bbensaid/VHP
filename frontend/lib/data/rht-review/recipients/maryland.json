@@ -1,0 +1,342 @@
+{
+ "state": "Maryland",
+ "slug": "maryland",
+ "asOf": "2026",
+ "source": {
+  "label": "Maryland Department of Health, RHTP Pillar 2 award offers, Budget Period 1 (Expand Primary Care Access; Transformation Funds)",
+  "url": "https://health.maryland.gov/pophealth/Pages/Rural-Health-Transformation-Program.aspx"
+ },
+ "announcedTotal": null,
+ "areaLabel": "Counties or region served",
+ "rows": [
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Cornerstone Family Medicine",
+   "county": "Western",
+   "amount": 285687.0,
+   "purpose": "Establish a satellite primary care location in McCoole to serve 525 new patients",
+   "n": 1
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Healthy Mind Foundation",
+   "county": "Western",
+   "amount": 530000.0,
+   "purpose": "Open a new practice in Cumberland to serve 900 new patients",
+   "n": 2
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Menocal Family Practice",
+   "county": "Western",
+   "amount": 398671.0,
+   "purpose": "Transition an existing practice to an expanded facility to serve 2,000 new patients with advanced primary care",
+   "n": 3
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Miles River Primary Care",
+   "county": "Eastern Shore",
+   "amount": 1028000.0,
+   "purpose": "Open a new office to serve 1,000 new patients",
+   "n": 4
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Ryan\u2019s Place Health Services",
+   "county": "Northern",
+   "amount": 447547.0,
+   "purpose": "Establish a new practice to serve 300 new patients",
+   "n": 5
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Tru Primary Care",
+   "county": "Eastern Shore",
+   "amount": 1370000.0,
+   "purpose": "Expand existing Elkton practice with retrofit, additional providers, and behavioral health integration, remote patient monitoring, and care management. Open new Centreville practice to serve 7,200 new patients",
+   "n": 6
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "Trusted Doctors",
+   "county": "Northern and Southern",
+   "amount": 1457596.0,
+   "purpose": "Open a new pediatric practice in Calvert and expand services in Carroll for integrated behavioral health, pediatric obesity management, and telehealth to serve 5,000 new patients",
+   "n": 7
+  },
+  {
+   "program": "Pillar 2: Expand Primary Care Access",
+   "recipient": "West Cecil Health Center",
+   "county": "Northern",
+   "amount": 695532.0,
+   "purpose": "Open a new practice in Edgewood and add primary care team to Havre de Grace practice to serve 665 new patients",
+   "n": 8
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Allegany County Health Department",
+   "county": "Allegany, Washington, Kent",
+   "amount": 1674661.0,
+   "purpose": "This project aims to modernize data infrastructure and address health disparities in rural Maryland through the implementation of a meaningful use Electronic Health Record (EHR) system, a specialized EHR module designed for inpatient substance use disorder facilities within the Behavioral Health divisions of Allegany and Kent counties, dental practice management software platform and closed-loop referrals.",
+   "n": 9
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Calvert County Health Department",
+   "county": "Calvert, Charles, St. Mary's",
+   "amount": 1504451.0,
+   "purpose": "There are three key components: the first focuses on upstream prevention through community training, while the second key component embeds Care Navigators in primary care clinics to facilitate early identification and integrated behavioral treatment. The third key component optimizes the clinical workforce by delegating routine assessments to graduate interns and using cost-savings metrics to establish financial sustainability for crisis infrastructure.",
+   "n": 10
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Carroll County Health Department",
+   "county": "Carroll",
+   "amount": 4358127.0,
+   "purpose": "The CHAIN-LINC project aims to transform rural healthcare in Carroll County, Maryland, by addressing systemic barriers to care. Key components include health hubs, closed-loop referrals, paramedicine/care coordination, chronic disease self-management, and behavioral health integration and expansion.",
+   "n": 11
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Cecil County Health Department",
+   "county": "Cecil",
+   "amount": 2000000.0,
+   "purpose": "This initiative is designed to address healthcare access barriers and system fragmentation in rural Cecil County by implementing a coordinated, community-based system of care. Key components include establishment of a community health worker (CHW) network, mobile screenings and chronic disease management, mobile integrated health, development of a maternal care plan, and closed-loop referrals.",
+   "n": 12
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Center for a Healthy Maryland Inc",
+   "county": "18 rural",
+   "amount": 1935651.0,
+   "purpose": "The PRISM (AI-Enabled Rural Brain Health Navigation) project is a community-based initiative designed to improve dementia-related care in rural Maryland for adults aged 50 and older. Key components include AI-enabled risk stratification, health monitoring, navigator follow-up, and nutrition and adherence support.",
+   "n": 13
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Charles County Department of Health",
+   "county": "Charles",
+   "amount": 511347.0,
+   "purpose": "The project aims to establish an integrated rural oral healthcare model to address provider shortages, transportation barriers, and high costs through expansion of preventive, restorative, and specialty care; in-house 3D digital printing for dentures and prosthetics; and care coordination.",
+   "n": 14
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Chester River Health System Inc (UM Shore Regional)",
+   "county": "Caroline, Dorchester, Kent, Queen Anne's, Talbot, Harford, Cecil, Charles",
+   "amount": 4913250.0,
+   "purpose": "RISE-PC aims to shift primary care delivery in eight rural counties from a fragmented, episodic model to an integrated, team-based, and value-based system. Key components include recruitment of primary care clinicians and a multidisciplinary workforce, integrated behavioral health, care navigation and social care coordination, practice transformation coaches, regional learning collaboratives, telehealth, and closed-loop referrals.",
+   "n": 15
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Choptank Community Health System Inc",
+   "county": "Caroline, Dorchester, Kent, Queen Anne's, Talbot",
+   "amount": 1976042.0,
+   "purpose": "The project seeks to transition from a reactive, fee-for-service model to a proactive, value-based care system to improve health outcomes and reduce total cost of care. Key components include expansion of CHW workforce, mobile health, specialty dental services, integrated care, and remote patient monitoring.",
+   "n": 16
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Community Education Group",
+   "county": "Allegany, Garrett, Washington",
+   "amount": 5745751.0,
+   "purpose": "The initiative is designed to transform rural health delivery by establishing Regional Care Coordination Center (RCCC) hubs. These centers provide centralized access to clinical care, maternal-focused services, and social service referrals, addressing significant regional barriers such as provider shortages, poverty, and transportation challenges.",
+   "n": 17
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Cornerstone Southern Maryland",
+   "county": "Calvert, Charles, St. Mary's",
+   "amount": 1000000.0,
+   "purpose": "The project addresses a critical distribution failure in behavioral health care. Rather than constructing new facilities, the mobile clinic will bring psychiatric care, therapy, Medication for Opioid Use Disorder (MOUD), peer support, and care coordination directly to underserved rural communities.",
+   "n": 18
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "For All Seasons Inc",
+   "county": "Caroline, Dorchester, Kent, Queen Anne's, Talbot",
+   "amount": 466000.0,
+   "purpose": "For All Seasons, Inc. is a behavioral health and rape crisis center serving Maryland's Mid-Shore since 1986. The CARE Initiative aims to modernize the agency's technology infrastructure to transform rural behavioral health care delivery. Key components include telehealth, standardized screening and assessment tools closed-loop referrals, AI-enabled workflows, and data infrastructure improvements.",
+   "n": 19
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Frederick Memorial Hospital",
+   "county": "Frederick",
+   "amount": 3948645.0,
+   "purpose": "The initiative aims to expand equitable access to primary, behavioral, and specialty care, along with coordinated supportive services. Key components include establishment of a prevention, outreach, and navigation community hub; expansion of primary and specialty care, paramedicine, creation of a behavioral health continuum of care, data integration and closed-loop referrals, and alignment with value-based care.",
+   "n": 20
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Frostburg Housing Authority",
+   "county": "Allegany, Garrett",
+   "amount": 997346.0,
+   "purpose": "The project aims to address health disparities in Allegany and Garrett Counties, a rural region facing significant behavioral health shortages, geographic isolation, transportation barriers, and low healthcare literacy. Key components include a community wellness hub, integration of public/private transit into a unified hub, and workforce development.",
+   "n": 21
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Garrett Regional Medical Center",
+   "county": "Allegany, Garrett",
+   "amount": 1682177.0,
+   "purpose": "Targeting vulnerable, isolated, and low-income populations in rural Garrett County and western Allegany County, Maryland, the program shifts the traditional reactive healthcare model toward proactive prevention. Key components include mobile cancer and chronic disease screenings, remote patient monitoring, direct patient transportation, and a one-stop health hub.",
+   "n": 22
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Greater Baden Medical Services Inc",
+   "county": "Charles",
+   "amount": 1448100.0,
+   "purpose": "The project aims to reduce barriers to care, such as transportation issues, limited provider availability, and fragmented referral pathways. Key components include expanded primary care and integrated behavioral health, care coordination and closed-loop referrals, pharmacist-led counseling, and remote patient monitoring.",
+   "n": 23
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Kennedy Krieger Institute",
+   "county": "18 rural",
+   "amount": 1000000.0,
+   "purpose": "The program aims to establish a unified virtual and mobile front door to specialized pediatric care, bypassing traditional barriers such as long wait times, lack of local specialists, and transportation difficulties. With intended multi-year expansion, the project aims to serve as a permanent pediatric specialty front door for all 18 rural Maryland counties.",
+   "n": 24
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Kent County Health Department",
+   "county": "Kent",
+   "amount": 562596.0,
+   "purpose": "KCHD aims to establish a central hub for addiction services at the A.F. Whitsitt Center, providing a \"full life cycle\" of care. Proposed services include development of an ASAM Level 3.1 Inpatient Residential Facility and an Opioid Treatment Program.",
+   "n": 25
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Lower Shore Clinic Inc aka HealthPort",
+   "county": "Worcester, Somerset",
+   "amount": 621612.0,
+   "purpose": "HealthPort, a Maryland-based nonprofit Certified Community Behavioral Health Clinic (CCBHC), proposes to expand its Assertive Community Treatment (ACT) services to improve behavioral health outcomes in Worcester and Somerset Counties. The project aims to transition from fragmented, emergency-driven care to a preventive, community-based model for individuals with serious mental illness (SMI). Key components include mobile health, integrated care, and sustainable reimbursement.",
+   "n": 26
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "MedStar St. Mary's Inc",
+   "county": "Charles, Calvert, St. Mary's",
+   "amount": 2522586.0,
+   "purpose": "The initiative establishes a system-wide mobile and virtual delivery network to deploy medical services directly into historically underserved communities. The operational structure features five key components, including the deployment of a mobile health unit, the equipment of community telehealth hubs, the integration of embedded CHWs, a virtual geriatrics care model, and around-the-clock behavioral health care coordination.",
+   "n": 27
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Meritus Health Center",
+   "county": "Washington",
+   "amount": 3583406.0,
+   "purpose": "This proposal targets primary care shortages and high care costs through three initiatives: establishment of a precision medicine clinic to offer advanced diagnostics and preventive care plans, recruitment of five primary care providers, and development and deployment of the \"All-In-Health\" Model, an innovative value-based payment framework extending financial and quality accountability across hospital, physician, and post-acute settings.",
+   "n": 28
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Mid-Shore Behavioral Health Inc",
+   "county": "Caroline, Dorchester, Kent, Queen Anne's, Talbot",
+   "amount": 1800000.0,
+   "purpose": "MSBH, serving as the lead entity and Core Service Agency for Caroline, Dorchester, Kent, Queen Anne\u2019s, and Talbot counties, proposes a regional collaborative to address behavioral health barriers in Maryland's rural mid-shore region. The initiative targets underserved populations, including youth at risk of suicide, adults with serious mental illness, and individuals involved with the justice system.",
+   "n": 29
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Mountain Laurel Medical Center",
+   "county": "Garrett, Allegany",
+   "amount": 1058750.0,
+   "purpose": "Mountain Laurel Medical Center (MLMC), a Federally Qualified Health Center (FQHC), proposes the Rural Integrated Oral Health Access Initiative to address significant oral healthcare disparities in Garrett and Allegany Counties. The initiative aims to integrate preventive and restorative dental services into MLMC\u2019s existing healthcare system to better serve underserved populations, including Medicaid recipients, low-income households, children, and older adults.",
+   "n": 30
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "MPhA Foundation",
+   "county": "Allegany, Carroll, Frederick, Garrett, Washington, Cecil, Dorchester, Somerset, Talbot, Wicomico, Worcester",
+   "amount": 2399650.0,
+   "purpose": "The Maryland Pharmacists Association Foundation (MPhA Foundation) proposes establishment of the \"Maryland Interoperable Pharmacy Initiative\" (MIPI). This initiative aims to integrate approximately 20 rural Maryland community pharmacies into the state's clinical data infrastructure to improve chronic disease management.",
+   "n": 31
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "St. Mary's County Health Department",
+   "county": "St. Mary's",
+   "amount": 3530907.0,
+   "purpose": "St. Mary's 360 is a countywide initiative. It aims to redesign the delivery of healthcare, behavioral health, oral health, wellness services, and social supports. The initiative utilizes a \"Connected Care Everywhere\" framework, integrating services across schools, homes, emergency services, and community environments. Key components include community-integrated care coordination, closed-loop referrals, Mobile Integrated Health, and digital health literacy.",
+   "n": 32
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Talbot Hospice Foundation Inc",
+   "county": "Talbot",
+   "amount": 29750.0,
+   "purpose": "Talbot Hospice proposes a technology-enabled initiative to improve palliative care coordination and remote patient monitoring (RPM) for rural patients with serious chronic illnesses in Talbot County, Maryland. Key components include deployment of a care management platform, care coordination, and remote patient monitoring.",
+   "n": 33
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "The Beacon Institute Inc",
+   "county": "18 rural",
+   "amount": 860000.0,
+   "purpose": "The Beacon Institute, as the primary applicant, aims to establish a Sustainable Collaborative Post-Acute Integrated Network (MRN). The initiative focuses on transforming care in Maryland\u2019s 18 rural counties by integrating nursing home care, reducing Medicare/Medicaid costs, and enhancing primary and behavioral care services.",
+   "n": 34
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "TidalHealth",
+   "county": "Somerset, Wicomico, Worcester",
+   "amount": 4911052.0,
+   "purpose": "The project addresses critical barriers such as provider shortages, transportation deficits, high chronic disease rates, and digital inequity. Key components include Epic-based risk stratification, expanding remote patient monitoring and telehealth, integrating standardized behavioral health screenings into primary care, enhancing post-discharge care transitions, and piloting closed-loop digital referral platforms.",
+   "n": 35
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Washington County Community Action Council",
+   "county": "Washington",
+   "amount": 149964.0,
+   "purpose": "Entitled \"Rooted and Resilient Washington County,\" the project seeks to address critical rural health disparities and transportation barriers in Washington County by expanding and optimizing the agency's existing Non-Emergency Medical Transportation (NEMT) program.",
+   "n": 36
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Worcester County Health Department",
+   "county": "Worcester",
+   "amount": 2600000.0,
+   "purpose": "The proposed project focuses on expanding behavioral health services and sustainable healthcare access in Worcester County. Key components include care coordination, case management focused on seniors, expansion of school-based therapy, menopause education, physical wellness enhancements, and an \"Exercise is Medicine\" framework.",
+   "n": 37
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Johns Hopkins University",
+   "county": "18 rural",
+   "amount": 6340198.0,
+   "purpose": "The proposed NAVIGATE-MD collaborative will create a statewide prehospital neurological triage platform integrating emergency medical services (EMS), teleneurology, and Maryland\u2019s CRISP health information exchange infrastructure to speed early diagnosis, improve access to neurologic expertise, streamline prehospital destination decisions, reduce unnecessary utilization, and improve patient-centered outcomes for rural patients with acute neurological symptoms, for which diagnostic recognition can be delayed.",
+   "n": 38
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "Children's Hospital",
+   "county": "Calvert, Charles, St. Mary's",
+   "amount": 1100000.0,
+   "purpose": "The project aims to establish an integrated pediatric behavioral health ecosystem to address severe provider shortages and long wait times for youth ages 0-18 in rural Maryland. The program will launch in Southern Maryland and aims to subsequently expand statewide. Key components include integrating primary care through the evidence-based Collaborative Care Model (CoCM), establishing rapid evaluation and telepsychiatry workflows in rural emergency departments to reduce psychiatric boarding, expanding substance use treatment and Peer Recovery Coaches in emergency departments, care coordination, and delivering school-based tele-behavioral health.",
+   "n": 39
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "West Cecil Health Center",
+   "county": "Cecil",
+   "amount": 1159875.0,
+   "purpose": "The project, based at the West Cecil Health Center, a Federally Qualified Health Center, will integrate primary care, behavioral health, and dental services with care management, nutrition services, and an embedded clinical pharmacist to manage chronic diseases, improve medication adherence, and reduce avoidable emergency department visits.",
+   "n": 40
+  },
+  {
+   "program": "Pillar 2: Transformation Funds",
+   "recipient": "University of Maryland Medical System",
+   "county": "Caroline, Dorchester, Kent, Queen Anne's, Talbot, Harford, Cecil, Charles",
+   "amount": 4020144.0,
+   "purpose": "The project aims to expand virtual care and telehealth infrastructure to improve clinical outcomes and timely access to specialists across eight state-designated rural counties. The centralized model, operated out of the University of Maryland Access Center (UMAC), will focus on high-risk chronic diseases, maternal health, post-discharge timely follow-ups, and rural dementia care.",
+   "n": 41
+  }
+ ],
+ "note": "Two published lists of award offers under Pillar 2 for Budget Period 1: 8 practices to expand primary care access (region served) and 33 Transformation Fund lead organizations (rural counties served; \"18 rural\" means all 18 of the state's designated rural counties). These are offers, not executed agreements, and the lists print no totals. Maryland's other pillars are not itemized on the page."
+}

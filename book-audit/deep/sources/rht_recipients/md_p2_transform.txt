@@ -1,0 +1,155 @@
+Maryland  Rural  Health  Transformation  Program  Pillar  2:  Promote  Sustainable  Access  and  Innovative  Care  Transformation  Funds  
+ 
+ 
+Award  Offers,  Budget  Period  1  Rooted  and  Resilient  Rural  Maryland:  Transformation  through  Sustainable  Access,  Innovative  Care,  and  Tech  Innovation   Issuing  Partners:  Maryland  Department  of  Health,  Maryland  Health  Services  Cost  Review  Commission  
+ 
+ 
+Lead  Organization  Award  Offer  Summary Rural  Counties  Served  
+Allegany  County  Health  Department  
+$1,674,661  
+This  project  aims  to  modernize  data  infrastructure  and  address  health  disparities  in  rural  Maryland  through  the  implementation  of  a  meaningful  use  Electronic  Health  Record  (EHR)  system,  a  specialized  EHR  module  designed  for  inpatient  substance  use  disorder  facilities  within  the  Behavioral  Health  divisions  of  Allegany  and  Kent  counties,  dental  practice  management  software  platform  and  closed-loop  referrals.  
+Allegany,  Washington,  Kent  
+Calvert  County  Health  Department  
+$1,504,451  
+There  are  three  key  components:  the  first  focuses  on  upstream  prevention  through  community  training,  while  the  second  key  component  embeds  Care  Navigators  in  primary  care  clinics  to  facilitate  early  identification  and  integrated  behavioral  treatment.  The  third  key  component  optimizes  the  clinical  workforce  by  delegating  routine  assessments  to  graduate  interns  and  using  cost-savings  metrics  to  establish  financial  sustainability  for  crisis  infrastructure.  
+Calvert,  Charles,  St.  Mary's  
+Carroll  County  Health  Department  
+$4,358,127  
+The  CHAIN-LINC  project  aims  to  transform  rural  healthcare  in  Carroll  County,  Maryland,  by  addressing  systemic  barriers  to  care.  Key  
+Carroll  
+1  
+components  include  health  hubs,  closed-loop  referrals,  paramedicine/care  coordination,  chronic  disease  self-management,  and  behavioral  health  integration  and  expansion.  
+Cecil  County  Health  Department  
+$2,000,000  
+This  initiative  is  designed  to  address  healthcare  access  barriers  and  system  fragmentation  in  rural  Cecil  County  by  implementing  a  coordinated,  community-based  system  of  care.  Key  components  include  establishment  of  a  community  health  worker  (CHW)  network,  mobile  screenings  and  chronic  disease  management,  mobile  integrated  health,  development  of  a  maternal  care  plan,  and  closed-loop  referrals.  
+Cecil  
+Center  for  a  Healthy  Maryland  Inc  
+$1,935,651  
+The  PRISM  (AI-Enabled  Rural  Brain  Health  Navigation)  project  is  a  community-based  initiative  designed  to  improve  dementia-related  care  in  rural  Maryland  for  adults  aged  50  and  older.  Key  components  include  AI-enabled  risk  stratification,  health  monitoring,  navigator  follow-up,  and  nutrition  and  adherence  support.  
+18  rural  
+Charles  County  Department  of  Health  
+$511,347  
+The  project  aims  to  establish  an  integrated  rural  oral  healthcare  model  to  address  provider  shortages,  transportation  barriers,  and  high  costs  through  expansion  of  preventive,  restorative,  and  specialty  care;  in-house  3D  digital  printing  for  dentures  and  prosthetics;  and  care  coordination.  
+Charles  
+Chester  River  Health  System  Inc  (UM  Shore  Regional)  
+$4,913,250  
+RISE-PC  aims  to  shift  primary  care  delivery  in  eight  rural  counties  from  a  fragmented,  episodic  model  to  an  integrated,  team-based,  and  value-based  system.  Key  components  include  recruitment  of  primary  care  clinicians  and  a  multidisciplinary  workforce,  integrated  behavioral  health,  care  navigation  and  social  care  coordination,  practice  transformation  coaches,  regional  learning  collaboratives,  telehealth,  and  closed-loop  referrals.  
+Caroline,  Dorchester,  Kent,  Queen  Anne's,  Talbot,  Harford,  Cecil,  Charles  
+Choptank  Community  Health  System  Inc  
+$1,976,042  
+The  project  seeks  to  transition  from  a  reactive,  fee-for-service  model  to  a  proactive,  value-based  care  system  to  improve  health  outcomes  and  reduce  total  cost  of  care.  Key  components  include  expansion  of  CHW  
+Caroline,  Dorchester,  Kent,  Queen  Anne's,  
+2  
+workforce,  mobile  health,  specialty  dental  services,  integrated  care,  and  remote  patient  monitoring.  
+Talbot  
+Community  Education  Group  
+$5,745,751  
+The  initiative  is  designed  to  transform  rural  health  delivery  by  establishing  Regional  Care  Coordination  Center  (RCCC)  hubs.  These  centers  provide  centralized  access  to  clinical  care,  maternal-focused  services,  and  social  service  referrals,  addressing  significant  regional  barriers  such  as  provider  shortages,  poverty,  and  transportation  challenges.  
+Allegany,  Garrett,  Washington  
+Cornerstone  Southern  Maryland  
+$1,000,000  
+The  project  addresses  a  critical  distribution  failure  in  behavioral  health  care.  Rather  than  constructing  new  facilities,  the  mobile  clinic  will  bring  psychiatric  care,  therapy,  Medication  for  Opioid  Use  Disorder  (MOUD),  peer  support,  and  care  coordination  directly  to  underserved  rural  communities.  
+Calvert,  Charles,  St.  Mary's  
+For  All  Seasons  Inc  
+$466,000  
+For  All  Seasons,  Inc.  is  a  behavioral  health  and  rape  crisis  center  serving  Maryland's  Mid-Shore  since  1986.  The  CARE  Initiative  aims  to  modernize  the  agency's  technology  infrastructure  to  transform  rural  behavioral  health  care  delivery.  Key  components  include  telehealth,  standardized  screening  and  assessment  tools  closed-loop  referrals,  AI-enabled  workflows,  and  data  infrastructure  improvements.  
+Caroline,  Dorchester,  Kent,  Queen  Anne's,  Talbot  
+Frederick  Memorial  Hospital  
+$3,948,645  
+The  initiative  aims  to  expand  equitable  access  to  primary,  behavioral,  and  specialty  care,  along  with  coordinated  supportive  services.  Key  components  include  establishment  of  a  prevention,  outreach,  and  navigation  community  hub;  expansion  of  primary  and  specialty  care,  paramedicine,  creation  of  a  behavioral  health  continuum  of  care,  data  integration  and  closed-loop  referrals,  and  alignment  with  value-based  care.  
+Frederick  
+Frostburg  Housing  Authority  
+$997,346  
+The  project  aims  to  address  health  disparities  in  Allegany  and  Garrett  Counties,  a  rural  region  facing  significant  behavioral  health  shortages,  geographic  isolation,  transportation  barriers,  and  low  healthcare  
+Allegany,  Garrett  
+3  
+literacy.  Key  components  include  a  community  wellness  hub,  integration  of  public/private  transit  into  a  unified  hub,  and  workforce  development.  
+Garrett  Regional  Medical  Center  
+$1,682,177  
+Targeting  vulnerable,  isolated,  and  low-income  populations  in  rural  Garrett  County  and  western  Allegany  County,  Maryland,  the  program  shifts  the  traditional  reactive  healthcare  model  toward  proactive  prevention.  Key  components  include  mobile  cancer  and  chronic  disease  screenings,  remote  patient  monitoring,  direct  patient  transportation,  and  a  one-stop  health  hub.  
+Allegany,  Garrett  
+Greater  Baden  Medical  Services  Inc  
+$1,448,100  
+The  project  aims  to  reduce  barriers  to  care,  such  as  transportation  issues,  limited  provider  availability,  and  fragmented  referral  pathways.  Key  components  include  expanded  primary  care  and  integrated  behavioral  health,  care  coordination  and  closed-loop  referrals,  pharmacist-led  counseling,  and  remote  patient  monitoring.  
+Charles  
+Kennedy  Krieger  Institute  
+$1,000,000  
+The  program  aims  to  establish  a  unified  virtual  and  mobile  front  door  to  specialized  pediatric  care,  bypassing  traditional  barriers  such  as  long  wait  times,  lack  of  local  specialists,  and  transportation  difficulties.  With  intended  multi-year  expansion,  the  project  aims  to  serve  as  a  permanent  pediatric  specialty  front  door  for  all  18  rural  Maryland  counties.  
+18  rural  
+Kent  County  Health  Department  
+$562,596  
+KCHD  aims  to  establish  a  central  hub  for  addiction  services  at  the  A.F.  Whitsitt  Center,  providing  a  "full  life  cycle"  of  care.  Proposed  services  include  development  of  an  ASAM  Level  3.1  Inpatient  Residential  Facility  and  an  Opioid  Treatment  Program.  
+Kent  
+Lower  Shore  Clinic  Inc  aka  HealthPort  
+$621,612  
+HealthPort,  a  Maryland-based  nonprofit  Certified  Community  Behavioral  Health  Clinic  (CCBHC),  proposes  to  expand  its  Assertive  Community  Treatment  (ACT)  services  to  improve  behavioral  health  outcomes  in  Worcester  and  Somerset  Counties.  The  project  aims  to  transition  from  fragmented,  emergency-driven  care  to  a  preventive,  community-based  model  for  individuals  with  serious  mental  illness  
+Worcester,  Somerset  
+4  
+(SMI).  Key  components  include  mobile  health,  integrated  care,  and  sustainable  reimbursement.  
+MedStar  St.  Mary's  Inc  
+$2,522,586  
+The  initiative  establishes  a  system-wide  mobile  and  virtual  delivery  network  to  deploy  medical  services  directly  into  historically  underserved  communities.  The  operational  structure  features  five  key  components,  including  the  deployment  of  a  mobile  health  unit,  the  equipment  of  community  telehealth  hubs,  the  integration  of  embedded  CHWs,  a  virtual  geriatrics  care  model,  and  around-the-clock  behavioral  health  care  coordination.  
+Charles,  Calvert,  St.  Mary's  
+Meritus  Health  Center  
+$3,583,406  
+This  proposal  targets  primary  care  shortages  and  high  care  costs  through  three  initiatives:  establishment  of  a  precision  medicine  clinic  to  offer  advanced  diagnostics  and  preventive  care  plans,  recruitment  of  five  primary  care  providers,  and  development  and  deployment  of  the  "All-In-Health"  Model,  an  innovative  value-based  payment  framework  extending  financial  and  quality  accountability  across  hospital,  physician,  and  post-acute  settings.  
+Washington  
+Mid-Shore  Behavioral  Health  Inc  
+$1,800,000  
+MSBH,  serving  as  the  lead  entity  and  Core  Service  Agency  for  Caroline,  Dorchester,  Kent,  Queen  Anne’s,  and  Talbot  counties,  proposes  a  regional  collaborative  to  address  behavioral  health  barriers  in  Maryland's  rural  mid-shore  region.  The  initiative  targets  underserved  populations,  including  youth  at  risk  of  suicide,  adults  with  serious  mental  illness,  and  individuals  involved  with  the  justice  system.  
+Caroline,  Dorchester,  Kent,  Queen  Anne's,  Talbot  
+Mountain  Laurel  Medical  Center  
+$1,058,750  
+Mountain  Laurel  Medical  Center  (MLMC),  a  Federally  Qualified  Health  Center  (FQHC),  proposes  the  Rural  Integrated  Oral  Health  Access  Initiative  to  address  significant  oral  healthcare  disparities  in  Garrett  and  Allegany  Counties.  The  initiative  aims  to  integrate  preventive  and  restorative  dental  services  into  MLMC’s  existing  healthcare  system  to  better  serve  underserved  populations,  including  Medicaid  recipients,  low-income  households,  children,  and  older  adults.  
+Garrett,  Allegany  
+5  
+MPhA  Foundation  
+$2,399,650  
+The  Maryland  Pharmacists  Association  Foundation  (MPhA  Foundation)  proposes  establishment  of  the  "Maryland  Interoperable  Pharmacy  Initiative"  (MIPI).  This  initiative  aims  to  integrate  approximately  20  rural  Maryland  community  pharmacies  into  the  state's  clinical  data  infrastructure  to  improve  chronic  disease  management.  
+Allegany,  Carroll,  Frederick,  Garrett,  Washington,  Cecil,  Dorchester,  Somerset,  Talbot,  Wicomico,  Worcester  
+St.  Mary's  County  Health  Department  
+$3,530,907  
+St.  Mary's  360  is  a  countywide  initiative.  It  aims  to  redesign  the  delivery  of  healthcare,  behavioral  health,  oral  health,  wellness  services,  and  social  supports.  The  initiative  utilizes  a  "Connected  Care  Everywhere"  framework,  integrating  services  across  schools,  homes,  emergency  services,  and  community  environments.  Key  components  include  community-integrated  care  coordination,  closed-loop  referrals,  Mobile  Integrated  Health,  and  digital  health  literacy.  
+St.  Mary's  
+Talbot  Hospice  Foundation  Inc  
+$29,750  
+Talbot  Hospice  proposes  a  technology-enabled  initiative  to  improve  palliative  care  coordination  and  remote  patient  monitoring  (RPM)  for  rural  patients  with  serious  chronic  illnesses  in  Talbot  County,  Maryland.  Key  components  include  deployment  of  a  care  management  platform,  care  coordination,  and  remote  patient  monitoring.  
+Talbot  
+The  Beacon  Institute  Inc  
+$860,000  
+The  Beacon  Institute,  as  the  primary  applicant,  aims  to  establish  a  Sustainable  Collaborative  Post-Acute  Integrated  Network  (MRN).  The  initiative  focuses  on  transforming  care  in  Maryland’s  18  rural  counties  by  integrating  nursing  home  care,  reducing  Medicare/Medicaid  costs,  and  enhancing  primary  and  behavioral  care  services.  
+18  rural  
+TidalHealth  
+$4,911,052  
+The  project  addresses  critical  barriers  such  as  provider  shortages,  transportation  deficits,  high  chronic  disease  rates,  and  digital  inequity.  Key  components  include  Epic-based  risk  stratification,  expanding  remote  patient  monitoring  and  telehealth,  integrating  standardized  behavioral  health  screenings  into  primary  care,  enhancing  
+Somerset,  Wicomico,  Worcester  
+6  
+post-discharge  care  transitions,  and  piloting  closed-loop  digital  referral  platforms.  
+Washington  County  Community  Action  Council  
+$149,964  
+Entitled  "Rooted  and  Resilient  Washington  County,"  the  project  seeks  to  address  critical  rural  health  disparities  and  transportation  barriers  in  Washington  County  by  expanding  and  optimizing  the  agency's  existing  Non-Emergency  Medical  Transportation  (NEMT)  program.  
+Washington  
+Worcester  County  Health  Department  
+$2,600,000  
+The  proposed  project  focuses  on  expanding  behavioral  health  services  and  sustainable  healthcare  access  in  Worcester  County.  Key  components  include  care  coordination,  case  management  focused  on  seniors,  expansion  of  school-based  therapy,  menopause  education,  physical  wellness  enhancements,  and  an  "Exercise  is  Medicine"  framework.  
+Worcester  
+Johns  Hopkins  University  
+$6,340,198  
+The  proposed  NAVIGATE-MD  collaborative  will  create  a  statewide  prehospital  neurological  triage  platform  integrating  emergency  medical  services  (EMS),  teleneurology,  and  Maryland’s  CRISP  health  information  exchange  infrastructure  to  speed  early  diagnosis,  improve  access  to  neurologic  expertise,  streamline  prehospital  destination  decisions,  reduce  unnecessary  utilization,  and  improve  patient-centered  outcomes  for  rural  patients  with  acute  neurological  symptoms,  for  which  diagnostic  recognition  can  be  delayed.  
+18  rural  
+Children's  Hospital  
+$1,100,000  
+The  project  aims  to  establish  an  integrated  pediatric  behavioral  health  ecosystem  to  address  severe  provider  shortages  and  long  wait  times  for  youth  ages  0-18  in  rural  Maryland.  The  program  will  launch  in  Southern  Maryland  and  aims  to  subsequently  expand  statewide.  Key  components  include  integrating  primary  care  through  the  evidence-based  Collaborative  Care  Model  (CoCM),  establishing  rapid  evaluation  and  telepsychiatry  workflows  in  rural  emergency  departments  to  reduce  psychiatric  boarding,  expanding  substance  use  treatment  and  Peer  Recovery  Coaches  in  emergency  departments,  care  coordination,  and  
+Calvert,  Charles,  St.  Mary's  
+7  
+delivering  school-based  tele-behavioral  health.  
+West  Cecil  Health  Center  
+$1,159,875  
+The  project,  based  at  the  West  Cecil  Health  Center,  a  Federally  Qualified  Health  Center,  will  integrate  primary  care,  behavioral  health,  and  dental  services  with  care  management,  nutrition  services,  and  an  embedded  clinical  pharmacist  to  manage  chronic  diseases,  improve  medication  adherence,  and  reduce  avoidable  emergency  department  visits.  
+Cecil  
+University  of  Maryland  Medical  System  
+$4,020,144  
+The  project  aims  to  expand  virtual  care  and  telehealth  infrastructure  to  improve  clinical  outcomes  and  timely  access  to  specialists  across  eight  state-designated  rural  counties.  The  centralized  model,  operated  out  of  the  University  of  Maryland  Access  Center  (UMAC),  will  focus  on  high-risk  chronic  diseases,  maternal  health,  post-discharge  timely  follow-ups,  and  rural  dementia  care.  
+Caroline,  Dorchester,  Kent,  Queen  Anne's,  Talbot,  Harford,  Cecil,  Charles  
+ 
+8  
