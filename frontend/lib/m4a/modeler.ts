@@ -24,6 +24,11 @@ export interface RateParams {
   ratePct: number;
   /** Pay the cost of uncompensated care (everyone covered). */
   payUncompensated: boolean;
+  /**
+   * Pay critical access hospitals at cost (operating revenue = operating expense), as Medicare largely does today
+   * (CMS MLN006400: CAHs are paid 101% of reasonable costs). Off by default.
+   */
+  cahAtCost?: boolean;
 }
 
 export interface HospitalResult {
@@ -83,7 +88,13 @@ export function rateBasedChange(h: VtHospitalInput, p: RateParams): number {
 }
 
 export function runRateBased(p: RateParams, hospitals: VtHospitalInput[] = VT_HOSPITALS): HospitalResult[] {
-  return hospitals.map((h) => result(h, rateBasedChange(h, p)));
+  return hospitals.map((h) => {
+    if (p.cahAtCost && h.cah) {
+      const rev = impliedOpRevenue(h);
+      if (rev !== null && h.opExpense !== null) return result(h, h.opExpense - rev);
+    }
+    return result(h, rateBasedChange(h, p));
+  });
 }
 
 /** S.1506 § 611 global budget modeled as operating revenue = operating expense. BMH has no data → change null-safe 0. */
@@ -98,17 +109,20 @@ export function runGlobalBudget(hospitals: VtHospitalInput[] = VT_HOSPITALS): Ho
 
 /**
  * The single rate (% of Medicare) at which total revenue across all 14 hospitals is unchanged, given today's
- * commercial price. Uncompensated care is excluded so the answer depends on prices alone.
+ * commercial price. If uncompensated care is paid, the rate is lowered so that, together with that payment, the
+ * statewide total is still unchanged (the default view; independent review 2026-11-21, must-fix 1).
  */
-export function revenueNeutralRatePct(commercialPct: number, hospitals: VtHospitalInput[] = VT_HOSPITALS): number {
+export function revenueNeutralRatePct(commercialPct: number, hospitals: VtHospitalInput[] = VT_HOSPITALS, payUncompensated = false): number {
   const total = hospitals.reduce((s, h) => s + h.totalNpr, 0);
+  const uncomp = payUncompensated ? hospitals.reduce((s, h) => s + h.uncompensatedCost, 0) : 0;
   const medicareEquivalent = hospitals.reduce((s, h) => s + (h.commercialNpr * 100) / commercialPct + (h.totalNpr - h.commercialNpr), 0);
-  return (100 * total) / medicareEquivalent;
+  return (100 * (total - uncomp)) / medicareEquivalent;
 }
 
 export function totals(rows: HospitalResult[]): Totals {
   const valid = rows.filter((r) => Number.isFinite(r.revenueChange));
-  const totalNpr = rows.reduce((s, r) => s + r.totalNpr, 0);
+  // Denominator covers only the hospitals whose change is computed (13 in the global-budget lens, not 14).
+  const totalNpr = valid.reduce((s, r) => s + r.totalNpr, 0);
   const change = valid.reduce((s, r) => s + r.revenueChange, 0);
   const withM = rows.filter((r) => r.marginBefore !== null);
   return {

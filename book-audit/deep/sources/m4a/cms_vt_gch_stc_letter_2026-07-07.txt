@@ -1,0 +1,116 @@
+=== page 1 ===
+DEPARTMENT OF HEALTH & HUMAN SERVICES 
+Centers for Medicare & Medicaid Services 
+7500 Security Boulevard, Mail Stop S2-25-26 
+Baltimore, MD  21244-1850 
+ 
+State Demonstrations Group 
+July 7, 2026 
+Jenney Samuelson  
+Secretary  
+Vermont Agency of Human Services  
+280 State Drive  
+Waterbury, VT 05671  
+Dear Secretary Samuelson: 
+The Centers for Medicare & Medicaid Services (CMS) is notifying the state that the Medicaid 
+hospital global budget (HGB) implemented by the Department of Vermont Health Access 
+(DVHA) has not been approved by CMS in accordance with the requirements in Vermont’s 
+Global Commitment to Health section 1115(a) demonstration (Project Number 11-W-00194/1) 
+special terms and conditions (STCs).  While we recognize the state’s interest and commitment to 
+implementing value-based payment (VBP) arrangements like a HGB, the state must comply with 
+STC 6.4(i)(iii), which requires that any payment arrangements between the Agency of Human 
+Services (AHS) or DVHA and providers that are a VBP style fee schedule must meet the prior 
+approval requirements for state directed payments in 42 CFR 438.6(c)(2) consistent with 
+payment arrangements described in 42 CFR 438.6(c)(1)(i) and (ii). Additionally, the state must 
+comply with all requirements for actuarial soundness and rate development standards in 42 CFR 
+438.4 through 438.7 as required in STC 6.3(a).  Without the authority for implementing the 
+Medicaid HGB, these standards in 42 CFR 438.4 through 438.7 prohibit the state from including 
+the impact of the Medicaid HGB in the development of the certified capitation rates. This letter 
+serves as a written notice that the state is not compliant with STCs 6.3(a) and 6.4(i)(iii).  
+Accordingly, CMS requests the state take the corrective actions outlined below.  If the state does 
+not take these actions, CMS will not be able to find the state's calendar year (CY) 2026 
+capitation rates actuarially sound as required by the regulations in 42 CFR part 438 and may 
+initiate procedures under 42 CFR 431.420(d)(1) to terminate or suspend the demonstration for 
+failure to comply with the STCs. 
+ 
+Requested Corrective Actions 
+To comply with the STCs, the state should take the following corrective actions: 
+1. Within 60 calendar days from the date of this notice, DVHA should cease making HGB 
+payments to the participating hospitals and begin making payments in line with the 
+payment methodology used for providers who are not participating and being paid the 
+Medicaid HGB. 
+2. Within 60 calendar days from the date of this notice, AHS should remove HGB payments 
+from the applicable CY 2026 capitation rates and submit a revised rate certification for 
+CMS review and approval.  CMS prefers that the revised certification be submitted as a 
+rate amendment that only describes the impact of removing the HGB; the data, 
+assumptions and methodologies used to develop the impact; and the final certified 
+capitation rates.  Historical encounter data under the HGB may not be used for future 
+
+=== page 2 ===
+Page 2 – Secretary Samuelson 
+  
+capitation rate development unless the state receives CMS prior approval of the HGB as 
+required under the STCs and applicable cross-referenced regulations in 42 CFR 438.4 
+through 438.7. 
+3. Within 6 months of the date of this notice, DVHA should reprocess all HGB payments 
+made to participating hospitals since January 1, 2026, in line with the payment 
+methodology used for non-HGB participating providers.  As part of claims reprocessing, 
+the state should ensure that all encounter data and financial data reported to CMS comply 
+with all applicable federal regulations including 42 CFR 438.818 and accurately reflect 
+the payment rates under the applicable non-HGB payment methodology.  If the capitation 
+rate amendment results in changes to the payments for which the state has already drawn 
+down federal financial participation (FFP), then the state should also correct CMS-64 
+reporting to reflect any necessary adjustments within the standard timeframe for claiming 
+of FFP.  
+ 
+The state should send CMS written confirmation of compliance with these corrective actions 
+within 30 calendar days of completing each corrective action.  
+ 
+Program Integrity 
+States are responsible for following all applicable federal law and regulations when they claim 
+and use federal Medicaid matching funds and must fully comply with all applicable Medicaid 
+statutes and regulations under a section 1115 demonstration, except where specific provisions 
+have been expressly waived or identified as not applicable for that demonstration.  This 
+obligation includes all requirements in Title XIX of the Social Security Act and implementing 
+regulations governing provider screening and enrollment activities, pre- and post-payment 
+review claiming, payment methodologies and rate-setting, utilization controls, and program 
+integrity including processes to identify, investigate, and refer suspected fraud, and methods to 
+receive complaints and identify questionable practices.  States must maintain effective systems 
+and safeguards to prevent, detect, and address any fraud, waste, or abuse (FWA) in the delivery 
+of and payment for Medicaid services, including referrals to law enforcement when appropriate.   
+ 
+States should have heightened monitoring and oversight mechanisms in place featuring robust 
+internal controls to identify and remediate all vulnerabilities (including, but not limited to, FWA 
+and beneficiary access issues) inherent in service areas approved as part of a demonstration.  At 
+any time, CMS may request that the state provide a plan detailing the state’s systems and 
+safeguards to prevent, detect, and address any FWA relative to this demonstration.  Failure to 
+meet program integrity obligations under federal statutes and regulations or under the terms and 
+conditions of this demonstration approval may result in compliance actions or other enforcement 
+measures that could include requirements to develop and implement corrective action plans, 
+withholdings, deferrals, disallowances, and termination of demonstration authority.  
+ 
+We look forward to our continued partnership on the Global Commitment to Health section 
+1115(a) demonstration.  If you have any questions, please contact your project officer, Rabia 
+Khan, at Rabia.Khan1@cms.hhs.gov.   
+ 
+ 
+ 
+ 
+=== page 3 ===
+Page 3 – Secretary Samuelson 
+  
+Sincerely, 
+ 
+ 
+ 
+ 
+Sarah Aker 
+Acting Director 
+ 
+cc: Jill Mazza Olson, Vermont Agency of Human Services 
+ Ashley Berliner, Vermont Agency of Human Services 
+ John Giles, CMS, Center for Medicaid and CHIP Services 
+ Laura Snyder, CMS, Center for Medicaid and CHIP Services 
+Gilson DaSilva, CMS, Center for Medicaid and CHIP Services 
+ 
+ 

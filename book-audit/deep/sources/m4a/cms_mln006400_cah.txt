@@ -1,0 +1,463 @@
+=== page 1 ===
+Page 1 of 15
+Information for Critical Access Hospitals
+MLN006400 December 2025
+CPT codes, descriptions, and other data only are copyright 2024 American Medical Association. All Rights Reserved. 
+Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not 
+part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or 
+dispense medical services. The AMA assumes no liability for data contained or not contained herein. 
+CPT is a registered trademark of the American Medical Association.
+What’s Changed?
+We added:
+● Information on reviewing rural reclassification status (page 4)
+● Information on new promoting interoperability measures that start January 1, 2026 (page 5)
+● Information on the Transforming Episode Accountability Model skilled nursing facility 3-day 
+rule waiver (page 6)
+● A new resource link for the latest telehealth information (page 9)
+● Specific dates for implementing the new conditions of participation for emergency readiness 
+and obstetrical services (page 14)
+Substantive content changes are in dark red.
+=== page 2 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 2 of 15
+Contents
+CAH Designations ............................................................................................................................... 3
+Hospice Care........................................................................................................................................ 4
+CAH Payments .....................................................................................................................................5
+Inpatient Admissions ..........................................................................................................................6
+Outpatient Services: Standard Payment Method (Method I) or Optional Payment Method 
+(Method II) ............................................................................................................................................ 8
+Additional Medicare Payments .........................................................................................................11
+Intensive Outpatient Program Services .......................................................................................... 12
+Flex Program State Grants ...............................................................................................................13
+Obstetrics Services CoPs & New Requirements ............................................................................13
+Rural Emergency Hospitals ..............................................................................................................15
+Resources ..........................................................................................................................................15
+=== page 3 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 3 of 15
+Section 1820 of the Social Security Act established the Medicare Rural Hospital Flexibility Program 
+(Flex), which allows individual states to designate certain facilities as critical access hospitals (CAHs). 
+A CAH is a separate provider type with its own Medicare conditions of participation (CoPs) and 
+separate payment methods, unlike Medicare dependent hospitals and sole community hospitals (SCHs).
+A rural hospital that provides limited services can become a CAH if it meets these conditions:
+● Currently a Medicare-participating hospital
+● A hospital that stopped operating after November 29, 1989
+● A health clinic or center that, according to the state definition, operated as a hospital before 
+downsizing to a health clinic or center
+CAH Designations
+A Medicare-participating hospital can become, and remain, a certified CAH by meeting these 
+regulatory requirements*
+*
+This list contains basic requirements and isn’t all inclusive. See the complete list at 42 CFR Part 485
+Subpart F
+:
+● Located in a state that has a state rural health plan for the Flex program. Connecticut, Delaware, 
+Maryland, New Jersey, and Rhode Island haven’t established Flex programs.
+● Located in a rural area or treated as rural under a special provision that qualifies hospital providers 
+in urban areas. 
+● Provides 24-hour emergency services, 7 days a week, using on-site or on-call staff, with specific 
+on-site, on-call staff response times.
+● Doesn’t exceed 25 inpatient beds for inpatient or swing bed services.
+● It may operate a distinct part rehabilitation and a psychiatric unit, each with up to 10 beds
+● If it has distinct part units (DPUs), it must follow all hospital and CAH CoPs in the DPU
+● Reports an annual average acute care inpatient length of stay (LOS) of 96 hours or less, excluding 
+swing bed services and DPU beds. We don’t assess this requirement on initial certification; it only 
+applies after CAH certification.
+● More than a 35-mile drive on primary roads from any other CAH or hospital or, in the case of 
+mountainous terrain or in areas with only secondary roads available, a 15-mile drive if a state 
+didn’t designate a CAH as a necessary provider before January 1, 2006. A primary road of travel 
+for determining the driving distance of a CAH and its proximity to other providers is a numbered 
+federal highway, including interstates, intrastates, expressways, or any other numbered federal or 
+state highway with 2 or more lanes each way.
+=== page 4 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 4 of 15
+The CAH must inform each patient, or their representative, of their rights before starting or ending 
+patient care. This requires CAHs to establish a process for overseeing and promptly resolving patient 
+grievances, including whom to contact to file a grievance.
+If the CAH is part of a health system with more than 1 hospital or CAH, it may have a unified and 
+integrated Quality Assessment and Performance Improvement (QAPI) program and must make sure 
+each separately certified CAH meets requirements.
+CAH Status
+Periodically, the Office of Management and Budget (OMB) publishes revised delineations of core-
+based statistical areas, which we use to determine a CAH’s rural vs. urban status. The latest revisions 
+are in OMB Bulletin 23-01. We adopt changes in urban and rural designations based on the OMB 
+delineations through the Inpatient Prospective Payment System (IPPS) final rules. CAHs have a 
+2-year transition period, starting from the effective date of the new designation, to reclassify as rural 
+if the new OMB delineation changes their location designation to urban. During the transition period, 
+an affected CAH must reclassify as rural using regulations at 42 CFR 412.103 to retain its CAH status 
+after the 2-year transition period ends. 
+Any CAH located in an urban area may apply for reclassification as rural by meeting 1 of these criteria:
+1. It’s in a rural census tract of a Metropolitan Statistical Area in the most recent version of the 
+Goldsmith Modification using Rural-Urban Commuting Area codes and any additional criteria 
+determined by the Federal Office of Rural Health Policy of the Health Resources & Services 
+Administration (HRSA)
+2. Any state law or regulation deems it to be a rural hospital or located in a rural area
+3. It would meet all requirements of a rural referral center or an SCH if it was in a rural area
+CAHs may mail a written application to the CMS regional office at any time with an explanation of  
+how the hospital meets the reclassification criteria, and the application must include any supporting 
+data and documentation. We approve or deny applications within 60 days of the date we receive  
+the application. 
+Note: We encourage all CAHs with active rural reclassifications to review their original reclassification 
+application and determine whether the reclassification status still applies.
+Hospice Care
+In hospice care cases, a hospice may contract with a CAH to provide general inpatient hospice care. 
+We pay the hospice in these cases.
+You may dedicate beds to hospice care, which count toward the 25-bed maximum. However, hospice 
+patients aren’t part of the 96-hour annual average LOS calculation.
+You can admit hospice patients to a CAH for any care in their hospice treatment plan or respite care. 
+The CAH negotiates payment through an agreement with the hospice.
+=== page 5 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 5 of 15
+CAH Payments
+● We pay CAHs for most inpatient and outpatient services provided to patients at 101% of 
+reasonable costs
+● We don’t include CAHs in the IPPS or the Hospital Outpatient Prospective Payment System (OPPS)
+● We pay CAH services according to Medicare Part A and Medicare Part B deductible and coinsurance
+amounts, except we don’t limit the 20% Part B outpatient coinsurance amount by the Part A 
+inpatient deductible amount
+● We encourage CAHs to help patients understand service charges and potential financial obligations
+● On CAH claims using modifier 51 (Multiple Procedures), we pay technical components on a cost 
+basis, and they aren’t subject to multiple procedure reductions
+CAHs Participation in the Medicare Promoting Interoperability Program
+The American Recovery and Reinvestment Act of 2009 authorized incentive payments under 
+Medicare as well as downward payment adjustments for the meaningful use of certified electronic 
+health record technology (CEHRT). As of 2016, CAHs that don’t successfully demonstrate meaningful 
+use of CEHRT are subject to a reduction of their payments from 101% to 100% of reasonable costs. 
+Hardship exceptions are available, but by law, we limit a CAH to 5 years of these exceptions. See 
+Promoting Interoperability Programs for more information. 
+Starting January 1, 2026: 
+● The Medicare Promoting Interoperability Program defines the electronic health record reporting 
+period as a minimum of any continuous 180-day period within that CY
+● CAHs must attest “yes” to conducting security risk management along with the existing 
+requirement for attesting “yes” to security risk analysis
+● CAHs have to attest “yes” to completing an annual self-assessment using the 8 SAFER Guides
+published in January 2025
+● We add an optional bonus measure under the Public Health and Clinical Data Exchange objective 
+for data exchange to occur with a public health agency using the Trusted Exchange Framework
+and Common Agreement
+CAH DPUs
+● We pay for CAH DPU inpatient rehabilitation services under the Inpatient Rehabilitation Facility 
+Prospective Payment System (PPS)
+● We pay for CAH DPU psychiatric services under the Inpatient Psychiatric Facility PPS
+CPT only copyright 2024 American Medical Association. All Rights Reserved.
+=== page 6 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 6 of 15
+CAH Swing Beds
+● We pay for CAH swing bed services as section 1883(a)(3) of the Social Security Act and 
+42 CFR 413.114(a)(2) require.
+● CAH swing bed services aren’t subject to skilled nursing facility (SNF) PPS. Instead, we pay CAHs 
+based on 101% of reasonable costs.
+● We require a 3-day hospital stay, commonly known as the SNF 3-day rule, before admitting a 
+patient to a swing bed. Starting January 1, 2026, we’ll allow acute care hospitals participating in 
+the Transforming Episode Accountability Model (TEAM), a mandatory model, to discharge patients 
+without a 3-day hospital stay to a participating CAH, under swing bed arrangements, for post-
+acute care. See MLN Matters® article MM14098 for more information and payment criteria on the 
+SNF 3-day rule waiver.
+● CAHs may bill for:
+● Bed and board, nursing, and other related services
+● Using CAH facilities
+● Medical social services
+● Drugs
+● Biologicals
+● Supplies, appliances, and equipment for inpatient hospital care and treatment and diagnostic 
+or therapeutic items or services they, or others, provide under arrangement
+See Swing Bed Providers for more information.
+Inpatient Admissions
+We pay CAHs under Part A when they meet these requirements:
+● A physician or other qualified practitioner orders admission and certifies they expect the patient to 
+be discharged or transferred to a hospital within 96 hours of CAH admission per 42 CFR 424.15
+and 42 CFR 485.638(a)(4)(iii)
+● A person may remain a CAH inpatient for more than 96 hours. However, if a physician can’t certify 
+at admission that they expect to discharge or transfer the person to a hospital within 96 hours, we 
+won’t pay the CAH.
+● A physician must complete the certification, then sign and document it in a medical record no later 
+than 1 day before submitting an inpatient services claim.
+● We don’t apply the 96-hour certification requirement to these services:
+● Time as a CAH outpatient
+● Time providing skilled nursing swing bed services
+● Time in a CAH DPU
+=== page 7 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 7 of 15
+The 96-hour certification clock starts when a physician or other qualified practitioner admits the 
+patient via a written order in the patient’s medical record.
+● Quality Improvement Organizations (QIOs), Medicare Administrative Contractors (MACs), 
+Recovery Audit Contractors (RACs), and Supplemental Medical Review Contractors (SMRCs) 
+don’t audit the CAH 96-hour certification requirement as a medical record high priority
+● CAHs shouldn’t expect to get 96-hour certification medical record requests from these contractors 
+unless we or the contractors find:
+● Gaming evidence
+● Screening and revalidation provider compliance failure
+● Other medical review issues
+Note: Although MACs, RACs, and SMRCs no longer make auditing the CAH 96-hour certification 
+requirement a high priority, the CMS Regional Office (RO) Division of Survey and Certification (DSC), 
+State Survey Agencies (SAs), and accrediting organizations will verify CAH CoP LOS compliance 
+under 42 CFR 485.620(b), which states the CAH provides acute inpatient care for a period that 
+doesn’t exceed 96 hours per patient, on average, annually.
+MACs determine 96-hour annual average LOS CoP compliance and calculate the CAH’s LOS 
+based on patient census data. If a CAH exceeds the LOS limit, their MAC sends a report to the 
+CMS RO DSC and provides a copy to the SA. The CMS RO requires CAHs to develop and apply an 
+acceptable correction plan or provide adequate information demonstrating compliance.
+Inpatient hospital services with 20 inpatient days or more cases must meet additional certification 
+requirements at 42 CFR 424.13.
+Ambulance Transports
+● We pay for CAH-provided ambulance services, and ambulance services provided by an entity the 
+CAH owns and operates, based on 101% of reasonable costs if it’s the only ambulance provider 
+or supplier within a 35-mile drive of the CAH. The 35-mile drive requirement excludes ambulance 
+providers or suppliers who aren’t legally authorized to provide ambulance services to transport to 
+or from the CAH.
+● If no ambulance provider or supplier is within a 35-mile drive of the CAH and the CAH owns and 
+operates an entity providing ambulance services more than a 35-mile drive from the CAH, we 
+base the entity’s ambulance payment on 101% of reasonable costs if that entity is the closest 
+ambulance provider or supplier to the CAH.
+CAH Reasonable Cost Payment Principles That Don’t Apply
+CAH inpatient or outpatient services payments aren’t subject to these reasonable cost principles:
+● Lesser of cost or charges
+● Reasonable compensation equivalent limits
+=== page 8 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 8 of 15
+We don’t apply limits to CAH inpatient payments on hospital inpatient operating costs or the 1-day or 
+3-day pre-admission payment window provisions that apply to hospitals paid under the IPPS and OPPS.
+We apply payment window provisions to outpatient services if a patient gets CAH outpatient services 
+at a wholly owned or operated IPPS hospital and that hospital admits the patient either on the same 
+day or within 3 days immediately following the day the patient got those outpatient services.
+Outpatient Services: Standard Payment Method (Method I) or 
+Optional Payment Method (Method II)
+We pay for CAH outpatient facility services at 101% of reasonable costs as section 1834(g)(1) of the 
+Social Security Act requires.
+Standard Payment Method: Reasonable Cost-Based Facility Services 
+with MAC Professional Services Billing
+We pay CAHs under the standard payment method unless they elect the optional payment method.
+Under the standard payment method, the physician or practitioner bills their outpatient professional 
+medical services under the Physician Fee Schedule (PFS). We define outpatient professional medical 
+services payment as physician- or other qualified practitioner-provided services.
+Optional Payment Method: Reasonable Cost-Based Facility Services 
+Plus 115% Professional Services Fee Schedule Payment
+CAHs may elect the optional payment method instead of the standard payment method per section 
+1834(g)(2) of the Social Security Act. The CAH bills for facility and professional outpatient services 
+only when physicians or practitioners reassign their billing rights to the CAH. Additionally, physicians 
+and practitioners can’t bill for professional services once they reassign their billing rights to the CAH.
+If a CAH elects this option, each physician or practitioner providing professional outpatient CAH 
+services can choose to:
+● Reassign their billing rights to the CAH and agree to the optional payment method 
+● File MAC claims for their professional CAH outpatient services under the PFS
+For physicians or practitioners who elect the optional payment method, a CAH must submit the 
+reassignment application online via PECOS or the paper Form CMS-855I. The CAH should maintain 
+a copy of the form for its own record. If a Method II CAH receives reassigned benefits, it doesn’t need 
+to submit a separate online or paper Form CMS-855B. Physicians and practitioners can reassign 
+benefits directly to the CAH’s Part A enrollment. We’ll deny a CAH’s claims for professional services if 
+a reassignment isn’t in PECOS.
+=== page 9 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 9 of 15
+We don’t make CAHs submit an annual payment election under the optional payment method, so 
+when CAHs elect the optional payment method, it stays in effect until the CAH submits a termination 
+request. If the CAH elects to end its optional payment method, it must submit a written request to its 
+MAC at least 30 days before the start of the next cost reporting period. For more information, find 
+your MAC’s website.
+We base the CAH outpatient optional payment method services payment on the sum of these, after 
+applicable deductions:
+● Facility services: 101% of CAH reasonable costs
+● Physician professional services: 115% of our PFS allowable amount
+● Non-physician practitioner professional services: 115% of PFS amount we normally pay 
+practitioner’s professional services
+Telehealth Services Payment
+We pay for telehealth services at 80% of PFS when the distant site physician or other practitioner 
+location is in a CAH electing the optional payment method and the physician or other practitioner 
+reassigns their billing rights to the CAH. Submit such claims with the GT modifier. CAHs bill their 
+regular Part A MAC for professional services provided at the distant site via telehealth, with revenue 
+codes 096X, 097X, or 098X. All requirements for billing distant-site telehealth services apply. 
+Visit the CMS Telehealth webpage for the latest information. It’s intended to help physicians, 
+practices, and health systems navigate changes to Medicare telehealth policy.
+For telehealth services, CAH-based renal dialysis centers (including satellites) must use revenue 
+code 078X when billing for the originating site facility fee. Use HCPCS code Q3014, telehealth 
+originating site facility fee, on a separate revenue line from any other services provided to the patient. 
+Teaching Anesthesiologist Services Payment
+When a teaching anesthesiologist is in a CAH that elected the optional payment method and the 
+anesthesiologist reassigns their billing rights, we pay 115% of PFS if the anesthesiologist participates 
+in 1 of these cases:
+● Training a resident in a single anesthesia case
+● Two concurrent resident anesthesia cases
+● Single resident anesthesia case concurrent to another case paid under the medically directed rate
+=== page 10 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 10 of 15
+You can qualify for payment by meeting these requirements:
+● A teaching anesthesiologist or a different anesthesiologist in the same anesthesia group is present 
+during all critical or key portions of the anesthesia service or procedure
+● A teaching anesthesiologist or an anesthesiologist the CAH has an arrangement with and is 
+immediately available to provide anesthesia services during the entire service or procedure
+The patient’s medical record must document the:
+● Teaching anesthesiologist’s presence during all critical or key portions of the anesthesia service 
+or procedure
+● Immediate availability of another teaching anesthesiologist as necessary
+Report the NPI of the teaching anesthesiologist who started the case on the claim during critical or 
+key procedure times and when different teaching anesthesiologists are with the resident.
+Submit teaching anesthesiologist claims using these modifiers:
+● AA: Anesthesia services personally performed by an anesthesiologist
+● GC: Under a teaching physician, the resident performed part of the service
+
+=== page 11 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 11 of 15
+Additional Medicare Payments
+Residents in Approved Medical Residency Training Programs Who 
+Train at a CAH
+CAHs can choose to incur residency training costs directly or function as a Medicare graduate 
+medical education non-provider setting for payment purposes.
+● If a CAH incurs residency training costs directly, we pay them 101% of reasonable costs for 
+training the full-time equivalent (FTE) residents
+● If a CAH functions as a non-provider site, a hospital can include the FTE residents’ training at the CAH 
+in its FTE resident count if it meets the non-provider site requirements at 42 CFR 412.105(f)(1)(ii)(E)
+and 42 CFR 413.78(g)
+Medicare Certified Registered Nurse Anesthetist Services Rural  
+Pass-Through Funding
+● As incentive to continue serving the rural population, CAHs can get reasonable cost-based 
+funding for certain Certified Registered Nurse Anesthetist (CRNA) services
+● Rural hospitals and CAHs must meet specific requirements to get Medicare rural pass-through 
+funding per 42 CFR 412.113(c)
+● CAHs qualifying for CRNA pass-through funding can get reasonable cost-based inpatient and 
+outpatient CRNA professional services payments whether they use the standard payment method 
+or optional payment method
+● If a CAH opts to include a CRNA in its optional payment method election, we pay for the CRNA’s 
+services based on 115% of the PFS, and the CAH gives up inpatient and outpatient CRNA pass-
+through delivered services payments
+Health Professional Shortage Area Physician Bonus Program
+● We pay physicians, including psychiatrists, a 10% outpatient professional services Health 
+Professional Shortage Area (HPSA) bonus if they provide CAH care in a primary care or mental 
+health HPSA within a designated geographic area
+● If you reassign your billing rights and the CAH elected the optional payment method, the CAH gets 
+115% of the applicable PFS amount multiplied by 110% based on all the quarter’s processed claims
+For more information, see Physician Bonuses.
+=== page 12 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 12 of 15
+Method II CAH Payment to Licensed Clinical Social Workers, Marriage 
+and Family Therapists & Mental Health Counselors
+● We pay claims for licensed clinical social workers (LCSWs), marriage and family therapists 
+(MFTs), and mental health counselors (MHCs) performing services billed on type of bill (TOB) 85X 
+with revenue codes 96X, 97X, or 98X if those providers have reassigned their billing rights to a 
+Method II CAH
+● LCSW services require an AJ modifier
+● MFTs and MHCs must enroll as an MFT or MHC specialty
+● We pay for these outpatient professional services at 115% of that which we would otherwise pay if 
+we didn’t include the services in the outpatient CAH services
+● Payment for LCSW, MFT, or MHC services will be 80% of the lesser of the actual charges for the 
+services or 75% of the amount determined for payment of a psychologist
+We calculate the payment using this formula:
+Facility-
+specific PFS 
+amount ˣ
+0.75 -
+Patient 
+coinsurance 
+and 
+deductible ˣ
+1.15 =
+Payment for 
+LCSW, MFT, 
+or MHC 
+services
+Medical Nutrition Therapy Services
+CAHs must submit claims for medical nutrition therapy services to their MAC who will base payment 
+on the non-facility amount for those HCPCS codes in the PFS. 
+Intensive Outpatient Program Services
+An intensive outpatient program (IOP) provides treatment at a level more intense than outpatient day 
+treatment or psychosocial rehabilitation but less intense than a partial hospitalization program. 
+Note: For more information on CAH billing requirements for partial hospitalization services, see the 
+Medicare Claims Processing Manual, Chapter 4, section 260.
+We don’t consider programs providing primarily social, recreational, or diversionary activities to be IOPs.
+=== page 13 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 13 of 15
+Patients you admit to an IOP must be all of these:
+● Under the care of a physician who certifies the need for IOP services
+● Need a minimum of 9 hours of services per week, as shown by their plan of care
+● Need a comprehensive, structured, and multimodal treatment requiring medical supervision and 
+coordination provided under an individualized plan of care because of a mental disorder, such as 
+substance use disorder, which severely interferes with multiple areas of daily life, including social, 
+vocational, and educational functioning
+● Be able to participate cognitively and emotionally in the active treatment process and tolerate the 
+intensity of an IOP program
+We’ll pay CAHS for IOP services billed on TOB 85x at 101% of reasonable cost. You must include 
+condition code 92 on the claim to identify IOP services. See Change Request 13222 for complete details.
+Flex Program State Grants
+Flex programs have 2 separate, complementary parts:
+● We provide reasonable cost-based, Medicare-certified CAH payments
+● Through the Federal Office of Rural Health Policy, the HRSA runs a state grant program 
+supporting community-based rural organized systems of care development in participating states
+To get funds under the grant program, states must apply for them and engage in rural health planning 
+by developing and maintaining a state rural health plan that:
+● Describes and supports CAH conversions
+● Promotes emergency medical services (EMS) integration by linking CAHs to local EMS and their 
+network partners
+● Develops CAH rural health networks
+● Develops and supports quality improvement initiatives
+● Evaluates state programs within the national program goals framework 
+See Rural Hospital Programs for more information.
+Obstetrics Services CoPs & New Requirements
+We developed new and revised obstetrics (OB) service CoPs to ensure all pregnant, birthing, 
+and postpartum women receive consistent, high-quality maternal health care regardless of their 
+geographic location. The CoPs include new baseline standards for the organization, staffing, and 
+delivery of OB care and staff training on evidence-based maternal health practices.
+=== page 14 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 14 of 15
+To reduce burden and avoid unintended consequences for CAHs to meet these new requirements, 
+we’re implementing these provisions over 2 years.
+● Effective July 1, 2025, CAHs must comply with these emergency services readiness requirements:
+● CAHs must have adequate provisions and protocols to meet emergency patient needs in 
+accordance with the complexity and scope of services offered
+● Protocols must be consistent with nationally recognized, evidence-based guidelines for caring 
+for patients with emergency conditions, including, but not limited to, patients with obstetrical 
+emergencies, complications, and immediate post-delivery care
+● Applicable CAH staff must complete annual training on these protocols and provisions, with 
+documentation of completion required
+● Effective January 1, 2026, CAHs offering OB services must comply with these organization and staffing
+and delivery of service requirements:
+● CAHs must have appropriate organization and supervision of OB services as well as 
+integration of OB services with other CAH departments. 
+● OB services must be consistent with CAH needs and resources.
+● OB care policies must be designed to ensure consistent high standards of medical practice, 
+patient care, and safety.
+● CAHs must have equipment readily available for treating OB cases to meet the needs of 
+patients, including a call-in system, cardiac monitor, and fetal doppler or monitor.
+● CAHs must have adequate provisions and protocols for obstetrical emergencies, 
+complications, immediate post-delivery care, and other patient health and safety events. 
+Provisions include equipment, supplies, and medication used in treating emergency cases and 
+must be readily available in the CAH.
+● Effective January 1, 2027, CAHs must comply with staff training and Quality Assessment and
+Performance (QAPI) program requirements. CAHs must:
+● Develop policies and procedures to ensure relevant staff are trained on topics aimed at 
+improving the delivery of maternal care, with documentation of completion required
+● Require OB services leadership to participate in OB QAPI activities
+● Incorporate publicly available maternal mortality review committee (MMRC) data and 
+recommendations into the QAPI program, as available
+● Use its QAPI program to assess and improve health outcomes and disparities among OB 
+patients on an ongoing basis
+=== page 15 ===
+MLN BookletInformation for Critical Access Hospitals
+MLN006400 December 2025Page 15 of 15
+Rural Emergency Hospitals
+The rural emergency hospital (REH) provider type started on January 1, 2023, to address rural 
+hospital closures. REHs allow for emergency services, observation care, and additional medical and 
+health outpatient services, if the REH elects to provide them, that don’t exceed an annual per-patient 
+average stay of 24 hours.
+REHs convert from either a CAH or a rural hospital (with no more than 50 beds) and don’t provide 
+acute care inpatient services except for SNF services in a DPU. The facility may submit a CMS-855A
+change of information application rather than an initial enrollment application to convert from a CAH 
+to an REH.
+Resources
+● Medicare Claims Processing Manual, Chapters 3 and 4
+● Quality, Safety & Oversight - General Information
+● Medicare Part B Overpaid and Beneficiaries Incurred Cost-Share Overcharges of Over $1 Million 
+for the Same Professional Services
+● State Operations Manual, Appendix W
+View the Medicare Learning Network® Content Disclaimer and Department of Health & Human Services Disclosure.
+The Medicare Learning Network®, MLN Connects®, and MLN Matters® are registered trademarks of the U.S. Department 
+of Health & Human Services (HHS).

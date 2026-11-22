@@ -79,3 +79,26 @@ test("implied operating revenue reproduces the submitted margin", () => {
     assert.ok(Math.abs((rev - h.opExpense) / rev - h.opMargin) < 1e-12, h.id);
   }
 });
+
+test("revenue-neutral with uncompensated care paid gives zero statewide change (default view)", () => {
+  for (const p of [283, 289, 453]) {
+    const rate = M.revenueNeutralRatePct(p, undefined, true);
+    const t = M.totals(M.runRateBased({ commercialPct: p, ratePct: rate, payUncompensated: true }));
+    assert.ok(Math.abs(t.revenueChange) < 1, `R=${p}: ${t.revenueChange}`);
+  }
+});
+
+test("CAH-at-cost option zeroes every CAH margin and leaves PPS hospitals unchanged", () => {
+  const base = M.runRateBased({ commercialPct: 283, ratePct: 100, payUncompensated: true });
+  const cah = M.runRateBased({ commercialPct: 283, ratePct: 100, payUncompensated: true, cahAtCost: true });
+  for (let i = 0; i < base.length; i++) {
+    if (cah[i].cah) assert.ok(Math.abs(cah[i].marginAfter) < 1e-12, cah[i].id);
+    else assert.equal(cah[i].revenueChange, base[i].revenueChange, cah[i].id);
+  }
+});
+
+test("NPR inputs equal the GMCB press-release totals", () => {
+  const sum = (k) => VT_HOSPITALS.reduce((s, h) => s + h[k], 0);
+  assert.equal(sum("totalNpr"), 3802585620);
+  assert.equal(sum("commercialNpr"), 1936889939);
+});

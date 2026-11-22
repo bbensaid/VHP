@@ -65,8 +65,8 @@ export interface PricePreset { id: string; label: string; pct: number; source: s
 /** Commercial hospital prices as a percent of Medicare: three published measures. They differ in method. */
 export const COMMERCIAL_PRICE_PRESETS: PricePreset[] = [
   { id: "rand", label: "RAND (2022 claims)", pct: 283, source: "RAND Hospital Price Transparency Project, Vermont findings for the GMCB (Aug 2024): inpatient + outpatient facility prices, 14 hospitals", url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/RAND%20hospital_August-2024-VT.pdf" },
-  { id: "vsea", label: "State employee & teacher plans (2018–22)", pct: 289, source: "GMCB, Reference-Based Pricing Data Analysis Report (Dec 16, 2024): VSEA and VEHI hospital payments", url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/GMCB_RBP_Report_Draft_12_16_24_PDFA.pdf" },
-  { id: "gmcb", label: "GMCB price tool (2025)", pct: 453, source: "GMCB FY27 Staff Overview (Aug 2026), p. 77, citing the GMCB Hospital Price Transparency Tool, Release 2: average commercial price across all hospital services", url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/FY27%20-%20AUG%20-%20Staff%20Overview%20(Final).pdf" },
+  { id: "vsea", label: "State employee & teacher plans (2018–Q3 2023)", pct: 289, source: "GMCB, Reference-Based Pricing Data Analysis Report (Dec 16, 2024): VSEA and VEHI hospital payments, claims from 2018 through the third quarter of 2023", url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/GMCB_RBP_Report_Draft_12_16_24_PDFA.pdf" },
+  { id: "gmcb", label: "GMCB price tool (2025; not like-for-like)", pct: 453, source: "GMCB FY27 Staff Overview (Aug 2026), p. 77, citing the GMCB Hospital Price Transparency Tool, Release 2: average commercial price across all hospital services. Its method differs from RAND's (outpatient 503% vs RAND 311%), so it is shown as a sensitivity, not a like-for-like measure", url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/FY27%20-%20AUG%20-%20Staff%20Overview%20(Final).pdf" },
 ];
 
 export const SOURCE_LINKS = {

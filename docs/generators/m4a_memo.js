@@ -225,7 +225,7 @@ add(
   B("Borrowing to pay for it indefinitely “would be unsustainable”."),
   src(S.cbo),
   P("**The Vermont evidence on global budgets is sobering:**"),
-  B("Vermont's six-hospital Medicaid global budget, launched January 1, 2026, was not approved by CMS under the Global Commitment waiver terms. Payments stopped July 31, 2026, and the January–July payments are being reprocessed as fee-for-service."),
+  B("Vermont's Medicaid hospital global budget, launched January 1, 2026, was not approved by CMS under the Global Commitment waiver terms. Payments stopped July 31, 2026, and the January–July payments are being reprocessed as fee-for-service."),
   B("Nine of 14 Vermont hospitals ran operating losses in 2023."),
   src(`${S.gcr}; ${S.ow}`),
   ...equity("do the incentives reward serving the hardest-to-reach, or penalize it?", [

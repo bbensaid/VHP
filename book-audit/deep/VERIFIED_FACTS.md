@@ -33,7 +33,7 @@ https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20En
 ## Federal / AHEAD / Medicaid
 - Vermont signed AHEAD state agreement Jan 2025; withdrew July 2026 after CMS renegotiation cut the expected federal
   upside (EAST Fund) from ~$138M to a cap of $10M. Medicare's primary-care $ ended with OneCare; RHT = stopgap.
-- Medicaid hospital global budget (6 hospitals, launched Jan 1, 2026): CMS letter July 7, 2026 — not approved under
+- Medicaid hospital global budget (launched Jan 1, 2026; hospital COUNT NOT CONFIRMED — CMS letter 2026-07-07 and GCR 26-089 give none, '6' removed 2026-11-22): CMS letter July 7, 2026 — not approved under
   Global Commitment STCs; payments stopped July 31, 2026; Jan–Jul payments reprocessed as FFS by Jan 7, 2027
   (GCR 26-089). Global Commitment waiver expires Dec 31, 2027.
 - Vermont All-Payer ACO Model: performance years from 2018; agreement with CMS ended at the end of 2025 (8 years; VTDigger 3/13/2026). NOT 2024.

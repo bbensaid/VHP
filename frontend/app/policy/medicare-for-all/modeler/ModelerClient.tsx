@@ -93,12 +93,13 @@ export default function ModelerClient() {
   const [commercialPct, setCommercialPct] = useState(283);
   const [ratePct, setRatePct] = useState(100);
   const [payUncompensated, setPayUncompensated] = useState(true);
+  const [cahAtCost, setCahAtCost] = useState(false);
   const [cboLower, setCboLower] = useState(false);
 
-  const neutral = useMemo(() => revenueNeutralRatePct(commercialPct), [commercialPct]);
+  const neutral = useMemo(() => revenueNeutralRatePct(commercialPct, undefined, payUncompensated), [commercialPct, payUncompensated]);
   const rows = useMemo(
-    () => (lens === "rate" ? runRateBased({ commercialPct, ratePct, payUncompensated }) : runGlobalBudget()),
-    [lens, commercialPct, ratePct, payUncompensated],
+    () => (lens === "rate" ? runRateBased({ commercialPct, ratePct, payUncompensated, cahAtCost }) : runGlobalBudget()),
+    [lens, commercialPct, ratePct, payUncompensated, cahAtCost],
   );
   const t = totals(rows);
   const preset = COMMERCIAL_PRICE_PRESETS.find((p) => p.pct === commercialPct);
@@ -118,7 +119,7 @@ export default function ModelerClient() {
         <p className="text-sm text-slate-600 mt-3 max-w-3xl leading-relaxed">
           {lens === "rate"
             ? "The design CBO analyzed: every patient's care is paid one rate, set as a percent of Medicare. Commercial revenue falls from today's commercial price to that rate. Medicare and other revenue rise or fall to the same rate."
-            : "S.1506 § 611 pays hospitals a quarterly lump sum, \"payment in full for all operating expenses\", negotiated from their costs and volume. § 615 bars payments toward \"profit or net revenue\". HTR models this as operating revenue equal to operating expense, so every hospital's operating margin becomes zero. Capital is budgeted separately and is not shown."}
+            : "S.1506 § 611 pays hospitals a quarterly lump sum, \"payment in full for all operating expenses\", negotiated against Medicare's prospective payment rates (§ 611(c)) and excluding capital (§ 611(b)(3)); § 615 bars payments toward \"profit or net revenue\". HTR's simplification sets each hospital's operating revenue equal to its FY2027 operating expense, so every margin becomes zero. Because that expense includes depreciation, which the bill funds separately, and because negotiation against Medicare rates could pay less, treat this lens as an upper bound on what S.1506 would pay, not a prediction."}
         </p>
       </section>
 
@@ -159,9 +160,13 @@ export default function ModelerClient() {
               <input type="checkbox" checked={payUncompensated} onChange={(e) => setPayUncompensated(e.target.checked)} />
               Everyone is covered, so uncompensated care (charity care and bad debt) is paid
             </label>
+            <label className="flex items-center gap-2 mt-2 text-sm text-slate-700">
+              <input type="checkbox" checked={cahAtCost} onChange={(e) => setCahAtCost(e.target.checked)} />
+              Pay critical access hospitals at cost, as Medicare does today
+            </label>
             <p className="text-[11px] text-slate-500 mt-2 leading-snug">
               Act 167 benchmark: Oliver Wyman recommended commercial prices &ldquo;ideally at 200% of Medicare or less for PPS hospitals&rdquo; (<a href={SOURCE_LINKS.rbp200.url} target="_blank" rel="noopener noreferrer" className="underline">GMCB, Dec 2024</a>).
-              Revenue-neutral is the one rate at which total revenue across the 14 hospitals stays the same.
+              Revenue-neutral is the one rate at which total revenue across the 14 hospitals stays the same, counting the uncompensated-care payment when that box is ticked. Medicare pays critical access hospitals &ldquo;101% of reasonable costs&rdquo; (<a href="https://cms.gov/files/document/mln006400-information-critical-access-hospitals.pdf" target="_blank" rel="noopener noreferrer" className="underline">CMS MLN006400</a>), so a single rate is least realistic for those eight hospitals; the second box pays them at cost instead.
             </p>
           </div>
         </section>
@@ -171,7 +176,7 @@ export default function ModelerClient() {
       <section>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Tile value={usdM(t.revenueChange)} label={`Statewide change, ${lens === "rate" ? "14 hospitals" : "13 hospitals (BMH has no data)"}`} tone={t.revenueChange < 0 ? "red" : "blue"} />
-          <Tile value={pct(t.changePctOfNpr)} label="Share of FY27 approved net patient revenue ($3.80B)" />
+          <Tile value={pct(t.changePctOfNpr)} label={`Share of FY27 approved net patient revenue ($${(t.totalNpr / 1e9).toFixed(2)}B for the hospitals modeled)`} />
           <Tile value={`${t.inDeficitBefore} → ${t.inDeficitAfter}`} label={`Hospitals with an operating loss, FY27 → after (of ${t.withMargin} with data)`} tone={t.inDeficitAfter > t.inDeficitBefore ? "red" : "slate"} />
           <Tile value={lens === "rate" ? `${neutral.toFixed(0)}%` : "0%"} label={lens === "rate" ? "Revenue-neutral single rate, % of Medicare" : "Operating margin of every hospital under § 611"} />
         </div>
@@ -192,7 +197,7 @@ export default function ModelerClient() {
           <div className="mt-4 text-sm text-slate-700 bg-slate-50 border border-slate-200 rounded-xl p-4 leading-relaxed">
             <strong>How to read this.</strong> A cost-based global budget rescues hospitals that are losing money and takes the operating surplus from those that are making it.
             Whether that works depends on what counts as an allowable cost. S.1506 has regional directors negotiate it from a hospital&apos;s cost report, volume, wages and staffing (§ 611(b)(2)).
-            Vermont&apos;s own Medicaid global budget for six hospitals was stopped by CMS in July 2026.
+            Vermont&apos;s own Medicaid hospital global budget, launched January 1, 2026, was stopped by CMS in July 2026.
           </div>
         )}
       </section>
@@ -229,6 +234,9 @@ export default function ModelerClient() {
         <h2 className="text-lg font-black text-slate-900 mb-3">What this model assumes, and what it leaves out</h2>
         <ul className="text-sm text-slate-700 space-y-2 list-disc pl-5 leading-relaxed">
           <li>It is static. Volume, costs and the mix of patients stay at FY2027 levels. CBO expects demand to rise under single payer; this model does not.</li>
+          <li>Net patient revenue is GMCB&apos;s definition. It includes fixed prospective payments (about $193M system-wide in FY27 submissions), which the rate lens reprices as if they were fee-for-service. Commercial revenue excludes Medicare Advantage but includes payers such as workers&apos; compensation, Tricare and ChampVA, which a hospital has asked GMCB to carve out.</li>
+          <li>Direction of bias. Applying a facility price ratio to all commercial revenue overstates the loss where revenue includes professional services, which RAND found priced lower (226% of Medicare in Vermont). Treating Medicaid as Medicare-rate understates Medicaid-heavy hospitals&apos; gains and overstates the revenue-neutral rate. Treat results as directions and orders of magnitude.</li>
+          <li>Basis gaps between approved and submitted figures are not uniform. Northwestern Medical Center&apos;s approved commercial revenue is $17.8M below its submission, so its FY27 margin as shown is optimistic.</li>
           <li>Lens A treats all non-commercial revenue as paid at Medicare rates today. Medicaid pays less, so the model <em>understates</em> the gain for hospitals with many Medicaid patients.</li>
           <li>One statewide commercial price is applied to every hospital. Hospital-level commercial prices exist in RAND&apos;s and GMCB&apos;s work, but they were not available as data to load.</li>
           <li>Commercial and total net patient revenue are FY2027 <em>approved</em> budgets. Operating expense and margin are FY2027 <em>submitted</em> budgets, because GMCB publishes margins on that basis. Operating revenue is calculated as expense ÷ (1 − margin).</li>

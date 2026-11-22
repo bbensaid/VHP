@@ -116,7 +116,7 @@ L13 = [
 
     h2('s4h1', 'Economics: The Money'),
     blk('s4p1', "The money does not exist yet. S.1506 has no revenue title. CBO's analysis of five illustrative designs found federal health subsidies rising by $1.5 to $3.0 trillion in 2030, and GDP about 1 to 10 percent lower by 2030 if the cost were met with payroll or income taxes; permanent borrowing would be \"unsustainable.\" An incentive that has not been funded is a design, not an incentive."),
-    blk('s4p2', "Vermont's evidence on global budgets adds two cautions. Hospitals are not starting from strength: Oliver Wyman found nine of Vermont's fourteen hospitals with operating losses in 2023, and GMCB's August 2026 staff overview shows five of the thirteen hospitals it tracks submitting negative operating margins for FY2027. And federal agreement matters: Vermont's six-hospital Medicaid global budget, launched January 1, 2026, was not approved by CMS under the state's waiver terms, and its payments stopped on July 31, 2026."),
+    blk('s4p2', "Vermont's evidence on global budgets adds two cautions. Hospitals are not starting from strength: Oliver Wyman found nine of Vermont's fourteen hospitals with operating losses in 2023, and GMCB's August 2026 staff overview shows five of the thirteen hospitals it tracks submitting negative operating margins for FY2027. And federal agreement matters: Vermont's Medicaid hospital global budget, launched January 1, 2026, was not approved by CMS under the state's waiver terms, and its payments stopped on July 31, 2026."),
     stat_grid('s4sg1', [
         ('$1.5-3.0T', 'Added federal subsidies in 2030', 'CBO, May 12, 2022'),
         ('None', 'Revenue title in S.1506', 'S.1506, introduced text'),
