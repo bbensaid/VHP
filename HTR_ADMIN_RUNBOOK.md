@@ -650,6 +650,20 @@ As of 2026-11-15.
 4. **Seed files drifting from the live Academy** — a re-seed resurrects deleted lessons
 5. **Browser cache masking a fix** — verify with `curl`, not a reload
 
+## 16. RHT review data (added 2026-11-22)
+
+The `/rht-review` pages read JSON from `frontend/lib/data/rht-review/` (no database). Full description: `docs/HTR_Documentation_Addendum_3_2026-11-22.docx`.
+
+| Task | How |
+| :--- | :--- |
+| Refresh CMS-based figures | `book-audit/deep/rht/extract_cms.py` → `build_states.py`; `extract_uses.py`; `extract_themes.py`; `build_vermont.py` |
+| Add or update a state's award list | Save the source in `book-audit/deep/sources/rht_recipients/` (strip `<script>` from saved pages — GitHub push protection blocked a map token once), run/copy `book-audit/deep/rht/parse_recipients_<state>.py` (it asserts count/sum against the source), update `RecipientsNational.tsx` BASIS, the search ledger, `recipient-coverage.json`, and the row count in `frontend/e2e/rht-review.spec.ts` |
+| Which states are itemized, and why not the others | `book-audit/deep/rht/recipient_search_ledger.json` |
+| Verify after a deploy | `cd frontend && PLAYWRIGHT_BASE_URL=https://healthtransformationreview.org npx playwright test e2e/rht-review.spec.ts` (the local dev server is slow; use the live site) |
+| Dev server memory | `npm run dev` grows (4.8 GB after two days); restart it when pages slow down |
+
+Standing rules: Vermont first, California second in every multi-state view; never state that a state has no list without recording where it was searched.
+
 ---
 
 *Everything technical here was checked against the running system and the

@@ -15,3 +15,10 @@ Run from a folder with the `docx` npm package installed:
 The scripts require "./node_modules/docx": run them from a directory where
 `npm install docx` has been done, or adjust that require path.
 - m4a_memo.js → HTR_Medicare_for_All_Five_Pillar_Memo_2026-11-21.docx (M4A plan Phase 2; facts from book-audit/deep/sources/m4a)
+- addendum_2026-11-15.js, addendum_2026-11-20.js, addendum_2026-11-22.js → the three documentation addendums (docs/HTR_Documentation_Addendum_*.docx). The last one also takes the project root as a third argument and reads the RHT data JSON so its tables match the website.
+- rht_review_report.js → HTR_RHT_Program_Review_2026-11-20.docx (printable RHT review; does not yet include the dashboard or award lists)
+
+Run the 22 November addendum from a folder with the docx package installed:
+
+    node addendum_2026-11-22.js ../HTR_Documentation_Addendum_3_2026-11-22.docx /path/to/Vermont-Health-Platform
+
