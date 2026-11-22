@@ -1,0 +1,301 @@
+{
+ "_about": "Per-state search for itemised RHT award/recipient lists published by the state itself. status: parsed | list_found_to_parse | partial (scattered announcements, no consolidated list found yet) | none_found (searched, no list) | blocked. 'searched' = queries/pages actually checked, 2026-11-22. Order of work: Vermont, California, then the rest.",
+ "Vermont": {
+  "status": "parsed",
+  "note": "State's own executed-agreement list (242 agreements) \u2014 full Year 1 review page",
+  "file": "frontend/lib/data/rht-review/vermont-year1.json"
+ },
+ "California": {
+  "status": "parsed",
+  "url": "https://hcai.ca.gov/rural-health/calrht/calrht-program-updates/",
+  "note": "HCAI 108 recommended BP1 subrecipients"
+ },
+ "Alabama": {
+  "status": "parsed"
+ },
+ "Alaska": {
+  "status": "parsed"
+ },
+ "Florida": {
+  "status": "parsed"
+ },
+ "Maryland": {
+  "status": "parsed"
+ },
+ "Mississippi": {
+  "status": "parsed"
+ },
+ "New Jersey": {
+  "status": "parsed"
+ },
+ "Oregon": {
+  "status": "parsed",
+  "note": "Catalyst Awards only"
+ },
+ "Pennsylvania": {
+  "status": "parsed"
+ },
+ "Texas": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://gov.texas.gov/news/post/governor-abbott-announces-51-million-in-funding-for-rural-healthcare",
+   "https://pfd.hhs.texas.gov/rural-health-transformation-program"
+  ],
+  "note": "68 hospital districts x $750K (Sep 28 2026); further rounds ($78M/216 providers per CMS Oct 15)"
+ },
+ "New York": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.governor.ny.gov/news/governor-hochul-announces-76-million-strengthen-rural-healthcare-across-new-york-state"
+  ],
+  "note": "RCHI: 90 awards to 56 organizations, $76.2M (Sep 4 2026)"
+ },
+ "Colorado": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://hcpf.colorado.gov/rural-health-transformation-program"
+  ],
+  "note": "$169.6M, 91 grantees, ~250 projects (Sep 28 2026); list on program site"
+ },
+ "Michigan": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.michigan.gov/mdhhs/assistance-programs/medicaid/rural-health-transformation-program/rhtp-subrecipients"
+  ]
+ },
+ "Washington": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.hca.wa.gov/assets/program/rht-obligated-funds.pdf",
+   "https://www.hca.wa.gov/rhtp"
+  ]
+ },
+ "Minnesota": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.health.state.mn.us/facilities/ruralhealth/ruraltrans/index.html",
+   "https://mn.gov/oems/assets/2026%20%20TIP%20RFP%20Awards_tcm1221-771334.pdf"
+  ],
+  "note": "per-awardee PDFs under /ruraltrans/docs/awardees/"
+ },
+ "Missouri": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://dss.mo.gov/about-rural-health-transformation-program-funding",
+   "https://content.govdelivery.com/accounts/MODSS/bulletins/42fbc46",
+   "https://content.govdelivery.com/accounts/MODSS/bulletins/42b4d9f"
+  ]
+ },
+ "South Carolina": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://scdhhs.gov/communications/scdhhs-announces-rural-health-transformation-program-notices-intent-award",
+   "https://www.scdhhs.gov/sites/dhhs/files/(2026-7-31)%20RHTP%20NOIA%20Announcement%20Bulletin%20FINAL.pdf"
+  ],
+  "note": "228 grants, $167,299,900.69"
+ },
+ "Indiana": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.in.gov/grow-rural-health/",
+   "https://www.in.gov/grow-rural-health/files/IDOH Region 4 Press Release.pdf"
+  ],
+  "note": "GROW regional grants, 8 regions $9.7M-$20.7M; regional press releases"
+ },
+ "Iowa": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://hhs.iowa.gov/initiatives/rural-health-transformation-rht"
+  ]
+ },
+ "Virginia": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.ruralhealthtransformationva.virginia.gov/application--award/",
+   "https://www.hhr.virginia.gov/media/governorvirginiagov/rural-health-transformation/pdf/8.28.2026-RHT-release.pdf"
+  ],
+  "note": "$122M allocated (Aug 28 2026)"
+ },
+ "Ohio": {
+  "status": "partial",
+  "note": "scattered announcements (OU $10M, OPA $2M, ODH $55M Nov 3); no consolidated list found yet"
+ },
+ "Louisiana": {
+  "status": "partial",
+  "urls": [
+   "https://ldh.la.gov/assets/docs/Secretary/RHTP/AC_Meeting_11.05.2026.pdf"
+  ]
+ },
+ "Wisconsin": {
+  "status": "partial",
+  "urls": [
+   "https://dhs.wisconsin.gov/rhtp/index.htm"
+  ],
+  "note": "$69.9M BY1 grants awarded; program pages per initiative"
+ },
+ "Kentucky": {
+  "status": "partial",
+  "urls": [
+   "https://ruralhealthplan.ky.gov/"
+  ],
+  "note": "RHIhub says KY lists executed awards/contracts \u2014 check"
+ },
+ "Montana": {
+  "status": "partial",
+  "urls": [
+   "https://dphhs.mt.gov/RuralHealthTransformationProgram/Grants"
+  ]
+ },
+ "Nebraska": {
+  "status": "partial",
+  "urls": [
+   "https://dhhs.ne.gov/Pages/Rural-Health-Transformation.aspx"
+  ],
+  "note": "public notices of award per initiative"
+ },
+ "Arizona": {
+  "status": "partial",
+  "urls": [
+   "https://www.azahcccs.gov/AHCCCS/Initiatives/RHTP/"
+  ],
+  "note": "rolling RFGA awards from June 2026"
+ },
+ "Georgia": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://dch.georgia.gov/node/35551",
+   "https://dch.georgia.gov/node/35616",
+   "https://dch.georgia.gov/node/35626",
+   "https://dch.georgia.gov/node/35746"
+  ],
+  "note": "4 phases of GREAT Health Year 1 awards (Jun 8, Jul 16, Jul 23, Aug 27 2026), >$218M total; phase 1 has no per-award amounts"
+ },
+ "Oklahoma": {
+  "status": "partial",
+  "urls": [
+   "https://oklahoma.gov/health/rhtp/rhtp-funding-recipients.html"
+  ],
+  "note": "recipients in a JS dropdown \u2014 find the data endpoint"
+ },
+ "Wyoming": {
+  "status": "partial",
+  "note": "advisory-committee approval sheet; names clipped / EIN-only rows"
+ },
+ "Illinois": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://omb.illinois.gov/PUBLIC/GATA/CSFA/Program.aspx?csfa=3979",
+   "https://omb.illinois.gov/PUBLIC/GATA/CSFA/Program.aspx?csfa=3950"
+  ],
+  "note": "GATA CSFA program listings have 'Active Awards' tables per RHTP sub-program \u2014 earlier 'none' verdict was wrong"
+ },
+ "North Carolina": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.ncdhhs.gov/news/press-releases/2026/11/02/state-launches-new-rural-health-transformation-program-dashboard",
+   "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/transforming-rural-health-north-carolina-our-progress",
+   "https://governor.nc.gov/news/press-releases/2026/06/08/ncdhhs-announces-10-million-ems-workforce-through-nc-rural-health-transformation-program"
+  ],
+  "note": "NCDHHS launched an RHTP dashboard Nov 2 2026; EMS 39 agencies $10M"
+ },
+ "West Virginia": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://health.wv.gov/rural-health-transformation-program",
+   "https://governor.wv.gov/article/governor-morrisey-announces-first-rural-health-transformation-program-awards"
+  ],
+  "note": "announced awards by initiative with amounts and counties (per search) \u2014 earlier 'none' verdict was wrong"
+ },
+ "Kansas": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.kdhe.ks.gov/rhtp",
+   "https://www.kdhe.ks.gov/CivicAlerts.aspx?AID=1957",
+   "https://www.haysmed.com/wp-content/uploads/2026/05/rpgp-and-REH-CAP-Press-Release-vF-1.pdf",
+   "https://www.kdhe.ks.gov/DocumentCenter/View/60654"
+  ],
+  "note": "$79.1M to 39 orgs; several award PDFs/newsflashes"
+ },
+ "Arkansas": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://news.uams.edu/wp-content/uploads/2026/08/REL-RHTP-Awards.pdf",
+   "https://senate.arkansas.gov/?p=13038",
+   "https://talkbusiness.net/2026/09/54-6-million-in-rural-health-transformation-funds-awarded/"
+  ],
+  "note": "50 awards $149.3M (Aug 27) + $54.6M round 2 (Sep 24); full list at arkansasrhtp.com"
+ },
+ "Tennessee": {
+  "status": "list_found_to_parse",
+  "urls": [
+   "https://www.tn.gov/health/news/2026/11/9/tennessee-announces--422-million-in-rural-health-transformation-grants-for-138-projects-statewide.html",
+   "https://www.tn.gov/health/rural/grants.html"
+  ],
+  "note": "spreadsheet of 138 grantee projects ($422M over 5 years) on TDH RHTP site"
+ },
+ "Rhode Island": {
+  "status": "none_found",
+  "note": "budget amendment by program only; no subrecipient list found (searched 2026-11-22); eohhs.ri.gov 403 to curl"
+ },
+ "Connecticut": {
+  "status": "partial",
+  "urls": [
+   "https://portal.ct.gov/governor/news/press-releases/2026/09-2026/governor-lamont-announces-rural-health-transformation-program-invests-50-million"
+  ],
+  "note": "$50M grant agreements incl. $46M to four hospitals"
+ },
+ "Massachusetts": {
+  "status": "none_found",
+  "note": "no subrecipient list found; RFA for hospitals in Oct 2026"
+ },
+ "Maine": {
+  "status": "partial",
+  "note": "$12M UNE partnership; hospital efficiency + EMR funds released, no recipient list found"
+ },
+ "New Hampshire": {
+  "status": "partial",
+  "note": "USNH $15.6M (Exec Council Mar 16); 5 hubs; EMS $11M (CMS Oct 16)"
+ },
+ "New Mexico": {
+  "status": "partial",
+  "urls": [
+   "https://www.hca.nm.gov/rht/"
+  ],
+  "note": "CMS $74M (Sep 21). CAUTION: NM $50M/41 orgs and $20M/32 orgs are STATE funds, not RHT"
+ },
+ "Idaho": {
+  "status": "partial",
+  "note": "all Year-1 funds allocated (Idaho Capital Sun Oct 28); no list found"
+ },
+ "Nevada": {
+  "status": "partial",
+  "urls": [
+   "https://gov.nv.gov/press-releases/nevada-announces-first-round-of-grants-under-new-rural-health-transformation-program",
+   "https://www.gov.nv.gov/press-releases/nevada-announces-another-$27-million-in-awards-to-improve-rural-health-care/"
+  ],
+  "note": "~$150M, 158 projects, 17 counties \u2014 check releases for lists"
+ },
+ "Utah": {
+  "status": "none_found",
+  "note": "competitive awards not yet public (searched 2026-11-22)"
+ },
+ "North Dakota": {
+  "status": "none_found",
+  "note": "state says recipients not yet public (Valley News Live Nov 17 2026)"
+ },
+ "South Dakota": {
+  "status": "partial",
+  "urls": [
+   "https://doh.sd.gov/healthcare-professionals/rural-health/rural-health-transformation-project/rht-press-releases/"
+  ],
+  "note": "Rural Strong $31.5M/28 projects (Jul 24) + several CMS-announced rounds"
+ },
+ "Hawaii": {
+  "status": "partial",
+  "note": "$45M UH JABSOM + $13M DOH ambulances (Sep 1)"
+ },
+ "Delaware": {
+  "status": "partial",
+  "note": "Westside $11.3M, La Red $10.1M, Henrietta Johnson $1.29M (CMS Sep 24); physician awards Oct 14"
+ }
+}
