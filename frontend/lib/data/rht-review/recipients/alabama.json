@@ -1,0 +1,319 @@
+{
+ "state": "Alabama",
+ "slug": "alabama",
+ "asOf": "2026-10",
+ "source": {
+  "label": "Office of Gov. Kay Ivey, \"Governor Ivey Announces Additional Alabama Rural Health Transformation Program Grants Totaling Nearly $55 Million\" (October 2026)",
+  "url": "https://governor.alabama.gov/newsroom/2026/10/governor-ivey-announces-additional-alabama-rural-health-transformation-program-grants-totaling-nearly-55-million/"
+ },
+ "announcedTotal": 55000000,
+ "rows": [
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 1,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Statewide",
+   "amount": 1000000.0,
+   "amountPrinted": "$1 million",
+   "purpose": "improve the ability of rural hospitals, emergency departments and emergency medical service providers to recognize, stabilize and manage obstetric and neonatal emergencies. This project will equip at least 20 rural hospitals with emergency readiness labor and delivery carts and simulation resources while providing training (Statewide)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 2,
+   "recipient": "Triad of Alabama LLC DBA Flowers Hospital",
+   "county": "Barbour, Coffee, Covington, Dale, Geneva, Henry, Houston, Pike",
+   "amount": 1450000.0,
+   "amountPrinted": "$1.45 million",
+   "purpose": "establish a regional maternal-fetal medicine telehealth hub and connect Medical Center Enterprise to specialty services through telerobotic ultrasound serving eight counties (Barbour, Coffee, Covington, Dale, Geneva, Henry, Houston, Pike)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 3,
+   "recipient": "The East Alabama Health Care Authority",
+   "county": "Barbour, Bullock, Chambers",
+   "amount": 1230000.0,
+   "amountPrinted": "$1.23 million",
+   "purpose": "establish three community-based maternal health access points and connect them to East Alabama Health specialty and referral services in three counties (Barbour, Bullock, Chambers)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 4,
+   "recipient": "The Russell Hospital Corp.",
+   "county": "Clay, Coosa, Elmore, Talladega, Tallapoosa",
+   "amount": 140242.0,
+   "amountPrinted": "$140,242",
+   "purpose": "strengthen maternal and fetal diagnostic and referral capacity by installing an ultrasound system and integrating it with its existing imaging, consultation and transfer infrastructure serving five counties (Clay, Coosa, Elmore, Talladega, Tallapoosa)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 5,
+   "recipient": "University of South Alabama",
+   "county": "Baldwin, Butler, Clarke, Conecuh, Covington, Escambia, Marengo, Mobile, Monroe, Washington",
+   "amount": 1630000.0,
+   "amountPrinted": "$1.63 million",
+   "purpose": "establish a connected maternity care network linking its obstetric and maternal-fetal medicine hub in Mobile with rural access locations in southwest Alabama (Baldwin, Butler, Clarke, Conecuh, Covington, Escambia, Marengo, Mobile, Monroe, Washington)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "n": 6,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Choctaw, Clarke, Mobile, Monroe, Washington",
+   "amount": 1790000.0,
+   "amountPrinted": "$1.79 million",
+   "purpose": "establish a regional maternal-fetal-medicine referral hub connected with Jackson Medical Center and Washington County Hospital allowing high-risk pregnant patients to receive specialist-supported care closer to home in five counties (Choctaw, Clarke, Mobile, Monroe, Washington)."
+  },
+  {
+   "program": "EMS Trauma and Stroke Initiative",
+   "n": 7,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Statewide",
+   "amount": 3440000.0,
+   "amountPrinted": "$3.44 million",
+   "purpose": "strengthen and expand Alabama\u2019s statewide emergency care coordination system for trauma, stroke, cardiac and other time-sensitive conditions in partnership with Birmingham Regional Emergency Medical Services System and its Alabama Trauma Communications Center (Statewide)."
+  },
+  {
+   "program": "EMS Trauma and Stroke Initiative",
+   "n": 8,
+   "recipient": "Greene County Health System",
+   "county": "Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Tuscaloosa, Wilcox",
+   "amount": 308694.0,
+   "amountPrinted": "$308,694",
+   "purpose": "establish a rural emergency care coordination network to strengthen how patients with suspected stroke, major trauma and other time-sensitive emergencies in 14 counties are identified, stabilized, referred and transferred to the appropriate level of care (Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Tuscaloosa, Wilcox)."
+  },
+  {
+   "program": "EMS Trauma and Stroke Initiative",
+   "n": 9,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Blount, Chilton, St. Clair",
+   "amount": 452716.0,
+   "amountPrinted": "$452,716",
+   "purpose": "implement a rural stroke transfer coordination pilot to help patients with severe strokes move more quickly from participating rural hospitals to advanced stroke centers when higher-level treatment is required in three counties (Blount, Chilton, St. Clair)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 10,
+   "recipient": "The University of Alabama",
+   "county": "Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Wilcox",
+   "amount": 1760000.0,
+   "amountPrinted": "$1.76 million",
+   "purpose": "establish rural Emergency Medical Services Treat-in-Place infrastructure across Alabama by providing participating agencies with portable telemedicine equipment, connectivity, training, clinical protocols, documentation tools, referral workflows and quality monitoring to support safe care without unnecessary transport to emergency departments in 13 counties (Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Wilcox)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 11,
+   "recipient": "The Health Care Authority of the City of Huntsville",
+   "county": "Lawrence, Marion, Winston",
+   "amount": 450000.0,
+   "amountPrinted": "$450,000",
+   "purpose": "establish a rural Emergency Medical Services Treat-in-Place program using two 911-dispatched rapid response vehicles staffed by six Critical Care Paramedics to provide faster field assessment and care in three counties (Lawrence, Marion, Winston)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 12,
+   "recipient": "Greene County Health System",
+   "county": "Greene County",
+   "amount": 750000.0,
+   "amountPrinted": "$750,000",
+   "purpose": "establish an Emergency Medical Services Treat-in-Place program that allows trained emergency medical personnel to assess and treat eligible patients under approved protocols and medical oversight (Greene County)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 13,
+   "recipient": "Advantage Emergency Medical Services LLC",
+   "county": "Etowah County",
+   "amount": 285675.0,
+   "amountPrinted": "$285,675",
+   "purpose": "establish a physician-directed Emergency Medical Services Treat-in-Place program that allows trained paramedics to assess patients and connect them with an emergency physician through real-time telehealth consultation when transport may not be necessary (Etowah County)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 14,
+   "recipient": "Haynes Ambulance of Alabama Inc.",
+   "county": "Bullock, Covington, Crenshaw, Elmore, Lowndes, Macon, Pike",
+   "amount": 1400000.0,
+   "amountPrinted": "$1.4 million",
+   "purpose": "establish a physician-directed regional Emergency Medical Services Treat-in-Place program that allows specially trained paramedics to assess and treat qualifying patients at their location when transport is not necessary in seven counties (Bullock, Covington, Crenshaw, Elmore, Lowndes, Macon, Pike)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 15,
+   "recipient": "Regional Paramedical Services",
+   "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 153525.0,
+   "amountPrinted": "$153,525",
+   "purpose": "implement an Emergency Medical Services Treat-in-Place by deploying three non-transport response vehicles that allow paramedics to respond to qualifying patients without taking a transport-capable ambulance out of service in seven counties (Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 16,
+   "recipient": "Piedmont Emergency Rescue Squad Inc.",
+   "county": "Calhoun, Cherokee, Etowah",
+   "amount": 381220.0,
+   "amountPrinted": "$381,220",
+   "purpose": "establish a telehealth-enabled Emergency Medical Services Treat-in-Place program that allows trained paramedics to assess and treat qualifying patients at their location with real-time physician support when transport to a hospital is not necessary in three counties (Calhoun, Cherokee, Etowah)."
+  },
+  {
+   "program": "EMS Treat-in-Place Initiative",
+   "n": 17,
+   "recipient": "Oneonta Fire and Rescue Service",
+   "county": "Blount County",
+   "amount": 128477.0,
+   "amountPrinted": "$128,477",
+   "purpose": "implement an Emergency Medical Services Treat-in-Place model to help eligible patients with non-life-threatening conditions receive care on scene under medical oversight and to improve coordination when transport is needed (Blount County)."
+  },
+  {
+   "program": "Simulation Training Initiative",
+   "n": 18,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Perry, Wilcox",
+   "amount": 125055.0,
+   "amountPrinted": "$125,055",
+   "purpose": "expand mobile, hands-on training programs for rural healthcare workers and emergency medical personnel in three counties. The training will cover childbirth emergencies, newborn resuscitation, advanced Cesarean delivery skills, bone and joint emergencies, airway management, access to blood vessels for emergency treatment and coordinated response (Bibb, Perry, Wilcox)."
+  },
+  {
+   "program": "Simulation Training Initiative",
+   "n": 19,
+   "recipient": "QHG of Enterprise Inc.",
+   "county": "Coffee, Covington, Crenshaw, Dale, Geneva, Pike",
+   "amount": 70000.0,
+   "amountPrinted": "$70,000",
+   "purpose": "upgrade clinical training equipment to provide hospital employees with hands-on instruction for practicing heart and lung assessments, premature newborn resuscitation, childbirth emergencies, facility-wide emergency response and infant lifesaving resuscitation in six counties (Coffee, Covington, Crenshaw, Dale, Geneva, Pike)."
+  },
+  {
+   "program": "Simulation Training Initiative",
+   "n": 20,
+   "recipient": "Greene County Health System",
+   "county": "Greene County",
+   "amount": 575000.0,
+   "amountPrinted": "$575,000",
+   "purpose": "establish a permanent regional training center for healthcare workers serving west Alabama and the Black Belt by purchasing realistic adult, maternal, newborn and pediatric patient simulators, procedure-training equipment, portable resources and technology for recording and reviewing training exercises (Greene County)."
+  },
+  {
+   "program": "Simulation Training Initiative",
+   "n": 21,
+   "recipient": "The Children\u2019s Hospital of Alabama",
+   "county": "Statewide",
+   "amount": 288542.0,
+   "amountPrinted": "$288,542",
+   "purpose": "expand its pediatric emergency training program for rural hospitals, emergency medical services, outpatient clinics and school health personnel (Statewide)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 22,
+   "recipient": "St. Vincent\u2019s Chilton LLC DBA UAB St. Vincent\u2019s Chilton",
+   "county": "Bibb, Chilton, Dallas, Hale, Lowndes, Marengo, Perry, Wilcox",
+   "amount": 618000.0,
+   "amountPrinted": "$618,000",
+   "purpose": "implement the Rural Prostate Cancer Digital Regionalization Project by deploying a mobile prostate cancer screening program in eight counties (Bibb, Chilton, Dallas, Hale, Lowndes, Marengo, Perry, Wilcox)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 23,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Chilton, Perry, Wilcox",
+   "amount": 266486.0,
+   "amountPrinted": "$266,486",
+   "purpose": "implement Project LOOP to expand cervical cancer detection, diagnostic follow-up and treatment capacity for women in four counties (Bibb, Chilton, Perry, Wilcox)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 24,
+   "recipient": "Greene County Health System",
+   "county": "Greene, Hale, Marengo, Pickens, Sumter",
+   "amount": 2280000.0,
+   "amountPrinted": "$2.28 million",
+   "purpose": "establish the Black Warrior Rural Cancer Detection, Navigation and Early Diagnosis Network to improve access to cancer screening, early diagnosis, navigation and timely follow-up in five counties (Greene, Hale, Marengo, Pickens, Sumter)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 25,
+   "recipient": "Franklin Primary Health Center Inc.",
+   "county": "Baldwin, Choctaw, Conecuh, Escambia, Monroe",
+   "amount": 534937.0,
+   "amountPrinted": "$534,937",
+   "purpose": "expand the deployment and clinical use of its existing mobile cancer screening unit to improve access to early-detection services in five counties (Baldwin, Choctaw, Conecuh, Escambia, Monroe)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 26,
+   "recipient": "RCHP-Florence LLC DBA North Alabama Shoals Hospital",
+   "county": "Colbert, Franklin, Lauderdale, Lawrence, Winston",
+   "amount": 683500.0,
+   "amountPrinted": "$683,500",
+   "purpose": "expand early-stage lung cancer detection and diagnostic services to improve timely access to care in five counties (Colbert, Franklin, Lauderdale, Lawrence, Winston)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 27,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Baldwin, Choctaw, Clarke, Conecuh, Escambia, Monroe, Washington",
+   "amount": 1370000.0,
+   "amountPrinted": "$1.37 million",
+   "purpose": "establish the Southwest Alabama Breast Cancer Detection Network to expand access to breast cancer screening, early detection, diagnostic follow-up and coordinated specialty care in seven counties (Baldwin, Choctaw, Clarke, Conecuh, Escambia, Monroe, Washington)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 28,
+   "recipient": "Sylacauga Healthcare Authority DBA Coosa Valley Medical Center",
+   "county": "Clay, Coosa, Shelby, Talladega, Tallapoosa",
+   "amount": 1890000.0,
+   "amountPrinted": "$1.89 million",
+   "purpose": "replace limited mobile scanning services with a permanent PET/CT scanner and hire a nurse navigator to help patients schedule cancer testing, understand their results and connect with follow-up care in five counties (Clay, Coosa, Shelby, Talladega, Tallapoosa)."
+  },
+  {
+   "program": "Cancer Digital Regionalization Initiative",
+   "n": 29,
+   "recipient": "University of South Alabama",
+   "county": "Baldwin, Clarke, Conecuh, Escambia, Mobile, Monroe, Washington",
+   "amount": 164450.0,
+   "amountPrinted": "$164,450",
+   "purpose": "expand cervical cancer prevention and screening by deploying mobile teams in seven counties (Baldwin, Clarke, Conecuh, Escambia, Mobile, Monroe, Washington)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "n": 30,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Chilton, Perry, Wilcox",
+   "amount": 161580.0,
+   "amountPrinted": "$161,580",
+   "purpose": "implement a unified digital patient intake and engagement platform to allow patients to electronically complete intake forms, screenings, scheduling, appointment reminders and payments in four counties (Bibb, Chilton, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "n": 31,
+   "recipient": "Andalusia Health",
+   "county": "Butler, Conecuh, Covington, Crenshaw",
+   "amount": 305428.0,
+   "amountPrinted": "$305,428",
+   "purpose": "replace two outdated portable X-ray machines with modern units that produce high-resolution bedside imaging to serve four counties (Butler, Conecuh, Covington, Crenshaw)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "n": 32,
+   "recipient": "South Central Alabama Mental Health Board Inc.",
+   "county": "Butler, Coffee, Covington, Crenshaw",
+   "amount": 840000.0,
+   "amountPrinted": "$840,000",
+   "purpose": "establish a coordinated rural healthcare network connecting primary care, behavioral health, hospitals, emergency medical systems, schools, public agencies and community organizations in four counties (Butler, Coffee, Covington, Crenshaw)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "n": 33,
+   "recipient": "The Alabama School of Healthcare Sciences",
+   "county": "Statewide",
+   "amount": 7270000.0,
+   "amountPrinted": "$7.27 million",
+   "purpose": "support the statewide residential high school in Demopolis that will prepare students from rural communities for healthcare careers. Funding will also support transportation to clinical placements and partnerships with healthcare providers and educational institutions (Statewide)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "n": 34,
+   "recipient": "Alabama Community College System",
+   "county": "Statewide",
+   "amount": 20600000.0,
+   "amountPrinted": "$20.6 million",
+   "purpose": "establish an integrated, statewide rural healthcare workforce pipeline through Alabama\u2019s community colleges. The system will expand rural healthcare training capacity at Alabama\u2019s community college, enabling students to earn healthcare job credentials without relocating. The project will establish remote emergency medical technician (EMT) and advanced EMT tracks. It also will expand allied health training through a centralized pipeline using shared curriculum, procurement and support across rural community colleges in respiratory therapy, surgical technology, radiologic technology, medical lab technology and medication technician program. It will increase nursing capacity through additional faculty, simulation resources, instructional sites and new paths to nursing education. The program also will establish a structured rural pipeline to advanced nursing careers, including nurse practitioner, physician assistant and certified nurse midwife (Statewide)."
+  }
+ ],
+ "note": "This is the second round of 2026 grants only; amounts of $1 million or more are printed rounded (e.g. \"$1.45 million\") and the release gives the total as \"nearly $55 million\". The area column lists the counties served as printed."
+}
