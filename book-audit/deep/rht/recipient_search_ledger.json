@@ -72,12 +72,12 @@
   "note": "HCA Nov 5 PDF: estimated $ per activity; 28 hospitals named for $9.67M with no per-hospital amounts"
  },
  "Minnesota": {
-  "status": "list_found_to_parse",
+  "status": "partial",
   "urls": [
    "https://www.health.state.mn.us/facilities/ruralhealth/ruraltrans/index.html",
    "https://mn.gov/oems/assets/2026%20%20TIP%20RFP%20Awards_tcm1221-771334.pdf"
   ],
-  "note": "per-awardee PDFs under /ruraltrans/docs/awardees/"
+  "note": "grants page links 9 contract-awardee PDFs (TA/eval vendors); hospital/FQHC formula money (70%/5%) not itemized"
  },
  "Missouri": {
   "status": "parsed",
@@ -96,12 +96,12 @@
   "note": "228 grants, $167,299,900.69"
  },
  "Indiana": {
-  "status": "list_found_to_parse",
+  "status": "region_level_only",
   "urls": [
    "https://www.in.gov/grow-rural-health/",
    "https://www.in.gov/grow-rural-health/files/IDOH Region 4 Press Release.pdf"
   ],
-  "note": "GROW regional grants, 8 regions $9.7M-$20.7M; regional press releases"
+  "note": "8 GROW regional press releases (Sept 3 2026): one award per region ($9.7M-$20.7M), no per-recipient amounts; archived in_regions/"
  },
  "Iowa": {
   "status": "no_per_award_amounts",
