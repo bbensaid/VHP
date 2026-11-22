@@ -1,0 +1,617 @@
+{
+ "state": "West Virginia",
+ "slug": "west-virginia",
+ "asOf": "2026-11",
+ "source": {
+  "label": "West Virginia Department of Health, \"WV RHTP \u2013 Released Awards\" (Nov 2026)",
+  "url": "https://health.wv.gov/funding-opportunities"
+ },
+ "announcedTotal": 108261313,
+ "areaLabel": "Service area",
+ "rows": [
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 1,
+   "recipient": "Community Care of West Virginia",
+   "county": "Braxton, Clay, Harrison, Lewis, Pocahontas, Randolph, Upshur, Wetzel",
+   "amount": 92736.0,
+   "purpose": "Bring Providers Online \u2013 Telehealth Upgrades: Upgrades telehealth technology to expand virtual behavioral health, addiction medicine, maternal health, school-based health, and weight management services.",
+   "activity": "Bring Providers Online \u2013 Telehealth Upgrades"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 2,
+   "recipient": "IBM",
+   "county": "Statewide",
+   "amount": 6623398.0,
+   "purpose": "Data Spine Enterprise Architecture: Builds the State\u2019s health data spine, the shared data system all RHTP grantees will connect to so results can be linked and measured across the program.",
+   "activity": "Data Spine Enterprise Architecture"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 3,
+   "recipient": "West Virginia University (WVU) Medicine",
+   "county": "Doddridge, Harrison, Mineral",
+   "amount": 1144689.0,
+   "purpose": "Emergency Medical Services (EMS)/Community Paramedicine Programs: Launches community paramedicine programs that bring trained paramedics into patients' homes for chronic disease management, follow-up after a hospital stay, medication support, and care coordination.",
+   "activity": "Emergency Medical Services (EMS)/Community Paramedicine Programs"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 4,
+   "recipient": "Minnie Hamilton Health System (under Vandalia Health)",
+   "county": "Calhoun, Clay, Gilmer, Ritchie, Roane, Wirt",
+   "amount": 1704771.0,
+   "purpose": "Equip Hub & Spoke Mobile Units: Deploys a mobile medical clinic that brings primary care, chronic disease management, behavioral health, wound care, and telehealth specialty consults directly to rural communities.",
+   "activity": "Equip Hub & Spoke Mobile Units"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 5,
+   "recipient": "WVU Cancer Institute (under WVU Health System)",
+   "county": "39 counties (all except Calhoun, Doddridge, Marion, Marshall, Mason, McDowell, Mineral, Morgan, Ohio, Pleasants, Roane, Taylor, Tyler, Webster, Wirt, Wood)",
+   "amount": 1339077.0,
+   "purpose": "Equip Hub & Spoke Mobile Units: Replaces the aging Bonnie\u2019s Bus mobile mammography unit and expands rural cancer screening.",
+   "activity": "Equip Hub & Spoke Mobile Units"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 6,
+   "recipient": "Community Care of West Virginia",
+   "county": "Braxton, Clay, Pocahontas",
+   "amount": 574082.0,
+   "purpose": "Equip Hub & Spoke Mobile Units: Deploys a mobile health unit serving Braxton, Clay, and Pocahontas counties.",
+   "activity": "Equip Hub & Spoke Mobile Units"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 7,
+   "recipient": "West Virginia Health Information Network",
+   "county": "Statewide",
+   "amount": 855400.0,
+   "purpose": "Expanding Health Information Exchange: Expands the statewide health information exchange to bring more providers on board and improve data sharing, analytics, and reporting.",
+   "activity": "Expanding Health Information Exchange"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 8,
+   "recipient": "VeeOne Health",
+   "county": "Boone, Calhoun, Clay, Lincoln, Logan, McDowell, Mingo, Roane, Webster, Wyoming",
+   "amount": 2295885.0,
+   "purpose": "Hub & Spoke Model Care Delivery: Expands virtual behavioral health access across underserved counties through community-based access points, a West Virginia program office, and West Virginia-licensed providers.",
+   "activity": "Hub & Spoke Model Care Delivery"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 9,
+   "recipient": "WVU Eye Institute (under WVU Hospitals)",
+   "county": "49 counties (all except Berkeley, Cabell, Kanawha, Morgan, Putnam, Raleigh)",
+   "amount": 2000026.0,
+   "purpose": "Hub & Spoke Model Care Delivery: Builds a statewide teleophthalmology network with four regional eye testing centers, reaching all 14 counties without a local eye doctor.",
+   "activity": "Hub & Spoke Model Care Delivery"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 10,
+   "recipient": "Cartwheel Health Services",
+   "county": "Clay, Hardy, Jackson, Lewis, Lincoln, McDowell, Mingo, Roane, Summers, Wetzel",
+   "amount": 1945599.0,
+   "purpose": "Hub & Spoke Model Care Delivery: Builds a school-based telehealth network connecting rural students and families to therapy, psychiatry, and medication management.",
+   "activity": "Hub & Spoke Model Care Delivery"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 11,
+   "recipient": "West Virginia United Health System",
+   "county": "Statewide",
+   "amount": 2551145.0,
+   "purpose": "Outpatient - Remote Patient Monitoring: Creates a West Virginia-based nurse team to monitor patients with diabetes and high blood pressure from home.",
+   "activity": "Outpatient - Remote Patient Monitoring"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 12,
+   "recipient": "Valley Health Systems",
+   "county": "Lincoln, Wayne",
+   "amount": 500000.0,
+   "purpose": "Outpatient - Remote Patient Monitoring: Provides remote monitoring for high-risk patients with uncontrolled diabetes and high blood pressure in Wayne and Lincoln Counties.",
+   "activity": "Outpatient - Remote Patient Monitoring"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 13,
+   "recipient": "Rainelle Medical Center",
+   "county": "Fayette, Greenbrier, Summers",
+   "amount": 357235.68,
+   "purpose": "Outpatient - Remote Patient Monitoring: Launches remote monitoring for patients with uncontrolled diabetes and high blood pressure, supported by primary care providers, care managers, and diabetes educators.",
+   "activity": "Outpatient - Remote Patient Monitoring"
+  },
+  {
+   "program": "Connected Care Grid (CCG)",
+   "n": 14,
+   "recipient": "Marshall University Research Corporation",
+   "county": "Cabell, Kanawha, Lincoln, Mason, Mingo, Putnam, Wayne",
+   "amount": 4640188.0,
+   "purpose": "Outpatient - Remote Patient Monitoring: Expands remote monitoring and connected care for West Virginians with diabetes and high blood pressure, combining connected devices with nutrition, lifestyle, and multidisciplinary clinical support.",
+   "activity": "Outpatient - Remote Patient Monitoring"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 15,
+   "recipient": "Spotted Owl",
+   "county": "Boone, Clay, Fayette, Kanawha, Lincoln, Putnam",
+   "amount": 1174000.0,
+   "purpose": "Expanding Worksite Clinics for On-the-Job Support: Brings preventive screenings, chronic disease management, behavioral health coordination, and care navigation to employees at participating worksites in Kanawha County and surrounding areas.",
+   "activity": "Expanding Worksite Clinics for On-the-Job Support"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 16,
+   "recipient": "Cabell Huntington Hospital Foundation (under Marshall Health Network)",
+   "county": "Cabell, Lincoln, Logan, Mason, Wayne",
+   "amount": 612000.0,
+   "purpose": "Expanding Worksite Clinics for On-the-Job Support: Brings occupational medicine, primary care, and chronic disease management into workplaces through onsite clinics, mobile units, and employer partnerships.",
+   "activity": "Expanding Worksite Clinics for On-the-Job Support"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 17,
+   "recipient": "Charleston Area Medical Center (CAMC) (under Vandalia Health)",
+   "county": "Statewide",
+   "amount": 612000.0,
+   "purpose": "Expanding Worksite Clinics for On-the-Job Support: Builds a statewide network of worksite health access points connecting employees to screenings, care navigation, mobile health services, and telemedicine.",
+   "activity": "Expanding Worksite Clinics for On-the-Job Support"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 18,
+   "recipient": "CAMC (under Vandalia Health)",
+   "county": "Statewide",
+   "amount": 1736320.0,
+   "purpose": "Restoring West Virginia\u2019s Workforce through Health-to-Work Programs for Chronic Conditions: Supports CAMC\u2019s Pathways to Success program, using Workforce Health Liaisons to help people with chronic conditions stay employed or return to work.",
+   "activity": "Restoring West Virginia\u2019s Workforce through Health-to-Work Programs for Chronic Conditions"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 19,
+   "recipient": "Ascension Recovery Services",
+   "county": "Logan, Marion, McDowell, Mercer, Mingo, Monongalia, Raleigh, Wayne, Wyoming",
+   "amount": 1500000.0,
+   "purpose": "Restoring West Virginia\u2019s Workforce through Health-to-Work Programs for: Launches a return-to-work program across nine counties that connects people in recovery to treatment, job training, and employers, with peer support for up to 180 days after placement.",
+   "activity": "Restoring West Virginia\u2019s Workforce through Health-to-Work Programs for"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 20,
+   "recipient": "Williamson Health & Wellness Center",
+   "county": "Mingo",
+   "amount": 250000.0,
+   "purpose": "Substance Use Disorder: Helps Mingo County residents in recovery return to work through individualized return-to-work plans, referrals, and recovery-friendly employer partnerships.",
+   "activity": "Substance Use Disorder"
+  },
+  {
+   "program": "Health To Prosperity (HTP)",
+   "n": 21,
+   "recipient": "22nd Century Tech",
+   "county": "Statewide",
+   "amount": 500000.0,
+   "purpose": "Workforce Catalyst Program: Administers a statewide employer incentive program offering milestone-based subsidies to employers that hire participants from State-approved return-to-work programs.",
+   "activity": "Workforce Catalyst Program"
+  },
+  {
+   "program": "HealthTech Appalachia (HTA)",
+   "n": 22,
+   "recipient": "West Virginia Jobs Investment Trust",
+   "county": "Statewide",
+   "amount": 18800000.0,
+   "purpose": "Administrator of Incubation and Accelerator Programs: Administers HealthTech Appalachia\u2019s accelerator and seed funding programs to grow and test new health technology solutions in West Virginia.",
+   "activity": "Administrator of Incubation and Accelerator Programs"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 23,
+   "recipient": "WVU Hospitals Center for Nursing Education (under WVU)",
+   "county": "Statewide",
+   "amount": 291403.0,
+   "purpose": "Career Ladder Advancement Programs: Grows the hospital-based RN diploma program with new sites in Berkeley County and Wheeling, plus tuition waivers and a commitment to work in West Virginia.",
+   "activity": "Career Ladder Advancement Programs"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 24,
+   "recipient": "Community Care of West Virginia",
+   "county": "Braxton, Clay, Gilmer, Harrison, Lewis, Pocahontas, Randolph, Upshur, Webster",
+   "amount": 82432.0,
+   "purpose": "Career Ladder Advancement Programs: Helps current employees earn certifications and licenses to move into higher-skilled clinical and behavioral health roles.",
+   "activity": "Career Ladder Advancement Programs"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 25,
+   "recipient": "West Virginia Department of Health Facilities",
+   "county": "TBD",
+   "amount": 300000.0,
+   "purpose": "Public Education and Marketing: Funds a public education effort that tells West Virginians about RHTP-funded services and results through web content, project profiles, and a magazine-style publication. It also supports outreach to bring clinicians into rural practice. A qualified entity will be selected through a competitive process to carry out the work.",
+   "activity": "Public Education and Marketing"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 26,
+   "recipient": "West Virginia Higher Education Policy Commission",
+   "county": "Statewide",
+   "amount": 1000000.0,
+   "purpose": "Early Outreach & Exposure to Healthcare Career: Expands healthcare career exposure for high school students through outreach partnerships, visits to in-state colleges and universities, and hands-on classroom activities.",
+   "activity": "Early Outreach & Exposure to Healthcare Career"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 27,
+   "recipient": "HealthCorps",
+   "county": "Statewide",
+   "amount": 495775.0,
+   "purpose": "Early Outreach & Exposure to Healthcare Career: Brings wellness programming to high schools and connects students to healthcare career exploration through near-peer mentors.",
+   "activity": "Early Outreach & Exposure to Healthcare Career"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 28,
+   "recipient": "CAMC (under Vandalia Health)",
+   "county": "Statewide",
+   "amount": 500000.0,
+   "purpose": "Provider Upskilling: Expands hands-on clinical education, simulation training, and virtual mentorship for rural providers, focused on chronic conditions.",
+   "activity": "Provider Upskilling"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 29,
+   "recipient": "American College of Lifestyle Medicine",
+   "county": "Statewide",
+   "amount": 400000.0,
+   "purpose": "Provider Upskilling: Trains rural clinicians and care teams in lifestyle medicine, engaging rural clinics in chronic disease prevention and treatment.",
+   "activity": "Provider Upskilling"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 30,
+   "recipient": "ASCEND (under WVU Research Corporation)",
+   "county": "Statewide",
+   "amount": 2399990.0,
+   "purpose": "Recruitment & Relocation Efforts: Recruits and retains licensed healthcare professionals in rural communities.",
+   "activity": "Recruitment & Relocation Efforts"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 31,
+   "recipient": "Vandalia Health",
+   "county": "Statewide",
+   "amount": 900000.0,
+   "purpose": "Rotational Staffing: Helps rural hospitals and clinics fill staffing gaps.",
+   "activity": "Rotational Staffing"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 32,
+   "recipient": "West Virginia United Health System",
+   "county": "Statewide",
+   "amount": 899952.0,
+   "purpose": "Pools: Creates a statewide pool of clinicians who can be deployed to rural and critical access hospitals facing staffing shortages.",
+   "activity": "Pools"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 33,
+   "recipient": "CAMC (under Vandalia Health)",
+   "county": "Kanawha",
+   "amount": 1693946.0,
+   "purpose": "Rural Graduate Medical Education & Training Capacity: Trains advanced practice provider fellows for rural practice, with incentives tied to a five-year work commitment.",
+   "activity": "Rural Graduate Medical Education & Training Capacity"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 34,
+   "recipient": "Marshall University Research Corporation",
+   "county": "Statewide",
+   "amount": 1753646.0,
+   "purpose": "Rural Graduate Medical Education & Training Capacity: Builds rural residency and clinical training programs in high-need disciplines to strengthen West Virginia\u2019s healthcare workforce pipeline and support long-term rural recruitment and retention.",
+   "activity": "Rural Graduate Medical Education & Training Capacity"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 35,
+   "recipient": "Kesher-A-Kesher",
+   "county": "Statewide",
+   "amount": 649340.0,
+   "purpose": "Rural Healthcare Apprenticeships: Trains, places, and retains paid entry-level healthcare apprentices statewide, with training delivered through the WVU Health Affairs Institute.",
+   "activity": "Rural Healthcare Apprenticeships"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 36,
+   "recipient": "Community Care of West Virginia",
+   "county": "Braxton, Clay, Harrison, Lewis, Pocahontas, Randolph, Upshur, Wetzel",
+   "amount": 354364.0,
+   "purpose": "Rural Healthcare Apprenticeships: Creates paid apprenticeships such as medical assistant, community health worker, pharmacy technician, and CNA.",
+   "activity": "Rural Healthcare Apprenticeships"
+  },
+  {
+   "program": "Mountain State Care Force (MSCF)",
+   "n": 37,
+   "recipient": "ROAM West Virginia, PLLC",
+   "county": "Statewide",
+   "amount": 700000.0,
+   "purpose": "Rural Healthcare Apprenticeships: Recruits and trains licensed practical nurses to support rural diabetes care, remote patient monitoring, and early intervention for diabetic foot complications.",
+   "activity": "Rural Healthcare Apprenticeships"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 38,
+   "recipient": "Bowling Business",
+   "county": "Boone, Cabell, Fayette, Greenbrier, Kanawha, Lincoln, Logan, McDowell, Mercer, Mingo, Monroe, Nicholas, Raleigh, Summers, Wayne, Wyoming",
+   "amount": 1500000.0,
+   "purpose": "Implementation Support for Value-Based Care Participation: Helps substance use treatment providers prepare for value-based payment.",
+   "activity": "Implementation Support for Value-Based Care Participation"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 39,
+   "recipient": "Hospice of Huntington",
+   "county": "Cabell, Lincoln, Mason, Putnam, Wayne",
+   "amount": 1000000.0,
+   "purpose": "Program of All-Inclusive Care for the Elderly (PACE)-Aligned Care Models: Opens a new adult day center for older adults and funds a State PACE Director to build West Virginia\u2019s first PACE program.",
+   "activity": "Program of All-Inclusive Care for the Elderly (PACE)-Aligned Care Models"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 40,
+   "recipient": "Valley Health Systems",
+   "county": "Cabell, Putnam, Wayne",
+   "amount": 2474487.0,
+   "purpose": "Provider Productivity Support Fund: Adds AI-assisted clinical documentation, clinical performance tools, and real-time health information exchange alerts across a regional community health center network.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 41,
+   "recipient": "Minnie Hamilton Health System (under Vandalia Health)",
+   "county": "Calhoun, Hampshire, Hardy, Roane",
+   "amount": 2363000.0,
+   "purpose": "Provider Productivity Support Fund: Launches autonomous drone delivery of time-critical supplies, blood products, and lab specimens across four rural counties, and deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 42,
+   "recipient": "West Virginia Primary Care Association",
+   "county": "40 counties (all except Braxton, Calhoun, Clay, Gilmer, Hardy, Marshall, Monongalia, Ohio, Pendleton, Pocahontas, Randolph, Roane, Tyler, Upshur, Wetzel)",
+   "amount": 1897109.0,
+   "purpose": "Provider Productivity Support Fund: Builds a clinically integrated network starting with shared care coordination and data tools.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 43,
+   "recipient": "CHANGE",
+   "county": "Brooke, Hancock, Marshall, Ohio",
+   "amount": 500000.0,
+   "purpose": "Provider Productivity Support Fund: Adds AI tools, including ambient transcription, a 24/7 AI contact center, and predictive scheduling, to cut administrative work at rural clinics.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 44,
+   "recipient": "Broaddus Hospital (under Vandalia Health)",
+   "county": "Barbour",
+   "amount": 500000.0,
+   "purpose": "Provider Productivity Support Fund: Launches the Mansfield Place TeleHub Pilot, giving skilled nursing residents telemedicine access to specialty, behavioral health, and urgent care consults.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 45,
+   "recipient": "Potomac Highlands Guild",
+   "county": "Berkeley, Grant, Hampshire, Hardy, Jefferson, Mineral, Morgan, Pendleton",
+   "amount": 500000.0,
+   "purpose": "Provider Productivity Support Fund: Strengthens mental health and addiction recovery services in eastern West Virginia using remote monitoring and AI-supported patient engagement.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 46,
+   "recipient": "Monongahela Valley Association of Health Centers",
+   "county": "Harrison, Marion, Monongalia",
+   "amount": 500000.0,
+   "purpose": "Provider Productivity Support Fund: Modernizes clinic operations in Fairmont, Shinnston, and Mannington through billing, IT, and cybersecurity upgrades and AI-assisted documentation.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 47,
+   "recipient": "Seneca Health Services",
+   "county": "TBD",
+   "amount": 497809.0,
+   "purpose": "Provider Productivity Support Fund: Adds AI-enabled documentation, billing, eligibility, and cybersecurity tools to reduce administrative work across its rural behavioral health operations.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 48,
+   "recipient": "Prestera Health Services",
+   "county": "Cabell, Lincoln, Logan, Mason, Putnam, Wayne",
+   "amount": 440000.0,
+   "purpose": "Provider Productivity Support Fund: Replaces paper-based processes with AI documentation feedback, digital signatures, and clinical dashboards across its behavioral health network.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 49,
+   "recipient": "Plateau Medical Center (under Vandalia Health)",
+   "county": "Fayette",
+   "amount": 363000.0,
+   "purpose": "Provider Productivity Support Fund: Deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 50,
+   "recipient": "Stonewall Jackson Memorial (under Vandalia Health)",
+   "county": "Lewis",
+   "amount": 363000.0,
+   "purpose": "Provider Productivity Support Fund: Deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 51,
+   "recipient": "Mon Health Marion Neighborhood Hospital (under Vandalia Health)",
+   "county": "Marion",
+   "amount": 363000.0,
+   "purpose": "Provider Productivity Support Fund: Deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 52,
+   "recipient": "Webster Memorial Hospital (under Vandalia Health)",
+   "county": "Webster",
+   "amount": 363000.0,
+   "purpose": "Provider Productivity Support Fund: Deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 53,
+   "recipient": "Preston Memorial Hospital (under Vandalia Health)",
+   "county": "Preston",
+   "amount": 363000.0,
+   "purpose": "Provider Productivity Support Fund: Deploys AI ambient clinical listening to reduce paperwork and give providers more time with patients.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 54,
+   "recipient": "Pleasant Valley Hospital Foundation (under Rivers Health Foundation)",
+   "county": "Mason",
+   "amount": 203275.0,
+   "purpose": "Provider Productivity Support Fund: Automates insurance eligibility checks and patient registration to reduce claim denials and administrative burden.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 55,
+   "recipient": "Cabell Huntington Hospital (under Marshall Health Network)",
+   "county": "Regional / participating rural provider organizations",
+   "amount": 1544313.0,
+   "purpose": "Provider Productivity Support Fund: Expands regional care coordination, patient navigation, referral support, chronic disease management, and provider training for participating rural clinics and hospitals.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 56,
+   "recipient": "ROAM West Virginia, PLLC",
+   "county": "Barbour, Braxton, Doddridge",
+   "amount": 500000.0,
+   "purpose": "Provider Productivity Support Fund: Strengthens provider capacity and technology-enabled diabetes care through in-home foot scanning, remote patient monitoring, and centralized nursing support.",
+   "activity": "Provider Productivity Support Fund"
+  },
+  {
+   "program": "SmartCare Catalyst (SCC)",
+   "n": 57,
+   "recipient": "West Virginia School of Osteopathic Medicine",
+   "county": "Greenbrier County and surrounding rural communities",
+   "amount": 3999993.0,
+   "purpose": "Birthing Center: Strengthens maternal healthcare in the Greenbrier Valley through a community-based birthing center and a coordinated approach to community-based and hospital-based maternal care.",
+   "activity": "Birthing Center"
+  },
+  {
+   "program": "Personal Health Accelerator (PHA)",
+   "n": 58,
+   "recipient": "Department of Environmental Protection",
+   "county": "McDowell, Mingo",
+   "amount": 3200000.0,
+   "purpose": "Water Is Medicine: Expands access to water testing, household water filters, and training on proper setup, use, and maintenance for households in McDowell and Mingo Counties. A qualified entity will be selected through a competitive process to carry out the work.",
+   "activity": "Water Is Medicine"
+  },
+  {
+   "program": "Personal Health Accelerator (PHA)",
+   "n": 59,
+   "recipient": "West Virginia University Hospitals, Inc., on behalf of WVU Rockefeller Neuroscience Institute (RNI)",
+   "county": "Barbour, Berkeley, Braxton, Doddridge, Grant, Harrison, Jefferson, Lewis, Marion, Monongalia, Preston, Randolph, Taylor, Webster",
+   "amount": 3000000.0,
+   "purpose": "Digital Disease Management Platform: Expands RNI's Human Operating System (HOS). This recovery monitoring platform alerts care teams when a patient's relapse risk rises, so staff can reach out early.",
+   "activity": "Digital Disease Management Platform"
+  },
+  {
+   "program": "Personal Health Accelerator (PHA)",
+   "n": 60,
+   "recipient": "Unite Us",
+   "county": "Statewide",
+   "amount": 1270000.0,
+   "purpose": "Integration Wellness (Closed Loop Referrals): Operates a statewide referral network connecting West Virginians to nutrition, wellness, and other community health services.",
+   "activity": "Integration Wellness (Closed Loop Referrals)"
+  },
+  {
+   "program": "Personal Health Accelerator (PHA)",
+   "n": 61,
+   "recipient": "Marshall University Research Corporation",
+   "county": "Boone, Cabell, Kanawha, Lincoln, Logan, Mason, McDowell, Mingo, Nicholas, Putnam, Raleigh, Wayne",
+   "amount": 5043333.0,
+   "purpose": "Outcomes through Nutrition and Lifestyle: Improves diabetes and chronic disease outcomes through clinically integrated nutrition, lifestyle, medication, behavioral health, recovery support, and food-as-medicine services.",
+   "activity": "Outcomes through Nutrition and Lifestyle"
+  },
+  {
+   "program": "Personal Health Accelerator (PHA)",
+   "n": 62,
+   "recipient": "West Virginia Primary Care Association",
+   "county": "Clay, Kanawha, Lincoln, McDowell, Mingo, Pocahontas, Summers, Wyoming",
+   "amount": 2795000.0,
+   "purpose": "Outcomes through Nutrition and Lifestyle: Expands nutrition- and lifestyle-based diabetes interventions through community health centers, including care management, nutrition coaching, food-as-medicine support, and remote monitoring.",
+   "activity": "Outcomes through Nutrition and Lifestyle"
+  },
+  {
+   "program": "Rural Health Link (RHL)",
+   "n": 63,
+   "recipient": "West Virginia United Health System, on behalf of the RNI Addiction Ecosystem",
+   "county": "Barbour, Berkeley, Braxton, Doddridge, Grant, Harrison, Jefferson, Lewis, Marion, Monongalia, Preston, Randolph, Taylor, Webster",
+   "amount": 3382229.0,
+   "purpose": "Regional Hubs and Mobility Coordinators: Creates a Recovery Access Coordination Hub with coordinators, peer specialists and drivers. They schedule first appointments before patients leave treatment and provide transportation to care.",
+   "activity": "Regional Hubs and Mobility Coordinators"
+  },
+  {
+   "program": "Rural Health Link (RHL)",
+   "n": 64,
+   "recipient": "CaringWire (MountainConnect)",
+   "county": "31 counties (all except Barbour, Berkeley, Brooke, Doddridge, Grant, Hampshire, Hancock, Hardy, Harrison, Jefferson, Lewis, Marion, Marshall, Mineral, Monongalia, Morgan, Ohio, Pendleton, Preston, Randolph, Taylor, Tucker, Upshur, Wetzel)",
+   "amount": 1497999.0,
+   "purpose": "Regional Hubs and Mobility Coordinators: Funds regional hubs and Mobility Coordinators connecting participants to care.",
+   "activity": "Regional Hubs and Mobility Coordinators"
+  },
+  {
+   "program": "Rural Health Link (RHL)",
+   "n": 65,
+   "recipient": "My3Tech",
+   "county": "Statewide",
+   "amount": 990000.0,
+   "purpose": "Rural Mobility Technology Platform: Builds and hosts a statewide platform connecting patients, providers, and transportation operators to improve access to care in rural communities.",
+   "activity": "Rural Mobility Technology Platform"
+  },
+  {
+   "program": "Rural Health Link (RHL)",
+   "n": 66,
+   "recipient": "West Virginia Public Transit Association",
+   "county": "44 counties (all except Barbour, Harrison, Lewis, Mingo, Ohio, Putnam, Ritchie, Summers, Taylor, Wirt, Wood)",
+   "amount": 1903835.0,
+   "purpose": "Vehicle Acquisition and Service Operations: Adds accessible vehicles and expands coordinated transportation services connecting rural residents to healthcare.",
+   "activity": "Vehicle Acquisition and Service Operations"
+  },
+  {
+   "program": "Rural Health Link (RHL)",
+   "n": 67,
+   "recipient": "Grant Town Emergency Medical Services",
+   "county": "Harrison, Marion, Monongalia, Taylor, Wetzel",
+   "amount": 714531.0,
+   "purpose": "Vehicle Acquisition and Service Operations: Adds new ambulances and EMTs for medical transport.",
+   "activity": "Vehicle Acquisition and Service Operations"
+  }
+ ],
+ "note": "The state's list of released awards, by initiative and activity; the document prints \"Total Announced (67 awards): $108,261,312.68\" (the rows here match that count and amount) and awards are added as they are released. The first-year federal award is $199,476,099 per CMS; this list covers only awards released so far."
+}

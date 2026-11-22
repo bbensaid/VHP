@@ -28,6 +28,8 @@ const BASIS: Record<string, string> = {
   tennessee: "Awarded projects, multi-year (5-year) totals",
   michigan: "Subrecipient award notices as of Oct 1, 2026 (contingent on CMS review)",
   arkansas: "Year 1 award totals by organization, two rounds",
+  "west-virginia": "Released awards (state list prints a total)",
+  missouri: "Contingent awards, two rounds (CMS approval pending)",
   pennsylvania: "Authorized projects (page: $43M awarded to date)",
 };
 

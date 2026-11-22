@@ -1,0 +1,374 @@
+{
+ "state": "Missouri",
+ "slug": "missouri",
+ "asOf": "2026-10-30",
+ "source": {
+  "label": "Missouri Department of Social Services, RHTP award lists: Smart Growth and Service Line Modernization (Oct 30, 2026) and Strategic Minor Renovations (Sep 22, 2026)",
+  "url": "https://dss.mo.gov/mhd/rhtp-modernize-rural-healthcare-services"
+ },
+ "announcedTotal": null,
+ "areaLabel": "City (county)",
+ "rows": [
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 1,
+   "recipient": "Missouri Delta Medical Center",
+   "county": "Sikeston (Scott)",
+   "amount": 3265760.63,
+   "purpose": "Approved by CMS"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 2,
+   "recipient": "Heartland Regional Medical Center",
+   "county": "St. Joseph (Buchanan)",
+   "amount": 5000000.0,
+   "purpose": "Approved by CMS"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 3,
+   "recipient": "Arthur Center",
+   "county": "Mexico (Audrain)",
+   "amount": 542165.5,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 4,
+   "recipient": "Big Springs Medical Association",
+   "county": "Ellington (Reynolds)",
+   "amount": 247387.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 5,
+   "recipient": "Cameron Regional Medical Center",
+   "county": "Cameron (Clinton)",
+   "amount": 922262.25,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 6,
+   "recipient": "Centerstone of Missouri",
+   "county": "Kirksville (Adair)",
+   "amount": 1830777.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 7,
+   "recipient": "Compass Health",
+   "county": "Clinton (Henry)",
+   "amount": 526500.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 8,
+   "recipient": "Four Rivers Community Health Center",
+   "county": "Rolla (Phelps)",
+   "amount": 800000.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 9,
+   "recipient": "Gibson Center for Behavioral Change",
+   "county": "Cape Girardeau (Cape Girardeau)",
+   "amount": 98965.14,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 10,
+   "recipient": "Hannibal Regional Healthcare System",
+   "county": "Hannibal (Marion)",
+   "amount": 1086247.96,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 11,
+   "recipient": "Hermann Area District Hospital",
+   "county": "Hermann (Gasconade)",
+   "amount": 3637412.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 12,
+   "recipient": "Katy Trail Community Health",
+   "county": "Sedalia (Pettis)",
+   "amount": 847225.64,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 13,
+   "recipient": "Lake Regional Health Center",
+   "county": "Osage Beach (Camden)",
+   "amount": 2510342.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 14,
+   "recipient": "Mark Twain Behavioral Health",
+   "county": "Hannibal (Marion)",
+   "amount": 271104.75,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 15,
+   "recipient": "Mercy Hospital Perry",
+   "county": "Perryville (Perry)",
+   "amount": 2028750.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 16,
+   "recipient": "Nevada Regional Medical Center",
+   "county": "Nevada (Vernon)",
+   "amount": 2431783.13,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 17,
+   "recipient": "Ozark Center",
+   "county": "Joplin (Jasper)",
+   "amount": 1466432.37,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 18,
+   "recipient": "Ozarks Community Hospital",
+   "county": "Webb City (Jasper)",
+   "amount": 787430.36,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 19,
+   "recipient": "Ozarks Medical Center",
+   "county": "West Plains (Howell)",
+   "amount": 3582525.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 20,
+   "recipient": "Ozarks Resource Group",
+   "county": "Hermitage (Hickory)",
+   "amount": 120662.99,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 21,
+   "recipient": "Phelps County Regional Medical Center",
+   "county": "Rolla (Phelps)",
+   "amount": 1585002.75,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 22,
+   "recipient": "Scotland County Hospital",
+   "county": "Memphis (Scotland)",
+   "amount": 611782.76,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 23,
+   "recipient": "Texas County Memorial Hospital",
+   "county": "Houston (Texas)",
+   "amount": 989445.32,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 24,
+   "recipient": "Washington County Memorial Hospital",
+   "county": "Potosi (Washington)",
+   "amount": 1027413.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Smart Growth and Service Line Modernization (Oct 2026)",
+   "n": 25,
+   "recipient": "Western Missouri Medical Center",
+   "county": "Warrensburg (Johnson)",
+   "amount": 3183443.0,
+   "purpose": "Contingent on CMS approval"
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 26,
+   "recipient": "Citizens Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2500000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 27,
+   "recipient": "Golden Valley Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1272647.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 28,
+   "recipient": "John Fitzgibbon Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2450000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 29,
+   "recipient": "Lake Regional Health System",
+   "county": "Not stated",
+   "amount": 2482429.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 30,
+   "recipient": "Northeast Regional Medical Center",
+   "county": "Not stated",
+   "amount": 216376.59,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 31,
+   "recipient": "Poplar Bluff Regional Medical Center",
+   "county": "Not stated",
+   "amount": 742416.92,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 32,
+   "recipient": "Scotland County Hospital",
+   "county": "Not stated",
+   "amount": 2233540.12,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 33,
+   "recipient": "Texas County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 568898.74,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 34,
+   "recipient": "Bothwell Regional Health Center",
+   "county": "Not stated",
+   "amount": 2409200.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 35,
+   "recipient": "Cameron Regional Medical Center",
+   "county": "Not stated",
+   "amount": 574200.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 36,
+   "recipient": "Carroll County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2175000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 37,
+   "recipient": "Hannibal Regional Healthcare system",
+   "county": "Not stated",
+   "amount": 439650.76,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 38,
+   "recipient": "Hermann Area District Hospital",
+   "county": "Not stated",
+   "amount": 1894539.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 39,
+   "recipient": "Missouri Delta Medical Center",
+   "county": "Not stated",
+   "amount": 2380000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 40,
+   "recipient": "Nevada Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2431684.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 41,
+   "recipient": "Phelps County Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1529100.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 42,
+   "recipient": "Ray County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1808703.71,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 43,
+   "recipient": "Saint Francis Medical Center",
+   "county": "Not stated",
+   "amount": 2500000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 44,
+   "recipient": "Salem Memorial District Hospital",
+   "county": "Not stated",
+   "amount": 1700599.5,
+   "purpose": ""
+  },
+  {
+   "program": "Strategic Minor Renovations (Sep 2026)",
+   "n": 45,
+   "recipient": "Washington County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2337494.0,
+   "purpose": ""
+  }
+ ],
+ "note": "Two published rounds: Smart Growth and Service Line Modernization (the table lists 25 awardees and prints a total of $39,400,820.55, which these rows match to the cent; the state's release text says 26 providers and does not explain the difference) and Strategic Minor Renovations (20 projects, announced as approximately $35 million; the list prints no total). Missouri says all awards are contingent on CMS approval. Other Missouri RHTP money (for example workforce childcare and program enablement) is not itemized on these lists. The Strategic Minor Renovations list gives no city or county."
+}
