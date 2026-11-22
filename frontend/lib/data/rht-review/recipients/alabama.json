@@ -3,14 +3,1395 @@
  "slug": "alabama",
  "asOf": "2026-10",
  "source": {
-  "label": "Office of Gov. Kay Ivey, \"Governor Ivey Announces Additional Alabama Rural Health Transformation Program Grants Totaling Nearly $55 Million\" (October 2026)",
-  "url": "https://governor.alabama.gov/newsroom/2026/10/governor-ivey-announces-additional-alabama-rural-health-transformation-program-grants-totaling-nearly-55-million/"
+  "label": "Office of Gov. Kay Ivey, RHT grant announcements of Aug 24, 2026 (round 1) and Oct 2026 (round 2)",
+  "url": "https://governor.alabama.gov/newsroom/2026/08/governor-ivey-announces-first-grants-in-major-new-rural-healthcare-program-totaling-more-than-144-million/"
  },
- "announcedTotal": 55000000,
+ "announcedTotal": 199000000,
  "rows": [
   {
-   "program": "Maternal and Fetal Health Initiative",
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
    "n": 1,
+   "recipient": "Alabama Primary Health Care Association",
+   "county": "Baldwin, Barbour, Bibb, Blount, Chambers, Cherokee, Chilton, Choctaw, Clarke, Clay, Cleburne, Coffee, Conecuh, Coosa, Covington, Crenshaw, Cullman, Dale, Dallas, DeKalb, Escambia, Greene, Henry, Jackson, Jefferson, Lamar, Lowndes, Macon, Madison, Marengo, Marshall, Mobile, Monroe, Perry, Pickens, Pike, Randolph, Sumter, Talladega, Walker, Washington, Wilcox, Winston",
+   "amount": 867102.0,
+   "amountPrinted": "$867,102",
+   "purpose": "establish a shared rural health technology and care coordination framework to strengthen collaboration among participating health centers, rural clinics, hospitals and community mental health providers in 43 counties (Baldwin, Barbour, Bibb, Blount, Chambers, Cherokee, Chilton, Choctaw, Clarke, Clay, Cleburne, Coffee, Conecuh, Coosa, Covington, Crenshaw, Cullman, Dale, Dallas, DeKalb, Escambia, Greene, Henry, Jackson, Jefferson, Lamar, Lowndes, Macon, Madison, Marengo, Marshall, Mobile, Monroe, Perry, Pickens, Pike, Randolph, Sumter, Talladega, Walker, Washington, Wilcox, Winston)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 2,
+   "recipient": "AltaPointe Health Systems Inc.",
+   "county": "Baldwin, Clay, Coosa, Mobile, Randolph, Talladega, Washington",
+   "amount": 457073.0,
+   "amountPrinted": "$457,073",
+   "purpose": "enhance cybersecurity protections across its rural behavioral health network to protect patient information and maintain reliable access to care in seven counties (Baldwin, Clay, Coosa, Mobile, Randolph, Talladega, Washington)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 3,
+   "recipient": "Auburn University",
+   "county": "Barbour, Bullock, Chambers, Covington, Dale, Geneva, Henry, Macon, Monroe, Pike, Tallapoosa, Washington",
+   "amount": 6380000.0,
+   "amountPrinted": "$6.38 million",
+   "purpose": "establish a shared digital health and cybersecurity network to improve access to care, information sharing and technology support for rural healthcare providers in 12 counties (Barbour, Bullock, Chambers, Covington, Dale, Geneva, Henry, Macon, Monroe, Pike, Tallapoosa, Washington)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 4,
+   "recipient": "Birmingham Obstetrics Gynecology PC",
+   "county": "Not stated",
+   "amount": 17500.0,
+   "amountPrinted": "$17,500",
+   "purpose": "connect its electronic health record system to Alabama\u2019s statewide health information exchange to improve continuity and coordination of maternity care for rural patients statewide."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 5,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Chilton, Dallas, Marengo, Perry, Wilcox",
+   "amount": 212180.0,
+   "amountPrinted": "$212,180",
+   "purpose": "strengthen cybersecurity protections across its rural health center network to protect patient information and maintain reliable access to care in six counties (Bibb, Chilton, Dallas, Marengo, Perry, Wilcox)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 6,
+   "recipient": "The City of York Health Care Authority DBA Hill Hospital of Sumter County",
+   "county": "Choctaw, Pickens, Sumter",
+   "amount": 344269.0,
+   "amountPrinted": "$344,269",
+   "purpose": "strengthen its health information technology, cybersecurity and electronic health record systems to improve care coordination and protect patient information in three counties (Choctaw, Pickens, Sumter)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 7,
+   "recipient": "Clay County Healthcare Authority",
+   "county": "Not stated",
+   "amount": 814941.0,
+   "amountPrinted": "$814,941",
+   "purpose": "upgrade its clinical, operational and cybersecurity technology infrastructure to improve connectivity, information sharing and reliable access to care in Clay County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 8,
+   "recipient": "Gadsden Regional Medical Center LLC",
+   "county": "Not stated",
+   "amount": 1400000.0,
+   "amountPrinted": "$1.4 million",
+   "purpose": "modernize hospital security and emergency communication systems to strengthen patient safety, protect sensitive information and maintain reliable operations during disruptions in Etowah County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 9,
+   "recipient": "Haynes Ambulance of Alabama Inc.",
+   "county": "Bullock, Covington, Crenshaw, Elmore, Lowndes, Macon, Pike, Tallapoosa",
+   "amount": 283314.0,
+   "amountPrinted": "$283,314",
+   "purpose": "strengthen cybersecurity and information technology systems across its rural emergency medical service stations to protect patient information and improve operational reliability in eight counties (Bullock, Covington, Crenshaw, Elmore, Lowndes, Macon, Pike, Tallapoosa)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 10,
+   "recipient": "HH Health System \u2013 Athens Limestone LLC",
+   "county": "Not stated",
+   "amount": 886464.0,
+   "amountPrinted": "$886,464",
+   "purpose": "expand its shared electronic health record system to Athens-Limestone Hospital to improve care coordination, information sharing and cybersecurity in Limestone County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 11,
+   "recipient": "HH Health System \u2013 Jackson LLC",
+   "county": "Not stated",
+   "amount": 1890000.0,
+   "amountPrinted": "$1.89 million",
+   "purpose": "modernize Highlands Medical Center\u2019s electronic health record system and related technology infrastructure to improve patient care, cybersecurity and operational reliability in Jackson County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 12,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Clarke, Mobile, Washington",
+   "amount": 3500000.0,
+   "amountPrinted": "$3.5 million",
+   "purpose": "establish a regional referral and technology network to improve secure information sharing, care coordination and cybersecurity for rural hospitals and clinics in three counties (Clarke, Mobile, Washington)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 13,
+   "recipient": "Ivy Creek Healthcare LLC",
+   "county": "Not stated",
+   "amount": 530600.0,
+   "amountPrinted": "$530,600",
+   "purpose": "upgrade its electronic health record and cybersecurity systems to improve information sharing, streamline care and protect patient data in Elmore and Tallapoosa counties."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 14,
+   "recipient": "Mental Health Board of Chilton and Shelby Counties Inc. DBA Central Alabama Wellness",
+   "county": "Not stated",
+   "amount": 43580.0,
+   "amountPrinted": "$43,580",
+   "purpose": "upgrade its electronic health record system to improve care coordination, patient access and information sharing across behavioral health and other healthcare providers in Chilton and Shelby counties."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 15,
+   "recipient": "NorthStar EMS Inc.",
+   "county": "Fayette, Marion, Talladega, Tuscaloosa",
+   "amount": 169501.0,
+   "amountPrinted": "$169,501",
+   "purpose": "upgrade the technology and cybersecurity infrastructure supporting its 911 dispatch hub to improve reliability and maintain emergency response during cyber incidents, equipment failures or other disruptions in four counties (Fayette, Marion, Talladega, Tuscaloosa)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 16,
+   "recipient": "Regional Paramedical Services",
+   "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 43260.0,
+   "amountPrinted": "$43,260",
+   "purpose": "strengthen cybersecurity across its rural emergency medical service bases to protect patient information and support reliable emergency response operations in seven counties (Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 17,
+   "recipient": "Regional Paramedical Services",
+   "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 42451.0,
+   "amountPrinted": "$42,451",
+   "purpose": "upgrade network security at Regional Paramedical Services\u2019 main operations base and failover dispatch center to protect critical emergency medical systems and maintain reliable response capabilities in seven counties (Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 18,
+   "recipient": "The Russell Hospital Corporation",
+   "county": "Chambers, Clay, Coosa, Elmore, Lee, Talladega, Tallapoosa",
+   "amount": 839753.0,
+   "amountPrinted": "$839,753",
+   "purpose": "modernize its technology and cybersecurity infrastructure to strengthen patient care, protect health information and improve operational resilience in seven counties (Chambers, Clay, Coosa, Elmore, Lee, Talladega, Tallapoosa)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 19,
+   "recipient": "Clair Community Health Clinic Inc.",
+   "county": "Not stated",
+   "amount": 1170000.0,
+   "amountPrinted": "$1.17 million",
+   "purpose": "upgrade its electronic health record, pharmacy, cybersecurity and digital infrastructure to improve care coordination, protect patient information and support more efficient care for uninsured rural adults in St. Clair County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 20,
+   "recipient": "Sylacauga Healthcare Authority",
+   "county": "Clay, Coosa, Talladega",
+   "amount": 2020000.0,
+   "amountPrinted": "$2.02 million",
+   "purpose": "upgrade its information technology and cybersecurity infrastructure to improve system reliability, protect patient information and support safe clinical operations in three counties (Clay, Coosa, Talladega)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 21,
+   "recipient": "TLC Pediatrics & Family",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "amountPrinted": "$200,000",
+   "purpose": "enhance its information technology and cybersecurity systems to protect patient information and maintain reliable access to care in Limestone County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 22,
+   "recipient": "UAB St. Vincent\u2019s Blount",
+   "county": "Not stated",
+   "amount": 839753.0,
+   "amountPrinted": "$839,753",
+   "purpose": "modernize its information technology, cybersecurity and electronic health record systems to strengthen patient care, protect health information and improve operational reliability in Blount County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 23,
+   "recipient": "UAB St. Vincent\u2019s Chilton LLC",
+   "county": "Bibb, Chilton, Coosa, Elmore, Perry",
+   "amount": 839753.0,
+   "amountPrinted": "$839,753",
+   "purpose": "strengthen its information technology, cybersecurity, and electronic health record systems to improve care coordination, protect patient information and support reliable hospital operations in five counties (Bibb, Chilton, Coosa, Elmore, Perry)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 24,
+   "recipient": "UAB St. Vincent\u2019s St. Clair",
+   "county": "Bibb, Chilton, Coosa, Elmore, Perry, St. Clair",
+   "amount": 839753.0,
+   "amountPrinted": "$839,753",
+   "purpose": "enhance its information technology, cybersecurity and electronic health record systems to improve care coordination, protect patient information and support reliable hospital operations serving six counties (Bibb, Chilton, Coosa, Elmore, Perry, St. Clair)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 25,
+   "recipient": "The University of Alabama",
+   "county": "Cullman, Fayette, Greene, Hale, Lee, Marengo, Montgomery, Pickens, Sumter, Talladega, Tallapoosa, Tuscaloosa",
+   "amount": 2450000.0,
+   "amountPrinted": "$2.45 million",
+   "purpose": "establish a shared support hub to help rural healthcare providers improve referral coordination, health information technology and cybersecurity readiness in 12 counties (Cullman, Fayette, Greene, Hale, Lee, Marengo, Montgomery, Pickens, Sumter, Talladega, Tallapoosa, Tuscaloosa)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 26,
+   "recipient": "University of South Alabama",
+   "county": "Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Dallas, Escambia, Greene, Hale, Lowndes, Marengo, Monroe, Perry, Sumter, Washington, Wilcox",
+   "amount": 1510000.0,
+   "amountPrinted": "$1.51 million",
+   "purpose": "establish a regional healthcare technology and interoperability network serving 10 rural hospitals across south Alabama through a coordinated hub-and-spoke model that combines shared technology services, enhanced interoperability, cybersecurity modernization and standardized operational platforms to improve provider sustainability and patient care in 17 counties (Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Dallas, Escambia, Greene, Hale, Lowndes, Marengo, Monroe, Perry, Sumter, Washington, Wilcox)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 27,
+   "recipient": "The Washington County Health Care Authority, Inc.",
+   "county": "Not stated",
+   "amount": 27000.0,
+   "amountPrinted": "$27,000",
+   "purpose": "strengthen its health information technology infrastructure and cybersecurity protections to improve system reliability and protect patient information in Washington County."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 28,
+   "recipient": "Whatley Health Services Inc.",
+   "county": "Greene, Hale, Lamar, Pickens, Sumter, Tuscaloosa, Walker",
+   "amount": 3490000.0,
+   "amountPrinted": "$3.49 million",
+   "purpose": "strengthen its electronic health record, cybersecurity and information technology systems across its rural clinic network to improve care coordination, protect patient information and support reliable healthcare operations in seven counties (Greene, Hale, Lamar, Pickens, Sumter, Tuscaloosa, Walker)."
+  },
+  {
+   "program": "Collaborative Electronic Health Record (EHR), IT and Cybersecurity Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 29,
+   "recipient": "Wilcox Hospital Board DBA J. Paul Jones Rural Emergency Hospital",
+   "county": "Chilton, Coosa, Elmore, Perry, Wilcox",
+   "amount": 839753.0,
+   "amountPrinted": "$839,753",
+   "purpose": "upgrade its information technology, cybersecurity and electronic health record systems to improve secure information sharing, protect patient data and support reliable healthcare operations in five counties (Chilton, Coosa, Elmore, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 30,
+   "recipient": "Alabama Vascular Specialists",
+   "county": "Bibb, Bullock, Butler, Choctaw, Clarke, Conecuh, Dallas, Greene, Hale, Lowndes, Macon, Marengo, Monroe, Montgomery, Perry, Pickens, Sumter, Washington, Wilcox",
+   "amount": 241894.0,
+   "amountPrinted": "$241,894",
+   "purpose": "expand vascular specialty services at its Selma satellite clinic by purchasing ultrasound, circulation-testing, and accessible examination equipment. The new equipment will allow the clinic to increase diagnostic testing capacity, improve patient triage, and expand clinic frequency from one to two days per week. (Bibb, Bullock, Butler, Choctaw, Clarke, Conecuh, Dallas, Greene, Hale, Lowndes, Macon, Marengo, Monroe, Montgomery, Perry, Pickens, Sumter, Washington, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 31,
+   "recipient": "Andalusia Health",
+   "county": "Covington",
+   "amount": 625257.0,
+   "amountPrinted": "$625,257",
+   "purpose": "replace an obsolete CT scanner with a modern imaging system to accommodate a wider range of patients and help emergency teams diagnose heart and stroke conditions more quickly so more care can remain close to home (Covington)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 32,
+   "recipient": "Andalusia Health",
+   "county": "Butler, Coffee, Conecuh, Covington, Crenshaw, Escambia",
+   "amount": 176980.0,
+   "amountPrinted": "$176,980",
+   "purpose": "purchase and operationalize a dedicated non-emergency transportation vehicle to provide safe, reliable transport for discharged patients who live in six counties (Butler, Coffee, Conecuh, Covington, Crenshaw, Escambia)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 33,
+   "recipient": "The Arc of Madison County, Inc.",
+   "county": "Madison, Shelby, Walker",
+   "amount": 1340000.0,
+   "amountPrinted": "$1.34 million",
+   "purpose": "expand the Physician-Assisted Autism Diagnostic Pathways program through virtual occupational therapy, speech therapy and coordinated support for young children after a diagnosis of developmental delay or autism (Madison, Shelby, Walker)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 34,
+   "recipient": "Auburn University",
+   "county": "Barbour, Bibb, Bullock, Chambers, Clay, Conecuh, Covington, Dale, Franklin, Geneva, Henry, Macon, Marion, Pike, Tallapoosa, Washington",
+   "amount": 4000000.0,
+   "amountPrinted": "$4 million",
+   "purpose": "create a network of local healthcare access sites connected to a central virtual clinic to expand preventive and primary care in rural communities. The project will use virtual visits and remote health monitoring to connect residents with routine care, specialty services, chronic condition management, mental health support and coordinated care while reducing travel and strengthening rural providers (Barbour, Bibb, Bullock, Chambers, Clay, Conecuh, Covington, Dale, Franklin, Geneva, Henry, Macon, Marion, Pike, Tallapoosa, Washington)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 35,
+   "recipient": "TTC LLC DBA BHG Cullman Treatment Center",
+   "county": "Cullman",
+   "amount": 339580.0,
+   "amountPrinted": "$339,580",
+   "purpose": "implement technology to strengthen access to opioid treatment services, medication management and treatment continuity at the Cullman treatment center (Cullman)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 36,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Chilton, Perry, Wilcox",
+   "amount": 106500.0,
+   "amountPrinted": "$106,500",
+   "purpose": "establish a two-tier telehealth and specialty consultation program across six rural clinics to expand access to dermatology services closer to home (Bibb, Chilton, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 37,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Dallas, Marengo, Perry, Wilcox",
+   "amount": 2280000.0,
+   "amountPrinted": "$2.28 million",
+   "purpose": "help establish a centralized rural shared-services hub and expand clinical capacity to support new and expanded primary care and behavioral health services across Alabama\u2019s Black Belt (Bibb, Dallas, Marengo, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 38,
+   "recipient": "Capstone Health",
+   "county": "Walker, Winston",
+   "amount": 260060.0,
+   "amountPrinted": "$260,060",
+   "purpose": "establish the Capstone Health Access and Mentorship Partnership to expand local Hepatitis C screening, treatment and care coordination in rural communities in two counties (Walker, Winston)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 39,
+   "recipient": "City of Jackson Healthcare Authority DBA Jackson Medical Center",
+   "county": "Clarke, Washington",
+   "amount": 98300.0,
+   "amountPrinted": "$98,300",
+   "purpose": "establish The Bridge Project, a dedicated non-emergency medical transportation program for mobility-impaired residents and behavioral health patients who need reliable access to healthcare services (Clarke, Washington)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 40,
+   "recipient": "Clay County Healthcare Authority",
+   "county": "Clay",
+   "amount": 1540000.0,
+   "amountPrinted": "$1.54 million",
+   "purpose": "expand primary and specialty care by converting existing office and surgical space into a rural health clinic staffed by a primary care physician (Clay)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 41,
+   "recipient": "Crenshaw County Healthcare Authority",
+   "county": "Crenshaw",
+   "amount": 1080000.0,
+   "amountPrinted": "$1.08 million",
+   "purpose": "establish a tele-psychiatry program to expand access to behavioral health care for rural patients and reduce unnecessary travel, transfers and delays in psychiatric evaluation (Crenshaw)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 42,
+   "recipient": "Dale Medical Center",
+   "county": "Coffee, Dale, Geneva, Henry, Houston, Pike",
+   "amount": 305775.0,
+   "amountPrinted": "$305,775",
+   "purpose": "replace aging mammography equipment with a modern 3D imaging system to preserve local breast cancer screening and support earlier detection (Coffee, Dale, Geneva, Henry, Houston, Pike)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 43,
+   "recipient": "The DCH Health Care Authority",
+   "county": "Fayette, Pickens, Greene, Hale, Lamar, Perry, Sumter, Marengo, Choctaw, Bibb",
+   "amount": 2000000.0,
+   "amountPrinted": "$2 million",
+   "purpose": "establish a dedicated non-emergency medical transportation program to improve access to healthcare services and support patient movement across west Alabama (Fayette, Pickens, Greene, Hale, Lamar, Perry, Sumter, Marengo, Choctaw, Bibb)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 44,
+   "recipient": "The East Alabama Health Care Authority",
+   "county": "Barbour, Bullock, Chambers, Clay, Elmore, Lee",
+   "amount": 6770000.0,
+   "amountPrinted": "$6.77 million",
+   "purpose": "establish a Regional Shared Services Hub to strengthen the operations and sustainability of rural partner hospitals across the region (Barbour, Bullock, Chambers, Clay, Elmore, Lee)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 45,
+   "recipient": "The East Alabama Health Care Authority",
+   "county": "Chambers, Macon, Tallapoosa",
+   "amount": 1290000.0,
+   "amountPrinted": "$1.29 million",
+   "purpose": "be used to acquire a mobile outreach bus, replicating a current bus model, connecting residents in underserved rural communities to primary care resources and preventative health screenings (Chambers, Macon, Tallapoosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 46,
+   "recipient": "Evergreen Nephrology LLC",
+   "county": "Blount, Calhoun, Chilton, Cullman, Etowah, Fayette, Jackson, Lauderdale, Limestone, Marion, Marshall, Shelby, St. Clair, Talladega, Walker",
+   "amount": 891588.0,
+   "amountPrinted": "$891,588",
+   "purpose": "operate the Evergreen Rural Connected Care program to provide virtual care management and at-home health monitoring for rural residents with chronic kidney disease, high blood pressure, diabetes, heart failure and related conditions (Blount, Calhoun, Chilton, Cullman, Etowah, Fayette, Jackson, Lauderdale, Limestone, Marion, Marshall, Shelby, St. Clair, Talladega, Walker)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 47,
+   "recipient": "Faulkner University",
+   "county": "Bullock, Butler, Dallas, Lowndes, Macon, Marengo, Perry, Wilcox",
+   "amount": 2080000.0,
+   "amountPrinted": "$2.08 million",
+   "purpose": "establish the Eagle Care Mobile Health Network using two mobile healthcare units, virtual visits, remote health monitoring and care coordination to bring ongoing services directly to underserved rural communities (Bullock, Butler, Dallas, Lowndes, Macon, Marengo, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 48,
+   "recipient": "Floyd Cherokee Medical Center",
+   "county": "Etowah",
+   "amount": 500000.0,
+   "amountPrinted": "$500,000",
+   "purpose": "replace aging radiography equipment with a modern digital imaging system to maintain reliable access to diagnostic services and reduce delays in diagnosis and treatment (Etowah)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 49,
+   "recipient": "Floyd Healthcare Management DBA Atrium Health Floyd EMS",
+   "county": "Calhoun, Cherokee",
+   "amount": 604470.0,
+   "amountPrinted": "$604,470",
+   "purpose": "expand the healthcare provider\u2019s existing non-emergency medical transportation program by adding a dedicated transport ambulance and a wheelchair-accessible vehicle to improve access to medically necessary care (Calhoun, Cherokee)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 50,
+   "recipient": "Franklin Primary Health Center Inc.",
+   "county": "Baldwin, Choctaw, Conecuh, Escambia, Monroe",
+   "amount": 574091.0,
+   "amountPrinted": "$574,091",
+   "purpose": "establish the Franklin Rural Behavioral Health Telehealth and Teleconsult Initiative to expand access to behavioral health services through a hybrid in-person and telehealth model (Baldwin, Choctaw, Conecuh, Escambia, Monroe)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 51,
+   "recipient": "Gadsden Regional Medical Center",
+   "county": "Cherokee, Etowah",
+   "amount": 150000.0,
+   "amountPrinted": "$150,000",
+   "purpose": "establish a non-emergency transportation service by purchasing a wheelchair-accessible van and hiring a full-time driver (Cherokee, Etowah)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 52,
+   "recipient": "Affinity Hospital DBA Grandview Medical Center",
+   "county": "Clay, Coosa",
+   "amount": 451350.0,
+   "amountPrinted": "$451,350",
+   "purpose": "establish a virtual specialty care network and dedicated referral phone line connecting rural patients and providers with heart, lung and kidney specialists (Clay, Coosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 53,
+   "recipient": "Hale County Hospital",
+   "county": "Hale",
+   "amount": 2410000.0,
+   "amountPrinted": "$2.41 million",
+   "purpose": "upgrade equipment and infrastructure to strengthen emergency and maternal care, expand diagnostic services and improve the reliability of essential hospital operations (Hale)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 54,
+   "recipient": "Healthcare Authority of the City of Greenville \u2013 L.V. Stabler Hospital",
+   "county": "Butler",
+   "amount": 4170000.0,
+   "amountPrinted": "$4.17 million",
+   "purpose": "establish a telehealth intensive care program and expand general surgery services at Regional Medical Center of Central Alabama to strengthen access to critical and specialty care close to home (Butler)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 55,
+   "recipient": "Huntsville Hospital Health System",
+   "county": "DeKalb, Jackson, Limestone, Madison, Marshall",
+   "amount": 2800000.0,
+   "amountPrinted": "$2.80 million",
+   "purpose": "establish the North Alabama Rural Specialty Access Network to expand access to specialty care and help rural patients receive more services closer to home (DeKalb, Jackson, Limestone, Madison, Marshall)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 56,
+   "recipient": "City of York Health Care Authority DBA Hill Hospital of Sumter County",
+   "county": "Choctaw, Jefferson, Sumter, Pickens, Tuscaloosa",
+   "amount": 1530000.0,
+   "amountPrinted": "$1.53 million",
+   "purpose": "expand access to healthcare services by combining telehealth technology with transportation resources for rural and medically underserved residents of West Alabama (Choctaw, Jefferson, Sumter, Pickens, Tuscaloosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 57,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Clarke, Washington",
+   "amount": 386000.0,
+   "amountPrinted": "$386,000",
+   "purpose": "establish the Rural Women\u2019s Health Hub of Southwest Alabama to expand access to women\u2019s health, maternal health and specialty care closer to home (Clarke, Washington)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 58,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Baldwin, Clarke, Conecuh, Escambia",
+   "amount": 1120000.0,
+   "amountPrinted": "$1.12 million",
+   "purpose": "allow Infirmary Health to implement the Women\u2019s Access to Care Close to Home Initiative to expand preventive, prenatal, postpartum and specialty-connected care for women in rural communities (Baldwin, Clarke, Conecuh, Escambia)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 59,
+   "recipient": "Ivy Creek Healthcare",
+   "county": "Elmore, Tallapoosa",
+   "amount": 1660000.0,
+   "amountPrinted": "$1.66 million",
+   "purpose": "expand and modernize rural healthcare services by strengthening diagnostic imaging, establishing emergency telepsychiatry and telemedicine services, creating an in-house microbiology laboratory and supporting non-emergency medical transportation (Elmore, Tallapoosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 60,
+   "recipient": "Lakeland Community Hospital Inc.",
+   "county": "Winston",
+   "amount": 490800.0,
+   "amountPrinted": "$490,800",
+   "purpose": "implement telehealth technology and establish a non-emergency transportation program to improve access to healthcare services for rural patients (Winston)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 61,
+   "recipient": "RCHP-Florence LLC DBA North Alabama Shoals Hospital",
+   "county": "Colbert",
+   "amount": 179607.0,
+   "amountPrinted": "$179,607",
+   "purpose": "implement an artificial intelligence-enabled patient monitoring system to improve fall prevention and patient safety in its geriatric psychiatry and inpatient rehabilitation units (Colbert)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 62,
+   "recipient": "RCHP-Florence LLC DBA North Alabama Shoals Hospital",
+   "county": "Franklin, Lauderdale",
+   "amount": 123000.0,
+   "amountPrinted": "$123,000",
+   "purpose": "help establish a coordinated telecardiology program to expand access to specialized cardiac care for rural patients (Franklin, Lauderdale)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 63,
+   "recipient": "NorthStar EMS Inc.",
+   "county": "Fayette, Marion, Talladega",
+   "amount": 987906.0,
+   "amountPrinted": "$987,906",
+   "purpose": "replace outdated emergency transport equipment with modern heart monitors, airway equipment, ventilators and automated CPR devices (Fayette, Marion, Talladega)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 64,
+   "recipient": "Poarch Band of Creek Indians",
+   "county": "Escambia",
+   "amount": 242112.0,
+   "amountPrinted": "$242,112",
+   "purpose": "modernize its dental clinic to expand access to restorative and pediatric dental care and improve the efficiency of services provided locally (Escambia)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 65,
+   "recipient": "QHG of Enterprise Inc.",
+   "county": "Coffee, Covington, Crenshaw, Dale, Geneva, Pike",
+   "amount": 2770000.0,
+   "amountPrinted": "$2.77 million",
+   "purpose": "modernize the medical center\u2019s diagnostic imaging services by upgrading its existing MRI unit and replacing its only CT scanner (Coffee, Covington, Crenshaw, Dale, Geneva, Pike)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 66,
+   "recipient": "Regional Air Medical Services",
+   "county": "Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 56109.0,
+   "amountPrinted": "$56,109",
+   "purpose": "purchase and implement transport ventilators and related equipment to strengthen emergency air medical care for critically ill and injured patients (Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 67,
+   "recipient": "Regional Paramedical Services",
+   "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 112423.0,
+   "amountPrinted": "$112,423",
+   "purpose": "install a battery backup system to keep emergency dispatch services operating during power outages and grid disruptions (Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 68,
+   "recipient": "Regional Paramedical Services",
+   "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 211029.0,
+   "amountPrinted": "$211,029",
+   "purpose": "help equip emergency response units with modern ventilators and related equipment to provide advanced breathing support during medical emergencies (Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 69,
+   "recipient": "The Russell Hospital Corporation",
+   "county": "Tallapoosa",
+   "amount": 1250000.0,
+   "amountPrinted": "$1.25 million",
+   "purpose": "implement an inpatient virtual care and tele-specialty program to expand access to clinical support for rural patients and strengthen bedside care (Tallapoosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 70,
+   "recipient": "The Russell Hospital Corporation",
+   "county": "Tallapoosa",
+   "amount": 439720.0,
+   "amountPrinted": "$439,720",
+   "purpose": "allow Russell Medical to modernize its cardiovascular technology to strengthen access to advanced heart care and improve coordination for rural patients (Tallapoosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 71,
+   "recipient": "Russellville Hospital",
+   "county": "Franklin",
+   "amount": 1290000.0,
+   "amountPrinted": "$1.29 million",
+   "purpose": "implement a coordinated rural health access and care management initiative to help Franklin County residents receive timely specialty, behavioral health and follow-up care closer to home (Franklin)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 72,
+   "recipient": "Clair Community Health Clinic",
+   "county": "St. Clair",
+   "amount": 1410000.0,
+   "amountPrinted": "$1.41 million",
+   "purpose": "expand telehealth, remote patient monitoring, home-based support and onsite diagnostic services to improve access to care for rural residents (St. Clair)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 73,
+   "recipient": "UAB St. Vincent\u2019s Chilton",
+   "county": "Chilton",
+   "amount": 1210000.0,
+   "amountPrinted": "$1.21 million",
+   "purpose": "install secure video connections in every hospital room to expand virtual care services. The technology will support remote nursing and patient observation and connect local patients with heart and hormone specialists at the University of Alabama at Birmingham, reducing unnecessary travel and transfers (Chilton)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 74,
+   "recipient": "Sylacauga Healthcare Authority DBA Coosa Valley Medical Center",
+   "county": "Coosa, Talladega",
+   "amount": 5680.0,
+   "amountPrinted": "$5,680",
+   "purpose": "improve an existing non-emergency transportation program by adding technology for scheduling, route planning and ride coordination (Coosa, Talladega)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 75,
+   "recipient": "Sylacauga Healthcare Authority DBA Coosa Valley Medical Center",
+   "county": "Clay, Coosa, Shelby, Talladega, Tallapoosa",
+   "amount": 84278.0,
+   "amountPrinted": "$84,278",
+   "purpose": "allow the medical center to expand inpatient mental health care for older adults by increasing beds and adding beds equipped for patients with mobility limitations or other medical needs (Clay, Coosa, Shelby, Talladega, Tallapoosa)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 76,
+   "recipient": "Tanner Medical Center Alabama Inc.",
+   "county": "Randolph",
+   "amount": 289921.0,
+   "amountPrinted": "$289,921",
+   "purpose": "expand rural healthcare capacity by adding clinical support staff, telehealth access and reliable broadband connectivity across four clinical sites (Randolph)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 77,
+   "recipient": "TLC Pediatrics & Family",
+   "county": "Limestone",
+   "amount": 174117.0,
+   "amountPrinted": "$174,117",
+   "purpose": "establish the Rural Maternal-Infant Wellness and Lactation Access Program by hiring a full-time certified breastfeeding specialist and creating a dedicated space for breastfeeding and family support (Limestone)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 78,
+   "recipient": "TLC Pediatrics & Family",
+   "county": "Limestone",
+   "amount": 33508.0,
+   "amountPrinted": "$33,508",
+   "purpose": "help establish the Rural Newborn Screening and Early Childhood Development Initiative to provide in-clinic newborn jaundice screening and standardized developmental and social-emotional screenings during routine pediatric visits (Limestone)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 79,
+   "recipient": "Touchstone Residential Services DBA Touchstone Transport",
+   "county": "Cullman, Lawrence, Limestone, Morgan",
+   "amount": 1120000.0,
+   "amountPrinted": "$1.12 million",
+   "purpose": "establish a non-emergency medical transportation program using wheelchair-accessible electric vehicles (Cullman, Lawrence, Limestone, Morgan)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 80,
+   "recipient": "The Troy Hospital Health Care Authority",
+   "county": "Barbour, Coffee, Crenshaw, Montgomery, Pike",
+   "amount": 623000.0,
+   "amountPrinted": "$623,000",
+   "purpose": "renovate an intensive care unit that is more than 30 years old to improve patient safety and support hospital staff (Barbour, Coffee, Crenshaw, Montgomery, Pike)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 81,
+   "recipient": "Wiregrass Medical Center",
+   "county": "Geneva",
+   "amount": 391000.0,
+   "amountPrinted": "$391,000",
+   "purpose": "establish an in-house microbiology laboratory to provide faster diagnostic testing for patients and healthcare providers in rural southeast Alabama (Geneva)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 82,
+   "recipient": "UAB Montgomery",
+   "county": "Lowndes",
+   "amount": 2089999.9999999998,
+   "amountPrinted": "$2.09 million",
+   "purpose": "implement the Lowndes County \u201cStreet MAP\u201d Clinic to expand access to healthcare services for underserved residents in Lowndes County (Lowndes)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 83,
+   "recipient": "University of Alabama",
+   "county": "Statewide",
+   "amount": 1460000.0,
+   "amountPrinted": "$1.46 million",
+   "purpose": "establish the Brain Health Rural Integrated Delivery and Guidance Exchange to connect services for brain injuries, mental health, substance use and social needs (Statewide)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 84,
+   "recipient": "Vaughan Regional Medical Center",
+   "county": "Dallas",
+   "amount": 780332.0,
+   "amountPrinted": "$780,332",
+   "purpose": "replace its outdated nurse call system with a modern facility-wide communication system to improve patient safety, clinical response and care coordination (Dallas)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 85,
+   "recipient": "Tombigbee Healthcare Authority DBA Whitfield Regional Hospital",
+   "county": "Dallas, Greene, Marengo, Sumter, Wilcox",
+   "amount": 259011.0,
+   "amountPrinted": "$259,011",
+   "purpose": "expand community wellness events that provide health screenings, education, referral assistance and access to virtual primary and specialty care (Dallas, Greene, Marengo, Sumter, Wilcox)."
+  },
+  {
+   "program": "Rural Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 86,
+   "recipient": "Wilcox Hospital Board DBA J. Paul Jones Rural Emergency Hospital",
+   "county": "Chilton, Coosa, Elmore, Perry, Wilcox",
+   "amount": 116880.0,
+   "amountPrinted": "$116,880",
+   "purpose": "implement a two-part technology upgrade to reduce provider documentation burden and strengthen time-sensitive tele-neurology and stroke care across rural Alabama (Chilton, Coosa, Elmore, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 87,
+   "recipient": "Alabama Community College System",
+   "county": "Not stated",
+   "amount": 464000.0,
+   "amountPrinted": "$464,000",
+   "purpose": "establish a statewide training network that awards college credit for qualifying military training and creates accelerated pathways for veterans to complete healthcare credentials."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 88,
+   "recipient": "Alabama Community College System",
+   "county": "Baldwin, Coffee, Colbert, Conecuh, Covington, Cullman, Dallas, DeKalb, Etowah, Houston, Jefferson, Limestone, Madison, Marshall, Mobile, Montgomery, Randolph, Russell, Tallapoosa, Tuscaloosa, Walker",
+   "amount": 319540.0,
+   "amountPrinted": "$319,540",
+   "purpose": "establish a registered earn-and-learn apprenticeship to expand the nursing faculty workforce and increase nursing education capacity in 21 counties (Baldwin, Coffee, Colbert, Conecuh, Covington, Cullman, Dallas, DeKalb, Etowah, Houston, Jefferson, Limestone, Madison, Marshall, Mobile, Montgomery, Randolph, Russell, Tallapoosa, Tuscaloosa, Walker)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 89,
+   "recipient": "Alabama Fire College",
+   "county": "Not stated",
+   "amount": 756559.0,
+   "amountPrinted": "$756,559",
+   "purpose": "expand emergency medical services education across rural Alabama by providing scholarship-supported training for volunteer firefighters, rescue squad members, career firefighters, ambulance service employees and community members seeking emergency medical services credentials in rural communities statewide."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 90,
+   "recipient": "Auburn University",
+   "county": "Barbour, Bullock, Chambers, Covington, Dale, Geneva, Henry, Macon, Monroe, Pike, Tallapoosa, Washington",
+   "amount": 5000000.0,
+   "amountPrinted": "$5 million",
+   "purpose": "establish a multidisciplinary Rural Workforce Academy to strengthen the pipeline of healthcare professionals in 12 counties (Barbour, Bullock, Chambers, Covington, Dale, Geneva, Henry, Macon, Monroe, Pike, Tallapoosa, Washington)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 91,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Perry, Wilcox",
+   "amount": 100127.0,
+   "amountPrinted": "$100,127",
+   "purpose": "provide recruitment incentives to fourth-year medical students who enter the Cahaba+UAB Family Medicine Residency rural or frontier track and commit to at least five years of rural service in three counties (Bibb, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 92,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Coffee, Dallas, Talladega",
+   "amount": 430304.0,
+   "amountPrinted": "$430,304",
+   "purpose": "establish rural obstetric training capacity at four Alabama hospitals to strengthen the pipeline of physicians prepared to provide maternity care in four counties (Bibb, Coffee, Dallas, Talladega)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 93,
+   "recipient": "Clay County Healthcare Authority",
+   "county": "Clay",
+   "amount": 293000.0,
+   "amountPrinted": "$293,000",
+   "purpose": "strengthen its local healthcare workforce by supporting credential advancement for existing employees, sustaining a high school healthcare education pipeline and recruiting the county\u2019s first employed primary care physician at its rural emergency hospital (Clay)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 94,
+   "recipient": "Cullman Regional Medical Center Inc.",
+   "county": "Blount, Cullman, Lawrence, Marshall, Morgan, Walker, Winston",
+   "amount": 3800000.0,
+   "amountPrinted": "$3.8 million",
+   "purpose": "establish a family medicine residency training program with a focused obstetrics track to strengthen the pipeline of physicians prepared to provide maternity care in seven counties (Blount, Cullman, Lawrence, Marshall, Morgan, Walker, Winston)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 95,
+   "recipient": "The DCH Health Care Authority",
+   "county": "Tuscaloosa, Fayette, Pickens, Greene, Hale, Lamar, Perry, Sumter, Marengo, Choctaw, Bibb",
+   "amount": 3000000.0,
+   "amountPrinted": "$3 million",
+   "purpose": "recruit and retain two interventional cardiologists, one heart rhythm specialist and two advanced practice providers to strengthen access to cardiovascular care in several west Alabama counties (Tuscaloosa, Fayette, Pickens, Greene, Hale, Lamar, Perry, Sumter, Marengo, Choctaw, Bibb)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 96,
+   "recipient": "East Alabama Health Care Authority",
+   "county": "Barbour, Bullock, Chambers, Clay, Elmore, Lee, Randolph, Talladega, Tallapoosa",
+   "amount": 1500000.0,
+   "amountPrinted": "$1.5 million",
+   "purpose": "establish a new rural family medicine residency program to train and retain more primary care physicians to serve nine counties (Barbour, Bullock, Chambers, Clay, Elmore, Lee, Randolph, Talladega, Tallapoosa)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 97,
+   "recipient": "Faulkner University",
+   "county": "Baldwin, Barbour, Bibb, Blount, Bullock, Butler, Calhoun, Chambers, Cherokee, Chilton, Choctaw, Clarke, Clay, Cleburne, Coffee, Conecuh, Coosa, Covington, Crenshaw, Cullman, Dale, Dallas, DeKalb, Elmore, Escambia, Etowah, Fayette, Franklin, Geneva, Greene, Hale, Henry, Jackson, Lamar, Lauderdale, Lawrence, Limestone, Lowndes, Macon, Marengo, Marion, Marshall, Mobile, Monroe, Morgan, Perry, Pickens, Pike, Randolph, Shelby, St. Clair, Sumter, Talladega, Tallapoosa, Walker, Washington, Wilcox, Winston",
+   "amount": 975000.0,
+   "amountPrinted": "$975,000",
+   "purpose": "establish a rural healthcare workforce program that provides tuition assistance to eligible health profession students who commit to five years of employment in rural Alabama and support housing, travel and related costs for students completing rural clinical rotations in 58 counties (Baldwin, Barbour, Bibb, Blount, Bullock, Butler, Calhoun, Chambers, Cherokee, Chilton, Choctaw, Clarke, Clay, Cleburne, Coffee, Conecuh, Coosa, Covington, Crenshaw, Cullman, Dale, Dallas, DeKalb, Elmore, Escambia, Etowah, Fayette, Franklin, Geneva, Greene, Hale, Henry, Jackson, Lamar, Lauderdale, Lawrence, Limestone, Lowndes, Macon, Marengo, Marion, Marshall, Mobile, Monroe, Morgan, Perry, Pickens, Pike, Randolph, Shelby, St. Clair, Sumter, Talladega, Tallapoosa, Walker, Washington, Wilcox, Winston)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 98,
+   "recipient": "Franklin Primary Health Center Inc.",
+   "county": "Not stated",
+   "amount": 1100000.0,
+   "amountPrinted": "$1.1 million",
+   "purpose": "expand its accredited family medicine residency program by developing a rural training track to strengthen the pipeline of primary care physicians prepared to practice in rural communities in Baldwin County."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 99,
+   "recipient": "Gadsden Regional Medical Center LLC",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "amountPrinted": "$550,000",
+   "purpose": "strengthen its nursing workforce by recruiting 20 registered nurses who commit to five years of rural service and expanding training opportunities for its existing nursing staff in Cherokee and Etowah counties."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 100,
+   "recipient": "HH Health System \u2013 Marshall LLC",
+   "county": "Not stated",
+   "amount": 935000.0,
+   "amountPrinted": "$935,000",
+   "purpose": "establish the training and operational infrastructure needed to launch a new rural family medicine residency program in Marshall County."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 101,
+   "recipient": "Infirmary Health System Inc.",
+   "county": "Baldwin, Clarke, Escambia, Mobile, Washington",
+   "amount": 342147.0,
+   "amountPrinted": "$342,147",
+   "purpose": "establish structured rural clinical rotations for internal medicine residents to strengthen the physician workforce pipeline and expand supervised clinical capacity in five counties (Baldwin, Clarke, Escambia, Mobile, Washington)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 102,
+   "recipient": "Professional Medical Associates PC",
+   "county": "Coffee, Covington, Crenshaw, Dale, Geneva",
+   "amount": 800000.0,
+   "amountPrinted": "$800,000",
+   "purpose": "provide recruitment and retention incentives for clinicians, onboarding support, technology modernization, and expanded patient access to address clinician shortages, large provider panel sizes, and chronic disease burden (Coffee, Covington, Crenshaw, Dale, Geneva)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 103,
+   "recipient": "Regional Training Institute",
+   "county": "Bibb, Blount, Calhoun, Chambers, Cherokee, Chilton, Coosa, Covington, Crenshaw, Cullman, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Hale, Jackson, Jefferson, Lamar, Lawrence, Limestone, Lowndes, Macon, Marengo, Marion, Marshall, Morgan, Perry, Pickens, Randolph, Shelby, St. Clair, Talladega, Walker, Winston",
+   "amount": 1380000.0,
+   "amountPrinted": "$1.38 million",
+   "purpose": "purchase and equip two mobile training units to bring hands-on emergency medical services training to rural residents who may have difficulty traveling to a training location. The project will serve 36 counties (Bibb, Blount, Calhoun, Chambers, Cherokee, Chilton, Coosa, Covington, Crenshaw, Cullman, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Hale, Jackson, Jefferson, Lamar, Lawrence, Limestone, Lowndes, Macon, Marengo, Marion, Marshall, Morgan, Perry, Pickens, Randolph, Shelby, St. Clair, Talladega, Walker, Winston)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 104,
+   "recipient": "Clair Community Health Clinic Inc.",
+   "county": "Not stated",
+   "amount": 1350000.0,
+   "amountPrinted": "$1.35 million",
+   "purpose": "expand rural clinical training opportunities to strengthen the workforce providing diagnostic, chronic disease and community-based care in St. Clair County."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 105,
+   "recipient": "Sylacauga Healthcare Authority",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "amountPrinted": "$600,000",
+   "purpose": "provide recruitment incentives to hire two psychiatrists who will practice primarily in Talladega County and help establish a rural psychiatry training and workforce program."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 106,
+   "recipient": "Triad of Alabama DBA Flowers Hospital",
+   "county": "Houston",
+   "amount": 727000.0,
+   "amountPrinted": "$727,000",
+   "purpose": "expand the hospital\u2019s surgical technology training program, increasing access to high-quality workforce training opportunities for individuals pursuing allied health careers and deploying recruitment and retention strategies for specialized nurses and allied health professions through service-based initiatives (Houston)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 107,
+   "recipient": "Troy University",
+   "county": "Not stated",
+   "amount": 118070.0,
+   "amountPrinted": "$118,070",
+   "purpose": "establish an interprofessional training program that brings nursing and emergency medical services students together through virtual clinical simulations to strengthen communication and coordination during patient handoffs in Coffee and Pike counties."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 108,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Baldwin, Barbour, Bibb, Blount, Calhoun, Cherokee, Chilton, Coffee, Cullman, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Hale, Jackson, Jefferson, Lauderdale, Lawrence, Lee, Limestone, Madison, Marengo, Marion, Marshall, Mobile, Montgomery, Shelby, St. Clair, Talladega, Tallapoosa, Tuscaloosa, Walker, Winston",
+   "amount": 7000000.0,
+   "amountPrinted": "$7 million",
+   "purpose": "strengthen Alabama\u2019s rural primary care workforce by expanding the pipeline for recruiting, training and retaining physicians for rural practice to serve 35 counties (Baldwin, Barbour, Bibb, Blount, Calhoun, Cherokee, Chilton, Coffee, Cullman, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Hale, Jackson, Jefferson, Lauderdale, Lawrence, Lee, Limestone, Madison, Marengo, Marion, Marshall, Mobile, Montgomery, Shelby, St. Clair, Talladega, Tallapoosa, Tuscaloosa, Walker, Winston)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 109,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Jefferson, Mobile, Sumter, Tuscaloosa, Wilcox",
+   "amount": 887616.0,
+   "amountPrinted": "$887,616",
+   "purpose": "establish a youth workforce development program to introduce high school students to careers in emergency medical services, emergency preparedness and public health response in five counties (Jefferson, Mobile, Sumter, Tuscaloosa, Wilcox)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 110,
+   "recipient": "The University of Alabama in Huntsville",
+   "county": "Cullman, DeKalb, Franklin, Jackson, Lauderdale, Lawrence, Limestone, Marshall, Morgan",
+   "amount": 1470000.0,
+   "amountPrinted": "$1.47 million",
+   "purpose": "establish the Rural Alabama Nursing Scholars Program to strengthen the nursing workforce in nine north Alabama counties (Cullman, DeKalb, Franklin, Jackson, Lauderdale, Lawrence, Limestone, Marshall, Morgan)."
+  },
+  {
+   "program": "Rural Workforce Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 111,
+   "recipient": "The University of South Alabama",
+   "county": "Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Dallas, Escambia, Greene, Hale, Lowndes, Marengo, Monroe, Perry, Sumter, Washington, Wilcox",
+   "amount": 1250000.0,
+   "amountPrinted": "$1.25 million",
+   "purpose": "strengthen the rural healthcare workforce by expanding physician residency training in rural settings and developing training and support for community health workers, telehealth implementation and healthcare revenue-cycle staff in 17 counties (Butler, Choctaw, Clarke, Conecuh, Covington, Crenshaw, Dallas, Escambia, Greene, Hale, Lowndes, Marengo, Monroe, Perry, Sumter, Washington, Wilcox)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 112,
+   "recipient": "AltaPointe Health Systems",
+   "county": "Clay, Talladega",
+   "amount": 2210000.0,
+   "amountPrinted": "$2.21 million",
+   "purpose": "establish two integrated primary and behavioral health care access points in Ashland and Sylacauga to improve access to coordinated care for rural residents (Clay, Talladega)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 113,
+   "recipient": "Anderson Family Care",
+   "county": "Greene, Hale, Marengo, Perry, Sumter",
+   "amount": 177961.0,
+   "amountPrinted": "$177,961",
+   "purpose": "establish weekend clinic hours in Demopolis to give rural patients access to non-emergency care within their existing medical practice instead of relying on emergency departments or urgent care (Greene, Hale, Marengo, Perry, Sumter)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 114,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Chilton, Marengo, Perry, Wilcox",
+   "amount": 69159.0,
+   "amountPrinted": "$69,159",
+   "purpose": "replace Cahaba Medical Care\u2019s current telehealth platform with a more user-friendly system to improve reliable access to virtual primary care and behavioral health services for rural patients (Bibb, Chilton, Marengo, Perry, Wilcox)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 115,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Dallas",
+   "amount": 280579.0,
+   "amountPrinted": "$280,579",
+   "purpose": "allow the Foundation to establish a new Federally Qualified Health Center service site in Selma by completing targeted renovations and purchasing equipment for existing medical office space (Dallas)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 116,
+   "recipient": "Capstone Health",
+   "county": "Walker",
+   "amount": 250000.0,
+   "amountPrinted": "$250,000",
+   "purpose": "expand access to primary care by implementing routine weekend clinic operations at an existing health center in Jasper, giving rural residents more opportunities to receive care outside traditional weekday hours (Walker)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 117,
+   "recipient": "City of Jackson Healthcare Authority DBA Jackson Medical Center",
+   "county": "Clarke, Washington",
+   "amount": 158215.0,
+   "amountPrinted": "$158,215",
+   "purpose": "modernize aging clinical and office equipment at Family Medical of Jackson to maintain reliable access to primary care in rural communities (Clarke, Washington)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 118,
+   "recipient": "Neil Rasmussen MD PC",
+   "county": "Henry",
+   "amount": 243000.0,
+   "amountPrinted": "$243,000",
+   "purpose": "Headland Family Medicine to expand primary and preventive care capacity in rural Henry County by recruiting and onboarding a full-time primary care physician and adding women\u2019s health services, including annual screenings and family planning (Henry)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 119,
+   "recipient": "East Alabama Health Care Authority",
+   "county": "Bullock",
+   "amount": 731055.0,
+   "amountPrinted": "$731,055",
+   "purpose": "an integrated school-based and mobile healthcare initiative to expand access to primary, preventative, behavioral health and chronic disease services for students, workers and underserved residents in Bullock County in partnership with Auburn University College of Nursing (Bullock)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 120,
+   "recipient": "Franklin Primary Health Center",
+   "county": "Baldwin, Choctaw, Conecuh, Escambia, Monroe",
+   "amount": 881190.0,
+   "amountPrinted": "$881,190",
+   "purpose": "expand clinic-based behavioral health services across the health center\u2019s rural primary care network to improve access to counseling, care coordination and follow-up support closer to home (Baldwin, Choctaw, Conecuh, Escambia, Monroe)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 121,
+   "recipient": "City of York Health Care Authority DBA Hill Hospital of Sumter County",
+   "county": "Sumter, Tuscaloosa",
+   "amount": 677120.0,
+   "amountPrinted": "$677,120",
+   "purpose": "establish the Sumter County Pediatric Clinic on the Hill Hospital campus to expand access to pediatric primary care for children and adolescents in a rural area without a practicing pediatrician (Sumter, Tuscaloosa)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 122,
+   "recipient": "Regional Air Medical Services",
+   "county": "Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
+   "amount": 13765.0,
+   "amountPrinted": "$13,765",
+   "purpose": "purchase clinical simulation and training equipment to strengthen the skills of flight paramedics and flight nurses who provide emergency care and air transport in rural Alabama (Jefferson, Marion, Shelby, St. Clair, Walker, Winston)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 123,
+   "recipient": "Troy University",
+   "county": "Pike",
+   "amount": 60000.0,
+   "amountPrinted": "$60,000",
+   "purpose": "the School of Nursing to establish TROY COMPASS, a peer mentorship and rural workforce development program that will support nursing students throughout Bachelor of Science in Nursing program and strengthen the pipeline of nurses prepared to serve rural communities (Pike)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 124,
+   "recipient": "The University of Alabama at Birmingham",
+   "county": "Dallas",
+   "amount": 974084.0,
+   "amountPrinted": "$974,084",
+   "purpose": "Selma Family Medicine to modernize its technology and care coordination systems to strengthen rural primary care and prepare the clinic for expanded specialty access through telehealth (Dallas)."
+  },
+  {
+   "program": "Rural Health Practice Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 125,
+   "recipient": "Weiss Family Care",
+   "county": "Cherokee",
+   "amount": 1060000.0,
+   "amountPrinted": "$1.06 million",
+   "purpose": "expand clinic and telehealth capacity in rural Leesburg to improve access to primary care, urgent care and sexual health services closer to home (Cherokee)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 126,
+   "recipient": "AltaPointe Health Systems",
+   "county": "Autauga, Baldwin, Bibb, Blount, Chambers, Cherokee, Chilton, Choctaw, Clay, Coosa, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Greene, Hale, Jackson, Jefferson, Lamar, Lauderdale, Lawrence, Lee, Limestone, Lowndes, Marengo, Marion, Marshall, Mobile, Montgomery, Morgan, Perry, Pickens, Randolph, Shelby, St. Clair, Sumter, Talladega, Tallapoosa, Tuscaloosa, Walker, Washington, Wilcox",
+   "amount": 935895.0,
+   "amountPrinted": "$935,895",
+   "purpose": "establish the Alabama School Mental Health Network to expand school-based mental health crisis services through a coordinated telehealth model, helping students in rural communities receive timely support during a behavioral health crisis (Autauga, Baldwin, Bibb, Blount, Chambers, Cherokee, Chilton, Choctaw, Clay, Coosa, Dallas, DeKalb, Elmore, Etowah, Fayette, Franklin, Greene, Hale, Jackson, Jefferson, Lamar, Lauderdale, Lawrence, Lee, Limestone, Lowndes, Marengo, Marion, Marshall, Mobile, Montgomery, Morgan, Perry, Pickens, Randolph, Shelby, St. Clair, Sumter, Talladega, Tallapoosa, Tuscaloosa, Walker, Washington, Wilcox)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 127,
+   "recipient": "Cahaba Medical Care Foundation",
+   "county": "Bibb, Perry",
+   "amount": 958307.0,
+   "amountPrinted": "$958,307",
+   "purpose": "expand school-based behavioral health services in Bibb County and establish new services in Perry County to improve students\u2019 access to mental health care (Bibb, Perry)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 128,
+   "recipient": "Montgomery Area Mental Health Authority DBA Carastar Health",
+   "county": "Elmore, Lowndes",
+   "amount": 1040000.0,
+   "amountPrinted": "$1.04 million",
+   "purpose": "expand behavioral health services and strengthen operational infrastructure to support Certified Community Behavioral Health Clinic certification and improve access to coordinated care in rural communities (Elmore, Lowndes)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 129,
+   "recipient": "Southwest Alabama Behavioral Health Care Systems DBA CarePath Behavioral Health",
+   "county": "Clarke, Conecuh, Escambia, Monroe",
+   "amount": 865600.0,
+   "amountPrinted": "$865,600",
+   "purpose": "expand access to mental health and substance abuse disorder services and strengthen five rural locations as they transition to the Certified Community Behavioral Health Clinic model (Clarke, Conecuh, Escambia, Monroe)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 130,
+   "recipient": "Mental Health Board of Chilton and Shelby Counties Inc. DBA Central Alabama Wellness",
+   "county": "Chilton, Shelby",
+   "amount": 589096.0,
+   "amountPrinted": "$589,096",
+   "purpose": "establish a 24/7 mobile crisis service to provide in-person behavioral health crisis response and support its transition to the Certified Community Behavioral Health Clinic model (Chilton, Shelby)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 131,
+   "recipient": "Floyd Cherokee Medical Center LLC",
+   "county": "Cherokee",
+   "amount": 31152.0,
+   "amountPrinted": "$31,152",
+   "purpose": "expand virtual school-based mental health therapy services to improve students\u2019 access to behavioral health care (Cherokee)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 132,
+   "recipient": "HARTT Inc. DBA HARTT Counseling and Wellness",
+   "county": "Walker, Winston",
+   "amount": 222347.0,
+   "amountPrinted": "$222,347",
+   "purpose": "expand school-based behavioral health services to improve access to mental health care for students in rural communities (Walker, Winston)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 133,
+   "recipient": "East Alabama Mental Health-Mental Retardation Board, Inc. DBA Integrea Community Mental Health System",
+   "county": "Chambers, Tallapoosa",
+   "amount": 867545.0,
+   "amountPrinted": "$867,545",
+   "purpose": "expand and strengthen behavioral health services as it transitions to the Certified Community Behavioral Health Clinic model, improving access to coordinated mental health and substance use disorder care (Chambers, Tallapoosa)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 134,
+   "recipient": "Jefferson-Blount-St. Clair Mental Health Authority",
+   "county": "Blount, Jefferson, St. Clair",
+   "amount": 542965.0,
+   "amountPrinted": "$542,965",
+   "purpose": "develop the infrastructure needed to transition from a community mental health center to the Certified Community Behavioral Health Clinic model (Blount, Jefferson, St. Clair)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 135,
+   "recipient": "Northwest Alabama Mental Health Center",
+   "county": "Fayette, Lamar, Marion, Walker, Winston",
+   "amount": 480408.0,
+   "amountPrinted": "$480,408",
+   "purpose": "strengthen staffing and care delivery infrastructure to support the health center\u2019s conversion to a Certified Community Behavioral Health Clinic and expand access to comprehensive mental health and substance use disorder services (Fayette, Lamar, Marion, Walker, Winston)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 136,
+   "recipient": "River Region Psychiatry Associates LLC",
+   "county": "Marengo",
+   "amount": 600550.0,
+   "amountPrinted": "$600,550",
+   "purpose": "establish a mobile school-based behavioral health program to improve access to mental health services for students in rural schools in Marengo County (Marengo)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 137,
+   "recipient": "Rural Health Medical Program Inc.",
+   "county": "Clarke, Dallas, Marengo, Monroe, Perry, Wilcox",
+   "amount": 660527.0,
+   "amountPrinted": "$660,527",
+   "purpose": "establish school-based behavioral health services to improve access to mental health care for students in rural communities in six west Alabama counties (Clarke, Dallas, Marengo, Monroe, Perry, Wilcox)."
+  },
+  {
+   "program": "Mental Health Initiative",
+   "round": "Round 1 (Aug 2026)",
+   "n": 138,
+   "recipient": "WellStone Inc.",
+   "county": "Cullman",
+   "amount": 86660.0,
+   "amountPrinted": "$86,660",
+   "purpose": "the Cullman County School-Based Mental Health project to expand access to school-based mental health care by providing specialized tablets in every Cullman County school for immediate telehealth connections to local WellStone mental health therapists when in-person therapists are unavailable (Cullman)."
+  },
+  {
+   "program": "Maternal and Fetal Health Initiative",
+   "round": "Round 2 (Oct 2026)",
+   "n": 139,
    "recipient": "The University of Alabama at Birmingham",
    "county": "Statewide",
    "amount": 1000000.0,
@@ -19,7 +1400,8 @@
   },
   {
    "program": "Maternal and Fetal Health Initiative",
-   "n": 2,
+   "round": "Round 2 (Oct 2026)",
+   "n": 140,
    "recipient": "Triad of Alabama LLC DBA Flowers Hospital",
    "county": "Barbour, Coffee, Covington, Dale, Geneva, Henry, Houston, Pike",
    "amount": 1450000.0,
@@ -28,7 +1410,8 @@
   },
   {
    "program": "Maternal and Fetal Health Initiative",
-   "n": 3,
+   "round": "Round 2 (Oct 2026)",
+   "n": 141,
    "recipient": "The East Alabama Health Care Authority",
    "county": "Barbour, Bullock, Chambers",
    "amount": 1230000.0,
@@ -37,7 +1420,8 @@
   },
   {
    "program": "Maternal and Fetal Health Initiative",
-   "n": 4,
+   "round": "Round 2 (Oct 2026)",
+   "n": 142,
    "recipient": "The Russell Hospital Corp.",
    "county": "Clay, Coosa, Elmore, Talladega, Tallapoosa",
    "amount": 140242.0,
@@ -46,7 +1430,8 @@
   },
   {
    "program": "Maternal and Fetal Health Initiative",
-   "n": 5,
+   "round": "Round 2 (Oct 2026)",
+   "n": 143,
    "recipient": "University of South Alabama",
    "county": "Baldwin, Butler, Clarke, Conecuh, Covington, Escambia, Marengo, Mobile, Monroe, Washington",
    "amount": 1630000.0,
@@ -55,7 +1440,8 @@
   },
   {
    "program": "Maternal and Fetal Health Initiative",
-   "n": 6,
+   "round": "Round 2 (Oct 2026)",
+   "n": 144,
    "recipient": "Infirmary Health System Inc.",
    "county": "Choctaw, Clarke, Mobile, Monroe, Washington",
    "amount": 1790000.0,
@@ -64,7 +1450,8 @@
   },
   {
    "program": "EMS Trauma and Stroke Initiative",
-   "n": 7,
+   "round": "Round 2 (Oct 2026)",
+   "n": 145,
    "recipient": "The University of Alabama at Birmingham",
    "county": "Statewide",
    "amount": 3440000.0,
@@ -73,7 +1460,8 @@
   },
   {
    "program": "EMS Trauma and Stroke Initiative",
-   "n": 8,
+   "round": "Round 2 (Oct 2026)",
+   "n": 146,
    "recipient": "Greene County Health System",
    "county": "Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Tuscaloosa, Wilcox",
    "amount": 308694.0,
@@ -82,7 +1470,8 @@
   },
   {
    "program": "EMS Trauma and Stroke Initiative",
-   "n": 9,
+   "round": "Round 2 (Oct 2026)",
+   "n": 147,
    "recipient": "The University of Alabama at Birmingham",
    "county": "Blount, Chilton, St. Clair",
    "amount": 452716.0,
@@ -91,7 +1480,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 10,
+   "round": "Round 2 (Oct 2026)",
+   "n": 148,
    "recipient": "The University of Alabama",
    "county": "Bibb, Choctaw, Dallas, Fayette, Greene, Hale, Lamar, Marengo, Marion, Perry, Pickens, Sumter, Wilcox",
    "amount": 1760000.0,
@@ -100,7 +1490,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 11,
+   "round": "Round 2 (Oct 2026)",
+   "n": 149,
    "recipient": "The Health Care Authority of the City of Huntsville",
    "county": "Lawrence, Marion, Winston",
    "amount": 450000.0,
@@ -109,7 +1500,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 12,
+   "round": "Round 2 (Oct 2026)",
+   "n": 150,
    "recipient": "Greene County Health System",
    "county": "Greene County",
    "amount": 750000.0,
@@ -118,7 +1510,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 13,
+   "round": "Round 2 (Oct 2026)",
+   "n": 151,
    "recipient": "Advantage Emergency Medical Services LLC",
    "county": "Etowah County",
    "amount": 285675.0,
@@ -127,7 +1520,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 14,
+   "round": "Round 2 (Oct 2026)",
+   "n": 152,
    "recipient": "Haynes Ambulance of Alabama Inc.",
    "county": "Bullock, Covington, Crenshaw, Elmore, Lowndes, Macon, Pike",
    "amount": 1400000.0,
@@ -136,7 +1530,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 15,
+   "round": "Round 2 (Oct 2026)",
+   "n": 153,
    "recipient": "Regional Paramedical Services",
    "county": "Chilton, Jefferson, Marion, Shelby, St. Clair, Walker, Winston",
    "amount": 153525.0,
@@ -145,7 +1540,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 16,
+   "round": "Round 2 (Oct 2026)",
+   "n": 154,
    "recipient": "Piedmont Emergency Rescue Squad Inc.",
    "county": "Calhoun, Cherokee, Etowah",
    "amount": 381220.0,
@@ -154,7 +1550,8 @@
   },
   {
    "program": "EMS Treat-in-Place Initiative",
-   "n": 17,
+   "round": "Round 2 (Oct 2026)",
+   "n": 155,
    "recipient": "Oneonta Fire and Rescue Service",
    "county": "Blount County",
    "amount": 128477.0,
@@ -163,7 +1560,8 @@
   },
   {
    "program": "Simulation Training Initiative",
-   "n": 18,
+   "round": "Round 2 (Oct 2026)",
+   "n": 156,
    "recipient": "Cahaba Medical Care Foundation",
    "county": "Bibb, Perry, Wilcox",
    "amount": 125055.0,
@@ -172,7 +1570,8 @@
   },
   {
    "program": "Simulation Training Initiative",
-   "n": 19,
+   "round": "Round 2 (Oct 2026)",
+   "n": 157,
    "recipient": "QHG of Enterprise Inc.",
    "county": "Coffee, Covington, Crenshaw, Dale, Geneva, Pike",
    "amount": 70000.0,
@@ -181,7 +1580,8 @@
   },
   {
    "program": "Simulation Training Initiative",
-   "n": 20,
+   "round": "Round 2 (Oct 2026)",
+   "n": 158,
    "recipient": "Greene County Health System",
    "county": "Greene County",
    "amount": 575000.0,
@@ -190,7 +1590,8 @@
   },
   {
    "program": "Simulation Training Initiative",
-   "n": 21,
+   "round": "Round 2 (Oct 2026)",
+   "n": 159,
    "recipient": "The Children\u2019s Hospital of Alabama",
    "county": "Statewide",
    "amount": 288542.0,
@@ -199,7 +1600,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 22,
+   "round": "Round 2 (Oct 2026)",
+   "n": 160,
    "recipient": "St. Vincent\u2019s Chilton LLC DBA UAB St. Vincent\u2019s Chilton",
    "county": "Bibb, Chilton, Dallas, Hale, Lowndes, Marengo, Perry, Wilcox",
    "amount": 618000.0,
@@ -208,7 +1610,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 23,
+   "round": "Round 2 (Oct 2026)",
+   "n": 161,
    "recipient": "Cahaba Medical Care Foundation",
    "county": "Bibb, Chilton, Perry, Wilcox",
    "amount": 266486.0,
@@ -217,7 +1620,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 24,
+   "round": "Round 2 (Oct 2026)",
+   "n": 162,
    "recipient": "Greene County Health System",
    "county": "Greene, Hale, Marengo, Pickens, Sumter",
    "amount": 2280000.0,
@@ -226,7 +1630,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 25,
+   "round": "Round 2 (Oct 2026)",
+   "n": 163,
    "recipient": "Franklin Primary Health Center Inc.",
    "county": "Baldwin, Choctaw, Conecuh, Escambia, Monroe",
    "amount": 534937.0,
@@ -235,7 +1640,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 26,
+   "round": "Round 2 (Oct 2026)",
+   "n": 164,
    "recipient": "RCHP-Florence LLC DBA North Alabama Shoals Hospital",
    "county": "Colbert, Franklin, Lauderdale, Lawrence, Winston",
    "amount": 683500.0,
@@ -244,7 +1650,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 27,
+   "round": "Round 2 (Oct 2026)",
+   "n": 165,
    "recipient": "Infirmary Health System Inc.",
    "county": "Baldwin, Choctaw, Clarke, Conecuh, Escambia, Monroe, Washington",
    "amount": 1370000.0,
@@ -253,7 +1660,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 28,
+   "round": "Round 2 (Oct 2026)",
+   "n": 166,
    "recipient": "Sylacauga Healthcare Authority DBA Coosa Valley Medical Center",
    "county": "Clay, Coosa, Shelby, Talladega, Tallapoosa",
    "amount": 1890000.0,
@@ -262,7 +1670,8 @@
   },
   {
    "program": "Cancer Digital Regionalization Initiative",
-   "n": 29,
+   "round": "Round 2 (Oct 2026)",
+   "n": 167,
    "recipient": "University of South Alabama",
    "county": "Baldwin, Clarke, Conecuh, Escambia, Mobile, Monroe, Washington",
    "amount": 164450.0,
@@ -271,7 +1680,8 @@
   },
   {
    "program": "Rural Health Initiative",
-   "n": 30,
+   "round": "Round 2 (Oct 2026)",
+   "n": 168,
    "recipient": "Cahaba Medical Care Foundation",
    "county": "Bibb, Chilton, Perry, Wilcox",
    "amount": 161580.0,
@@ -280,7 +1690,8 @@
   },
   {
    "program": "Rural Health Initiative",
-   "n": 31,
+   "round": "Round 2 (Oct 2026)",
+   "n": 169,
    "recipient": "Andalusia Health",
    "county": "Butler, Conecuh, Covington, Crenshaw",
    "amount": 305428.0,
@@ -289,7 +1700,8 @@
   },
   {
    "program": "Rural Health Initiative",
-   "n": 32,
+   "round": "Round 2 (Oct 2026)",
+   "n": 170,
    "recipient": "South Central Alabama Mental Health Board Inc.",
    "county": "Butler, Coffee, Covington, Crenshaw",
    "amount": 840000.0,
@@ -298,7 +1710,8 @@
   },
   {
    "program": "Rural Workforce Initiative",
-   "n": 33,
+   "round": "Round 2 (Oct 2026)",
+   "n": 171,
    "recipient": "The Alabama School of Healthcare Sciences",
    "county": "Statewide",
    "amount": 7270000.0,
@@ -307,7 +1720,8 @@
   },
   {
    "program": "Rural Workforce Initiative",
-   "n": 34,
+   "round": "Round 2 (Oct 2026)",
+   "n": 172,
    "recipient": "Alabama Community College System",
    "county": "Statewide",
    "amount": 20600000.0,
@@ -315,5 +1729,5 @@
    "purpose": "establish an integrated, statewide rural healthcare workforce pipeline through Alabama\u2019s community colleges. The system will expand rural healthcare training capacity at Alabama\u2019s community college, enabling students to earn healthcare job credentials without relocating. The project will establish remote emergency medical technician (EMT) and advanced EMT tracks. It also will expand allied health training through a centralized pipeline using shared curriculum, procurement and support across rural community colleges in respiratory therapy, surgical technology, radiologic technology, medical lab technology and medication technician program. It will increase nursing capacity through additional faculty, simulation resources, instructional sites and new paths to nursing education. The program also will establish a structured rural pipeline to advanced nursing careers, including nurse practitioner, physician assistant and certified nurse midwife (Statewide)."
   }
  ],
- "note": "This is the second round of 2026 grants only; amounts of $1 million or more are printed rounded (e.g. \"$1.45 million\") and the release gives the total as \"nearly $55 million\". The area column lists the counties served as printed."
+ "note": "Two rounds: 138 grants announced as \"more than $144 million\" (Aug 24, 2026) and 34 grants as \"nearly $55 million\" (Oct 2026; https://governor.alabama.gov/newsroom/2026/10/governor-ivey-announces-additional-alabama-rural-health-transformation-program-grants-totaling-nearly-55-million/). The announced total shown is the sum of those two rounded figures. Amounts of $1 million or more are printed rounded."
 }
