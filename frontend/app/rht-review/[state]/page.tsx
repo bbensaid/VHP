@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { RHT_STATES, rhtState, stateNotes, CMS_DOCS, usd, usdM, pct, change } from "@/lib/rht-review";
 import { Ext, Section, Stat, SourceNote, StatusPill } from "@/components/rht-review/ui";
 import VermontYear1Review from "@/components/rht-review/VermontYear1Review";
+import { StateCategoryBars, ThemeChips, PillarBar, PillarLegend, stateReadout } from "@/components/rht-review/CompareCharts";
+import { compareFor } from "@/lib/rht-compare";
 
 export function generateStaticParams() {
   return RHT_STATES.map((s) => ({ state: s.slug }));
@@ -29,6 +31,8 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
   const ch = change(s);
   const notes = stateNotes(s.slug);
   const rank = [...RHT_STATES].sort((a, b) => b.fy2027 - a.fy2027).findIndex((x) => x.slug === s.slug) + 1;
+  const c = compareFor(s.slug)!;
+  const readout = stateReadout(c);
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       <nav className="text-xs text-slate-500 mb-6"><Link href="/rht-review" className="underline">RHT Program Review</Link>{" "}/ {s.state}</nav>
@@ -36,10 +40,51 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
         <span className="bg-teal-100 text-teal-700 border border-teal-200 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded">Health Transformation Review</span>
         <h1 className="ty-h1 font-black text-slate-900 dark:text-slate-100 mt-4 mb-3">{s.state}: Rural Health Transformation Program</h1>
         <p className="text-sm text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
-          This page is built from CMS&apos;s own documents{notes ? <> and the reporting cited in the review notes</> : null}. A full review of {s.state}&apos;s Year 1 — its state agreements, budget and outcomes, as in our{" "}
-          <Link href="/rht-review/vermont" className="underline text-teal-700">Vermont review</Link>{" "}— has not been written yet.
+          This review compares {s.state} with the other 49 states using CMS&apos;s own documents{notes ? <> and the reporting cited in the review notes</> : null}: its awards, what it reported as put to work and on what, what its plan set out to do, and the policy commitments CMS scored. A review of its individual signed agreements, like our{" "}
+          <Link href="/rht-review/vermont" className="underline text-teal-700">Vermont review</Link>, needs a published list of those agreements from the state.
         </p>
       </header>
+
+      <Section label="The review at a glance" title={`${s.state} against the other 49 states`}>
+        <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5 max-w-4xl">
+          {readout.map((t, i) => <li key={i}>{t}</li>)}
+        </ul>
+        <SourceNote>
+          Computed from <Ext href={CMS_DOCS.obligated.url}>{CMS_DOCS.obligated.label}</Ext>, <Ext href={CMS_DOCS.snapshot.url}>{CMS_DOCS.snapshot.label}</Ext>, the CMS award tables and the state&apos;s CMS project abstract (December 2025).{" "}
+          <Link href="/rht-review#compare" className="underline text-teal-700">Compare all 50 states →</Link>
+        </SourceNote>
+      </Section>
+
+      <Section label="Where the money went" title={`${s.state}'s put-to-work dollars by CMS spending category`}>
+        {c.categorized > 0 ? <StateCategoryBars c={c} /> : <p className="text-sm text-slate-600">CMS&apos;s report does not assign {s.state}&apos;s dollars to spending categories.</p>}
+        <div className="mt-4 grid md:grid-cols-[10rem_1fr] items-center gap-3">
+          <div className="text-xs font-black uppercase tracking-widest text-slate-500">Five-pillar mix (HTR analysis)</div>
+          <PillarBar dollars={c.pillarDollars} height="h-4" />
+        </div>
+        <div className="mt-2"><PillarLegend /></div>
+        {c.initiatives.length > 0 && (
+          <div className="mt-6">
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-2">By {s.state}&apos;s own initiatives, as CMS lists them</div>
+            {Math.abs(c.initiatives.reduce((t, x) => t + x.amount, 0) - c.ptw) > 1e6 && (
+              <p className="text-[11px] text-slate-500 mb-2">CMS&apos;s initiative lines for {s.state} add up to {usdM(c.initiatives.reduce((t, x) => t + x.amount, 0))}, against a reported total of {usdM(c.ptw)}; the lines are shown as printed.</p>
+            )}
+            <table className="w-full text-sm">
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                {c.initiatives.map((it, i) => (
+                  <tr key={i}><td className="py-1.5 pr-3 text-slate-700 dark:text-slate-300">{it.name}</td><td className="py-1.5 text-right tabular-nums font-semibold">{usdM(it.amount)}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {c.cmsTypos.length > 0 && <SourceNote>CMS&apos;s report prints {c.cmsTypos.map((t) => `“$${t.printed}” for ${t.label}`).join("; ")}, which is not a valid amount; this review uses the sum of the itemized lines beneath it ({c.cmsTypos.map((t) => usd(t.usedBulletSum, 2)).join("; ")}).</SourceNote>}
+        <SourceNote>Categories and initiative amounts as printed in <Ext href={CMS_DOCS.obligated.url}>{CMS_DOCS.obligated.label}</Ext> (state-reported, as of July 31, 2026). The black tick on each bar is the national share of that category.</SourceNote>
+      </Section>
+
+      <Section label="What the plan set out to do" title={`Themes named in ${s.state}'s CMS project abstract`}>
+        <ThemeChips c={c} />
+        <SourceNote>Tagged from the state&apos;s project abstract in CMS&apos;s December 2025 abstracts using a published keyword list; open a theme to read the words that triggered it. A mention is not a budget commitment.</SourceNote>
+      </Section>
 
       {notes && (
         <Section label="Review notes" title={`What has been reported about ${s.state}'s Year 1`}>

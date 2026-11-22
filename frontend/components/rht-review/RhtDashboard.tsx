@@ -146,7 +146,7 @@ function Plans({ rows, themes }: { rows: DashRow[]; themes: DashProps["themes"] 
                   <td key={t.key} className="h-6 w-[46px] text-center">
                     {r.themes[t.key] ? (
                       <button onClick={() => setSel({ s: r.name, t: t.label, ev: r.themes[t.key] })} aria-label={`${r.name}: ${t.label} — show evidence`}
-                        className="w-5 h-5 rounded-full bg-teal-600 hover:ring-2 hover:ring-teal-300 focus:ring-2 focus:ring-teal-400" />
+                        className="inline-block align-middle w-4 h-4 min-h-0 p-0 leading-none rounded-full bg-teal-600 hover:ring-2 hover:ring-teal-300 focus:ring-2 focus:ring-teal-400" />
                     ) : <span className="inline-block w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700" aria-label="not named" />}
                   </td>
                 ))}

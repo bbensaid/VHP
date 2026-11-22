@@ -1782,6 +1782,10 @@
    "reconciles": true,
    "initiatives": [
     {
+     "name": "Initiative1: Make Rural Texans Healthy Again",
+     "amount": 24750000.0
+    },
+    {
      "name": "Initiative 4: The Next Generation of the Small Town Doctor and Team",
      "amount": 2389223.0
     },
@@ -1794,12 +1798,7 @@
      "amount": 6149649.67
     }
    ],
-   "unmatched": [
-    {
-     "label": "Initiative1: Make Rural Texans Healthy Again",
-     "amount": 24750000.0
-    }
-   ],
+   "unmatched": [],
    "cmsTypos": [],
    "coverage": 1.0
   },
@@ -1817,6 +1816,10 @@
    "categoryTotal": 75041969.16,
    "reconciles": true,
    "initiatives": [
+    {
+     "name": "Initiative1: Making Rural Utahns Healthy: Preventive Action and Transformation for Health (PATH)",
+     "amount": 24918302.54
+    },
     {
      "name": "Initiative 2: Rural Incentive and Skill Expansion (RISE)",
      "amount": 7252218.2
@@ -1838,12 +1841,7 @@
      "amount": 3495244.42
     }
    ],
-   "unmatched": [
-    {
-     "label": "Initiative1: Making Rural Utahns Healthy: Preventive Action and Transformation for Health (PATH)",
-     "amount": 24918302.54
-    }
-   ],
+   "unmatched": [],
    "cmsTypos": [],
    "coverage": 1.0
   },

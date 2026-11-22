@@ -27,13 +27,14 @@ export default function RhtReviewIndex() {
   // ── Computed findings (no hand-typed figures) ──
   const P0 = (x: number) => `${(x * 100).toFixed(0)}%`;
   const M0 = (n: number) => `$${(n / 1e6).toFixed(0)}M`;
-  const zero = COMPARE.filter((c) => c.ptwShare < 0.005).map((c) => c.name);
+  const zero = COMPARE.filter((c) => c.ptw === 0).map((c) => c.name);
+  const underOne = COMPARE.filter((c) => c.ptw > 0 && c.ptwShare < 0.01).map((c) => c.name);
   const full = COMPARE.filter((c) => c.ptwShare >= 0.98).map((c) => c.name);
   const topCat = Object.entries(NATIONAL.byCat).sort((a, b) => b[1] - a[1])[0];
   const payPlan = NATIONAL.themeCount("payment"), paySpend = NATIONAL.statesWith("Provider payments");
   const payPlanNoSpend = COMPARE.filter((c) => c.themes.payment && !(c.categories["Provider payments"] > 0)).length;
   const bhPlan = NATIONAL.themeCount("bh"), bhSpend = NATIONAL.statesWith("Behavioral health");
-  const adminOnly = COMPARE.filter((c) => c.categorized > 0 && (c.categories["Program administration"] ?? 0) / c.categorized >= 0.95).map((c) => c.name);
+  const adminOnly = COMPARE.filter((c) => c.ptw > 0 && (c.categories["Program administration"] ?? 0) / c.ptw >= 0.95).map((c) => c.name);
   const r = pearson(COMPARE.map((c) => c.ptwShare), COMPARE.map((c) => c.yoyPct));
   const pillarTot = Object.values(NATIONAL.pillar).reduce((a, b) => a + b, 0);
   const pillarHex = (k: string) => PILLARS.find((p) => p.id === k)?.hex ?? "#64748b";
@@ -81,7 +82,7 @@ export default function RhtReviewIndex() {
       <Section id="findings" label="What the first year shows" title="Six findings across 50 states">
         <ol className="grid md:grid-cols-2 gap-4 list-none">
           {[
-            ["Most of Year 1 is still in the pipeline.", `States reported ${P0(NATIONAL.ptw / NATIONAL.fy26)} of Year 1 as put to work by July 31, 2026 (median state ${P0(medianPace)}). The range is the story: ${zero.join(", ")} reported none, while ${full.join(", ")} reported virtually all of it.`],
+            ["Most of Year 1 is still in the pipeline.", `States reported ${P0(NATIONAL.ptw / NATIONAL.fy26)} of Year 1 as put to work by July 31, 2026 (median state ${P0(medianPace)}). The range is the story: ${zero.join(" and ")} reported none and ${underOne.join(", ")} under 1%, while ${full.join(", ")} reported 98% or more.`],
             ["People before buildings.", `${topCat[0]} is the largest use of the money CMS categorized: ${M0(topCat[1])}, ${P0(topCat[1] / NATIONAL.categorized)} of ${M0(NATIONAL.categorized)}. Capital and infrastructure is ${P0(NATIONAL.byCat["Capital & infrastructure"] / NATIONAL.categorized)}.`],
             ["Payment reform is planned far more than it is funded.", `${payPlan} states' plans name value-based payment or global budgets, but only ${paySpend} states had put any money into provider payments, and ${payPlanNoSpend} of the ${payPlan} planners had none. Provider payments are ${P0(NATIONAL.byCat["Provider payments"] / NATIONAL.categorized)} of categorized dollars.`],
             ["A plan-to-spend gap in behavioral health.", `${bhPlan} states' plans name behavioral health or substance use; ${bhSpend} had reported spending in CMS's behavioral-health category by July 31.`],

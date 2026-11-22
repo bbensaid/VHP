@@ -57,7 +57,7 @@ for k, st in enumerate(starts):
             mb = re.match(r'^[▪•]\s*\$([\d,]+(?:\.\d+)?)', t)
             if mb:
                 tot += money(mb.group(1)); continue
-            if AMT.match(t) or re.match(r'(?i)^(initiative\s+\d+|program operations)', t):
+            if AMT.match(t) or re.match(r'(?i)^(initiative\s*\d+|program operations)', t):
                 break
         return round(tot, 2)
     for idx, l in enumerate(body):
@@ -88,7 +88,7 @@ for k, st in enumerate(starts):
                 break
         if key:
             cats[key] = round(cats.get(key, 0) + amt, 2)
-        elif re.match(r'(?i)^(initiative\s+\d+|program operations)', full) or re.match(r'(?i)^(initiative\s+\d+|program operations)', label):
+        elif re.match(r'(?i)^(initiative\s*\d+|program operations)', full) or re.match(r'(?i)^(initiative\s*\d+|program operations)', label):
             inits.append({'name': full if full.lower().startswith(('initiative', 'program')) else label, 'amount': amt})
         else:
             unknown.append({'label': full, 'amount': amt})

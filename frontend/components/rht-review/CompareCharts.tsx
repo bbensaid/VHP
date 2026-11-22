@@ -109,7 +109,7 @@ export function stateReadout(c: StateCompare): string[] {
   if (c.categorized > 0) {
     const top = CATEGORIES.map((k) => ({ k: k.key, v: c.categories[k.key] ?? 0 })).sort((a, b) => b.v - a.v)[0];
     out.push(`Its largest CMS spending category so far is ${top.k.toLowerCase()}: ${M(top.v)}, ${P(top.v / c.categorized)} of the dollars CMS categorized for ${c.name}.`);
-    const admin = (c.categories["Program administration"] ?? 0) / c.categorized;
+    const admin = (c.categories["Program administration"] ?? 0) / (c.ptw || c.categorized);
     if (admin >= 0.95) out.push(`Almost all of the money reported so far (${P(admin)}) is program administration, which suggests the state's main grants and contracts had not yet been obligated by July 31.`);
   } else {
     out.push(`CMS's report assigns none of ${c.name}'s put-to-work dollars to a spending category.`);
