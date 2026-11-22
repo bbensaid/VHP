@@ -1,0 +1,1575 @@
+{
+ "source": "CMS, Rural Health Transformation Program state project abstracts (Dec 2025)",
+ "themes": [
+  {
+   "key": "telehealth",
+   "label": "Telehealth & remote monitoring"
+  },
+  {
+   "key": "data",
+   "label": "Shared IT, EHR & data"
+  },
+  {
+   "key": "ai",
+   "label": "Artificial intelligence"
+  },
+  {
+   "key": "workforce",
+   "label": "Workforce pipeline & training"
+  },
+  {
+   "key": "chw",
+   "label": "Community health workers & paramedicine"
+  },
+  {
+   "key": "bh",
+   "label": "Behavioral health & substance use"
+  },
+  {
+   "key": "maternal",
+   "label": "Maternal & obstetric care"
+  },
+  {
+   "key": "ems",
+   "label": "EMS & mobile care"
+  },
+  {
+   "key": "chronic",
+   "label": "Chronic disease & nutrition"
+  },
+  {
+   "key": "hubs",
+   "label": "Regional hubs, networks & shared services"
+  },
+  {
+   "key": "payment",
+   "label": "Value-based payment & global budgets"
+  },
+  {
+   "key": "hospital",
+   "label": "Hospital transformation & right-sizing"
+  },
+  {
+   "key": "primary",
+   "label": "Primary care"
+  },
+  {
+   "key": "broadband",
+   "label": "Broadband & connectivity"
+  }
+ ],
+ "states": {
+  "Alabama": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026service hubs supporting Electronic Health Record (EHR) integration and compliance. \u2022 Expand access to care via telehealth, remote monitoring, and regional specialty networks. \u2022 Address maternal and cancer care deserts through digital\u2026"
+    },
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026sustainable access to high-quality care. The program is designed to: \u2022 Enhance health information technology (IT) and cybersecurity through regional shared- service hubs supporting Electronic Health Record (EHR) integration and compliance. \u2022\u2026"
+    },
+    "workforce": {
+     "match": "Graduate Medical Education",
+     "evidence": "\u2026Strengthen the healthcare workforce through rural training pipelines, simulation training programs, and expanded Graduate Medical Education (GME) opportunities. \u2022 Improve behavioral health access by converting Community Mental Health Centers into Certified\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026pipelines, simulation training programs, and expanded Graduate Medical Education (GME) opportunities. \u2022 Improve behavioral health access by converting Community Mental Health Centers into Certified Community Behavioral Health Clinics (CCBHCs).\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026compliance. \u2022 Expand access to care via telehealth, remote monitoring, and regional specialty networks. \u2022 Address maternal and cancer care deserts through digital regionalization and mobile screening models. \u2022 Strengthen the healthcare\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026obstetric regionalization and telerobotic ultrasound. \u2022 Rural Workforce: Physician, nurse, emergency medical service (EMS), midwife, dentist, dental hygienist and dental assistant training programs. \u2022 Cancer Digital Regionalization:\u2026"
+    },
+    "chronic": {
+     "match": "nutrition",
+     "evidence": "\u2026Mental Health: Behavioral health facility conversion and expansion. \u2022 Community Medicine: Mobile wellness and nutrition units. \u2022 Rural Health Practice: Networked clinics integrating behavioral, physical, and dental health. 5 | P a\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026is designed to: \u2022 Enhance health information technology (IT) and cybersecurity through regional shared- service hubs supporting Electronic Health Record (EHR) integration and compliance. \u2022 Expand access to care via telehealth,\u2026"
+    }
+   }
+  },
+  "Alaska": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026Innovation, which harnesses data and technology to expand the use of consumer wearables and digital devices, enhance telehealth, foster appropriate use of AI, strengthen cybersecurity, facilitate data sharing and system interoperability,\u2026"
+    },
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026the use of consumer wearables and digital devices, enhance telehealth, foster appropriate use of AI, strengthen cybersecurity, facilitate data sharing and system interoperability, and test new delivery modalities using emerging technologies.\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026technology to expand the use of consumer wearables and digital devices, enhance telehealth, foster appropriate use of AI, strengthen cybersecurity, facilitate data sharing and system interoperability, and test new delivery modalities\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026entities to launch projects in support of Alaska\u2019s six initiatives: (1) Healthy Beginnings, which strengthens maternal and child health as a foundation for healthy families; (2) Health Care Access, which expands and sustains essential\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Healthy Communities, which invests in enhancing access to preventive and primary care services that enable early chronic disease management, expanding the use of consumer-facing digital tools and population health clinical infrastructure,\u2026"
+    },
+    "payment": {
+     "match": "Pay for Value",
+     "evidence": "\u2026clinical infrastructure, and promoting healthy lifestyles with culturally appropriate community education; (4) Pay for Value: Fiscal Sustainability, which incentivizes a shift from traditional volume-based reimbursement models to build\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026across Alaska\u2019s rural communities; (3) Healthy Communities, which invests in enhancing access to preventive and primary care services that enable early chronic disease management, expanding the use of consumer-facing digital tools and\u2026"
+    }
+   }
+  },
+  "Arizona": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "Arizona Title: Arizona\u2019s RHT Program drives innovation in rural healthcare delivery through telehealth and integrated care, targeting behavioral health, chronic disease, child and maternal health, and healthcare workforce\u2026"
+    },
+    "data": {
+     "match": "electronic health record",
+     "evidence": "\u2026shared-service networks and reduce fixed costs and administrative barriers for rural providers by subsidizing electronic health record licenses, scaling of back-office staff, and other capacity- building efforts. Funds will be strategically invested\u2026"
+    },
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026recruit, train, and retain providers and allied professionals through expanded support for rural clinical rotations, residency programs, and Career and Technical Education. The Priority Health Initiatives Grants Portfolio will invest in\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026Arizona\u2019s RHT Program drives innovation in rural healthcare delivery through telehealth and integrated care, targeting behavioral health, chronic disease, child and maternal health, and healthcare workforce Abstract: Nearly 786,000 Arizonans living\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026healthcare delivery through telehealth and integrated care, targeting behavioral health, chronic disease, child and maternal health, and healthcare workforce Abstract: Nearly 786,000 Arizonans living in rural communities face persistent\u2026"
+    },
+    "ems": {
+     "match": "mobile clinic",
+     "evidence": "\u2026organizations. These resources will drive high-impact activities such as deploying telehealth hubs, maximizing use of mobile clinics, launching workforce incentive programs, and advancing county- led disease prevention initiatives. State agencies\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026drives innovation in rural healthcare delivery through telehealth and integrated care, targeting behavioral health, chronic disease, child and maternal health, and healthcare workforce Abstract: Nearly 786,000 Arizonans living in rural communities\u2026"
+    },
+    "hubs": {
+     "match": "shared-service",
+     "evidence": "\u2026delivery and other innovative care models. Finally, the Making Rural Healthcare Resilient initiative will leverage shared-service networks and reduce fixed costs and administrative barriers for rural providers by subsidizing electronic health\u2026"
+    }
+   }
+  },
+  "Arkansas": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026Title: The Arkansas RHT Program expands access, strengthens care, grows the healthcare workforce, and advances telehealth to improve health outcomes and service quality for rural residents and communities statewide Abstract: Subawardees:\u2026"
+    },
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026practice enhancements, and strategic facility investments. RISE AR will invest in leadership training, expanding residency, preceptorship, and other training programs for healthcare professionals, recruitment and retention incentives,\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026solutions, ensuring that rural residents receive timely, efficient, and patient-centered care, including mental and behavioral health services. Across all initiatives, the State emphasizes cross-sector collaboration, data-driven decision-making,\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026healthcare workforce. THRIVE will fund telehealth platforms, technology-enabled monitoring for chronic diseases, emergency medical services modernization, and virtual care models to expand access and improve patient outcomes. Across initiatives, funds\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026RHT Program funds will support targeted investments across each initiative. HEART will focus on prevention and chronic disease programs, school and community-based wellness initiatives, nutrition interventions, and physical activity programming.\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026challenges. These initiatives integrate evidence-based prevention programs, workforce development, care coordination, value-based delivery models, and technology-driven solutions, ensuring that rural residents receive timely, efficient, and\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026nutrition interventions, and physical activity programming. PACT will fund integrated networks, expanded specialty and primary care access, scope of practice enhancements, and strategic facility investments. RISE AR will invest in leadership\u2026"
+    }
+   }
+  },
+  "California": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026support rural hospitals\u2019 capacity to transform their systems to support regional delivery of care, complete a telehealth gap assessment for each hub and spoke, and use accelerator partners to incubate workforce, technology, and payment\u2026"
+    },
+    "data": {
+     "match": "health information exchange",
+     "evidence": "\u2026to comprehensive, evidence-based care; strengthen and retain a homegrown rural workforce; modernize technology, health information exchange, and cybersecurity; improve financial stability of rural providers to keep essential services available; reduce\u2026"
+    },
+    "chw": {
+     "match": "Community Health Worker",
+     "evidence": "\u2026programs in maternal health, chronic disease, behavioral health, and telehealth; and grow non-physician roles such as Community Health Workers, nurses, doulas, and midwives. The program will fund pipeline and pathway programs, the expansion of clinical\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026wraparound supports; expand regional upskilling through Train-the-Trainer programs in maternal health, chronic disease, behavioral health, and telehealth; and grow non-physician roles such as Community Health Workers, nurses, doulas, and midwives.\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026stability of rural providers to keep essential services available; reduce rural patient travel burden; and improve maternal and chronic disease outcomes through earlier detection and improved coordinated management. The program will provide\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026care collaboratives for rural communities. The program will focus on timely, person-centered primary, maternity, chronic disease, and specialty care close to home. Informed by extensive stakeholder input, the program aligns with federal and\u2026"
+    },
+    "hubs": {
+     "match": "regional hub",
+     "evidence": "\u2026health care services that they need. Use of funds: Rural Health Transformative Care Model: The program will create regional hub and spoke networks anchored by hospital hubs and spokes that include critical access hospitals, clinics, birthing\u2026"
+    },
+    "broadband": {
+     "match": "connectivity",
+     "evidence": "\u2026incentive payments. 10 | P a g e Rural Health Technology and Tools: The program will modernize infrastructure and connectivity, including Electronic Health Record enhancements, health information exchange, and cybersecurity; operate a Technical\u2026"
+    }
+   }
+  },
+  "Colorado": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026hospitals and clinics with resources to help communities get and stay healthy to reduce chronic disease. \u2022 Invest in telehealth, mobile health tools and monitoring, equipment and shared data systems to connect and improve outcomes for patients.\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026local providers including but not limited to physicians, nurses, paramedics, local education partnerships, and behavioral health professionals, through streamlined credentialing processes, cross-training, and assessing and supporting workforce\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026clinics with resources to help communities get and stay healthy to reduce chronic disease. \u2022 Invest in telehealth, mobile health tools and monitoring, equipment and shared data systems to connect and improve outcomes for patients. \u2022 Recruit\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026reality. By strengthening private-public partnerships, increasing access, modernizing delivery, and focusing on chronic disease prevention we can advance the future of health care in our uniquely rural and frontier communities. Working closely\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026rural Coloradans. \u2022 Strengthen access to care, ensuring that rural Coloradans have essential services including primary care, wellness, emergency, behavioral health, and maternity care services in rural communities. \u2022 Transform innovative\u2026"
+    }
+   }
+  },
+  "Connecticut": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026investing in shared technology infrastructure, predictive analytics, facility upgrades, digital inclusion, and telehealth expansion. Abstract: Name of Organization: Connecticut Department of Social Services (DSS) Title: Connecticut\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026staff through education partnerships, telehealth support, and career pipelines. 3. Data & Technology \u2013 Expand interoperability, health information exchange participation and telehealth infrastructure, and analytics to guide performance\u2026"
+    },
+    "bh": {
+     "match": "Mental Health",
+     "evidence": "\u2026of Policy and Management (OPM), Office of Health Strategy (OHS), Office of Early Childhood (OEC), Department of Mental Health and Addiction Services (DMHAS), Department of Energy and Environmental Protection (DEEP), Aging and Disability\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026The initiatives are: 1. Population Health Outcomes \u2013 Advance prevention, improve management of chronic diseases, maternal and behavioral health integration, and address root causes of disease. 2. Workforce \u2013 Strengthen recruitment,\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026tech innovation. The initiatives are: 1. Population Health Outcomes \u2013 Advance prevention, improve management of chronic diseases, maternal and behavioral health integration, and address root causes of disease. 2. Workforce \u2013 Strengthen recruitment,\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026capacity to improve quality and population health, including by supporting enhanced care coordination, adoption of value-based models, integrating medical, behavioral, dental, and long-term services, coordinated care teams, and sustainable\u2026"
+    }
+   }
+  },
+  "Delaware": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026health IT infrastructure for real-time insurance verification and prior authorizations, launch a Catalyst Fund for telehealth and remote monitoring technologies, and implement a diabetes wellness pilot integrating continuous glucose monitoring\u2026"
+    },
+    "data": {
+     "match": "health information exchange",
+     "evidence": "\u2026transform rural healthcare delivery in Delaware through infrastructure development ($97.5M for Hope Centers, $50M for health information exchange), workforce development ($274M for medical school and training programs, $60.25M for educational awards and recruitment),\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026for medical students and residents, and expand training programs for nurse practitioners, physician assistants, community health workers, and other critical healthcare roles. 3. Drive Innovation: Build comprehensive health IT infrastructure for real-time\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026integrated initiatives. The plan aims to: 1. Expand Access: Establish Hope Centers for homeless populations, deploy mobile health units, create school-based health centers, and expand library-based health services to eliminate transportation\u2026"
+    },
+    "chronic": {
+     "match": "diabetes",
+     "evidence": "\u2026prior authorizations, launch a Catalyst Fund for telehealth and remote monitoring technologies, and implement a diabetes wellness pilot integrating continuous glucose monitoring with care management. 4. Improve Outcomes: Deploy Food\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026Outcomes: Deploy Food is Medicine infrastructure with billing mechanisms and workforce development, establish value-based care readiness programs for rural providers and FQHCs, and create a Healthcare Workforce Data Center for real-time\u2026"
+    },
+    "primary": {
+     "match": "Primary Care",
+     "evidence": "\u2026bring care directly to rural communities. 2. Strengthen Workforce: Create Delaware's first medical school with a Primary Care-Rural Health track, establish \"Train Here, Stay Here\" programs with education awards for medical students and\u2026"
+    }
+   }
+  },
+  "Florida": {
+   "themes": {
+    "telehealth": {
+     "match": "remote monitoring",
+     "evidence": "\u2026goals: 1. Improve Access: Combine urban-led rural clinics, mobile health, community paramedicine, tele-specialties, remote monitoring, retail pharmacy clinics, and nutrition- focused Health and Lifestyle initiatives to offer preventive, chronic\u2026"
+    },
+    "data": {
+     "match": "health information exchange",
+     "evidence": "\u2026technology-enabled interventions. 3. Enhance Technology and Data Use: Advance telehealth, remote monitoring, and health information exchange and encounter notification systems to improve continuity, efficiency, and performance tracking. 4. Strengthen\u2026"
+    },
+    "workforce": {
+     "match": "workforce pipeline",
+     "evidence": "\u2026systems to improve continuity, efficiency, and performance tracking. 4. Strengthen Workforce: Build a lasting rural workforce pipeline through the Clinical Training Investment Opportunity (CTIO) initiative, with supervised rotations and five-year\u2026"
+    },
+    "chw": {
+     "match": "community paramedic",
+     "evidence": "\u2026by advancing the following strategic goals: 1. Improve Access: Combine urban-led rural clinics, mobile health, community paramedicine, tele-specialties, remote monitoring, retail pharmacy clinics, and nutrition- focused Health and Lifestyle\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026pharmacy clinics, and nutrition- focused Health and Lifestyle initiatives to offer preventive, chronic disease, behavioral health, and maternal care directly to residents. 2. Improve Outcomes: Reduce preventable hospitalizations and improve\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026nutrition- focused Health and Lifestyle initiatives to offer preventive, chronic disease, behavioral health, and maternal care directly to residents. 2. Improve Outcomes: Reduce preventable hospitalizations and improve chronic, behavioral,\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026Healthy Again by advancing the following strategic goals: 1. Improve Access: Combine urban-led rural clinics, mobile health, community paramedicine, tele-specialties, remote monitoring, retail pharmacy clinics, and nutrition- focused\u2026"
+    },
+    "chronic": {
+     "match": "nutrition",
+     "evidence": "\u2026clinics, mobile health, community paramedicine, tele-specialties, remote monitoring, retail pharmacy clinics, and nutrition- focused Health and Lifestyle initiatives to offer preventive, chronic disease, behavioral health, and maternal\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026monitoring for preventive, primary, and specialty care. Enhancing behavioral health access with regional telepsychiatry hubs, workforce development, and increased access via retail clinics in rural pharmacies will also be prioritized.\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026with supervised rotations and five-year rural service commitments. 5. Ensure Financial Sustainability: Implement value-based payment models and promote integrated Medicare-Medicaid plans initiative to stabilize rural hospitals and strengthen\u2026"
+    }
+   }
+  },
+  "Georgia": {
+   "themes": {
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026delivery, aligning with 17 | P a g e the vision of advancing rural progress, through technological advances in cybersecurity, robotics, electronic medical records, artificial intelligence, and more. 18 | P a g e"
+    },
+    "ai": {
+     "match": "artificial intelligence",
+     "evidence": "\u2026advancing rural progress, through technological advances in cybersecurity, robotics, electronic medical records, artificial intelligence, and more. 18 | P a g e"
+    },
+    "workforce": {
+     "match": "scholarship",
+     "evidence": "\u2026rural Georgia. This is directly associated with the vision for rural populations in rural places through expanded scholarship and GME programs and establishing rural recruitment incentives. 5. Leveraging Technology for Healthcare Innovation\u2026"
+    },
+    "bh": {
+     "match": "Behavioral Health",
+     "evidence": "\u2026State Office of Rural Health, Georgia Board of Health Care Workforce, Department of Public Health, Department of Behavioral Health and Developmental Disabilities, Department of Human Services, University System of Georgia, Side by Side, Georgia\u2026"
+    },
+    "maternal": {
+     "match": "pregnan",
+     "evidence": "\u2026injury survivors, and increasing access to nutrition services for children with autism spectrum disorder (ASD) and pregnant women. 3. Connecting to Care to Improve Healthcare Access includes six strategies that align with the vision\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026Developmental Disabilities, Department of Human Services, University System of Georgia, Side by Side, Georgia EMS Association/Georgia Ambulance Providers Association, ShareCare, Deloitte, RSM Project Goals: All five Rural Health\u2026"
+    },
+    "chronic": {
+     "match": "nutrition",
+     "evidence": "\u2026interhospital transportation, expanding support for acquired brain injury survivors, and increasing access to nutrition services for children with autism spectrum disorder (ASD) and pregnant women. 3. Connecting to Care to Improve\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "Georgia Title: Georgia Rural Enhancement And Transformation of Health (GREAT Health) Program is a grant to support value-based care uptake in the State of Georgia strengthening the healthcare access and the workforce. Abstract: Organization:\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026qualify for the Achieving Healthcare Efficiency through Accountable Design (AHEAD) Model for hospitals and AHEAD primary care programs from CMS to align with the Georgia vision of rural progress. As part of this initiative, the GREAT Health\u2026"
+    }
+   }
+  },
+  "Hawaii": {
+   "themes": {
+    "telehealth": {
+     "match": "Telehealth",
+     "evidence": "\u2026clinics, and health centers through interoperable EHRs, wireless networks, and integrated data hubs; (2) Pili Ola Telehealth Network: A statewide telehealth network connecting rural communities to providers and integrating digital health\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026Information Network (RHIN): A statewide digital backbone connecting rural hospitals, clinics, and health centers through interoperable EHRs, wireless networks, and integrated data hubs; (2) Pili Ola Telehealth Network: A statewide telehealth network\u2026"
+    },
+    "workforce": {
+     "match": "residencies",
+     "evidence": "\u2026initiative expanding education, recruitment, and retention of healthcare workers through certificate programs, residencies, scholarships, and mentoring; (5) Rural Respite Network (RRN): An expansion of the effective medical respite model\u2026"
+    },
+    "chw": {
+     "match": "community paramedic",
+     "evidence": "\u2026expand emergency medical services, implement evidence-based community care practices (healthcare team expansion, community paramedicine, and mobile healthcare), and bolster the behavioral health infrastructure; (4) Hawaii Outreach for Medical\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026These include health information technology infrastructure, the emergency medical services (EMS) system, access to behavioral health care, overreliance on hospitals and emergency care, workforce shortages, and the inability of rural providers\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026prioritized challenges affecting rural populations. These include health information technology infrastructure, the emergency medical services (EMS) system, access to behavioral health care, overreliance on hospitals and emergency care, workforce shortages,\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026rural hospitals, clinics, and health centers through interoperable EHRs, wireless networks, and integrated data hubs; (2) Pili Ola Telehealth Network: A statewide telehealth network connecting rural communities to providers and\u2026"
+    },
+    "payment": {
+     "match": "Value-Based",
+     "evidence": "\u2026areas to reduce preventable hospital use among unhoused or post-acute patients with low medical acuity; (6) Rural Value-Based Innovation (RVBI) & AHEAD Readiness Fund: A competitive fund enabling rural providers to adopt innovative care\u2026"
+    }
+   }
+  },
+  "Idaho": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026prevention. Improving rural access to care through technology: Through investments in technology assessments, telehealth, interoperability through electronic health records software and upgrades, artificial intelligence, cybersecurity\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026Improving rural access to care through technology: Through investments in technology assessments, telehealth, interoperability through electronic health records software and upgrades, artificial intelligence, cybersecurity modernization,\u2026"
+    },
+    "ai": {
+     "match": "artificial intelligence",
+     "evidence": "\u2026technology assessments, telehealth, interoperability through electronic health records software and upgrades, artificial intelligence, cybersecurity modernization, emergency communication system implementation and enrollment, health management\u2026"
+    },
+    "workforce": {
+     "match": "scholarship",
+     "evidence": "\u2026sustain a skilled rural health workforce--including ladder payments for recruitment, retention, and post graduate scholarships; healthcare career exploration and advancement programs; work-based learning; and graduate medical education\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026innovative diagnostics, leveraging new technologies, expanding workforce by enhancing the role of health extenders (community health workers, community health emergency medical services (EMS), pharmacy allied professionals, and other non-physician health\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026implementing community-targeted, data- driven prevention and treatment programs that address chronic disease, behavioral health, and maternal and child health; and build local capacity for implementation and ongoing sustainability. To ensure\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026community-targeted, data- driven prevention and treatment programs that address chronic disease, behavioral health, and maternal and child health; and build local capacity for implementation and ongoing sustainability. To ensure long-term\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026technologies, expanding workforce by enhancing the role of health extenders (community health workers, community health emergency medical services (EMS), pharmacy allied professionals, and other non-physician health care professionals), strengthening EMS systems,\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026informed by public input that identified three clear priorities guiding this plan: workforce, healthcare access, and chronic disease prevention. Improving rural access to care through technology: Through investments in technology assessments,\u2026"
+    }
+   }
+  },
+  "Illinois": {
+   "themes": {
+    "telehealth": {
+     "match": "Virtual Care",
+     "evidence": "\u2026D, G, H, I, J, K Overcoming Geographic Barriers to Care EMS and Mobile Healthcare Technological Innovation for Virtual Care Sustainable access, Tech innovation A, C, D, F, G, H, I, J Building a Resilient Rural Workforce Healthcare Workforce\u2026"
+    },
+    "bh": {
+     "match": "Behavioral Health",
+     "evidence": "\u2026Subrecipients are expected to include: Hospitals, Illinois Primary Health Care Association (IPHCA), Community Behavioral Health Association (CBHA), University of Illinois Chicago (UIC), Illinois Critical Access Hospital Network (ICAHN), Illinois\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026rural America healthy again, Sustainable access A, B, C, D, G, H, I, J, K Overcoming Geographic Barriers to Care EMS and Mobile Healthcare Technological Innovation for Virtual Care Sustainable access, Tech innovation A, C, D, F,\u2026"
+    },
+    "hospital": {
+     "match": "right-siz",
+     "evidence": "\u2026Workforce. The purpose of HFS\u2019 RHT program is to (1) Invest in infrastructure and innovative models of care to right-size care delivery in rural communities; (2) Break down existing barriers to care by bringing health care into the\u2026"
+    }
+   }
+  },
+  "Indiana": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026standards (5), improving timely access to prescription medications (6), and strengthening tele-consult (7) and telehealth (8) capacities among rural facilities 4. Workforce Development (10% of total funding) Grow the paraprofessional,\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026across rural health systems to address gaps in secure data exchange and improve patient outcomes by strengthening interoperability networks connecting rural facilities (3) 3. Innovative Care (10% of total funding) Promote patient-centered\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026paraprofessional, physician, and behavioral health workforce to removing credentialing and training barriers for community health workers and peers (9), and funding physician stipends and rural preceptorships to incentivize rural practice (10) 5.\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026among rural facilities 4. Workforce Development (10% of total funding) Grow the paraprofessional, physician, and behavioral health workforce to removing credentialing and training barriers for community health workers and peers (9), and funding\u2026"
+    },
+    "maternal": {
+     "match": "obstetric",
+     "evidence": "\u2026patient-centered models of care to address access barriers to preventive and post-acute services by enhancing pediatric and obstetric readiness in emergency departments (4), advancing cardiometabolic care standards (5), improving timely access\u2026"
+    },
+    "broadband": {
+     "match": "connectivity",
+     "evidence": "\u2026closed-loop referrals (2) 2. Tech Innovation (7% of total funding) Enhance technology infrastructure and digital connectivity across rural health systems to address gaps in secure data exchange and improve patient outcomes by strengthening\u2026"
+    }
+   }
+  },
+  "Iowa": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026service lines, an increase in the provider to population ratios in rural Iowa, and an increase in the number of telehealth consultations delivered to rural residents. Iowa anticipates this will lead to future reductions in chronic disease\u2026"
+    },
+    "data": {
+     "match": "Health Information Exchange",
+     "evidence": "\u2026health workers as system navigators, and invests heavily in chronic disease prevention and management techniques. Health Information Exchange: An initiative that allows records to be accessible across the State as patients travel through new Health Hubs\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026supports co-location of different rural provider types for convenient patient access and improved coordination, hires community health workers as system navigators, and invests heavily in chronic disease prevention and management techniques. Health Information\u2026"
+    },
+    "maternal": {
+     "match": "prenatal",
+     "evidence": "\u2026new babies to higher levels of care throughout the State and a mobile integrated healthcare program that brings prenatal, postpartum, post-surgery discharge, chronic disease management, and other types of care to rural residents in\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026records to be accessible across the State as patients travel through new Health Hubs and seek care in new ways. EMS Community Care Mobile: An initiative that invests in new telehealth technology for high-risk transport of moms\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Transformation Program. Supports rural hospitals and partners, build collaborations, recruit providers, prevent and treat chronic disease, combat cancer, and rural technology upgrades. Abstract: This package outlines Iowa\u2019s application for Healthy\u2026"
+    },
+    "hubs": {
+     "match": "Hubs",
+     "evidence": "\u2026of Iowa Governor Kim Reynold\u2019s Centers of Excellence Program and a rare opportunity to develop enhanced Health Hubs, or hub- and-spoke networks of care, with investments in telehealth, specialized medical equipment, provider recruitment\u2026"
+    },
+    "hospital": {
+     "match": "service line",
+     "evidence": "\u2026avoidable emergency department visits, an increase in rural residents receiving care locally through new or expanded service lines, an increase in the provider to population ratios in rural Iowa, and an increase in the number of telehealth\u2026"
+    }
+   }
+  },
+  "Kansas": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026providers to meaningfully engage in data sharing, analysis of aggregated patient and outcome data, expanded use of telehealth and remote monitoring, appropriate use of artificial intelligence, and utilization of consumer-facing technologies.\u2026"
+    },
+    "ai": {
+     "match": "artificial intelligence",
+     "evidence": "\u2026analysis of aggregated patient and outcome data, expanded use of telehealth and remote monitoring, appropriate use of artificial intelligence, and utilization of consumer-facing technologies. Total Budget Amount: $200 million per year for five years. Description\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026regional partnerships; (3) a statewide Accountable Food Is Medicine program supported in part by deployment of community health workers; (5) a focused behavioral health services program including integration of behavioral in primary care and embedding\u2026"
+    },
+    "bh": {
+     "match": "mental health",
+     "evidence": "\u2026hospitals with negative operating margins; (3) improving provider-to-population ratios for primary care, dental and mental health disciplines and ease nursing and allied health shortages in rural Kansas; (4) having 100% of Medicare and Medicaid\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Abstract: Project Goals: Transform Kansas\u2019 rural health care delivery system by (1) realizing meaningful reductions in chronic disease rates and avoidable hospitalizations for complications related to chronic disease in rural Kansas; (2) substantially\u2026"
+    },
+    "hubs": {
+     "match": "regional partnership",
+     "evidence": "\u2026providers to implement and sustain evidence-based practices; (2) support for transformative projects to form or expand regional partnerships; (3) a statewide Accountable Food Is Medicine program supported in part by deployment of community health workers;\u2026"
+    },
+    "payment": {
+     "match": "accountable care",
+     "evidence": "\u2026allied health shortages in rural Kansas; (4) having 100% of Medicare and Medicaid beneficiaries in rural Kansas in accountable care relationships by 2031; (5) and enabling rural Kansas providers to meaningfully engage in data sharing, analysis\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026number of rural Kansas hospitals with negative operating margins; (3) improving provider-to-population ratios for primary care, dental and mental health disciplines and ease nursing and allied health shortages in rural Kansas; (4) having\u2026"
+    }
+   }
+  },
+  "Kentucky": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026Infant Health, Community-Based Teams: Increase timely perinatal care in maternity care deserts through coordinated, telehealth enabled teams; (3) Rapid Response to Recovery, EmPATH Model, Mobile Crisis, and Telehealth: Expand integrated,\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026these five priority areas, Kentucky will make investments in new and emerging technology infrastructure, data interoperability standards, and other technology-based initiatives. The Commonwealth will also support workforce capacity\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026in the Commonwealth and across the country, including high rates of chronic disease, maternal health deserts, behavioral health crises, and limited access to preventive dental care and emergency services. The Commonwealth\u2019s Rural Health Transformation\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026health access challenges in the Commonwealth and across the country, including high rates of chronic disease, maternal health deserts, behavioral health crises, and limited access to preventive dental care and emergency services.\u2026"
+    },
+    "ems": {
+     "match": "Mobile Crisis",
+     "evidence": "\u2026maternity care deserts through coordinated, telehealth enabled teams; (3) Rapid Response to Recovery, EmPATH Model, Mobile Crisis, and Telehealth: Expand integrated, technology-enabled crisis care from community response to long-term support;\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026most significant health access challenges in the Commonwealth and across the country, including high rates of chronic disease, maternal health deserts, behavioral health crises, and limited access to preventive dental care and emergency\u2026"
+    },
+    "hubs": {
+     "match": "Hubs",
+     "evidence": "\u2026that disproportionately impact rural Kentuckians. These initiatives and their goals include (1) Rural Community Hubs for Chronic Care Innovation: Reduce obesity and diabetes rate through evidence-based, community-led strategies\u2026"
+    }
+   }
+  },
+  "Louisiana": {
+   "themes": {
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026training, and technology-enabled care coordination; 2) modernize rural health technology infrastructure and expand interoperability by combining a State-managed, CMS-aligned electronic health record (EHR) system with a tech catalyst fund\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026six proposed initiatives that work together to expand the healthcare workforce, promote the use of technology, AI, digital tools, and data sharing, and deploy financial incentives to change provider behavior and empower communities\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026healthcare providers while ensuring that the State\u2019s 1.1 million rural residents, particularly those with chronic and behavioral health needs, can access high-quality care close to home. To ensure Louisiana meets its goal of improving healthcare\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026care for rural communities; 4) expand prevention and nutrition-based interventions to address chronic disease, maternal health, and behavioral health challenges; 5) strengthen care integration for high-needs populations through coordinated,\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026rural hospitals, rural health clinics, federally qualified health centers (FQHCs), behavioral health providers, emergency medical services, Louisiana Ambulance Alliance, and allied health professional networks. Louisiana will maintain ongoing outreach\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026deploy financial incentives to change provider behavior and empower communities to address non-clinical factors of chronic disease. These initiatives will: 1) build a resilient, integrated rural health and emergency system by expanding and stabilizing\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026system with a tech catalyst fund to invest in innovative digital tools and mobile care platforms; 3) implement value-based payment and care models that reward outcomes, support innovative services, and ensure sustainable, high-quality\u2026"
+    }
+   }
+  },
+  "Maine": {
+   "themes": {
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026stands out as America\u2019s oldest and one of its most rural States, where rural residents face far higher risks of chronic disease than the national average. Adults in Maine\u2019s rural communities are more likely to have heart disease, the leading\u2026"
+    }
+   }
+  },
+  "Maryland": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026technology including through artificial intelligence modeling for patient risk predictive alerts; and expand the use of telehealth. Transformation Funds will expand an array of physical and behavioral health services, deploy technology-enabled\u2026"
+    },
+    "ai": {
+     "match": "artificial intelligence",
+     "evidence": "\u2026specialty care, and school-based health center capacity; optimize health information technology including through artificial intelligence modeling for patient risk predictive alerts; and expand the use of telehealth. Transformation Funds will expand\u2026"
+    },
+    "workforce": {
+     "match": "apprenticeship",
+     "evidence": "\u2026across medical, behavioral health, and dental fields. For example, Immediate Impact Funds will grow the number of apprenticeships and increase other employment and upskilling opportunities for community health workers and other occupations.\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026Impact Funds will grow the number of apprenticeships and increase other employment and upskilling opportunities for community health workers and other occupations. Transformation Funds will build a pipeline of future health professionals in rural communities\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026strong health workforce, addressing multiple types of clinicians and allied health professionals across medical, behavioral health, and dental fields. For example, Immediate Impact Funds will grow the number of apprenticeships and increase other\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026health services, deploy technology-enabled chronic disease management including remote patient monitoring, expand mobile health, and help provider practices adopt innovative care models. Goal 3. Empower Rural Marylanders to Eat for Health:\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Transformation Funds will expand an array of physical and behavioral health services, deploy technology-enabled chronic disease management including remote patient monitoring, expand mobile health, and help provider practices adopt innovative\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026leverage technological advances, grow provider capacity, and increase access. Immediate Impact Funds will expand primary care, specialty care, and school-based health center capacity; optimize health information technology including through\u2026"
+    }
+   }
+  },
+  "Massachusetts": {
+   "themes": {
+    "data": {
+     "match": "Interoperab",
+     "evidence": "\u2026viability, integration, and expanded role of EMS in rural communities. Initiative VI. 33 | P a g e Enhancing Technology Interoperability and Connectivity: Improving technological infrastructure of rural health providers to increase connectivity,\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026to healthcare including higher uninsurance rates, greater reliance on public insurance, rising chronic disease, behavioral health, and substance use disorder burdens. Care is often distant, with fewer primary and specialty care access points,\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026long-term care options. Technology and transportation gaps further restrict access. Key health challenges include maternal and pediatric service shortages, long specialty care wait times, workforce shortages (primary care provider (PCP)\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026substance use disorder burdens. Care is often distant, with fewer primary and specialty care access points, fragile EMS, and healthcare systems strained by aging infrastructure. Shrinking access points reflect broader system decline\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026significant barriers to healthcare including higher uninsurance rates, greater reliance on public insurance, rising chronic disease, behavioral health, and substance use disorder burdens. Care is often distant, with fewer primary and specialty\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026clinical infrastructure, increasing coordination, and expanding payment methodologies to advance rural providers\u2019 value-based care and efforts to lower cost and increase quality of care. Initiative II. Innovation in Rural Care Models: Facilitating\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026challenges include maternal and pediatric service shortages, long specialty care wait times, workforce shortages (primary care provider (PCP) ratio 79/100,000 vs. 102 non-rural), and financial fragility of rural providers. These factors\u2026"
+    },
+    "broadband": {
+     "match": "Connectivity",
+     "evidence": "\u2026expanded role of EMS in rural communities. Initiative VI. 33 | P a g e Enhancing Technology Interoperability and Connectivity: Improving technological infrastructure of rural health providers to increase connectivity, create efficiencies,\u2026"
+    }
+   }
+  },
+  "Michigan": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026interoperability, including a rural technology catalyst fund to support expanding data exchange, and increasing adoption of telehealth, remote patient monitoring and technology-driven care coordination tools \u2022 Establish digital referral networks\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026management training and integrated behavioral health care access \u2022 Implement technology tools and advancing rural interoperability, including a rural technology catalyst fund to support expanding data exchange, and increasing adoption of\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026financially sustainable care models \u2022 Recruit and retain rural health professionals, behavioral health providers, and community health workers. Funds will also promote prevention and chronic disease management training and integrated behavioral health\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026access points and promote financially sustainable care models \u2022 Recruit and retain rural health professionals, behavioral health providers, and community health workers. Funds will also promote prevention and chronic disease management training\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026professionals, behavioral health providers, and community health workers. Funds will also promote prevention and chronic disease management training and integrated behavioral health care access \u2022 Implement technology tools and advancing rural\u2026"
+    },
+    "hubs": {
+     "match": "regional partnership",
+     "evidence": "\u2026system efficiency, and patient experience. Funds will be used to: \u2022 Support the development and strengthening of regional partnerships among rural hospitals, clinics, and community organizations to improve care coordination, align service delivery,\u2026"
+    }
+   }
+  },
+  "Minnesota": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026providers to practice more efficiently and increase access to screenings and services; competitive grants to increase telehealth technology and use in rural areas, and provide EMS the ability to treat in place; grants to support 36 | P a g\u2026"
+    },
+    "data": {
+     "match": "data infrastructure",
+     "evidence": "\u2026Access) 5. Strengthen and stabilize rural provider financial health through strategic investments in technology, data infrastructure, and collaborative mechanisms to address unique needs of rural providers. (CMS goals: Innovative Care, Sustainable\u2026"
+    },
+    "workforce": {
+     "match": "clinical training",
+     "evidence": "\u2026use in rural areas, and provide EMS the ability to treat in place; grants to support 36 | P a g e expansion of clinical training and residencies in rural areas; and technical assistance to support practices to reach financial stability, among\u2026"
+    },
+    "bh": {
+     "match": "mental health",
+     "evidence": "\u2026Subrecipients may include all eligible rural hospitals, federally qualified health centers (FQHCs), community mental health centers (CMHCs), certified community behavioral health centers (CCBHCs) and rural Tribal Nations. A complete list\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026screenings and services; competitive grants to increase telehealth technology and use in rural areas, and provide EMS the ability to treat in place; grants to support 36 | P a g e expansion of clinical training and residencies in\u2026"
+    },
+    "chronic": {
+     "match": "diabetes",
+     "evidence": "\u2026goals: 1. Improve health outcomes for rural Minnesotans with or at risk of developing cardiovascular disease, diabetes, and chronic kidney disease (cardiometabolic disease). (CMS goal: Make Rural America Healthy Again) 2. Build education\u2026"
+    }
+   }
+  },
+  "Mississippi": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026by expanding access, improving care coordination, modernizing infrastructure, growing the workforce, and using telehealth to improve health outcomes. Abstract: Organization: State of Mississippi Subawardees: No subawardees have been\u2026"
+    },
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026HTAM and TAPS advance technology adoption and connectivity, health IT modernization, telehealth infrastructure, cybersecurity, and consumer-facing tools to improve efficiency, coordination, and access. BRIDGE addresses capital investments,\u2026"
+    },
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026recruit, retain, and train clinicians, allied health professionals, and support staff through retention awards, residency expansion, preceptor development, early-career outreach, and \u201cEarn While You Learn\u201d programs. HTAM and TAPS advance\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026social services into regional healthcare districts to improve emergency response, post-discharge coordination, and behavioral health access. The WEI will recruit, retain, and train clinicians, allied health professionals, and support staff through\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026input to refine investment strategies and align funding with critical rural health needs. CRIS will integrate EMS, hospitals, public health, and social services into regional healthcare districts to improve emergency response,\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026care models, regional integration of EMS and clinical services, and population health initiatives that target chronic disease, behavioral health, and preventive care. 38 | P a g e Across all initiatives, resources will be used to foster\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026programs for innovative interventions, including early intervention, ASD-focused programs, care management, and value-based care. Use of Funds: Funding will be strategically deployed to strengthen the full spectrum of rural health delivery.\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026subrecipient agreements will be established during project implementation and may include various rural hospitals, FQHCs, primary care clinics, community health centers, technology and telehealth vendors, universities, and professional associations\u2026"
+    },
+    "broadband": {
+     "match": "connectivity",
+     "evidence": "\u2026development, early-career outreach, and \u201cEarn While You Learn\u201d programs. HTAM and TAPS advance technology adoption and connectivity, health IT modernization, telehealth infrastructure, cybersecurity, and consumer-facing tools to improve efficiency,\u2026"
+    }
+   }
+  },
+  "Missouri": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026close to home, community-based maternity options, with connections to specialists and complex care enabled by telehealth and provider interoperability \u2022 Improving health outcomes: Strengthen healthcare quality through integrated care\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026community-based maternity options, with connections to specialists and complex care enabled by telehealth and provider interoperability \u2022 Improving health outcomes: Strengthen healthcare quality through integrated care coordination, aligned\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026anchored, and built to last. Goals: \u2022 Expanding access to care: Ensure rural Missourians can access primary and behavioral health providers close to home, community-based maternity options, with connections to specialists and complex care enabled\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026Transformation of Rural Community Health (ToRCH) program, ToRCH Care will create a connected system of local community hubs to ensure every rural Missourian has access to the high-quality care they need through a delivery system that\u2026"
+    },
+    "payment": {
+     "match": "payment model",
+     "evidence": "\u2026sustainability of rural providers through targeted investments in infrastructure, adoption of innovative technologies, and payment models that reflect the realities of rural care delivery Use of Funds: Missouri will deploy RHTP funding across five\u2026"
+    }
+   }
+  },
+  "Montana": {
+   "themes": {
+    "payment": {
+     "match": "payment model",
+     "evidence": "\u2026facilities to ensure access through partnerships and restructuring. \u2022 Initiative 3: Launch innovative care delivery and payment models to improve access and outcomes in Montana. \u2022 Initiative 4: Invest in Montana\u2019s community health and preventative\u2026"
+    }
+   }
+  },
+  "Nebraska": {
+   "themes": {
+    "telehealth": {
+     "match": "remote patient monitoring",
+     "evidence": "\u2026care through mobile clinical units, oral health teams, technology-enhanced pharmacy services, and consumer-facing remote patient monitoring. Subrecipients include Nebraska Perinatal Quality Improvement Collaborative, LHD, TO, Creighton University and\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026Over one-third of Nebraskans live in areas where critical workforce shortages in primary care, obstetrics, and behavioral health persist. Despite Nebraska\u2019s agricultural strength, 48 of 93 counties qualify as food deserts and children lack\u2026"
+    },
+    "maternal": {
+     "match": "obstetric",
+     "evidence": "\u2026rural or frontier. Over one-third of Nebraskans live in areas where critical workforce shortages in primary care, obstetrics, and behavioral health persist. Despite Nebraska\u2019s agricultural strength, 48 of 93 counties qualify as food deserts\u2026"
+    },
+    "ems": {
+     "match": "mobile clinic",
+     "evidence": "\u2026partners ensuring the funding goes to rural Nebraska workforce. 4. eHealth and Mobile: Implement remote care through mobile clinical units, oral health teams, technology-enhanced pharmacy services, and consumer-facing remote patient monitoring.\u2026"
+    },
+    "chronic": {
+     "match": "obesity",
+     "evidence": "\u2026children lack access to healthy foods. Nebraska will leverage RHTP funds to address unique challenges, including obesity amid food deserts, lack of maternal care in a State committed to family values, and an aging rural population.\u2026"
+    },
+    "hubs": {
+     "match": "regionaliz",
+     "evidence": "\u2026prevention- first, tech-enabled sustainable rural health care system. The project will prevent chronic disease, regionalize care, and advance Make America Healthy Again priorities. To achieve this vision, DHHS will implement seven integrated\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026Nebraska are rural or frontier. Over one-third of Nebraskans live in areas where critical workforce shortages in primary care, obstetrics, and behavioral health persist. Despite Nebraska\u2019s agricultural strength, 48 of 93 counties qualify\u2026"
+    }
+   }
+  },
+  "Nevada": {
+   "themes": {
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026modernization of health data and records systems with a focus on aligning with the CMS Digital Health Ecosystem and cybersecurity needs for rural health systems. Through these four initiatives, Nevada believes it can strengthen its rural care\u2026"
+    },
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026education and training programs with commitments to serve rural Nevadans post-education, and a rural physician residency program. 4. A rural health innovation and technology grant program of $30 million for innovative technologies\u2026"
+    },
+    "ems": {
+     "match": "mobile unit",
+     "evidence": "\u2026infrastructure with a total of $40 million in available investments for new medical technologies, equipment, supplies, mobile units, emergency services, etc. Another key aspect of this initiative is that the State will encourage rural providers\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026providers for greater efficiencies and improved outcomes and for using innovative care models that prevent and manage chronic disease, including but not limited to new online collaborative care strategies, remote and/or hybrid approaches to care,\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026outcomes accelerator program to invest $30 million in efforts aimed at improving health by increasing the use of value-based care to reward rural providers for greater efficiencies and improved outcomes and for using innovative care models\u2026"
+    }
+   }
+  },
+  "New Hampshire": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026access to care for prevention, primary care (medical, behavioral, and oral health), through to specialty care telehealth access at rural hospitals, scaling certified community behavioral health centers statewide, and long-term services\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026Initiative will modernize care delivery with investments in digital health infrastructure, telehealth, AI tools, interoperability investments, and cybersecurity. Finally, the Rural Financial Solvency Initiative will advance value- 45 |\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026Technology Initiative will modernize care delivery with investments in digital health infrastructure, telehealth, AI tools, interoperability investments, and cybersecurity. Finally, the Rural Financial Solvency Initiative will\u2026"
+    },
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026clinical learning in rural communities using simulation labs and other technology, and establish a family medicine residency program in Coos County. The Rural Health Technology Initiative will modernize care delivery with investments in\u2026"
+    },
+    "bh": {
+     "match": "Behavioral Health",
+     "evidence": "\u2026of Health and Human Services (DHHS) Subrecipients/Sub-Awardees: Foundation for Healthy Communities, Community Behavioral Health Association, University System of New Hampshire, Community College System of New Hampshire and the New Hampshire\u2026"
+    },
+    "maternal": {
+     "match": "perinatal",
+     "evidence": "\u2026outcomes-driven interventions to improve disease prevention, chronic disease management, behavioral health and perinatal care; 2) Create sustainable long-term access to care for rural residents through transformational care models\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026models and partnerships that allow rural facilities and clinicians to work with primary care, specialty care, and EMS providers to coordinate operations, sharing technology and resources; 3) Attract, train, and retain a highly-skilled\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u20261) Make rural NH healthier through evidence-based, outcomes-driven interventions to improve disease prevention, chronic disease management, behavioral health and perinatal care; 2) Create sustainable long-term access to care for rural residents\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026technology to enable secure care models that promote higher levels of coordination and continuity of care, and value-based payment mechanisms that incentivize prevention, and team-based care. DHHS is proposing the following goals for\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026through transformational care models and partnerships that allow rural facilities and clinicians to work with primary care, specialty care, and EMS providers to coordinate operations, sharing technology and resources; 3) Attract, train,\u2026"
+    }
+   }
+  },
+  "New Jersey": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026RHT3 encourages regional partnerships to strengthen care delivery outside of brick-and- mortar offices\u2014including telehealth, remote patient monitoring, and mobile care 4. RHT4 funds community-level efforts to promote preventive health\u2026"
+    },
+    "bh": {
+     "match": "SUD",
+     "evidence": "\u2026counties. Rural New Jerseyans are more likely to live in areas facing a healthcare workforce shortage, experience more SUD-related health impacts, and are less likely to make it to an annual pediatric well-visit appointment. The Division\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026providers 2. RHT2 provides funding for essential providers of behavioral health (CCBHCs), primary care (FQHCs), and emergency medical services (hospitals) 3. RHT3 encourages regional partnerships to strengthen care delivery outside of brick-and- mortar\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026preventive health 5. RHT5 invests in an array of evidence-based interventions and data integration efforts to improve chronic disease treatment We will take a hybrid funding approach, where we blend directed funding with competitive funding. This\u2026"
+    },
+    "hubs": {
+     "match": "regional partnership",
+     "evidence": "\u2026behavioral health (CCBHCs), primary care (FQHCs), and emergency medical services (hospitals) 3. RHT3 encourages regional partnerships to strengthen care delivery outside of brick-and- mortar offices\u2014including telehealth, remote patient monitoring,\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026clinical and non-clinical providers 2. RHT2 provides funding for essential providers of behavioral health (CCBHCs), primary care (FQHCs), and emergency medical services (hospitals) 3. RHT3 encourages regional partnerships to strengthen care\u2026"
+    }
+   }
+  },
+  "New Mexico": {
+   "themes": {
+    "workforce": {
+     "match": "clinical training",
+     "evidence": "\u2026Summary: Build and sustain a rural and Tribal health workforce by expanding local career pathways, strengthening clinical training pipelines and educational opportunities, and supporting long-term retention through housing, mentorship, and community-based\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026Mexico to design and lead locally tailored health initiatives addressing unique challenges such as preventive care, behavioral health, non-medical drivers of health, and provider facility needs. 4. Bridge to Resilience: Rural Health Sustainability\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026care and chronic disease management for high-risk rural populations by implementing regionalized specialty and maternal care networks, provider training, and remote care technologies to expand access, improve local capacity, and reduce\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026/ CMS Goal: Expand Access to Care / Make Rural America Healthy Again \u2022 Summary: Strengthen specialty care and chronic disease management for high-risk rural populations by implementing regionalized specialty and maternal care networks,\u2026"
+    },
+    "hubs": {
+     "match": "regionaliz",
+     "evidence": "\u2026Summary: Strengthen specialty care and chronic disease management for high-risk rural populations by implementing regionalized specialty and maternal care networks, provider training, and remote care technologies to expand access, improve\u2026"
+    }
+   }
+  },
+  "New York": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026services; 4) Investments in Technology Innovation and Cybersecurity Enhancements: expand access to care through telehealth, improve patient outcomes through eConsult partnerships, increase usable alerts in rural counties, and strengthen\u2026"
+    },
+    "data": {
+     "match": "Cybersecurity",
+     "evidence": "\u2026communities have continuous access to high-quality health care services; 4) Investments in Technology Innovation and Cybersecurity Enhancements: expand access to care through telehealth, improve patient outcomes through eConsult partnerships,\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026health indicators when compared to their regional counterparts, including care coordination, primary care access, behavioral health care access, and incidence of chronic conditions. These challenges demand collaborative, innovative, and sustainable\u2026"
+    },
+    "chronic": {
+     "match": "chronic condition",
+     "evidence": "\u2026counterparts, including care coordination, primary care access, behavioral health care access, and incidence of chronic conditions. These challenges demand collaborative, innovative, and sustainable solutions. NY envisions a rural health system\u2026"
+    },
+    "hubs": {
+     "match": "regional partnership",
+     "evidence": "\u2026rural communities through a set of four, interrelated initiatives that strategically leverage local providers, regional partnerships, and statewide infrastructure. These initiatives and their goals include: 1) Rural Community Health Integration:\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026across a variety of health indicators when compared to their regional counterparts, including care coordination, primary care access, behavioral health care access, and incidence of chronic conditions. These challenges demand collaborative,\u2026"
+    }
+   }
+  },
+  "North Carolina": {
+   "themes": {
+    "telehealth": {
+     "match": "virtual care",
+     "evidence": "\u2026region, offering in-person services, care coordination, and direct support for families, while also leveraging virtual care and advanced AI to enhance access and share data. 2. Improve prevention/screening, chronic disease management,\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026VBP arrangements, with a focus on financial sustainability. 6. Accelerate technological innovation, access, and interoperability through increased health information exchange participation, digital literacy programs to ensure rural residents\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026services, care coordination, and direct support for families, while also leveraging virtual care and advanced AI to enhance access and share data. 2. Improve prevention/screening, chronic disease management, maternal health,\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026fellowships, and certification programs to recruit, train, and retain clinicians, allied health professionals, and community health workers. 5. Advance value-based payment (VBP) by establishing capabilities for rural primary care practices to participate\u2026"
+    },
+    "bh": {
+     "match": "Behavioral Health",
+     "evidence": "\u2026Health. Implementation is guided by a statewide steering committee that includes Medicaid, Public Health, and Behavioral Health divisions. Key subrecipients include the Duke-Margolis Health Policy Center, UNC The Cecil G. Sheps Center for\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026and advanced AI to enhance access and share data. 2. Improve prevention/screening, chronic disease management, maternal health, and nutrition by scaling up effective programs for primary care access, food as medicine, diabetes and\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026increase rural provider-to-population ratios, reduce preventable hospital readmissions and emergency visits, lower chronic disease risk factors, and expand access to integrated behavioral, mental health and substance use services. All while\u2026"
+    },
+    "hubs": {
+     "match": "Hubs",
+     "evidence": "\u2026Usage: Through 6 integrated initiatives, NCRHTP will sustainably transform rural health. 1. Launch \u201cNC ROOTS\u201d* Hubs. These locally governed, community-tailored networks connect medical, behavioral, and social services--making\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026to recruit, train, and retain clinicians, allied health professionals, and community health workers. 5. Advance value-based payment (VBP) by establishing capabilities for rural primary care practices to participate in advanced VBP models\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026prevention/screening, chronic disease management, maternal health, and nutrition by scaling up effective programs for primary care access, food as medicine, diabetes and hypertension management, cancer screening, and perinatal health. 3. Expand\u2026"
+    }
+   }
+  },
+  "North Dakota": {
+   "themes": {
+    "telehealth": {
+     "match": "Remote Monitoring",
+     "evidence": "\u2026sustainability. GOALS/OUTCOMES 1. Rebuild and retain a rural health workforce \u2022 Increase Rural Provider Retention \u2022 Expand Remote Monitoring and AI-Assisted Care \u2022 Reduce Health Professional Shortages 2. Prevent chronic disease, restore health, and reduce\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026Rebuild and retain a rural health workforce \u2022 Increase Rural Provider Retention \u2022 Expand Remote Monitoring and AI-Assisted Care \u2022 Reduce Health Professional Shortages 2. Prevent chronic disease, restore health, and reduce cost\u2026"
+    },
+    "workforce": {
+     "match": "residencies",
+     "evidence": "\u2026Strengthen and Stabilize Rural Health Workforce ($162.4M) \u2013 Train and retain a high-skilled workforce through new residencies, grow-your-own workforce pipelines, recruitment and retention grants, and training to develop the existing workforce\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026\u2013 Launch Eat Well ND and ND Moves Together to put evidence-based practices in nutrition, physical activity and behavioral health at the center of everyday life. Sustain progress through multipayer focus on innovative care models and payment\u2026"
+    },
+    "ems": {
+     "match": "mobile clinic",
+     "evidence": "\u2026with new tech tools to reduce reliance on physical workforce and foster efficiency by deploying telehealth hubs, mobile clinics, remote patient monitoring, while aligning to new care coordination models and focusing on sustainability through\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Provider Retention \u2022 Expand Remote Monitoring and AI-Assisted Care \u2022 Reduce Health Professional Shortages 2. Prevent chronic disease, restore health, and reduce cost \u2022 Increase Activity and Reduce Obesity \u2022 Reduce Chronic Disease \u2022 Prevent Suicide\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026models with new tech tools to reduce reliance on physical workforce and foster efficiency by deploying telehealth hubs, mobile clinics, remote patient monitoring, while aligning to new care coordination models and focusing on sustainability\u2026"
+    }
+   }
+  },
+  "Ohio": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026School-Based Health Centers \u2013 Establish clinics on K\u201312 and college campuses offering primary, behavioral, dental, and telehealth services for students and community members, serving also as rural clinical training sites. OH SEE \u2013 Expand statewide\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026schools, universities, and employers. Cross-Cutting Strategies: RHTP embeds telehealth, remote monitoring, and interoperable electronic medical records across initiatives. Policy actions include expanding pharmacist scope of practice,\u2026"
+    },
+    "workforce": {
+     "match": "clinical training",
+     "evidence": "\u2026primary, behavioral, dental, and telehealth services for students and community members, serving also as rural clinical training sites. OH SEE \u2013 Expand statewide mobile vision, hearing, and dental care based on a 13-county pilot to ensure\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026Pipeline \u2013 Build a continuum from high school through professional training and employment, featuring upskilling for community health workers and pharmacists, five-year rural service commitments, and partnerships among schools, universities, and employers.\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026are impacted by limited access to care, hospital closures, workforce shortages, and high rates of chronic and behavioral health conditions. Rural and Appalachian Ohioans experience higher rates of heart disease, diabetes, COPD, cancer, and\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026diabetes and hypertension outcomes statewide. \u2022 Increase the rural health workforce by at least 20%. \u2022 Strengthen maternal, behavioral, and preventive care access. Conclusion: This represents a bold, data-driven transformation of rural\u2026"
+    },
+    "ems": {
+     "match": "EMS",
+     "evidence": "\u2026Establish Clinically Integrated Networks (CINs) and Regional Centers of Excellence linking hospitals, clinics, EMS, pharmacists, and community partners to coordinate care, reduce costs, and expand capacity. Legislative reforms\u2026"
+    },
+    "chronic": {
+     "match": "diabetes",
+     "evidence": "\u2026chronic and behavioral health conditions. Rural and Appalachian Ohioans experience higher rates of heart disease, diabetes, COPD, cancer, and suicide than State averages. Thirteen counties are maternity care deserts, and nearly one in\u2026"
+    },
+    "hubs": {
+     "match": "Hubs",
+     "evidence": "\u2026access, workforce development, innovative care, and tech advancement. Key Initiatives: Rural Health Innovation Hubs \u2013 Establish Clinically Integrated Networks (CINs) and Regional Centers of Excellence linking hospitals, clinics,\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026long-term viability through billable service models, shared-service efficiencies, and alignment with Medicaid and value-based payment systems. Workforce incentives, technology adoption, and legislative reforms will ensure continuity beyond\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026care deserts, and nearly one in five rural hospitals is at risk of closure. Provider shortages are widespread: primary care availability is nearly half that of urban regions, and behavioral and oral health gaps persist. These challenges\u2026"
+    },
+    "broadband": {
+     "match": "connectivity",
+     "evidence": "\u2026alternate-destination care, reducing unnecessary emergency department use through training, system upgrades, and improved connectivity. School-Based Health Centers \u2013 Establish clinics on K\u201312 and college campuses offering primary, behavioral, dental,\u2026"
+    }
+   }
+  },
+  "Oklahoma": {
+   "themes": {
+    "hubs": {
+     "match": "regional partnership",
+     "evidence": "\u2026Facilitating regional collaboration: This initiative seeks to strengthen provider infrastructure and enhance local and regional partnerships (Sustainable Access, Innovative Care). \u2022 Shifting to value: This initiative seeks to improve outcomes and financial\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026Innovative Care). \u2022 Shifting to value: This initiative seeks to improve outcomes and financial sustainability through value-based care models (Sustainable Access, Innovative Care). \u2022 Growing the next generation of rural talent: This initiative\u2026"
+    }
+   }
+  },
+  "Oregon": {
+   "themes": {
+    "bh": {
+     "match": "Behavioral Health",
+     "evidence": "\u2026administration of the program. OHA is inclusive of the State\u2019s Public Health agency, Medicaid agency, Marketplace, and Behavioral Health agency, which allows OHA to be well positioned for cross-sector partnerships and a comprehensive view of the health\u2026"
+    },
+    "hubs": {
+     "match": "Regional Partnership",
+     "evidence": "\u2026practical health reforms to enhance care delivery in rural areas. Oregon will do this through five initiatives: (1) Regional Partnerships & System Transformation (2) Healthy Communities & Prevention (3) Workforce Capacity & Resilience (4) Technology\u2026"
+    }
+   }
+  },
+  "Pennsylvania": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026bring together community and health system partners to prioritize local needs, strengthen shared services, expand telehealth and clinical integration, and ensure residents have consistent access to high-quality primary and specialty care.\u2026"
+    },
+    "workforce": {
+     "match": "scholarship",
+     "evidence": "\u2026through rural focused training programs that target identified gaps in care. This will be accomplished by upfront scholarships, mentoring, short-term housing, stipends, and investments in the rural health provider training pipeline, with\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026300 responses submitted through our Rural Health website by stakeholders. Common themes include maternity care, behavioral health, dental care, aging, and primary and preventive care, areas that have been shown to reduce chronic disease, provide\u2026"
+    },
+    "ems": {
+     "match": "Emergency Medical Services",
+     "evidence": "\u2026development. We propose expanding the full spectrum of the rural health care workforce including allied health, Emergency Medical Services (EMS), nursing, nurse practitioners, physician assistants, dentists, pharmacists, and physicians through rural\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026care, behavioral health, dental care, aging, and primary and preventive care, areas that have been shown to reduce chronic disease, provide more years of healthy life, and decrease reliance on costly hospital care. 2. Sustainable Access: We\u2026"
+    },
+    "hubs": {
+     "match": "shared service",
+     "evidence": "\u2026development. Each RCC will bring together community and health system partners to prioritize local needs, strengthen shared services, expand telehealth and clinical integration, and ensure residents have consistent access to high-quality primary\u2026"
+    },
+    "payment": {
+     "match": "alternative payment",
+     "evidence": "\u2026analytic support to the RCCs to analyze the impact of innovative digital models of care delivery, flexible care, alternative payment models, and \u201cright-sizing\u201d rural hospitals to shift care to lower cost settings, while improving access to essential\u2026"
+    },
+    "hospital": {
+     "match": "right-siz",
+     "evidence": "\u2026analyze the impact of innovative digital models of care delivery, flexible care, alternative payment models, and \u201cright-sizing\u201d rural hospitals to shift care to lower cost settings, while improving access to essential health care services.\u2026"
+    }
+   }
+  },
+  "Rhode Island": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u20262) will bring preventive, dental, and maternal-child health care directly to residents through mobile units and telehealth sites in schools and community learning centers. Accessibility investments (Initiative 3) for rural providers\u2026"
+    },
+    "data": {
+     "match": "interoperab",
+     "evidence": "\u2026behavioral health professionals, and community organizations to deliver coordinated, team-based care supported by interoperable technology and community health workers. Rural community-integrated and mobile health Services (Initiative 2)\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026and community organizations to deliver coordinated, team-based care supported by interoperable technology and community health workers. Rural community-integrated and mobile health Services (Initiative 2) will bring preventive, dental, and maternal-child\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026community clinical care hubs and rural community health networks (Initiative 1) will link clinical providers, behavioral health professionals, and community organizations to deliver coordinated, team-based care supported by interoperable\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026workers. Rural community-integrated and mobile health Services (Initiative 2) will bring preventive, dental, and maternal-child health care directly to residents through mobile units and telehealth sites in schools and community learning\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026team-based care supported by interoperable technology and community health workers. Rural community-integrated and mobile health Services (Initiative 2) will bring preventive, dental, and maternal-child health care directly to residents through\u2026"
+    },
+    "hubs": {
+     "match": "hubs",
+     "evidence": "\u2026RHTP funds will be used to implement a coordinated set of 13 initiatives. Investments in community clinical care hubs and rural community health networks (Initiative 1) will link clinical providers, behavioral health professionals,\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026care; (3) workforce development \u2013 strengthen the rural health care workforce; (4) innovative care \u2013 accelerate value-based and affordable care models; and (5) tech innovation \u2013 integrate technology into rural practice. Total Budget:\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026payment transition (Initiative 11), specifically through incentives and technical assistance to hospitals and primary care practices. Technology modernization (Initiative 12) will fund a State-sponsored electronic health record and 60\u2026"
+    }
+   }
+  },
+  "South Carolina": {
+   "themes": {
+    "telehealth": {
+     "match": "remote patient monitoring",
+     "evidence": "\u2026outcomes-driven initiatives: Connections to Care\u2013 Expands digital infrastructure by implementing electronic health records, remote patient monitoring, telehealth services and a statewide resource database platform to improve care coordination and access. Leveling\u2026"
+    },
+    "data": {
+     "match": "electronic health record",
+     "evidence": "\u2026five integrated, outcomes-driven initiatives: Connections to Care\u2013 Expands digital infrastructure by implementing electronic health records, remote patient monitoring, telehealth services and a statewide resource database platform to improve care coordination\u2026"
+    },
+    "bh": {
+     "match": "crisis response",
+     "evidence": "\u2026management, pediatric care quality, and workforce development. Wellness Within Reach\u2013 Deploys mobile health units, crisis response teams, and pop-up clinics to bring care directly to underserved populations. Shoring Up to Sustainability\u2013 Strengthens\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026residents\u201432.6% of the State\u2019s population\u2014 living in rural areas, the State faces disproportionate rates of chronic disease, maternal mortality, and limited access to care due to provider shortages; aging infrastructure; and the geographic and\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026chronic disease management, pediatric care quality, and workforce development. Wellness Within Reach\u2013 Deploys mobile health units, crisis response teams, and pop-up clinics to bring care directly to underserved populations. Shoring Up\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026million residents\u201432.6% of the State\u2019s population\u2014 living in rural areas, the State faces disproportionate rates of chronic disease, maternal mortality, and limited access to care due to provider shortages; aging infrastructure; and the geographic\u2026"
+    }
+   }
+  },
+  "South Dakota": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026interconnected goals. First, it modernizes South Dakota\u2019s health infrastructure through expanded electronic health records, telehealth platforms, and data systems that support smarter resource use. Second, it builds a sustainable healthcare workforce\u2026"
+    },
+    "data": {
+     "match": "electronic health record",
+     "evidence": "\u2026advances four interconnected goals. First, it modernizes South Dakota\u2019s health infrastructure through expanded electronic health records, telehealth platforms, and data systems that support smarter resource use. Second, it builds a sustainable healthcare\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026Second, it builds a sustainable healthcare workforce by attracting and retaining professionals and expanding the community health worker network Third, it strengthens access to quality care close to home through innovative payment models, facility\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026and enhanced chronic disease and maternal health services. Fourth, it transforms care delivery by integrating behavioral health into primary care and reinforcing emergency medical services across the State. To achieve these goals, the plan\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026quality care close to home through innovative payment models, facility reinvention, and enhanced chronic disease and maternal health services. Fourth, it transforms care delivery by integrating behavioral health into primary care and reinforcing\u2026"
+    },
+    "ems": {
+     "match": "emergency medical services",
+     "evidence": "\u2026services. Fourth, it transforms care delivery by integrating behavioral health into primary care and reinforcing emergency medical services across the State. To achieve these goals, the plan focuses on: 1. Connecting Technology & Data: Deploy certified\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026workforce shortages that strain hospitals and clinics. These factors contribute to higher rates of suicide and chronic disease. This five-year initiative invests strategically to build capacity and resilience within rural healthcare systems\u2026"
+    },
+    "hubs": {
+     "match": "Hub",
+     "evidence": "\u2026professionals, expand Community Health Worker training and certification, and establish a Training and Resource Hub for continuing education. 3. Keeping Healthcare Local and Strong: Explore new Medicaid payment models, award Rural\u2026"
+    },
+    "payment": {
+     "match": "payment model",
+     "evidence": "\u2026community health worker network Third, it strengthens access to quality care close to home through innovative payment models, facility reinvention, and enhanced chronic disease and maternal health services. Fourth, it transforms care\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026disease and maternal health services. Fourth, it transforms care delivery by integrating behavioral health into primary care and reinforcing emergency medical services across the State. To achieve these goals, the plan focuses on: 1. Connecting\u2026"
+    }
+   }
+  },
+  "Tennessee": {
+   "themes": {
+    "workforce": {
+     "match": "workforce pipeline",
+     "evidence": "\u2026efficiencies, and cut administrative waste. \u2022 Goal 5 \u2013 Workforce Development Strengthening a comprehensive healthcare workforce pipeline, training and retaining local talent Leveraging its proven statewide infrastructure (including the Governor\u2019s\u2026"
+    },
+    "maternal": {
+     "match": "Maternal",
+     "evidence": "\u2026and investing in outcomes-based payment models that enhance and sustain access in rural communities. \u2022 Goal 2 \u2013 Maternal and Child Health Generational investments to ensure strong starts for every rural family \u2022 Goal 3 \u2013 Make Rural\u2026"
+    },
+    "chronic": {
+     "match": "nutrition",
+     "evidence": "\u2026health and healthcare delivery by addressing locally identified concerns, expanding early detection, and improving nutrition security \u2022 Goal 4 - Technological Infrastructure Investing in health-tech solutions that enhance operational performance,\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026sustainable care delivery system in its rural communities\u2014 anchored in prevention, innovation, workforce capacity, and value-based transformation. Under the guiding principle of \u201cBetter Care, Closer to Home, \u201d Tennessee\u2019s plan advances each\u2026"
+    },
+    "hospital": {
+     "match": "right-siz",
+     "evidence": "\u2026five goals. \u2022 Goal 1 \u2013 Rural Healthcare Transformation Incentivizing transformative change in rural health by right-sizing rural facilities and investing in outcomes-based payment models that enhance and sustain access in rural communities.\u2026"
+    }
+   }
+  },
+  "Texas": {
+   "themes": {
+    "telehealth": {
+     "match": "Telehealth",
+     "evidence": "\u2026initiatives: 1. Make Rural Texans Healthy Again 2. Rural Texas Patients in the Driver\u2019s Seat 3. Lone Star Advanced AI and Telehealth 4. The Next Generation of The Small Town Doctor and Team 5. Unified Care Infrastructure and Rural Cyber Protection\u2026"
+    },
+    "ai": {
+     "match": "AI",
+     "evidence": "\u2026initiatives: 1. Make Rural Texans Healthy Again 2. Rural Texas Patients in the Driver\u2019s Seat 3. Lone Star Advanced AI and Telehealth 4. The Next Generation of The Small Town Doctor and Team 5. Unified Care Infrastructure and Rural\u2026"
+    },
+    "chronic": {
+     "match": "nutrition",
+     "evidence": "\u2026thrive \u2013 in rural Texas, families need access to high-quality healthcare providers and services, freedom to select nutrition and wellness that makes sense, and innovative consumer-facing technology that connects with provider systems,\u2026"
+    }
+   }
+  },
+  "Utah": {
+   "themes": {
+    "telehealth": {
+     "match": "Telehealth",
+     "evidence": "\u2026Transformation); FAST (Financial Approaches for Sustainable Transformation); LIFT (Leveraging Innovation for Facilitated Telehealth): SUPPORT (Shared Utilities for Partnered Provider Operational Resources and Technology); and LINCS (Leveraging\u2026"
+    },
+    "data": {
+     "match": "Interoperab",
+     "evidence": "\u2026SUPPORT (Shared Utilities for Partnered Provider Operational Resources and Technology); and LINCS (Leveraging Interoperability Networks to Connect Services). Combined, these initiatives will create financially sustainable health systems\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026aging infrastructure, and economic hardships. These challenges contribute to higher rates of chronic disease, behavioral health issues, and poor maternal and child health outcomes. Addressing these challenges requires building a sustainable,\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026hardships. These challenges contribute to higher rates of chronic disease, behavioral health issues, and poor maternal and child health outcomes. Addressing these challenges requires building a sustainable, patient-centered system\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026provider shortages, aging infrastructure, and economic hardships. These challenges contribute to higher rates of chronic disease, behavioral health issues, and poor maternal and child health outcomes. Addressing these challenges requires building\u2026"
+    }
+   }
+  },
+  "Vermont": {
+   "themes": {
+    "workforce": {
+     "match": "residency",
+     "evidence": "\u2026federally qualified health centers, primary care clinics, etc.), housing developers, workforce training and clinical residency programs, among others. The State will also procure consultants and contractors to implement various projects\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026enhance its outdated, foundational primary care reform initiative, Blueprint for Health, to improve team-based chronic disease care, deliver workforce training, provide transformation assistance to primary care practices, and create a statewide\u2026"
+    },
+    "hubs": {
+     "match": "Regionaliz",
+     "evidence": "\u2026strategies to increase quality and reduce health care costs. Funds will be allocated across five core initiatives: \u2022 Regionalization and Innovative Care Strategies: Absent regionalizing services, reducing business efficiencies, and modernizing\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026Sub-recipients and awardees will include health care providers (e.g., hospitals, federally qualified health centers, primary care clinics, etc.), housing developers, workforce training and clinical residency programs, among others. The State\u2026"
+    }
+   }
+  },
+  "Virginia": {
+   "themes": {
+    "telehealth": {
+     "match": "remote patient monitoring",
+     "evidence": "\u2026early-stage health technology startups, modernize electronic health records and productivity tools, and expand remote patient monitoring capacity. These investments will strengthen care coordination, reduce administrative burden, and support value-based\u2026"
+    },
+    "data": {
+     "match": "electronic health record",
+     "evidence": "\u2026administration: 1. CareIQ (CMS Goal: Tech Innovation) ($282.6M) Invest in early-stage health technology startups, modernize electronic health records and productivity tools, and expand remote patient monitoring capacity. These investments will strengthen care\u2026"
+    },
+    "workforce": {
+     "match": "residencies",
+     "evidence": "\u2026Health Heroes (CMS Goal: Workforce Development) ($132.0M) Address provider shortages by funding rural medical residencies, allied health apprenticeships, and community college programs, and expanding high school pathways into healthcare.\u2026"
+    },
+    "chw": {
+     "match": "community paramedic",
+     "evidence": "\u2026Goal: Sustainable Access) ($412.0M) Expand access through mobile health clinics, hub-and-spoke telehealth models, community paramedicine, and improved maternal care networks. These strategies will enhance care continuity and reduce avoidable hospitalizations\u2026"
+    },
+    "maternal": {
+     "match": "maternal",
+     "evidence": "\u2026and expand the rural health workforce to sustain local care delivery \u2022 Improve access to primary, specialty, and maternal care close to home \u2022 Advance prevention and wellness to reduce chronic disease and improve quality of life Together,\u2026"
+    },
+    "ems": {
+     "match": "mobile health",
+     "evidence": "\u2026economic growth. 3. Connected Care, Closer to Home (CMS Goal: Sustainable Access) ($412.0M) Expand access through mobile health clinics, hub-and-spoke telehealth models, community paramedicine, and improved maternal care networks. These strategies\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026shortages strain rural health systems, limited access forces long travel distances for care, and high rates of chronic disease remain a leading cause of morbidity. Through VA Rural Vitality, the Commonwealth seeks to transform health outcomes\u2026"
+    },
+    "hubs": {
+     "match": "hub-and-spoke",
+     "evidence": "\u2026Connected Care, Closer to Home (CMS Goal: Sustainable Access) ($412.0M) Expand access through mobile health clinics, hub-and-spoke telehealth models, community paramedicine, and improved maternal care networks. These strategies will enhance\u2026"
+    },
+    "payment": {
+     "match": "value-based",
+     "evidence": "\u2026monitoring capacity. These investments will strengthen care coordination, reduce administrative burden, and support value-based care transformation. 2. Homegrown Health Heroes (CMS Goal: Workforce Development) ($132.0M) Address provider shortages\u2026"
+    }
+   }
+  },
+  "Washington": {
+   "themes": {
+    "data": {
+     "match": "cybersecurity",
+     "evidence": "\u2026training capacity for Tribal providers, nurses and long-term care workers; investing in artificial intelligence and cybersecurity technology; and supporting payment transformation for rural hospitals and behavioral health clinics. Washington\u2019s\u2026"
+    },
+    "ai": {
+     "match": "artificial intelligence",
+     "evidence": "\u2026which include increasing training capacity for Tribal providers, nurses and long-term care workers; investing in artificial intelligence and cybersecurity technology; and supporting payment transformation for rural hospitals and behavioral health\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026adoption of technology and data solutions, develop Washington\u2019s rural workforce, and expand and sustain the rural behavioral health system. Each initiative supports the State\u2019s goals through activities, which include increasing training capacity\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026rural health care across primary and specialty care, hospitals, workforce development, technology investment, and chronic disease management. Abstract: Subrecipients or sub-awardee organizations: Department of Health (including the State Office\u2026"
+    },
+    "broadband": {
+     "match": "connectivity",
+     "evidence": "\u2026technology and data-driven solutions to empower communities with healthy opportunities, increased efficiencies, and connectivity \u2022 Improve financial solvency for rural hospitals and providers \u2022 Total budget amount: Washington proposes to spend\u2026"
+    }
+   }
+  },
+  "West Virginia": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026Connected Care Grid will bring healthcare access directly to people\u2014both in person and digitally\u2014by integrating telehealth, remote monitoring, and local care coordination. 2. Rural Health Link will unify medical and community transportation\u2026"
+    },
+    "chronic": {
+     "match": "diabetes",
+     "evidence": "\u2026The State will tackle foundational health barriers that hold back workforce participation (including addiction, diabetes, hypertension, cardiovascular disease, COPD, and asthma), make West Virginia a hub for rural health innovation,\u2026"
+    },
+    "hubs": {
+     "match": "hub",
+     "evidence": "\u2026(including addiction, diabetes, hypertension, cardiovascular disease, COPD, and asthma), make West Virginia a hub for rural health innovation, and modernize care delivery and payment systems to drive healthcare value and ensure\u2026"
+    }
+   }
+  },
+  "Wisconsin": {
+   "themes": {
+    "telehealth": {
+     "match": "telehealth",
+     "evidence": "\u2026million. Rural Wisconsin needs technology to support and reach residents, such as closed-loop referral systems and telehealth capabilities. Wisconsin will invest RHT funds to upgrade rural provider systems and digital infrastructure and\u2026"
+    },
+    "chw": {
+     "match": "community health worker",
+     "evidence": "\u2026projects in rural communities, support career pathways for rural health care providers, and fund services provided by community health workers. Drive Rural Technology and Innovation - $329 million. Rural Wisconsin needs technology to support and reach\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026Partnerships - $279 million. Rural Wisconsinites experience fragmented coordination across primary care, specialty care, behavioral health, chronic disease prevention, and community social supports. Wisconsin will stand up a competitive grant program\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026Rural Wisconsinites experience fragmented coordination across primary care, specialty care, behavioral health, chronic disease prevention, and community social supports. Wisconsin will stand up a competitive grant program for rural regions\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026Rural Care through Partnerships - $279 million. Rural Wisconsinites experience fragmented coordination across primary care, specialty care, behavioral health, chronic disease prevention, and community social supports. Wisconsin will\u2026"
+    }
+   }
+  },
+  "Wyoming": {
+   "themes": {
+    "telehealth": {
+     "match": "telepsychiatry",
+     "evidence": "\u2026outcomes. \u2022 Exercise and diet promotion \u2022 Restricting the use of SNAP/food stamps to buy unhealthy food \u2022 Statewide telepsychiatry and crisis intervention services 4. To use technology and payment models to improve chronic disease management\u2026"
+    },
+    "workforce": {
+     "match": "workforce pipeline",
+     "evidence": "\u2026medicine \u2022 Building an affordable major medical plan for people priced out of health insurance 2. To build a durable workforce pipeline. \u2022 Individual education support for people looking to become nurses, primary care providers, behavioral health\u2026"
+    },
+    "bh": {
+     "match": "behavioral health",
+     "evidence": "\u2026services to consolidate around sustainable regional funding bases \u2022 Expansion of primary care that integrates behavioral health and preventative medicine \u2022 Building an affordable major medical plan for people priced out of health insurance\u2026"
+    },
+    "ems": {
+     "match": "ambulance",
+     "evidence": "\u2026top aren\u2019t extravagant. Most center on access to the basics: hospitals that can effectively treat emergencies, ambulances that show up quickly when you dial 911, and primary care that treats the whole person. When combined with the\u2026"
+    },
+    "chronic": {
+     "match": "chronic disease",
+     "evidence": "\u2026\u2022 Statewide telepsychiatry and crisis intervention services 4. To use technology and payment models to improve chronic disease management and bring care closer to home. \u2022 Clinically-integrated care coordination for people at high risk of\u2026"
+    },
+    "payment": {
+     "match": "payment model",
+     "evidence": "\u2026stamps to buy unhealthy food \u2022 Statewide telepsychiatry and crisis intervention services 4. To use technology and payment models to improve chronic disease management and bring care closer to home. \u2022 Clinically-integrated care coordination\u2026"
+    },
+    "hospital": {
+     "match": "right-siz",
+     "evidence": "\u2026of our proposal. With supporting components listed under each, these are: 1. To increase sustainable access to right-sized and coordinated rural medical care. \u2022 Encouraging smaller Critical Access Hospitals to focus on doing the basics\u2026"
+    },
+    "primary": {
+     "match": "primary care",
+     "evidence": "\u2026basics: hospitals that can effectively treat emergencies, ambulances that show up quickly when you dial 911, and primary care that treats the whole person. When combined with the federal objectives articulated in the One Big Beautiful Bill\u2026"
+    }
+   }
+  }
+ }
+}

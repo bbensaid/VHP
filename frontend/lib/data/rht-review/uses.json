@@ -1,0 +1,2069 @@
+{
+ "source": "book-audit/deep/sources/rht_vt/cms_obligated_2026-10-14.txt",
+ "asOf": "2026-07-31",
+ "states": {
+  "Alabama": {
+   "putToWork": 5409614.14,
+   "categories": {
+    "Program administration": 5409614.14
+   },
+   "categoryTotal": 5409614.14,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 5409614.14
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Alaska": {
+   "putToWork": 11536771.27,
+   "categories": {
+    "Fostering collaboration": 2183845.0,
+    "Workforce": 694200.0,
+    "Program administration": 8658726.27
+   },
+   "categoryTotal": 11536771.27,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 3: Healthy Communities",
+     "amount": 1111635.0
+    },
+    {
+     "name": "Initiative 4: Pay for Value \u2013 Fiscal Sustainability",
+     "amount": 1072210.0
+    },
+    {
+     "name": "Initiative 5: Strengthen Workforce",
+     "amount": 694200.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 8658726.27
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Arizona": {
+   "putToWork": 72973308.55,
+   "categories": {
+    "Capital & infrastructure": 6984960.0,
+    "Innovative care": 2000000.0,
+    "Training & technical assistance": 5298245.0,
+    "Workforce": 35939840.0,
+    "Program administration": 4699623.55,
+    "Appropriate care availability": 5260552.0,
+    "Prevention & chronic disease": 12660101.0,
+    "Fostering collaboration": 129987.0
+   },
+   "categoryTotal": 72973308.55,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Health Workforce Development",
+     "amount": 51103045.0
+    },
+    {
+     "name": "Initiative 2: Priority Health Initiatives Grants Portfolio",
+     "amount": 18637755.0
+    },
+    {
+     "name": "Initiative 4: Making Rural Healthcare Resilient",
+     "amount": 129987.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 3102521.55
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Arkansas": {
+   "putToWork": 6158032.0,
+   "categories": {
+    "Program administration": 6158032.0
+   },
+   "categoryTotal": 6158032.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 6158032.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "California": {
+   "putToWork": 219133495.0,
+   "categories": {
+    "Appropriate care availability": 36000000.0,
+    "Innovative care": 43922000.58,
+    "Training & technical assistance": 39211966.84,
+    "Workforce": 72923673.49,
+    "IT advances": 12371866.58,
+    "Program administration": 14703988.0
+   },
+   "categoryTotal": 219133495.49,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Health Transformative Care Model",
+     "amount": 92369251.0
+    },
+    {
+     "name": "Initiative 2: Rural Health Workforce Development",
+     "amount": 73223673.0
+    },
+    {
+     "name": "Initiative 3: Rural Health Technology and Tools",
+     "amount": 36621867.0
+    },
+    {
+     "name": "Program Operations/Governance",
+     "amount": 16918705.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Colorado": {
+   "putToWork": 18837181.17,
+   "categories": {
+    "IT advances": 1645396.0,
+    "Prevention & chronic disease": 5880000.0,
+    "Training & technical assistance": 6550000.0,
+    "Program administration": 4761785.17
+   },
+   "categoryTotal": 18837181.17,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Transforming Rural Care: Chronic Disease Prevention, Training and Management",
+     "amount": 3915396.0
+    },
+    {
+     "name": "Initiative 7: Expand Clinical Capacity to Perform Preventive Care",
+     "amount": 6300000.0
+    },
+    {
+     "name": "Initiative 8: Strengthening State and Local Health Care Coordination",
+     "amount": 250000.0
+    },
+    {
+     "name": "Initiative 10: Expand Rural Telehealth & Technology Integration",
+     "amount": 2300000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4761785.17
+    }
+   ],
+   "unmatched": [
+    {
+     "label": "Programs: Diabetes, Cardiovascular Disease, Hypertension, and Obesity",
+     "amount": 1310000.0
+    }
+   ],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Connecticut": {
+   "putToWork": 151820672.0,
+   "categories": {
+    "Capital & infrastructure": 22372236.0,
+    "Consumer tech solutions": 500000.0,
+    "Prevention & chronic disease": 13404161.0,
+    "Training & technical assistance": 27078857.44,
+    "Program administration": 5925210.0,
+    "Workforce": 12000000.0,
+    "IT advances": 26402770.99,
+    "Appropriate care availability": 16324994.0,
+    "Behavioral health": 11189523.0,
+    "Fostering collaboration": 1200000.0,
+    "Innovative care": 1406204.0,
+    "Provider payments": 7014680.0
+   },
+   "categoryTotal": 144818636.43,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Population Health Outcomes",
+     "amount": 13918233.0
+    },
+    {
+     "name": "Initiative 2: Workforce",
+     "amount": 12000000.0
+    },
+    {
+     "name": "Initiative 3: Data and Technology",
+     "amount": 8211972.0
+    },
+    {
+     "name": "Initiative 4: Care Transformation and Stability",
+     "amount": 104282109.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 13408358.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.9539
+  },
+  "Delaware": {
+   "putToWork": 76882711.0,
+   "categories": {
+    "Capital & infrastructure": 29154830.0,
+    "Prevention & chronic disease": 11976932.71,
+    "Program administration": 852929.97,
+    "Fostering collaboration": 2959078.08,
+    "Consumer tech solutions": 387235.85,
+    "Innovative care": 23058840.94,
+    "Training & technical assistance": 480985.25,
+    "Workforce": 4173486.82,
+    "Appropriate care availability": 280698.83,
+    "IT advances": 3181397.65,
+    "Behavioral health": 327500.0
+   },
+   "categoryTotal": 76833916.1,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural \u201cHope Center\u201d",
+     "amount": 26370000.0
+    },
+    {
+     "name": "Initiative 2: Rural Community Health Hubs",
+     "amount": 49005.0
+    },
+    {
+     "name": "Initiative 2. Initiative 3: School-Based Health Centers Expansion",
+     "amount": 48750.0
+    },
+    {
+     "name": "Initiative 4: Food is Medicine Infrastructure",
+     "amount": 1648000.0
+    },
+    {
+     "name": "Initiative 6: Rural Provider and FQHC Value-Based Care Readiness",
+     "amount": 22135711.0
+    },
+    {
+     "name": "Initiative 8: Rural Delaware Diabetes Wellness Pilot Program",
+     "amount": 929615.0
+    },
+    {
+     "name": "Initiative 9: Delaware Medical School",
+     "amount": 16755416.0
+    },
+    {
+     "name": "Initiative 11: Rural Medical Residency Recruitment Program",
+     "amount": 140000.0
+    },
+    {
+     "name": "Initiative 14: Healthcare Workforce Data Center",
+     "amount": 1403494.13
+    },
+    {
+     "name": "Initiative 15: Statewide Health Information Technology Infrastructure for Real- Time Insurance Verification and Prior Authorizations",
+     "amount": 6550000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 803924.97
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.9994
+  },
+  "Florida": {
+   "putToWork": 1834280.0,
+   "categories": {
+    "Program administration": 1834280.0
+   },
+   "categoryTotal": 1834280.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 1834280.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Georgia": {
+   "putToWork": 218862169.63,
+   "categories": {
+    "Appropriate care availability": 80743311.28,
+    "Capital & infrastructure": 16584746.22,
+    "Program administration": 18104279.91,
+    "Behavioral health": 3151350.0,
+    "Fostering collaboration": 3189952.0,
+    "Innovative care": 258500.0,
+    "IT advances": 9524384.0,
+    "Prevention & chronic disease": 4133513.0,
+    "Training & technical assistance": 2472490.0,
+    "Consumer tech solutions": 22009014.0,
+    "Workforce": 55618000.0
+   },
+   "categoryTotal": 215789540.41,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Transforming for a Sustainable Health System in Rural Georgia",
+     "amount": 84960000.0
+    },
+    {
+     "name": "Initiative 2: Strengthening the Continuum of Care in Rural Georgia",
+     "amount": 16933333.0
+    },
+    {
+     "name": "Initiative 3: Connecting to Care to Improve Healthcare Access in Rural Georgia",
+     "amount": 17285813.5
+    },
+    {
+     "name": "Initiative 4: Growing a Highly Skilled Healthcare Workforce in Rural Georgia",
+     "amount": 37126730.0
+    },
+    {
+     "name": "Initiative 5: Leveraging Technology for Healthcare Innovations in Rural Georgia",
+     "amount": 56911013.22
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4794279.91
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.986
+  },
+  "Hawai\u2019i": {
+   "putToWork": 188892439.75,
+   "categories": {
+    "IT advances": 55557362.64,
+    "Appropriate care availability": 20160900.97,
+    "Behavioral health": 6500652.0,
+    "Consumer tech solutions": 2134639.0,
+    "Fostering collaboration": 6175997.0,
+    "Program administration": 9376016.84,
+    "Training & technical assistance": 3024278.0,
+    "Capital & infrastructure": 3945026.36,
+    "Prevention & chronic disease": 10347566.94,
+    "Provider payments": 1670000.0,
+    "Workforce": 45000000.0,
+    "Innovative care": 25000000.0
+   },
+   "categoryTotal": 188892439.75,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Health Information Network",
+     "amount": 45447889.0
+    },
+    {
+     "name": "Initiative 2: Pili Ola Telehealth Network",
+     "amount": 12501176.0
+    },
+    {
+     "name": "Initiative 3: Rural Infrastructure for Care Access (RICA)",
+     "amount": 52981063.75
+    },
+    {
+     "name": "Initiative 4: Hawai\u2019i Outreach for Medical Education in Rural Under-resourced Neighborhoods (HOME RUN)",
+     "amount": 45000000.0
+    },
+    {
+     "name": "programs from high school through the life span of their health careers. Initiative 5: Rural Respire Network (RRN)",
+     "amount": 3240000.0
+    },
+    {
+     "name": "Initiative 6: Rural Value-Based Innovation (RVBI) & AHEAD Readiness Fund",
+     "amount": 25000000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4722311.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Idaho": {
+   "putToWork": 430414.0,
+   "categories": {
+    "Program administration": 430414.0
+   },
+   "categoryTotal": 430414.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 430414.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Illinois": {
+   "putToWork": 165226823.0,
+   "categories": {
+    "Program administration": 2218558.0
+   },
+   "categoryTotal": 2218558.0,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Transforming Rural Healthcare Delivery - Hospital Transformation",
+     "amount": 10500000.0
+    },
+    {
+     "name": "Initiative 2: Transforming Rural Healthcare Delivery - Community Care Infrastructure",
+     "amount": 28500000.0
+    },
+    {
+     "name": "Initiative 3: Transforming Rural Healthcare Delivery - Hospital Disease Prevention",
+     "amount": 14000000.0
+    },
+    {
+     "name": "Initiative 4: Overcoming Geographic Barriers to Care \u2013 Emergency Medical Services (EMS) and Mobile Healthcare",
+     "amount": 34500000.0
+    },
+    {
+     "name": "Initiative 5: Overcoming Geographic Barriers to Care - Technological Innovation for Virtual Care",
+     "amount": 31008265.21
+    },
+    {
+     "name": "Initiative 6: Building a Resilient Rural Workforce - Healthcare Workforce Expansion",
+     "amount": 29000000.0
+    },
+    {
+     "name": "Initiative 7: Building a Resilient Rural Workforce - Training Healthcare Support Workers",
+     "amount": 11000000.0
+    },
+    {
+     "name": "Initiative 8: Building a Resilient Rural Workforce - Rural Health Education Pipeline",
+     "amount": 4500000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 2218558.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.0134
+  },
+  "Indiana": {
+   "putToWork": 202503451.57,
+   "categories": {
+    "Appropriate care availability": 31106805.8,
+    "Fostering collaboration": 81370.0,
+    "IT advances": 11463259.99,
+    "Training & technical assistance": 2500000.0,
+    "Prevention & chronic disease": 129341670.81,
+    "Workforce": 21356282.82,
+    "Program administration": 5330817.11
+   },
+   "categoryTotal": 201180206.53,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Growing Care Coordination: Medical Operations Coordination Center and Alternate Payment Model Feasibility Study",
+     "amount": 14050860.78
+    },
+    {
+     "name": "Initiative 2: Growing Community Connections through Indiana 211",
+     "amount": 635678.05
+    },
+    {
+     "name": "Initiative 3: Growing Improved Patient Outcomes Through Enhanced Interoperability and Technology",
+     "amount": 10908951.94
+    },
+    {
+     "name": "Initiative 4: Growing Pediatric & Obstetric Readiness in Rural Emergency Departments",
+     "amount": 13923352.57
+    },
+    {
+     "name": "Initiative 5: Growing Cardiometabolic Health Standards of Care in Rural Indiana",
+     "amount": 8545783.81
+    },
+    {
+     "name": "Initiative 6: Growing Access to Hospital Post-Discharge Medications",
+     "amount": 1822978.27
+    },
+    {
+     "name": "Initiative 7: Growing Specialty Provider Access through Expanded Teleconsult Capabilities",
+     "amount": 91676.0
+    },
+    {
+     "name": "Initiative 8: Growing Telehealth Access and Infrastructure",
+     "amount": 3717938.18
+    },
+    {
+     "name": "Initiative 9: Growing our Rural Health Paraprofessional Workforce",
+     "amount": 3151146.09
+    },
+    {
+     "name": "Initiative 10: Growing Clinical Training and Readiness",
+     "amount": 18074556.73
+    },
+    {
+     "name": "Initiative 11: Growing our Rural Behavioral Health Workforce",
+     "amount": 130580.0
+    },
+    {
+     "name": "Initiative 12: Make Rural Indiana Healthy Again Regional Grants",
+     "amount": 122119132.04
+    },
+    {
+     "name": "Program Operations",
+     "amount": 5330817.11
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.9935
+  },
+  "Iowa": {
+   "putToWork": 191784688.0,
+   "categories": {
+    "Appropriate care availability": 107313721.41,
+    "Behavioral health": 250000.0,
+    "Capital & infrastructure": 30237758.94,
+    "Fostering collaboration": 750000.0,
+    "Prevention & chronic disease": 9058788.0,
+    "Training & technical assistance": 6000000.0,
+    "Workforce": 18410000.0,
+    "Program administration": 6876456.42,
+    "Provider payments": 1123475.0,
+    "IT advances": 11764488.2
+   },
+   "categoryTotal": 191784687.97,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Hometown Connections",
+     "amount": 147536277.36
+    },
+    {
+     "name": "Initiative 2: Combat Cancer: Prevent and Treat",
+     "amount": 28556609.0
+    },
+    {
+     "name": "Initiative 3: Communities of Care",
+     "amount": 2029350.0
+    },
+    {
+     "name": "Initiative 4: Health Information Exchange",
+     "amount": 11812156.2
+    },
+    {
+     "name": "Initiative 5: Emergency Medical Service (EMS) Community Care Mobile",
+     "amount": 65900.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 1784395.33
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [
+    {
+     "label": "Capital Expenditures and Infrastructure",
+     "printed": "5,4967,800.72",
+     "usedBulletSum": 5467800.72
+    }
+   ],
+   "coverage": 1.0
+  },
+  "Kansas": {
+   "putToWork": 126958972.42,
+   "categories": {
+    "Appropriate care availability": 8466931.0,
+    "Behavioral health": 5376611.65,
+    "Capital & infrastructure": 2344470.0,
+    "Consumer tech solutions": 9970000.16,
+    "Provider payments": 17309176.84,
+    "Program administration": 9192559.14,
+    "Fostering collaboration": 414000.0,
+    "Innovative care": 114000.0,
+    "IT advances": 23852438.0,
+    "Training & technical assistance": 16110168.63,
+    "Workforce": 11431590.0,
+    "Prevention & chronic disease": 22377027.0
+   },
+   "categoryTotal": 126958972.42,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Expand Primary and Secondary Prevention Programs",
+     "amount": 24613105.73
+    },
+    {
+     "name": "Initiative 2: Secure Local Access to Primary Care",
+     "amount": 16059843.0
+    },
+    {
+     "name": "Initiative 3: Build a Sustainable Rural Health Workforce",
+     "amount": 12560915.63
+    },
+    {
+     "name": "Initiative 4: Enable Value-Based Care",
+     "amount": 40555479.0
+    },
+    {
+     "name": "Initiative 5: Harness Data and Technology",
+     "amount": 23977578.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 9192051.06
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Kentucky": {
+   "putToWork": 98312201.05,
+   "categories": {
+    "IT advances": 4314542.22,
+    "Prevention & chronic disease": 53789714.5,
+    "Appropriate care availability": 8187772.24,
+    "Program administration": 6856286.84,
+    "Behavioral health": 2949165.0,
+    "Innovative care": 6929214.0,
+    "Workforce": 3978937.0,
+    "Fostering collaboration": 350928.25,
+    "Training & technical assistance": 10955641.0
+   },
+   "categoryTotal": 98312201.05,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Community Hubs for Chronic Care Innovations",
+     "amount": 55443890.5
+    },
+    {
+     "name": "Initiative 2: PoWERing Rural Maternal and Infant Health: Community-Based Teams",
+     "amount": 3081558.5
+    },
+    {
+     "name": "Initiative 3: Rapid Response to Recovery: EmPATH Model, Mobile Crisis and Telehealth",
+     "amount": 2949165.0
+    },
+    {
+     "name": "Initiative 4: Rooted in Health: Kentucky Rural Dental Access Program",
+     "amount": 8985935.0
+    },
+    {
+     "name": "Initiative 5: From Crisis to Care: Integrated Emergency Medical Service (EMS) and Trauma Response",
+     "amount": 4453573.24
+    },
+    {
+     "name": "Program Operations",
+     "amount": 23398078.81
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Louisiana": {
+   "putToWork": 19164871.6,
+   "categories": {
+    "Consumer tech solutions": 5260011.0,
+    "Workforce": 6067575.8,
+    "Training & technical assistance": 6000000.0,
+    "Program administration": 1837284.8
+   },
+   "categoryTotal": 19164871.6,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Strengthen Health and Emergency Systems through Workforce Expansion and Integration",
+     "amount": 6566298.0
+    },
+    {
+     "name": "Initiative 2: Modernize Technology Infrastructure and Capacity for Efficiency and Care Coordination",
+     "amount": 9087392.0
+    },
+    {
+     "name": "Initiative 3: Reinforce Innovative, Outcomes-Based Care Delivery in Rural Areas",
+     "amount": 1673896.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 1837284.8
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Maine": {
+   "putToWork": 52132567.72,
+   "categories": {
+    "Behavioral health": 5209871.9,
+    "Fostering collaboration": 2446151.16,
+    "Innovative care": 10242874.0,
+    "Prevention & chronic disease": 5000000.0,
+    "Workforce": 16771743.3,
+    "Appropriate care availability": 178426.8,
+    "IT advances": 9403242.19,
+    "Program administration": 2630258.37,
+    "Training & technical assistance": 250000.0
+   },
+   "categoryTotal": 52132567.72,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Population Health: Promoting timely access to high-quality care",
+     "amount": 10890848.19
+    },
+    {
+     "name": "Initiative 2: Workforce: Strengthening Maine's rural health workforce",
+     "amount": 18358230.82
+    },
+    {
+     "name": "Initiative 3: Technology: Modernizing rural care delivery with digital health technology",
+     "amount": 17655278.13
+    },
+    {
+     "name": "Initiative 4: Access: Bridging the healthcare affordability gap for rural Mainers",
+     "amount": 525668.72
+    },
+    {
+     "name": "Initiative 5: Sustainable rural health ecosystems: Addressing financial instability of rural providers",
+     "amount": 2072283.49
+    },
+    {
+     "name": "Program Operations",
+     "amount": 2630258.37
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Maryland": {
+   "putToWork": 167198410.0,
+   "categories": {
+    "Capital & infrastructure": 14371505.0,
+    "IT advances": 13214202.0,
+    "Workforce": 22044096.0,
+    "Appropriate care availability": 53704908.0,
+    "Behavioral health": 9957981.0,
+    "Innovative care": 12432368.0,
+    "Provider payments": 25073203.0,
+    "Fostering collaboration": 791089.0,
+    "Prevention & chronic disease": 14720796.0,
+    "Program administration": 888262.0
+   },
+   "categoryTotal": 167198410.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Transform the Rural Health Workforce",
+     "amount": 24791720.0
+    },
+    {
+     "name": "Initiative 2: Promote Sustainable Access and Innovative Care for Rural Marylanders",
+     "amount": 126006543.0
+    },
+    {
+     "name": "Initiative 3: Empower Rural Marylanders to Eat for Health",
+     "amount": 15267339.0
+    },
+    {
+     "name": "Program Operations/Governance",
+     "amount": 1132808.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Massachusetts": {
+   "putToWork": 74605333.92,
+   "categories": {
+    "Appropriate care availability": 18337309.0,
+    "IT advances": 4950000.0,
+    "Prevention & chronic disease": 5000000.0,
+    "Training & technical assistance": 3040000.0,
+    "Behavioral health": 7877396.0,
+    "Workforce": 7500000.0,
+    "Fostering collaboration": 3963000.0,
+    "Innovative care": 3000000.0,
+    "Provider payments": 6209880.0,
+    "Program administration": 14727748.92
+   },
+   "categoryTotal": 74605333.92,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Population Health Advancement Initiative",
+     "amount": 11725000.0
+    },
+    {
+     "name": "Initiative 2: Innovation in Rural Care Models",
+     "amount": 12356820.0
+    },
+    {
+     "name": "Initiative 4: Healthy Rural Communities",
+     "amount": 9575309.0
+    },
+    {
+     "name": "Initiative 5: Emergency Medical System (EMS) Service Integration Initiative",
+     "amount": 11209880.0
+    },
+    {
+     "name": "Initiative 6: Enhancing Technology Interoperability and Connectivity Initiative",
+     "amount": 2500000.0
+    },
+    {
+     "name": "Initiative 7: Facility Modernization and Re-Use Initiative",
+     "amount": 5010576.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 14727748.92
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Michigan": {
+   "putToWork": 13336877.0,
+   "categories": {
+    "Fostering collaboration": 9290877.0,
+    "Workforce": 250000.0,
+    "IT advances": 600000.0,
+    "Program administration": 3196000.0
+   },
+   "categoryTotal": 13336877.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Transforming Rural Health through Partnerships",
+     "amount": 2625000.0
+    },
+    {
+     "name": "Initiative 2: Workforce for Wellness",
+     "amount": 250000.0
+    },
+    {
+     "name": "Initiative 3: Interoperability in Action",
+     "amount": 600000.0
+    },
+    {
+     "name": "Initiative 4: Care Closer to Home Blueprint Initiative",
+     "amount": 6000000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 3861877.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Minnesota": {
+   "putToWork": 20881682.14,
+   "categories": {
+    "Prevention & chronic disease": 612070.0,
+    "Workforce": 1566821.0,
+    "Appropriate care availability": 256411.0,
+    "Behavioral health": 741654.0,
+    "Provider payments": 9500000.0,
+    "Capital & infrastructure": 1488337.0,
+    "Innovative care": 399603.0,
+    "IT advances": 1605565.0,
+    "Program administration": 4711221.14
+   },
+   "categoryTotal": 20881682.14,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Community-Based Preventive Care and Chronic Disease Management",
+     "amount": 612070.0
+    },
+    {
+     "name": "Initiative 2: Recruit and Retain Talent in Rural Communities",
+     "amount": 1566821.0
+    },
+    {
+     "name": "Initiative 3: Sustain Access to Services to Keep Care Closer to Home",
+     "amount": 179710.0
+    },
+    {
+     "name": "Initiative 4: Create Regional Care Models to Improve Whole Person Health",
+     "amount": 10318355.0
+    },
+    {
+     "name": "Initiative 5: Invest in Technology, Infrastructure, and Collaboration for Financial Viability",
+     "amount": 3493505.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4711221.14
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Mississippi": {
+   "putToWork": 94423464.51,
+   "categories": {
+    "Program administration": 12723464.51,
+    "IT advances": 49400000.0,
+    "Training & technical assistance": 3800000.0,
+    "Capital & infrastructure": 28500000.0
+   },
+   "categoryTotal": 94423464.51,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Statewide Rural Health Assessment",
+     "amount": 650000.0
+    },
+    {
+     "name": "Initiative 2: Coordinated Regional Integrated Systems (CRIS) Initiative",
+     "amount": 2000000.0
+    },
+    {
+     "name": "Initiative 3: Workforce Expansion Initiative (WEI)",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 4: Health Technology Advancement and Modernization (HTAM) Initiative",
+     "amount": 47500000.0
+    },
+    {
+     "name": "Initiative 5: Telehealth Adoption and Provider Support (TAPS) Initiative",
+     "amount": 5700000.0
+    },
+    {
+     "name": "Initiative 6: Building Rural Infrastructure for Delivery, Growth, and Efficiency (BRIDGE) Initiative",
+     "amount": 28500000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 10073464.51
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Missouri": {
+   "putToWork": 106330417.49,
+   "categories": {
+    "Appropriate care availability": 34331501.35,
+    "Program administration": 2568961.41,
+    "Innovative care": 976881.48,
+    "IT advances": 24422037.0,
+    "Training & technical assistance": 24781304.43,
+    "Workforce": 5568224.4,
+    "Fostering collaboration": 22901149.62
+   },
+   "categoryTotal": 115550059.69,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Regional Coordinating Networks and Hub Activation",
+     "amount": 36161501.35
+    },
+    {
+     "name": "Initiative 3: Digital Backbone",
+     "amount": 35156194.48
+    },
+    {
+     "name": "Initiative 4: Rural Health Workforce Programs",
+     "amount": 5568224.4
+    },
+    {
+     "name": "Initiative 5: Provider Transformation",
+     "amount": 6720535.85
+    },
+    {
+     "name": "Program Operations",
+     "amount": 22723961.41
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0867
+  },
+  "Montana": {
+   "putToWork": 41761906.5,
+   "categories": {
+    "Workforce": 23248403.0,
+    "Consumer tech solutions": 946800.0,
+    "Innovative care": 202412.5,
+    "Training & technical assistance": 1725000.0,
+    "Prevention & chronic disease": 120000.0,
+    "IT advances": 2425637.0,
+    "Fostering collaboration": 163550.0,
+    "Program administration": 1988350.67
+   },
+   "categoryTotal": 30820153.17,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Develop Workforce Through Recruitment, Training, and Retention",
+     "amount": 22093078.0
+    },
+    {
+     "name": "Initiative 2: Ensure Rural Facility Sustainability and Access Through Partnership and Restructuring",
+     "amount": 946800.0
+    },
+    {
+     "name": "Initiative 3: Launch innovative Care Delivery and Payment Models",
+     "amount": 1927412.5
+    },
+    {
+     "name": "Initiative 4: Invest in Community Health and Preventive Infrastructure",
+     "amount": 1275325.0
+    },
+    {
+     "name": "Initiative 5: Deploy Modern Health Care Technologies to Guide Rural Health Interventions",
+     "amount": 2425637.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 1727664.86
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.738
+  },
+  "Nebraska": {
+   "putToWork": 128089294.68,
+   "categories": {
+    "Capital & infrastructure": 8669901.57,
+    "Consumer tech solutions": 2412201.96,
+    "Fostering collaboration": 3532483.76,
+    "Prevention & chronic disease": 41352891.09,
+    "Program administration": 5140387.69,
+    "Training & technical assistance": 6145384.46,
+    "Appropriate care availability": 5533546.71,
+    "IT advances": 35908581.12,
+    "Workforce": 5954744.99,
+    "Behavioral health": 7568563.46,
+    "Innovative care": 1022373.87,
+    "Provider payments": 4848234.0
+   },
+   "categoryTotal": 128089294.68,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Make Rural Nebraska Healthy Again Through Food as Medicine",
+     "amount": 14012772.7
+    },
+    {
+     "name": "Initiative 2: Regionalized Rural Access and Navigation",
+     "amount": 23312922.73
+    },
+    {
+     "name": "Initiative 3: Rural Workforce Acceleration",
+     "amount": 1880324.0
+    },
+    {
+     "name": "Initiative 4: eHealth and Mobile",
+     "amount": 51265177.63
+    },
+    {
+     "name": "Initiative 5: Rural Emergency Behavioral Health",
+     "amount": 10688840.13
+    },
+    {
+     "name": "Initiative 6: Assisted Living Facility (ALF) Special Needs Population Incentive Model",
+     "amount": 5535484.0
+    },
+    {
+     "name": "Initiative 7: Nebraska Rural Health Technology Catalyst Fund and Partnership Initiative (NETECH)",
+     "amount": 20000000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 5535484.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Nevada": {
+   "putToWork": 2376546.26,
+   "categories": {
+    "Program administration": 2334546.26
+   },
+   "categoryTotal": 2334546.26,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Health Outcomes Accelerator Program",
+     "amount": 234220.0
+    },
+    {
+     "name": "Initiative 3: Workforce Recruitment & Rural Access Program",
+     "amount": 234220.0
+    },
+    {
+     "name": "Initiative 4: Rural Health Innovation & Technology (RHIT) Grant",
+     "amount": 538000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 1370106.26
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.9823
+  },
+  "New Hampshire": {
+   "putToWork": 204016550.2,
+   "categories": {
+    "Consumer tech solutions": 4772695.5,
+    "Fostering collaboration": 25491856.38,
+    "Prevention & chronic disease": 7182896.61,
+    "Appropriate care availability": 12628209.97,
+    "Capital & infrastructure": 40803309.99,
+    "Behavioral health": 6000000.0,
+    "Workforce": 15000000.0,
+    "IT advances": 19940939.25,
+    "Training & technical assistance": 7500000.0,
+    "Innovative care": 1892505.0,
+    "Program administration": 20401655.0
+   },
+   "categoryTotal": 161614067.7,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Population Health",
+     "amount": 14455592.11
+    },
+    {
+     "name": "Initiative 2: Rural Healthcare Access",
+     "amount": 74670900.78
+    },
+    {
+     "name": "Initiative 3: Rural Workforce Recruitment and Retention",
+     "amount": 34601103.33
+    },
+    {
+     "name": "Initiative 4: Rural Health Technology",
+     "amount": 29940939.25
+    },
+    {
+     "name": "Initiative 5: Rural Financial Solvency",
+     "amount": 29946359.73
+    },
+    {
+     "name": "Program Operations",
+     "amount": 20401655.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.7922
+  },
+  "New Jersey": {
+   "putToWork": 79181620.49,
+   "categories": {
+    "Fostering collaboration": 870510.0,
+    "Prevention & chronic disease": 16937232.73,
+    "Program administration": 6685273.76,
+    "Workforce": 20712268.0,
+    "Capital & infrastructure": 1886361.0,
+    "IT advances": 24215794.0,
+    "Consumer tech solutions": 2465696.0,
+    "Provider payments": 3388987.0,
+    "Behavioral health": 1538078.0,
+    "Training & technical assistance": 481420.0
+   },
+   "categoryTotal": 79181620.49,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Building the workforce we need to care for rural New Jerseyans",
+     "amount": 24719971.0
+    },
+    {
+     "name": "Initiative 2: Targeted Infrastructure Investments to Transform Care for Rural New Jerseyans",
+     "amount": 18577034.0
+    },
+    {
+     "name": "Initiative 3: Investing in Technologies That Bring Care to Where People Live",
+     "amount": 14528221.0
+    },
+    {
+     "name": "Initiative 4: Focusing on Preventive Health Interventions for Rural New Jerseyans",
+     "amount": 12589147.72
+    },
+    {
+     "name": "Initiative 5: Helping Rural New Jerseyans Improve Chronic Disease Outcomes",
+     "amount": 3788709.01
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4978537.76
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "New Mexico": {
+   "putToWork": 754753.95,
+   "categories": {
+    "Program administration": 754753.95
+   },
+   "categoryTotal": 754753.95,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 754753.95
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "New York": {
+   "putToWork": 0.0,
+   "categories": {},
+   "categoryTotal": 0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Community Health Integration",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 2: Strengthening Rural Health",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 3: Rural Roots: Workforce",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 4: Investments in Cybersecurity & Technology",
+     "amount": 0.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": null
+  },
+  "North Carolina": {
+   "putToWork": 167718439.45,
+   "categories": {
+    "Fostering collaboration": 78499608.0,
+    "Prevention & chronic disease": 10225000.0,
+    "Behavioral health": 10000000.0,
+    "Workforce": 34794450.0,
+    "Innovative care": 3499998.0,
+    "Program administration": 3296425.0,
+    "IT advances": 27402958.45
+   },
+   "categoryTotal": 167718439.45,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Build Rural Community Care Network \"Hubs\"",
+     "amount": 78000000.0
+    },
+    {
+     "name": "Initiative 2: Create Models & Capacity for Expanded Primary Care, Prevention, and Chronic Disease",
+     "amount": 7225000.0
+    },
+    {
+     "name": "Initiative 3: Expand and Integrate Behavioral Health and Substance Use Disorder Services",
+     "amount": 10000000.0
+    },
+    {
+     "name": "Initiative 4: Build a Robust & Resilient Workforce & Innovative Care Team Models for Rural Communities",
+     "amount": 34794450.0
+    },
+    {
+     "name": "Initiative 5: Ensure Fiscal Sustainability of Rural Health Providers Through Innovative Financial Models",
+     "amount": 3899998.0
+    },
+    {
+     "name": "Initiative 6: Modernize Rural Care Delivery Through Digital Forward Solutions",
+     "amount": 27402958.45
+    },
+    {
+     "name": "Program Operations",
+     "amount": 6396033.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "North Dakota": {
+   "putToWork": 11242063.1,
+   "categories": {
+    "Workforce": 6692080.58,
+    "Program administration": 1182655.65,
+    "Prevention & chronic disease": 2186222.96,
+    "Appropriate care availability": 411620.0,
+    "Fostering collaboration": 552410.51,
+    "IT advances": 217073.4
+   },
+   "categoryTotal": 11242063.1,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Strengthen and Stabilize Rural Health Workforce",
+     "amount": 7380015.52
+    },
+    {
+     "name": "Initiative 2: Make North Dakota Healthy Again | Preventive Care, Healthy Eating",
+     "amount": 1591753.68
+    },
+    {
+     "name": "Initiative 3: Bring High-Quality Health Care Closer to Home",
+     "amount": 1282782.0
+    },
+    {
+     "name": "Initiative 4: Connect Tech, Data and Providers for a Stronger North Dakota",
+     "amount": 217073.4
+    },
+    {
+     "name": "Program Operations",
+     "amount": 770438.5
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Ohio": {
+   "putToWork": 26545567.0,
+   "categories": {
+    "Program administration": 2090564.0
+   },
+   "categoryTotal": 2090564.0,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Ohio Rural School Based Health Centers (SBHCs)",
+     "amount": 4005003.0
+    },
+    {
+     "name": "Initiative 5: Rural Health Workforce Pipeline and Development Projects",
+     "amount": 12300000.0
+    },
+    {
+     "name": "Initiative 6: Maternal and Infant Wellness Home Visiting in Rural Ohio",
+     "amount": 7000000.0
+    },
+    {
+     "name": "Initiative 8: Electronic Medical Record Access for Pharmacies",
+     "amount": 1150000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 2090564.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 0.0788
+  },
+  "Oklahoma": {
+   "putToWork": 140294829.68,
+   "categories": {
+    "Appropriate care availability": 5119358.0,
+    "Behavioral health": 250000.0,
+    "Fostering collaboration": 3250000.0,
+    "Innovative care": 60942600.0,
+    "Prevention & chronic disease": 34242174.01,
+    "Training & technical assistance": 6461934.0,
+    "Capital & infrastructure": 608684.67,
+    "Consumer tech solutions": 250000.0,
+    "IT advances": 16854361.0,
+    "Workforce": 713532.0,
+    "Program administration": 11602186.0
+   },
+   "categoryTotal": 140294829.68,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Innovating Care Models",
+     "amount": 15296292.0
+    },
+    {
+     "name": "Initiative 2: Moving Upstream",
+     "amount": 10531631.02
+    },
+    {
+     "name": "Initiative 3: Facilitating Regional Collaboration",
+     "amount": 43538960.66
+    },
+    {
+     "name": "Initiative 4: Shifting to Value",
+     "amount": 19060000.0
+    },
+    {
+     "name": "Initiative 5: Growing the Next Generation of Rural Talent",
+     "amount": 22991799.0
+    },
+    {
+     "name": "Initiative 6: Building Health Data Utility",
+     "amount": 16023961.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 12852186.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Oregon": {
+   "putToWork": 102723439.06,
+   "categories": {
+    "Appropriate care availability": 14986042.15,
+    "Fostering collaboration": 9069669.23,
+    "Prevention & chronic disease": 16744856.43,
+    "Provider payments": 5454471.01,
+    "Behavioral health": 12180205.91,
+    "Capital & infrastructure": 4476390.46,
+    "Consumer tech solutions": 2613368.79,
+    "Innovative care": 1904191.37,
+    "IT advances": 18791287.91,
+    "Workforce": 15858263.75,
+    "Training & technical assistance": 644692.05,
+    "Program administration": 0.0
+   },
+   "categoryTotal": 102723439.06,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Regional Partnerships & System Transformation",
+     "amount": 2568677.09
+    },
+    {
+     "name": "Initiative 2: Healthy Communities & Prevention",
+     "amount": 47591464.95
+    },
+    {
+     "name": "Initiative 3: Workforce Capacity & Resilience",
+     "amount": 17173772.71
+    },
+    {
+     "name": "Initiative 4: Technology & Data Modernization",
+     "amount": 18411864.54
+    },
+    {
+     "name": "Initiative 5: Tribal",
+     "amount": 16977659.77
+    },
+    {
+     "name": "Program Operations",
+     "amount": 0.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Pennsylvania": {
+   "putToWork": 123081435.59,
+   "categories": {
+    "Appropriate care availability": 31134355.08,
+    "Capital & infrastructure": 29742840.72,
+    "Consumer tech solutions": 1227545.0,
+    "Prevention & chronic disease": 1674865.0,
+    "Behavioral health": 9082930.39,
+    "IT advances": 6705996.8,
+    "Training & technical assistance": 3673149.38,
+    "Program administration": 7218887.21,
+    "Workforce": 31820866.01,
+    "Fostering collaboration": 800000.0
+   },
+   "categoryTotal": 123081435.59,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Maternal Health",
+     "amount": 2669615.0
+    },
+    {
+     "name": "Initiative 2: Behavioral Health",
+     "amount": 7745484.72
+    },
+    {
+     "name": "Initiative 3: Aging and Access",
+     "amount": 9508157.67
+    },
+    {
+     "name": "Initiative 4: EMS-Transportation",
+     "amount": 14322964.8
+    },
+    {
+     "name": "Initiative 5: Technology and Infrastructure",
+     "amount": 43232013.8
+    },
+    {
+     "name": "Initiative 6: Workforce",
+     "amount": 42843718.34
+    },
+    {
+     "name": "Program Operations",
+     "amount": 2759481.26
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Rhode Island": {
+   "putToWork": 114158926.1,
+   "categories": {
+    "Appropriate care availability": 45393988.8,
+    "Fostering collaboration": 6792759.46,
+    "Prevention & chronic disease": 6431997.73,
+    "Program administration": 6104124.73,
+    "Behavioral health": 4579437.7,
+    "Provider payments": 20421806.25,
+    "Capital & infrastructure": 6574716.18,
+    "Innovative care": 17857695.23,
+    "IT advances": 1200.0,
+    "Training & technical assistance": 1200.0
+   },
+   "categoryTotal": 114158926.08,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Integrated Rural Population Health Infrastructure",
+     "amount": 4505481.9
+    },
+    {
+     "name": "Initiative 2: Rural Community-Integrated and Mobile Health Services",
+     "amount": 7358864.29
+    },
+    {
+     "name": "Initiative 3: Expanding Access to Rural Community Resources",
+     "amount": 336273.14
+    },
+    {
+     "name": "Initiative 4: Rural EMS Health Access and Integration",
+     "amount": 9483674.9
+    },
+    {
+     "name": "Initiative 5: Rural Hospital-at-Home Program",
+     "amount": 16977363.81
+    },
+    {
+     "name": "Initiative 6: Expanding Behavioral Health Services Availability in Rural Regions",
+     "amount": 11127594.07
+    },
+    {
+     "name": "Initiative 7: Strengthening Rural Oral Health Delivery Through Innovation and Integration",
+     "amount": 2711136.27
+    },
+    {
+     "name": "Initiative 8: Building Capacity for Block Island Health and Human Services",
+     "amount": 2955200.36
+    },
+    {
+     "name": "Initiative 9: Modernizing Health Care Delivery for the Narragansett Indian Tribe",
+     "amount": 1111986.3
+    },
+    {
+     "name": "Initiative 10: Rural Workforce Program",
+     "amount": 24611603.29
+    },
+    {
+     "name": "Initiative 11: Supporting Hospitals and Primary Care in Value-Based Payment Transition",
+     "amount": 31941308.01
+    },
+    {
+     "name": "Initiative 12: Rural Health Information Technology Modernization Program",
+     "amount": 948351.1
+    },
+    {
+     "name": "Initiative 13: Rural Health Data and Workforce Tracking System",
+     "amount": 90088.66
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "South Carolina": {
+   "putToWork": 26499268.94,
+   "categories": {
+    "Program administration": 21473816.62,
+    "Innovative care": 5025452.32
+   },
+   "categoryTotal": 26499268.94,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 2: Leveling Up",
+     "amount": 6914683.31
+    },
+    {
+     "name": "Initiative 3: Wellness Within Reach",
+     "amount": 10000000.0
+    },
+    {
+     "name": "Initiative 5: Tech Catalyst Fund",
+     "amount": 5025452.32
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4559133.31
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "South Dakota": {
+   "putToWork": 12183935.0,
+   "categories": {
+    "Program administration": 11636684.18,
+    "Appropriate care availability": 347743.98,
+    "Fostering collaboration": 199506.5
+   },
+   "categoryTotal": 12183934.66,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Connect Technology and Data for a Healthier South Dakota",
+     "amount": 1462802.25
+    },
+    {
+     "name": "Initiative 3: Expand and Strengthen Rural Community Health Worker Workforce",
+     "amount": 399013.0
+    },
+    {
+     "name": "Initiative 5: Medicaid Primary Accountable Care Transformation",
+     "amount": 62500.0
+    },
+    {
+     "name": "Initiative 6: Medicaid Rural Health Access and Quality Grants",
+     "amount": 125000.0
+    },
+    {
+     "name": "Initiative 8: Regional Maternal and Infant Health Hubs",
+     "amount": 651237.48
+    },
+    {
+     "name": "Initiative 9: Integrated Behavioral Health through CCBHC & Collaborative Care",
+     "amount": 62500.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 9420881.93
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Tennessee": {
+   "putToWork": 31259549.59,
+   "categories": {
+    "Appropriate care availability": 5903433.19,
+    "Program administration": 1484515.08,
+    "Fostering collaboration": 25350.38,
+    "Capital & infrastructure": 700000.0,
+    "Workforce": 81034.74,
+    "Consumer tech solutions": 13440.0,
+    "Prevention & chronic disease": 240588.97,
+    "Innovative care": 20350000.0,
+    "IT advances": 2377962.73
+   },
+   "categoryTotal": 31176325.09,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 3: Optimizing Rural Health Care - Direct Access to public health, primary care, and dental services for the uninsured",
+     "amount": 865693.08
+    },
+    {
+     "name": "Initiative 4: Memory Care Assessment Network - Expanded rural access to ADRD Care through a hub-and-spoke model",
+     "amount": 8663.19
+    },
+    {
+     "name": "Initiative 5: Rural Capacity Building - Targeting Efficiency to Improve Access to Leadership Skills and Specialty Services",
+     "amount": 2460000.0
+    },
+    {
+     "name": "Initiative 7: HRP: Maternal and Child Health - Building a safer start for every mother and child in rural Tennessee",
+     "amount": 3876183.52
+    },
+    {
+     "name": "Initiative 8: Value-Based Payment: Maternal, Hospitals, Dental  - Catalyzing Rural Health Value Based Payment Models",
+     "amount": 20680000.0
+    },
+    {
+     "name": "Initiative 10: Rural Health Improvement Grants - Competitive grants for locally led-upstream prevention, nutrition, and active living",
+     "amount": 16838.42
+    },
+    {
+     "name": "Initiative 13: Statewide Health Information Exchange (HIE) - Developing a statewide Health Information Exchange",
+     "amount": 2169636.8
+    },
+    {
+     "name": "Initiative 14: TN Community Compass (TNCC) - Expansion of Tennessee\u2019s successful Closed Loop Referral System (CLRS)",
+     "amount": 7401.9
+    },
+    {
+     "name": "Initiative 16: Statewide eConsult Platform - Establish Statewide eConsult Platform to Improve Specialty Access for Safety Net",
+     "amount": 208325.93
+    },
+    {
+     "name": "Initiative 17: Comprehensive Health Workforce Pipeline - Building a Comprehensive Rural Health Workforce Pipeline",
+     "amount": 72680.59
+    },
+    {
+     "name": "Program Operations",
+     "amount": 833224.5
+    }
+   ],
+   "unmatched": [
+    {
+     "label": "Location - Activating Sustainable Service Lines in Rural Hospital and Healthcare Facilities",
+     "amount": 4524.91
+    },
+    {
+     "label": "Tennessee\u2019s rural emergency care infrastructure and bring integrated health services directly to residents in hard-to-reach areas",
+     "amount": 56376.75
+    }
+   ],
+   "cmsTypos": [],
+   "coverage": 0.9973
+  },
+  "Texas": {
+   "putToWork": 53288872.67,
+   "categories": {
+    "Prevention & chronic disease": 24750000.0,
+    "Workforce": 2389223.0,
+    "Capital & infrastructure": 20000000.0,
+    "Program administration": 6149649.67
+   },
+   "categoryTotal": 53288872.67,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 4: The Next Generation of the Small Town Doctor and Team",
+     "amount": 2389223.0
+    },
+    {
+     "name": "Initiative 6: Infrastructure and Capital Improvement for Rural Texas",
+     "amount": 20000000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 6149649.67
+    }
+   ],
+   "unmatched": [
+    {
+     "label": "Initiative1: Make Rural Texans Healthy Again",
+     "amount": 24750000.0
+    }
+   ],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Utah": {
+   "putToWork": 75041969.16,
+   "categories": {
+    "Capital & infrastructure": 9915000.0,
+    "Fostering collaboration": 2175000.0,
+    "Prevention & chronic disease": 13089966.8,
+    "Program administration": 6327426.36,
+    "Innovative care": 14597576.0,
+    "Workforce": 4106700.0,
+    "IT advances": 24830300.0
+   },
+   "categoryTotal": 75041969.16,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 2: Rural Incentive and Skill Expansion (RISE)",
+     "amount": 7252218.2
+    },
+    {
+     "name": "Initiative 3: Sustaining Health Infrastructure for Transformation (SHIFT)",
+     "amount": 12835000.0
+    },
+    {
+     "name": "Initiative 5: Leveraging Innovation for Facilitated Telehealth (LIFT)",
+     "amount": 26500000.0
+    },
+    {
+     "name": "Initiative 7: Leveraging Interoperability Networks to Connect Services (LINCS)",
+     "amount": 41204.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 3495244.42
+    }
+   ],
+   "unmatched": [
+    {
+     "label": "Initiative1: Making Rural Utahns Healthy: Preventive Action and Transformation for Health (PATH)",
+     "amount": 24918302.54
+    }
+   ],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Vermont": {
+   "putToWork": 28369910.31,
+   "categories": {
+    "Appropriate care availability": 2117929.86,
+    "Behavioral health": 3238788.17,
+    "Prevention & chronic disease": 1282675.97,
+    "IT advances": 4073441.98,
+    "Training & technical assistance": 1444524.75,
+    "Workforce": 9631692.55,
+    "Fostering collaboration": 2635000.0,
+    "Program administration": 3945857.03
+   },
+   "categoryTotal": 28369910.31,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Regionalization and Innovative Care Strategies",
+     "amount": 6549054.0
+    },
+    {
+     "name": "Initiative 2: Establishing a Clinically Integrated Network of Shared Services",
+     "amount": 4073441.98
+    },
+    {
+     "name": "Initiative 4: Health Care Workforce Development",
+     "amount": 11166557.3
+    },
+    {
+     "name": "Initiative 5: Price Transparency and Insurance Competition",
+     "amount": 2635000.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 3945857.03
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Virginia": {
+   "putToWork": 126585461.34,
+   "categories": {
+    "Consumer tech solutions": 21761410.0,
+    "IT advances": 25965319.0,
+    "Training & technical assistance": 14837326.0,
+    "Workforce": 30663806.0,
+    "Appropriate care availability": 22041147.0,
+    "Prevention & chronic disease": 3709332.0,
+    "Program administration": 7607121.34
+   },
+   "categoryTotal": 126585461.34,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: CareIQ",
+     "amount": 50694195.0
+    },
+    {
+     "name": "Initiative 2: Homegrown Health Heroes",
+     "amount": 20772256.0
+    },
+    {
+     "name": "Initiative 3: Connected Care, Closer to Home",
+     "amount": 31932697.0
+    },
+    {
+     "name": "Initiative 4: Live Well, Together",
+     "amount": 15579192.0
+    },
+    {
+     "name": "Program Operations",
+     "amount": 7607121.34
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Washington": {
+   "putToWork": 122687472.42,
+   "categories": {
+    "Innovative care": 56312994.0,
+    "Prevention & chronic disease": 2753078.93,
+    "Workforce": 48689706.37,
+    "Fostering collaboration": 2677608.0,
+    "Training & technical assistance": 2570400.0,
+    "Behavioral health": 4868160.0,
+    "Program administration": 8906685.58
+   },
+   "categoryTotal": 126778632.88,
+   "reconciles": false,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Ignite Innovation in Washington\u2019s Rural Hospitals",
+     "amount": 49565694.0
+    },
+    {
+     "name": "Initiative 2: Prevent Disease and Manage Care in Community Settings",
+     "amount": 18676793.24
+    },
+    {
+     "name": "Initiative 3: Invest in the Health of Native Families",
+     "amount": 2677608.0
+    },
+    {
+     "name": "Initiative 4: Adopt Technology and Data Solutions to Enable Health Improvements",
+     "amount": 6747300.0
+    },
+    {
+     "name": "Initiative 5: Develop Washington\u2019s Rural Workforce to Support Rural Communities",
+     "amount": 32589979.8
+    },
+    {
+     "name": "Initiative 6: Expand and Sustain Washington\u2019s Rural Behavioral Health System",
+     "amount": 7614572.26
+    },
+    {
+     "name": "Program Operations",
+     "amount": 4815525.12
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0333
+  },
+  "West Virginia": {
+   "putToWork": 0.0,
+   "categories": {},
+   "categoryTotal": 0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Connected Care Grid",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 2: Rural Health Link",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 3: Mountain State Care Force",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 4: Smart Care Catalyst",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 5: Health to Prosperity Pipeline",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 6: Personal Health Accelerator",
+     "amount": 0.0
+    },
+    {
+     "name": "Initiative 7: HealthTech Appalachia",
+     "amount": 0.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": null
+  },
+  "Wisconsin": {
+   "putToWork": 75339160.67,
+   "categories": {
+    "Behavioral health": 345498.04,
+    "Capital & infrastructure": 611471.65,
+    "Workforce": 59050586.0,
+    "Program administration": 2355507.07,
+    "Consumer tech solutions": 5148000.0,
+    "IT advances": 2670165.03,
+    "Innovative care": 4904404.53,
+    "Prevention & chronic disease": 253528.35
+   },
+   "categoryTotal": 75339160.67,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Initiative 1: Rural Talent Recruitment and Retention",
+     "amount": 59190153.44
+    },
+    {
+     "name": "Initiative 2: Interoperability Infrastructure and Modernization",
+     "amount": 7818165.03
+    },
+    {
+     "name": "Initiative 3: Population Health Infrastructure",
+     "amount": 5567370.15
+    },
+    {
+     "name": "Program Operations",
+     "amount": 2763472.05
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  },
+  "Wyoming": {
+   "putToWork": 1867792.0,
+   "categories": {
+    "Program administration": 1867792.0
+   },
+   "categoryTotal": 1867792.0,
+   "reconciles": true,
+   "initiatives": [
+    {
+     "name": "Program Operations",
+     "amount": 1867792.0
+    }
+   ],
+   "unmatched": [],
+   "cmsTypos": [],
+   "coverage": 1.0
+  }
+ }
+}
