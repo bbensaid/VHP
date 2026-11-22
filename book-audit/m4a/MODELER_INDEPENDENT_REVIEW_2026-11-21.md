@@ -194,3 +194,24 @@ Lens A therefore misstates 8 of 14 hospitals, and the CAH badge on the table doe
 15. Add a Medicaid-share input (or a sensitivity row) so the Medicaid bias is quantified, not just named.
 16. Use hospital-level commercial prices if GMCB/RAND per-hospital files are saved. RAND's 148–321% spread dominates the redistribution results.
 17. In lens B, say that "other operating revenue" ($690M system-wide) is netted in, and that provider tax is treated as an allowable cost.
+
+---
+
+## Disposition (HTR, 2026-11-22) — every claim re-checked against the sources before acting
+
+| # | Item | Outcome |
+|---|---|---|
+| M1 | Revenue-neutral rate vs default uncompensated-care toggle | FIXED: `revenueNeutralRatePct(R, hospitals, payUncompensated)`; neutral = 146.8% (R=283) when uncompensated care is paid; test added |
+| M2 | Critical access hospitals paid at cost by Medicare | FIXED: sourced to CMS MLN006400 (Dec 2025, archived); optional "pay CAHs at cost" toggle (off by default); caveat on page; test added |
+| M3 | Capital / depreciation | FIXED: lens B labelled an upper bound (§611(b)(3) excludes capital; GMCB expense includes depreciation) on the page and in course lesson 16 |
+| M4 | Lens B presented as S.1506's result | FIXED: page states negotiation is against Medicare PPS rates (§611(c)); simplification, not prediction |
+| M5 | 289% period | FIXED: 2018–Q3 2023 (RBP report l.91-92) in presets and course lesson 15 |
+| M6 | "Six hospitals" | CONFIRMED unsourced (CMS letter 2026-07-07 and GCR 26-089 give no count). Removed from Modeler, course (4 tracks), memo, and book Ch3 §3.3.3 |
+| S7 | NPR definition (FPP $193M; commercial excl. MA, incl. WC/Tricare/ChampVA) | FIXED: stated in assumptions |
+| S8 | NMC basis gap ($86.7M submitted vs $68.9M approved) | FIXED: stated in assumptions |
+| S9 | 453% preset comparability | FIXED: labelled "not like-for-like" with the 503% vs 311% outpatient comparison |
+| S10 | Bias directions | FIXED: professional (226%) and Medicaid directions stated |
+| S11 | Use GMCB p.25 operating income instead of rounded margins | LEFT: effect ≈ $0.5M at UVMMC (<0.1% of revenue); noted for a later pass |
+| S12 | Global-budget % denominator | FIXED: totals() divides by NPR of modeled hospitals only |
+| S13 | Tests | PARTLY: NPR totals vs press release and both new behaviours tested (12 tests); expense substring-match test left as is |
+| Nice-to-have | — | Not done in this pass |
