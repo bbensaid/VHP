@@ -27,7 +27,34 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
 export default async function RhtStatePage({ params }: { params: Promise<{ state: string }> }) {
   const s = rhtState((await params).state);
   if (!s) return notFound();
-  if (s.slug === "vermont") return <VermontYear1Review />;
+  if (s.slug === "vermont") {
+    const vc = compareFor("vermont")!;
+    return (
+      <>
+        <VermontYear1Review />
+        <div className="max-w-5xl mx-auto px-6 pb-12" id="compare-vermont">
+          <Section label="Vermont against the other 49 states" title="The same CMS yardsticks every state page uses">
+            <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-disc pl-5 max-w-4xl">
+              {stateReadout(vc).map((t, i) => <li key={i}>{t}</li>)}
+            </ul>
+            <div className="mt-6">{vc.categorized > 0 ? <StateCategoryBars c={vc} /> : null}</div>
+            <div className="mt-4 grid md:grid-cols-[10rem_1fr] items-center gap-3">
+              <div className="text-xs font-black uppercase tracking-widest text-slate-500">Five-pillar mix (HTR analysis)</div>
+              <PillarBar dollars={vc.pillarDollars} height="h-4" />
+            </div>
+            <div className="mt-2"><PillarLegend /></div>
+            <div className="mt-6"><ThemeChips c={vc} /></div>
+            <SourceNote>
+              Computed from <Ext href={CMS_DOCS.obligated.url}>{CMS_DOCS.obligated.label}</Ext>, <Ext href={CMS_DOCS.snapshot.url}>{CMS_DOCS.snapshot.label}</Ext>, the CMS award tables and Vermont&apos;s CMS project abstract (December 2025).
+              CMS&apos;s category figures are state-reported obligations through July 31, 2026, a narrower measure than the signed agreements reviewed above; the black tick on each bar is the national share.
+              Theme chips are keyword tags from the abstract, not budget commitments.{" "}
+              <Link href="/rht-review#compare" className="underline text-teal-700">Compare all 50 states →</Link>
+            </SourceNote>
+          </Section>
+        </div>
+      </>
+    );
+  }
 
   const ch = change(s);
   const notes = stateNotes(s.slug);

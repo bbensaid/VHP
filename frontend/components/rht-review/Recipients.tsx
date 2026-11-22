@@ -28,7 +28,7 @@ export const TYPES: [string, RegExp][] = [
   ["Physician & therapy practices", /\bPLLC\b|\bPC\b|clinic|medical|therapy|physicians|associates|\bLLC\b/i],
 ];
 export const typeOf = (name: string) => TYPES.find(([, rx]) => rx.test(name))?.[0] ?? "Other organizations";
-const M = (n: number) => `$${(n / 1e6).toFixed(1)}M`;
+const M = (n: number) => (n >= 1e6 ? `$${(n / 1e6).toFixed(1)}M` : `$${Math.round(n / 1e3)}K`);
 
 export default function Recipients({ rec }: { rec: Rec }) {
   const total = rec.rows.reduce((a, r) => a + r.amount, 0);
@@ -43,7 +43,8 @@ export default function Recipients({ rec }: { rec: Rec }) {
   const orgs = new Set(rec.rows.map((r) => r.recipient.toLowerCase())).size;
   const top = [...rec.rows].sort((a, b) => b.amount - a.amount).slice(0, 10);
   const sorted = [...rec.rows].sort((a, b) => b.amount - a.amount);
-  const median = sorted.length ? sorted[Math.floor(sorted.length / 2)].amount : 0;
+  const n = sorted.length;
+  const median = !n ? 0 : n % 2 ? sorted[(n - 1) / 2].amount : (sorted[n / 2 - 1].amount + sorted[n / 2].amount) / 2; // same definition as the national table
   const maxType = Math.max(...byType.map(([, v]) => v.v));
   return (
     <div>
@@ -52,7 +53,7 @@ export default function Recipients({ rec }: { rec: Rec }) {
           [rec.rows.length.toLocaleString(), "awards listed"],
           [M(total), "sum of listed awards"],
           area === "County" ? [String(counties), "counties"] : [String(orgs), "organizations"],
-          [`$${(median / 1e3).toFixed(0)}K`, "median award"],
+          [median >= 1e6 ? `$${(median / 1e6).toFixed(2)}M` : `$${Math.round(median / 1e3)}K`, "median award"],
         ].map(([v, l]) => (
           <div key={l} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-4 text-center">
             <div className="text-2xl font-black text-teal-700">{v}</div>
