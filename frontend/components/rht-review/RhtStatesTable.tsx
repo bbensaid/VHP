@@ -44,7 +44,7 @@ export default function RhtStatesTable({ states, withNotes = [] }: { states: Rht
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full text-sm">
+      <table className="w-full text-sm" data-testid="rht-states-table">
         <thead>
           <tr className="border-b border-slate-200 text-[10px] text-slate-500">
             <H k="state" right={false}>State</H>
