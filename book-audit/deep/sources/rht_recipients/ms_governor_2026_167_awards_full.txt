@@ -1,0 +1,361 @@
+TITLE: Governor Reeves Announces 167 Rural Health Transformation Program Awards Totaling More Than $104 Million » Office of Governor Tate Reeves
+
+FOR IMMEDIATE RELEASE September 14, 2026
+
+CONTACT: press@govreeves.ms.gov
+
+Governor Reeves Announces 167 Rural Health Transformation Program Awards Totaling More Than $104 Million
+
+JACKSON, Miss. – Governor Tate Reeves today announced 167 awards totaling $104,115,146 through the Mississippi Rural Health Transformation Program. The awards are part of Mississippi’s $205.9 million first-year implementation budget, which will be allocated this year. They will help modernize, strengthen and transform healthcare in rural communities across the state.
+
+“When we began this work, we set out to do more than simply invest in the healthcare system we already have,” said Governor Tate Reeves. “We set out to transform how rural Mississippians access care – bringing more services closer to home, strengthening the providers and facilities that rural communities depend on, and using technology and innovation to better connect patients to care across our state. Today, we are beginning to see that vision become reality.”
+
+The awards Governor Reeves announced represent only the first three grant opportunities in Year One of a five-year transformation of rural healthcare in Mississippi.
+
+Applications for the Mississippi Rural Health Transformation Program’s workforce and psychiatric emergency services initiatives are currently being reviewed and will be announced in the next 30 to 45 days. These investments will help Mississippi train, recruit and retain the healthcare professionals rural communities need.
+
+Additionally, in October, Mississippi will launch additional opportunities focused on innovative ways to close gaps in rural care and helping rural providers modernize the electronic health record systems they rely on every day.
+
+The awards announced by Governor Reeves include:
+
+Rural Provider Technology Grant Program Awards 1. Singing River Services – George County – $397,850 – To modernize aging technology that will strengthen operational sustainability and expand access to high-quality behavioral healthcare.
+
+2. South Mississippi State Hospital – Lamar County – $50,000 – To replace an outdated and unreliable electronic door access system to better protect patients, staff and facility operations.
+
+3. Region IV Mental Health Services – Alcorn County – $291,707 – To implement new technology tools that will improve documentation efficiency, automate eligibility verification and improve interoperability.
+
+4. Corinth Family Medical Center, PC – Alcorn County – $98,702 – To modernize technology to create a secure, integrated and interoperable environment for rural health delivery.
+
+5. Kinder Mind – Jackson County – $124,700 – To update technology across three outpatient clinics including upgraded workstations, self-check-in kiosks, collaboration technology and workflow software.
+
+6. Hattiesburg Clinic, P.A. – Forrest County – $46,101 – To add a tertiary cellular wireless wide-area network (WAN) connection at 67 rural satellite clinics that will preserve electronic health records access, strengthen infrastructure resilience and cybersecurity, and maintain rural continuity during fiber disruptions.
+
+7. Region 8 Mental Health – Lincoln County – $292,650 – To replace six disconnected phone systems with unified cloud-hosted VoIP platform and standardize fragmented access control and video surveillance systems with centralized, secure and more reliable technology.
+
+8. Hattiesburg Clinic, P.A. – Forrest County – $537,094 – To deploy ambient AI documentation to approximately 500 providers across its multispecialty network to reduce documentation burden, provider burnout and after-hours charting.
+
+9. Sidhu Pediatrics, LLC – Desoto County – $375,000 – To implement modern pediatric electronic health records with AI-enabled clinical documentation, patient engagement tools and population health capabilities.
+
+10. Hattiesburg Clinic, P.A. – Forrest County – $52,868 – To add AI-native email and browser threat detection layer beyond its existing secure email gateway which will help identify sophisticated attacks such as business email compromise, lookalike-domain fraud, QR-code phishing and malicious links that traditional gateway tools may miss.
+
+11. Gulf Coast Outpatient Surgery Center – Harrison County – $25,103 – To upgrade an automated medication dispensing system and badge security access control system which will improve medication accountability, patient safety and physical security.
+
+12. Hattiesburg Clinic, P.A. – Forrest County – $330,200 – To establish a physically segregated, air gapped recovery environment with immutable storage, dedicated identity controls and malware scanning.
+
+13. Mississippi Children’s Home Society dba Canopy Children’s Solutions – Hinds County – $320,250 – To design a modern enterprise data infrastructure that will support interoperability by creating an enterprise data strategy, governance framework and a phased roadmap to strengthen long-term infrastructure to better serve 14,000 children across 82 counties.
+
+14. Hattiesburg Clinic, P.A. – Forrest County – $343,282 – To install current-generation high-availability firewalls with advanced threat protection, URL filtering and full implementation services to store supported perimeter security, reduce HIPAA and cybersecurity risk and protect care delivery across more than 60 ambulatory sites.
+
+15. Preventive Care MD – Jackson County – $378,000 – To implement a secure, one-click interoperability solution that retrieves complete patient records for referring rural electronic health records and integrate those records into the Center’s surgical platform.
+
+16. Memorial Health System – Harrison County – $650,000 – To support the Mobile Health Bridge program that combines remote patient monitoring tools with in-home visits by community paramedics and a transitional care nurse. Enables real-time biometric tracking, physical assessments, point-of-care testing and digital documentation in patients’ homes.
+
+17. Family Health Center, Inc. – Jones County – $750,000 – To upgrade servers, networks, endpoint devices, cybersecurity, identity and access management and backup and disaster recovery capabilities to reduce downtime, improve reliability and better protect patient information.
+
+18. Metabolic Medicine of Mississippi – Hinds County – $76,230 – To modernize the clinic’s technology to include digital intake tablets, ambient listening tools for automated documentation, exam-room technology upgrades to increase patient capacity, improve efficiency and patient experience and help the clinic’s limited specialist workforce serve more rural patients effectively.
+
+19. Lampton Medical Associates, P. A. – Pike County – $2,009,435 – To modernize electronic medical records for 50 rural Mississippi healthcare practices. This will help rural providers meet new CMS interoperability and prior authorization requirements by adding enhanced tools to reduce manual and fax-based processes, improve care coordination and data exchange and support faster, more informed patient care across rural communities.
+
+20. Preventive Care MD – Jackson County – $700,000 – To modernize the Ocean Springs primary care hub, strengthen cybersecurity and establish three new rural sites, creating a secure four-site network.
+
+21. Southeast Mississippi Rural Health Initiative, Inc – Perry County – $469,792 – To modernize clinical technology by replacing endpoint devices and redesigning its deployment strategy to improve efficiency, cybersecurity and long-term sustainability.
+
+22. Mission Primary Care Clinic PLLC – Warren County – $23,116 – To replace outdated computers with 15 laptops with docking stations and 15 desktops to ensure reliable compatibility with clinic’s electronic health records system, telehealth platform, billing and other essential healthcare systems.
+
+23. Magee Benevolent Association – Simpson County – $825,000 – To modernize critical IT infrastructure, which will replace outdated network, server, storage, backup and endpoint systems, add 24/7 security information and event management monitoring and implement a hospital-wide security camera system to strengthen both cyber and physical security.
+
+24. The Greenville Clinic, PA – Washington County – $16,727 – To purchase Diagnostic Cardiology Suite software and three compatible laptops to expand EKG capacity, improve integration with electronic health records system and reduce turnaround times for test results.
+
+25. Medical Associates of Vicksburg – Warren County – $73,164 – To modernize technology by purchasing laptops, which will replace outdated desktops to improve operational efficiency, support staff mobility and strengthen data security.
+
+26. Dental Solutions, PLLC – Madison County – $41,000 – To replace outdated workstations and server equipment, add battery backup and cooling systems, and support compatibility with AI software to enhance diagnostics, treatment planning and workflow efficiency.
+
+27. AIDS Services Coalition – Washington County – $350,000 – To modernize devices, implement secure-based collaboration and identity systems, and enhance cybersecurity and data protection across five district offices.
+
+28. Aaron E Henry Community Health Services Center, INC – Coahoma County – $1,025,085 – To modernize technology by replacing aging computers, implement AI-assisted documentation tools, enhance digital registration and patient engagement, and strengthen reporting capabilities to improve efficiency.
+
+29. Positive Pathways LLC – Desoto County – $378,750 – To purchase new workstations, tablets, wireless networking, telehealth tools and self-service kiosks.
+
+30. East Central Mississippi Health Care, Inc. – Leake County – $344,500 – To deploy remote patient monitoring technology for 1,300 patients with hypertension and other chronic conditions.
+
+31. Delta Health Center, Inc. – Bolivar County – $407,756 – To strengthen cybersecurity by adding firewalls, purchasing managed detection and response software, creating an incident response plan, and provide staff training while also advancing AI and data capabilities.
+
+32. Mantachie Rural Health Care Inc. – Itawamba County – $461,000 – To modernize technology in the clinic by implementing modern servers, upgraded devices and network equipment, centralized security monitoring, and professional migration support to better protect health information of approximately 31,700 rural patients.
+
+33. Outreach Health Services – Clarke County – $229,500 – To enhance network protections by replacing outdated servers and workstations, deploying enterprise endpoint protections and completing a HIPAA Security Risk Assessment with a corrective action plan.
+
+34. GA Carmichael Family Health Center, Inc. – Yazoo County – $432,531 – To upgrade critical technology infrastructure across its health center and school-based locations in six counties by investing in new workstations and stronger server and network infrastructure.
+
+35. Choctaw Regional Medical Center – Choctaw County – $46,113 – To implement managed threat detection and response tools, conduct an independent security risk assessment and penetration test, develop and test an incident-response plan, and provide staff training.
+
+36. Access Family Health Services, Inc. – Monroe County – $326,610 – To purchase equipment and provide personnel to expand the preventive screening and remote patient monitoring across 5 primary care sites and 1 mobile clinic.
+
+37. Northwest Mississippi Regional Medical Center – Coahoma County – $917,166 – To modernize IT infrastructure by replacing unsupported network and wireless systems, migrate legacy servers, and move The Women’s Clinic onto hospital-owned secure infrastructure while replacing aging clinical technology.
+
+38. George County Hospital – George County – $330,000 – To replace the facility’s end-of-life nurse call infrastructure and add integrated wandering protection for residents with dementia and other cognitive impairments.
+
+39. Memorial Health System – Harrison County – $2,980,874 – To replace manual chemotherapy order transcription with standardized electronic oncology workflow program, which will improve patient safety, reduce errors and delays, and add clinical decision support for dosing and drug interaction review.
+
+40. Baptist Memorial Hospital-Calhoun, Inc. – Calhoun County – $1,491,000 – To modernize critical IT infrastructure for four critical access hospitals and one nursing home, which will enable telehealth deployment in emergency and inpatient rooms and prepare patient rooms for Smart Room capabilities.
+
+41. George County Hospital – George County – $30,555 – To replace legacy voicemail refill systems with VOXO AI Pharmacy Voice Agent, which will allow patients to have 24/7 conversational support.
+
+42. Memorial Health System – Harrison County – $83,599 – To implement a new breast milk management system that will use barcode verification, real-time validation and end-to-end tracking to improve neonatal safety, standardize workflows and support future expansion across maternal-child services.
+
+43. Copiah County Medical Center – Copiah County – $44,404 – To implement a nurse call system enhancement project that will add five nurse call master control stations and an audio expansion board to improve patient-caregiver communication, reduce response times and strengthen patient safety.
+
+44. George County Hospital – George County – $84,000 – To equip two existing sleep study rooms with modern, compliant diagnostic equipment.
+
+45. Memorial Health System – Harrison County – $156,000 – To implement an intelligent document intake platform radiology service, which will automate referral processing by digitizing inbound orders, extracting structured clinical data, and integrating with scheduling and electronic health records systems.
+
+46. Claiborne County Hospital d/b/a Claiborne County Medical Center – Claiborne County – $135,070 – To modernize IT infrastructure by upgrading network infrastructure, cybersecurity capabilities and enhancing telehealth capabilities.
+
+47. George County Hospital – George County – $102,381 – To replace 10 patient monitors for continuous real-time monitoring of patients with acute and life-threatening conditions.
+
+48. The Mississippi Methodist Hospital and Rehabilitation Center, Inc – Hinds County – $179,900.18 – To fund an Enterprise Cybersecurity Modernization and Resilience Initiative that will replace hardware and software to strengthen cybersecurity, improve operational resilience and protect continuity of specialized rehabilitation services statewide.
+
+49. Covington County Hospital – Covington County – $829,240 – To enhance cybersecurity protections by purchasing equipment to modernize the network and servers, SD-WAN for remote clinics and manage SIEM monitoring.
+
+50. Memorial Health System – Harrison County – $684,325 – To launch a clinical communication transformation program to integrate telephony, paging, secure messaging, EHR alerts, call lights and monitoring systems in real-time.
+
+51. University of Mississippi Medical Center – Hinds County – $826,256 – To create a shared, cloud-based analytics and reporting platform for participating rural hospitals to provide for a common reporting model, improve visibility into patient access and utilization, and build a sustainable data infrastructure to support better healthcare access and outcomes for rural Mississippians.
+
+52. Northwest Mississippi Regional Medical Center – Coahoma County – $212,674 – To implement a Delta Cardiovascular Connectivity Network, a centralized cardiology PACS and interoperability project that will enable centralized image access, structured reporting, remote-ready physician connectivity and dashboard monitoring.
+
+53. The Mississippi Methodist Hospital and Rehabilitation Center, Inc – Hinds County – $87,061 – To modernize medication management by integrating a comprehensive platform into its existing electronic health records system.
+
+54. South Mississippi State Hospital – Lamar County – $180,000 – To replace outdated nurse call system with a modern, hospital-wide communication platform that improves patient safety, staff response times and coordination of care.
+
+55. Copiah County Medical Center – Copiah County – $55,000 – To launch a comprehensive lung cancer screening technology enhancement program that will expand access to preventive screening and early detection for a rural, underserved population.
+
+56. South Mississippi State Hospital – Lamar County – $16,000 – To fund the purchase of electronic nursing communication boards to strengthen communications and support high-quality care for rural patients.
+
+57. South Mississippi State Hospital – Lamar County – $30,000 – To fund hands-free clinical communication badges to enable faster coordination among clinical staff during emergencies and routine care.
+
+58. George County Hospital – George County – $395,500 – To enhance cybersecurity capabilities, replace critical servers, add fire suppression, migrate workloads and train staff.
+
+59. South Mississippi State Hospital – Lamar County – $3,600 – To purchase integrated vital signs equipment to interface directly with its new EHR system and replace manual documentation process.
+
+60. South Mississippi State Hospital – Lamar County – $17,600 – To purchase two workstations on wheels and four barcode scanners to support integration of its new electronic health records system.
+
+61. Ochsner MS – Lauderdale County – $3,000,000 – To modernize key systems, including the nurse call system, patient monitoring technology and infant security system to strengthen patient communication, real-time clinical response and newborn protection.
+
+62. Southwest Mississippi Regional Medical Center – Lawrence County – $50,000 – To purchase equipment for an alerting thermostat system that will provide continuous, automated temperature monitoring in critical areas and send real-time alerts when conditions fall outside safe ranges.
+
+63. Southwest Mississippi Regional Medical Center – Lawrence County – $30,000 – To purchase equipment for a new electronic faxing solution to modernize rural hospital’s communication by replacing outdated, paper-based fax processes.
+
+64. Tyler Holmes Memorial Hospital – Montgomery County – $263,270 – To replace the nurse call system with a modernized system and real-time location services platform, which will improve communications reliability, reduce maintenance concerns and strengthen the hospital’s care delivery infrastructure.
+
+65. Neshoba County General Hospital – Neshoba County – $255,000 – To implement a unified enterprise data warehouse and modern decision support platform integrating core systems, automating reporting and providing analytics for costing, productivity, quality and service line performance.
+
+66. Southwest Mississippi Regional Medical Center – Pike County – $18,200 – To purchase automated CPR technology.
+
+67. Southwest Mississippi Regional Medical Center – Pike County – $120,000 – To purchase equipment for an automated blood bank system.
+
+68. Magee Benevolent Association – Simpson County – $2,131,454 – To implement bi-directional integration between infusion pumps and Epic across four rural hospitals, while also replacing pumps at three of the sites.
+
+69. Memorial Health System – Stone County – $2,874,728 – To fund the purchase of equipment for Secure Clinical Access Platform Modernization to improve virtual desktop infrastructure, replace unsupported shared clinical endpoints and implement modern identity and single sign-on tools across its rural hospitals and clinics.
+
+70. Tallahatchie General Hospital – Tallahatchie County – $125,790 – To launch a remote patient monitoring program for 400 patients with hypertension and diabetes across three rural clinics.
+
+71. Tippah County Hospital – Tippah County – $151,300 – To modernize technology by replacing aging hardware and strengthening cybersecurity.
+
+72. Tippah County Hospital – Tippah County – $400,000 – To implement a cloud-based ERP system that will modernize financial, supply chain and administrative operations.
+
+73. Merit Health River Region – Warren County – $3,000,000 – To modernize the bed management process, improve interoperability and reduce manual workflows.
+
+74. Delta Health System – Washington County – $891,750 – To strengthen the facility’s cybersecurity infrastructure.
+
+75. Wayne General Hospital – Wayne County – $554,357 – To create a scalable and resilient digital ecosystem supporting high-quality healthcare delivery.
+
+76. Field Memorial Community Hospital – Wilkinson County – $7,800 – To reduce technology barriers that limit communication between rural providers and patients.
+
+77. Winston County Medical Foundation – Winston County – $369,150 – To modernize critical technology infrastructure supporting three rural clinics and a 120-bed skilled nursing facility.
+
+78. Winston County Medical Foundation – Winston County – $2,085,315 – To fund the implementation of a new enterprise clinical information system.
+
+79. Central Mississippi Civic Improvement Association Inc – Copiah County – $2,929,324 – To modernize and strengthen healthcare technology.
+
+80. Northtown Pharmacy LLC – Hinds County – $275,000 – To modernize the pharmacy management system for better connectivity.
+
+81. Amite County Medical Services, Inc. – Amite County – $172,759 – To modernize aging infrastructure and expand digital health tools to better support care for rural patients.
+
+82. Spann Senses, LLC – Bolivar County – $95,000 – To better provide speech-language services through technology modernization and cybersecurity upgrades.
+
+83. Medplus Urgent Clinic, LLC – Lee County – $258,800 – To strengthen chronic disease care across five rural clinics through technology and operational updates.
+
+84. King’s Daughters Medical Center – Lincoln County – $326,441 – To implement a comprehensive cybersecurity modernization initiative.
+
+85. King’s Daughters Medical Center – Lincoln County – $960,920 – To implement a telemetry system modernization to ensure monitoring system interfaces with EHR.
+
+86. Internal Medicine Clinic of Columbia, PA – Marion County – $74,553 – To replace outdated technology to improve cybersecurity, patient care, and reliability.
+
+87. P & S Clinic OB-GYN, PLLC – Oktibbeha County – $115,643 – To improve IT infrastructure across three rural clinics.
+
+88. Simpson Community Healthcare, Inc. – Simpson County – $830,000 – To implement IT infrastructure and cybersecurity upgrades.
+
+89. George Regional Health and Rehab – George County – $34,400 – To purchase eight wireless vital sign monitors and integrate them with their EHR for improved patient care.
+
+90. Independent Healthcare Management Inc – Scott County – $730,000 – To provide for technology upgrades to improve patient access.
+
+91. Phyfer Eye Care, PC DBA Brooks Eye Center and Optical – Lowndes County – $35,317 – To modernize technology infrastructure and security.
+
+92. Fast Pace Mississippi, PLLC – Tippah County – $516,600 – To fund a new enterprise-wide EHR, IT, interoperability and cybersecurity modernization initiative.
+
+93. Daniel B. Story II, DMD – Humphreys County – $13,374 – To upgrade their digital capabilities through IT upgrades.
+
+94. George Regional Health and Rehab – George County – $330,000 – To install a smart nurse call system and an electronic wandering management system.
+
+95. McComb Children’s Clinic – Pike County – $24,370 – To update aging technological infrastructure.
+
+96. Quinn Healthcare, PLLC – Madison County – $33,738 – To strengthen cyber security, modernize aging devices and enhance digital health access.
+
+97. Jefferson County Nursing Home – Jefferson County – $150,000 – To improve connectivity, modernize systems, strengthen cyber security, and expand digital care capabilities.
+
+Mississippi Rural Capital Project Care Gap Closure Grant Program Awards 1. Downs Family Dentistry – Prentiss County – $225,000 – To add in-house implant, endodontic, preventative, and diagnostic services for rural patients.
+
+2. Winston County Medical Foundation – Winston County – $1,090,138.34 – To modernize hospital diagnostic and patient monitoring services.
+
+3. University of Mississippi Medical Center Greenwood – Leflore County – $3,000,000 – To modernize hospital infrastructure and expand future surgical and post-acute care capacity.
+
+4. Countrywood Manor Assisted Living, Inc. – Lee County – $450,000 – To improve facility reliability through the installation of a whole-house backup generator and HVAC upgrades.
+
+5. Countrywood Manor Assisted Living, Inc. – Marshall County – $374,492.11 – To improve facility reliability through the installation of a whole-house backup generator and HVAC upgrades.
+
+6. Memorial Health System – Stone County – $1,151,594 – To expand access to diagnostic testing with a new mammography unit, bone density system and patient tracking & referral system.
+
+7. Delta Health Center – Bolivar County – $3,000,000 – To establish a 24/7 Urgent and Critical Response center in Rosedale.
+
+8. Independent Healthcare Management, Inc. – Scott County – $3,000,000 – To expand access to robotic surgery through the purchase of necessary equipment as well as an automated medication management system, chemistry analyzer and replacement inpatient hospital beds.
+
+9. Sai Sanjeevani Medical Group – Coahoma County – $11,550 – To expand access to vision screenings in the Delta.
+
+10. Tate County Hospital – Tate County – $1,500,000 – To equip two operating rooms and re-establish inpatient and outpatient surgical care.
+
+11. Copiah County Medical Center – Copiah County – $643,700.40 – To modernize diagnostic imaging services with advanced imaging technology.
+
+12. Yalobusha General Hospital – Yalobusha County – $175,000 – To expand diagnostic imaging services by upgrading to advanced imaging technology.
+
+13. Delta Health Transformation Council, Inc. – Washington County – $3,000,000 – To expand access to advanced surgical care in the Delta through robotic-assisted surgery.
+
+14. Progressive Health of Houston – Chickasaw County – $1,645,000 – To establish six new service lines including women’s health.
+
+15. Winston County Medical Foundation – Winston County – $240,852.15 – To expand transportation access for rural patients.
+
+16. North Sunflower Medical Center – Sunflower County – $1,000,000 – To provide roof renovations that will improve facility reliability and provide patients with uninterrupted healthcare.
+
+17. Progressive Health of Houston – Chickasaw County – $1,383,406 – To restore outpatient services for endoscopy, vascular diagnostics, minor procedures, portable imaging and wound care.
+
+18. Memorial Health System – Stone County – $1,160,837 – To expand access to advanced cardiac imaging services.
+
+19. Webster Healthcare Services, Inc. – Webster County – $500,000 – To create a four-bed Emergency Department Observation Unit to provide behavioral health observation for rural patients requiring extended care.
+
+20. Copiah County Medical Center – Copiah County – $29,063.60 – To modernize emergency department workflows by enabling bedside electronic medical record access.
+
+21. USDR Behavioral Specialists – Hinds County – $1,884,967.88 – To establish a seven-room Applied Behavioral Analysis clinic in Belzoni to expand autism and behavioral health services.
+
+22. South Central Regional Medical Center – Jones County – $3,000,000 – To establish the South Central Imaging center dedicated to outpatient diagnostic imaging for expanded services.
+
+23. North Mississippi Medical Center, Inc. – Lee County- $2,500,000 – To expand access to advanced minimally invasive surgical care.
+
+24. Hattiesburg Clinic, P.A. – Forrest County – $125,414 – To expand diabetic retinopathy screening by integrating AI enabled retinal imaging into 12 rural clinics.
+
+25. South Central Regional Medical Center – Jones County – $3,000,000 – To expand pharmacy and infusion services by increasing IV compounding capacity and improving medication access for rural cancer and infusion patients.
+
+26. Gorton Rural Health Clinic – Humphreys County – $228,000 – To strengthen access by replacing outdated equipment and installing a backup power generator.
+
+27. Jasper General Hospital – Jasper County – $535,000 – To provide a backup power generator for uninterrupted care delivery.
+
+28. Laurel Surgery & Endoscopy Center – Jackson County – $80,850 – To improve outpatient surgical care by providing equipment upgrades.
+
+29. Southwest Mississippi Regional Center – Pike County – $277,077 – To modernize surgical and emergency equipment.
+
+30. Northeast Mental Health – Mental Retardation Commission d.b.a. LIFECORE Health Group – Monroe County – $27,600 – To expand service capacity through the renovation of the Amory clinic.
+
+31. George County Hospital – George County – $220,000 – To modernize laboratory diagnostic services through equipment upgrades.
+
+32. George County Hospital – George County – $1,501,000 – To strengthen rural laboratory and maternal health services by establishing onsite maternal Hepatitis B testing.
+
+33. Endocrine Diabetes & Thyroid Center PLLC – DeSoto County – $88,960.38 – To enhance access to specialized endocrinology services for rural patients.
+
+34. Memorial Health System – Stone County – $3,000,000 – To expand diagnostic imaging access through a mobile MRI program.
+
+35. George Regional Health and Rehab – George County – $356,650 – To improve patient safety and care quality by replacing existing beds with integrated care beds.
+
+36. Laurel Surgery & Endoscopy Center – Jones County – $68,250 – To upgrade equipment to ensure access to high-quality image guided outpatient surgical and pain management services.
+
+37. Yalobusha General Hospital – Yalobusha County – $275,000 – To expand access to advanced breast cancer screening services.
+
+38. Countrywood Manor Assisted Living, Inc. – Itawamba County – $350,000 – To provide for full-facility backup power.
+
+39. Mantachie Rural Health Center – Itawamba County – $236,000 – To expand capacity through added counseling space, upgraded dental and diagnostic equipment, and onsite imaging and lab testing.
+
+40. JWM Therapy Services, LLC – Grenada County – $19,185.76 – To expand outpatient pediatric PT, OT, and STT services.
+
+41. Northwest Mississippi Regional Medical Center – Coahoma County – $834,750 – To support the Delta Maternal-Newborn Access Preservation and Modernization Initiative.
+
+42. Sai Sanjeevani Medical Group – Coahoma County – $750,000 – To establish a cardiac unit to provide high-quality cardiovascular care.
+
+43. Lafayette LTC, Inc. – Lafayette County – $395,000 – To upgrade generator systems so this facility can improve service continuity.
+
+Telehealth Hub Connectivity, Equipment & Education Grant Program Awards 1. Resilience Counseling & Recovery Center, LLC – Rankin County – $50,000 – To fund telehealth capacity for rural mental health and substance use counseling.
+
+2. CAMHP Foundation – Franklin County – $250,000 – To establish a hub for behavioral health, psychiatric medication management, specialty care and related services.
+
+3. Outreach Health Services – Clarke County – $218,200 – To enhance chronic care management for obesity, diabetes, hypertension, cardiovascular disease and other chronic conditions.
+
+4. Harmony House Calls LLC – Rankin County – $250,000 – To fund a readiness model combining digital-literacy coaching, provider education, connectivity improvements, diagnostic peripherals, and RPM.
+
+5. Choctaw Regional Medical Center – Choctaw County – $394,000 – To fund accessible telehealth access points offering diagnostic equipment and remote clinician coverage.
+
+6. Progressive Health of Houston – Chickasaw County – $336,000 – To fund a project that includes diagnostic telehealth carts, specialist contracting, coordinators, patient outreach and consultation spaces.
+
+7. Memorial Health System – Stone County – $1,920,000 – To establish AI-enabled care for Stone, George, Hancock, Jackson and Pearl River Counties offering virtual primary, behavioral and chronic disease care.
+
+8. Preventive Care MD – Jackson County – $182,000 – To expand hub to four site networks serving Stone, George and Pearl River Counties through telehealth equipment, broadband improvements and education.
+
+9. North Mississippi Commission on Mental Illness/Mental Retardation d.b.a. Communicare – Lafayette Co. – $300,000 – To expand infrastructure for crisis response, detention-based care, commitment proceedings, and care coordination.
+
+10. Memorial Health System – Harrison County – $72,750 – To fund a regional hub-and-spoke congestive heart failure program providing telehealth, cardiac rehabilitation, and advanced-heart-failure referral pathways.
+
+11. Access Family Health Services, Inc. – Chickasaw County – $98,693 – To add digital otoscopes and stethoscopes to school-based clinics, and a mobile clinic to improve diagnostic capability during virtual visits.
+
+12. NP Care Anywhere, LLC – Quitman County – $134,000 – To establish a mobile maternal telehealth hub combining maternal diagnostic equipment, tele-ultrasound, and specialty/behavioral-health access.
+
+13. Northeast Mental Health d.b.a. LIFECORE Health Group – Monroe County – $30,610 – To expand direct-to-consumer behavioral-health telehealth to existing clinic-based virtual-care program across Northeast Mississippi.
+
+14. University of Mississippi Medical Center – Hinds County – $149,100 – To allow AI-enabled remote patient monitoring for chronic disease and maternal health that integrates device data with EHR.
+
+15. Plan A Health, Inc. – Humphreys County – $50,000 – To equip rural clinic sites and a mobile unit with telehealth kiosks capable of supporting virtual specialist visits and diagnostic testing.
+
+16. Forrest County General Hospital – Forrest County – $596,026 – To add virtual nursing carts, discharge cameras, equipment, RPM, and navigation services to help coordinate patients.
+
+17. Delta Health Center, Inc. – Washington County – $760,955 – To fund a closed-loop specialty referral network linking providers through medical-grade telehealth carts and dedicated coordinators.
+
+18. TrustCare Health, LLC – Madison County – $1,203,414 – To expand bilingual, pediatric, behavioral-health, and primary-care through school-based diagnostics, education, and dedicated providers.
+
+19. Coastal Family Health Center, Inc. – Harrison County – $422,250 – To expand RPM program to rural and low-income patients with uncontrolled hypertension.
+
+20. Wayne General Hospital – Wayne County – $200,000 – To add mobile clinical workstations supporting dedicated telehealth-enabled clinical environments.
+
+21. South Central Regional Medical Center – Covington County – $2,543,900 – To establish a hub that provides chronic care management, transitional care, wellness visits, and a 24/7 nurse call line.
+
+22. Jefferson Comprehensive Health Center, Inc. – Jefferson County – $1,000,000 – To establish a regional telehealth and remote patient monitoring program serving Jefferson and Adams Counties.
+
+23. Delta Health Center, Inc. – Washington County – $491,621 – To fund remote patient monitoring and mobile Community Health Workers to serve patients with uncontrolled diabetes, hypertension, CHF, and COPD.
+
+24. Medplus Urgent Clinic, LLC – Lee County – $158,600 – To expand telehealth and RPM to address provider shortages and improve care for large diabetic and prediabetic populations.
+
+25. Memorial Health System – Harrison County – $306,515 – To fund a hub-and-spoke model for diabetes education, navigation, telehealth, remote monitoring, and chronic-disease management.
+
+26. PSP Medical Clinic – Madison County – $1,000,000 – To establish telehealth and RPM capabilities serving patients with significant hypertension, diabetes, and obesity burdens.
+
+27. GA Carmichael Family Health Center, Inc. – Madison County – $255,800 – To add diagnostic equipment, standardized workflows, staff training, patient education, and outreach.
+
+“I want to thank President Trump for making rural healthcare a priority and for giving governors in states like Mississippi the opportunity to make transformational investments in the communities that need them most,” said Governor Tate Reeves. “Governors know our states best and we know how to set priorities. I also want to thank Secretary Kennedy, Administrator Oz, and our partners at CMS for their leadership and for working with states across America as we put these plans into action. I must also give significant credit to Dr. Edney and his team at the Mississippi State Department of Health, as well as our other partners across the state for their tireless work over the past few months.”
+
+For more information on the Mississippi Rural Health Transformation Program, please visit https://mississippirhtp.com.
+
+This project is supported by the CMS of the U.S. Department of Health and Human Services (HHS) as part of a financial assistance award totaling $205,990,180, with 99.96% funded by CMS/HHS ($205,907,220) and 0.04% funded by non-government sources ($82,960).
+
+The contents are those of the author(s) and do not necessarily represent the official views of, nor an endorsement, by CMS/HHS, or the U.S. Government.

@@ -1,0 +1,1348 @@
+{
+ "state": "Mississippi",
+ "slug": "mississippi",
+ "asOf": "2026-09-14",
+ "source": {
+  "label": "Office of Gov. Tate Reeves, \"Governor Reeves Announces 167 Rural Health Transformation Program Awards Totaling More Than $104 Million\" (Sept 14, 2026)",
+  "url": "https://governorreeves.ms.gov/governor-reeves-announces-167-rural-health-transformation-program-awards-totaling-more-than-104-million/"
+ },
+ "announcedTotal": 104115146,
+ "rows": [
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 1,
+   "recipient": "Singing River Services",
+   "county": "George",
+   "amount": 397850.0,
+   "purpose": "To modernize aging technology that will strengthen operational sustainability and expand access to high-quality behavioral healthcare."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 2,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 50000.0,
+   "purpose": "To replace an outdated and unreliable electronic door access system to better protect patients, staff and facility operations."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 3,
+   "recipient": "Region IV Mental Health Services",
+   "county": "Alcorn",
+   "amount": 291707.0,
+   "purpose": "To implement new technology tools that will improve documentation efficiency, automate eligibility verification and improve interoperability."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 4,
+   "recipient": "Corinth Family Medical Center, PC",
+   "county": "Alcorn",
+   "amount": 98702.0,
+   "purpose": "To modernize technology to create a secure, integrated and interoperable environment for rural health delivery."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 5,
+   "recipient": "Kinder Mind",
+   "county": "Jackson",
+   "amount": 124700.0,
+   "purpose": "To update technology across three outpatient clinics including upgraded workstations, self-check-in kiosks, collaboration technology and workflow software."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 6,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 46101.0,
+   "purpose": "To add a tertiary cellular wireless wide-area network (WAN) connection at 67 rural satellite clinics that will preserve electronic health records access, strengthen infrastructure resilience and cybersecurity, and maintain rural continuity during fiber disruptions."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 7,
+   "recipient": "Region 8 Mental Health",
+   "county": "Lincoln",
+   "amount": 292650.0,
+   "purpose": "To replace six disconnected phone systems with unified cloud-hosted VoIP platform and standardize fragmented access control and video surveillance systems with centralized, secure and more reliable technology."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 8,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 537094.0,
+   "purpose": "To deploy ambient AI documentation to approximately 500 providers across its multispecialty network to reduce documentation burden, provider burnout and after-hours charting."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 9,
+   "recipient": "Sidhu Pediatrics, LLC",
+   "county": "Desoto",
+   "amount": 375000.0,
+   "purpose": "To implement modern pediatric electronic health records with AI-enabled clinical documentation, patient engagement tools and population health capabilities."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 10,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 52868.0,
+   "purpose": "To add AI-native email and browser threat detection layer beyond its existing secure email gateway which will help identify sophisticated attacks such as business email compromise, lookalike-domain fraud, QR-code phishing and malicious links that traditional gateway tools may miss."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 11,
+   "recipient": "Gulf Coast Outpatient Surgery Center",
+   "county": "Harrison",
+   "amount": 25103.0,
+   "purpose": "To upgrade an automated medication dispensing system and badge security access control system which will improve medication accountability, patient safety and physical security."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 12,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 330200.0,
+   "purpose": "To establish a physically segregated, air gapped recovery environment with immutable storage, dedicated identity controls and malware scanning."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 13,
+   "recipient": "Mississippi Children\u2019s Home Society dba Canopy Children\u2019s Solutions",
+   "county": "Hinds",
+   "amount": 320250.0,
+   "purpose": "To design a modern enterprise data infrastructure that will support interoperability by creating an enterprise data strategy, governance framework and a phased roadmap to strengthen long-term infrastructure to better serve 14,000 children across 82 counties."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 14,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 343282.0,
+   "purpose": "To install current-generation high-availability firewalls with advanced threat protection, URL filtering and full implementation services to store supported perimeter security, reduce HIPAA and cybersecurity risk and protect care delivery across more than 60 ambulatory sites."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 15,
+   "recipient": "Preventive Care MD",
+   "county": "Jackson",
+   "amount": 378000.0,
+   "purpose": "To implement a secure, one-click interoperability solution that retrieves complete patient records for referring rural electronic health records and integrate those records into the Center\u2019s surgical platform."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 16,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 650000.0,
+   "purpose": "To support the Mobile Health Bridge program that combines remote patient monitoring tools with in-home visits by community paramedics and a transitional care nurse. Enables real-time biometric tracking, physical assessments, point-of-care testing and digital documentation in patients\u2019 homes."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 17,
+   "recipient": "Family Health Center, Inc.",
+   "county": "Jones",
+   "amount": 750000.0,
+   "purpose": "To upgrade servers, networks, endpoint devices, cybersecurity, identity and access management and backup and disaster recovery capabilities to reduce downtime, improve reliability and better protect patient information."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 18,
+   "recipient": "Metabolic Medicine of Mississippi",
+   "county": "Hinds",
+   "amount": 76230.0,
+   "purpose": "To modernize the clinic\u2019s technology to include digital intake tablets, ambient listening tools for automated documentation, exam-room technology upgrades to increase patient capacity, improve efficiency and patient experience and help the clinic\u2019s limited specialist workforce serve more rural patients effectively."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 19,
+   "recipient": "Lampton Medical Associates, P. A.",
+   "county": "Pike",
+   "amount": 2009435.0,
+   "purpose": "To modernize electronic medical records for 50 rural Mississippi healthcare practices. This will help rural providers meet new CMS interoperability and prior authorization requirements by adding enhanced tools to reduce manual and fax-based processes, improve care coordination and data exchange and support faster, more informed patient care across rural communities."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 20,
+   "recipient": "Preventive Care MD",
+   "county": "Jackson",
+   "amount": 700000.0,
+   "purpose": "To modernize the Ocean Springs primary care hub, strengthen cybersecurity and establish three\u00a0new rural sites, creating a secure four-site network."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 21,
+   "recipient": "Southeast Mississippi Rural Health Initiative, Inc",
+   "county": "Perry",
+   "amount": 469792.0,
+   "purpose": "To modernize clinical technology by replacing endpoint devices and redesigning its deployment strategy to improve efficiency, cybersecurity and long-term sustainability."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 22,
+   "recipient": "Mission Primary Care Clinic PLLC",
+   "county": "Warren",
+   "amount": 23116.0,
+   "purpose": "To replace outdated computers with 15 laptops with docking stations and 15 desktops to ensure reliable compatibility with clinic\u2019s electronic health records system, telehealth platform, billing and other essential healthcare systems."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 23,
+   "recipient": "Magee Benevolent Association",
+   "county": "Simpson",
+   "amount": 825000.0,
+   "purpose": "To modernize critical IT infrastructure, which will replace outdated network, server, storage, backup and endpoint systems, add 24/7 security information and event management monitoring and implement a hospital-wide security camera system to strengthen both cyber and physical security."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 24,
+   "recipient": "The Greenville Clinic, PA",
+   "county": "Washington",
+   "amount": 16727.0,
+   "purpose": "To purchase Diagnostic Cardiology Suite software and three compatible laptops to expand EKG capacity, improve integration with electronic health records system and reduce turnaround times for test results."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 25,
+   "recipient": "Medical Associates of Vicksburg",
+   "county": "Warren",
+   "amount": 73164.0,
+   "purpose": "To modernize technology by purchasing laptops, which will replace outdated desktops to improve operational efficiency, support staff mobility and strengthen data security."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 26,
+   "recipient": "Dental Solutions, PLLC",
+   "county": "Madison",
+   "amount": 41000.0,
+   "purpose": "To replace outdated workstations and server equipment, add battery backup and cooling systems, and support compatibility with AI software to enhance diagnostics, treatment planning and workflow efficiency."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 27,
+   "recipient": "AIDS Services Coalition",
+   "county": "Washington",
+   "amount": 350000.0,
+   "purpose": "To modernize devices, implement secure-based collaboration and identity systems, and enhance cybersecurity and data protection across five district offices."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 28,
+   "recipient": "Aaron E Henry Community Health Services Center, INC",
+   "county": "Coahoma",
+   "amount": 1025085.0,
+   "purpose": "To modernize technology by replacing aging computers, implement\u00a0AI-assisted documentation tools, enhance digital registration and patient engagement, and strengthen reporting capabilities to improve efficiency."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 29,
+   "recipient": "Positive Pathways LLC",
+   "county": "Desoto",
+   "amount": 378750.0,
+   "purpose": "To purchase new workstations, tablets, wireless networking, telehealth tools and self-service kiosks."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 30,
+   "recipient": "East Central Mississippi Health Care, Inc.",
+   "county": "Leake",
+   "amount": 344500.0,
+   "purpose": "To deploy remote patient monitoring technology for 1,300 patients with hypertension and other chronic conditions."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 31,
+   "recipient": "Delta Health Center, Inc.",
+   "county": "Bolivar",
+   "amount": 407756.0,
+   "purpose": "To strengthen cybersecurity by adding firewalls, purchasing managed detection and response software, creating an incident response plan, and provide staff training while also advancing AI and data capabilities."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 32,
+   "recipient": "Mantachie Rural Health Care Inc.",
+   "county": "Itawamba",
+   "amount": 461000.0,
+   "purpose": "To modernize technology in the clinic by implementing modern servers, upgraded devices and network equipment, centralized security monitoring, and professional migration support to better protect health information of approximately 31,700 rural patients."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 33,
+   "recipient": "Outreach Health Services",
+   "county": "Clarke",
+   "amount": 229500.0,
+   "purpose": "To enhance network protections by replacing outdated servers and workstations, deploying enterprise endpoint protections and completing a HIPAA Security Risk Assessment with a corrective action plan."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 34,
+   "recipient": "GA Carmichael Family Health Center, Inc.",
+   "county": "Yazoo",
+   "amount": 432531.0,
+   "purpose": "To upgrade critical technology infrastructure across its health center and school-based locations in six counties by investing in new workstations and stronger server and network infrastructure."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 35,
+   "recipient": "Choctaw Regional Medical Center",
+   "county": "Choctaw",
+   "amount": 46113.0,
+   "purpose": "To implement managed threat detection and response tools, conduct an independent security risk assessment and penetration test, develop and test an incident-response plan, and provide staff training."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 36,
+   "recipient": "Access Family Health Services, Inc.",
+   "county": "Monroe",
+   "amount": 326610.0,
+   "purpose": "To purchase equipment and provide personnel to expand the preventive screening and remote patient monitoring across 5 primary care sites and 1 mobile clinic."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 37,
+   "recipient": "Northwest Mississippi Regional Medical Center",
+   "county": "Coahoma",
+   "amount": 917166.0,
+   "purpose": "To modernize IT infrastructure by replacing unsupported network and wireless systems, migrate legacy servers, and move\u00a0The Women\u2019s Clinic onto hospital-owned secure infrastructure while replacing aging clinical technology."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 38,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 330000.0,
+   "purpose": "To replace the facility\u2019s end-of-life nurse call infrastructure and add integrated wandering protection for residents with dementia and other cognitive impairments."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 39,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 2980874.0,
+   "purpose": "To replace manual chemotherapy order transcription with standardized electronic oncology workflow program, which will improve patient safety, reduce errors and delays, and add clinical decision support for dosing and drug interaction review."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 40,
+   "recipient": "Baptist Memorial Hospital-Calhoun, Inc.",
+   "county": "Calhoun",
+   "amount": 1491000.0,
+   "purpose": "To modernize critical IT infrastructure for four critical access hospitals and one nursing home, which will enable telehealth deployment in emergency and inpatient rooms and prepare patient rooms for Smart Room capabilities."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 41,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 30555.0,
+   "purpose": "To replace legacy voicemail refill systems with VOXO AI Pharmacy Voice Agent, which will allow patients to have 24/7 conversational support."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 42,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 83599.0,
+   "purpose": "To implement a new breast milk management system that will use barcode verification, real-time validation and end-to-end tracking to improve neonatal safety, standardize workflows and support future expansion across maternal-child services."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 43,
+   "recipient": "Copiah County Medical Center",
+   "county": "Copiah",
+   "amount": 44404.0,
+   "purpose": "To implement a nurse call system enhancement project that will add five nurse call master control stations and an audio expansion board to improve patient-caregiver communication, reduce response times and strengthen patient safety."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 44,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 84000.0,
+   "purpose": "To equip two existing sleep study rooms with modern, compliant diagnostic equipment."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 45,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 156000.0,
+   "purpose": "To implement an intelligent document intake platform radiology service, which will automate referral processing by digitizing inbound orders, extracting structured clinical data, and integrating with scheduling and electronic health records systems."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 46,
+   "recipient": "Claiborne County Hospital d/b/a Claiborne County Medical Center",
+   "county": "Claiborne",
+   "amount": 135070.0,
+   "purpose": "To modernize IT infrastructure by upgrading network infrastructure, cybersecurity capabilities and enhancing telehealth capabilities."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 47,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 102381.0,
+   "purpose": "To replace 10 patient monitors for continuous real-time monitoring of patients with acute and life-threatening conditions."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 48,
+   "recipient": "The Mississippi Methodist Hospital and Rehabilitation Center, Inc",
+   "county": "Hinds",
+   "amount": 179900.18,
+   "purpose": "To fund an Enterprise Cybersecurity Modernization and Resilience Initiative that will replace hardware and software to strengthen cybersecurity, improve operational resilience and protect continuity of specialized rehabilitation services statewide."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 49,
+   "recipient": "Covington County Hospital",
+   "county": "Covington",
+   "amount": 829240.0,
+   "purpose": "To enhance cybersecurity protections by purchasing equipment to modernize the network and servers, SD-WAN for remote clinics and manage SIEM monitoring."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 50,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 684325.0,
+   "purpose": "To launch a clinical communication transformation program to integrate telephony, paging, secure messaging, EHR alerts, call lights and monitoring systems in real-time."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 51,
+   "recipient": "University of Mississippi Medical Center",
+   "county": "Hinds",
+   "amount": 826256.0,
+   "purpose": "To create a shared, cloud-based analytics and reporting platform for participating rural hospitals to provide for a common reporting model, improve visibility into patient access and utilization, and build a sustainable data infrastructure to support better healthcare access and outcomes for rural Mississippians."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 52,
+   "recipient": "Northwest Mississippi Regional Medical Center",
+   "county": "Coahoma",
+   "amount": 212674.0,
+   "purpose": "To implement a Delta Cardiovascular Connectivity Network, a centralized cardiology PACS and interoperability project that will enable centralized image access, structured reporting, remote-ready physician connectivity and dashboard monitoring."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 53,
+   "recipient": "The Mississippi Methodist Hospital and Rehabilitation Center, Inc",
+   "county": "Hinds",
+   "amount": 87061.0,
+   "purpose": "To modernize medication management by integrating a comprehensive platform into its existing electronic health records system."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 54,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 180000.0,
+   "purpose": "To replace outdated nurse call system with a modern, hospital-wide communication platform that improves patient safety, staff response times and coordination of care."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 55,
+   "recipient": "Copiah County Medical Center",
+   "county": "Copiah",
+   "amount": 55000.0,
+   "purpose": "To launch a comprehensive lung cancer screening technology enhancement program that will expand access to preventive screening and early detection for a rural, underserved population."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 56,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 16000.0,
+   "purpose": "To fund the purchase of electronic nursing communication boards to strengthen communications and support high-quality care for rural patients."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 57,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 30000.0,
+   "purpose": "To fund hands-free clinical communication badges to enable faster coordination among clinical staff during emergencies and routine care."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 58,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 395500.0,
+   "purpose": "To enhance cybersecurity capabilities, replace critical servers, add fire suppression, migrate workloads and train staff."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 59,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 3600.0,
+   "purpose": "To purchase integrated vital signs equipment to interface directly with its new EHR system and replace manual documentation process."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 60,
+   "recipient": "South Mississippi State Hospital",
+   "county": "Lamar",
+   "amount": 17600.0,
+   "purpose": "To purchase two workstations on wheels and four barcode scanners to support integration of its new electronic health records system."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 61,
+   "recipient": "Ochsner MS",
+   "county": "Lauderdale",
+   "amount": 3000000.0,
+   "purpose": "To modernize key systems, including the nurse call system, patient monitoring technology and infant security system to strengthen patient communication, real-time clinical response and newborn protection."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 62,
+   "recipient": "Southwest Mississippi Regional Medical Center",
+   "county": "Lawrence",
+   "amount": 50000.0,
+   "purpose": "To purchase equipment for an alerting thermostat system that will provide continuous, automated temperature monitoring in critical areas and send real-time alerts when conditions fall outside safe ranges."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 63,
+   "recipient": "Southwest Mississippi Regional Medical Center",
+   "county": "Lawrence",
+   "amount": 30000.0,
+   "purpose": "To purchase equipment for a new electronic faxing solution to modernize rural hospital\u2019s communication by replacing outdated, paper-based fax processes."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 64,
+   "recipient": "Tyler Holmes Memorial Hospital",
+   "county": "Montgomery",
+   "amount": 263270.0,
+   "purpose": "To replace the nurse call system with a modernized system and real-time location services platform, which will improve communications reliability, reduce maintenance concerns and strengthen the hospital\u2019s care delivery infrastructure."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 65,
+   "recipient": "Neshoba County General Hospital",
+   "county": "Neshoba",
+   "amount": 255000.0,
+   "purpose": "To implement a unified enterprise data warehouse and modern decision support platform integrating core systems, automating reporting and providing analytics for costing, productivity, quality and service line performance."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 66,
+   "recipient": "Southwest Mississippi Regional Medical Center",
+   "county": "Pike",
+   "amount": 18200.0,
+   "purpose": "To purchase automated CPR technology."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 67,
+   "recipient": "Southwest Mississippi Regional Medical Center",
+   "county": "Pike",
+   "amount": 120000.0,
+   "purpose": "To purchase equipment for an automated blood bank system."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 68,
+   "recipient": "Magee Benevolent Association",
+   "county": "Simpson",
+   "amount": 2131454.0,
+   "purpose": "To implement bi-directional integration between infusion pumps and Epic across four rural hospitals, while also replacing pumps at three of the sites."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 69,
+   "recipient": "Memorial Health System",
+   "county": "Stone",
+   "amount": 2874728.0,
+   "purpose": "To fund the purchase of equipment for Secure Clinical Access Platform Modernization to improve virtual desktop infrastructure, replace unsupported shared clinical endpoints and implement modern identity and single sign-on tools across its rural hospitals and clinics."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 70,
+   "recipient": "Tallahatchie General Hospital",
+   "county": "Tallahatchie",
+   "amount": 125790.0,
+   "purpose": "To launch a remote patient monitoring program for 400 patients with hypertension and diabetes across three rural clinics."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 71,
+   "recipient": "Tippah County Hospital",
+   "county": "Tippah",
+   "amount": 151300.0,
+   "purpose": "To modernize technology by replacing aging hardware and strengthening cybersecurity."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 72,
+   "recipient": "Tippah County Hospital",
+   "county": "Tippah",
+   "amount": 400000.0,
+   "purpose": "To implement a cloud-based ERP system that will modernize financial, supply chain and administrative operations."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 73,
+   "recipient": "Merit Health River Region",
+   "county": "Warren",
+   "amount": 3000000.0,
+   "purpose": "To modernize the bed management process, improve interoperability and reduce manual workflows."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 74,
+   "recipient": "Delta Health System",
+   "county": "Washington",
+   "amount": 891750.0,
+   "purpose": "To strengthen the facility\u2019s cybersecurity infrastructure."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 75,
+   "recipient": "Wayne General Hospital",
+   "county": "Wayne",
+   "amount": 554357.0,
+   "purpose": "To create a scalable and resilient digital ecosystem supporting high-quality healthcare delivery."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 76,
+   "recipient": "Field Memorial Community Hospital",
+   "county": "Wilkinson",
+   "amount": 7800.0,
+   "purpose": "To reduce technology barriers that limit communication between rural providers and patients."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 77,
+   "recipient": "Winston County Medical Foundation",
+   "county": "Winston",
+   "amount": 369150.0,
+   "purpose": "To modernize critical technology infrastructure supporting three rural clinics and a 120-bed skilled nursing facility."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 78,
+   "recipient": "Winston County Medical Foundation",
+   "county": "Winston",
+   "amount": 2085315.0,
+   "purpose": "To fund the implementation of a new enterprise clinical information system."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 79,
+   "recipient": "Central Mississippi Civic Improvement Association Inc",
+   "county": "Copiah",
+   "amount": 2929324.0,
+   "purpose": "To modernize and strengthen healthcare technology."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 80,
+   "recipient": "Northtown Pharmacy LLC",
+   "county": "Hinds",
+   "amount": 275000.0,
+   "purpose": "To modernize the pharmacy management system for better connectivity."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 81,
+   "recipient": "Amite County Medical Services, Inc.",
+   "county": "Amite",
+   "amount": 172759.0,
+   "purpose": "To modernize aging infrastructure and expand digital health tools to better support care for rural patients."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 82,
+   "recipient": "Spann Senses, LLC",
+   "county": "Bolivar",
+   "amount": 95000.0,
+   "purpose": "To better provide speech-language services through technology modernization and cybersecurity upgrades."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 83,
+   "recipient": "Medplus Urgent Clinic, LLC",
+   "county": "Lee",
+   "amount": 258800.0,
+   "purpose": "To strengthen chronic disease care across five rural clinics through technology and operational updates."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 84,
+   "recipient": "King\u2019s Daughters Medical Center",
+   "county": "Lincoln",
+   "amount": 326441.0,
+   "purpose": "To implement a comprehensive cybersecurity modernization initiative."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 85,
+   "recipient": "King\u2019s Daughters Medical Center",
+   "county": "Lincoln",
+   "amount": 960920.0,
+   "purpose": "To implement a telemetry system modernization to ensure monitoring system interfaces with EHR."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 86,
+   "recipient": "Internal Medicine Clinic of Columbia, PA",
+   "county": "Marion",
+   "amount": 74553.0,
+   "purpose": "To replace outdated technology to improve cybersecurity, patient care, and reliability."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 87,
+   "recipient": "P & S Clinic OB-GYN, PLLC",
+   "county": "Oktibbeha",
+   "amount": 115643.0,
+   "purpose": "To improve IT infrastructure across three rural clinics."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 88,
+   "recipient": "Simpson Community Healthcare, Inc.",
+   "county": "Simpson",
+   "amount": 830000.0,
+   "purpose": "To implement IT infrastructure and cybersecurity upgrades."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 89,
+   "recipient": "George Regional Health and Rehab",
+   "county": "George",
+   "amount": 34400.0,
+   "purpose": "To purchase eight wireless vital sign monitors and integrate them with their EHR for improved patient care."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 90,
+   "recipient": "Independent Healthcare Management Inc",
+   "county": "Scott",
+   "amount": 730000.0,
+   "purpose": "To provide for technology upgrades to improve patient access."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 91,
+   "recipient": "Phyfer Eye Care, PC DBA Brooks Eye Center and Optical",
+   "county": "Lowndes",
+   "amount": 35317.0,
+   "purpose": "To modernize technology infrastructure and security."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 92,
+   "recipient": "Fast Pace Mississippi, PLLC",
+   "county": "Tippah",
+   "amount": 516600.0,
+   "purpose": "To fund a new enterprise-wide EHR, IT, interoperability and cybersecurity modernization initiative."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 93,
+   "recipient": "Daniel B. Story II, DMD",
+   "county": "Humphreys",
+   "amount": 13374.0,
+   "purpose": "To upgrade their digital capabilities through IT upgrades."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 94,
+   "recipient": "George Regional Health and Rehab",
+   "county": "George",
+   "amount": 330000.0,
+   "purpose": "To install a smart nurse call system and an electronic wandering management system."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 95,
+   "recipient": "McComb Children\u2019s Clinic",
+   "county": "Pike",
+   "amount": 24370.0,
+   "purpose": "To update aging technological infrastructure."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 96,
+   "recipient": "Quinn Healthcare, PLLC",
+   "county": "Madison",
+   "amount": 33738.0,
+   "purpose": "To strengthen cyber security, modernize aging devices and enhance digital health access."
+  },
+  {
+   "program": "Rural Provider Technology Grant Program",
+   "n": 97,
+   "recipient": "Jefferson County Nursing Home",
+   "county": "Jefferson",
+   "amount": 150000.0,
+   "purpose": "To improve connectivity, modernize systems, strengthen cyber security, and expand digital care capabilities."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 1,
+   "recipient": "Downs Family Dentistry",
+   "county": "Prentiss",
+   "amount": 225000.0,
+   "purpose": "To add in-house implant, endodontic, preventative, and diagnostic services for rural patients."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 2,
+   "recipient": "Winston County Medical Foundation",
+   "county": "Winston",
+   "amount": 1090138.34,
+   "purpose": "To modernize hospital diagnostic and patient monitoring services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 3,
+   "recipient": "University of Mississippi Medical Center Greenwood",
+   "county": "Leflore",
+   "amount": 3000000.0,
+   "purpose": "To modernize hospital infrastructure and expand future surgical and post-acute care capacity."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 4,
+   "recipient": "Countrywood Manor Assisted Living, Inc.",
+   "county": "Lee",
+   "amount": 450000.0,
+   "purpose": "To improve facility reliability through the installation of a whole-house backup generator and HVAC upgrades."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 5,
+   "recipient": "Countrywood Manor Assisted Living, Inc.",
+   "county": "Marshall",
+   "amount": 374492.11,
+   "purpose": "To improve facility reliability through the installation of a whole-house backup generator and HVAC upgrades."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 6,
+   "recipient": "Memorial Health System",
+   "county": "Stone",
+   "amount": 1151594.0,
+   "purpose": "To expand access to diagnostic testing with a new mammography unit, bone density system and patient tracking & referral system."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 7,
+   "recipient": "Delta Health Center",
+   "county": "Bolivar",
+   "amount": 3000000.0,
+   "purpose": "To establish a 24/7 Urgent and Critical Response center in Rosedale."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 8,
+   "recipient": "Independent Healthcare Management, Inc.",
+   "county": "Scott",
+   "amount": 3000000.0,
+   "purpose": "To expand access to robotic surgery through the purchase of necessary equipment as well as an automated medication management system, chemistry analyzer and replacement inpatient hospital beds."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 9,
+   "recipient": "Sai Sanjeevani Medical Group",
+   "county": "Coahoma",
+   "amount": 11550.0,
+   "purpose": "To expand access to vision screenings in the Delta."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 10,
+   "recipient": "Tate County Hospital",
+   "county": "Tate",
+   "amount": 1500000.0,
+   "purpose": "To equip two operating rooms and re-establish inpatient and outpatient surgical care."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 11,
+   "recipient": "Copiah County Medical Center",
+   "county": "Copiah",
+   "amount": 643700.4,
+   "purpose": "To modernize diagnostic imaging services with advanced imaging technology."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 12,
+   "recipient": "Yalobusha General Hospital",
+   "county": "Yalobusha",
+   "amount": 175000.0,
+   "purpose": "To expand diagnostic imaging services by upgrading to advanced imaging technology."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 13,
+   "recipient": "Delta Health Transformation Council, Inc.",
+   "county": "Washington",
+   "amount": 3000000.0,
+   "purpose": "To expand access to advanced surgical care in the Delta through robotic-assisted surgery."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 14,
+   "recipient": "Progressive Health of Houston",
+   "county": "Chickasaw",
+   "amount": 1645000.0,
+   "purpose": "To establish six new service lines including women\u2019s health."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 15,
+   "recipient": "Winston County Medical Foundation",
+   "county": "Winston",
+   "amount": 240852.15,
+   "purpose": "To expand transportation access for rural patients."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 16,
+   "recipient": "North Sunflower Medical Center",
+   "county": "Sunflower",
+   "amount": 1000000.0,
+   "purpose": "To provide roof renovations that will improve facility reliability and provide patients with uninterrupted healthcare."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 17,
+   "recipient": "Progressive Health of Houston",
+   "county": "Chickasaw",
+   "amount": 1383406.0,
+   "purpose": "To restore outpatient services for endoscopy, vascular diagnostics, minor procedures, portable imaging and wound care."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 18,
+   "recipient": "Memorial Health System",
+   "county": "Stone",
+   "amount": 1160837.0,
+   "purpose": "To expand access to advanced cardiac imaging services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 19,
+   "recipient": "Webster Healthcare Services, Inc.",
+   "county": "Webster",
+   "amount": 500000.0,
+   "purpose": "To create a four-bed Emergency Department Observation Unit to provide behavioral health observation for rural patients requiring extended care."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 20,
+   "recipient": "Copiah County Medical Center",
+   "county": "Copiah",
+   "amount": 29063.6,
+   "purpose": "To modernize emergency department workflows by enabling bedside electronic medical record access."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 21,
+   "recipient": "USDR Behavioral Specialists",
+   "county": "Hinds",
+   "amount": 1884967.88,
+   "purpose": "To establish a seven-room Applied Behavioral Analysis clinic in Belzoni to expand autism and behavioral health services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 22,
+   "recipient": "South Central Regional Medical Center",
+   "county": "Jones",
+   "amount": 3000000.0,
+   "purpose": "To establish the South Central Imaging center dedicated to outpatient diagnostic imaging for expanded services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 23,
+   "recipient": "North Mississippi Medical Center, Inc.",
+   "county": "Lee",
+   "amount": 2500000.0,
+   "purpose": "To expand access to advanced minimally invasive surgical care."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 24,
+   "recipient": "Hattiesburg Clinic, P.A.",
+   "county": "Forrest",
+   "amount": 125414.0,
+   "purpose": "To expand diabetic retinopathy screening by integrating AI enabled retinal imaging into 12 rural clinics."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 25,
+   "recipient": "South Central Regional Medical Center",
+   "county": "Jones",
+   "amount": 3000000.0,
+   "purpose": "To expand pharmacy and infusion services by increasing IV compounding capacity and improving medication access for rural cancer and infusion patients."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 26,
+   "recipient": "Gorton Rural Health Clinic",
+   "county": "Humphreys",
+   "amount": 228000.0,
+   "purpose": "To strengthen access by replacing outdated equipment and installing a backup power generator."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 27,
+   "recipient": "Jasper General Hospital",
+   "county": "Jasper",
+   "amount": 535000.0,
+   "purpose": "To provide a backup power generator for uninterrupted care delivery."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 28,
+   "recipient": "Laurel Surgery & Endoscopy Center",
+   "county": "Jackson",
+   "amount": 80850.0,
+   "purpose": "To improve outpatient surgical care by providing equipment upgrades."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 29,
+   "recipient": "Southwest Mississippi Regional Center",
+   "county": "Pike",
+   "amount": 277077.0,
+   "purpose": "To modernize surgical and emergency equipment."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 30,
+   "recipient": "Northeast Mental Health",
+   "county": "Mental Retardation Commission d.b.a. LIFECORE Health Group \u2013 Monroe",
+   "amount": 27600.0,
+   "purpose": "To expand service capacity through the renovation of the Amory clinic."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 31,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 220000.0,
+   "purpose": "To modernize laboratory diagnostic services through equipment upgrades."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 32,
+   "recipient": "George County Hospital",
+   "county": "George",
+   "amount": 1501000.0,
+   "purpose": "To strengthen rural laboratory and maternal health services by establishing onsite maternal Hepatitis B testing."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 33,
+   "recipient": "Endocrine Diabetes & Thyroid Center PLLC",
+   "county": "DeSoto",
+   "amount": 88960.38,
+   "purpose": "To enhance access to specialized endocrinology services for rural patients."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 34,
+   "recipient": "Memorial Health System",
+   "county": "Stone",
+   "amount": 3000000.0,
+   "purpose": "To expand diagnostic imaging access through a mobile MRI program."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 35,
+   "recipient": "George Regional Health and Rehab",
+   "county": "George",
+   "amount": 356650.0,
+   "purpose": "To improve patient safety and care quality by replacing existing beds with integrated care beds."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 36,
+   "recipient": "Laurel Surgery & Endoscopy Center",
+   "county": "Jones",
+   "amount": 68250.0,
+   "purpose": "To upgrade equipment to ensure access to high-quality image guided outpatient surgical and pain management services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 37,
+   "recipient": "Yalobusha General Hospital",
+   "county": "Yalobusha",
+   "amount": 275000.0,
+   "purpose": "To expand access to advanced breast cancer screening services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 38,
+   "recipient": "Countrywood Manor Assisted Living, Inc.",
+   "county": "Itawamba",
+   "amount": 350000.0,
+   "purpose": "To provide for full-facility backup power."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 39,
+   "recipient": "Mantachie Rural Health Center",
+   "county": "Itawamba",
+   "amount": 236000.0,
+   "purpose": "To expand capacity through added counseling space, upgraded dental and diagnostic equipment, and onsite imaging and lab testing."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 40,
+   "recipient": "JWM Therapy Services, LLC",
+   "county": "Grenada",
+   "amount": 19185.76,
+   "purpose": "To expand outpatient pediatric PT, OT, and STT services."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 41,
+   "recipient": "Northwest Mississippi Regional Medical Center",
+   "county": "Coahoma",
+   "amount": 834750.0,
+   "purpose": "To support the Delta Maternal-Newborn Access Preservation and Modernization Initiative."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 42,
+   "recipient": "Sai Sanjeevani Medical Group",
+   "county": "Coahoma",
+   "amount": 750000.0,
+   "purpose": "To establish a cardiac unit to provide high-quality cardiovascular care."
+  },
+  {
+   "program": "Mississippi Rural Capital Project Care Gap Closure Grant Program",
+   "n": 43,
+   "recipient": "Lafayette LTC, Inc.",
+   "county": "Lafayette",
+   "amount": 395000.0,
+   "purpose": "To upgrade generator systems so this facility can improve service continuity."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 1,
+   "recipient": "Resilience Counseling & Recovery Center, LLC",
+   "county": "Rankin",
+   "amount": 50000.0,
+   "purpose": "To fund telehealth capacity for rural mental health and substance use counseling."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 2,
+   "recipient": "CAMHP Foundation",
+   "county": "Franklin",
+   "amount": 250000.0,
+   "purpose": "To establish a hub for behavioral health, psychiatric medication management, specialty care and related services."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 3,
+   "recipient": "Outreach Health Services",
+   "county": "Clarke",
+   "amount": 218200.0,
+   "purpose": "To enhance chronic care management for obesity, diabetes, hypertension, cardiovascular disease and other chronic conditions."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 4,
+   "recipient": "Harmony House Calls LLC",
+   "county": "Rankin",
+   "amount": 250000.0,
+   "purpose": "To fund a readiness model combining digital-literacy coaching, provider education, connectivity improvements, diagnostic peripherals, and RPM."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 5,
+   "recipient": "Choctaw Regional Medical Center",
+   "county": "Choctaw",
+   "amount": 394000.0,
+   "purpose": "To fund accessible telehealth access points offering diagnostic equipment and remote clinician coverage."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 6,
+   "recipient": "Progressive Health of Houston",
+   "county": "Chickasaw",
+   "amount": 336000.0,
+   "purpose": "To fund a project that includes diagnostic telehealth carts, specialist contracting, coordinators, patient outreach and consultation spaces."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 7,
+   "recipient": "Memorial Health System",
+   "county": "Stone",
+   "amount": 1920000.0,
+   "purpose": "To establish AI-enabled care for Stone, George, Hancock, Jackson and Pearl River Counties offering virtual primary, behavioral and chronic disease care."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 8,
+   "recipient": "Preventive Care MD",
+   "county": "Jackson",
+   "amount": 182000.0,
+   "purpose": "To expand hub to four site networks serving Stone, George and Pearl River Counties through telehealth equipment, broadband improvements and education."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 9,
+   "recipient": "North Mississippi Commission on Mental Illness/Mental Retardation d.b.a. Communicare",
+   "county": "Lafayette Co.",
+   "amount": 300000.0,
+   "purpose": "To expand infrastructure for crisis response, detention-based care, commitment proceedings, and care coordination."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 10,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 72750.0,
+   "purpose": "To fund a regional hub-and-spoke congestive heart failure program providing telehealth, cardiac rehabilitation, and advanced-heart-failure referral pathways."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 11,
+   "recipient": "Access Family Health Services, Inc.",
+   "county": "Chickasaw",
+   "amount": 98693.0,
+   "purpose": "To add digital otoscopes and stethoscopes to school-based clinics, and a mobile clinic to improve diagnostic capability during virtual visits."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 12,
+   "recipient": "NP Care Anywhere, LLC",
+   "county": "Quitman",
+   "amount": 134000.0,
+   "purpose": "To establish a mobile maternal telehealth hub combining maternal diagnostic equipment, tele-ultrasound, and specialty/behavioral-health access."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 13,
+   "recipient": "Northeast Mental Health d.b.a. LIFECORE Health Group",
+   "county": "Monroe",
+   "amount": 30610.0,
+   "purpose": "To expand direct-to-consumer behavioral-health telehealth to existing clinic-based virtual-care program across Northeast Mississippi."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 14,
+   "recipient": "University of Mississippi Medical Center",
+   "county": "Hinds",
+   "amount": 149100.0,
+   "purpose": "To allow AI-enabled remote patient monitoring for chronic disease and maternal health that integrates device data with EHR."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 15,
+   "recipient": "Plan A Health, Inc.",
+   "county": "Humphreys",
+   "amount": 50000.0,
+   "purpose": "To equip rural clinic sites and a mobile unit with telehealth kiosks capable of supporting virtual specialist visits and diagnostic testing."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 16,
+   "recipient": "Forrest County General Hospital",
+   "county": "Forrest",
+   "amount": 596026.0,
+   "purpose": "To add virtual nursing carts, discharge cameras, equipment, RPM, and navigation services to help coordinate patients."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 17,
+   "recipient": "Delta Health Center, Inc.",
+   "county": "Washington",
+   "amount": 760955.0,
+   "purpose": "To fund a closed-loop specialty referral network linking providers through medical-grade telehealth carts and dedicated coordinators."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 18,
+   "recipient": "TrustCare Health, LLC",
+   "county": "Madison",
+   "amount": 1203414.0,
+   "purpose": "To expand bilingual, pediatric, behavioral-health, and primary-care through school-based diagnostics, education, and dedicated providers."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 19,
+   "recipient": "Coastal Family Health Center, Inc.",
+   "county": "Harrison",
+   "amount": 422250.0,
+   "purpose": "To expand RPM program to rural and low-income patients with uncontrolled hypertension."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 20,
+   "recipient": "Wayne General Hospital",
+   "county": "Wayne",
+   "amount": 200000.0,
+   "purpose": "To add mobile clinical workstations supporting dedicated telehealth-enabled clinical environments."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 21,
+   "recipient": "South Central Regional Medical Center",
+   "county": "Covington",
+   "amount": 2543900.0,
+   "purpose": "To establish a hub that provides chronic care management, transitional care, wellness visits, and a 24/7 nurse call line."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 22,
+   "recipient": "Jefferson Comprehensive Health Center, Inc.",
+   "county": "Jefferson",
+   "amount": 1000000.0,
+   "purpose": "To establish a regional telehealth and remote patient monitoring program serving Jefferson and Adams Counties."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 23,
+   "recipient": "Delta Health Center, Inc.",
+   "county": "Washington",
+   "amount": 491621.0,
+   "purpose": "To fund remote patient monitoring and mobile Community Health Workers to serve patients with uncontrolled diabetes, hypertension, CHF, and COPD."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 24,
+   "recipient": "Medplus Urgent Clinic, LLC",
+   "county": "Lee",
+   "amount": 158600.0,
+   "purpose": "To expand telehealth and RPM to address provider shortages and improve care for large diabetic and prediabetic populations."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 25,
+   "recipient": "Memorial Health System",
+   "county": "Harrison",
+   "amount": 306515.0,
+   "purpose": "To fund a hub-and-spoke model for diabetes education, navigation, telehealth, remote monitoring, and chronic-disease management."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 26,
+   "recipient": "PSP Medical Clinic",
+   "county": "Madison",
+   "amount": 1000000.0,
+   "purpose": "To establish telehealth and RPM capabilities serving patients with significant hypertension, diabetes, and obesity burdens."
+  },
+  {
+   "program": "Telehealth Hub Connectivity, Equipment & Education Grant Program",
+   "n": 27,
+   "recipient": "GA Carmichael Family Health Center, Inc.",
+   "county": "Madison",
+   "amount": 255800.0,
+   "purpose": "To add diagnostic equipment, standardized workflows, staff training, patient education, and outreach."
+  }
+ ]
+}
