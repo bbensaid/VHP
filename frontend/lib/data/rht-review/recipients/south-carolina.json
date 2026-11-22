@@ -1,0 +1,1798 @@
+{
+ "state": "South Carolina",
+ "slug": "south-carolina",
+ "asOf": "2026-11-20",
+ "source": {
+  "label": "South Carolina Department of Health and Human Services, \"Year One Award List\" (contracts awarded Sept 15, 2026; rev. Nov 20, 2026)",
+  "url": "https://www.scdhhs.gov/sites/dhhs/files/SC%20RHTP%20Year%201%20Award%20List%20to%20CMS.pdf"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 1,
+   "recipient": "Morphis Pediatric Group",
+   "county": "Not stated",
+   "amount": 34750.0,
+   "purpose": "Implementation and optimization of AI-enabled clinical documentation and enhanced electronic health record (EHR) functionality from a pediatric practice in the Pee Dee area"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 2,
+   "recipient": "Oh The Blood Mobile Phlebotomy",
+   "county": "Not stated",
+   "amount": 124995.0,
+   "purpose": "Implementation of a could base EHR platform for a mobile phlebotomy provider in the Pee Dee"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 3,
+   "recipient": "Presbyterian College",
+   "county": "Not stated",
+   "amount": 148920.0,
+   "purpose": "A pharmacist-delivered remote patient monitoring (RPM) program collaborative between pharmacy educator and free clinic for 60 patients in Laurens County"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 4,
+   "recipient": "Bluffton Jasper County Volunteers in Medicine",
+   "county": "Not stated",
+   "amount": 208200.0,
+   "purpose": "An RPM intervention for 150 patients by implementing CareSimple\u2019s Care Management Services (removed previously proposed nurse position)"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 5,
+   "recipient": "Careteam Plus",
+   "county": "Not stated",
+   "amount": 225626.8,
+   "purpose": "A chronic disease management and RPM program by an Federally Qualified Health Center (FQHC) to serve patients"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 6,
+   "recipient": "Lexington Health",
+   "county": "Not stated",
+   "amount": 250804.9,
+   "purpose": "Upgrade of infrastructure and add-ons to existing EHR from primary care in Newberry County"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 7,
+   "recipient": "Carolina Pines Regional Medical Center",
+   "county": "Not stated",
+   "amount": 268713.0,
+   "purpose": "An RPM intervention and OBGYN expansion program for a regional hospital. (Updated statement of work: Removal of inpatient monitoring system)"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 8,
+   "recipient": "Infinity Medical Solutions (DBA Infinity Family Healthcare)",
+   "county": "Not stated",
+   "amount": 277500.0,
+   "purpose": "An RPM program for patients from primary care practice in Barnwell County"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 9,
+   "recipient": "Able South Carolina",
+   "county": "Not stated",
+   "amount": 298597.0,
+   "purpose": "An assistive technology coordinated planning service and item provision for intellectual and developmental disabilities (IDD) patients statewide"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 10,
+   "recipient": "Lake City Family Medicine, LLC (DBA Family Medicine Associates, LLC)",
+   "county": "Not stated",
+   "amount": 299086.0,
+   "purpose": "An RPM intervention for 1,000 patients by a Rural Health Clinic (RHC)"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 11,
+   "recipient": "ReGenesis Organization Community Health Center",
+   "county": "Not stated",
+   "amount": 425000.0,
+   "purpose": "A cardiometabolic RPM and care coordination program from an FQHC"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 12,
+   "recipient": "R. Bauer Vaughters, III, MD, Inc.",
+   "county": "Not stated",
+   "amount": 454980.27,
+   "purpose": "An RPM program for patients by an endocrinologist"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 13,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 488532.0,
+   "purpose": "A virtual server IT infrastructure project for disaster preparedness for a county hospital"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 14,
+   "recipient": "Healistic Wound Care Management Group",
+   "county": "Not stated",
+   "amount": 601000.0,
+   "purpose": "An RPM intervention by new in-home medical provider in Pee Dee region"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 15,
+   "recipient": "Midlands Neurology and Pain Associates",
+   "county": "Not stated",
+   "amount": 633600.0,
+   "purpose": "An RPM intervention for 400 patients in rural areas statewide by a clinic in the Midlands"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 16,
+   "recipient": "Ehrhardt Medical Practice, LLC",
+   "county": "Not stated",
+   "amount": 661700.0,
+   "purpose": "A chronic disease management program with RPM and mobile care components by a primary care provider"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 17,
+   "recipient": "Self Regional Healthcare (Lakelands Region AI RPM)",
+   "county": "Not stated",
+   "amount": 677000.0,
+   "purpose": "RPM devices, AI-enabled predictive analytics, Epic integration, patient onboarding and centralized clinical monitoring and care coordination"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 18,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 725020.0,
+   "purpose": "An RPM regional hub and EMS-linked intervention at a county hospital affiliated with a health system"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 19,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 1.0,
+   "purpose": "Expansion of existing HealthSnap RPM partnership to rural locations, EHR integration of platform and funding a central monitoring hub"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 20,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 1349818.0,
+   "purpose": "Expansion of existing tele-intensive care unit (ICU) program and the addition of telehealth-enabled beds"
+  },
+  {
+   "program": "Connections to Care: Expand Remote Patient Monitoring and Assistive Technology",
+   "n": 21,
+   "recipient": "McLeod Health",
+   "county": "Not stated",
+   "amount": 4158700.0,
+   "purpose": "Establishes Heart Failure Command Center in the PeeDee area, with Implantable Cardiac Devices as the RPM device and 24/7 clinical monitoring of data"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 22,
+   "recipient": "Low Country Health Care System",
+   "county": "Not stated",
+   "amount": 253049.25,
+   "purpose": "Upgrade of Health IT infrastructure to improve data security and generator to prevent power failure at an FQHC in Barnwell County"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 23,
+   "recipient": "New Beginnings Family Healthcare, LLC",
+   "county": "Not stated",
+   "amount": 81007.0,
+   "purpose": "An EHR replacement and IT training implementation at a primary care provider in the upstate"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 24,
+   "recipient": "Care Net of Lancaster",
+   "county": "Not stated",
+   "amount": 104000.0,
+   "purpose": "AI-powered pharmacy workflow improvement to reduce pharmacy backlog issues at an FQHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 25,
+   "recipient": "Care Net of Lancaster",
+   "county": "Not stated",
+   "amount": 109000.0,
+   "purpose": "AI-powered radiology information system for a FQHC imaging center"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 26,
+   "recipient": "Cherokee Community Care",
+   "county": "Not stated",
+   "amount": 117500.0,
+   "purpose": "Health IT infrastructure improvements and EHR implementation for an RHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 27,
+   "recipient": "Fairfield Medical Associates",
+   "county": "Not stated",
+   "amount": 137119.38,
+   "purpose": "A health IT infrastructure upgrade and imaging equipment for an RHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 28,
+   "recipient": "Edisto Indian Free Clinic",
+   "county": "Not stated",
+   "amount": 139673.0,
+   "purpose": "An EHR implementation at a free medical clinic"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 29,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 158000.0,
+   "purpose": "Study to select an EHR upgrade to be implemented in future years at a county hospital"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 30,
+   "recipient": "Community Initiatives Inc.",
+   "county": "Not stated",
+   "amount": 170000.0,
+   "purpose": "An EHR implementation for a free clinic"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 31,
+   "recipient": "Bamberg Family Practice",
+   "county": "Not stated",
+   "amount": 176062.0,
+   "purpose": "An IT infrastructure upgrade and several EHR enhancements for an RHC primary care provider"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 32,
+   "recipient": "Spartanburg Health Services District, Inc.",
+   "county": "Not stated",
+   "amount": 188750.0,
+   "purpose": "An EHR upgrade to include capacity management tracking across a health system in Spartanburg and the Upstate"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 33,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 222684.15,
+   "purpose": "Cybersecurity IT improvements for a county hospital"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 34,
+   "recipient": "Beaufort Memorial Hospital",
+   "county": "Not stated",
+   "amount": 225000.0,
+   "purpose": "An AI-based phone call management platform for a hospital-affiliated physician group"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 35,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 226396.0,
+   "purpose": "An EHR for newly opened primary care and specialty care providers"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 36,
+   "recipient": "Fetter Health Care Network",
+   "county": "Not stated",
+   "amount": 242329.0,
+   "purpose": "A health IT infrastructure improvement plan from an FQHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 37,
+   "recipient": "Spartanburg Health Services District, Inc.",
+   "county": "Not stated",
+   "amount": 255208.0,
+   "purpose": "A social determinant of health screening and care coordination platform integration into EHR"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 38,
+   "recipient": "Carolina Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 260450.67,
+   "purpose": "Upgrade phones to WebEx-based system and add EHR interoperability to phones for an FQHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 39,
+   "recipient": "Tandem Health",
+   "county": "Not stated",
+   "amount": 263648.0,
+   "purpose": "Modernize pharmacy management systems across service sites to enhance interoperability and support integrated value-based care delivery for rural and underserved populations"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 40,
+   "recipient": "The Center for Women's Health",
+   "county": "Not stated",
+   "amount": 276250.0,
+   "purpose": "Implement the full approved IT/electronic medical records (EMRs) modernization project using the partially approved funding amount of $276,250. The original project budget was $287,500. The revised budget reduces the request by $11,250 through removal of the $5,250 fringe-benefit allocation associated with the project coordinator and removal of the $6,000 contingency allocation."
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 41,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 300330.0,
+   "purpose": "Adding EHR for two newly opened primary care and urgent care providers (AnMed Seneca Primary Care and AnMed Seneca Urgent Care)"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 42,
+   "recipient": "Allendale County Hospital",
+   "county": "Not stated",
+   "amount": 314485.0,
+   "purpose": "A Health IT infrastructure improvement plan"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 43,
+   "recipient": "ReGenesis Organization Community Health Center",
+   "county": "Not stated",
+   "amount": 333316.0,
+   "purpose": "An EHR enhancement from an FQHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 44,
+   "recipient": "Self Regional Healthcare (Lakelands Region Network Infrastructure)",
+   "county": "Not stated",
+   "amount": 339734.0,
+   "purpose": "The replacement and modernization of aging network infrastructure at 13 participating outpatient and specialty care sites"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 45,
+   "recipient": "Lovelace Family Medicine",
+   "county": "Not stated",
+   "amount": 348139.43,
+   "purpose": "Upgrade of infrastructure and add-ons to existing EHR from primary care in Newberry County"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 46,
+   "recipient": "Piedmont Pediatrics",
+   "county": "Not stated",
+   "amount": 442600.0,
+   "purpose": "EHR interoperability upgrades and infrastructure improvement"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 47,
+   "recipient": "Infinity Medical Solutions (DBA Infinity Family Healthcare)",
+   "county": "Not stated",
+   "amount": 445300.0,
+   "purpose": "An RPM and telehealth program integrated with existing EHR for a primary care provider in Barnwell County"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 48,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 469795.5,
+   "purpose": "Upgrade the existing end-of-life communication devices and phone system to the Cisco Unified Communications Version 15 system for cybersecurity hardening, protection and disaster recovery by a health system"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 49,
+   "recipient": "Self Regional Healthcare (Lakelands Region Digital Patient Access)",
+   "county": "Not stated",
+   "amount": 630000.0,
+   "purpose": "These funds preserve the core enterprise resource planning licensing, implementation services, configuration, integrations, data migration, testing, cybersecurity enhancements, infrastructure readiness and implementation materials needed for deployment across the Greenwood campus and the critical access hospitals in Abbeville and Edgefield"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 50,
+   "recipient": "Beaufort Memorial Hospital",
+   "county": "Not stated",
+   "amount": 645918.0,
+   "purpose": "Implementation of an AI imaging software"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 51,
+   "recipient": "Family Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 749220.69,
+   "purpose": "An EHR and health IT infrastructure improvements for an FQHC"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 52,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 1141375.0,
+   "purpose": "An EHR for a newly opened rural emergency department and specialty practices campus"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 53,
+   "recipient": "Self Regional Healthcare (Lakelands Region ERP)",
+   "county": "Not stated",
+   "amount": 1330000.0,
+   "purpose": "An enterprise resource planning platform for infrastructure and logistics management at a health system in the Lakelands"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 54,
+   "recipient": "Beaufort Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1482135.89,
+   "purpose": "An IT infrastructure upgrade for a regional hospital"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 55,
+   "recipient": "Health Care Partners of South Carolina, Inc.",
+   "county": "Not stated",
+   "amount": 1576481.98,
+   "purpose": "A EHR enhancement and IT infrastructure improvement project for an FQHC in Florence, Horry and Marion counties"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 56,
+   "recipient": "St. James Health and Wellness",
+   "county": "Not stated",
+   "amount": 1593333.0,
+   "purpose": "Modernize its mobile medical unit health IT for integration with the broader clinical system, automating clinical quality tracking and ensuring HIPAA-level security across mobile and fixed sites"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 57,
+   "recipient": "UHS of Greenville, LLC (DBA The Carolina Center for Behavioral Health)",
+   "county": "Not stated",
+   "amount": 1925000.0,
+   "purpose": "Interoperable EHR platform to replace fragmented systems, improving coordination, efficiency and continuity of care for adolescents and adults across South Carolina"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 58,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 4480337.0,
+   "purpose": "Expansion of virtual nursing programs to rural ICU sites by a health system"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 59,
+   "recipient": "Acadia Healthcare Co.",
+   "county": "Not stated",
+   "amount": 5565253.0,
+   "purpose": "An EHR implementation for an inpatient behavioral health hospital and three associated comprehensive treatment center s"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 60,
+   "recipient": "South Carolina Department of Corrections (SCDC)",
+   "county": "Not stated",
+   "amount": 6836679.0,
+   "purpose": "A project to convert all SCDC prison medical facilities to Epic EHR for interoperability after discharge or transfer"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 61,
+   "recipient": "Self Regional Healthcare (Lakelands Region Modernize EMRs)",
+   "county": "Not stated",
+   "amount": 8250712.0,
+   "purpose": "System-wide EHR upgrade for rural and non-rural clinics"
+  },
+  {
+   "program": "Connections to Care: Modernize Health IT Infrastructure",
+   "n": 62,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2141188.0,
+   "purpose": "An EHR upgrade, IT infrastructure improvement and cybersecurity improvements for a regional medical center."
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 63,
+   "recipient": "Allendale County Hospital",
+   "county": "Not stated",
+   "amount": 75500.0,
+   "purpose": "The revised project will use existing staff and clinic infrastructure to strengthen CCM workflows at both RHC locations, with a reduced enrollment target"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 64,
+   "recipient": "Foothills Area YMCA",
+   "county": "Not stated",
+   "amount": 154065.0,
+   "purpose": "Exercise equipment for an Exercise Is Medicine program"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 65,
+   "recipient": "Infinity Medical Solutions (DBA Infinity Family Healthcare)",
+   "county": "Not stated",
+   "amount": 224200.0,
+   "purpose": "A hypertension and diabetes program with RPM"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 66,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 428812.0,
+   "purpose": "A hub and spoke model for sickle cell disease care from a health system"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 67,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 643534.0,
+   "purpose": "Implementation site equipment and materials for a hub and spoke model for sickle cell from a health system"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 68,
+   "recipient": "Prisma Health - Midlands",
+   "county": "Not stated",
+   "amount": 869239.0,
+   "purpose": "A hub and spoke model to enhance specialty maternal diabetes care capacity at existing rural SC MOMs sites in Orangeburg, Sumter and Oconee by a health system"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 69,
+   "recipient": "Clemson Rural Health",
+   "county": "Not stated",
+   "amount": 1620974.0,
+   "purpose": "Integrating enhanced screening, patient self\u2011management education and provider training to support rural patients from identification through long\u2011term outcome improvement by university-led rural health care network"
+  },
+  {
+   "program": "Leveling Up: Chronic Disease Expansion",
+   "n": 70,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2812844.29,
+   "purpose": "A cardiac and coronary disease care upgrade with replacement of imaging equipment with CT and ultrasound units featuring enhanced cardiology capabilities at a county hospital."
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 71,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 101950.0,
+   "purpose": "Mobile screening and coordinated specialty care to reduce preventable limb loss due to chronic disease from a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 72,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 1056430.0,
+   "purpose": "A mobile lung cancer screening unit and first year operational costs for a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 73,
+   "recipient": "South Carolina Department of Behavioral Health and Developmental Disabilities (BHDD) Office of Mental Health (Beckman Center)",
+   "county": "Not stated",
+   "amount": 104000.0,
+   "purpose": "Renovate and modify existing RV for expansion of Highway to Hope program by a state agency"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 74,
+   "recipient": "Self Regional Healthcare (Lakelands Region Vision)",
+   "county": "Not stated",
+   "amount": 124800.0,
+   "purpose": "Purchase and deploy additional cameras rather than 20, creating a 19-camera regional network when combined with the four existing cameras. SRH will use existing clinical, population-health, information-technology and training resources to support site readiness, staff training, workflow integration, quality monitoring and technical coordination"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 75,
+   "recipient": "The Free Medical Clinic",
+   "county": "Not stated",
+   "amount": 127300.0,
+   "purpose": "Establish four to six rotating sites, prioritizing locations demonstrating the greatest need, strongest community partnerships and highest potential utilization. Equipment purchases will be limited to items essential for telehealth/clinical operations"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 76,
+   "recipient": "Prisma Health \u2013 Upstate",
+   "county": "Not stated",
+   "amount": 172036.0,
+   "purpose": "Expands the Addiction Medicine Center\u2019s mobile health program through a combination of screening \u201cpop-up\u201d clinics, mobile health delivery and community paramedicine programs by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 77,
+   "recipient": "Self Regional Healthcare (Rural Mobile Diagnostic)",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Procure a Freightliner M2 106 Plus or comparable medium-duty vehicle with sufficient towing capacity, appropriate towing configuration, delivery, and deployment-related equipment. The award is limited to this vehicle purchase."
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 78,
+   "recipient": "Alpha Behavioral Health Center",
+   "county": "Not stated",
+   "amount": 226376.0,
+   "purpose": "Renovating Alpha's underutilized spaces with equipment and supplies and establishing seasonal pop-up clinics for non-acute and preventive medical services for the population diagnosed with behavioral health conditions"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 79,
+   "recipient": "The Palmetto Palace",
+   "county": "Not stated",
+   "amount": 240341.5,
+   "purpose": "Mobile unit providing medical and dental care in rural South Carolina"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 80,
+   "recipient": "Due West Pharmacy and Wellness, LLC",
+   "county": "Not stated",
+   "amount": 249908.0,
+   "purpose": "To renovate, license, equip, secure and open a rural pharmacy"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 81,
+   "recipient": "Medical University of South Carolina",
+   "county": "Not stated",
+   "amount": 255438.0,
+   "purpose": "A mobile health unit for prostate cancer screening and community outreach from a health system."
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 82,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 359900.0,
+   "purpose": "Purchasing three QRV/SUV to expand rural healthcare reach and improve response efficiency by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 83,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 370904.0,
+   "purpose": "Equipment and furnishings for newly opened primary care and specialty care providers by health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 84,
+   "recipient": "Barnwell County",
+   "county": "Not stated",
+   "amount": 436800.0,
+   "purpose": "Acquire and equip a Type III ALS ambulance to increase county's available physical EMS response"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 85,
+   "recipient": "Fetter Health Care Network",
+   "county": "Not stated",
+   "amount": 439845.0,
+   "purpose": "Mobile health unit providing oral healthcare services and strengthen mobile dental diagnostic and preventive capacity by an FQHC"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 86,
+   "recipient": "ReGenesis Organization Community Health Center",
+   "county": "Not stated",
+   "amount": 440000.0,
+   "purpose": "Conversion of an existing - foot mobile unit into a fully equipped dental clinic to provide support by an FQHC"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 87,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 447116.0,
+   "purpose": "Equipment and furnishings for newly opened primary care and urgent care providers by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 88,
+   "recipient": "Marion County EMS",
+   "county": "Not stated",
+   "amount": 498400.0,
+   "purpose": "Purchase and equip two ALS quick response vehicles to implement a tiered EMS response system, reduce response times and deliver advanced life support"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 89,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 575000.0,
+   "purpose": "Dedicated ambulance services to improve transfer between rural emergency departments and higher-level care settings by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 90,
+   "recipient": "Pee Dee Regional Transportation Authority",
+   "county": "Not stated",
+   "amount": 585090.0,
+   "purpose": "A regional transport authority, proposed to ensure scheduled, reliable transportation service care models coordinating with community care site providers, mobile health units and pop-up clinics"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 91,
+   "recipient": "Palmetto Care Connections",
+   "county": "Not stated",
+   "amount": 592262.0,
+   "purpose": "A nonprofit telehealth network, proposed to purchase, staff and deploy a two\u2011exam\u2011room mobile telehealth unit delivering primary care, preventive screenings, chronic disease management and care coordination"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 92,
+   "recipient": "At Your Place Healthcare, LLC",
+   "county": "Not stated",
+   "amount": 593412.0,
+   "purpose": "A fully equipped mobile health unit to deliver primary and preventive care, chronic disease screening and management services"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 93,
+   "recipient": "HopeHealth Inc.",
+   "county": "Not stated",
+   "amount": 676718.0,
+   "purpose": "Mobile health unit to provide preventive medical and dental services by an FQHC"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 94,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 685501.0,
+   "purpose": "A social determinant of health screening and referral identification initiative by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 95,
+   "recipient": "Servants for Sight",
+   "county": "Not stated",
+   "amount": 685808.0,
+   "purpose": "A proposal to purchase, equip, staff and deploy a specialty eyecare mobile unit with an on\u2011board optics lab to deliver free vision screenings, exams, prescription glasses and pro bono surgical referrals"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 96,
+   "recipient": "Prisma Health-Upstate",
+   "county": "Not stated",
+   "amount": 760000.0,
+   "purpose": "Purchase and deploy eight community paramedic mobile units providing home-based care, chronic disease support and rural access services by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 97,
+   "recipient": "Low Country Health Care System",
+   "county": "Not stated",
+   "amount": 823521.93,
+   "purpose": "Expand access to breast cancer screening in rural counties through an FQHC by purchasing and staffing a mobile mammography unit to deliver services directly to women facing transportation and access barriers"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 98,
+   "recipient": "McLeod Health",
+   "county": "Not stated",
+   "amount": 842300.0,
+   "purpose": "A regional health system proposed to renovate and modernize a McLeod a primary care practice in Bennettsville located in Marlboro County to increase healthcare services at the proposed areas"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 99,
+   "recipient": "Joseph H. Neal Health Collaborative",
+   "county": "Not stated",
+   "amount": 898955.0,
+   "purpose": "To acquire and equip a mobile health unit, establish a healthcare access point in Camden for telehealth and diagnostic services and expand community outreach and care coordination"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 100,
+   "recipient": "Clemson University",
+   "county": "Not stated",
+   "amount": 962468.0,
+   "purpose": "Activating community pharmacy care sites, deploying a mobile health unit and delivering recurring in \u2011 store wellness screenings by a university - linked rural health provider network"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 101,
+   "recipient": "AnMed",
+   "county": "Not stated",
+   "amount": 1086729.0,
+   "purpose": "Laboratory and pharmacy equipment for a newly opened rural emergency department and specialty practices campus by a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 102,
+   "recipient": "Medical University of South Carolina",
+   "county": "Not stated",
+   "amount": 1340171.0,
+   "purpose": "A mobile health unit and strengthen rural health access program from a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Expanding Community Care Sites",
+   "n": 103,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 948932.0,
+   "purpose": "A mobile mammography unit and first year operational costs for a health system"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 104,
+   "recipient": "BHDD Office of Mental Health (Aiken-Barnwell Mental Health Center)",
+   "county": "Not stated",
+   "amount": 302126.0,
+   "purpose": "Expansion of Highway to Hope program by upgrading behavioral health mobile unit and seasonal pop-up clinics by a state agency"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 105,
+   "recipient": "BHDD Office of Mental Health (Spartanburg Area Mental Health Center)",
+   "county": "Not stated",
+   "amount": 712000.0,
+   "purpose": "Expansion of Highway to Hope mobile outreach program by purchasing and deploying a purpose-built, multi-room mobile behavioral health clinic capable of providing two to four simultaneous services, including crisis assessment by a state agency"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 106,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 182470.05,
+   "purpose": "Expand mobile crisis response by strengthening partnerships between Aiken-Barnwell Mental Health Center and law enforcement agencies"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 107,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 165322.75,
+   "purpose": "Expand mobile crisis response by strengthening partnerships between Anderson-Oconee-Pickens Mental Health Center and law enforcement agencies"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 108,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 302858.6,
+   "purpose": "Expand mobile crisis response by strengthening law enforcement partnerships, conducting rural community engagement and awareness campaigns and improving crisis referral and response processes"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 109,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 178879.35,
+   "purpose": "Expand mobile crisis response through law\u2011enforcement partnership building, community engagement, telehealth support and development of a community stakeholder training toolkit"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 110,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 172797.65,
+   "purpose": "Strengthen mobile crisis response through law\u2011enforcement partnership building, rural community engagement, and targeted awareness campaigns"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 111,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 496788.5,
+   "purpose": "Expand mobile crisis response by strengthening partnerships between Charleston Dorchester Mental Health Center and law enforcement agencies"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 112,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 219979.05,
+   "purpose": "Strengthen mobile crisis response through law\u2011enforcement partnerships, community engagement, targeted awareness campaigns and piloting a police-assisted care and treatment model"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 113,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 16294.0,
+   "purpose": "Expand mobile crisis response by s trengthening partnerships between the Columbia Area Mental Health Center and law enforcement agencies"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 114,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 162604.0,
+   "purpose": "Strengthen mobile crisis response through law enforcement partnership building, community engagement and telehealth expansion and targeted awareness campaigns"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 115,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 162945.0,
+   "purpose": "Expand mobile crisis response by strengthening partnerships with LED, telehealth training and community outreach"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 116,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 172797.65,
+   "purpose": "Strengthen strategic partnerships with law enforcement agencies; provide education on and increase utilization of mobile crisis resources; develop partnerships through targeted engagements with community partners and stakeholders"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 117,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 181261.25,
+   "purpose": "Strengthen partnerships with law enforcement, telehealth training and community outreach to expand mobile crisis response"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 118,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 204548.65,
+   "purpose": "Strengthen partnerships with law enforcement, telehealth training, and community outreach to expand mobile crisis response"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 119,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 182470.05,
+   "purpose": "Strengthen strategic partnerships with law enforcement agencies; provide education and increase utilization of mobile crisis resources; develop partnerships through targeted engagements with community partners and stakeholders"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 120,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 190933.65,
+   "purpose": "Strengthening partnerships with law enforcement, telehealth training, telehealth expansion and community outreach to expand mobile crisis response"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 121,
+   "recipient": "The Envoy Portfolio LLC",
+   "county": "Not stated",
+   "amount": 182680.05,
+   "purpose": "Strengthening partnerships with law enforcement and community outreach"
+  },
+  {
+   "program": "Wellness Within Reach: Mobile Crisis Re sponse",
+   "n": 122,
+   "recipient": "Beaufort Memorial Hospital",
+   "county": "Not stated",
+   "amount": 395817.0,
+   "purpose": "A mobile health unit for a regional hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 123,
+   "recipient": "Aiken Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2519500.0,
+   "purpose": "Replacement of obsolete elevators and elevator area modernization at a regional hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 124,
+   "recipient": "Allendale County Hospital",
+   "county": "Not stated",
+   "amount": 678448.0,
+   "purpose": "Replacement of obsolete CT scanner equipment at a county hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 125,
+   "recipient": "Allendale County Hospital",
+   "county": "Not stated",
+   "amount": 1614000.0,
+   "purpose": "Replacement of obsolete HVAC equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 126,
+   "recipient": "Allendale County Hospital",
+   "county": "Not stated",
+   "amount": 363732.0,
+   "purpose": "Replacement and modernization of obsolete security equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 127,
+   "recipient": "Beaufort Jasper Hampton Comprehensive Health Services, Inc.",
+   "county": "Not stated",
+   "amount": 586970.0,
+   "purpose": "Modernize an obstetric and women\u2019s health center and add specialty medical equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 128,
+   "recipient": "Bishopville Dental, LLC",
+   "county": "Not stated",
+   "amount": 640296.78,
+   "purpose": "Purchase and installation of approved advanced diagnostic, treatment, anesthesia/sedation, endodontic, periodontal, restorative, implant, digital dentistry and sterilization equipment to improve dental care"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 129,
+   "recipient": "Blue Ridge Pediatrics",
+   "county": "Not stated",
+   "amount": 188263.21,
+   "purpose": "Add patient monitoring in rooms and modernize nursing stations"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 130,
+   "recipient": "Care Net of Lancaster",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "An MRI for an FQHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 131,
+   "recipient": "Carolina Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 112018.0,
+   "purpose": "Replacement of obsolete patient medical equipment at FQHC sites"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 132,
+   "recipient": "Carolina Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 180010.0,
+   "purpose": "Replace obsolete HVAC at 4 FQHC sites"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 133,
+   "recipient": "Carolina Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 151181.0,
+   "purpose": "Install a pharmacy robot at an FQHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 134,
+   "recipient": "Carolina Pines Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2163031.0,
+   "purpose": "Replacement of obsolete CT scanner equipment and first year operation of equipment at a regional hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 135,
+   "recipient": "Cherokee Community Care",
+   "county": "Not stated",
+   "amount": 303818.86,
+   "purpose": "Replacement of obsolete HVAC, roof and electrical systems then furnishing renovated spaces at an RHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 136,
+   "recipient": "Community Medical Clinic of Kershaw County",
+   "county": "Not stated",
+   "amount": 390000.0,
+   "purpose": "Minor renovations to complete separately funded expansion of existing building and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 137,
+   "recipient": "Family Health Centers, Inc.",
+   "county": "Not stated",
+   "amount": 434003.24,
+   "purpose": "Replace obsolete specialty dental equipment for an FQHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 138,
+   "recipient": "Lake City Family Medicine, LLC (DBA Family Medicine Associates, LLC)",
+   "county": "Not stated",
+   "amount": 109000.0,
+   "purpose": "Modernize plumbing an HVAC, purchase patient chairs and lab equipment for an RHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 139,
+   "recipient": "Foothills Community Health Care",
+   "county": "Not stated",
+   "amount": 41782.0,
+   "purpose": "Renovation of the waiting area of an FQHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 140,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 98280.0,
+   "purpose": "Purchase of a dialysis machine to support existing dialysis program, acquisition of a Sherlock device for placement of PICC lines and replacing existing domestic water pressure booster pump system by a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 141,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1716000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize HVAC and building control systems at a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 142,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2638535.0,
+   "purpose": "Replace obsolete imaging equipment (CT and MRI, mobile imaging) and first year operational cost at a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 143,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 537931.0,
+   "purpose": "Replacement of obsolete electrical equipment at a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 144,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 185267.0,
+   "purpose": "Replacement of obsolete phones and modernization of the communications systems at a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 145,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1650000.0,
+   "purpose": "Replace roof at a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 146,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 125000.0,
+   "purpose": "Security guard uniforms and radios for a regional medical center"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 147,
+   "recipient": "Hand of Hope Children's Therapy Center, LLC",
+   "county": "Not stated",
+   "amount": 170683.0,
+   "purpose": "Replacement of obsolete HVAC equipment and modernization of systems at a pediatric behavioral health provider"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 148,
+   "recipient": "Healthy Smiles of Spartanburg, Inc.",
+   "county": "Not stated",
+   "amount": 156753.6,
+   "purpose": "Replace obsolete specialty medical equipment and add capacity with new operator equipment for dental provider"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 149,
+   "recipient": "HopeHealth Inc.",
+   "county": "Not stated",
+   "amount": 375617.0,
+   "purpose": "Add generator equipment and modernize systems to utilize for an FQHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 150,
+   "recipient": "HopeHealth Inc.",
+   "county": "Not stated",
+   "amount": 503231.0,
+   "purpose": "Add HVAC equipment and modernize systems to utilize"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 151,
+   "recipient": "Hospice and Palliative Care of Piedmont",
+   "county": "Not stated",
+   "amount": 380476.0,
+   "purpose": "Replacement of obsolete HVAC and fire panel equipment; modernization of flooring, workstations, windows, security, concrete and railing work"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 152,
+   "recipient": "Iva Drug Store, Inc.",
+   "county": "Not stated",
+   "amount": 350000.0,
+   "purpose": "Adding specialty pharmacy equipment and modernization of pharmacy area"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 153,
+   "recipient": "Lovelace Family Medicine",
+   "county": "Not stated",
+   "amount": 115818.05,
+   "purpose": "Replace obsolete HVAC equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 154,
+   "recipient": "Lovelace Family Medicine",
+   "county": "Not stated",
+   "amount": 321275.0,
+   "purpose": "Modernize parking lot"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 155,
+   "recipient": "Low Country Health Care System",
+   "county": "Not stated",
+   "amount": 158034.85,
+   "purpose": "Updating obsolete specialty medical equipment (x-ray) and modernizing flooring before installation at Barnwell pediatric location"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 156,
+   "recipient": "Low Country Health Care System",
+   "county": "Not stated",
+   "amount": 255000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 157,
+   "recipient": "McLeod Health",
+   "county": "Not stated",
+   "amount": 2862454.0,
+   "purpose": "Add specialized health equipment for robotic surgery"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 158,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 383000.0,
+   "purpose": "Replace obsolete humidity controls for operating rooms at a county hospital affiliate of a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 159,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 405000.0,
+   "purpose": "Equipment, procurement and planning for future electrical system upgrades for a nursing center affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 160,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 410168.0,
+   "purpose": "Replace obsolete sprinkler and fire pump system controls at a nursing center affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 161,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 700000.0,
+   "purpose": "Replacement of obsolete hot water tanks and asbestos abatement of lining material for old tanks at a county hospital affiliated with a health system."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 162,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Planning costs for future replacement of obsolete electrical systems at a county hospital affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 163,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Replace obsolete HVAC and building management system controls at a county hospital affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 164,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Replace obsolete elevator equipment at a county hospital affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 165,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Emergency generator installation at a county hospital affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 166,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 1100000.0,
+   "purpose": "Replace obsolete chiller equipment at two county hospitals affiliated with a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 167,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 357744.4,
+   "purpose": "Replace obsolete security equipment at a county hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 168,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 92815.8,
+   "purpose": "Installation of a pre\u2011action fire suppression system integrated with the existing infrastructure alongside retaining the FM\u2011200\u2122 system to protect the IT server room at a county hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 169,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 570075.0,
+   "purpose": "Replace obsolete air handler equipment at a county hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 170,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 2884456.81,
+   "purpose": "Replace obsolete MRI and modernize the MRI area at a county hospital"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 171,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1351744.55,
+   "purpose": "Repurpose space to create additional OR and add specialty medical equipment for OR at a county hospital."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 172,
+   "recipient": "Newberry County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 303827.04,
+   "purpose": "Replace obsolete specialty health equipment (ultrasound units)"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 173,
+   "recipient": "Piedmont Pediatrics",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Modernize electric, HVAC and plumbing systems at two locations"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 174,
+   "recipient": "Pinner Clinic",
+   "county": "Not stated",
+   "amount": 183400.0,
+   "purpose": "Modernize electric, HVAC and accessibility areas and replace obsolete specialty medical equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 175,
+   "recipient": "Prisma Health-Upstate",
+   "county": "Not stated",
+   "amount": 13011.0,
+   "purpose": "Modernizes carpentry at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 176,
+   "recipient": "Prisma Health-Upstate",
+   "county": "Not stated",
+   "amount": 15482.0,
+   "purpose": "Modernizes plumbing at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 177,
+   "recipient": "Prisma Health-Upstate",
+   "county": "Not stated",
+   "amount": 30700.0,
+   "purpose": "Modernize security access systems at primary care providers within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 178,
+   "recipient": "Prisma Health-Upstate",
+   "county": "Not stated",
+   "amount": 130000.0,
+   "purpose": "Modernize flooring at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 179,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 149300.0,
+   "purpose": "Updated patient medical equipment and furnishings at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 180,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 30000.0,
+   "purpose": "Patient safety and accessibility updates at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 181,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 58000.0,
+   "purpose": "Modernize roofing at primary care provider within a health system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 182,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 846566.0,
+   "purpose": "An IT infrastructure switch and access point upgrade"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 183,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 1042482.0,
+   "purpose": "An IT infrastructure switch upgrade"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 184,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 68000.0,
+   "purpose": "Modernize flooring"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 185,
+   "recipient": "Prisma Health - Upstate",
+   "county": "Not stated",
+   "amount": 238360.0,
+   "purpose": "Replace obsolete imaging equipment and other specialty healthcare equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 186,
+   "recipient": "Pugh Drug, Inc. (DBA Prosperity Drug Co)",
+   "county": "Not stated",
+   "amount": 272947.0,
+   "purpose": "Add specialty medical equipment (pharmacy robot)"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 187,
+   "recipient": "Self Regional Healthcare (Abbeville Facility Upgrades)",
+   "county": "Not stated",
+   "amount": 402800.0,
+   "purpose": "Replacement of obsolete patient monitoring equipment in ER, med surg and ICU patient rooms and nurses' station modernization"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 188,
+   "recipient": "Self Regional Healthcare (Edgefield CT Imaging Modernization)",
+   "county": "Not stated",
+   "amount": 1031254.0,
+   "purpose": "Replace obsolete specialty medical equipment (CT and imaging) and minor renovation to install"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 189,
+   "recipient": "Self Regional Healthcare (Edgefield Electrical Upgrades)",
+   "county": "Not stated",
+   "amount": 1604417.0,
+   "purpose": "Replace obsolete electrical switches and panels"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 190,
+   "recipient": "Self Regional Healthcare (Edgefield HVAC)",
+   "county": "Not stated",
+   "amount": 1700000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize HVAC and building control systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 191,
+   "recipient": "Self Regional Healthcare (Edgefield Lab Modernization)",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": "Construction will be limited to the highest-priority eligible improvements needed to stabilize temperature and humidity, support critical diagnostic equipment, improve workflow and workspace functionality and integrate retained equipment and supplies. Architectural, engineering, environmental-assessment, commissioning and construction-support functions will be provided through existing ECH/SRH resources, in-kind support and technical services included in retained procurements when allowable."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 192,
+   "recipient": "Self Regional Healthcare (Edgefield Roofing and HVAC)",
+   "county": "Not stated",
+   "amount": 1688865.6,
+   "purpose": "Replacement of aging PTAC units with a high-efficiency variable refrigerant flow system, dedicated outdoor-air components, and building-automation controls. Fees and permits and project administration and compliance also remain unchanged. Roofing work will be prioritized to the highest-risk eligible areas that can be completed within the revised construction allocation. Professional design, coordination, commissioning and technical support will be provided through existing ECH/SRH resources, in-kind support and services included in retained equipment and construction agreements when allowable."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 193,
+   "recipient": "Self Regional Healthcare (Greenwood Pediatrics HVAC)",
+   "county": "Not stated",
+   "amount": 145000.0,
+   "purpose": "Replace obsolete heating and building controls equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 194,
+   "recipient": "Self Regional Healthcare (Imaging Center HVAC)",
+   "county": "Not stated",
+   "amount": 355000.0,
+   "purpose": "Replace obsolete HVAC, MRI chiller and building controls"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 195,
+   "recipient": "Self Regional Healthcare (Lakelands Region OR Upgrades)",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Replace obsolete specialty medical equipment in the OR"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 196,
+   "recipient": "Self Regional Healthcare (Lakelands Region Ortho HVAC and Controls)",
+   "county": "Not stated",
+   "amount": 140000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 197,
+   "recipient": "Self Regional Healthcare (Lakelands Region Pharmacy Modernization)",
+   "county": "Not stated",
+   "amount": 1271622.68,
+   "purpose": "Add specialty pharmacy equipment (pharmacy robot, packaging system, dispensing cabinets) to three pharmacy sites"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 198,
+   "recipient": "Self Regional Healthcare (Laurens Infrastructure Modernization)",
+   "county": "Not stated",
+   "amount": 1460000.0,
+   "purpose": "Funds preserve the HVAC equipment, building-automation and controls upgrades, integration, programming, testing, balancing, commissioning and technical services needed to place the systems into operation"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 199,
+   "recipient": "Self Regional Healthcare (Montgomery HVAC)",
+   "county": "Not stated",
+   "amount": 1100000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 200,
+   "recipient": "Self Regional Healthcare (Newberry_HVAC)",
+   "county": "Not stated",
+   "amount": 1165000.0,
+   "purpose": "Replace obsolete HVAC equipment and modernize systems"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 201,
+   "recipient": "Self Regional Healthcare (Newberry Oncology)",
+   "county": "Not stated",
+   "amount": 310000.0,
+   "purpose": "Replace obsolete HVAC equipment (HVAC, chiller, building controls) and minor renovation for installation"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 202,
+   "recipient": "Self Regional Healthcare (Optimum Life Rehab Center HVAC and Building)",
+   "county": "Not stated",
+   "amount": 1280000.0,
+   "purpose": "Replace obsolete HVAC equipment"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 203,
+   "recipient": "Self Regional Healthcare (Rural Health Worker Recruitment and Retention)",
+   "county": "Not stated",
+   "amount": 1700000.0,
+   "purpose": "One-time recruitment and retention incentive agreements for eight high-need specialty physicians and advanced practice providers who commit to five years of rural service"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 204,
+   "recipient": "Self Regional Healthcare (Saluda HVAC)",
+   "county": "Not stated",
+   "amount": 210000.0,
+   "purpose": "Replace obsolete HVAC equipment and minor renovation for install"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 205,
+   "recipient": "Smith Medical Clinic, LLC",
+   "county": "Not stated",
+   "amount": 119500.0,
+   "purpose": "Add specialty health equipment (patient rooms) and modernize spaces"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 206,
+   "recipient": "Spartanburg Health Services District, Inc",
+   "county": "Not stated",
+   "amount": 2069939.0,
+   "purpose": "Expand diagnostic imaging and specialty cardiovascular capacity at Cherokee Medical Center through the acquisition and installation of a second CT scanner with CTA capability, renovation of the associated clinical space, implementation of telecardiology services and support for initial staffing and operating costs. There will be no personnel included."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 207,
+   "recipient": "Spartanburg Health Services District, Inc",
+   "county": "Not stated",
+   "amount": 560050.0,
+   "purpose": "The approved award provides funds for equipment only, consisting of digital mammography equipment and a bone density scanner. Expanding local access to preventative diagnostic services for residents of Landrum and surrounding rural communities"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 208,
+   "recipient": "Spartanburg Health Services District, Inc",
+   "county": "Not stated",
+   "amount": 1440015.0,
+   "purpose": "Both major components of the original project will proceed. The funds will only be used for construction and Spartanburg Regional Healthcare System will provide the remainder."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 209,
+   "recipient": "Tandem Health SC",
+   "county": "Not stated",
+   "amount": 162000.0,
+   "purpose": "Modernize critical emergency infrastructure to improve operational reliability and maintain uninterrupted healthcare services for vulnerable populations during disruptions and emergencies"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Facility Enhancements",
+   "n": 210,
+   "recipient": "Tidelands Health",
+   "county": "Not stated",
+   "amount": 801604.0,
+   "purpose": "The partial grant funding will be used to support the chiller replacement project, as shown. Any remaining dollars on the project would be directed to central plant upgrades that have been proposed in the initial application. The project's phasing and scope will be adjusted for the resources available to the organization."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 211,
+   "recipient": "Ridgeland Comprehensive Treatment Center",
+   "county": "Not stated",
+   "amount": 37500.0,
+   "purpose": "Provider incentives for a rural location"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 212,
+   "recipient": "Rebound Behavioral Health",
+   "county": "Not stated",
+   "amount": 120000.0,
+   "purpose": "Retain four existing psychiatric-mental health nurse practitioners (PMHNP)/family nurse practitioners (FNP) and recruit one additional PMHNP/FNP and one psychiatrist/medical director"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 213,
+   "recipient": "Blue Ridge Pediatrics",
+   "county": "Not stated",
+   "amount": 125000.0,
+   "purpose": "Advanced practice registered nurse (APRN) bonuses for a pediatric provider"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 214,
+   "recipient": "Community Initiatives Inc.",
+   "county": "Not stated",
+   "amount": 125000.0,
+   "purpose": "Retention bonuses for two nurse practitioners in a free clinic"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 215,
+   "recipient": "Cherokee Community Care",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Incentives for recruitment of a full-time physician and retention of essential mid-level providers by an RHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 216,
+   "recipient": "Lovelace Family Medicine",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Provider incentives for a family practice"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 217,
+   "recipient": "Bamberg Family Practice",
+   "county": "Not stated",
+   "amount": 575000.0,
+   "purpose": "Physician and APRN bonuses for an RHC primary care provider"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 218,
+   "recipient": "Piedmont Pediatrics",
+   "county": "Not stated",
+   "amount": 587500.0,
+   "purpose": "Provider incentives for six pediatric provider positions"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 219,
+   "recipient": "Lake City Family Medicine, LLC (DBA Family Medicine Associates, LLC)",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Physician and APRN bonuses for an RHC"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 220,
+   "recipient": "The Center for Women's Health",
+   "county": "Not stated",
+   "amount": 950000.0,
+   "purpose": "Provider incentives for a rural location"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Healthcare Workforce",
+   "n": 221,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2645000.0,
+   "purpose": "Recruitment and retention bonuses for emergency and primary care providers at a regional medical center."
+  },
+  {
+   "program": "Shoring Up To Sustainability: Masterclass Training Series",
+   "n": 222,
+   "recipient": "Hampton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1701548.0,
+   "purpose": "Extension of an existing masterclass training partnership between a regional medical center and large hospital system"
+  },
+  {
+   "program": "Shoring Up To Sustainability: Masterclass Training Series",
+   "n": 223,
+   "recipient": "Medical University Hospital Authority",
+   "county": "Not stated",
+   "amount": 1869817.0,
+   "purpose": "A Rural Healthcare Technology Readiness and Resilience Masterclass focusing on partner engagement, providing tools and guidance for future modernization planning and supporting engagement through targeted travel and non\u2011personnel resources"
+  }
+ ],
+ "note": "SCDHHS lists each organization's funded amount and a brief description, grouped by RHTP initiative and project; the list prints no total. News coverage of the state's September announcement reported 228 grants totaling $167,299,900.69; the state's November list has 223 entries (the difference is not explained in the document, which notes some statements of work were revised)."
+}
