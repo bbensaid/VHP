@@ -5,6 +5,7 @@ import Link from "next/link";
 import { RHT_STATES, RHT_AS_OF, CMS_DOCS, change, stateNotes } from "@/lib/rht-review";
 import { Ext, Section, Stat, SourceNote } from "@/components/rht-review/ui";
 import RhtStatesTable from "@/components/rht-review/RhtStatesTable";
+import RecipientsNational from "@/components/rht-review/RecipientsNational";
 import RhtDashboard, { type DashRow } from "@/components/rht-review/RhtDashboard";
 import { NationalUses, PillarBar, PillarLegend, medianPace } from "@/components/rht-review/CompareCharts";
 import { COMPARE, NATIONAL, CATEGORIES, THEMES, POLICY_ACTIONS, pearson } from "@/lib/rht-compare";
@@ -141,6 +142,10 @@ export default function RhtReviewIndex() {
           </div>
           <div className="mt-3"><PillarLegend /></div>
         </div>
+      </Section>
+
+      <Section id="recipients" label="Who received the money" title="The states that publish their award lists, side by side">
+        <RecipientsNational />
       </Section>
 
       <Section label="State by state" title="Awards, money put to work, and policy commitments">

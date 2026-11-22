@@ -1,0 +1,662 @@
+{
+ "state": "Florida",
+ "slug": "florida",
+ "asOf": "2026-08",
+ "source": {
+  "label": "Executive Office of the Governor of Florida, \"Florida Rural Health Transformation Program | Year 1 Awardees\" (PDF, Aug 2026)",
+  "url": "https://flgov.com/eog/sites/default/files/shared/2026/08/RHTP%20-%20PDF.pdf"
+ },
+ "announcedTotal": null,
+ "areaLabel": "Region",
+ "rows": [
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 1,
+   "recipient": "CommunityHealth IT",
+   "county": "Northeast Region",
+   "amount": 18512061.76,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 2,
+   "recipient": "Complete Care Management Services ACO",
+   "county": "Northeast Region",
+   "amount": 3870214.9,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 3,
+   "recipient": "Mayo Clinic Jacksonville",
+   "county": "Northeast Region",
+   "amount": 3655556.55,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 4,
+   "recipient": "Medlink Management Services (Lake Butler Hospital)",
+   "county": "Northeast Region",
+   "amount": 5670158.72,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 5,
+   "recipient": "St. Vincent\u2019s Medical Center (Riverside)",
+   "county": "Northeast Region",
+   "amount": 4393360.65,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 6,
+   "recipient": "North Florida Pediatrics Associates (Lake City)",
+   "county": "Northeast Region",
+   "amount": 3801047.26,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 7,
+   "recipient": "Medlink Management Services (Lake Butler Hospital)",
+   "county": "Northeast Region",
+   "amount": 1319326.2,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 8,
+   "recipient": "North Florida Pediatrics Associates",
+   "county": "Northeast Region",
+   "amount": 2198877.0,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 9,
+   "recipient": "Nuvita Health",
+   "county": "Northeast Region",
+   "amount": 439775.4,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 10,
+   "recipient": "Trenton Medical Center (Palms Medical Group)",
+   "county": "Northeast Region",
+   "amount": 439775.4,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 11,
+   "recipient": "Murthy Holdings (Well&You)",
+   "county": "Northeast Region",
+   "amount": 2600000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 12,
+   "recipient": "Nova Southeastern University",
+   "county": "Northeast Region",
+   "amount": 1300000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 13,
+   "recipient": "Tampa Family Health Centers",
+   "county": "Northeast Region",
+   "amount": 1950000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 14,
+   "recipient": "Volunteers of America of Florida",
+   "county": "Northeast Region",
+   "amount": 563655.1,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 15,
+   "recipient": "CommunityHealth IT",
+   "county": "Southeast Region",
+   "amount": 3604189.55,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 16,
+   "recipient": "Empowerq Health Care",
+   "county": "Southeast Region",
+   "amount": 3204031.91,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 17,
+   "recipient": "Quintero & Kontopoulos (The Fetal Institute)",
+   "county": "Southeast Region",
+   "amount": 761281.5,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 18,
+   "recipient": "Nuvita Health",
+   "county": "Southeast Region",
+   "amount": 769736.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 19,
+   "recipient": "Florida Association of Free and Charitable Clinics",
+   "county": "Southeast Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 20,
+   "recipient": "Florida International University Board of Trustees",
+   "county": "Southeast Region",
+   "amount": 488061.04,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 21,
+   "recipient": "Palm Beach County Medical Society Services",
+   "county": "Southeast Region",
+   "amount": 400000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 22,
+   "recipient": "Broward Community & Family Health Centers",
+   "county": "Southeast Region",
+   "amount": 344785.63,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 23,
+   "recipient": "Florida Community Health Centers",
+   "county": "Southeast Region",
+   "amount": 316729.31,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 24,
+   "recipient": "Florida International University",
+   "county": "Southeast Region",
+   "amount": 389892.01,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 25,
+   "recipient": "VIP Integrative Healthcare",
+   "county": "Southeast Region",
+   "amount": 731997.6,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 26,
+   "recipient": "North Brevard County Hospital District (Parrish Medical Center)",
+   "county": "Southwest Region",
+   "amount": 4416943.86,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 27,
+   "recipient": "CommunityHealth IT",
+   "county": "Southwest Region",
+   "amount": 13352055.07,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 28,
+   "recipient": "Florida State University",
+   "county": "Southwest Region",
+   "amount": 3309726.42,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 29,
+   "recipient": "Complete Care Management Services ACO",
+   "county": "Southwest Region",
+   "amount": 3375136.55,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 30,
+   "recipient": "Florida State University",
+   "county": "Southwest Region",
+   "amount": 5611108.4,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 31,
+   "recipient": "Quintero & Kontopoulos (The Fetal Institute)",
+   "county": "Southwest Region",
+   "amount": 798453.37,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 32,
+   "recipient": "MCR Health",
+   "county": "Southwest Region",
+   "amount": 1310893.34,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 33,
+   "recipient": "Nuvita Health",
+   "county": "Southwest Region",
+   "amount": 1267676.66,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 34,
+   "recipient": "Central Florida Health Care",
+   "county": "Southwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 35,
+   "recipient": "Florida Association of Free and Charitable Clinics",
+   "county": "Southwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 36,
+   "recipient": "Lee Health Systems",
+   "county": "Southwest Region",
+   "amount": 1950000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 37,
+   "recipient": "Tampa Family Health Centers",
+   "county": "Southwest Region",
+   "amount": 1950000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 38,
+   "recipient": "North Brevard County Hospital District (Parrish Medical Center)",
+   "county": "Southwest Region",
+   "amount": 793064.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 39,
+   "recipient": "Glades County Board of County Commissioners",
+   "county": "Southwest Region",
+   "amount": 316680.15,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 40,
+   "recipient": "Florida State University Board of Trustees - Pathway 1",
+   "county": "Southwest Region",
+   "amount": 669413.42,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 41,
+   "recipient": "University of South Florida",
+   "county": "Southwest Region",
+   "amount": 801984.19,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 42,
+   "recipient": "Florida State University Board of Trustees - Pathway 2",
+   "county": "Southwest Region",
+   "amount": 348030.06,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 43,
+   "recipient": "South Florida State College",
+   "county": "Southwest Region",
+   "amount": 341310.18,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 44,
+   "recipient": "Family Health Centers of Southwest Florida",
+   "county": "Southwest Region",
+   "amount": 250318.26,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 45,
+   "recipient": "Florida Department of Health in Highlands County",
+   "county": "Southwest Region",
+   "amount": 117723.85,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 46,
+   "recipient": "Florida State University",
+   "county": "Southwest Region",
+   "amount": 2244186.89,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 47,
+   "recipient": "Northwest Florida Healthcare (Northwest Florida Community Hospital)",
+   "county": "Northwest Region",
+   "amount": 4081324.85,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 48,
+   "recipient": "Florida State University",
+   "county": "Northwest Region",
+   "amount": 5792430.44,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 49,
+   "recipient": "CommunityHealth IT",
+   "county": "Northwest Region",
+   "amount": 8190488.08,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 50,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 5100801.82,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 51,
+   "recipient": "Florida Agricultural and Mechanical University",
+   "county": "Northwest Region",
+   "amount": 4994446.08,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 52,
+   "recipient": "Complete Care Management Services ACO",
+   "county": "Northwest Region",
+   "amount": 3357443.37,
+   "purpose": ""
+  },
+  {
+   "program": "Preventive Care and Care at Home",
+   "n": 53,
+   "recipient": "Madison County Hospital Health System",
+   "county": "Northwest Region",
+   "amount": 4413823.45,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 54,
+   "recipient": "Calhoun-Liberty Hospital",
+   "county": "Northwest Region",
+   "amount": 11244802.13,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 55,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 3715019.44,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 56,
+   "recipient": "North Walton Doctors",
+   "county": "Northwest Region",
+   "amount": 4130671.13,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 57,
+   "recipient": "Quintero & Kontopoulos (The Fetal Institute)",
+   "county": "Northwest Region",
+   "amount": 717272.12,
+   "purpose": ""
+  },
+  {
+   "program": "Specialty and Acute Care",
+   "n": 58,
+   "recipient": "North Florida Medical Centers",
+   "county": "Northwest Region",
+   "amount": 1575926.42,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 59,
+   "recipient": "North Florida Medical Centers",
+   "county": "Northwest Region",
+   "amount": 901575.9,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 60,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 676181.92,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 61,
+   "recipient": "North Walton Doctors Hospital",
+   "county": "Northwest Region",
+   "amount": 450787.95,
+   "purpose": ""
+  },
+  {
+   "program": "Value-Based Care",
+   "n": 62,
+   "recipient": "Holmes County Hospital Corporation (Doctors Memorial Hospital)",
+   "county": "Northwest Region",
+   "amount": 225393.97,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 63,
+   "recipient": "North Florida Pediatrics Associates",
+   "county": "Northwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 64,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 3900000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 65,
+   "recipient": "Holmes County Hospital Corporation (Doctors Memorial Hospital)",
+   "county": "Northwest Region",
+   "amount": 1950000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 67,
+   "recipient": "Calhoun Liberty Hospital Association",
+   "county": "Northwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 68,
+   "recipient": "Florida Agricultural and Mechanical University",
+   "county": "Northwest Region",
+   "amount": 1300000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 69,
+   "recipient": "Florida Sickle Incorporated (The Foundation for Sickle Cell Disease Research)",
+   "county": "Northwest Region",
+   "amount": 1300000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 70,
+   "recipient": "Bond Community Health Center",
+   "county": "Northwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 71,
+   "recipient": "North Florida Rural Health Corp",
+   "county": "Northwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural and Satellite Clinics",
+   "n": 72,
+   "recipient": "New Horizon Primary Care",
+   "county": "Northwest Region",
+   "amount": 650000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 73,
+   "recipient": "Florida Agricultural and Mechanical University - Pathway 1",
+   "county": "Northwest Region",
+   "amount": 1428837.12,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 74,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 712111.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 75,
+   "recipient": "Chipola College - Pathway 1",
+   "county": "Northwest Region",
+   "amount": 304084.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 76,
+   "recipient": "Florida Agricultural and Mechanical University - Pathway 2",
+   "county": "Northwest Region",
+   "amount": 1428452.93,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 77,
+   "recipient": "Chipola College - Pathway 2",
+   "county": "Northwest Region",
+   "amount": 575478.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce Development",
+   "n": 78,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 716509.3,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 79,
+   "recipient": "Florida State University",
+   "county": "Northwest Region",
+   "amount": 1217044.11,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 80,
+   "recipient": "Florida Agricultural and Mechanical University",
+   "county": "Northwest Region",
+   "amount": 1102876.11,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 81,
+   "recipient": "Titus Sports Academy (CHAMPIONS)",
+   "county": "Northwest Region",
+   "amount": 1217044.14,
+   "purpose": ""
+  },
+  {
+   "program": "Health and Lifestyle",
+   "n": 82,
+   "recipient": "Escambia Community Clinics (Community Health Northwest Florida)",
+   "county": "Northwest Region",
+   "amount": 1331212.17,
+   "purpose": ""
+  }
+ ],
+ "note": "The list groups awards by region and program area; it prints no grand total and no project descriptions, and its numbering skips #66. An organization can appear more than once (one row per award)."
+}

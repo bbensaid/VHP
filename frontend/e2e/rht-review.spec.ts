@@ -23,6 +23,19 @@ test("RHT dashboard: findings, national uses and all four comparison views rende
   await expect(page.locator("#compare svg[role=img]")).toBeVisible(); // pace scatter
 });
 
+test("published award lists: national comparison and source-checked state figures", async ({ page }) => {
+  await page.goto("/rht-review");
+  const nat = page.locator('[data-testid="rht-recipients-national"] tbody tr');
+  await expect(nat).toHaveCount(7);
+  await expect(page.locator('[data-testid="rht-recipients-national"]')).toContainText("Mississippi");
+  // Mississippi's 167 awards sum to the announced $104,115,146.80; Oregon's file reports 103 Catalyst projects.
+  await page.goto("/rht-review/mississippi");
+  await expect(page.locator("#recipients")).toContainText("$104,115,146.80");
+  await page.goto("/rht-review/oregon");
+  await expect(page.locator("#recipients")).toContainText("103");
+  await expect(page.locator("#recipients")).toContainText("Catalyst Awards only");
+});
+
 test("Iowa page repairs CMS's malformed amount from the itemized lines", async ({ page }) => {
   await page.goto("/rht-review/iowa");
   await expect(page.locator("body")).toContainText("5,4967,800.72");

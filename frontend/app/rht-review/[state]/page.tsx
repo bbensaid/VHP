@@ -84,7 +84,7 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
       </Section>
 
       {rec && (
-        <Section label="Who received the money" title={`${s.state}'s announced RHT awards, recipient by recipient`}>
+        <Section id="recipients" label="Who received the money" title={`${s.state}'s published RHT award list, recipient by recipient`}>
           <Recipients rec={rec} />
         </Section>
       )}
