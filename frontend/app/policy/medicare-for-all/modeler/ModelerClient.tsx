@@ -56,6 +56,7 @@ function HospitalTable({ rows, showCommercial }: { rows: HospitalResult[]; showC
               <td className="p-3 text-slate-800">
                 <span className="font-semibold">{r.short}</span>
                 {r.cah && <span className="ml-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 border border-slate-200 rounded px-1.5 py-0.5">CAH</span>}
+                {r.note && <span className="ml-1 text-amber-700 font-bold cursor-help" title={r.note} aria-label={r.note}>†</span>}
               </td>
               {showCommercial && <td className="p-3 text-right tabular-nums text-slate-600">{pct(r.commercialShare, 0)}</td>}
               <td className="p-3 text-right tabular-nums text-slate-900 font-semibold">
@@ -72,7 +73,7 @@ function HospitalTable({ rows, showCommercial }: { rows: HospitalResult[]; showC
       <div className="flex flex-wrap gap-4 px-3 py-2 border-t border-slate-100 text-[11px] text-slate-500">
         <span className="inline-flex items-center gap-1.5"><span className="w-3 h-2 bg-blue-600 rounded-sm" /> Revenue gain</span>
         <span className="inline-flex items-center gap-1.5"><span className="w-3 h-2 bg-red-600 rounded-sm" /> Revenue loss</span>
-        <span>CAH = critical access hospital. Brattleboro Memorial has no margin figure: GMCB leaves it out of its system tables.</span>
+        <span>CAH = critical access hospital. † = a data caveat; hover the mark to read it (Northwestern: approved vs submitted basis; Gifford: no charity-care figure). Brattleboro Memorial has no margin figure: GMCB leaves it out of its system tables.</span>
       </div>
     </div>
   );
@@ -94,12 +95,14 @@ export default function ModelerClient() {
   const [ratePct, setRatePct] = useState(100);
   const [payUncompensated, setPayUncompensated] = useState(true);
   const [cahAtCost, setCahAtCost] = useState(false);
+  const [medicaidPct, setMedicaidPct] = useState(100);
+  const [excludeDep, setExcludeDep] = useState(false);
   const [cboLower, setCboLower] = useState(false);
 
-  const neutral = useMemo(() => revenueNeutralRatePct(commercialPct, undefined, payUncompensated), [commercialPct, payUncompensated]);
+  const neutral = useMemo(() => revenueNeutralRatePct(commercialPct, undefined, payUncompensated, medicaidPct), [commercialPct, payUncompensated, medicaidPct]);
   const rows = useMemo(
-    () => (lens === "rate" ? runRateBased({ commercialPct, ratePct, payUncompensated, cahAtCost }) : runGlobalBudget()),
-    [lens, commercialPct, ratePct, payUncompensated, cahAtCost],
+    () => (lens === "rate" ? runRateBased({ commercialPct, ratePct, payUncompensated, cahAtCost, medicaidPctOfMedicare: medicaidPct }) : runGlobalBudget(undefined, { excludeDepreciation: excludeDep })),
+    [lens, commercialPct, ratePct, payUncompensated, cahAtCost, medicaidPct, excludeDep],
   );
   const t = totals(rows);
   const preset = COMMERCIAL_PRICE_PRESETS.find((p) => p.pct === commercialPct);
@@ -164,11 +167,28 @@ export default function ModelerClient() {
               <input type="checkbox" checked={cahAtCost} onChange={(e) => setCahAtCost(e.target.checked)} />
               Pay critical access hospitals at cost, as Medicare does today
             </label>
+            <label htmlFor="mp" className="block text-sm text-slate-700 mt-3">Medicaid pays today: <span className="font-semibold tabular-nums">{medicaidPct}%</span> of Medicare <span className="text-slate-500">(sensitivity)</span></label>
+            <input id="mp" type="range" min={50} max={100} step={1} value={medicaidPct} onChange={(e) => setMedicaidPct(Number(e.target.value))} className="w-full mt-1" />
+            <p className="text-[11px] text-slate-500 mt-1 leading-snug">
+              At 100% the model treats all non-commercial revenue as Medicare-rate. Lower values say Medicaid pays less today, so a single rate raises Medicaid-heavy hospitals&apos; revenue more. Each hospital&apos;s Medicaid share of non-commercial revenue is estimated from its Medicaid share of Medicare and Medicaid inpatient days (CMS cost report, FY ending 2024). No published source gives Vermont&apos;s Medicaid hospital rates as a share of Medicare, so this is a range to explore, not a value.
+            </p>
             <p className="text-[11px] text-slate-500 mt-2 leading-snug">
               Act 167 benchmark: Oliver Wyman recommended commercial prices &ldquo;ideally at 200% of Medicare or less for PPS hospitals&rdquo; (<a href={SOURCE_LINKS.rbp200.url} target="_blank" rel="noopener noreferrer" className="underline">GMCB, Dec 2024</a>).
               Revenue-neutral is the one rate at which total revenue across the 14 hospitals stays the same, counting the uncompensated-care payment when that box is ticked. Medicare pays critical access hospitals &ldquo;101% of reasonable costs&rdquo; (<a href="https://cms.gov/files/document/mln006400-information-critical-access-hospitals.pdf" target="_blank" rel="noopener noreferrer" className="underline">CMS MLN006400</a>), so a single rate is least realistic for those eight hospitals; the second box pays them at cost instead.
             </p>
           </div>
+        </section>
+      )}
+
+      {lens === "global" && (
+        <section className="bg-white border border-slate-200 rounded-xl p-5">
+          <label className="flex items-center gap-2 text-sm text-slate-700">
+            <input type="checkbox" checked={excludeDep} onChange={(e) => setExcludeDep(e.target.checked)} />
+            Exclude depreciation from the budget (S.1506 funds capital separately, § 611(b)(3))
+          </label>
+          <p className="text-[11px] text-slate-500 mt-2 leading-snug">
+            Depreciation is each hospital&apos;s cost-report figure for the fiscal year ending 2024, the latest available, so it is an approximation of FY2027 capital cost. In both settings, operating revenue includes the hospitals&apos; other operating revenue (about $690M system-wide in FY27 submissions) and expense includes provider tax, so the lens treats provider tax as an allowable cost.
+          </p>
         </section>
       )}
 
@@ -238,9 +258,9 @@ export default function ModelerClient() {
           <li>Direction of bias. Applying a facility price ratio to all commercial revenue overstates the loss where revenue includes professional services, which RAND found priced lower (226% of Medicare in Vermont). Treating Medicaid as Medicare-rate understates Medicaid-heavy hospitals&apos; gains and overstates the revenue-neutral rate. Treat results as directions and orders of magnitude.</li>
           <li>Basis gaps between approved and submitted figures are not uniform. Northwestern Medical Center&apos;s approved commercial revenue is $17.8M below its submission, so its FY27 margin as shown is optimistic.</li>
           <li>Lens A treats all non-commercial revenue as paid at Medicare rates today. Medicaid pays less, so the model <em>understates</em> the gain for hospitals with many Medicaid patients.</li>
-          <li>One statewide commercial price is applied to every hospital. Hospital-level commercial prices exist in RAND&apos;s and GMCB&apos;s work, but they were not available as data to load.</li>
+          <li>One statewide commercial price is applied to every hospital. RAND reports prices by health system, not by hospital, and only as unlabelled bar charts (systems range from 148% to 321% of Medicare). Reading values off the bars would be estimation, so the Modeler does not use them.</li>
           <li>Commercial and total net patient revenue are FY2027 <em>approved</em> budgets. Operating expense and margin are FY2027 <em>submitted</em> budgets, because GMCB publishes margins on that basis. Operating revenue is calculated as expense ÷ (1 − margin).</li>
-          <li>Uncompensated care is the cost of charity care and bad debt from each hospital&apos;s latest CMS cost report (fiscal years ending in 2024).</li>
+          <li>Uncompensated care is the cost of charity care and bad debt from each hospital&apos;s latest CMS cost report (fiscal years ending in 2024), added at cost, the measure the cost report publishes. Paying it at the single rate instead would need each hospital&apos;s Medicare payment-to-cost ratio, which no source used here publishes. Gifford reports no charity-care cost, so its figure is bad debt only.</li>
           <li>Professional (physician) services billed by a hospital are repriced at the same ratio as facility services. RAND found Vermont professional prices lower than facility prices.</li>
         </ul>
         <p className="text-sm text-slate-600 mt-4">

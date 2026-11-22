@@ -111,11 +111,11 @@ L16 = [
 
     h2('s2h1', 'What a Cost-Based Budget Would Mean for Vermont'),
     blk('s2p1', "The Modeler's second lens takes the simplest reading of those rules: each hospital's operating revenue equals its operating expense, so every operating margin becomes zero. It uses each hospital's FY2027 submitted expense and margin, so it covers the thirteen hospitals GMCB reports; Brattleboro Memorial has no figures in those tables. Treat it as an upper bound: the FY2027 expense includes depreciation, which S.1506 funds separately (§ 611(b)(3)), and the bill negotiates against Medicare's prospective payment rates (§ 611(c)), which could pay less."),
-    blk('s2p2', "The result is a modest net change statewide, about +$44 million, but a clear redistribution. Hospitals now losing money are made whole: UVM Medical Center gains about $42 million, Rutland Regional about $9 million, Northwestern about $4.5 million, North Country about $3.5 million and Central Vermont about $3.4 million. Hospitals now earning a surplus give it up: Porter, with the highest submitted margin at 8.6 percent, loses about $12.4 million; Copley about $2.7 million; Springfield about $1.1 million."),
+    blk('s2p2', "The result is a modest net change statewide, about +$45 million, but a clear redistribution. Hospitals now losing money are made whole: UVM Medical Center gains about $43 million, Rutland Regional about $9 million, Northwestern about $4.5 million, North Country about $3.5 million and Central Vermont about $3.3 million. Hospitals now earning a surplus give it up: Porter, with the highest submitted margin at 8.6 percent, loses about $12.4 million; Copley about $2.6 million; Springfield about $1.1 million."),
     stat_grid('s2sg1', [
-        ('+$44M', 'Statewide change, 13 hospitals', 'Modeler, S.1506 global-budget lens'),
+        ('+$45M', 'Statewide change, 13 hospitals', 'Modeler, S.1506 global-budget lens'),
         ('5 → 0', 'Hospitals with an operating loss', 'Every margin set to zero'),
-        ('+$42M', 'UVM Medical Center', 'From a −1.7% submitted margin'),
+        ('+$43M', 'UVM Medical Center', 'From a −1.7% submitted margin'),
         ('−$12.4M', 'Porter Medical Center', 'From an 8.6% submitted margin'),
     ]),
 
@@ -150,7 +150,7 @@ L16 = [
         "S.1506 pays institutions a quarterly global budget, payment in full for operating expenses, negotiated with a regional director.",
         "Negotiation uses volume, Medicare cost reports compared with peers and normative rates, projected services, wages and staffing, and capacity.",
         "Capital is funded separately, and no payment may be used for marketing or provider profit.",
-        "Modeled as revenue equal to expense, Vermont's thirteen reporting hospitals change by about +$44M: deficit hospitals are made whole and Porter gives up about $12.4M.",
+        "Modeled as revenue equal to expense, Vermont's thirteen reporting hospitals change by about +$45M: deficit hospitals are made whole and Porter gives up about $12.4M.",
         "Vermont's own global budgets have stalled on federal permission: AHEAD withdrawal and a CMS-stopped Medicaid global budget in 2026.",
         "A federal single payer would remove the permission problem but not the question of the level at which budgets are set.",
         "Most rural critical-access hospitals gain from a single rate and change little under cost-based budgets, because their margins are near zero; Porter, with an 8.6% margin, is the exception.",

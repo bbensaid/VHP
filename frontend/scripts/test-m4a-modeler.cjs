@@ -17,11 +17,14 @@ test("14 hospitals, BMH the only one without expense/margin", () => {
   assert.deepEqual(VT_HOSPITALS.filter((h) => h.opExpense === null).map((h) => h.id), ["bmh"]);
 });
 
-test("FY27 submitted expense matches the staff overview expense table", () => {
+test("FY27 submitted expense matches the staff overview expense table, row by row", () => {
+  const block = staff.slice(staff.indexOf("Hospital Expense Growth"), staff.indexOf("System-Wide Total4"));
   for (const h of VT_HOSPITALS) {
     if (h.opExpense === null) continue;
-    const money = "$" + h.opExpense.toLocaleString("en-US");
-    assert.ok(staff.includes(money), `${h.id}: ${money} not in staff overview`);
+    const line = block.split("\n").find((l) => l.replace(/^(.*?)\d*\s+-?[\d.]+%.*/, "$1").trim() === h.name);
+    assert.ok(line, `${h.id}: no expense row for ${h.name}`);
+    const last = line.trim().split(/\s+/).pop();
+    assert.equal(last, "$" + h.opExpense.toLocaleString("en-US"), h.id);
   }
 });
 
@@ -72,12 +75,17 @@ test("global budget sets every reported margin to zero and moves revenue by −m
   }
 });
 
-test("implied operating revenue reproduces the submitted margin", () => {
+test("operating revenue = expense + p.25 income, and its margin rounds to the p.31 figure", () => {
+  let inc = 0;
   for (const h of VT_HOSPITALS) {
     const rev = M.impliedOpRevenue(h);
     if (rev === null) continue;
-    assert.ok(Math.abs((rev - h.opExpense) / rev - h.opMargin) < 1e-12, h.id);
+    inc += h.opIncome;
+    assert.equal(rev, h.opExpense + h.opIncome, h.id);
+    assert.equal(Math.round(M.marginBeforeOf(h) * 1000) / 10, Math.round(h.opMargin * 1000) / 10, h.id);
   }
+  assert.ok(Math.abs(inc / 1e6 - -44.74) < 0.02, `p.25 system total ${inc / 1e6}`);
+  assert.equal(VT_HOSPITALS.find((h) => h.id === "uvmmc").opIncome, -42860000);
 });
 
 test("revenue-neutral with uncompensated care paid gives zero statewide change (default view)", () => {
@@ -101,4 +109,43 @@ test("NPR inputs equal the GMCB press-release totals", () => {
   const sum = (k) => VT_HOSPITALS.reduce((s, h) => s + h[k], 0);
   assert.equal(sum("totalNpr"), 3802585620);
   assert.equal(sum("commercialNpr"), 1936889939);
+});
+
+const press = fs.readFileSync(path.join(SRC, "gmcb_fy27_press_2026-09-15.txt"), "utf8");
+test("each hospital's NPR and commercial NPR appear on its own press-release row", () => {
+  for (const h of VT_HOSPITALS) {
+    const squash = (x) => x.replace(/\s+/g, "");
+    const line = press.split("\n").find((l) => squash(l).startsWith(squash(h.name)) && /\d/.test(l));
+    assert.ok(line, `${h.id}: no press row`);
+    assert.ok(line.includes(h.totalNpr.toLocaleString("en-US")) && line.includes(h.commercialNpr.toLocaleString("en-US")), h.id);
+  }
+});
+
+test("payer days, depreciation and uncompensated care match the CMS 2024 cost report", () => {
+  for (const h of VT_HOSPITALS) {
+    const r = cms.find((x) => x["Provider CCN"] === h.ccn);
+    assert.equal(h.depreciation, Number(r["Depreciation Cost"]), h.id);
+    assert.equal(h.medicareDays, Number(r["Total Days Title XVIII"]), h.id);
+    assert.equal(h.medicaidDays, Number(r["Total Days Title XIX"]), h.id);
+  }
+});
+
+test("Medicaid sensitivity: 100% reproduces the original model; lower values cut the neutral rate, still neutral", () => {
+  const h = VT_HOSPITALS[3];
+  const base = { commercialPct: 283, ratePct: 140, payUncompensated: false };
+  const other = h.totalNpr - h.commercialNpr;
+  assert.ok(Math.abs(M.rateBasedChange(h, { ...base, medicaidPctOfMedicare: 100 }) - (h.commercialNpr * 140 / 283 - h.commercialNpr + other * 0.4)) < 1);
+  const n100 = M.revenueNeutralRatePct(283, undefined, true, 100), n70 = M.revenueNeutralRatePct(283, undefined, true, 70);
+  assert.ok(n70 < n100, `${n70} < ${n100}`);
+  const t = M.totals(M.runRateBased({ commercialPct: 283, ratePct: n70, payUncompensated: true, medicaidPctOfMedicare: 70 }));
+  assert.ok(Math.abs(t.revenueChange) < 1, String(t.revenueChange));
+});
+
+test("global budget without depreciation lowers each hospital's change by its depreciation", () => {
+  const a = M.runGlobalBudget(), b = M.runGlobalBudget(undefined, { excludeDepreciation: true });
+  for (let i = 0; i < a.length; i++) {
+    if (!Number.isFinite(a[i].revenueChange)) continue;
+    const h = VT_HOSPITALS.find((x) => x.id === a[i].id);
+    assert.ok(Math.abs(a[i].revenueChange - b[i].revenueChange - h.depreciation) < 1, a[i].id);
+  }
 });

@@ -29,6 +29,17 @@ export interface RateParams {
    * (CMS MLN006400: CAHs are paid 101% of reasonable costs). Off by default.
    */
   cahAtCost?: boolean;
+  /**
+   * What Medicaid pays today, as % of Medicare (sensitivity; review nice-to-have 15). Default 100 = the original
+   * simplification that all non-commercial revenue is Medicare-rate. Medicaid's share of each hospital's
+   * non-commercial revenue is proxied by its Medicaid share of Medicare+Medicaid inpatient days (CMS cost report).
+   */
+  medicaidPctOfMedicare?: number;
+}
+
+export interface GlobalParams {
+  /** Remove depreciation (CMS cost report, FY ending 2024) from the budget: S.1506 funds capital separately. */
+  excludeDepreciation?: boolean;
 }
 
 export interface HospitalResult {
@@ -45,6 +56,7 @@ export interface HospitalResult {
   opRevenue: number | null;
   marginBefore: number | null;
   marginAfter: number | null;
+  note?: string;
 }
 
 export interface Totals {
@@ -57,10 +69,22 @@ export interface Totals {
   withMargin: number;
 }
 
-/** FY27 operating revenue implied by submitted expense and margin: revenue = expense / (1 − margin). */
+/** FY27 submitted operating revenue = submitted expense + submitted operating income (GMCB pp. 27, 25). */
 export function impliedOpRevenue(h: VtHospitalInput): number | null {
-  if (h.opExpense === null || h.opMargin === null) return null;
-  return h.opExpense / (1 - h.opMargin);
+  if (h.opExpense === null || h.opIncome === null) return null;
+  return h.opExpense + h.opIncome;
+}
+
+/** FY27 submitted operating margin, exact (income / revenue). */
+export function marginBeforeOf(h: VtHospitalInput): number | null {
+  const rev = impliedOpRevenue(h);
+  return rev === null || h.opIncome === null ? null : h.opIncome / rev;
+}
+
+/** Medicaid share of a hospital's non-commercial revenue, proxied by Medicaid / (Medicare + Medicaid) inpatient days. */
+export function medicaidShare(h: VtHospitalInput): number {
+  const d = h.medicareDays + h.medicaidDays;
+  return d > 0 ? h.medicaidDays / d : 0;
 }
 
 function marginAfter(h: VtHospitalInput, change: number): number | null {
@@ -75,7 +99,8 @@ function result(h: VtHospitalInput, change: number): HospitalResult {
     id: h.id, short: h.short, name: h.name, cah: h.cah, totalNpr: h.totalNpr,
     commercialShare: h.commercialNpr / h.totalNpr,
     revenueChange: change, changePctOfNpr: change / h.totalNpr,
-    opRevenue: impliedOpRevenue(h), marginBefore: h.opMargin, marginAfter: marginAfter(h, change),
+    opRevenue: impliedOpRevenue(h), marginBefore: marginBeforeOf(h), marginAfter: marginAfter(h, change),
+    ...(h.note ? { note: h.note } : {}),
   };
 }
 
@@ -83,7 +108,9 @@ export function rateBasedChange(h: VtHospitalInput, p: RateParams): number {
   const commercial = h.commercialNpr;
   const other = h.totalNpr - commercial;
   const newCommercial = (commercial * p.ratePct) / p.commercialPct;
-  const newOther = (other * p.ratePct) / 100;
+  const mPct = p.medicaidPctOfMedicare ?? 100;
+  const medicaid = other * medicaidShare(h);
+  const newOther = ((other - medicaid) * p.ratePct) / 100 + (medicaid * p.ratePct) / mPct;
   return newCommercial - commercial + (newOther - other) + (p.payUncompensated ? h.uncompensatedCost : 0);
 }
 
@@ -97,11 +124,17 @@ export function runRateBased(p: RateParams, hospitals: VtHospitalInput[] = VT_HO
   });
 }
 
-/** S.1506 § 611 global budget modeled as operating revenue = operating expense. BMH has no data → change null-safe 0. */
-export function runGlobalBudget(hospitals: VtHospitalInput[] = VT_HOSPITALS): HospitalResult[] {
+/**
+ * S.1506 § 611 global budget modeled as operating revenue = operating expense (an upper bound). With
+ * excludeDepreciation, the budget covers expense minus depreciation, since § 611(b)(3) excludes capital. Operating
+ * revenue here nets in other operating revenue and treats provider tax as an allowable cost (both are in GMCB's
+ * figures). BMH has no data.
+ */
+export function runGlobalBudget(hospitals: VtHospitalInput[] = VT_HOSPITALS, g: GlobalParams = {}): HospitalResult[] {
   return hospitals.map((h) => {
     const rev = impliedOpRevenue(h);
-    const change = rev === null || h.opExpense === null ? 0 : h.opExpense - rev;
+    const budget = h.opExpense === null ? 0 : h.opExpense - (g.excludeDepreciation ? h.depreciation : 0);
+    const change = rev === null || h.opExpense === null ? 0 : budget - rev;
     const r = result(h, change);
     return rev === null ? { ...r, revenueChange: NaN, changePctOfNpr: NaN, marginAfter: null } : r;
   });
@@ -112,10 +145,14 @@ export function runGlobalBudget(hospitals: VtHospitalInput[] = VT_HOSPITALS): Ho
  * commercial price. If uncompensated care is paid, the rate is lowered so that, together with that payment, the
  * statewide total is still unchanged (the default view; independent review 2026-11-21, must-fix 1).
  */
-export function revenueNeutralRatePct(commercialPct: number, hospitals: VtHospitalInput[] = VT_HOSPITALS, payUncompensated = false): number {
+export function revenueNeutralRatePct(commercialPct: number, hospitals: VtHospitalInput[] = VT_HOSPITALS, payUncompensated = false, medicaidPctOfMedicare = 100): number {
   const total = hospitals.reduce((s, h) => s + h.totalNpr, 0);
   const uncomp = payUncompensated ? hospitals.reduce((s, h) => s + h.uncompensatedCost, 0) : 0;
-  const medicareEquivalent = hospitals.reduce((s, h) => s + (h.commercialNpr * 100) / commercialPct + (h.totalNpr - h.commercialNpr), 0);
+  const medicareEquivalent = hospitals.reduce((s, h) => {
+    const other = h.totalNpr - h.commercialNpr;
+    const medicaid = other * medicaidShare(h);
+    return s + (h.commercialNpr * 100) / commercialPct + (other - medicaid) + (medicaid * 100) / medicaidPctOfMedicare;
+  }, 0);
   return (100 * (total - uncomp)) / medicareEquivalent;
 }
 

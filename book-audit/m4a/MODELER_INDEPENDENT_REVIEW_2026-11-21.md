@@ -203,7 +203,7 @@ Lens A therefore misstates 8 of 14 hospitals, and the CAH badge on the table doe
 |---|---|---|
 | M1 | Revenue-neutral rate vs default uncompensated-care toggle | FIXED: `revenueNeutralRatePct(R, hospitals, payUncompensated)`; neutral = 146.8% (R=283) when uncompensated care is paid; test added |
 | M2 | Critical access hospitals paid at cost by Medicare | FIXED: sourced to CMS MLN006400 (Dec 2025, archived); optional "pay CAHs at cost" toggle (off by default); caveat on page; test added |
-| M3 | Capital / depreciation | FIXED: lens B labelled an upper bound (§611(b)(3) excludes capital; GMCB expense includes depreciation) on the page and in course lesson 16 |
+| M3 | Capital / depreciation | FIXED: lens B labelled an upper bound on the page and in lesson 16; AND (2026-11-22) optional "exclude depreciation" using each hospital's CMS cost-report depreciation (FY ending 2024) — statewide +$44.8M becomes −$80.3M; test added |
 | M4 | Lens B presented as S.1506's result | FIXED: page states negotiation is against Medicare PPS rates (§611(c)); simplification, not prediction |
 | M5 | 289% period | FIXED: 2018–Q3 2023 (RBP report l.91-92) in presets and course lesson 15 |
 | M6 | "Six hospitals" | CONFIRMED unsourced (CMS letter 2026-07-07 and GCR 26-089 give no count). Removed from Modeler, course (4 tracks), memo, and book Ch3 §3.3.3 |
@@ -211,7 +211,11 @@ Lens A therefore misstates 8 of 14 hospitals, and the CAH badge on the table doe
 | S8 | NMC basis gap ($86.7M submitted vs $68.9M approved) | FIXED: stated in assumptions |
 | S9 | 453% preset comparability | FIXED: labelled "not like-for-like" with the 503% vs 311% outpatient comparison |
 | S10 | Bias directions | FIXED: professional (226%) and Medicaid directions stated |
-| S11 | Use GMCB p.25 operating income instead of rounded margins | LEFT: effect ≈ $0.5M at UVMMC (<0.1% of revenue); noted for a later pass |
+| S11 | Use GMCB p.25 operating income instead of rounded margins | FIXED 2026-11-22: operating revenue = expense + p.25 income (labels read from the rendered page; PDF archived). Statewide global-budget change now +$44.8M; course Track 6/7 figures updated (+$45M, UVMMC $43M, CVMC $3.3M, Copley $2.6M); test checks p.25 total −$44.74M and rounding to p.31 margins |
 | S12 | Global-budget % denominator | FIXED: totals() divides by NPR of modeled hospitals only |
-| S13 | Tests | PARTLY: NPR totals vs press release and both new behaviours tested (12 tests); expense substring-match test left as is |
-| Nice-to-have | — | Not done in this pass |
+| S13 | Tests | FIXED: expense test now row-anchored; every hospital's NPR and commercial NPR checked on its own press-release row; CMS fields (depreciation, payer days) checked; 16 tests |
+| N14 | Uncompensated care at P% of Medicare-equivalent | CLOSED, not adopted: needs each hospital's Medicare payment-to-cost ratio, which no source used publishes; page states uncompensated care is added at cost (the cost report's measure). Gifford's missing charity-care cost flagged with a † marker and in the assumptions |
+| N15 | Medicaid sensitivity | DONE: "Medicaid pays today: X% of Medicare" slider (50–100, default 100 = original model); Medicaid share proxied by Title XIX ÷ (XVIII+XIX) inpatient days, CMS cost report 2024; neutral rate and results follow it; test added |
+| N16 | Hospital-level commercial prices | CLOSED, not adopted: RAND publishes system-level, unlabelled bars (pages 18–21 inspected); reading values off bar lengths would be estimation. Stated on the page |
+| N17 | Lens B: other operating revenue and provider tax | DONE: stated under the global-budget option (≈$690M other operating revenue, staff overview p.23; provider tax inside expense) |
+| S8 | NMC marker | DONE: † marker on the NMC row (and Gifford's) with the caveat on hover |
