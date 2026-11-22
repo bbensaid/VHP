@@ -1,0 +1,1119 @@
+{
+ "state": "Tennessee",
+ "slug": "tennessee",
+ "asOf": "2026-11-09",
+ "source": {
+  "label": "Tennessee Department of Health, \"2026 Awarded Projects of Tennessee's Rural Health Transformation Program\"",
+  "url": "https://www.tn.gov/health/rural/grants"
+ },
+ "announcedTotal": 422241082,
+ "areaLabel": null,
+ "multiYear": true,
+ "rows": [
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 1,
+   "recipient": "BEACON",
+   "county": "Not stated",
+   "amount": 9803001.07,
+   "purpose": "BEACON: Lighting a Path to Perinatal Recovery in Rural TN"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 2,
+   "recipient": "Bristol Family Medicine",
+   "county": "Not stated",
+   "amount": 3872951.0,
+   "purpose": "Rural Maternal Child Health Family Medicine Fellowship"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 3,
+   "recipient": "Camellia Foundation INC",
+   "county": "Not stated",
+   "amount": 12500000.0,
+   "purpose": "TN-ROOTS: Tennessee Rural Obstetric Outcomes, Training, and Sustainability Network"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 4,
+   "recipient": "Cocke County HMA, LLC",
+   "county": "Not stated",
+   "amount": 643500.0,
+   "purpose": "The Newport Maternal-Child Healthcare Resiliency Project"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 5,
+   "recipient": "Diana Health TN, PC",
+   "county": "Not stated",
+   "amount": 10754000.0,
+   "purpose": "Rural Maternal Health Access, Workforce Development, and Care Navigation in Tennessee"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 6,
+   "recipient": "Erlanger Health",
+   "county": "Not stated",
+   "amount": 9837108.0,
+   "purpose": "Erlanger Access to Regional Care (E-ARC)"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 7,
+   "recipient": "Hardin County General Hospital",
+   "county": "Not stated",
+   "amount": 1249750.0,
+   "purpose": "Wayne County Maternal and Infant Health Access Project"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 8,
+   "recipient": "HeartBridge",
+   "county": "Not stated",
+   "amount": 6114264.0,
+   "purpose": "HeartBridge Program"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 9,
+   "recipient": "Jackson-Madison County General Hospital District",
+   "county": "Not stated",
+   "amount": 11860300.0,
+   "purpose": "Improving and Expanding Maternal and Child Health in Rural West Tennessee"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 10,
+   "recipient": "LeConte Medical Center dba Covenant Health LeConte",
+   "county": "Not stated",
+   "amount": 3879481.0,
+   "purpose": "Advancing Rural Maternal Care in Cocke and Sevier Counties"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 11,
+   "recipient": "Medicos Mission Fund",
+   "county": "Not stated",
+   "amount": 2302300.0,
+   "purpose": "Connected Care for Rural Families Initiative: Advancing Maternal and Child Health Through Telehealth and Workforce Innovation"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 12,
+   "recipient": "Mercy Health Services, Inc. dba Mercy Community Healthcare",
+   "county": "Not stated",
+   "amount": 11914000.0,
+   "purpose": "Mercy Southern Heartlands Maternal and Child Health Access Network"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 13,
+   "recipient": "Methodist Le Bonheur Community Outreach",
+   "county": "Not stated",
+   "amount": 9219900.0,
+   "purpose": "Expanding Pediatric Care in Rural West Tennessee"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 14,
+   "recipient": "Metro Knoxville HMA, LLC",
+   "county": "Not stated",
+   "amount": 1246100.0,
+   "purpose": "Regional Level II Neonatal Intensive Care Unit (NICU) Expansion & Rural Perinatal Safety Net"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 15,
+   "recipient": "Nurses for Newborns of Tennessee",
+   "county": "Not stated",
+   "amount": 4490064.0,
+   "purpose": "Home Visitation for Infants of High Risk Pregnant and Postpartum Women - Rural Maternal and Infant Health Resiliency Project"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 16,
+   "recipient": "Tennessee Initiative for Perinatal Quality Care (TIPQC)",
+   "county": "Not stated",
+   "amount": 12499999.03,
+   "purpose": "Improving Quality Care to Rural Tennessee Mothers and Babies through the Tennessee Initiative for Perinatal Quality Care (TIPQC)"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 17,
+   "recipient": "Tennessee Primary Care Association",
+   "county": "Not stated",
+   "amount": 5165253.0,
+   "purpose": "Strengthening Maternal Care in Rural Tennessee"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 18,
+   "recipient": "University of Tennessee Health Science Center",
+   "county": "Not stated",
+   "amount": 1162772.38,
+   "purpose": "Mobile Simulation for Healthcare Workforce Training to Enhance Maternal and Infant Health Outcomes in Rural West Tennessee"
+  },
+  {
+   "program": "Maternal/Infant and Child Health Healthcare Resiliency Program (RFA)",
+   "n": 19,
+   "recipient": "Williamson County Hospital District (DBA Williamson Health)",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": "Obstetrical Simulation and Online Learning for High-Acuity Emergency Training"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 20,
+   "recipient": "Ballad Health/Mountain States Health Alliance",
+   "county": "Not stated",
+   "amount": 9891083.21,
+   "purpose": "Rural Cardiovascular and Cancer Access Network (RCAN)"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 21,
+   "recipient": "Covenant Health",
+   "county": "Not stated",
+   "amount": 24366574.0,
+   "purpose": "Service Line Expansion and Co-Location - CovHealth Connect"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 22,
+   "recipient": "Dickson Medical Associates, PC",
+   "county": "Not stated",
+   "amount": 1399864.0,
+   "purpose": "Dickson CT Preventative Care Initiative"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 23,
+   "recipient": "Erlanger Health",
+   "county": "Not stated",
+   "amount": 3945351.0,
+   "purpose": "Erlanger Project ACCESS: Co-Located MRI Service Expansion for Rural Southeast TN"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 24,
+   "recipient": "Family Care Wellness",
+   "county": "Not stated",
+   "amount": 913285.34,
+   "purpose": "Expanding Psychiatric Care to Rural Warren and Surrounding Counties"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 25,
+   "recipient": "Hardin County General Hospital",
+   "county": "Not stated",
+   "amount": 2050500.0,
+   "purpose": "Expanding Local Oncology and Diagnostic Imaging Capacity in Hardin County, Tennessee"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 26,
+   "recipient": "Highpoint Health Winchester and Sewanee with Ascension Saint Thomas",
+   "county": "Not stated",
+   "amount": 1458708.0,
+   "purpose": "Southern Middle Tennessee Nuclear Medicine Expansion Initiative"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 27,
+   "recipient": "Institute for Integrated Behavioral Health/ETSU",
+   "county": "Not stated",
+   "amount": 3110828.0,
+   "purpose": "Expanding Best Practice Integrated Behavioral Health into Rural Primary Care in Northeast Tennessee"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 28,
+   "recipient": "Jefferson County HMA, LLC",
+   "county": "Not stated",
+   "amount": 4024800.0,
+   "purpose": "East Tennessee Rural Cardiovascular Access and Care Transformation Initiative"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 29,
+   "recipient": "Jefferson County HMA, LLC",
+   "county": "Not stated",
+   "amount": 9250000.0,
+   "purpose": "East Tennessee Rural Oncology Expansion and Care Coordination Initiative"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 30,
+   "recipient": "Livingston Regional Hospital",
+   "county": "Not stated",
+   "amount": 3026930.0,
+   "purpose": "Upper Cumberland Fast Track: Expanding Rural Emergency Access and Resiliency"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 31,
+   "recipient": "Methodist Le Bonheur Community Outreach",
+   "county": "Not stated",
+   "amount": 8917300.0,
+   "purpose": "West Tennessee Rural Pediatric Psychiatry and Psychology Access Network"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 32,
+   "recipient": "Playground Pediatrics MSO, LLC",
+   "county": "Not stated",
+   "amount": 2156277.14,
+   "purpose": "Playground Pediatrics Integrated Behavioral Health"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 33,
+   "recipient": "The University of Tennessee Health Sciences",
+   "county": "Not stated",
+   "amount": 10940200.0,
+   "purpose": "TennesseeCares Health Hubs: Expanding Access to Preventive and Chronic Disease Management Services in Rural Tennessee"
+  },
+  {
+   "program": "Service Line Expansion and Co-Location Healthcare Resiliency Program",
+   "n": 34,
+   "recipient": "Volunteer Behavioral Health Care System",
+   "county": "Not stated",
+   "amount": 14521023.0,
+   "purpose": "VolunteerBH - Health Emergency Access & Rural Triage (V-Heart): Crisis Expansion & Co-Location Initiative"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 35,
+   "recipient": "Cartwheel Health Services P.C.",
+   "county": "Not stated",
+   "amount": 2906940.0,
+   "purpose": "HEARTS (Health and Education Advancement through Rural Telehealth in Schools)"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 36,
+   "recipient": "Family Care Clinic",
+   "county": "Not stated",
+   "amount": 701850.0,
+   "purpose": "Connected Rural Care: Health Information Exchange, Mobile Patient Engagement, AI-Enabled Documentation, and Language Access"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 37,
+   "recipient": "Forum AI, Inc. (dba Tessellate)",
+   "county": "Not stated",
+   "amount": 1990000.0,
+   "purpose": "Tennessee Rural Clinician Access & Retention Intelligence Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 38,
+   "recipient": "GeneSprout Inc",
+   "county": "Not stated",
+   "amount": 5259100.0,
+   "purpose": "Rural Genetic Access Initiative"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 39,
+   "recipient": "Integrative Health Centers, Inc. d/b/a Peregrine Health",
+   "county": "Not stated",
+   "amount": 8965950.0,
+   "purpose": "Tennessee Behavioral Health Access Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 40,
+   "recipient": "Meharry Medical College",
+   "county": "Not stated",
+   "amount": 7038691.64,
+   "purpose": "AI-Secured, Predictive, Interoperable Rural Excellence (ASPIRE)"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 41,
+   "recipient": "Peerbridge Health, Inc.",
+   "county": "Not stated",
+   "amount": 4964690.0,
+   "purpose": "TN Heart Access: Rural Cardiac Screening & Clinical Enablement Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 42,
+   "recipient": "Tennessee Pharmacists Research and Education Foundation",
+   "county": "Not stated",
+   "amount": 14311933.0,
+   "purpose": "Tennessee Pharmacy Interoperability and Rural Hypertension Remote Patient Monitoring Initiative"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 43,
+   "recipient": "Tennessee Primary Care Association",
+   "county": "Not stated",
+   "amount": 11491670.0,
+   "purpose": "Expansion of Health IT Support through the Center for Quality in Community Health"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Long-Range)",
+   "n": 44,
+   "recipient": "Vanderbilt University Medical Center",
+   "county": "Not stated",
+   "amount": 5711389.0,
+   "purpose": "Predicting and Treating Regression, Aggression, and Self-Injury in Profound Autism: A Rural Tennessee Deep-Phenotyping, Candidate Biomarker, and Telemedicine Service Line"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 45,
+   "recipient": "Action for Healthy Kids, Inc.",
+   "county": "Not stated",
+   "amount": 7143566.0,
+   "purpose": "Every Rural Tennessee Kid Healthy: A School-Based Approach to Rural Health Transformation"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 46,
+   "recipient": "Frontier Health",
+   "county": "Not stated",
+   "amount": 2539965.0,
+   "purpose": "The HARVEST Initiative: Healthy Appalachia through Resilience, Vitality, Education, Support, and Training"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 47,
+   "recipient": "Hustle Recovery",
+   "county": "Not stated",
+   "amount": 2976000.0,
+   "purpose": "The Restoration House for Women"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 48,
+   "recipient": "Mental Health Cooperative, Inc.",
+   "county": "Not stated",
+   "amount": 1356368.0,
+   "purpose": "Project BRIDGE: Behavioral Health Rural Initiative Driving Greater Equity"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 49,
+   "recipient": "Southeast Tennessee Human Resource Agency",
+   "county": "Not stated",
+   "amount": 5083492.0,
+   "purpose": "Southeast Tennessee Health Access Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 50,
+   "recipient": "Tennessee Certification Board, Inc.",
+   "county": "Not stated",
+   "amount": 1077040.0,
+   "purpose": "Rural Prevention Workforce Center of Excellence"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 51,
+   "recipient": "Tennessee Kidney Foundation",
+   "county": "Not stated",
+   "amount": 2543860.0,
+   "purpose": "Access to Care for Kidney Patients in Rural Tennessee"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 52,
+   "recipient": "Tennessee Voices for Children, Inc.",
+   "county": "Not stated",
+   "amount": 11289622.0,
+   "purpose": "Rural THRIVE Tennessee: Whole Family Pathways to Health, Stability & Opportunity"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 53,
+   "recipient": "United Ways of Tennessee",
+   "county": "Not stated",
+   "amount": 8918268.0,
+   "purpose": "Connecting Rural Tennessee to Health and Human Services: A Statewide 211 Information & Referral Partnership"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 54,
+   "recipient": "University of Tennessee Institute of Agriculture - Extension",
+   "county": "Not stated",
+   "amount": 3031573.61,
+   "purpose": "Nourish Tennessee Families: Scaling Whole-Family Recovery and Health in Rural Communities"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Make Rural Tennessee Healthy Again",
+   "n": 55,
+   "recipient": "Vigil Corporation",
+   "county": "Not stated",
+   "amount": 5596942.0,
+   "purpose": "Tenn72: Tennessee Rural Health Transition Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 56,
+   "recipient": "AspectN Inc. d/b/a MindWise Health",
+   "county": "Not stated",
+   "amount": 396000.0,
+   "purpose": "Rural Recovery Connect"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 57,
+   "recipient": "Complete Wellness Solutions, LLC",
+   "county": "Not stated",
+   "amount": 1130704.0,
+   "purpose": "Rural TennCare Unified Analytics & Care Compliance Platform"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 58,
+   "recipient": "Covenant Health",
+   "county": "Not stated",
+   "amount": 1816500.0,
+   "purpose": "Covenant Health Rural Oncology Early Warning Network"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 59,
+   "recipient": "Crockett Hospital, LLC d/b/a STRHS Lawrenceburg",
+   "county": "Not stated",
+   "amount": 117941.61,
+   "purpose": "Vital Sign Machines with EMR Integration"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 60,
+   "recipient": "Emocha Mobile Health Inc., dba Scene Health",
+   "county": "Not stated",
+   "amount": 1274000.0,
+   "purpose": "Expansion of Scene Health's innovative public health and medication adherence technology to address chronic care, behavioral health, and workforce and system resiliency"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 61,
+   "recipient": "Feonix - Mobility Rising",
+   "county": "Not stated",
+   "amount": 990844.0,
+   "purpose": "Mobility Is Medicine - A Technology-Enabled Access-to-Care Network for West Tennessee"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 62,
+   "recipient": "Indiana Data Works LLC",
+   "county": "Not stated",
+   "amount": 450000.0,
+   "purpose": "RuralLink TN: Preparing High-Need Rural Healthcare Organizations for Tennessee\u2019s Statewide Health Information Exchange"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 63,
+   "recipient": "MD Health Pathways, Inc.",
+   "county": "Not stated",
+   "amount": 1900000.0,
+   "purpose": "Rural Tennessee Physician Access Program: SMS-First Care for Counties Without a Safety Net"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 64,
+   "recipient": "Micura Health, LLC",
+   "county": "Not stated",
+   "amount": 2451200.0,
+   "purpose": "Safe Passage \u2014 Epic \u2192 MatrixCare Interoperability for Safe Hospital-to-SNF Transitions"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 65,
+   "recipient": "MyOwnDoctor, Inc. d/b/a BigHeart Health (BHH)",
+   "county": "Not stated",
+   "amount": 5681000.0,
+   "purpose": "Energize the Grid \u2014 Building Rural Tennessee\u2019s Safety-Net Health Data Backbone"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 66,
+   "recipient": "Psynergy, PLLC d/b/a AndorHealth, LLC",
+   "county": "Not stated",
+   "amount": 2500000.0,
+   "purpose": "Psynergy ACCESS Clinic: Tennessee Rural Care Access Expansion Program"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 67,
+   "recipient": "Qmetis, Inc.",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Qmetis, Inc. Healthcare Resiliency Program: Health Technology and Innovation"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 68,
+   "recipient": "RH Health Inc.",
+   "county": "Not stated",
+   "amount": 495000.0,
+   "purpose": "AI-Enabled At-Home Chronic Disease Screening and Care Coordination for Rural Tennessee"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 69,
+   "recipient": "Southern Pediatrics, PLLC (f/k/a Grace Pediatrics, PLLC)",
+   "county": "Not stated",
+   "amount": 3513046.0,
+   "purpose": "Connected Care for Families: Modernizing Care (Short Range)"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 70,
+   "recipient": "Tennessee Health Care Campaign",
+   "county": "Not stated",
+   "amount": 2400000.0,
+   "purpose": "Rural Health Resiliency Network: AI-Powered Care Coordination and Workforce Support for Tennessee Hospitals"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 71,
+   "recipient": "Upperline Health",
+   "county": "Not stated",
+   "amount": 1095686.0,
+   "purpose": "Data Connected, Care Extended: Upperline\u2019s Rural TN Health Initiative"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 72,
+   "recipient": "Volunteer Behavioral Health Care System",
+   "county": "Not stated",
+   "amount": 3185500.0,
+   "purpose": "Volunteer Behavioral Health Care System: Rural Network Infrastructure Replacement and Security Monitoring"
+  },
+  {
+   "program": "Healthcare Resiliency Program: Health Technology and Innovation (Short-Range)",
+   "n": 73,
+   "recipient": "Watershed Health Inc",
+   "county": "Not stated",
+   "amount": 2699999.99,
+   "purpose": "TRACE \u2014 Technology-enabled Rural Access to Care and clinical Evidence"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 74,
+   "recipient": "Brown Behavioral Health Services",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Blue Plate Project"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 75,
+   "recipient": "Moves And Grooves, Inc.",
+   "county": "Not stated",
+   "amount": 4500000.0,
+   "purpose": "The Evolved Plate"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 76,
+   "recipient": "Nourish Knoxville, Inc",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Nutrition Incentive Expansion at Farm-Direct Sites in Union and Claiborne Counties"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 77,
+   "recipient": "Scott Christian Care Center",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Building Healthy Communities in Scott County"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 78,
+   "recipient": "Southern Off-Road Bicycle Association (SORBA) Tri-Cities",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Trailheads to Health"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 79,
+   "recipient": "Tennessee Local Food Summit",
+   "county": "Not stated",
+   "amount": 999937.5,
+   "purpose": "Healthy Smith: Building a Rural Healthy Food Ecosystem"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 80,
+   "recipient": "University of Tennessee",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Fueling Pantries, Feeding Communities, Fostering Health"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 81,
+   "recipient": "UT Extension - Tennessee RiverLine",
+   "county": "Not stated",
+   "amount": 4500000.0,
+   "purpose": "Water is Life: Hydration and Water-based Recreation as Endzone Strategies for Rural Health in Tennessee River Communities"
+  },
+  {
+   "program": "Creating Healthier Rural Communities Through the End Zone for Chronic Disease Prevention",
+   "n": 82,
+   "recipient": "Vanderbilt University Medical Center",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Healthy Food, Healthy Futures: PSE Strategies to Reduce Food Insecurity and Chronic Disease in Bedford and Coffee Counties"
+  },
+  {
+   "program": "Establishing the Tennessee Memory Care Assessment Network (MCAN)",
+   "n": 83,
+   "recipient": "Vanderbilt University Medical Center",
+   "county": "Not stated",
+   "amount": 16499997.3,
+   "purpose": "Tennessee Memory Care Assessment Network"
+  },
+  {
+   "program": "Rural Fetal and Infant Health Initiative",
+   "n": 84,
+   "recipient": "Cumberland Pediatric",
+   "county": "Not stated",
+   "amount": 2188160.66,
+   "purpose": "Creating Rural Impact for Healthier Babies (CRIHBs)"
+  },
+  {
+   "program": "Rural Fetal and Infant Health Initiative",
+   "n": 85,
+   "recipient": "Tennessee Voices for Children, Inc.",
+   "county": "Not stated",
+   "amount": 3579636.0,
+   "purpose": "Connected Beginnings Tennessee: Rural Fetal and Infant Health Collaborative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 86,
+   "recipient": "Appalachian Conservation Institute",
+   "county": "Not stated",
+   "amount": 61037.23,
+   "purpose": "Healthy Access: Trail Navigation and Interpretation Improvements"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 87,
+   "recipient": "Boys & Girls Clubs of South Central Tennessee",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Pulaski Boys and Girls Club - Natural Playscapes Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 88,
+   "recipient": "Boys & Girls Clubs of the Cumberland Plateau",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Healthy Active Scott County"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 89,
+   "recipient": "Bridge Bedford Inc",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Riverview Active Living Corridor"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 90,
+   "recipient": "City of Altamont",
+   "county": "Not stated",
+   "amount": 96000.0,
+   "purpose": "City of Altamont Healthy Lifestyles Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 91,
+   "recipient": "City of Clifton",
+   "county": "Not stated",
+   "amount": 74400.0,
+   "purpose": "2026 Clifton Ferry Loop Riverbank Restoration & Park Improvements"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 92,
+   "recipient": "City of Dayton",
+   "county": "Not stated",
+   "amount": 90000.0,
+   "purpose": "Dayton Active Living Enhancement Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 93,
+   "recipient": "City of Gatlinburg Recreation Department",
+   "county": "Not stated",
+   "amount": 85000.0,
+   "purpose": "Mills Park Covered Bridge"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 94,
+   "recipient": "City of Jefferson City, Tennessee",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Centennial Park Outdoor Exercise Equipment Installation"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 95,
+   "recipient": "City of Lawrenceburg TN",
+   "county": "Not stated",
+   "amount": 140050.0,
+   "purpose": "Connecting Healthy Spaces"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 96,
+   "recipient": "City of Lewisburg",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "2026 Jones Park & Comprehensive Master Plan"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 97,
+   "recipient": "City of Manchester",
+   "county": "Not stated",
+   "amount": 94700.0,
+   "purpose": "Manchester Systemwide Parks and Recreation Master Plan"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 98,
+   "recipient": "City of Maynarville",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Liberty Park Placemaking & Enhancement Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 99,
+   "recipient": "City of McMinnville",
+   "county": "Not stated",
+   "amount": 148000.0,
+   "purpose": "Warren County Multi-River Health & Safety Trail"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 100,
+   "recipient": "City of Mount Pleasant",
+   "county": "Not stated",
+   "amount": 42700.0,
+   "purpose": "2026 Mount Pleasant Community Access and Safety Enhancements on 3rd Avenue"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 101,
+   "recipient": "City of Murfreesboro",
+   "county": "Not stated",
+   "amount": 94813.0,
+   "purpose": "MPRD We-Go Wheelchair Accessible Swing Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 102,
+   "recipient": "City of Parsons",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "City of Parsons Safe Pedestrian Corridor Planning Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 103,
+   "recipient": "City of Rockwood",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rockwood Forest Trail Improvement Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 104,
+   "recipient": "City of Tennessee Ridge",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Herb Gould Veterans Park Public Health Improvements"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 105,
+   "recipient": "Civic Design Center",
+   "county": "Not stated",
+   "amount": 143160.0,
+   "purpose": "Highlander Trail Connection Plan: A Continuation of Oneida\u2019s Active Living Workshop"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 106,
+   "recipient": "Claiborne County Government",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Claiborne County Healthy Places and Active Living Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 107,
+   "recipient": "Clay County Government",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Safe Routes to Hermitage Springs Park"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 108,
+   "recipient": "Cleveland City Schools-The Denning Center for Family and Community Resources (Family Resource Center)",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "TDC HART"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 109,
+   "recipient": "Clinch-Powell Resource Conservation and Development Council, Inc",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "The Rutledge Active Living and Community Connectivity Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 110,
+   "recipient": "Cocke County Cradle to Career Coalition",
+   "county": "Not stated",
+   "amount": 96235.0,
+   "purpose": "Youth-Led Development of a Complete Streets Plan for Cocke County"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 111,
+   "recipient": "Cookeville Regional Medical Center Foundation",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Community Wellness Loop"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 112,
+   "recipient": "Counnty of Putnam",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Healthy Steps Community Park at Jere Whitson"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 113,
+   "recipient": "County of Hancock",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Hancock County Pedistrian plaza demostration"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 114,
+   "recipient": "Echoes of the Rail Foundation",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Highlander Trail"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 115,
+   "recipient": "Foundation of the Dyersburg/Dyer County Chamber of Commerce",
+   "county": "Not stated",
+   "amount": 99670.0,
+   "purpose": "Wild on the Wing Walking Trail"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 116,
+   "recipient": "Free Medical Clinic of Oak Ridge",
+   "county": "Not stated",
+   "amount": 99885.0,
+   "purpose": "Moving Together: A Community Wellness Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 117,
+   "recipient": "Great Smoky Mountains Institute, Inc",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Building Health Through Nature: Planning Tremont's Education Pavilion in Rural Blount County"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 118,
+   "recipient": "Hawkins County Schools",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Healthy Active Hawkins County"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 119,
+   "recipient": "Hope Hohenwald Inc",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Building Hope Active Campus and Community Wellness Park"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 120,
+   "recipient": "Jefferson County Mayor",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Mossy Creek Wildlife Viewing Area Improvement Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 121,
+   "recipient": "Lauderdale County Schools- Ripley Elementary School",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "The Power of Play: Building a Playground Where Every Child Belongs"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 122,
+   "recipient": "Loudon County Economic Development Agency",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Lenoir City Recreation Wayfinding"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 123,
+   "recipient": "Macon Hospital, Inc",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Macon Healthy Living and Child Development Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 124,
+   "recipient": "Mane Up Memphis Inc.",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Mane Mindscape Community Wellness Tour"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 125,
+   "recipient": "Nature Together",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Trails Together: Community Audit and Active Living Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 126,
+   "recipient": "Obion County Public Library",
+   "county": "Not stated",
+   "amount": 17000.0,
+   "purpose": "Creating a Healthy Oasis"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 127,
+   "recipient": "SCCF",
+   "county": "Not stated",
+   "amount": 137500.0,
+   "purpose": "Activate Southern Grundy County Through Trails and Parks"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 128,
+   "recipient": "Southern Off-Road Bicycle Association (SORBA) Tri-Cities",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Gateway to Trails - Unaka Bike Park"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 129,
+   "recipient": "Special Olympics Tennessee",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Rural Inclusive Readiness Initiative: Expanding Safe, Accessible Health Infrastructure for Individuals with Intellectual Disabilities in Rural Tennessee"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 130,
+   "recipient": "Sumner County Board of Education",
+   "county": "Not stated",
+   "amount": 75000.0,
+   "purpose": "Sumner County Schools Districtwide Playground Accessibility Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 131,
+   "recipient": "Tennessee Central Heritage Rail Trail",
+   "county": "Not stated",
+   "amount": 55000.0,
+   "purpose": "Tennessee Central Rail Trail - West End to Cane Creek Connection"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 132,
+   "recipient": "Tennessee Voices for Children, Inc.",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Cultivating Wellness: Community Garden Initiative"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 133,
+   "recipient": "The Town of Ashland City",
+   "county": "Not stated",
+   "amount": 138300.0,
+   "purpose": "Active Ashland City\u2019s Health, Heart and Sole"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 134,
+   "recipient": "Town of Cumberland Gap",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Cumberland Gap Parks Improvement Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 135,
+   "recipient": "Town of Tracy City",
+   "county": "Not stated",
+   "amount": 116600.0,
+   "purpose": "Tracy City Littell-Partin Center Healthy Lifestyle Project"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 136,
+   "recipient": "Town of Whiteville",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "City of Whiteville Planning Project for Multi-Use Trail"
+  },
+  {
+   "program": "Healthy Active Rural Tennessee (HART)",
+   "n": 137,
+   "recipient": "Veterans in Focus",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Veterans Park and Conference Center"
+  },
+  {
+   "program": "Perinatal and Pediatric Behavioral Teleconsultation and Education Project",
+   "n": 138,
+   "recipient": "Vanderbilt University Medical Center",
+   "county": "Not stated",
+   "amount": 2484501.0,
+   "purpose": "Perinatal and Pediatric Behavioral Health Consult Team"
+  }
+ ],
+ "note": "The state's Nov 9, 2026 release describes the listed amounts as the total investment in each project over the five-year program (not a single year's funding); the table is headed \"Amount Awarded or Requested\". Programs shown are Tennessee's RHTP priority areas."
+}

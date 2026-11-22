@@ -25,6 +25,7 @@ const BASIS: Record<string, string> = {
   mississippi: "Announced awards",
   "new-jersey": "Funding allocations, Jul 31, 2026",
   oregon: "Catalyst Awards, Year 1 approved budgets",
+  tennessee: "Awarded projects, multi-year (5-year) totals",
   pennsylvania: "Authorized projects (page: $43M awarded to date)",
 };
 
@@ -167,7 +168,7 @@ export default function RecipientsNational() {
                   <div className="text-[11px] leading-snug text-slate-600 dark:text-slate-400 max-w-[11rem]"><Ext href={s.rec.source.url}>{BASIS[s.rec.slug] ?? "Published list"}</Ext></div></td>
                 <td className="p-2 text-right tabular-nums">{s.rec.rows.length}</td>
                 <td className="p-2 text-right tabular-nums">{M(s.total)}</td>
-                <td className="p-2 text-right tabular-nums">{s.fy26 ? pct(s.total / s.fy26) : "—"}</td>
+                <td className="p-2 text-right tabular-nums">{s.fy26 && !s.rec.multiYear ? pct(s.total / s.fy26) : "—"}</td>
                 <td className="p-2 text-right tabular-nums">{K(s.median)}</td>
                 <td className="p-2 text-right tabular-nums">{pct(s.top10)}</td>
                 <td className="p-2 text-xs align-top">{s.largest.name} <span className="text-slate-500">({M(s.largest.v)}{s.largest.n > 1 ? `, ${s.largest.n} awards` : ""})</span></td>
@@ -187,7 +188,7 @@ export default function RecipientsNational() {
       </details>
       <SourceNote>
         Each list is the state&apos;s own publication (linked under each state&apos;s name), parsed by HTR and checked against the source&apos;s count or printed total where it prints one.
-        &ldquo;vs Year 1 award&rdquo; divides the listed sum by the state&apos;s FY2026 CMS award; a list can include money from more than one budget period, so it is not a spending rate.
+        &ldquo;vs Year 1 award&rdquo; divides the listed sum by the state&apos;s FY2026 CMS award; a list can include money from more than one budget period, so it is not a spending rate; where a state lists multi-year totals (Tennessee) the column is left blank.
         Recipient types are HTR&apos;s classification from organization names and can misplace a few. A 50-state search of each state&apos;s own agency and governor pages for itemised award lists is in progress; states not shown here have not
         yet been searched, or were searched and have no usable list (for example Georgia&apos;s first $12.73 million went to five named subgrantees with no per-award
         amounts, and Wyoming&apos;s advisory-committee approval sheet clips some recipient names and shows others only as a tax ID). No state is estimated.

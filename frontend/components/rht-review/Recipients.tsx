@@ -5,7 +5,7 @@ import path from "node:path";
 import { Ext, SourceNote } from "@/components/rht-review/ui";
 
 export type Row = { program: string | null; n: number; recipient: string; county: string; amount: number; purpose: string };
-export type Rec = { state: string; slug: string; asOf: string; source: { label: string; url: string }; announcedTotal: number | null; areaLabel?: string | null; rows: Row[]; note?: string };
+export type Rec = { state: string; slug: string; asOf: string; source: { label: string; url: string }; announcedTotal: number | null; areaLabel?: string | null; multiYear?: boolean; rows: Row[]; note?: string };
 
 export function loadRecipients(slug: string): Rec | null {
   const f = path.join(process.cwd(), "lib/data/rht-review/recipients", `${slug}.json`);
