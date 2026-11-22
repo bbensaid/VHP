@@ -8,6 +8,7 @@ import { Ext, Section, Stat, SourceNote, StatusPill } from "@/components/rht-rev
 import VermontYear1Review from "@/components/rht-review/VermontYear1Review";
 import { StateCategoryBars, ThemeChips, PillarBar, PillarLegend, stateReadout } from "@/components/rht-review/CompareCharts";
 import { compareFor } from "@/lib/rht-compare";
+import Recipients, { loadRecipients } from "@/components/rht-review/Recipients";
 
 export function generateStaticParams() {
   return RHT_STATES.map((s) => ({ state: s.slug }));
@@ -33,6 +34,7 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
   const rank = [...RHT_STATES].sort((a, b) => b.fy2027 - a.fy2027).findIndex((x) => x.slug === s.slug) + 1;
   const c = compareFor(s.slug)!;
   const readout = stateReadout(c);
+  const rec = loadRecipients(s.slug);
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       <nav className="text-xs text-slate-500 mb-6"><Link href="/rht-review" className="underline">RHT Program Review</Link>{" "}/ {s.state}</nav>
@@ -80,6 +82,12 @@ export default async function RhtStatePage({ params }: { params: Promise<{ state
         {c.cmsTypos.length > 0 && <SourceNote>CMS&apos;s report prints {c.cmsTypos.map((t) => `“$${t.printed}” for ${t.label}`).join("; ")}, which is not a valid amount; this review uses the sum of the itemized lines beneath it ({c.cmsTypos.map((t) => usd(t.usedBulletSum, 2)).join("; ")}).</SourceNote>}
         <SourceNote>Categories and initiative amounts as printed in <Ext href={CMS_DOCS.obligated.url}>{CMS_DOCS.obligated.label}</Ext> (state-reported, as of July 31, 2026). The black tick on each bar is the national share of that category.</SourceNote>
       </Section>
+
+      {rec && (
+        <Section label="Who received the money" title={`${s.state}'s announced RHT awards, recipient by recipient`}>
+          <Recipients rec={rec} />
+        </Section>
+      )}
 
       <Section label="What the plan set out to do" title={`Themes named in ${s.state}'s CMS project abstract`}>
         <ThemeChips c={c} />
