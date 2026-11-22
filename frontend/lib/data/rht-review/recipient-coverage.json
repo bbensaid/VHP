@@ -1,0 +1,64 @@
+{
+ "itemized": [
+  "Alabama",
+  "Alaska",
+  "Arkansas",
+  "California",
+  "Florida",
+  "Illinois",
+  "Maryland",
+  "Michigan",
+  "Mississippi",
+  "Missouri",
+  "New Jersey",
+  "Oregon",
+  "Pennsylvania",
+  "South Carolina",
+  "Tennessee",
+  "Texas",
+  "Vermont",
+  "West Virginia"
+ ],
+ "namesWithoutAmounts": [
+  "Georgia",
+  "Indiana",
+  "Iowa",
+  "Virginia",
+  "Washington"
+ ],
+ "partial": [
+  "Arizona",
+  "Connecticut",
+  "Delaware",
+  "Hawaii",
+  "Idaho",
+  "Kentucky",
+  "Louisiana",
+  "Maine",
+  "Minnesota",
+  "Montana",
+  "Nebraska",
+  "Nevada",
+  "New Hampshire",
+  "New Mexico",
+  "New York",
+  "North Carolina",
+  "Ohio",
+  "Oklahoma",
+  "South Dakota",
+  "Wisconsin",
+  "Wyoming"
+ ],
+ "noneFound": [
+  "Massachusetts",
+  "North Dakota",
+  "Rhode Island",
+  "Utah"
+ ],
+ "blocked": [
+  "Colorado",
+  "Kansas"
+ ],
+ "toParse": [],
+ "searchedOn": "2026-11-22"
+}

@@ -51,11 +51,11 @@
   "note": "Governor: 90 awards to 56 orgs ($76.2M); DOH program page and governor release carry no list; healthweb-back mirror lists no awards file \u2014 need the RCHI awards document"
  },
  "Colorado": {
-  "status": "list_found_to_parse",
+  "status": "blocked",
   "urls": [
    "https://hcpf.colorado.gov/rural-health-transformation-program"
   ],
-  "note": "$169.6M, 91 grantees, ~250 projects (Sep 28 2026); list on program site"
+  "note": "hcpf.colorado.gov returns 403 to curl AND to the web-fetch tool (2026-11-22); state says 91 grantees/~250 projects/$169.6M with a list on its site \u2014 needs a browser download by the author or another route"
  },
  "Michigan": {
   "status": "parsed",
@@ -192,13 +192,13 @@
   "note": "GATA CSFA program listings have 'Active Awards' tables per RHTP sub-program \u2014 earlier 'none' verdict was wrong"
  },
  "North Carolina": {
-  "status": "list_found_to_parse",
+  "status": "partial",
   "urls": [
    "https://www.ncdhhs.gov/news/press-releases/2026/11/02/state-launches-new-rural-health-transformation-program-dashboard",
    "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/transforming-rural-health-north-carolina-our-progress",
    "https://governor.nc.gov/news/press-releases/2026/06/08/ncdhhs-announces-10-million-ems-workforce-through-nc-rural-health-transformation-program"
   ],
-  "note": "NCDHHS launched an RHTP dashboard Nov 2 2026; EMS 39 agencies $10M"
+  "note": "NCDHHS RHTP dashboard (Nov 2 2026) is interactive; EMS 39-agency list in June 8 release not parsed yet"
  },
  "West Virginia": {
   "status": "parsed",
@@ -209,14 +209,14 @@
   "note": "announced awards by initiative with amounts and counties (per search) \u2014 earlier 'none' verdict was wrong"
  },
  "Kansas": {
-  "status": "list_found_to_parse",
+  "status": "blocked",
   "urls": [
    "https://www.kdhe.ks.gov/rhtp",
    "https://www.kdhe.ks.gov/CivicAlerts.aspx?AID=1957",
    "https://www.haysmed.com/wp-content/uploads/2026/05/rpgp-and-REH-CAP-Press-Release-vF-1.pdf",
    "https://www.kdhe.ks.gov/DocumentCenter/View/60654"
   ],
-  "note": "$79.1M to 39 orgs; several award PDFs/newsflashes"
+  "note": "kdhe.ks.gov 403 to curl; award PDFs exist (REH-CAP/RPGP, CHW+AFIM, Emerging Tech); partial lists appear in hospital-hosted copies of KDHE releases (e.g. haysmed.com RPGP PDF) \u2014 not yet parsed"
  },
  "Arkansas": {
   "status": "parsed",

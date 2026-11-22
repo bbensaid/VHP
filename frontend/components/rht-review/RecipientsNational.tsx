@@ -5,6 +5,7 @@ import path from "node:path";
 import { typeOf, type Rec } from "@/components/rht-review/Recipients";
 import { Ext, SourceNote } from "@/components/rht-review/ui";
 import { COMPARE } from "@/lib/rht-compare";
+import cov from "@/lib/data/rht-review/recipient-coverage.json";
 
 const DIR = path.join(process.cwd(), "lib/data/rht-review/recipients");
 export function loadAllRecipients(): Rec[] {
@@ -196,9 +197,9 @@ export default function RecipientsNational() {
       <SourceNote>
         Each list is the state&apos;s own publication (linked under each state&apos;s name), parsed by HTR and checked against the source&apos;s count or printed total where it prints one.
         &ldquo;vs Year 1 award&rdquo; divides the listed sum by the state&apos;s FY2026 CMS award; a list can include money from more than one budget period, so it is not a spending rate; where a state lists multi-year totals (Tennessee) the column is left blank.
-        Recipient types are HTR&apos;s classification from organization names and can misplace a few. A 50-state search of each state&apos;s own agency and governor pages for itemised award lists is in progress; states not shown here have not
-        yet been searched, or were searched and have no usable list (for example Georgia&apos;s first $12.73 million went to five named subgrantees with no per-award
-        amounts, and Wyoming&apos;s advisory-committee approval sheet clips some recipient names and shows others only as a tax ID). No state is estimated.
+        Recipient types are HTR&apos;s classification from organization names and can misplace a few. Coverage comes from a state-by-state search of each state&apos;s own agency and governor pages ({cov.searchedOn}): {cov.itemized.length} states (Vermont, with its own agreement-level review, plus {recs.length} shown here) have an itemized list with amounts;
+        {cov.namesWithoutAmounts.length} publish recipients or regional awards without per-award amounts ({cov.namesWithoutAmounts.join(", ")}); {cov.partial.length} have announced some named awards but no consolidated list yet ({cov.partial.join(", ")});
+        {cov.noneFound.length} had no recipient list ({cov.noneFound.join(", ")}); and {cov.blocked.length} publish lists on sites that refuse automated access ({cov.blocked.join(", ")}). The full record is kept with the review&apos;s sources. No state is estimated.
       </SourceNote>
     </div>
   );

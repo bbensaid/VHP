@@ -26,7 +26,7 @@ test("RHT dashboard: findings, national uses and all four comparison views rende
 test("published award lists: national comparison and source-checked state figures", async ({ page }) => {
   await page.goto("/rht-review");
   const nat = page.locator('[data-testid="rht-recipients-national"] tbody tr');
-  await expect(nat).toHaveCount(9);
+  await expect(nat).toHaveCount(17);
   await expect(nat.first()).toContainText("California");
   await expect(page.locator('[data-testid="rht-recipients-national"]')).toContainText("Mississippi");
   // Mississippi's 167 awards sum to the announced $104,115,146.80; Oregon's file reports 103 Catalyst projects.
