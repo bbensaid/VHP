@@ -40,6 +40,7 @@ out = {}
 for k, st in enumerate(starts):
     end = starts[k + 1] if k + 1 < len(starts) else len(lines)
     name = lines[st].split(' Total Budget Period 1 Award:')[0].strip()
+    name = {'Hawai’i': 'Hawaii', "Hawai'i": 'Hawaii'}.get(name, name)
     block = lines[st:end]
     ptw = None
     for l in block[:4]:
