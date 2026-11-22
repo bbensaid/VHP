@@ -1,0 +1,986 @@
+{
+ "state": "California",
+ "slug": "california",
+ "asOf": "2026-11",
+ "source": {
+  "label": "California Department of Health Care Access and Information (HCAI), \"CalRHT Program Updates\": Recommended Subrecipients for CalRHT Budget Period 1",
+  "url": "https://hcai.ca.gov/rural-health/calrht/calrht-program-updates/"
+ },
+ "announcedTotal": 166720000,
+ "areaLabel": "Counties served",
+ "rows": [
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 1,
+   "recipient": "Central Valley Farmworker Foundation",
+   "county": "Kern, Tulare, Fresno",
+   "amount": 776294.14,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 2,
+   "recipient": "Community Health Partners",
+   "county": "Fresno, Merced",
+   "amount": 706348.24,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 3,
+   "recipient": "Feather River Tribal Health, Inc.",
+   "county": "Butte, Yuba, Sutter",
+   "amount": 938434.55,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 4,
+   "recipient": "Inland Empire Health Plan",
+   "county": "San Bernardino, Riverside",
+   "amount": 2472952.57,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 5,
+   "recipient": "Lompoc Valley Medical Center",
+   "county": "Santa Barbara",
+   "amount": 2573673.34,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 6,
+   "recipient": "Marshall Medical Center",
+   "county": "El Dorado, Amador",
+   "amount": 1648200.33,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 7,
+   "recipient": "Mee Memorial Healthcare System",
+   "county": "Monterey",
+   "amount": 1436125.66,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 8,
+   "recipient": "Mercy Medical Center \u2013 Northern California Maternity Collaborative",
+   "county": "Shasta, Siskiyou, Tehama, Lassen, Modoc",
+   "amount": 2434569.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 9,
+   "recipient": "Northern Inyo Healthcare District",
+   "county": "Inyo, Mono",
+   "amount": 298480.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 10,
+   "recipient": "Oak Valley District Hospital",
+   "county": "Stanislaus, San Joaquin",
+   "amount": 1136750.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 11,
+   "recipient": "Pacific Central Coast Health Centers",
+   "county": "Santa Barbara, Santa Maria Valley",
+   "amount": 2048738.02,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 12,
+   "recipient": "Plumas District Hospital",
+   "county": "Plumas",
+   "amount": 2427666.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 13,
+   "recipient": "Ridgecrest Regional Hospital",
+   "county": "Kern, Inyo, San Bernardino",
+   "amount": 3037275.28,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 14,
+   "recipient": "Salinas Valley Memorial Hospital",
+   "county": "Monterey, San Benito",
+   "amount": 2476294.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 15,
+   "recipient": "Sierra Nevada Memorial Hospital Foundation",
+   "county": "Nevada County",
+   "amount": 708220.53,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 16,
+   "recipient": "Tahoe Forest Hospital District",
+   "county": "Placer, Nevada, El Dorado, Sierra, Plumas",
+   "amount": 1559015.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 17,
+   "recipient": "Tribal Rural Oral Health Consortium",
+   "county": "Lake, Siskiyou, Karuk Tribe, Lake County Tribal Health Consortium",
+   "amount": 1322281.49,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 18,
+   "recipient": "United Indian Health Services, Inc.",
+   "county": "Humboldt, Del Norte",
+   "amount": 3391350.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Accelerator Partner Program",
+   "initiative": "Transformative Care Model",
+   "n": 19,
+   "recipient": "Southern California Rural Health Collaborative \u2013 University of California, San Diego",
+   "county": "Imperial, Riverside",
+   "amount": 6213882.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "FM-OB Fellowship Program",
+   "initiative": "Transformative Care Model",
+   "n": 20,
+   "recipient": "Kaweah Health",
+   "county": "Tulare, Kings",
+   "amount": 441210.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "FM-OB Fellowship Program",
+   "initiative": "Transformative Care Model",
+   "n": 21,
+   "recipient": "San Bernardino County, Arrowhead Regional Medical Center",
+   "county": "San Bernardino",
+   "amount": 500000.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "FM-OB Fellowship Program",
+   "initiative": "Transformative Care Model",
+   "n": 22,
+   "recipient": "UC San Diego Health",
+   "county": "San Diego, Imperial",
+   "amount": 498854.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "FM-OB Fellowship Program",
+   "initiative": "Transformative Care Model",
+   "n": 23,
+   "recipient": "Maternal Child Health Fellowship: Fresno Family Medicine Obstetrics",
+   "county": "Fresno",
+   "amount": 289039.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 24,
+   "recipient": "Adventist Health Howard Memorial",
+   "county": "Mendocino",
+   "amount": 2563636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 25,
+   "recipient": "Adventist Health Sonora",
+   "county": "Tuolumne, Mariposa, Calaveras, Stanislaus, Alpine",
+   "amount": 2563636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 26,
+   "recipient": "Adventist Health Tehachapi Valley",
+   "county": "Kern",
+   "amount": 2563636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 27,
+   "recipient": "Adventist Health Ukiah Valley",
+   "county": "Mendocino",
+   "amount": 2563636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 28,
+   "recipient": "Fairchild Medical Center",
+   "county": "Siskiyou",
+   "amount": 2563636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 29,
+   "recipient": "Mayers Memorial Hospital District",
+   "county": "Shasta, Lassen, Modoc",
+   "amount": 3863636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 30,
+   "recipient": "Mee Memorial Healthcare System",
+   "county": "Monterey",
+   "amount": 3863636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 31,
+   "recipient": "Pioneers Memorial Hospital",
+   "county": "Imperial",
+   "amount": 3363636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 32,
+   "recipient": "Ridgecrest Regional Hospital",
+   "county": "Kern",
+   "amount": 3863636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 33,
+   "recipient": "San Benito Healthcare District/Hazel Hawkins Memorial Hospital",
+   "county": "San Benito",
+   "amount": 3363636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Transformative Payments",
+   "initiative": "Transformative Care Model",
+   "n": 34,
+   "recipient": "Sierra View Medical Center",
+   "county": "Tulare",
+   "amount": 3863636.0,
+   "purpose": "Transformative Care Model"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 35,
+   "recipient": "Adventist Health System/West",
+   "county": "Calaveras, Fresno, Lake, Mendocino, Napa, Tehama, Tulare, Tuolumne",
+   "amount": 1592830.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 36,
+   "recipient": "Ampla Health",
+   "county": "Butte, Colusa, Glenn, Tehama",
+   "amount": 1548913.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 37,
+   "recipient": "Apex Medical Group",
+   "county": "Merced",
+   "amount": 1700000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 38,
+   "recipient": "Aria Community Health Center",
+   "county": "Fresno, Kings, Tulare",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 39,
+   "recipient": "Banner Health Foundation",
+   "county": "Lassen",
+   "amount": 620000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 40,
+   "recipient": "Barton Memorial Hospital",
+   "county": "El Dorado",
+   "amount": 170446.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 41,
+   "recipient": "Castle Family Health Centers, Inc.",
+   "county": "Merced",
+   "amount": 562500.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 42,
+   "recipient": "Catalina Island Health",
+   "county": "Los Angeles",
+   "amount": 216153.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 43,
+   "recipient": "Clinica Sierra Vista",
+   "county": "Kern",
+   "amount": 999625.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 44,
+   "recipient": "Colorado River Medical Center",
+   "county": "San Bernardino",
+   "amount": 716667.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 45,
+   "recipient": "CommuniCare+OLE",
+   "county": "Napa",
+   "amount": 675102.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 46,
+   "recipient": "DAP Health, Inc.",
+   "county": "Riverside, San Diego",
+   "amount": 906058.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 47,
+   "recipient": "Eastern Plumas Health Care",
+   "county": "Plumas, Sierra",
+   "amount": 419000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 48,
+   "recipient": "El Dorado County Community Health Center",
+   "county": "El Dorado",
+   "amount": 341000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 49,
+   "recipient": "Fairchild Medical Center",
+   "county": "Siskiyou",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 50,
+   "recipient": "Family Health Centers, Inc.",
+   "county": "Fresno, Tulare",
+   "amount": 622500.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 51,
+   "recipient": "Feather River Tribal Health, Inc.",
+   "county": "Butte",
+   "amount": 526992.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 52,
+   "recipient": "Fortuna Family Medicine",
+   "county": "Humboldt",
+   "amount": 888000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 53,
+   "recipient": "Good Samaritan Hospital, LP",
+   "county": "Kern",
+   "amount": 340278.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 54,
+   "recipient": "Health Alliance of Northern California",
+   "county": "Lassen, Nevada, Placer, Shasta, Sierra, Siskiyou, Yuba",
+   "amount": 1861538.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 55,
+   "recipient": "Healthy Rural California, Inc.",
+   "county": "Butte, Glenn, Lassen",
+   "amount": 1999831.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 56,
+   "recipient": "Imperial Clinica",
+   "county": "Imperial",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 57,
+   "recipient": "Jerod Phelps Community Hospital, Southern Humboldt Community Clinic",
+   "county": "Humboldt",
+   "amount": 357500.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 58,
+   "recipient": "Kno\u2019Qoti Native Wellness, Inc.",
+   "county": "Glenn, Lake",
+   "amount": 989900.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 59,
+   "recipient": "Legacy MD Medical Group, Inc.",
+   "county": "Imperial",
+   "amount": 1182017.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 60,
+   "recipient": "MACT Health Board, Incorporated",
+   "county": "Amador, Calaveras, Mariposa, Tuolumne",
+   "amount": 995000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 61,
+   "recipient": "Mathiesen Memorial Health Clinic",
+   "county": "Tuolumne",
+   "amount": 791209.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 62,
+   "recipient": "Mayers Memorial Hospital District",
+   "county": "Shasta",
+   "amount": 635000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 63,
+   "recipient": "Mee Memorial Healthcare System",
+   "county": "Monterey",
+   "amount": 849246.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 64,
+   "recipient": "Mendonoma Health Alliance",
+   "county": "Mendocino",
+   "amount": 891892.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 65,
+   "recipient": "Mercy Medical Center Mt. Shasta",
+   "county": "Siskiyou",
+   "amount": 288000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 66,
+   "recipient": "Mountain Communities Healthcare District",
+   "county": "Trinity",
+   "amount": 997500.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 67,
+   "recipient": "North Edge",
+   "county": "Humboldt, Mendocino",
+   "amount": 1999999.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 68,
+   "recipient": "NorthBay Healthcare Corporation",
+   "county": "Solano, Yolo",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 69,
+   "recipient": "Northern Inyo Healthcare District",
+   "county": "Inyo",
+   "amount": 332030.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 70,
+   "recipient": "Oak Valley Hospital District",
+   "county": "Mariposa, San Joaquin, Stanislaus",
+   "amount": 261905.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 71,
+   "recipient": "Omni Family Health",
+   "county": "Fresno, Kern, Tulare",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 72,
+   "recipient": "Pacific Central Coast Health Centers",
+   "county": "San Luis Obispo",
+   "amount": 137425.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 73,
+   "recipient": "Palo Verde Hospital",
+   "county": "Riverside",
+   "amount": 850000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 74,
+   "recipient": "Pioneers Memorial Hospital",
+   "county": "Imperial, San Diego",
+   "amount": 1030863.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 75,
+   "recipient": "Pit River Health Service",
+   "county": "Modoc, Shasta",
+   "amount": 388370.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 76,
+   "recipient": "Plumas District Hospital",
+   "county": "Plumas",
+   "amount": 800000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 77,
+   "recipient": "Providence Medical Foundation",
+   "county": "Humboldt",
+   "amount": 450000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 78,
+   "recipient": "Reach Out West End",
+   "county": "San Bernardino",
+   "amount": 1793643.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 79,
+   "recipient": "Riverside-San Bernardino County Indian Health, Inc.",
+   "county": "Riverside, San Bernardino",
+   "amount": 888889.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 80,
+   "recipient": "Round Valley Indian Health Center, Inc.",
+   "county": "Mendocino",
+   "amount": 794444.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 81,
+   "recipient": "SAC Health System",
+   "county": "San Bernardino",
+   "amount": 1055735.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 82,
+   "recipient": "San Benito Health Foundation",
+   "county": "San Benito",
+   "amount": 913043.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 83,
+   "recipient": "San Benito Hospital District",
+   "county": "San Benito",
+   "amount": 563158.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 84,
+   "recipient": "San Diego State University Research Foundation",
+   "county": "Imperial, Riverside",
+   "amount": 1110302.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 85,
+   "recipient": "Seneca Healthcare District",
+   "county": "Plumas",
+   "amount": 255691.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 86,
+   "recipient": "Sequoia Family Medical Center",
+   "county": "Tulare",
+   "amount": 845070.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 87,
+   "recipient": "Sierra Nevada Memorial Miners Hospital",
+   "county": "Nevada",
+   "amount": 998240.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 88,
+   "recipient": "Sierra View Medical Center",
+   "county": "Tulare",
+   "amount": 845000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 89,
+   "recipient": "Sonoma Valley Hospital",
+   "county": "Sonoma",
+   "amount": 550000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 90,
+   "recipient": "Southern Inyo Healthcare District",
+   "county": "Inyo",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 91,
+   "recipient": "St. Elizabeth Community Hospital",
+   "county": "Tehama",
+   "amount": 88600.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 92,
+   "recipient": "Stallant Medical Group Inc.",
+   "county": "Del Norte",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 93,
+   "recipient": "Sutter Coast Hospital",
+   "county": "Del Norte",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 94,
+   "recipient": "Tahoe Forest Hospital District",
+   "county": "Nevada",
+   "amount": 998208.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 95,
+   "recipient": "Toiyabe Indian Health Project, Inc.",
+   "county": "Inyo, Mono",
+   "amount": 607675.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 96,
+   "recipient": "Tuolumne Me-Wuk Indian Health Center, Inc.",
+   "county": "Tuolumne",
+   "amount": 437704.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 97,
+   "recipient": "United Health Centers of the San Joaquin Valley",
+   "county": "Fresno, Kern, Kings, Tulare",
+   "amount": 629280.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 98,
+   "recipient": "United Indian Health Services, Inc.",
+   "county": "Del Norte, Humboldt",
+   "amount": 860028.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Workforce Development Recruitment and Retention (WDRR)",
+   "initiative": "Workforce Development",
+   "n": 99,
+   "recipient": "Valley Health Team, Inc.",
+   "county": "Fresno, Inyo, Tulare",
+   "amount": 1000000.0,
+   "purpose": "Workforce Development"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 100,
+   "recipient": "Catalina Island Health",
+   "county": "Los Angeles",
+   "amount": 383333.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 101,
+   "recipient": "Hill Country Community Clinic",
+   "county": "Shasta",
+   "amount": 485197.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 102,
+   "recipient": "John C. Fremont Healthcare District",
+   "county": "Mariposa",
+   "amount": 2000000.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 103,
+   "recipient": "Lompoc Valley Medical Center",
+   "county": "Santa Barbara",
+   "amount": 333191.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 104,
+   "recipient": "Oak Valley Hospital District",
+   "county": "Stanislaus",
+   "amount": 2000000.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 105,
+   "recipient": "Shasta Cascade Health Centers",
+   "county": "Siskiyou",
+   "amount": 1185019.82,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 106,
+   "recipient": "Sonoma Valley Hospital",
+   "county": "Sonoma",
+   "amount": 1183655.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 107,
+   "recipient": "Southern Inyo Healthcare District",
+   "county": "Inyo",
+   "amount": 2000000.0,
+   "purpose": "Technology & Tools"
+  },
+  {
+   "program": "Electronic Health Record Modernization (EHR)",
+   "initiative": "Technology & Tools",
+   "n": 108,
+   "recipient": "Tuolumne Me-Wuk Indian Health Center, Inc.",
+   "county": "Tuolumne, Mariposa",
+   "amount": 388000.0,
+   "purpose": "Technology & Tools"
+  }
+ ],
+ "note": "HCAI lists these as tentative, recommended Budget Period 1 awards: funding is final only once a subrecipient agreement is executed. HCAI reports $166.72 million for 108 organizations across 45 counties, in three initiatives: Transformative Care Model (about $87.51 million, 34 recommended grants plus milestone-based hospital investments and clinical training partnerships), Workforce Development (about $67.56 million, 65 grants) and Technology & Tools (about $11.65 million, 9 grants). The grant counts on this list match those figures exactly; the dollars listed are lower because, in HCAI's words, the list \"does not yet represent all Budget Period 1 investments included in the initiative totals above.\" HCAI also reserves 5% of first-year funding ($11.65 million, within those initiative totals) for California's federally recognized Tribes, budgets $56.51 million in contract support (including the Rural Technical Assistance Center) and $10.41 million in HCAI program support, and notes one recommended applicant has since withdrawn. HCAI's \"108 organizations\" matches the 108 rows; some organizations appear on more than one row (for example Ridgecrest Regional Hospital, twice), so fewer distinct names appear."
+}

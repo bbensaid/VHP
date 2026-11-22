@@ -14,10 +14,10 @@ export function loadRecipients(slug: string): Rec | null {
 
 export const TYPES: [string, RegExp][] = [
   // Alaska Native / tribal health organizations named explicitly are long-established tribal health organizations.
-  ["Tribal health organizations", /tribal|\btribes?\b|\bnative\b|indian community|chiefs conference|southcentral foundation|norton sound health|yukon-kuskokwim health|maniilaq/i],
+  ["Tribal health organizations", /tribal|\btribes?\b|\bnative\b|indian community|indian health|chiefs conference|southcentral foundation|norton sound health|yukon-kuskokwim health|maniilaq/i],
   ["EMS & public safety", /\bEMS\b|E\.M\.S\.|ambulance|emergency medical|\bfire\b|rescue/i],
-  // Named systems are hospital operators; Alabama's "health care authorities" are public hospital authorities.
-  ["Hospitals & health systems", /hospital|medical center|health system|healthcare system|regional medical|med(?:ical)? foundation|health ?care authority|\bochsner\b|merit health|penn highlands|wellspan|virtua health|atlanticare|providence health|deborah heart/i],
+  // Named systems are hospital operators; Alabama's "health care authorities" and California's healthcare districts are public hospital bodies.
+  ["Hospitals & health systems", /hospital|medical center|health system|healthcare system|regional medical|med(?:ical)? foundation|health ?care authority|health ?care district|hospital district|adventist health|\bochsner\b|merit health|penn highlands|wellspan|virtua health|atlanticare|providence health|deborah heart/i],
   ["Community & rural health centers", /health center|\bFQHC\b|family health|community health|rural health clinic/i],
   ["Behavioral health providers", /mental health|behavioral|psychiatric|recovery|counsel|\bregion [ivx]+\b/i],
   ["Universities & colleges", /university|college|school of/i],

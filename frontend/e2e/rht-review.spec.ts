@@ -26,11 +26,16 @@ test("RHT dashboard: findings, national uses and all four comparison views rende
 test("published award lists: national comparison and source-checked state figures", async ({ page }) => {
   await page.goto("/rht-review");
   const nat = page.locator('[data-testid="rht-recipients-national"] tbody tr');
-  await expect(nat).toHaveCount(8);
+  await expect(nat).toHaveCount(9);
+  await expect(nat.first()).toContainText("California");
   await expect(page.locator('[data-testid="rht-recipients-national"]')).toContainText("Mississippi");
   // Mississippi's 167 awards sum to the announced $104,115,146.80; Oregon's file reports 103 Catalyst projects.
   await page.goto("/rht-review/mississippi");
   await expect(page.locator("#recipients")).toContainText("$104,115,146.80");
+  // California: HCAI's 108 recommended subrecipients.
+  await page.goto("/rht-review/california");
+  await expect(page.locator("#recipients")).toContainText("108");
+  await expect(page.locator("#recipients")).toContainText("does not yet represent all Budget Period 1 investments");
   await page.goto("/rht-review/oregon");
   await expect(page.locator("#recipients")).toContainText("103");
   await expect(page.locator("#recipients")).toContainText("Catalyst Awards only");
