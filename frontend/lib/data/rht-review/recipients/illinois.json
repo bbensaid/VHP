@@ -1,0 +1,190 @@
+{
+ "state": "Illinois",
+ "slug": "illinois",
+ "asOf": "2026-11",
+ "source": {
+  "label": "Illinois Governor's Office of Management and Budget, Grant Accountability and Transparency Act (CSFA) listings: Rural Health Transformation Program sub-programs, \"Active Awards\"",
+  "url": "https://omb.illinois.gov/PUBLIC/GATA/CSFA/Program.aspx?csfa=3979"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Transforming Rural Healthcare Delivery, Healthcare Transformation Collaboratives",
+   "n": 1,
+   "recipient": "SIHF Healthcare",
+   "county": "Not stated",
+   "amount": 2300000.0,
+   "purpose": "Agreement 202600021B2, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Healthcare Transformation Collaboratives",
+   "n": 2,
+   "recipient": "OSF Healthcare System",
+   "county": "Not stated",
+   "amount": 2300000.0,
+   "purpose": "Agreement 202600021B4, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Healthcare Transformation Collaboratives",
+   "n": 3,
+   "recipient": "Carle Foundation",
+   "county": "Not stated",
+   "amount": 2187135.0,
+   "purpose": "Agreement 202600021B1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Healthcare Transformation Collaboratives",
+   "n": 4,
+   "recipient": "Egyptian Health Department",
+   "county": "Not stated",
+   "amount": 1212865.0,
+   "purpose": "Agreement 202600021B3, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Transformation",
+   "n": 5,
+   "recipient": "Southern Illinois Hospital Services",
+   "county": "Not stated",
+   "amount": 1427412.0,
+   "purpose": "Agreement 2600021A68, 10/16/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Transformation",
+   "n": 6,
+   "recipient": "Deaconess Illinois Red Bud Regional Hospital, Inc.",
+   "county": "Not stated",
+   "amount": 356854.0,
+   "purpose": "Agreement 2600021A15, 10/02/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Transformation",
+   "n": 7,
+   "recipient": "Decatur Memorial Hospital",
+   "county": "Not stated",
+   "amount": 356853.0,
+   "purpose": "Agreement 2600021A18, 10/02/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Transformation",
+   "n": 8,
+   "recipient": "Ferrell Hospital Community Foundation",
+   "county": "Not stated",
+   "amount": 356853.0,
+   "purpose": "Agreement 2600021A20, 10/02/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Transformation",
+   "n": 9,
+   "recipient": "Hammond Henry Dist Hospital",
+   "county": "Not stated",
+   "amount": 356853.0,
+   "purpose": "Agreement 2600021A28, 10/02/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Community Care Infrastructure",
+   "n": 10,
+   "recipient": "Illinois Primary Health Care Association",
+   "county": "Not stated",
+   "amount": 15500000.0,
+   "purpose": "Agreement 202600021C1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Community Care Infrastructure",
+   "n": 11,
+   "recipient": "Community Behavioral Healthcare Association",
+   "county": "Not stated",
+   "amount": 10500000.0,
+   "purpose": "Agreement 202600021C2, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Transforming Rural Healthcare Delivery, Hospital Disease Prevention",
+   "n": 12,
+   "recipient": "Illinois Critical Access Hospital Network",
+   "county": "Not stated",
+   "amount": 14000000.0,
+   "purpose": "Agreement 202600021D1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Overcoming Geographic Barriers to Care, EMS Enhancement Grants to Resource Hospitals",
+   "n": 13,
+   "recipient": "Illinois Department of Public Health",
+   "county": "Not stated",
+   "amount": 16500000.0,
+   "purpose": "Agreement 202600021E1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Overcoming Geographic Barriers to Care, Mobile Healthcare Innovation",
+   "n": 14,
+   "recipient": "Illinois Primary Health Care Association",
+   "county": "Not stated",
+   "amount": 9000000.0,
+   "purpose": "Agreement 202600021F1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Overcoming Geographic Barriers to Care, Mobile Healthcare Innovation",
+   "n": 15,
+   "recipient": "Community Behavioral Healthcare Association",
+   "county": "Not stated",
+   "amount": 9000000.0,
+   "purpose": "Agreement 202600021F2, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Overcoming Geographic Barriers to Care, Technological Innovation for Virtual Care",
+   "n": 16,
+   "recipient": "Illinois Critical Access Hospital Network",
+   "county": "Not stated",
+   "amount": 31008265.0,
+   "purpose": "Agreement 202600021G1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Workforce, Healthcare Workforce Expansion",
+   "n": 17,
+   "recipient": "Board of Trustees of the University of Illinois (University of Illinois at Chicago)",
+   "county": "Not stated",
+   "amount": 14000000.0,
+   "purpose": "Agreement 202600021H1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Workforce, Healthcare Workforce Expansion",
+   "n": 18,
+   "recipient": "Illinois Community College Board",
+   "county": "Not stated",
+   "amount": 10000000.0,
+   "purpose": "Agreement 202600021H3, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Workforce, Healthcare Workforce Expansion",
+   "n": 19,
+   "recipient": "Illinois Critical Access Hospital Network",
+   "county": "Not stated",
+   "amount": 5000000.0,
+   "purpose": "Agreement 202600021H2, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Rural Workforce, Training Healthcare Support Workers",
+   "n": 20,
+   "recipient": "Illinois Community College Board",
+   "county": "Not stated",
+   "amount": 8000000.0,
+   "purpose": "Agreement 202600021I1, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Rural Workforce, Training Healthcare Support Workers",
+   "n": 21,
+   "recipient": "Board of Trustees of the University of Illinois (University of Illinois at Chicago)",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Agreement 202600021I2, 08/01/2026 to 06/30/2027"
+  },
+  {
+   "program": "Building a Resilient Workforce, Rural Health Education Pipeline",
+   "n": 22,
+   "recipient": "Board of Trustees of the University of Illinois (University of Illinois at Chicago)",
+   "county": "Not stated",
+   "amount": 4500000.0,
+   "purpose": "Agreement 202600021J1, 08/01/2026 to 06/30/2027"
+  }
+ ],
+ "note": "These are the awards recorded in the state's grants-transparency portal for each RHTP sub-program (agreement IDs and project dates shown in the purpose column); the portal prints no total. Illinois' first-year federal award is $193,418,216 per CMS; the listed agreements add up to the amount shown above, but the portal does not say whether every sub-program agreement has been entered yet."
+}

@@ -30,6 +30,7 @@ const BASIS: Record<string, string> = {
   arkansas: "Year 1 award totals by organization, two rounds",
   "west-virginia": "Released awards (state list prints a total)",
   missouri: "Contingent awards, two rounds (CMS approval pending)",
+  illinois: "State grants-portal (GATA) agreements by RHTP sub-program",
   texas: "First-round grants: 68 hospital districts (names from HHSC; $750K each per news report)",
   "south-carolina": "Year One Award List (223 entries; announcement reported 228)",
   pennsylvania: "Authorized projects (page: $43M awarded to date)",
