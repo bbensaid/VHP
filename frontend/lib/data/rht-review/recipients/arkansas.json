@@ -1,0 +1,654 @@
+{
+ "state": "Arkansas",
+ "slug": "arkansas",
+ "asOf": "2026-09-24",
+ "source": {
+  "label": "Arkansas Rural Health Transformation Program (arkansasrhtp.com), Year 1 award totals by organization: THRIVE/PACT (Aug 2026) and RISE/HEART (Sep 2026)",
+  "url": "https://arkansasrhtp.com/"
+ },
+ "announcedTotal": 203862687,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 1,
+   "recipient": "ARCARE",
+   "county": "Not stated",
+   "amount": 2571095.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 2,
+   "recipient": "Arkansas Ambulance Association",
+   "county": "Not stated",
+   "amount": 10000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 3,
+   "recipient": "Arkansas Baptist Childrens Homes and Family Ministries",
+   "county": "Not stated",
+   "amount": 423761.29,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 4,
+   "recipient": "Arkansas Children's Hospital",
+   "county": "Not stated",
+   "amount": 301400.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 5,
+   "recipient": "Arkansas Rural Health Partnership",
+   "county": "Not stated",
+   "amount": 7896955.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 6,
+   "recipient": "Arkansas Rural Health Partnership",
+   "county": "Not stated",
+   "amount": 10936566.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 7,
+   "recipient": "Baptist Health",
+   "county": "Not stated",
+   "amount": 1926432.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 8,
+   "recipient": "Baptist Health",
+   "county": "Not stated",
+   "amount": 15000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 9,
+   "recipient": "Baxter Health",
+   "county": "Not stated",
+   "amount": 7738729.91,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 10,
+   "recipient": "Baxter Health",
+   "county": "Not stated",
+   "amount": 12000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 11,
+   "recipient": "Carriage Hill Family Care, PLLC",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 12,
+   "recipient": "Children's Advocacy Centers of Arkansas",
+   "county": "Not stated",
+   "amount": 1374505.29,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 13,
+   "recipient": "Community Health Centers of Arkansas, Inc.",
+   "county": "Not stated",
+   "amount": 2041804.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 14,
+   "recipient": "Conway Regional Health System",
+   "county": "Not stated",
+   "amount": 795960.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 15,
+   "recipient": "North Arkansas Rural Health Consortium",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 16,
+   "recipient": "Delta Memorial Hospital",
+   "county": "Not stated",
+   "amount": 24720.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 17,
+   "recipient": "Doula Alliance of Arkansas",
+   "county": "Not stated",
+   "amount": 860500.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 18,
+   "recipient": "Harbor House Inc. of Fort Smith Arkansas",
+   "county": "Not stated",
+   "amount": 37230.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 19,
+   "recipient": "Jefferson Hospital Association",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 20,
+   "recipient": "John Ed Chambers Memorial Hospital, Inc.",
+   "county": "Not stated",
+   "amount": 2187999.96,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 21,
+   "recipient": "Johnson Regional Medical Center",
+   "county": "Not stated",
+   "amount": 974455.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 22,
+   "recipient": "LilyLink/The Perinatal Center",
+   "county": "Not stated",
+   "amount": 871736.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 23,
+   "recipient": "Mercy Health Fort Smith Communities",
+   "county": "Not stated",
+   "amount": 6340043.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 24,
+   "recipient": "Mercy Health Fort Smith Communities",
+   "county": "Not stated",
+   "amount": 12716206.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 25,
+   "recipient": "Methodist Le Bonheur Community Outreach",
+   "county": "Not stated",
+   "amount": 340725.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 26,
+   "recipient": "Mississippi County Hospital System",
+   "county": "Not stated",
+   "amount": 9602657.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 27,
+   "recipient": "New York Insitute of Technology",
+   "county": "Not stated",
+   "amount": 1524031.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 28,
+   "recipient": "North Arkansas Regional Medical Center",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 29,
+   "recipient": "River Valley Wellness",
+   "county": "Not stated",
+   "amount": 3500000.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 30,
+   "recipient": "St. Bernards Development Foundation",
+   "county": "Not stated",
+   "amount": 5000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 31,
+   "recipient": "St. Bernards Development Foundation",
+   "county": "Not stated",
+   "amount": 9551090.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 32,
+   "recipient": "Subiaco Abbey",
+   "county": "Not stated",
+   "amount": 268500.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 33,
+   "recipient": "University of Arkansas",
+   "county": "Not stated",
+   "amount": 954198.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 34,
+   "recipient": "University of Arkansas for Medical Sciences",
+   "county": "Not stated",
+   "amount": 7775646.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 35,
+   "recipient": "University of Arkansas for Medical Sciences",
+   "county": "Not stated",
+   "amount": 4215558.0,
+   "purpose": ""
+  },
+  {
+   "program": "PACT (Round 1 (Aug 2026))",
+   "n": 36,
+   "recipient": "White County Medical Center",
+   "county": "Not stated",
+   "amount": 1905496.0,
+   "purpose": ""
+  },
+  {
+   "program": "THRIVE (Round 1 (Aug 2026))",
+   "n": 37,
+   "recipient": "Wolfe Street Foundation, Inc.",
+   "county": "Not stated",
+   "amount": 369619.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 38,
+   "recipient": "AFMC",
+   "county": "Not stated",
+   "amount": 461201.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 39,
+   "recipient": "ARFuture Foundation",
+   "county": "Not stated",
+   "amount": 805375.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 40,
+   "recipient": "Alliance of Boys & Girls Clubs, Inc.",
+   "county": "Not stated",
+   "amount": 930000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 41,
+   "recipient": "Arkansas Baptist Children and Family Ministries",
+   "county": "Not stated",
+   "amount": 394343.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 42,
+   "recipient": "Arkansas Cancer Coalition",
+   "county": "Not stated",
+   "amount": 205905.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 43,
+   "recipient": "Arkansas Chapter, American Academy of Pediatrics",
+   "county": "Not stated",
+   "amount": 228525.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 44,
+   "recipient": "Arkansas Doulas, LLC",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 45,
+   "recipient": "Arkansas Foodbank",
+   "county": "Not stated",
+   "amount": 1382100.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 46,
+   "recipient": "Arkansas Rural Health Partnership",
+   "county": "Not stated",
+   "amount": 1598008.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 47,
+   "recipient": "Arkansas Rural Health Partnership",
+   "county": "Not stated",
+   "amount": 450657.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 48,
+   "recipient": "Arkansas Surgical Hospital",
+   "county": "Not stated",
+   "amount": 473000.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 49,
+   "recipient": "Baptist Health",
+   "county": "Not stated",
+   "amount": 418883.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 50,
+   "recipient": "CARTI",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 51,
+   "recipient": "Conway Regional Health System",
+   "county": "Not stated",
+   "amount": 761440.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 52,
+   "recipient": "North Arkansas Rural Health Consortium",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 53,
+   "recipient": "Division of Agriculture - UA",
+   "county": "Not stated",
+   "amount": 2645425.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 54,
+   "recipient": "Every Arkansan, Inc.",
+   "county": "Not stated",
+   "amount": 1004348.1,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 55,
+   "recipient": "GoodLife Innovations, Inc.",
+   "county": "Not stated",
+   "amount": 802420.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 56,
+   "recipient": "Grand Prairie Health Direct Primary Care, PLLC",
+   "county": "Not stated",
+   "amount": 35000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 57,
+   "recipient": "Heartland Whole Health",
+   "county": "Not stated",
+   "amount": 8420000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 58,
+   "recipient": "Italians of Sunnyside Foundation",
+   "county": "Not stated",
+   "amount": 348016.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 59,
+   "recipient": "Jefferson Hospital Association",
+   "county": "Not stated",
+   "amount": 670000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 60,
+   "recipient": "Jefferson Hospital Association",
+   "county": "Not stated",
+   "amount": 360000.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 61,
+   "recipient": "Mississippi County Hospital System",
+   "county": "Not stated",
+   "amount": 4402000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 62,
+   "recipient": "Mosaic Conway Church",
+   "county": "Not stated",
+   "amount": 301198.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 63,
+   "recipient": "New York Insitute of Technology",
+   "county": "Not stated",
+   "amount": 3739751.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 64,
+   "recipient": "North Arkansas Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1629128.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 65,
+   "recipient": "Ouachita Behavioral Health & Wellness",
+   "county": "Not stated",
+   "amount": 1427718.09,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 66,
+   "recipient": "Samaritan Community Center",
+   "county": "Not stated",
+   "amount": 50000.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 67,
+   "recipient": "Southeast Arkansas Delta Solutions Community Dev",
+   "county": "Not stated",
+   "amount": 225180.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 68,
+   "recipient": "St. Bernards Development Foundation",
+   "county": "Not stated",
+   "amount": 3851347.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 69,
+   "recipient": "St. Bernards Development Foundation",
+   "county": "Not stated",
+   "amount": 947727.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 70,
+   "recipient": "Studio Drift",
+   "county": "Not stated",
+   "amount": 1139200.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 71,
+   "recipient": "Subiaco Abbey",
+   "county": "Not stated",
+   "amount": 345500.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 72,
+   "recipient": "University of Arkansas",
+   "county": "Not stated",
+   "amount": 216596.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 73,
+   "recipient": "University of Arkansas for Medical Sciences",
+   "county": "Not stated",
+   "amount": 3175032.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 74,
+   "recipient": "University of Arkansas for Medical Sciences",
+   "county": "Not stated",
+   "amount": 1893830.0,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 75,
+   "recipient": "White County Medical Center",
+   "county": "Not stated",
+   "amount": 300926.15,
+   "purpose": ""
+  },
+  {
+   "program": "RISE (Round 2 (Sep 2026))",
+   "n": 76,
+   "recipient": "White River Health System, Inc.",
+   "county": "Not stated",
+   "amount": 2113815.5,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 77,
+   "recipient": "White River Health System, Inc.",
+   "county": "Not stated",
+   "amount": 2942715.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 78,
+   "recipient": "The Produce Porch",
+   "county": "Not stated",
+   "amount": 200500.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 79,
+   "recipient": "Apple Seeds, Inc",
+   "county": "Not stated",
+   "amount": 301259.0,
+   "purpose": ""
+  },
+  {
+   "program": "HEART (Round 2 (Sep 2026))",
+   "n": 80,
+   "recipient": "Ozark Healthy Hub",
+   "county": "Not stated",
+   "amount": 237000.0,
+   "purpose": ""
+  }
+ ],
+ "note": "Two published rounds: THRIVE and PACT (printed total $149,177,618.45; announced by the governor as nearly $150 million) and RISE and HEART (printed total $54,685,068.84; announced as $54.6 million). The PDFs give each organization's total per initiative, not individual projects, so an organization can appear under several initiatives; the announced total shown is the sum of the two printed totals."
+}

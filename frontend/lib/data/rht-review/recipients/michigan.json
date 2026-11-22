@@ -1,0 +1,1862 @@
+{
+ "state": "Michigan",
+ "slug": "michigan",
+ "asOf": "2026-10-01",
+ "source": {
+  "label": "Michigan Department of Health and Human Services, \"Subrecipients of Michigan's Rural Health Transformation Program (RHTP)\" (award notices as of Oct 1, 2026)",
+  "url": "https://www.michigan.gov/mdhhs/assistance-programs/medicaid/rural-health-transformation-program/rhtp-subrecipients"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Interoperability in Action",
+   "n": 1,
+   "recipient": "Access Health",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 2,
+   "recipient": "Bay-Saginaw County Partnership",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 3,
+   "recipient": "Center for Health & Research Transformation (CHRT)",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 4,
+   "recipient": "Central Michigan Health Department",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 5,
+   "recipient": "Community Mental Health Association of Michigan",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 6,
+   "recipient": "District Health Department #10",
+   "county": "Not stated",
+   "amount": 1663636.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 7,
+   "recipient": "Michigan 2-1-1",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 8,
+   "recipient": "Michigan Association of Local Public Health (MALPH)",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 9,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 10,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Rural Interoperability and Governance Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 11,
+   "recipient": "Michigan Department of Labor and Economic Opportunity (LEO) - Michigan High Speed Internet Office",
+   "county": "Not stated",
+   "amount": 9104425.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 12,
+   "recipient": "Michigan Department of Labor and Economic Opportunity (LEO) - Office of Rural Prosperity",
+   "county": "Not stated",
+   "amount": 16130623.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 13,
+   "recipient": "Michigan Department of Labor and Economic Opportunity (LEO) - Office of Rural Prosperity",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Rural Interoperability and Governance Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 14,
+   "recipient": "Michigan Health Information Network (MiHIN)",
+   "county": "Not stated",
+   "amount": 1450000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 15,
+   "recipient": "Michigan Health Information Network (MiHIN)",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": "Rural Interoperability and Governance Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 16,
+   "recipient": "Michigan Primary Care Association (MPCA)",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 17,
+   "recipient": "MyMichigan Health (EMS - Chronic Disease)",
+   "county": "Not stated",
+   "amount": 182197.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 18,
+   "recipient": "National Jewish Health (Quitlink)",
+   "county": "Not stated",
+   "amount": 435000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 19,
+   "recipient": "Public Health of Delta-Menominee",
+   "county": "Not stated",
+   "amount": 145455.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 20,
+   "recipient": "Regents of the University of Michigan - Data Modernization Initiative",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 21,
+   "recipient": "Saginaw County Health Department",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 22,
+   "recipient": "Superior Health Foundation",
+   "county": "Not stated",
+   "amount": 1615000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 23,
+   "recipient": "Tuscola County Health Department",
+   "county": "Not stated",
+   "amount": 195455.0,
+   "purpose": "Rural Access and Connectivity Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 24,
+   "recipient": "University of Michigan: Michigan Emergency Department Improvement Collaborative (MEDIC)",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 25,
+   "recipient": "Upper Peninsula Health Care Solution, Inc.",
+   "county": "Not stated",
+   "amount": 1050000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Interoperability in Action",
+   "n": 26,
+   "recipient": "Upper Peninsula Health Care Solutions, Inc.",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Rural Data Integration and Infrastructure Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 27,
+   "recipient": "Alcona Health Center",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 28,
+   "recipient": "Alcona Health Center",
+   "county": "Not stated",
+   "amount": 83339.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 29,
+   "recipient": "Alger-Marquette Community Action Board",
+   "county": "Not stated",
+   "amount": 89519.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 30,
+   "recipient": "Baldwin Family Health Care, DBA Family Health Care",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 31,
+   "recipient": "Benzie-Leelanau District Health Department",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 32,
+   "recipient": "Berrien County Health Department",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 33,
+   "recipient": "Berrien County Health Department",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 34,
+   "recipient": "Calhoun Intermediate School District",
+   "county": "Not stated",
+   "amount": 208333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 35,
+   "recipient": "Central Michigan University (CMU) Rural Health Excellence Institute",
+   "county": "Not stated",
+   "amount": 50000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 36,
+   "recipient": "Central Michigan University (CMU)",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 37,
+   "recipient": "Cherry Health Heart of the City Health Center",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 38,
+   "recipient": "Child Abuse and Neglect (CAN) Council Rolling Family Resource Center",
+   "county": "Not stated",
+   "amount": 208333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 39,
+   "recipient": "Child and Family Charities",
+   "county": "Not stated",
+   "amount": 208333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 40,
+   "recipient": "Chippewa County Health Department",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 41,
+   "recipient": "Chippewa-Luce-Mackinac Community Action Agency",
+   "county": "Not stated",
+   "amount": 350000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 42,
+   "recipient": "Chippewa-Luce-Mackinac Community Action Human Resource Authority",
+   "county": "Not stated",
+   "amount": 124794.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 43,
+   "recipient": "Community Action Agency of Allegan County",
+   "county": "Not stated",
+   "amount": 35275.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 44,
+   "recipient": "Community Action Agency of South Central Michigan",
+   "county": "Not stated",
+   "amount": 110779.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 45,
+   "recipient": "Corner Health Center",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 46,
+   "recipient": "Covered Bridge Healthcare",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 47,
+   "recipient": "Dickinson-Iron Community Services Agency (CSA)",
+   "county": "Not stated",
+   "amount": 89519.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 48,
+   "recipient": "District Health Department #10",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 49,
+   "recipient": "District Health Department #10 (Lake County - Mobile Health)",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 50,
+   "recipient": "East Jordan Family Health Centers",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 51,
+   "recipient": "EightCAP, Inc.",
+   "county": "Not stated",
+   "amount": 141100.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 52,
+   "recipient": "Family Medical Center - Lenawee",
+   "county": "Not stated",
+   "amount": 76924.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 53,
+   "recipient": "FiveCAP, Inc.",
+   "county": "Not stated",
+   "amount": 160069.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 54,
+   "recipient": "Gogebic-Ontonagon Community Action Agency",
+   "county": "Not stated",
+   "amount": 89519.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 55,
+   "recipient": "Grace Health",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 56,
+   "recipient": "Great Lakes Bay Health Centers",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 57,
+   "recipient": "Harbor Beach Community School District School Wellness Program",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 58,
+   "recipient": "Health Department of Northwest Michigan",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 59,
+   "recipient": "Health Department of Northwest Michigan",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 60,
+   "recipient": "Human Development Commission",
+   "county": "Not stated",
+   "amount": 147618.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 61,
+   "recipient": "Intercare Community Health Network",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 62,
+   "recipient": "Isabella Citizens for Health",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 63,
+   "recipient": "Lakeland Immediate Care Center, DBA Cassopolis Family Clinic Network",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 64,
+   "recipient": "LMAS District Health Department",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 65,
+   "recipient": "Marshfield Clinic Health System Hospitals, Inc.",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 66,
+   "recipient": "Memorial Healthcare",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 67,
+   "recipient": "Menominee-Delta-Schoolcraft Community Action Agency",
+   "county": "Not stated",
+   "amount": 124794.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 68,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 69,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 2625000.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 70,
+   "recipient": "Michigan Community Health Worker Alliance (MiCHWA)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 71,
+   "recipient": "Michigan Health and Hospital Association (MHA)",
+   "county": "Not stated",
+   "amount": 2625000.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 72,
+   "recipient": "Michigan Health Improvement Alliance (MiHIA)",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 73,
+   "recipient": "Mid-Michigan Community Action Agency",
+   "county": "Not stated",
+   "amount": 247629.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 74,
+   "recipient": "MidMichigan Community Health Services",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 75,
+   "recipient": "MyMichigan Health Services",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 76,
+   "recipient": "National Kidney Foundation of Michigan",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 77,
+   "recipient": "Northeast Michigan Community Service Agency (CSA)",
+   "county": "Not stated",
+   "amount": 482865.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 78,
+   "recipient": "Northeast Michigan Family Resource Center",
+   "county": "Not stated",
+   "amount": 208333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 79,
+   "recipient": "Northern Michigan University (NMU) Center for Rural Health",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 80,
+   "recipient": "Northern Michigan Public Health Alliance (NMPHA)",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 81,
+   "recipient": "Northwest Michigan Community Action Agency",
+   "county": "Not stated",
+   "amount": 367154.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 82,
+   "recipient": "Northwest Michigan Health Services",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 83,
+   "recipient": "Northwest Michigan Health Services",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 84,
+   "recipient": "Public Health, Delta & Menominee Counties",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 85,
+   "recipient": "Region 1B Area Agency on Aging (AAA) - AgeWays Nonprofit Senior Services",
+   "county": "Not stated",
+   "amount": 166667.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 86,
+   "recipient": "Region 2 Area Agency on Aging (AAA) - WellWise Services Area Agency on Aging",
+   "county": "Not stated",
+   "amount": 166667.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 87,
+   "recipient": "Region 3B Area Agency on Aging (AAA) - CareWell Services Southwest",
+   "county": "Not stated",
+   "amount": 166666.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 88,
+   "recipient": "Region IV Area Agency on Aging (AAA)",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 89,
+   "recipient": "Rudyard Area School Wellness Center",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 90,
+   "recipient": "Scheurer Community Health Center",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 91,
+   "recipient": "Shiawassee County Health Department",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 92,
+   "recipient": "Sterling Area Health Center",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 93,
+   "recipient": "Sterling Area Health Center",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 94,
+   "recipient": "Thumb Community Health Partnership",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 95,
+   "recipient": "Thunder Bay Community Health Service",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 96,
+   "recipient": "Thunder Bay Community Health Service",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 97,
+   "recipient": "Traverse Health Clinic",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 98,
+   "recipient": "Tuscola Family Enrichment Center",
+   "county": "Not stated",
+   "amount": 208333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 99,
+   "recipient": "United Way of Greater Central Michigan",
+   "county": "Not stated",
+   "amount": 333333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 100,
+   "recipient": "United Way of the West Shore",
+   "county": "Not stated",
+   "amount": 333333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 101,
+   "recipient": "Upper Great Lakes Family Health Center",
+   "county": "Not stated",
+   "amount": 76923.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 102,
+   "recipient": "Upper Great Lakes Family Health Center",
+   "county": "Not stated",
+   "amount": 83333.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 103,
+   "recipient": "Upper Peninsula Commission for Area Progress (UPCAP)",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Chronic Disease Collaborative Care Fund"
+  },
+  {
+   "program": "Transforming Rural Health Through Partnerships",
+   "n": 104,
+   "recipient": "Voices for Children",
+   "county": "Not stated",
+   "amount": 208335.0,
+   "purpose": "Collaborative Care Integration and Sustainability Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 105,
+   "recipient": "Alcona Citizens for Health",
+   "county": "Not stated",
+   "amount": 610000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 106,
+   "recipient": "Area Health Education Center (AHEC): Mid-Central Regional Center",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 107,
+   "recipient": "Area Health Education Center (AHEC): Northern Lower Regional Center",
+   "county": "Not stated",
+   "amount": 315000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 108,
+   "recipient": "Area Health Education Center (AHEC): Southeast Regional Center",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 109,
+   "recipient": "Area Health Education Center (AHEC): Upper Peninsula Regional Center",
+   "county": "Not stated",
+   "amount": 185000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 110,
+   "recipient": "Area Health Education Center (AHEC): Western Regional Center",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 111,
+   "recipient": "Benzie-Leelanau District Health Department",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 112,
+   "recipient": "Berrien County Health Department",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 113,
+   "recipient": "Branch-Hillsdale-St. Joseph Community Health Agency",
+   "county": "Not stated",
+   "amount": 195455.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 114,
+   "recipient": "Cass County Community Mental Health Authority DBA Woodlands Behavioral Healthcare Network",
+   "county": "Not stated",
+   "amount": 850000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 115,
+   "recipient": "Central Michigan District Health Department",
+   "county": "Not stated",
+   "amount": 317273.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 116,
+   "recipient": "Central Michigan University (CMU)",
+   "county": "Not stated",
+   "amount": 900000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 117,
+   "recipient": "Cherry Grove Fire and Rescue",
+   "county": "Not stated",
+   "amount": 230000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 118,
+   "recipient": "Community Mental Health for Central Michigan",
+   "county": "Not stated",
+   "amount": 700000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 119,
+   "recipient": "Covenant Missions",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 120,
+   "recipient": "District Health Department #2",
+   "county": "Not stated",
+   "amount": 145455.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 121,
+   "recipient": "DLP Marquette General Hospital",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 122,
+   "recipient": "Drummond Island Medical Center",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 123,
+   "recipient": "Eastern Michigan University (EMU)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 124,
+   "recipient": "Ella E. M. Brown Charitable Circle DBA Oaklawn Hospital",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 125,
+   "recipient": "Emergent Health Partners",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 126,
+   "recipient": "Emergent Health Partners",
+   "county": "Not stated",
+   "amount": 450000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 127,
+   "recipient": "Gogebic Community College",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 128,
+   "recipient": "Health Department of Northwest Michigan",
+   "county": "Not stated",
+   "amount": 245455.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 129,
+   "recipient": "Helen Newberry Joy Hospital",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 130,
+   "recipient": "Hospice of Michigan",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 131,
+   "recipient": "Ingham County Health Department",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 132,
+   "recipient": "Kalkaska Memorial Health Center",
+   "county": "Not stated",
+   "amount": 230000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 133,
+   "recipient": "Livingston County Health Department",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 134,
+   "recipient": "Mackinac Straights Health System",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 135,
+   "recipient": "Manistee-Benzie Community Mental Health",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 136,
+   "recipient": "McClaren Health Care Corporation",
+   "county": "Not stated",
+   "amount": 970000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 137,
+   "recipient": "MHP Salud",
+   "county": "Not stated",
+   "amount": 450000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 138,
+   "recipient": "Michigan Association of Ambulance Services",
+   "county": "Not stated",
+   "amount": 345000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 139,
+   "recipient": "Michigan Association of Emergency Medical Technicians",
+   "county": "Not stated",
+   "amount": 345000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 140,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 345000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 141,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 142,
+   "recipient": "Michigan Community Health Worker Alliance (MiCHWA)",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 143,
+   "recipient": "Michigan Department of Education (MDE) - Office of Career and Technical Education",
+   "county": "Not stated",
+   "amount": 2099997.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 144,
+   "recipient": "Michigan Department of Education (MDE) - Office of Career and Technical Education",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 145,
+   "recipient": "Michigan Health and Hospital Association",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 146,
+   "recipient": "Michigan Health Council",
+   "county": "Not stated",
+   "amount": 970000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 147,
+   "recipient": "Michigan Oral Health Coalition",
+   "county": "Not stated",
+   "amount": 450000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 148,
+   "recipient": "Michigan Pharmacy Association",
+   "county": "Not stated",
+   "amount": 516955.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 149,
+   "recipient": "Michigan Primary Care Association (MPCA)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 150,
+   "recipient": "Michigan State University (MSU)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 151,
+   "recipient": "Mid-Michigan District Health Department",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 152,
+   "recipient": "Mid-State Health Network",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 153,
+   "recipient": "Mobile Medical Response",
+   "county": "Not stated",
+   "amount": 345000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 154,
+   "recipient": "Mobile Medical Response",
+   "county": "Not stated",
+   "amount": 800000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 155,
+   "recipient": "Montcalm Center for Behavioral Health",
+   "county": "Not stated",
+   "amount": 900000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 156,
+   "recipient": "Munson Healthcare",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 157,
+   "recipient": "Munson Healthcare",
+   "county": "Not stated",
+   "amount": 980000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 158,
+   "recipient": "MyMichigan Health Foundation",
+   "county": "Not stated",
+   "amount": 275000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 159,
+   "recipient": "North Central Michigan College",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 160,
+   "recipient": "NorthCare Network",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 161,
+   "recipient": "NorthCare Network",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 162,
+   "recipient": "Northern Michigan University (NMU)",
+   "county": "Not stated",
+   "amount": 1284977.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 163,
+   "recipient": "Northern Pine Health Center, PC",
+   "county": "Not stated",
+   "amount": 990000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 164,
+   "recipient": "Oakland University",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 165,
+   "recipient": "OSF Healthcare - Saint Francis Hospital",
+   "county": "Not stated",
+   "amount": 330000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 166,
+   "recipient": "Regents of the University of Michigan",
+   "county": "Not stated",
+   "amount": 3125656.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 167,
+   "recipient": "Regents of the University of Michigan",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 168,
+   "recipient": "Saginaw Valley State University (SVSU)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 169,
+   "recipient": "Saginaw Valley State University (SVSU)",
+   "county": "Not stated",
+   "amount": 2058585.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 170,
+   "recipient": "Sanilac County Health Department",
+   "county": "Not stated",
+   "amount": 145455.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 171,
+   "recipient": "Spring Arbor University",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 172,
+   "recipient": "Spring Arbor University",
+   "county": "Not stated",
+   "amount": 530782.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 173,
+   "recipient": "Van Buren/Cass District Health Department",
+   "county": "Not stated",
+   "amount": 260000.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 174,
+   "recipient": "West Shore Community College",
+   "county": "Not stated",
+   "amount": 345000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 175,
+   "recipient": "Western Michigan University (WMU)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Health Workforce Pipeline and Education Fund"
+  },
+  {
+   "program": "Workforce for Wellness",
+   "n": 176,
+   "recipient": "Western Upper Peninsula Health Department",
+   "county": "Not stated",
+   "amount": 295455.0,
+   "purpose": "Rural Provider Recruitment, Retention, and Capacity Fund"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 177,
+   "recipient": "Ambulatory Infusion Care - North, Inc.",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 178,
+   "recipient": "Aspire Rural Health System",
+   "county": "Not stated",
+   "amount": 700000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 179,
+   "recipient": "Bronson Health Foundation",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 180,
+   "recipient": "Cass County Medical Care Facility",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 181,
+   "recipient": "Central Michigan University (CMU)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Rural Health Care Delivery Hub and Spoke Model"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 182,
+   "recipient": "Central Michigan University (CMU) - Rural Health Excellence Institute",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 183,
+   "recipient": "Community Mental Health Association of Michigan (CMHA)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 184,
+   "recipient": "Copper Shores Community Health Foundation",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 185,
+   "recipient": "Developmental Disabilities Council",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 186,
+   "recipient": "District Health Department #10",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 187,
+   "recipient": "Feonix - Mobility Rising",
+   "county": "Not stated",
+   "amount": 900000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 188,
+   "recipient": "Insight Hospital and Medical Center - Coldwater",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 189,
+   "recipient": "Lakeshore Food Club",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 190,
+   "recipient": "Life EMS Ambulance",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 191,
+   "recipient": "Mecosta Osceola Transit Authority",
+   "county": "Not stated",
+   "amount": 150000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 192,
+   "recipient": "Michigan Association of Ambulance Services",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 193,
+   "recipient": "Michigan Center for Rural Health (MCRH)",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 194,
+   "recipient": "Michigan Health and Hospital Association (MHA)",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 195,
+   "recipient": "Michigan Health and Hospital Association (MHA)",
+   "county": "Not stated",
+   "amount": 6000000.0,
+   "purpose": "Rural Health Care Delivery Hub and Spoke Model"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 196,
+   "recipient": "Michigan Health and Hospital Association (MHA)",
+   "county": "Not stated",
+   "amount": 2500000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 197,
+   "recipient": "Michigan Primary Care Association (MPCA)",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 198,
+   "recipient": "Michigan State University (MSU) - IMPART Alliance",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Rural Health Care Delivery Hub and Spoke Model"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 199,
+   "recipient": "Michigan State University (MSU) - Intensive Outpatient Program",
+   "county": "Not stated",
+   "amount": 700000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 200,
+   "recipient": "Michigan Veterans Affairs Agency (MVAA)",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 201,
+   "recipient": "Northeast Michigan Community Services Agency",
+   "county": "Not stated",
+   "amount": 950000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 202,
+   "recipient": "Northern Michigan University (NMU) - Center for Rural Health",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 203,
+   "recipient": "Program of All-Inclusive Care for the Elderly (PACE) Central Michigan",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 204,
+   "recipient": "Program of All-Inclusive Care for the Elderly (PACE) Northeast Michigan",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 205,
+   "recipient": "Randy's House",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 206,
+   "recipient": "Regents of the University of Michigan - Ready to Respond: Rural Nursing Home Emergency Preparedness",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Health Care Delivery Hub and Spoke Model"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 207,
+   "recipient": "Regents of the University of Michigan - Overdose Prevention Engagement Network (OPEN)",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Advancing Rural Behavioral Health Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 208,
+   "recipient": "Region IIIC Area Agency on Aging (AAA) - Branch-St. Joseph AAA",
+   "county": "Not stated",
+   "amount": 166667.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 209,
+   "recipient": "Region IV Area Agency on Aging (AAA)",
+   "county": "Not stated",
+   "amount": 166667.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 210,
+   "recipient": "Region VII Area Agency on Aging (AAA)",
+   "county": "Not stated",
+   "amount": 166666.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 211,
+   "recipient": "Region 9 Area Agency on Aging (AAA) - Northeast Michigan Community Service Agency (NEMCSA)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 212,
+   "recipient": "Region 10 Area Agency on Aging (AAA) - AAA of Northwest Michigan",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 213,
+   "recipient": "Region 11 Area Agency on Aging (AAA) - Upper Peninsula Commission for Area Progress (UPCAP)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Promoting Healthy Aging in Rural Communities Blueprint"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 214,
+   "recipient": "Samaritan's Way Recovery Community Organization",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 215,
+   "recipient": "Sheridan Community Hospital Clinic",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 216,
+   "recipient": "Thunder Bay Community Health Service",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 217,
+   "recipient": "Upper Peninsula Commission for Area Progress (UPCAP)",
+   "county": "Not stated",
+   "amount": 800000.0,
+   "purpose": "Improving Care Delivery and Access through Transportation"
+  },
+  {
+   "program": "Care Closer to Home",
+   "n": 218,
+   "recipient": "Wayne State University (WSU)",
+   "county": "Not stated",
+   "amount": 500000.0,
+   "purpose": "Rural Health Care Delivery Hub and Spoke Model"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 219,
+   "recipient": "American Indian Health and Family Services of Southeastern Michigan, Inc.",
+   "county": "Not stated",
+   "amount": 665877.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 220,
+   "recipient": "Bay Mills Indian Community",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 221,
+   "recipient": "Grand Traverse Band of Ottawa and Chippewa Indians",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 222,
+   "recipient": "Hannahville Indian Community",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 223,
+   "recipient": "Keweenaw Bay Indian Community",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 224,
+   "recipient": "Lac Vieux Desert Band of Lake Superior Chippewa Indians of Michigan",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 225,
+   "recipient": "Little River Band of Ottawa Indians",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 226,
+   "recipient": "Little Traverse Bay Bands of Odawa Indians",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 227,
+   "recipient": "Match-E-Be-Nash-She-Wish Band of Pottawatomi Indians of Michigan",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 228,
+   "recipient": "Nottawaseppi Huron Band of the Potawatomi",
+   "county": "Not stated",
+   "amount": 665877.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 229,
+   "recipient": "Pokagon Band of Potawatomi Indians",
+   "county": "Not stated",
+   "amount": 665877.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 230,
+   "recipient": "Saginaw Chippewa Indian Tribe of Michigan",
+   "county": "Not stated",
+   "amount": 665877.0,
+   "purpose": "Tribal Government"
+  },
+  {
+   "program": "Tribal Government",
+   "n": 231,
+   "recipient": "Sault Ste. Marie Tribe of Chippewa Indians",
+   "county": "Not stated",
+   "amount": 665878.0,
+   "purpose": "Tribal Government"
+  }
+ ],
+ "note": "Award notices as of October 1, 2026, grouped by Michigan's RHTP initiative; the \"Fund\" each award draws on is shown in the purpose column. MDHHS states each amount is contingent on CMS review and may be adjusted, and the page prints no total. A few organizations appear more than once, and two spellings of one Upper Peninsula organization appear as listed."
+}

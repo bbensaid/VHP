@@ -26,6 +26,8 @@ const BASIS: Record<string, string> = {
   "new-jersey": "Funding allocations, Jul 31, 2026",
   oregon: "Catalyst Awards, Year 1 approved budgets",
   tennessee: "Awarded projects, multi-year (5-year) totals",
+  michigan: "Subrecipient award notices as of Oct 1, 2026 (contingent on CMS review)",
+  arkansas: "Year 1 award totals by organization, two rounds",
   pennsylvania: "Authorized projects (page: $43M awarded to date)",
 };
 
