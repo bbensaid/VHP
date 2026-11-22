@@ -1,0 +1,558 @@
+{
+ "state": "Texas",
+ "slug": "texas",
+ "asOf": "2026-09-28",
+ "source": {
+  "label": "Texas HHSC, \"RTS Contract Awards\" (first round of Rural Texas Strong awards; names) and Governor Abbott's Sept 28, 2026 announcement ($51 million)",
+  "url": "https://gov.texas.gov/news/post/governor-abbott-announces-51-million-in-funding-for-rural-healthcare"
+ },
+ "announcedTotal": 51000000,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 1,
+   "recipient": "ANDREWS COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 2,
+   "recipient": "ANSON HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 3,
+   "recipient": "BALLINGER MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 4,
+   "recipient": "BAYLOR COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 5,
+   "recipient": "BOSQUE COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 6,
+   "recipient": "CASTRO COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 7,
+   "recipient": "CHAMBERS COUNTY PUBLIC HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 8,
+   "recipient": "CHILDRESS COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 9,
+   "recipient": "CONCHO COUNTY HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 10,
+   "recipient": "CORYELL COUNTY MEMORIAL HOSPITAL AUTHORI",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 11,
+   "recipient": "CRANE COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 12,
+   "recipient": "DALLAM-HARTLEY COUNTIES HOSPITAL DISTRIC",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 13,
+   "recipient": "Dawson County Hospital District",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 14,
+   "recipient": "DEAF SMITH COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 15,
+   "recipient": "DEWITT MEDICAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 16,
+   "recipient": "EASTLAND MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 17,
+   "recipient": "ELECTRA HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 18,
+   "recipient": "FANNIN COUNTY HOSPITAL AUTHORITY",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 19,
+   "recipient": "FISHER COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 20,
+   "recipient": "GONZALES HEALTHCARE SYSTEMS",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 21,
+   "recipient": "Graham Hospital District",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 22,
+   "recipient": "HAMILTON COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 23,
+   "recipient": "HARDEMAN COUNTY MEMORIAL HOSPITAL DISTRI",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 24,
+   "recipient": "HASKELL COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 25,
+   "recipient": "HEMPHILL COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 26,
+   "recipient": "GENERAL HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 27,
+   "recipient": "JACK COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 28,
+   "recipient": "JACKSON COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 29,
+   "recipient": "Karnes County Hospital District",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 30,
+   "recipient": "KNOX COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 31,
+   "recipient": "LAVACA MEDICAL CENTER",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 32,
+   "recipient": "LIBERTY COUNTY HOSPITAL DISTRICT NO 1",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 33,
+   "recipient": "LOCKNEY GEN HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 34,
+   "recipient": "LYNN CO HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 35,
+   "recipient": "MARTIN COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 36,
+   "recipient": "MATAGORDA COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 37,
+   "recipient": "MCCAMEY COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 38,
+   "recipient": "MEDINA COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 39,
+   "recipient": "MEMORIAL HOSP-MOORE COUNTY HOSP DIST",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 40,
+   "recipient": "MUENSTER HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 41,
+   "recipient": "MULESHOE AREA HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 42,
+   "recipient": "NOCONA HOSPITAL DISTRICT/NOCONA GENERAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 43,
+   "recipient": "ROLLING PLAINS MEMORIAL HOSP",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 44,
+   "recipient": "NORTH RUNNELS COUNTY HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 45,
+   "recipient": "NORTH WHEELER COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 46,
+   "recipient": "OCHILTREE GENERAL HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 47,
+   "recipient": "OLNEY-HAMILTON HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 48,
+   "recipient": "Palo Pinto County Hospital District",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 49,
+   "recipient": "PECOS COUNTY MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 50,
+   "recipient": "RANKIN COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 51,
+   "recipient": "REEVES COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 52,
+   "recipient": "REFUGIO CTY MEMORIAL HOSP DIST",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 53,
+   "recipient": "SCURRY COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 54,
+   "recipient": "REAGAN HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 55,
+   "recipient": "SEMINOLE HOSPITAL DIST OF GAINES CO",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 56,
+   "recipient": "SOMERVELL COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 57,
+   "recipient": "SOUTH LIMESTONE HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 58,
+   "recipient": "STARR COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 59,
+   "recipient": "STEPHENS MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 60,
+   "recipient": "STONEWALL MEMORIAL HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 61,
+   "recipient": "SUTTON COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 62,
+   "recipient": "SWEENY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 63,
+   "recipient": "TERRY MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 64,
+   "recipient": "TYLER COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 65,
+   "recipient": "UVALDE COUNTY HOSPITAL AUTHORITY",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 66,
+   "recipient": "WILBARGER GENERAL HOSPITAL",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 67,
+   "recipient": "WILSON COUNTY MEMORIAL HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural Texas Strong: prevention, wellness and nutrition (first round)",
+   "n": 68,
+   "recipient": "WINKLER COUNTY HOSPITAL DISTRICT",
+   "county": "Not stated",
+   "amount": 750000.0,
+   "purpose": ""
+  }
+ ],
+ "note": "Only the first round is itemized: 68 rural hospital districts and authorities for prevention, wellness and nutrition programs. HHSC's published file lists the recipients' names only. The $750,000 per award comes from Fox 26 Houston's report of the announcement (\"will each receive $750,000\"); it is consistent with the governor's $51 million total (68 x $750,000) but is not printed in the HHSC file. Texas has announced further rounds (workforce, equipment, infrastructure), and CMS has reported larger Texas totals, that are not itemized here."
+}
