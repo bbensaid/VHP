@@ -42,6 +42,17 @@ const TRACKS = [
       "The July 2026 CMS letter on the Medicaid hospital global budget, the AHEAD withdrawal, scenario planning, trigger points and decision logs.",
       ["Read a federal notice for its operational consequences", "Build a scenario table with triggers", "Respond to a shock in the first week"], ["contingency", "scenarios", "federal-shock"]),
   ]),
+  T(4, "knowledge-transfer", "Knowledge Transfer", "Knowledge-transfer infrastructure, the collaborative improvement model and appraising evidence before acting on it.", [
+    L(14, "tl-knowledge-infrastructure", "From Knowing to Doing: Building Knowledge-Transfer Infrastructure", 25,
+      "The functions of knowledge transfer, Vermont funding as reported in May 2026, four design questions, shared services and measuring transfer.",
+      ["Name the functions of a knowledge-transfer system", "Apply four design questions to an investment", "Measure whether knowledge moved"], ["knowledge-transfer", "infrastructure", "technical-assistance"]),
+    L(15, "tl-learning-collaboratives", "Learning Together: The Collaborative Improvement Model", 25,
+      "The Breakthrough Series structure, what makes collaboratives work, limits, a Vermont design proposal and sustaining gains.",
+      ["Describe learning sessions and action periods", "Design a collaborative for a narrow topic", "Plan for sustaining gains"], ["collaborative", "breakthrough-series", "learning"]),
+    L(16, "tl-evidence-appraisal", "Whose Number Is It? Appraising Evidence Before You Act On It", 25,
+      "Four source types, six questions for any claim, citing and carrying uncertainty, and using the Evidence Library and AI assistants with discipline.",
+      ["Classify a claim by source type", "Run a five-minute claim check", "Cite sources and carry uncertainty forward"], ["evidence", "appraisal", "citations"]),
+  ]),
 ];
 
 const SLUG = "transformation-leadership";
