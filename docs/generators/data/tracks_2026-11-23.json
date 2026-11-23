@@ -1,0 +1,197 @@
+{
+ "medicaid-101": [
+  "Medicaid Foundations",
+  "Eligibility & Enrollment",
+  "Federal-State Financing",
+  "Managed Care",
+  "Waivers & State Flexibility",
+  "Quality & Oversight"
+ ],
+ "clinical-quality-measurement": [
+  "Quality Foundations",
+  "HEDIS and CAHPS",
+  "CMS Quality Programs",
+  "eCQMs and FHIR",
+  "Equity and Quality Measurement",
+  "Quality Improvement Methodology"
+ ],
+ "population-health-management": [
+  "Foundations of Population Health",
+  "Risk Stratification & Predictive Analytics",
+  "Chronic Disease Management Programs",
+  "Care Management Program Design",
+  "Population Health in Value-Based Contracts",
+  "Health Equity in Population Health Programs",
+  "Measurement, Reporting, and Continuous Improvement"
+ ],
+ "behavioral-health-integration": [
+  "The Behavioral Health Landscape",
+  "Integration Models: Connecting Behavioral and Physical Health",
+  "Substance Use Disorder Treatment Systems",
+  "Mental Health Parity, Payment, and Financing",
+  "Vermont's Behavioral Health System",
+  "Behavioral Health Crisis Services"
+ ],
+ "genomics-precision-medicine": [
+  "Genomics Fundamentals",
+  "Precision Medicine in Clinical Practice",
+  "Genomic Data and Health IT",
+  "Genomics Policy and Ethics",
+  "Population Genomics and Screening",
+  "The Future of Precision Medicine",
+  "Precision Medicine: In-Depth Modules"
+ ],
+ "medicare-fundamentals": [
+  "Medicare: Structure and Eligibility",
+  "Medicare Payment Systems",
+  "Medicare Advantage: The Private Option",
+  "Medicare Value-Based Programs",
+  "Medicare Part D: Drug Coverage"
+ ],
+ "medicaid-managed-care-operations": [
+  "Managed Care Foundations",
+  "Procurement and Contracting",
+  "Actuarial Rate-Setting",
+  "Benefits and Network Management",
+  "Care Management and Quality",
+  "Value-Based Medicaid"
+ ],
+ "value-based-care": [
+  "The Fee-for-Service Problem",
+  "Accountable Care Organizations",
+  "Bundled Payments",
+  "Quality Measures & Reporting",
+  "Risk Adjustment",
+  "Star Ratings & Consumer Transparency",
+  "The Future of Value-Based Care"
+ ],
+ "hospital-finance": [
+  "Hospital Finance Fundamentals",
+  "Revenue and Reimbursement",
+  "Cost Accounting",
+  "Capital Finance and Budgeting",
+  "Value-Based Finance",
+  "Financial Governance"
+ ],
+ "ai-machine-learning-healthcare": [
+  "AI & ML Fundamentals for Clinicians",
+  "Predictive Analytics in Clinical Practice",
+  "NLP & LLMs in Clinical Care",
+  "Clinical Decision Support",
+  "FDA Regulation of AI/ML in Healthcare",
+  "Bias, Fairness & Equity in Clinical AI",
+  "Responsible AI Implementation"
+ ],
+ "interoperability-data-exchange": [
+  "Foundations of Interoperability",
+  "21st Century Cures Act & Information Blocking",
+  "FHIR APIs & Patient Access",
+  "Health Information Exchanges",
+  "EHR Systems & Integration",
+  "Data Standards Beyond FHIR",
+  "Privacy, Security & Governance"
+ ],
+ "health-equity-sdoh": [
+  "Foundations of Health Equity",
+  "Social Determinants of Health",
+  "Measuring & Reporting Disparities",
+  "Algorithmic Bias in Healthcare",
+  "CMS Equity Requirements & Policy",
+  "Community Health Workers & Community Action"
+ ],
+ "revenue-cycle-management": [
+  "RCM Fundamentals",
+  "Patient Access & Registration",
+  "Coding & Charge Capture",
+  "Claims Submission & Clearinghouses",
+  "Denial Management",
+  "Payment Posting & Accounts Receivable",
+  "RCM Technology & Analytics"
+ ],
+ "health-equity-analytics": [
+  "Health Equity Analytics: Methods and Practice",
+  "Vermont's Equity Landscape",
+  "Data and Access",
+  "Accountability and Contracts",
+  "Action, Community and Capstone"
+ ],
+ "transformation-leadership": [
+  "Leading Mandatory Transformation",
+  "Implementation Science",
+  "Pace and Capacity",
+  "Knowledge Transfer",
+  "Advisory Support, Accountability and Capstone"
+ ],
+ "hie-health-reform-onboarding": [
+  "Policy & Legislation",
+  "Technology & Interoperability",
+  "Economics & Payment Models",
+  "Clinical Quality & Measures",
+  "Health Equity & Access",
+  "Operations & Workforce"
+ ],
+ "five-pillars-one-imperative": [
+  "Foundations: The Framework",
+  "Policy — Establish the Mandate",
+  "Technology — Build the Substrate",
+  "Economics — Put Incentives on a Visible System",
+  "Clinical — Redesign Care on Aligned Incentives",
+  "Operations — Close the Execution Gap",
+  "The Equity Imperative",
+  "Sustaining the Transformation"
+ ],
+ "welcome-htr-framework": [
+  "Start Here"
+ ],
+ "transformation-portfolio-management": [
+  "Foundations: Why Transformation Is a Portfolio",
+  "Structure: Roles, Governance and Authority",
+  "Sequencing and Scheduling",
+  "Risk and Benefits",
+  "Making the Case and Making It Stick"
+ ],
+ "medicare-for-all-five-pillar-test": [
+  "Foundations: Terms and the Test",
+  "Vermont's Attempt, 2011-2014",
+  "Federal Versus State: The Walls",
+  "The Federal Bills and the Evidence",
+  "The Five-Pillar Assessment",
+  "Vermont's Hospitals Under a Single Payer",
+  "What to Build Now, and Capstone"
+ ],
+ "cmmi-models-waiver-strategy": [
+  "The Innovation Center: Authority, Record and Landscape",
+  "State Models: Global Budgets, AHEAD and Episodes",
+  "Section 1115 Waivers",
+  "Prior Authorization and H.R. 1",
+  "The Practitioner Framework"
+ ],
+ "vbc-financial-modeling-apm-readiness": [
+  "Benchmarks, Shared Savings and Risk",
+  "Readiness and Contract Analysis",
+  "Hospital Finance Under Global Budgets and Reference-Based Pricing",
+  "The Financial Case",
+  "Tools and Capstone"
+ ],
+ "fhir-ai-governance-cds-in-practice": [
+  "FHIR in Practice",
+  "AI Governance",
+  "Clinical Decision Support",
+  "Cybersecurity in Rural Health Infrastructure",
+  "Sequencing, Vermont Policy and Capstone"
+ ],
+ "political-sustainability-of-reform": [
+  "The Durability Analysis",
+  "Vermont's Record",
+  "Early Warning, Scenarios and Monitoring",
+  "Organizational Strategies",
+  "Durability by Design and Capstone"
+ ],
+ "clinical-transformation-toolkit": [
+  "Primary Care Transformation",
+  "Behavioral Health Integration",
+  "Quality Mechanics",
+  "Data and Transitions",
+  "Commitments, Tools and Capstone"
+ ]
+}

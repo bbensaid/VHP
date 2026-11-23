@@ -1,0 +1,686 @@
+{
+ "as_of": "2026-11-23",
+ "supabase": {
+  "courses": [
+   {
+    "title": "AI & Machine Learning in Healthcare",
+    "slug": "ai-machine-learning-healthcare",
+    "pillar": "technology",
+    "ch": "4",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 18,
+    "withSanity": 18
+   },
+   {
+    "title": "Behavioral Health Integration",
+    "slug": "behavioral-health-integration",
+    "pillar": "clinical",
+    "ch": "8",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 13,
+    "withSanity": 13
+   },
+   {
+    "title": "Clinical Quality Measurement",
+    "slug": "clinical-quality-measurement",
+    "pillar": "clinical",
+    "ch": "8",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 18,
+    "withSanity": 18
+   },
+   {
+    "title": "Clinical Transformation Toolkit",
+    "slug": "clinical-transformation-toolkit",
+    "pillar": "clinical",
+    "ch": "9",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   },
+   {
+    "title": "CMMI Models and Waiver Strategy",
+    "slug": "cmmi-models-waiver-strategy",
+    "pillar": "policy",
+    "ch": "3",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   },
+   {
+    "title": "FHIR, AI Governance and Clinical Decision Support in Practice",
+    "slug": "fhir-ai-governance-cds-in-practice",
+    "pillar": "technology",
+    "ch": "5",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   },
+   {
+    "title": "Five Pillars, One Imperative",
+    "slug": "five-pillars-one-imperative",
+    "pillar": null,
+    "ch": null,
+    "pub": true,
+    "tracks": 8,
+    "lessons": 24,
+    "withSanity": 24
+   },
+   {
+    "title": "Genomics & Precision Medicine",
+    "slug": "genomics-precision-medicine",
+    "pillar": "clinical",
+    "ch": "8",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 21,
+    "withSanity": 21
+   },
+   {
+    "title": "Health Equity & SDOH: From Awareness to Action",
+    "slug": "health-equity-sdoh",
+    "pillar": "equity",
+    "ch": "10",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 16,
+    "withSanity": 16
+   },
+   {
+    "title": "Health Equity Analytics",
+    "slug": "health-equity-analytics",
+    "pillar": null,
+    "ch": null,
+    "pub": true,
+    "tracks": 5,
+    "lessons": 18,
+    "withSanity": 18
+   },
+   {
+    "title": "Healthcare Interoperability & Data Exchange",
+    "slug": "interoperability-data-exchange",
+    "pillar": "technology",
+    "ch": "4",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 26,
+    "withSanity": 26
+   },
+   {
+    "title": "HIE & Health Reform",
+    "slug": "hie-health-reform-onboarding",
+    "pillar": "policy",
+    "ch": "16",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 13,
+    "withSanity": 13
+   },
+   {
+    "title": "Hospital Finance",
+    "slug": "hospital-finance",
+    "pillar": "economics",
+    "ch": "6",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 18,
+    "withSanity": 18
+   },
+   {
+    "title": "Medicaid 101: How America's Safety Net Works",
+    "slug": "medicaid-101",
+    "pillar": "policy",
+    "ch": "2",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 9,
+    "withSanity": 9
+   },
+   {
+    "title": "Medicaid Managed Care Operations",
+    "slug": "medicaid-managed-care-operations",
+    "pillar": "policy",
+    "ch": "2",
+    "pub": true,
+    "tracks": 6,
+    "lessons": 17,
+    "withSanity": 17
+   },
+   {
+    "title": "Medicare for All Through the Five-Pillar Test",
+    "slug": "medicare-for-all-five-pillar-test",
+    "pillar": "policy",
+    "ch": "2",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 18,
+    "withSanity": 18
+   },
+   {
+    "title": "Medicare Fundamentals",
+    "slug": "medicare-fundamentals",
+    "pillar": "policy",
+    "ch": "2",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 12,
+    "withSanity": 12
+   },
+   {
+    "title": "Political Sustainability of Reform",
+    "slug": "political-sustainability-of-reform",
+    "pillar": "policy",
+    "ch": "14",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   },
+   {
+    "title": "Population Health Management",
+    "slug": "population-health-management",
+    "pillar": "clinical",
+    "ch": "8",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 17,
+    "withSanity": 17
+   },
+   {
+    "title": "Portfolio Management for Healthcare Transformation",
+    "slug": "transformation-portfolio-management",
+    "pillar": "operations",
+    "ch": "15",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   },
+   {
+    "title": "Revenue Cycle Management",
+    "slug": "revenue-cycle-management",
+    "pillar": "operations",
+    "ch": "11",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 21,
+    "withSanity": 21
+   },
+   {
+    "title": "Start Here",
+    "slug": "welcome-htr-framework",
+    "pillar": "technology",
+    "ch": "1",
+    "pub": true,
+    "tracks": 1,
+    "lessons": 5,
+    "withSanity": 5
+   },
+   {
+    "title": "Transformation Leadership",
+    "slug": "transformation-leadership",
+    "pillar": "operations",
+    "ch": "12",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 19,
+    "withSanity": 19
+   },
+   {
+    "title": "Value-Based Care: From Fee-for-Service to Outcomes",
+    "slug": "value-based-care",
+    "pillar": "economics",
+    "ch": "6",
+    "pub": true,
+    "tracks": 7,
+    "lessons": 23,
+    "withSanity": 23
+   },
+   {
+    "title": "VBC Financial Modeling and APM Readiness",
+    "slug": "vbc-financial-modeling-apm-readiness",
+    "pillar": "economics",
+    "ch": "7",
+    "pub": true,
+    "tracks": 5,
+    "lessons": 15,
+    "withSanity": 15
+   }
+  ],
+  "totals": {
+   "courses": 25,
+   "published": 25,
+   "tracks": 145,
+   "lessons": 416,
+   "lessonsPub": 416
+  },
+  "t_data_rag_documents": 67282,
+  "t_profiles": 2,
+  "t_beta_access_codes": 12,
+  "t_access_codes": null,
+  "t_feedback": null,
+  "t_bookmarks": null
+ },
+ "sanity_counts": {
+  "academyModule": 416,
+  "caseStudy": 5,
+  "definition": 36,
+  "investmentDeal": 22,
+  "policyAnalysis": 73,
+  "rhtState": 50,
+  "sanity.imageAsset": 5
+ },
+ "policyAnalyses": [
+  {
+   "p": "Economics",
+   "title": "AHEAD Model Year One: Why Financial Outcomes Are Not Yet In, and What Rural Hospital CFOs Should Watch"
+  },
+  {
+   "p": "Technology",
+   "title": "AI Clinical Decision Support in Rural Hospitals: What the First Wave of Real-World Deployments Reveals About Safety, Efficacy, and the Human-in-the-Loop Requirement"
+  },
+  {
+   "p": "Technology",
+   "title": "AI Clinical Decision Support: FDA Regulatory Framework for High-Risk Algorithms"
+  },
+  {
+   "p": "Equity",
+   "title": "Algorithmic Bias in Clinical AI: Detection Methods and Mitigation Strategies"
+  },
+  {
+   "p": "Equity",
+   "title": "Algorithmic Bias in Rural Health: How AI Tools Trained on Urban Data Are Producing Racially and Geographically Biased Clinical Outputs"
+  },
+  {
+   "p": "Technology",
+   "title": "Ambient AI Documentation in Rural Primary Care: How Voice-to-EHR Technology Is Reclaiming the 3.2 Hours Clinicians Lose Daily to Documentation"
+  },
+  {
+   "p": "Technology",
+   "title": "Architecting Resilience: The Role of VHIE in Rural Health Sustainability"
+  },
+  {
+   "p": "Technology",
+   "title": "Build or Join: Small-State HIEs and the CRISP Shared-Services Utility Model"
+  },
+  {
+   "p": "Economics",
+   "title": "Capitation Mechanics: Decoupling Rural Solvency from RVU Volume"
+  },
+  {
+   "p": "Policy",
+   "title": "Certificate of Need Laws in 2026: Expansion, Contraction, and the Rural Hospital Exception"
+  },
+  {
+   "p": "Equity",
+   "title": "Community Health Worker Integration: Certification, Reimbursement, and Outcomes"
+  },
+  {
+   "p": "Technology",
+   "title": "Cybersecurity in Health Systems: Ransomware Trends and Regulatory Response"
+  },
+  {
+   "p": "Technology",
+   "title": "Difficult Decisions Await Vermont's Hospital Leaders"
+  },
+  {
+   "p": "Technology",
+   "title": "EHR Interoperability: TEFCA Network Participation and Real-World Data Exchange"
+  },
+  {
+   "p": "Policy",
+   "title": "Expanding Scope of Practice for Rural NPs and PAs: A Feasibility Analysis of Full-Practice Authority Legislation"
+  },
+  {
+   "p": "Technology",
+   "title": "Generative AI in Healthcare Administration: Use Cases, Risks, and Governance Frameworks"
+  },
+  {
+   "p": "Economics",
+   "title": "Health Economics Fundamentals: Act 167 & The Vermont Case"
+  },
+  {
+   "p": "Economics",
+   "title": "Healthcare Private Equity Exit Multiples Compress as Interest Rates Stabilize"
+  },
+  {
+   "p": "Economics",
+   "title": "Hospital Price Transparency Compliance: Three Years After CMS Enforcement"
+  },
+  {
+   "p": "Technology",
+   "title": "Hospital Services Optimization To Drive Vermont Health Care Reform and Meet Act 167 Requirements"
+  },
+  {
+   "p": "Clinical",
+   "title": "Hospital-at-Home Programs: CMS Acute Hospital Care at Home Waiver Outcomes"
+  },
+  {
+   "p": "Clinical",
+   "title": "Hospital-at-Home in Rural Markets: Implementation Economics, Patient Eligibility, and the Operational Model That Is Working"
+  },
+  {
+   "p": "Equity",
+   "title": "Language Access in Healthcare: Legal Requirements and Implementation Gaps"
+  },
+  {
+   "p": "Technology",
+   "title": "Masterclass: Implementing AI Governance in Clinical Settings"
+  },
+  {
+   "p": "Clinical",
+   "title": "Maternal Mortality Crisis: Evidence-Based Interventions and State-Level Performance"
+  },
+  {
+   "p": "Policy",
+   "title": "Medicaid DSH Allotment Reductions and the Rural Hospital Fiscal Collapse: A State-by-State Impact Analysis for FY2026\u20132028"
+  },
+  {
+   "p": "Policy",
+   "title": "Medicaid Redetermination Aftermath: Enrollment Cliff and State Response Strategies"
+  },
+  {
+   "p": "Economics",
+   "title": "Medicare Advantage Risk Adjustment Recalibration: Financial Impact on Health Plans"
+  },
+  {
+   "p": "Economics",
+   "title": "Nursing Shortage Economics: Travel Nurse Rate Normalization and Long-Term Workforce Gaps"
+  },
+  {
+   "p": "Policy",
+   "title": "PBM Reform Legislation: State-Level Transparency Requirements in 2025-2026"
+  },
+  {
+   "p": "Clinical",
+   "title": "Precision Medicine and Pharmacogenomics: Payer Coverage Policies in 2025"
+  },
+  {
+   "p": "Clinical",
+   "title": "Precision Medicine\u2019s Rural Access Problem: Why the Genomics Revolution Is Bypassing 46 Million Americans and What Early Adopters Are Doing About It"
+  },
+  {
+   "p": "Technology",
+   "title": "Remote Patient Monitoring Reimbursement: CPT Code Evolution and Adoption Barriers"
+  },
+  {
+   "p": "Policy",
+   "title": "Rural Health Transformation: Strengthening Vermont's Critical Access Hospitals"
+  },
+  {
+   "p": "Equity",
+   "title": "Rural Healthcare Access: Facility Closures, Workforce Gaps, and Broadband Infrastructure"
+  },
+  {
+   "p": "Policy",
+   "title": "Rural Hospital Regulatory Relief Act: What the 2026 Reforms Mean for Critical Access Facilities"
+  },
+  {
+   "p": "Technology",
+   "title": "Rural Hospitals Under Siege: The 2025 Ransomware Epidemic and the Five Security Controls Every CAH Must Implement in 2026"
+  },
+  {
+   "p": "Equity",
+   "title": "SDOH Screening at Scale: How Rural Health Systems Are Moving From Paper Questionnaires to Actionable Social Needs Referral Networks"
+  },
+  {
+   "p": "Clinical",
+   "title": "Sepsis Protocol Standardization: SEP-1 Bundle Compliance and Mortality Outcomes"
+  },
+  {
+   "p": "Equity",
+   "title": "Social Determinants Screening in Clinical Settings: Evidence for Population Health ROI"
+  },
+  {
+   "p": "Policy",
+   "title": "Surprise Billing Enforcement: Two Years Under the No Surprises Act"
+  },
+  {
+   "p": "Economics",
+   "title": "The $1.2 Trillion Rural Nursing Shortage: A Workforce Economics Analysis and the Three Retention Strategies With the Best ROI"
+  },
+  {
+   "p": "Technology",
+   "title": "The 2026 Telehealth Reimbursement Cliff: What Rural Hospitals Must Do Before the COVID-Era Waivers Expire V2"
+  },
+  {
+   "p": "Technology",
+   "title": "The Algorithmic Bridge: Integrating SDOH into Clinical Data Streams"
+  },
+  {
+   "p": "Technology",
+   "title": "The Algorithmic Second Opinion: Who Pays When AI Misses?"
+  },
+  {
+   "p": "Clinical",
+   "title": "The Alzheimer's Pipeline: Monoclonal Antibodies & The Cost of Hope"
+  },
+  {
+   "p": "Equity",
+   "title": "The Broadband Gap: Solving the Digital Determinants of Health (DDoH)"
+  },
+  {
+   "p": "Equity",
+   "title": "The Community Health Worker as Rural Health\u2019s Most Cost-Effective Equity Intervention: Evidence, Economics, and the Implementation Model That Scales"
+  },
+  {
+   "p": "Economics",
+   "title": "The Economic Architecture of Vermont\u2019s 2026 Health Transformation: From Silos to Liquidity Fabrics"
+  },
+  {
+   "p": "Economics",
+   "title": "The Economics of Prevention: A 2025 Perspective"
+  },
+  {
+   "p": "Policy",
+   "title": "The End of the All-Payer Dream: Transitioning to Global Budgets Under Acts 167 and 68"
+  },
+  {
+   "p": "Economics",
+   "title": "The Fiscal Impact of Locum Tenens Reliance in Rural Vermont"
+  },
+  {
+   "p": "Economics",
+   "title": "The GLP-1 Solvency Paradox: Employer Bankruptcy vs. Long-Term Value"
+  },
+  {
+   "p": "Economics",
+   "title": "The Great Resignation: Why Primary Care is Firing the Hospital"
+  },
+  {
+   "p": "Economics",
+   "title": "The Impact of Cost-Shifting on Rural Hospital Solvency"
+  },
+  {
+   "p": "Economics",
+   "title": "The Inflationary Scissors: Rural Hospitals in Crisis"
+  },
+  {
+   "p": "Policy",
+   "title": "The New Maternal Health Mandates: What Rural Emergency Departments Must Have on Hand by July 2026"
+  },
+  {
+   "p": "Operations",
+   "title": "The Nursing Workforce Crisis: Retention Economics vs. Agency Spend"
+  },
+  {
+   "p": "Economics",
+   "title": "The ROI of Hospital Price Transparency: Compliance vs. Customer Acquisition"
+  },
+  {
+   "p": "Clinical",
+   "title": "The Rural Chronic Disease Registry: How Risk Stratification at the Population Level Is Reducing the Most Preventable Costs in Rural Health Systems"
+  },
+  {
+   "p": "Economics",
+   "title": "The Rural Health Investment Surge: Where $4.8 Billion in Health Tech Capital Is Flowing in 2026 and What It Means for System Leaders"
+  },
+  {
+   "p": "Economics",
+   "title": "The Rural Hospital Margin Crisis: Why 2026 Is the Inflection Year and What the Data Says About Survival Strategies"
+  },
+  {
+   "p": "Economics",
+   "title": "The Rural Precipice: Structural Decay in Vermont\u2019s Nursing Workforce"
+  },
+  {
+   "p": "Equity",
+   "title": "The Rural-Urban Health Outcome Gap in 2026: A Data-Driven Analysis of Where Disparities Are Widening, Where They Are Closing, and Why"
+  },
+  {
+   "p": "Economics",
+   "title": "The Structural Triad: Redesigning the US Healthcare Value Chain"
+  },
+  {
+   "p": "Economics",
+   "title": "The Telehealth Correction: Economic Implications of Expiring Waivers"
+  },
+  {
+   "p": "Economics",
+   "title": "The Uninhabitable Math: Decoding Vermont's $0.7\u20132.4 Billion Healthcare Cliff"
+  },
+  {
+   "p": "Economics",
+   "title": "The Zero-Sum Battlefield: When Payers War with Providers"
+  },
+  {
+   "p": "Economics",
+   "title": "Value-Based Care Contract Performance: 2025 Shared Savings Results Across ACO Models"
+  },
+  {
+   "p": "Policy",
+   "title": "Vermont's Acts 167 and 68: Hospital Global Budgets and Their Fiscal Implications"
+  },
+  {
+   "p": "Clinical",
+   "title": "Virtual Care Access and Quality: Post-Pandemic Telehealth in Clinical Practice"
+  },
+  {
+   "p": "Clinical",
+   "title": "Virtual Nursing in Rural Hospitals: How the Hub-and-Spoke Telenursing Model Is Solving the Staffing Crisis Without Relying on Travelers"
+  },
+  {
+   "p": "Policy",
+   "title": "What the U.S. Can Learn From Global Budget Models in Canada, England, and Japan for Rural Health System Reform"
+  }
+ ],
+ "caseStudies": [
+  "Vermont's All-Payer ACO: A Decade-Plus Test of Voluntary, Total-Cost-of-Care Reform",
+  "Kaiser Permanente Northern California: Automated Early Warning for Clinical Deterioration",
+  "Camden Coalition: The Original Hotspotting Model for High-Need Patients",
+  "Intermountain Health: Hospital-at-Home Program Design and Operations",
+  "California Maternal Quality Care Collaborative: Reducing Maternal Mortality Through Clinical Bundles"
+ ],
+ "definitions": [
+  "ACO (Accountable Care Organization)",
+  "All-Payer Model",
+  "Algorithmic Bias",
+  "Benchmark (VBC)",
+  "Bundled Payment",
+  "Capitation",
+  "Certificate of Need (CON)",
+  "CHW (Community Health Worker)",
+  "CMMI (Center for Medicare and Medicaid Innovation)",
+  "CMS (Centers for Medicare and Medicaid Services)",
+  "ERISA",
+  "eGFR (Estimated Glomerular Filtration Rate)",
+  "Fee-for-Service (FFS)",
+  "FQHC (Federally Qualified Health Center)",
+  "HEDIS (Healthcare Effectiveness Data and Information Set)",
+  "HCC (Hierarchical Condition Category)",
+  "HIPAA (Health Insurance Portability and Accountability Act)",
+  "Hospital-at-Home",
+  "ICD-10-CM",
+  "IDR (Independent Dispute Resolution)",
+  "LEP (Limited English Proficiency)",
+  "LLM (Large Language Model)",
+  "MSSP (Medicare Shared Savings Program)",
+  "PBM (Pharmacy Benefit Manager)",
+  "PCMH (Patient-Centered Medical Home)",
+  "Pharmacogenomics (PGx)",
+  "QHIN (Qualified Health Information Network)",
+  "Risk Adjustment",
+  "SDOH (Social Determinants of Health)",
+  "TEFCA (Trusted Exchange Framework and Common Agreement)",
+  "Accountable Care Organization (ACO)",
+  "Certificate of Need (CON)",
+  "Interoperability",
+  "Machine Learning (ML)",
+  "Relative Value Unit (RVU)",
+  "Value-Based Care"
+ ],
+ "deals": [
+  {
+   "n": "Abridge raises $300M Series E, hits $5.3B valuation for ambient AI documentation"
+  },
+  {
+   "n": "Aledade secures $500M senior secured credit facility from Ares"
+  },
+  {
+   "n": "Aledade acquires CCA Holding Company's Michigan value-based care operations"
+  },
+  {
+   "n": "Amazon closes $3.9B acquisition of One Medical"
+  },
+  {
+   "n": "Cityblock Health raises $116M Series E and agrees to acquire Homeward Health"
+  },
+  {
+   "n": "CVS Health completes $10.6B acquisition of Oak Street Health"
+  },
+  {
+   "n": "Hinge Health IPO raises $437M, values company above $3B on debut"
+  },
+  {
+   "n": "Innovaccer raises $275M Series F to scale its Healthcare Intelligence Cloud"
+  },
+  {
+   "n": "Model N acquires Kalderos to expand 340B compliance and gross-to-net analytics"
+  },
+  {
+   "n": "Omada Health IPO values digital chronic-care company at $1.1B"
+  },
+  {
+   "n": "OneCare Vermont invests $320K in Heidi Health AI scribes for independent primary care"
+  },
+  {
+   "n": "Optum (UnitedHealth Group) closes $5.4B acquisition of LHC Group"
+  },
+  {
+   "n": "Oracle Health secures TEFCA QHIN designation"
+  },
+  {
+   "n": "Privia Health to acquire Evolent Health's value-based ACO business for up to $113M"
+  },
+  {
+   "n": "TowerBrook and Clayton, Dubilier & Rice take R1 RCM private for $8.9B"
+  },
+  {
+   "n": "Risant Health finalizes acquisition of Cone Health, its second health system"
+  },
+  {
+   "n": "Kaiser-backed Risant Health completes acquisition of Geisinger"
+  },
+  {
+   "n": "Sanford Health and Marshfield Clinic complete merger, forming $10B rural system"
+  },
+  {
+   "n": "Truveta lands $320M Series C to build a genomics-scale health-data platform"
+  },
+  {
+   "n": "Turquoise Health raises $40M Series C to run healthcare's price-transparency infrastructure"
+  },
+  {
+   "n": "Vytalize Health raises $55M to scale its value-based primary care platform"
+  },
+  {
+   "n": "Waystar closes $1.25B acquisition of Iodine Software"
+  }
+ ]
+}
