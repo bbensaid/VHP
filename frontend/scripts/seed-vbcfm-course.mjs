@@ -33,7 +33,7 @@ const COURSE = {
   ],
   prerequisites: ["Value-Based Care course (recommended)", "Hospital Finance course (recommended)"],
   estimated_hours: 6.5,
-  is_published: false, // flipped to true only when all lessons are written and linked
+  is_published: true, // all 15 lessons written, linked and verified 2026-11-23
   version: "1",
   pillar: "economics",
   level: "intermediate",
@@ -88,6 +88,17 @@ const TRACKS = [
     L(12, "vbcfm-making-the-case", "Making the Financial Case: To a Board, a Payer and a Legislature", 25,
       "The funding streams available, what a board, a payer and a legislature each need to see, honest answers to common objections and a one-page case template.",
       ["Tailor a financial case to a board, a payer or a legislature", "Plan financing after time-limited grants end", "Write a one-page case with a range, a stop trigger and a decision request"], ["business-case", "negotiation", "legislature"]),
+  ]),
+  T(5, "tools-and-capstone", "Tools and Capstone", "Running the shared savings calculator, separating cost-effectiveness from budget return, and building and defending a financial case.", [
+    L(13, "vbcfm-shared-savings-lab", "Lab: Running the APM Shared Savings Calculator", 30,
+      "A worked lab on the platform's calculator: the minimum savings rate cliff in a one-sided track, the Enhanced track's payoff and loss exposure, and the tool's limits.",
+      ["Run the calculator and read its pessimistic, base and optimistic spread", "Explain how the minimum savings rate creates a cliff", "Compare tracks by the spread of outcomes and state the tool's limits"], ["lab", "shared-savings", "calculator"]),
+    L(14, "vbcfm-cost-effectiveness-vs-roi", "Cost-Effectiveness Versus Budget Return: Two Different Questions", 25,
+      "ICER and QALYs, the calculator's formulas and illustrative presets, why thresholds are judgments, which question governs which decision and the investment tracker's sequence check.",
+      ["Compute and interpret an incremental cost-effectiveness ratio", "Distinguish cost-effectiveness from budget return and decide which governs", "Classify a program as self-financing, cost-effective or both"], ["cost-effectiveness", "icer", "roi"]),
+    L(15, "vbcfm-capstone-financial-case", "Capstone: Build and Defend a Financial Case", 60,
+      "Assess readiness, review a contract, model shared savings, stress-test finances, size the return with an evidence ladder and write the one-page case, using six platform tools.",
+      ["Use six platform tools to assess one investment end to end", "Size a return as a range with its evidence rung and share of savings", "Write and self-review a one-page financial case"], ["capstone", "financial-case"]),
   ]),
 ];
 

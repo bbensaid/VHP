@@ -121,7 +121,7 @@ Courses by `chapter_ref` today: Ch1, 2 (×3), 4 (×2), 6 (×2), 8 (×4), 10, 11,
 | 1 | **Start Here: Reading the Five-Pillar Framework** (replaces the empty `welcome-htr-framework`) | Preface, Intro, Ch1 | First thing a new user sees; currently empty |
 | 2 | **Transformation as Portfolio Management (PMI)** | Ch15 | Unique to this book; practitioners will pay attention to it |
 | 3 | **CMMI Models & Waiver Strategy** | Ch3 | **DONE 2026-11-23** — `cmmi-models-waiver-strategy`, 5 tracks / 15 lessons, live at /academy/tracks/cmmi-models-waiver-strategy; source `frontend/content/_course_cmmi_t1..t5.py`, seed `frontend/scripts/seed-cmmi-course.mjs` |
-| 4 | **VBC Financial Modeling & APM Readiness** | Ch7 | Pairs with the APM calculator and Hospital Stress Test |
+| 4 | **VBC Financial Modeling & APM Readiness** | Ch7 | **DONE 2026-11-23** — `vbc-financial-modeling-apm-readiness`, 5 tracks / 15 lessons, live at /academy/tracks/vbc-financial-modeling-apm-readiness; source `frontend/content/_course_vbcfm_t1..t5.py`, seed `frontend/scripts/seed-vbcfm-course.mjs` |
 | 5 | **Political Sustainability of Reform** | Ch14 | No equivalent elsewhere; Vermont + Act 48 history |
 | 6 | **FHIR, AI Governance & CDS in Practice** | Ch5 | Re-anchor or extend AI/interop courses |
 | 7 | **Clinical Transformation Toolkit** | Ch9 | Operational counterpart to Ch8 courses |
