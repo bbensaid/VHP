@@ -86,7 +86,7 @@ add(
 const rows = recs.map((r) => [r.state, String(r.rows.length), usd(r.rows.reduce((a, x) => a + x.amount, 0)), host(r.source.url)]);
 add(
   H1("4. State award lists"),
-  P("Vermont comes first and California second in every multi-state view. For each state, award lists were searched on that state's own agency and governor pages (22 November 2026) — not through a third-party directory. A list is shown only if its rows could be checked against the source (a printed total, a printed count, or every amount in the document). The amounts are the states', not estimates; the lists are not all the same kind (final, preliminary, offers, multi-year), and each state's page says which."),
+  P("Vermont comes first and California second in every multi-state view. For each state, award lists were searched on that state's own agency and governor pages (last updated "+cov.searchedOn+") — not through a third-party directory. A list is shown only if its rows could be checked against the source (a printed total, a printed count, or every amount in the document). The amounts are the states', not estimates; the lists are not all the same kind (final, preliminary, offers, multi-year), and each state's page says which."),
   H2("States with an itemized list with amounts (" + recs.length + " shown, plus Vermont's own review)"),
   table(["State", "Awards", "Sum of listed awards", "Published by"], rows, [24, 12, 26, 38]),
   gap(),

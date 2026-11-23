@@ -267,7 +267,7 @@ add(
   table(["State", "Awards", "Sum listed", "Median", "Published by"],
     RECS.map((r) => [r.state, String(r.rows.length), m(sumOf(r)), kk(medOf(r)), host(r.source.url)]), [20, 11, 18, 16, 35]),
   src("Sums are the sum of the listed awards, computed here; where a state prints its own total, the state page on the website shows both. Recipient types on the website are HTR's classification from organization names."),
-  H2("Coverage: every state was searched on its own agency and governor pages (22 November 2026)"),
+  H2(`Coverage: every state was searched on its own agency and governor pages (updated ${COV.searchedOn})`),
   table(["Group", "States"], [
     ["Itemized list with amounts (this part, and Vermont in Part 1)", COV.itemized.join(", ")],
     ["Recipients or regions named, no per-award amounts", COV.namesWithoutAmounts.join(", ")],
