@@ -67,6 +67,17 @@ const TRACKS = [
       "Training data representativeness, monitoring capacity, multilingual scribes, two recent studies of ambient scribes and a measurement plan for grant-funded rollouts.",
       ["Describe the three rural AI governance challenges", "Summarize what two recent scribe studies show and their limits", "Design a measurement plan for a scribe rollout"], ["rural", "scribes", "evidence"]),
   ]),
+  T(3, "decision-support", "Clinical Decision Support", "Why most alerts are ignored, four types of population health support, and a worked remote monitoring rollout.", [
+    L(7, "fai-alert-fatigue", "Alert Fatigue: Why Most Decision Support Is Ignored", 25,
+      "What the literature reports on override rates and its limits, alert fatigue as a design problem, three design principles, an alert inventory method and portfolio governance.",
+      ["Explain why alert fatigue is a design problem", "Run an alert inventory and decide keep, tune, tier or retire", "Set up governance for the alert portfolio"], ["cds", "alert-fatigue", "design"]),
+    L(8, "fai-population-health-cds", "Population Health Decision Support: Four Types and Their Vermont Applications", 25,
+      "Risk stratification, care gaps, social needs screening and medication safety: requirements, Vermont applications per the book, equity checks and common failures.",
+      ["Describe four types of population health decision support", "Identify the workflow owner and feedback loop for each", "Check a tool for subgroup performance and equity effects"], ["cds", "population-health", "equity"]),
+    L(9, "fai-digital-health-and-rollout", "Digital Health and Decision Support in Rollout: A Worked RPM Example", 30,
+      "The 2026 remote monitoring codes in the Digital Health Lab, a worked revenue example, tiering readings into decisions, rural constraints and a six-step rollout with a stop-or-expand decision.",
+      ["Compute modeled remote monitoring revenue under stated assumptions", "Explain why revenue is not value", "Run a pilot with prespecified thresholds"], ["rpm", "digital-health", "rollout"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
