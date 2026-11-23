@@ -168,6 +168,86 @@ L2 = [
     blk('src6', "[6] KFF, What to Know About the BALANCE Model for GLP-1s in Medicare and Medicaid and the Medicare GLP-1 Bridge — https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/ — Part D delay of April 21, 2026 and Bridge extension; CMS BALANCE page — https://www.cms.gov/priorities/innovation/innovation-models/balance"),
 ]
 
-LESSONS = [(L1_SLUG, L1_TITLE, L1, 1), (L2_SLUG, L2_TITLE, L2, 2)]
+# ════════════════════════════════════════════════════════════════════════════
+# Lesson 3 facts verified 2026-11-23: CMS Shared Savings Program PY2024 fact sheet (updated Sept 29, 2025; read from the
+# PDF itself); NORC Vermont All-Payer ACO Model Fourth Evaluation Report (June 2024; headline direction only, from the
+# report's executive-summary exhibit titles); Vermont facts from HTR book Chapter 3 §3.2.1, §3.5.1, §3.9.
+L3_SLUG = 'cmmi-scoring-a-model'
+L3_TITLE = 'Scoring a Model Before You Commit: A Practitioner Scorecard'
+L3 = [
+    blk('intro1', "When the Innovation Center announces a model, the first coverage is nearly always about the headline: the dollars, the number of states, the start date. A strategy needs a different kind of reading. The relevant questions are what the model asks the participant to carry, what it provides in return, and what happens if the terms change."),
+    blk('intro2', "This lesson turns Chapter 3's four design characteristics into a scorecard you can apply to any model in an afternoon. It adds two further questions drawn from Vermont's recent experience, tests the scorecard against the Shared Savings Program's 2024 results and the Vermont All-Payer Model's evaluation, and ends with a worked reading of the models from Lesson 2."),
+    blk('intro3', "The scorecard does not predict success. It identifies the places where a model's design is most likely to help or hurt you, so that your negotiation, your investment plan and your exit planning concentrate on them."),
+
+    h2('s1h1', 'Why a Scorecard, and Why These Questions'),
+    blk('s1p1', "Lesson 1 gave the base rate: of 70 models tested, four have been expanded nationwide. Chapter 3 asks what separates the stronger models from the rest and answers with four characteristics, drawn from the evaluation literature and CMS model documentation: mandatory or near-mandatory participation, two-sided risk that is real, adequate implementation support, and alignment with the state regulatory environment. Treat these as questions about the model's design, not a verdict on its quality."),
+    blk('s1p2', "Vermont's experience with AHEAD suggests two more. The first is about exits: what notice and conditions apply if you want to leave, and what protections exist if the Center changes a parameter. Vermont negotiated withdrawal rights of 30 days before launch and six months after launch, and used them. The second is about dependencies: who else must participate, or what else must be funded, for the model to deliver what its terms promise. The expected EAST Fund shrank from an estimated $138 million to a cap of about $10 million after Vermont had signed, which is a funding dependency the state did not control."),
+    callout('s1c1', "The scorecard has six questions: Who must participate? Is the risk real? Is there support to manage it? Does it fit state regulation? How do we exit? And who or what else must hold up for the terms to deliver?"),
+
+    h2('s2h1', 'Question One: Who Must Participate?'),
+    blk('s2p1', "Participation rules decide whether a model's financial logic reaches the whole population or only the willing. In a voluntary model, the providers that expect to gain join and the providers that expect to lose stay out, so measured savings can reflect who selected in rather than what the model changed. A mandatory model avoids that selection problem but raises the stakes for participants who had no say. TEAM is mandatory for hospitals in selected areas; the Shared Savings Program is voluntary."),
+    blk('s2p2', "The Shared Savings Program's 2024 results show how much participation structure shapes outcomes inside a single voluntary program. CMS reported that among 476 ACOs, 75 percent earned performance payments totaling $4.1 billion and Medicare saved $2.5 billion relative to benchmarks, the highest share and highest savings in the program's history. But the fact sheet also shows a split: low-revenue ACOs, typically physician-led or built around federally qualified and rural health clinics, generated $319 in net per capita savings against $180 for high-revenue ACOs, which are typically hospital-led. ACOs composed predominantly of primary care clinicians generated $403 against $224. Who participates, in other words, changes what the model produces."),
+    stat_grid('s2sg1', [
+        ('476', 'ACOs in the Shared Savings Program, 2024', 'CMS PY2024 fact sheet, updated Sept 29, 2025'),
+        ('$2.5B', 'Medicare savings relative to benchmarks', 'CMS; $4.1B paid as performance payments'),
+        ('$319 vs $180', 'Net per capita savings, low-revenue vs high-revenue ACOs', 'CMS PY2024 fact sheet'),
+        ('$403 vs $224', 'Net per capita savings, primary-care-heavy vs other ACOs', 'CMS PY2024 fact sheet'),
+    ]),
+
+    h2('s3h1', 'Question Two: Is the Risk Real?'),
+    blk('s3p1', "Chapter 3's second characteristic is that downside exposure must be large enough to change behavior. One-sided shared savings, in which a participant can gain but not lose, rarely changes how a hospital or health system decides to invest. The Shared Savings Program's 2024 numbers illustrate the asymmetry that can result. Sixteen ACOs owed shared losses totaling $20.0 million, set against $4.1 billion in performance payments. That ratio does not mean the program is ineffective: Medicare still saved $2.5 billion. It does show that, for most participants in most years, the money moved toward the ACOs."),
+    blk('s3p2', "For a state, the risk question has a second layer. In AHEAD the state is accountable for total cost of care and quality targets, and hospital global budgets put hospitals at risk for the population they serve. Vermont's own history is a warning on risk without capability. Chapter 3 notes that the Vermont All-Payer ACO Model and its accountable care organization, OneCare Vermont, were undermined partly because organizations assumed financial risk without the analytics to manage it. Real risk is only useful when the participant can see and influence the drivers of the result."),
+    warning('s3w1', "Risk is not a virtue by itself", "A model with heavy downside and no data tools sets participants up to fail. Score the risk question together with the support question: the risk is real, but can the participant manage it?"),
+
+    h2('s4h1', 'Questions Three and Four: Support and Fit'),
+    blk('s4p1', "Implementation support covers cooperative agreement funds, technical assistance, analytic data feeds and runway, the time before accountability begins. AHEAD was designed with a multi-year pre-performance period and substantial cooperative agreement funds. After the September 2025 changes, the performance period for Cohorts 2 and 3 begins January 1, 2028, which lengthens the runway. LEAD's ten-year period without rebasing is a form of support too, since it gives participants time to earn back their investments."),
+    blk('s4p2', "Alignment with state regulation asks whether the federal model conflicts with, duplicates or builds on state authorities. Chapter 3 credits AHEAD with being designed as a federal-state partnership that requires state agreement and regulatory alignment, and credits Maryland's earlier total cost of care model with building on the state's existing Health Services Cost Review Commission authority. Models imposed without coordination with Medicaid agencies, insurance regulators or hospital budget review create compliance complexity without adding value."),
+    blk('s4p3', "Vermont's All-Payer ACO Model is a useful test of the point that alignment is necessary but not sufficient. It was built with the state's regulatory board and ran from 2018 to 2024. The NORC evaluation of its first five performance years, published in June 2024, found that gross and net Medicare spending declined for attributed beneficiaries relative to a comparison group of Shared Savings Program beneficiaries, and that acute care use fell in the fifth year. Evaluations also noted limited hospital participation in the Medicare ACO initiative, with smaller and critical access hospitals perceiving the risk as too high. A model can show savings and still lack the participation breadth that gives the state its reform."),
+
+    h2('s5h1', 'Questions Five and Six: Exit and Dependency'),
+    blk('s5p1', "Because section 1115A bars administrative and judicial review of most model decisions, the contract is the main protection a participant has. Vermont's AHEAD agreement is the reference example: a 30-day withdrawal notice before launch, a six-month notice after launch, protection for the Green Mountain Care Board's regulatory independence, and explicit provisions on methodology acceptance and dispute resolution. A participant should be able to say, before signing, what it would take to leave, what it would owe, and what the Center can change unilaterally."),
+    blk('s5p2', "Dependencies are the quietest risk. BALANCE shows one version: its Medicare Part D portion was delayed in April 2026, and analysts noted that the model depends on enough Part D plan sponsors taking part. AHEAD showed another, where a funding stream the state expected shrank after signing. Ask of every model which party's decision, other than your own and the Center's, determines whether the terms deliver."),
+
+    h2('s6h1', 'Applying the Scorecard'),
+    blk('s6p1', "The table below applies the six questions to three models from Lesson 2, using only what the CMS model pages and the Chapter 3 text state. Entries marked 'check' mean the terms are not settled by the sources used in this course, and a practitioner should read the current CMS documents before relying on them."),
+    table('s6t1', 'The six questions applied to three models (illustrative reading)', [
+        {'Question': 'Who must participate?', 'AHEAD': 'States volunteer; hospitals follow state design', 'LEAD': 'Voluntary ACOs', 'TEAM': 'Mandatory hospitals in selected areas'},
+        {'Question': 'Is the risk real?', 'AHEAD': 'State accountable for total cost of care and quality targets', 'LEAD': 'Professional: up to 50% of savings and losses; Global: up to 100%', 'TEAM': 'Episode-based payment for five surgical episodes (check current risk tracks)'},
+        {'Question': 'Is there support?', 'AHEAD': 'Pre-performance period; EAST Fund cut after Vermont signed', 'LEAD': 'Ten-year period without rebasing', 'TEAM': 'Check CMS technical assistance'},
+        {'Question': 'Does it fit state regulation?', 'AHEAD': 'Designed as state partnership', 'LEAD': 'Provider-level; not a state model', 'TEAM': 'Maryland hospitals exempt'},
+        {'Question': 'How do we exit?', 'AHEAD': 'Negotiated in state agreement', 'LEAD': 'Check participation agreement', 'TEAM': 'Mandatory in selected areas; no opt-out'},
+        {'Question': 'What else must hold?', 'AHEAD': 'Federal funding streams', 'LEAD': 'Part D buy-down planned by 2029', 'TEAM': 'Hospital capability to manage episodes'},
+    ]),
+    blk('s6p2', "Used this way, the scorecard generates the questions to put to the Center and to your own board, not a score. A model that is voluntary, one-sided, unsupported, unaligned and has no exit clause deserves skepticism whatever its headline. A model that is mandatory or near-mandatory, genuinely two-sided, supported, aligned and exit-protected is rare, and the work of a state or provider organization is to negotiate toward it."),
+
+    takeaway('tw', [
+        "Chapter 3's four design characteristics are mandatory participation, real two-sided risk, adequate implementation support and alignment with state regulation; Vermont's experience adds exit terms and dependencies.",
+        "The Shared Savings Program's 2024 results show the effect of who participates: low-revenue ACOs generated $319 in net per capita savings against $180 for high-revenue ACOs.",
+        "In 2024, 16 Shared Savings Program ACOs owed $20.0 million in shared losses against $4.1 billion in performance payments, illustrating how weak downside can be in voluntary models.",
+        "Risk without analytic capability fails: Chapter 3 notes the Vermont All-Payer ACO Model was undermined partly because organizations assumed risk without the analytics to manage it.",
+        "The NORC evaluation found Medicare spending fell for Vermont All-Payer Model ACO beneficiaries relative to comparison beneficiaries, yet hospital participation stayed limited.",
+        "Because section 1115A bars most review of model decisions, the agreement's withdrawal, methodology and dispute clauses are the participant's main protection.",
+        "Always ask which party other than you and the Center must act for the terms to deliver; a dependency on funding the state did not control produced the AHEAD shortfall, and BALANCE's Part D side depends on plan sponsor participation.",
+    ]),
+    quiz('qz',
+        "What did the CMS performance year 2024 results for the Shared Savings Program show about ACO type?",
+        [
+            ("High-revenue, hospital-led ACOs generated the highest net per capita savings", False),
+            ("Low-revenue ACOs generated $319 in net per capita savings against $180 for high-revenue ACOs", True),
+            ("Primary-care-heavy ACOs generated lower savings than other ACOs", False),
+            ("Participation had no relationship to savings", False),
+        ],
+        "CMS reported net per capita savings of $319 for low-revenue ACOs, typically physician-led or built around federally qualified and rural health clinics, against $180 for high-revenue ACOs, typically hospital-led. ACOs composed predominantly of primary care clinicians generated $403 against $224. Who participates changes what a model produces."
+    ),
+    h2('src', 'Sources'),
+    blk('src1', "[1] " + BOOK3 + " — §3.2.1 and Figure 3.1 (four characteristics), §3.5.1 (AHEAD agreement terms, withdrawal) and §3.9 (OneCare analytics lesson)"),
+    blk('src2', "[2] CMS, Medicare Shared Savings Program Accountable Care Organizations: Updated Performance Year 2024 Financial and Quality Results (fact sheet, September 29, 2025) — https://www.cms.gov/files/document/fact-sheet-ssp-py24-financial-and-quality-results.pdf"),
+    blk('src3', "[3] NORC at the University of Chicago for CMS, Vermont All-Payer ACO Model Fourth Evaluation Report (June 2024) — https://gmcboard.vermont.gov/sites/gmcb/files/2024-12/VTAPM_FourthEvaluationReport.pdf — first five performance years, 2018-2022"),
+    blk('src4', "[4] CMS, AHEAD Model — https://www.cms.gov/priorities/innovation/innovation-models/ahead — cohorts, September 3, 2025 changes"),
+    blk('src5', "[5] CMS, LEAD Model Overview — https://www.cms.gov/priorities/innovation/files/lead-model-overview.pdf — risk options and ten-year performance period"),
+    blk('src6', "[6] Social Security Act §1115A(d), 42 U.S.C. 1315a — https://www.law.cornell.edu/uscode/text/42/1315a — limitations on review"),
+]
+
+LESSONS = [(L1_SLUG, L1_TITLE, L1, 1), (L2_SLUG, L2_TITLE, L2, 2), (L3_SLUG, L3_TITLE, L3, 3)]
 if __name__ == '__main__':
     run(LESSONS)

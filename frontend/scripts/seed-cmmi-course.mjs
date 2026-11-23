@@ -52,6 +52,9 @@ const TRACKS = [
     L(2, "cmmi-2026-model-landscape", "The 2026 Model Landscape: What Is Live, What Ended, What Is Next", 25,
       "The four model families, the 2025 early endings, AHEAD, LEAD, TEAM and BALANCE as of late 2026, and a routine for checking any model's current status.",
       ["Place any CMMI model in one of four families", "State the current status of AHEAD, ACO REACH and LEAD, TEAM and BALANCE", "Apply a four-step routine to a new model announcement"], ["cmmi", "ahead", "lead", "team", "balance"]),
+    L(3, "cmmi-scoring-a-model", "Scoring a Model Before You Commit: A Practitioner Scorecard", 25,
+      "Six questions for any model: who must participate, is the risk real, is there support, does it fit state regulation, how do we exit, and what else must hold. Tested on Shared Savings Program and Vermont All-Payer results.",
+      ["Apply the six-question scorecard to a new model announcement", "Interpret Shared Savings Program 2024 results by ACO type", "Identify exit and dependency risks in a federal model agreement"], ["cmmi", "evaluation", "mssp", "vtapm"]),
   ]),
 ];
 
