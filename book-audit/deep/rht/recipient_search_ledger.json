@@ -143,10 +143,11 @@
   "note": "CHFS RFAs and CMS notice only; no awardee list found on chfs.ky.gov/ruralhealthplan.ky.gov (searched 2026-11-22)"
  },
  "Montana": {
-  "status": "partial",
+  "status": "no_per_award_amounts",
   "urls": [
    "https://dphhs.mt.gov/RuralHealthTransformationProgram/Grants"
-  ]
+  ],
+  "note": "DPHHS Oct 16 release names 17 EMS agencies ($3.63M total), no per-agency amounts; Sept EMS equipment grants ~$8.7M not itemized"
  },
  "Nebraska": {
   "status": "parsed",
@@ -181,7 +182,7 @@
  },
  "Wyoming": {
   "status": "partial",
-  "note": "advisory-committee approval sheet; names clipped / EIN-only rows"
+  "note": "WDH advisory-committee approval sheet (Drive) has approved amounts for CAH/EMS/GME/tech/primary-care but clipped names and EIN-only rows; governor Oct 23 release announces awards without a list"
  },
  "Illinois": {
   "status": "parsed",
@@ -252,18 +253,18 @@
  },
  "Maine": {
   "status": "partial",
-  "note": "$12M UNE partnership; hospital efficiency + EMR funds released, no recipient list found"
+  "note": "11 rural hospitals invited to the $30M Rural Hospital Efficiency Fund (names, no amounts); EMR fund awardees not published (searched 2026-11-22)"
  },
  "New Hampshire": {
   "status": "partial",
-  "note": "USNH $15.6M (Exec Council Mar 16); 5 hubs; EMS $11M (CMS Oct 16)"
+  "note": "hub contracts approved by Governor & Council (e.g. Foundation for Healthy Communities $66,547,394; CCSNH $6,730,219; USNH $15.6M yr 1) \u2014 agenda PDFs under media.sos.nh.gov, not yet parsed/verified; no subgrantee list"
  },
  "New Mexico": {
   "status": "partial",
   "urls": [
    "https://www.hca.nm.gov/rht/"
   ],
-  "note": "CMS $74M (Sep 21). CAUTION: NM $50M/41 orgs and $20M/32 orgs are STATE funds, not RHT"
+  "note": "HCA Sept 18 2026: six regional leads with funding ceilings (e.g. Region 6 Nor-Lea up to $19,682,962.74) \u2014 page hca.nm.gov/rht; not yet parsed; NM $50M/$20M lists are STATE funds"
  },
  "Idaho": {
   "status": "parsed",
@@ -293,8 +294,8 @@
   "note": "28 Rural Strong grants $31.5M, 82 tech/data grants ~$90M, 25 EMS ~$7.2M announced; recipients not named in releases; state says contracts will be on OpenSD"
  },
  "Hawaii": {
-  "status": "partial",
-  "note": "$45M UH JABSOM + $13M DOH ambulances (Sep 1)"
+  "status": "none_found",
+  "note": "rhtp.hawaii.gov / DOH pages: no recipient list found (searched 2026-11-22); CMS Sept 1 release names UH JABSOM $45M, DOH ambulances $13M"
  },
  "Delaware": {
   "status": "partial",

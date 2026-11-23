@@ -127,7 +127,7 @@ add(
 add(
   H1("7. Still open"),
   table(["Item", "Status", "Who"], [
-    ["Award lists: remaining states", "New York, North Carolina, Minnesota and the other “partial” states are searched one at a time; Colorado and Kansas need a browser download", "Claude (continuing); you for Colorado/Kansas files"],
+    ["Award lists: remaining states", "The “partial” states (see Section 4) are re-checked one at a time on each state's own site; Colorado and Kansas need a browser download", "Claude (continuing); you for Colorado/Kansas files"],
     ["Printable RHT Program Review", "The 20 November edition does not yet include the dashboard, spending categories or award lists; rebuild it when the state work settles", "Claude"],
     ["Book and PDF", "Upload the edited .docx to Google Docs and export the PDF after any book change", "You"],
     ["Earlier open items", "Domain renewal, GitHub Support request, before-launch list (Addendum 1, Section 7), technical clean-up (Addendum 2, Section 7) — unchanged unless you have done them", "You"],

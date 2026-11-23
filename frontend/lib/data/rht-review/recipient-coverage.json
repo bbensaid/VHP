@@ -28,6 +28,7 @@
   "Georgia",
   "Indiana",
   "Iowa",
+  "Montana",
   "Nevada",
   "North Carolina",
   "Virginia",
@@ -36,11 +37,9 @@
  "partial": [
   "Arizona",
   "Delaware",
-  "Hawaii",
   "Louisiana",
   "Maine",
   "Minnesota",
-  "Montana",
   "New Hampshire",
   "New Mexico",
   "New York",
@@ -49,6 +48,7 @@
   "Wyoming"
  ],
  "noneFound": [
+  "Hawaii",
   "Kentucky",
   "Massachusetts",
   "North Dakota",
