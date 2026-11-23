@@ -33,7 +33,7 @@ const COURSE = {
   ],
   prerequisites: ["Start Here (recommended)", "Medicaid 101 (recommended)"],
   estimated_hours: 6.5,
-  is_published: false, // flipped to true only when all lessons are written and linked
+  is_published: true, // all 15 lessons written, linked and verified 2026-11-23
   version: "1",
   pillar: "policy",
   level: "intermediate",
@@ -88,6 +88,17 @@ const TRACKS = [
     L(12, "cmmi-work-requirements-implementation", "Medicaid Work Requirements: The Rule, the Delay and the Court", 25,
       "The statute, CMS's June 2026 interim final rule, the October court ruling on medical frailty and the November optional hold harmless period through June 30, 2027.",
       ["Describe what the interim final rule requires of states and enrollees", "Explain the court ruling and the hold harmless period and what remains unsettled", "Plan a state or organizational response while the rules are changing"], ["work-requirements", "hr1", "interim-final-rule", "medicaid"]),
+  ]),
+  T(5, "practitioner-framework", "The Practitioner Framework", "Monitoring the federal landscape, assessing the impact of a change, and a capstone brief on the platform's Policy tools.", [
+    L(13, "cmmi-policy-monitoring", "Policy Monitoring: Four Functions and a Weekly Routine", 25,
+      "A twenty-month timeline of federal change, Chapter 3's four monitoring functions, a source map, the verification habit and a weekly routine.",
+      ["Name the four policy monitoring functions and where each signal appears", "Triage a policy item as act now, watch or file", "Apply a primary-source verification habit to policy facts"], ["monitoring", "federal-register", "triage"]),
+    L(14, "cmmi-policy-impact-assessment", "Policy Impact Assessment: From a New Rule to a One-Page Brief", 25,
+      "The four-step assessment, a five-pillar exposure map, a worked example on SMD #26-003, a TEAM track example and how to use the Research Lab worksheet.",
+      ["Apply exposure mapping, scenario analysis, response strategy and stakeholder communication", "Use the five-pillar map to find the first upstream pillar affected", "Write a one-page brief a decision-maker can act on"], ["impact-assessment", "policy-strategy", "scenarios"]),
+    L(15, "cmmi-capstone-policy-brief", "Capstone: Assess a Federal Change and Brief Your Decision-Makers", 60,
+      "Choose a real federal change, quantify it with the Work Requirements Calculator, H.R. 1 Cliff Scenario or Medicaid Eligibility Simulator, run the Policy Impact Assessment and write the one-page brief.",
+      ["Quantify a federal policy change with the platform's Policy tools and check their assumptions against primary sources", "Run a full impact assessment on one change", "Produce a one-page brief with a recommendation and a requested decision"], ["capstone", "policy-brief"]),
   ]),
 ];
 
