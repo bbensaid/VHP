@@ -53,6 +53,17 @@ const TRACKS = [
       "The five-pillar equity lens, a four-step impact assessment with a worked example, what Vermont already has and making the lens a habit.",
       ["Apply the equity lens to each pillar", "Run a four-step equity impact assessment", "Embed the lens in decision routines"], ["equity-impact-assessment", "five-pillars", "governance"]),
   ]),
+  T(5, "action-community-and-capstone", "Action, Community and Capstone", "Designing and testing an intervention portfolio, community health workers and trust, and a three-page equity analytics and action plan.", [
+    L(16, "hea-intervention-portfolio", "From Findings to Action: Designing and Testing an Intervention Portfolio", 25,
+      "The five-step closure process, designing a cause-matched portfolio, testing with stratified measures and diagnosing a gap that did not close.",
+      ["Design a portfolio matched to causes", "Test interventions with stratified measures", "Diagnose a gap that did not close"], ["interventions", "portfolio", "testing"]),
+    L(17, "hea-chw-and-community-trust", "Community Health Workers, Trust and Partnership", 25,
+      "What community health workers do, what the evidence supports, Vermont workforce figures, program conditions and trust as an analytic concern.",
+      ["Describe what evidence on community health workers supports", "List conditions for program success", "Measure trust and partnership"], ["chw", "trust", "community"]),
+    L(18, "hea-capstone-equity-plan", "Capstone: An Equity Analytics and Action Plan", 30,
+      "A seven-part plan: data limits, disparities and causes, indicators, contract audit and impact assessment, interventions, community partnership, reporting.",
+      ["Draft an equity plan with traceable numbers", "Write cause hypotheses that can be tested", "Set reporting and review routines"], ["capstone", "equity-plan", "analytics"]),
+  ]),
 ];
 
 const SLUG = "health-equity-analytics";

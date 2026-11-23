@@ -125,7 +125,7 @@ Courses by `chapter_ref` today: Ch1, 2 (×3), 4 (×2), 6 (×2), 8 (×4), 10, 11,
 | 5 | **Political Sustainability of Reform** | Ch14 | **DONE 2026-11-23** — `political-sustainability-of-reform`, 5 tracks / 15 lessons, live at /academy/tracks/political-sustainability-of-reform; source `frontend/content/_course_psr_t1..t5.py`, seed `frontend/scripts/seed-psr-course.mjs` |
 | 6 | **FHIR, AI Governance & CDS in Practice** | Ch5 | **DONE 2026-11-23** — `fhir-ai-governance-cds-in-practice`, 5 tracks / 15 lessons, live at /academy/tracks/fhir-ai-governance-cds-in-practice; source `frontend/content/_course_fai_t1..t5.py`, seed `frontend/scripts/seed-fai-course.mjs` |
 | 7 | **Clinical Transformation Toolkit** | Ch9 | **DONE 2026-11-23** — `clinical-transformation-toolkit`, 5 tracks / 15 lessons, live at /academy/tracks/clinical-transformation-toolkit; source `frontend/content/_course_ctk_*.py`, seed `frontend/scripts/seed-ctk-course.mjs` |
-| 8 | Expand `transformation-leadership` and `health-equity-analytics` to 5–6 tracks | Ch12, Ch10 | Finish what exists before adding more |
+| 8 | Expand `transformation-leadership` and `health-equity-analytics` to 5–6 tracks | Ch12, Ch10 | **DONE 2026-11-23** — transformation-leadership now 5 tracks / 19 lessons (new tracks 2-5, `_course_tle_t2..t5.py`, `seed-tle-expansion.mjs`); health-equity-analytics now 5 tracks / 18 lessons (new tracks 2-5, `_course_hea_t2..t5.py`, `seed-hea-expansion.mjs`); both verified published in Supabase |
 
 Each course: 5–7 tracks, 15–20 lessons, Sanity body ≥20 blocks, canonical quiz format,
 one Research Lab tool exercise per track, `chapter_ref` set, `sanity_slug` linked
