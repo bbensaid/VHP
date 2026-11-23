@@ -53,6 +53,17 @@ const TRACKS = [
       "Four source types, six questions for any claim, citing and carrying uncertainty, and using the Evidence Library and AI assistants with discipline.",
       ["Classify a claim by source type", "Run a five-minute claim check", "Cite sources and carry uncertainty forward"], ["evidence", "appraisal", "citations"]),
   ]),
+  T(5, "advisory-accountability-capstone", "Advisory Support, Accountability and Capstone", "Selecting and managing advisory support, designing a transformation dashboard and a three-page leadership plan.", [
+    L(17, "tl-selecting-advisory-support", "Hiring Help Well: Selecting and Managing Advisory Support", 25,
+      "When to engage advisors, scoping, selection tests including conflicts of interest, managing engagements and avoiding dependence.",
+      ["Decide whether outside help is needed", "Write a scope that ends in a decision", "Guard against advisory dependence"], ["advisory", "procurement", "dependence"]),
+    L(18, "tl-transformation-dashboard", "Managing by Evidence: The Transformation Dashboard", 25,
+      "Milestone and outcome indicators, honest status definitions, the five-question reporting page and common dashboard failures.",
+      ["Combine milestone and outcome indicators", "Define status colors and owners", "Design a five-question reporting page"], ["dashboard", "reporting", "accountability"]),
+    L(19, "tl-capstone-leadership-plan", "Capstone: A Transformation Leadership Plan", 30,
+      "An eight-part plan: framing, capacity, triage, tests and spread, knowledge functions, scenarios, evidence and advice, and a dashboard.",
+      ["Diagnose a change across five domains", "Present a capacity gap with options", "Assemble a three-page leadership plan"], ["capstone", "planning", "leadership"]),
+  ]),
 ];
 
 const SLUG = "transformation-leadership";
