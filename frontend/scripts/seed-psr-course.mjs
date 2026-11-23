@@ -78,6 +78,17 @@ const TRACKS = [
       "What the bill tracker, the HTR Simulator and the Friction Index do and cannot do, a worked example across all three and a monthly routine.",
       ["Describe what each monitoring instrument shows and its limits", "Run a monthly monitoring routine", "Translate a bill into an exposure using the three instruments"], ["the-wire", "simulator", "friction-index"]),
   ]),
+  T(4, "organizational-strategies", "Organizational Strategies", "Building investments that hold value, engaging the regulatory process with data and documenting progress.", [
+    L(10, "psr-irreversible-investments", "Build Investments That Hold Value Under Every Scenario", 25,
+      "Structural irreversibility, the capability and operating-funding tests, the Blueprint funding case and a capital-plan screen.",
+      ["Apply the capability and operating-funding tests to an investment", "Sort a capital plan into fund now, fund after a funding plan and minimize", "Explain how embedded investments create constituencies"], ["strategy", "capital-plan", "irreversibility"]),
+    L(11, "psr-regulatory-engagement", "Engaging the Regulatory Process: Data Over Opposition", 25,
+      "Why the Board is the arena, its calendar, three ingredients of substantive participation, the anatomy of a written comment and what opposition alone costs.",
+      ["Identify the stages at which an organization can engage the Board", "Prepare a data-grounded submission", "Structure a written comment"], ["gmcb", "regulatory", "engagement"]),
+    L(12, "psr-documenting-progress", "Documenting Progress: Evidence as Political Protection", 25,
+      "Act 68's reporting sections, a caution on the monthly updates, translating the five goals into verifiable measures and a quarterly evidence brief.",
+      ["Describe what Act 68 sections 11a and 11b require of the Agency", "Translate the five Act 167 goals into verifiable organizational measures", "Write a quarterly evidence brief"], ["evidence", "reporting", "act-68"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
