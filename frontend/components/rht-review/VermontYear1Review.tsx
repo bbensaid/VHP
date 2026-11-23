@@ -260,7 +260,7 @@ export default function VermontYear1Review() {
         </div>
         <SourceNote>
           Verbatim from <Ext href={CMS_DOCS.obligated.url}>{CMS_DOCS.obligated.label}</Ext>, Vermont page. CMS notes the report is state-submitted, reflects obligations as of
-          July 31, 2026, and “is not a full view of state progress.” Under Program Operations, the itemised lines sum to less than the heading total; both are shown as CMS printed them.
+          July 31, 2026, and “is not a full view of state progress.” Under Program Operations, the itemized lines sum to less than the heading total; both are shown as CMS printed them.
         </SourceNote>
       </Section>
 

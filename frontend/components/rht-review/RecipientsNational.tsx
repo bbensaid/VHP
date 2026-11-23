@@ -1,4 +1,4 @@
-// National view of the states that publish an itemised list of RHT awards (lib/data/rht-review/recipients/*.json).
+// National view of the states that publish an itemized list of RHT awards (lib/data/rht-review/recipients/*.json).
 // Everything here is computed from those lists; recipient TYPE is HTR's name-based classification (see Recipients.tsx).
 import fs from "node:fs";
 import path from "node:path";
@@ -122,7 +122,7 @@ export default function RecipientsNational() {
     <div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         {[
-          [String(recs.length), "states with an itemised list HTR could read"],
+          [String(recs.length), "states with an itemized list HTR could read"],
           [allRows.length.toLocaleString(), "awards listed"],
           [M(allTotal), "sum of listed awards"],
           [pct(hospShare), "of listed dollars to hospitals & health systems"],
