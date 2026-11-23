@@ -49,6 +49,9 @@ const TRACKS = [
     L(1, "cmmi-authority-and-record", "What the Innovation Center Is, and What Its Record Says", 25,
       "Section 1115A authority, the expansion test, CBO and GAO scorecards, the four design characteristics of stronger models, and Vermont's AHEAD experience.",
       ["Describe the Innovation Center's statutory authority and limits on review", "State the three conditions for expanding a model nationwide", "Use CBO and GAO findings as a base rate for new model announcements"], ["cmmi", "1115a", "gao", "cbo"]),
+    L(2, "cmmi-2026-model-landscape", "The 2026 Model Landscape: What Is Live, What Ended, What Is Next", 25,
+      "The four model families, the 2025 early endings, AHEAD, LEAD, TEAM and BALANCE as of late 2026, and a routine for checking any model's current status.",
+      ["Place any CMMI model in one of four families", "State the current status of AHEAD, ACO REACH and LEAD, TEAM and BALANCE", "Apply a four-step routine to a new model announcement"], ["cmmi", "ahead", "lead", "team", "balance"]),
   ]),
 ];
 
