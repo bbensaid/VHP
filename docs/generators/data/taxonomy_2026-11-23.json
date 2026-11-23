@@ -1,0 +1,967 @@
+{
+ "tools": [
+  {
+   "id": "policy-simulator",
+   "label": "Policy Simulator",
+   "href": "/research-lab/policy-quality?tab=policy",
+   "pillars": [
+    "policy"
+   ],
+   "chapters": [
+    "2",
+    "3"
+   ],
+   "desc": "Model 1115 waivers, global budgets, and Medicaid expansion scenarios."
+  },
+  {
+   "id": "medicaid-wr-calculator",
+   "label": "Work Requirements Calculator",
+   "href": "/research-lab/policy-quality?tab=medicaid-wr",
+   "pillars": [
+    "policy"
+   ],
+   "chapters": [
+    "3"
+   ],
+   "desc": "Model coverage loss and hospital revenue impact from H.R. 1 Medicaid work requirements, state by state."
+  },
+  {
+   "id": "hr1-cliff",
+   "label": "H.R. 1 Cliff Scenario",
+   "href": "/research-lab/policy-quality?tab=hr1-cliff",
+   "pillars": [
+    "policy"
+   ],
+   "chapters": [
+    "3"
+   ],
+   "desc": "Model the post-2030 Medicaid funding cliff created by H.R. 1 FMAP phase-downs, state-by-state."
+  },
+  {
+   "id": "policy-impact-assessment",
+   "label": "Policy Impact Assessment Framework",
+   "href": "/research-lab/policy-quality?tab=policy-impact",
+   "pillars": [
+    "policy"
+   ],
+   "chapters": [
+    "3",
+    "12"
+   ],
+   "desc": "Work a new rule, CMMI model, or state bill through exposure mapping, scenario analysis, response strategy, and stakeholder communication, mapped to the five pillars."
+  },
+  {
+   "id": "innovation-leaderboard",
+   "label": "Innovation Leaderboard",
+   "href": "/research-lab/knowledge-workspace?tab=leaderboard",
+   "pillars": [
+    "policy"
+   ],
+   "chapters": [
+    "13"
+   ],
+   "desc": "Rank all 50 states on Policy (AHEAD cohorts, state programs) and Clinical (population-health) — the two pillars with real 50-state data."
+  },
+  {
+   "id": "clinical-quality-optimizer",
+   "label": "Clinical Quality Optimizer",
+   "href": "/research-lab/policy-quality?tab=quality",
+   "pillars": [
+    "clinical"
+   ],
+   "chapters": [
+    "9"
+   ],
+   "desc": "Simulate HEDIS measures, predict CMS Star Ratings, optimize MIPS scores."
+  },
+  {
+   "id": "apm-design-lab",
+   "label": "APM Design Lab",
+   "href": "/research-lab/payment-models?tab=apm-design",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "6",
+    "7"
+   ],
+   "desc": "Design novel APMs — episode bundles, global budgets, benchmark waterfalls."
+  },
+  {
+   "id": "shared-savings-calc",
+   "label": "APM Shared Savings Calculator",
+   "href": "/research-lab/payment-models?tab=apm-calc",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "7",
+    "12"
+   ],
+   "desc": "Model MSSP, ACO REACH, and global budget shared savings scenarios."
+  },
+  {
+   "id": "cea-calculator",
+   "label": "CEA Calculator",
+   "href": "/research-lab/payment-models?tab=cea",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "7"
+   ],
+   "desc": "Calculate cost per QALY, NNT, and break-even timeline for any intervention."
+  },
+  {
+   "id": "global-budget-modeler",
+   "label": "Global Budget Transition Modeler",
+   "href": "/research-lab/payment-models?tab=gb-transition",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "6"
+   ],
+   "desc": "Model revenue and operating margin through the transition from fee-for-service to a global budget."
+  },
+  {
+   "id": "vbc-contract-checklist",
+   "label": "VBC Contract Review Checklist",
+   "href": "/research-lab/payment-models?tab=contract-review",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "6",
+    "7",
+    "12"
+   ],
+   "desc": "Review a VBC or APM contract against 65 provisions in eight categories, with a readiness score and a severity-ranked negotiation list."
+  },
+  {
+   "id": "hospital-stress-test",
+   "label": "Hospital Financial Stress Test",
+   "href": "/research-lab/policy-quality?tab=scorecard",
+   "pillars": [
+    "economics",
+    "operations"
+   ],
+   "chapters": [
+    "6",
+    "7",
+    "11",
+    "12"
+   ],
+   "desc": "Stress-test hospital financials against payer mix, Medicaid cuts, and global budget scenarios."
+  },
+  {
+   "id": "hta-studio",
+   "label": "HTA Studio",
+   "href": "/research-lab/policy-quality?tab=hta",
+   "pillars": [
+    "economics"
+   ],
+   "desc": "Build budget impact models and run Monte Carlo PSA with 1,000 iterations."
+  },
+  {
+   "id": "actuarial-lab",
+   "label": "Actuarial Lab",
+   "href": "/research-lab/policy-quality?tab=actuarial",
+   "pillars": [
+    "economics"
+   ],
+   "desc": "Calculate ACA actuarial value, model adverse selection, and IRA drug pricing."
+  },
+  {
+   "id": "fhir-lab",
+   "label": "FHIR Interoperability Lab",
+   "href": "/research-lab/interoperability?tab=fhir",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "4",
+    "5"
+   ],
+   "desc": "Build and validate FHIR R4 resources, test CDS Hooks, check ONC compliance."
+  },
+  {
+   "id": "clinical-data-exchange",
+   "label": "Clinical Data Exchange",
+   "href": "/research-lab/vbc-clinical-quality?tab=hl7",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "5"
+   ],
+   "desc": "Annotated HL7 v2 messages (ADT/ORU), FHIR R4 bundles, HL7↔FHIR bridge, and USCDI v3 data element browser — anchored to 8 Vermont patient scenarios."
+  },
+  {
+   "id": "emr-ehr-lab",
+   "label": "EMR/EHR Lab",
+   "href": "/research-lab/interoperability?tab=emr",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "4"
+   ],
+   "desc": "Model EHR adoption cost & ROI, compare major vendors, audit USCDI data quality, and walk a simulated clinical encounter."
+  },
+  {
+   "id": "statewide-ehr-lab",
+   "label": "Statewide EHR Deployment Modeler",
+   "href": "/research-lab/interoperability?tab=statewide-ehr",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "4",
+    "5"
+   ],
+   "desc": "Model the Act 167 feasibility question: a single statewide EHR vs. FHIR interoperability across Vermont's existing platforms — 10-year TCO, data timeliness, disruption, and vendor lock-in."
+  },
+  {
+   "id": "fhir-implementation-guide",
+   "label": "FHIR Implementation Guide",
+   "href": "/research-lab/interoperability?tab=fhir-guide",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "5",
+    "12"
+   ],
+   "desc": "Step-by-step implementation of the three priority FHIR use cases (patient access, provider access, payer prior authorization), with where each major EHR vendor documents its certified APIs."
+  },
+  {
+   "id": "ai-governance-lab",
+   "label": "AI Clinical Governance Lab",
+   "href": "/research-lab/technology-ai?tab=ai",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "5",
+    "12"
+   ],
+   "desc": "Compare predictive models, detect algorithmic bias, build AI governance frameworks."
+  },
+  {
+   "id": "digital-health-lab",
+   "label": "Digital Health Lab",
+   "href": "/research-lab/technology-ai?tab=digital",
+   "pillars": [
+    "technology"
+   ],
+   "chapters": [
+    "5"
+   ],
+   "desc": "Calculate RPM ROI, model telehealth utilization, optimize EHR interoperability."
+  },
+  {
+   "id": "risk-stratification-engine",
+   "label": "Risk Stratification Engine",
+   "href": "/research-lab/interoperability?tab=risk",
+   "pillars": [
+    "technology",
+    "clinical",
+    "equity"
+   ],
+   "chapters": [
+    "4",
+    "8",
+    "9"
+   ],
+   "desc": "Apply CMS-HCC (V24-based) RAF scoring and segment populations by clinical complexity."
+  },
+  {
+   "id": "risk-stratification-methodology",
+   "label": "Risk Stratification Methodology",
+   "href": "/research-lab/vbc-clinical-quality?tab=risk",
+   "pillars": [
+    "clinical"
+   ],
+   "chapters": [
+    "8",
+    "9"
+   ],
+   "desc": "Step-by-step CMS-HCC (V24 codes) RAF calculation per patient, population tier pyramid, and comparison of HCC vs. ACG vs. CDPS vs. Charlson algorithms."
+  },
+  {
+   "id": "hcc-gap-closure-playbook",
+   "label": "HCC Gap Closure Playbook",
+   "href": "/research-lab/vbc-clinical-quality?tab=hcc-playbook",
+   "pillars": [
+    "technology",
+    "clinical"
+   ],
+   "chapters": [
+    "1",
+    "3",
+    "9",
+    "12"
+   ],
+   "desc": "Retrospective HCC gap analysis on your attributed population, coding education for Vermont's three most common documentation gaps, and Annual Wellness Visit completion program design."
+  },
+  {
+   "id": "vbc-quality-measures",
+   "label": "VBC Quality Measures",
+   "href": "/research-lab/vbc-clinical-quality?tab=quality",
+   "pillars": [
+    "clinical"
+   ],
+   "chapters": [
+    "8",
+    "9"
+   ],
+   "desc": "HEDIS panel with numerator/denominator logic, 30-day readmission (CMS RSRR), and AHRQ PQI avoidable ED analysis — 8 Vermont patient scenarios."
+  },
+  {
+   "id": "high-low-value-care",
+   "label": "High vs. Low Value Care",
+   "href": "/research-lab/vbc-clinical-quality?tab=value",
+   "pillars": [
+    "clinical"
+   ],
+   "chapters": [
+    "9"
+   ],
+   "desc": "A1C/BP panel management with VBC savings calculations, Choosing Wisely scan, and TCOC decomposition by service category."
+  },
+  {
+   "id": "population-modeler",
+   "label": "Population Health Modeler",
+   "href": "/research-lab/population-equity?tab=population",
+   "pillars": [
+    "equity",
+    "clinical"
+   ],
+   "chapters": [
+    "10"
+   ],
+   "desc": "Run Markov chain disease progression models and SIR epidemic dynamics."
+  },
+  {
+   "id": "equity-studio",
+   "label": "Health Equity Studio",
+   "href": "/research-lab/population-equity?tab=equity",
+   "pillars": [
+    "equity"
+   ],
+   "chapters": [
+    "10",
+    "12"
+   ],
+   "desc": "Analyze disparities across 10 outcomes and compute equity-weighted ICER via HEROI."
+  },
+  {
+   "id": "transformation-scorecard",
+   "label": "Transformation Scorecard",
+   "href": "/research-lab/knowledge-workspace?tab=scorecard",
+   "pillars": [
+    "operations"
+   ],
+   "chapters": [
+    "1",
+    "11",
+    "15",
+    "12"
+   ],
+   "desc": "Executive five-pillar dashboard — score all five pillars, with the Equity Imperative as a cross-cutting indicator and Vermont RHT Program milestone tracking."
+  },
+  {
+   "id": "vbc-readiness",
+   "label": "VBC Readiness Assessment",
+   "href": "/research-lab/knowledge-workspace?tab=readiness",
+   "pillars": [
+    "operations",
+    "economics"
+   ],
+   "chapters": [
+    "7",
+    "11",
+    "12"
+   ],
+   "desc": "30-dimension, 6-domain self-assessment producing a readiness score and prioritized gap analysis. Vermont Act 68 presets included."
+  },
+  {
+   "id": "evidence-library",
+   "label": "Evidence Library",
+   "href": "/research-lab/knowledge-workspace?tab=evidence",
+   "pillars": [
+    "operations"
+   ],
+   "chapters": [
+    "11",
+    "12"
+   ],
+   "desc": "Search 25 landmark CEA/CUA studies and 21 CMMI innovation model summaries."
+  },
+  {
+   "id": "research-workspace",
+   "label": "Research Workspace",
+   "href": "/research-lab/knowledge-workspace?tab=workspace",
+   "pillars": [
+    "operations"
+   ],
+   "chapters": [
+    "12"
+   ],
+   "desc": "Save scenarios, build structured reports, manage citations, and export findings."
+  },
+  {
+   "id": "workforce-modeler",
+   "label": "Workforce Modeler",
+   "href": "/research-lab/knowledge-workspace?tab=workforce",
+   "pillars": [
+    "clinical",
+    "operations"
+   ],
+   "chapters": [
+    "11"
+   ],
+   "desc": "Project physician and nursing supply/demand across 12 specialties over 10 years."
+  },
+  {
+   "id": "cin-shared-services",
+   "label": "CIN & Shared Services Modeler",
+   "href": "/research-lab/knowledge-workspace?tab=cin",
+   "pillars": [
+    "operations",
+    "economics"
+   ],
+   "chapters": [
+    "11"
+   ],
+   "desc": "Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing for participating independent hospitals and providers vs. the $1,303/discharge admin-cost premium."
+  },
+  {
+   "id": "ems-transformation",
+   "label": "EMS Transformation Modeler",
+   "href": "/research-lab/knowledge-workspace?tab=ems",
+   "pillars": [
+    "operations"
+   ],
+   "chapters": [
+    "11"
+   ],
+   "desc": "Model Vermont's RHT EMS investment: regionalizing 31 agencies and community-paramedicine treat-and-refer ED diversion, with global-budget margin impact."
+  },
+  {
+   "id": "framework-map",
+   "label": "Five-Pillar Map",
+   "href": "/about/framework",
+   "pillars": [
+    "policy",
+    "technology",
+    "economics",
+    "clinical",
+    "operations",
+    "equity"
+   ],
+   "chapters": [
+    "1",
+    "16"
+   ],
+   "desc": "Explore the Five-Pillar Framework — the conceptual map connecting Policy, Technology, Economics, Clinical, and Operations, each held to the Equity Imperative."
+  },
+  {
+   "id": "htr-simulator",
+   "label": "HTR Simulator",
+   "href": "/htr-simulator",
+   "pillars": [
+    "policy",
+    "technology",
+    "economics",
+    "clinical",
+    "operations",
+    "equity"
+   ],
+   "chapters": [
+    "1",
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "desc": "Model health transformation readiness across the five HTR pillars, with the Equity Imperative scored as a cross-cutting justice check, for any organization or state."
+  },
+  {
+   "id": "transformation-friction-index",
+   "label": "Transformation Friction Index",
+   "href": "/transformation-friction-index",
+   "pillars": [
+    "policy",
+    "operations"
+   ],
+   "chapters": [
+    "1",
+    "14",
+    "15"
+   ],
+   "desc": "Quantify implementation barriers to health transformation across all five pillars for any state or organization."
+  },
+  {
+   "id": "portfolio-sequencing-test",
+   "label": "Portfolio Sequencing Test",
+   "href": "/portfolio-sequencing-test",
+   "pillars": [
+    "policy",
+    "technology",
+    "economics",
+    "clinical",
+    "operations"
+   ],
+   "chapters": [
+    "15"
+   ],
+   "desc": "Run the Portfolio Manager's sequencing test on a transformation portfolio: correctly waiting, late by dependency, or running ahead of its gate."
+  },
+  {
+   "id": "investment-tracker",
+   "label": "Investment Tracker",
+   "href": "/investment-tracker",
+   "pillars": [
+    "economics"
+   ],
+   "chapters": [
+    "7",
+    "15"
+   ],
+   "desc": "Track healthcare M&A, VC, PE, and strategic partnership activity by sector, geography, and deal size."
+  },
+  {
+   "id": "hti-dashboard",
+   "label": "HTI Dashboard",
+   "href": "/hti-dashboard",
+   "pillars": [
+    "policy",
+    "technology",
+    "economics",
+    "clinical",
+    "operations",
+    "equity"
+   ],
+   "chapters": [
+    "13",
+    "15",
+    "16"
+   ],
+   "desc": "Vermont five-pillar status: sourced pillar readiness, dated milestones per pillar, and pace to the January 2028 Strategic Plan deadline."
+  },
+  {
+   "id": "medicaid-eligibility-simulator",
+   "label": "Medicaid Eligibility Simulator",
+   "href": "/medicaid-eligibility-simulator",
+   "pillars": [
+    "policy",
+    "equity"
+   ],
+   "chapters": [
+    "3"
+   ],
+   "desc": "Screen Vermont Medicaid eligibility step-by-step by income, household size, age, and demographics."
+  },
+  {
+   "id": "impact-simulation",
+   "label": "Impact Simulation",
+   "href": "/impact-simulation",
+   "pillars": [
+    "policy",
+    "economics",
+    "clinical",
+    "operations"
+   ],
+   "chapters": [
+    "1",
+    "15"
+   ],
+   "desc": "Model cross-pillar impact of payment reform, care delivery change, technology adoption, workforce strategy, equity interventions, and policy shifts."
+  },
+  {
+   "id": "single-payer-modeler",
+   "label": "Single-Payer Modeler",
+   "href": "/policy/medicare-for-all/modeler",
+   "pillars": [
+    "policy",
+    "economics"
+   ],
+   "chapters": [
+    "2",
+    "14"
+   ],
+   "desc": "Model a single payer for each of Vermont's 14 hospitals: one rate for every patient, or S.1506's cost-based global budgets, on GMCB FY2027 budgets with CBO's national ranges."
+  },
+  {
+   "id": "the-wire",
+   "label": "The Wire",
+   "href": "/the-wire",
+   "pillars": [
+    "policy",
+    "technology",
+    "economics",
+    "clinical",
+    "operations",
+    "equity"
+   ],
+   "chapters": [
+    "13",
+    "14"
+   ],
+   "desc": "Real-time curated feed of the most important healthcare policy, economics, and transformation news signals, plus a Vermont Legislature health-reform bill tracker."
+  }
+ ],
+ "chapters": [
+  {
+   "num": "Preface",
+   "title": "A System at the Breaking Point",
+   "desc": "Why American healthcare is not just expensive but structurally failing — and why incremental adjustment can no longer substitute for transformation.",
+   "group": "Foundations",
+   "pillar": null,
+   "links": [
+    {
+     "label": "About HTR",
+     "href": "/about"
+    },
+    {
+     "label": "Our Framework",
+     "href": "/about/framework"
+    }
+   ]
+  },
+  {
+   "num": "Introduction",
+   "title": "What Transformation Actually Means",
+   "desc": "The Five-Pillar Framework introduced. Why the five pillars are load-bearing in sequence, why equity is an imperative rather than a sixth pillar — and the Vermont Thread that runs through the entire book.",
+   "group": "Foundations",
+   "pillar": null,
+   "links": [
+    "framework-map",
+    "htr-simulator"
+   ]
+  },
+  {
+   "num": "1",
+   "title": "The Five-Pillar Framework and the Execution Sequence",
+   "desc": "The five pillars defined, their nine dependency relationships, the Equity Imperative applied to each, and the failure cascade when any one pillar is missing. Then the execution sequence: the OneCare Vermont failure as a sequencing autopsy, why Technology must precede Economics, the five stages, and the three sequencing principles in practice.",
+   "group": "Foundations",
+   "pillar": null,
+   "links": [
+    "framework-map",
+    "htr-simulator",
+    "transformation-friction-index"
+   ]
+  },
+  {
+   "num": "2",
+   "title": "The Policy Pillar — Legislative Architecture for Structural Reform",
+   "desc": "The Oliver Wyman System Redesign Blueprint. Vermont Act 167 (2022) as the diagnostic mandate. Act 68 (2025) as the operational mandate. Global budget architecture and reference-based pricing.",
+   "group": "Policy Pillar",
+   "pillar": "policy",
+   "links": [
+    {
+     "label": "Vermont Act 167",
+     "href": "/vermont-act-167"
+    },
+    {
+     "label": "Vermont Act 51 (2023)",
+     "href": "/vermont-act-51"
+    },
+    {
+     "label": "Vermont Act 68 (2025)",
+     "href": "/vermont-act-68"
+    },
+    {
+     "label": "Vermont RHT Program",
+     "href": "/vermont-rht-program"
+    },
+    {
+     "label": "Vermont Act 48 (2011): the single-payer attempt",
+     "href": "/policy/medicare-for-all/vermont-act-48"
+    },
+    "single-payer-modeler",
+    {
+     "label": "Policy Overview",
+     "href": "/policy"
+    },
+    "policy-simulator"
+   ]
+  },
+  {
+   "num": "3",
+   "title": "The Policy Pillar in Practice — CMMI Models, Waiver Strategy, and the Federal-State Interface",
+   "desc": "CMMI model landscape (2026). Section 1115 waivers and budget neutrality. Prior authorization reform. The Medicaid policy landscape and H.R. 1 implications.",
+   "group": "Policy Pillar",
+   "pillar": "policy",
+   "links": [
+    "policy-simulator",
+    "hr1-cliff",
+    "medicaid-wr-calculator",
+    {
+     "label": "Vermont Medicaid",
+     "href": "/vermont-medicaid"
+    }
+   ]
+  },
+  {
+   "num": "4",
+   "title": "The Technology Pillar — Data Infrastructure for a Transformed Health System",
+   "desc": "VHCURES, VITL, and the HIE governance shift. FHIR interoperability, the Vermont CIN, statewide EHR feasibility, and AI governance before the risk arrives.",
+   "group": "Technology Pillar",
+   "pillar": "technology",
+   "links": [
+    {
+     "label": "Technology Overview",
+     "href": "/technology"
+    },
+    {
+     "label": "Vermont UHDS",
+     "href": "/vermont-uhds"
+    },
+    {
+     "label": "AI & Machine Learning",
+     "href": "/technology/ai"
+    },
+    {
+     "label": "Data Security & Governance",
+     "href": "/technology/security"
+    },
+    "fhir-lab",
+    "emr-ehr-lab",
+    "statewide-ehr-lab"
+   ]
+  },
+  {
+   "num": "5",
+   "title": "The Technology Pillar in Practice — FHIR, AI Governance, and Clinical Decision Support",
+   "desc": "FHIR implementation reality. AI scribe, remote patient monitoring, telehealth, and diagnostic AI. The AI Clinical Governance Lifecycle. Alert fatigue and CDS effectiveness.",
+   "group": "Technology Pillar",
+   "pillar": "technology",
+   "links": [
+    "clinical-data-exchange",
+    "ai-governance-lab",
+    "digital-health-lab",
+    "fhir-implementation-guide",
+    "statewide-ehr-lab"
+   ]
+  },
+  {
+   "num": "6",
+   "title": "The Economics Pillar — Global Budgets, Reference-Based Pricing, and Financial Reform",
+   "desc": "The fee-for-service trap. Reference-based pricing mechanics. Hospital global budgets and Maryland's decade of evidence. AHEAD Model integration with Act 68. Hospital financial modeling.",
+   "group": "Economics Pillar",
+   "pillar": "economics",
+   "links": [
+    {
+     "label": "AHEAD Model",
+     "href": "/ahead-model"
+    },
+    {
+     "label": "Vermont Act 68 (2025)",
+     "href": "/vermont-act-68"
+    },
+    "apm-design-lab",
+    "global-budget-modeler"
+   ]
+  },
+  {
+   "num": "7",
+   "title": "The Economics Pillar in Practice — VBC Financial Modeling and APM Readiness",
+   "desc": "Shared savings calculations. Risk stratification as the economic engine. The 30-dimension VBC readiness assessment (six domains). APM contract analysis for financial risk.",
+   "group": "Economics Pillar",
+   "pillar": "economics",
+   "links": [
+    "shared-savings-calc",
+    "cea-calculator",
+    "hospital-stress-test",
+    "vbc-readiness"
+   ]
+  },
+  {
+   "num": "8",
+   "title": "The Clinical Pillar — Redesigning Care Delivery for a Transformed System",
+   "desc": "Vermont Blueprint for Health — two decades of evidence. The behavioral health crisis and the three-layer architecture. Collaborative Care Model. Care for Vermont's aging population.",
+   "group": "Clinical Pillar",
+   "pillar": "clinical",
+   "links": [
+    {
+     "label": "Vermont Blueprint for Health",
+     "href": "/vermont-blueprint"
+    },
+    {
+     "label": "Vermont VCCI",
+     "href": "/vermont-vcci"
+    },
+    {
+     "label": "Vermont SASH Program",
+     "href": "/vermont-sash"
+    },
+    {
+     "label": "Clinical Overview",
+     "href": "/clinical"
+    }
+   ]
+  },
+  {
+   "num": "9",
+   "title": "The Clinical Pillar in Practice — Care Model Implementation, Quality Mechanics, and the Vermont Clinical Transformation Toolkit",
+   "desc": "PCMH transformation playbook. Blueprint field staff model. HEDIS improvement methodology — Vermont context. Deploying the Collaborative Care Model operationally. The care transition protocol.",
+   "group": "Clinical Pillar",
+   "pillar": "clinical",
+   "links": [
+    "risk-stratification-methodology",
+    "vbc-quality-measures",
+    "high-low-value-care",
+    "clinical-quality-optimizer"
+   ]
+  },
+  {
+   "num": "10",
+   "title": "The Equity Imperative — Closing Gaps, Not Just Averaging Them",
+   "desc": "Why average outcomes are the wrong target. Equity as the test every pillar must pass — \"is it just?\" — not a sixth thing to build. Vermont's equity landscape and disparity root-cause taxonomy. Rural equity, the GLP-1 access crisis, and measuring equity with HEROI and HEDIS stratification.",
+   "group": "The Equity Imperative",
+   "pillar": "equity",
+   "links": [
+    {
+     "label": "Vermont SDOH & Social Services",
+     "href": "/vermont-sdoh"
+    },
+    {
+     "label": "SDOH Integration",
+     "href": "/equity/sdoh"
+    },
+    {
+     "label": "Algorithmic Bias",
+     "href": "/equity/bias"
+    },
+    "equity-studio"
+   ]
+  },
+  {
+   "num": "11",
+   "title": "The Operations Pillar — Executing Hospital System Transformation",
+   "desc": "Revenue cycle management under global budgets. HCC coding accuracy as a financial lever. The administrative cost gap. Workforce strategy, supply chain, and compliance in a transformed system.",
+   "group": "Operations Pillar",
+   "pillar": "operations",
+   "links": [
+    {
+     "label": "Operations Overview",
+     "href": "/operations"
+    },
+    {
+     "label": "Revenue Cycle Management",
+     "href": "/operations/revenue-cycle"
+    },
+    {
+     "label": "Workforce & Human Capital",
+     "href": "/operations/workforce"
+    },
+    "transformation-scorecard",
+    "cin-shared-services",
+    "ems-transformation"
+   ]
+  },
+  {
+   "num": "12",
+   "title": "Infrastructure for Knowledge Transfer and Implementation",
+   "desc": "How health systems build the internal capacity to execute transformation — learning infrastructure, workforce development, the HTR Platform toolkit, and a framework for selecting advisory support.",
+   "group": "Future & Strategy",
+   "pillar": null,
+   "links": [
+    {
+     "label": "Academy Hub",
+     "href": "/academy"
+    },
+    {
+     "label": "Learning Tracks",
+     "href": "/academy/tracks"
+    },
+    {
+     "label": "Advisory & Services",
+     "href": "/advisory"
+    }
+   ]
+  },
+  {
+   "num": "13",
+   "title": "The Future of Healthcare Transformation: 2026, What Vermont Proves, and What Remains",
+   "desc": "Vermont's five-pillar scorecard (April 2026). Five forces shaping the next decade. The five-pillar forecast 2026–2035 and Vermont's two ten-year trajectories.",
+   "group": "Future & Strategy",
+   "pillar": null,
+   "links": [
+    "innovation-leaderboard",
+    "hti-dashboard",
+    {
+     "label": "Trending Topics",
+     "href": "/trending-topics"
+    }
+   ]
+  },
+  {
+   "num": "14",
+   "title": "Political Sustainability: Protecting Transformation Across Election Cycles",
+   "desc": "Why political sustainability is an analytical problem, not only a political one. The structural durability of Vermont's reform architecture, early-warning signals of political risk, and organizational risk-management strategies.",
+   "group": "Future & Strategy",
+   "pillar": null,
+   "links": [
+    {
+     "label": "Vermont Legislative Resources",
+     "href": "/vermont-legislative-resources"
+    },
+    {
+     "label": "Policy Feasibility Studies",
+     "href": "/policy/feasibility"
+    },
+    {
+     "label": "Medicare for All: the five-pillar test",
+     "href": "/policy/medicare-for-all"
+    },
+    "single-payer-modeler"
+   ]
+  },
+  {
+   "num": "15",
+   "title": "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Five-Pillar Reform",
+   "desc": "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
+   "group": "Future & Strategy",
+   "pillar": null,
+   "links": [
+    "portfolio-sequencing-test",
+    "impact-simulation",
+    "transformation-scorecard",
+    "transformation-friction-index"
+   ]
+  },
+  {
+   "num": "16",
+   "title": "The AHS Restructuring Roadmap: A Five-Pillar Framework for System Architects",
+   "desc": "Vermont's Agency of Human Services restructuring as a live five-pillar implementation case. The statutory mandate of Act 68, the redesigned AHS operating model, and a framework for the 2028 Statewide Strategic Plan.",
+   "group": "Future & Strategy",
+   "pillar": null,
+   "links": [
+    {
+     "label": "Vermont Act 68 (2025)",
+     "href": "/vermont-act-68"
+    },
+    {
+     "label": "Vermont RHT Program ($195M + $190M)",
+     "href": "/vermont-rht-program"
+    },
+    {
+     "label": "RHT Year 1 Review",
+     "href": "/rht-review/vermont"
+    },
+    {
+     "label": "AHEAD Model",
+     "href": "/ahead-model"
+    },
+    {
+     "label": "Vermont Designated Agencies",
+     "href": "/vermont-designated-agencies"
+    }
+   ]
+  }
+ ]
+}

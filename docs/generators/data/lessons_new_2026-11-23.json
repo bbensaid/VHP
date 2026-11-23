@@ -1,0 +1,382 @@
+[
+ {
+  "course": "Health Equity Analytics",
+  "tracks": [
+   {
+    "track": "Health Equity Analytics: Methods and Practice",
+    "lessons": [
+     "From Awareness to Measurement: Why Health Equity Needs Analytics",
+     "Disparity Decomposition: From Raw Gaps to Actionable Signals",
+     "Stratified Quality Measurement: HEDIS, NCQA, and the Star Ratings Fight",
+     "Scoring SDOH Burden: From PRAPARE to Composite Indices",
+     "Weighting Equity Into the Dollar: HEROI and Distributional Cost-Effectiveness",
+     "From Score to Action: Trust, Governance, and Closing the Loop"
+    ]
+   },
+   {
+    "track": "Vermont's Equity Landscape",
+    "lessons": [
+     "Reading Vermont's Equity Data: Geography First, Then Race and Income",
+     "From Gap to Cause: The Five-Category Root Cause Taxonomy",
+     "Rural Equity and the Northeast Kingdom Test"
+    ]
+   },
+   {
+    "track": "Data and Access",
+    "lessons": [
+     "Seeing Who Is Missing: Race and Ethnicity Data Quality",
+     "Small Numbers, Big Stakes: Reporting Equity for Small Groups",
+     "The GLP-1 Access Gap: Who Gets the New Obesity Drugs"
+    ]
+   },
+   {
+    "track": "Accountability and Contracts",
+    "lessons": [
+     "Making Equity Accountable: Indicators, Targets and Owners",
+     "Protecting Equity in Value-Based Contracts: The Eight-Category Audit",
+     "Equity Is Not a Program: The Equity Impact Assessment"
+    ]
+   },
+   {
+    "track": "Action, Community and Capstone",
+    "lessons": [
+     "From Findings to Action: Designing and Testing an Intervention Portfolio",
+     "Community Health Workers, Trust and Partnership",
+     "Capstone: An Equity Analytics and Action Plan"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "Transformation Leadership",
+  "tracks": [
+   {
+    "track": "Leading Mandatory Transformation",
+    "lessons": [
+     "Why Change Management Determines Transformation Success",
+     "Kotter's Eight-Step Framework Applied to Mandatory Payment Reform",
+     "Building the PMO: Portfolio Governance for a Multi-Year Transformation",
+     "Running the Sequencing Test: A Portfolio Register Workshop",
+     "Stakeholder and Governing Board Management Under Mandatory Payment Reform",
+     "Managing Organizational Resistance in a Fixed-Revenue-Envelope Transition",
+     "Sustaining the Change: Benefits Realization and Avoiding Reform Fatigue"
+    ]
+   },
+   {
+    "track": "Implementation Science",
+    "lessons": [
+     "Why Good Plans Fail: Implementation Science and the CFIR",
+     "Testing Before Scaling: The Model for Improvement and PDSA",
+     "Why Innovations Spread, or Do Not: Diffusion in Health Organizations"
+    ]
+   },
+   {
+    "track": "Pace and Capacity",
+    "lessons": [
+     "The Pace Problem: Hard, Soft and External Capacity Constraints",
+     "Choosing What Not to Do: Triage, Dependencies and the Work Plan",
+     "When the Ground Moves: Federal Shocks and Contingency Planning"
+    ]
+   },
+   {
+    "track": "Knowledge Transfer",
+    "lessons": [
+     "From Knowing to Doing: Building Knowledge-Transfer Infrastructure",
+     "Learning Together: The Collaborative Improvement Model",
+     "Whose Number Is It? Appraising Evidence Before You Act On It"
+    ]
+   },
+   {
+    "track": "Advisory Support, Accountability and Capstone",
+    "lessons": [
+     "Hiring Help Well: Selecting and Managing Advisory Support",
+     "Managing by Evidence: The Transformation Dashboard",
+     "Capstone: A Transformation Leadership Plan"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "Medicare for All Through the Five-Pillar Test",
+  "tracks": [
+   {
+    "track": "Foundations: Terms and the Test",
+    "lessons": [
+     "Single Payer, Medicare for All, and the Alternatives",
+     "Reading a Reform Through the Five-Pillar Test"
+    ]
+   },
+   {
+    "track": "Vermont's Attempt, 2011-2014",
+    "lessons": [
+     "Act 48 of 2011: What Vermont Enacted",
+     "The Numbers: From $1.6 Billion to $2.6 Billion",
+     "December 17, 2014: Why Vermont Stopped, and What Survived"
+    ]
+   },
+   {
+    "track": "Federal Versus State: The Walls",
+    "lessons": [
+     "The Medicare Wall: What a State Cannot Reach",
+     "The ERISA Wall: Employer Plans a State Cannot Compel",
+     "Waivers and Federal Dollars: Section 1332 and Section 1115"
+    ]
+   },
+   {
+    "track": "The Federal Bills and the Evidence",
+    "lessons": [
+     "Inside S.1506 and H.R.3069",
+     "The Alternatives: Medicare for America and Medicare at 50",
+     "What CBO Has Estimated, and What It Has Not"
+    ]
+   },
+   {
+    "track": "The Five-Pillar Assessment",
+    "lessons": [
+     "Policy: Authority Not Yet Issued",
+     "Technology and Economics: The Information Exists, the Money Does Not",
+     "Clinical and Operations: Demand, Supply and Capacity"
+    ]
+   },
+   {
+    "track": "Vermont's Hospitals Under a Single Payer",
+    "lessons": [
+     "One Rate for Every Patient: Vermont's Fourteen Hospitals",
+     "Global Budgets Under S.1506, and Vermont's Own Experience"
+    ]
+   },
+   {
+    "track": "What to Build Now, and Capstone",
+    "lessons": [
+     "What to Build Before Authority Arrives",
+     "Capstone: Run the Five-Pillar Test Yourself"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "CMMI Models and Waiver Strategy",
+  "tracks": [
+   {
+    "track": "The Innovation Center: Authority, Record and Landscape",
+    "lessons": [
+     "What the Innovation Center Is, and What Its Record Says",
+     "The 2026 Model Landscape: What Is Live, What Ended, What Is Next",
+     "Scoring a Model Before You Commit: A Practitioner Scorecard"
+    ]
+   },
+   {
+    "track": "State Models: Global Budgets, AHEAD and Episodes",
+    "lessons": [
+     "Hospital Global Budgets: From Maryland to AHEAD",
+     "Vermont and AHEAD: Reading a State Agreement and a Withdrawal",
+     "Mandatory Episodes: How TEAM Works and How to Prepare"
+    ]
+   },
+   {
+    "track": "Section 1115 Waivers",
+    "lessons": [
+     "Section 1115 Waivers: Authority, Process and What States Use Them For",
+     "Budget Neutrality: The Old Test and the 2027 Rewrite",
+     "Vermont's Global Commitment to Health: A Worked Case"
+    ]
+   },
+   {
+    "track": "Prior Authorization and H.R. 1",
+    "lessons": [
+     "Prior Authorization: The Federal Rule, the 2027 APIs and the State Role",
+     "H.R. 1 and Medicaid: Provisions, Dates and Dollars",
+     "Medicaid Work Requirements: The Rule, the Delay and the Court"
+    ]
+   },
+   {
+    "track": "The Practitioner Framework",
+    "lessons": [
+     "Policy Monitoring: Four Functions and a Weekly Routine",
+     "Policy Impact Assessment: From a New Rule to a One-Page Brief",
+     "Capstone: Assess a Federal Change and Brief Your Decision-Makers"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "VBC Financial Modeling and APM Readiness",
+  "tracks": [
+   {
+    "track": "Benchmarks, Shared Savings and Risk",
+    "lessons": [
+     "Benchmarks: The Most Consequential Number in a Value-Based Contract",
+     "The Shared Savings Calculation: A Working Model",
+     "Risk Stratification and the Return on Care Management"
+    ]
+   },
+   {
+    "track": "Readiness and Contract Analysis",
+    "lessons": [
+     "APM Readiness: Six Domains and Thirty Dimensions",
+     "Scoring Readiness and Finding the Binding Constraint",
+     "Reading an APM Contract for Financial Risk"
+    ]
+   },
+   {
+    "track": "Hospital Finance Under Global Budgets and Reference-Based Pricing",
+    "lessons": [
+     "Managing a Hospital Under a Global Budget: The Metrics That Change",
+     "Reference-Based Pricing: What Act 68 Says and What It Does to a Hospital",
+     "The Hospital Financial Stress Test: Four Scenarios, One Plan"
+    ]
+   },
+   {
+    "track": "The Financial Case",
+    "lessons": [
+     "The Return on Transformation: A Framework and Its Evidence Ladder",
+     "Primary Care Economics: What Vermont's Blueprint Evidence Shows and Does Not",
+     "Making the Financial Case: To a Board, a Payer and a Legislature"
+    ]
+   },
+   {
+    "track": "Tools and Capstone",
+    "lessons": [
+     "Lab: Running the APM Shared Savings Calculator",
+     "Cost-Effectiveness Versus Budget Return: Two Different Questions",
+     "Capstone: Build and Defend a Financial Case"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "FHIR, AI Governance and Clinical Decision Support in Practice",
+  "tracks": [
+   {
+    "track": "FHIR in Practice",
+    "lessons": [
+     "FHIR Is a Standard, Not a Product: What Interoperability Actually Requires",
+     "Three FHIR Use Cases That Matter Most",
+     "The Master Patient Index: The Unglamorous Gate"
+    ]
+   },
+   {
+    "track": "AI Governance",
+    "lessons": [
+     "The Federal Landscape for Clinical AI: Four Instruments, Four Statuses",
+     "The Four-Stage AI Governance Lifecycle",
+     "AI in Rural Hospitals: Three Challenges and What the Scribe Evidence Shows"
+    ]
+   },
+   {
+    "track": "Clinical Decision Support",
+    "lessons": [
+     "Alert Fatigue: Why Most Decision Support Is Ignored",
+     "Population Health Decision Support: Four Types and Their Vermont Applications",
+     "Digital Health and Decision Support in Rollout: A Worked RPM Example"
+    ]
+   },
+   {
+    "track": "Cybersecurity in Rural Health Infrastructure",
+    "lessons": [
+     "Why Rural Hospitals Are Exposed: Two Cases and a Growing Attack Surface",
+     "Shared Security Services: A Network Model and the Federal Frame",
+     "Incident Response and Recovery: Planning for the Bad Day"
+    ]
+   },
+   {
+    "track": "Sequencing, Vermont Policy and Capstone",
+    "lessons": [
+     "Sequencing the Technology Pillar: The Matrix and the Analytics Gap",
+     "Vermont's 2026 AI Laws: Acts 101 and 156 and What Remains Open",
+     "Capstone: Take a Clinical AI Tool Through a Go or No-Go Review"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "Political Sustainability of Reform",
+  "tracks": [
+   {
+    "track": "The Durability Analysis",
+    "lessons": [
+     "Political Sustainability Is a Risk-Management Problem",
+     "What Is Hard to Reverse: Four Sources of Durability",
+     "What Is Politically Exposed: Compliance Without Transformation"
+    ]
+   },
+   {
+    "track": "Vermont's Record",
+    "lessons": [
+     "Vermont's Reform History: Why the Cascade Was a Sustainability Design",
+     "The 2026 Record: Four Events and What Each Tested",
+     "Reading a Veto: Who Should Capture the Savings?"
+    ]
+   },
+   {
+    "track": "Early Warning, Scenarios and Monitoring",
+    "lessons": [
+     "Early-Warning Signals: Reading the Risk Before the Statute Changes",
+     "Disruption Scenarios: Planning for Outcomes You Cannot Predict",
+     "Building the Monitoring System: The Wire, the Simulator and the Friction Index"
+    ]
+   },
+   {
+    "track": "Organizational Strategies",
+    "lessons": [
+     "Build Investments That Hold Value Under Every Scenario",
+     "Engaging the Regulatory Process: Data Over Opposition",
+     "Documenting Progress: Evidence as Political Protection"
+    ]
+   },
+   {
+    "track": "Durability by Design and Capstone",
+    "lessons": [
+     "Designing a Reform to Survive: Lessons for Other States",
+     "A Comparison: Maryland's Durable Authority and the End of a Federal Model",
+     "Capstone: Build a Political-Risk Register"
+    ]
+   }
+  ]
+ },
+ {
+  "course": "Clinical Transformation Toolkit",
+  "tracks": [
+   {
+    "track": "Primary Care Transformation",
+    "lessons": [
+     "Patient-Centered Medical Home Recognition: What It Actually Requires",
+     "The Blueprint's Support Infrastructure: Field Staff, Community Health Teams and the Mental Health Pilot",
+     "The Practice Panel: Right-Sizing, Risk Tiers and Where the Money Is"
+    ]
+   },
+   {
+    "track": "Behavioral Health Integration",
+    "lessons": [
+     "Deploying the Collaborative Care Model: Readiness and Billing in 2026",
+     "The Psychiatric Consultation Model and the Care Manager Pipeline",
+     "Certified Community Behavioral Health Clinics: Vermont's Six and What Certification Requires"
+    ]
+   },
+   {
+    "track": "Quality Mechanics",
+    "lessons": [
+     "A Five-Step Method for Improving a HEDIS Measure",
+     "Reading Vermont's Quality Gaps: Diabetes, Follow-Up After Emergency Visits and Equity",
+     "Risk-Adjustment Documentation as Clinical Practice"
+    ]
+   },
+   {
+    "track": "Data and Transitions",
+    "lessons": [
+     "The Clinical Data Foundation: Capture, Aggregate, Manage",
+     "Closing the Loop: The Care Transition Protocol",
+     "Clinical Leadership: The Under-Resourced Capability"
+    ]
+   },
+   {
+    "track": "Commitments, Tools and Capstone",
+    "lessons": [
+     "Five Commitments and the Implementation Matrix",
+     "Platform Lab: Quality, Value and Risk Tools",
+     "Capstone: A Practice Transformation Plan"
+    ]
+   }
+  ]
+ }
+]

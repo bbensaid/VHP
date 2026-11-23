@@ -23,12 +23,14 @@ add(
     "**Needs you:** Section 11.5. The most time-sensitive item is healthtransformationreview.com, which expires 29 December 2026 (auto-renew was OFF on 14 November).",
   ], OK_FILL),
   gap(),
-  P("**Contents:** 1 The ecosystem · 2 The four domains · 3 The book · 4 The Academy · 5 The platform and tools · 6 Content inventory · 7 The AI Analyst · 8 User guide · 9 Administrator and operations guide · 10 Technical documentation · 11 Infrastructure, costs and open items · 12 Content production · 13 Document index and glossary"),
+  P("**Contents:** 1 The ecosystem · 2 The four domains · 3 The book · 4 The Academy · 5 The platform and tools · 6 Content inventory · 7 The AI Analyst · 8 User guide · 9 Administrator and operations guide · 10 Technical documentation · 11 Infrastructure, costs and open items · 12 Content production · 13 Document index and glossary · Part II: 14 Tool reference (all 45 tools) · 15 Book–Academy–tools crosswalk · 16 Playbooks by role · 17 Presenting HTR · 18 Onboarding and operating calendars · 19 Operations procedures · 20 Lesson inventory of the newest courses · 21 One-page quick reference"),
 );
 
 require("./master_a")(ctx);
 require("./master_b")(ctx);
 require("./master_c")(ctx);
+require("./master_d")(ctx);
+require("./master_e")(ctx);
 
 const out = process.argv[2] || "../HTR_Master_Documentation_2026-11-23.docx";
 build(out, "HTR Master Documentation Set", "HTR Master Documentation", c, "23 November 2026");
