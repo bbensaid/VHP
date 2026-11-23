@@ -123,6 +123,22 @@ CATALOG = [
         "keywords": ["vermont rht", "rural health transformation vermont", "vermont rural health"],
     },
     {
+        "id": "rht-review-vermont",
+        "label": "RHT Year 1 Review (Vermont)",
+        "url": "/rht-review/vermont",
+        "category": "Vermont",
+        "description": "A sourced review of what Vermont signed, spent and was scored on in Year 1 of the Rural Health Transformation Program: the 242 signed agreements ($182.2M), what was reported to CMS as put to work, where money moved from the January plan, the Year 2 award, and how Vermont compares with the other 49 states.",
+        "keywords": ["vermont rht review", "vermont rht year 1 review", "rht year 1 review", "vermont rural health transformation year 1", "vermont rht agreements", "vermont rht spending", "how did vermont spend rht", "vermont spend rural health transformation money", "what did vermont do with rht money", "vermont year 2 award", "rht put to work vermont"],
+    },
+    {
+        "id": "rht-review",
+        "label": "RHT Program Review: 50 States",
+        "url": "/rht-review",
+        "category": "States & Programs",
+        "description": "Compare all 50 states' Rural Health Transformation Program: awards for Year 1 and Year 2, money put to work by CMS spending category, what each plan set out to do, CMS policy commitments, and — for the states that publish one — who received the money (itemized award lists, by state).",
+        "keywords": ["rht review", "rural health transformation all states", "rht state comparison", "who received rural health transformation money", "rht award list", "rht recipients", "rht grants by state", "where did rural health transformation money go", "rural health transformation money by state", "rural health transformation spending by state", "rht put to work", "rht dashboard"],
+    },
+    {
         "id": "vermont-dashboard",
         "label": "Vermont Health Dashboard",
         "url": "/dashboard/vermont",
