@@ -56,6 +56,17 @@ const TRACKS = [
       "What an index does, why matching is hard, Vermont's situation as the chapter describes it, privacy at the identity layer and a go or no-go assessment.",
       ["Explain missed and false matches and their consequences", "Assess an identity service before a care coordination project", "Describe governance and consent needs for a shared index"], ["mpi", "identity", "care-coordination"]),
   ]),
+  T(2, "ai-governance", "AI Governance", "The federal landscape for clinical AI, the four-stage governance lifecycle, and rural challenges with the scribe evidence.", [
+    L(4, "fai-ai-regulatory-landscape", "The Federal Landscape for Clinical AI: Four Instruments, Four Statuses", 25,
+      "FDA predetermined change control plans, ONC decision support transparency and the HTI-5 final rule, Section 1557 in 2026, Medicare Advantage algorithm guidance and an obligations register.",
+      ["Describe four federal instruments that touch clinical AI and their verified status", "Explain what a buyer should require by contract when transparency rules change", "Build a one-page obligations register for a clinical AI tool"], ["ai-regulation", "fda", "hti-5", "section-1557"]),
+    L(5, "fai-governance-lifecycle", "The Four-Stage AI Governance Lifecycle", 25,
+      "Pre-deployment evaluation, implementation and training, active monitoring and vendor management, a sample monitoring plan and the platform's 62-item domain-gated checklist.",
+      ["Apply the four lifecycle stages to a clinical AI tool", "Write a monitoring plan with owners and triggers", "Explain why a governance gate is evaluated by domain"], ["ai-governance", "lifecycle", "monitoring"]),
+    L(6, "fai-rural-ai-and-scribes", "AI in Rural Hospitals: Three Challenges and What the Scribe Evidence Shows", 25,
+      "Training data representativeness, monitoring capacity, multilingual scribes, two recent studies of ambient scribes and a measurement plan for grant-funded rollouts.",
+      ["Describe the three rural AI governance challenges", "Summarize what two recent scribe studies show and their limits", "Design a measurement plan for a scribe rollout"], ["rural", "scribes", "evidence"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
