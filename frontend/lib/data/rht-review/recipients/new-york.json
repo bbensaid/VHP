@@ -1,0 +1,870 @@
+{
+ "state": "New York",
+ "slug": "new-york",
+ "asOf": "2026-09-04",
+ "source": {
+  "label": "New York State Department of Health, \"Rural Community Health Integration Awardees List\" (Rural Community Health Integration Initiative)",
+  "url": "https://www.health.ny.gov/facilities/transforming_rural_healthcare/awardees.htm"
+ },
+ "announcedTotal": null,
+ "areaLabel": "Lead applicant county",
+ "rows": [
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 1,
+   "recipient": "Adirondack Health",
+   "county": "Franklin",
+   "amount": 81235.0,
+   "purpose": "Interoperability Improvements. Enhances interoperability between Adirondack Health and Hudson Headwaters to improve information sharing, care coordination, and continuity of care across the regional provider network."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 2,
+   "recipient": "Alice Hyde Medical Center",
+   "county": "Clinton",
+   "amount": 250000.0,
+   "purpose": "Clinton County Planning. Develops a regional care model integrating community-based services with primary and specialty care through collaborative planning, governance development, and service design activities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 3,
+   "recipient": "Alice Hyde Medical Center",
+   "county": "Franklin",
+   "amount": 250000.0,
+   "purpose": "Franklin County Planning. Develops a regional care model integrating community-based services with primary and specialty care through collaborative planning, governance development, and service design activities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 4,
+   "recipient": "Bassett Medical Center",
+   "county": "Delaware",
+   "amount": 500000.0,
+   "purpose": "Delaware County Planning. Develops a regional healthcare transformation roadmap focused on governance, technology, behavioral health, maternal health, EMS integration, and care coordination to improve access and sustainability across rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 5,
+   "recipient": "Bassett Medical Center",
+   "county": "Otsego",
+   "amount": 500000.0,
+   "purpose": "Otsego County Planning. Develops a regional healthcare transformation roadmap focused on governance, technology, behavioral health, maternal health, EMS integration, and care coordination to improve access and sustainability across rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 6,
+   "recipient": "Bassett Medical Center",
+   "county": "Schoharie",
+   "amount": 500000.0,
+   "purpose": "Schoharie County Planning. Develops a regional healthcare transformation roadmap focused on governance, technology, behavioral health, maternal health, EMS integration, and care coordination to improve access and sustainability across rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 7,
+   "recipient": "Bassett Medical Center",
+   "county": "Otsego Delaware Herkimer Madison Montgomery Oneida Schoharie",
+   "amount": 260485.0,
+   "purpose": "Unatego School-Based Health Center. Enhances access to preventive and primary care services for students through expansion of school-based health programming and community partnerships."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 8,
+   "recipient": "Bassett Medical Center",
+   "county": "Otsego Delaware Herkimer Madison Montgomery Oneida Schoharie",
+   "amount": 1362159.0,
+   "purpose": "Population Health Infrastructure, Care Navigation, and Perinatal Behavioral Health Integration. Expands regional population health infrastructure by strengthening care navigation services and integrating behavioral health support into perinatal care pathways across the Bassett region."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 9,
+   "recipient": "Canton-Potsdam Hospital",
+   "county": "St. Lawrence",
+   "amount": 500000.0,
+   "purpose": "St. Lawrence County Planning. Develops a countywide rural health transformation strategy focused on transportation coordination, EMS/community paramedicine, interoperability, cancer care navigation, and virtual care access to improve care coordination and access across St. Lawrence County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 10,
+   "recipient": "Canton-Potsdam Hospital",
+   "county": "St. Lawrence",
+   "amount": 559616.0,
+   "purpose": "County-Wide Care Connectivity and Interoperability Across St. Lawrence County. Establishes a countywide interoperability network connecting hospitals, primary care, EMS, social care, Tribal, and community partners through shared data exchange, closed-loop referrals, and coordinated care transitions."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 11,
+   "recipient": "Care Compass Collaborative",
+   "county": "Broome",
+   "amount": 500000.0,
+   "purpose": "Broome County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 12,
+   "recipient": "Care Compass Collaborative",
+   "county": "Chemung",
+   "amount": 500000.0,
+   "purpose": "Chemung County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 13,
+   "recipient": "Care Compass Collaborative",
+   "county": "Chenango",
+   "amount": 350000.0,
+   "purpose": "Chenango County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 14,
+   "recipient": "Care Compass Collaborative",
+   "county": "Cortland",
+   "amount": 500000.0,
+   "purpose": "Cortland County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 15,
+   "recipient": "Care Compass Collaborative",
+   "county": "Schuyler",
+   "amount": 500000.0,
+   "purpose": "Schuyler County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 16,
+   "recipient": "Care Compass Collaborative",
+   "county": "Tioga",
+   "amount": 500000.0,
+   "purpose": "Tioga County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 17,
+   "recipient": "Care Compass Collaborative",
+   "county": "Tompkins",
+   "amount": 500000.0,
+   "purpose": "Tompkins County Planning. Establishes a regional governance and planning framework for Southern Tier health partners to advance coordinated service delivery, shared priorities, and future implementation initiatives."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 18,
+   "recipient": "Cayuga Medical Center",
+   "county": "Broome",
+   "amount": 2859386.0,
+   "purpose": "Covered, Connected, and Cared For: A Rural Prevention & Right-Care Compact. Creates a multi-county prevention and care coordination initiative focused on connecting residents to appropriate services, improving access, and strengthening rural health outcomes across the region"
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 19,
+   "recipient": "Champlain Valley Physicians Hospital",
+   "county": "Clinton Essex Franklin",
+   "amount": 1369865.0,
+   "purpose": "Regional Virtual Nursing Initiative. Implements a virtual nursing model to strengthen workforce capacity, improve patient support, and enhance clinical efficiency across partner hospitals."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 20,
+   "recipient": "Chautauqua Health Network",
+   "county": "Chautauqua",
+   "amount": 500000.0,
+   "purpose": "Chautauqua County Planning. Develops a countywide rural health transformation roadmap focused on governance, interoperability, primary care access, care coordination, workforce development, and sustainable healthcare delivery across Chautauqua County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 21,
+   "recipient": "Chautauqua Health Network",
+   "county": "Chautauqua",
+   "amount": 656250.0,
+   "purpose": "Primary Care Access and Community Health Expansion Initiative. Expands access to primary care and community-based health services through coordinated regional investments designed to address gaps in care access and population health needs."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 22,
+   "recipient": "Chautauqua Health Network",
+   "county": "Chautauqua",
+   "amount": 682500.0,
+   "purpose": "Integrated Clinical Training and Leadership Development for Rural Health Transformation. Builds a sustainable rural healthcare workforce through regional clinical training, leadership development, and professional advancement opportunities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 23,
+   "recipient": "Chenango Health Network",
+   "county": "Chenango",
+   "amount": 150000.0,
+   "purpose": "Chenango County Planning. Develops a community-informed roadmap to integrate behavioral health across primary care, hospital, public health, and community services, including strategies for care coordination, crisis response, telehealth, workforce development, data sharing, and sustainability in Chenango County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 24,
+   "recipient": "Chenango Health Network",
+   "county": "Chenango",
+   "amount": 45000.0,
+   "purpose": "Stigma Reduction and Wellness Transformation. Implements a countywide behavioral health campaign combining stigma reduction, trauma-informed provider training, community-based engagement, wellness programming, and referral connections to encourage earlier access to care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 25,
+   "recipient": "Chenango Health Network",
+   "county": "Chenango",
+   "amount": 80896.2,
+   "purpose": "Rural Integrated Behavioral Health Access Expansion (UHS Psychiatry Consultation Model). Establishes a rapid-access psychiatric consultation model that connects rural primary care providers with psychiatric expertise through provider consultations, one-time video evaluations, and coordinated referral pathways."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 26,
+   "recipient": "Clifton Springs Hospital & Clinic",
+   "county": "Ontario Seneca",
+   "amount": 950000.0,
+   "purpose": "Coordinated Post-Discharge Support. Improves transitions of care through enhanced post-discharge follow-up, care coordination, and patient navigation services aimed at reducing avoidable utilization."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 27,
+   "recipient": "Columbia Memorial Hospital",
+   "county": "Columbia",
+   "amount": 275325.0,
+   "purpose": "Columbia County Planning. Develops a bi-county rural health transformation roadmap focused on care coordination, maternal and child health, behavioral health, preventive care, workforce capacity, and social care integration to improve access and health equity across Columbia and Greene counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 28,
+   "recipient": "Columbia Memorial Hospital",
+   "county": "Greene",
+   "amount": 500000.0,
+   "purpose": "Greene County Planning. Develops a bi-county rural health transformation roadmap focused on care coordination, maternal and child health, behavioral health, preventive care, workforce capacity, and social care integration to improve access and health equity across Columbia and Greene counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 29,
+   "recipient": "Columbia Memorial Hospital",
+   "county": "Columbia Greene",
+   "amount": 1000000.0,
+   "purpose": "Expansion of Integrated Behavioral Health Model to Women's Health Sites. Expands integrated behavioral health services within women's health practices by embedding behavioral health care managers, psychiatric consultation, and coordinated treatment pathways to improve access to mental health care and reduce fragmentation."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 30,
+   "recipient": "Community Memorial Hospital",
+   "county": "Madison Oneida",
+   "amount": 1581930.0,
+   "purpose": "No Wrong Door: A Rural Care Partnership for Madison and Oneida Counties. Establishes an integrated rural care network that helps residents access healthcare, behavioral health, and social services through a coordinated and patient-centered referral approach."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 31,
+   "recipient": "Coordinated Behavioral Health Services",
+   "county": "Dutchess",
+   "amount": 58747.0,
+   "purpose": "Dutchess County Planning. Develops a regional strategy to improve transitions of care through enhanced discharge planning, technology-enabled referrals, care coordination workflows, interoperability, and sustainable post-acute care models."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 32,
+   "recipient": "Coordinated Behavioral Health Services",
+   "county": "Orange",
+   "amount": 100000.0,
+   "purpose": "Orange County Planning. Develops a regional strategy to improve transitions of care through enhanced discharge planning, technology-enabled referrals, care coordination workflows, interoperability, and sustainable post-acute care models."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 33,
+   "recipient": "Coordinated Behavioral Health Services",
+   "county": "Putnam",
+   "amount": 26367.0,
+   "purpose": "Putnam County Planning. Develops a regional strategy to improve transitions of care through enhanced discharge planning, technology-enabled referrals, care coordination workflows, interoperability, and sustainable post-acute care models."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 34,
+   "recipient": "Coordinated Behavioral Health Services",
+   "county": "Dutchess Orange Putnam Sullivan Ulster",
+   "amount": 741641.0,
+   "purpose": "Access to Care Initiative: ClinicRx. Implements a technology-enabled rapid referral and care transition model that connects hospital patients with timely outpatient behavioral health, care management, peer support, and social care services to reduce avoidable readmissions and emergency department utilization."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 35,
+   "recipient": "East Hill Family Medical",
+   "county": "Cayuga",
+   "amount": 250000.0,
+   "purpose": "Cayuga County Planning. Implements the THRIVE Collaborative to expand community paramedicine, nutrition access, suicide prevention, interoperability, telehealth connectivity, and data-driven care coordination for high-risk rural residents in Cayuga County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 36,
+   "recipient": "Elizabethtown Community Hospital",
+   "county": "Essex",
+   "amount": 500000.0,
+   "purpose": "Essex County Planning. Develops an integrated rural chronic disease management roadmap that strengthens care transitions, community paramedicine, remote monitoring, care coordination, and support services for residents with COPD, CHF, and other high-risk chronic conditions."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 37,
+   "recipient": "Elizabethtown Community Hospital",
+   "county": "Essex",
+   "amount": 500000.0,
+   "purpose": "Integrated Rural Chronic Disease Management and Community Paramedicine Program. Implements a Transitional Care Clinic and Community Paramedicine program that provides post-discharge follow-up, chronic disease management, home-based support, and care coordination to reduce avoidable emergency department visits and hospital readmissions."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 38,
+   "recipient": "Ellenville Regional Hospital",
+   "county": "Ulster",
+   "amount": 500000.0,
+   "purpose": "Ulster County Planning. Develops a countywide rural health transformation strategy to improve chronic disease management, maternal and child health, behavioral health, substance use services, care coordination, and access to preventive and specialty care through an integrated health network across Ulster County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 39,
+   "recipient": "Ellenville Regional Hospital",
+   "county": "Ulster",
+   "amount": 3000000.0,
+   "purpose": "New York Virtual Integrated Specialty Telehealth Access (NY-VISTA). Creates a multi-county virtual specialty care network that connects rural hospitals to telepsychiatry, tele-neurology/tele-stroke, cardiology, and other specialty services to improve timely access to care, reduce transfers, and strengthen rural care coordination."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 40,
+   "recipient": "F.F. Thompson Hospital",
+   "county": "Ontario",
+   "amount": 498750.0,
+   "purpose": "Ontario County Planning. Develops a countywide rural health integration network that strengthens governance, care coordination, data sharing, workforce development, and sustainable delivery models for maternal health, behavioral health, colorectal cancer screening, and geriatric care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 41,
+   "recipient": "F.F. Thompson Hospital",
+   "county": "Ontario",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child and Family Health Continuum. Expands integrated maternal and child health services through postpartum telehealth support, lactation care management, autism assessment and consultation, and family-centered colorectal cancer screening to improve preventive care and care coordination in rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 42,
+   "recipient": "Fort Drum Regional Health Planning Org",
+   "county": "Jefferson",
+   "amount": 500000.0,
+   "purpose": "Jefferson County Planning. Develops a rural health transformation roadmap that identifies priority healthcare needs, evaluates regional solutions, and creates implementation-ready projects focused on access, care coordination, workforce, technology, behavioral health, maternal health, chronic disease, and community-based care."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 43,
+   "recipient": "Fort Drum Regional Health Planning Org",
+   "county": "Lewis",
+   "amount": 500000.0,
+   "purpose": "Lewis County Planning. Develops a rural health transformation roadmap that identifies priority healthcare needs, evaluates regional solutions, and creates implementation-ready projects focused on access, care coordination, workforce, technology, behavioral health, maternal health, chronic disease, and community-based care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 44,
+   "recipient": "Fort Drum Regional Health Planning Org",
+   "county": "Jefferson Lewis St. Lawrence",
+   "amount": 454482.0,
+   "purpose": "Improving Rural Healthcare Access & Outcomes via Community Health Workers. Expands the use of Community Health Workers across primary care, behavioral health, and emergency department settings to reduce preventable emergency visits and readmissions, improve preventive care, and address health-related social needs for rural residents."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 45,
+   "recipient": "Fort Drum Regional Health Planning Org",
+   "county": "Jefferson Lewis St. Lawrence",
+   "amount": 1028055.0,
+   "purpose": "Improving Cancer Screening, Oral Health, Tobacco Prevention, & Behavioral Health Outcomes Through Messaging & Clinical Interventions. Improves cancer screening, oral health, behavioral health, and substance use outcomes through regional public health campaigns, primary care-based preventive interventions, EMS-led prevention activities, and school-based social-emotional learning programs."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 46,
+   "recipient": "Geneva General Hospital",
+   "county": "Ontario",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child and Family Health Continuum. Expand integrated maternal and child health services through postpartum telehealth support, lactation care management, autism assessment and consultation, and family-centered colorectal cancer screening to improve preventive care, early childhood outcomes, and care coordination for rural families."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 47,
+   "recipient": "Glens Falls Hospital/ Hudson Headwaters",
+   "county": "Hamilton",
+   "amount": 500000.0,
+   "purpose": "Hamilton County Planning. Develops a regional rural health transformation roadmap focused on care coordination, specialty access, workforce sustainability, technology integration, behavioral health, maternal health, and long-term healthcare system sustainability."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 48,
+   "recipient": "Glens Falls Hospital/ Hudson Headwaters",
+   "county": "Warren",
+   "amount": 500000.0,
+   "purpose": "Warren County Planning. Develops a regional rural health transformation roadmap focused on care coordination, specialty access, workforce sustainability, technology integration, behavioral health, maternal health, and long-term healthcare system sustainability."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 49,
+   "recipient": "Glens Falls Hospital/ Hudson Headwaters",
+   "county": "Washington",
+   "amount": 500000.0,
+   "purpose": "Washington County Planning. Develops a regional rural health transformation roadmap focused on care coordination, specialty access, workforce sustainability, technology integration, behavioral health, maternal health, and long-term healthcare system sustainability."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 50,
+   "recipient": "Greenport Rescue Squad",
+   "county": "Columbia",
+   "amount": 312035.67,
+   "purpose": "Columbia County Regional Emergency Maternal Care Integration Initiative. Creates a countywide emergency maternal and neonatal care network that strengthens EMS-hospital coordination, clinician readiness, transport capabilities, and access to time-sensitive maternal and pediatric emergency care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 51,
+   "recipient": "Guthrie Cortland Medical Center",
+   "county": "Broome Chemung Chenango Cortland Delaware Otsego Schuyler Steuben Tioga Tompkins",
+   "amount": 1848105.0,
+   "purpose": "Clinical Pharmacy\u2013Enabled Regional Care Management Continuum with Integrated Behavioral Health (RCMC). Expands transitional and primary care management through a shared clinical pharmacy and behavioral health integration model that improves medication management, care coordination, and post-discharge support for high-risk rural patients across the Southern Tier."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 52,
+   "recipient": "HealthAlliance of the Hudson Valley",
+   "county": "Ulster",
+   "amount": 1070688.0,
+   "purpose": "Rural Maternal Health and Fetal Medicine Expansion Program. Expands access to high-risk maternal care by establishing a regional maternal-fetal medicine network that combines on-site specialty services, enhanced diagnostic imaging, care coordination, diabetes education, and telehealth support for rural pregnant patients in the Hudson Valley."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 53,
+   "recipient": "Healthy Alliance Foundation",
+   "county": "Rensselaer",
+   "amount": 500000.0,
+   "purpose": "Rensselaer County Planning. Develops a regional care coordination and community information exchange strategy that embeds navigators and community health workers across healthcare, behavioral health, public health, and social service organizations to improve referrals, care coordination, and access to services."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 54,
+   "recipient": "Healthy Alliance Foundation",
+   "county": "Schenectady",
+   "amount": 500000.0,
+   "purpose": "Schenectady County Planning. Develops an integrated regional health network that connects hospitals, federally qualified health centers, public health, social care, and community organizations through shared referral pathways, care coordination, and community information exchange infrastructure."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 55,
+   "recipient": "Hudson Headwaters",
+   "county": "Warren Washington Essex Hamilton",
+   "amount": 2999572.0,
+   "purpose": "Improving and Sustaining Access to Maternal Health Care in the North Country. Implements a regional maternal health model that expands OB/GYN, maternal-fetal medicine, pediatric, and care navigation services while developing a sustainable labor and perinatal care framework to preserve maternity services across the North Country."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 56,
+   "recipient": "Institute for Family Health",
+   "county": "Ulster",
+   "amount": 699350.94,
+   "purpose": "Improving Hypertension Control Through Remote Patient Monitoring (RPM). Expands access to technology-enabled hypertension management by deploying remote blood pressure monitoring, patient navigation, and coordinated primary care outreach to improve blood pressure control and reduce preventable emergency visits and hospital readmissions among rural residents of Ulster County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 57,
+   "recipient": "Jones Memorial Hospital",
+   "county": "Allegany",
+   "amount": 498750.0,
+   "purpose": "Allegany County Planning. Develops a countywide rural health transformation roadmap that establishes governance, integrated care workflows, data-sharing infrastructure, workforce strategies, and financial sustainability models to support maternal health, behavioral health, preventive care, and care transitions across Allegany County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 58,
+   "recipient": "Jones Memorial Hospital",
+   "county": "Allegany",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child, and Family Health Continuum. Expands evidence-based maternal, child, and family health services through postpartum telehealth support, lactation care management, autism assessment and provider training, and family-centered colorectal cancer screening to improve preventive care and care coordination in rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 59,
+   "recipient": "Lewis County General Hospital",
+   "county": "Lewis St. Lawrence Jefferson",
+   "amount": 292688.79,
+   "purpose": "Provider Recruitment and Retention Initiative. Implements a regional provider recruitment initiative to expand access to primary care, pediatric, OB/GYN, and pulmonology services by recruiting and retaining clinicians across Lewis, Jefferson, and St. Lawrence Counties, reducing preventable emergency visits and improving access to preventive care."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 60,
+   "recipient": "Madison County Rural Health Council",
+   "county": "Madison",
+   "amount": 292500.0,
+   "purpose": "Madison County Planning. Develops a countywide rural health integration network by combining hospital, behavioral health, care coordination, public health, and community data to identify high-risk populations, strengthen care transitions, reduce avoidable hospital utilization, and expand access to preventive, behavioral health, dental, and social services."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 61,
+   "recipient": "Margaretville Memorial Hospital",
+   "county": "Delaware",
+   "amount": 1000000.0,
+   "purpose": "Hudson Valley Rural Cancer Prevention and Follow-Up Network: A Regional Operating Model for Colorectal, Prostate, Breast, and Lung Cancer. Establishes a six-county regional cancer screening and navigation network that expands colorectal and prostate cancer screening, strengthens diagnostic follow-up and referral closure, and builds the foundation for future breast and lung cancer screening services across rural Hudson Valley communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 62,
+   "recipient": "Mohawk Valley Health System",
+   "county": "Herkimer Oneida",
+   "amount": 1850000.0,
+   "purpose": "BLOOM (Bringing Local Outreach, Opportunity & Maternal Support) Mobile Maternal Health Support Initiative. Deploys mobile maternal health support teams consisting of community health workers, doulas, peer support specialists, and nurse coordinators to improve prenatal engagement, postpartum support, care coordination, and access to maternal health services across Oneida and Herkimer Counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 63,
+   "recipient": "Montefiore St. Luke's Cornwall",
+   "county": "Orange",
+   "amount": 400000.0,
+   "purpose": "Orange County Planning. Develops a countywide rural health transformation strategy that strengthens maternal health services, home-based care, care coordination, workforce planning, and long-term sustainability through the THRIVE (Transforming Health through Regional Investment, Value and Engagement) regional health network in Orange County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 64,
+   "recipient": "Nathan Littauer Hospital and Nursing Home",
+   "county": "Fulton",
+   "amount": 500000.0,
+   "purpose": "Fulton County Planning. Develops a sustainable regional maternity care network and regional birthing center model focused on preserving local obstetric access, strengthening workforce capacity, improving specialty consultation, and enhancing maternal and neonatal outcomes."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 65,
+   "recipient": "Nathan Littauer Hospital and Nursing Home",
+   "county": "Fulton Montgomery",
+   "amount": 1151467.0,
+   "purpose": "Regional Maternal Interoperability and Care Coordination Initiative. Implements interoperable maternal health infrastructure across Nathan Littauer Hospital and St. Mary's Healthcare to improve obstetric documentation, fetal monitoring, information sharing, specialty consultation, referral coordination, and continuity of maternal care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 66,
+   "recipient": "Newark-Wayne Community Hospital",
+   "county": "Wayne",
+   "amount": 657099.0,
+   "purpose": "Wayne County Dental Clinic. Establishes a county-operated dental clinic that expands access to preventive, urgent, and coordinated oral healthcare services, reducing treatment delays and avoidable emergency department utilization for dental conditions in Wayne County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 67,
+   "recipient": "Newark-Wayne Community Hospital",
+   "county": "Wayne",
+   "amount": 932901.0,
+   "purpose": "EMS Expansion. Strengthens rural emergency response through an advanced life support ambulance equipped with maternal-fetal monitoring and virtual behavioral health consultation capabilities to improve emergency, maternal, and behavioral healthcare access across Wayne County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 68,
+   "recipient": "Newark-Wayne Community Hospital",
+   "county": "Wayne",
+   "amount": 1410000.0,
+   "purpose": "Women's Health Access Improvement Through Virtual Care and Mobile Mammo / Ultrasound. Expands a mobile women's health clinic that provides breast cancer screening, obstetric and gynecologic ultrasound, prenatal laboratory services, maternal-fetal medicine consultation, and virtual specialty care to improve access for rural women across Wayne County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 69,
+   "recipient": "Nicholas Noyes Hospital",
+   "county": "Livingston",
+   "amount": 498750.0,
+   "purpose": "Livingston County Planning. Develops a countywide rural health transformation strategy focused on maternal and child health, behavioral health, geriatric care, workforce development, care coordination, and health information integration to support implementation-ready solutions across Livingston County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 70,
+   "recipient": "Nicholas Noyes Hospital",
+   "county": "Livingston",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child and Family Health Continuum. Expands evidence-based maternal, child, and family health services through postpartum telehealth support, lactation care management, autism assessment and consultation, and family-centered colorectal cancer screening to improve preventive care, care coordination, and early childhood outcomes in rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 71,
+   "recipient": "Northern Dutchess Hospital",
+   "county": "Columbia",
+   "amount": 224675.0,
+   "purpose": "Regional Ambulance Transfer Program Planning Initiative. Develops an implementation-ready regional ambulance transfer system that strengthens interfacility transport capacity, EMS coordination, maternal and behavioral health transfer pathways, workforce development, and access to higher levels of care."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 72,
+   "recipient": "ODA Primary Health Care Network",
+   "county": "Sullivan",
+   "amount": 2687998.0,
+   "purpose": "Year-Round Expansion of ODA's Monticello Site with Integrated Infusion Services. Converts ODA's seasonal Monticello clinic into a year-round health center providing primary care, specialty care, infusion services, pharmacy access, and colorectal cancer screening to improve access and reduce healthcare disparities in Sullivan County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 73,
+   "recipient": "Oneida Health",
+   "county": "Madison",
+   "amount": 190000.0,
+   "purpose": "Madison County Planning. Develops a regional rural health transformation strategy focused on care transitions, population health analytics, behavioral health integration, EHR connectivity, and community-based care coordination."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 74,
+   "recipient": "Oneida Health",
+   "county": "Madison Oneida",
+   "amount": 400000.0,
+   "purpose": "Population Health Data and Analytics and Implementation Support. Leverages population health analytics and consulting expertise to identify high-risk populations, care gaps, and SDOH needs, enabling targeted interventions and a data-driven regional care strategy."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 75,
+   "recipient": "Oneida Health",
+   "county": "Madison Oneida",
+   "amount": 440000.0,
+   "purpose": "Enhanced Emergency Department Care Transition Program. Expands post-discharge care coordination through a dedicated ED transition team that connects high-risk patients to primary care, behavioral health, specialty services, and community supports to reduce preventable readmissions and improve health outcomes."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 76,
+   "recipient": "Oswego Hospital",
+   "county": "Oswego",
+   "amount": 500000.0,
+   "purpose": "Oswego County Planning. Develops a countywide rural health transformation roadmap that validates maternal health interventions, strengthens care coordination partnerships, and identifies future service-line investments to improve access, continuity of care, and population health outcomes across Oswego County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 77,
+   "recipient": "Oswego Hospital",
+   "county": "Oswego",
+   "amount": 650000.0,
+   "purpose": "Care Navigation, Postpartum Mental Health, and Breastfeeding Support. Implements a coordinated maternal care navigation model that expands postpartum mental health services, breastfeeding support, social determinants of health screening, and community-based referrals to improve maternal and infant health outcomes."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 78,
+   "recipient": "Oswego Hospital",
+   "county": "Oswego",
+   "amount": 1900000.0,
+   "purpose": "OB/GYN Workforce Retention, Pipeline, and Recruitment. Strengthens and expands the rural maternal health workforce through provider retention incentives, targeted OB/GYN and CNM recruitment, and academic training partnerships that build a sustainable pipeline of obstetric clinicians for Oswego County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 79,
+   "recipient": "Pivital Public Health Partnership",
+   "county": "Seneca",
+   "amount": 500000.0,
+   "purpose": "Seneca County Planning. Develops a multi-county rural health transformation strategy that strengthens behavioral health integration, maternal and child health, oral health, workforce development, care coordination, telehealth, and community-based services through a shared regional governance and implementation framework."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 80,
+   "recipient": "Pivital Public Health Partnership",
+   "county": "Wayne",
+   "amount": 500000.0,
+   "purpose": "Wayne County Planning. Develops a multi-county rural health transformation strategy that strengthens behavioral health integration, maternal and child health, oral health, workforce development, care coordination, telehealth, and community-based services through a shared regional governance and implementation framework."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 81,
+   "recipient": "Putnam Hospital",
+   "county": "Putnam",
+   "amount": 473633.0,
+   "purpose": "Putnam County Planning. Develops an integrated implementation strategy that unifies behavioral health care coordination, substance use recovery services, and maternal health navigation through shared governance, clinical workflows, data infrastructure, and sustainability planning,"
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 82,
+   "recipient": "Putnam Hospital",
+   "county": "Putnam Ulster",
+   "amount": 778061.0,
+   "purpose": "Rural Roots Recovery (RRR) Post-Discharge Behavioral Health Follow-Up Program. Implements a licensed clinician-led behavioral health follow-up and care transition program that connects recently discharged patients to treatment, recovery resources, and social supports to reduce avoidable emergency department visits and hospital readmissions."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 83,
+   "recipient": "Refuah Health Center",
+   "county": "Sullivan",
+   "amount": 500000.0,
+   "purpose": "Sullivan County Planning. Develops a countywide rural health transformation roadmap that integrates care coordination, technology and AI-enabled care delivery, workforce development, and service-capacity planning to improve access, preventive care, and health outcomes across Sullivan County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 84,
+   "recipient": "Refuah Health Center",
+   "county": "Sullivan",
+   "amount": 747437.0,
+   "purpose": "Substance Use Disorder & Opioid Overdose Prevention \u2013 County Network Capacity. Establishes a coordinated countywide screening-to-treatment network that expands substance use disorder treatment capacity, strengthens overdose prevention, and connects emergency, primary care, behavioral health, and community partners through standardized referral and warm-handoff pathways."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 85,
+   "recipient": "Refuah Health Center",
+   "county": "Sullivan",
+   "amount": 906563.0,
+   "purpose": "Community Health Infrastructure. Expands rural healthcare access through a mobile primary care and screening program, community health workforce, specialty referral pathways, dental services, and workforce development initiatives that bring preventive and primary care closer to underserved communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 86,
+   "recipient": "Refuah Health Center",
+   "county": "Sullivan",
+   "amount": 1346000.0,
+   "purpose": "Maternal-Child Health Capacity. Expands maternal, pediatric, family medicine, and preventive care capacity in Sullivan County through enhanced OB/GYN coverage, prenatal-to-delivery care coordination, mobile cancer screening, and pediatric/prenatal dental services to improve prenatal access, increase in-county deliveries, and strengthen maternal and child health outcomes."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 87,
+   "recipient": "Rome Memorial Hospital",
+   "county": "Oneida",
+   "amount": 500000.0,
+   "purpose": "Oneida County Planning. Develops an integrated rural health network that aligns healthcare providers, behavioral health organizations, public agencies, and community partners through shared governance, care coordination, workforce development, and health-related social needs strategies to improve health outcomes across Oneida County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 88,
+   "recipient": "Rome Memorial Hospital",
+   "county": "Oneida",
+   "amount": 99622.0,
+   "purpose": "Expanding Dental Health Capacity. Expands preventive and restorative dental care access by recruiting and retaining additional dental hygienists and a dentist, reducing wait times and avoidable emergency department visits for untreated dental conditions."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 89,
+   "recipient": "Soldiers and Sailors Memorial Hospital",
+   "county": "Yates",
+   "amount": 498750.0,
+   "purpose": "Yates County Planning. Develops a countywide rural health integration network that strengthens governance, care coordination, technology infrastructure, workforce development, and financial sustainability to support maternal health, behavioral health, chronic disease management, and care transitions across Yates County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 90,
+   "recipient": "Soldiers and Sailors Memorial Hospital",
+   "county": "Yates",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child and Family Health Continuum. Expands maternal and child health supports through telehealth postpartum care, lactation management, autism screening and assessment, and family-centered colorectal cancer screening to improve preventive care, care coordination, and early childhood outcomes in rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 91,
+   "recipient": "Southern Tier Health Care System",
+   "county": "Cattaraugus",
+   "amount": 500000.0,
+   "purpose": "Cattaraugus County Planning. Develops a countywide rural health integration roadmap that strengthens governance, care coordination, transitions of care, behavioral health integration, interoperability, and regional collaboration to improve access to the right care at the right time across Cattaraugus County."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 92,
+   "recipient": "St. James Hospital",
+   "county": "Steuben",
+   "amount": 498750.0,
+   "purpose": "Steuben County Planning. Develops a countywide rural health integration network focused on governance, care coordination, technology integration, workforce development, and financial sustainability to support maternal health, behavioral health, colorectal screening, and post-acute care coordination."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 93,
+   "recipient": "St. James Hospital",
+   "county": "Steuben",
+   "amount": 679350.0,
+   "purpose": "Rural Maternal, Child and Family Health Continuum. Expands evidence-based maternal and child health services through postpartum telehealth support, lactation care management, autism assessment and consultation, and family-centered colorectal cancer screening to improve preventive care and care coordination in rural communities."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 94,
+   "recipient": "St. Mary's Healthcare",
+   "county": "Montgomery",
+   "amount": 500000.0,
+   "purpose": "Montgomery County Planning. Develops a sustainable regional specialty care network focused on specialty workforce stabilization, physician recruitment and retention, imaging integration, interoperability, emergency medicine, hospitalist medicine, radiology, and coordinated specialty-care access."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 95,
+   "recipient": "Sun River Health",
+   "county": "Dutchess",
+   "amount": 441253.0,
+   "purpose": "Dutchess County Planning. Develops a countywide rural health integration network and implementation roadmap focused on transportation access, workforce development, care coordination, data sharing, behavioral health, specialty care access, and community health transformation in rural Dutchess County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 96,
+   "recipient": "Sun River Health",
+   "county": "Dutchess",
+   "amount": 359170.0,
+   "purpose": "Enhanced Primary Care Workforce. Establishes a rural Licensed Practical Nurse (LPN) training pipeline through academic-clinical partnerships, simulation-based education, and community-based clinical placements to address workforce shortages and expand primary care capacity in Dutchess County."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 97,
+   "recipient": "Sun River Health",
+   "county": "Dutchess",
+   "amount": 807963.0,
+   "purpose": "Enhanced Care Navigation and Care Management System. Creates an integrated countywide navigation and care management system utilizing community health workers, maternal health navigators, medication-assisted treatment care management, and technology-enabled nurse triage to improve access, care coordination, and health outcomes for rural residents."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 98,
+   "recipient": "The Chautauqua Center",
+   "county": "Chautauqua",
+   "amount": 1000000.0,
+   "purpose": "LECOM Workforce Development Implementation Project. Expands rural clinical training, residency programs, physician recruitment, and academic-clinical partnerships among The Chautauqua Center, Arnot Health, and LECOM to strengthen the healthcare workforce, improve access to preventive and specialty care, and create a sustainable pipeline of providers"
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 99,
+   "recipient": "The Family Counseling Center of Fulton County",
+   "county": "Fulton",
+   "amount": 629786.4,
+   "purpose": "Coordinated Mobile Behavioral Health Services. Establishes a mobile behavioral health clinic and integrated referral network that brings mental health and substance use services directly into rural communities while strengthening hospital-to-community care transitions, care coordination, and early intervention."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 100,
+   "recipient": "Trustees of the Masonic Hall & Asylum Fund",
+   "county": "Herkimer",
+   "amount": 500000.0,
+   "purpose": "Herkimer County Planning. Develops an implementation-ready rural healthcare transformation strategy that integrates primary care, behavioral health, telehealth, remote diagnostics, specialty access, and care coordination through a Community Outpatient Clinic, Technology-Enabled Rural Care Access Network, and Rural Behavioral Health Integration Network."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 101,
+   "recipient": "United Memorial Medical Center",
+   "county": "Genesee",
+   "amount": 1060000.0,
+   "purpose": "Transforming Rural Care Transitions Through Coordinated Post-Discharge Support. Creates a coordinated post-discharge care transitions model that combines nurse follow-up, virtual pharmacist medication reconciliation, specialty consultation, and eConsult support to reduce preventable readmissions and improve recovery after hospitalization."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 102,
+   "recipient": "United Memorial Medical Center",
+   "county": "Genesee",
+   "amount": 1410000.0,
+   "purpose": "Women's Health Access Improvement Through Virtual Care and Mobile Mammography/Ultrasound. Deploys a mobile women's health unit providing mammography, obstetric and gynecologic ultrasound, prenatal laboratory services, maternal-fetal consultation, and virtual specialty care to expand access for rural women."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 103,
+   "recipient": "Upstate Caring Partners",
+   "county": "Oneida",
+   "amount": 1477664.0,
+   "purpose": "Integrated Behavioral Health Crisis Response & Care Coordination for High-Need Populations. Embeds specialized IDD and behavioral health expertise within Wynn Hospital and establish coordinated crisis response, discharge planning, community outreach, and care coordination pathways to reduce avoidable emergency department utilization and readmissions among high-need populations."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 104,
+   "recipient": "Western New York Rural Area Health Education Center",
+   "county": "Genesee",
+   "amount": 500000.0,
+   "purpose": "Genesee County Planning. Develops a regional healthcare transformation roadmap that assesses access, workforce, care coordination, behavioral health integration, organizational models, and population health needs to guide implementation-ready solutions across Genesee, Orleans, and Wyoming Counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 105,
+   "recipient": "Western New York Rural Area Health Education Center",
+   "county": "Orleans",
+   "amount": 500000.0,
+   "purpose": "Orleans County Planning. Develops a regional healthcare transformation roadmap that assesses access, workforce, care coordination, behavioral health integration, organizational models, and population health needs to guide implementation-ready solutions across Genesee, Orleans, and Wyoming Counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Planning awards",
+   "n": 106,
+   "recipient": "Western New York Rural Area Health Education Center",
+   "county": "Wyoming",
+   "amount": 500000.0,
+   "purpose": "Wyoming County Planning. Develops a regional healthcare transformation roadmap that assesses access, workforce, care coordination, behavioral health integration, organizational models, and population health needs to guide implementation-ready solutions across Genesee, Orleans, and Wyoming Counties."
+  },
+  {
+   "program": "Rural Community Health Integration: Implementation awards",
+   "n": 107,
+   "recipient": "Westfield Memorial Hospital",
+   "county": "Chautauqua",
+   "amount": 1250000.0,
+   "purpose": "AHN Westfield Memorial Hospital HVAC Modernization for Continuous Rural Healthcare Access. Modernizes and replaces critical HVAC infrastructure and building automation systems to ensure uninterrupted emergency, inpatient, and outpatient healthcare services while improving operational resilience, patient safety, and long-term sustainability for rural residents,"
+  }
+ ],
+ "note": "The state's awardee table for the first Rural Community Health Integration round: planning awards (about $22.7 million) and implementation awards (about $53.5 million), matching the governor's September 4, 2026 release ($76.2 million). The release says 90 awards to 56 organizations; the table lists 107 rows for 55 lead applicants, and the state does not explain the difference (an organization can appear more than once). This is one initiative; New York's other initiatives (technology-enhanced primary care, workforce, technology and cybersecurity) are not itemized here."
+}

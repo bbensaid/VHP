@@ -44,11 +44,11 @@
   "note": "68 hospital districts (HHSC xlsx names) x $750,000 (Fox 26 report; = governor $51M); other Texas rounds not itemized"
  },
  "New York": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://www.governor.ny.gov/news/governor-hochul-announces-76-million-strengthen-rural-healthcare-across-new-york-state"
   ],
-  "note": "Governor: 90 awards to 56 orgs ($76.2M); DOH program page and governor release carry no list; healthweb-back mirror lists no awards file \u2014 need the RCHI awards document"
+  "note": "DOH awardees.htm (via healthweb-back mirror): 107 rows/55 leads, sum $76.19M ties to governor; release says 90 awards/56 orgs"
  },
  "Colorado": {
   "status": "blocked",
@@ -126,7 +126,8 @@
   "status": "partial",
   "urls": [
    "https://ldh.la.gov/assets/docs/Secretary/RHTP/AC_Meeting_11.05.2026.pdf"
-  ]
+  ],
+  "note": "ldh.la.gov/news/RHTP-Y1funding (Oct 8 2026): up to $12.7M Rural Clinician Credit Bank, 53 providers from 136 applications \u2014 names not published in the release; AC meeting PDF 403 to curl"
  },
  "Wisconsin": {
   "status": "parsed",
@@ -298,7 +299,7 @@
   "note": "rhtp.hawaii.gov / DOH pages: no recipient list found (searched 2026-11-22); CMS Sept 1 release names UH JABSOM $45M, DOH ambulances $13M"
  },
  "Delaware": {
-  "status": "partial",
-  "note": "Westside $11.3M, La Red $10.1M, Henrietta Johnson $1.29M (CMS Sep 24); physician awards Oct 14"
+  "status": "parsed",
+  "note": "Governor/DHSS Sept 24 release: 3 FQHCs $22.69M; other awards not itemized"
  }
 }

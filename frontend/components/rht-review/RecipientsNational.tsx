@@ -31,6 +31,8 @@ const BASIS: Record<string, string> = {
   arkansas: "Year 1 award totals by organization, two rounds",
   "west-virginia": "Released awards (state list prints a total)",
   missouri: "Contingent awards, two rounds (CMS approval pending)",
+  "new-york": "Rural Community Health Integration awardees (planning and implementation)",
+  delaware: "Governor's release: three health centers",
   ohio: "Awardees named in three governor/ODH releases (amounts span two budget years)",
   wisconsin: "Award tables on DHS program pages (competitive grants + implementation partners)",
   oklahoma: "Program-by-program recipient lists (budget periods 1 and 2)",
