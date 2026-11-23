@@ -6,6 +6,7 @@
   "California",
   "Connecticut",
   "Florida",
+  "Idaho",
   "Illinois",
   "Maryland",
   "Michigan",
@@ -25,6 +26,7 @@
   "Georgia",
   "Indiana",
   "Iowa",
+  "Nevada",
   "North Carolina",
   "Virginia",
   "Washington"
@@ -33,13 +35,10 @@
   "Arizona",
   "Delaware",
   "Hawaii",
-  "Idaho",
-  "Kentucky",
   "Louisiana",
   "Maine",
   "Minnesota",
   "Montana",
-  "Nevada",
   "New Hampshire",
   "New Mexico",
   "New York",
@@ -50,6 +49,7 @@
   "Wyoming"
  ],
  "noneFound": [
+  "Kentucky",
   "Massachusetts",
   "North Dakota",
   "Rhode Island",

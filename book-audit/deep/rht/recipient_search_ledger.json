@@ -120,7 +120,7 @@
  },
  "Ohio": {
   "status": "partial",
-  "note": "scattered announcements (OU $10M, OPA $2M, ODH $55M Nov 3); no consolidated list found yet"
+  "note": "governor.ohio.gov releases name some recipients in prose (OU $10M; OPA $2M; Board of Pharmacy $1.15M); no consolidated list"
  },
  "Louisiana": {
   "status": "partial",
@@ -136,11 +136,11 @@
   "note": "$69.9M BY1 grants awarded; program pages per initiative"
  },
  "Kentucky": {
-  "status": "partial",
+  "status": "none_found",
   "urls": [
    "https://ruralhealthplan.ky.gov/"
   ],
-  "note": "RHIhub says KY lists executed awards/contracts \u2014 check"
+  "note": "CHFS RFAs and CMS notice only; no awardee list found on chfs.ky.gov/ruralhealthplan.ky.gov (searched 2026-11-22)"
  },
  "Montana": {
   "status": "partial",
@@ -266,16 +266,16 @@
   "note": "CMS $74M (Sep 21). CAUTION: NM $50M/41 orgs and $20M/32 orgs are STATE funds, not RHT"
  },
  "Idaho": {
-  "status": "partial",
-  "note": "all Year-1 funds allocated (Idaho Capital Sun Oct 28); no list found"
+  "status": "parsed",
+  "note": "DHW awardee xlsx as of Oct 16 (114 rows)"
  },
  "Nevada": {
-  "status": "partial",
+  "status": "no_per_award_amounts",
   "urls": [
    "https://gov.nv.gov/press-releases/nevada-announces-first-round-of-grants-under-new-rural-health-transformation-program",
    "https://www.gov.nv.gov/press-releases/nevada-announces-another-$27-million-in-awards-to-improve-rural-health-care/"
   ],
-  "note": "~$150M, 158 projects, 17 counties \u2014 check releases for lists"
+  "note": "nvha.nv.gov RHT Funded Projects BP1: 7 tables (subrecipient, project, county) with no amounts"
  },
  "Utah": {
   "status": "none_found",
@@ -290,7 +290,7 @@
   "urls": [
    "https://doh.sd.gov/healthcare-professionals/rural-health/rural-health-transformation-project/rht-press-releases/"
   ],
-  "note": "Rural Strong $31.5M/28 projects (Jul 24) + several CMS-announced rounds"
+  "note": "28 Rural Strong grants $31.5M, 82 tech/data grants ~$90M, 25 EMS ~$7.2M announced; recipients not named in releases; state says contracts will be on OpenSD"
  },
  "Hawaii": {
   "status": "partial",

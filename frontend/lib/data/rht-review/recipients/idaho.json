@@ -1,0 +1,926 @@
+{
+ "state": "Idaho",
+ "slug": "idaho",
+ "asOf": "2026-10-16",
+ "source": {
+  "label": "Idaho Department of Health and Welfare, Rural Health Transformation list of awardees as of Oct. 16, 2026 (spreadsheet)",
+  "url": "https://healthandwelfare.idaho.gov/providers/rural-health-transformation-program-grant/funding-opportunities-rural-health"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Behavioral Health - Prevention",
+   "n": 1,
+   "recipient": "Central District Health",
+   "county": "Not stated",
+   "amount": 199924.19,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Behavioral Health - Prevention",
+   "n": 2,
+   "recipient": "Southwest District Health",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Maternal and Child Health Initiatives: Expansion of a Statewide Obstetric Readiness Program",
+   "n": 3,
+   "recipient": "Comagine Health",
+   "county": "Not stated",
+   "amount": 1198736.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Maternal and Child Health Initiatives: Perinatal Quality Collaborative",
+   "n": 4,
+   "recipient": "Comagine Health",
+   "county": "Not stated",
+   "amount": 1910246.15,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Tribal Rural Health Transformation Support",
+   "n": 5,
+   "recipient": "Shoshone-Paiute Tribes",
+   "county": "Not stated",
+   "amount": 677029.67,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Tribal Rural Health Transformation Support",
+   "n": 6,
+   "recipient": "Kootenai Tribe of Idaho",
+   "county": "Not stated",
+   "amount": 469592.27,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Tribal Rural Health Transformation Support",
+   "n": 7,
+   "recipient": "Nez Perce Tribe",
+   "county": "Not stated",
+   "amount": 1534550.92,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Tribal Rural Health Transformation Support",
+   "n": 8,
+   "recipient": "Shoshone-Bannock Tribes Inc",
+   "county": "Not stated",
+   "amount": 2002701.98,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Tribal Rural Health Transformation Support",
+   "n": 9,
+   "recipient": "Coeur D'Alene Tribe",
+   "county": "Not stated",
+   "amount": 2316125.15,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Behavioral Health Prevention: Crisis Intervention Training",
+   "n": 10,
+   "recipient": "22nd Century Tech,Inc",
+   "county": "Not stated",
+   "amount": 489191.32,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 11,
+   "recipient": "BSU - Data Enclave",
+   "county": "Not stated",
+   "amount": 382096.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 12,
+   "recipient": "BSU - Medical Imaging Expansion",
+   "county": "Not stated",
+   "amount": 502500.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 13,
+   "recipient": "BSU - Pipeline Expansion",
+   "county": "Not stated",
+   "amount": 2168022.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 14,
+   "recipient": "BSU - REACH Mobile Simulation",
+   "county": "Not stated",
+   "amount": 4307136.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 15,
+   "recipient": "Rural Respiratory Therapy Education Consortium-Healthcare Career Advancement",
+   "county": "Not stated",
+   "amount": 1467448.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 16,
+   "recipient": "ISU - BSN Expansion",
+   "county": "Not stated",
+   "amount": 604597.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 17,
+   "recipient": "ISU - Learning Place",
+   "county": "Not stated",
+   "amount": 759070.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 18,
+   "recipient": "ISU - Medical Imaging",
+   "county": "Not stated",
+   "amount": 757378.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 19,
+   "recipient": "ISU - Physician Assistant Training",
+   "county": "Not stated",
+   "amount": 199999.81,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 20,
+   "recipient": "ISU - TV Anatomy Physiology Lab",
+   "county": "Not stated",
+   "amount": 570176.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Career Advancement and Work-Based Learning",
+   "n": 21,
+   "recipient": "LCSC - Surgical Technology",
+   "county": "Not stated",
+   "amount": 801578.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Behavioral Health - Substance Use Disorder (SUD) Prevention",
+   "n": 22,
+   "recipient": "daho West Central Mountain Youth Advocacy Coalition",
+   "county": "Not stated",
+   "amount": 123402.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Behavioral Health - Substance Use Disorder (SUD) Prevention",
+   "n": 23,
+   "recipient": "Health Equity Solutions",
+   "county": "Not stated",
+   "amount": 152539.03,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Behavioral Health - Substance Use Disorder (SUD) Prevention",
+   "n": 24,
+   "recipient": "Human Supports of Idaho",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 25,
+   "recipient": "Bingham Memorial Hospital",
+   "county": "Not stated",
+   "amount": 551145.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 26,
+   "recipient": "St. Luke's Magic Valley",
+   "county": "Not stated",
+   "amount": 220000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 27,
+   "recipient": "Bear Lake Memorial Healthcare",
+   "county": "Not stated",
+   "amount": 135000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 28,
+   "recipient": "Desano Place",
+   "county": "Not stated",
+   "amount": 46080.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 29,
+   "recipient": "Idaho Youth Ranch",
+   "county": "Not stated",
+   "amount": 478500.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 30,
+   "recipient": "Syringa Hospital and Clinics",
+   "county": "Not stated",
+   "amount": 4842704.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 31,
+   "recipient": "Gritman Medical Center",
+   "county": "Not stated",
+   "amount": 11657685.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 32,
+   "recipient": "The Hospital Cooperative",
+   "county": "Not stated",
+   "amount": 1518287.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 33,
+   "recipient": "Grandview Ambulance-Rimrock Search and Rescue",
+   "county": "Not stated",
+   "amount": 488851.87,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 34,
+   "recipient": "Cornerstone Whole Healthcare Organization, Inc",
+   "county": "Not stated",
+   "amount": 1290928.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 35,
+   "recipient": "Weiser Memorial Hospital",
+   "county": "Not stated",
+   "amount": 806700.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 36,
+   "recipient": "Cornerstone Whole Healthcare Organization, Inc",
+   "county": "Not stated",
+   "amount": 612064.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 37,
+   "recipient": "Bingham Memorial Hospital",
+   "county": "Not stated",
+   "amount": 7098590.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 38,
+   "recipient": "Bingham Memorial Hospital",
+   "county": "Not stated",
+   "amount": 450228.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 39,
+   "recipient": "Bingham Memorial Hospital",
+   "county": "Not stated",
+   "amount": 7106763.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 40,
+   "recipient": "St. Mary's Hospital Health",
+   "county": "Not stated",
+   "amount": 282160.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 41,
+   "recipient": "Pearl Heath Clinic",
+   "county": "Not stated",
+   "amount": 343800.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 42,
+   "recipient": "Gem County Fire District & EMS",
+   "county": "Not stated",
+   "amount": 969738.6,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 43,
+   "recipient": "St. Mary's Hospital",
+   "county": "Not stated",
+   "amount": 50000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 44,
+   "recipient": "St. Mary's Hospital, Inc.",
+   "county": "Not stated",
+   "amount": 100000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 45,
+   "recipient": "Cambridge Volunteer Ambulance",
+   "county": "Not stated",
+   "amount": 169000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 46,
+   "recipient": "Bear Lake Memorial Healthcare",
+   "county": "Not stated",
+   "amount": 849694.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 47,
+   "recipient": "City of Riggins Ambulance",
+   "county": "Not stated",
+   "amount": 507358.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 48,
+   "recipient": "Bonner General Health",
+   "county": "Not stated",
+   "amount": 3686042.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 49,
+   "recipient": "St. Mary's Hospital Health",
+   "county": "Not stated",
+   "amount": 2366202.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 50,
+   "recipient": "St. Mary's Health",
+   "county": "Not stated",
+   "amount": 637150.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 51,
+   "recipient": "Inclusive Care Clinic Pharmacy",
+   "county": "Not stated",
+   "amount": 370000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 52,
+   "recipient": "Bear Lake Memorial Healthcare",
+   "county": "Not stated",
+   "amount": 272888.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 53,
+   "recipient": "Idaho Educational Services for the Deaf & Blind",
+   "county": "Not stated",
+   "amount": 897788.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 54,
+   "recipient": "Community Care of Idaho",
+   "county": "Not stated",
+   "amount": 120000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 55,
+   "recipient": "Steele Memorial Medical Center",
+   "county": "Not stated",
+   "amount": 9771495.66,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 56,
+   "recipient": "Valor Health",
+   "county": "Not stated",
+   "amount": 4647912.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 57,
+   "recipient": "Clearwater Valley Hospital and Clinics, Inc",
+   "county": "Not stated",
+   "amount": 255000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 58,
+   "recipient": "Minidoka Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1286480.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 59,
+   "recipient": "St. Luke\u2019s Health System",
+   "county": "Not stated",
+   "amount": 1590000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 60,
+   "recipient": "Bingham Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1915899.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 61,
+   "recipient": "Madison Fire Department",
+   "county": "Not stated",
+   "amount": 448009.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 62,
+   "recipient": "Clearwater Valley Hospital and Clinics",
+   "county": "Not stated",
+   "amount": 161000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 63,
+   "recipient": "Clearwater Valley Hospitals and Clinics",
+   "county": "Not stated",
+   "amount": 76000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 64,
+   "recipient": "Clearwater Valley Hospitals and Clinics",
+   "county": "Not stated",
+   "amount": 282160.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 65,
+   "recipient": "Payette County Paramedics",
+   "county": "Not stated",
+   "amount": 403400.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 66,
+   "recipient": "Hospital Network of Idaho",
+   "county": "Not stated",
+   "amount": 28050.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 67,
+   "recipient": "St. Luke's Health System",
+   "county": "Not stated",
+   "amount": 227390.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 68,
+   "recipient": "Valor Health",
+   "county": "Not stated",
+   "amount": 829000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 69,
+   "recipient": "Mountain Valley of Cascadia",
+   "county": "Not stated",
+   "amount": 242724.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 70,
+   "recipient": "Hospital Network of Idaho",
+   "county": "Not stated",
+   "amount": 1888984.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 71,
+   "recipient": "St. Luke\u2019s Health System",
+   "county": "Not stated",
+   "amount": 1854767.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 72,
+   "recipient": "Clearwater Valley Hospital and Clinics, Inc",
+   "county": "Not stated",
+   "amount": 1030000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 73,
+   "recipient": "Clearwater Valley Hospital and Clinics, Inc",
+   "county": "Not stated",
+   "amount": 190000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 74,
+   "recipient": "Southwest District Health",
+   "county": "Not stated",
+   "amount": 461680.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 75,
+   "recipient": "Dentistry One",
+   "county": "Not stated",
+   "amount": 325000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 76,
+   "recipient": "St. Mary's Hospital Health",
+   "county": "Not stated",
+   "amount": 76000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 77,
+   "recipient": "Teton Valley Health Care",
+   "county": "Not stated",
+   "amount": 3402842.13,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 78,
+   "recipient": "Madison Fire Department",
+   "county": "Not stated",
+   "amount": 15734.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 79,
+   "recipient": "Bonner General Health",
+   "county": "Not stated",
+   "amount": 2116122.9,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 80,
+   "recipient": "St. Mary's Hospital Health",
+   "county": "Not stated",
+   "amount": 235000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 81,
+   "recipient": "St. Mary's Health",
+   "county": "Not stated",
+   "amount": 645000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 82,
+   "recipient": "St. Mary's Health",
+   "county": "Not stated",
+   "amount": 161000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 83,
+   "recipient": "Lifeways",
+   "county": "Not stated",
+   "amount": 163500.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 84,
+   "recipient": "Shine Dental Co.",
+   "county": "Not stated",
+   "amount": 1527900.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 85,
+   "recipient": "Center for Behavioral Health Idaho, LLC",
+   "county": "Not stated",
+   "amount": 1237795.36,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 86,
+   "recipient": "Clearwater Valley Hospital and Clinics, Inc",
+   "county": "Not stated",
+   "amount": 595000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 87,
+   "recipient": "Clearwater Valley Hospitals and Clinics",
+   "county": "Not stated",
+   "amount": 325000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 88,
+   "recipient": "McCall Senior & Community Center",
+   "county": "Not stated",
+   "amount": 29183.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 89,
+   "recipient": "MedBox, LLC",
+   "county": "Not stated",
+   "amount": 350000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 90,
+   "recipient": "North Canyon Medical Center",
+   "county": "Not stated",
+   "amount": 87924.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 91,
+   "recipient": "North Canyon Medical Center",
+   "county": "Not stated",
+   "amount": 12000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 92,
+   "recipient": "Clearwater Valley Hospitals and Clinics",
+   "county": "Not stated",
+   "amount": 235000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 93,
+   "recipient": "Hospital Network of Idaho",
+   "county": "Not stated",
+   "amount": 398000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 94,
+   "recipient": "St. Mary's Health",
+   "county": "Not stated",
+   "amount": 340000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 95,
+   "recipient": "CHAS Health",
+   "county": "Not stated",
+   "amount": 477190.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 96,
+   "recipient": "Creekside Care LLC",
+   "county": "Not stated",
+   "amount": 483000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 97,
+   "recipient": "North Canyon Medical Center",
+   "county": "Not stated",
+   "amount": 260925.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 98,
+   "recipient": "Benewah Community Hospital",
+   "county": "Not stated",
+   "amount": 6645000.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 99,
+   "recipient": "Mountain View Hospital",
+   "county": "Not stated",
+   "amount": 2255219.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Healthcare Infrastructure Support",
+   "n": 100,
+   "recipient": "Franklin County Medical Center",
+   "county": "Not stated",
+   "amount": 2604228.0,
+   "purpose": "Subrecipient"
+  },
+  {
+   "program": "Chronic Disease Prevention and Cancer Screening",
+   "n": 101,
+   "recipient": "University of Idaho \u2013 Eat Smart Idaho",
+   "county": "Not stated",
+   "amount": 1558996.59,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Data Analytics and Outcomes Evaluation",
+   "n": 102,
+   "recipient": "Guidehouse, Inc.",
+   "county": "Not stated",
+   "amount": 1763000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Facility Technology Assessments",
+   "n": 103,
+   "recipient": "BDO Government Services, LLC",
+   "county": "Not stated",
+   "amount": 1987495.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Health Alert Network (HAN): Emergency Communications Systems Implementation Procurement Agreements",
+   "n": 104,
+   "recipient": "SHI International (reseller for Everbridge software)",
+   "county": "Not stated",
+   "amount": 73737.45,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Idaho Cognitive Care Pathway Network",
+   "n": 105,
+   "recipient": "ISU \u2013 Institute of Rural Health",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Idaho Cognitive Health Workforce Response Network",
+   "n": 106,
+   "recipient": "Alzheimer\u2019s Association",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Idaho Diabetes Prevention and Management",
+   "n": 107,
+   "recipient": "Co Magine Health",
+   "county": "Not stated",
+   "amount": 1998975.94,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Pediatric Psychiatric Assistance Line (PPAL): Mental and Behavioral Health Prevention and Treatment Subgrants",
+   "n": 108,
+   "recipient": "University of Idaho",
+   "county": "Not stated",
+   "amount": 1199998.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Project Management Integration Services",
+   "n": 109,
+   "recipient": "Deloitte Consulting LLP",
+   "county": "Not stated",
+   "amount": 1286711.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Rural Cybersecurity Modernization Assessment",
+   "n": 110,
+   "recipient": "22nd Century Technologies, Inc.",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Statewide Chronic Disease Education Network",
+   "n": 111,
+   "recipient": "University of Idaho",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "Third Party Administrator for Ladder Payment Program",
+   "n": 112,
+   "recipient": "Public Consulting Group LLC",
+   "county": "Not stated",
+   "amount": 14520000.0,
+   "purpose": "Contractor"
+  },
+  {
+   "program": "GME Expansion",
+   "n": 113,
+   "recipient": "The Office of the State Board of Education (OSBE)",
+   "county": "Not stated",
+   "amount": 8000000.0,
+   "purpose": "Memorandum of agreement"
+  },
+  {
+   "program": "NG-911: Emergency Communications Systems Implementation Procurement Agreements",
+   "n": 114,
+   "recipient": "Idaho Military Division (IMD)",
+   "county": "Not stated",
+   "amount": 14900000.0,
+   "purpose": "Memorandum of agreement"
+  }
+ ],
+ "note": "The state's list as of October 16, 2026: 100 subrecipients, 12 contractors and 2 memoranda of agreement, by solicitation (the type is shown in the purpose column). The sheet prints no total. Gov. Little announced that Idaho had completed awards of $186 million in Year 1 funding; the listed amounts add up to the figure shown above, and the state does not say what accounts for the difference."
+}
