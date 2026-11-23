@@ -78,6 +78,11 @@ const TRACKS = [
       "The demonstration and its special terms and conditions, the January 2025 amendment, the Medicaid hospital global budget, and CMS's July 7, 2026 compliance letter and corrective actions.",
       ["Explain why special terms and conditions are the binding rules of a demonstration", "Describe the corrective actions and consequences in CMS's July 7, 2026 letter to Vermont", "Apply four rules for launching a payment arrangement under a demonstration"], ["1115", "vermont", "global-commitment", "stc"]),
   ]),
+  T(4, "prior-auth-and-hr1", "Prior Authorization and H.R. 1", "The federal prior authorization rule and 2027 APIs, and what H.R. 1 changes in Medicaid.", [
+    L(10, "cmmi-prior-authorization-rule", "Prior Authorization: The Federal Rule, the 2027 APIs and the State Role", 25,
+      "The physician-reported burden, what CMS-0057-F requires from 2026 and 2027, what it leaves untouched, and Vermont's Act 167.",
+      ["State the decision timeframes and which payers they cover", "Describe the four 2027 API requirements", "Distinguish prior authorization policy reform from operational burden reduction"], ["prior-authorization", "cms-0057-f", "act-167"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
