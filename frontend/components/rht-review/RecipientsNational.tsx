@@ -109,10 +109,12 @@ export default function RecipientsNational() {
   const allTotal = S.reduce((a, s) => a + s.total, 0);
   const groupAll = GROUPS.map((_, i) => S.reduce((a, s) => a + s.groups[i], 0));
   const hospShare = groupAll[0] / allTotal;
-  const mostConc = [...S].sort((a, b) => b.top10 - a.top10)[0];
-  const leastConc = [...S].sort((a, b) => a.top10 - b.top10)[0];
-  const smallest = [...S].sort((a, b) => a.median - b.median)[0];
-  const biggest = [...S].sort((a, b) => b.median - a.median)[0];
+  // Concentration and typical award size are only meaningful for lists with enough awards (a 4-award list is "100% top-10").
+  const big = S.filter((s) => s.rec.rows.length >= 20);
+  const mostConc = [...big].sort((a, b) => b.top10 - a.top10)[0];
+  const leastConc = [...big].sort((a, b) => a.top10 - b.top10)[0];
+  const smallest = [...big].sort((a, b) => a.median - b.median)[0];
+  const biggest = [...big].sort((a, b) => b.median - a.median)[0];
   return (
     <div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
@@ -130,9 +132,9 @@ export default function RecipientsNational() {
       </div>
 
       <ul className="space-y-1.5 text-sm text-slate-700 dark:text-slate-300 mb-6 list-disc pl-5">
-        <li><strong>Concentration varies more than size.</strong> In {mostConc.rec.state} the ten largest recipients take {pct(mostConc.top10)} of the listed dollars; in {leastConc.rec.state}, {pct(leastConc.top10)}.</li>
-        <li><strong>Grant size reflects the design.</strong> The median award runs from {K(smallest.median)} in {smallest.rec.state} to {K(biggest.median)} in {biggest.rec.state}.</li>
-        <li><strong>The lists do not measure the same thing.</strong> Some are final announcements, some preliminary notices, one is approved budgets and one is a list of authorized projects, so compare shapes, not totals (the line under each state&apos;s name says what its amounts are).</li>
+        <li><strong>Concentration varies more than size.</strong> Among the {big.length} states listing at least 20 awards, in {mostConc.rec.state} the ten largest recipients take {pct(mostConc.top10)} of the listed dollars; in {leastConc.rec.state}, {pct(leastConc.top10)}.</li>
+        <li><strong>Grant size reflects the design.</strong> Among those states, the median award runs from {K(smallest.median)} in {smallest.rec.state} to {K(biggest.median)} in {biggest.rec.state}.</li>
+        <li><strong>The lists do not measure the same thing.</strong> Some are final announcements, some preliminary notices, offers, approved budgets, grants-portal agreements, authorized projects or multi-year totals, so compare shapes, not totals (the line under each state&apos;s name says what its amounts are).</li>
       </ul>
 
       <div className="grid lg:grid-cols-2 gap-6">
