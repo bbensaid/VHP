@@ -56,6 +56,17 @@ const TRACKS = [
       "Where the statute leaves discretion on pricing methodology, budget levels, the Strategic Plan and federal Medicaid funding, and what the S.190 veto and the September budget order show.",
       ["Identify where Act 68 leaves regulatory discretion", "Explain regulatory-capture risk as calibration, not repeal", "Convert each exposed element into a watch item"], ["regulatory-capture", "act-68", "s190"]),
   ]),
+  T(2, "vermonts-record", "Vermont's Record", "The history behind the cascade, the four events of 2026, and a close reading of the S.190 veto.", [
+    L(4, "psr-vermont-reform-history", "Vermont's Reform History: Why the Cascade Was a Sustainability Design", 25,
+      "Green Mountain Care and the 2014 retreat compared with Acts 167, 51 and 68, how the cascade makes failure visible, four design principles and what a cascade does not guarantee.",
+      ["Compare the 2014 single-payer retreat with the Act 167-51-68 cascade", "State Chapter 14's four design principles", "Identify what a cascade does not guarantee"], ["history", "cascade", "act-167"]),
+    L(5, "psr-the-2026-record", "The 2026 Record: Four Events and What Each Tested", 25,
+      "The S.190 veto, the AHEAD withdrawal, the September budget order and the November election, what each tested and what the sources do not establish.",
+      ["Describe the four 2026 events with their sources and limits", "Explain what stayed in force after each event", "Assess how the post-election configuration changes the risk picture"], ["2026", "s190", "election"]),
+    L(6, "psr-reading-a-veto", "Reading a Veto: Who Should Capture the Savings?", 25,
+      "The S.190 arguments in the words reported, tested against Act 68, a method for reading a policy dispute and four scenarios for the next session.",
+      ["Separate factual, authority and values claims in a policy dispute", "Test authority claims against the enacted statute", "Plan for scenarios in the next legislative session"], ["veto", "reference-based-pricing", "analysis"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
