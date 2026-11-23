@@ -33,7 +33,7 @@ const COURSE = {
   ],
   prerequisites: ["Start Here (recommended)", "AI and Machine Learning in Healthcare (recommended)", "Interoperability and Data Exchange (recommended)"],
   estimated_hours: 6.5,
-  is_published: false, // flipped to true only when all lessons are written and linked
+  is_published: true, // all 15 lessons written, linked and verified 2026-11-23
   version: "1",
   pillar: "technology",
   level: "intermediate",
@@ -88,6 +88,17 @@ const TRACKS = [
     L(12, "fai-incident-response", "Incident Response and Recovery: Planning for the Bad Day", 25,
       "Business impact and recovery objectives, downtime operations, vendor failure and financial resilience, governance and exercises, and notification and review.",
       ["Set recovery time and recovery point objectives for critical systems", "Plan for both internal and vendor failure", "Run a tabletop exercise and a post-incident review"], ["incident-response", "downtime", "resilience"]),
+  ]),
+  T(5, "sequencing-policy-capstone", "Sequencing, Vermont Policy and Capstone", "The implementation matrix and analytics gap, Vermont's 2026 AI laws, and a go or no-go capstone.", [
+    L(13, "fai-sequencing-and-matrix", "Sequencing the Technology Pillar: The Matrix and the Analytics Gap", 25,
+      "The six-investment matrix, a defensible order of work, the analytics vendor gap before global budgets, the two-budget view and risks to the sequence.",
+      ["Read the implementation matrix for structure and replace its ranges with quotes", "Sequence a three-year technology plan by dependency", "Show build and recurring cost side by side"], ["sequencing", "implementation-matrix", "analytics"]),
+    L(14, "fai-vermont-ai-policy", "Vermont's 2026 AI Laws: Acts 101 and 156 and What Remains Open", 25,
+      "What Acts 101 and 156 require from their enacted text, what the Advisory Council's January 2027 reports must cover, four illustrative applications and what remains open for clinical AI.",
+      ["Summarize what Acts 101 and 156 require", "Distinguish AI that supports a professional from AI that substitutes for one under Act 156", "List what remains unregulated for hospital clinical AI"], ["vermont", "act-101", "act-156", "ai-policy"]),
+    L(15, "fai-capstone-ai-go-no-go", "Capstone: Take a Clinical AI Tool Through a Go or No-Go Review", 60,
+      "Describe the tool, build the obligations register, work the 62-item checklist and its domain gate, check design and security, plan the pilot and write a two-page recommendation.",
+      ["Run a clinical AI tool through the governance checklist and gate", "Build an obligations register including the Vermont acts", "Write a two-page go or no-go review"], ["capstone", "ai-governance", "go-no-go"]),
   ]),
 ];
 
