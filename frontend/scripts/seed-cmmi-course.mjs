@@ -60,6 +60,9 @@ const TRACKS = [
     L(4, "cmmi-global-budgets-maryland-to-ahead", "Hospital Global Budgets: From Maryland to AHEAD", 25,
       "How a global budget works, what Maryland's evidence shows, AHEAD's components and 2025 changes, the prerequisites for a state, and Vermont's Act 68.",
       ["Explain how a hospital global budget changes incentives", "Summarize the evidence from Maryland's all-payer and total cost of care models", "List the prerequisites a state needs before it can run global budgets"], ["global-budget", "maryland", "ahead", "act-68"]),
+    L(5, "cmmi-vermont-ahead-agreement", "Vermont and AHEAD: Reading a State Agreement and a Withdrawal", 25,
+      "The timeline from signing to withdrawal, the clauses that made exit possible, two accounts of the same event, what Act 68 preserves, and a checklist for any state.",
+      ["Describe what Vermont's AHEAD State Agreement was built to protect", "Compare the state's and CMS's accounts of the withdrawal and separate sourced from unsourced figures", "Apply a pre-signing checklist to a federal model agreement"], ["ahead", "vermont", "state-agreement", "withdrawal"]),
   ]),
 ];
 

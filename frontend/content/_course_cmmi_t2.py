@@ -87,6 +87,87 @@ L4 = [
     blk('src7', "[7] Health Affairs Forefront, Another Look at the Evidence on Hospital Global Budgets in Maryland — https://www.healthaffairs.org/content/forefront/another-look-evidence-hospital-global-budgets-maryland-have-they-reduced-expenditures"),
 ]
 
-LESSONS = [(L4_SLUG, L4_TITLE, L4, 4)]
+# ════════════════════════════════════════════════════════════════════════════
+# Lesson 5 facts: HTR book Chapter 3 §3.2.2, §3.5.1; AHS announcement of July 24, 2026 as published by VermontBiz;
+# WCAX report of July 28, 2026; CMS AHEAD page and FAQ. The state press release URL returned 403 to the fetch tool,
+# so the dollar figures below are the book's (EAST Fund ~$138M to ~$10M) and are labelled as such.
+L5_SLUG = 'cmmi-vermont-ahead-agreement'
+L5_TITLE = "Vermont and AHEAD: Reading a State Agreement and a Withdrawal"
+L5 = [
+    blk('intro1', "Vermont's AHEAD story is the most useful case study in this course because it contains every stage a state goes through with a federal model: attraction, negotiation, signature, a change in federal terms, and exit. It also shows how two honest accounts of the same event can differ, which is a skill in itself for anyone who works in policy."),
+    blk('intro2', "This lesson sets out what Vermont signed, what the agreement was designed to protect, what changed in 2025 and 2026, how the state announced its decision, and what the episode teaches other states. It relies on Chapter 3's account of the agreement and on the state's own announcement as reported in the press. It separates what each source says, and it notes where a number appears in only one place."),
+    blk('intro3', "The aim is not to judge Vermont's decision. It is to show how a practitioner reads a federal agreement before signing it and reads the federal documents that follow it."),
+
+    h2('s1h1', 'A Timeline in Four Moves'),
+    blk('s1p1', "Vermont pursued AHEAD as the successor to its All-Payer ACO Model, which was due to end in 2024 and which CMS itself describes as one of the state-based models AHEAD builds on. According to Chapter 3, the state signed for Cohort 2 in January 2025 under a State Agreement it had negotiated with CMS."),
+    blk('s1p2', "On September 3, 2025, CMS changed the model for all states. The performance period for Cohorts 2 and 3 moved back a year to begin January 1, 2028, and states with their own hospital rate-setting authority lost the option to design their own Medicare fee-for-service global budget methodology, with Maryland the exception. These changes brought states into alignment with one federal design, which Vermont later cited."),
+    blk('s1p3', "On July 24, 2026, the Agency of Human Services announced that Vermont had formally notified CMS that it was withdrawing from AHEAD. Its stated reason, as published, was that new policy and operational guidance to bring Vermont in line with other AHEAD states substantially reduced anticipated funding that was to be reinvested in providers such as primary care practices."),
+    blk('s1p4', "Chapter 3 puts a number on that reduction: the expected EAST Fund fell from an estimated $138 million in the first performance year to a cap of about $10 million. That figure comes from the book; the published accounts of the announcement describe the reduction without giving dollar amounts, so treat the figure as the book's, to be checked against the signed agreement and CMS documents when they are public."),
+    table('s1t1', 'The timeline', [
+        {'Date': 'January 2025', 'Event': 'Vermont signs for AHEAD Cohort 2 (HTR book, Chapter 3)'},
+        {'Date': 'September 3, 2025', 'Event': 'CMS changes AHEAD: Cohort 2 and 3 performance starts January 1, 2028; state-designed Medicare FFS global budget methodology removed'},
+        {'Date': 'January 2026', 'Event': 'Vermont launches a Medicaid hospital global budget on state authority (HTR book, Chapter 3)'},
+        {'Date': 'July 2026', 'Event': 'CMS notifies Vermont that the Medicaid global budget was not approved under the Global Commitment demonstration terms'},
+        {'Date': 'July 24, 2026', 'Event': 'AHS announces withdrawal from AHEAD after anticipated funding is reduced'},
+    ]),
+
+    h2('s2h1', 'What the Agreement Was Built to Protect'),
+    blk('s2p1', "Chapter 3 calls Vermont's AHEAD State Agreement an example of sophisticated federal policy risk management, and lists what it contains. The state could withdraw unilaterally, with 30 days' notice before launch and six months' notice after launch. The agreement protected the independence of the Green Mountain Care Board, Vermont's hospital budget regulator. It set out provisions on methodology acceptance, meaning what the state agrees to accept as the baseline calculation, and on dispute resolution."),
+    blk('s2p2', "Vermont negotiated these protections for a reason that Chapter 3 states plainly: an eight-year commitment to a federal model carries real policy risk. The model could change under a future administration, the methodology could produce unexpected financial outcomes, or a federal change could make participation financially unsustainable. All three risks were named in advance, and the withdrawal clause was the state's answer to them."),
+    blk('s2p3', "The clause did its job. Because section 1115A bars administrative and judicial review of most model decisions, as Lesson 1 showed, the contract was the state's only protection against a change in terms. Vermont did not need to litigate. It gave notice and left, and the state's own statements say the decision did not increase costs for Vermonters or reduce their access to services."),
+    callout('s2c1', "Notice rights, regulatory independence, methodology acceptance and dispute resolution are the clauses that matter when a federal model changes. Vermont negotiated all four before signing, which is why exit was an option and not a crisis."),
+
+    h2('s3h1', 'Two Accounts of the Same Event'),
+    blk('s3p1', "The state's account is that the federal terms changed in a way that reduced the funding on which its plan depended. Agency of Human Services Secretary Jenney Samuelson said the decision was not made lightly. Medicaid and Health Systems Director Jill Mazza Olson said the state remained optimistic about future opportunities to partner with the federal government on innovative models. Green Mountain Care Board Chair Owen Foster supported the withdrawal, saying that nothing changes for hospitals or providers because the state never began the model and that the last thing Vermont needs is additional administrative cost."),
+    blk('s3p2', "Later reporting on a CMS advisory committee meeting, as summarized in search coverage, describes the same decision from the federal side: CMS officials said the Innovation Center revised Vermont-specific financial terms, reducing a baseline credit and funding named PATH, and described the discussions as mutual. That reporting was not available in primary form, so this lesson treats it as an indication that CMS frames the event differently, not as a finding."),
+    blk('s3p3', "Reading two accounts side by side is a discipline worth practicing. Neither contradicts the other on the central facts: the terms changed, the funding fell, Vermont left. They differ on responsibility and on how to describe it, which is normal when each party has to explain its decision to its own audience."),
+    warning('s3w1', "When sources give no number, do not supply one", "The published accounts of Vermont's announcement do not state the dollar amounts of the funding change. Chapter 3 gives $138 million falling to about $10 million for the EAST Fund. Use that figure only with its attribution, and verify it against the signed State Agreement and CMS documents before repeating it in a decision memo."),
+
+    h2('s4h1', 'What Did Not Change'),
+    blk('s4p1', "Withdrawal did not remove Vermont's statutory path. Act 68 of 2025 requires prospective hospital global budgets under the Green Mountain Care Board, from hospital fiscal year 2028 for one or more hospitals and for all by fiscal year 2030, to the extent resources are available. Secretary Samuelson said she remains committed to the long-term goal of global budgets but that the state is not ready to implement them yet."),
+    blk('s4p2', "That is the benefit of independent authority that Chapter 3 emphasizes. States that design their transformation to depend entirely on a federal model are strategically exposed; states that use federal models to accelerate and fund a state-designed transformation with its own statutory authority are more resilient. Vermont's experience with AHEAD is a practical test of the second design, and the state's position after withdrawal supports the book's argument."),
+    blk('s4p3', "What did change is the financing and federal approval pathway for the Medicare side of the plan. Without AHEAD, Vermont has no CMS-designed Medicare global budget methodology and no AHEAD cooperative agreement funding. The state will need a different federal vehicle, a waiver or a future model, to apply global budgets to Medicare payments."),
+
+    h2('s5h1', 'The Pivot to the Rural Health Transformation Program'),
+    blk('s5p1', "The state's announcement paired the withdrawal with a commitment to the Rural Health Transformation Program. Local reporting says the program allocates $195 million a year for five years to Vermont, with priorities including primary care, mental health and keeping rural hospitals open, and that further detail would follow. Secretary Samuelson called it a once-in-a-lifetime opportunity to bring federal dollars into the state."),
+    blk('s5p2', "The comparison with AHEAD is instructive. AHEAD was a long-term, model-based commitment tied to total cost of care targets through 2035. The Rural Health Transformation Program is a time-limited funding stream. Chapter 3 notes that the program's funds expire in 2030 while Medicaid cuts under H.R. 1 accelerate after 2030, which is why the book calls the arithmetic unforgiving. The funds can accelerate transformation, but they are not a payment model."),
+
+    h2('s6h1', 'Lessons for Any State'),
+    steps('s6st1', 'What a state should do before signing a federal model agreement', [
+        ('Negotiate the exit first', 'Secure notice rights before and after launch, and write down what the state owes on exit.'),
+        ('Protect your regulator', 'Include language preserving the independence of the state body that sets hospital budgets or rates.'),
+        ('Fix the methodology in writing', 'Agree how baselines are calculated and how disputes will be resolved, since federal review is barred.'),
+        ('Keep independent authority', 'Pass state law that does not depend on the model continuing.'),
+        ('Do not budget on an estimate', 'Treat expected federal funding as unconfirmed until it is in the signed terms.'),
+    ]),
+    takeaway('tw', [
+        "Vermont signed for AHEAD Cohort 2 in January 2025 under a State Agreement it negotiated with CMS.",
+        "On September 3, 2025, CMS moved the Cohort 2 and 3 performance start to January 1, 2028 and removed state-designed Medicare fee-for-service global budget methodologies.",
+        "The Agency of Human Services announced Vermont's withdrawal on July 24, 2026, citing new guidance that substantially reduced anticipated funding for reinvestment in providers such as primary care practices.",
+        "Chapter 3 reports the expected EAST Fund fell from about $138 million in the first performance year to a cap of about $10 million; the published accounts give no dollar amounts.",
+        "The agreement gave Vermont withdrawal rights (30 days before launch, six months after), protection for the Green Mountain Care Board's independence, and methodology and dispute provisions.",
+        "Act 68 of 2025 keeps hospital global budgets on Vermont's own statutory timetable regardless of AHEAD, and state officials say the withdrawal does not increase costs or reduce access.",
+        "The Rural Health Transformation Program, reported at $195 million a year for five years, is a time-limited funding stream and not a payment model.",
+    ]),
+    quiz('qz',
+        "Why was Vermont able to withdraw from AHEAD without legal action, according to Chapter 3?",
+        [
+            ("Section 1115A guarantees states a right to appeal model changes in court", False),
+            ("The State Agreement included negotiated withdrawal rights, with notice periods before and after launch", True),
+            ("CMS ended AHEAD for all states in July 2026", False),
+            ("Act 68 prohibited Vermont from participating in federal models", False),
+        ],
+        "Section 1115A bars administrative and judicial review of most model decisions, so the contract is the participant's protection. Vermont negotiated unilateral withdrawal rights, with 30 days' notice before launch and six months' notice after, and used them when anticipated funding was reduced."
+    ),
+    h2('src', 'Sources'),
+    blk('src1', "[1] " + BOOK3 + " — §3.2.2, §3.3.3, §3.5.1: the AHEAD signing, State Agreement protections, EAST Fund figures, Act 68 and the July 2026 withdrawal"),
+    blk('src2', "[2] Vermont Agency of Human Services announcement of July 24, 2026, as published by VermontBiz — https://vermontbiz.com/news/2026/july/24/vermont-withdraws-ahead-commits-rural-health-transformation — reasons for withdrawal; statements by Secretary Samuelson and Director Olson. (The original release at healthcarereform.vermont.gov/ahead-model-press-release-7-24-2026 could not be retrieved by the automated fetch used for this lesson.)"),
+    blk('src3', "[3] WCAX, Vermont drops AHEAD healthcare model; shifts to $195M rural health fund (July 28, 2026) — https://www.wcax.com/2026/07/28/vermont-drops-ahead-healthcare-model-shifts-195m-rural-health-fund/ — statements by Secretary Samuelson and GMCB Chair Foster; Rural Health Transformation amounts"),
+    blk('src4', "[4] CMS, AHEAD Model — https://www.cms.gov/priorities/innovation/innovation-models/ahead — September 2025 changes; model through December 31, 2035"),
+    blk('src5', "[5] CMS, AHEAD Model Frequently Asked Questions — https://www.cms.gov/priorities/innovation/ahead/faqs — state targets and CMS approval; removal of the state-designed Medicare FFS methodology"),
+    blk('src6', "[6] Vermont Act 68 of 2025 (hospital global budgets), as summarized in Chapter 3 — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf"),
+]
+
+LESSONS = [(L4_SLUG, L4_TITLE, L4, 4), (L5_SLUG, L5_TITLE, L5, 5)]
 if __name__ == '__main__':
     run(LESSONS)
