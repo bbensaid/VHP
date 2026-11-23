@@ -1,0 +1,28 @@
+<!DOCTYPE html><html class="ltr" ng-cloak="true"><head><title></title><script type="text/javascript">function showHomeLink() {
+						var isTopWindow = true;
+						var homeLink = document.getElementById("homeLink");
+						try {
+							isTopWindow = window.top == window.self;
+						} catch(IGNORED) {
+							isTopWindow = false;
+						} finally {
+							if(!isTopWindow) {
+								homeLink.style.display = "block";
+							}
+						}
+					}</script><script src="/script/lib/jquery/jquery-1.8.2.min.js"></script><script src="/script/libs/detect.min.js"></script><script>$(function (){
+					var ua = detect.parse(navigator.userAgent);
+					$("#browser" ).text( ua.browser.family);
+					$("#release" ).text( ua.browser.major);
+				});</script><style>.compatibility {
+						font-family: SourceSansPro, 'Helvetica Neue', Arial;
+						margin: 2rem auto;
+						width: 80%;
+						max-width: 96rem;
+						z-index: 100;
+						text-align: center;
+					}
+					.compatibility h1 {
+						margin: 0;
+						font-size: 2rem;
+					}</style></head><body onload="showHomeLink"><div class="compatibility"><h1>This browser is not supported by Service Portal</h1><p>Compatible browsers include IE10+ and up-to-date versions of Safari, Google Chrome and Mozilla Firefox.</p><div><h4>This browser is:&nbsp;<span id="browser"></span>, Release:&nbsp;<span id="release"></span></h4></div><p id="homeLink"><a href="/">Click here to go to your homepage</a></p></div></body></html>

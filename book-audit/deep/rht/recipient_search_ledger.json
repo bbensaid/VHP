@@ -119,8 +119,8 @@
   "note": "Aug 28 release names 11 pass-through partners (VHHA Foundation etc.) without amounts; VHCF 25 regional grants reported by Cardinal News \u2014 not state-published amounts yet"
  },
  "Ohio": {
-  "status": "partial",
-  "note": "governor.ohio.gov releases name some recipients in prose (OU $10M; OPA $2M; Board of Pharmacy $1.15M); no consolidated list"
+  "status": "parsed",
+  "note": "3 governor releases: 22 hospitals + 7 CIN + 6 maternal + OU + pharmacy (38 rows); CIN/maternal amounts exceed headline buckets (FY26+FY27 per release footnote)"
  },
  "Louisiana": {
   "status": "partial",

@@ -1,0 +1,319 @@
+{
+ "state": "Ohio",
+ "slug": "ohio",
+ "asOf": "2026-10-16",
+ "source": {
+  "label": "Office of Gov. Mike DeWine / Ohio Department of Health, RHT award releases (Oct 16, 2026 $92 million; Ohio University $10 million; pharmacy initiative $3.15 million)",
+  "url": "https://governor.ohio.gov/wps/portal/gov/governor/media/news-and-media/governor-dewine-announces-92-million-to-expand-access-to-quality-healthcare-in-rural-ohio"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "multiYear": true,
+ "rows": [
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 1,
+   "recipient": "Ashtabula County Medical Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Ashtabula County Medical Center in Ashtabula"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 2,
+   "recipient": "Blanchard Valley Regional Health Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Blanchard Valley Regional Health Center in Findlay (Hancock County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 3,
+   "recipient": "Community Hospital of Williams County",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Community Hospital of Williams County in Archbold"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 4,
+   "recipient": "Coshocton Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Coshocton Regional Medical Center in Coshocton (Coshocton County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 5,
+   "recipient": "East Liverpool City Hospitals",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "East Liverpool City Hospitals in East Liverpool (Columbiana County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 6,
+   "recipient": "Fisher-Titus Medical Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Fisher-Titus Medical Center in Norwalk (Huron County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 7,
+   "recipient": "Holzer Medical Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Holzer Medical Center in Gallipolis (Gallia County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 8,
+   "recipient": "Joint Township District Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Joint Township District Memorial Hospital in St. Marys (Auglaize County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 9,
+   "recipient": "Knox Community Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Knox Community Hospital in Mt. Vernon (Knox County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 10,
+   "recipient": "Marion General Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Marion General Hospital in Marion (Marion County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 11,
+   "recipient": "Mary Rutan Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Mary Rutan Hospital in Bellefontaine (Logan County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 12,
+   "recipient": "Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Memorial Hospital in Fremont (Sandusky County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 13,
+   "recipient": "Mercer County Community Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Mercer County Community Hospital in Coldwater"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 14,
+   "recipient": "O\u2019Bleness Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "O\u2019Bleness Memorial Hospital in Athens (Athens County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 15,
+   "recipient": "Pomerene Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Pomerene Hospital in Millersburg (Holmes County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 16,
+   "recipient": "Salem Community Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Salem Community Hospital in Salem (Columbiana County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 17,
+   "recipient": "Sojourn at Seneca",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Sojourn at Seneca in Tiffin (Seneca County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 18,
+   "recipient": "Southeastern Ohio Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Southeastern Ohio Regional Medical Center in Cambridge (Guernsey County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 19,
+   "recipient": "TriHealth Clinton Regional Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "TriHealth Clinton Regional Hospital in Wilmington (Clinton County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 20,
+   "recipient": "Van Wert County Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Van Wert County Hospital in Van Wert"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 21,
+   "recipient": "Wilson Memorial Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Wilson Memorial Hospital in Sidney (Shelby County)"
+  },
+  {
+   "program": "Rural hospital one-time quality-improvement investments (Oct 2026)",
+   "n": 22,
+   "recipient": "Wooster Community Hospital",
+   "county": "Not stated",
+   "amount": 1377479.0,
+   "purpose": "Wooster Community Hospital in Wooster (Wayne County)"
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 23,
+   "recipient": "Beavercreek Medical Center (Soin/Kettering Health)",
+   "county": "Not stated",
+   "amount": 15470879.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 24,
+   "recipient": "Child & Family Health Collaborative of Ohio",
+   "county": "Not stated",
+   "amount": 6709515.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 25,
+   "recipient": "Mercy Health - St. Rita's Medical Center (Lima)",
+   "county": "Not stated",
+   "amount": 325005.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 26,
+   "recipient": "Ohio Association of Community Health Centers",
+   "county": "Not stated",
+   "amount": 10406623.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 27,
+   "recipient": "Ohio High Value Network",
+   "county": "Not stated",
+   "amount": 24980798.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 28,
+   "recipient": "Ohio State Health Network",
+   "county": "Not stated",
+   "amount": 3401944.0,
+   "purpose": ""
+  },
+  {
+   "program": "Clinically Integrated Networks and Rural Health Innovation Hubs (Oct 2026)",
+   "n": 29,
+   "recipient": "University Hospitals Health System",
+   "county": "Not stated",
+   "amount": 725702.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 30,
+   "recipient": "Beavercreek Medical Center (Soin/Kettering Health)",
+   "county": "Not stated",
+   "amount": 1427200.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 31,
+   "recipient": "Mercy Health - St. Rita's Medical Center (Lima)",
+   "county": "Not stated",
+   "amount": 50000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 32,
+   "recipient": "Ohio Association of Community Health Centers",
+   "county": "Not stated",
+   "amount": 1836462.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 33,
+   "recipient": "Ohio Health Institute",
+   "county": "Not stated",
+   "amount": 3630000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 34,
+   "recipient": "Ohio High Value Network",
+   "county": "Not stated",
+   "amount": 24952221.0,
+   "purpose": ""
+  },
+  {
+   "program": "Maternal care (Oct 2026)",
+   "n": 35,
+   "recipient": "Ohio State Health Network",
+   "county": "Not stated",
+   "amount": 2084117.0,
+   "purpose": ""
+  },
+  {
+   "program": "Rural health workforce (July 2026)",
+   "n": 36,
+   "recipient": "Ohio University",
+   "county": "Not stated",
+   "amount": 10000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Pharmacy connectivity (Aug 2026)",
+   "n": 37,
+   "recipient": "Ohio Pharmacists Association",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Pharmacy connectivity (Aug 2026)",
+   "n": 38,
+   "recipient": "State of Ohio Board of Pharmacy",
+   "county": "Not stated",
+   "amount": 1150000.0,
+   "purpose": ""
+  }
+ ],
+ "note": "Awards named in three governor releases (the October release for 22 hospitals, 7 clinically integrated network and innovation-hub awardees and 6 maternal-care awardees; Ohio University; the pharmacy initiative). Amounts are as printed. They do not add up to the October release's headline buckets ($31.4 million for networks and hubs, $30.3 million for maternal care): the listed network and hub awards total $62,020,466 and maternal awards $33,980,000. The release explains that Ohio was awarded $92 million in each of FY2026 and FY2027 for the network and hub initiative and that the announcement includes all of the FY2026 funding and a portion of FY2027, so these amounts span two budget years and the share of the Year 1 award is not computed. The 22 hospitals each received $1,377,479 (the release states the per-hospital amount)."
+}
