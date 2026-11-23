@@ -663,6 +663,14 @@ The `/rht-review` pages read JSON from `frontend/lib/data/rht-review/` (no datab
 | Verify after a deploy | `cd frontend && PLAYWRIGHT_BASE_URL=https://healthtransformationreview.org npx playwright test e2e/rht-review.spec.ts` (the local dev server is slow; use the live site) |
 | Dev server memory | `npm run dev` grows (4.8 GB after two days); restart it when pages slow down |
 
+### Dependency updates and local tooling (added 2026-11-23)
+
+- **Vercel installs from the repo root**, not `frontend/`: the root `package.json` has `workspaces: ["frontend"]` and the root `package-lock.json` is the one that sets production versions (build command: `cd frontend && ../node_modules/.bin/next build`). Update dependencies in BOTH lockfiles (`npm audit fix` in `frontend/`, and `npm audit fix --package-lock-only` at the root). Never use `--force`.
+- `next.config.ts` pins `turbopack.root` to the repo root. Next 16.4+ refuses to resolve packages outside the root; pinning it to `frontend/` made the 2026-11-23 deploy fail ("Could not find the Next.js package"). A failed Vercel build leaves the last good deployment live.
+- Check a deploy with `vercel ls vhp --scope bechirbensaid-url` (Ready / Error); logs with `vercel inspect <url> --logs --scope bechirbensaid-url`. `gh` is not installed.
+- **Playwright on this Mac (macOS 12):** use `@playwright/test@1.60.0` (Chromium revision 1223); newer versions do not support macOS 12 and `playwright install` deletes the working browser. It is deliberately NOT in `package.json` (it was pruned by `npm audit fix` once because it is undeclared): restore with `cd frontend && npm install --no-save @playwright/test@1.60.0 && npx playwright install chromium`.
+- 2026-11-23: critical advisories 3 → 0 (Next 16.2.6/16.2.7 → 16.4.6); 39 moderate/high remain, mostly Sanity/Sentry tooling that needs breaking upgrades.
+
 Standing rules: Vermont first, California second in every multi-state view; never state that a state has no list without recording where it was searched.
 
 ---
