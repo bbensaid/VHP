@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs";
 
@@ -67,12 +68,14 @@ const nextConfig: NextConfig = {
     styledComponents: true,
   },
 
-  // Pin the workspace root to this app directory. Stray package-lock.json files
-  // exist higher up (~/ and the repo root), so Next would otherwise infer the
-  // wrong root and emit a "multiple lockfiles" warning. __dirname is the
-  // frontend/ directory where this config lives.
+  // Pin the workspace root to the REPO root (the directory with the workspaces package.json
+  // and package-lock.json that Vercel installs from; node_modules is hoisted there). Next 16.4+
+  // refuses to resolve packages outside the root, so pinning to frontend/ breaks the Vercel build
+  // ("Could not find the Next.js package"). Pinning explicitly also avoids the "multiple lockfiles"
+  // warning from the stray lockfiles under ~/ and frontend/. Local installs under frontend/node_modules
+  // are inside this root, so local builds still resolve.
   turbopack: {
-    root: __dirname,
+    root: path.resolve(__dirname, ".."),
   },
 
   // The /read/[slug] route reads small narration *.txt files from public/ at
