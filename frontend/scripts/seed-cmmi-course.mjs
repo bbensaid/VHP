@@ -67,6 +67,14 @@ const TRACKS = [
       "Who must participate, the five surgical episodes, the three risk tracks, target prices, reconciliation and quality, and a preparation sequence.",
       ["Identify which hospitals TEAM covers and which are excluded", "Compare the three TEAM risk tracks and the default assignment rule", "Explain how target prices, quality scores and stop limits determine reconciliation"], ["team", "episodes", "mandatory", "bundled-payments"]),
   ]),
+  T(3, "section-1115-waivers", "Section 1115 Waivers", "The authority and process behind 1115 demonstrations, budget neutrality under the 2027 rewrite, and Vermont's Global Commitment demonstration.", [
+    L(7, "cmmi-1115-authority-and-process", "Section 1115 Waivers: Authority, Process and What States Use Them For", 25,
+      "The two powers in section 1115, the path from proposal to approval, the four common uses, and how the March 2025 HRSN reversal shows federal policy risk.",
+      ["Distinguish waiver authority from expenditure authority", "Describe the public process and negotiation steps for a demonstration", "Explain why approval does not guarantee renewal"], ["1115", "waivers", "medicaid", "hrsn"]),
+    L(8, "cmmi-budget-neutrality", "Budget Neutrality: The Old Test and the 2027 Rewrite", 25,
+      "The with-waiver versus without-waiver test, section 1115(g) and the Chief Actuary certification from January 1, 2027, MAPS and 1115-only activities, savings and renewals.",
+      ["Explain the old with-waiver and without-waiver budget neutrality test", "Describe what section 1115(g) requires from January 1, 2027", "Classify demonstration activities as MAPS or 1115-only"], ["1115", "budget-neutrality", "chief-actuary", "maps"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
