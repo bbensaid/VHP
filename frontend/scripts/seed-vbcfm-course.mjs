@@ -67,6 +67,17 @@ const TRACKS = [
       "The 65-provision, eight-category contract checklist, the quality withhold arithmetic, carve-out symmetry, risk corridors, settlement and how to use the checklist in negotiation.",
       ["Review a contract against the eight categories", "Calculate the amount at risk in a quality withhold", "Prioritize critical provisions by dollar impact"], ["contracts", "apm", "risk-corridor"]),
   ]),
+  T(3, "global-budget-finance", "Hospital Finance Under Global Budgets and Reference-Based Pricing", "What Act 68 requires, the metrics that change, reference-based pricing exposure and the four-scenario stress test.", [
+    L(7, "vbcfm-global-budget-metrics", "Managing a Hospital Under a Global Budget: The Metrics That Change", 25,
+      "What Act 68 requires of global hospital budgets, the eight metric swaps from fee-for-service, the service-reduction notice rule and a monthly dashboard.",
+      ["State what Act 68 requires of global hospital budgets and what they include", "Replace fee-for-service metrics with their global budget counterparts", "Plan service reductions within the statute's notice requirement"], ["global-budget", "act-68", "hospital-finance"]),
+    L(8, "vbcfm-reference-based-pricing", "Reference-Based Pricing: What Act 68 Says and What It Does to a Hospital", 25,
+      "The statute's provisions on maximum prices, benchmarks, coverage and premium monitoring, a transparent exposure formula and what remains unknown.",
+      ["Summarize Act 68's reference-based pricing provisions", "Estimate revenue exposure with the stress test's formula", "Identify the unknowns to model as ranges"], ["reference-based-pricing", "act-68", "stress-test"]),
+    L(9, "vbcfm-hospital-stress-test", "The Hospital Financial Stress Test: Four Scenarios, One Plan", 25,
+      "The tool's sourced baselines, its four scenarios and mechanisms, how to read margin, days cash and debt coverage together, and a staged plan.",
+      ["Describe the four stress scenarios and how the tool models each", "Read margin, days cash on hand and debt service coverage together", "Build a staged plan from stress results"], ["stress-test", "hospital-finance", "scenarios"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
