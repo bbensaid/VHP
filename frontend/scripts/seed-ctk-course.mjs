@@ -33,7 +33,7 @@ const COURSE = {
   ],
   prerequisites: ["Start Here (recommended)", "Clinical Quality Measurement (recommended)", "Population Health Management (recommended)"],
   estimated_hours: 6.5,
-  is_published: false, // flipped to true only when all lessons are written and linked
+  is_published: true,
   version: "1",
   pillar: "clinical",
   level: "intermediate",
@@ -88,6 +88,17 @@ const TRACKS = [
     L(12, "ctk-clinical-leadership", "Clinical Leadership: The Under-Resourced Capability", 25,
       "Why administrators cannot implement clinical change alone, structures that give leaders authority, community health workers and a first ninety days.",
       ["Explain Chapter 9's argument for clinical leadership", "Design structures that give leaders time and authority", "Plan a first ninety days on a program"], ["leadership", "chw", "governance"]),
+  ]),
+  T(5, "commitments-and-capstone", "Commitments, Tools and Capstone", "The five clinical commitments and implementation matrix, the platform quality, value and risk tools, and a one-page practice transformation plan.", [
+    L(13, "ctk-implementation-commitments", "Five Commitments and the Implementation Matrix", 25,
+      "The five clinical commitments for the Strategic Plan, how to read the implementation matrix, sequencing for early wins and turning ranges into quotes.",
+      ["List the five clinical commitments", "Read the implementation matrix critically", "Sequence investments by payment and crossover"], ["implementation", "matrix", "strategic-plan"]),
+    L(14, "ctk-platform-tools-lab", "Platform Lab: Quality, Value and Risk Tools", 25,
+      "The Clinical Quality Optimizer, High vs. Low Value Care and Risk Stratification Engine: inputs, outputs, limits and a working order.",
+      ["Describe what each tool models and its data limits", "Run a tier-by-care-management comparison", "Use the tools in sequence without over-claiming"], ["tools", "risk-stratification", "quality"]),
+    L(15, "ctk-capstone-practice-plan", "Capstone: A Practice Transformation Plan", 30,
+      "A six-part one-page plan: baseline, priorities, programs, owners, budget and measures, risks and review, with a worked example.",
+      ["Write a baseline with unknowns marked", "Choose three priorities with measurable aims", "Set owners, budget, measures and a review date"], ["capstone", "planning", "practice"]),
   ]),
 ];
 
