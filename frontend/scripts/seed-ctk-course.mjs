@@ -56,6 +56,17 @@ const TRACKS = [
       "Panel size from a modeling study, concentrated spending, the four-tier framework, the worked example with its caveats and a first stratification exercise.",
       ["State where the panel-size range comes from and its limits", "Apply a four-tier stratification and match care models", "Check stratification for equity"], ["panel", "risk-stratification", "tiers"]),
   ]),
+  T(2, "behavioral-health-integration", "Behavioral Health Integration", "Collaborative care readiness and 2026 billing, the consultation model and workforce, and certified community behavioral health clinics.", [
+    L(4, "ctk-cocm-readiness", "Deploying the Collaborative Care Model: Readiness and Billing in 2026", 25,
+      "The model's roles, the four-dimension readiness assessment, measurement-based care, the 2026 CMS billing codes and what Vermont's source documents do and do not say.",
+      ["Describe the roles and registry of collaborative care", "Apply a readiness checklist and set up time tracking", "State the 2026 CoCM and general BHI code thresholds"], ["cocm", "behavioral-health", "billing"]),
+    L(5, "ctk-consultation-workforce", "The Psychiatric Consultation Model and the Care Manager Pipeline", 25,
+      "Telepsychiatry as a multiplier, a capacity sketch, the care manager pipeline sized from the Blueprint's staffing data, role design and safeguards.",
+      ["Sketch consultant capacity for a region", "Read pilot staffing by role to size the care manager pool", "Define protected care manager roles and safety protocols"], ["workforce", "telepsychiatry", "care-manager"]),
+    L(6, "ctk-ccbhc", "Certified Community Behavioral Health Clinics: Vermont's Six and What Certification Requires", 25,
+      "The six certified clinics as announced in 2026, the federal criteria, the warm handoff with primary care, questions for operators and legislators and the main risks.",
+      ["List Vermont's certified clinics and the announced coverage", "Describe what federal certification requires", "Design a warm handoff with primary care and a measure of it"], ["ccbhc", "behavioral-health", "vermont"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
