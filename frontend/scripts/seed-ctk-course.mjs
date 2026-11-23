@@ -67,6 +67,17 @@ const TRACKS = [
       "The six certified clinics as announced in 2026, the federal criteria, the warm handoff with primary care, questions for operators and legislators and the main risks.",
       ["List Vermont's certified clinics and the announced coverage", "Describe what federal certification requires", "Design a warm handoff with primary care and a measure of it"], ["ccbhc", "behavioral-health", "vermont"]),
   ]),
+  T(3, "quality-mechanics", "Quality Mechanics", "A five-step HEDIS improvement method, reading Vermont's quality gaps, and risk-adjustment documentation as clinical practice.", [
+    L(7, "ctk-hedis-improvement-method", "A Five-Step Method for Improving a HEDIS Measure", 25,
+      "Baseline, gap count, root cause, intervention and sustainable workflow, with a worked hypertension example, CY2023 Blueprint measures and a weekly improvement huddle.",
+      ["Apply the five-step method to a measure", "Convert a rate into a patient list", "Run a weekly huddle with a run chart"], ["hedis", "quality-improvement", "method"]),
+    L(8, "ctk-vermont-hedis-gaps", "Reading Vermont's Quality Gaps: Diabetes, Follow-Up After Emergency Visits and Equity", 25,
+      "Diabetes from rate to count, follow-up after emergency visits as a process gap, equity in the numbers, choosing priorities and building a local dashboard.",
+      ["Extrapolate a rate to a population count without overclaiming", "Explain why follow-up after emergency visits is a process gap", "Build a stratified local quality dashboard"], ["hedis", "diabetes", "equity"]),
+    L(9, "ctk-hcc-documentation", "Risk-Adjustment Documentation as Clinical Practice", 25,
+      "Why documentation is clinical, three common opportunities, the 2026 V28 phase-in, the compliance boundary and a documentation program with safeguards.",
+      ["Explain how documented conditions shape risk adjustment", "Describe three documentation opportunities and their workflow fixes", "Build a documentation program with compliance safeguards"], ["hcc", "risk-adjustment", "documentation"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
