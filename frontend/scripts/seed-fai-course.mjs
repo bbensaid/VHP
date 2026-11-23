@@ -78,6 +78,17 @@ const TRACKS = [
       "The 2026 remote monitoring codes in the Digital Health Lab, a worked revenue example, tiering readings into decisions, rural constraints and a six-step rollout with a stop-or-expand decision.",
       ["Compute modeled remote monitoring revenue under stated assumptions", "Explain why revenue is not value", "Run a pilot with prespecified thresholds"], ["rpm", "digital-health", "rollout"]),
   ]),
+  T(4, "cybersecurity", "Cybersecurity in Rural Health Infrastructure", "Why rural hospitals are exposed, shared security services, and incident response.", [
+    L(10, "fai-rural-cyber-risk", "Why Rural Hospitals Are Exposed: Two Cases and a Growing Attack Surface", 25,
+      "Three structural vulnerabilities, the Change Healthcare and 2020 UVM Health Network cases as far as sources allow, the growing attack surface and a first exposure inventory.",
+      ["Name three reasons rural hospitals are more vulnerable", "Compare what the two cases show and where the figures differ", "Inventory vendors and connections and mark single points of failure"], ["cybersecurity", "ransomware", "change-healthcare"]),
+    L(11, "fai-shared-security-services", "Shared Security Services: A Network Model and the Federal Frame", 25,
+      "The five shared service components, HHS's voluntary performance goals, the delayed HIPAA Security Rule update, buying and governing the service and measuring it.",
+      ["Describe five components of a shared security service", "State the status of the HHS goals and the proposed HIPAA Security Rule changes", "Define a shared responsibility matrix and service measures"], ["cybersecurity", "shared-services", "hipaa"]),
+    L(12, "fai-incident-response", "Incident Response and Recovery: Planning for the Bad Day", 25,
+      "Business impact and recovery objectives, downtime operations, vendor failure and financial resilience, governance and exercises, and notification and review.",
+      ["Set recovery time and recovery point objectives for critical systems", "Plan for both internal and vendor failure", "Run a tabletop exercise and a post-incident review"], ["incident-response", "downtime", "resilience"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
