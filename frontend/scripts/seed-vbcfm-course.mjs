@@ -78,6 +78,17 @@ const TRACKS = [
       "The tool's sourced baselines, its four scenarios and mechanisms, how to read margin, days cash and debt coverage together, and a staged plan.",
       ["Describe the four stress scenarios and how the tool models each", "Read margin, days cash on hand and debt service coverage together", "Build a staged plan from stress results"], ["stress-test", "hospital-finance", "scenarios"]),
   ]),
+  T(4, "the-financial-case", "The Financial Case", "Building the return on transformation, the primary care evidence, and making the case to boards, payers and legislatures.", [
+    L(10, "vbcfm-transformation-roi", "The Return on Transformation: A Framework and Its Evidence Ladder", 25,
+      "Chapter 7's five investment types, an evidence ladder for inputs, applying the share of savings, J-curve cash flow, breakeven analysis and presenting a range.",
+      ["Apply the transformation ROI framework with the payment arrangement's share of savings", "Rank business-case inputs on an evidence ladder", "Compute a breakeven number of prevented events"], ["roi", "business-case", "breakeven"]),
+    L(11, "vbcfm-primary-care-economics", "Primary Care Economics: What Vermont's Blueprint Evidence Shows and Does Not", 25,
+      "The Blueprint's scale and cost, the provenance of its return figures, the 2025 annual report's risk-adjusted comparison and caveats, the Auditor's critique and the Medicare funding gap.",
+      ["Describe the Blueprint's scale, funding and evidence with provenance", "Interpret a risk-adjusted comparison with its stated limits", "Explain the Medicare funding gap after the all-payer model agreement ended"], ["primary-care", "blueprint", "evidence"]),
+    L(12, "vbcfm-making-the-case", "Making the Financial Case: To a Board, a Payer and a Legislature", 25,
+      "The funding streams available, what a board, a payer and a legislature each need to see, honest answers to common objections and a one-page case template.",
+      ["Tailor a financial case to a board, a payer or a legislature", "Plan financing after time-limited grants end", "Write a one-page case with a range, a stop trigger and a decision request"], ["business-case", "negotiation", "legislature"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
