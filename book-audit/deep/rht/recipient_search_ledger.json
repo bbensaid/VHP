@@ -72,12 +72,12 @@
   "note": "HCA Nov 5 PDF: estimated $ per activity; 28 hospitals named for $9.67M with no per-hospital amounts"
  },
  "Minnesota": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://www.health.state.mn.us/facilities/ruralhealth/ruraltrans/index.html",
    "https://mn.gov/oems/assets/2026%20%20TIP%20RFP%20Awards_tcm1221-771334.pdf"
   ],
-  "note": "grants page links 9 contract-awardee PDFs (TA/eval vendors); hospital/FQHC formula money (70%/5%) not itemized"
+  "note": "9 MDH awardee sheets (09/17/2026): all 11 amounts, $12.45M; hospital/FQHC money not itemized"
  },
  "Missouri": {
   "status": "parsed",
@@ -127,7 +127,7 @@
   "urls": [
    "https://ldh.la.gov/assets/docs/Secretary/RHTP/AC_Meeting_11.05.2026.pdf"
   ],
-  "note": "ldh.la.gov/news/RHTP-Y1funding (Oct 8 2026): up to $12.7M Rural Clinician Credit Bank, 53 providers from 136 applications \u2014 names not published in the release; AC meeting PDF 403 to curl"
+  "note": "LDH Oct 8 release read in full: Rural HERO up to $20M (four public systems), Rural Clinician Credit Bank up to $12.7M (53 providers, unnamed), Grow Your Own up to $5M (LCTCS) \u2014 ceilings, no per-award amounts or names"
  },
  "Wisconsin": {
   "status": "parsed",
@@ -158,11 +158,11 @@
   "note": "public notices of award per initiative"
  },
  "Arizona": {
-  "status": "partial",
+  "status": "none_found",
   "urls": [
    "https://www.azahcccs.gov/AHCCCS/Initiatives/RHTP/"
   ],
-  "note": "rolling RFGA awards from June 2026"
+  "note": "AHCCCS RHTP pages list solicitations (telehealth $17M, innovative care pilot $21M, TA $2.8M, ADHS navigator) but no awardee list as of 2026-11-23 (searched)"
  },
  "Georgia": {
   "status": "no_per_award_amounts",
@@ -183,7 +183,7 @@
  },
  "Wyoming": {
   "status": "partial",
-  "note": "governor.wyo.gov Oct 23 2026 release announces awards without amounts (could not open the page text); WDH advisory-committee approval sheet (Drive, Aug 11 2026) has approved amounts but clipped names/EIN-only rows \u2014 a partial parse of its clean rows is possible"
+  "note": "approval sheet read in full: amounts are scattered through notes columns and several names are clipped or EIN-only \u2014 a reliable parse was not possible; not published rather than risk wrong amounts"
  },
  "Illinois": {
   "status": "parsed",
@@ -257,15 +257,15 @@
   "note": "11 rural hospitals invited to the $30M Rural Hospital Efficiency Fund (names, no amounts); EMR fund awardees not published (searched 2026-11-22)"
  },
  "New Hampshire": {
-  "status": "partial",
-  "note": "hub contracts approved by Governor & Council (e.g. Foundation for Healthy Communities $66,547,394; CCSNH $6,730,219; USNH $15.6M yr 1) \u2014 agenda PDFs under media.sos.nh.gov, not yet parsed/verified; no subgrantee list"
+  "status": "blocked",
+  "note": "gonorth.nh.gov and media.sos.nh.gov (Governor & Council agendas/contracts) return 403 to automated downloads (2026-11-23); search summaries cite hub contracts (FHC $66,547,394; CCSNH $6,730,219; USNH $15.6M yr 1) \u2014 not verified from a document I could open"
  },
  "New Mexico": {
   "status": "partial",
   "urls": [
    "https://www.hca.nm.gov/rht/"
   ],
-  "note": "hca.nm.gov Sept 18 2026 \"regional leads\" page and /rht return 404 to curl and to the fetch tool (2026-11-22); search summary named six regional leads with funding ceilings but I could not open the page, so nothing is published from it. NM $50M/$20M lists are STATE funds, not RHT"
+  "note": "hca.nm.gov Sept 18 release page 404; Wayback snapshot of /rht/ (Sept 9) predates the regional-lead announcement and lists no recipients"
  },
  "Idaho": {
   "status": "parsed",
@@ -292,7 +292,7 @@
   "urls": [
    "https://doh.sd.gov/healthcare-professionals/rural-health/rural-health-transformation-project/rht-press-releases/"
   ],
-  "note": "news.sd.gov release pages are JavaScript apps (1.4 KB to curl); search summaries say recipients not named; state says contracts will be on OpenSD"
+  "note": "doh.sd.gov press-release list links to news.sd.gov releases (JavaScript pages, 1.4 KB to curl); search summaries say recipients not named; contracts to appear on OpenSD"
  },
  "Hawaii": {
   "status": "none_found",

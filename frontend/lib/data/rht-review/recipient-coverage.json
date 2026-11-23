@@ -11,6 +11,7 @@
   "Illinois",
   "Maryland",
   "Michigan",
+  "Minnesota",
   "Mississippi",
   "Missouri",
   "Nebraska",
@@ -38,16 +39,14 @@
   "Washington"
  ],
  "partial": [
-  "Arizona",
   "Louisiana",
   "Maine",
-  "Minnesota",
-  "New Hampshire",
   "New Mexico",
   "South Dakota",
   "Wyoming"
  ],
  "noneFound": [
+  "Arizona",
   "Hawaii",
   "Kentucky",
   "Massachusetts",
@@ -57,7 +56,8 @@
  ],
  "blocked": [
   "Colorado",
-  "Kansas"
+  "Kansas",
+  "New Hampshire"
  ],
  "toParse": [],
  "searchedOn": "2026-11-22"

@@ -1,0 +1,102 @@
+{
+ "state": "Minnesota",
+ "slug": "minnesota",
+ "asOf": "2026-09-17",
+ "source": {
+  "label": "Minnesota Department of Health, Rural Health Transformation Program Funding awardee sheets (nine documents dated 09/17/2026)",
+  "url": "https://www.health.state.mn.us/facilities/ruralhealth/ruraltrans/grants.html"
+ },
+ "announcedTotal": null,
+ "areaLabel": "City",
+ "rows": [
+  {
+   "program": "Identifying performance measures for RHTP information technology investments",
+   "n": 1,
+   "recipient": "AscendRural/Sourcewell",
+   "county": "Staples",
+   "amount": 25000.0,
+   "purpose": "Design and develop a performance measurement framework for Minnesota's health information technology investments"
+  },
+  {
+   "program": "Earn & Train Pathways",
+   "n": 2,
+   "recipient": "Minnesota Community Health Worker Alliance",
+   "county": "Saint Paul",
+   "amount": 386146.0,
+   "purpose": "Career pathways for rural workers to become community health workers and representatives"
+  },
+  {
+   "program": "Medication for Opioid Use Disorder Education Development Council",
+   "n": 3,
+   "recipient": "Freya + Co",
+   "county": "Minnetonka",
+   "amount": 69000.0,
+   "purpose": "Design and facilitate the MOUD Education Development Council"
+  },
+  {
+   "program": "K-12 Healthcare Career Exposure and Earn & Train Pathways",
+   "n": 4,
+   "recipient": "HealthForce MN",
+   "county": "Winona",
+   "amount": 654773.0,
+   "purpose": "Scrubs Camps and HOSA chapters introducing rural K-12 students to health careers"
+  },
+  {
+   "program": "RHTP Evaluation",
+   "n": 5,
+   "recipient": "Minnesota Management and Budget",
+   "county": "Saint Paul",
+   "amount": 275945.0,
+   "purpose": "Evaluation design, data collection planning and metrics support"
+  },
+  {
+   "program": "Rural Ambulance Treatment in Place",
+   "n": 6,
+   "recipient": "Minnesota Office of EMS (staff time)",
+   "county": "Saint Paul",
+   "amount": 281000.0,
+   "purpose": "OEMS staff time for the ambulance treatment-in-place pilot"
+  },
+  {
+   "program": "Rural Ambulance Treatment in Place",
+   "n": 7,
+   "recipient": "Minnesota Office of EMS (grant funds to EMS agencies)",
+   "county": "Saint Paul",
+   "amount": 9218109.0,
+   "purpose": "Funds to rural ambulance services that opt into the treatment-in-place pilot"
+  },
+  {
+   "program": "Project ECHO for Maternal and Behavioral Health",
+   "n": 8,
+   "recipient": "Minnesota Perinatal Organization",
+   "county": "Savage",
+   "amount": 165000.0,
+   "purpose": "Project ECHO series on maternal health, including maternal mental health"
+  },
+  {
+   "program": "Project ECHO for Maternal and Behavioral Health",
+   "n": 9,
+   "recipient": "Minnesota Medical Association",
+   "county": "Minneapolis",
+   "amount": 165007.0,
+   "purpose": "Project ECHO series on mental and behavioral health"
+  },
+  {
+   "program": "Technical Assistance for Healthcare Providers on Health Information Technology",
+   "n": 10,
+   "recipient": "Stratis Health",
+   "county": "Bloomington",
+   "amount": 883371.0,
+   "purpose": "Technical assistance for health care providers on health information technology"
+  },
+  {
+   "program": "Health Information Technology Advisory Services",
+   "n": 11,
+   "recipient": "Technology Management Corporation",
+   "county": "Shorewood",
+   "amount": 330100.0,
+   "purpose": "Technical advisory services to MDH on sub-recipients' health IT purchases"
+  }
+ ],
+ "note": "Contract and sub-recipient awards MDH posted as nine one-page sheets: evaluation, technical assistance, an EMS treatment-in-place pilot, workforce pathways and ECHO training. The 11 amounts on the sheets are all included. This is a small part of Minnesota's $193 million first-year award: MDH's grants page allocates 70% of the award to hospitals and 5% to federally qualified health centers, and those recipients are not itemized on these sheets. The EMS office's $9,218,109 is grant money it passes to rural ambulance services that join the pilot."
+}
