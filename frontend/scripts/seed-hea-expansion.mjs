@@ -42,6 +42,17 @@ const TRACKS = [
       "Coverage mechanics, the BALANCE model as verified, framing the equity analysis and monitoring after a coverage decision.",
       ["Explain how GLP-1 coverage depends on diagnosis", "Frame an equity analysis of a coverage decision", "Build a monitoring plan"], ["glp-1", "coverage", "balance-model"]),
   ]),
+  T(4, "accountability-and-contracts", "Accountability and Contracts", "Equity indicators, targets and owners, the eight-category audit for value-based contracts and the equity impact assessment.", [
+    L(13, "hea-accountability-framework", "Making Equity Accountable: Indicators, Targets and Owners", 25,
+      "The Act 68 Section 11b hook, indicator specification sheets, targets that close gaps, pairing indicators with interventions and who holds whom accountable.",
+      ["Write an indicator specification", "Set a target as both gap and level", "Close the accountability loop"], ["accountability", "indicators", "targets"]),
+    L(14, "hea-vbc-equity-audit", "Protecting Equity in Value-Based Contracts: The Eight-Category Audit", 25,
+      "How payment design can worsen equity, the eight-category audit, the ACO REACH equity benchmark adjustment and what Act 68 says about social risk.",
+      ["Score a contract on eight equity categories", "Explain a social risk benchmark adjustment", "Monitor panel composition after signing"], ["vbc", "audit", "social-risk-adjustment"]),
+    L(15, "hea-equity-across-pillars", "Equity Is Not a Program: The Equity Impact Assessment", 25,
+      "The five-pillar equity lens, a four-step impact assessment with a worked example, what Vermont already has and making the lens a habit.",
+      ["Apply the equity lens to each pillar", "Run a four-step equity impact assessment", "Embed the lens in decision routines"], ["equity-impact-assessment", "five-pillars", "governance"]),
+  ]),
 ];
 
 const SLUG = "health-equity-analytics";
