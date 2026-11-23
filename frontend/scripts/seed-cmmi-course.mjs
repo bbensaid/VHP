@@ -63,6 +63,9 @@ const TRACKS = [
     L(5, "cmmi-vermont-ahead-agreement", "Vermont and AHEAD: Reading a State Agreement and a Withdrawal", 25,
       "The timeline from signing to withdrawal, the clauses that made exit possible, two accounts of the same event, what Act 68 preserves, and a checklist for any state.",
       ["Describe what Vermont's AHEAD State Agreement was built to protect", "Compare the state's and CMS's accounts of the withdrawal and separate sourced from unsourced figures", "Apply a pre-signing checklist to a federal model agreement"], ["ahead", "vermont", "state-agreement", "withdrawal"]),
+    L(6, "cmmi-team-mandatory-episodes", "Mandatory Episodes: How TEAM Works and How to Prepare", 25,
+      "Who must participate, the five surgical episodes, the three risk tracks, target prices, reconciliation and quality, and a preparation sequence.",
+      ["Identify which hospitals TEAM covers and which are excluded", "Compare the three TEAM risk tracks and the default assignment rule", "Explain how target prices, quality scores and stop limits determine reconciliation"], ["team", "episodes", "mandatory", "bundled-payments"]),
   ]),
 ];
 

@@ -168,6 +168,88 @@ L5 = [
     blk('src6', "[6] Vermont Act 68 of 2025 (hospital global budgets), as summarized in Chapter 3 — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf"),
 ]
 
-LESSONS = [(L4_SLUG, L4_TITLE, L4, 4), (L5_SLUG, L5_TITLE, L5, 5)]
+# ════════════════════════════════════════════════════════════════════════════
+# Lesson 6 facts: read from CMS "TEAM Model Overview" (updated September 2026) and CMS "Participation Tracks in TEAM"
+# fact sheet, both extracted from the PDFs themselves on 2026-11-23. Vermont application from HTR book Chapter 3 §3.2.2.
+L6_SLUG = 'cmmi-team-mandatory-episodes'
+L6_TITLE = 'Mandatory Episodes: How TEAM Works and How to Prepare'
+L6 = [
+    blk('intro1', "TEAM, the Transforming Episode Accountability Model, is the Innovation Center's mandatory episode-based payment model for surgical care. Where AHEAD asks a state to take on accountability for a whole population over several years, TEAM asks a hospital to take on accountability for a single surgical episode, starting on a fixed date and without a choice about whether to take part."),
+    blk('intro2', "This lesson explains who TEAM applies to, what an episode contains, how the three risk tracks differ, how target prices and reconciliation work, how quality changes the payment, and what a hospital or state should do to prepare. It draws on CMS's own model overview, last updated in September 2026, and on its participation-tracks fact sheet."),
+    blk('intro3', "Episode models matter beyond the hospitals they cover. They are the clearest example of mandatory participation in the current portfolio, and they teach the mechanics of target prices and reconciliation that appear in many other models."),
+
+    h2('s1h1', 'What TEAM Is For'),
+    blk('s1p1', "CMS finalized TEAM in August 2024 as a mandatory model. It holds acute care hospitals accountable for quality and spending during a patient's hospital stay or outpatient procedure and the 30 days that follow discharge. CMS's stated problem is fragmented care: patients who have surgery in a hospital may experience complications, avoidable hospitalizations and higher spending because no one is responsible for the whole recovery."),
+    blk('s1p2', "The model has five performance years, 2026 through 2030. Its goals, as CMS lists them, include improving the patient experience from surgery through recovery, reducing readmissions and emergency department use, shortening recovery time, reducing avoidable items and services, and promoting collaboration with longitudinal care providers. In practice, hospitals redesign discharge planning, post-acute referrals and follow-up so that the 30 days after surgery are managed, not just the day of the operation."),
+    blk('s1p3', "Chapter 3 places TEAM beside AHEAD, ACO REACH and BALANCE as the models most relevant to a Vermont-style transformation, and records that it replaced the voluntary Bundled Payments for Care Improvement Advanced model. The move from voluntary to mandatory is the central design choice, and it is the reason TEAM is controversial."),
+
+    h2('s2h1', 'Who Must Participate'),
+    blk('s2p1', "A TEAM participant is an acute care hospital that initiates episodes, is paid under the inpatient and outpatient prospective payment systems, and has a CMS Certification Number address located in one of the mandatory core-based statistical areas selected for the model. The FY2025 inpatient payment final rule identifies those areas, and CMS publishes a list of the hospitals required to participate and those that volunteered."),
+    blk('s2p2', "The overview lists three important boundaries. Indian Health Service and tribal hospitals are excluded. Hospitals in Maryland are excluded, which reflects Maryland's own all-payer global budget system. And hospitals that open in a mandatory area, or that begin to satisfy the definition of a participant after December 31, 2024, are not required to participate immediately; they have at least one full performance year of deferment."),
+    blk('s2p3', "There was also a voluntary route. Hospitals outside the mandatory areas could opt in during January 2025 if they had been in the Comprehensive Care for Joint Replacement model through the end of 2024 or in BPCI Advanced through its final period, which ended December 31, 2025. TEAM may overlap with most other CMS models. A hospital in an accountable care organization can still have TEAM episodes, and a TEAM participant may also take part in AHEAD."),
+    warning('s2w1', "Check the list, not the headline", "Whether a particular hospital is a TEAM participant depends on the CCN address and the published CMS list. The lesson cannot tell you from the model description whether a given Vermont hospital is covered. Look up the hospital's CCN on the CMS TEAM participant list before assuming either way."),
+
+    h2('s3h1', 'What an Episode Contains'),
+    blk('s3p1', "An episode starts with an anchor hospitalization or an anchor procedure and runs for 30 days after the date of the procedure or after discharge. All Medicare Part A and B services are included unless specifically excluded: physician services, inpatient and outpatient hospital care, readmissions, post-acute care in skilled nursing, rehabilitation, long-term care and home health, therapy, laboratory, durable equipment, Part B drugs and hospice."),
+    blk('s3p2', "There are five surgical episode categories, and every participant is accountable for all of them unless an exclusion applies: lower extremity joint replacement, which can be inpatient or outpatient; surgical hip and femur fracture treatment; spinal fusion, inpatient or outpatient; coronary artery bypass graft; and major bowel procedures. The overview adds that three additional spinal fusion diagnosis-related groups become episode triggers on October 1, 2026."),
+    blk('s3p3', "Some things are carved out: inpatient admissions in categories such as oncology, trauma medical, organ transplant and ventricular shunt, certain major diagnostic categories, device pass-through payments, new technology add-on payments, hemophilia clotting factors and high-cost Part B drugs. Beneficiaries are included only if they are in original Medicare with Parts A and B, are not enrolled in a managed care plan such as Medicare Advantage, have Medicare as their primary payer, and are not eligible on the basis of end-stage renal disease. An episode is cancelled if the patient dies during the anchor stay or if extreme and uncontrollable circumstances, such as a declared disaster, apply."),
+
+    h2('s4h1', 'Three Tracks, Three Risk Levels'),
+    blk('s4p1', "TEAM offers three participation tracks that differ in how much a hospital can win or lose. The CMS fact sheet describes them as a way to let hospitals build care management infrastructure before taking downside risk, to give hospitals time to analyze data, and, at the other end, to provide the maximum levels of risk and reward."),
+    table('s4t1', 'TEAM participation tracks (CMS participation tracks fact sheet)', [
+        {'Feature': 'Risk', 'Track_1': 'Upside only', 'Track_2': 'Upside and downside', 'Track_3': 'Upside and downside'},
+        {'Feature': 'Stop-gain and stop-loss limit', 'Track_1': '10% stop-gain; no stop-loss', 'Track_2': '5% each', 'Track_3': '20% each'},
+        {'Feature': 'Quality adjustment, positive reconciliation', 'Track_1': 'Up to 10%', 'Track_2': 'Up to 10%', 'Track_3': 'Up to 10%'},
+        {'Feature': 'Quality adjustment, negative reconciliation', 'Track_1': 'Not applicable', 'Track_2': 'Up to 15%', 'Track_3': 'Up to 10%'},
+        {'Feature': 'Who may choose it', 'Track_1': 'All participants in year 1; safety-net hospitals in years 1 to 3', 'Track_2': 'Years 2 to 5: safety-net, rural, sole community, Medicare-dependent and essential access hospitals', 'Track_3': 'All participants, years 1 to 5'},
+    ]),
+    blk('s4p2', "Track selection is a decision a hospital has to make before each performance year. A participant that fails to choose is assigned to Track 1 for the first year and to Track 3 for later years, so inaction becomes a choice. CMS also noted that it might provide an interactive tool that participants could use to simulate their potential performance under each track, for scenario planning only."),
+    callout('s4c1', "Stop-gain and stop-loss limits cap the total a hospital can receive or owe. They are the model's insurance against a bad year, and they are largest in Track 3: 20 percent in either direction."),
+
+    h2('s5h1', 'Target Prices, Reconciliation and Quality'),
+    blk('s5p1', "Hospitals keep billing Medicare fee-for-service, but receive a preliminary target price before each performance year for each episode category. The price is based on non-excluded Part A and B spending, and is prospectively trended, normalized and risk adjusted. The baseline is a three-year period that rolls forward annually, for example January 2022 through December 2024 for the first year. Target prices use 100 percent regional data, with regions defined by the nine census divisions, and episode spending is capped at the 99th percentile to protect participants from unusually costly cases."),
+    blk('s5p2', "Target prices include a discount that is intended to reflect Medicare's expected savings: 1.5 percent for coronary bypass and major bowel episodes and 2 percent for joint replacement, hip and femur fracture and spinal fusion episodes. Final target prices add a retrospective trend adjustment capped at 3 percent and a normalization factor capped at 5 percent, so that risk adjustment by itself neither raises nor lowers average prices. The risk adjustment accounts for patient factors such as age and social risk, and hospital factors such as bed size."),
+    blk('s5p3', "Reconciliation compares total performance-year fee-for-service spending for attributed episodes with the final target price. The result is adjusted by a composite quality score, then limited by the track's stop-gain or stop-loss. CMS also tracks spending in the 30 days after each episode and, if a participant's average post-episode spending is more than three standard deviations above the regional average, subtracts the excess, which discourages shifting costs outside the episode window. A participant with fewer than 31 baseline episodes in a category is reconciled but is not held accountable for spending above target in that category."),
+    blk('s5p4', "Quality counts. The first-year measures are a hybrid hospital-wide all-cause readmission measure, a patient-reported outcome measure for hip and knee replacement, and a patient safety composite; later years replace the safety composite with three harm measures and add a patient-reported information-transfer measure from year 3. A participant with no or incomplete score on a measure receives a neutral score of 50."),
+
+    h2('s6h1', 'Preparing, and What It Means for States'),
+    steps('s6st1', 'A hospital preparation sequence for an episode model', [
+        ('Confirm status', 'Check the CMS participant list for your CCN, the deferment rules and your voluntary or mandatory status.'),
+        ('Understand your baseline', 'Review your three-year baseline claims and the regional target prices for each of the five episode categories.'),
+        ('Choose the track deliberately', 'Compare Tracks 1, 2 and 3 against your capability; remember the default if you do not choose.'),
+        ('Redesign the 30 days', 'Map discharge planning, post-acute placement, readmission prevention and the required primary care referral.'),
+        ('Build the quality position', 'Prepare for the readmission, patient-reported outcome and safety measures that adjust payment.'),
+    ]),
+    blk('s6p1', "For a state, TEAM is partly a constraint and partly an opportunity. It sits outside any state agreement, so state officials cannot negotiate its terms the way Vermont negotiated AHEAD, but TEAM's episode data and tools can inform state plans for hospital budgets. The model also shows what a mandatory federal design looks like in practice: fixed start, published rules, limited ability to opt out and risk tracks that scale with capability."),
+    blk('s6p2', "TEAM and AHEAD illustrate two different answers to the same question of how to hold hospitals accountable. One makes a state accountable for whole-population spending and gives it years to build authority and data. The other makes a hospital accountable for a defined clinical event on a date set in advance. A hospital system that operates in both worlds needs the management discipline that Chapter 15's portfolio approach describes."),
+
+    takeaway('tw', [
+        "TEAM is a mandatory five-year episode model, 2026 through 2030, holding acute care hospitals in selected core-based statistical areas accountable for a surgical stay or procedure and the 30 days after discharge.",
+        "Indian Health Service and tribal hospitals and hospitals in Maryland are excluded, and hospitals that open or newly qualify in a mandatory area have at least one performance year of deferment.",
+        "The five episode categories are lower extremity joint replacement, surgical hip and femur fracture treatment, spinal fusion, coronary artery bypass graft and major bowel procedures.",
+        "Track 1 is upside only with a 10 percent stop-gain; Track 2 has 5 percent stop-gain and stop-loss limits; Track 3 has 20 percent limits; a participant that makes no choice is assigned Track 1 for year 1 and Track 3 afterward.",
+        "Target prices use three-year regional baselines, a 99th percentile outlier cap and discounts of 1.5 or 2 percent, with final adjustments capped at 3 percent for trend and 5 percent for normalization.",
+        "Reconciliation adjusts for a composite quality score, applies stop-gain and stop-loss limits, and subtracts excess post-episode spending above three standard deviations from the regional average.",
+        "Whether a given hospital is covered depends on its CCN address and the CMS participant list, which a hospital should verify directly.",
+    ]),
+    quiz('qz',
+        "A TEAM participant makes no track selection before performance year 2. What happens?",
+        [
+            ("It is assigned to Track 1, upside risk only", False),
+            ("It is assigned to Track 3, the track with 20 percent stop-gain and stop-loss limits", True),
+            ("It is removed from the model", False),
+            ("It is assigned to Track 2 with 5 percent limits", False),
+        ],
+        "CMS's participation tracks fact sheet states that a participant that fails to notify CMS of its track selection ahead of each performance year from year 2 onward is assigned to Track 3. Participants that make no choice for year 1 are assigned to Track 1. Inaction is therefore a decision, and a hospital should choose its track deliberately."
+    ),
+    h2('src', 'Sources'),
+    blk('src1', "[1] CMS Innovation Center, Transforming Episode Accountability Model (TEAM) Model Overview (updated September 2026) — https://www.cms.gov/priorities/innovation/files/team-overview-updated.pdf — participants, episodes, tracks, pricing, reconciliation, quality measures, waivers"),
+    blk('src2', "[2] CMS Innovation Center, Participation Tracks in the Transforming Episode Accountability Model (TEAM) — https://www.cms.gov/files/document/team-participation-tracks-fact-sheet.pdf — track features and eligibility, default assignment"),
+    blk('src3', "[3] CMS, Transforming Episode Accountability Model (TEAM) — https://www.cms.gov/priorities/innovation/innovation-models/team-model — five performance years, 2026 to 2030; mandatory model"),
+    blk('src4', "[4] " + BOOK3 + " — §3.2.2 and Figure 3.2: TEAM as the successor to BPCI Advanced"),
+    blk('src5', "[5] CMS, FY 2025, FY 2026 and FY 2027 Inpatient Prospective Payment System/Long-Term Care Hospital PPS final rules, the rules that establish and amend TEAM; the CMS overview lists their Federal Register document numbers as 2024-17021, 2025-14681 and 2026-15833 — see the CMS TEAM page (https://www.cms.gov/priorities/innovation/innovation-models/team-model) for the current participant list"),
+]
+
+LESSONS = [(L4_SLUG, L4_TITLE, L4, 4), (L5_SLUG, L5_TITLE, L5, 5), (L6_SLUG, L6_TITLE, L6, 6)]
 if __name__ == '__main__':
     run(LESSONS)
