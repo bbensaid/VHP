@@ -1,0 +1,46 @@
+{
+ "state": "Connecticut",
+ "slug": "connecticut",
+ "asOf": "2026-09",
+ "source": {
+  "label": "Office of Gov. Ned Lamont, \"Governor Lamont Announces Connecticut's Rural Health Transformation Program Invests $50 Million in Rural Hospital Right-Sizing and Infrastructure\" (Sept 2026)",
+  "url": "https://portal.ct.gov/governor/news/press-releases/2026/09-2026/governor-lamont-announces-rural-health-transformation-program-invests-50-million"
+ },
+ "announcedTotal": 50000000,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Rural Health Transformation Project grant agreements (Sept 2026)",
+   "n": 1,
+   "recipient": "Day Kimball Hospital (Putnam)",
+   "county": "Not stated",
+   "amount": 20230000.0,
+   "purpose": "Rural hospital transformation (Year 1)"
+  },
+  {
+   "program": "Rural Health Transformation Project grant agreements (Sept 2026)",
+   "n": 2,
+   "recipient": "Sharon Hospital (Sharon)",
+   "county": "Not stated",
+   "amount": 13120000.0,
+   "purpose": "Rural hospital transformation (Year 1)"
+  },
+  {
+   "program": "Rural Health Transformation Project grant agreements (Sept 2026)",
+   "n": 3,
+   "recipient": "Hartford HealthCare: Windham Hospital (Willimantic) and Charlotte Hungerford Hospital (Torrington)",
+   "county": "Not stated",
+   "amount": 12650000.0,
+   "purpose": "Rural hospital transformation (Year 1)"
+  },
+  {
+   "program": "Rural Health Transformation Project grant agreements (Sept 2026)",
+   "n": 4,
+   "recipient": "Mathematica",
+   "county": "Not stated",
+   "amount": 3980000.0,
+   "purpose": "Technical assistance to the rural hospitals"
+  }
+ ],
+ "note": "The governor's release describes $50 million in finalized grant agreements: $46 million to four rural hospitals (Hartford HealthCare's two hospitals share one award) and a technical-assistance vendor. Amounts are as printed in millions, so the listed sum ($49.98 million) is $20,000 below the rounded $50 million. This is only part of Connecticut's $154 million first-year award."
+}

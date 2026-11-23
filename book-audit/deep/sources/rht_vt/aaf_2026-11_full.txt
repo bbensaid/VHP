@@ -1,0 +1,102 @@
+American Action Forum, Rural Health Transformation Program Funding: A Narrow Redistribution for Year 2
+https://www.americanactionforum.org/weekly-checkup/rural-health-transformation-funding-year-2/
+Serving economic news and views every morning.
+Analysis on the underemployment number in the monthly jobs report.
+Explains and analyzes the biggest news in international trade.
+At least one search term must be present.
+At least one search term must be present.
+Weekly Checkup
+November 13, 2026
+Michael Baker
+On November 9, the Centers for Medicare & Medicaid Services (CMS) announced its second round of Rural Health Transformation Program (RHTP) awards, distributing another $10 billion among all 50 states. Established in last year’s budget reconciliation law, the five-year program intends to reshape rural health care delivery. Its second-year awards offer an early look at how CMS weighs rural need, state policy choices, and implementation progress. While it is still too early to measure any “transformation,” there are things we can learn from the announcement. The most striking finding? It is remarkable how little the overall distribution changed. To determine whether these funding decisions are in the best interest of the program, clear evidence to affirm the reallocations is necessary.
+Comparing fiscal year (FY) 2026 with FY 2027, 25 states received more funding and 25 received less. Yet awards did not rise or fall steeply: 46 saw changes of less than 3 percent, and the median absolute change was 1.3 percent. Only about $68 million effectively shifted among states, less than 0.7 percent of the $10 billion annual pool. North Dakota gained the most, $7.4 million (3.7 percent), followed by Iowa ($7.0 million), Montana ($6.2 million), and Virginia ($6.2 million). Florida lost the most, $6.1 million (2.9 percent), followed by Vermont ($5.1 million) and New Jersey ($4.9 million).
+
+Congress stipulated half the funding be distributed equally among approved states, guaranteeing each $100 million annually with all 50 participating. CMS then distributes the remaining half through 23 weighted factors. Approximately 25 percent of total funding reflects measures of state need, 16 percent state initiatives, 8 percent state policies, and 1 percent other technical considerations. About three-quarters of the funding is therefore determined by the uniform allotment or measures of rural need that remain fixed across years.
+That formula provides predictability, but need and funding are not synonymous. Texas will receive nearly $282 million this year, compared with $142 million for New Jersey. The $100 million base constitutes approximately 35 percent of Texas’s award but 70 percent of New Jersey’s. The measures used to allocate another quarter of the funding incorporate rural populations, facilities, and hospital characteristics, yet CMS holds them constant across funding cycles. Consequently, future allocations will not automatically reflect changes in rural health needs during the program’s five-year span.
+State policy actions form the second consideration. CMS rewards states for existing laws or commitments to pursue certain future reforms. Easing certificate-of-need restrictions, expanding clinician scope of practice, and joining licensure compacts can plausibly improve competition and access in underserved areas. Other priorities – including SNAP food-purchase restrictions, the Presidential Fitness Test, and mandatory nutrition continuing medical education (CME) for physicians – have less direct connections to rural care delivery, but are rewarded nonetheless. All may have policy arguments in their favor, but they are not interchangeable with evidence of improved rural access.
+The new state snapshots offer concrete examples. North Dakota completed commitments involving the fitness test, a SNAP waiver, and nutrition CME. Its FY 2027 award includes $2.28 million, $6.64 million, and $5.38 million, respectively, attributable to those factors. Iowa, the second-largest gainer, received $4.71 million attributable to its nutrition CME commitment, which remains in progress. This is also the first budget period in which CMS scored the nutrition CME factor separately. Notably, the amounts attributed to policies are not the year-over-year increases caused by those policies – other scores changed, too. Still, the examples illustrate how a rural health program can reward statewide policy commitments independently of demonstrated patient benefits.
+The third consideration is implementation. All 50 states submitted annual reports, and CMS evaluated progress using checkpoints such as establishing governance, securing project approval, launching initiatives, and developing measurement plans. These steps are sensible; states cannot transform care without organizing the work. But a completed project plan does not establish that a resident has better access to a specialist, a hospital is more financially stable, or preventable admissions have declined. Nor should small funding changes automatically be taken as evidence that states performed similarly. With three-quarters of the formula essentially fixed, substantial differences in the remaining scores may translate into modest changes in total awards. Moreover, because funding is allocated according to states’ relative scores, an award can decline even when a state makes progress if others advance further.
+CMS has disclosed its underlying methodology and state-by-state snapshots, but not a complete reconciliation of each state’s scores between funding periods. Without state-specific data on progress, it’s impossible to distinguish funding changes attributable to policy commitments from those attributable to implementation or technical adjustments. Providing that breakdown would make the decisions easier to evaluate and establish a clearer baseline for judging future rounds of funding.
+Ultimately, the second-year awards illustrate the distinction between distributing resources and transforming rural health care. Measures of rural need can help identify where funding should go, policy commitments can encourage states to address barriers to care, and implementation checkpoints can establish whether projects are progressing. Each serves a purpose, but none necessarily demonstrates that rural residents have better access to providers, that struggling hospitals are more financially sustainable, or that health outcomes have improved. As RHTP progresses, CMS should increasingly emphasize these tangible results rather than relying primarily on policy commitments and administrative milestones. The program’s success should be measured not simply by how states spend their allocations, but by what those investments accomplish.
+Disclaimer
+Michael Baker is the Director of Health Care Policy at the American Action Forum
+November 20, 2026
+Weekly Checkup
+Michael Baker
+After almost three decades, the United States has lost its measles elimination status. Allowing a vaccine-preventable disease such as measles to regain…
+November 6, 2026
+Weekly Checkup
+Michael Baker
+The 2026 midterm elections dramatically altered the political landscape for health policy. Democrats captured both chambers of Congress, flipped several…
+October 30, 2026
+Weekly Checkup
+Michael Baker
+Surveys show the cost of employer sponsored health insurance is once again moving in the wrong direction. According to KFF’s 2026 Employer Health Benefits…
+October 23, 2026
+Weekly Checkup
+Nicolas Montenegro
+Last week, Epic Systems – a leading electronic health record (EHR) vendor – announced a new software feature that will allow clinicians and their patients…
+
+Δ document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+Michael Baker is the Director of Health Care Policy at the American Action Forum
+
+Δ document.getElementById( "ak_js_2" ).setAttribute( "value", ( new Date() ).getTime() );
+Privacy Policy
+The American Action Forum is a 21st century center-right policy institute providing actionable research and analysis to solve America’s most pressing policy challenges.
+September 2026
++0.6%
++3.7%
+Measures the change in prices of all goods and services purchased for consumption by urban households.
+Bureau of Labor Statistics
+September 2026
++0.3%
++2.6%
+Consumer Price Index excluding food and energy.
+Bureau of Labor Statistics
+September 2026
++0.3%
++3.1%
+A measure of prices paid for goods and services excluding food and energy; the Federal Reserve’s preferred measure of inflation.
+Bureau of Economic Analysis
+September 2026
++1.3%
++6.3%
+Measures the change in selling prices received by domestic producers of goods and services.
+Bureau of Labor Statistics
+Week ending October 31, 2026
+189,000
+-6,000
+194,750
+Weekly unemployment insurance claims reported by each state’s unemployment insurance program offices.
+U.S. Department of Labor
+October 2026
+54.5
+-0.4
+A level above 50 indicates expansion
+Institute for Supply Management
+October 2026
+55.5
++1.0
+A level above 50 indicates expansion
+Institute for Supply Management
+October 2026
+48.0
+-0.1
+The core questions cover three broad areas of consumer sentiment: personal finances, business conditions, and buying conditions.
+University of Michigan
+October 2026
++86,000
+Measures change in private-sector employment using ADP payroll data covering more than half a million companies with more than 25 million employees.
+ADP
+September 2026
+$88.0 B
++0.5%
++13.7%
+A new order is a communication of an intention to buy for immediate or future delivery.
+U.S. Census Bureau
+September 2026
+1,221,000
+-5.2%
+-7.4%
+Privately owned housing starts; seasonally adjusted at an annual rate.
+U.S. Census Bureau

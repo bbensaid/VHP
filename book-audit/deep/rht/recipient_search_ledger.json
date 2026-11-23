@@ -149,7 +149,7 @@
   ]
  },
  "Nebraska": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://dhhs.ne.gov/Pages/Rural-Health-Transformation.aspx"
   ],
@@ -192,13 +192,13 @@
   "note": "GATA CSFA program listings have 'Active Awards' tables per RHTP sub-program \u2014 earlier 'none' verdict was wrong"
  },
  "North Carolina": {
-  "status": "partial",
+  "status": "no_per_award_amounts",
   "urls": [
    "https://www.ncdhhs.gov/news/press-releases/2026/11/02/state-launches-new-rural-health-transformation-program-dashboard",
    "https://www.ncdhhs.gov/about/department-initiatives/rural-health-transformation-program/transforming-rural-health-north-carolina-our-progress",
    "https://governor.nc.gov/news/press-releases/2026/06/08/ncdhhs-announces-10-million-ems-workforce-through-nc-rural-health-transformation-program"
   ],
-  "note": "NCDHHS RHTP dashboard (Nov 2 2026) is interactive; EMS 39-agency list in June 8 release not parsed yet"
+  "note": "June 8 release names 39 EMS agencies ($10M total) with no per-agency amounts; RHTP dashboard interactive"
  },
  "West Virginia": {
   "status": "parsed",
@@ -240,7 +240,7 @@
   "note": "budget amendment by program only; no subrecipient list found (searched 2026-11-22); eohhs.ri.gov 403 to curl"
  },
  "Connecticut": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://portal.ct.gov/governor/news/press-releases/2026/09-2026/governor-lamont-announces-rural-health-transformation-program-invests-50-million"
   ],

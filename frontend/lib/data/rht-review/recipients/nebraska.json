@@ -1,0 +1,574 @@
+{
+ "state": "Nebraska",
+ "slug": "nebraska",
+ "asOf": "2026-07-15",
+ "source": {
+  "label": "Nebraska DHHS, RHTP public notices of award (initiatives 3.3, 4.4a, 4.4b, 5.3)",
+  "url": "https://dhhs.ne.gov/Pages/Rural-Health-Transformation.aspx"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 1,
+   "recipient": "United Way of Western Nebraska",
+   "county": "Not stated",
+   "amount": 199999.99,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 2,
+   "recipient": "Waterfield Health LLC",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 3,
+   "recipient": "York County Health Coalition",
+   "county": "Not stated",
+   "amount": 172635.16,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 4,
+   "recipient": "Lutheran Family Services",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 5,
+   "recipient": "The Well",
+   "county": "Not stated",
+   "amount": 199999.42,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 6,
+   "recipient": "Metro Community College",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 7,
+   "recipient": "Mid-Plains Community College",
+   "county": "Not stated",
+   "amount": 129468.3,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 8,
+   "recipient": "Northeast Community College",
+   "county": "Not stated",
+   "amount": 256841.21,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 3.3: Rural Health Care Workforce Incentive and Sustainability Model",
+   "n": 9,
+   "recipient": "Southeast Community College",
+   "county": "Not stated",
+   "amount": 243432.65,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 10,
+   "recipient": "ELVPHD - Elkhorn Logan Valley Public Health District",
+   "county": "Not stated",
+   "amount": 256696.55,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 11,
+   "recipient": "Saline Medical Specialties",
+   "county": "Not stated",
+   "amount": 279545.5,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 12,
+   "recipient": "Beatrice Community Hospital (BFIM)",
+   "county": "Not stated",
+   "amount": 303632.96,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 13,
+   "recipient": "Blue Valley Community Action Inc",
+   "county": "Not stated",
+   "amount": 128068.33,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 14,
+   "recipient": "Boone County Health Center",
+   "county": "Not stated",
+   "amount": 340000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 15,
+   "recipient": "Urban Indian Medical Center",
+   "county": "Not stated",
+   "amount": 338726.41,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 16,
+   "recipient": "Morrill County Community Hospital",
+   "county": "Not stated",
+   "amount": 340000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 17,
+   "recipient": "Winnebago Comprehensive Health System",
+   "county": "Not stated",
+   "amount": 339612.19,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 18,
+   "recipient": "Encounter Telehealth",
+   "county": "Not stated",
+   "amount": 317711.3,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 19,
+   "recipient": "Niobrara Valley Hospital",
+   "county": "Not stated",
+   "amount": 340000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 20,
+   "recipient": "Beatrice Community Hospital (Virtual Nursing)",
+   "county": "Not stated",
+   "amount": 334524.04,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 21,
+   "recipient": "Panhandle Public Health District",
+   "county": "Not stated",
+   "amount": 308856.08,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 22,
+   "recipient": "Memorial Community Hospital and Health System",
+   "county": "Not stated",
+   "amount": 152274.61,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 23,
+   "recipient": "Southeast District Health Department",
+   "county": "Not stated",
+   "amount": 195746.93,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 24,
+   "recipient": "Chase Community Hospital",
+   "county": "Not stated",
+   "amount": 338714.13,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 25,
+   "recipient": "Pawnee County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 339996.26,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 26,
+   "recipient": "Antelope Memorial Hospital",
+   "county": "Not stated",
+   "amount": 284957.28,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 27,
+   "recipient": "Gothenburg Health",
+   "county": "Not stated",
+   "amount": 309749.28,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 28,
+   "recipient": "Memorial Health Care System",
+   "county": "Not stated",
+   "amount": 339999.92,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 29,
+   "recipient": "Northside Behavioral Health",
+   "county": "Not stated",
+   "amount": 118400.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 30,
+   "recipient": "RxConnect CaringWire - Madison",
+   "county": "Not stated",
+   "amount": 279582.73,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 31,
+   "recipient": "RxConnect Caring Wire -North Platte",
+   "county": "Not stated",
+   "amount": 279582.73,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 32,
+   "recipient": "Pediatric Dental Specialists of Greater Nebraska",
+   "county": "Not stated",
+   "amount": 238083.71,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4a: Chronic Disease Navigation and Education",
+   "n": 33,
+   "recipient": "Webster County Community Hospital",
+   "county": "Not stated",
+   "amount": 90000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 34,
+   "recipient": "Antelope Memorial Hospital",
+   "county": "Not stated",
+   "amount": 778897.18,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 35,
+   "recipient": "Beatrice Community Hospital & Health Center",
+   "county": "Not stated",
+   "amount": 278684.02,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 36,
+   "recipient": "Box Butte General Hospital",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 37,
+   "recipient": "CHI Good Samaritan/CHI St. Francis",
+   "county": "Not stated",
+   "amount": 430601.57,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 38,
+   "recipient": "CHI Health Plainview",
+   "county": "Not stated",
+   "amount": 355311.03,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 39,
+   "recipient": "CHI Health Schuyler",
+   "county": "Not stated",
+   "amount": 711629.63,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 40,
+   "recipient": "CHI St. Mary\u2019s",
+   "county": "Not stated",
+   "amount": 908475.54,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 41,
+   "recipient": "Chase County Community Hospital",
+   "county": "Not stated",
+   "amount": 195523.2,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 42,
+   "recipient": "Faith Health",
+   "county": "Not stated",
+   "amount": 578673.7,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 43,
+   "recipient": "Genoa Health Center",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 44,
+   "recipient": "Good Neighbor Community Health Center",
+   "county": "Not stated",
+   "amount": 303276.49,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 45,
+   "recipient": "Heartland Health Center",
+   "county": "Not stated",
+   "amount": 199950.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 46,
+   "recipient": "Jefferson Community Health & Life",
+   "county": "Not stated",
+   "amount": 446741.33,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 47,
+   "recipient": "Johnson County Hospital",
+   "county": "Not stated",
+   "amount": 393220.57,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 48,
+   "recipient": "Mary Lanning Healthcare",
+   "county": "Not stated",
+   "amount": 460239.4,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 49,
+   "recipient": "Methodist Fremont Health",
+   "county": "Not stated",
+   "amount": 334176.13,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 50,
+   "recipient": "Midtown Health Center",
+   "county": "Not stated",
+   "amount": 221239.63,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 51,
+   "recipient": "Nebraska High Value Network^",
+   "county": "Not stated",
+   "amount": 18156856.12,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 52,
+   "recipient": "OneWorld Community Health Centers",
+   "county": "Not stated",
+   "amount": 395048.53,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 53,
+   "recipient": "Pawnee County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 479692.57,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 54,
+   "recipient": "Providence Medical Center",
+   "county": "Not stated",
+   "amount": 311698.7,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 55,
+   "recipient": "Regional West Medical Center",
+   "county": "Not stated",
+   "amount": 736148.14,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 56,
+   "recipient": "Syracuse Area Health",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 4.4b: Remote Patient Monitoring in Facilities and at Home",
+   "n": 57,
+   "recipient": "Winnebago Comprehensive Healthcare System",
+   "county": "Not stated",
+   "amount": 414693.75,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 58,
+   "recipient": "Alegent Creighton Health DBA CHI Health Plainview",
+   "county": "Not stated",
+   "amount": 245101.8,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 59,
+   "recipient": "Alegent Creighton Health DBA CHI Health Schuyler",
+   "county": "Not stated",
+   "amount": 235795.27,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 60,
+   "recipient": "BAART Community Healthcare DBA BAART Programs Omaha",
+   "county": "Not stated",
+   "amount": 300940.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 61,
+   "recipient": "Panhandle Counseling Center",
+   "county": "Not stated",
+   "amount": 349493.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 62,
+   "recipient": "Dundy County Hospital",
+   "county": "Not stated",
+   "amount": 73953.48,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 63,
+   "recipient": "Heartland Counseling Services Inc",
+   "county": "Not stated",
+   "amount": 156092.98,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 64,
+   "recipient": "Lutheran Family Service of Nebraska Inc",
+   "county": "Not stated",
+   "amount": 2441936.73,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 65,
+   "recipient": "Lanning Memorial Healthcare",
+   "county": "Not stated",
+   "amount": 1049999.73,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 66,
+   "recipient": "Methodist Fremont Health",
+   "county": "Not stated",
+   "amount": 126285.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 67,
+   "recipient": "Oasis Counseling International",
+   "county": "Not stated",
+   "amount": 4565.37,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 68,
+   "recipient": "Regional West Medical Center",
+   "county": "Not stated",
+   "amount": 93867.0,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 69,
+   "recipient": "Valley Hope Association DBA Valley Hope of O\u2019Neill",
+   "county": "Not stated",
+   "amount": 418046.8,
+   "purpose": ""
+  },
+  {
+   "program": "Initiative 5.3: Modification of Existing Clinical Facilities for Mental Health Crisis",
+   "n": 70,
+   "recipient": "Comprehensive Healthcare System",
+   "county": "Not stated",
+   "amount": 53615.09,
+   "purpose": ""
+  }
+ ],
+ "note": "Four initiative notices, dated May to July 2026; other Nebraska initiatives are not itemized in the published notices reviewed, and the notices print no totals.  The listed awards are only part of Nebraska's $218.5 million first-year award."
+}
