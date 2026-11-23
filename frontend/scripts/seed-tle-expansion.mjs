@@ -31,6 +31,17 @@ const TRACKS = [
       "Diffusion versus dissemination, attributes that shape adoption, networks and influence, Vermont shared services and a spread plan.",
       ["Distinguish diffusion from implementation", "Apply adoption attributes to a design", "Write a spread plan"], ["diffusion", "spread", "shared-services"]),
   ]),
+  T(3, "pace-and-capacity", "Pace and Capacity", "Hard, soft and external capacity constraints, triage and work plans when capacity is short, and contingency planning for federal shocks.", [
+    L(11, "tl-capacity-constraints", "The Pace Problem: Hard, Soft and External Capacity Constraints", 25,
+      "Chapter 12's three constraint types, Vermont contracting evidence from the May 2026 AHS report and a quarterly capacity assessment.",
+      ["Distinguish hard, soft and external constraints", "Run a quarterly capacity assessment", "Report a capacity gap with options"], ["capacity", "pace", "planning"]),
+    L(12, "tl-triage-and-work-plans", "Choosing What Not to Do: Triage, Dependencies and the Work Plan", 25,
+      "Value and feasibility scoring, critical path and dependencies, work plans with deferred lists and equitable triage across hospitals.",
+      ["Score work by value and feasibility", "Identify the critical path", "Communicate deferred work openly"], ["triage", "critical-path", "work-plan"]),
+    L(13, "tl-shocks-and-contingency", "When the Ground Moves: Federal Shocks and Contingency Planning", 25,
+      "The July 2026 CMS letter on the Medicaid hospital global budget, the AHEAD withdrawal, scenario planning, trigger points and decision logs.",
+      ["Read a federal notice for its operational consequences", "Build a scenario table with triggers", "Respond to a shock in the first week"], ["contingency", "scenarios", "federal-shock"]),
+  ]),
 ];
 
 const SLUG = "transformation-leadership";
