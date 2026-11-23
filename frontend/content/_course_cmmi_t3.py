@@ -156,6 +156,83 @@ L8 = [
     blk('src5', "[5] " + BOOK3 + " — §3.3.3-3.3.4: Vermont's 1115 portfolio and the budget neutrality constraint as it worked through 2026"),
 ]
 
-LESSONS = [(L7_SLUG, L7_TITLE, L7, 7), (L8_SLUG, L8_TITLE, L8, 8)]
+# ════════════════════════════════════════════════════════════════════════════
+# Lesson 9 facts: CMS letter to Vermont AHS dated July 7, 2026 (3 pages, read from the PDF itself); CMS approval of the
+# January 2, 2025 Global Commitment amendment and approval period July 1, 2022 - Dec 31, 2027 (medicaid.gov, via search
+# summaries); Vermont AHS Global Commitment Register listing (GCR 26-014, GCR 26-089, via search summaries; the AHS page
+# itself returned 403 to the fetch tool); DVHA budget book (six hospitals committing, via search summary).
+L9_SLUG = 'cmmi-vermont-global-commitment'
+L9_TITLE = "Vermont's Global Commitment to Health: A Worked Case"
+L9 = [
+    blk('intro1', "The earlier lessons treated authority, approval and budget neutrality in general terms. This one follows a single demonstration, Vermont's Global Commitment to Health, and a single decision inside it, the Medicaid hospital global budget, to show how the general rules play out in a real file. The case has everything: a long-running waiver, a recent amendment, a state decision to move ahead, and a federal letter that stopped it."),
+    blk('intro2', "The lesson is built from primary documents where they could be read: CMS's July 7, 2026 letter to Vermont, which this lesson read in full, and CMS's approval materials for the demonstration. Where the evidence is a state web page that could not be retrieved directly, or a report of one, the lesson says so."),
+    blk('intro3', "The point of the case is not to assign blame. It is to show where, in a demonstration's special terms and conditions, the binding rules sit, and why reading them before acting is the cheapest form of risk management a state has."),
+
+    h2('s1h1', 'The Demonstration and Its Terms'),
+    blk('s1p1', "Global Commitment to Health is Vermont's primary section 1115 demonstration, originally approved in 2005. In CMS's records, its current approval period runs from July 1, 2022 through December 31, 2027, following a 2022 renewal of about five and a half years. CMS's letter identifies it as project number 11-W-00194/1. Chapter 3 describes it as extending coverage and benefits beyond the standard state plan, including health-related social needs services, expanded developmental disability benefits and substance use disorder treatment models."),
+    blk('s1p2', "The binding text of any demonstration is its special terms and conditions, usually shortened to STCs. They set what the state may do, what it must report, how payments are made and what approvals it must obtain first. Lesson 7 introduced them as the document the state and CMS negotiate. This case shows that they are also the document CMS enforces: the July 2026 letter cites two specific STCs, 6.3(a) and 6.4(i)(iii), and nothing else about the demonstration's general purposes."),
+    callout('s1c1', "The STCs, not the state's reform plans and not the demonstration's name, are the rules a state is held to. Anything a state wants to do that touches payment, rates or eligibility needs to be checked against them before it starts."),
+
+    h2('s2h1', 'The January 2025 Amendment'),
+    blk('s2p1', "CMS approved an amendment to the demonstration on January 2, 2025, effective January 1, 2025, acting on a request Vermont submitted on April 30, 2024. The approval included health-related social needs services and infrastructure, and an initiative to close a gap in substance use disorder coverage. CMS's acceptance letter authorizes the state to provide HRSN services, specifically housing supports, to eligible Medicaid enrollees, and the approval also covers recuperative care, which Chapter 3 describes as short-term medical respite for homeless enrollees."),
+    blk('s2p2', "A later CMS letter, dated January 10, 2025, approved the methodologies Vermont will use for the HRSN benefits. Approval of an amendment and approval of the way a state will pay for it are separate steps, and states sometimes treat the first as the last. The amendment is a clean example of the process described in Lesson 7: the state designed, took public comment, submitted, negotiated and obtained approval, then followed with implementation documents."),
+    blk('s2p3', "The amendment also falls on the far side of the March 2025 rescission of federal HRSN guidance. As Lesson 7 notes, CMS said existing approvals stand. The amendment's authority is therefore in place through the approval period, and the question for Vermont is what the renewal environment will be when the demonstration's period ends in December 2027."),
+
+    h2('s3h1', 'The Hospital Global Budget'),
+    blk('s3p1', "Separately from the amendment, Vermont's Department of Vermont Health Access launched a voluntary Medicaid hospital global budget for 2026. According to DVHA's annual report and budget book for state fiscal year 2027, six Vermont hospitals committed to the model, and the payment functionality was implemented in the claims system in January 2026. The state's own Global Commitment Register shows a policy proposal for the model, GCR 26-014, whose public comment period closed on January 31, 2026 with no comments received."),
+    blk('s3p2', "The design was a prospectively set annual payment replacing fee-for-service claims for eligible services at participating hospitals, the same concept as the Medicare-side global budgets in Lesson 4. Chapter 3 explains the motive: Vermont's Act 68 requires global budgets under the Green Mountain Care Board, and a Medicaid global budget was the first piece the state could build on its own."),
+    blk('s3p3', "The decision to start in January 2026 rested on a state conclusion about what the demonstration permitted. Chapter 3 states the problem in one sentence: the Medicaid hospital global budget was launched on state, not AHEAD, authority, and CMS later ruled that the demonstration's terms had not authorized it."),
+
+    h2('s4h1', "CMS's July 7, 2026 Letter"),
+    blk('s4p1', "On July 7, 2026, the Acting Director of CMS's State Demonstrations Group wrote to Secretary Jenney Samuelson of the Agency of Human Services. The letter notifies the state that the Medicaid hospital global budget implemented by DVHA has not been approved by CMS in accordance with the demonstration's special terms and conditions. It recognizes the state's interest and commitment to value-based payment arrangements such as a global budget, and then states the requirement."),
+    blk('s4p2', "The two provisions are specific. STC 6.4(i)(iii) requires that any payment arrangement between AHS or DVHA and providers that is a value-based-payment style fee schedule meet the prior approval requirements for state directed payments in federal managed care regulations at 42 CFR 438.6(c). STC 6.3(a) requires compliance with the actuarial soundness and rate development standards in 42 CFR 438.4 through 438.7. CMS's reasoning is that, without authority for the global budget, those standards prohibit the state from including the global budget's impact in its certified capitation rates. The letter serves as written notice that the state is not compliant with both STCs."),
+    steps('s4st1', 'The corrective actions CMS requested', [
+        ('Within 60 days', 'DVHA ceases making global budget payments to participating hospitals and pays them under the methodology used for non-participating providers.'),
+        ('Within 60 days', 'AHS removes the global budget payments from the applicable calendar year 2026 capitation rates and submits a revised rate certification.'),
+        ('Within 6 months', 'DVHA reprocesses all global budget payments made since January 1, 2026 under the non-global-budget methodology, with encounter and financial data corrected and any federal claiming adjusted.'),
+        ('Within 30 days of each action', 'The state sends CMS written confirmation that the corrective action is complete.'),
+    ]),
+    blk('s4p3', "The stakes are stated plainly. If the state does not act, CMS says it will not be able to find the state's calendar year 2026 capitation rates actuarially sound, which federal regulations require, and may initiate procedures under 42 CFR 431.420(d)(1) to terminate or suspend the demonstration for failure to comply. The letter also says historical encounter data under the global budget may not be used for future capitation rate development unless CMS gives prior approval."),
+    warning('s4w1', "The point of law is narrow, and the consequences are wide", "CMS's objection is procedural: prior approval for state directed payments and actuarial soundness of capitation rates. It does not say a global budget is bad policy. But because the demonstration is Vermont's main Medicaid authority, a compliance failure puts the whole instrument, not just one program, at risk."),
+
+    h2('s5h1', 'What Followed'),
+    blk('s5p1', "Within weeks, Vermont's own web listings show movement. The Agency of Human Services Global Commitment Register lists GCR 26-089, Discontinuation of the Hospital Global Budget Payment Model, with a public comment period from July 21 to August 21, 2026. The Agency of Human Services announced its withdrawal from AHEAD on July 24. On July 28, WCAX reported Secretary Samuelson as still committed to the long-term goal of global budgets but not ready to implement them yet."),
+    blk('s5p2', "This lesson could not confirm from primary documents how the state finalized the discontinuation or whether corrective actions were completed within the stated deadlines, because the state web pages that list the proposal could not be retrieved directly. A reader who needs the current status should check the Global Commitment Register, the Medicaid.gov page for the demonstration and DVHA's notices."),
+    blk('s5p3', "What the sequence does show is the order of operations Vermont now faces. The Medicare side of a global budget needs a federal vehicle, since AHEAD is no longer one. The Medicaid side needs the demonstration's STCs to authorize the payment arrangement and the capitation rate process to account for it. Act 68's statutory timetable continues to run in the meantime."),
+
+    h2('s6h1', 'Lessons for Any State'),
+    blk('s6p1', "Four practical rules emerge. Read the STCs for the payment arrangement before launching it, and obtain written CMS approval where they require it. Treat managed care capitation rates as part of the same decision, since a payment arrangement that changes provider payments changes the rates the actuary must certify. Distinguish state authority, which can authorize a program under state law, from federal authority, which governs whether federal Medicaid matching funds may be claimed. And keep a record of what CMS has actually approved, in writing, so that the state and its providers are clear about what is authorized."),
+    blk('s6p2', "These rules are also the safeguards against the problem Chapter 3 puts at the center of its account of 1115 waivers: negotiated instruments reward a state that does the negotiation first and the implementation second. Vermont's case shows the cost of reversing that order, and it also shows that the order can be restored. The demonstration remains in place, its January 2025 amendment stands, and the state's statutory path to global budgets under Act 68 is unchanged."),
+
+    takeaway('tw', [
+        "Vermont's Global Commitment to Health demonstration, project 11-W-00194/1, was first approved in 2005 and is approved by CMS from July 1, 2022 through December 31, 2027.",
+        "CMS approved a January 2025 amendment, effective January 1, 2025, adding health-related social needs services including housing supports and recuperative care.",
+        "DVHA launched a voluntary Medicaid hospital global budget in January 2026, with six hospitals committed according to its budget book.",
+        "On July 7, 2026, CMS notified Vermont that the hospital global budget had not been approved under STC 6.4(i)(iii), which requires prior approval for state directed payments, and STC 6.3(a), which requires actuarially sound capitation rates.",
+        "CMS asked the state to cease global budget payments and revise its calendar year 2026 capitation rates within 60 days and to reprocess payments made since January 1, 2026 within six months.",
+        "CMS said it could not find the 2026 capitation rates actuarially sound if the state did not act, and could begin procedures to terminate or suspend the demonstration.",
+        "The special terms and conditions, not the demonstration's purposes, are the rules a state is held to; check them and obtain written approval before launching a payment arrangement.",
+    ]),
+    quiz('qz',
+        "On what basis did CMS's July 7, 2026 letter say Vermont's Medicaid hospital global budget was out of compliance?",
+        [
+            ("CMS found that global budgets are not permitted in any Medicaid program", False),
+            ("The arrangement had not received the prior approval the demonstration's special terms and conditions require for state directed payments, and its effect on capitation rates could not be certified as actuarially sound", True),
+            ("Vermont had withdrawn from the Global Commitment to Health demonstration", False),
+            ("The global budget was authorized only for Medicare, not Medicaid", False),
+        ],
+        "The letter cites STC 6.4(i)(iii), which requires prior approval of value-based-payment style arrangements as state directed payments under 42 CFR 438.6(c), and STC 6.3(a), which requires compliance with actuarial soundness and rate development rules in 42 CFR 438.4 through 438.7. CMS's objection was procedural; it expressly recognized the state's interest in value-based payment."
+    ),
+    h2('src', 'Sources'),
+    blk('src1', "[1] CMS State Demonstrations Group, letter to Secretary Jenney Samuelson, Vermont Agency of Human Services (July 7, 2026) — https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/vt-gch-stc-compl-lttr-07072026.pdf — notice of noncompliance with STCs 6.3(a) and 6.4(i)(iii); corrective actions"),
+    blk('src2', "[2] CMS, Vermont Global Commitment to Health approval of amendment (January 2, 2025) — https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/vt-global-commitment-to-health-appvl-01022025.pdf — HRSN services and infrastructure; approval period through December 31, 2027"),
+    blk('src3', "[3] CMS, Vermont Global Commitment to Health acceptance letter (January 30, 2025) — https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/vt-global-commitment-to-health-accept-ltr-01302025.pdf — authorization of housing supports"),
+    blk('src4', "[4] Vermont Department of Vermont Health Access, 2025 Annual Report and Governor's Recommended Budget for State Fiscal Year 2027 — https://dvha.vermont.gov/sites/dvha/files/documents/DVHA-25-27-annual-report-and-budget-book.pdf — launch of the voluntary hospital global budget and six committed hospitals"),
+    blk('src5', "[5] Vermont Agency of Human Services, 2026 Proposed Policies (Global Commitment Register) — https://humanservices.vermont.gov/2026-proposed-policies — GCR 26-014 and GCR 26-089, as reported in search results; the page itself could not be retrieved by the tool used for this lesson"),
+    blk('src6', "[6] " + BOOK3 + " — §3.2.2, §3.3.3: the Global Commitment portfolio, the January 2025 amendment and the July 2026 compliance notice"),
+    blk('src7', "[7] WCAX, Vermont drops AHEAD healthcare model; shifts to $195M rural health fund (July 28, 2026) — https://www.wcax.com/2026/07/28/vermont-drops-ahead-healthcare-model-shifts-195m-rural-health-fund/"),
+]
+
+LESSONS = [(L7_SLUG, L7_TITLE, L7, 7), (L8_SLUG, L8_TITLE, L8, 8), (L9_SLUG, L9_TITLE, L9, 9)]
 if __name__ == '__main__':
     run(LESSONS)

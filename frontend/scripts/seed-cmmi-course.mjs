@@ -74,6 +74,9 @@ const TRACKS = [
     L(8, "cmmi-budget-neutrality", "Budget Neutrality: The Old Test and the 2027 Rewrite", 25,
       "The with-waiver versus without-waiver test, section 1115(g) and the Chief Actuary certification from January 1, 2027, MAPS and 1115-only activities, savings and renewals.",
       ["Explain the old with-waiver and without-waiver budget neutrality test", "Describe what section 1115(g) requires from January 1, 2027", "Classify demonstration activities as MAPS or 1115-only"], ["1115", "budget-neutrality", "chief-actuary", "maps"]),
+    L(9, "cmmi-vermont-global-commitment", "Vermont's Global Commitment to Health: A Worked Case", 25,
+      "The demonstration and its special terms and conditions, the January 2025 amendment, the Medicaid hospital global budget, and CMS's July 7, 2026 compliance letter and corrective actions.",
+      ["Explain why special terms and conditions are the binding rules of a demonstration", "Describe the corrective actions and consequences in CMS's July 7, 2026 letter to Vermont", "Apply four rules for launching a payment arrangement under a demonstration"], ["1115", "vermont", "global-commitment", "stc"]),
   ]),
 ];
 
