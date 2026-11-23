@@ -78,6 +78,17 @@ const TRACKS = [
       "Why documentation is clinical, three common opportunities, the 2026 V28 phase-in, the compliance boundary and a documentation program with safeguards.",
       ["Explain how documented conditions shape risk adjustment", "Describe three documentation opportunities and their workflow fixes", "Build a documentation program with compliance safeguards"], ["hcc", "risk-adjustment", "documentation"]),
   ]),
+  T(4, "data-and-transitions", "Data and Transitions", "The clinical data foundation, the care transition protocol and the clinical leadership that turns programs into change.", [
+    L(10, "ctk-clinical-data-model", "The Clinical Data Foundation: Capture, Aggregate, Manage", 25,
+      "Chapter 9's three-step data model, why free text defeats measures, exchange and claims views, a structured-data audit and sequencing the foundation.",
+      ["Explain the three-step clinical data model", "Run a structured-data audit", "Sequence data investments and assign ownership"], ["data", "structured-capture", "exchange"]),
+    L(11, "ctk-care-transitions", "Closing the Loop: The Care Transition Protocol", 25,
+      "The Transitional Care Model, its trial evidence, Medicare TCM codes 99495 and 99496, the community health team protocol and equity checks.",
+      ["Describe the Transitional Care Model and its evidence", "Distinguish TCM codes 99495 and 99496", "Run a transition protocol at small-practice scale"], ["transitions", "readmissions", "tcm"]),
+    L(12, "ctk-clinical-leadership", "Clinical Leadership: The Under-Resourced Capability", 25,
+      "Why administrators cannot implement clinical change alone, structures that give leaders authority, community health workers and a first ninety days.",
+      ["Explain Chapter 9's argument for clinical leadership", "Design structures that give leaders time and authority", "Plan a first ninety days on a program"], ["leadership", "chw", "governance"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
