@@ -40,7 +40,7 @@ add(
     ["Addendum 1 (15 Nov): domains, email, Sanity webhook, database size", "docs/HTR_Documentation_Addendum_2026-11-15.docx", "docs/generators/addendum_2026-11-15.js"],
     ["Addendum 2 (20 Nov): RHT Year 2, RHT Review pages, Academy fact-check", "docs/HTR_Documentation_Addendum_2_2026-11-20.docx", "docs/generators/addendum_2026-11-20.js"],
     ["**Addendum 3 (this document)**", "docs/HTR_Documentation_Addendum_3_2026-11-22.docx", "docs/generators/addendum_2026-11-22.js"],
-    ["Printable RHT Program Review (36 pp; Vermont plus the 50-state tables as of 20 Nov)", "docs/HTR_RHT_Program_Review_2026-11-20.docx", "docs/generators/rht_review_report.js"],
+    ["**Printable RHT Program Review (rebuilt 22 Nov, about 54 pp): Vermont's Year 1 review, the 50-state dashboard, and the state award lists** (the 20 Nov edition, docs/HTR_RHT_Program_Review_2026-11-20.docx, is superseded)", "docs/HTR_RHT_Program_Review_2026-11-22.docx", "docs/generators/rht_review_report.js (numbers from frontend/scripts/export-rht-report.mts)"],
     ["Medicare for All five-pillar memo", "docs/HTR_Medicare_for_All_Five_Pillar_Memo_2026-11-21.docx", "docs/generators/m4a_memo.js"],
     ["Operations runbook (access, deploys, costs, emergencies)", "HTR_ADMIN_RUNBOOK.md (new section 16: RHT review data)", "written by hand"],
     ["Modeler independent-review report, with how each finding was handled", "book-audit/m4a/MODELER_INDEPENDENT_REVIEW_2026-11-21.md", "—"],
@@ -49,7 +49,7 @@ add(
     ["Generator guide", "docs/generators/README.md", "—"],
   ], [34, 40, 26]),
   gap(),
-  P("The printable RHT review of 20 November has not yet been rebuilt to include the dashboard and the award lists described below (Section 7)."),
+  P("To rebuild the printable RHT review after the data changes: cd frontend && npx tsx scripts/export-rht-report.mts <export.json>, then node docs/generators/rht_review_report.js <out.docx> <project root> <export.json> (details in docs/generators/README.md)."),
 );
 
 add(
@@ -128,7 +128,6 @@ add(
   H1("7. Still open"),
   table(["Item", "Status", "Who"], [
     ["Award lists: remaining states", "The “partial” states (see Section 4) are re-checked one at a time on each state's own site; Colorado and Kansas need a browser download", "Claude (continuing); you for Colorado/Kansas files"],
-    ["Printable RHT Program Review", "The 20 November edition does not yet include the dashboard, spending categories or award lists; rebuild it when the state work settles", "Claude"],
     ["Book and PDF", "Upload the edited .docx to Google Docs and export the PDF after any book change", "You"],
     ["Earlier open items", "Domain renewal, GitHub Support request, before-launch list (Addendum 1, Section 7), technical clean-up (Addendum 2, Section 7) — unchanged unless you have done them", "You"],
   ], [26, 52, 22]),

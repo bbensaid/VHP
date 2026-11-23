@@ -1,5 +1,5 @@
 // Printable RHT Program Review — mirrors /rht-review and /rht-review/vermont, built from the same JSON.
-// Usage: node rht_review_report.js <out.docx> <repo-root>
+// Usage: node rht_review_report.js <out.docx> <repo-root> <export.json>   (export.json: cd frontend && npx tsx scripts/export-rht-report.mts <export.json>)
 const { Paragraph, TextRun, PageBreak } = require("./node_modules/docx");
 const { P, H1, H2, H3, B, table, box, gap, build, OK_FILL, WARN_FILL } = require("./docstyle");
 const path = require("path");
@@ -7,6 +7,12 @@ const ROOT = process.argv[3];
 const V = require(path.join(ROOT, "frontend/lib/data/rht-review/vermont-year1.json"));
 const S = require(path.join(ROOT, "frontend/lib/data/rht-review/states.json"));
 const N = require(path.join(ROOT, "frontend/lib/data/rht-review/state-notes.json"));
+const X = require(process.argv[4]); // numbers exported from the website's own code: cd frontend && npx tsx scripts/export-rht-report.mts <file>
+const fs = require("fs");
+const RECDIR = path.join(ROOT, "frontend/lib/data/rht-review/recipients");
+const RECS = fs.readdirSync(RECDIR).filter((f) => f.endsWith(".json")).map((f) => JSON.parse(fs.readFileSync(path.join(RECDIR, f), "utf8")))
+  .sort((a, b) => (a.slug === "california" ? -1 : b.slug === "california" ? 1 : a.state.localeCompare(b.state)));
+const COV = require(path.join(ROOT, "frontend/lib/data/rht-review/recipient-coverage.json"));
 
 const NAVY = "1F3A5F";
 const usd = (n, d = 0) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: d, minimumFractionDigits: d });
@@ -168,6 +174,43 @@ add(
   new Paragraph({ children: [new PageBreak()] }),
 );
 
+
+// ── Vermont against the other 49 states (same yardsticks as every state page)
+const vtX = X.states.find((x) => x.slug === "vermont");
+add(
+  H2("Vermont against the other 49 states"),
+  P("The same CMS yardsticks the website uses for every state, computed from CMS's own documents. They are a narrower measure than the signed agreements reviewed above: CMS's categories are state-reported obligations through July 31, 2026."),
+  ...vtX.readout.map((t) => B(t)),
+  src("Computed from CMS's obligated-funds report, the 2026 State Program Snapshots, the CMS award tables and Vermont's CMS project abstract (December 2025)."),
+);
+
+// ── National dashboard material (Part 2)
+const P0 = (x) => `${(x * 100).toFixed(0)}%`;
+const catRows = [...X.categories].sort((a, b) => b.dollars - a.dollars).map((c) => [c.key, c.pillarLabel, m(c.dollars, 0), P0(c.dollars / X.national.categorized), String(c.statesSpending)]);
+const pillRows = ["technology", "economics", "clinical", "operations"].map((k) => [k[0].toUpperCase() + k.slice(1), m(X.national.pillar[k], 0), P0(X.national.pillar[k] / X.national.pillarTot)]);
+const DASH = [
+  H2("What the first year shows: six findings"),
+  ...X.findings.map(([h, b], i) => B(`**${i + 1}. ${h}** ${b}`)),
+  src(`Computed from CMS's obligated-funds report (state-reported, as of July 31, 2026), the state project abstracts (December 2025), the award tables and the 2026 State Program Snapshots. CMS assigns ${m(X.national.categorized, 0)} of the ${m(X.national.ptw, 0)} put to work to spending categories; ${X.national.reconciling} states' category lines add up exactly to their totals, and the rest are flagged state by state on the website.`),
+  H2("Where the money went: CMS spending categories"),
+  table(["CMS category", "HTR pillar (analysis)", "Put to work", "Share", "States spending"], catRows, [34, 20, 16, 12, 18]),
+  src("Categories are CMS's. Assigning them to the five pillars is HTR's analysis: Technology = IT advances, consumer tech; Economics = provider payments; Clinical = appropriate care availability, prevention and chronic disease, behavioral health, innovative care; Operations = workforce, training and technical assistance, capital and infrastructure, fostering collaboration, program administration."),
+  P("Grouped by pillar, the categorized dollars split as follows. Economics, the pillar that changes how care is paid for, is the smallest share."),
+  table(["Pillar", "Put to work", "Share of categorized dollars"], pillRows, [30, 30, 40]),
+  H2("What the plans set out to do"),
+  P("Themes tagged in each state's CMS project abstract (December 2025) using a published keyword list. A mention is not a budget commitment."),
+  table(["Theme named in the plan", "States"], [...X.themes].sort((a, b) => b.states - a.states).map((t) => [t.label, String(t.states)]), [75, 25]),
+  H2("State policy commitments CMS scores"),
+  table(["Action", "States committed", "Complete", "No progress"], X.policy.map((a) => [`${a.code} ${a.name}`, String(a.committed), String(a.complete), String(a.noProgress)]), [58, 16, 13, 13]),
+  H2("Spending profile of each state"),
+  table(["State", "Put to work", "Largest CMS category", "Its share", "Tech / Econ / Clin / Ops"],
+    [...X.states].sort((a, b) => a.name.localeCompare(b.name)).map((x) => {
+      const t = x.pillar.technology + x.pillar.economics + x.pillar.clinical + x.pillar.operations;
+      return [x.name, `${m(x.ptw)} · ${P0(x.ptwShare)}`, x.topCategory || "—", x.topShare == null ? "—" : P0(x.topShare), t ? ["technology", "economics", "clinical", "operations"].map((k) => P0(x.pillar[k] / t)).join(" / ") : "—"];
+    }), [17, 20, 27, 10, 26]),
+  src("Put to work is the amount each state reported to CMS as obligated through July 31, 2026, with its share of the Year 1 award. The pillar split is HTR's grouping of CMS's categories."),
+];
+
 // ── PART 2
 const fy26 = S.states.reduce((s, x) => s + x.fy2026, 0), fy27 = S.states.reduce((s, x) => s + x.fy2027, 0);
 const allPtw = S.states.reduce((s, x) => s + (x.putToWork || 0), 0);
@@ -188,6 +231,7 @@ add(
   B(`Counting each scored policy action once per state, states committed to ${committed} of the state policy actions CMS scores; CMS rates ${noProg} of those “No Progress” in its 2026 snapshots (others are in progress, complete, or mixed across sub-commitments).`),
   B("CMS cautions that the July 31 “put to work” figures are a point-in-time view that does not by itself measure a state's progress or determine its Year 2 award."),
   src(`${SRC.cmsFy26}; ${SRC.cmsFy27}; ${SRC.cmsFact}; ${SRC.cmsObl}; ${SRC.cmsSnap}`),
+  ...DASH,
   H2("Awards, money put to work, and policy commitments"),
   table(["State", "Year 1", "Year 2", "Change", "Put to work (Jul 31)", "Commitments"],
     S.states.map((s) => {
@@ -209,11 +253,47 @@ for (const s of S.states) {
   for (const q of n.quotes) add(P(`“${q.q}” — ${q.who} (${n.sources[q.src].label})`));
 }
 
+
+// ── PART 3: who received the money
+const sumOf = (r) => r.rows.reduce((a, x) => a + x.amount, 0);
+const medOf = (r) => { const a = r.rows.map((x) => x.amount).sort((p, q) => p - q); const n = a.length; return n % 2 ? a[(n - 1) / 2] : (a[n / 2 - 1] + a[n / 2]) / 2; };
+const kk = (n) => (n >= 1e6 ? `$${(n / 1e6).toFixed(2)}M` : `$${Math.round(n / 1e3)}K`);
+const host = (u) => u.replace(/^https?:\/\/(www\.)?/, "").split("/")[0];
+add(
+  new Paragraph({ children: [new PageBreak()] }),
+  H1("Part 3 — Who Received the Money"),
+  P(`${RECS.length} states, plus Vermont (Part 1), publish an itemized list of who received their Rural Health Transformation money, with amounts. Each list below is the state's own publication, parsed and checked against the source's count or printed total where it prints one. Vermont comes first and California second in every multi-state view; the rest are alphabetical. The lists are not all the same kind: some are final announcements, some preliminary notices, offers, approved budgets, grants-portal agreements, authorized projects or multi-year totals, so compare shapes, not totals.`),
+  H2("The itemized lists side by side"),
+  table(["State", "Awards", "Sum listed", "Median", "Published by"],
+    RECS.map((r) => [r.state, String(r.rows.length), m(sumOf(r)), kk(medOf(r)), host(r.source.url)]), [20, 11, 18, 16, 35]),
+  src("Sums are the sum of the listed awards, computed here; where a state prints its own total, the state page on the website shows both. Recipient types on the website are HTR's classification from organization names."),
+  H2("Coverage: every state was searched on its own agency and governor pages (22 November 2026)"),
+  table(["Group", "States"], [
+    ["Itemized list with amounts (this part, and Vermont in Part 1)", COV.itemized.join(", ")],
+    ["Recipients or regions named, no per-award amounts", COV.namesWithoutAmounts.join(", ")],
+    ["Some named awards announced, no consolidated list found", COV.partial.join(", ")],
+    ["No recipient list found", COV.noneFound.join(", ")],
+    ["List exists but the state's site refuses automated access", COV.blocked.join(", ")],
+  ], [34, 66]),
+  src("The full record, with each state's pages and notes, is kept in book-audit/deep/rht/recipient_search_ledger.json. No state is estimated."),
+  H2("Each state's list: source, caution, and the five largest awards"),
+);
+for (const r of RECS) {
+  const top = [...r.rows].sort((a, b) => b.amount - a.amount).slice(0, 5);
+  add(
+    H3(`${r.state} — ${r.rows.length} awards, ${m(sumOf(r))} listed`),
+    P(`**Source:** ${r.source.label} (${r.source.url})${r.note ? ` **Note:** ${r.note}` : ""}`),
+    table(["Recipient", "Amount"], top.map((x) => [x.recipient + (x.program ? ` — ${x.program}` : ""), usd(x.amount)]), [78, 22]),
+  );
+}
+
 add(
   new Paragraph({ children: [new PageBreak()] }),
   H1("Sources"),
   P("All source files are saved in the project folder (book-audit/deep/sources/rht_vt and rht_states). Primary documents:"),
   ...[SRC.list, SRC.budget, SRC.activities, SRC.july, SRC.feb, SRC.jan, SRC.cmsFy26 + " — cms.gov/newsroom", SRC.cmsFy27 + " — cms.gov/newsroom", SRC.cmsFact, SRC.cmsObl + " — medicaid.gov", SRC.cmsSnap + " — medicaid.gov", SRC.vtdSep10, SRC.vtdNov2, SRC.vtdNov11, SRC.aaf].map((x) => B(x)),
+  P("Award lists (Part 3): each state's own publication, saved in book-audit/deep/sources/rht_recipients:"),
+  ...RECS.map((r) => B(`${r.state}: ${r.source.label} — ${r.source.url}`)),
 );
 
-build(process.argv[2], "The Rural Health Transformation Program, Reviewed", "HTR — RHT Program Review", c, "20 November 2026");
+build(process.argv[2], "The Rural Health Transformation Program, Reviewed", "HTR — RHT Program Review", c, "22 November 2026");
