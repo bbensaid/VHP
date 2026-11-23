@@ -67,6 +67,17 @@ const TRACKS = [
       "The S.190 arguments in the words reported, tested against Act 68, a method for reading a policy dispute and four scenarios for the next session.",
       ["Separate factual, authority and values claims in a policy dispute", "Test authority claims against the enacted statute", "Plan for scenarios in the next legislative session"], ["veto", "reference-based-pricing", "analysis"]),
   ]),
+  T(3, "early-warning-and-scenarios", "Early Warning, Scenarios and Monitoring", "The eight early-warning signals checked against 2026, scenario planning with a worked card, and the monitoring instruments.", [
+    L(7, "psr-early-warning-signals", "Early-Warning Signals: Reading the Risk Before the Statute Changes", 25,
+      "Chapter 14's eight signals, their status against the 2026 record, four general categories, and how to weigh severity, lead time and noise.",
+      ["Name the eight signals and the sources that show them", "Distinguish fired, not observed and not assessed", "Link each signal to a decision in advance"], ["early-warning", "signals", "monitoring"]),
+    L(8, "psr-disruption-scenarios", "Disruption Scenarios: Planning for Outcomes You Cannot Predict", 25,
+      "The five parts of a scenario, Chapter 14's scenarios and what overtook them, post-election scenarios, a worked card and a scenario-by-investment test.",
+      ["Write a scenario with condition, trigger, impact, response and owner", "Test a capital plan against a scenario set", "Maintain scenario plans on a review calendar"], ["scenario-planning", "risk", "capital-plan"]),
+    L(9, "psr-monitoring-system", "Building the Monitoring System: The Wire, the Simulator and the Friction Index", 25,
+      "What the bill tracker, the HTR Simulator and the Friction Index do and cannot do, a worked example across all three and a monthly routine.",
+      ["Describe what each monitoring instrument shows and its limits", "Run a monthly monitoring routine", "Translate a bill into an exposure using the three instruments"], ["the-wire", "simulator", "friction-index"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
