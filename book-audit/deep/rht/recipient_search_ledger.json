@@ -183,7 +183,7 @@
  },
  "Wyoming": {
   "status": "partial",
-  "note": "WDH advisory-committee approval sheet (Drive) has approved amounts for CAH/EMS/GME/tech/primary-care but clipped names and EIN-only rows; governor Oct 23 release announces awards without a list"
+  "note": "governor.wyo.gov Oct 23 2026 release announces awards without amounts (could not open the page text); WDH advisory-committee approval sheet (Drive, Aug 11 2026) has approved amounts but clipped names/EIN-only rows \u2014 a partial parse of its clean rows is possible"
  },
  "Illinois": {
   "status": "parsed",
@@ -265,7 +265,7 @@
   "urls": [
    "https://www.hca.nm.gov/rht/"
   ],
-  "note": "HCA Sept 18 2026: six regional leads with funding ceilings (e.g. Region 6 Nor-Lea up to $19,682,962.74) \u2014 page hca.nm.gov/rht; not yet parsed; NM $50M/$20M lists are STATE funds"
+  "note": "hca.nm.gov Sept 18 2026 \"regional leads\" page and /rht return 404 to curl and to the fetch tool (2026-11-22); search summary named six regional leads with funding ceilings but I could not open the page, so nothing is published from it. NM $50M/$20M lists are STATE funds, not RHT"
  },
  "Idaho": {
   "status": "parsed",
@@ -292,7 +292,7 @@
   "urls": [
    "https://doh.sd.gov/healthcare-professionals/rural-health/rural-health-transformation-project/rht-press-releases/"
   ],
-  "note": "28 Rural Strong grants $31.5M, 82 tech/data grants ~$90M, 25 EMS ~$7.2M announced; recipients not named in releases; state says contracts will be on OpenSD"
+  "note": "news.sd.gov release pages are JavaScript apps (1.4 KB to curl); search summaries say recipients not named; state says contracts will be on OpenSD"
  },
  "Hawaii": {
   "status": "none_found",
