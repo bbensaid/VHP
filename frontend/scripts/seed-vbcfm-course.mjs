@@ -56,6 +56,17 @@ const TRACKS = [
       "Stratifying a population, the chapter's worked example, why the return depends on who captures the savings, cautions about stratification bias and a decision process.",
       ["Distinguish benefit-to-cost ratio from return on investment", "Recalculate a care management return under shared savings versus a global budget", "Test a business case against a range of effects"], ["roi", "care-management", "risk-stratification"]),
   ]),
+  T(2, "readiness-and-contracts", "Readiness and Contract Analysis", "Assessing organizational readiness for risk and reading an APM contract for financial exposure.", [
+    L(4, "vbcfm-readiness-domains", "APM Readiness: Six Domains and Thirty Dimensions", 25,
+      "Why readiness is separate from financial terms, and what each of the six domains and thirty dimensions asks, with Vermont context.",
+      ["Name the six readiness domains and the dimensions in each", "Explain why readiness determines whether a contract's terms can be earned", "Use the domains as a leadership scoring conversation"], ["readiness", "vbc", "domains"]),
+    L(5, "vbcfm-readiness-scoring", "Scoring Readiness and Finding the Binding Constraint", 25,
+      "The 0-4 scoring, the readiness bands, why the weakest domain rules, a reading of three illustrative profiles, and turning a gap list into a sequence.",
+      ["Score readiness with evidence and interpret the overall band", "Identify the binding constraint from a domain profile", "Sequence investments by dependency"], ["readiness", "scoring", "binding-constraint"]),
+    L(6, "vbcfm-contract-review", "Reading an APM Contract for Financial Risk", 25,
+      "The 65-provision, eight-category contract checklist, the quality withhold arithmetic, carve-out symmetry, risk corridors, settlement and how to use the checklist in negotiation.",
+      ["Review a contract against the eight categories", "Calculate the amount at risk in a quality withhold", "Prioritize critical provisions by dollar impact"], ["contracts", "apm", "risk-corridor"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
