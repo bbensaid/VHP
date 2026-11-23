@@ -1,0 +1,1118 @@
+{
+ "state": "Wisconsin",
+ "slug": "wisconsin",
+ "asOf": "2026-11",
+ "source": {
+  "label": "Wisconsin Department of Health Services, Rural Health Transformation Program pages (Coordinated Care, Technology, Workforce, Implementation)",
+  "url": "https://dhs.wisconsin.gov/rhtp/index.htm"
+ },
+ "announcedTotal": null,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "Coordinated Care: Sources of Strength Project",
+   "n": 1,
+   "recipient": "Cooperative Educational Service Agency (CESA) 6",
+   "county": "Not stated",
+   "amount": 499921.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 2,
+   "recipient": "Access Community Health Centers Inc.",
+   "county": "Not stated",
+   "amount": 909261.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 3,
+   "recipient": "Amery Regional Medical Center Inc.",
+   "county": "Not stated",
+   "amount": 878000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 4,
+   "recipient": "Baldwin Area Medical Center Inc. DBA Western Wisconsin Health",
+   "county": "Not stated",
+   "amount": 1017492.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 5,
+   "recipient": "Bellin Gundersen Health System Inc. (Emplify Health)",
+   "county": "Not stated",
+   "amount": 1699901.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 6,
+   "recipient": "Black River Health Inc.",
+   "county": "Not stated",
+   "amount": 1126081.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 7,
+   "recipient": "Burnett Medical Center Inc.",
+   "county": "Not stated",
+   "amount": 258252.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 8,
+   "recipient": "Cumberland Memorial Hospital Inc.",
+   "county": "Not stated",
+   "amount": 1516476.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 9,
+   "recipient": "Door County Memorial Hospital Foundation Inc.",
+   "county": "Not stated",
+   "amount": 1133671.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 10,
+   "recipient": "Family Health Center of Marshfield Inc.",
+   "county": "Not stated",
+   "amount": 2762337.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 11,
+   "recipient": "Fort HealthCare Inc.",
+   "county": "Not stated",
+   "amount": 1386445.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 12,
+   "recipient": "Grant Regional Health Center Inc.",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 13,
+   "recipient": "Indianhead Medical Center Shell Lake Inc.",
+   "county": "Not stated",
+   "amount": 804580.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 14,
+   "recipient": "Kenosha Community Health Center Inc.",
+   "county": "Not stated",
+   "amount": 1363636.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 15,
+   "recipient": "La Clinica De Los Campesinos Inc. DBA Noble Community Clinics",
+   "county": "Not stated",
+   "amount": 1260000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 16,
+   "recipient": "Ladd Memorial Hospital DBA Osceola Medical Center",
+   "county": "Not stated",
+   "amount": 61484.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 17,
+   "recipient": "Lafayette County DBA Lafayette Hospital and Clinics",
+   "county": "Not stated",
+   "amount": 130560.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 18,
+   "recipient": "Marshfield Clinic Health System Inc.",
+   "county": "Not stated",
+   "amount": 1011111.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 19,
+   "recipient": "Mile Bluff Medical Center Inc.",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 20,
+   "recipient": "N.E.W. Community Clinic Ltd.",
+   "county": "Not stated",
+   "amount": 444110.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 21,
+   "recipient": "Partnership Community Health Center Inc.",
+   "county": "Not stated",
+   "amount": 1363636.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 22,
+   "recipient": "Primary Connection Health Care Inc. DBA Bridge Community Health Clinic",
+   "county": "Not stated",
+   "amount": 1418613.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 23,
+   "recipient": "Reedsburg Area Medical Center Inc.",
+   "county": "Not stated",
+   "amount": 1120000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 24,
+   "recipient": "Rock River Community Clinic Inc.",
+   "county": "Not stated",
+   "amount": 1221138.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 25,
+   "recipient": "Sauk Prairie Healthcare Inc.",
+   "county": "Not stated",
+   "amount": 1120000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 26,
+   "recipient": "Scenic Bluffs Health Center Inc.",
+   "county": "Not stated",
+   "amount": 2023123.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 27,
+   "recipient": "Southwest Health Center Inc.",
+   "county": "Not stated",
+   "amount": 1000111.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 28,
+   "recipient": "St. Clare Memorial Hospital Inc. (HSHS)",
+   "county": "Not stated",
+   "amount": 745184.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 29,
+   "recipient": "St. Croix Regional Medical Center",
+   "county": "Not stated",
+   "amount": 1566366.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 30,
+   "recipient": "The Lakes Community Health Center DBA NorthLakes Community Clinic",
+   "county": "Not stated",
+   "amount": 1106488.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 31,
+   "recipient": "The Richland Hospital Inc.",
+   "county": "Not stated",
+   "amount": 1011111.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 32,
+   "recipient": "ThedaCare Inc.",
+   "county": "Not stated",
+   "amount": 1116051.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 33,
+   "recipient": "Upland Hills Health Inc.",
+   "county": "Not stated",
+   "amount": 2154243.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Technology Transformation funds",
+   "n": 34,
+   "recipient": "Vernon Memorial Healthcare Inc. DBA Vernon Health",
+   "county": "Not stated",
+   "amount": 1010541.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 35,
+   "recipient": "Access Community Health Centers Inc.",
+   "county": "Not stated",
+   "amount": 139320.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 36,
+   "recipient": "Ascension Wisconsin Inc.",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 37,
+   "recipient": "Bad River Band of Lake Superior Tribe of Chippewa Indians",
+   "county": "Not stated",
+   "amount": 112655.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 38,
+   "recipient": "Barton Orthodontics LLC DBA Central Orthodontic Specialists",
+   "county": "Not stated",
+   "amount": 148645.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 39,
+   "recipient": "Bridging Brighter Smiles Inc.",
+   "county": "Not stated",
+   "amount": 139082.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 40,
+   "recipient": "Brown County Oral Health Partnership",
+   "county": "Not stated",
+   "amount": 111495.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 41,
+   "recipient": "Charles Lau DDS MSD LLC (Wisconsin Dental Wellness)",
+   "county": "Not stated",
+   "amount": 26930.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 42,
+   "recipient": "Chippewa Valley Technical College",
+   "county": "Not stated",
+   "amount": 430231.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 43,
+   "recipient": "Clark County Health Department",
+   "county": "Not stated",
+   "amount": 55725.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 44,
+   "recipient": "Dentistry.One of Wisconsin (MouthWatch Inc.)",
+   "county": "Not stated",
+   "amount": 140000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 45,
+   "recipient": "Family Health Center of Marshfield Inc.",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 46,
+   "recipient": "Fowler Dental Clinic",
+   "county": "Not stated",
+   "amount": 218000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 47,
+   "recipient": "HealthNet of Rock County Inc.",
+   "county": "Not stated",
+   "amount": 94261.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 48,
+   "recipient": "Healthy Smiles LLC",
+   "county": "Not stated",
+   "amount": 264571.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 49,
+   "recipient": "Kenosha Community Health Center Inc.",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 50,
+   "recipient": "Kevin J. Pepin, DDS, SC",
+   "county": "Not stated",
+   "amount": 75000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 51,
+   "recipient": "Kevin Klar DDS LLC DBA Westfield Family Dental",
+   "county": "Not stated",
+   "amount": 266164.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 52,
+   "recipient": "La Clinica de los Campesinos Inc.",
+   "county": "Not stated",
+   "amount": 173900.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 53,
+   "recipient": "Lac du Flambeau Band of Lake Superior Chippewa Indians",
+   "county": "Not stated",
+   "amount": 242519.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 54,
+   "recipient": "Lake Area Free Clinic",
+   "county": "Not stated",
+   "amount": 448300.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 55,
+   "recipient": "Lake Superior Community Health Center",
+   "county": "Not stated",
+   "amount": 88344.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 56,
+   "recipient": "Mercy Dental Missions Inc.",
+   "county": "Not stated",
+   "amount": 119844.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 57,
+   "recipient": "More Smiles Wisconsin Inc.",
+   "county": "Not stated",
+   "amount": 71300.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 58,
+   "recipient": "N.E.W. Community Clinic Ltd.",
+   "county": "Not stated",
+   "amount": 310022.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 59,
+   "recipient": "Northcentral Technical College District",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 60,
+   "recipient": "Open Arms Free Clinic Inc.",
+   "county": "Not stated",
+   "amount": 196494.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 61,
+   "recipient": "Partnership Community Health Center Inc.",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 62,
+   "recipient": "Rock River Community Clinic Inc.",
+   "county": "Not stated",
+   "amount": 152640.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 63,
+   "recipient": "Scenic Bluffs Health Center Inc.",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 64,
+   "recipient": "Scenic River Dental LLC",
+   "county": "Not stated",
+   "amount": 253354.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 65,
+   "recipient": "Seals-On-Wheels Oral Health Program LLC",
+   "county": "Not stated",
+   "amount": 138263.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 66,
+   "recipient": "Simply Dentures LLC",
+   "county": "Not stated",
+   "amount": 82892.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 67,
+   "recipient": "St. Vincent de Paul of Sauk Prairie/Roxbury Inc.",
+   "county": "Not stated",
+   "amount": 31450.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 68,
+   "recipient": "The Lakes Community Health Center DBA NorthLakes Community Clinic",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 69,
+   "recipient": "Tri-County Community Dental Clinic Inc.",
+   "county": "Not stated",
+   "amount": 223888.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 70,
+   "recipient": "Vivent Health Inc.",
+   "county": "Not stated",
+   "amount": 426756.0,
+   "purpose": ""
+  },
+  {
+   "program": "Technology: Rural Dental Efficiency and Access grants",
+   "n": 71,
+   "recipient": "Waukesha County Community Dental Clinic DBA Community Smiles Dental",
+   "county": "Not stated",
+   "amount": 468677.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 72,
+   "recipient": "Ascension Wisconsin Inc.: Maternal Health",
+   "county": "Not stated",
+   "amount": 215501.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 73,
+   "recipient": "Ascension Wisconsin Inc.: Community Care Navigation",
+   "county": "Not stated",
+   "amount": 198496.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 74,
+   "recipient": "Aurora Health Care Metro Inc.",
+   "county": "Not stated",
+   "amount": 438693.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 75,
+   "recipient": "Baldwin Area Medical Center Inc. DBA Western Wisconsin Health",
+   "county": "Not stated",
+   "amount": 528661.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 76,
+   "recipient": "Bayfield County Health Department",
+   "county": "Not stated",
+   "amount": 392258.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 77,
+   "recipient": "Beloit Health System",
+   "county": "Not stated",
+   "amount": 495906.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 78,
+   "recipient": "CAP Services Inc.",
+   "county": "Not stated",
+   "amount": 273779.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 79,
+   "recipient": "Children's Hospital and Health System Inc.",
+   "county": "Not stated",
+   "amount": 172466.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 80,
+   "recipient": "Chippewa Valley Hospital and Oakview Care Center DBA AdventHealth",
+   "county": "Not stated",
+   "amount": 328479.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 81,
+   "recipient": "Columbia County Health and Human Services",
+   "county": "Not stated",
+   "amount": 90074.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 82,
+   "recipient": "Community Initiatives of Wisconsin",
+   "county": "Not stated",
+   "amount": 400000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 83,
+   "recipient": "Door County Memorial Hospital Foundation Inc.",
+   "county": "Not stated",
+   "amount": 479727.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 84,
+   "recipient": "Eau Claire City-County Health Department",
+   "county": "Not stated",
+   "amount": 289015.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 85,
+   "recipient": "Family Health Center of Marshfield Inc.",
+   "county": "Not stated",
+   "amount": 186993.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 86,
+   "recipient": "Fond du Lac County",
+   "county": "Not stated",
+   "amount": 118914.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 87,
+   "recipient": "Great Rivers United Way",
+   "county": "Not stated",
+   "amount": 559950.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 88,
+   "recipient": "Healthfirst Network Inc.",
+   "county": "Not stated",
+   "amount": 332344.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 89,
+   "recipient": "Ho-Chunk Nation",
+   "county": "Not stated",
+   "amount": 412840.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 90,
+   "recipient": "HOLA Inc.",
+   "county": "Not stated",
+   "amount": 500503.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 91,
+   "recipient": "La Clinica de los Campesinos Inc. DBA Noble Community Clinics",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 92,
+   "recipient": "Lake Area Free Clinic",
+   "county": "Not stated",
+   "amount": 109873.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 93,
+   "recipient": "Marinette County",
+   "county": "Not stated",
+   "amount": 300000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 94,
+   "recipient": "Marshfield Clinic Health System Inc.",
+   "county": "Not stated",
+   "amount": 860718.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 95,
+   "recipient": "Mayo Clinic Health System",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 96,
+   "recipient": "Mercy Health System Corporation",
+   "county": "Not stated",
+   "amount": 362097.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 97,
+   "recipient": "Mile Bluff Medical Center Inc.",
+   "county": "Not stated",
+   "amount": 222252.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 98,
+   "recipient": "More Smiles Wisconsin Inc.",
+   "county": "Not stated",
+   "amount": 121916.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 99,
+   "recipient": "Multicultural Coalition Inc.",
+   "county": "Not stated",
+   "amount": 505328.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 100,
+   "recipient": "Northeast Wisconsin Hmong Professionals",
+   "county": "Not stated",
+   "amount": 263985.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 101,
+   "recipient": "Northwest Wisconsin Workforce Investment Board",
+   "county": "Not stated",
+   "amount": 383775.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 102,
+   "recipient": "Oconto Hospital and Medical Center Inc. (Emplify Health)",
+   "county": "Not stated",
+   "amount": 435029.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 103,
+   "recipient": "Oneida County Health Department",
+   "county": "Not stated",
+   "amount": 416505.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 104,
+   "recipient": "Open Arms Free Clinic Inc.",
+   "county": "Not stated",
+   "amount": 200000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 105,
+   "recipient": "Red Cliff Band of Lake Superior Chippewa Indians",
+   "county": "Not stated",
+   "amount": 250000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 106,
+   "recipient": "Scenic Bluffs Health Center Inc.",
+   "county": "Not stated",
+   "amount": 442039.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 107,
+   "recipient": "Sheboygan County Public Health",
+   "county": "Not stated",
+   "amount": 226855.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 108,
+   "recipient": "Southwestern Wisconsin Community Action Program Inc.",
+   "county": "Not stated",
+   "amount": 685350.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 109,
+   "recipient": "SSM Health Care of Wisconsin Inc.",
+   "county": "Not stated",
+   "amount": 341639.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 110,
+   "recipient": "St. Clare Health Mission Inc.",
+   "county": "Not stated",
+   "amount": 175000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 111,
+   "recipient": "The Board of Regents of the University of Wisconsin System",
+   "county": "Not stated",
+   "amount": 2249918.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 112,
+   "recipient": "The Lakes Community Health Center DBA NorthLakes Community Clinic",
+   "county": "Not stated",
+   "amount": 265510.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 113,
+   "recipient": "Transitions at Home Inc.",
+   "county": "Not stated",
+   "amount": 346162.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 114,
+   "recipient": "United Way of Washington County",
+   "county": "Not stated",
+   "amount": 404424.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 115,
+   "recipient": "We All Rise: African American Resource Center Inc.",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 116,
+   "recipient": "Wisconsin Association of Free and Charitable Clinics Inc.",
+   "county": "Not stated",
+   "amount": 600000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 117,
+   "recipient": "Wisconsin Literacy Inc.",
+   "county": "Not stated",
+   "amount": 599890.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 118,
+   "recipient": "Wisconsin Masonic Home Inc. aka Three Pillars Senior Living Communities",
+   "county": "Not stated",
+   "amount": 421305.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 119,
+   "recipient": "Wood County Health Department",
+   "county": "Not stated",
+   "amount": 266343.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker grants",
+   "n": 120,
+   "recipient": "YWCA Greater Green Bay Inc.",
+   "county": "Not stated",
+   "amount": 572060.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker training provider grants",
+   "n": 121,
+   "recipient": "Great Rivers United Way",
+   "county": "Not stated",
+   "amount": 84303.0,
+   "purpose": ""
+  },
+  {
+   "program": "Workforce: Community Health Worker training provider grants",
+   "n": 122,
+   "recipient": "Milwaukee Area Health Education Center Inc.",
+   "county": "Not stated",
+   "amount": 190411.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 123,
+   "recipient": "Area Health Education Centers",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 124,
+   "recipient": "Department of Agriculture, Trade, and Consumer Protection",
+   "county": "Not stated",
+   "amount": 195384.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 125,
+   "recipient": "Department of Public Instruction",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 126,
+   "recipient": "Department of Veterans Affairs",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 127,
+   "recipient": "Department of Workforce Development",
+   "county": "Not stated",
+   "amount": 15888343.35,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 128,
+   "recipient": "Marquette University School of Dentistry",
+   "county": "Not stated",
+   "amount": 5000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 129,
+   "recipient": "Medical College of Wisconsin",
+   "county": "Not stated",
+   "amount": 900217.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 130,
+   "recipient": "Office of the Commissioner of Insurance",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 131,
+   "recipient": "United Way of Wisconsin",
+   "county": "Not stated",
+   "amount": 2000000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 132,
+   "recipient": "Universities of Wisconsin",
+   "county": "Not stated",
+   "amount": 22587792.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 133,
+   "recipient": "University of Wisconsin Population Health Institute \u2013 County Health Rankings & Roadmaps",
+   "county": "Not stated",
+   "amount": 598682.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 134,
+   "recipient": "University of Wisconsin Population Health Institute \u2013 Envision",
+   "county": "Not stated",
+   "amount": 2250000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 135,
+   "recipient": "Wisconsin Collaborative for Health Care Quality",
+   "county": "Not stated",
+   "amount": 504467.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 136,
+   "recipient": "Wisconsin Office of Rural Health",
+   "county": "Not stated",
+   "amount": 361603.36,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 137,
+   "recipient": "Wisconsin Statewide Health Information Network",
+   "county": "Not stated",
+   "amount": 499078.0,
+   "purpose": ""
+  },
+  {
+   "program": "Implementation: Total Budget Year 1 funds awarded to implementation partners",
+   "n": 138,
+   "recipient": "Wisconsin Technical College System",
+   "county": "Not stated",
+   "amount": 22587792.0,
+   "purpose": ""
+  }
+ ],
+ "note": "Award tables published on the state's program pages by program area. The Dental Efficiency and Access table matches the page's own statement ($9,500,722 to 37 organizations). The Implementation table lists the Budget Year 1 funds awarded to implementation partners (state agencies and other partners). The state's Implementation page says DHS awarded $69.9 million in competitive grants to organizations; the competitive-grant tables here (Technology, Dental, Community Health Worker, training-provider and Sources of Strength) add to $69.96 million. Other Wisconsin allocations (for example tribal nations) are not itemized in these tables, and the pages print no overall total. Amounts as printed."
+}

@@ -129,11 +129,11 @@
   ]
  },
  "Wisconsin": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://dhs.wisconsin.gov/rhtp/index.htm"
   ],
-  "note": "$69.9M BY1 grants awarded; program pages per initiative"
+  "note": "DHS program pages: 6 award tables (138 rows); dental table ties to page text"
  },
  "Kentucky": {
   "status": "none_found",
