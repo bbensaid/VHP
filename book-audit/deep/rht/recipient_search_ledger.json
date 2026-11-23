@@ -173,11 +173,11 @@
   "note": "Phases 1-4 name recipients and give initiative-level $ totals only; no per-award amounts in the DCH releases (checked ga_p2/p3/p4)"
  },
  "Oklahoma": {
-  "status": "partial",
+  "status": "parsed",
   "urls": [
    "https://oklahoma.gov/health/rhtp/rhtp-funding-recipients.html"
   ],
-  "note": "recipients in a JS dropdown \u2014 find the data endpoint"
+  "note": "program lists via xfdisplay.json -> <path>.content.html fragments (153 rows; programs with no recipients yet omitted)"
  },
  "Wyoming": {
   "status": "partial",

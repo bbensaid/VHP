@@ -1,0 +1,1239 @@
+{
+ "state": "Oklahoma",
+ "slug": "oklahoma",
+ "asOf": "2026-11",
+ "source": {
+  "label": "Oklahoma State Department of Health, RHTP Funding Recipients (Budget Period 1 and 2 program lists)",
+  "url": "https://oklahoma.gov/health/rhtp/rhtp-funding-recipients.html"
+ },
+ "announcedTotal": null,
+ "areaLabel": "Counties",
+ "multiYear": true,
+ "rows": [
+  {
+   "program": "Behavioral Health Integration (Budget Period 1)",
+   "n": 1,
+   "recipient": "Oklahoma State University Center for Health Sciences (OSU-CHS) \u2013 SPARK Rural Health Addiction Medicine Expansion Program,",
+   "county": "Not stated",
+   "amount": 137841.17,
+   "purpose": "Service Area: All 75 rural-designated Oklahoma counties."
+  },
+  {
+   "program": "Behavioral Health Integration (Budget Period 1)",
+   "n": 2,
+   "recipient": "Mercy Health Oklahoma Communities \u2013 Virtual Substance Use Recovery Program (vSURP),",
+   "county": "Not stated",
+   "amount": 90171.53,
+   "purpose": "Service Area: 37 rural Oklahoma counties, with 44 physical entry points consisting of seven hospitals and 37 clinics. The 13 primary counties are Blaine, Canadian, Carter, Cleveland, Delaware, Garvin, Johnston, Kingfisher, Le Flore, Logan, McClain, Pontotoc, and Sequoyah, with an additional 24 surrounding rural counties served through the program."
+  },
+  {
+   "program": "Behavioral Health Integration (Budget Period 1)",
+   "n": 3,
+   "recipient": "Andor Health, LLC,",
+   "county": "Not stated",
+   "amount": 1000000.0,
+   "purpose": "Service Area: Adair, Cherokee, Delaware, Mayes, McIntosh, Muskogee, Okmulgee, and Sequoyah counties."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 4,
+   "recipient": "Central Oklahoma Family Medical Center, Inc.",
+   "county": "Garvin, Pontotoc, Seminole",
+   "amount": 337207.5,
+   "purpose": "Central Oklahoma Family Medical Center, Inc. will utilize a complex care model designed to target and manage chronic diseases through physicians, RNs, CHWs, and other providers. Patients receiving care at COFMC will be screened for cardiovascular disease, chronic lower respiratory disease, diabetes, and stroke prevention/management and will be flagged due to high rates of emergency room visits or primary care appointments, supported by PRAPARE results. The work will be supported by the Azara platform and include in-person appointments, telemedicine, and follow-up via telephone."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 5,
+   "recipient": "Cherokee County Health Services Council",
+   "county": "Cherokee, Delaware, Mayes, Muskogee, Ottawa, Rogers",
+   "amount": 766244.42,
+   "purpose": "Cherokee County Health Services Council will launch the Empowered Living Program of Northeastern Oklahoma (ELP) - a regional chronic disease self-management initiative serving rural and underserved populations across northeastern Oklahoma. The program will create a coordinated six-county network of healthcare providers, community health organizations, and local outreach coordinators to expand access to Chronic Disease Self-Management Education (CDSME) programs. Using evidence-based Self-Management Resource Center (SMRC) models, the initiative will provide virtual workshops focused on diabetes and cardiovascular disease prevention and management, with future expansion to cancer survivorship, stroke recovery, and chronic respiratory disease support."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 6,
+   "recipient": "Choctaw Nation of Oklahoma",
+   "county": "Atoka, Bryan, Choctaw, Coal, Haskell, Hughes, Johnston, Latimer, LeFlore, McCurtain, Pittsburg, Pontotoc, Pushmataha",
+   "amount": 360552.0,
+   "purpose": "Choctaw Nation of Oklahoma will launch the Integrated Rural Chronic Disease Access, Prevention, and Care Coordination Initiative: a system-wide program designed to improve chronic disease management, preventive wellness engagement, and maternal health coordination across rural Southeastern Oklahoma. The program expands access to Remote Patient Monitoring (RPM), digital health engagement tools, preventive wellness services, maternal care coordination, and community-based outreach activities designed to reduce barriers to care and strengthen patient engagement."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 7,
+   "recipient": "Cimarron Memorial Hospital and Rural Health Clinic",
+   "county": "Cimarron, Texas",
+   "amount": 665502.0,
+   "purpose": "Cimarron Memorial Hospital and Rural Health Clinic will implement the Frontier Chronic Disease Early Detection and Diagnostic Access Initiative to improve access to evidence-based chronic disease diagnosis, monitoring, and early detection services for residents of Cimarron County and the surrounding frontier region."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 8,
+   "recipient": "Comanche Nation",
+   "county": "Caddo, Comanche, Cotton, Jefferson, Stephens, Tillman",
+   "amount": 341307.23,
+   "purpose": "The Comanche Nation will expand its long-standing, community-based chronic disease management services for rural tribal members in southwestern Oklahoma. The initiative will stabilize and expand care by strengthening staff capacity, adding two CHR Transporter/Aides, and introducing a mobile health unit to reach remote communities. Through in-home visits, transportation support, medication delivery, and culturally grounded health education, the program will improve access to care, enhance chronic disease management, and reduce health disparities among American Indian populations in rural areas."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 9,
+   "recipient": "Fairview Regional Medical Center",
+   "county": "Blaine, Dewey, Garfield, Kingfisher, Major, Woods, Woodward",
+   "amount": 1827444.2,
+   "purpose": "Fairview Regional Medical Center (FRMC) will launch the Northwest Oklahoma Stroke and Cardiovascular Disease Management Program, a comprehensive initiative designed to improve prevention, diagnosis, treatment, rehabilitation, and long-term management of cardiovascular disease and stroke throughout rural northwest Oklahoma. The project will strengthen care across the continuum through implementation of a population health management platform, care coordination services, advanced diagnostic capabilities, emergency response enhancements, rehabilitation expansion, and chronic disease management."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 10,
+   "recipient": "Genesis Medical PLLC, dba Southern Oklahoma Pain Management",
+   "county": "Atoka, Bryan, Carter, Coal, Garvin, Johnston, Marshall, Murray, Pontotoc, Stephens",
+   "amount": 1324675.0,
+   "purpose": "Genesis Medical PLLC, dba Southern Oklahoma Pain Management (SOPM), will implement the Southern Oklahoma Rural Chronic Disease Management Program \u2014 a structured, multi-condition care management initiative serving patients across 10 rural counties in south-central Oklahoma. SOPM will deploy an evidence-based care management model targeting Type 2 Diabetes, cardiovascular disease and hypertension, and COPD. Program components include proactive patient outreach and enrollment, individualized care plan development and maintenance, monthly patient engagement, closed-loop referral tracking, remote physiologic monitoring, care gap closure, social determinants of health navigation, and structured patient education."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 11,
+   "recipient": "Jackson County Memorial Hospital Authority",
+   "county": "Greer, Harmon, Jackson",
+   "amount": 1316304.74,
+   "purpose": "JCMH will implement the Chronic Care Model (CCM) to improve access, quality of care and outcomes of chronic disease for people with chronic respiratory diseases including chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema and asthma. JCMH is the primary inpatient and emergency care facility for Jackson and four neighboring counties. Patients with chronic respiratory diseases rely on immediate access, close to home, to updated technology and immediate and effective treatment for exacerbations of their conditions. The program will address this need for a comprehensive chronic care management program with robust capacity and reach to enable access to chronic disease care close to home for rural residents."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 12,
+   "recipient": "Lighthouse Behavioral Wellness Centers, Inc.",
+   "county": "Bryan, Carter, Garvin, Johnston, Love, Marshall, Murray, Pontotoc, Seminole",
+   "amount": 246457.13,
+   "purpose": "Lighthouse Behavioral Wellness Centers, Inc. (Lighthouse) will implement the Rural Integrated Lifestyle Medicine and Chronic Disease Pathway Program (RILM-CDP) across its nine-county rural service area. The project will develop and implement standardized, evidence-informed clinical pathways that strengthen chronic disease risk identification, care coordination, referral management, follow-up support, and performance monitoring for individuals receiving behavioral health services who are living with, at risk for, or experiencing barriers to managing diabetes, cardiovascular disease and hypertension, chronic respiratory disease, and stroke-related conditions."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 13,
+   "recipient": "Long Term Care Specialists",
+   "county": "Atoka, Carter, Johnston, McCurtain, Murray, Pittsburg, Seminole",
+   "amount": 471698.84,
+   "purpose": "Long Term Care Specialists, Inc. will implement a comprehensive Cardiovascular Program to improve outcomes for residents of 18 rural long-term care and skilled nursing facilities in southeastern Oklahoma. The program combines evidence-based cardiovascular clinical pathways, remote patient monitoring, telecardiology services, point-of-care diagnostics, advanced vascular access capabilities, and integrated care coordination to provide proactive, facility-based management of chronic cardiovascular conditions."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 14,
+   "recipient": "Mercy Health Oklahoma Communities, Inc.",
+   "county": "Blaine, Carter, Delaware, Garvin, Kingfisher, LeFlore, Logan, Pontotoc, Sequoyah",
+   "amount": 2615529.21,
+   "purpose": "MHOC\u2019s will expand its virtual capabilities in rural primary care clinics in accordance with the virtual patient care (VPC) chronic disease optimization model. The proposed project will support a network of 15 rural primary care clinics spanning nine counties across central, south central, and eastern Oklahoma. MHOC will provide 24/7 access to same-day acute care video visits. MHOC will expand access to its virtual chronic condition management team with an initial focus on Medicare-eligible patients."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 15,
+   "recipient": "Midwest Wellness and Wound Care, LLC",
+   "county": "75 rural counties (excluding Oklahoma and Tulsa Counties)",
+   "amount": 2321131.25,
+   "purpose": "Midwest Rural Chronic Care Connect (RC3) is a telehealth-enabled chronic disease management program serving rural Oklahoma statewide. Operating a centralized care-coordination and telehealth hub, RC3 uses a dual model: for the many rural patients with no established medical home, RC3 connects them to primary care; for patients who already have a PCP or psychiatrist, RC3 coordinates with that provider. RC3 deploys evidence-based interventions \u2014 self-measured blood pressure monitoring (Million Hearts), Diabetes Self-Management Education and Support (DSMES), spirometry- guided COPD/asthma management (GOLD/NHLBI), and the Collaborative Care Model for co- occurring depression and anxiety, in addition to cellular-connected remote monitoring devices."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 16,
+   "recipient": "Urology Center of Southern Oklahoma",
+   "county": "Bryan, Carter, Garvin, Jefferson, Johnston, Love, Marshall, Murray, Stephens",
+   "amount": 571863.2,
+   "purpose": "Urology Center of Southern Oklahoma will expand its Rural Urologic Cancer and Chronic Disease Management Program to improve timely access to cancer evaluation, diagnosis, treatment coordination, and long-term surveillance for rural patients across Southern Oklahoma. The program will support chronic urologic disease management for conditions that often overlap with or complicate cancer care, reduce referral backlogs, improve cancer care coordination, support telehealth for elderly and transportation-limited patients, and allow more rural patients to receive high-quality urologic cancer care close to home."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 17,
+   "recipient": "Wagoner Hospital Authority, an Oklahoma Public Trust, DBA Wagoner Community Hospital",
+   "county": "Adair, Cherokee, Delaware, Muskogee, Okmulgee, Wagoner",
+   "amount": 2412325.0,
+   "purpose": "Wagoner Community Hospital will employ the Identify\u2013Equip\u2013Monitor\u2013Rehabilitate\u2013Extend model for chronic disease management. They will identify patients and conduct care coordination through their existing staff and EHR, modernize their clinical infrastructure, launch a patient monitoring program and two rehabilitation programs: pulmonary and post-stroke, and expand access to telehealth for rural patients."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 1)",
+   "n": 18,
+   "recipient": "Wyandotte Nation",
+   "county": "Craig, Delaware, Mayes, Muskogee, Nowata, Okfuskee, Osage, Ottawa, Rogers, Wagoner, Washington",
+   "amount": 30603.5,
+   "purpose": "Wyandotte Nation will expand its established diabetes management and prevention program for eligible patients in eleven rural northeastern Oklahoma counties. The project will increase access to diabetes and pre-diabetes education, nutrition instruction, healthy cooking classes, diabetic eye pressure screening, retinal screening, diabetic foot screening, routine monitoring, laboratory review, diabetic follow-up, and healthcare support for patients managing diabetes, pre-diabetes, and related chronic conditions."
+  },
+  {
+   "program": "Closed-Loop Community Care Platform (Budget Period 1)",
+   "n": 19,
+   "recipient": "Findhelp, Inc.,",
+   "county": "Not stated",
+   "amount": 830400.0,
+   "purpose": "Cohort 1 participants: Memorial Hospital of Texas County Authority, Great Plains Regional Medical Center, Beaver County Memorial Hospital, Harper County Community Hospital, DHR Duncan Regional, Okeene Municipal Hospital and Schallmo Authority"
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 20,
+   "recipient": "CREOKS",
+   "county": "Adair",
+   "amount": 49800.0,
+   "purpose": "CREOKS will invest in two transportation vans for its Stilwell clinic. These vans will directly address barriers to rural transportation and help clients reach behavioral health, medical, wellness, and other supportive services more reliably."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 21,
+   "recipient": "Great Salt Plains Health Center",
+   "county": "Alfalfa",
+   "amount": 100000.0,
+   "purpose": "Great Salt Plains Health Center will invest in a new digital X-ray machine to provide clearer, higher-quality images, enabling medical provider teams to diagnose conditions faster and with greater accuracy. Improving imaging quality is a top priority as it improves overall patient health, decreases hospital admissions, reduces the burden on emergency rooms, and leads to quicker referrals to specialists for advanced care."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 22,
+   "recipient": "Choctaw Nation of Oklahoma",
+   "county": "Atoka",
+   "amount": 38600.0,
+   "purpose": "Choctaw Nation of Oklahoma will invest in vision, hearing, and wellness screening technology, in addition to a vaccine refrigerator and medical privacy tents. These investments directly support the project\u2019s goal of delivering accessible, high-quality health screenings and ensuring safe immunization delivery."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 23,
+   "recipient": "Beaver County Memorial Hospital",
+   "county": "Beaver",
+   "amount": 67298.38,
+   "purpose": "Beaver County Memorial Hospital will invest in new health and wellness equipment to create an exercise space to support and allow employees, their families, and others to work towards a healthier lifestyle. The awardee will also expand its physical therapy department by purchasing specialized equipment for rehabilitation use for all patients in need."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 24,
+   "recipient": "Great Salt Plains Health Center",
+   "county": "Blaine",
+   "amount": 61776.0,
+   "purpose": "Great Salt Plains Health Center will invest in a vaccine management system to improve vaccine storage, guarantee temperature control, and enhance patient safety."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 25,
+   "recipient": "Bryan County EMS",
+   "county": "Bryan",
+   "amount": 48164.0,
+   "purpose": "Bryan County EMS will invest in updated, modern communications equipment to better serve its community. This equipment will be helpful in daily EMS operations, crucial in disasters, and prospectively important in upcoming programs like their \u201ctreatment in place\u201d (TIP) initiative."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 26,
+   "recipient": "Avem Health Partners",
+   "county": "Caddo",
+   "amount": 50000.0,
+   "purpose": "Avem Health Partners will invest in the purchase and installation of a full outdoor basketball court at Rotary Park. This includes site preparation, concrete installation, goals, surfacing, and necessary safety features to create a functional and durable recreational space. This investment directly addresses the identified gap in safe and accessible opportunities for physical activity in an underserved area of the community."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 27,
+   "recipient": "Southern Oklahoma Ambulance Services",
+   "county": "Carter",
+   "amount": 54238.76,
+   "purpose": "Southern Oklahoma Ambulance Services will invest in two cardiac monitors and two portable ventilators. Together, these investments equip each additional ambulance with the life\u2011saving technology necessary to maintain clinical readiness and meet the growing demands of its service area."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 28,
+   "recipient": "Choctaw County City of Hugo Hospital Authority",
+   "county": "Choctaw",
+   "amount": 49514.09,
+   "purpose": "Choctaw County City of Hugo Hospital Authority will invest in four defibrillators, five rechargeable battery packs, and a charger for the batteries. These investments ensure that high-risk patients have immediate access to reliable defibrillation, while healthcare staff have standardized, easy-to-use equipment that meets FDA safety and effectiveness standards."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 29,
+   "recipient": "Cimarron Memorial Hospital and Rural Health Clinic",
+   "county": "Cimarron",
+   "amount": 46060.95,
+   "purpose": "Cimarron Memorial Hospital and Rural Health Clinic will invest in essential equipment required to establish and operate a safe, effective, and fully functional cardiac rehabilitation program. These investments include a recumbent bike and ergometer, cardiac rehabilitation exercise equipment system, a defibrillator, and a wireless stress system."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 30,
+   "recipient": "Absentee Shawnee Tribal Health System",
+   "county": "Cleveland",
+   "amount": 42500.0,
+   "purpose": "Absentee Shawnee Tribal Health System will invest in blood pressure cuffs in multiple sizes, glucose monitors, and smart glass body weight scales with BMI indicators. Diagnostic tools help patients track their health progress at home, leading to earlier detection and better management of chronic conditions like diabetes and hypertension. [ER1.1][CP1.2]Investments will also include health and wellness equipment for their diet and wellness programming and rehabilitation."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 31,
+   "recipient": "Family Health Center of Southern Oklahoma",
+   "county": "Coal",
+   "amount": 35800.0,
+   "purpose": "Family Health Center of Southern Oklahoma (FHCSO) will invest in home-monitoring equipment, which includes pulse oximeters, digital thermometers, blood pressure cuffs, and scales, to support patients diagnosed with chronic conditions in monitoring key health indicators at home. FHCSO will also invest in a body composition machine to assess overall patient health, including weight, body fat percentage, muscle mass, and fluid balance."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 32,
+   "recipient": "Comanche County Hospital Authority",
+   "county": "Comanche",
+   "amount": 50000.0,
+   "purpose": "Comanche County Hospital Authority will invest in clinical access infrastructure equipment to deliver point-of-service [BC2.1][ER2.2][CP2.3]care to patients of FQHC clinics in Comanche, County. [BC3.1]CCHA will upgrade X-ray equipment to reduce radiation exposure and deliver faster results via on-the-spot diagnosis, improving patient outcomes, and quality of life."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 33,
+   "recipient": "DRH Health",
+   "county": "Cotton",
+   "amount": 24337.82,
+   "purpose": "DRH Health will invest in clinical access and point-of-care equipment for its Rural Health Clinics [ER4.1][CP4.2]to enable providers to conduct medical examinations, diagnose and treat patients, maintain compliance with CMS requirements for Medicare and Medicaid patients, and better support people with disabilities. Equipment includes examination tables, vital signs devices, hypertension management tools, wheelchair accessible scales, education materials to empower patients to manage their chronic conditions, bariatric wheelchairs, and diagnostic equipment."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 34,
+   "recipient": "Baptist Healthcare",
+   "county": "Craig",
+   "amount": 36594.0,
+   "purpose": "Baptist Healthcare will invest in one additional ultrasound machine for its clinic. The new system will expand capacity for imaging and improve the overall quality and timeliness of care."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 35,
+   "recipient": "CREOKS Mental Health Services Inc.",
+   "county": "Creek",
+   "amount": 49997.68,
+   "purpose": "CREOKS will invest in mobile medical carts, a medication dispensing machine, emergency medical cots, laptops, and a transportation van. These investments will strengthen crisis stabilization capacity, improve medication management and emergency readiness, support clinical assessment and workflow, and help clients access needed care and recovery services."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 36,
+   "recipient": "TheraWest LLC",
+   "county": "Custer",
+   "amount": 38016.68,
+   "purpose": "TheraWest LLC will invest in one anti-gravity treadmill, which utilizes NASA-developed differential air-pressure technology to reduce a patient's effective body weight by up to 80%. The technology allows for therapeutic [BC5.1]movement that would otherwise be impossible or painful during the early stages of recovery."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 37,
+   "recipient": "St. Francis Health System",
+   "county": "Delaware",
+   "amount": 25000.0,
+   "purpose": "St. Francis Health System will invest in retina scanning and remote patient monitoring equipment. This investment will bring the medical expertise and capacity of the larger Saint Francis Health System network into rural facilities via telemedicine and related equipment, improving the timeliness of specialized treatment and reducing the transportation burden on patients and their families."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 38,
+   "recipient": "Seiling Municipal Hospital",
+   "county": "Dewey",
+   "amount": 48990.0,
+   "purpose": "Seiling Municipal Hospital will invest in a non-contact, low-frequency ultrasound treatment that promotes wound healing by increasing blood flow, reducing bacteria, and stimulating tissue regeneration. It is particularly beneficial for patients with chronic or complex wounds, including diabetic ulcers, pressure injuries, and post-surgical wounds."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 39,
+   "recipient": "Newman Memorial Hospital, Inc.",
+   "county": "Ellis",
+   "amount": 49749.95,
+   "purpose": "Newman Memorial Hospital, Inc. will invest in new equipment to strengthen diagnostic, respiratory, medication administration, and patient care capacity. Equipment includes IV pumps and a laboratory microscope to ensure continued reliability and accuracy in medication administration and diagnostic testing; a non-invasive ventilator to expand respiratory support capacity during periods of high patient volume; and a bariatric standing scale to improve patient safety and allow for accurate assessment of a broader patient population."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 40,
+   "recipient": "Great Salt Plains Health Center",
+   "county": "Garfield",
+   "amount": 59220.0,
+   "purpose": "Great Salt Plains Health Center will invest in architectural and engineering (A&E) design services for the repurposing of existing space within the clinical facility to support the expansion of the rural residency teaching program to accommodate up to 12 residents. Services will include facility planning, schematic design, and coordination necessary to reconfigure existing space for clinical and educational use."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 41,
+   "recipient": "Lindsay Municipal Hospital",
+   "county": "Garvin",
+   "amount": 39799.38,
+   "purpose": "Lindsay Municipal Hospital will invest in upgrading and replacing critical equipment to deliver safe, timely, and reliable care in a rural healthcare setting. These investments will support community wellness by improving emergency readiness, enhancing patient safety, and increasing operational efficiency across multiple departments. Equipment includes thermometers, analyzers, a tube rocker, a system for surgical instrument reprocessing, a patient lift, a stretcher, and materials to improve laboratory diagnostic accuracy and efficiency."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 42,
+   "recipient": "Grady Memorial Hospital Authority",
+   "county": "Grady",
+   "amount": 29950.0,
+   "purpose": "Grady Memorial Hospital Authority will invest in a workstation equipped with digital radiography equipment to upgrade to full digital imaging capability, in addition to required preventive maintenance to comply with existing equipment."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 43,
+   "recipient": "Great Salt Plains Health Center",
+   "county": "Grant",
+   "amount": 61776.0,
+   "purpose": "Great Salt Plains Health Center will invest in a vaccine management system to improve vaccine storage, guarantee temperature control, and enhance patient safety."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 44,
+   "recipient": "Jackson County Memorial Hospital Authority",
+   "county": "Greer",
+   "amount": 34152.99,
+   "purpose": "Jackson County Memorial Hospital Authority will invest in clinical access and point-of-care equipment for its Rural Health Clinics [ER8.1][CP8.2]to enable providers to conduct medical examinations, diagnose and treat patients, maintain compliance with HHS requirements for treatment of Medicare and Medicaid patients, and serve people with disabilities. Equipment includes examination tables, a lab draw chair, scopes for conducting examinations, point-of-care ultrasound equipment, and bariatric patient chairs."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 45,
+   "recipient": "Jackson County Memorial Hospital Authority",
+   "county": "Harmon",
+   "amount": 34152.99,
+   "purpose": "Jackson County Memorial Hospital Authority will invest in clinical access and point-of-care equipment for its Rural Health Clinics t[ER9.1][CP9.2]o enable providers to conduct medical examinations, diagnose and treat patients, maintain compliance with HHS requirements for treatment of Medicare and Medicaid patients, and serve people with disabilities. Equipment includes examination tables, a lab draw chair, scopes for conducting examinations, point-of-care ultrasound equipment, and bariatric patient chairs."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 46,
+   "recipient": "Harper County Community Hospital",
+   "county": "Harper",
+   "amount": 60360.41,
+   "purpose": "Harper County Community Hospital will invest in a pulmonary function test machine to strengthen the hospital's ability to provide comprehensive respiratory care, improve diagnostic capabilities, and enhance overall patient service delivery in the community. Additionally, they will invest in a balance system to strengthen the hospital's rehabilitation services, improve patient safety by addressing fall risk, and expand access to advanced therapeutic technology."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 47,
+   "recipient": "Pafford Medical Services",
+   "county": "Haskell",
+   "amount": 64340.9,
+   "purpose": "Pafford Medical Services will invest in three categories of advanced prehospital clinical equipment for ambulances. This equipment includes a mechanical chest compression system to deliver automated, consistent chest compressions, an IV pump, and a kit to display a real-time glottis image on an integrated screen."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 48,
+   "recipient": "City of Wetumka",
+   "county": "Hughes",
+   "amount": 50000.0,
+   "purpose": "The City of Wetumka will invest in the development of an active living course to promote healthy lifestyles and encourage regular physical activity for the residents of Wetumka and surrounding communities, in partnership with local organizations. The adult physical fitness equipment is designed to accommodate a range of abilities, including individuals with disabilities, and a protective awning will provide shade and shelter. The City of Wetumka will also invest in walking path signs with designated mileage points to assist users in tracking their activity."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 49,
+   "recipient": "Altus Public Schools",
+   "county": "Jackson",
+   "amount": 49988.7,
+   "purpose": "Altus Public Schools will invest in updated, shared-use wellness and strength-training equipment to expand safe, structured physical activity opportunities for students in grades 6\u201312. Purchases include strength and resistance equipment (such as dumbbells, plates, and benches), cardiovascular equipment (including stationary bikes), and functional training equipment (such as plyometric boxes, medicine balls, and agility tools). The project also includes mobility and recovery equipment (such as resistance bands and suspension trainers), performance monitoring tools to support safe progression, and safety and infrastructure improvements, including flooring, storage systems, and instructional signage."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 50,
+   "recipient": "DRH Health",
+   "county": "Jefferson",
+   "amount": 42270.62,
+   "purpose": "DRH Health will invest in clinical access and point-of-care equipment for its Rural Health Clinics[ER10.1][CP10.2] to enable providers to conduct medical examinations, diagnose and treat patients, maintain compliance with CMS requirements for Medicare and Medicaid patients, and better support people with disabilities. Equipment includes examination tables, vital signs devices, hypertension management tools, wheelchair accessible scales, education materials to empower patients to manage their chronic conditions, bariatric wheelchairs, and diagnostic equipment."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 51,
+   "recipient": "Mercy Hospital Oklahoma Communities",
+   "county": "Johnston",
+   "amount": 100000.0,
+   "purpose": "Mercy Hospital Oklahoma Communities will invest in modern, energy-efficient LED lighting throughout the rural hospital and a modern floor scrubber to strengthen environmental cleanliness and infection control. Additionally, the installation of updated pharmacy storage will improve medication safety, organization, and regulatory compliance within the rural hospital."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 52,
+   "recipient": "Fairfax Medical Facilities, Inc.",
+   "county": "Kay",
+   "amount": 83017.73,
+   "purpose": "Fairfax Medical Facilities, Inc. will invest in equipment to conduct bone mineral density diagnostic testing."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 53,
+   "recipient": "Great Plains Youth and Family Services, Inc.",
+   "county": "Kiowa",
+   "amount": 12500.0,
+   "purpose": "Great Plains Youth and Family Services, Inc. will invest in basic hygiene and dental care items, including toothbrushes, toothpaste, deodorant, body wash, and shampoo. These items are critical to ensuring children maintain proper personal hygiene, which is closely linked to physical health, self-esteem, and school readiness. Additionally, they will invest in backpacks and age-appropriate school supplies to help ensure students begin the school year equipped, confident, and prepared to learn, and a portion of the funds will be dedicated to promoting early literacy and learning opportunities."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 54,
+   "recipient": "Pafford Medical Services",
+   "county": "Latimer",
+   "amount": 32168.95,
+   "purpose": "Pafford Medical Services will invest in three categories of advanced prehospital clinical equipment for ambulances. This equipment includes a mechanical chest compression system to deliver automated, consistent chest compressions, an IV pump, and a kit to display a real-time glottis image on an integrated screen."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 55,
+   "recipient": "The LeFlore County Hospital Authority, dba Eastern Oklahoma Medical Center (EOMC)",
+   "county": "LeFlore",
+   "amount": 86783.0,
+   "purpose": "The LeFlore County Hospital Authority, dba Eastern Oklahoma Medical Center (EOMC), will invest in a machine with VO2 monitoring for bone density screenings. EOMC will also incorporate infusion services to include osteoporosis therapies, implement a structured fall prevention program, and enhance care coordination through screening referrals, treatment tracking, and patient follow-up."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 56,
+   "recipient": "Community Market of Pottawatomie County",
+   "county": "Lincoln",
+   "amount": 48378.5,
+   "purpose": "The Community Market of Pottawatomie County will invest in a 16-foot box truck with an enclosed cargo area, designed for high-capacity transport and mobile delivery of food, supplies, and community resources. Additionally, CMPC will invest in an additional pallet jack, two new tablets, and additional folding tables to manage the increased level of service being provided."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 57,
+   "recipient": "Guthrie Fire EMS",
+   "county": "Logan",
+   "amount": 46600.0,
+   "purpose": "Guthrie Fire EMS will invest in two cardiac monitor/defibrillators and two ventilators to fulfill a documented operational and clinical need by improving equipment availability for a rural EMS system. Dependable monitoring and ventilatory support are essential for safe patient care during response and transport."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 58,
+   "recipient": "Fairview Regional Medical Center",
+   "county": "Major",
+   "amount": 100000.0,
+   "purpose": "Fairview Regional Medical Center will invest in laptops to support mobile care coordination, patient engagement, and community-based education, along with a portable X-ray machine to expand access to diagnostic imaging services in non-traditional and community-based settings."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 59,
+   "recipient": "Marshall County HMA, dba AllianceHealth Madill",
+   "county": "Marshall",
+   "amount": 47300.0,
+   "purpose": "Marshall County HMA, dba AllianceHealth Madill will invest in one pulmonary function testing (PFT) machine and two pieces of cardiovascular rehabilitation equipment to support the prevention, early detection, and management of chronic heart and lung disease. These investments create a more complete continuum of care, linking diagnosis with recovery and prevention services."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 60,
+   "recipient": "Grand Lake Mental Health",
+   "county": "Mayes",
+   "amount": 49275.0,
+   "purpose": "Grand Lake Mental Health will invest in three kiosks in the waiting room of their outpatient clinic to make intake, assessment, and check-in processes less cumbersome and time-consuming for clients. They will also invest in a redesign of nine youth therapy rooms at outpatient clinics, making them more welcoming, trauma-informed, child-friendly, and equipped with therapeutic toys and activities."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 61,
+   "recipient": "Purcell Municipal Hospital",
+   "county": "McClain",
+   "amount": 92167.82,
+   "purpose": "Purcell Municipal Hospital will invest in two scopes with cameras, one adult and one pediatric, that will provide high-definition visualization with advanced technologies, enabling clinicians to detect subtle mucosal and vascular abnormalities, supporting an earlier and more accurate diagnosis."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 62,
+   "recipient": "LIFT Community Action Agency, Inc.",
+   "county": "McCurtain",
+   "amount": 48350.0,
+   "purpose": "LIFT Community Action Agency, Inc. will invest in commercial-grade fitness equipment, including cardio machines, strength training equipment, flooring, lockers, and essential gym accessories. This investment will provide physical space for residents to use accessible and quality fitness equipment with a focus on low-income individuals and families, adults experiencing stress, anxiety, or depression, and residents with limited access to fitness facilities."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 63,
+   "recipient": "Stigler HWC",
+   "county": "McIntosh",
+   "amount": 57131.04,
+   "purpose": "Stigler HWC will invest in various clinic equipment to deliver high-quality care to its patient population. As a Federally Qualified Health Center (FQHC), Stigler HWC places a strong emphasis on supporting individuals and families whose incomes are at or below 200% of the federal poverty level, as well as those who are un/underinsured. Equipment includes a vaccine refrigerator, AEDs, urinalysis analyzer systems, handheld coagulation analyzer base units and PT/INR analyzers, portable 12-lead ECG/EKG analyzers, vital signs monitors, spot-check pulse oximeters, clinic webcams, tabletop autoclave sterilization units, and handheld vision screening devices."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 64,
+   "recipient": "Arbuckle Memorial Hospital",
+   "county": "Murray",
+   "amount": 48657.9,
+   "purpose": "Arbuckle Memorial Hospital will invest in three ventilators with integrated BiPAP (bilevel positive airway pressure) capability to expand respiratory care capacity."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 65,
+   "recipient": "Stigler HWC",
+   "county": "Muskogee",
+   "amount": 29739.85,
+   "purpose": "Stigler HWC will invest in various clinic equipment to deliver high-quality care to its patient population. As a Federally Qualified Health Center (FQHC), Stigler HWC places a strong emphasis on supporting individuals and families whose incomes are at or below 200% of the federal poverty level, as well as those who are un/underinsured. Equipment includes a vaccine refrigerator, AEDs, urinalysis analyzer systems, handheld coagulation analyzer base units and PT/INR analyzers, portable 12-lead ECG/EKG analyzers, vital signs monitors, spot-check pulse oximeters, clinic webcams, tabletop autoclave sterilization units, and handheld vision screening devices."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 66,
+   "recipient": "City of Ponca City - Ponca City Fire Department/Ambulance Service",
+   "county": "Noble",
+   "amount": 78052.0,
+   "purpose": "City of Ponca City - Ponca City Fire Department/Ambulance Service will invest in transforming their service from a transport-focused model into a mobile healthcare delivery system capable of providing advanced life-saving interventions in the field. Reserve units will be equipped to manage high acuity patients through investment in ventilators, chest compression systems, and more."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 67,
+   "recipient": "Stigler HWC",
+   "county": "Okfuskee",
+   "amount": 35027.02,
+   "purpose": "Stigler HWC will invest in various clinic equipment to deliver high-quality care to its patient population. As a Federally Qualified Heath Cetner (FQHC), Stigler HWC places a strong emphasis on supporting individuals and families whose incomes are at or below 200% of the federal poverty level, as well as those who are un/underinsured. Equipment includes a vaccine refrigerator, AEDs, urinalysis analyzer systems, handheld coagulation analyzer base units and PT/INR analyzers, portable 12-lead ECG/EKG analyzers, vital signs monitors, spot-check pulse oximeters, clinic webcams, tabletop autoclave sterilization units, and handheld vision screening devices."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 68,
+   "recipient": "Works Wonderfully Foundation",
+   "county": "Okmulgee",
+   "amount": 50000.0,
+   "purpose": "Works Wonderfully Foundation will invest in clinical diagnostic equipment, as well as therapeutic equipment that can serve a dual purpose of wellness enablers for community use outside of clinical practice. The investment is part of Project GO!, which seeks to improve health and wellness outcomes among pediatric patients with disabilities."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 69,
+   "recipient": "Avem Health Partners",
+   "county": "Osage",
+   "amount": 49852.0,
+   "purpose": "Avem Health Partners will invest in the purchase and installation of outdoor exercise equipment at Ben Parker Memorial Trail Park. This includes multiple pieces of durable, weather-resistant fitness equipment designed to support strength, cardiovascular health, and flexibility for users of varying ages and ability levels, as well as installation and site preparation. By enhancing an existing and well-utilized park, the project creates a functional outdoor fitness space that allows individuals and families to incorporate exercise into their daily routines."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 70,
+   "recipient": "Baptist Healthcare",
+   "county": "Ottawa",
+   "amount": 36594.0,
+   "purpose": "Baptist Healthcare will invest in one additional ultrasound machine[ER11.1][CP11.2] for the clinic. The new system will expand capacity for imaging and improve the overall quality and timeliness of care."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 71,
+   "recipient": "LifeNet EMS",
+   "county": "Payne",
+   "amount": 94820.0,
+   "purpose": "LifeNet EMS will invest in simulation mannequins that are portable, fully integrated systems operated through a single control unit, allowing for efficient deployment in both classroom and field-based training environments."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 72,
+   "recipient": "Long Term Care Specialists, Inc.",
+   "county": "Pittsburg",
+   "amount": 49948.05,
+   "purpose": "Long Term Care Specialists, Inc. will invest in an ultrasound system to support real-time, image-guided vascular access, which allows trained personnel to more accurately and efficiently place peripherally inserted central catheters (PICCs), central venous catheters, IV lines, and other vascular access devices. Each unit is portable and designed for use in facility-based care settings, allowing it to be deployed across multiple branch locations within the county."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 73,
+   "recipient": "The Clinic at Central Oklahoma Family Medical",
+   "county": "Pontotoc",
+   "amount": 50000.0,
+   "purpose": "The Clinic at Central Oklahoma Family Medical will invest in a one-exam-room mobile medical clinic to directly address barriers to patient transportation. The Clinic will station the unit across its rural service area to expand access to medical care and encourage uptake of initial and follow-up medical appointments to address and decrease chronic conditions."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 74,
+   "recipient": "SSM Health St. Anthony Shawnee",
+   "county": "Pottawatomie",
+   "amount": 48300.0,
+   "purpose": "SSM Health St. Anthony Shawnee will invest in equipment for telestroke services to address a life-altering and potentially fatal gap in care. The equipment will help to sustain high-volume, around-the-clock consultation at scale."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 75,
+   "recipient": "Clayton Public Schools",
+   "county": "Pushmataha",
+   "amount": 48280.0,
+   "purpose": "Clayton Public Schools will invest in telemedicine carts and personal telehealth solutions for five locations in the communities of Clayton, Albion, Tuskahoma, and Nashoba. These locations will provide access points for rural residents to make use of health care and mental health care services."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 76,
+   "recipient": "Southwestern Oklahoma State University (SWOSU)",
+   "county": "Roger Mills",
+   "amount": 99944.02,
+   "purpose": "Southwestern Oklahoma State University (SWOSU) Rural Health Center will invest in essential medical equipment, safety supplies, and health-related resources to address a critical gap in access to preventive health education, early intervention services, and essential health supplies in rural western Oklahoma. This investment includes education, school, and baby kits, as well as hospital and pharmacy kits, and a Wellness Mobile Unit to serve the rural population."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 77,
+   "recipient": "Oolagah-Talala EMS",
+   "county": "Rogers",
+   "amount": 43364.89,
+   "purpose": "Oolagah-Talala EMS will invest in a new cardiac monitor/defibrillator. This is a piece of core clinical equipment for paramedic-level EMS services and will bolster their clinical capacity to manage critically ill patients during transport."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 78,
+   "recipient": "The Clinic at Central Oklahoma Family Medical",
+   "county": "Seminole",
+   "amount": 50000.0,
+   "purpose": "The Clinic at Central Oklahoma Family Medical will invest in a one-exam-room mobile medical clinic to directly address barriers to patient transportation. The Clinic will station the unit across its rural service area to expand access to medical care and encourage uptake of initial and follow-up medical appointments to address and decrease chronic conditions."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 79,
+   "recipient": "Pafford Medical Services",
+   "county": "Sequoyah",
+   "amount": 97645.01,
+   "purpose": "Pafford Medical Services will invest in three categories of advanced prehospital clinical equipment for ambulances. This equipment includes a mechanical chest compression system to deliver automated, consistent chest compressions, an IV pump, and a kit to display a real-time glottis image on an integrated screen."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 80,
+   "recipient": "Sooner Mobile X-Ray, Inc.",
+   "county": "Stephens",
+   "amount": 71722.26,
+   "purpose": "Sooner Mobile X-Ray, Inc. will invest in one mobile unit to help fill a critical need for mobile services, spanning both digital connectivity and healthcare access."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 81,
+   "recipient": "Memorial Hospital of Texas County Authority",
+   "county": "Texas",
+   "amount": 49737.0,
+   "purpose": "Memorial Hospital of Texas County Authority will invest in new and updated physical therapy equipment to improve patient outcomes. The investment will introduce new treatment options for more members of the community and add updated safety features that reduce the risk for both the patient and the therapist."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 82,
+   "recipient": "Tillman County Emergency Medical Services District",
+   "county": "Tillman",
+   "amount": 45862.0,
+   "purpose": "Tillman County Emergency Medical Services District will invest in ventilators, IV pumps, and equipment to help start IVs more reliably. The ventilators and IV pumps will enable better management of acutely ill patients and will also support future treatment-in-place (TIP) work."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 83,
+   "recipient": "Wagoner Hospital",
+   "county": "Wagoner",
+   "amount": 49852.0,
+   "purpose": "Wagoner Hospital will invest in replacement psychiatric-rated patient beds for their Mental Health Unit. These specialized safety beds are designed for behavioral health settings, featuring anti-ligature design, low-height fall prevention, tamper-resistant hardware, and infection-resistant surfaces."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 84,
+   "recipient": "Washington County Eldercare",
+   "county": "Washington",
+   "amount": 46373.05,
+   "purpose": "Washington County Eldercare will invest in a combination of advanced assessment systems, therapeutic equipment, and program supplies that directly support fall prevention, mobility improvement, and the ability of older adults to maintain their independence. A significant portion of the investment focuses on evidence-based assessment and intervention systems designed to identify and address fall risk."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 85,
+   "recipient": "Southwestern Oklahoma State University (SWOSU)",
+   "county": "Washita",
+   "amount": 54997.96,
+   "purpose": "Southwestern Oklahoma State University (SWOSU) Rural Health Center will invest in essential medical equipment, safety supplies, and health-related resources to address a critical gap in access to preventive health education, early intervention services, and essential health supplies in rural western Oklahoma. This investment includes education, school, and baby kits, as well as hospital and pharmacy kits, and a Wellness Mobile Unit to serve the rural population."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 86,
+   "recipient": "Alva Hospital Authority, dba Share Medical Center",
+   "county": "Woods",
+   "amount": 47809.64,
+   "purpose": "Alva Hospital Authority, dba Share Medical Center, in collaboration with Alva EMS and Survival Flight, will invest in identified equipment that can ease the transition of care between their services in critical and emergent situations. This investment in improved equipment and increased training will improve healthcare outcomes for anyone experiencing a medical emergency in their rural community."
+  },
+  {
+   "program": "Community-Led Wellness Hubs: Microgrants (Budget Period 1)",
+   "n": 87,
+   "recipient": "Newman Memorial Hospital, Inc.",
+   "county": "Woodward",
+   "amount": 49419.72,
+   "purpose": "Newman Memorial Hospital, Inc. will invest in equipment across the Woodward Rural Health Clinic, Woodward Specialty Clinic, and Mooreland Clinic to address increased patient volume, improve workflow efficiency, and support the expansion of diagnostic, procedural, and patient care services. This equipment includes EKG machines, vital sign machines, a bladder scanner, a flexible scope attachment for stent removal, exam tables, treatment stools, a medical supply cabinet with portable suction, a procedure chair, a bariatric lab chair, and a treatment table."
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 1)",
+   "n": 88,
+   "recipient": "Board of Regents of the University of Oklahoma Health Sciences Center,",
+   "county": "Not stated",
+   "amount": 5445.49,
+   "purpose": "Oklahoma Breastfeeding Resource Center"
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 1)",
+   "n": 89,
+   "recipient": "Newman Memorial Hospital,",
+   "county": "Ellis (with support to Woodward)",
+   "amount": 38525.0,
+   "purpose": "Newman Memorial Hospital will establish the Rural Oklahoma Doula Workforce Development Program in Ellis County with support to Woodward County. The program is a comprehensive hybrid training initiative designed to recruit, educate, certify, mentor, and retain community-based doulas who will improve maternal and infant health outcomes in underserved rural Oklahoma communities. Newman Memorial Hospital seeks to increase the availability of trained doulas serving rural Oklahoma, expand access to labor support for Medicaid beneficiaries, increase breastfeeding initiation, improve patient satisfaction, reduce unnecessary cesarean births, and improve maternal and infant health outcomes."
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 1)",
+   "n": 90,
+   "recipient": "Tulsa Community Foundation,",
+   "county": "Not stated",
+   "amount": 240907.0,
+   "purpose": "Fiscal sponsor for Oklahoma Birth Equity Initiative"
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 1)",
+   "n": 91,
+   "recipient": "Western Plains Youth and Family Services,",
+   "county": "Beaver, Cimarron, Dewey, Ellis, Harper, Texas, and Woodward",
+   "amount": 363090.34,
+   "purpose": "Western Plains Youth and Family Services will provide doula training, parent education, and provider education in NW Oklahoma. Training includes use of the Blossoming Birth Community Doula Training Curriculum with an in-house trainer to train others in-person. Parent education includes expanding doula care and education to expecting families through partnerships, education, collaboration, and outreach. Provider education includes expanding doula care and education to professionals such as health providers, students, future doulas, and support staff through partnerships, education, collaboration, and outreach."
+  },
+  {
+   "program": "High School LPN Program - \"Grow Your Own\" (Budget Period 1)",
+   "n": 92,
+   "recipient": "Indian Capital Career and Technology Center, Tahlequah",
+   "county": "Not stated",
+   "amount": 31166.0,
+   "purpose": ""
+  },
+  {
+   "program": "High School LPN Program - \"Grow Your Own\" (Budget Period 1)",
+   "n": 93,
+   "recipient": "Indian Capital Career and Technology Center, Sallisaw",
+   "county": "Not stated",
+   "amount": 31166.0,
+   "purpose": ""
+  },
+  {
+   "program": "High School LPN Program - \"Grow Your Own\" (Budget Period 1)",
+   "n": 94,
+   "recipient": "Pontotoc Career and Technology Center, Ada",
+   "county": "Not stated",
+   "amount": 31166.0,
+   "purpose": ""
+  },
+  {
+   "program": "High School LPN Program - \"Grow Your Own\" (Budget Period 1)",
+   "n": 95,
+   "recipient": "Red River Career and Technology Center, Duncan",
+   "county": "Not stated",
+   "amount": 31166.0,
+   "purpose": ""
+  },
+  {
+   "program": "High School LPN Program - \"Grow Your Own\" (Budget Period 1)",
+   "n": 96,
+   "recipient": "Southern Oklahoma Technology Center, Ardmore",
+   "county": "Not stated",
+   "amount": 31166.0,
+   "purpose": "*The opportunity was made available to all rural CareerTech centers statewide. Recipients were selected based on community need, interest, and program capacity."
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 97,
+   "recipient": "Mercy Ada,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 98,
+   "recipient": "Mercy Ardmore,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 99,
+   "recipient": "Saint Francis Muskogee,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 100,
+   "recipient": "Chickasaw Nation Medical Center,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 101,
+   "recipient": "Stillwater Medical,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 102,
+   "recipient": "Jackson County Memorial Hospital & Harmon Memorial Hospital,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": ""
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 103,
+   "recipient": "Great Plains Medical Center,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": "SSM Affiliates: Purcell Municipal, Newman Memorial, Harper County Community, Beaver County Memorial, $170,304.00*"
+  },
+  {
+   "program": "Lung Cancer Screening Program (Budget Period 1)",
+   "n": 104,
+   "recipient": "Duncan Regional Hospital,",
+   "county": "Not stated",
+   "amount": 170304.0,
+   "purpose": "Integris Enid, $170,304.00*"
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 105,
+   "recipient": "Ascension St. John Jane Phillips Medical Center,",
+   "county": "Washington",
+   "amount": 2880139.0,
+   "purpose": "Equip an existing cardiac electrophysiology lab to provide procedures such as cardiac ablations locally, increasing access to cardiac care."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 106,
+   "recipient": "Brighter Heights Oklahoma,",
+   "county": "Bryan, Choctaw, Le Flore, McCurtain, Pushmataha",
+   "amount": 258035.0,
+   "purpose": "Establish telepsychiatry access points at five rural behavioral health clinics to address psychiatry access limitations. Funds support clinical-space setup, furnishings, telehealth equipment, and IT configuration."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 107,
+   "recipient": "Cancer Centers of Southwest Oklahoma, LLC",
+   "county": "Stephens, Jackson, Comanche, Grady",
+   "amount": 3910096.0,
+   "purpose": "Upgrade cancer-care technology across four facilities with cloud infrastructure, cybersecurity, integrated care tools, reporting, and patient portal improvements, improving care coordination and quality."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 108,
+   "recipient": "CREOKS Mental Health Services, Inc DBA CREOKS Health Services, Inc.,",
+   "county": "Adair, Atoka, Cherokee, Creek, Le Flore, Mayes, Muskogee, Nowata, Okfuskee, Okmulgee, Pawnee, Pittsburg, Rogers, Sequoyah, Wagoner",
+   "amount": 4000000.0,
+   "purpose": "Establish a Rural Integrated Access and Stabilization Network, including (1) a mobile foster care center of excellence, (2) a detox/residential SUD treatment facility, and (3) two mobile outreach/hygiene trailers to address behavioral health access in the region."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 109,
+   "recipient": "Fairview Regional Medical Center,",
+   "county": "Major",
+   "amount": 754650.0,
+   "purpose": "Replace aging CT equipment with a cardiac-capable scanner supporting advanced cardiac, stroke, trauma, emergency, and oncology imaging, increasing access to local care."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 110,
+   "recipient": "Foundation for a Healthy Oklahoma DBA Oklahoma Perinatal Quality Improvement Collaborative (OPQIC),",
+   "county": "Beckman, Bryan, Canadian, Carter, Cherokee, Custer, Delaware, Garfield, Jackson, Kay, Muskogee, Le Flore, Ottawa, Payne, Pittsburg, Pontotoc, Pottawatomie, Rogers, Stephens, Washington, Woodward",
+   "amount": 200605.0,
+   "purpose": "Provide 24 rural birthing hospitals with obstetric emergency training, neonatal decision support, maternal mental health education, and early warning signs education to improve maternal health quality. Funding will support training from certified instructors and supplies."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 111,
+   "recipient": "Grand Lake Mental Health Center, Inc.,",
+   "county": "Craig, Delaware, Kay, Mayes, Noble, Nowata, Osage, Ottawa, Pawnee, Payne, Rogers, Washington",
+   "amount": 2700000.0,
+   "purpose": "Expand a behavioral health coordination tool used by first responders, offer mobile vital signs kits, and automate reporting completed by clinical staff, all aimed at increasing access. Funds will be used for systems integrations, tech automation and supplies."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 112,
+   "recipient": "Green Country Behavioral Health Services, Inc.,",
+   "county": "McIntosh, Muskogee",
+   "amount": 114358.0,
+   "purpose": "Purchase two vehicles for rural client transportation to behavioral and medical appointments to increase access to care."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 113,
+   "recipient": "Jackson County Memorial Hospital Authority,",
+   "county": "Jackson",
+   "amount": 3938586.0,
+   "purpose": "Modernize existing obstetrical observation, labor and delivery space at a hospital to sustain local care access and improve quality. Funds will be used to update HVAC/VAV, plumbing, nurse call, infant-security system, IT/telehealth interfaces, remote patient monitoring, and other items."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 114,
+   "recipient": "Lighthouse Behavioral Wellness Centers, Inc.,",
+   "county": "Bryan, Carter, Garvin, Johnston, Love, Marshall, Murray, Pontotoc, Seminole",
+   "amount": 1443665.0,
+   "purpose": "Launch mobile MAT/MOUD clinical services across a nine-county service area to address access needs. Funding will purchase three Mobile Medication Clinics."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 115,
+   "recipient": "Lindsay Municipal Hospital Authority,",
+   "county": "Garvin",
+   "amount": 698786.0,
+   "purpose": "Two facility improvements to increase the facility's surgical care quality: (1) replace 11 HVAC units serving its surgical suite, and (2) purchase a 4K surgical video tower to replace existing end-of-life equipment."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 116,
+   "recipient": "McCurtain Memorial Medical Management, Inc.,",
+   "county": "McCurtain",
+   "amount": 2385000.0,
+   "purpose": "Procurement, installation, and deployment of a modular MRI suite to address regional advanced imaging access needs."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 117,
+   "recipient": "Memorial Hospital of Texas County Authority,",
+   "county": "Texas",
+   "amount": 1365805.0,
+   "purpose": "Funds will be used to deploy a mobile clinic to expand access to primary and preventive care, as well as to purchase an in-house MRI to improve care quality of local diagnostic services."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 118,
+   "recipient": "Mercy Health Oklahoma Communities, Inc.,",
+   "county": "Blain, Carter, Johnston, Kingfisher, Logan, Pontotoc",
+   "amount": 3938438.0,
+   "purpose": "Modernize 401 patient rooms (56 ED and 345 Med-Surge) across seven rural hospitals to increase care quality. Room updates will include AI-assisted virtual nursing, safety monitoring, translation, and specialist connectivity."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 119,
+   "recipient": "Newman Memorial Hospital, Inc.,",
+   "county": "Ellis",
+   "amount": 1339787.0,
+   "purpose": "Restore labor and delivery, gynecology, and prenatal services in a region with limited maternity care access. Funds will support maternal and fetal monitoring equipment, neonatal stabilization equipment, labor and delivery furnishings, and clinical supplies."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 120,
+   "recipient": "South Central Medical and Resource Center, Inc.,",
+   "county": "Garvin, Grady, McClain",
+   "amount": 729175.0,
+   "purpose": "Deploy a regional SBIRT screening and alert hub across police, EMS, schools and facilities in three counties to improve care quality. Funding will be used for tablets, system integrations, and tele-triage rooms."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 121,
+   "recipient": "Southwestern Oklahoma State University,",
+   "county": "Alfalfa, Beaver, Beckham, Blaine, Caddo, Canadian, Cimarron, Comanche, Cotton, Custer, Dewey, Ellis, Garfield, Grady, Grant, Greer, Harmon, Harper, Jackson, Jefferson, Kingfisher, Kiowa, Major, Roger Mills, Stephens, Texas, Tillman, Washita, Woods, Woodward",
+   "amount": 3999285.0,
+   "purpose": "Add robotic-assisted surgery at a local hospital and equip a clinic for medical, behavioral health, chronic-disease, telehealth, and clinical training services, all aimed at improving care quality."
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 122,
+   "recipient": "SSM Health Care of Oklahoma,",
+   "county": "Not stated",
+   "amount": 3672447.0,
+   "purpose": "Counties: Beaver, Blaine, Custer, Harper, Kiowa, McClain, Washita"
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 123,
+   "recipient": "SSM St. Anthony Shawnee Cancer Center,",
+   "county": "Not stated",
+   "amount": 1623498.82,
+   "purpose": "Counties: Pottawatomie"
+  },
+  {
+   "program": "Rural Regional Reorientation (RRR) Program (Budget Period 1)",
+   "n": 124,
+   "recipient": "Stillwater Medical Center Authority,",
+   "county": "Payne",
+   "amount": 126166.0,
+   "purpose": "Remote patient monitoring (RPM) to address readmissions related to heart failure. Funding will be used to purchase RPM equipment."
+  },
+  {
+   "program": "Telestroke Expansion I (Budget Period 1)",
+   "n": 125,
+   "recipient": "University of Oklahoma \u2013 Health Sciences Center (OUHSC),",
+   "county": "Not stated",
+   "amount": 499555.0,
+   "purpose": "Funded through interagency agreement"
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 126,
+   "recipient": "Big Five - SORTS,",
+   "county": "Not stated",
+   "amount": 117376.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 127,
+   "recipient": "Cherokee Strip,",
+   "county": "Not stated",
+   "amount": 240000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 128,
+   "recipient": "COCAA/COTS,",
+   "county": "Not stated",
+   "amount": 276486.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 129,
+   "recipient": "Comanche Nations,",
+   "county": "Not stated",
+   "amount": 178182.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 130,
+   "recipient": "First Capital Trolley,",
+   "county": "Not stated",
+   "amount": 297447.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 131,
+   "recipient": "KATS,",
+   "county": "Not stated",
+   "amount": 203595.9,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 132,
+   "recipient": "LIFT,",
+   "county": "Not stated",
+   "amount": 210726.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 133,
+   "recipient": "Pelivan,",
+   "county": "Not stated",
+   "amount": 118058.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 134,
+   "recipient": "Southwest Transit,",
+   "county": "Not stated",
+   "amount": 182210.0,
+   "purpose": ""
+  },
+  {
+   "program": "Transportation Expansion (Budget Period 1)",
+   "n": 135,
+   "recipient": "United Community Action,",
+   "county": "Not stated",
+   "amount": 230000.0,
+   "purpose": ""
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 136,
+   "recipient": "Central Oklahoma Family Medical Center, Inc.",
+   "county": "Garvin, Pontotoc, Seminole",
+   "amount": 1000000.0,
+   "purpose": "Central Oklahoma Family Medical Center, Inc. will utilize a complex care model designed to target and manage chronic diseases through physicians, RNs, CHWs, and other providers. Patients receiving care at COFMC will be screened for cardiovascular disease, chronic lower respiratory disease, diabetes, and stroke prevention/management and will be flagged due to high rates of emergency room visits or primary care appointments, supported by PRAPARE results. The work will be supported by the Azara platform and include in-person appointments, telemedicine, and follow-up via telephone."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 137,
+   "recipient": "Cherokee County Health Services Council",
+   "county": "Cherokee, Delaware, Mayes, Muskogee, Ottawa, Rogers",
+   "amount": 750000.0,
+   "purpose": "Cherokee County Health Services Council will launch the Empowered Living Program of Northeastern Oklahoma (ELP) - a regional chronic disease self-management initiative serving rural and underserved populations across northeastern Oklahoma. The program will create a coordinated six-county network of healthcare providers, community health organizations, and local outreach coordinators to expand access to Chronic Disease Self-Management Education (CDSME) programs. Using evidence-based Self-Management Resource Center (SMRC) models, the initiative will provide virtual workshops focused on diabetes and cardiovascular disease prevention and management, with future expansion to cancer survivorship, stroke recovery, and chronic respiratory disease support."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 138,
+   "recipient": "Choctaw Nation of Oklahoma",
+   "county": "Atoka, Bryan, Choctaw, Coal, Haskell, Hughes, Johnson, Latimer, LeFlore, McCurtain, Pittsburg, Pontotoc, Pushmataha",
+   "amount": 100000.0,
+   "purpose": "Choctaw Nation of Oklahoma will launch the Integrated Rural Chronic Disease Access, Prevention, and Care Coordination Initiative: a system-wide program designed to improve chronic disease management, preventive wellness engagement, and maternal health coordination across rural Southeastern Oklahoma. The program expands access to Remote Patient Monitoring (RPM), digital health engagement tools, preventive wellness services, maternal care coordination, and community-based outreach activities designed to reduce barriers to care and strengthen patient engagement."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 139,
+   "recipient": "Comanche Nation",
+   "county": "Caddo, Comanche, Cotton, Jefferson, Stephens, Tillman",
+   "amount": 300000.0,
+   "purpose": "The Comanche Nation will expand its long-standing, community-based chronic disease management services for rural tribal members in southwestern Oklahoma. The initiative will stabilize and expand care by strengthening staff capacity, adding two CHR Transporter/Aides, and introducing a mobile health unit to reach remote communities. Through in-home visits, transportation support, medication delivery, and culturally grounded health education, the program will improve access to care, enhance chronic disease management, and reduce health disparities among American Indian populations in rural areas."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 140,
+   "recipient": "Fairview Regional Medical Center",
+   "county": "Blaine, Dewey, Garfield, Kingfisher, Major, Woods, Woodward",
+   "amount": 175000.0,
+   "purpose": "Fairview Regional Medical Center (FRMC) will launch the Northwest Oklahoma Stroke and Cardiovascular Disease Management Program, a comprehensive initiative designed to improve prevention, diagnosis, treatment, rehabilitation, and long-term management of cardiovascular disease and stroke throughout rural northwest Oklahoma. The project will strengthen care across the continuum through implementation of a population health management platform, care coordination services, advanced diagnostic capabilities, emergency response enhancements, rehabilitation expansion, and chronic disease management."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 141,
+   "recipient": "Genesis Medical PLLC, dba Southern Oklahoma Pain Management",
+   "county": "Atoka, Bryan, Carter, Coal, Garvin, Johnston, Marshall, Murray, Pontotoc, Stephens",
+   "amount": 1325000.0,
+   "purpose": "Genesis Medical PLLC, dba Southern Oklahoma Pain Management (SOPM), will implement the Southern Oklahoma Rural Chronic Disease Management Program \u2014 a structured, multi-condition care management initiative serving patients across 10 rural counties in south-central Oklahoma. SOPM will deploy an evidence-based care management model targeting Type 2 Diabetes, cardiovascular disease and hypertension, and COPD. Program components include proactive patient outreach and enrollment, individualized care plan development and maintenance, monthly patient engagement, closed-loop referral tracking, remote physiologic monitoring, care gap closure, social determinants of health navigation, and structured patient education."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 142,
+   "recipient": "Jackson County Memorial Hospital Authority",
+   "county": "Greer, Harmon, Jackson",
+   "amount": 500000.0,
+   "purpose": "JCMH will implement the Chronic Care Model (CCM) to improve access, quality of care and outcomes of chronic disease for people with chronic respiratory diseases including chronic obstructive pulmonary disease (COPD), chronic bronchitis, emphysema and asthma. JCMH is the primary inpatient and emergency care facility for Jackson and four neighboring counties. Patients with chronic respiratory diseases rely on immediate access, close to home, to updated technology and immediate and effective treatment for exacerbations of their conditions. The program will address this need for a comprehensive chronic care management program with robust capacity and reach to enable access to chronic disease care close to home for rural residents."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 143,
+   "recipient": "Lighthouse Behavioral Wellness Centers, Inc.",
+   "county": "Bryan, Carter, Garvin, Johnston, Love, Marshall, Murray, Pontotoc, Seminole",
+   "amount": 800000.0,
+   "purpose": "Lighthouse Behavioral Wellness Centers, Inc. (Lighthouse) will implement the Rural Integrated Lifestyle Medicine and Chronic Disease Pathway Program (RILM-CDP) across its nine-county rural service area. The project will develop and implement standardized, evidence-informed clinical pathways that strengthen chronic disease risk identification, care coordination, referral management, follow-up support, and performance monitoring for individuals receiving behavioral health services who are living with, at risk for, or experiencing barriers to managing diabetes, cardiovascular disease and hypertension, chronic respiratory disease, and stroke-related conditions."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 144,
+   "recipient": "Long Term Care Specialists",
+   "county": "Atoka, Carter, Johnston, McCurtain, Murray, Pittsburg, Seminole",
+   "amount": 800000.0,
+   "purpose": "Long Term Care Specialists, Inc. will implement a comprehensive Cardiovascular Program to improve outcomes for residents of 18 rural long-term care and skilled nursing facilities in southeastern Oklahoma. The program combines evidence-based cardiovascular clinical pathways, remote patient monitoring, telecardiology services, point-of-care diagnostics, advanced vascular access capabilities, and integrated care coordination to provide proactive, facility-based management of chronic cardiovascular conditions."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 145,
+   "recipient": "Mercy Health Oklahoma Communities, Inc.",
+   "county": "Blaine, Carter, Delaware, Garvin, Kingfisher, LeFlore, Logan, Pontotoc, Sequoyah",
+   "amount": 599992.36,
+   "purpose": "MHOC\u2019s will expand its virtual capabilities in rural primary care clinics in accordance with the virtual patient care (VPC) chronic disease optimization model. The proposed project will support a network of 15 rural primary care clinics spanning nine counties across central, south central, and eastern Oklahoma. MHOC will provide 24/7 access to same-day acute care video visits. MHOC will expand access to its virtual chronic condition management team with an initial focus on Medicare-eligible patients."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 146,
+   "recipient": "Midwest Wellness and Wound Care, LLC",
+   "county": "75 rural counties (excluding Oklahoma and Tulsa Counties)",
+   "amount": 1000000.0,
+   "purpose": "Midwest Rural Chronic Care Connect (RC3) is a telehealth-enabled chronic disease management program serving rural Oklahoma statewide. Operating a centralized care-coordination and telehealth hub, RC3 uses a dual model: for the many rural patients with no established medical home, RC3 connects them to primary care; for patients who already have a PCP or psychiatrist, RC3 coordinates with that provider. RC3 deploys evidence-based interventions \u2014 self-measured blood pressure monitoring (Million Hearts), Diabetes Self-Management Education and Support (DSMES), spirometry- guided COPD/asthma management (GOLD/NHLBI), and the Collaborative Care Model for co- occurring depression and anxiety, in addition to cellular-connected remote monitoring devices."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 147,
+   "recipient": "Urology Center of Southern Oklahoma",
+   "county": "Bryan, Carter, Garvin, Jefferson, Johnston, Love, Marshall, Murray, Stephens",
+   "amount": 1000000.0,
+   "purpose": "Urology Center of Southern Oklahoma will expand its Rural Urologic Cancer and Chronic Disease Management Program to improve timely access to cancer evaluation, diagnosis, treatment coordination, and long-term surveillance for rural patients across Southern Oklahoma. The program will support chronic urologic disease management for conditions that often overlap with or complicate cancer care, reduce referral backlogs, improve cancer care coordination, support telehealth for elderly and transportation-limited patients, and allow more rural patients to receive high-quality urologic cancer care close to home."
+  },
+  {
+   "program": "Chronic Disease Management Program (Budget Period 2)",
+   "n": 148,
+   "recipient": "Wyandotte Nation",
+   "county": "Craig, Delaware, Mayes, Muskogee, Nowata, Okfuskee, Osage, Ottawa, Rogers, Wagoner, Washington",
+   "amount": 31000.0,
+   "purpose": "Wyandotte Nation will expand its established diabetes management and prevention program for eligible patients in eleven rural northeastern Oklahoma counties. The project will increase access to diabetes and pre-diabetes education, nutrition instruction, healthy cooking classes, diabetic eye pressure screening, retinal screening, diabetic foot screening, routine monitoring, laboratory review, diabetic follow-up, and healthcare support for patients managing diabetes, pre-diabetes, and related chronic conditions."
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 2)",
+   "n": 149,
+   "recipient": "Board of Regents of the University of Oklahoma Health Sciences Center,",
+   "county": "Not stated",
+   "amount": 109555.45,
+   "purpose": "Oklahoma Breastfeeding Resource Center"
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 2)",
+   "n": 150,
+   "recipient": "Newman Memorial Hospital,",
+   "county": "Ellis (with support to Woodward)",
+   "amount": 141129.69,
+   "purpose": "Newman Memorial Hospital will establish the Rural Oklahoma Doula Workforce Development Program in Ellis County with support to Woodward County. The program is a comprehensive hybrid training initiative designed to recruit, educate, certify, mentor, and retain community-based doulas who will improve maternal and infant health outcomes in underserved rural Oklahoma communities. Newman Memorial Hospital seeks to increase the availability of trained doulas serving rural Oklahoma, expand access to labor support for Medicaid beneficiaries, increase breastfeeding initiation, improve patient satisfaction, reduce unnecessary cesarean births, and improve maternal and infant health outcomes."
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 2)",
+   "n": 151,
+   "recipient": "Tulsa Community Foundation,",
+   "county": "Not stated",
+   "amount": 907568.08,
+   "purpose": "Fiscal sponsor for Oklahoma Birth Equity Initiative"
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 2)",
+   "n": 152,
+   "recipient": "Western Plains Youth and Family Services,",
+   "county": "Beaver, Cimarron, Dewey, Ellis, Harper, Texas, and Woodward",
+   "amount": 363090.34,
+   "purpose": "Western Plains Youth and Family Services will provide doula training, parent education, and provider education in NW Oklahoma. Training includes use of the Blossoming Birth Community Doula Training Curriculum with an in-house trainer to train others in-person. Parent education includes expanding doula care and education to expecting families through partnerships, education, collaboration, and outreach. Provider education includes expanding doula care and education to professionals such as health providers, students, future doulas, and support staff through partnerships, education, collaboration, and outreach."
+  },
+  {
+   "program": "Expanding Care: Doulas\u202fProgram (Budget Period 2)",
+   "n": 153,
+   "recipient": "CFO (PAC Birth Crisis),",
+   "county": "Caddo, Creek, Kay, Osage, Pawnee, Payne, Pottawatomie",
+   "amount": 100621.89,
+   "purpose": "Communities Foundation of Oklahoma is the fiscal sponsor for PAC Birth Crisis Initiative. PAC Birth Crisis Initiative will provide doula training and parent education in seven rural counties. Community-based, in-person (with hybrid option) training will focus on anchor counties (Kay, Creek, Caddo, and Osage) and is 8-modules and 30 hours. Each module builds sequentially toward full spectrum doula competency, and training includes mentorship and preparation to bill Medicaid for doula services. The parent education component is an evidence-based, three-session childbirth education program with a focus on cultural responsiveness, needs of rural Oklahoma families (including Indigenous families) and families with limited health literacy. The classes will be held inside rural hospitals and birth centers whenever possible."
+  }
+ ],
+ "note": "The state posts a recipient list for each program as awards are made; this file holds every program whose list had recipients when checked (the others had none yet). Oklahoma notes the amounts reflect funding tied to direct services in communities and do not include all program expenditures, such as administrative costs. The page prints no total. The lists combine Budget Period 1 and Budget Period 2 awards (Budget Period 2 awards total $10,002,958); the program name shows which, so the share of the Year 1 award is not computed."
+}

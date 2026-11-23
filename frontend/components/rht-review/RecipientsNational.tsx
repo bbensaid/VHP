@@ -31,6 +31,7 @@ const BASIS: Record<string, string> = {
   arkansas: "Year 1 award totals by organization, two rounds",
   "west-virginia": "Released awards (state list prints a total)",
   missouri: "Contingent awards, two rounds (CMS approval pending)",
+  oklahoma: "Program-by-program recipient lists (budget periods 1 and 2)",
   idaho: "Awardee list as of Oct 16, 2026 (subrecipients, contractors)",
   nebraska: "Public notices of award: initiatives 3.3, 4.4a, 4.4b, 5.3",
   connecticut: "Governor's release: finalized grant agreements ($50M)",
