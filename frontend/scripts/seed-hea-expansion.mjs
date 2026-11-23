@@ -31,6 +31,17 @@ const TRACKS = [
       "What is distinct about rural equity, the Northeast Kingdom constraint, the three-question test and the Rural Emergency Hospital option.",
       ["Apply the three-question test", "Describe the Rural Emergency Hospital designation", "Turn named scenarios into measurable standards"], ["rural", "northeast-kingdom", "access"]),
   ]),
+  T(3, "data-and-access", "Data and Access", "Race and ethnicity data quality, reporting equity for small groups and the GLP-1 access gap.", [
+    L(10, "hea-race-ethnicity-data", "Seeing Who Is Missing: Race and Ethnicity Data Quality", 25,
+      "Why missing demographics distort gaps, three ways to fill them, what indirect estimation can and cannot do and a completeness audit.",
+      ["Explain how missing data biases gaps", "Compare collection, linkage and estimation", "Run a demographic data completeness audit"], ["data-quality", "race-ethnicity", "bisg"]),
+    L(11, "hea-small-numbers", "Small Numbers, Big Stakes: Reporting Equity for Small Groups", 25,
+      "Sample size and uncertainty with worked arithmetic, suppression rules, pooling and smoothing, ethics and writing about small numbers.",
+      ["Compute an interval for a small-group estimate", "Apply suppression and reliability rules", "Write about small numbers honestly"], ["small-numbers", "suppression", "uncertainty"]),
+    L(12, "hea-glp1-access-equity", "The GLP-1 Access Gap: Who Gets the New Obesity Drugs", 25,
+      "Coverage mechanics, the BALANCE model as verified, framing the equity analysis and monitoring after a coverage decision.",
+      ["Explain how GLP-1 coverage depends on diagnosis", "Frame an equity analysis of a coverage decision", "Build a monitoring plan"], ["glp-1", "coverage", "balance-model"]),
+  ]),
 ];
 
 const SLUG = "health-equity-analytics";
