@@ -56,6 +56,11 @@ const TRACKS = [
       "Six questions for any model: who must participate, is the risk real, is there support, does it fit state regulation, how do we exit, and what else must hold. Tested on Shared Savings Program and Vermont All-Payer results.",
       ["Apply the six-question scorecard to a new model announcement", "Interpret Shared Savings Program 2024 results by ACO type", "Identify exit and dependency risks in a federal model agreement"], ["cmmi", "evaluation", "mssp", "vtapm"]),
   ]),
+  T(2, "state-models", "State Models: Global Budgets, AHEAD and Episodes", "Hospital global budgets from Maryland to AHEAD, Vermont's AHEAD agreement and withdrawal, and mandatory episode models.", [
+    L(4, "cmmi-global-budgets-maryland-to-ahead", "Hospital Global Budgets: From Maryland to AHEAD", 25,
+      "How a global budget works, what Maryland's evidence shows, AHEAD's components and 2025 changes, the prerequisites for a state, and Vermont's Act 68.",
+      ["Explain how a hospital global budget changes incentives", "Summarize the evidence from Maryland's all-payer and total cost of care models", "List the prerequisites a state needs before it can run global budgets"], ["global-budget", "maryland", "ahead", "act-68"]),
+  ]),
 ];
 
 console.log(`${COURSE.title}: ${TRACKS.length} tracks, ${TRACKS.reduce((n, t) => n + t.lessons.length, 0)} lessons`);
