@@ -33,7 +33,7 @@ const COURSE = {
   ],
   prerequisites: ["Start Here (recommended)", "CMMI Models and Waiver Strategy (recommended)"],
   estimated_hours: 6.5,
-  is_published: false, // flipped to true only when all lessons are written and linked
+  is_published: true, // all 15 lessons written, linked and verified 2026-11-23
   version: "1",
   pillar: "policy",
   level: "intermediate",
@@ -88,6 +88,17 @@ const TRACKS = [
     L(12, "psr-documenting-progress", "Documenting Progress: Evidence as Political Protection", 25,
       "Act 68's reporting sections, a caution on the monthly updates, translating the five goals into verifiable measures and a quarterly evidence brief.",
       ["Describe what Act 68 sections 11a and 11b require of the Agency", "Translate the five Act 167 goals into verifiable organizational measures", "Write a quarterly evidence brief"], ["evidence", "reporting", "act-68"]),
+  ]),
+  T(5, "durability-by-design", "Durability by Design and Capstone", "Designing a reform to survive, a comparison with Maryland, and a capstone political-risk register.", [
+    L(13, "psr-designing-for-durability", "Designing a Reform to Survive: Lessons for Other States", 25,
+      "Chapter 14's design implications, a six-question checklist, provision types rated by the 2026 record and how to adapt the framework to another state.",
+      ["Apply a six-question durability checklist to a reform statute", "Rate provision types by durability using the 2026 record", "Adapt the framework to another state's actors and dependencies"], ["design", "other-states", "checklist"]),
+    L(14, "psr-maryland-comparison", "A Comparison: Maryland's Durable Authority and the End of a Federal Model", 25,
+      "Maryland's long-standing rate-setting authority, the end of its federal model, what continued, and the limits of a two-case comparison.",
+      ["Compare Maryland's and Vermont's experience when a federal model ended", "Explain what a two-case comparison can and cannot show", "Identify how young state authority builds institutional depth"], ["maryland", "comparison", "state-authority"]),
+    L(15, "psr-capstone-risk-register", "Capstone: Build a Political-Risk Register", 60,
+      "Define dependencies, rate durability, list signals, write scenario cards, screen the capital plan and set an evidence plan in a dated, checkable register.",
+      ["Produce a political-risk register for an organization", "Rate each dependency's durability with evidence", "Maintain the register on a review calendar"], ["capstone", "risk-register"]),
   ]),
 ];
 
