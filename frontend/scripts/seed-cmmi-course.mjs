@@ -82,6 +82,12 @@ const TRACKS = [
     L(10, "cmmi-prior-authorization-rule", "Prior Authorization: The Federal Rule, the 2027 APIs and the State Role", 25,
       "The physician-reported burden, what CMS-0057-F requires from 2026 and 2027, what it leaves untouched, and Vermont's Act 167.",
       ["State the decision timeframes and which payers they cover", "Describe the four 2027 API requirements", "Distinguish prior authorization policy reform from operational burden reduction"], ["prior-authorization", "cms-0057-f", "act-167"]),
+    L(11, "cmmi-hr1-medicaid-provisions", "H.R. 1 and Medicaid: Provisions, Dates and Dollars", 25,
+      "Section by section: work requirements, six-month renewals, retroactive coverage, provider taxes, state directed payments and cost sharing, with effective dates and CBO estimates.",
+      ["Match each major H.R. 1 Medicaid provision to its section, date and CBO estimate", "Explain why coverage loss arises mainly from administrative churn", "Build a dated implementation timeline for a state Medicaid agency"], ["hr1", "medicaid", "provider-tax", "state-directed-payments"]),
+    L(12, "cmmi-work-requirements-implementation", "Medicaid Work Requirements: The Rule, the Delay and the Court", 25,
+      "The statute, CMS's June 2026 interim final rule, the October court ruling on medical frailty and the November optional hold harmless period through June 30, 2027.",
+      ["Describe what the interim final rule requires of states and enrollees", "Explain the court ruling and the hold harmless period and what remains unsettled", "Plan a state or organizational response while the rules are changing"], ["work-requirements", "hr1", "interim-final-rule", "medicaid"]),
   ]),
 ];
 
