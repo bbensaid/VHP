@@ -62,10 +62,10 @@ const PROVISIONS: Provision[] = [
     status: 'Not yet due.',
   },
   {
-    id: 'hcac',
-    title: 'Health Care Affordability Advisory Council (HCAC)',
+    id: 'hcdac',
+    title: 'Health Care Delivery Advisory Committee',
     when: 'Created by Act 68',
-    what: 'An 18-member council chaired by the AHS Secretary — including the GMCB Chair, the Chief Health Care Advocate, payers, hospitals, an FQHC, physicians, APRNs, designated agencies, home health and long-term care — that sets affordability benchmarks and advises the legislature.',
+    what: 'An 18-member committee chaired by the Secretary of Human Services — including the GMCB Chair, the Chief Health Care Advocate, a commercial insurer, two hospitals, an FQHC, physicians, APRNs, designated agencies, home health, long-term care and small business — that establishes health care affordability benchmarks, monitors system performance, works with AHS on the Strategic Plan, and makes recommendations to the General Assembly (18 V.S.A. § 9403a).',
     status: 'Act 68 also creates a 16-member Vermont Steering Committee for Comprehensive Primary Health Care.',
   },
   {

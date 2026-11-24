@@ -4616,9 +4616,9 @@ The National Committee for Quality Assurance (NCQA) has developed HEDIS stratifi
 
 The following matrix provides implementation guidance for the key equity imperative investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Investment**                                        **Estimated cost**            **Timeline to value**   **ROI crossover**                    **Vermont benchmark**
-  ----------------------------------------------------- ----------------------------- ----------------------- ------------------------------------ ----------------------------------------------------------------------------------------
+  ----------------------------------------------------- ----------------------------- ----------------------- ------------------------------------ ---------------------------------------------------------------------------------------------------------------
   HEROI scoring and equity measurement infrastructure   \$30K-\$80K setup; \$20K/yr   3-6 months              12 months (risk avoidance)           HEROI: 13 HSA-level equity scores once computed; candidate GMCB reporting metric
 
   HRSN universal screening at Blueprint practices       \$10K-\$30K per practice/yr   1-3 months              6-12 months                          Vermont: 91% statewide access vs. 78% for Hispanic adults --- HRSN closes referral gap
@@ -4627,10 +4627,10 @@ The following matrix provides implementation guidance for the key equity imperat
 
   SDOH data integration (claims + AHS program data)     \$200K-\$500K state cost      18-24 months            24-36 months                         Vermont CIN: housing, food, transportation linkage to VHCURES
 
-  Health equity impact assessment process               \$25K-\$50K one-time          3 months                Immediate: redesign cost avoidance   Act 68 HCAC consultation requirement; equity-as-design-constraint
+  Health equity impact assessment process               \$25K-\$50K one-time          3 months                Immediate: redesign cost avoidance   Act 68 consultation requirement (Health Care Delivery Advisory Committee (HCAC)); equity-as-design-constraint
 
   Race/ethnicity data quality improvement (VHCURES)     \$20K-\$60K annually          6 months                12 months                            Vermont VHCURES: incomplete race/ethnicity fields documented in VDH 2025
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 10.8 --- equity imperative implementation matrix. Sources: Vermont Department of Health Health Equity Data Report (January 2025); Act 68 of 2025.*
 
@@ -5802,12 +5802,12 @@ Federal Medicaid funding. H.R. 1's \$911 billion in Medicaid cuts (enacted July 
 
 ## 14.3 **Early-Warning Signals of Political Risk**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Signal**                                                                        **What it indicates**                                                  **Severity**   **Monitoring source**
-  --------------------------------------------------------------------------------- ---------------------------------------------------------------------- -------------- -----------------------------------------------------------------------------
+  --------------------------------------------------------------------------------- ---------------------------------------------------------------------- -------------- ------------------------------------------------------------------------------------
   Hospital lobbying focused on RBP methodology rather than the mandate              Effort to hollow out RBP through the regulatory process                High           GMCB docket; Vermont Association of Hospitals and Health Systems statements
 
-  Bills to extend RBP or global-budget deadlines                                    Direct challenge to Act 68's mandatory timeline                        Very High      Legislature bill tracker; HCAC testimony
+  Bills to extend RBP or global-budget deadlines                                    Direct challenge to Act 68's mandatory timeline                        Very High      Legislature bill tracker; Health Care Delivery Advisory Committee (HCAC) testimony
 
   Global-budget levels set within 5% of current commercial rates                    Regulatory capture; budgets without pressure                           High           GMCB FY2028 budget guidance
 
@@ -5820,7 +5820,7 @@ Federal Medicaid funding. H.R. 1's \$911 billion in Medicaid cuts (enacted July 
   EAST Fund spending well below authorized levels                                   Resistance to transformation investment despite authorization          Moderate       DVHA AHEAD spending reports; GMCB budget documentation
 
   HCAC failure to reach consensus on the Strategic Plan framework                   Governance breakdown; plan unlikely to produce binding commitments     High           HCAC meeting minutes; AHS reporting
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 14.1 --- Early-warning signals of political risk to Vermont's reform architecture. Sources: HTR Advisory risk-monitoring framework; Act 68 of 2025; GMCB regulatory process documentation.*
 
@@ -6019,7 +6019,7 @@ Nineteen components. Shared stage gates. A single January 2028 deadline. Three s
 
 This is not a new idea for Vermont. Oliver Wyman's Act 167 report explicitly recommended that AHS hire a dedicated project-management function and establish the "project management infrastructure needed to manage Vermont's transformation portfolio." The November 2025 report repeated the finding. The AHS Restructuring Roadmap (Chapter 16 of this book) identifies PMO establishment as a critical organizational project. What this chapter adds is a precise, PMI-grounded definition of the role, its authority, and its connection to the pillar-level Program Managers below it.
 
-Role and authority (summary). The Portfolio Manager chairs the monthly portfolio review board; maintains the portfolio register (Figure 15.3) and risk register; authorizes component additions and removals; ensures all components stay aligned to Act 167's five goals; resolves cross-component resource conflicts; owns the Vermont Scorecard reporting to HCAC and the AHS Secretary; manages portfolio-level stakeholder relationships with HCAC, GMCB, hospital CEOs, the Legislature, and CMS; and tracks benefits realization, recommending component termination when benefits are no longer achievable. The role requires a direct report to the AHS Secretary, a GMCB co-reporting relationship, budget authority over the transformation PMO, and authority to require reporting from all 19 component leads. The appropriate credential is PMI's Portfolio Management Professional (PfMP), with 8+ years of program/portfolio experience and health-system or large-scale government program experience.
+Role and authority (summary). The Portfolio Manager chairs the monthly portfolio review board; maintains the portfolio register (Figure 15.3) and risk register; authorizes component additions and removals; ensures all components stay aligned to Act 167's five goals; resolves cross-component resource conflicts; owns the Vermont Scorecard reporting to the Health Care Delivery Advisory Committee (HCAC) and the AHS Secretary; manages portfolio-level stakeholder relationships with HCAC, GMCB, hospital CEOs, the Legislature, and CMS; and tracks benefits realization, recommending component termination when benefits are no longer achievable. The role requires a direct report to the AHS Secretary, a GMCB co-reporting relationship, budget authority over the transformation PMO, and authority to require reporting from all 19 component leads. The appropriate credential is PMI's Portfolio Management Professional (PfMP), with 8+ years of program/portfolio experience and health-system or large-scale government program experience.
 
 ## 15.5 **Pillar-Level Program Managers: Five Roles, One Framework**
 
@@ -6268,7 +6268,7 @@ Act 68 requires AHS to deliver a Statewide Health Care Delivery Strategic Plan t
   ----------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------
   Statewide Health Care Delivery Strategic Plan   A plan that promotes universal access across acute, primary, mental-health, substance-use, long-term, and emergency services; sets shared goals and benchmarks; identifies resources, gaps, duplication, and barriers; and gives a phased timeline with milestones (18 V.S.A. § 9403(b)). Updated every three years from December 1, 2030.   First delivery: Jan 15, 2028
 
-  Affordability benchmarks                        Specific, measurable affordability standards --- not aspirational language; must define what "affordable" means for Vermont families and how progress is measured.                                                                                                                                                                           Set by HCAC; in the plan
+  Affordability benchmarks                        Specific, measurable affordability standards --- not aspirational language; must define what "affordable" means for Vermont families and how progress is measured.                                                                                                                                                                           Set by the Health Care Delivery Advisory Committee (HCAC); in the plan
 
   Total-cost-of-care targets                      Annual total-cost-of-care targets for the whole system, used to allocate resources across the State (§ 9403(b)(7)).                                                                                                                                                                                                                          2.5% hospital-spending reduction for FY2026; Act 68 TCOC targets in the plan
 
@@ -6281,7 +6281,7 @@ Act 68 requires AHS to deliver a Statewide Health Care Delivery Strategic Plan t
   Workforce strategy                              Act 68's goal of a system that attracts and retains health professionals, including RHT workforce investments.                                                                                                                                                                                                                               RHT covers 2026--2030; integrated into the plan
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).*
+*Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; 18 V.S.A. § 9403a.*
 
 The plan is not AHS's alone to write. Act 68 created an 18-member Health Care Delivery Advisory Committee --- chaired by the Secretary of Human Services and representing GMCB, the Health Care Advocate, primary care, hospitals, health centers, insurers, physicians and nurse practitioners, mental-health and home-health providers, small businesses, and long-term care --- to develop and maintain the plan in collaboration with AHS, consulting the Health Equity Advisory Commission and the Steering Committee for Comprehensive Primary Health Care. The plan must reflect multi-stakeholder consensus, not just AHS's internal analysis --- a significant operational challenge and an important political constraint.
 
@@ -6920,7 +6920,7 @@ This scorecard consolidates the Vermont evidence from across the book into a sin
 
   Hospital-system diagnostic   No comprehensive analysis                                               Oliver Wyman Act 167 analysis complete; 230+ meetings, 3,100+ participants                                          Annual updates to diagnostic methodology                                Oliver Wyman Act 167 Report (Aug 2024)
 
-  Statewide Strategic Plan     Does not exist                                                          Framework under development; HCAC convened                                                                          Plan delivered to legislature January 2028                              Act 68; statutory deadline
+  Statewide Strategic Plan     Does not exist                                                          Framework under development                                                                                         Plan delivered to legislature January 2028                              Act 68; statutory deadline
 
   Federal-state alignment      All-Payer ACO Model agreement with CMS (2018--2025)                     AHEAD State Agreement signed Jan 2025; Vermont withdrew July 2026                                                   Successor federal-state agreement negotiated post-AHEAD                 CMS AHEAD State Agreement
 
@@ -7458,7 +7458,7 @@ The Stage 5 question: *Is operational capacity keeping pace with the statutory t
 
 *Figure 15.11 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
-*Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; HCAC mandate (healthcarereform.vermont.gov).*
+*Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; 18 V.S.A. § 9403a.*
 
 *Figure 16.2 --- AHS organizational gaps and required structural changes. Sources: Oliver Wyman Act 167 Recommendations (2024); AHS Transformation Reports (2025); Act 68 of 2025.*
 

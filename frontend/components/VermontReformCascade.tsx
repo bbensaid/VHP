@@ -119,7 +119,7 @@ const REFORM_CASCADE: Act[] = [
       "Health Care Delivery Advisory Committee (18 members) created",
       "$2M transformation grants authorized",
       "Unified Health Data Space directed (with the HIE Steering Committee)",
-      "Hospital spending reduced at least 2.5% in FY2026",
+      "AHS to coordinate at least a 2.5% reduction in hospital spending for FY2026",
     ],
     nextMilestone: "GMCB sets RBP method by rule in 2027",
   },
