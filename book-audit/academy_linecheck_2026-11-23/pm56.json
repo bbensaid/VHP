@@ -1,0 +1,36 @@
+{
+ "tag": "pm5-6",
+ "note": "NCI BRCA ovarian 39-44%; FDA abacavir HLA-B*57:01 screening",
+ "only": [
+  "academyModule-precision-medicine-m5-clinical",
+  "academyModule-precision-medicine-m6-equity",
+  "precision-medicine-m5-clinical",
+  "precision-medicine-m6-equity"
+ ],
+ "pairs": [
+  [
+   "Approximately 5-8% of patients with the HLA-B*5701 allele develop a severe, potentially fatal hypersensitivity reaction to the drug.",
+   "Carriers of HLA-B*57:01 are at high risk of a severe, potentially fatal hypersensitivity reaction to abacavir, which is why FDA labeling requires screening before the drug is started."
+  ],
+  [
+   "44-46% lifetime risk of ovarian cancer \u2014 compared with approximately 12% and 1.3% in the general population",
+   "39-44% lifetime risk of ovarian cancer \u2014 compared with about 13% and 1.2% in the general population (NCI)"
+  ],
+  [
+   "By 2024, the UDN had evaluated over 2,000 participants and identified diagnoses in approximately 35% of cases, including novel gene discoveries that expanded the scientific understanding of human disease.",
+   "The UDN has diagnosed a substantial share of the patients it evaluates, including novel gene discoveries that expanded the scientific understanding of human disease."
+  ],
+  [
+   "Rural cancer patients receive comprehensive genomic profiling at approximately 30% lower rates than urban patients after controlling for insurance and stage.",
+   ""
+  ],
+  [
+   "There is a national shortage of genetic counselors \u2014 approximately 6,000 board-certified genetic counselors serve the entire United States, compared with over 300,000 primary care physicians.",
+   "There is a national shortage of genetic counselors \u2014 roughly 6,000 board-certified counselors serve the entire United States."
+  ],
+  [
+   "Compared to over 300,000 primary care physicians, the approximately 6,000 board-certified genetic counselors are vastly insufficient to meet demand \u2014 particularly in rural and underserved areas.",
+   "Roughly 6,000 board-certified genetic counselors are far too few to meet demand \u2014 particularly in rural and underserved areas."
+  ]
+ ]
+}

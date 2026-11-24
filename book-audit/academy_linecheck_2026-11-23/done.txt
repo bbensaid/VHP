@@ -1,2 +1,5 @@
 academyModule-precision-medicine-m3-economics
 aiml-sepsis-warning
+academyModule-vbc-fundamentals-module-3-economics-pillar
+academyModule-precision-medicine-m5-clinical
+academyModule-precision-medicine-m6-equity
