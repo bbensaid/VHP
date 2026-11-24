@@ -61,7 +61,7 @@ const TABS = [
   },
   {
     id: 'ems', icon: '🚑', label: 'EMS Transformation Modeler', badge: 'Vermont RHT',
-    desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
+    desc: "Model Vermont's RHT EMS investment: regionalizing Vermont's EMS services (about 174 licensed services in 13 districts) and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
   },
 ]
 

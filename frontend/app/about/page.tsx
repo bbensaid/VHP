@@ -97,96 +97,12 @@ label: "The Equity Imperative",
 };
 
 const stats = [
-  { value: "50", label: "States Tracked", suffix: "" },
-  { value: "6,000+", label: "Hospitals & Health Systems Monitored", suffix: "" },
-  { value: "$50B+", label: "Federal Health Capital Analyzed", suffix: "" },
-  { value: "20", label: "Research Domains Covered", suffix: "" },
+  { value: "16", label: "Book Chapters", suffix: "" },
+  { value: "25", label: "Academy Courses", suffix: "" },
+  { value: "35", label: "Research Lab Tools", suffix: "" },
+  { value: "50", label: "States in the RHT Program Review", suffix: "" },
 ];
 
-// ─── REPLACE WITH REAL TEAM DATA ──────────────────────────────────────────────
-// Update each entry with your actual team members' names, credentials, bios,
-// and LinkedIn URLs. Keep initials, pillar, and color consistent.
-// ──────────────────────────────────────────────────────────────────────────────
-const team = [
-  {
-    name: "Analyst #1",
-    credentials: "MD, MPH | Yale School of Medicine",
-    role: "Chief Intelligence Officer",
-    pillar: "Policy",
-    focus: "Health Policy & Federal Regulation",
-    bio: "Former CMS policy advisor with 15 years in federal health regulation. Published researcher in ACA implementation and rural health access. Led policy design for three state 1115 waiver programs.",
-    institutions: ["CMS — Office of Policy", "Brookings Health Policy Center"],
-    initials: "A1",
-    color: "bg-blue-100 text-blue-700",
-    border: "border-blue-200",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Analyst #2",
-    credentials: "MBA, CFA | Wharton School",
-    role: "Principal Economist",
-    pillar: "Economics",
-    focus: "Value-Based Care & Capital Markets",
-    bio: "12 years in health system finance and alternative payment model design. Former healthcare investment analyst covering provider and payer markets. Expert in APM transition modeling and VBC contract structures.",
-    institutions: ["Goldman Sachs — Healthcare IB", "HFMA Advisory Board"],
-    initials: "A2",
-    color: "bg-emerald-100 text-emerald-700",
-    border: "border-emerald-200",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Analyst #3",
-    credentials: "PhD Computer Science | MIT",
-    role: "Technology Research Director",
-    pillar: "Technology",
-    focus: "AI/ML Systems & Digital Infrastructure",
-    bio: "AI researcher specializing in clinical decision support and algorithmic fairness in healthcare settings. Former research scientist at a major EHR vendor. Advisory board member for ONC health IT initiatives.",
-    institutions: ["MIT CSAIL", "Epic Research — AI Division"],
-    initials: "A3",
-    color: "bg-indigo-100 text-indigo-700",
-    border: "border-indigo-200",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Analyst #4",
-    credentials: "MSN, RN, FACHE | Johns Hopkins School of Nursing",
-    role: "Clinical Affairs Lead",
-    pillar: "Clinical",
-    focus: "Evidence-Based Care & Workforce",
-    bio: "Nurse executive with operational leadership across three health systems. Nationally recognized expert in workforce innovation and Hospital-at-Home program design. Fellow of the American College of Healthcare Executives.",
-    institutions: ["Johns Hopkins Hospital — Nursing Leadership", "AHA Clinical Affairs Committee"],
-    initials: "A4",
-    color: "bg-rose-100 text-rose-700",
-    border: "border-rose-200",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Analyst #5",
-    credentials: "DrPH, MSW | Harvard T.H. Chan School of Public Health",
-    role: "Equity & SDOH Director",
-    pillar: "Equity",
-    focus: "Health Disparities & Community Systems",
-    bio: "Public health researcher with a decade of work on structural determinants of health and community-based care models. Former HRSA program officer for underserved community health grants. Published author on algorithmic bias in clinical AI.",
-    institutions: ["HRSA — Bureau of Primary Health Care", "Harvard Population Health Initiative"],
-    initials: "A5",
-    color: "bg-violet-100 text-violet-700",
-    border: "border-violet-200",
-    linkedin: "https://linkedin.com",
-  },
-  {
-    name: "Analyst #6",
-    credentials: "MHA, FHFMA | Georgetown University",
-    role: "Operations Intelligence Lead",
-    pillar: "Operations",
-    focus: "Revenue Cycle, Workforce & Health System Administration",
-    bio: "25-year veteran of health system operations across revenue cycle, supply chain, and workforce management. Former COO of a 12-hospital regional system and HFMA national faculty member. Expert in administrative cost reduction and operational readiness assessments for value-based care transitions.",
-    institutions: ["HFMA — National Faculty", "American College of Healthcare Executives"],
-    initials: "A6",
-    color: "bg-amber-100 text-amber-700",
-    border: "border-amber-200",
-    linkedin: "https://linkedin.com",
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -215,7 +131,7 @@ export default function AboutPage() {
               The Intelligence <span className="text-indigo-400">Layer</span> Between Data and Decision.
             </h1>
             <p className="ty-hero text-slate-300 leading-relaxed max-w-2xl mb-6">
-              HTR is the only cross-disciplinary intelligence platform purpose-built for health system transformation. We translate the intersection of six critical domains into actionable intelligence for the executives, policymakers, and clinicians who are doing the work.
+              HTR is a cross-disciplinary platform built for health system transformation. It applies five pillars — Policy, Technology, Economics, Clinical and Operations — and the Equity Imperative to the decisions facing the executives, policymakers and clinicians doing the work.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -286,37 +202,37 @@ export default function AboutPage() {
             </div>
             <div className="p-6 space-y-4">
               <p className="text-sm text-slate-500 font-medium">
-                The convergence failure that defines why HTR exists:
+                What happens when the pillars move out of sequence — sourced:
               </p>
               {[
                 {
-                  label: "Policy enacted telehealth flexibilities",
-                  sub: "But broadband didn't reach 38% of rural addresses",
+                  label: "Vermont built an all-payer claims database (VHCURES)",
+                  sub: "But Gobeille v. Liberty Mutual (2016) made reporting voluntary for self-funded employer plans",
                   icon: "📋",
                 },
                 {
-                  label: "Economics approved VBC incentive pools",
-                  sub: "But 9 of 14 hospitals lacked care coordination infrastructure",
+                  label: "The All-Payer ACO Model ran 2018–2025",
+                  sub: "But it excluded fee-for-service Medicare and 40% of the commercially insured (Oliver Wyman)",
                   icon: "📊",
                 },
                 {
-                  label: "Technology deployed AI triage tools",
-                  sub: "But the models were trained on urban patient populations",
-                  icon: "🤖",
+                  label: "Vermont has a statewide health information exchange (VITL)",
+                  sub: "But participation is voluntary and it lacks pharmacy claims data (Oliver Wyman)",
+                  icon: "🔗",
                 },
                 {
-                  label: "Clinical innovations sat in journals",
-                  sub: "Without a deployment pathway to CAH settings",
+                  label: "Hospitals entered reform already under strain",
+                  sub: "9 of 14 operating at a loss in 2023; 13 of 14 projected in loss by 2028 (Oliver Wyman)",
                   icon: "🏥",
                 },
                 {
-                  label: "Equity was measured last, not first",
-                  sub: "SDOH data missing from 67% of high-risk patient records",
+                  label: "Statewide, 91% have a personal health care provider",
+                  sub: "But 78% of Hispanic Vermonters do — the only group statistically below the state (VDH, 2023–24)",
                   icon: "⚖️",
                 },
                 {
-                  label: "Operations were never stress-tested",
-                  sub: "Revenue cycle couldn't support new payment models; 18-month implementation delay",
+                  label: "Act 68 mandated hospital global budgets (2025)",
+                  sub: "Then Medicare and Medicaid alignment fell away in July 2026 — the AHEAD withdrawal and the Medicaid global budget ruling",
                   icon: "⚙️",
                 },
               ].map((item) => (
@@ -466,74 +382,6 @@ export default function AboutPage() {
               <p className="ty-body text-slate-600 leading-relaxed">{a.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ── TEAM ──────────────────────────────────────────────────────────── */}
-      <section className="bg-slate-50 py-20 md:py-28 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-indigo-600 mb-4 block">
-              Principal Analysts
-            </span>
-            <h2 className="ty-h1 font-black tracking-tight text-slate-700">
-              One analyst per pillar. Zero silos.
-            </h2>
-            <p className="text-slate-500 mt-4 max-w-xl mx-auto">
-              Each domain is led by a dedicated principal analyst — former policymakers, practicing clinicians, credentialed economists, and health operations executives who collaborate to ensure every insight accounts for all five pillars and the Equity Imperative.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {team.map((m) => (
-              <div
-                key={m.name}
-                className={`bg-white border ${m.border} rounded-xl p-6 hover:shadow-md transition-all flex flex-col`}
-              >
-                {/* Header */}
-                <div className="flex items-start gap-4 mb-4">
-                  <div className={`w-14 h-14 rounded-full ${m.color} flex items-center justify-center text-xl font-black shrink-0`}>
-                    {m.initials}
-                  </div>
-                  <div className="min-w-0">
-                    <h3 className="font-bold text-slate-900 leading-tight">{m.name}</h3>
-                    <p className="text-[11px] text-slate-500 mt-0.5">{m.credentials}</p>
-                    <p className="text-xs font-bold text-indigo-600 uppercase tracking-wider mt-1">{m.role}</p>
-                  </div>
-                </div>
-
-                {/* Bio */}
-                <p className="ty-body text-slate-600 leading-relaxed mb-4 flex-1">{m.bio}</p>
-
-                {/* Prior institutions */}
-                <div className="border-t border-slate-100 pt-4 mb-4">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Prior Positions</p>
-                  <ul className="space-y-1">
-                    {m.institutions.map((inst) => (
-                      <li key={inst} className="text-xs text-slate-500 flex items-center gap-1.5">
-                        <span className="w-1 h-1 rounded-full bg-slate-300 shrink-0" />
-                        {inst}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Footer */}
-                <div className="flex items-center justify-between">
-                  <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded ${m.color}`}>
-                    {m.pillar}
-                  </span>
-                  <a
-                    href={m.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-slate-400 hover:text-indigo-600 transition-colors font-semibold"
-                  >
-                    LinkedIn →
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -330,7 +330,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/research-lab/knowledge-workspace?tab=ems",
     pillars: ["operations"],
     chapters: ["11"],
-    desc: "Model Vermont's RHT EMS investment: regionalizing 31 agencies and community-paramedicine treat-and-refer ED diversion, with global-budget margin impact.",
+    desc: "Model Vermont's RHT EMS investment: regionalizing Vermont's EMS services (about 174 licensed services in 13 districts) and community-paramedicine treat-and-refer ED diversion, with global-budget margin impact.",
   },
 
   // ── Top-level simulators & dashboards ─────────────────────────────────

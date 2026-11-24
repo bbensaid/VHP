@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Our Mission | HTR",
-  description: "HTR's mission is to equip healthcare leaders with the independent intelligence needed to navigate the most complex transformation in the history of American healthcare.",
+  description: "HTR's mission is to equip healthcare leaders with the independent intelligence needed to navigate one of the most complex transformations in American healthcare.",
 };
 import {
   LightBulbIcon,
@@ -51,7 +51,7 @@ const values = [
     iconBg: "bg-slate-100",
     border: "border-slate-200",
     title: "Editorial Independence",
-    body: "No sponsored content. No pharma funding. No technology vendor relationships that influence our assessments. Revenue flows from subscribers, advisory clients, and masterclass participants — never from the industries we cover.",
+    body: "No sponsored content. No pharma funding. No technology vendor relationships that influence our assessments. Every figure is sourced where it appears, and what cannot be confirmed is left out.",
   },
   {
     icon: LightBulbIcon,
@@ -83,7 +83,7 @@ const values = [
     iconBg: "bg-violet-50",
     border: "border-violet-100",
     title: "Radical Transparency",
-    body: "We publish our methodology, our scoring weights, and our data sources. When we revise a position based on new evidence, we say so explicitly. Accountability is non-negotiable at every level of our work.",
+    body: "We name our sources where each number appears, and we label illustrative inputs as illustrative. When we revise a position based on new evidence, we say so explicitly. Accountability is non-negotiable at every level of our work.",
   },
 ];
 

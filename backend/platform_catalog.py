@@ -653,7 +653,7 @@ CATALOG = [
         "url": "/research-lab/knowledge-workspace?tab=ems",
         "category": "Research Lab",
         "subcategory": "Knowledge & Workspace",
-        "description": "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
+        "description": "Model Vermont's RHT EMS investment: regionalizing Vermont's EMS services (about 174 licensed services in 13 districts) and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions.",
         "keywords": ["ems", "emergency medical services", "community paramedicine", "ems regionalization", "treat and refer", "ed diversion", "avoidable ed", "ambulance", "31 agencies", "paramedicine", "vermont ems", "rht", "911 utilization", "prevented admissions"],
     },
 

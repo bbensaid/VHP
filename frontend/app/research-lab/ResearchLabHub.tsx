@@ -132,7 +132,7 @@ const SECTIONS: Section[] = [
       { id: 'leaderboard', icon: '🏆',  label: 'Innovation Leaderboard',   badge: 'Benchmarking', desc: "Compare all 50 states on the two pillars with real 50-state data (Policy, Clinical); Technology, Economics and Operations are not scored because no 50-state dataset exists; Vermont from the book’s sourced pillar readiness." },
       { id: 'workspace',   icon: '🗂️',  label: 'Research Workspace',       badge: 'Workspace',    desc: 'Save and compare analysis scenarios, build structured reports from templates, manage citations in AMA/APA format, and export findings as Markdown or text.' },
       { id: 'cin',         icon: '🔗',  label: 'CIN & Shared Services',    badge: 'Vermont RHT',  desc: "Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium." },
-      { id: 'ems',         icon: '🚑',  label: 'EMS Transformation',       badge: 'Vermont RHT',  desc: "Model Vermont's RHT EMS investment: regionalizing 31 separate agencies and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions." },
+      { id: 'ems',         icon: '🚑',  label: 'EMS Transformation',       badge: 'Vermont RHT',  desc: "Model Vermont's RHT EMS investment: regionalizing Vermont's EMS services (about 174 licensed services in 13 districts) and community-paramedicine treat-and-refer ED diversion, with the global-budget margin impact of prevented ED visits and admissions." },
     ],
   },
 ]
