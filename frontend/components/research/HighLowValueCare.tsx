@@ -93,7 +93,7 @@ function A1CBPPanel() {
             <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-2">How A1C Control Translates to Shared Savings</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
               <div><p className="font-bold text-amber-400 mb-1">HEDIS Quality Score</p><p>Each 1% improvement in CDC-HbA1c rate boosts the ACO&apos;s quality score.</p></div>
-              <div><p className="font-bold text-amber-400 mb-1">Utilization Avoidance</p><p>Uncontrolled T2DM (A1C &gt;9%) generates ~3× more ED visits and ~2× more hospitalizations vs. controlled. Moving to controlled reduces TCOC by an estimated $1,200–$3,400/patient/year.</p></div>
+              <div><p className="font-bold text-amber-400 mb-1">Utilization Avoidance</p><p>Uncontrolled T2DM (A1C &gt;9%) is associated with more ED visits and hospitalizations than controlled diabetes; the savings in this view are model assumptions applied to the synthetic panel.</p></div>
               <div><p className="font-bold text-amber-400 mb-1">RAF Trajectory</p><p>Persistently uncontrolled T2DM progresses to complications (HCC 18 vs. HCC 19), increasing RAF score and CMS expected TCOC benchmark — but actual costs increase more, eroding savings.</p></div>
             </div>
           </div>
@@ -209,7 +209,7 @@ function A1CBPPanel() {
 
           <div className="mt-4 p-4 bg-indigo-50 border border-indigo-200 rounded-xl">
             <p className="text-xs font-black uppercase tracking-widest text-indigo-700 mb-2">Maria Gonzalez — RPM Success Case</p>
-            <p className="text-xs text-indigo-800 leading-relaxed">Maria&apos;s BP dropped from 162/98 to 124/76 after RPM enrollment. Program cost: ~$480/year (CPT 99453 + 99457 × 12). Estimated avoidance: $4,200/year in ED/inpatient spend. ROI: 8.75× in year 1. At scale across a 500-patient hypertensive panel, the program generates ~$2.1M in net savings.</p>
+            <p className="text-xs text-indigo-800 leading-relaxed">Maria&apos;s BP dropped from 162/98 to 124/76 after RPM enrollment. (Synthetic patient. Program cost and avoided spending in this view are model assumptions.)</p>
           </div>
         </div>
       )}

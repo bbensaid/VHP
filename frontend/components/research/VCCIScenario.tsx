@@ -67,7 +67,7 @@ function VCCIProgramOverview() {
             step: '1', icon: '🔍', title: 'Identification', color: 'bg-sky-50 border-sky-200',
             items: [
               'DVHA runs monthly predictive analytics on all Medicaid claims',
-              'Claims-based algorithms flag members in top 5–15% by predicted cost',
+              'Claims-based risk scores flag high-risk, high-cost members — historically the top 5% (DVHA)',
               'Referrals also accepted from PCPs, hospitals, CHTs, social workers, self-referral',
               'CDPS score + utilization pattern = composite risk flag',
             ],
@@ -76,7 +76,7 @@ function VCCIProgramOverview() {
             step: '2', icon: '📋', title: 'Scoring & Tier Assignment', color: 'bg-amber-50 border-amber-200',
             items: [
               'Multi-domain composite score (0–100) calculated from claims + screening',
-              'Domains: Utilization (35%), Chronic burden/CDPS (30%), SDOH (20%), Care gaps (15%)',
+              'HTR teaching model (not DVHA method): Utilization 35%, Chronic burden/CDPS 30%, SDOH 20%, Care gaps 15%',
               'SDOH screening added Oct 2018: housing, food, SUD, MH, IPV',
               'Score + CDPS + cost percentile → Low / Medium / High / Very High tier',
             ],
@@ -279,7 +279,7 @@ function CDPSWalkthrough({ patient }: { patient: VCCIPatient }) {
       <div className="p-4 bg-sky-50 border border-sky-200 rounded-xl text-xs">
         <p className="font-bold text-sky-800 mb-1">What CDPS {patient.cdpsScore} Means for VCCI</p>
         <p className="text-sky-700 leading-relaxed">
-          A CDPS score of <strong>{patient.cdpsScore}</strong> means Vermont Medicaid expects this member to cost <strong>{Math.round(patient.cdpsScore * 100)}%</strong> of the average Medicaid member PMPM. At Vermont&apos;s Medicaid average PMPM of ~$800, this member&apos;s expected cost is <strong>${Math.round(patient.cdpsScore * 9600).toLocaleString()}/year</strong>. Actual PMPY is <strong>${patient.totalCostPMPY.toLocaleString()}</strong> — {patient.totalCostPMPY > patient.cdpsScore * 9600 ? 'above' : 'below'} expected. A CDPS score ≥{patient.riskTier === 'very-high' ? '3.5' : patient.riskTier === 'high' ? '2.0' : '1.0'} triggers automatic VCCI eligibility review.
+          A CDPS score of <strong>{patient.cdpsScore}</strong> means Vermont Medicaid expects this member to cost <strong>{Math.round(patient.cdpsScore * 100)}%</strong> of the average Medicaid member PMPM. At an assumed (illustrative) Medicaid average PMPM of $800, this member&apos;s expected cost is <strong>${Math.round(patient.cdpsScore * 9600).toLocaleString()}/year</strong>. Actual PMPY is <strong>${patient.totalCostPMPY.toLocaleString()}</strong> — {patient.totalCostPMPY > patient.cdpsScore * 9600 ? 'above' : 'below'} expected. A CDPS score ≥{patient.riskTier === 'very-high' ? '3.5' : patient.riskTier === 'high' ? '2.0' : '1.0'} triggers automatic VCCI eligibility review.
         </p>
       </div>
     </div>

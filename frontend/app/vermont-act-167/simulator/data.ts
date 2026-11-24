@@ -269,7 +269,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 55, direction: "positive",
-        headline: "Coordination savings of $12–18M annually once fully operational (impact not quantified: no published estimate)",
+        headline: "Coordination savings expected once fully operational (impact not quantified: no published estimate)",
         actions: [
           "No AHEAD technical-assistance offset: Vermont withdrew from the AHEAD Model in July 2026",
         ],
@@ -507,7 +507,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 72, direction: "positive",
-        headline: "Surgical consolidation saves $18–22M/yr system-wide (impact not quantified: no published estimate)",
+        headline: "Surgical consolidation expected to lower cost per case (impact not quantified: no published estimate)",
         actions: [
           "Payback period: 4.2 years",
         ],
@@ -642,7 +642,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 88, direction: "positive",
-        headline: "Estimated $24–32M/yr in system-wide savings (impact not quantified: no published estimate)",
+        headline: "System-wide savings expected from shared services (impact not quantified: no published estimate)",
         actions: [
           "Break-even: Year 2.4",
         ],
@@ -775,7 +775,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 70, direction: "positive",
-        headline: "Hospital-at-Home reduces acute admission costs 38% (impact not quantified: no published estimate)",
+        headline: "Hospital-at-home cut direct costs 38% in a randomized trial (Levine et al., Annals of Internal Medicine, 2020)",
         actions: [
         ],
         timeline: "Full benefit Year 3", riskLevel: "medium",
@@ -914,7 +914,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 80, direction: "positive",
-        headline: "UVMMC commercial rate premium reduction could save $60–80M/yr for Vermont employers and patients (impact not quantified: no published estimate)",
+        headline: "Lower UVMMC commercial prices would reduce costs for Vermont employers and patients (impact not quantified: no published estimate)",
         actions: [
           "Impact on smaller hospitals: modest revenue increase (closer to reference price)",
         ],
@@ -1060,7 +1060,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       financial: {
         score: 55, direction: "mixed",
-        headline: "Transportation investment ($24M/yr) is primarily public health cost (impact not quantified: no published estimate)",
+        headline: "Transportation investment is primarily a public health cost (impact not quantified: no published estimate)",
         actions: [
           "Alternative: without transportation, hospital restructuring creates dangerous access gaps",
         ],

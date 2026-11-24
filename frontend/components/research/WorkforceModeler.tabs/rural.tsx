@@ -130,7 +130,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 4,
     accessImprovement: 8,
     pipeline: "2 years",
-    description: "$50K–$130K loan repayment, 2-year commitment",
+    description: "$50K–$130K loan repayment, 2-year commitment (assumption)",
   },
   {
     id: "stateloan",
@@ -140,7 +140,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 3,
     accessImprovement: 6,
     pipeline: "1–2 years",
-    description: "$30K per provider from state funds",
+    description: "$30K per provider from state funds (assumption)",
   },
   {
     id: "ruraltrain",
@@ -150,7 +150,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 15,
     accessImprovement: 18,
     pipeline: "7–10 years",
-    description: "$200K/resident, long-term pipeline investment",
+    description: "$200K/resident, long-term pipeline investment (assumption)",
   },
   {
     id: "telehealth",
@@ -180,7 +180,7 @@ const RURAL_INTERVENTIONS = [
     physicianIncrease: 3,
     accessImprovement: 25,
     pipeline: "12–24 months",
-    description: "5,000–15,000 additional patients served",
+    description: "5,000–15,000 additional patients served (assumption)",
   },
 ];
 
