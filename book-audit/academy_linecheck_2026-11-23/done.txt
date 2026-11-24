@@ -10,3 +10,15 @@ academyModule-precision-medicine-m1
 academyModule-vbc-fundamentals-module-2-policy-pillar
 academyModule-vbc-fundamentals-module-4-technology-pillar
 aiml-llm-clinical
+academyModule-five-pillars-dependency-logic-execution-sequence
+academyModule-five-pillars-the-equity-imperative-is-it-just
+academyModule-five-pillars-five-pillars-diagnostic-questions
+academyModule-five-pillars-onecare-sequencing-autopsy
+academyModule-vbc-hedis-ecqm
+academyModule-five-pillars-care-model-redesign-under-global-budgets
+academyModule-five-pillars-global-budgets-reference-based-pricing
+academyModule-five-pillars-apm-readiness-vbc-financial-modeling
+academyModule-five-pillars-ai-governance-clinical-decision-support
+academyModule-five-pillars-voluntary-vs-mandatory-architecture
+academyModule-vbc-clinical-m5
+interop-vermont-vitl

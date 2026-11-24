@@ -1,0 +1,58 @@
+{
+ "tag": "batch4",
+ "note": "MSSP BASIC 40%; AHS 87% benchmark; AHS 81% FUM; TEFCA 11 QHINs; RTI Maryland",
+ "only": [
+  "academyModule-five-pillars-apm-readiness-vbc-financial-modeling",
+  "academyModule-five-pillars-care-model-redesign-under-global-budgets",
+  "academyModule-five-pillars-voluntary-vs-mandatory-architecture",
+  "academyModule-five-pillars-global-budgets-reference-based-pricing",
+  "interop-vermont-vitl",
+  "apm-readiness-vbc-financial-modeling",
+  "care-model-redesign-under-global-budgets",
+  "voluntary-vs-mandatory-architecture",
+  "global-budgets-reference-based-pricing",
+  "interop-vermont-vitl"
+ ],
+ "pairs": [
+  [
+   "an organization can earn up to 50% of savings based on quality performance",
+   "an organization can earn up to 40% of savings based on quality performance"
+  ],
+  [
+   "(50-60%+ depending on risk track)",
+   "(up to 40% one-sided; 50-75% two-sided)"
+  ],
+  [
+   ", at an average cost of $1,800 per visit",
+   ""
+  ],
+  [
+   "against an 87% national benchmark",
+   "against the Agency of Human Services' 87% benchmark"
+  ],
+  [
+   "its 76% behavioral health follow-up rate",
+   "its 81% rate of 30-day follow-up after an ED visit for mental illness (AHS, November 2025)"
+  ],
+  [
+   "In the same reporting period, 59% of Vermont primary care practices were accepting new Medicaid patients.",
+   ""
+  ],
+  [
+   ", covering roughly 300,000 lives",
+   ""
+  ],
+  [
+   "The Vermont Health Information Exchange (VHIE) serves 216 health care organizations, with VITLAccess providing consolidated longitudinal records covering 98.",
+   "The Vermont Health Information Exchange (VHIE), operated by VITL, is the state's clinical exchange; VITLAccess gives providers a consolidated longitudinal record."
+  ],
+  [
+   "with over 9,200 organizations signed up across 10 Qualified Health Information Networks (QHINs) as of early 2026",
+   "with eleven designated Qualified Health Information Networks (2026)"
+  ],
+  [
+   "Maryland saved Medicare $1.4 billion in hospital expenditures, with hospital expenditure growth running 8.74% below the national rate since 2013, and $869 million in total cost of care including non-hospital spending.",
+   "Maryland reported $1.4 billion in Medicare hospital savings over the All-Payer Model's first five years; CMS's independent evaluation (RTI, 2019) found about $975 million over the first four and a half years."
+  ]
+ ]
+}
