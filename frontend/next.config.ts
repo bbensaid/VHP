@@ -108,6 +108,19 @@ const nextConfig: NextConfig = {
     const vbc = (lesson: string) => `/academy/tracks/value-based-care/${lesson}`;
     return [
       { source: "/advisory/reports", destination: "/briefings", permanent: true },
+      // 2026-11-23: hospital "detail" pages removed — NVRH's showed an invented
+      // "Watchlist Tier 1" status and cash projections; the generic one called any
+      // hospital "stable". Send visitors to the sourced hospital dashboards instead.
+      // 2026-11-23: retired pages for features that never existed behind them —
+      // the "HTR Index" (no index is computed), a developer API whose tables are
+      // absent, API-key management for it, and an annual survey with no tables.
+      { source: "/htr-index", destination: "/about/methodology", permanent: false },
+      { source: "/developers", destination: "/about/methodology", permanent: false },
+      { source: "/account/api-keys", destination: "/account", permanent: false },
+      { source: "/survey/:path*", destination: "/briefings", permanent: false },
+      { source: "/survey", destination: "/briefings", permanent: false },
+      { source: "/dashboard/vermont/hospitals/:hospital", destination: "/dashboard/vermont/hospitals", permanent: false },
+      { source: "/dashboard/:state/hospitals/:hospital", destination: "/dashboard/:state/hospitals", permanent: false },
       // Units of the retired "Value-Based Care Fundamentals" course that were
       // published as analysis briefs (deleted 2026-11-15) → the same lessons.
       { source: "/articles/vbc-fundamentals-module-2-policy-pillar", destination: vbc("sanity-vbc-policy"), permanent: true },

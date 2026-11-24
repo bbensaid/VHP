@@ -27,7 +27,7 @@ const TAB_LABELS: Record<string, string> = {
   videos: "Video Briefings",
   library: "Full Multimedia Library",
   // Dashboard
-  index: "Performance Index",
+  index: "Index",
   program: "RHT Program",
   hospitals: "Hospital View",
   // Connect

@@ -143,6 +143,8 @@ function HCCCalculator() {
           Categories to adjust Medicare Advantage capitated payments. A RAF of 1.0 represents the
           average beneficiary. Higher scores reflect greater expected cost and trigger higher monthly
           payments to plans. Scores are additive across demographic base and condition categories.
+          This calculator uses simplified V24-era coefficients for teaching; Medicare Advantage payment moved fully to
+          the 2024 CMS-HCC model (V28) in 2026, which drops and remaps many categories.
         </p>
       </div>
 
@@ -1286,7 +1288,8 @@ function CustomModelBuilder() {
 
 const CONDITIONS_10 = ["Diabetes", "HTN", "CHF", "COPD", "CKD", "Depression", "Obesity", "AFib", "CAD", "Stroke"];
 
-// Co-occurrence matrix (upper triangle, symmetric)
+// Co-occurrence matrix (upper triangle, symmetric). ILLUSTRATIVE values — not measured
+// prevalence; the tab says so. Do not cite these numbers.
 const CO_OCCUR: Record<string, number> = {
   "Diabetes-HTN": 68, "Diabetes-CHF": 29, "Diabetes-COPD": 18, "Diabetes-CKD": 38,
   "Diabetes-Depression": 24, "Diabetes-Obesity": 52, "Diabetes-AFib": 14, "Diabetes-CAD": 33,
@@ -1451,9 +1454,11 @@ function ComorbidityVisualizer() {
       <div className="bg-rose-50 border border-rose-200 rounded-lg p-4 flex gap-3">
         <Info className="text-rose-500 mt-0.5 shrink-0" size={18} />
         <p className="text-sm text-rose-800">
-          The comorbidity matrix shows pairwise co-occurrence rates from Medicare FFS claims data.
-          Click any condition name to see detailed comorbidity profile. Rates represent percentage of
-          patients with condition A who also have condition B.
+          <strong>Illustrative teaching values.</strong> The co-occurrence rates, average RAF and annual cost below are
+          round, hypothetical figures chosen to show how comorbidity clustering drives risk — they are not measured
+          prevalence or cost from any claims dataset. To use this view for decisions, replace them with your own
+          population&apos;s claims (for Vermont, VHCURES). Rates read as the share of patients with condition A who also
+          have condition B.
         </p>
       </div>
 

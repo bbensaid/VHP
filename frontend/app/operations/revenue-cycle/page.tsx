@@ -52,13 +52,13 @@ export default function RevenueCyclePage() {
           <div className="space-y-5">
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-amber-700 mb-2">The Scale of the Problem</p>
-              <p className="text-3xl font-black text-slate-900 mb-2">$935B</p>
-              <p className="ty-body text-slate-600 leading-relaxed">Estimated annual waste in US healthcare attributable to administrative complexity and billing inefficiency, per JAMA estimates. Revenue cycle dysfunction is the single largest non-clinical cost driver in American healthcare.</p>
+              <p className="text-3xl font-black text-slate-900 mb-2">$265.6B</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Estimated annual US health care spending lost to administrative complexity — the largest of six waste domains in Shrank, Rogstad and Parekh (JAMA, 2019), which put total waste at $760–935B a year.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">HTR Index Metric</p>
-              <p className="font-black text-slate-900 mb-1">Revenue Cycle Performance Index</p>
-              <p className="ty-body text-slate-600 leading-relaxed">Composite of clean claim rate, denial rate, and days in AR across the state's major health systems. Weight: 0.05 in the HTR Performance Index.</p>
+              <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">What to Measure</p>
+              <p className="font-black text-slate-900 mb-1">Revenue Cycle Health</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Clean claim rate, denial rate and days in accounts receivable — operational measures a health system can track monthly, and the first to move when payment models change.</p>
             </div>
           </div>
         </div>

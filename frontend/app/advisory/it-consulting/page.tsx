@@ -57,16 +57,16 @@ export default function ITConsultingPage() {
           <h2 className="text-2xl font-bold mb-6">Why Health IT Projects Fail — And How We Prevent It</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-black text-indigo-300 mb-2">73%</div>
-              <p className="text-indigo-100 text-sm leading-relaxed">of large EHR implementations experience significant cost overruns, according to KLAS Research and OIG audits.</p>
+              <div className="text-xl font-black text-indigo-300 mb-2">Scope set by the vendor</div>
+              <p className="text-indigo-100 text-sm leading-relaxed">Requirements written around what a product does rather than what the care model needs, so workflow redesign arrives after the contract is signed.</p>
             </div>
             <div>
-              <div className="text-3xl font-black text-indigo-300 mb-2">$1.7B</div>
-              <p className="text-indigo-100 text-sm leading-relaxed">average total cost of an enterprise EHR implementation for a 500-bed system, including hidden indirect costs most vendors don&apos;t disclose.</p>
+              <div className="text-xl font-black text-indigo-300 mb-2">Data that cannot leave</div>
+              <p className="text-indigo-100 text-sm leading-relaxed">Systems that go live without the standards-based exchange (FHIR APIs, USCDI data elements, TEFCA connectivity) that value-based payment will later depend on.</p>
             </div>
             <div>
-              <div className="text-3xl font-black text-indigo-300 mb-2">18 months</div>
-              <p className="text-indigo-100 text-sm leading-relaxed">average time before organizations realize their go-live actually failed — when physician burnout and claim denials begin to peak.</p>
+              <div className="text-xl font-black text-indigo-300 mb-2">Go-live treated as the finish</div>
+              <p className="text-indigo-100 text-sm leading-relaxed">No measures for adoption, documentation burden or revenue-cycle effects after launch, so problems surface only when they reach the budget.</p>
             </div>
           </div>
           <p className="mt-8 text-indigo-200 text-sm">

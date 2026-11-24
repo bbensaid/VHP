@@ -94,7 +94,6 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
 
   // Research Lab + framework tools
   { path: "/research-lab",                    priority: 0.9, changeFrequency: "weekly" },
-  { path: "/htr-index",                       priority: 0.8, changeFrequency: "weekly" },
   { path: "/htr-simulator",                   priority: 0.8, changeFrequency: "monthly" },
   { path: "/impact-simulation",               priority: 0.7, changeFrequency: "monthly" },
   { path: "/transformation-friction-index",   priority: 0.7, changeFrequency: "monthly" },
@@ -131,7 +130,6 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
   // Site info & legal
   { path: "/site-map",            priority: 0.4, changeFrequency: "monthly" },
   { path: "/changelog",           priority: 0.4, changeFrequency: "weekly" },
-  { path: "/developers",          priority: 0.4, changeFrequency: "monthly" },
   { path: "/privacy",             priority: 0.4, changeFrequency: "yearly" },
   { path: "/terms",               priority: 0.4, changeFrequency: "yearly" },
   { path: "/disclaimer",          priority: 0.4, changeFrequency: "yearly" },

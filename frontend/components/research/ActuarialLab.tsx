@@ -264,13 +264,16 @@ function AVCalculator() {
 
     av = clamp(av, 0.45, 0.97);
 
-    // Determine metallic tier
-    let tier = "Sub-Bronze";
+    // Nearest metal level. The ACA sets AV targets of 60/70/80/90% (42 U.S.C. 18022(d));
+    // CMS allows only a narrow de minimis variation around each, set by regulation
+    // (45 CFR 156.140(c)) and revised over time — so this classifier uses the midpoints
+    // between targets and says "nearest", rather than claiming a compliance band.
+    let tier = "Below Bronze";
     let tierColor: "red" | "amber" | "emerald" | "blue" | "purple" = "red";
-    if (av >= 0.88) { tier = "Platinum"; tierColor = "purple"; }
-    else if (av >= 0.78) { tier = "Gold"; tierColor = "blue"; }
-    else if (av >= 0.68) { tier = "Silver"; tierColor = "emerald"; }
-    else if (av >= 0.56) { tier = "Bronze"; tierColor = "amber"; }
+    if (av >= 0.85) { tier = "Platinum"; tierColor = "purple"; }
+    else if (av >= 0.75) { tier = "Gold"; tierColor = "blue"; }
+    else if (av >= 0.65) { tier = "Silver"; tierColor = "emerald"; }
+    else if (av >= 0.55) { tier = "Bronze"; tierColor = "amber"; }
 
     // Silver benchmark comparison (standard silver: 70% AV)
     const benchmarkAV = 0.70;
@@ -388,10 +391,10 @@ function AVCalculator() {
             </div>
             <div className="flex justify-between text-[10px] text-slate-400">
               <span>45%</span>
-              <span>56% Bronze</span>
-              <span>68% Silver</span>
-              <span>78% Gold</span>
-              <span>88% Platinum</span>
+              <span>Bronze target 60%</span>
+              <span>Silver 70%</span>
+              <span>Gold 80%</span>
+              <span>Platinum 90%</span>
             </div>
           </div>
 
@@ -400,7 +403,7 @@ function AVCalculator() {
             <StatBox
               label="Plan AV"
               value={fmtPct(result.av, 1)}
-              sub={result.tier + " tier"}
+              sub={"nearest tier: " + result.tier}
               color={result.tierColor}
             />
             <StatBox
@@ -428,10 +431,10 @@ function AVCalculator() {
             <h4 className="text-sm font-semibold text-slate-700 mb-3">ACA Metallic Tier Targets</h4>
             <div className="space-y-2">
               {[
-                { tier: "Bronze", target: 60, color: "bg-amber-400", range: "56-68%" },
-                { tier: "Silver", target: 70, color: "bg-emerald-400", range: "68-78%" },
-                { tier: "Gold", target: 80, color: "bg-blue-400", range: "78-88%" },
-                { tier: "Platinum", target: 90, color: "bg-purple-500", range: "88-100%" },
+                { tier: "Bronze", target: 60, color: "bg-amber-400", range: "target 60%" },
+                { tier: "Silver", target: 70, color: "bg-emerald-400", range: "target 70%" },
+                { tier: "Gold", target: 80, color: "bg-blue-400", range: "target 80%" },
+                { tier: "Platinum", target: 90, color: "bg-purple-500", range: "target 90%" },
               ].map((t) => (
                 <div key={t.tier} className="flex items-center gap-2">
                   <div className={`w-3 h-3 rounded-sm flex-none ${t.color}`} />
@@ -446,6 +449,11 @@ function AVCalculator() {
                 </div>
               ))}
             </div>
+            <p className="text-[11px] text-slate-500 mt-3 leading-relaxed">
+              Targets are statutory (ACA §1302(d)). A plan must land within a small de minimis range of its target, set by
+              CMS regulation (45 CFR 156.140(c)) and revised over time; this teaching model reports the nearest metal level
+              and is not a substitute for the CMS AV Calculator.
+            </p>
           </div>
         </div>
       </div>
@@ -525,7 +533,7 @@ function PremiumRating() {
     const acaThreshold = 9.96; // 2026 employer-coverage affordability percentage (IRS Rev. Proc. 2025-25)
 
     // Medicaid eligibility estimate (income <= 138% FPL)
-    // Rough heuristic, not an eligibility rule. FPL 2025 = $15,650 for one person; 138% = $21,597
+    // Rough heuristic, not an eligibility rule. 2026 HHS poverty guideline = $15,960 for one person; 138% = $22,025
     const medicaidEligiblePct = Math.max(0, Math.min(60, (25000 / inputs.medianHouseholdIncome) * 25));
 
     return {
@@ -1155,7 +1163,7 @@ function MedicareDrugPricing() {
             <StatBox label="Beneficiary OOP Savings" value={fmtDollar(beneficiaryOOPSavings, 0) + "/yr"} sub="per patient on this drug" color="blue" />
             <StatBox label="Manufacturer Revenue Impact" value={"-" + fmtDollar(manufacturerRevLoss, 0) + "M"} sub="estimated annual revenue reduction" color="red" />
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-800">
-              <strong>Note:</strong> MFP estimates reflect CMS 2026 negotiation targets. Actual negotiated prices are subject to manufacturer negotiations and statutory caps (65-75% of non-federal average manufacturer price for small molecule drugs with 9-13 years post-approval).
+              <strong>Note:</strong> These are illustrative scenarios, not CMS figures. The statute caps a negotiated price at a share of the non-federal average manufacturer price that falls with time on the market: 75% for drugs approved fewer than 12 years earlier, 65% at 12–16 years, and 40% after 16 years (Social Security Act §1194(c)).
             </div>
           </div>
         </div>

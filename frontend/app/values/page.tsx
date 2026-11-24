@@ -88,9 +88,9 @@ const values = [
     accentLight: "bg-violet-50",
     number: "06",
     title: "Radical Transparency",
-    body: "We publish our methodology, our scoring weights, and our data sources. When we revise a position based on new evidence, we say so explicitly. Accountability is non-negotiable at every level of our work.",
-    detail: "The State Performance Index publishes every scoring weight, every data source, and every methodological assumption in plain language. When we update a model, we publish a change log. When we were wrong, we say so in print — not in a correction buried at the bottom of a revised page, but in a clearly labeled editorial note at the top.",
-    standard: "Full methodology published and versioned",
+    body: "We name our sources where the number appears. When we revise a position based on new evidence, we say so explicitly. Accountability is non-negotiable at every level of our work.",
+    detail: "Every state indicator on the dashboards carries its source and year, and the Methodology page lists them. Teaching tools that run on illustrative inputs say so on the page. Content that cannot be confirmed against a source is removed rather than kept.",
+    standard: "Every figure sourced where it appears",
   },
 ];
 

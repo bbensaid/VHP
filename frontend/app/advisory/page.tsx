@@ -132,7 +132,7 @@ export default function AdvisoryPage() {
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: "Claude Sonnet 4.6", desc: "Most powerful AI — Anthropic's latest" },
+                  { label: "Claude (Anthropic)", desc: "Frontier model for advisory-tier analysis" },
                   { label: "Agentic AI Tools", desc: "Tool-use, web search, data retrieval" },
                   { label: "Priority Intelligence", desc: "Pre-publication briefings & reports" },
                   { label: "Research Lab", desc: "Full access to every Research Lab tool" },
@@ -206,7 +206,7 @@ export default function AdvisoryPage() {
             { step: "01", title: "Discovery Call", duration: "Week 1", desc: "Define your challenge, objectives, and key questions. We assess fit, scope, and suggest the right service line — no obligation." },
             { step: "02", title: "Engagement Design", duration: "Weeks 1–2", desc: "We propose a tailored methodology, team composition, timeline, and deliverables. You approve the scope before work begins." },
             { step: "03", title: "Analysis & Delivery", duration: "Weeks 3–12", desc: "Structured work sprints with interim briefings. You see the analysis as it develops — no surprises at final delivery." },
-            { step: "04", title: "Ongoing Advisory", duration: "Optional", desc: "Many clients convert to a quarterly retainer for ongoing counsel, implementation support, and strategy evolution." },
+            { step: "04", title: "Ongoing Advisory", duration: "Optional", desc: "An optional quarterly retainer for ongoing counsel, implementation support, and strategy evolution." },
           ].map((item) => (
             <div key={item.step} className="relative">
               <div className="text-6xl font-black text-slate-100 mb-4 leading-none">{item.step}</div>
@@ -271,7 +271,7 @@ export default function AdvisoryPage() {
             <div className="text-4xl mb-4">⚡</div>
             <h3 className="ty-h3 font-bold text-slate-900 mb-3">Speed to Insight</h3>
             <p className="text-slate-600 ty-body leading-relaxed">
-              Healthcare decisions don&apos;t wait for a 6-month engagement. We deliver rapid policy briefs in 2 weeks, project assessments in 4 weeks, and financial reviews in 6 weeks — without cutting corners on rigor.
+              Healthcare decisions don&apos;t wait for a 6-month engagement. Planned turnaround: policy briefs in 2 weeks, project assessments in 4 weeks, and financial reviews in 6 weeks — without cutting corners on rigor.
             </p>
           </div>
         </div>

@@ -1,176 +1,144 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+// Vermont Act 68 Explorer — rebuilt 2026-11-23.
+//
+// The previous "simulator" priced each provision with invented annual cost and
+// savings figures (e.g. "$310M/yr" for global budgets), scored named hospitals on
+// an unsourced "RBP readiness" scale, listed provisions Act 68 does not contain
+// (a mandated "workforce stability requirement"), and carried hospital margins
+// that contradict the Oliver Wyman per-hospital data (e.g. Porter −2.2% vs +7.6%).
+//
+// Every figure below now comes from one of three places, named on the page:
+//   • Act 68 of 2025 as enacted, and the GMCB's Feb 17, 2026 Act 68 update
+//   • Oliver Wyman, Act 167 Community Engagement: Recommendations (rev. Oct 21, 2024)
+//   • CMS Hospital Provider Cost Report, FY2023
+// (all three extracted in book-audit/deep/sources/vt_hospitals_sourced_2026-10-17.json
+//  and book-audit/deep/VERIFIED_FACTS.md). No projected dollar impact is shown,
+// because no public source estimates one per provision.
+
+import { useState } from 'react'
 import Link from 'next/link'
-import { CheckCircleIcon, ExclamationTriangleIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
-import { StickyOutputPanel } from '@/components/StickyOutputPanel'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
-type PillarKey = 'policy' | 'financial' | 'equity' | 'clinical' | 'operations'
+// ─── Provisions (Act 68 of 2025, signed June 12, 2025) ─────────────────────────
 
-interface Hospital {
-  id: string
-  name: string
-  shortName: string
-  city: string
-  beds: number
-  annualRevenueM: number
-  operatingMarginPct: number
-  medicaidPct: number
-  rbpReadinessScore: number   // Reference-based pricing readiness 0-100
-  globalBudgetReadiness: number
-  ruralAccess: boolean
-}
-
-interface Act68Recommendation {
+type Provision = {
   id: string
   title: string
-  mandated: boolean
-  effectiveDate: string
-  category: 'rbp' | 'global-budget' | 'strategic-plan' | 'gmcb' | 'workforce' | 'equity'
-  pillarScores: Record<PillarKey, number>
-  implementationComplexity: number
-  annualCostM: number
-  annualSavingsM: number
-  timelineMonths: number
+  when: string
+  what: string
+  status: string
+  conditional?: string
 }
 
-// ─── Vermont Hospital Data — GMCB Budget Filing FY2023 + CMS HCRIS FY2022 ────
-// Sources: VT GMCB Hospital Budget Filings (gmcboard.vermont.gov),
-//          CMS Healthcare Cost Report Information System (HCRIS),
-//          AHA Annual Survey 2023, Vermont Association of Hospitals and Health Systems
+const PROVISIONS: Provision[] = [
+  {
+    id: 'rbp',
+    title: 'Hospital reference-based pricing',
+    when: 'Methodology by rule in 2027 · maximum rates from hospital FY2028',
+    what: 'The GMCB must set reference-based prices — the maximum amounts Vermont hospitals may accept as payment in full from commercial payers — and review them in each annual hospital budget. Act 68 gives the Board no authority over Medicare or Medicaid rates.',
+    status: 'The statute says "not later than hospital fiscal year 2027"; the GMCB\'s February 17, 2026 Act 68 update puts the methodology into rule in 2027 with maximum rates effective in HFY2028. S.190 (2026), which would have accelerated RBP, was vetoed on June 16, 2026.',
+  },
+  {
+    id: 'global-budgets',
+    title: 'Hospital global budgets',
+    when: 'First wave by HFY2028 (non-critical-access) · all hospitals by HFY2030',
+    what: 'Global budgets for one or more hospitals that are not critical access hospitals beginning no later than HFY2028, and for all hospitals by HFY2030. They include Medicare to the extent federal law permits and, by statute, exclude Medicaid.',
+    status: 'Medicare participation is unresolved after Vermont withdrew from the federal AHEAD model in July 2026.',
+    conditional: 'Both deadlines apply "to the extent that resources are available".',
+  },
+  {
+    id: 'spending-reduction',
+    title: 'Hospital spending reduction for HFY2026',
+    when: 'HFY2026 (Oct 1, 2025 – Sep 30, 2026)',
+    what: 'AHS must coordinate a reduction in hospital spending of not less than 2.5% for HFY2026, with monthly progress updates.',
+    status: 'The GMCB\'s FY2027 budget orders (September 2026) separately cut commercial rates 2.9% statewide.',
+  },
+  {
+    id: 'strategic-plan',
+    title: 'Statewide Health Care Delivery Strategic Plan',
+    when: 'Due January 15, 2028 · updated every 3 years from December 1, 2030',
+    what: 'A statewide plan that must include annual total-cost-of-care targets and targets for the share of spending on primary care (including mental health) and preventive care.',
+    status: 'Not yet due.',
+  },
+  {
+    id: 'hcac',
+    title: 'Health Care Affordability Advisory Council (HCAC)',
+    when: 'Created by Act 68',
+    what: 'An 18-member council chaired by the AHS Secretary — including the GMCB Chair, the Chief Health Care Advocate, payers, hospitals, an FQHC, physicians, APRNs, designated agencies, home health and long-term care — that sets affordability benchmarks and advises the legislature.',
+    status: 'Act 68 also creates a 16-member Vermont Steering Committee for Comprehensive Primary Health Care.',
+  },
+  {
+    id: 'uhds',
+    title: 'Unified Health Data Space',
+    when: 'Clinical–claims integration no earlier than January 1, 2027',
+    what: 'AHS, with the HIE Steering Committee, builds a unified data space. Linking clinical data with claims may begin no earlier than January 1, 2027, and only on a majority vote of the Steering Committee.',
+    status: 'A governance gate, not only a technical one: the vote is a precondition.',
+  },
+  {
+    id: 'oversight',
+    title: 'GMCB data access and price-to-premium monitoring',
+    when: 'In force on enactment',
+    what: 'Providers must give the GMCB unredacted contracts on request; the Board may share subpoenaed material with AHS and the Department of Financial Regulation; the GMCB and DFR must monitor whether lower hospital prices reach premiums. Act 68 funds three new GMCB positions for RBP and $2M in AHS incentive grants.',
+    status: 'Ongoing.',
+  },
+]
+
+// ─── Hospitals (14) ────────────────────────────────────────────────────────────
+// margin, opResultM, fy28: Oliver Wyman per-hospital pages (2023 operating margin; 2023
+// operating result in $M where positive = loss; FY2028 projected loss $M at 5% / 7–8%
+// expense growth). beds, discharges: CMS cost report FY2023. atRisk: Oliver Wyman's
+// named at-risk list.
+
+type Hospital = {
+  id: string; name: string; city: string; cah: boolean
+  margin: number; opResultM: number; fy28: [number, number]
+  beds: number; discharges: number; atRisk?: boolean
+}
+
 const HOSPITALS: Hospital[] = [
-  {
-    id: 'uvmmc', name: 'UVM Medical Center', shortName: 'UVMMC', city: 'Burlington',
-    beds: 562,          // AHA 2023: 562 licensed beds
-    annualRevenueM: 1487, // GMCB FY2023 budget: $1.487B net patient revenue
-    operatingMarginPct: 0.8, // GMCB FY2023 operating margin (post-pandemic recovery)
-    medicaidPct: 22,    // HCRIS FY2022: 22% Medicaid payer mix
-    rbpReadinessScore: 85, globalBudgetReadiness: 82, ruralAccess: false,
-  },
-  {
-    id: 'rrmc', name: 'Rutland Regional Medical Center', shortName: 'RRMC', city: 'Rutland',
-    beds: 188,          // AHA 2023: 188 licensed beds
-    annualRevenueM: 232, // GMCB FY2023: $232M net patient revenue
-    operatingMarginPct: -3.4, // GMCB FY2023: -3.4% operating margin (significant financial pressure)
-    medicaidPct: 31,    // HCRIS FY2022: 31% Medicaid
-    rbpReadinessScore: 52, globalBudgetReadiness: 48, ruralAccess: false,
-  },
-  {
-    id: 'gifford', name: 'Gifford Medical Center', shortName: 'Gifford', city: 'Randolph',
-    beds: 25,           // CAH designation: 25-bed limit
-    annualRevenueM: 54, // GMCB FY2023: $54M net patient revenue
-    operatingMarginPct: -5.8, // GMCB FY2023: -5.8% (highest loss rate among Vermont CAHs)
-    medicaidPct: 44,    // HCRIS FY2022: 44% Medicaid (highest in state)
-    rbpReadinessScore: 34, globalBudgetReadiness: 36, ruralAccess: true,
-  },
-  {
-    id: 'nvrh', name: 'Northeastern VT Regional Hospital', shortName: 'NVRH', city: 'St. Johnsbury',
-    beds: 25,           // CAH: 25-bed limit
-    annualRevenueM: 58, // GMCB FY2023: $58M
-    operatingMarginPct: -4.1, // GMCB FY2023: -4.1%
-    medicaidPct: 43,    // HCRIS FY2022: 43%
-    rbpReadinessScore: 40, globalBudgetReadiness: 42, ruralAccess: true,
-  },
-  {
-    id: 'porter', name: 'Porter Medical Center', shortName: 'Porter', city: 'Middlebury',
-    beds: 25,           // CAH: 25-bed limit
-    annualRevenueM: 67, // GMCB FY2023: $67M
-    operatingMarginPct: -2.2, // GMCB FY2023: -2.2%
-    medicaidPct: 34,    // HCRIS FY2022: 34%
-    rbpReadinessScore: 56, globalBudgetReadiness: 53, ruralAccess: false,
-  },
-  {
-    id: 'cvmc', name: 'Central Vermont Medical Center', shortName: 'CVMC', city: 'Berlin',
-    beds: 122,          // AHA 2023: 122 licensed beds
-    annualRevenueM: 178, // GMCB FY2023: $178M
-    operatingMarginPct: -0.6, // GMCB FY2023: -0.6% (near breakeven)
-    medicaidPct: 29,    // HCRIS FY2022: 29%
-    rbpReadinessScore: 63, globalBudgetReadiness: 60, ruralAccess: false,
-  },
-  {
-    id: 'brattleboro', name: 'Brattleboro Memorial Hospital', shortName: 'BMH', city: 'Brattleboro',
-    beds: 61,           // AHA 2023: 61 licensed beds
-    annualRevenueM: 94, // GMCB FY2023: $94M
-    operatingMarginPct: -2.8, // GMCB FY2023: -2.8%
-    medicaidPct: 37,    // HCRIS FY2022: 37%
-    rbpReadinessScore: 46, globalBudgetReadiness: 44, ruralAccess: false,
-  },
-  {
-    id: 'grace-cottage', name: 'Grace Cottage Family Health', shortName: 'Grace Cottage', city: 'Townshend',
-    beds: 19,           // AHA 2023: 19 licensed beds (smallest in state)
-    annualRevenueM: 31, // GMCB FY2023: $31M
-    operatingMarginPct: -6.3, // GMCB FY2023: -6.3% (most financially distressed)
-    medicaidPct: 47,    // HCRIS FY2022: 47%
-    rbpReadinessScore: 28, globalBudgetReadiness: 30, ruralAccess: true,
-  },
+  { id: 'uvmmc', name: 'University of Vermont Medical Center', city: 'Burlington', cah: false, margin: 3.1, opResultM: -64.6, fy28: [105, 486.4], beds: 448, discharges: 20252 },
+  { id: 'rrmc', name: 'Rutland Regional Medical Center', city: 'Rutland', cah: false, margin: 2.1, opResultM: -7.4, fy28: [20.6, 79.9], beds: 142, discharges: 5482 },
+  { id: 'cvmc', name: 'Central Vermont Medical Center', city: 'Berlin', cah: false, margin: -6.5, opResultM: 17.8, fy28: [44.0, 74.3], beds: 88, discharges: 3514 },
+  { id: 'svmc', name: 'Southwestern Vermont Medical Center', city: 'Bennington', cah: false, margin: -3.8, opResultM: 7.4, fy28: [24.5, 58.0], beds: 53, discharges: 2828 },
+  { id: 'nmc', name: 'Northwestern Medical Center', city: 'St. Albans', cah: false, margin: -6.6, opResultM: 8.2, fy28: [20.9, 44.4], beds: 53, discharges: 2301 },
+  { id: 'bmh', name: 'Brattleboro Memorial Hospital', city: 'Brattleboro', cah: false, margin: -1.7, opResultM: 1.9, fy28: [12.4, 29.8], beds: 47, discharges: 2010 },
+  { id: 'porter', name: 'Porter Medical Center', city: 'Middlebury', cah: true, margin: 7.6, opResultM: -9.0, fy28: [3.5, 10.8], beds: 25, discharges: 1545 },
+  { id: 'copley', name: 'Copley Hospital', city: 'Morrisville', cah: true, margin: -1.8, opResultM: 1.7, fy28: [7.0, 16.5], beds: 25, discharges: 1380 },
+  { id: 'north-country', name: 'North Country Hospital', city: 'Newport', cah: true, margin: -8.9, opResultM: 8.8, fy28: [17.3, 28.9], beds: 25, discharges: 1363, atRisk: true },
+  { id: 'nvrh', name: 'Northeastern Vermont Regional Hospital', city: 'St. Johnsbury', cah: true, margin: 0.5, opResultM: -0.6, fy28: [5.2, 19.2], beds: 25, discharges: 1331 },
+  { id: 'gifford', name: 'Gifford Medical Center', city: 'Randolph', cah: true, margin: -8.3, opResultM: 4.7, fy28: [1.3, 6.0], beds: 25, discharges: 815, atRisk: true },
+  { id: 'springfield', name: 'Springfield Hospital', city: 'Springfield', cah: true, margin: -0.9, opResultM: 0.6, fy28: [5.0, 10.4], beds: 25, discharges: 584, atRisk: true },
+  { id: 'mt-ascutney', name: 'Mt. Ascutney Hospital and Health Center', city: 'Windsor', cah: true, margin: 2.0, opResultM: -1.4, fy28: [1.4, 8.2], beds: 25, discharges: 319 },
+  { id: 'grace-cottage', name: 'Grace Cottage Family Health & Hospital', city: 'Townshend', cah: true, margin: -8.9, opResultM: 2.3, fy28: [4.6, 9.9], beds: 19, discharges: 102, atRisk: true },
 ]
 
-const RECOMMENDATIONS: Act68Recommendation[] = [
-  { id: 'rbp-fy27', title: 'Reference-Based Pricing Implementation (FY2027)', mandated: true, effectiveDate: 'FY2027', category: 'rbp', timelineMonths: 18, pillarScores: { policy: 88, financial: 72, equity: 60, clinical: 65, operations: 75 }, implementationComplexity: 78, annualCostM: 38, annualSavingsM: 145 },
-  { id: 'global-budget-fy28', title: 'Hospital Global Budgets (FY2028–2030)', mandated: true, effectiveDate: 'FY2028', category: 'global-budget', timelineMonths: 30, pillarScores: { policy: 90, financial: 80, equity: 65, clinical: 70, operations: 82 }, implementationComplexity: 88, annualCostM: 62, annualSavingsM: 310 },
-  { id: 'strategic-plan', title: 'Statewide Health Care Delivery Strategic Plan (Jan 15, 2028)', mandated: true, effectiveDate: 'Jan 2028', category: 'strategic-plan', timelineMonths: 31, pillarScores: { policy: 85, financial: 55, equity: 80, clinical: 75, operations: 70 }, implementationComplexity: 70, annualCostM: 18, annualSavingsM: 42 },
-  { id: 'gmcb-oversight', title: 'Enhanced GMCB Oversight & Reporting', mandated: true, effectiveDate: 'FY2026', category: 'gmcb', timelineMonths: 12, pillarScores: { policy: 92, financial: 60, equity: 65, clinical: 68, operations: 72 }, implementationComplexity: 55, annualCostM: 8, annualSavingsM: 22 },
-  { id: 'rbp-commercial', title: 'Commercial Payer RBP Alignment', mandated: false, effectiveDate: 'FY2028', category: 'rbp', timelineMonths: 36, pillarScores: { policy: 75, financial: 85, equity: 55, clinical: 60, operations: 78 }, implementationComplexity: 82, annualCostM: 28, annualSavingsM: 195 },
-  { id: 'rural-access', title: 'Rural Access Preservation Standards', mandated: false, effectiveDate: 'FY2027', category: 'equity', timelineMonths: 18, pillarScores: { policy: 70, financial: 45, equity: 95, clinical: 72, operations: 62 }, implementationComplexity: 65, annualCostM: 45, annualSavingsM: 28 },
-  { id: 'workforce-act68', title: 'Workforce Stability Requirements Under Global Budget', mandated: true, effectiveDate: 'FY2028', category: 'workforce', timelineMonths: 30, pillarScores: { policy: 78, financial: 58, equity: 75, clinical: 80, operations: 85 }, implementationComplexity: 72, annualCostM: 55, annualSavingsM: 68 },
-  { id: 'rht-alignment', title: 'RHT Program Alignment ($195M Capital Deployment)', mandated: false, effectiveDate: 'FY2026', category: 'global-budget', timelineMonths: 24, pillarScores: { policy: 82, financial: 78, equity: 70, clinical: 75, operations: 80 }, implementationComplexity: 60, annualCostM: 22, annualSavingsM: 88 },
+// ─── Timeline ─────────────────────────────────────────────────────────────────
+
+const TIMELINE: { date: string; event: string; kind: 'act68' | 'context' }[] = [
+  { date: 'Jun 12, 2025', event: 'Act 68 signed.', kind: 'act68' },
+  { date: 'Aug 1, 2025', event: 'AHS monthly outcome-measure reports begin (through Jan 1, 2027).', kind: 'act68' },
+  { date: 'Oct 1, 2025', event: 'HFY2026 begins — the year of the ≥2.5% hospital spending reduction.', kind: 'act68' },
+  { date: 'Jan 2026', event: 'Vermont launches a Medicaid hospital global budget on state authority.', kind: 'context' },
+  { date: 'Feb 17, 2026', event: 'GMCB Act 68 update: RBP methodology by rule in 2027, maximum rates HFY2028.', kind: 'act68' },
+  { date: 'Jun 16, 2026', event: 'S.190 (faster RBP) vetoed.', kind: 'context' },
+  { date: 'Jul 2026', event: 'Vermont withdraws from AHEAD; CMS rules the Medicaid hospital global budget not approved under Global Commitment and payments stop July 31.', kind: 'context' },
+  { date: 'Sep 2026', event: 'GMCB FY2027 hospital budget orders cut commercial rates 2.9% statewide.', kind: 'context' },
+  { date: 'Jan 1, 2027', event: 'Earliest date for clinical–claims integration in the Unified Health Data Space (Steering Committee vote required).', kind: 'act68' },
+  { date: '2027', event: 'GMCB sets the RBP methodology by rule.', kind: 'act68' },
+  { date: 'Oct 1, 2027', event: 'HFY2028 begins — maximum RBP rates effective; first global budgets for non-critical-access hospitals (resources permitting).', kind: 'act68' },
+  { date: 'Jan 15, 2028', event: 'Statewide Health Care Delivery Strategic Plan due.', kind: 'act68' },
+  { date: 'HFY2030', event: 'Global budgets for all hospitals (resources permitting).', kind: 'act68' },
+  { date: 'Dec 1, 2030', event: 'First three-year update of the Strategic Plan.', kind: 'act68' },
 ]
 
-const PILLARS: { key: PillarKey; label: string; color: string }[] = [
-  { key: 'policy',     label: 'Policy',     color: 'text-blue-700' },
-  { key: 'financial',  label: 'Financial',  color: 'text-emerald-700' },
-  { key: 'equity',     label: 'Equity',     color: 'text-violet-700' },
-  { key: 'clinical',   label: 'Clinical',   color: 'text-red-700' },
-  { key: 'operations', label: 'Operations', color: 'text-amber-700' },
-]
-
-const CAT_LABELS: Record<string, string> = {
-  rbp: 'Reference-Based Pricing', 'global-budget': 'Global Budget',
-  'strategic-plan': 'Strategic Plan', gmcb: 'GMCB Oversight',
-  workforce: 'Workforce', equity: 'Equity & Access',
-}
-
-function ScoreGauge({ score }: { score: number }) {
-  const r = 26; const circ = 2 * Math.PI * r; const dash = (score / 100) * circ
-  const col = score >= 70 ? '#10b981' : score >= 50 ? '#f59e0b' : '#ef4444'
-  return (
-    <svg width="64" height="64" viewBox="0 0 64 64">
-      <circle cx="32" cy="32" r={r} fill="none" stroke="#e2e8f0" strokeWidth="6" />
-      <circle cx="32" cy="32" r={r} fill="none" stroke={col} strokeWidth="6"
-        strokeDasharray={`${dash} ${circ - dash}`} strokeLinecap="round" transform="rotate(-90 32 32)" />
-      <text x="32" y="37" textAnchor="middle" fontSize="12" fontWeight="800" fill="#0f172a">{score}</text>
-    </svg>
-  )
-}
+const fmtM = (v: number) => `$${Math.abs(v).toFixed(1)}M`
 
 export default function VermontAct68SimulatorClient() {
-  const [selectedRecs, setSelectedRecs] = useState<string[]>(['rbp-fy27', 'global-budget-fy28', 'gmcb-oversight', 'rht-alignment'])
+  const [activeTab, setActiveTab] = useState<'provisions' | 'hospitals' | 'timeline'>('provisions')
   const [selectedHospital, setSelectedHospital] = useState('rrmc')
-  const [activeTab, setActiveTab] = useState<'scenario' | 'hospitals' | 'timeline'>('scenario')
-
-  const toggle = (id: string) =>
-    setSelectedRecs(p => p.includes(id) ? p.filter(r => r !== id) : [...p, id])
-
-  const selected = RECOMMENDATIONS.filter(r => selectedRecs.includes(r.id))
   const hospital = HOSPITALS.find(h => h.id === selectedHospital)!
-
-  const pillarScores = useMemo((): Record<PillarKey, number> => {
-    if (!selected.length) return { policy: 0, financial: 0, equity: 0, clinical: 0, operations: 0 }
-    return Object.fromEntries(
-      (['policy', 'financial', 'equity', 'clinical', 'operations'] as PillarKey[]).map(k => [
-        k, Math.round(selected.reduce((s, r) => s + r.pillarScores[k], 0) / selected.length)
-      ])
-    ) as Record<PillarKey, number>
-    // `selected` is derived from `selectedRecs` on every render.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedRecs])
-
-  const totalCostM = selected.reduce((s, r) => s + r.annualCostM, 0)
-  const totalSavingsM = selected.reduce((s, r) => s + r.annualSavingsM, 0)
-  const netM = totalSavingsM - totalCostM
-  const maxTimeline = selected.length ? Math.max(...selected.map(r => r.timelineMonths)) : 0
-  const totalSystemRevM = HOSPITALS.reduce((s, h) => s + h.annualRevenueM, 0)
-  const hospitalImpactM = hospital ? (netM * hospital.annualRevenueM) / totalSystemRevM : 0
+  const inLoss = HOSPITALS.filter(h => h.margin < 0).length
 
   return (
     <div className="min-h-screen bg-white">
@@ -181,14 +149,14 @@ export default function VermontAct68SimulatorClient() {
             <span className="text-slate-300">/</span>
             <span className="text-[10px] font-black uppercase tracking-widest text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-1 rounded">VT · Vermont</span>
           </div>
-          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">Vermont Act 68 Simulator</h1>
+          <h1 className="text-3xl font-black text-slate-900 mb-3 leading-tight">Vermont Act 68 Explorer</h1>
           <p className="text-slate-600 max-w-2xl text-sm leading-relaxed mb-6">
-            Model the multi-pillar impact of Vermont Act 68 of 2025 — the most consequential Vermont healthcare legislation
-            since the Green Mountain Care Board&apos;s creation. Mandatory reference-based pricing (FY2027), hospital global
-            budgets (FY2028–2030), and a Statewide Strategic Plan across Vermont&apos;s 14-hospital network.
+            What Act 68 of 2025 actually requires, when, and the starting position of each of Vermont&apos;s 14 hospitals —
+            from the statute, the Green Mountain Care Board, Oliver Wyman&apos;s Act 167 report and CMS cost reports.
+            No projected dollar impact is shown: no public source estimates one per provision.
           </p>
           <div className="flex flex-wrap gap-3">
-            {[['14', 'Hospitals'], ['FY2028', 'RBP Prices Effective'], ['FY2028', 'Global Budgets'], ['Jan 2028', 'Strategic Plan Due']].map(([v, l]) => (
+            {[['14', 'Hospitals'], [`${inLoss} of 14`, 'Operating losses, 2023 (OW)'], ['HFY2028', 'RBP rates + first global budgets'], ['Jan 15, 2028', 'Strategic Plan due']].map(([v, l]) => (
               <div key={l} className="bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-center">
                 <div className="text-base font-black text-slate-900">{v}</div>
                 <div className="text-[11px] text-slate-500">{l}</div>
@@ -200,80 +168,34 @@ export default function VermontAct68SimulatorClient() {
 
       <div className="max-w-5xl mx-auto px-6 py-10">
         <div className="flex gap-2 mb-8 border-b border-slate-200">
-          {(['scenario', 'hospitals', 'timeline'] as const).map(tab => (
+          {(['provisions', 'hospitals', 'timeline'] as const).map(tab => (
             <button key={tab} onClick={() => setActiveTab(tab)}
-              className={`px-5 py-2.5 text-sm font-bold capitalize border-b-2 -mb-px transition-all ${
+              className={`px-5 py-2.5 text-sm font-bold border-b-2 -mb-px transition-all ${
                 activeTab === tab ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-700'
               }`}>
-              {tab === 'scenario' ? 'Scenario Builder' : tab === 'hospitals' ? 'Hospital Explorer' : 'Timeline'}
+              {tab === 'provisions' ? 'Provisions' : tab === 'hospitals' ? 'Hospital Baselines' : 'Timeline'}
             </button>
           ))}
         </div>
 
-        {activeTab === 'scenario' && (
-          <div className="grid lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 space-y-3">
-              <h2 className="text-base font-black text-slate-900 mb-4">Act 68 Provisions & Implementation Choices</h2>
-              {RECOMMENDATIONS.map(rec => {
-                const isSel = selectedRecs.includes(rec.id)
-                return (
-                  <button key={rec.id} onClick={() => toggle(rec.id)}
-                    className={`w-full text-left p-4 rounded-xl border-2 transition-all ${isSel ? 'border-rose-500 bg-rose-50' : 'border-slate-200 hover:border-slate-300 bg-white'}`}>
-                    <div className="flex items-start gap-3">
-                      <div className={`w-5 h-5 rounded mt-0.5 shrink-0 border-2 flex items-center justify-center ${isSel ? 'bg-rose-600 border-rose-600' : 'border-slate-300'}`}>
-                        {isSel && <CheckCircleIcon className="w-3.5 h-3.5 text-white" />}
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex flex-wrap items-center gap-2 mb-1">
-                          <span className="text-sm font-black text-slate-900">{rec.title}</span>
-                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded uppercase ${rec.mandated ? 'bg-rose-100 text-rose-700' : 'bg-slate-100 text-slate-600'}`}>
-                            {rec.mandated ? 'mandated' : 'optional'}
-                          </span>
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-violet-50 text-violet-700">{CAT_LABELS[rec.category]}</span>
-                          <span className="text-[10px] text-slate-400">{rec.effectiveDate}</span>
-                        </div>
-                        <div className="flex flex-wrap gap-3 text-[11px] text-slate-500">
-                          <span>Cost: <span className="font-bold text-slate-700">${rec.annualCostM}M/yr</span></span>
-                          <span>Savings: <span className="font-bold text-emerald-700">${rec.annualSavingsM}M/yr</span></span>
-                          <span>Timeline: <span className="font-bold">{rec.timelineMonths} mo</span></span>
-                          <span>Complexity: <span className="font-bold text-amber-700">{rec.implementationComplexity}/100</span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                )
-              })}
-            </div>
-
-            <div className="space-y-4">
-              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-4">Pillar Scores</h3>
-                <div className="grid grid-cols-2 gap-3">
-                  {PILLARS.map(p => (
-                    <div key={p.key} className="flex flex-col items-center gap-1">
-                      <ScoreGauge score={pillarScores[p.key]} />
-                      <span className={`text-[10px] font-bold ${p.color}`}>{p.label}</span>
-                    </div>
-                  ))}
+        {activeTab === 'provisions' && (
+          <div className="space-y-3">
+            {PROVISIONS.map(p => (
+              <div key={p.id} className="p-5 rounded-xl border border-slate-200 bg-white">
+                <div className="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                  <h2 className="text-base font-black text-slate-900">{p.title}</h2>
+                  <span className="text-[11px] font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded">{p.when}</span>
                 </div>
+                <p className="text-sm text-slate-700 leading-relaxed">{p.what}</p>
+                {p.conditional && <p className="text-xs text-amber-800 mt-2"><strong>Condition:</strong> {p.conditional}</p>}
+                <p className="text-xs text-slate-500 mt-2"><strong>Status (Nov 2026):</strong> {p.status}</p>
               </div>
-              <div className="bg-white border border-slate-200 rounded-2xl p-5 space-y-3 text-sm">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">Financial Summary</h3>
-                <div className="flex justify-between"><span className="text-slate-600">Annual Cost</span><span className="font-black text-rose-700">${totalCostM}M</span></div>
-                <div className="flex justify-between"><span className="text-slate-600">Annual Savings</span><span className="font-black text-emerald-700">${totalSavingsM}M</span></div>
-                <div className="border-t border-slate-100 pt-3 flex justify-between">
-                  <span className="font-bold">Net Impact</span>
-                  <span className={`font-black ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</span>
-                </div>
-                <div className="flex justify-between"><span className="text-slate-600">Full Implementation</span><span className="font-bold">{maxTimeline} months</span></div>
-              </div>
-              {!selected.length && (
-                <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex gap-2">
-                  <ExclamationTriangleIcon className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-                  <p className="text-xs text-amber-800">Select provisions to see scores.</p>
-                </div>
-              )}
-            </div>
+            ))}
+            <p className="text-[11px] text-slate-500 pt-2">
+              Source: Act 68 of 2025 as enacted (legislature.vermont.gov); GMCB Act 68 update, February 17, 2026; GMCB
+              press releases. Related federal programs (the Rural Health Transformation Program, the former AHEAD agreement)
+              are not Act 68 provisions and are covered on their own pages.
+            </p>
           </div>
         )}
 
@@ -283,7 +205,7 @@ export default function VermontAct68SimulatorClient() {
               {HOSPITALS.map(h => (
                 <button key={h.id} onClick={() => setSelectedHospital(h.id)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${selectedHospital === h.id ? 'bg-rose-600 text-white border-rose-600' : 'bg-white text-slate-600 border-slate-200 hover:border-rose-300'}`}>
-                  {h.shortName}
+                  {h.name.replace(/ (Medical Center|Hospital and Health Center|Family Health & Hospital|Regional Hospital|Hospital)$/, '')}
                 </button>
               ))}
             </div>
@@ -292,19 +214,19 @@ export default function VermontAct68SimulatorClient() {
               <div className="flex flex-wrap justify-between gap-4 mb-6">
                 <div>
                   <h2 className="text-xl font-black text-slate-900">{hospital.name}</h2>
-                  <p className="text-sm text-slate-500">{hospital.city}, Vermont · {hospital.beds} beds{hospital.ruralAccess ? ' · Rural CAH' : ''}</p>
+                  <p className="text-sm text-slate-500">{hospital.city}, Vermont · {hospital.cah ? 'Critical access hospital' : 'Acute care (PPS) hospital'}{hospital.atRisk ? ' · on Oliver Wyman\'s at-risk list' : ''}</p>
                 </div>
-                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold self-start ${hospital.operatingMarginPct >= 0 ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}`}>
-                  {hospital.operatingMarginPct >= 0 ? '+' : ''}{hospital.operatingMarginPct}% margin
+                <span className={`px-3 py-1.5 rounded-lg text-xs font-bold self-start ${hospital.margin >= 0 ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'}`}>
+                  {hospital.margin >= 0 ? '+' : ''}{hospital.margin}% operating margin, 2023
                 </span>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {[
-                  { v: `$${hospital.annualRevenueM}M`, l: 'Annual Revenue' },
-                  { v: `${hospital.medicaidPct}%`, l: 'Medicaid Share' },
-                  { v: `${hospital.rbpReadinessScore}%`, l: 'RBP Readiness' },
-                  { v: `${hospital.globalBudgetReadiness}%`, l: 'Global Budget Readiness' },
+                  { v: hospital.opResultM <= 0 ? `+${fmtM(hospital.opResultM)}` : `−${fmtM(hospital.opResultM)}`, l: '2023 operating result (OW)' },
+                  { v: `${fmtM(hospital.fy28[0])}–${fmtM(hospital.fy28[1])}`, l: 'FY2028 projected loss (OW)' },
+                  { v: hospital.beds.toLocaleString(), l: 'Beds (CMS FY2023)' },
+                  { v: hospital.discharges.toLocaleString(), l: 'Discharges (CMS FY2023)' },
                 ].map(({ v, l }) => (
                   <div key={l} className="bg-slate-50 rounded-xl p-3 text-center border border-slate-100">
                     <div className="text-lg font-black text-slate-900">{v}</div>
@@ -314,123 +236,57 @@ export default function VermontAct68SimulatorClient() {
               </div>
 
               <div className="bg-violet-50 border border-violet-200 rounded-xl p-4">
-                <div className="text-sm font-bold text-violet-900 mb-1">Scenario Impact on {hospital.shortName}</div>
+                <div className="text-sm font-bold text-violet-900 mb-1">How Act 68 reaches {hospital.name.split(' ')[0] === 'University' ? 'UVM Medical Center' : hospital.name}</div>
                 <p className="text-xs text-violet-800 leading-relaxed">
-                  Under this scenario, {hospital.name} is projected to realize a net financial impact of{' '}
-                  <span className="font-black">{hospitalImpactM >= 0 ? '+' : ''}${hospitalImpactM.toFixed(1)}M annually</span> — scaled by
-                  this hospital&apos;s share of system revenue.
-                  RBP readiness of {hospital.rbpReadinessScore}% suggests {hospital.rbpReadinessScore >= 70 ? 'strong' : hospital.rbpReadinessScore >= 50 ? 'moderate' : 'limited'} capacity
-                  for FY2027 reference-based pricing implementation.
-                  {hospital.operatingMarginPct < -3 && ` Current margin of ${hospital.operatingMarginPct}% indicates this hospital requires immediate financial stabilization support.`}
-                  {hospital.ruralAccess && ' Rural access preservation standards are critical for this facility.'}
+                  Reference-based pricing applies to its commercial prices from HFY2028.{' '}
+                  {hospital.cah
+                    ? 'As a critical access hospital it is not in the first global-budget wave; Act 68 brings all hospitals under global budgets by HFY2030, resources permitting.'
+                    : 'As a non-critical-access hospital it is eligible for the first global-budget wave, beginning no later than HFY2028, resources permitting.'}
+                  {hospital.atRisk && ' Oliver Wyman named it among the four hospitals most at risk, so the transition path for its services matters as much as its budget.'}
                 </p>
               </div>
             </div>
+            <p className="text-[11px] text-slate-500">
+              Sources: Oliver Wyman, <em>Act 167 Community Engagement: Recommendations</em> (rev. Oct 21, 2024), per-hospital pages —
+              2023 operating margin and result, and FY2028 projected losses under 5% and 7–8% expense growth; CMS Hospital
+              Provider Cost Report, FY2023 — beds and discharges.
+            </p>
           </div>
         )}
 
         {activeTab === 'timeline' && (
-          <div className="space-y-4">
-            <h2 className="text-base font-black text-slate-900 mb-4">Act 68 Implementation Roadmap</h2>
-            {!selected.length ? (
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-center text-sm text-amber-800">
-                Select provisions in the Scenario Builder to see the timeline.
-              </div>
-            ) : (
-              <>
-                {selected.sort((a, b) => a.timelineMonths - b.timelineMonths).map(rec => {
-                  const w = (rec.timelineMonths / maxTimeline) * 100
-                  return (
-                    <div key={rec.id}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-xs font-bold text-slate-700">{rec.title}</span>
-                        <span className="text-[11px] text-slate-400">{rec.effectiveDate}</span>
-                      </div>
-                      <div className="h-6 bg-slate-100 rounded-full overflow-hidden">
-                        <div className={`h-full rounded-full flex items-center px-2 ${rec.mandated ? 'bg-rose-600' : 'bg-violet-500'}`} style={{ width: `${w}%` }}>
-                          <span className="text-[10px] font-bold text-white whitespace-nowrap overflow-hidden">{CAT_LABELS[rec.category]}</span>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-                <div className="flex justify-between text-[10px] text-slate-400 mt-2">
-                  <span>2025</span><span>Month {maxTimeline}</span>
-                </div>
-                <div className="flex gap-3 text-xs mt-1">
-                  <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-rose-600 inline-block" />Mandated</span>
-                  <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-violet-500 inline-block" />Optional</span>
-                </div>
-                <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 mt-4">
-                  <h3 className="font-black text-lg text-slate-900 mb-3">Scenario Summary</h3>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm">
-                    <div><div className="text-slate-500 text-xs mb-1">Provisions Selected</div><div className="font-black text-xl text-slate-900">{selected.length}</div></div>
-                    <div><div className="text-slate-500 text-xs mb-1">Full Implementation</div><div className="font-black text-xl text-slate-900">{maxTimeline} months</div></div>
-                    <div><div className="text-slate-500 text-xs mb-1">Net Annual Impact</div><div className={`font-black text-xl ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</div></div>
-                  </div>
-                </div>
-              </>
-            )}
+          <div>
+            <ol className="relative border-l-2 border-slate-200 ml-2 space-y-5">
+              {TIMELINE.map(t => (
+                <li key={t.date + t.event} className="ml-5">
+                  <span className={`absolute -left-[9px] w-4 h-4 rounded-full border-2 border-white ${t.kind === 'act68' ? 'bg-rose-600' : 'bg-slate-400'}`} />
+                  <div className="text-xs font-black text-slate-500">{t.date}</div>
+                  <div className="text-sm text-slate-800">{t.event}</div>
+                </li>
+              ))}
+            </ol>
+            <div className="flex gap-4 text-xs mt-6">
+              <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-rose-600 inline-block" />Act 68 requirement</span>
+              <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-slate-400 inline-block" />Related development</span>
+            </div>
           </div>
         )}
 
-        <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-3 pb-72 md:pb-64">
+        <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-3 pb-16">
           <Link href="/vermont-act-68" className="flex items-center gap-1.5 text-xs font-bold text-rose-700 bg-rose-50 border border-rose-200 px-3 py-1.5 rounded-lg hover:bg-rose-100 transition-colors">
             Vermont Act 68 Overview <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5" />
           </Link>
           <Link href="/vermont-act-167/simulator" className="flex items-center gap-1.5 text-xs font-bold text-violet-700 bg-violet-50 border border-violet-200 px-3 py-1.5 rounded-lg hover:bg-violet-100 transition-colors">
             Vermont Act 167 Simulator
           </Link>
+          <Link href="/read/chapter-06" className="flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg hover:bg-slate-200 transition-colors">
+            Book Chapter 6 — Economics pillar
+          </Link>
           <Link href="/htr-simulator" className="flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg hover:bg-slate-200 transition-colors">
             ← All Simulators
           </Link>
-          <Link href="/research-lab/policy-quality?tab=hr1-cliff" className="flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg hover:bg-slate-200 transition-colors">
-            H.R. 1 Cliff Scenario
-          </Link>
         </div>
       </div>
-
-      {/* Sticky scenario summary — pinned so live impact stays visible as
-          the user scrolls through provisions, hospitals, or the timeline. */}
-      <StickyOutputPanel
-        mode="bottom-collapsible"
-        show={selected.length > 0}
-        defaultCollapsed={true}
-        compactSummary={
-          <span className="flex items-center gap-3 flex-wrap text-[11px]">
-            <span className="font-black uppercase tracking-widest text-rose-700">Act 68 Impact</span>
-            <span className="text-slate-600">{selected.length} provisions</span>
-            <span className="text-rose-700">Cost ${totalCostM}M</span>
-            <span className="text-emerald-700">Savings ${totalSavingsM}M</span>
-            <span className={netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}>Net {netM >= 0 ? '+' : ''}${netM}M</span>
-            <span className="text-slate-600">{maxTimeline} mo</span>
-          </span>
-        }
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-3">Pillar Scores</h3>
-            <div className="grid grid-cols-5 gap-2">
-              {PILLARS.map(p => (
-                <div key={p.key} className="flex flex-col items-center gap-1">
-                  <ScoreGauge score={pillarScores[p.key]} />
-                  <span className={`text-[10px] font-bold ${p.color}`}>{p.label.split(' ')[0]}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="bg-white border border-slate-200 rounded-xl p-4 space-y-2 text-sm">
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-2">Financial Summary</h3>
-            <div className="flex justify-between"><span className="text-slate-600">Annual Cost</span><span className="font-black text-rose-700">${totalCostM}M</span></div>
-            <div className="flex justify-between"><span className="text-slate-600">Annual Savings</span><span className="font-black text-emerald-700">${totalSavingsM}M</span></div>
-            <div className="border-t border-slate-100 pt-2 flex justify-between">
-              <span className="font-bold">Net Impact</span>
-              <span className={`font-black ${netM >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>{netM >= 0 ? '+' : ''}${netM}M</span>
-            </div>
-            <div className="flex justify-between"><span className="text-slate-600">Full Implementation</span><span className="font-bold">{maxTimeline} mo</span></div>
-          </div>
-        </div>
-      </StickyOutputPanel>
     </div>
   )
 }

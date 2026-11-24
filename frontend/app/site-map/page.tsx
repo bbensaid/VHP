@@ -24,7 +24,7 @@ const sections = [
   {
     title: "Platform",
     links: [
-      { label: "State Performance Index", href: "/dashboard" },
+      { label: "State Dashboards", href: "/dashboard" },
       { label: "HTR Academy", href: "/academy" },
       { label: "Advisory Services", href: "/advisory" },
       { label: "Multimedia", href: "/multimedia" },

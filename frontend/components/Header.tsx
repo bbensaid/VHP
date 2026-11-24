@@ -413,10 +413,10 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
     { href: "/vermont-sdoh",                 label: "SDOH & Social Services",         desc: "Vermont's 8 SDOH domains, 2-1-1 Vermont, community action agencies — with clinical program connections" },
     { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },
     { href: "/vermont-act-68",               label: "Vermont Act 68 (2025)",           desc: "Next-generation VBC legislation & global budget reform" },
-    { href: "/vermont-act-68/simulator",     label: "Act 68 Simulator",               desc: "Model Act 68 financial scenarios for Vermont hospitals" },
+    { href: "/vermont-act-68/simulator",     label: "Act 68 Explorer",                desc: "Act 68 provisions, dates and sourced hospital baselines" },
     { href: "/ahead-model",                  label: "AHEAD Model",                    desc: "State total cost of care model — MD, CT, HI, RI, NY region" },
     { href: "/dashboard/vermont/hospitals",  label: "Vermont Hospital Profiles",      desc: "Financial & quality profiles for Vermont hospitals" },
-    { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Real-time bed availability & interfacility routing" },
+    { href: "/bed-capacity",                 label: "Bed Capacity & Transfer",        desc: "Bed counts and an interfacility-routing demonstration (no live feed)" },
     { href: "/vermont-legislative-resources", label: "Legislative Reports Library",   desc: "GMCB reports, AHS Act 68 monthly updates, Blueprint annual reports, House committee testimony" },
   ];
   const half = Math.ceil(vtPrograms.length / 2);
@@ -1053,7 +1053,7 @@ const Header = () => {
                   { label: "SDOH & Social Services", href: "/vermont-sdoh", sub: [] },
                   { label: "Vermont Act 167 (2022)", href: "/vermont-act-167", sub: [] },
                   { label: "Vermont Act 68 (2025)", href: "/vermont-act-68", sub: [] },
-                  { label: "Act 68 Simulator", href: "/vermont-act-68/simulator", sub: [] },
+                  { label: "Act 68 Explorer", href: "/vermont-act-68/simulator", sub: [] },
                   { label: "AHEAD Model", href: "/ahead-model", sub: [] },
                   { label: "Vermont Hospital Profiles", href: "/dashboard/vermont/hospitals", sub: [] },
                   { label: "Bed Capacity & Transfer", href: "/bed-capacity", sub: [] },

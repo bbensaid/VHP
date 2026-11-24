@@ -40,7 +40,7 @@ function getPillarFromPath(path: string): string | undefined {
 function getPageContext(path: string): string | undefined {
   if (!path || path === "/") return undefined;
 
-  // Hospital detail pages: /dashboard/vermont/hospitals/nvrh
+  // Hospital dashboard pages: /dashboard/vermont/hospitals
   const hospitalMatch = path.match(/\/dashboard\/([^/]+)\/hospitals\/([^/]+)/);
   if (hospitalMatch) {
     const state = hospitalMatch[1].replace(/-/g, " ");

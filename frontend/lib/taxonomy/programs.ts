@@ -31,7 +31,7 @@ export const PROGRAMS: readonly Program[] = [
   { id: "vermont-sdoh",                label: "SDOH & Social Services",          href: "/vermont-sdoh",                group: "Vermont Programs", pillars: ["equity"], chapters: ["10"] },
   { id: "vermont-act-167",             label: "Vermont Act 167 (2022)",          href: "/vermont-act-167",             group: "Vermont Programs", pillars: ["policy"], chapters: ["2"] },
   { id: "vermont-act-68",              label: "Vermont Act 68 (2025)",           href: "/vermont-act-68",              group: "Vermont Programs", pillars: ["policy"], chapters: ["2", "6", "16"] },
-  { id: "vermont-act-68-simulator",    label: "Act 68 Simulator",                href: "/vermont-act-68/simulator",    group: "Vermont Programs", pillars: ["policy", "economics"], chapters: ["1", "2"] },
+  { id: "vermont-act-68-simulator",    label: "Act 68 Explorer",                 href: "/vermont-act-68/simulator",    group: "Vermont Programs", pillars: ["policy", "economics"], chapters: ["1", "2"] },
   { id: "ahead-model",                 label: "AHEAD Model",                     href: "/ahead-model",                 group: "Vermont Programs", pillars: ["economics", "policy"], chapters: ["6", "13"] },
   { id: "vermont-rht-program",         label: "RHT Program ($195M + $190M)",     href: "/vermont-rht-program",         group: "Vermont Programs", pillars: ["policy", "operations"], chapters: ["2", "16"] },
   { id: "rht-review-vermont",          label: "RHT Year 1 Review (Vermont)",     href: "/rht-review/vermont",          group: "Vermont Programs", pillars: ["policy", "operations"], chapters: ["2", "16"] },

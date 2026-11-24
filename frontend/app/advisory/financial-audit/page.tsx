@@ -56,16 +56,16 @@ export default function FinancialAuditPage() {
           <h2 className="text-2xl font-bold mb-6">The Financial Reality Most CFOs Don&apos;t Want to Hear</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl font-black text-emerald-300 mb-2">$262B</div>
-              <p className="text-emerald-100 text-sm leading-relaxed">estimated annual revenue cycle loss for U.S. hospitals from underpayments, denials, and billing errors — per the American Hospital Association.</p>
+              <div className="text-3xl font-black text-emerald-300 mb-2">$265.6B</div>
+              <p className="text-emerald-100 text-sm leading-relaxed">estimated annual US health care spending lost to administrative complexity — the largest waste domain in Shrank, Rogstad and Parekh (JAMA, 2019).</p>
             </div>
             <div>
-              <div className="text-3xl font-black text-emerald-300 mb-2">11.1%</div>
-              <p className="text-emerald-100 text-sm leading-relaxed">median initial denial rate for hospitals in 2024, up 3x from a decade ago — and most organizations only appeal a fraction of those claims.</p>
+              <div className="text-3xl font-black text-emerald-300 mb-2">9 of 14</div>
+              <p className="text-emerald-100 text-sm leading-relaxed">Vermont hospitals operating at a loss in 2023, with 13 of 14 projected to be in loss by 2028 absent structural change (Oliver Wyman, Act 167 report).</p>
             </div>
             <div>
-              <div className="text-3xl font-black text-emerald-300 mb-2">3–7%</div>
-              <p className="text-emerald-100 text-sm leading-relaxed">typical revenue improvement HTR Advisory clients achieve within 90 days of implementing our revenue cycle recommendations.</p>
+              <div className="text-3xl font-black text-emerald-300 mb-2">−2.9%</div>
+              <p className="text-emerald-100 text-sm leading-relaxed">statewide change in Vermont commercial hospital rates ordered in the GMCB&apos;s FY2027 budget decisions (September 2026).</p>
             </div>
           </div>
           <p className="mt-8 text-emerald-200 text-sm">

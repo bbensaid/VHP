@@ -5,26 +5,31 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
+// Rewritten 2026-11-23. The earlier FAQ described a "Performance Index" that is not
+// computed, subscriber alerts and an index archive that do not exist, ACHE/CME/CNE
+// credit that HTR is not accredited to award, and analyst credentials (expert witness,
+// ACHE/HIMSS keynotes) with no record behind them. Rule: every answer must be true of
+// the platform as it ships, or point to a page where the reader can check it.
 const faqs = [
   {
     category: "Platform & Access",
     icon: "🔑",
     items: [
       {
-        q: "Is HTR content free to access?",
-        a: "We operate on a freemium model. Core news and public policy briefs are free to all registered users. Deep-dive economic models, Clinical and Equity research, Performance Index sub-metric data, and HTR Academy masterclasses require a paid plan — Subscriber, Student, or Professional (see Pricing).",
+        q: "What is Health Transformation Review?",
+        a: "An integrated ecosystem built on one book. The book (16 chapters, readable online, as audio, and as a PDF) sets out the five-pillar framework and applies it to Vermont's reform. The Academy turns it into 25 courses. The Research Lab offers more than thirty interactive tools — calculators, simulators and evidence libraries — tagged to the chapters they support. Around them sit the RHT Program Review, policy briefings, Vermont program pages and the AI Analyst.",
       },
       {
-        q: "Do you offer enterprise licenses for health systems and payer organizations?",
-        a: "Yes. Enterprise licenses provide multi-seat access, white-labeled reporting, custom API data feeds, quarterly analyst briefings, and priority advisory support. Contact our team at {CONTACT} for a customized proposal.",
+        q: "Who can use the platform today?",
+        a: "The platform is in an invitation-only testing phase. Access is by access code; features and content may change while testing continues. To request access, write to {CONTACT}.",
       },
       {
-        q: "Can I access historical Performance Index data?",
-        a: "Historical Index data — including year-over-year scoring changes by state and pillar — is available on paid plans. The full 2021–2026 data archive is accessible via the State Dashboard with subscription authentication.",
+        q: "What does it cost?",
+        a: "Plans and prices are listed on the Pricing page.",
       },
       {
-        q: "Is there a mobile app?",
-        a: "HTR is fully responsive and optimized for mobile browsers. A native app is on our 2026 roadmap. Paid subscribers receive real-time alert notifications via email when a state's Index status changes.",
+        q: "Does the Academy award continuing-education credit?",
+        a: "No. HTR is not an accredited provider of CME, CNE or ACHE credit. Academy courses issue an HTR completion certificate, which can be verified online, but it is not a continuing-education credit.",
       },
     ],
   },
@@ -33,82 +38,34 @@ const faqs = [
     icon: "🏛️",
     items: [
       {
-        q: "Why does HTR use five pillars instead of fewer?",
-        a: "Because health system transformation fails along five distinct structural fault lines — not three. Policy determines what is permissible. Technology determines what is possible. Economics determines what is sustainable. Clinical determines what is effective. Operations determines whether it can be executed at scale. They are load-bearing in that order: the later pillars rest on the ones built before them. A transformation analysis that skips any of these five questions is not incomplete — it is dangerous. Each pillar has its own sub-metrics, weighting, and dedicated principal analyst.",
+        q: "Why five pillars?",
+        a: "Because health system transformation fails along five distinct structural fault lines. Policy determines what is permissible. Technology determines what is possible. Economics determines what is sustainable. Clinical determines what is effective. Operations determines whether it can be executed at scale. They are load-bearing in that order: the later pillars rest on the ones built before them. Chapter 1 of the book sets out the dependencies and the execution sequence.",
       },
       {
         q: "What are the five pillars, their guiding questions, and the Equity Imperative?",
-        a: "Policy ('Is it permissible?') — Regulation, legislation, and governance. Technology ('Is it possible?') — AI, digital health, and infrastructure. Economics ('Is it sustainable?') — Value-based care, workforce investment, and market dynamics. Clinical ('Is it effective?') — Evidence-based care models and population health. Operations ('Is it executable?') — Revenue cycle, workforce capacity, compliance infrastructure, and supply chain readiness. The Equity Imperative ('Is it just?') is not a sixth pillar — it is the test applied to each of the five: SDOH integration, algorithmic bias, and access disparity, checked at every stage.",
+        a: "Policy ('Is it permissible?') — regulation, legislation and governance. Technology ('Is it possible?') — data infrastructure, interoperability and AI. Economics ('Is it sustainable?') — payment models, budgets and pricing. Clinical ('Is it effective?') — care models, quality and population health. Operations ('Is it executable?') — workforce, revenue cycle, compliance and execution capacity. The Equity Imperative ('Is it just?') is not a sixth pillar: it is the test applied to each of the five.",
       },
       {
-        q: "Does HTR cover all five pillars equally in its content library?",
-        a: "Our goal is full coverage across all five pillars. Policy and Economics have the deepest content archives. Technology coverage is extensive, with particular depth in AI deployment and digital health. Clinical has a dedicated research pipeline producing quarterly deep-dive reports. Operations coverage focuses on revenue cycle performance, workforce capacity, compliance infrastructure, and supply chain readiness. The Equity Imperative has its own dedicated research pipeline and principal analyst, since it is checked against every pillar's output rather than reported on in isolation. All five pillars have dedicated principal analysts and quarterly publication schedules.",
-      },
-      {
-        q: "How does the Equity Imperative differ from existing diversity reporting?",
-        a: "The HTR Equity Imperative is analytical, not performative. We do not publish diversity dashboards or benchmark representation statistics. Our equity coverage focuses on three measurable structural issues: SDOH data integration quality and referral completion rates, algorithmic bias in AI clinical tools deployed in rural settings, and the rural-urban mortality and hospitalization disparity gap. Every metric is tied to a specific intervention category that health system leaders can act on — and applied as a check against every pillar's analysis, not published as a standalone scorecard.",
+        q: "Is HTR a scoring index or a ranking of states?",
+        a: "No. HTR does not compute a composite score or rank states. The state dashboards show published indicators, each with its source and year; the Methodology page lists them. Where the platform assesses readiness — for example, Vermont's pillar gates — it shows the evidence for each judgement rather than a number.",
       },
     ],
   },
   {
-    category: "The Performance Index",
-    icon: "📊",
-    items: [
-      {
-        q: "How often is the Performance Index updated?",
-        a: "The composite Index score is updated quarterly for all 50 states. Sub-metrics that draw from real-time data sources — including telehealth policy changes and broadband coverage — are updated as source data is released. Annual recalibration of pillar weights occurs each January based on the prior year's evidence review.",
-      },
-      {
-        q: "Can a state's status tier change mid-year?",
-        a: "Yes. Status tier changes — from Improving to Stable, for example — can occur at any quarterly update. When a significant change occurs, the state's Dashboard page is flagged and subscribers receive an alert. We document the specific sub-metric driver of every tier change in the changelog.",
-      },
-      {
-        q: "How does the Equity Imperative factor into a state's Index score, if it isn't one of the weighted pillars?",
-        a: "It isn't a weighted line item, by design — a state can't buy back a justice failure by scoring well elsewhere. The Index score is built from the five pillar weights (see the Methodology page for the current formula), and the Equity Imperative is applied afterward as a check against the result: where equity sub-metrics — particularly the algorithmic disparity index — show a state's transformation is widening disparities, the Dashboard flags that explicitly rather than folding it into a single blended number. Equity sub-metric reporting infrastructure is still inconsistent across roughly 20% of states; closing that gap is a 2027 Index priority.",
-      },
-      {
-        q: "How do you handle states with missing data in a sub-metric?",
-        a: "When a state lacks data for a specific sub-metric, we apply the national median for that metric as a conservative placeholder and flag the state's Dashboard card with a data quality indicator. Missing data does not exclude a state from the Index; it downgrades the confidence rating for that specific sub-metric score.",
-      },
-    ],
-  },
-  {
-    category: "Editorial Standards",
+    category: "Sources and Standards",
     icon: "🛡️",
     items: [
       {
-        q: "Is HTR funded by pharmaceutical companies, technology vendors, or health lobbies?",
-        a: "No. HTR maintains strict editorial independence. Revenue is derived solely from subscriptions and academy masterclass enrollment. We do not accept sponsored content, vendor-funded research, or affiliate arrangements that could influence our assessments. Our advisory engagements are disclosed when relevant to content.",
+        q: "Where do the numbers come from?",
+        a: "From primary and published sources that are named where the number appears — CMS and other federal data, state statutes and agency reports (in Vermont, the Green Mountain Care Board and the Agency of Human Services), peer-reviewed studies, and the Oliver Wyman Act 167 report. Teaching tools that use illustrative inputs say so on the page. The Methodology page describes the state indicators.",
       },
       {
-        q: "How do you source your data?",
-        a: "Primary sources include CMS cost reports and quality payment program data, HRSA Area Health Resources Files, FCC broadband data, ONC Health IT Dashboard, CDC WONDER and BRFSS databases, HHS Office for Civil Rights enforcement records, and state legislative tracking databases. We use proprietary normalization methodology to make data comparable across states. Full source documentation is available on the Methodology page.",
+        q: "What happens when a fact changes or is wrong?",
+        a: "It is corrected. The platform is reviewed against current sources, and content that cannot be confirmed is removed rather than kept. If you find an error, write to {CONTACT} with the page and the source.",
       },
       {
-        q: "How does HTR handle disagreements between data sources?",
-        a: "When primary sources conflict, we document both values and apply a disclosed adjudication methodology — typically weighting the source with broader geographic coverage or more recent collection date. We publish our adjudication decisions in the Index changelog, which is publicly accessible.",
-      },
-      {
-        q: "Does HTR publish political viewpoints?",
-        a: "No. HTR analysis is non-partisan by design. Our editorial standard requires that policy analysis presents the evidence — including evidence that challenges prevailing political positions from any direction — without advocacy. We cover CMS rulemaking, state legislation, and federal appropriations purely through the lens of their measurable impact on the five pillar dimensions and the Equity Imperative.",
-      },
-    ],
-  },
-  {
-    category: "Advisory Services",
-    icon: "🤝",
-    items: [
-      {
-        q: "Can I engage HTR analysts for a custom research project?",
-        a: "Yes. Our Advisory practice engages health systems, payer organizations, investment firms, and government agencies on custom research sprints of 4–8 weeks. Typical engagements cover market sizing, policy impact analysis, technology due diligence, and value-based contract modeling. Submit an inquiry at {CONTACT} or through the Contact page.",
-      },
-      {
-        q: "Do HTR analysts serve as expert witnesses or keynote speakers?",
-        a: "Yes to both. Our principal analysts have served as expert witnesses in regulatory proceedings and as keynote speakers at ACHE, HIMSS, and state hospital association events. Availability is managed through our Advisory practice. Typical speaker lead time is 6–8 weeks.",
-      },
-      {
-        q: "Does engaging HTR Advisory affect the editorial independence of Index coverage for my organization's state?",
-        a: "No. Advisory clients are not identified in our editorial content, and client engagements have no influence on state Performance Index scores. The Index is produced independently by our research team under a firewall from Advisory operations.",
+        q: "Does HTR take political positions?",
+        a: "No. As the book's Preface puts it, it is not a policy brief for or against any particular agenda. Analysis presents the evidence — including evidence that cuts against prevailing positions — through the five pillars and the Equity Imperative.",
       },
     ],
   },
@@ -117,16 +74,22 @@ const faqs = [
     icon: "🎓",
     items: [
       {
-        q: "What is HTR Academy?",
-        a: "HTR Academy is our executive education platform offering masterclasses, faculty-led webinars, a searchable case study library, and a professional glossary. Masterclasses are designed for C-suite and VP-level healthcare leaders and typically run 4–6 hours across asynchronous modules. Academy courses are included in the Student and Professional plans (see Pricing).",
+        q: "What is the HTR Academy?",
+        a: "The learning arm of the platform: 25 self-paced courses organised into tracks and lessons, each tied to the book chapter it teaches. Courses include quizzes and progress tracking, and finishing a course issues a completion certificate.",
       },
       {
-        q: "Do Academy masterclasses include continuing education credits?",
-        a: "Selected masterclasses are eligible for ACHE Qualified Education credits and state CME/CNE credits depending on content. Credit eligibility is noted on each course listing. We are expanding CE credit partnerships through 2026.",
+        q: "How do Academy courses relate to the book?",
+        a: "Each course names its source chapter, and each chapter's 'Work This Chapter on the Platform' section points to the courses and Research Lab tools that apply it.",
       },
+    ],
+  },
+  {
+    category: "Working With HTR",
+    icon: "🤝",
+    items: [
       {
-        q: "Can my organization sponsor a custom masterclass for our leadership team?",
-        a: "Yes. Enterprise subscribers can commission custom Academy content — including white-labeled masterclasses built around their specific state, market, or strategic challenge. Delivery can be asynchronous, live virtual, or in-person. Contact {CONTACT} for a proposal.",
+        q: "Can HTR support my organization's transformation work?",
+        a: "Yes — write to {CONTACT} with a short description of the question you are working on. The book's chapters and the Research Lab tools are a good way to frame it first.",
       },
     ],
   },
@@ -188,7 +151,7 @@ export default function FAQPage() {
             <span className="text-indigo-400">Questions</span>
           </h1>
           <p className="ty-hero text-slate-300 max-w-2xl leading-relaxed">
-            Everything you need to know about our methodology, the five-pillar framework, membership tiers, and how to engage our advisory team.
+            What the platform is, where its numbers come from, how the five-pillar framework works, and how to reach us.
           </p>
         </div>
       </section>

@@ -89,12 +89,12 @@ const PodcastsTab = () => (
 );
 
 const LIBRARY_CATEGORIES = [
-  { emoji: "📋", label: "Policy Briefs", count: "Planned 2026", desc: "Downloadable PDF briefs on CMS rule-making, state Medicaid policy, and legislative analysis." },
-  { emoji: "📊", label: "Data Reports", count: "Planned 2026", desc: "State-level data reports, benchmarking analyses, and research findings from the HTR Index." },
-  { emoji: "🎓", label: "Webinar Recordings", count: "Available now", desc: "Full recordings from HTR webinars and expert sessions.", href: "/academy/webinars" },
+  { emoji: "📋", label: "Policy Briefs", count: "Available now", desc: "Sourced policy briefs on Medicaid, Medicare, interoperability, rural hospitals and Vermont reform.", href: "/research-lab/knowledge-workspace?tab=evidence" },
+  { emoji: "📊", label: "RHT Program Review", count: "Available now", desc: "State-by-state review of the Rural Health Transformation Program — awards, funded projects and recipients.", href: "/rht-review" },
+  { emoji: "🎓", label: "Webinar Recordings", count: "Planned", desc: "Recordings of HTR webinars and expert sessions, once the series begins." },
   { emoji: "📖", label: "Case Studies", count: "Available now", desc: "In-depth case studies on health system transformation initiatives.", href: "/academy/case-studies" },
-  { emoji: "🗒️", label: "White Papers", count: "Planned 2026", desc: "Long-form analytical papers on Five-Pillar topics, co-authored with academic and policy partners." },
-  { emoji: "🔬", label: "Research Summaries", count: "Planned 2026", desc: "Structured summaries of peer-reviewed research relevant to health system transformation." },
+  { emoji: "🗒️", label: "White Papers", count: "Planned", desc: "Long-form analytical papers on Five-Pillar topics, co-authored with academic and policy partners." },
+  { emoji: "🔬", label: "Research Summaries", count: "Planned", desc: "Structured summaries of peer-reviewed research relevant to health system transformation." },
 ];
 
 const INTERACTIVE_TOOLS = [

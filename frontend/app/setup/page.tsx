@@ -19,8 +19,6 @@ const PAGES = [
   { href: '/values',     icon: BuildingLibraryIcon, label: 'Values',     desc: 'Core values and guiding principles.',      color: 'text-violet-700', bg: 'bg-violet-50', border: 'border-violet-200', hover: 'hover:border-violet-400' },
   { href: '/pricing',    icon: CurrencyDollarIcon,  label: 'Pricing',    desc: 'Subscription tiers and pricing.',          color: 'text-emerald-700',bg: 'bg-emerald-50',border: 'border-emerald-200',hover: 'hover:border-emerald-400'},
   { href: '/upgrade',    icon: ArrowUpCircleIcon,   label: 'Upgrade',    desc: 'Subscription upgrade flow.',               color: 'text-amber-700',  bg: 'bg-amber-50',  border: 'border-amber-200',  hover: 'hover:border-amber-400'  },
-  { href: '/htr-index',  icon: ChartBarIcon,        label: 'HTR Index',  desc: 'Health Transformation Readiness Index.',   color: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-200', hover: 'hover:border-indigo-400' },
-  { href: '/developers', icon: CodeBracketIcon,     label: 'Developers', desc: 'Developer API documentation.',             color: 'text-slate-700',  bg: 'bg-slate-50',  border: 'border-slate-200',  hover: 'hover:border-slate-400'  },
 ]
 
 export default function SetupPage() {

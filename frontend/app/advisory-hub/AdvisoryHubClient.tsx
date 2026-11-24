@@ -75,7 +75,7 @@ const SERVICES = [
     href: '/advisory/financial-audit',
     icon: '💰',
     label: 'Financial & Actuarial Audit',
-    desc: 'MLR analysis, HCC risk adjustment validation, TCOC benchmarking, IBNR reserve analysis, and actuarial value certification. Credentialed actuaries, not analysts playing actuarial.',
+    desc: 'MLR analysis, HCC risk adjustment validation, TCOC benchmarking, and IBNR reserve analysis. Work requiring an actuarial opinion is referred to a credentialed actuary.',
     pillars: ['Economics'],
     accentBg: 'bg-green-50',
     accentBorder: 'border-green-200',

@@ -95,7 +95,7 @@ export default function TrainingPage() {
             Training & Executive <span className="text-purple-600">Education</span>
           </h1>
           <p className="ty-hero text-slate-600 max-w-3xl leading-relaxed mb-8">
-            Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same frameworks we use in live engagements. Taught by <strong>practitioners, not academics</strong> — across all five pillars.
+            Healthcare-specific professional development that bridges the gap between policy awareness and operational execution. Built on the same five-pillar framework as the book and the Academy, across all five pillars.
           </p>
           <div className="flex flex-wrap gap-3">
             {service.clientTypes.map((ct) => (

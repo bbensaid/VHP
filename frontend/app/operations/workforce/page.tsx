@@ -52,13 +52,13 @@ export default function WorkforcePage() {
           <div className="space-y-5">
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
               <p className="text-[11px] font-black uppercase tracking-widest text-amber-700 mb-2">The Execution Ceiling</p>
-              <p className="text-3xl font-black text-slate-900 mb-2">20%+</p>
-              <p className="ty-body text-slate-600 leading-relaxed">Nursing vacancy rates in many rural and safety-net markets. A transformation that assumes full workforce capacity to implement new models will fail before it launches in high-vacancy markets.</p>
+              <p className="text-3xl font-black text-slate-900 mb-2">13%</p>
+              <p className="ty-body text-slate-600 leading-relaxed">HRSA's projected registered-nurse shortage in nonmetro areas in 2037 — more than twice the 6% national figure. A transformation that assumes full workforce capacity to implement new models will fail before it launches where the gap is deepest.</p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">HTR Index Metric</p>
+              <p className="text-[11px] font-black uppercase tracking-widest text-slate-500 mb-2">What to Measure</p>
               <p className="font-black text-slate-900 mb-1">Workforce Operational Readiness</p>
-              <p className="ty-body text-slate-600 leading-relaxed">Composite of clinical staff vacancy rates, turnover, and credentialing cycle times. Sourced from HRSA workforce data and ACHE operational surveys. Weight: 0.05 in the HTR Performance Index.</p>
+              <p className="ty-body text-slate-600 leading-relaxed">Clinical vacancy rates, turnover and credentialing cycle times for the specific units a new care model depends on — tracked before launch, not after.</p>
             </div>
           </div>
         </div>

@@ -41,7 +41,7 @@ export const PLANS = {
   },
   professional: {
     name: "Professional",
-    description: "All Student features plus certification tracks and CME credits.",
+    description: "All Student features plus certification tracks and advanced analytics.",
     priceMonthly: process.env.STRIPE_PRICE_PROFESSIONAL_MONTHLY!,
     priceYearly: process.env.STRIPE_PRICE_PROFESSIONAL_YEARLY!,
     role: "professional" as const,

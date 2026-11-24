@@ -80,7 +80,6 @@ export const COMMANDS: CommandItem[] = [
   { id: "act-1", title: "Start new conversation", category: "Actions", href: "/chat", icon: ChatBubbleLeftRightIcon },
   { id: "act-2", title: "Upgrade plan", category: "Actions", href: "/pricing", icon: CreditCardIcon },
   { id: "act-3", title: "View saved articles", category: "Actions", href: "/account/bookmarks", icon: BookmarkIcon },
-  { id: "act-4", title: "Take annual survey", category: "Actions", href: "/survey", icon: ClipboardDocumentListIcon },
   // Launch Tool
   { id: "tool-1", title: "Open APM Calculator", category: "Launch Tool", href: "/research-lab?tool=apm", icon: WrenchScrewdriverIcon },
   { id: "tool-2", title: "Open CEA Calculator", category: "Launch Tool", href: "/research-lab?tool=cea", icon: WrenchScrewdriverIcon },
