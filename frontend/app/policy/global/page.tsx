@@ -74,7 +74,7 @@ function GlobalPolicyBody() {
             title: "International Drug Pricing Models",
             items: [
               "AMNOG (Germany): new drugs assessed for added benefit vs. standard of care — negotiated price or reference pricing",
-              "NICE (UK): cost-effectiveness threshold, historically £20,000–£30,000 per QALY",
+              "NICE (UK): cost-effectiveness threshold of £25,000–£35,000 per QALY from April 2026, up from £20,000–£30,000 — the first change in about two decades",
               "HTA (Health Technology Assessment): France, Germany, Australia all use HTA gating for formulary entry",
               "Reference pricing: many countries set drug prices against a basket of peer nations",
               "IRA drug negotiation: the first US Medicare price negotiation — 10 drugs from 2026 at 38%–79% below list (CMS)",

@@ -20,12 +20,15 @@ const CONDITION_PRESETS = [
   { label: "Pharmacogenomics-Guided Prescribing", costPerPatient: 2400, efficacyRate: 48, qalyGain: 0.16 },
 ];
 
-// WTP thresholds (USD/QALY)
+// WTP thresholds (USD/QALY). NICE's range rose to £25k–£35k per QALY from April 2026
+// (NICE, "Changes to NICE's cost-effectiveness thresholds confirmed"); converted at
+// roughly $1.30/£. Medicare has no QALY threshold — Social Security Act §1182 bars
+// it from using one — so the top band is ICER's highest reporting threshold.
 const WTP_THRESHOLDS = [
-  { label: "NICE (UK, upper bound ≈£30k)", value: 30000, color: "text-emerald-600" },
+  { label: "NICE (UK, upper £35k ≈ $45k)", value: 45000, color: "text-emerald-600" },
   { label: "ICER Standard", value: 100000, color: "text-sky-600" },
   { label: "ICER High", value: 150000, color: "text-amber-600" },
-  { label: "CMS Informal", value: 200000, color: "text-rose-600" },
+  { label: "ICER upper reporting band", value: 200000, color: "text-rose-600" },
 ];
 
 function fmt(n: number, decimals = 0) {
@@ -94,10 +97,10 @@ export default function CEACalculator() {
   const icerStatus = () => {
     const v = results.icer;
     if (!isFinite(v) || v <= 0) return { label: "Not Calculable", color: "text-slate-400", bg: "bg-slate-50 border-slate-200" };
-    if (v < 30000)  return { label: "Highly Cost-Effective", color: "text-emerald-700", bg: "bg-emerald-50 border-emerald-200" };
+    if (v < 45000)  return { label: "Highly Cost-Effective", color: "text-emerald-700", bg: "bg-emerald-50 border-emerald-200" };
     if (v < 100000) return { label: "Cost-Effective (ICER Standard)", color: "text-sky-700", bg: "bg-sky-50 border-sky-200" };
     if (v < 150000) return { label: "Borderline — Requires Justification", color: "text-amber-700", bg: "bg-amber-50 border-amber-200" };
-    if (v < 200000) return { label: "High Cost — CMS Informal Threshold", color: "text-orange-700", bg: "bg-orange-50 border-orange-200" };
+    if (v < 200000) return { label: "High Cost — Above ICER's $150k Range", color: "text-orange-700", bg: "bg-orange-50 border-orange-200" };
     return { label: "Not Cost-Effective at Standard Thresholds", color: "text-rose-700", bg: "bg-rose-50 border-rose-200" };
   };
 

@@ -505,10 +505,10 @@ const EQUITY_WEIGHTS = [
 ];
 
 const WTP_THRESHOLDS_ICER = [
-  { label: "NICE (UK)",     value: 30_000,  color: "text-emerald-600" },
+  { label: "NICE (UK, £35k ≈ $45k)", value: 45_000, color: "text-emerald-600" },
   { label: "ICER Standard", value: 100_000, color: "text-sky-600"     },
   { label: "ICER High",     value: 150_000, color: "text-amber-600"   },
-  { label: "CMS Informal",  value: 200_000, color: "text-rose-600"    },
+  { label: "ICER upper band", value: 200_000, color: "text-rose-600"  },
 ];
 
 // ─── Sub-component: tooltip pill ──────────────────────────────────────────────
