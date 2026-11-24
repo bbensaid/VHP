@@ -1,139 +1,90 @@
 "use client";
 
-import { RECOMMENDATIONS } from "../data";
-import { Badge, InfoCard, MetricCard } from "../atoms";
-import { StickyOutputPanel } from "@/components/StickyOutputPanel";
+import { Badge, InfoCard } from "../atoms";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// TAB 8: IMPLEMENTATION ROADMAP
+// TAB 8: IMPLEMENTATION — rebuilt 2026-11-23.
+//
+// The previous "roadmap" scheduled events that did not happen and contradicted the
+// source: "Complete Springfield REH conversion (2026)", "Grace Cottage REH + FQHC"
+// (Oliver Wyman judged an REH likely not supportable for Springfield in its worst case
+// and did not recommend one for Grace Cottage), "VITL mandatory participation law
+// effective FY2026" (no such law), "25 kiosks", "6-site mental health network", plus a
+// "$133M invest / $199M savings" summary with no source.
+//
+// Now: Oliver Wyman's own illustrative action timeline (Recommendations, rev. Jan 31,
+// 2025, p.121 — "the runway to change will take at least 4–5 years"), its "no regrets"
+// moves (p.65) verbatim in substance, and what has verifiably happened since.
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function ImplementationRoadmap({ selectedRecs }: { selectedRecs: Set<string> }) {
-  const activeRecs = selectedRecs.size > 0
-    ? RECOMMENDATIONS.filter((r) => selectedRecs.has(r.id))
-    : RECOMMENDATIONS;
+const OW_TIMELINE: { track: string; actions: string[] }[] = [
+  { track: "Licensure & training", actions: ["Revise licensure for mental-health professionals, pharmacists and APRNs", "Conduct EMS transformation", "Enhance local training programs and increase workforce pathways"] },
+  { track: "IT infrastructure", actions: ["Improve rural internet coverage", "Improve VITL clinical data access", "Embed an upgraded EMR system in each provider office's workflow"] },
+  { track: "Service re-alignment", actions: ["Realign health care services to HSA boundaries", "Devise an AHS service-coordination plan", "DHMC and UVM to codify clinic notes"] },
+  { track: "Funding alignment", actions: ["State-facilitated regionalization discussions", "Reimbursement redesign", "Implement a primary-care incentive change for FY27", "Begin the movement to reference-based pricing", "Improve the CON process"] },
+  { track: "Hospital actions", actions: ["Conduct transformation — e.g. EMR integration, workforce re-allocation, embedded referral procedures"] },
+  { track: "State agency & legislative actions", actions: ["Approve increased care capacity and funding for mental health, long-term care and telehealth", "Devise and test a primary-care / hospital incentive alignment model", "Obtain a federal waiver, if any is needed", "Approve zoning/environmental changes and funding for EMS transformation", "Build low-income and group housing"] },
+];
 
-  const phases = [
-    {
-      phase: "Phase 1: Foundation", period: "2025 (Year 1)", color: "border-violet-400",
-      actions: [
-        "Establish AHS/GMCB Project Management Office",
-        "Pass EMS regionalization legislation (2025 session)",
-        "Apply for CMS REH designations (Springfield, Grace Cottage)",
-        "Deploy Starlink broadband to all EMS vehicles",
-        "Launch VITL governance restructuring",
-        "Engage communities — Springfield, Gifford, North Country, Grace Cottage",
-        "Deploy PMO analytics platform",
-        "Establish Vermont Hospital Collaborative Corporation (consortium)",
-        "Issue RFP for shared services (laundry, radiology, IT)",
-      ],
-    },
-    {
-      phase: "Phase 2: Restructuring", period: "2026 (Year 2)", color: "border-rose-400",
-      actions: [
-        "Complete Springfield REH conversion",
-        "Complete Grace Cottage REH + FQHC co-location",
-        "Begin Gifford inpatient-to-mental-health conversion",
-        "VITL mandatory participation law effective (FY2026 target)",
-        "Launch 25 telehealth kiosks in community sites",
-        "Establish shared services consortium operational",
-        "Begin North Country CACC planning and community engagement",
-        "Deploy hospital-level telehealth ED backup platforms",
-        "Launch EMS advanced paramedicine program",
-      ],
-    },
-    {
-      phase: "Phase 3: Regionalization", period: "2027 (Year 3)", color: "border-blue-400",
-      actions: [
-        "Complete North Country CACC conversion",
-        "Designate and operationalize Surgical COE network",
-        "Mental Health COE network fully operational (6 sites)",
-        "VITL pharmacy data integration complete",
-        "Hospital-at-Home program launch (UVMMC + partners)",
-        "Begin reference-based pricing pilot with GMCB + payers",
-        "UVMMC external consultancy engagement complete",
-        "Rural health workforce pipeline programs launched",
-        "Statewide nurse pool fully operational",
-      ],
-    },
-    {
-      phase: "Phase 4: Transformation", period: "2028–2029", color: "border-emerald-400",
-      actions: [
-        "Reference-based pricing fully implemented across all payers",
-        "UVMMC administrative cost reduction targets achieved",
-        "VITL 2.0 full deployment with API ecosystem",
-        "ED-at-Home pilot evaluation and expansion decision",
-        "Statewide Health Care Delivery Strategic Plan due (on or before Jan 15, 2028)",
-        "Elder care COE network established and operational",
-        "Statewide medical transportation network complete",
-        "Equity scorecard published — progress against baseline",
-        "Financial sustainability review — all 14 hospitals",
-      ],
-    },
-  ];
+const SINCE: { when: string; what: string }[] = [
+  { when: "Jun 2025", what: "Act 68 enacted: reference-based pricing, hospital global budgets, the Statewide Health Care Delivery Strategic Plan, and AHS-led hospital transformation planning." },
+  { when: "Jan 2026", what: "Hospital transformation plans drafted with technical assistance; AHS reports all 14 hospitals engaged across five regions." },
+  { when: "Apr 2026", what: "AHS reports hospitals executing plans — shared purchasing and administrative services, telehealth and remote monitoring, mobile integrated health, hospice partnerships, transfer-back coordination." },
+  { when: "Jul 2026", what: "Vermont withdraws from AHEAD; CMS rules the Medicaid hospital global budget not approved under Global Commitment." },
+  { when: "Sep 2026", what: "GMCB FY2027 budget orders cut commercial rates 2.9% statewide." },
+  { when: "2027 → HFY2028", what: "GMCB sets the RBP methodology by rule; maximum rates and the first global budgets from hospital FY2028." },
+  { when: "Jan 15, 2028", what: "Statewide Health Care Delivery Strategic Plan due." },
+];
 
-  const criticalDependencies = [
-    { from: "EMS Regionalization", to: "Hospital Restructuring (4 sites)", reason: "Safety prerequisite" },
-    { from: "Transportation Investment", to: "Hospital Restructuring (4 sites)", reason: "Equity prerequisite" },
-    { from: "VITL Modernization", to: "Hospital-at-Home", reason: "Real-time data required" },
-    { from: "AHS/GMCB PMO", to: "All recommendations", reason: "Coordination prerequisite" },
-    { from: "Community Engagement", to: "Hospital Restructuring", reason: "Legislative/political requirement" },
-    { from: "Reference-Based Pricing", to: "UVMMC Cost Reform", reason: "Revenue pressure drives change" },
-  ];
+const NO_REGRETS = [
+  { title: "Expand access", actions: ["Expand rural outreach programs for primary care and preventive services", "Expand telehealth for emergency, urgent care and specialists", "Establish programs for high-needs groups (e.g. health at home, PACE)"] },
+  { title: "Manage costs", actions: ["Use consortiums to increase purchasing power and economies of scale — back office, specialty physician group, statewide nurse pool"] },
+  { title: "Prepare for future redesign", actions: ["Develop capability for remote monitoring and patient follow-up", "Develop regionalized EMS transportation and enhance patient transportation (Medicare waivers are available)"] },
+];
 
+const DEPENDENCIES = [
+  { from: "EMS regionalization", to: "Inpatient restructuring", reason: "Safety prerequisite" },
+  { from: "Transportation investment", to: "Inpatient restructuring", reason: "Equity prerequisite" },
+  { from: "Clinical data access (VITL)", to: "Care at home", reason: "Real-time data required" },
+  { from: "Project management office", to: "All recommendations", reason: "Coordination prerequisite" },
+  { from: "Community engagement", to: "Service changes", reason: "Legitimacy requirement" },
+];
+
+export function ImplementationRoadmap({ selectedRecs: _selectedRecs }: { selectedRecs: Set<string> }) {
   return (
-    <div className="space-y-6 pb-72 md:pb-64">
-      {/* Sticky implementation summary — pinned so phase counts stay visible
-          as the user scrolls through the long phase blocks below. */}
-      <StickyOutputPanel
-        mode="bottom-collapsible"
-        defaultCollapsed={true}
-        compactSummary={
-          <span className="flex items-center gap-3 flex-wrap text-[11px]">
-            <span className="font-black uppercase tracking-widest text-violet-700">Roadmap</span>
-            <span className="text-violet-700">{activeRecs.length} recs</span>
-            <span className="text-slate-600">4 phases · 2025–2029</span>
-            <span className="text-amber-700">$133M invest</span>
-            <span className="text-emerald-700">$199M/yr savings</span>
-          </span>
-        }
-      >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <MetricCard value={`${activeRecs.length}`} label="Active Recommendations" sublabel="In roadmap" color="text-violet-700" />
-          <MetricCard value="4 phases" label="Implementation Horizon" sublabel="2025–2029" />
-          <MetricCard value="$133M" label="Total Investment" sublabel="All pillars, all recs" color="text-amber-700" />
-          <MetricCard value="$199M" label="Annual Savings Target" sublabel="Full implementation" color="text-emerald-700" />
+    <div className="space-y-6">
+      <InfoCard>
+        <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-1">Oliver Wyman&apos;s illustrative action timeline (2024–2028)</div>
+        <p className="text-[11px] text-slate-500 mb-4">&ldquo;The runway to change will take at least 4–5 years to complete,&rdquo; assuming a decision to proceed with the recommendations.</p>
+        <div className="grid md:grid-cols-2 gap-4">
+          {OW_TIMELINE.map((t) => (
+            <div key={t.track} className="border-l-4 border-violet-300 pl-3">
+              <div className="text-xs font-black text-slate-800 mb-1">{t.track}</div>
+              <ul className="space-y-1">
+                {t.actions.map((a) => <li key={a} className="text-[11px] text-slate-600 flex gap-1.5"><span className="text-violet-500 shrink-0">▸</span>{a}</li>)}
+              </ul>
+            </div>
+          ))}
         </div>
-      </StickyOutputPanel>
+      </InfoCard>
 
-      {/* Phase Timelines */}
-      <div className="space-y-4">
-        {phases.map((phase) => (
-          <div key={phase.phase} className={`border-l-4 ${phase.color} bg-white border border-slate-200 rounded-xl p-5`}>
-            <div className="flex items-center gap-3 mb-3">
-              <div>
-                <div className="text-sm font-black text-slate-900">{phase.phase}</div>
-                <div className="text-xs text-slate-500">{phase.period}</div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-              {phase.actions.map((action) => (
-                <div key={action} className="flex gap-2 text-xs text-slate-600">
-                  <span className="text-emerald-500 shrink-0 mt-0.5">▸</span>
-                  <span>{action}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Critical Dependencies */}
-      <InfoCard variant="warn">
-        <div className="text-xs font-black uppercase tracking-widest text-amber-700 mb-4">Critical Dependencies — Sequencing Risks</div>
+      <InfoCard>
+        <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">What has actually happened — and what is now in statute</div>
         <div className="space-y-2">
-          {criticalDependencies.map(({ from, to, reason }) => (
-            <div key={from + to} className="flex items-center gap-3 p-2 bg-white rounded-lg border border-amber-200">
+          {SINCE.map((s) => (
+            <div key={s.when + s.what} className="flex gap-3 border-b border-slate-100 last:border-0 pb-2">
+              <div className="text-[11px] font-bold text-violet-600 w-24 shrink-0">{s.when}</div>
+              <div className="text-xs text-slate-700">{s.what}</div>
+            </div>
+          ))}
+        </div>
+      </InfoCard>
+
+      <InfoCard variant="warn">
+        <div className="text-xs font-black uppercase tracking-widest text-amber-700 mb-4">Critical dependencies — sequencing risks (HTR analysis)</div>
+        <div className="space-y-2">
+          {DEPENDENCIES.map(({ from, to, reason }) => (
+            <div key={from + to} className="flex flex-wrap items-center gap-3 p-2 bg-white rounded-lg border border-amber-200">
               <div className="text-xs font-bold text-slate-800 bg-amber-100 px-2 py-1 rounded">{from}</div>
               <span className="text-slate-400">→ must precede →</span>
               <div className="text-xs font-bold text-slate-800 bg-rose-100 px-2 py-1 rounded">{to}</div>
@@ -143,26 +94,12 @@ export function ImplementationRoadmap({ selectedRecs }: { selectedRecs: Set<stri
         </div>
       </InfoCard>
 
-      {/* No Regrets Moves */}
       <InfoCard variant="success">
         <div className="text-xs font-black uppercase tracking-widest text-emerald-700 mb-3">
-          &quot;No Regrets Moves&quot; — Start Immediately Regardless of Scenario (Wyman Report)
+          &quot;No regrets&quot; moves for every hospital, 2025–2027 (Oliver Wyman)
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            {
-              title: "Expand Access",
-              actions: ["Rural outreach programs for primary care/preventive services", "Expand telehealth for ER, urgent care, specialists", "Establish programs for high-needs groups (H@H, PACE)"],
-            },
-            {
-              title: "Manage Costs",
-              actions: ["Form purchasing consortiums now — immediate ROI", "Develop regional physician group capability", "Develop statewide nurse pool to reduce agency staff"],
-            },
-            {
-              title: "Prepare for Redesign",
-              actions: ["Develop remote monitoring capability", "Develop regionalized EMS transport services", "Engage with community stakeholders on service redesign"],
-            },
-          ].map(({ title, actions }) => (
+          {NO_REGRETS.map(({ title, actions }) => (
             <div key={title}>
               <div className="text-xs font-black text-emerald-800 mb-2">{title}</div>
               <ul className="space-y-1.5">
@@ -174,6 +111,12 @@ export function ImplementationRoadmap({ selectedRecs }: { selectedRecs: Set<stri
           ))}
         </div>
       </InfoCard>
+
+      <p className="text-[11px] text-slate-500">
+        Sources: Oliver Wyman, <em>Act 167 Community Engagement: Recommendations</em> (rev. Jan 31, 2025), pp. 65 and 121; Act 68
+        of 2025; Vermont Agency of Human Services transformation updates (2026); GMCB. Dependencies are HTR&apos;s analysis (book
+        Chapter 1, the execution sequence).
+      </p>
     </div>
   );
 }

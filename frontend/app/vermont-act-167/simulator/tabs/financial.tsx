@@ -265,7 +265,7 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
       {/* Savings Waterfall */}
       {view === "waterfall" && (
         <div>
-          <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Annual Savings Potential by Recommendation Category ($M/yr)</div>
+          <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Illustrative Savings by Recommendation Category ($M/yr) — scenario values, not published estimates</div>
           <div className="space-y-3">
             {waterfallItems.sort((a, b) => b.savings - a.savings).map((item) => (
               <div key={item.label}>
@@ -284,7 +284,7 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
               <span className="text-sm font-black text-emerald-800">Total System Savings Potential</span>
               <span className="text-2xl font-black text-emerald-700">${waterfallItems.reduce((s, i) => s + i.savings, 0).toFixed(0)}M/yr</span>
             </div>
-            <p className="text-xs text-emerald-600 mt-1">Based on full implementation of all recommendations. Savings are independent estimates and may not all be simultaneously achievable.</p>
+            <p className="text-xs text-emerald-600 mt-1">Illustrative scenario values for exploring trade-offs — not estimates from Oliver Wyman, the GMCB or AHS, and not all simultaneously achievable. Oliver Wyman&apos;s own figure is more than $400M in direct savings over five years, independent of payment-reform savings.</p>
           </div>
         </div>
       )}

@@ -193,7 +193,7 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
             <div className="mt-3 pt-3 border-t border-slate-100">
               <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Marker Size = Bed Count</div>
               <div className="flex items-end gap-4">
-                {[{ beds: 25, label: "25" }, { beds: 188, label: "188" }, { beds: 562, label: "562" }].map(({ beds, label }) => {
+                {[{ beds: 25, label: "25" }, { beds: 142, label: "142" }, { beds: 448, label: "448" }].map(({ beds, label }) => {
                   const r = markerR(beds);
                   return (
                     <div key={beds} className="flex flex-col items-center gap-1">
