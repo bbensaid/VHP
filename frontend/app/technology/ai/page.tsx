@@ -77,7 +77,7 @@ function AIMLBody() {
           <p className="text-sm text-slate-500 mb-5">Honest assessment of healthcare LLM applications</p>
           <div className="space-y-3">
             {[
-              { useCase: "Ambient clinical documentation", status: "Modest gains in RCTs", evidence: "Two randomized trials (NEJM AI, 2025): one product cut note time 9.5% more than usual care (Lukac et al.); 0.36 fewer hours a day on notes (Afshar et al.)", badge: "bg-emerald-100 text-emerald-700" },
+              { useCase: "Ambient clinical documentation", status: "Modest gains in RCTs", evidence: "Two randomized trials (NEJM AI, 2025): one product cut note time 9.5% more than usual care (Lukac et al.); 0.36 fewer hours a day on notes (Afshar et al.). Across 8,581 clinicians at five academic systems, 16 fewer documentation minutes per 8 scheduled patient hours (Rotenstein et al., JAMA 2026)", badge: "bg-emerald-100 text-emerald-700" },
               { useCase: "Coding & charge capture", status: "Promising", evidence: "Vendor-reported gains; few independent evaluations", badge: "bg-emerald-100 text-emerald-700" },
               { useCase: "Patient message drafting", status: "Promising", evidence: "ChatGPT replies to public-forum questions rated more empathetic than physicians' (Ayers, JAMA Internal Medicine 2023)", badge: "bg-amber-100 text-amber-700" },
               { useCase: "Clinical Q&A (RAG)", status: "Promising", evidence: "Passes licensing-exam-style questions; hallucination controls required in clinical use", badge: "bg-amber-100 text-amber-700" },
