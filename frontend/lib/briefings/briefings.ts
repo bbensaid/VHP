@@ -46,9 +46,9 @@ export const BRIEFINGS: Briefing[] = [
   {
     pillar: "policy",
     slug: "medicaid-rulebook-2027",
-    asOf: "2026-10-04",
+    asOf: "2026-11-24",
     headline: "The Medicaid rulebook changes on January 1, 2027",
-    dek: "CMS's interim final rule makes H.R. 1's work requirement a condition of eligibility in 43 states and DC from January 1, 2027.{cms-ifr} Six-month eligibility checks for expansion adults start the same day, so states have under three months to build both systems.{crs-r48633}",
+    dek: "CMS's interim final rule makes H.R. 1's work requirement a condition of eligibility in 43 states and DC from January 1, 2027, the same day six-month eligibility checks for expansion adults begin.{cms-ifr}{crs-r48633} On November 13, CMS let states request an optional six-month \"hold harmless\" period, through June 30, 2027, before denying or ending coverage for people who have not shown they comply.{kff-hold-harmless}",
     facts: [
       { value: "Jan 1, 2027", label: "work requirement and six-month eligibility checks begin", cite: ["cms-ifr", "crs-r48633"] },
       { value: "80 hrs/mo", label: "of work, school, training or service, adults 19–64", cite: ["cms-ifr"] },
@@ -61,12 +61,13 @@ export const BRIEFINGS: Briefing[] = [
         paragraphs: [
           "On June 1, 2026, CMS issued an interim final rule implementing the community engagement provisions of H.R. 1, with comments due July 31, 2026.{aha-ifr} Beginning January 1, 2027, or earlier if a state chooses, non-pregnant adults aged 19 to 64 in the expansion population must show 80 hours a month of work, education, job training, volunteer service or similar activity to keep their coverage.{cms-ifr} Forty-three states and the District of Columbia cover this population and must implement the rule.{cms-ifr}",
           "The same day, a second clock starts. Section 71107 of the law moves eligibility redeterminations for expansion adults from once every 12 months to once every six months beginning January 1, 2027.{crs-r48633} A state that cannot stand up the work requirement in time may ask for a good-faith exemption, but those exemptions cannot be renewed and expire no later than December 31, 2028.{crs-r48633}",
+          "On November 13, 2026, CMS offered states a different kind of relief: an optional \"hold harmless\" period of up to six months, through June 30, 2027. States must still check whether people meet the requirement or qualify for an exemption, but they may suspend application denials and disenrollments for otherwise eligible people who have not demonstrated compliance. States must tell CMS by December 11, 2026 whether they will use it.{kff-hold-harmless}",
         ],
       },
       {
         heading: "Who is exempt, on paper",
         paragraphs: [
-          "The statutory exemptions are broad: former foster youth, American Indians and Alaska Natives, parents and caregivers of a child 13 or under or of a disabled person, veterans with a total disability rating, people who are medically frail, people already meeting SNAP or TANF work rules, people in drug or alcohol treatment, and pregnant or postpartum individuals.{cms-ifr}",
+          "The statutory exemptions are broad: former foster youth, American Indians and Alaska Natives, parents and caregivers of a child 13 or under or of a disabled person, veterans with a total disability rating, people who are medically frail, people already meeting SNAP or TANF work rules, people in drug or alcohol treatment, inmates of a public institution, and pregnant or postpartum individuals.{cms-ifr}",
           "The book's point about this rule is not the list. It is the gap between a nominal exemption and the coverage people actually keep once the paperwork arrives twice a year.{book-ch3} An exemption only protects someone who can document it on time.",
         ],
       },
@@ -301,13 +302,13 @@ export const BRIEFINGS: Briefing[] = [
   {
     pillar: "operations",
     slug: "fourteen-hospital-plans",
-    asOf: "2026-10-04",
+    asOf: "2026-11-24",
     headline: "Fourteen hospital plans. No total yet.",
     dek: "Act 68 moved transformation planning to the Agency of Human Services and required at least 2.5% lower hospital spending for FY2026.{gmcb-act68}{ahs-spending-nov2025} All 14 Vermont hospitals have filed plans, and in May the agency said it could not yet add up what they save.{ahs-transform-may2026}{vtdigger-plans}",
     facts: [
       { value: "≥2.5%", label: "hospital spending reduction required for FY2026", cite: ["ahs-spending-nov2025"] },
       { value: "14", label: "hospitals with individual transformation plans", cite: ["ahs-transform-may2026"] },
-      { value: "5 of 13", label: "eligible hospitals with signed transformation grants (May 2026)", cite: ["ahs-transform-may2026"] },
+      { value: "11 of 13", label: "eligible hospitals with executed transformation grants (June 2026)", cite: ["ahs-transform-jun2026"] },
     ],
     equityLine: "When services regionalize, who absorbs the longer drive?",
     sections: [
@@ -320,7 +321,7 @@ export const BRIEFINGS: Briefing[] = [
       {
         heading: "What the plans contain",
         paragraphs: [
-          "Every one of Vermont's 14 hospitals has now written an individual transformation plan.{ahs-transform-may2026} The agency reports common themes: shared services and collaborative purchasing, care closer to home through telehealth and repatriated services, EHR and interoperability upgrades, and gaps in mental health, maternity, hospice, oncology and specialty care.{ahs-transform-may2026} All 13 eligible hospitals applied for transformation grants; five had signed agreements by May.{ahs-transform-may2026}",
+          "Every one of Vermont's 14 hospitals has now written an individual transformation plan.{ahs-transform-may2026} The agency reports common themes: shared services and collaborative purchasing, care closer to home through telehealth and repatriated services, EHR and interoperability upgrades, and gaps in mental health, maternity, hospice, oncology and specialty care.{ahs-transform-may2026} All 13 eligible hospitals applied for transformation grants; by June 1, 2026, 11 had fully executed agreements and two were still under negotiation.{ahs-transform-jun2026}",
         ],
       },
       {

@@ -34,6 +34,14 @@ export const SOURCES: Record<string, Source> = {
     url: "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
     checked: "2026-10-04",
   },
+  "kff-hold-harmless": {
+    id: "kff-hold-harmless",
+    publisher: "KFF (Jennifer Tolbert)",
+    title: "CMS Announces Optional 6-Month Delay for Enforcing Medicaid Work Requirements",
+    date: "14 November 2026",
+    url: "https://www.kff.org/quick-insights/cms-announces-optional-6-month-delay-for-enforcing-medicaid-work-requirements/",
+    checked: "2026-11-24",
+  },
   "aha-ifr": {
     id: "aha-ifr",
     publisher: "American Hospital Association",
@@ -215,6 +223,14 @@ export const SOURCES: Record<string, Source> = {
     date: "1 May 2026",
     url: "https://legislature.vermont.gov/assets/Legislative-Reports/May-2026_Act-68-HC-System-Transformation-Report-from-AHS.pdf",
     checked: "2026-10-04",
+  },
+  "ahs-transform-jun2026": {
+    id: "ahs-transform-jun2026",
+    publisher: "Vermont Agency of Human Services",
+    title: "Act 68 Health Care System Transformation Report",
+    date: "1 June 2026",
+    url: "https://ljfo.vermont.gov/assets/Uploads/June-2026_Act-68-HC-System-Transformation-Report-from-AHS.pdf",
+    checked: "2026-11-24",
   },
   "vtdigger-plans": {
     id: "vtdigger-plans",
