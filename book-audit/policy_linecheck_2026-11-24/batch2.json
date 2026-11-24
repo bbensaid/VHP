@@ -1,0 +1,68 @@
+{
+ "tag": "pa-batch2",
+ "note": "Kangovi 2020 ROI; unconfirmed BCBSVT ratio, $47T, ROI>20% removed",
+ "only": [
+  "community-health-worker-certification-reimbursement-outcomes",
+  "community-health-worker-rural-equity-model-2026",
+  "economics-of-prevention-2025",
+  "health-economics-fundamentals-vermont-act-167"
+ ],
+ "pairs": [
+  [
+   "In 2023, Blue Cross and Blue Shield of Vermont paid out roughly $1.11 in claims for every $1.00 of premium it collected \u2014 an unsustainable loss ratio that signals the commercial side can no longer carry the subsidy.",
+   "Blue Cross and Blue Shield of Vermont reported heavy underwriting losses in 2023, a sign of how far claims costs had outrun premiums."
+  ],
+  [
+   "Chronic disease is the dominant cost driver nationally, with projections that it could cost the United States as much as $47 trillion over the 2024\u20132039 period.",
+   "Chronic disease is the dominant cost driver nationally."
+  ],
+  [
+   "savings on the order of $2,500 per enrollee per year",
+   "a documented return of about $2.47 per $1 invested for Medicaid (Kangovi et al., Health Affairs, 2020)"
+  ],
+  [
+   "RCTs: ~$2,500/enrollee/yr saved;",
+   "RCT-based ROI: ~$2.47 per $1 to Medicaid;"
+  ],
+  [
+   "RCTs show roughly $2,500 saved per Medicaid enrollee per year.",
+   "RCT outcomes show about $2.47 returned to Medicaid per $1 invested (Kangovi et al., 2020)."
+  ],
+  [
+   "RCTs show ~$2,500 saved per Medicaid enrollee per year",
+   "RCT outcomes show ~$2.47 returned per $1 to Medicaid"
+  ],
+  [
+   "with evidence of ~$2,500/enrollee/yr savings.",
+   "with RCT evidence of about $2.47 returned per $1 to Medicaid."
+  ],
+  [
+   "savings on the order of $2,500 per Medicaid enrollee per year",
+   "a documented return of about $2.47 per $1 invested for Medicaid (Kangovi et al., 2020)"
+  ],
+  [
+   "~$2,500/enrollee/yr savings;",
+   "~$2.47 per $1 to Medicaid;"
+  ],
+  [
+   "and well-targeted prevention delivers ROI above 20%",
+   "and well-targeted prevention can deliver strong returns"
+  ],
+  [
+   "well-targeted prevention can deliver strong returns (ROI above 20% when sustained)",
+   "well-targeted prevention can deliver strong returns when sustained"
+  ],
+  [
+   "Modeling of chronic-disease management finds ROI exceeding 20% when interventions sustain patient adherence and slow disease progression,",
+   "Modeling of chronic-disease management finds positive returns when interventions sustain patient adherence and slow disease progression,"
+  ],
+  [
+   "\"Detail\":\">20% with sustained adherence; timing and targeting decisive\"",
+   "\"Detail\":\"Positive with sustained adherence; timing and targeting decisive\""
+  ],
+  [
+   "and prevention can deliver ROI above 20% when well-targeted and sustained.",
+   "and prevention can deliver positive returns when well-targeted and sustained."
+  ]
+ ]
+}
