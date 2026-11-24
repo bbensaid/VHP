@@ -60,7 +60,7 @@ const WYMAN_RECS: Record<string, { title: string; detail: string; icon: string }
   urgent: [
     { icon: "→", title: "Evaluate Conversion to FQHC or REH Status", detail: "At current loss trajectory, conversion to Federally Qualified Health Center or Rural Emergency Hospital may be the only financially sustainable path." },
     { icon: "→", title: "Consolidate to Emergency & Primary Care Only", detail: "Reduce inpatient capacity to flex beds only. Shift all elective and specialty procedures to regional Centers of Excellence." },
-    { icon: "→", title: "Pursue Shared Services Aggressively", detail: "Administrative, IT, supply chain, and billing consolidation with UVM Health Network or other regional partners to reduce overhead by 20–30%." },
+    { icon: "→", title: "Pursue Shared Services Aggressively", detail: "Administrative, IT, supply chain, and billing consolidation with UVM Health Network or other regional partners to reduce overhead." },
     { icon: "→", title: "Reassess All Low-Volume Service Lines", detail: "Any service line below volume thresholds set by the Oliver Wyman Report should be closed or transferred to a designated COE facility." },
     { icon: "→", title: "Apply Reference-Based Pricing", detail: "Transition commercial payer contracts to Medicare reference-based pricing model to stabilize revenue." },
   ],

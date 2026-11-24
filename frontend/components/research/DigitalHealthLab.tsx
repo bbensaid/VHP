@@ -206,7 +206,7 @@ const CONDITIONS = {
     hospReduction: 0.40,
     icon: "♥",
     ed_reduction: 0.30,
-    desc: "40% fewer hospitalizations · 38% mortality reduction",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 14000,
   },
   hypertension: {
@@ -214,7 +214,7 @@ const CONDITIONS = {
     hospReduction: 0.20,
     ed_reduction: 0.20,
     icon: "⚡",
-    desc: "30% better BP control · reduces stroke risk",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 9500,
   },
   diabetes: {
@@ -222,7 +222,7 @@ const CONDITIONS = {
     hospReduction: 0.25,
     ed_reduction: 0.20,
     icon: "🩸",
-    desc: "0.8% HbA1c improvement · 25% fewer complications",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 11000,
   },
   copd: {
@@ -230,7 +230,7 @@ const CONDITIONS = {
     hospReduction: 0.50,
     ed_reduction: 0.35,
     icon: "💨",
-    desc: "50% reduction in exacerbation hospitalizations",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 10500,
   },
   post_surgical: {
@@ -238,7 +238,7 @@ const CONDITIONS = {
     hospReduction: 0.50,
     ed_reduction: 0.30,
     icon: "🏥",
-    desc: "50% fewer 30-day readmissions",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 15000,
   },
   mental_health: {
@@ -246,7 +246,7 @@ const CONDITIONS = {
     hospReduction: 0.35,
     ed_reduction: 0.40,
     icon: "🧠",
-    desc: "35% reduction in crisis episodes",
+    desc: "Default effect sizes are model assumptions — set your own",
     avgAdmitCost: 8000,
   },
 };

@@ -400,7 +400,7 @@ export default function VermontUHDSPage() {
         <SectionHeader label="Summary" title="Three arguments, one conclusion" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           {[
-            { h: "Financial", d: "A $3.1 billion projected deficit cannot be closed by isolated hospital-level cost cutting. It requires system-level decisions about which services are delivered where — and those cannot be modeled without linked cost and utilization data." },
+            { h: "Financial", d: "A five-year system deficit of $0.7–2.4 billion (Oliver Wyman) cannot be closed by isolated hospital-level cost cutting. It requires system-level decisions about which services are delivered where — and those cannot be modeled without linked cost and utilization data." },
             { h: "Legal", d: "Act 68 §10 does not ask for clinical, claims, and SDOH integration. It mandates it." },
             { h: "Clinical quality", d: "Hybrid measures, earlier risk identification, and root-cause intervention all require the integrated record. Without it, quality measurement falls back to manual chart abstraction — over $14 million a year in avoidable statewide burden." },
           ].map((x) => (

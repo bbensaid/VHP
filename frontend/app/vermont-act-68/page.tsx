@@ -330,7 +330,7 @@ export default function VermontAct68Page() {
             <h4 className="font-bold text-slate-900 text-sm mb-3">What H.R. 1 Means for Act 68</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               {[
-                "Vermont Medicaid covers ~19% of insured population — Medicaid revenue cuts affect every Vermont hospital's financial position",
+                "Medicaid revenue cuts affect every Vermont hospital's financial position",
                 "Work requirements beginning January 1, 2027 may reduce Medicaid enrollment, shrinking the insured base global budgets are designed to manage",
                 "Six-month eligibility redeterminations (from January 1, 2027) increase DVHA administrative burden during the same period AHS is restructuring",
                 "Vermont's RHT Program ($195M for FY2026, $190M for FY2027; awards set annually through FY2030) must be invested in structural transformation — not operating revenue replacement — to survive post-2030",

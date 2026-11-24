@@ -32,8 +32,8 @@ const SDOH_DOMAINS = [
     domain: "Housing Instability",
     icd10: "Z59.0–Z59.9",
     loincScreen: "71802-3",
-    vciFlag: "6 pts",
-    prevalence: "18–24% positive screen in Vermont safety-net settings",
+    vciFlag: "Teaching-model weight",
+    prevalence: "No published Vermont-wide screening rate; use your own screening data",
     resources: ["Vermont 2-1-1", "Champlain Housing Trust", "Vermont Housing Finance Agency (VHFA)", "Section 8 / Housing Choice Voucher", "Rapid Rehousing programs"],
     healthConnection: "Housing instability is the strongest single predictor of ED overuse in Vermont. VCCI assigns 6 pts (highest SDOH domain weight) for homelessness. Blueprint CHTs carry a housing navigation role in every Health Service Area.",
     color: "border-red-200 bg-red-50",
@@ -43,8 +43,8 @@ const SDOH_DOMAINS = [
     domain: "Food Insecurity",
     icd10: "Z59.41",
     loincScreen: "88122-7",
-    vciFlag: "4 pts",
-    prevalence: "28–35% positive in Windham, Rutland, and Northeast Kingdom counties",
+    vciFlag: "Teaching-model weight",
+    prevalence: "No published Vermont-wide screening rate; use your own screening data",
     resources: ["3SquaresVT (Vermont SNAP)", "Vermont Foodbank", "Community food shelves (statewide)", "WIC Program (DVHA)", "Senior Farm Share"],
     healthConnection: "Food insecurity correlates directly with A1C non-control in T2DM, medication non-adherence (insulin rationing), and MH exacerbations. VCCI SDOH screening uses LOINC 88122-7. CHTs refer to 3SquaresVT enrollment as a standard workflow.",
     color: "border-amber-200 bg-amber-50",
@@ -76,7 +76,7 @@ const SDOH_DOMAINS = [
     domain: "Substance Use Disorder",
     icd10: "F10–F19",
     loincScreen: "75626-2 (AUDIT-C)",
-    vciFlag: "4 pts",
+    vciFlag: "Teaching-model weight",
     prevalence: "Vermont has among the highest per-capita opioid treatment rates in the US",
     resources: ["Designated Agencies (MOUD programs, SUD treatment)", "Vermont Hub and Spoke Model", "Brattleboro Retreat", "DVHA buprenorphine waiver prescribers", "Vermont Recovery Network peer centers"],
     healthConnection: "SUD intersects with every other SDOH domain. Vermont's Hub-and-Spoke model connects hospitals (hubs) to primary care practices (spokes) for MOUD delivery. DAs provide the recovery support and outpatient SUD treatment infrastructure. VCCI specifically targets members with active SUD + housing instability.",
@@ -87,7 +87,7 @@ const SDOH_DOMAINS = [
     domain: "Mental Health",
     icd10: "F32–F43",
     loincScreen: "55757-9 (PHQ-9)",
-    vciFlag: "4 pts",
+    vciFlag: "Teaching-model weight",
     prevalence: "MDD hospitalization rate above national average in Rutland, Windham, and Washington counties",
     resources: ["Designated Agencies (11 regional — community MH services)", "Vermont Psychiatric Care Hospital (VPCH)", "988 Suicide & Crisis Lifeline", "Blueprint Mental Health Integration (MHI)", "School-based mental health programs"],
     healthConnection: "The Blueprint MHI initiative (2023) brings BH screening directly into primary care visits via CHTs. DAs provide the specialty outpatient and crisis services tier. VCCI PHQ-9 ≥10 triggers a 4-point SDOH flag and flags for BH case management coordination.",
@@ -99,7 +99,7 @@ const SDOH_DOMAINS = [
     icd10: "Z59.6–Z59.7",
     loincScreen: "AHC HRSN Module",
     vciFlag: "Embedded across multiple domains",
-    prevalence: "Vermont poverty rate 10.2% statewide; significantly higher in Essex (22%), Orleans (18%), Windham (16%)",
+    prevalence: "Use current Census ACS county poverty estimates for local rates",
     resources: ["Vermont 2-1-1 (benefits screening & enrollment)", "Community Action Agencies (CAAs — all 12 counties)", "Legal Aid — Vermont Legal Aid", "Earned Income Tax Credit (EITC) outreach", "DVHA low-income pharmaceutical programs"],
     healthConnection: "Financial strain drives medication non-adherence (insulin rationing, prescription splitting), delayed care-seeking, and inability to follow treatment plans. Community Action Agencies are Vermont's front-line anti-poverty organizations and are natural partners for CHT SDOH navigation workflows.",
     color: "border-emerald-200 bg-emerald-50",
@@ -109,7 +109,7 @@ const SDOH_DOMAINS = [
     domain: "Domestic / Intimate Partner Violence",
     icd10: "Z69.11–Z69.12",
     loincScreen: "96842-0 (HITS tool)",
-    vciFlag: "2 pts",
+    vciFlag: "Teaching-model weight",
     prevalence: "IPV screen added to VCCI October 2018",
     resources: ["Vermont Network Against Domestic & Sexual Violence", "Regional safe houses (all counties)", "Vermont 2-1-1 (24-hour referral)", "Designated Agency trauma-informed care programs"],
     healthConnection: "IPV is a mandatory SDOH screen under VCCI (HITS tool, LOINC 96842-0). Vermont requires trauma-informed care training for Blueprint CHT staff. IPV positive screens are referred to the Vermont Network's regional safe houses with CHT warm handoff protocols.",
@@ -156,7 +156,7 @@ export default function VermontSDOHPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
           <div>
             <p className="font-bold text-orange-300 mb-1">VCCI Risk Scoring</p>
-            <p className="text-slate-300 leading-relaxed">Vermont&apos;s VCCI composite risk score allocates 20% weight to SDOH domains — housing (6 pts), food insecurity (4 pts), SUD (4 pts), mental health crisis (4 pts), IPV (2 pts). SDOH screening was added to VCCI in October 2018 after evidence showed social factors predicted ED utilization as strongly as clinical diagnoses.</p>
+            <p className="text-slate-300 leading-relaxed">In HTR&apos;s VCCI teaching model (not DVHA&apos;s published method), SDOH domains carry 20% of an illustrative composite score. SDOH screening was added to VCCI in October 2018 after evidence showed social factors predicted ED utilization as strongly as clinical diagnoses.</p>
           </div>
           <div>
             <p className="font-bold text-orange-300 mb-1">Z-Code Documentation</p>
@@ -223,7 +223,7 @@ export default function VermontSDOHPage() {
           </div>
           <div className="bg-white border border-orange-200 rounded-xl p-4">
             <p className="font-bold text-orange-800 mb-1">Searchable Database</p>
-            <p className="text-slate-600">Comprehensive database of 4,000+ Vermont community programs including food, housing, utilities, mental health, SUD treatment, transportation, and more.</p>
+            <p className="text-slate-600">Searchable database of Vermont community programs including food, housing, utilities, mental health, SUD treatment, transportation, and more.</p>
           </div>
           <div className="bg-white border border-orange-200 rounded-xl p-4">
             <p className="font-bold text-orange-800 mb-1">Healthcare Integration</p>
@@ -303,7 +303,7 @@ export default function VermontSDOHPage() {
             { href: "https://dvha.vermont.gov/providers/vermont-chronic-care-initiative/vcci-services", label: "VCCI SDOH Screening Protocol", desc: "DVHA description of the VCCI SDOH screening domains and eligibility modification (Oct 2018)" },
             { href: "https://blueprintforhealth.vermont.gov/", label: "Blueprint for Health", desc: "Community Health Teams and SDOH navigation as part of Vermont's primary care infrastructure" },
             { href: "https://mentalhealth.vermont.gov/individuals-and-families", label: "VT Dept. of Mental Health — Individuals & Families", desc: "Mental health and SUD services resource directory by county" },
-            { href: "https://sashvt.org/", label: "SASH Vermont", desc: "Housing-based care coordination — SDOH integration model serving 13,000+ Vermont seniors" },
+            { href: "https://sashvt.org/", label: "SASH Vermont", desc: "Housing-based care coordination — SDOH integration model for Vermont seniors" },
             { href: "https://vermontcarepartners.org/", label: "Vermont Care Partners", desc: "The DA network umbrella organization — behavioral health and SUD community services" },
           ].map(r => (
             <a key={r.href} href={r.href} target="_blank" rel="noopener noreferrer"
