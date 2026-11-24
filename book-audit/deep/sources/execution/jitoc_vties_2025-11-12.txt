@@ -1,0 +1,145 @@
+ 
+VT-IES Modernization: Transforming Benefit 
+Delivery for Vermonters 
+ 
+Why We’re Transforming the Way Vermonters Access Support 
+Vermont is evolving how it delivers health and economic benefits, moving toward a team-based, 
+person-centered model that meets Vermonters where they are. Our current eligibility and 
+enrollment infrastructure is fragmented, outdated, and increasingly unsustainable. Vermonters 
+must navigate multiple systems to access benefits, while staff contend with manual processes 
+and siloed data. The Vermont Integrated Eligibility System (VT-IES) is not just a technological 
+upgrade; it is a strategic transformation of our business practices. It enables integrated service 
+delivery, supports team-based care, and improves outcomes by aligning systems with how our 
+agency works today and how we must serve our communities tomorrow. 
+ 
+Challenges Facing Vermonters and Our Frontline Teams 
+• Fragmented Customer Experience: Vermonters re-enter the same information across 
+programs, leading to frustration and delays. 
+• Limited Digital Access and Usability: Vermonters cannot easily apply for or manage 
+benefits using modern devices. VHC lacks mobile support, and ACCESS has no user-facing 
+portal, limiting access and falling short of expectations for accessible and user-friendly 
+design. 
+• Operational Inefficiency: Staff spend excessive time on manual tasks, reducing capacity 
+for direct service and collaborative team-based care. 
+• Systemic Fragility: VHC is costly, and ACCESS is increasingly unmaintainable. Staff with 
+ACCESS expertise are retiring, and its 45-year history lacks sufficient documentation to 
+ensure continuity. 
+• Compliance Risk: Legacy systems are misaligned with federal mandates, exposing 
+Vermont to audit vulnerabilities. 
+ 
+From System Stability to Human-Centered Outcomes 
+For over a decade, Vermont’s IE&E modernization efforts have focused on system stability, 
+security compliance, and risk reduction. VT-IES builds on that foundation but marks a strategic 
+shift: for the first time, our focus is squarely on improving outcomes for Vermonters and frontline 
+teams, through simplified access, seamless coordination, and tools that support collaborative 
+care. VT-IES is not just a technical upgrade; it’s a transformation in how Vermont delivers services, 
+centered on people, grounded in practice, and powered by modern infrastructure. 
+ 
+How VT-IES Supports People, Practice, and Progress 
+VT-IES is a modular, purpose-built Integrated Eligibility and Enrollment (IE&E) system that will 
+replace VHC and all IE&E programs currently housed on ACCESS. It will deliver intuitive and 
+ 
+accessible tools for Vermonters and modern systems that reduce burden and improve service 
+quality. It includes: 
+• Customer Portal: Secure, mobile-friendly, multilingual platform for applications, 
+renewals, document uploads, and communications. 
+• Case Management System: Unified workspace for state staff to manage eligibility 
+efficiently. 
+• Business Rules Engine: Automates eligibility determinations using electronic data 
+sources and configurable logic, freeing staff to focus on complex cases and customer 
+engagement. 
+• Supporting Capabilities: 
+o Reporting and analytics to track outcomes and improve accountability 
+o System interfaces for seamless coordination 
+o Benefit distribution management for timely delivery 
+ 
+This architecture enables business process re-engineering, not just technical replacement. It 
+supports integrated service delivery, enhances customer experience, and empowers Vermonters 
+to actively engage in their application journey, making the state’s health and economic benefit 
+system more accessible, efficient, and resilient. 
+ 
+A Proven Strategy Backed by National Alignment 
+Vermont’s modular strategy reflects national best practices and has been developed in 
+collaboration with our federal partners at FNS and CMS. It has been validated through: 
+• Three RFIs (2022–2023) soliciting vendor feedback on implementation feasibility. 
+• Peer engagement at ISM Conferences (Maryland 2022, Florida 2023, Colorado 2024). 
+• Cost-Benefit Analysis (2023) supporting vendor-managed modular integration for 
+scalability, automation, compliance, and enhanced user experience. 
+ 
+While several states have modernized their Integrated Eligibility Systems, Vermont’s approach is 
+ambitious in its integration of a State-Based Exchange (SBE) with Qualified Health Plan (QHP) 
+enrollment. Most states either separate health coverage from economic assistance or rely on the 
+Federally Facilitated Exchange (FFE), resulting in fragmented customer experiences and 
+duplicated processes. VT-IES will deliver a unified experience across Medicaid, 3SquaresVT, 
+Reach Up, Fuel Assistance, General/Emergency Assistance, and QHPs, supported by modular 
+architecture, real-time data exchange, and compliance with CMS, FNS, and IRS mandates. This 
+level of integration is rare, but Vermont’s vision builds on proven components and elevates them 
+into a cohesive, future-ready platform. 
+ 
+Phased Delivery with Early Benefits for Vermonters 
+VT-IES will be delivered through multiple phased releases, each providing tangible functionality. 
+Vermonters and staff will begin experiencing improvements early and ongoing, not just at project 
+completion. 
+ 
+• Initial Releases: Customer portal with screening tools, document upload, and select 
+program functionality. 
+• Subsequent Phases: Broader program coverage, enhanced automation, and integrated 
+case management. 
+• Early Wins: Visible improvements expected within the first 12–18 months of DDI. 
+ 
+Federal Partnership and Oversight Milestones 
+Federal funding brings essential support and significant oversight. The VT-IES procurement 
+process has involved: 
+• Three federal reviews of the RFP, spanning nearly 12 months. 
+• Anticipated 3-4 months of contract review, including formal federal cycles and iterative 
+updates. 
+• New federal oversight buffers, including a 10-day extension to the standard 60-day review 
+period. 
+ 
+The full procurement phase from RFP posting to contract execution spans 24 months, reflecting 
+the rigor required to meet federal standards. These reviews are safeguards, not delays, ensuring 
+the system meets the highest standards for security, compliance, and sustainability. 
+ 
+Why Delay Is Risky – for Vermonters and the State 
+Delaying VT-IES implementation introduces significant compliance risk. Federal partners have 
+made clear that continued investment must be matched by demonstrable progress. Key risks 
+include: 
+• ACCESS Risk: ACCESS has been identified by agency and legislative partners as a critical 
+vulnerability. 
+• Federal Standards: ACCESS fails to meet CMS Medicaid IT standards and VHC continues 
+to face challenges aligning with evolving federal interoperability requirements. 
+• Technical Fragility: Complex programming hinders timely updates and responsiveness 
+• Accessibility Compliance: Evolving standards require costly remediation 
+• Financial Exposure: Delays risk triggering federal recoupment of planning funds, as seen 
+in New York. 
+ 
+Investing Wisely in People, Systems, and Sustainability 
+VT‑IES is a significant financial investment for a small state, but the complexity of building a 
+modern, compliant, and fully integrated system is independent of population size. The system 
+must meet rigorous federal and state requirements, support the full range of business processes, 
+and integrate across programs and data sources. 
+ 
+What matters most is the value Vermont receives and the cost of inaction: 
+• Tailored Design: Built for Vermont’s program mix and population, not repurposed 
+templates. 
+ 
+• Technology Reuse: Leverages existing state technology investments to reduce duplication 
+and maximize ROI. 
+• Technical Debt Reduction: Consolidates two legacy systems into a single, modern 
+platform. 
+• Data Consolidation: Enables improved analytics and lays the foundation for statewide 
+health data integration. 
+• Federal Co-Funding: CMS and FNS investment offsets state burden and validates our 
+strategic direction. 
+ 
+Post-pandemic staffing realities remain a challenge. The State recognizes that successful modular 
+implementation will require significant coordination and oversight and is planning accordingly. 
+Ultimately, we cannot afford not to modernize. The human cost of system failure - missed 
+benefits, delayed services, and compliance breakdowns - is real. VT-IES is a proactive investment 
+in resilience, accessibility, and operational integrity. 
+ 
+A Human-Centered Vision for Vermont’s Future 
+VT-IES is a strategic imperative, not just to modernize technology, but to transform how Vermont 
+delivers essential services. It reflects our values: accessibility, efficiency, and empathy. With 
+vendor selection imminent, the program is poised to deliver meaningful changes in how 
+Vermonters access care and support - starting now, not years from now. 

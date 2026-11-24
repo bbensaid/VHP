@@ -1,0 +1,219 @@
+Vermont Health Information 
+Exchange and VITL Overview
+March 2024
+• VITL operates the Vermont Health Information Exchange, in 
+accordance with Vermont Statute 18 V.S.A. § 9352:
+(c)(1) Health information exchange operation. VITL shall be designated in the Health 
+Information Technology Plan approved by the Green Mountain Care Board pursuant to 
+section 9351 of this title to operate the exclusive statewide health information exchange 
+network for this State. The Plan shall determine the manner in which Vermont's health 
+information exchange network shall be managed. The Green Mountain Care Board shall 
+have the authority to approve VITL's budget pursuant to chapter 220 of this title.
+• Nonprofit organization founded in 2005
+• Board members represent hospitals, health care providers, 
+health technologists, payers, and businesses across Vermont
+2
+About VITL
+• Health information exchange (HIE) encompasses two related concepts:
+• Verb: The appropriate and confidential electronic exchange of clinical 
+information among authorized organizations
+• Noun: An organization with agreed-upon operational and business rules that 
+provides services to enable the electronic and secure sharing of health-related 
+information
+• Electronic exchange of clinical information allows doctors, nurses, 
+pharmacists, other health care providers, and patients to access and 
+securely share a patient’s vital medical information electronically — 
+improving the speed, quality, safety, coordination, and cost of patient 
+care.
+Source: The Office of the National Coordinator for Health Information Technology
+3
+What is Health Information Exchange?
+• Collects, matches, and standardizes patient data in real time from 
+health care providers caring for Vermonters to create one longitudinal 
+record for each person in the Vermont Health Information Exchange
+• Serves as a hub for efficient data sharing, eliminating the need to build 
+and maintain multiple point-to-point connections
+• Protects patient data through robust security practices and 
+ensuring appropriate access to data
+• Makes data available to inform:
+4
+What VITL Does
+• Patient care
+• Quality improvement
+• Health care reform
+• Public health activities
+• Population health initiatives
+• Case management
+5
+VITL Participants
+Hospitals 
+includes all Vermont hospitals and a border hospital, along with their inpatient and ambulatory 
+services, emergency departments, and owned specialty and primary care practices
+16 16
+Vermont Federally Qualified Health Centers 11 10
+Independent Specialty and Primary Care Practices 31 63
+Home Health Agencies 5 7
+Nursing Homes and Long-Term Care Facilities 0 5
+Pharmacy Chains and Independent Pharmacies 11 1
+Laboratories (State and Commercial) 14 0
+Departments of the State of Vermont 2 3
+Designated Mental Health and Specialized Services Agencies 0 11
+Emergency Medical Services 0 48
+Payers 0 2
+Contribute Data Access Data
+• Admission, discharge, and transfer (ADT) messages
+• Laboratory results
+• Radiology reports
+• Transcribed reports – including many types of notes
+• Immunization messages
+• Home health monitoring data
+• Continuity of Care Documents (CCDs)
+• Death Registry Data
+6
+The Data in the Vermont Health 
+Information Exchange
+150 organizations use VITL’s data access services.
+Data is available through:
+• The VITLAccess clinical portal, accessible by web browser
+• Delivered into electronic health records 
+• Currently delivering laboratory results, radiology reports, and transcribed reports 
+• Under development: APIs and SMART on FHIR to deliver more data types 
+directly into EHRs or to in-EHR apps
+• Event notification 
+• Custom reporting and analytics
+7
+Accessing VHIE Data
+Data contributors benefit from the delivery of their data, via the Vermont 
+Health Information Exchange, to a variety of stakeholders. This streamlines 
+required data submission and reporting for providers and informs public 
+health and population health efforts. Data is delivered to:
+• Other clinicians and organizations that provide care
+• Vermont Department of Health 
+• OneCare Vermont
+• Vermont Blueprint for Health 
+• Vermont Chronic Care Initiative
+8
+VHIE Data Delivery
+• Data sharing is governed by the Services Agreements between 
+VITL and organizations that contribute and use data, by VITL 
+policies, and by state and federal law including HIPAA.
+• An individual Vermonter’s data is available to authorized users 
+unless they opt-out to block their data from view.
+• Currently, 98.9% of Vermonters are sharing their data and 1.1% 
+of Vermonters have opted-out.
+• Regular public outreach to inform Vermonters of their options.
+• More information for individuals is available at vitl.net/sharing.
+9
+How Vermonters’ Data is Shared
+• VITL’s fall 2023 education campaign utilized a broad range of media to reach more Vermonters across ages, 
+locations, and media habits. The campaign ended in December, after sharing educational messagesvia:
+• Social media, including Instagram and Facebook
+• Vermont Public, via a radio sponsorship message
+• Commercial radio message – this was a new medium for VITL, used for its broad reach and longer format (30 
+seconds) which enabled us to convey more information about how and why health data is shared
+• VTDigger sponsored news story – another new medium that offered more in-depth content for deeper 
+education
+• VITL continues to encourage provider organizations to help educate Vermonters about health data sharing, and 
+supports them with an education toolkit and a section of vitl.net specifically for patients
+• VITL is currently planning our next education campaign including expanded outreach to individuals who speak 
+languages other than English
+10
+Patient Education
+The foundation of our work is the security of patient data and ensuring appropriate 
+access to that data. This includes honoring patients’ rights and preferences.
+In support of this commitment, VITL:
+• Continuously reviews and updates our security and recovery practices to 
+ensure they align with best practices and mitigate the ever-changing threat 
+landscape
+• Ensures transparency about how VHIE data is shared
+• Monitors and aligns to regulatory changes
+• Maintains agreements and controls to ensure appropriate sharing of data
+11
+Protecting Patient Data
+• The majority of VITL's funding is through a contract with 
+the Agency of Human Services (AHS)
+• Maintenance and Operations supports the ongoing 
+operation of the VHIE
+• Design, Development and Installation supports the 
+creation of new functionality and capabilities
+• The State receives funding from the Centers for Medicare and 
+Medicaid Services (CMS), leveraged by dollars generated by a 
+portion of the State’s Health Care Claims Tax.
+• Additional revenue is derived from custom reporting contracts, 
+secure messaging services, and event notification services
+12
+How the VHIE is Funded
+• In accordance with 18 V.S.A. § 9351, AHS develops a Health Information Exchange 
+Strategic Plan, which lays out a five-year strategy for HIE, and includes annual updates and 
+plans for improving and developing state-wide health data infrastructure. 
+• The plan is developed in partnership with the Statewide Health Information Exchange 
+Steering Committee,
+• The committee informs State priorities, and serve as advocates for health care’s data 
+needs from the HIE.
+13
+Statewide Health Information Exchange 
+Steering Committee
+• Bi-State Primary Care Assoc
+• VAHHS
+• Vermont Care Partners
+• Blue Cross Blue Shield VT
+• OneCare Vermont
+• Long Term Care Advocate
+• Home Health Representative
+• Consumer Representative
+• Health Care Advocate
+• Vermont Agency of Human Services
+• Vermont Department of Health
+• Green Mountain Care Board
+• Vermont Blueprint for Health
+• Vermont Agency of Digital Services
+• VITL
+The Green Mountain Care Board has three major authorities related to health information 
+technology (HIT) and health information exchange (HIE).
+1. Review and approve Vermont Health Information Exchange Strategic Plan (HIE Plan) – 18 V.S.A. 
+§ 9375(a)(2)(A) and 18 V.S.A. § 9351(a)
+2. Review and approve Vermont Health Information Exchange (VHIE) Connectivity Criteria – 18 
+V.S.A. § 9375(a)(2)(B) and 9352(i)(2)
+3. Review and approve Vermont Information Technology Leaders (VITL) budget - 18 V.S.A. 
+§9375(b)(2)(C)
+14
+Green Mountain Care Board
+• Covid created opportunities for HIEs to demonstrate real value in support of 
+public health
+• Connecting with new testing sites for testing data
+• Collecting and delivering immunization records
+• Delivering daily reporting of hospitalizations, resource usage
+• Supporting case investigations and contact tracing
+• Our partnership with the Department of Public Health continues to strengthen:
+• A connection to the Vermont Immunization Registry enables providers to pull immunization 
+history and forecasting into their EHRs
+• Health equity reporting and analysis
+• Expanded lab reporting for reportable diseases
+• Strategic plan in place for the coming years
+15
+New Partnerships with Public Health
+• Work with AHS to support the development of the Unified Health Data Space;
+• Continue our commitment to connecting to as many providers supporting Vermonters as 
+possible, and integrating that data into the Vermont Health Information Exchange;
+• Partner with the Vermont Agency of Human Services to create opportunities to integrate 
+new data types into the Vermont Health Information Exchange, including substance use 
+disorder data and social determinants of health data;
+• Continue to work with our stakeholders and clients to find opportunities to leverage our new 
+technical capabilities to deliver the health data that providers need when and where they 
+need it;
+• Explore using Vermont Health Information Exchange data in new ways to support the 
+delivery of quality measures and other analytics;
+• Evaluate opportunities to participate in federal interoperability initiatives, such as the Office 
+of the National Coordinator of Health Information Technology's (ONC) Trusted Exchange 
+Framework and Common Agreement (TEFCA), while also protecting the privacy of sensitive 
+data that is protected under Vermont law.
+16
+A Look to the Future
+VITL’s mission is to securely aggregate, standardize, and 
+share the data needed to improve the effectiveness of 
+health care for Vermonters.
+VITL’s vision is to be a leader in collaboratively 
+delivering actionable data that leads to better health.
+Part of a Strategic Framework introduced in 2021
+17
+VITL’s Mission & Vision

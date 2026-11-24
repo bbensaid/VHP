@@ -1,0 +1,597 @@
+ 
+ Vermont Laws 
+ Skip to content 
+ Skip to navigation 
+ Skip to subnav 
+ Searching 2025-2026 Session Return to current session 
+ Vermont General Assembly 
+ Home 
+ Bills & Resolutions 
+ Search 
+ Bill, Act & Resolution Search 
+ Bills 
+ Released for Introduction 
+ House Bills 
+ Senate Bills 
+ All Bills – Both Chambers 
+ Bills Passed 
+ Vetoed by the Governor 
+ Enacted Without Signature 
+ Bills In/Out of Committee 
+ Resolutions 
+ House Resolutions 
+ Senate Resolutions 
+ All Resolutions – Both Chambers 
+ Resolutions Adopted 
+ Acts 
+ Acts & Resolves 
+ Acts Affecting VSA Sections 
+ Research 
+ Legislative Reports & Research 
+ Committees 
+ House Committees 
+ Agriculture, Food Resiliency, & Forestry 
+ Appropriations 
+ Commerce & Economic Development 
+ Corrections & Institutions 
+ Education 
+ Energy & Digital Infrastructure 
+ Environment 
+ General & Housing 
+ Government Operations & Military Affairs 
+ Health Care 
+ House Discrimination Prevention Panel 
+ House Ethics Panel 
+ House Sexual Harassment Prevention Panel 
+ Human Services 
+ Judiciary 
+ Rules 
+ Transportation 
+ Ways & Means 
+ Senate Committees 
+ Agriculture 
+ Appropriations 
+ Economic Development, Housing & General Affairs 
+ Education 
+ Ethics 
+ Finance 
+ Government Operations 
+ Health & Welfare 
+ Institutions 
+ Judiciary 
+ Natural Resources & Energy 
+ Rules 
+ Sexual Harassment Prevention Panel 
+ Transportation 
+ Committee Types 
+ All Committees 
+ House Committees 
+ Senate Committees 
+ Joint Committees 
+ Other Committees 
+ Committees of Conference 
+ All Committee Meetings 
+ All Scheduled Committee Meetings 
+ All Scheduled Committees of Conference Meetings -->
+ Complete Weekly Schedule 
+ Streaming Links
+ Accessibility
+ Research 
+ Legislative Reports & Research 
+ Vermont Laws 
+ Statutes 
+ Vermont Statutes Online 
+ Statutes Search 
+ Vermont Statutes at Lexis/Nexis 
+ Constitution 
+ Constitution of the State of Vermont 
+ Acts 
+ Acts & Resolves 
+ Acts Affecting VSA Sections 
+ Search 
+ Bill, Act & Resolution Search 
+ Rules 
+ State Agency Rules at Lexis/Nexis 
+ Court Rules at Lexis/Nexis 
+ Legislative Committee on Administrative Rules (LCAR) 
+ House 
+ The House of Representatives 
+ House Overview 
+ Find Representatives 
+ All Representatives 
+ House Committees 
+ Officers 
+ Speaker of the House 
+ Clerk of the House 
+ Calendars & Journals 
+ Current House Calendar 
+ All House Calendars 
+ Current House Journal 
+ All House Journals 
+ House Bills for Introduction 
+ Current Journal of the Joint Assembly 
+ -->
+ Journals of the Joint Assembly 
+ Rules 
+ House Rules 
+ Joint Rules 
+ Search 
+ Search House Calendars & Journals 
+ Related Information 
+ Streaming Links 
+ Senate 
+ The Senate 
+ Senate Overview 
+ Find Senators 
+ All Senators 
+ Senate Committees 
+ Officers 
+ President of the Senate (Lt. Governor) 
+ President Pro Tempore 
+ Secretary of the Senate 
+ Calendars & Journals 
+ Current Senate Calendar 
+ All Senate Calendars 
+ Addendum 1 
+ Current Senate Journal 
+ All Senate Journals 
+ Senate Bills for Introduction 
+ Current Journal of the Joint Assembly 
+ -->
+ Journals of the Joint Assembly 
+ Rules 
+ Senate Rules 
+ Joint Rules 
+ Search 
+ Search Senate Calendars & Journals 
+ Related Information 
+ Streaming Links 
+ Joint Fiscal Office 
+ Reports & Research 
+ Reports 
+ Reports & Research Overview 
+ Find Legislative Reports 
+ Reports Required by Acts & Resolves 
+ Research 
+ Bills, Resolutions, Acts & Constitutional Proposals 
+ Witness History 
+ Subject History 
+ Committees 
+ Senate 
+ House 
+ Reapportionment 
+ PRA Exemptions 
+ PRA Exemptions in Order 
+ PRA Exemptions by Subject 
+ PRA Exemptions Subject to 1 VSA 317(d)(2) 
+ History 
+ History of the General Assembly 
+ The State House 
+ The State House 
+ Visiting the State House 
+ About the State House 
+ State House Floor Maps 
+ Hours & Directions 
+ Accessibility 
+ History 
+ History of the General Assembly 
+ Civic Education 
+ Flowchart: How a Bill Becomes Law 
+ Video: The Bill Process From Draft To Act 
+ Become a Legislative Page! 
+ School Field Trips 
+ About Legislative Committees 
+ Galleries 
+ Images of the State House 
+ Events 
+ Farmers Night Concert Series 
+ Staff & Offices 
+ House 
+ Speaker of the House 
+ Clerk of the House 
+ Senate 
+ President of the Senate (Lt. Governor) 
+ President Pro Tempore 
+ Secretary of the Senate 
+ Staff Offices 
+ Legislative Counsel 
+ Legislative Information Technology 
+ Joint Fiscal Office 
+ Sergeant at Arms 
+ Capitol Police Department 
+ Office of Human Resources 
+ Contact 
+ Questions & Comments 
+ Career Opportunities 
+ Career Opportunities 
+ Search for: 
+ Bill or Resolution 
+ Legislator 
+ Committee 
+ How to use this search 
+ Search bills: 
+ Search legislators: 
+ Search committees: 
+ Search 
+ Searching 2025-2026 Session 
+ Print 
+ The Vermont Statutes Online 
+ The Statutes below now include the actions of the 2026 session of the General Assembly. NOTE : The Vermont Statutes Online is an unofficial copy of the Vermont Statutes Annotated that is provided as a convenience. 
+ Statutes › 
+ Title 18 › 
+ Chapter 219 › 
+ Full Text
+ Title 18 : Health 
+ Chapter 219 : Health Information Technology and Telehealth 
+ Subchapter 001 : Health Information Technology 
+ § 9351. Health Information Technology Plan 
+ (a)(1) The Department of Vermont Health Access, in consultation with the Department’s Health
+ Information Exchange Steering Committee, shall be responsible for the overall coordination
+ of Vermont’s statewide Health Information Technology Plan. The Plan shall be revised
+ annually and updated comprehensively every five years to provide a strategic vision
+ for clinical health information technology.
+ (2) [Repealed.] 
+ (3)(A) The Department, in consultation with the Steering Committee, shall administer the
+ Plan.
+ (B) The Plan shall include the implementation of an integrated electronic health information
+ infrastructure for the sharing of electronic health information among health care
+ facilities, health care professionals, public and private payers, and patients. The
+ Plan shall provide for each patient’s electronic health information that is contained
+ in the Vermont Health Information Exchange to be accessible to health care facilities,
+ health care professionals, and public and private payers to the extent permitted under
+ federal law unless the patient has affirmatively elected not to have the patient’s
+ electronic health information shared in that manner.
+ (C) The Plan shall include standards and protocols designed to promote patient education,
+ patient privacy, physician best practices, electronic connectivity to health care
+ data, access to advance care planning documents, and, overall, a more efficient and
+ less costly means of delivering quality health care in Vermont.
+ (D) A representative of the Green Mountain Care Board shall be a voting member of the
+ Steering Committee.
+ (b) The Health Information Technology Plan shall: 
+ (1) support the effective, efficient, statewide use of electronic health information in
+ patient care, health care policymaking, clinical research, health care financing,
+ and continuous quality improvements;
+ (2) educate the general public and health care professionals about the value of an electronic
+ health infrastructure for improving patient care;
+ (3) ensure the use of national standards for the development of an interoperable system,
+ which shall include provisions relating to security, privacy, data content, structures
+ and format, vocabulary, and transmission protocols;
+ (4) propose strategic investments in equipment and other infrastructure elements that
+ will facilitate the ongoing development of a statewide infrastructure;
+ (5) recommend funding mechanisms for the ongoing development and maintenance costs of
+ a statewide health information system, including funding options and an implementation
+ strategy for a loan and grant program;
+ (6) incorporate the existing health care information technology initiatives to the extent
+ feasible in order to avoid incompatible systems and duplicative efforts;
+ (7) integrate the information technology components of the Blueprint for Health established
+ in chapter 13 of this title, the Agency of Human Services’ Enterprise Master Patient
+ Index and all other Medicaid management information systems being developed by the
+ Department of Vermont Health Access, information technology components of the quality
+ assurance system, the program to capitalize with loans and grants electronic medical
+ record systems in primary care practices, and any other information technology initiatives
+ coordinated pursuant to 3 V.S.A. § 3027; and
+ (8) address issues related to data ownership, governance, and confidentiality and security
+ of patient information.
+ (c) The Department of Vermont Health Access, in consultation with the Steering Committee,
+ may propose updates to the Plan in addition to the annual updates as needed to reflect
+ emerging technologies, the State’s changing needs, and such other areas as the Department
+ deems appropriate. The Department shall solicit recommendations from interested stakeholders
+ in order to propose updates to the Health Information Technology Plan pursuant to
+ subsection (a) of this section and to this subsection, including applicable standards,
+ protocols, and pilot programs, and may enter into a contract or grant agreement with
+ appropriate entities to update some or all of the Plan. The Department of Vermont
+ Health Access shall distribute the updated Plan to the Secretary of Administration;
+ the Secretary of Digital Services; the Commissioner of Financial Regulation; the Green
+ Mountain Care Board; the Secretary of Human Services; the Commissioner of Health;
+ the Commissioner of Mental Health; the Commissioner of Disabilities, Aging, and Independent
+ Living; the Senate Committee on Health and Welfare; the House Committee on Health
+ Care; affected parties; and interested stakeholders. Unless major modifications are
+ required, the Department may present updated information about the Plan to the legislative
+ committees of jurisdiction in lieu of creating a written report.
+ (d) The Health Information Technology Plan shall serve as the framework within which the
+ Green Mountain Care Board reviews certificate of need applications for information
+ technology under section 9440b of this title. In addition, the Secretary of Digital Services shall use the Health Information
+ Technology Plan as the basis for independent review of State information technology
+ procurements.
+ (e) The privacy standards and protocols developed in the Statewide Health Information
+ Technology Plan shall be no less stringent than applicable federal and State guidelines,
+ including the “Standards for Privacy of Individually Identifiable Health Information”
+ established under the Health Insurance Portability and Accountability Act of 1996
+ and contained in 45 C.F.R., Parts 160 and 164, and any subsequent amendments, and the privacy provisions established under Subtitle D of Title XIII of Division A of the American Recovery and Reinvestment Act of 2009, Pub. L. No. 111-5, § 13400 et seq. The standards and protocols shall require that access to individually identifiable health information is secure and traceable by an electronic audit trail.
+ (f) [Repealed.] (Added 2009, No. 61, § 1; amended 2009, No. 156 (Adj. Sess.), § I.25; 2011, No. 63, § G.103; 2013, No. 79, § 49b; 2015, No. 172 (Adj. Sess.), § E.306; 2017, No. 85, § F.9, eff. June 28, 2017; 2017, No. 187 (Adj. Sess.), § 2, eff. May 28, 2018; 2019, No. 53, § 4, eff. March 1, 2020; 2025, No. 18, § 27, eff. May 13, 2025; 2025, No. 62, § 1, eff. July 1, 2025.) 
+ § 9352. Vermont Information Technology Leaders 
+ (a) Governance. The Vermont Information Technology Leaders, Inc. (VITL) Board of Directors shall consist
+ of no fewer than nine nor more than 14 members. The term of each member shall be two
+ years, except that of the members first appointed, approximately one-half shall serve
+ a term of one year and approximately one-half shall serve a term of two years, and
+ members shall continue to hold office until their successors have been duly appointed.
+ The Board of Directors shall comprise representatives of the business community, of
+ health care consumers, of Vermont hospitals, of Vermont-licensed clinicians, and of
+ health insurers licensed to offer plans in Vermont, as well as individuals familiar
+ with health information technology, including, to the extent practicable, one or more
+ individuals who are or have served as the chief technology officer for a health care
+ facility.
+ (b) Conflict of interest. In carrying out their responsibilities under this section, Directors of VITL shall
+ be subject to conflict of interest policies established by the Secretary of Administration
+ to ensure that deliberations and decisions are fair and equitable.
+ (c) Health information exchange operation.
+ (1) VITL shall be designated in the Health Information Technology Plan to operate the
+ exclusive statewide health information exchange network for this State. The Plan shall
+ determine the manner in which Vermont’s health information exchange network shall
+ be managed. Nothing in this chapter shall impede local community providers from the
+ exchange of electronic medical data.
+ (2) Notwithstanding any provision of 3 V.S.A. § 2222 or 2283b to the contrary, upon request of the Secretary of Administration, the Agency of Digital
+ Services shall review VITL’s technology for security, privacy, and interoperability
+ with State government information technology, consistent with the State’s health information
+ technology plan required by section 9351 of this title.
+ (d) Privacy. The standards and protocols implemented by VITL shall be consistent with those adopted
+ by the statewide Health Information Technology Plan pursuant to subsection 9351(e) of this title.
+ (e) Report. On or before January 15 of each year, VITL shall file a report with the Green Mountain
+ Care Board; the Secretary of Administration; the Secretary of Digital Services; the
+ Commissioner of Financial Regulation; the Commissioner of Vermont Health Access; the
+ Secretary of Human Services; the Commissioner of Health; the Commissioner of Mental
+ Health; the Commissioner of Disabilities, Aging, and Independent Living; the Senate
+ Committee on Health and Welfare; and the House Committee on Health Care. The report
+ shall include an assessment of progress in implementing health information technology
+ in Vermont and recommendations for additional funding and legislation required. In
+ addition, VITL shall publish minutes of VITL meetings and any other relevant information
+ on a public website. The provisions of 2 V.S.A. § 20(d) (expiration of required reports) shall not apply to the report to be made under this
+ subsection.
+ (f) Funding authorization. VITL is authorized to seek matching funds to assist with carrying out the purposes
+ of this section. In addition, it may accept any and all donations, gifts, and grants
+ of money, equipment, supplies, materials, and services from the federal or any local
+ government, or any agency thereof, and from any person, firm, foundation, or corporation
+ for any of its purposes and functions under this section and may receive and use the
+ same, subject to the terms, conditions, and regulations governing such donations,
+ gifts, and grants. VITL shall not use any State funds for health care consumer advertising,
+ marketing, or similar services unless necessary to comply with the terms of a contract
+ or grant that requires a contribution of State funds.
+ (g) Waivers. The Secretary of Human Services or designee, in consultation with VITL, may seek any
+ waivers of federal law, of rule, or of regulation that might assist with implementation
+ of this section.
+ (h) [Repealed.] 
+ (i) Certification of meaningful use and connectivity.
+ (1) To the extent necessary to support Vermont’s health care reform goals or as required
+ by federal law, VITL shall be authorized to certify the meaningful use of health information
+ technology and electronic health records by health care providers licensed in Vermont.
+ (2) VITL, in consultation with health care providers and health care facilities, shall
+ establish criteria for creating or maintaining connectivity to the State’s health
+ information exchange network.
+ (j) Scope of activities. VITL and any person who serves as a member, director, officer, or employee of VITL
+ with or without compensation shall not be considered a health care provider as defined
+ in subdivision 9432 of this title for purposes of any action taken in good faith pursuant to or in reliance upon provisions
+ of this section relating to VITL’s:
+ (1) governance; 
+ (2) electronic exchange of health information and operation of the statewide Health Information
+ Exchange Network as long as nothing in such exchange or operation constitutes the
+ practice of medicine pursuant to 26 V.S.A. chapter 23 or 33;
+ (3) implementation of privacy provisions; 
+ (4) funding authority; 
+ (5) application for waivers of federal law; 
+ (6) establishment and operation of a financing program providing electronic health records
+ systems to providers; or
+ (7) certification of health care providers’ meaningful use of health information technology. (Added 2009, No. 61, § 1; amended 2009, No. 67 (Adj. Sess.), § 108; 2009, No. 156 (Adj. Sess.), § I.26; 2011, No. 63, § G.104; 2013, No. 79, § 34a, eff. June 7, 2013; 2013, No. 142 (Adj. Sess.), § 34; 2015, No. 54, § 9, eff. June 5, 2015; 2015, No. 172 (Adj. Sess.), § E.306.1; 2017, No. 187 (Adj. Sess.), § 3, eff. May 28, 2018; 2023, No. 6, § 223, eff. July 1, 2023; 2025, No. 62, § 2, eff. July 1, 2025.) 
+ § 9353. Integration of health care data; reports 
+ (a) The Agency of Human Services shall collaborate with the Health Information Exchange
+ Steering Committee in the development of the Unified Health Data Space in order to
+ improve patient and provider access to relevant information, increase efficiencies
+ and decrease administrative burdens on providers, and reduce health care system costs.
+ (b) The Agency’s development of the Unified Health Data Space shall: 
+ (1) align with the statewide Health Information Technology Plan established pursuant to
+ section 9351 of this title;
+ (2) utilize the expertise of the Health Information Exchange Steering Committee; 
+ (3) incorporate appropriate privacy and security standards that are aligned with the best
+ privacy and security interests of patients;
+ (4) determine whether to integrate clinical data, claims data, data regarding social drivers
+ of health and health-related social needs, and other data types and, if so, how to
+ do so in a manner that protects proprietary information relating to payers and providers;
+ provided, however, that integration of these data types or a subset of them shall
+ not begin prior to January 1, 2027, and shall occur only upon the favorable vote of
+ a majority of all voting members of the Health Information Exchange Steering Committee
+ and only for the specific uses approved by a majority of all voting members of the
+ Steering Committee;
+ (5) if data is integrated in accordance with subdivision (4) of this subsection, limit
+ the use of the integrated data to the specific uses approved by the Health Information
+ Exchange Steering Committee;
+ (6) ensure interoperability among contributing data sources and applications to enable
+ use of the Unified Health Data Space;
+ (7) identify the resources necessary to complete data linkages for policy, health surveillance,
+ population health management, and research usage and for the data integration uses
+ approved by the Health Information Exchange Steering Committee pursuant to subdivisions
+ (4) and (5) of this subsection;
+ (8) establish a timeline for setup and access to the integrated system; 
+ (9) develop and implement a system that ensures rapid access for patients and providers;
+ and
+ (10) identify additional opportunities for future development, including incorporating
+ new data types and larger populations.
+ (c) The Agency shall provide access to data to State agencies and health care providers
+ as needed to support the goals of the Statewide Health Care Delivery Strategic Plan
+ established pursuant to section 9403 of this title, once established, to the extent permitted by the data use agreements in place for
+ each data set and the uses approved pursuant to subdivision (b)(4) of this section.
+ (d)(1) On or before January 15, 2026, the Agency of Human Services shall report to the House
+ Committees on Health Care and on Human Services and the Senate Committee on Health
+ and Welfare regarding the advantages and disadvantages of integrating clinical data,
+ claims data, data regarding social drivers of health and health-related social needs,
+ and other data types in the Unified Health Data Space; how an integrated system can
+ improve patient and provider access to relevant information, increase efficiencies
+ and decrease administrative burdens on providers, increase access to and quality of
+ health care for Vermonters, and reduce health care system costs; and how an integrated
+ system can be implemented in a manner that protects proprietary information relating
+ to payers and providers.
+ (2) On or before January 15 annually beginning in 2027, the Agency of Human Services shall
+ provide an update to the House Committees on Health Care and on Human Services and
+ the Senate Committee on Health and Welfare regarding the development and implementation
+ of the Unified Health Data Space in accordance with this section. (Added 2025, No. 68, § 10, eff. June 12, 2025.)
+ Subchapter 002 : Telehealth 
+ § 9361. Health care providers delivering health care services through telemedicine or by store-and-forward
+ means 
+ (a) As used in this section, “distant site,” “health care provider,” “originating site,”
+ “store-and-forward,” and “telemedicine” have the same meanings as in 8 V.S.A. § 4098a.
+ (b) Subject to the limitations of the license under which the individual is practicing,
+ a health care provider licensed in this State may prescribe, dispense, or administer
+ drugs or medical supplies, or otherwise provide treatment recommendations to a patient
+ after having performed an appropriate examination of the patient in person, through
+ telemedicine, or by the use of instrumentation and diagnostic equipment through which
+ images and medical records may be transmitted electronically. Treatment recommendations
+ made via electronic means, including issuing a prescription via electronic means,
+ shall be held to the same standards of appropriate practice as those in traditional
+ provider-patient settings.
+ (c)(1) A health care provider delivering health care services or dental services through
+ telemedicine shall obtain and document a patient’s oral or written informed consent
+ for the use of telemedicine technology prior to delivering services to the patient.
+ (A) The informed consent for telemedicine services shall be provided in accordance with
+ Vermont and national policies and guidelines on the appropriate use of telemedicine
+ within the provider’s profession and shall include, in language that patients can
+ easily understand:
+ (i) an explanation of the opportunities and limitations of delivering health care services
+ or dental services through telemedicine;
+ (ii) informing the patient of the presence of any other individual who will be participating
+ in or observing the patient’s consultation with the provider at the distant site and
+ obtaining the patient’s permission for the participation or observation; and
+ (iii) assurance that all services the health care provider delivers to the patient through
+ telemedicine will be delivered over a secure connection that complies with the requirements
+ of the Health Insurance Portability and Accountability Act of 1996, Pub. L. No. 104-191.
+ (B) For services delivered through telemedicine on an ongoing basis, the health care provider
+ shall be required to obtain consent only at the first episode of care.
+ (2) The provider shall include the patient’s written consent in the patient’s medical
+ record or document the patient’s oral consent in the patient’s medical record.
+ (3) A health care provider delivering telemedicine services through a contract with a
+ third-party vendor shall comply with the provisions of this subsection (c) to the
+ extent permissible under the terms of the contract. If the contract requires the health
+ care provider to use the vendor’s own informed consent provisions instead of those
+ set forth in this subsection, the health care provider shall be deemed to be in compliance
+ with the requirements of this subsection if he or she adheres to the terms of the
+ vendor’s informed consent policies.
+ (4) Notwithstanding any provision of this subsection to the contrary, a health care provider
+ shall not be required to obtain a patient’s informed consent for the use of telemedicine
+ in the following circumstances:
+ (A) in the case of a medical emergency; 
+ (B) for the second certification of an emergency examination determining whether an individual
+ is a person in need of treatment pursuant to section 7508 of this title; or
+ (C) for a psychiatrist’s examination to determine whether an individual is in need of
+ inpatient hospitalization pursuant to 13 V.S.A. § 4815(g)(3).
+ (d) Neither a health care provider nor a patient shall create or cause to be created a
+ recording of a provider’s telemedicine consultation with a patient unless both the
+ patient and the provider consent to the recording.
+ (e)(1) A patient receiving health care services or dental services by store-and-forward means
+ shall be informed of the patient’s right to refuse to receive services in this manner
+ and to request services in an alternative format, such as through real-time telemedicine
+ services or an in-person visit.
+ (2) Receipt of services by store-and-forward means shall not preclude a patient from receiving
+ real-time telemedicine services or an in-person visit with the distant site health
+ care provider at a future date.
+ (3) Originating site health care providers involved in the store-and-forward process shall
+ obtain informed consent from the patient as described in subsection (c) of this section. (Added 2011, No. 107 (Adj. Sess.), § 4, eff. May 8, 2012; amended 2017, No. 64, § 2, eff. Oct. 1, 2017; 2019, No. 91 (Adj. Sess.), § 25, eff. March 30, 2020; 2025, No. 11, § 17, eff. Sept. 1, 2025; 2025, No. 80 (Adj. Sess.), § 1, eff. Apr. 20, 2026.)
+ § 9362. Health care providers delivering health care services by audio-only telephone 
+ (a) As used in this section: 
+ (1) “Health insurance plan” has the same meaning as in 8 V.S.A. § 4011. 
+ (2) “Health care provider” has the same meaning as in 8 V.S.A. § 4098b. 
+ (3) “Telemedicine” has the same meaning as in 8 V.S.A. § 4098a. 
+ (b)(1) Subject to the limitations of the license under which the individual is practicing
+ and, for Medicaid patients, to the extent permitted by the Centers for Medicare and
+ Medicaid Services, a health care provider may deliver health care services to a patient
+ using audio-only telephone if the patient elects to receive the services in this manner
+ and it is clinically appropriate to do so. A health care provider shall comply with
+ any training requirements imposed by the provider’s licensing board on the appropriate
+ use of audio-only telephone in health care delivery.
+ (2) A health care provider delivering health care services using audio-only telephone
+ shall include or document in the patient’s medical record:
+ (A) the patient’s informed consent for receiving services using audio-only telephone in
+ accordance with subsection (c) of this section; and
+ (B) the reason or reasons that the provider determined that it was clinically appropriate
+ to deliver health care services to the patient by audio-only telephone.
+ (3)(A) A health care provider shall not require a patient to receive health care services
+ by audio-only telephone if the patient does not wish to receive services in this manner.
+ (B) A health care provider shall deliver care that is timely and complies with contractual
+ requirements and shall not delay care unnecessarily if a patient elects to receive
+ services through an in-person visit or telemedicine instead of by audio-only telephone.
+ (c) A health care provider delivering health care services by audio-only telephone shall
+ obtain and document a patient’s oral or written informed consent for the use of audio-only
+ telephone prior to the appointment or at the start of the appointment but prior to
+ delivering any billable service.
+ (1) The informed consent for audio-only telephone services shall be provided in accordance
+ with Vermont and national policies and guidelines on the appropriate use of telephone
+ services within the provider’s profession and shall include, in language that patients
+ can easily understand:
+ (A) that the patient is entitled to choose to receive services by audio-only telephone,
+ in person, or through telemedicine, to the extent clinically appropriate;
+ (B) that receiving services by audio-only telephone does not preclude the patient from
+ receiving services in person or through telemedicine at a later date;
+ (C) an explanation of the opportunities and limitations of delivering and receiving health
+ care services using audio-only telephone;
+ (D) informing the patient of the presence of any other individual who will be participating
+ in or listening to the patient’s consultation with the provider and obtaining the
+ patient’s permission for the participation or observation;
+ (E) whether the services will be billed to the patient’s health insurance plan if delivered
+ by audio-only telephone and what this may mean for the patient’s financial responsibility
+ for co-payments, coinsurance, and deductibles; and
+ (F) informing the patient that not all audio-only health care services are covered by
+ all health plans.
+ (2) For services delivered by audio-only telephone on an ongoing basis, the health care
+ provider shall be required to obtain consent only at the first episode of care.
+ (3) If the patient provides oral informed consent, the provider shall offer to provide
+ the patient with a written copy of the informed consent.
+ (4) Notwithstanding any provision of this subsection to the contrary, a health care provider
+ shall not be required to obtain a patient’s informed consent for the use of audio-only
+ telephone services in the case of a medical emergency.
+ (5) A health care provider may use a single informed consent form to address all telehealth
+ modalities, including telemedicine, store and forward, and audio-only telephone, as
+ long as the form complies with the provisions of section 9361 of this chapter and
+ this section.
+ (d) Neither a health care provider nor a patient shall create or cause to be created a
+ recording of a provider’s telephone consultation with a patient unless both the patient
+ and the provider consent to the recording.
+ (e) Audio-only telephone services shall not be used in the following circumstances: 
+ (1) for the second certification of an emergency examination determining whether an individual
+ is a person in need of treatment pursuant to section 7508 of this title; or
+ (2) for a psychiatrist’s examination to determine whether an individual is in need of
+ inpatient hospitalization pursuant to 13 V.S.A. § 4815(g)(3). (Added 2021, No. 6, § 5, eff. March 29, 2021; amended 2025, No. 11, § 18, eff. Sept. 1, 2025; 2025, No. 80 (Adj. Sess.), § 2, eff. Apr. 20, 2026.)
+ Statutes 
+ Vermont Statutes Online 
+ Statutes Search 
+ Vermont Statutes at Lexis/Nexis 
+ Constitution 
+ Constitution of the State of Vermont 
+ Acts 
+ Acts & Resolves 
+ Acts Affecting VSA Sections 
+ Rules 
+ State Agency Rules at Lexis/Nexis 
+ Court Rules at Lexis/Nexis 
+ Legislative Committee on Administrative Rules (LCAR) 
+ Contact 
+ Vermont State House 115 State Street Montpelier, VT 05633-5301 (802) 828-2228 sgtatarms@leg.state.vt.us 
+ Capitol Police Department 802-828-2273 
+ Member & Staff Links 
+ Legislative Email Sign-on 
+ Legislative Human Resources 
+ Legislative Time Reporting 
+ Legislative Expense Reporting 
+ Test My MFA 
+ How to Use This Website 
+ Disclaimer 
+ State Government 
+ State of Vermont 
+ Governor 
+ Lieutenant Governor 
+ Attorney General 
+ Auditor 
+ Secretary of State 
+ Treasurer 
+ Judiciary 
+ State Agencies A-Z 
+ State Telephone Directory 
+ Noteworthy 
+ Announcements 
+ Scheduled Committee Meetings 
+ Legislative Schedule 
+ Site Resources 
+ Sitemap | 
+ Disclaimers 
+ Questions & Comments | 
+ Career Opportunities 
+ Requests for Proposals | 
+ Accessibility 
+ Comments or questions about the website? Fill out our feedback form and let us know.
+ Developers 
+ Copyright 2026 State of Vermont. All rights reserved. Website Design & Development by Bluehouse Group 

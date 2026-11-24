@@ -1,0 +1,224 @@
+About VITL and the 
+Ver mont Health Infor mation Exchange
+February 4, 2025
+About VITL
+About VITL and Our Work
+2
+About VITL
+VITL is a Vermont-based 501(c) (3) nonprofit that shares health 
+information responsibly to help providers care for their patients. 
+18 V.S.A. § 9352 designates VITL as the operator of the Vermont Health 
+Information Exchange – a health data sharing network that is creating 
+one health record for every Vermonter. 
+About VITL
+VITL’s mission is to securely aggregate, 
+standardize, and share the data needed to 
+improve the effectiveness of health care 
+for Vermonters
+3
+About VITL
+Health Data Interoperability
+VITL enables the sharing of health data across systems
+•VITL provides the ability to collect health information from disparate 
+systems and sources and make it meaningful and usable for all 
+stakeholders
+•VITL collects,matches, and standardizes patient data in real time 
+from health care providers caring for Vermonters to create one 
+longitudinal record for each person in the Vermont Health Information 
+Exchange
+4
+About VITL
+VITL is a Data Sharing Hub
+Connecting to VITL reduces data sharing burden for provider organizations
+•For health care organizations, connecting to VITL replaces the need 
+to build many point-to-point connections
+•VITL efficiently delivers their health data to the places it needs to go
+•For example – results delivery to other providers, data to the Vermont Department of 
+Health, the Blueprint for Health, Bi-State Primary Care Association, and more
+•The result is reduced provider and organization burden and more 
+data available to support”
+•Patient care
+•Care management
+•Quality improvement
+•Health care reform
+•Public health activities
+•Population health initiatives
+5
+About VITL
+ 6
+VITL Participants
+Contribute Data Access Data
+Hospitals(includingall Vermont hospitals and two border hospitals, along withtheir inpatient and 
+ambulatory services, emergency departments, and ownedspecialty and primary care practices) 15 16
+Vermont Federally Qualified Health Centers 11 10
+Independent Specialty and Primary Care Practices 49 91
+Home Health Agencies 4 5
+Nursing Homes and Long-term Care Facilities 0 4
+Pharmacy Chains and Independent Pharmacies 11 1
+Laboratories (State and Commercial) 15 0
+Departments of the State of Vermont 2 3
+Designated Mental Health Agencies 
+and Specialized Services Agencies 0 12
+Emergency Medical Services Agencies 0 50
+Commercial Payer 0 1
+241 total organizations contribute and/oraccess data through VITL
+About VITL
+VITL Data
+Health information exchange transmits information originally collected in providers’ electronic 
+health records (EHRs) using specific types of messages and data feeds, defined by international 
+standards like Health Level Seven (HL7) and Fast Healthcare Interoperability Resources 
+(FHIR). VITL ingests and shares the following data types:
+•Admission, discharge, and transfer messages (ADT) notifications
+•Patient record summaries called Continuity of Care Documents (CCDs)
+•Laboratory and pathology test results
+•Radiology reports
+Radiologists’ readings of diagnostic imaging, not the images themselves
+•Clinical notes and transcriptions
+•Home health monitoring data
+•Immunization records
+Types of data VITL collects and shares
+7
+About VITL
+VITL Data Access Services
+Secure access to comprehensive health records, when and where data is needed
+The VITLAccess clinical web portaloffers access to one consolidated health record. It is 
+available to providers and staff at health care organizations, public and private payers, ACOs, 
+emergency medical services, and public health authorities. (click for a video about use by EMS agencies)
+Delivery of test results, imaging reports, and notes into electronic health records (EHRs), 
+for greater efficiency compared to fax- and phone-based workflows.
+Delivery of clinical summary documents into EHRs, enables health care organizations to 
+pull clinical record summaries from VITL data contributors, called Continuity of Care Documents, 
+into their EHRs.
+In-EHR Immunization Registry Query, delivers comprehensive immunization histories from 
+the Vermont Department of Health’s Immunization Registry directly into the patient record along 
+with a forecast of patient immunization recommendations. (click for a case study about registry query)
+Event notification, through a partner who delivers real-time data about patient care provided in 
+Vermont’s emergency departments and hospitals, helping the whole care team coordinate 
+services and supports.
+Custom reporting, which provides data about patient and population health. 
+8
+About VITL
+VITL Data Delivery Services
+VITL enables our data contributors to send data once – to the Vermont Health Information 
+Exchange. The data that VITL delivers informs care delivery and coordination, public health, 
+and population health efforts.
+In 2024, VITL delivered data, on behalf of data contributors, to:
+•Clinicians and staff at organizations that provide patient care
+•Public and private payers
+•The Vermont Department of Health
+•Bi-State Primary Care Association
+•The Vermont Blueprint for Health
+•The Vermont Chronic Care Initiative
+VITL is a hub for efficient data sharing
+9
+About VITL
+How Data is Shared
+10
+About VITL 11
+How Vermonters’ Data is Shared
+•Data sharing is governed by the Services Agreements between VITL 
+and organizations that contribute and use data, by state and federal 
+law including HIPAA, by VITL policies, and Appendix A of the State’s 
+HIE Strategic Plan.
+•An individual Vermonter’s data is available to authorized users.
+•Currently, 98.9% of Vermonters are sharing their data.
+About VITL
+Data Security and PrivacyThe security and confidentiality of patient health records in the Vermont Health 
+Information Exchange has always been a core focus of VITL’s work 
+•A privacy officer and a security officer oversee policy development and implementation and 
+deliver education for all VITL staff. Our security policies align with National Institute of 
+Standards and T echnology (NIST) security and privacy controls, which addresses incident 
+response, identity and authentication, access control, audit and logging, configuration 
+management, contingency planning, and supply chain risk management. 
+•Access to Vermont Health Information Exchange data is logged and is audited regularly, in 
+compliance with federal and state laws and VITL policies. Patients can also request an audit 
+of access of their data.
+•VITL engages in thorough security testing, including an annual third-party evaluation of our 
+adherence to rigorous security standards to identify improvement opportunities and priorities. 
+VITL will continue to regularly review and update our security tools and policies to ensure 
+alignment with best practices and mitigate the ever-changing threat landscape. Our goal is to 
+maintain effective, sustainable protections across all data managed by VITL.
+12
+About VITL
+Patient Education
+Ongoing patient education through provider partnerships and public outreach
+13
+•VITL is rare among HIEs in its commitment to direct engagement with 
+patients (Vermonters) 
+•Transparency builds trust - Public education has become a core part of our 
+service to Vermonters
+•Education campaigns focus on how data is shared, why it matters, and 
+every Vermonter’s options – including access to individual records
+•More information for individuals is available at vitl.net/sharing
+VITLAccess – clinical portal
+14About VITL
+About VITL
+ 15
+Spotlight on VITLAccess
+
+About VITL
+ 16
+Inside VITLAccess
+
+17
+Partnering with Public Health
+About VITL
+18
+Partnership: Public Health
+Growing partnership delivers data in support of many public health uses
+•During COVID, HIEs demonstrated real value in support of public health
+•Connected with new testing sites for testing data
+•Collected and delivering immunization records
+•Delivered daily reporting of hospitalizations, resource usage
+•Supported case investigations and contact tracing
+•VITL’s partnership with the Department of Health continues to grow
+•A connection to the Vermont Immunization Registry enables providers to pull immunization history and 
+forecasts directly into their EHRs
+•Expanded lab reporting for reportable diseases
+•Expanded use of portal by public health
+•Strategic plan in place for the coming years – currently integrating birth records and immunization records 
+•Exploring opportunities to access and use deidentified and aggregate data to inform public health work
+•Delivering data to the Women, Infants, and Children (WIC) public health nutrition program (click for a case 
+study to learn more)
+About VITL
+19
+Highlighting Projects 
+on the Horizon 
+At the ground floor of a standardized statewide approach to SDOH data sharing
+20
+Social Drivers of Health
+•Multi-stakeholder group including health care, health delivery reform, 
+and accountable care organization aligning on statewide use of the 
+Accountable Health Communities Health Related Social Needs 
+screening tool, State of Vermont simultaneously developing an SDOH 
+data roadmap
+•Opportunity to co-design an end-to-end system for data collection, 
+sharing, and use
+•Challenging each other to plan for equity, build-in approaches that 
+enable all provider organizations to collect and share SDOH data
+About VITL
+21
+Upcoming work we’re excited about
+Continuing to build one health record for every Vermonter and make health data available to 
+improve outcomes, support health care operations, and guide investment and policy decisions
+•Integrate new data types into the Vermont Health Information Exchange, 
+including more substance use disorder data and SDOH data
+•Continue work to leverage new technologies to deliver the health data that 
+providers need when and where they need it – often directly in EHRs
+•Evaluate opportunities to participate in federal interoperability initiatives 
+while also protecting the privacy of sensitive data that is protected under 
+Vermont law
+•Work with Vermont’s Agency of Human Services to support their 
+development of a “Unified Health Data Space”
+About VITL
+About VITL
+ 22
+Thank you for your time. Please be in touch with questions or to set up 
+time to learn more.
+You can reach Beth Anderson directly at banderson@vitl.net.
+You can reach the VITL team Monday-Friday, 9-5 at support@vitl.net 
+or 802-861-1800.
+The VITL website is vitl.net, or visit us on Linkedin 
+https://www.linkedin.com/company/vitl 
+Information for patients is available at vitl.net/for-Vermonters.
+Contact VITL

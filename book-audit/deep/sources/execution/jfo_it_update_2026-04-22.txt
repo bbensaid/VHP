@@ -1,0 +1,89 @@
+ 
+1 | P a g e 
+ 
+House Energy and Digital Infrastructure (HEDI) Committee 
+Joint Fiscal Office IT Consultant Update April 22, 2026 
+ 
+ 
+The purpose of this document is to provide the following information: 
+1. Summary of Projects Monitored by JFO IT Consultant 
+2. Summary of Upcoming JFO IT Reviews (pending budget requests) 
+1. Summary of Projects 
+The JFO IT consultant monitors the following projects. 
+Unemployment Insurance Modernization Project 
+ 
+• In 2022, GA authorized expenditure of $27M from the Technology Modernization Special Fund 
+for the UI Modernization project to be released as follows: 
+• A JFO review was completed in January 2024 and JITOC approved the release of $30 million 
+appropriated for the FY23 budget 
+• The total funds available for this project are $52.3 million from appropriations in FY22, FY23, 
+an increase in VDOL operating budget to support this project, and savings from costs used to 
+support the old system. 
+• The total cost for the UI System's 25-month implementation period and three years of 
+management and operations is $45.3 million. (Note: A contract amendment was processed 
+within the last month. I do not have the final numbers.) 
+Current Status 
+ 
+The UI Modernization project is on track for completion in Summer 2026. 
+ 
+Last fall, at a meeting with JITOC, the Vermont Department of Labor (VDOL), there was a 
+discussion about the importance of stakeholder engagement. After the meeting, the VDOL team 
+brought in Vermont Legal Aid, National Association of State Workforce Agencies (NASWA), and 
+HireAbility (formerly Voc Rehap) for testing. Commissioner Smith said the stakeholders' feedback 
+was similar, and they were able to accommodate most of it. 
+VDOL has also engaged with external users (businesses and current UI Claimants about the 
+project and what to expect. They recently held a virtual town hall with VLCT, attended by 90 
+participants. They have more town halls planned over the next few months. 
+ 
+VDOL leadership is engaged daily with FAST and weekly with ADS and FAST to ensure they are 
+tracking issues uncovered during User Acceptance testing. 
+ 
+2 | P a g e 
+ 
+Enterprise Resource Planning (ERP) Project 
+• In May of 2022, the State signed a contract with WorkDay, totaling $28.875 million over ten years 
+• To date, the General Assembly has appropriated $24.6 million for the ERP project 
+• In November 2024, JITOC voted to release $11.8 million in funds for the Finance Module 
+development 
+• The JFO IT review recommended oversight actions at specific points as the ERP implementation 
+progresses based on JFO IT Review. 
+• The JFO IT Consultant assessment of the project was provided to JITOC on October 21, 2025 to 
+JITOC. The complete assessment can be found at the following link: 
+https://legislature.vermont.gov/Documents/2026/Workgroups/JITOC/Tech%20Updates/W~
+Lisa%20Gauvin~ERP%20Memo~10-21-2025.pdf 
+ 
+Current Status 
+See document from 04/21/2026 HEDI/SI Joint ERP meeting. 
+ 
+ 
+2. Summary of Upcoming JFO IT Reviews 
+Integrated Eligibility and Enrollment (IE&E) System Modernization 
+• Agency of Human Services/ADS 
+• Purpose is to provide Vermonters with a centralized, simplified, and user-friendly experience for applying 
+and managing State benefits, as well as secure enrollment, personalized access, streamlined 
+applications, and comprehensive customer service. 
+• A competitive bid process was conducted, and a preferred vendor selection is complete.. 
+• As a requirement of funding, two federal agencies must approved the contract. Approval is imminent. 
+• The project will undergo a CIO's Independent Review, per 3 V.S.A. § 3303(d). Once this is completed, a JFO 
+IT Review will occur for this project 
+• JFO expected a request for State match funds in the current year, but it was not submitted. The Project 
+Team indicated that requests for information about the source of funds for the State Match should be 
+directed to Tracy O'Connell, the AHS Chief Financial Officer. 
+ 
+ 
+3 | P a g e 
+ 
+Comprehensive Child Welfare Information Systems (CCWIS) 
+• Department for Children and Families (DCF)/ADS 
+• As stated in the RFP, this project includes "the design, development, and implementation (DII) of a 
+Comprehensive Child Welfare Information System (CCWIS)" 
+• There is $15.6M in funds available for CCWIS via the following: 
+o 3,000,000.00 - B.1102(b)(4) Act 113 2024 
+o 3,000,000.00 - Appropriation per 2024 Act 113 E.300.3(a) 
+o 1,800,000.00 - 2025 Act 27 Sec. C.103 amending 2024 Act 113 Sec. B.1100(e)(4) 
+o 7,800,000.00 - Federal Revenue available as match for Comprehensive Child Welfare Information 
+System (CCWIS) 
+• An RFP was released during the spring of 2025 and bids are currently being evaluated 
+The project will undergo a CIO's Independent Review once a preferred vendor is selected, per 3 V.S.A. § 3303(d) 
+Current Status 
+The procurement is open. 

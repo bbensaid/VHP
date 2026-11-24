@@ -1,0 +1,980 @@
+ 
+ 
+ 
+ 
+ 
+ 
+2022 Annual Report 
+Agency of Digital Services 
+3 V.S.A. § 3303 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Submitted by 
+John Quinn, Secretary and State CIO 
+Shawn Nailor, Deputy Secretary 
+ 
+Date 
+January 18, 2022 
+ 
+ 
+ 
+
+2 | Page 
+ 
+Table of Contents 
+Executive Summary ............................................................................................................................3 
+Agency Statutory Language ................................................................................................................3 
+Our Successes in 2021 ........................................................................................................................3 
+Partner Agency Support Model ................................................................................................................ 3 
+Enterprise Architecture Division ............................................................................................................... 4 
+Cybersecurity Division ............................................................................................................................... 7 
+Finance Division ........................................................................................................................................ 7 
+Shared Services Division ........................................................................................................................... 9 
+Enterprise Project Management Office .................................................................................................. 10 
+Data Division ........................................................................................................................................... 12 
+Awards Received in 2021 ................................................................................................................. 13 
+Statutory Requirements ................................................................................................................... 13 
+Costs Saved/Avoided as a Result of Technology Optimization ............................................................... 13 
+Financial Report of Revenues and Expenditures for the Current Fiscal Year ......................................... 15 
+Summary of CY19 Independent Reviews ................................................................................................ 17 
+Outline Summary of IT Projects Over $500,000.00 ................................................................................ 17 
+Agency Performance Metrics and Trends ............................................................................................... 17 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 | Page 
+ 
+Executive Summary 
+The Agency of Digital Services (ADS) is responsible for supporting the Administration’s goals of 
+growing the economy, making Vermont more affordable, and protecting the most vulnerable. To 
+meet these goals, the Agency is committed to proactively providing enterprise-wide cost-
+effective, customer-focused information technology (IT) services and solutions in a secure, 
+reliable and up-to date manner. 
+ 
+The Agency of Digital Services brings together technical and business professionals from 
+across the Executive Branch to support the ongoing, statewide transition to digital government. 
+Examples of this work include continuous evaluation and improvement of systems which deliver 
+support to Vermonters and state employees. For example, turning Vermonters feedback into 
+improved and enhanced experiences with government interactions. ADS also manages 
+strategic investments in technology and manages the timing and pace of digital government 
+enhancements. 
+ 
+In alignment with Governor Scott’s priorities, the Agency of Digital Services identified the 
+following four goals: 
+• By 2024, increase the automation and reliability of services delivered to Vermonters 
+through modern technology. 
+• By 2024, increase accuracy of reporting and support creation of a comprehensive 
+Executive Branch information technology (IT) budget by reviewing and categorizing all 
+financial transactions related to technology spending. 
+• Continuously defend the state data network and raise employee and citizen awareness 
+of risks in cyberspace to reduce the likelihood of unauthorized access and misuse of 
+Vermont data. 
+• By 2025, improve Vermonters’ experience with government by increasing online 
+interaction. 
+ 
+Agency Statutory Language 
+In the 2019 Legislative Session, statutory language referencing the roles and responsibilities of 
+the Department of Information and Innovation (DII) was replaced with the Agency of Digital 
+Services (ADS). With the passage of Act 49 of the 2019 session, ADS now assumes the 
+responsibility of being the single entity created to provide information technology services and 
+solutions in State government. The legislation also updated reporting requirements for the 
+Agency. ADS is now responsible for providing an annual report each year and an updated 
+strategic plan biennially. 
+ 
+Our Successes in 2021 
+The information included in our 2022 Annual Report submission highlights our successes from 
+calendar year 2021. When ADS was created in April 2017, we made it our mission to keep our 
+IT staff embedded in the agencies they support. This model has created many positive 
+outcomes for our partner agencies. We have highlighted some of those successes in this report. 
+In addition, we have highlighted the major successes achieved this year in each of our ADS 
+Divisions. The wide range of successes across all agencies and departments indicate that the 
+entire Executive Branch benefitting from centralized IT. 
+ 
+Partner Agency Support Model 
+The establishment of the Agency of Digital Services has created the opportunity for 
+centralization and modernization of IT needs in the State. In addition, by continuing to house 
+ADS staff resources in the physical locations of State Agencies, we can provide better 
+4 | Page 
+ 
+coordination, communication and prioritization of IT needs to leadership and staff. Listed below 
+are a few of the successes we have achieved in supporting our partner agencies. 
+ 
+Increased Collaboration with Partner Agency Leadership 
+While consolidation can present challenges as employees and leadership adjust to having 
+changes in the IT reporting structure, it can also foster a more inclusive, road mapping process. 
+In a number of agencies and departments across state government, IT leadership finds 
+increased and earlier engagement with business leadership in the planning and discussion of 
+technical solutions aimed at helping the business. The elevation of ADS to Agency status has 
+enabled this collaboration to exist by reducing the number of IT “bubbles” across state 
+government. 
+ 
+Increased Collaboration and Support Across IT Professionals 
+A success experienced through the consolidation in reporting structures across IT professionals, 
+is the increased collaboration across agencies and departments. With a reduction of the 
+barriers between IT professionals we find those who have a skill set which is needed in other 
+locations can more readily assist. For example, the Division of Shared Services was able to 
+assist the Agency of Commerce and Community Development with Microsoft Dynamics. While 
+these opportunities have always existed, the weekly in-person communication between IT 
+leaders has allowed the challenges to be discussed and solutions be implemented by the 
+technical staff in a more expeditious manner. 
+ 
+Increased Visibility of Enterprise Offerings 
+One success experienced through the improved communication and collaboration at the Agency 
+IT leader level is an increased awareness of the capability, technical maturity, and resource 
+availability around the enterprise regarding IT offerings. While centralized IT has consistently 
+made efforts to procure and make available enterprise offerings, the increased communication 
+opportunities between the Chief Technology Office and Agency IT Leaders have created 
+opportunities for discussions on suitability to occur prior to commitments being made and 
+projects being scoped for incompatible technologies. 
+ 
+Enterprise Architecture Division 
+ 
+Enterprise Customer Relationship Management 
+2020-2021 has been exciting for the Salesforce Platform. The ADS team of technologists 
+supporting this platform doubled this year due to demand. We went from 3 live salesforce 
+business applications prior to COVID to 26 applications in 14 months with 3 additional major 
+efforts underway for the Child Development Information System, Dept of Liquor & Lottery 
+Licensing system, and the 1-stop VT Business Registration Portal. Our Salesforce environment 
+has been configured and audited to support the highest IRS and HIPAA data standards. The 
+Salesforce Platform was the technical backbone of the Pandemic Response. The Platform in 
+partnership with vendors stepped up and was able to get applications out in record time to 
+support Vermonters. In between keeping the lights on and supporting inflight projects the team 
+is working toward documenting the Platform Governance and Best Practices. As a leader in the 
+Government Salesforce community, Vermont has defined a State-gov specific data model that 
+is in the process implemented and back-ported to our current applications. This data model 
+allows non-duplicative, single-source of truth Vermonter data to live in our Salesforce org while 
+applying agency, department, and program-level confidentiality to simultaneously allow sharing 
+across state government of the 360degree needs of Vermonters, while not sharing details that 
+are regulated or require privacy protections within programs. To protect against future security 
+5 | Page 
+ 
+needs we are moving our applications to the new Salesforce FedRamp-High certified cloud. We 
+will migrate all existing apps to this new Org to complete the Data Model effort in 2022. 
+Automation of application release management has been an overall success with the 
+introduction of the Copado application. We have completed over 90 application promotions to 
+Production since July. The learning curve has been steep, but we are improving with each 
+release. The story for the Platform for 2022 is Governance and Best Practices. We now have 
+multiple vendors working between our org and governance and best practices are our number 
+one priority. We provided Salesforce and Release training to ADS staff in 2021 and 2022 will 
+also bring more internal development. In 2021 we saw the internal development of the ADS 
+Business Office Inventory application and the Special Education customer engagement system 
+for the Agency of Education. We look forward to documenting best practices and procuring tools 
+to automate security scanning to aid in our governance and quality of the Platform as it 
+continues to grow and evolve. 
+Enterprise Integration Platform 
+In 2022, the state’s use of the Data and Application Integration Platform (Mulesoft) will continue 
+to grow, allowing the state to modernize our integrations between platforms, which will make 
+them easier to manage and maintain for our IT staff. Rather than the legacy jumble of point-to-
+point code and traffic between our systems. Mulesoft connects itself to each of our systems 
+(Salesforce, Vision, Mainframe, etc) and then orchestrates any data or application needs across 
+those platforms. The platform forms the backbone of integrations for the new Child 
+Development Division Information System which is scheduled to go live in Jan 2022. In the first 
+quarter of 2022, MuleSoft will serve as an integration engine for the Department of Liquor and 
+Lottery Licensing and Enforcement solution. The platform will also serve as the replacement of 
+the state’s aging system for the Vermont Department of Health (Rhapsody). The state has 
+trained ADS staff as developers on the solution and their skillsets continue to grow with this new 
+technology, ready to support the future Platform strategy. 
+Enterprise Resource Planning 
+The State is accelerating towards modernization of Human, Financial and Physical capital 
+management functions to an ADS-manager Enterprise Resource Planning (ERP) system. We 
+currently maintain a myriad of expensive and cumbersome solutions across the state. As with 
+other critical business capabilities in our portfolio (Case Management, Document Management, 
+etc.) we are moving towards a shared and easily integrated enterprise solution. 
+• The best option for the operating model as determined by ADS is to be a SaaS Cloud-
+based software and infrastructure. The State believes Workday is the best offering 
+available on the market today to help support the operations of the Department of 
+Human Resources, Department of Finance and Management, and the Finance Budget 
+Group. This operating model which includes application, infrastructure (servers and 
+networks), and operating system applications would be maintained through subscription 
+to cloud services rather than SOV capital expense on servers and software. The vendor 
+would be responsible for the establishment of a new operating model that best serves 
+the State. The State of Vermont would not be responsible for the maintenance and 
+hosting of the Financial and HCM applications with this solution. 
+• The solution will be built as a single system with a single source for data, a single 
+security model, and a single user experience, it offers organizations a cloud-based 
+system that evolves to meet changing business objectives in a changing world. 
+• The solution must be based on a flexible, business-oriented framework that bundles 
+employees into groups based on cost centers, job specifications, reporting hierarchy, 
+using low-code user-friendly interfaces. 
+6 | Page 
+ 
+• Satisfies the needs of the Department of Human Resources, Finance, and Management, 
+Budget Group along with the specialized ERPs in use at the Department of 
+Transportation and the Department of Labor. 
+• The State of Vermont has chosen the SaaS application Workday because it satisfies the 
+following criteria: (1) sold on subscription, (2) hosted and managed by the application 
+software vendor, and (3) delivered in a multitenant model, which ensures that virtually all 
+customers are using the latest version of the software. Workday only offers SaaS. 
+MyVermont.gov (Okta) 
+For the myVermont.gov single sign-on, account management platform for Vermonters, a 
+substantial amount of progress was made during the second half of 2021 to connect the States 
+Salesforce presence to Okta. This will launch at the beginning of 2022 with the Child 
+Development Information System going live followed by the Secretary of State 1-stop Business 
+Registration Portal and the Dept of Liquor and Lottery Licensing system. Other Salesforce and 
+non-salesforce applications are expected to follow including at the Agency of Transportation, 
+Department of Public Safety, and Agency on Education. We expect to have more than 100k 
+myVermont.gov Okta accounts in use by the end of 2022. This volume of traffic is expected to 
+produce positive network effects by increasing the value for agencies and users of joining the 
+SSO environment, and by reducing the per-unit cost to each agency. With each new app we 
+bring on, it is expected to become both technically, administratively, and financially simpler to 
+bring on the next. 
+For Vermonters, myVermont.gov serves as a modern hub for users containing a dashboard with 
+Mulesoft extracted state data that is most relevant to them and links to the Okta connected 
+applications for which they are provisioned. A mobile app where users can connect to 
+myVermont apps and receive push notifications is also in development. ADS is also working 
+with the Department of Labor to create an identity proofing platform that can be used statewide 
+to streamline the process confirming that users are who they claim to be. With these changes in 
+place, we expect to reduce time spent troubleshooting for customers, increase the value of 
+joining myVermont and make it easy for customers to discover and leverage services 
+throughout the state. 
+Azure Cloud Migration 
+At the end of 2021, the State has moved 200+ new workloads to Azure Commercial and Azure 
+Government clouds. The Agency of Human Services will complete its migration to Azure in the 
+first quarter of 2022. A second project to move at least 6 additional Agencies & Departments 
+from on-premises infrastructure to Azure is planned for this year. Also, we plan to move a large 
+amount of local file storage to Azure file storage and other Microsoft cloud solutions such as 
+SharePoint and OneDrive. These migration efforts are expected to reduce the need to buy 
+additional infrastructure to support on-premise virtual computing this year and allow the State to 
+close several data centers. The current cloud-first strategy is expected to keep on-premises 
+growth to a minimum, further reducing the need to purchase additional infrastructure. 
+ 
+ 
+ 
+ 
+ 
+7 | Page 
+ 
+Cybersecurity and Networking Division 
+ 
+State Partnrship with NUARI 
+ADS Security has continued to deepen and refine our operational capability in the cybersecurity 
+environment. The partnership with the Norwich University Applied Research Institutes (NUARI) 
+adds to our incident analysis and trend analysis as they investigate logs at a level that State 
+staff had rarely had the time to do. Their assistance with table-top exercises (TTX) has allowed 
+us to design better processes, test those processes, and refine as deficiencies are recognized. 
+NUARI also increases our supply chain security by analyzing new software before that software 
+is authorized for installation into our enterprise environment. Our Crowdstrike implementation 
+has also been a resounding success. ADS has much deeper visibility into the status of our 
+computers and servers with a wide array of metrics for numbers of incidents detected, 
+computers tracked, and average time to resolve an incident, to name a few. Improvements in 
+virtual private network (VPN) software, multifactor authentication (MFA), and device logging 
+have all contributed to the refinement of our operational capability. 
+ 
+Risk Assessment 
+Risk assessment and risk tracking have been major efforts this year. With the help of Covid 
+Relief Funds (CRF), we have conducted two separate risk assessments to identify shortcomings 
+in both our platforms and applications. Conducting these assessments is particularly vital with 
+our shift to a largely remote workforce as the identification of risks allows us to better shift 
+resources and protective systems to areas of higher risk created by moving our staff outside of 
+our firewalls and security perimeter onto residential internet connections. One of the major 
+outcomes from the assessments was identifying that the complexity of our systems lent to 
+serious gaps in our risk tracking capability. We remedied this by procuring and developing 
+governance, risk, and compliance platform that we are designing specifically to track risk and 
+allow executives to make decisions related to system upgrades and replacements, based on the 
+risk of the systems, not just factors like age. An offshoot of this work has been the development 
+of a risk-ranked application inventory that will continue to be part of ADS’ communication with 
+other State Agencies toward prioritization of modernization and a better protective posture. 
+ 
+Security and Network Consolidation 
+ADS has consolidated our Security and Network teams into one division. This is a major shift in 
+functionality as the move begins a lengthy process of fully integrating cybersecurity into the 
+underpinnings of our network architecture and communications. The differing priorities of the 
+two teams had, at times, led to poor integration of technology platforms and divergent skill sets 
+between the two teams. Consolidation means unification of those technologies, first through 
+cross-leveling expertise and training opportunities, and second, by building in the efficiencies of 
+a single vendor approach to the switching and routing of internet communications and also the 
+inspection and protection of those communications. 
+ 
+Finance Division 
+ 
+Communications & Information Technology Fund from a deficit to a surplus 
+In-State Fiscal Year 2021, the Agency was able to increase the net position of the 
+Communications & Information Technology Fund from a deficit to a surplus, by $4,099,164. 
+This leaves the fund in a surplus position of $3,948,292. This reversal from deficit to surplus is 
+attributed to the Agency actively working to collect aged receivables, increased demand in 
+services provided by the Agency during the pandemic, streamlining business processes to 
+8 | Page 
+ 
+ensure accuracy and increase timeliness of billing to Agencies, as well as the continued efforts 
+to achieve Statewide transparency on technology spend. 
+Voice Over Internet Protocol (VoIP) Billings 
+ADS has successfully transitioned Voice Over Internet Protocol (VoIP) billings from a manual 
+internal process to a streamlined billing process administered by a third-party vendor. The 
+selection of a third-party vendor has been a long and arduous process that ended with the 
+selection of NWN Corporation, the State’s Voice over IP telephony provider. Included as a 
+requirement of an RFP issued by ADS for Voice over IP telephony services, NWN will be 
+providing all customary VOIP Telephony services currently being used by the Executive and 
+Judicial Branches and now will also provide the billing and collections for each user for the 
+service directly, rather than go through the bill-back method currently managed by the ADS 
+Finance Division. The transition is seen as a way to increase the VOIP Telephony billing 
+efficiency for all Agencies and Departments of the State, as well as free up internal resources 
+that could be put into effective use for other purposes. 
+Supply Chain Demand Constraints 
+Over the past year, ADS has battled to provide top service to our customers due to supply chain 
+demand constraints. Due to the Covid Pandemic, standard equipment, such as laptops, docking 
+stations, monitors and printers have been consistently hard to receive. In some instances, docks 
+that were being purchased were already outdated and not compatible with the available laptops, 
+so they needed to be returned. ADS has had wait times on equipment of over 8 months to be 
+able to receive all equipment needed to issue out to our customers. Since the beginning of the 
+pandemic, the Agency of Digital Services has experienced supply chain constraints that have 
+severely hindered our ability to provide IT hardware to our customers throughout the state. 
+The Agency has struggled to procure stock equipment such as laptops, monitors, docking 
+stations, printers, cell phones, and more. As an example, there are pending orders for docking 
+stations ordered back in March 2021. Due to the lengthy delays, some of the items ordered 
+have been replaced by a newer generation. This mid-order change in model can and has 
+caused compatibility issues with accessories procured for those items. For example, we placed 
+an order for laptops and corresponding docks; the docks were received first, and the laptops 
+came second. The manufacturer implemented a generational change on all machines making 
+the docks incompatible with any new hardware the Agency would be receiving. The Agency 
+ended up returning 200 docks and has yet to receive the replacement to those returned due to 
+the constraints. Most of these constraints are in large part due to the chip shortage, but also 
+because of the high demand the pandemic has caused. 
+The Agency of Digital Services has worked hard to find alternative solutions, such as a less 
+popular docking station for most standard laptops (which work more like an adapter as the 
+machines have to receive power through their power adapter). Contact is made weekly to our 
+vendor community seeking alternatives. At times during this pandemic, vendors have been able 
+to get us similar products in different brands. We do have strong relationships with several 
+vendors, and when they hear that they will get stock of a like item or our typical requested item, 
+they reach out and let us know. They will place temporary holds until a purchase order can be 
+provided, this has worked out very well and has allowed us to fulfill most priority requests in a 
+timely fashion. 
+9 | Page 
+ 
+The likelihood of the supply chain constraints slowing down is slim. Currently, we have 
+estimated delivery dates for some items as far out as April 2022. This will likely be pushed out 
+further as we approach April. 
+Shared Services Division 
+ 
+COVID19 Response – Remonte Worker 
+Throughout 2021 the Shared Services Division has been instrumental in the State’s COVID-19 
+response. The Desktop Support Team has deployed over 1,500 laptops this year to support 
+remote workers. As employees return to the office and hybrid meetings are becoming 
+commonplace, Desktop Support is deploying video conferencing systems in conference rooms 
+across the state. In 2021 approximately fifty systems were set up, and plans are underway to 
+add close to two hundred more in 2022. 
+Virtual desktops are another strategy that is being used to enable remote workers, especially 
+when data security is paramount. The Shared Services division built new Windows Virtual 
+Desktop farms for the Agency of Administration, Agency of Human Services, Agency of 
+Transportation, and Department of Labor. As we wrap up 2021, the Agency of Administration 
+has been fully transitioned to Windows Virtual Desktop, while the AHS, AOT, and DOL 
+deployments are in various stages of refinement, and on their way to going live. In many cases, 
+we are also realizing cost savings as these deployments are replacing more expensive Citrix 
+solutions that have been in place for some time. 
+Migration to VSMS Domain 
+The Shared Services Division continues to migrate agencies from legacy domains to the unified 
+VSMS domain. These migrations include user accounts, computer accounts, moving file 
+services to SharePoint Online, OneDrive for Business, and line-of-business application services. 
+Migrated users and applications can take advantage of the enterprise-level security offerings 
+installed and configured by default for all VSMS users. In 2021 we completed the migration of 
+the Department of Education, Secretary of State, Attorney Generals’ Office, and many smaller 
+organizations. 
+Expanded Voice over Internet Protocol (VoIP) Telephone 
+The Shared Services Division is in the middle of a project to expand the use of Voice over 
+Internet Protocol (VoIP) telephone, which will reduce costs by allowing us to move off more 
+expensive legacy phone services. Part of this project addresses E9-1-1 compliance. Changes 
+were made to the Cisco VoIP service to allow remote workers to update their 9-1-1 location – 
+This was done by installing Sentry Gatekeeper on all machines with softphones. This 3rd party 
+software, provided by NWN detects changes to address at sign-on and prompts for an updated 
+location. This means that if a softphone is used to dial 9-1-1 then the correct address is 
+conveyed. This software will be used when we move to Jabber this year. 
+Onbase System Upgrade 
+Other significant accomplishments in 2021 include an upgrade of the OnBase system to the 
+current version; this impacted approximately 1000 users. The OnBase platform manages 
+document, image and video content. In addition to storing and retrieving files, OnBase securely 
+manages workflows and business processes, granting access only to those who need access. 
+The upgrade allows the State to further leverage its Enterprise Platform Architecture to 
+maximize usage of Salesforce, Okta, Mulesoft, and Workday 
+ 
+10 | Page 
+ 
+Enterprise Project Management Office 
+The Enterprise Project Management Office is responsible for maintaining the records of all 
+information technology projects across State government. Highlighted below is a list of 
+information technology projects completed by the Agency of Digital Services this year. 
+ 
+Agency of Education (AOE) State Report Card Project 
+The State Report Card Project implemented a User-friendly system that contains dashboards 
+that are easily interpreted by a varying audience, including public access for required 
+transparency and role-based access to education stakeholders with a legal educational right to 
+view unsuppressed information. This system also fulfills requirements associated with Every 
+Student Succeeds Act. The project schedule was extended several times, however, the project 
+finished approximately $51,000 under the approved budget. 
+ 
+Department of Labor Unemployment Insurance Pandemic Unemployment Assistance 
+Project 
+This project migrated Pandemic Unemployment Assistance (PUA) user documents from the 
+PUA application into a more sustainable document management solution, OnBase. The project 
+schedule was expedited to comply with Coronavirus Relief Fund (CRF) expenditure guidelines 
+and while there were delays due to some OnBase configurations that required additional 
+support, the project finished with the required timeframe and about $150,000 under the original 
+baselined budget. 
+ 
+E911 Next Generation 911 System 
+The e911 Next Generation 911 System Project implemented a fully hosted and redundant Next 
+Generation 911 System that provides all the equipment and functional elements to deliver, 
+answer, call back and conference 911 calls in the Vermont PSAPs. There was a change request 
+that added scope to the project which resulted in a schedule extension. The five-year cost 
+model that was estimated for the project ended up approximately $1.1M under budget, even 
+though the implementation costs were slightly more than estimated. 
+ 
+Green Mountain Care Board (GMCB) VHCURES 3.0 
+This project upgraded the VHCURES database, with the existing vendor Onpoint Health Data, 
+to support additional analytic capabilities and new requirements, including those for the Vermont 
+All-Payer ACO Model. The VHCURES database was upgraded to align with anticipated state 
+data needs, to enrich VHCURES as an analytic data set, and to expand access to VHCURES. 
+The project was successful, finishing within the baselined schedule and budget as well as 
+achieving the expected business outcomes. 
+ 
+Dept. Of Vermont Health Access, Integrated Eligibility & Enrollment (IEE) Customer 
+Portal Phase 2-Online Application 
+The Online Application project is phase 2 of the IE&E Customer Portal initiative. Phase 2 
+developed an online application for the Medicaid Aged, Blind, and Disabled (MABD) population. 
+The project performed a pilot of the application internally with the Maximus call center. Phase 2 
+also included Authentication, which creates a secure, single-sign-on for users for the MABD 
+online application, MyBenefits, and the Document Uploader. The authentication effort allows for 
+the consolidation of 2 sign-on for MyBenefits and the Document Uploader down to one which 
+simplifies the experience for Vermonters. Authentication on the Document Uploader also now 
+brings the uploader into compliance to allow for its use by Medicaid and QHP customers which 
+provides them with another avenue for submitting their supporting documentation. 
+ 
+11 | Page 
+ 
+Dept. Of Vermont Health Access, Integrated Eligibility & Enrollment (IEE) Business 
+Intelligence Oracle Business Intelligence Enterprise (OBIEE) into the Oracle environment 
+(OFE) 
+The OBIEE into OFE project’s goal was to move Oracle’s Business Intelligence reporting tool 
+(OBIEE - Oracle Business Intelligence Enterprise) into the new Oracle environment (OFE) to 
+ensure that VHC can generate the needed operational reports. This project was a contingency 
+effort related to the original Business Intelligence (BI) project. 
+ 
+Agency of Transportation DMV Online Scheduler 
+The successful implementation of the online scheduler enabled DMV to safely return to serving 
+the public during this pandemic and furthered the DMV’s vision to have modern and customer-
+friendly online services. 
+ 
+Agency of Transportation Bridge Inspection Software (InspectX) 
+The implementation of a single bridge asset/management product that allows for field collection, 
+reporting of NBI & NBE data, support load rating, ad hoc querying, photo editing, support links 
+to plans/historical information, and federal submittal creation. This allowed for a more cost-
+efficient & streamlined process that will eliminate confusion & allow better access to bridge 
+inspection information. 
+ 
+Agency of Transportation Vermont Asset Management Information System (VAMIS) 
+Phase 1 
+The completion of Phase 1 advances the Agency’s objective to efficiently decide, track and be 
+accountable for its transportation asset investment portfolio. As a result of the project, the 
+Agency gained efficiencies by reducing the number of information sources that the user must 
+access (e.g. bridge management system, pavement management system, etc). The user can 
+simply access the VAMIS and have access to multiple systems and assets across the Agency. 
+The project reduces duplication of effort between business groups and reduces one-time data 
+collection efforts. 
+ 
+Agency of Transportation DMV Roadside Inspection/CVIEW 
+The implementation of the Roadside Inspection and Commercial Vehicle Exchange Window 
+(CVIEW) increased the amount of real-time information available to officers at roadside and 
+reduced requirements to access multiple systems and complete duplicative data entry. The 
+result has been time savings for staff and carriers under inspection. The project was 
+implemented under budget and, as a result of ITD core compliance, the State can leverage 
+future ITD funding from FMCSA for other ITD projects. 
+ 
+Agency of Human Services VDH COVID Testing Registration 
+Testing Clinic and Vaccination Clinic Registration System to allow the public to register for 
+clinics and securely receive test results. Enhanced COVID19 testing resulted in a large backlog 
+of negative test results that were sent via USPS or phoned to the recipient. There was a need 
+for a more streamlined process to handle test clinic registration and lab test results. In 
+anticipation of future vaccine clinics, the solution has to be extendable. This project successfully 
+delivered an online and call center-supported testing registration system. The emergency nature 
+of the need demanded the project be accomplished as soon as viable and was done so at a 
+cost that fell within the funding available. 
+ 
+12 | Page 
+ 
+ 
+Data Division 
+ 
+Open and Accessible Map Data 
+It's coming up on 30 years since the creation of Vermont’s Geographic Information System 
+(GIS) and it would have been hard to imagine in 1992 how many people would be accessing 
+geospatial data in Vermont today. At the time, there were 10 websites in the entire world and 
+ADS’s GIS had slightly over 100 customers – trained professionals who would mail-order floppy 
+disks of data. Today, open and immediate access to geospatial data, like tax parcel boundaries 
+and natural resource information, has become an expected government service accessed by 
+anyone with an internet connection. 2021 saw about a 30% increase in traffic, from 385 million 
+server requests to a mind boggling 500 million requests. In a typical month, we now see over 
+40,000 unique users accessing Vermont’s geospatial data (and if you include pandemic related 
+data this number balloons to several hundred thousand.) The growth and success of GIS in 
+Vermont can largely be attributed to the collaboration of over 20 different partner agencies, 
+regional planning commissions, and others outside of government contributing to over 1000 
+datasets to the Open Geodata Portal. 
+Pandemic Response 
+The COVID-19 in Vermont case and the Vermont Vaccine Data dashboards continued to be 
+wildly popular, with over 13 million visits since the beginning of the pandemic. Vermonters 
+curious about town vaccination trends or where to get their shot were able to consult the new 
+COVID-19 Vaccinations Town Map and COVID-19 Vaccination Clinics apps. Rounding out the 
+COVID-19 space, the team also helped launch a COVID-19 Testing Facilities app to help 
+Vermonters locate a convenient testing site. Beyond pandemic related work, staff also helped 
+the Health Department’s Cyanobacteria program Mosquito Surveillance program create user 
+friendly public reporting applications. 
+Online Property Parcel Information and Land Surveys 
+While COVID-19 data took the top-spot for most visits, property parcel data took second place – 
+with a growing number of Vermonter’s using the VT Parcel Viewer and other applications to 
+gather information about property ownership. Among the new applications is the Renter Rebate 
+SPAN lookup app, created with the Tax Department to assist renters identify property SPAN 
+numbers this tax filing season. The newly created Land Survey Library (Act 38) also finished the 
+year with 917 digital survey submissions, helping to make sure parcel data will stay fresh. The 
+National States Geographic Information Council recognized the parcel program with a 
+Geospatial Excellence Award at their annual conference. 
+2020 Census 
+The 2020 Census results were published, showing that Vermont’s population grew to 643,077, 
+roughly 19,000 more people than had been estimated by the American Community Survey in 
+2019. This follows the efforts of ADS staff to collect and process data from eight different 
+agencies and departments and submit address locations that would increase the Census 
+residential address database file by over 2%, accounting for a number very close to the actual 
+results. By preventing an undercount, the State of Vermont will save over $400 million dollars in 
+federal assistance over the next decade. 
+Redistricting & Strengthening Elections 
+ADS processed and published Census data results for use by the Legislative Apportionment 
+Board, creating maps and applications to help the Board develop their redistricting proposal and 
+13 | Page 
+ 
+making it easier for the public to visualize changes proposed for their towns. The Agency also 
+partnered with the Secretary of State’s Office, the National States Geographic Information 
+Council, and Maricopa County in Arizona in a GeoEnabled Election Pilot project to help 
+modernize election tasks and take steps to further ensure election security measures. 
+Awards Received in 2021 
+In 2021, the State of Vermont was nominated and won several awards for applications that 
+made access to government services easier, improved Vermonter’s quality of life, and 
+incentivized new Vermonter’s to relocate to our beautiful State. Below is a few of the awards the 
+State of Vermont was recognized for in 2021. 
+ 
+Vermont Outdoors Mobile App 
+2021 MarCom Award (Gold) 
+2021 W3 Awards (Gold) 
+2021 dotCOMM Awards (Gold) 
+2021 Hermes Creative Awards (Gold) 
+ 
+DMV Learner’s Permit Application 
+2021 Dacey Awards (Silver) 
+2021 W3 Awards (Silver) 
+2021 dotCOMM Awards (Honorable Mention) 
+ 
+ACCD New Worker Relocation Grant Program 
+2021 AVA Digital Awards (Gold) 
+ 
+DEC Let’s Scrap Food Waste 
+2021 AVA Digital Awards (Gold) 
+ 
+Statutory Requirements 
+The Agency of Digital Services is statutorily required by 3 V.S.A. § 3303 to provide the following 
+data. The data collected helps our Agency, the Legislature and others to understand the 
+importance of coordination and investment in information technology for the State. 
+ 
+Costs Saved/Avoided as a Result of Technology Optimization 
+This requirement tasks our Agency with documenting costs saved or avoided through 
+technology optimization for the last fiscal year. In this table, we have identified where our 
+Agency saved or avoided costs due to technology modernization. The table below indicates the 
+partner agency or department where savings occurred, the name of the initiative, the total 
+amount and frequency of the savings or cost avoidance. 
+ 
+ 
+ 
+ 
+
+14 | Page 
+ 
+ 
+ 
+ 
+
+15 | Page 
+ 
+ 
+ 
+
+16 | Page 
+ 
+ 
+ 
+Financial Report of Revenues and Expenditures for the Current Fiscal Year 
+The following table highlights the revenues and expenditures of ADS in the current fiscal year. 
+The information is broken down into the description, budget, carry-over, total budget, expenses 
+and revenues. The bottom column on the table indicates the total expenses and revenues from 
+FY21. 
+ 
+ 
+ 
+
+17 | Page 
+ 
+Summary of CY20 Independent Reviews 
+Per statute, ADS is required to hire an independent contractor to conduct an independent 
+review on technology projects with total costs of over $1 million. Additionally, we must provide 
+summaries of each independent review conducted. The independent reviews must include an 
+acquisition cost assessment; a technology architecture and standards review; an 
+implementation plan assessment; a cost analysis and a model for benefit analysis; an analysis 
+of alternatives; an impact analysis on net operating costs for the agency carrying out the activity; 
+and a security assessment. The Independent Review summaries can be found in the 
+Information Technology Activity Report (Independent Reviews | Enterprise Project Management 
+Office (vermont.gov)). 
+ 
+ 
+Outline Summary of IT Projects Over $500,000.00 
+The ADS Project Management Office is constantly tracking data on all IT projects. Our agency 
+is required to provide an outline summary of information, including scope, schedule, budget, and 
+status for information technology projects over $500,000.00. Highlighted in this report are 
+projects which meet the $500,000.00 threshold, as well as the top 10 IT projects chosen by the 
+CIO. This information can be found in the Information Technology Activity Report ( 
+EPMO_Annual_Report_FY22.pdf (vermont.gov)). 
+ 
+Agency Performance Metrics and Trends 
+To ensure successful Agency performance, our Agency is constantly tracking data and metrics. 
+The data includes baseline and annual measurements for each division of the Agency. 
+ 
+ 
+ 
+
+18 | Page 
+ 
+Appendix A 
+ADS 2021 Awards 
+ 
+
+AGENCY OF DIGITAL 
+SERVICES
+2022 - 2026
+ADS Strategic 
+Plan
+A guide to the goals, strategies and 
+metrics providing direction to the 
+Agency of Digital Services in the 
+coming four years.
+Submitted by:
+John Quinn, Secretary and State CIO
+1
+Greetings from the Secretary
+I am pleased to present to you the Agency of Digital Services 2022 Strategic Plan. Our 
+plan articulates the principles that will guide the agency into the future as well as the 
+recent accomplishments that helped us get to where we are today.
+As the second year of the COVID19 pandemic raged on, Vermonter’s continued to see 
+challenges that changed their everyday life with the need to connect with State services 
+increasing. To meet the needs of Vermonter’s, ADS once again rose to the challenge, by 
+helping our partner agencies deliver the services Vermonter’s demand. Out of adversity, 
+however, comes tremendous opportunity and ADS seized upon this opportunity by 
+securing funding using unprecedented Federal and State money to begin long needed 
+modernization projects on some of the State’s oldest systems. 
+ADS has come a long way in a very short time, and I am proud of our accomplishments 
+to date and where we are headed in the future. In the coming year, we will continue to 
+focus on Vermonters' experience with Government services, modernization of systems, 
+IT costs and data privacy and cybersecurity.
+With sincere thanks to all who have contributed to the successes of ADS to date,
+John Quinn III
+Secretary and Chief Information Officer (CIO)
+Introduction
+2
+
+Table of Contents
+3
+INTRODUCTION 2
+TABLEOF CONTENTS 3
+ABOUT ADS
+Mission and Vision
+Our Guiding Principles
+Accomplishments to Date
+Efforts Looking Ahead
+4
+4
+5
+6
+STRATEGIC GOALS
+IT Modernization
+Vermonter Experience
+Cybersecurity
+IT Budget Reporting
+7
+8
+9
+10
+MISSION
+To collaborate with our partners in state government to deliver simple and intuitive 
+technology solutions that improve the lives of Vermonters.
+VISION
+To provide government services that are secure and easily accessible to all people doing 
+business and interacting with the State of Vermont.
+TRANSFORM OUR CUSTOMER EXPERINCE
+• Deliver measurable value to our partners in State government
+• Engage early and often
+• Be honest about the scope of our challenges
+• Work with agencies to understand their mission
+INVEST IN AGENCY AND PROJECT SUCCESS
+• Innovate and Operate Effectively and Efficiently
+• Master the fundamentals to be the best
+• Balance the value of developing new capabilities with project risk and cost
+• Provide training and empower our employees
+INVEST IN OUR TECHNOLOGY
+• Continuous improvement requires continuous education
+• Maximize reuse and extension of preferredtechnology platforms before adding 
+new
+SECURE VERMONT’S DATA
+• Security is everyone’s responsibility
+• Data, not systems, is our most important asset
+Our Guiding Principles
+4
+Recent Accomplishments
+5
+Goal 1 – IT Modernization
+ADS is deploying video conferencing systems in conference rooms across the state enabling a hybrid 
+state workforce.
+Goal 2 – Vermonter Experience
+Our low-code preferred platform was the technical backbone of the Pandemic Response by
+standing up approximately 30 applications to respond to various needs across the state with over 
+459k users creating accounts.
+Goal 2 – Vermonter Experience
+Launched myVermont.gov to provide single sign-on capability combined with seamless 
+personalization for Vermonters.
+Goal 4 – IT Budget Reporting
+ADS was able to increase the net position of the Communications & Information Technology Fund 
+from a deficit to a surplus, by $4,099,164.
+Goal 4 – IT Budget Reporting
+ADS developed and deployed a stock hardware inventory tool to help properly track our State 
+hardware 
+Goal 3 – Cyber Security
+Completed Cybersecurity risk assessment of State IT Systems. The risk assessment prioritized risk 
+across State applications allowing for targeted remediation and replacement.
+Goal 1 – IT Modernization
+Upgraded our enterprise content management system (docs, video and images), preparing it for 
+migration to the cloud, continuing our investments in our preferred platforms.
+Goal 1 – IT Modernization
+Migration of 250+ servers to Azure Commercial and Azure Government clouds from on-premise 
+infrastructure. This reduces our capital expenses, cyber risk and improves service levels.
+Goal 3 – Cyber Security
+Improvements in virtual private network (VPN) software, multifactor authentication (MFA), and 
+device logging have all contributed to an increased capacity to assess risks and combat threats.
+Goal 2 – Vermonter Experience
+Implemented an online scheduler for DMV allowing for a safe return to serving the public during 
+the pandemic and furthered DMV’s vision to have modern and customer-friendly services.
+Our goal is to increase automation and reliability of the 
+services we deliver to Vermonters. 
+Our Strategies
+• Strengthen our digital foundation by replacing legacy IT systems with 
+Integrated preferred enterprise platforms, thereby reducing technical debt.
+• Deploying new systems by utilizing cloud-based offerings to reduce our 
+infrastructure footprint and total cost of ownership.
+Key Success Indicators
+• 5 existing infrastructure-based systems migrated from OnPrem to 
+Cloud Managed Services.
+• Replacement of 30 legacy applications with State-preferred 
+enterprise platforms.
+6
+IT automation will greatly enhance the State’s ability to meet Vermonters' 
+expectations for efficient and timely service provision. 
+IT Modernization
+Goal 1
+Our goal is an improved experience of their Government 
+for Vermonters by 2026.
+Our Strategies
+• Increase the number of simple, low-cost, online interactions that Vermonters 
+have with their government.
+• Build a closer online relationship with Vermonters, including single sign -on 
+capability
+• Improve Vermonters experience with state government by transitioning 
+outdated paper processes with on-line, streamlined services.
+Key Success Indicators
+• 48 public facing applications utilizing myvermont.gov 
+single sign-on
+• Provide 10 native mobile applications as alternative to 
+existing public-facing services
+• 50 public-facing processes automated with next 
+generation technology
+7
+Well-designed online transaction will reduce complexities, frustrations and 
+time expended by Vermonters obtaining the services they are entitled to.
+Vermonter Experience
+Goal 2
+Our goal is to provide continuous, effective defense of the 
+State’s Information data and network.
+Our Strategies
+• Raise employee and Vermonter awareness of cyber risk and data privacy through training 
+and reporting
+• Grow the layers of cyber defense and analysis to proactively prevent threats and recover 
+from attacks
+• Coordinate cybersecurity policies and practices throughout State Government
+• Improve data-driven decision making related to public health and safety through the 
+development of robust data analytics, governance, and management systems
+Key Success Indicators
+• 90% state employees that have completed the Cyber-
+awareness trainings quarterly
+• Application and data risk evaluations integrated into the 
+12 cabinet-level IT investment plans
+• 12 cabinet-level agencies and departments with 
+technology risk evaluation report cards
+• Full implementation of Security Information & Event 
+Managements (SIEM) system.
+• 5 data sets available for analysis in the new data 
+environment
+• All Dashboards and analytics available through PowerBI
+8
+This in fulfillment of the Executive’s obligation to be a good steward and 
+guardian of all information essential to delivering State services. 
+Cybersecurity & Data Privacy
+Goal 3
+Our goal is to support creation of a comprehensive Executive 
+Branch IT budget with greater transparency by 2026
+Our Strategies
+• Further reduce the number of applications through consolidation and 
+elimination. This will result in lower IT maintenance costs, purchasing costs, 
+licensing costs and employee costs over the life cycle.
+• Develop a rolling 5-year IT roadmap and investment plan for all agencies
+• Develop dashboards and reports that provide timely and accurate budget 
+and expenditure information to IT decision makers.
+• Continue to grow our investment in cybersecurity
+Key Success Indicators
+• 12 cabinet-level agencies to have a complete 5-year IT 
+roadmaps and investment plans that is updated 
+annually.
+• Reduce number of applications in use across the 
+executive branch by 100
+• A minimum of 5% of IT budget dollars invested in 
+security initiatives
+• Implement a technology business management solution 
+and PowerBI for financial transparency
+Financial Transparency
+Goal 4
+9
+This will result in better control over IT expenditures and identification of 
+opportunities for savings.
+Efforts Looking Ahead
+10
+Goal 1 – IT Modernization
+Replacement of the state’s aging integration systemfor the Vermont Department of Health 
+(Rhapsody) with the ADS-managed cloud Mulesoft Integration Platform
+Goal 2 – Vermonter Experience
+100k myVermont.gov accounts milestone in 2022, with Child Development InformationSystem, 
+the 1-stop Business Registration Portal and the Dept of Liquor and Lottery Licensing system
+Goal 2 – Vermonter Experience
+Replacement of citizen-facing services at DLL including the Liquor online training, licensing and 
+enforcement system.
+Goal 4 – Financial Transparency
+Implement a technology business management solution and PowerBI for financial transparency
+Goal 3 – Cyber Security & Data Privacy
+Operationalization of the risk-ranked application inventory to inform ADS’ communication with 
+other State Agencies toward prioritization of modernization and a better protective posture
+Goal 1 – IT Modernization
+`Unemployment Insurance system Modernization – replace the front-end portion which includes 
+the claimant and employer portal, and VDOL workforce CRM and Vermont Joblink.
+Goal 1 – IT Modernization
+Modernization of Enterprise Resource Planning (ERP) functions by migrating Human Capital 
+Management, Budgeting and Planning and payroll functions to the Workday cloud ERP system
+Goal 3 – Cyber Security & Data Privacy
+Completion of at least one tabletop security exercise with Norwich University Applied Research 
+Institutes (NUARI) to test state cybersecurity processesand refine as deficiencies are recognized
+Goal 1 – IT Modernization
+Completion of the project to expand the use of Voice over Internet Protocol (VoIP) telephone, 
+which will reduce costs by allowing us to move off more expensive legacy phone services
+Goal 2 – Vermonter Experience
+Implement an electronic permitting system to replace a paper-based set of state issued Commercial 
+Vehicle related permit processes
+Governor Scott created the Agency of Digital Service (ADS) by Executive Order at 
+the inception of his administration. ADS began operation on April 17, 2017. Today, 
+our Agency unifies all aspects of the State’s information technology and project 
+management operations.
+With regard to his priorities, the Governor has written:
+“These are our guideposts … To achieve these outcomes, however, we need 
+more than vision -- we need a real strategic plan that sets clear goals and 
+measures results. … A strategic plan must be a living document.”
+<<>>
+At ADS, we are committed to providing Vermonters with services that are 
+customer-focused, innovative, cost-effective, secure and reliable. Guiding all our 
+work are three strategic priorities established by Governor Scott in his first 
+Executive Order, number 01-17:
+• Grow the Vermont economy
+• Make Vermont an affordable place to live, work, and do business
+• Protect vulnerable Vermonters
+<<>>
+Today we celebrate a successful reorganization of our digital services delivery to 
+Vermonters, one that substantially increases security and accessibility. ADS 
+continues to mature as a strategic partner that understands the business needs of 
+both the agencies and the individuals we serve. We will continue to strive together 
+in the years to come to provide simple, intuitive technology solutions that improve 
+the lives of Vermonters.
+Final Thoughts
+11
+ADS Organization
+12
+ADS Finance Division
+Chief Financial Officer
+ADS Div. of Enterprise 
+Project Management
+Director of Enterprise 
+Project Management
+ADS Division of Shared 
+Services
+Dir. of Shared Srvcs. 
+and Agency Dir. Digital 
+Srvcs. - AGR
+ADS Enterprise 
+Architecture Division
+Chief Technology 
+Officer
+ADS Security Division
+Chief Information 
+Security Officer
+ADS Data 
+Management Division
+Chief Data Officer
+ADS IT Staff, Agency of 
+Human Services
+Agency Dir. of Digital 
+Services - AHS
+ADS IT Staff, 
+Department of Labor
+Agency Dir. of Digital 
+Services - VDOL
+ADS IT Staff, Agency of 
+Administration
+Agency Dir. of Digital 
+Services – AOA
+ADS IT Staff, Dept. of 
+Public Safety
+Agency Dir. of Digital 
+Services – DPS
+ADS IT Staff, Agency of 
+Agriculture
+Agency Dir. of Digital 
+Services – AGR and Dir. 
+Shared Services
+ADS IT Staff, Agency of 
+Transportation
+Agency Dir. of Digital 
+Services - AOT
+ADS IT Staff, Agency of 
+Education
+Agency Dir. of Digital 
+Services - AOE
+ADS IT Staff, Agency 
+Nat. Resources and 
+Agency of Comm. and 
+Community Dev.
+Agency Dir. of Digital 
+Services – ANR and 
+ACCD
+Agency Secretary / State CIO
+Agency of Digital 
+Services (ADS)
+Agency Deputy Secretary
+Principal Assistant

@@ -1,0 +1,3154 @@
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Health Information Exchange Strategic Plan 
+2023-2027 Plan (2022 Update) 
+Submitted: November 1, 2022 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Submitted by the Agency of Human Services 
+18 V.S.A. § 9351(a)(1) The Department of Vermont Health Access, in consultation with the Department's 
+Health Information Exchange Steering Committee, shall be responsible for the overall coordination of 
+Vermont's statewide Health Information Technology Plan. The Plan shall be revised annually and updated 
+comprehensively every five years to provide a strategic vision for clinical health information technology. 
+2 
+ 
+Contents 
+Key Terms .............................................................................................................................................. 3 
+Executive Summary ................................................................................................................................ 5 
+2022 Accomplishments .......................................................................................................................... 9 
+Strategy ............................................................................................................................................... 15 
+Strategy: Funding ................................................................................................................................ 16 
+Strategy: Governance ........................................................................................................................... 18 
+Strategy: Process/Policy ...................................................................................................................... 26 
+Strategy: Technology ........................................................................................................................... 30 
+Strategy: Next Steps ............................................................................................................................ 32 
+Appendix A: Protocols for Access to Protected Health Information on VHIE ........................................... 33 
+Appendix B: HIE Steering Committee Charter ........................................................................................ 39 
+Appendix C: General Connectivity Criteria & Designated Agency Connectivity Criteria ............................ 45 
+Appendix D: Interface Prioritization Matrix ........................................................................................... 63 
+Appendix E: Outcomes Based Certification Metrics ............................................................................... 71 
+Appendix F: Policy Background ............................................................................................................. 72 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+Key Terms 
+ 
+Health information – Information created during care delivery and/or in a social service setting which 
+supports coordination of care, reimbursement, public health and quality reporting, analytics, and the 
+policy and governance surrounding management of the health care system. 
+Health information exchange (HIE) verb – The action of appropriate and confidential sharing health 
+information across facilities, organizations, and government agencies supporting treatment, payment, 
+and healthcare operation activities according to national standards. HIE is often used as shorthand for 
+programs, tools, and investments that help aggregate and exchange health information. 
+Health Information Exchange (HIE) noun –An organization that collects health information electronically, 
+manages it, and makes it available across the health care system. There is at least one H I E in almost every 
+state in the nation, and HIEs can offer a variety of services. In Vermont there is one HIE, referred to as 
+the Vermont Health Information Exchange (VHIE), which is operated by Vermont Information Technology 
+Leaders (VITL). 
+Vermont Information Technology Leaders (VITL)- VITL is the legislatively designated operator of the 
+Vermont Health Information Exchange (sometimes written VHIE and pronounced Vee-high), a secure 
+infrastructure that gives health care organizations in Vermont the ability to electronically share and 
+access their peoples’ health information to improve the quality, safety, and cost of people care. 
+The Centers for Medicare & Medicaid Services (CMS) - CMS combines the oversight of the Medicare 
+program, the federal portion of the Medicaid program and State Children's Health Insurance Program, 
+the Health Insurance Marketplace, and related quality assurance activities. 
+Data Governance - Data governance is a system of decision rights and accountabilities for information-
+related processes, executed according to agreed-upon protocols which describe who can take what 
+actions with what information, and when, under what circumstances, using what methods. It clearly 
+identifies the roles and responsibilities of those who take part in those processes and how they should 
+interact. 
+Data Integration - Data integration is the process of combining data from different sources into a unified 
+view or format. 
+Unified Health Data Space - Vermont’s Health Information Exchange has evolved from a ‘first generation’ 
+HIE which was focused on sending and receiving clinical records to a ‘second generation’ HIE with a more 
+robust assortment of data types and services offered. With this transition and with the completion of the 
+technology work, the ecosystem of the health information exchange is referred to as the Unified Heath 
+Data Space. As such, we will no longer be referring to Collaborative Services and instead will use the 
+term Unified Health Data Space. This more accurately captures the second-generation function and 
+needs of the HIE and as such will be used throughout this plan when referring to the ecosystem of the 
+HIE. 
+HITECH - The Health Information Technology for Economic and Clinical Health (HITECH) Act, enacted as part 
+of the American Recovery and Reinvestment Act of 2009, was signed into law on February 17, 2009, to 
+promote the adoption and meaningful use of health information technology and expired in 2021. 
+Health Data Utilities (HDU) - are statewide entities that combine, enhance, and exchange electronic 
+4 
+health data across care and services settings for treatment, care coordination, quality improvement, and 
+public and community health purposes. 
+Outcomes Based Certification - For all systems that comprise the Medicaid Enterprise System (MES), the 
+Streamlined Modular Certification (SMC) approach to Outcomes Based Certification (OBC) is designed to: 
+demonstrate measurable improvements to a State’s Medicaid program. This is achieved through data 
+collection and testing to enable operational reporting of performance and functionality. OBC also 
+reduces the burden on States and CMS during the certification process without compromising CMS’s 
+responsibility to ensure systems satisfy all requirements. 
+People/Person – Throughout this plan there are references to “people”/ “person” – not patients, clients, 
+members, or beneficiaries. Fundamentally, all individuals in the health system are people/person, not 
+the diseases they have or the insurance cards they hold. Using this term maintains the reminder that the 
+health system is here to support health and well-being, not stigmatize or reduce any person to their 
+symptoms, situation, or relationships.1 
+Health System – A “system” can be understood as an arrangement of parts and their interconnections 
+that come together for a purpose. A health system has many parts. In addition to individuals and families, 
+health providers, health services organizations, pharmaceutical companies, government, and other 
+organizations play important roles. The interconnections of the health system can be viewed as the 
+functions and roles played by these parts. The health system includes all activities focused on promoting, 
+restoring, and maintaining health.2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 Williams, S. T. (2013, November 22). A person, not a patient: Words about the words we use . MinnPost. Retrieved from 
+https://www.minnpost.com 
+ 
+2 World Bank. (2007). Healthy Development: The World Bank Strategy for Health, Nutrition, and Population Results. Washington, 
+DC. World Bank. https://openknowledge.worldbank.org/handle/10986/6843 License: CC BY 3.0 IGO. 
+ 
+ 
+A note on the name of this plan: 18 V.S.A. § 9351 calls for a Health Information Technology Plan which “shall 
+include the implementation of an integrated electronic health information infrastructure for the sharing of 
+electronic health information among health care facilities, health care professionals, public and private payers, 
+and patients.” The term Health Information Exchange describes the act of sharing health information, often 
+electronically, while the term Health Information Technology is a broad term that describes the technical 
+capabilities and equipment an individual or organization might use to meet any variety of health-related needs. 
+Therefore, to best align with the focus of this plan to provide a transparent view of the State’s health information 
+exchange needs and challenges, this plan is hereafter referred to as the Health Information Exchange Plan, or the 
+HIE Plan for short. 
+ 
+5 
+Executive Summary 
+ 
+The plan is governed by 18 V.S.A. § 9351 which includes criteria and content that need to be included in 
+the plan. This plan is outcomes driven, with specific and achievable goals focused on meeting the needs 
+of each stakeholder – people, providers, payers, public health, and policy makers. Per statute, this year’s 
+HIT plan update includes a comprehensive five-year update. The five-year plan update is comprised of 4 
+main inputs. These inputs include the following: HIE Steering Committee Strategy Planning Session; 
+recommendations from Briljent, the consultant who worked on the HIE Data Strategy and Data 
+Governance; alignment with the Federal Health Information Technology Plan; and current year 
+accomplishments/status. It is worth noting the Federal Health IT mission is “Improve the health and well-
+being of individuals and communities using technology and health information that is accessible when 
+and where it matters most.”3 Vermont’s HIE vision and mission for years has directly aligned to that. 
+There are four HIE Goals that underpin the strategy. 
+HIE Goals: 
+1. Create One Health Record for Every Person - Support optimal care delivery and coordination by 
+ensuring access to complete and accurate health records. 
+2. Better Health Outcomes (new) – Promote health and wellness for individuals and communities. 
+3. Improve Health Care Operations - Enrich health care operations through data collection and 
+analysis to support quality improvement and reporting with the goal to reduce health care costs 
+and provide insight to improve the delivery and experience of care 
+4. Use Data to Enable Investment and Policy Decisions – Bolster the health system’s ability to learn 
+and improve by using accurate, comprehensive data to guide investment of time, labor, and 
+capital, and inform policy making and program development. 
+As the HIE has matured and developed, it has grown from a first generation HIE, focused on sending and 
+receiving clinical data, to a unified health data space utility. This is also reflective of the shift for advanced 
+HIEs to move from a send/receive of clinical data to a data utility. This provides the capability for essential 
+functionality of health information exchange across the health care system while also providing the 
+capability for people to engage with their health information, enhanced public health responses keeping 
+communities healthier and safer, and providing opportunities to manage health care with an eye to 
+improved outcomes. 
+The HIE Plan outlines four components to the operational and strategic success for the HIE. These include 
+funding, data governance, policy/process, and technology. Each component has foundational and future 
+components as the HIE continues to mature and develop and the needs of the ecosystem change and 
+grow. The plan will highlight the previous year’s accomplishments and strategic vision for each 
+component and the strategic vision for each component. It is important to note, these four components 
+work in concert with each other and contribute collectively to the success of the HIE. 
+ 
+3 https://www.healthit.gov/sites/default/files/page/2020-10/Federal%20Health%20IT%20Strategic%20Plan_2020_2025.pdf 
+6 
+ 
+Figure 1: HIE Ecosystem - The Components 
+Funding: One of the main challenges in the recent year(s) for Vermont’s HIE, as well as other HIEs across 
+the country, is sustainable funding. Many HIEs have been undergoing a funding transition. This is due to 
+the original funding that many states used to support their HIE activities, HITECH, coming to an end in 
+2021. Some HIE’s were able to make a transition to sustainable funding and others are still figuring it out. 
+In 2022, Vermont’s HIE had a significant accomplishment, as it was one of the first states in the country 
+to achieve CMS Certification. As a result of this certification, Vermont’s HIE receives funding from the 
+Federal Government’s Medicaid Management Information System (MMIS). While this outcome-based 
+certification requires an additional responsibility from the HIE to work toward the stated outcomes (new 
+metrics and reporting from the State of Vermont to CMS which will be discussed in more detail in 
+Appendix E), it does provide overall more sustainability for Vermont’s core HIE activities. CMS funding of 
+the HIE as of 2022, is 75% of maintenance and operations, and 86-90% of the development work. The 
+balance of the funding is from the State providing matching dollars as required. These matched state 
+dollars are often from the health claims tax or from grants. Strategically, funding sustainability is a core 
+component of the HIE. 
+As such, it is the HIE Steering Committee’s desire to continue to keep the HIE functioning as a data utility 
+for the next few years. Specifically, this means continuing the current funding structure. Once the HIE 
+reaches maturity around achieving key milestones associated with the Unified Health Data Space, the HIE 
+Steering Committee is open to exploring private funding for the HIE for innovation or customization. The 
+health information exchange is a valuable data utility for the health community and the HIE Steering 
+Committee intends to continue funding it mainly through public funds and the claims tax until a mature, 
+unified health data space is achieved. HIE Steering Committee actively coordinates with VITL on the 
+funding structure to ensure both entities are in synch. 
+Governance: An area that received focus in 2022 was to expand and enhance data governance for the 
+HIE, especially as progress is made toward incorporating new data types into the HIE. The State of 
+Vermont partnered with a consulting firm, Briljent, to assist the HIE Program in documenting and 
+developing a data governance framework for the HIE. As a result, the HIE Program has a robust 
+framework for data governance and has actively started executing on this framework. A key step is the 
+development of the HIE Data Governance Council which is underway as of the writing of this plan. There 
+is a recommended, tiered approach to the data governance which will be outlined in the Strategic 
+
+7 
+Governance section. The HIE Steering committee will continue to be active in overseeing the Data 
+Governance Council. In 2023, a critical initiative is to add the defining detail to each element of the HIE 
+data governance and to develop specific governance for each new domain – such as social determinants 
+of health, Part 2 (substance use disorder), and claims data. 
+As this year includes a five-year comprehensive update, through the engagement with Briljent, a Data 
+Strategy for the HIE was also provided. This includes comprehensive, actionable steps to help achieve the 
+maturity of the Unified Health Data Space. These steps include establishing a robust data governance 
+plan; defining and communicating the roles for data access; optimizing data utility; and ensuring 
+sustainability and scalability. Taking the HIE Strategic plan and making it operational is very important to 
+the HIE Steering Committee. As such, each strategic goal will have an action plan associated with it in the 
+following months to ensure we realize the strategies set forth in this plan. 
+Policy/Process: There are six existing statutes that relate to the HIE. The 2022 Legislative Session 
+established Act 167 (S.285), Bill Status S.285 (Act 167) (vermont.gov). The HIE plan is aligned to support 
+these laws. A policy goal that was advanced in 2022 in support of 18 V.S.A. §1129, was the exchange of 
+immunization data with the Vermont Department of Health and the Health Information Exchange, 
+underscoring the fact that policies help drive and shape the strategic and operational work of the HIE. 
+Aligning to policies and processes for the HIE, VITL provided Vermonters with “health data IT literacy 
+education” to educate the public on the benefit and use of electronic health information. In addition, the 
+2022 HIE Steering Committee has created the role of a person representative on the HIE Steering 
+Committee. 
+From a strategic perspective, there are key items the HIE Program will focus on over the course of the 
+next few years. These include continuing to diversify the data sets in the HIE – clinical, claims, social 
+determinates of health, person generated data, such as sensor and Internet of Things (IOT) data. This 
+speaks to the sustainability of the data in the HIE. The HIE Program needs to consider future data sources 
+that could augment the Unified Health Data Space but are not yet available for inclusion, for example: 
+patient generated data, data generated from devices, and new federal or state data assets such databases 
+or data warehouses. In addition, to optimize the data utility of the HIE, it will be important to consider 
+data management and data quality to ensure the HIE has the most complete data possible. For strategic 
+sustainability, it will be important to ensure the HIE process and policies evolve as needs evolve. This 
+includes stakeholder needs, policy updates, and changes in technology standards or policies that, include 
+legislation, rules, and standards. A key process will ensure that there is a solid process for managing and 
+transferring knowledge within the human side of the organization. This will add to the long-term 
+sustainability of the HIE. 
+With Vermont’s current HIE structure and future enhancements, it is well positioned to assist in 
+addressing the health equity needs across the state and within communities. From a public health and 
+policy position, the HIE can provide data to address the unique needs of the underserved and 
+disadvantaged individuals who disproportionately carry the burden of severe chronic diseases, mental 
+health needs, and socioeconomic barriers that challenge health outcomes, by changing how we develop 
+and use digital technology and data. Public health infrastructure and health equity are two major 
+priorities to emerge from the COVID-19 pandemic for the federal and state governments, community 
+organizations, payers, and providers. Health Information Exchanges play a key role in achieving these 
+goals 
+Technology: Key technology accomplishments in 2022 helped to solidify the foundational components 
+8 
+of the HIE and begin to leverage Vermont’s existing infrastructure. Vermont Information Technology 
+Leaders Inc. (VITL) completed a migration of their platform to a fully cloud-based offering that streamlines 
+and modernizes the clinical data warehouse in 2021. Building on that platform, VITL launched new 
+provider portal that supported easier access to VHIE data. In addition, the platform was leveraged to 
+support other data needs, including enhancing the reporting data warehouse, piloting the ingestion of 
+social determinants of health data, and building a bi-directional interface with the State’s Immunization 
+Registry. 
+With many of the foundational elements in place or underway for the four components, we anticipate 
+advancing each component to achieve the four goals stated above. While many core components to the 
+fundamental HIE technology stack are in place, the HIE will continue to require enhancements. Some of 
+these include establishing data marts for appropriate uses and uses; creating and applying an analytics 
+layer to best optimize the data usability; ensuring ease of use through applying single sign on capability; 
+and ensuring bidirectionality of data flow as it aligns with federal and state laws and data security 
+guidelines. As outlined in 18 V.S.A. § 9351 (6), the Unified Health Data Space is well positioned to ensure 
+reuse of technology to make the most efficient use of resources. Strategic consolidation and integration 
+of existing infrastructure will be considered as well as ensuring new development is leveraging existing 
+technology. These strategic technology initiatives will be discussed more in the Strategic Technology 
+section. 
+ 
+Figure 2: Vermont’s Unified Health Data Space Model 
+
+9 
+2022 Accomplishments 
+ 
+Funding 
+ 
+A key initiative over the last few years for Vermont’s Health Information Exchange, has been to achieve a 
+financially sustainable model for the State’s HIE activities. This is especially critical and relevant as the 
+funding stream that was in place for the last ten years, HITECH, ended in 2021. The state identified an 
+option of achieving more sustainable funding under the Medicaid Enterprise System (MES). This funding 
+stream requires HIEs to meet federal certification standards. Vermont successfully pursued CMS 
+certification which is called CMS’ Outcome Based Certification. 
+ 
+This certification was secured on May 11, 2022, with a retroactive effective date of November 11, 2021. 
+Vermont was one of the first states to achieve certification for their HIE. The resulting change in the 
+funding is reflected in the table below. The funding from the MES results in a higher federal rate than 
+Vermont previously had which is a positive step for VHIE financial sustainability. As shown in the table 
+below, state dollars continue to be required. To leverage federal investments, states are required to 
+provide state-sourced matching funds. The main source of this state funding in Vermont is the HIT-Fund, 
+which is funded through a portion of a tax on commercial health care claims. The claims tax requires 
+legislative action for it to continue and prevent it from sunsetting. The HIT Fund next sunsets in July 2023, 
+and accounts for about $3-$4M annually. The State is committed to ensuring that the HIT Fund (the 
+portion of the State’s health care claims tax dedicated to health information technology spending for the 
+state) is used to develop and maintain “integrated electronic health information infrastructure.” More 
+information on the health care claims can be found in the Policy section under Appendix F - ‘Brief Review 
+of Vermont Policy Impacts on HIE’. 
+ 
+ 
+Table 1: Cost Allocation based on Outcomes Based Certification 
+ 
+Current Category Federal State Total
+Maintenance and Operations (M&O) All 72% 28% 100%
+Design, Development, Implementation (DDI) Medicaid 90% 10% 100%
+Design, Development, Implementation (DDI) Shared (Medicaid and Non Medicaid)* 86% 14% 100%
+Design, Development, Implementation (DDI) Fully Non Medicaid 0% 100% 100%
+Example**
+Maintenance and Operations (M&O) All 4,680,000 $ 1,820,000 $ 6,500,000 $ 
+Design, Development, Implementation (DDI) Medicaid 675,000 $ 75,000 $ 750,000 $ 
+Design, Development, Implementation (DDI) Shared (Medicaid and Non Medicaid) 1,720,000$ 280,000 $ 2,000,000$ 
+Design, Development, Implementation (DDI) Fully Non Medicaid - $ 250,000$ 250,000 $ 
+Total 7,075,000 $ 2,425,000 $ 9,500,000 $ 
+Previous *** Category Federal State
+Maintenance and Operations (M&O) All 25% 75% 100%
+Design, Development, Implementation (DDI) Medicaid 90% 10% 100%
+Design, Development, Implementation (DDI) Shared (Medicaid and Non Medicaid) 30% 70% 100%
+Design, Development, Implementation (DDI) Fully Non Medicaid 0% 100% 100%
+Example
+Maintenance and Operations (M&O) All 1,625,000 $ 4,875,000 $ 6,500,000 $ 
+Design, Development, Implementation (DDI) Medicaid 675,000 $ 75,000 $ 750,000 $ 
+Design, Development, Implementation (DDI) Shared (Medicaid and Non Medicaid) 600,000$ 1,400,000$ 2,000,000 $ 
+Design, Development, Implementation (DDI) Fully Non Medicaid - $ 250,000$ 250,000 $ 
+Total 2,900,000 $ 6,600,000 $ 9,500,000 $ 
+* Varies by quarter
+** Example only - not representative of actual figures
+** Post HITECH funding (10/1/21 - 12/31/21)
+10 
+As part of the Outcomes Based Certification (OBC), the state is required to provide quarterly metrics to 
+CMS. One of these metrics involves the percentage of the design, development, and implementation 
+(DDI) for shared projects. As such, based on the outcome of this percentage, the quarterly federal / state 
+percentage for shared DDI varies on a quarterly basis. We do not anticipate this to fluctuate more than 
+1-2 points per quarter. More information on the OBC metrics and financial implications can be found in 
+the Appendix E on ‘Outcomes Based Certification Metrics’. 
+ 
+Recognizing, per statute 18 V.S.A. § 9351 (5), the State HIE Program is also responsible for exploring grant 
+programs to complement the existing funding, the state had three impactful grants awarded to assist in 
+developing and advancing health reform across the HIE. These grants included the Health Equity Grant, 
+the ASTHO Grant, and the Global Commitment to Health Waiver. These grants, while awarded in 2022, 
+will contribute to funding a portion of the DDI work associated with them in 2023 and 2024. The 
+Department of Health received a grant focused on addressing differences in health equity, which includes 
+data and data systems. Specifically related to the HIE projects are evaluating race and ethnicity, as well as 
+sex and gender data collection, standards, challenges, deficiencies, and as appropriate implementing 
+plans resulting from the evaluation. Other projects are targeted to develop a strategy for integration of 
+Vermont Department of Health data with the HIE. These projects are expected to be completed by the 
+end of 2023. The Global Commitment to Health Waiver allows the State to focus federal Medicaid 
+investments to further Medicaid's role as a driver of all-payer payment and delivery system reform. Within 
+the waiver, the state can incentivize the procurement of data collection tools for Medicaid providers who 
+could not take advantage of the federal Meaningful Use programs. Additional federal funding for Home 
+and Community Based Services (HCBS) has been secured, in some part, to advance health-IT efforts to 
+support the HCBS sector. We will discuss more in the strategic section the projects associated with the 
+Global Commitment to Health Waiver. 
+ 
+Over the course of 2022, significant accomplishments were made in the funding space resulting in 
+sustainable funding for maintenance and operations likely for the duration of the HIE, provided the state 
+can continue to support the required match rate. This plan will propose options in the strategy session 
+for future design, development, and implementation funding mechanisms, aligning to the statute 
+requirement in 18 V.S.A. § 9351 (5). 
+ 
+Governance 
+ 
+As part of the 2021 HIE Plan submission, the Green Mountain Care Board made a recommendation to 
+strengthen the development of data governance. As such, in 2022 AHS partnered with the consulting firm, 
+Briljent, to provide two key deliverables associated with that recommendation. These deliverables 
+included a proposed data strategy and data governance for the HIE. A critical part of the Briljent 
+engagement was to ensure that as an HIE Program, we operationalize data governance. As such, the 
+action items for data governance in the strategic section are tangible and can be directly implemented. A 
+solid foundation for the data governance framework was designed from the Briljent engagement which 
+directly aligns to 18 V.S.A. § 9351 (8) in statute. This includes the following: the governance structure 
+(establishing data governance council, membership); core federated teams, roles and responsibilities for 
+process owners and data domain roles, role-based access, overall HIE data governance and domain driven 
+governance. We will go into each of these areas in in the strategy section. 
+ 
+ 
+ 
+ 
+11 
+Policy/Process 
+ 
+In response to legislation that effects the HIE, the 2022 Legislative Session included Act 167 (S.285). This 
+act supports health care reform, and certain elements directly relate to the HIE. To support Act 167, the 
+HIE Steering Committee will continue to work to create one integrated health record in 2023. The HIE 
+Steering Committee will work in collaboration with Agency of Human Services, Agency of Digital Services, 
+and State’s HIE staff to develop a data integration strategy as required in Act 167. “The act directs the 
+Health Information Exchange (HIE) Steering Committee to include a data integration strategy in its 2023 
+HIE Strategic Plan and to continue its efforts to create a single, integrated health record for each 
+individual. The act repeals a prohibition on filing information that is required by law to be kept confidential 
+with the GMCB for the Vermont Health Care Uniform Reporting and Evaluation System (VHCURES) in a 
+manner that discloses the patient’s identity, but the act retains other protections regarding access to and 
+use of the information consistent with the federal Health Insurance Portability and Accountability Act 
+(HIPAA).”4 
+ 
+This integration strategy will need to provide a recommendation in line with the HIE Plan goal of ‘creating 
+one health record for each person’ and 18 V.S.A. § 9351 (6) and in this exploration it may contemplate 
+the integration of VHCURES in the HIE. 
+ 
+As elaborated in the Strategic Policy/Process section, AHS in concert with the HIE Steering Committee will 
+be launching the Medicaid Data Aggregation & Access Program incentive to bolster mental health, 
+substance use disorder services, and social determinants of health data. The integration of these data is 
+assisted by the repeal of 18 V.S.A. § 9410(e), allowing for the transfer of health information from a 
+provider to VHCURES within HIPAA compliance. Prior to the 2022 repeal, this statute created a stumbling 
+block to creating one health record, and removal of the language serves the goal to cumulate Vermonter’s 
+health data in a Unified Health Data Space. 
+ 
+Technology 
+ 
+The advancement of the HIE to the Unified Health Data Space, is in service of not just the traditional use 
+case of providing data to support the delivery of care to individuals, but also in support of public health, 
+population health, and Medicaid operational needs. The Unified Health Data Space goes beyond simple 
+clinical document exchange, and collects, matches, standardizes, and secures data to support expanded 
+capabilities through curating complete, longitudinal individual records that can support these expanded 
+needs. 
+ 
+Vermont’s transition to the Unified Health Data Space aligns with a national shift seen in HIEs functioning 
+as Health Data Utilities, emerging from the demonstrated value of leveraging HIE data and infrastructure 
+in support of public health purposes throughout the pandemic. Civitas Networks for Health maintains a 
+working definition of Health Data Utilities (HDU) as: 
+ 
+Statewide entities that combine, enhance, and exchange electronic health data across care and 
+services settings for treatment, care coordination, quality improvement, and public and 
+community health purposes. They enable specific, defined use cases, with protections to ensure 
+people privacy and appropriate data use. HDUs build on existing technical, organizational, and 
+trust infrastructures that exist across a state to meet the diverse and emerging needs across 
+ 
+4https://legislature.vermont.gov/Documents/2022/Docs/ACTS/ACT167/ACT167%20Act%20Summary.pdf 
+12 
+stakeholders. HDU’s rely upon strong, multi-stakeholder governance structures to balance the 
+interests and needs of the individuals, organizations, and agencies they serve. 
+ 
+Significant progress was made toward creating a Unified Health Data Space in 2022. The achievements 
+include launching a new clinical portal, piloting the collection of Social Determinates of Health (SDoH) 
+data with the Vermont Chronic Care Initiative (VCCI), developing new connections to enable the collection 
+of more health data, integrating Vermont Department of Health’s immunization data, expanding data 
+reporting capabilities, providing Medicaid beneficiaries with the individual health data and establishing 
+national data sharing connections. Details about each of these efforts follow. 
+Clinical Portal Launched 
+ 
+In 2022 VITL launched a new VITLAccess clinical portal, so that portal users would experience the benefits 
+of VITL’s new data platform, such as improved people matching and more parsing of data from clinical 
+documents into easily searchable fields. Every step in the configuration and launch of the portal was 
+informed by user needs. VITL conducted user interviews that informed portal customization and piloted 
+the new tool with a group of 49 clinicians and staff who shared feedback about portal features and 
+functionality, data quality, and communications. 
+ 
+Rollout of the new clinical portal began in April and continued through June. Users joined training 
+webinars and accessed new education resources in the VITLAccess Learning Hub including brief videos, a 
+user manual, and quick reference guides. Many additional custom trainings have been provided for 
+interested organizations. 
+ 
+Use of the portal by health care organizations has increased significantly since the same time last year 
+(this is without counting the Vermont Department of Health, who used the portal heavily for COVID-19-
+related work in 2021). Feedback from old and new users has been strongly positive. For instance, users 
+say the new layout allows quicker access to clinically relevant data and is organized more like the EHRs 
+they use every day. 
+Piloting the Collection of Social Determinants of Health (SDOH) Data with the Vermont Chronic Care 
+Initiative (VCCI) 
+In 2022 VITL created a framework to ingest State Social Determinants of Health (SDOH) data from 
+questionnaires that were completed by people who access certain State services. The long-term objective 
+is to use this and similar data to provide a more complete understanding of the social and economic 
+impact to a person’s health. The current pilot will incorporate data collected by the Vermont Chronic 
+Care Initiative’s screening tools into the Vermont Health Information Exchange. 
+Developed New Connections to Collect More Health Data 
+In support of the goal of creating one health record for every person, activities to develop new 
+connections (interfaces) to integrate new data to the HIE continued. In 2022, priority for these new 
+interfaces was given to support public health’s need for laboratory and immunization data. However, 
+work also continued to support the collection of clinical data. As of September 30, 71 interfaces were 
+completed, including: 
+ 
+ 21 new public health priority interfaces 
+ 39 interfaces to collect data from providers implementing new electronic health records 
+13 
+ 11 interfaces from sites submitting new data 
+ 
+The following table details the connections that exist to collect and share VHIE data. 
+ Interface Counts by Direction 
+Location Categories 
+Total Organizations or 
+Services Contributing or 
+Receiving Data 
+VHIE Inbound 
+Interfaces 
+VHIE Outbound 
+Interfaces 
+Federal/State Agency 1 10 18 
+Federally Qualified Health Center (FQHC) 11 104 137 
+Home Health Agency 4 24 
+Hospital 16 86 
+Long Term Care Services 2 5 3 
+Mental Health Services 3 97 
+Other 28 137 
+Primary Care 93 222 100 
+Specialty Care 141 291 134 
+Total 879 489 
+ Table 2: Existing connections to collect and share VHIE data 
+Connected with the Vermont Department of Health’s Immunization Registry to Share Up-To-Date 
+Immunization Data with Care Providers 
+In 2021, the Department of Health began sending flat files of immunization data to the HIE to be 
+incorporated into people’s health records. However, the feed was not real-time, and therefore 
+individual’s records were not up to date. In 2022, the VDH and VITL teams worked together to design and 
+implement a live, bi-directional feed between the VHIE and the Immunization Registry, which will allow 
+providers to query real-time immunization records directly from their Electronic Health Record (EHR). The 
+integration is being piloted with at least one health care organization in 2022 and will be rolled out to 
+additional providers in 2023. Additional functionality will also be added, including the ability to access 
+forecast data. This enhancement is in support of 18 V.S.A. § 1129, which was amended in 2021 to allow 
+immunization record sharing from the Department of Health’s Immunization Registry to the Vermont 
+Health Information Exchange 
+ 
+Continued Efforts to Expand Data Reporting Capabilities 
+Building on the 2021 implementation of the new data and reporting platform, work continued in 2022 to 
+continue implementation and enhancement of the data warehouse and reporting capabilities. In early 
+2022, the Blueprint for Health annual report was generated from the new platform for the second year. 
+Opportunities to enhance capabilities and performance were implemented to allow for transition of 
+additional reporting capabilities, with work to transition the daily COVID reporting for VDH underway. 
+ 
+Supported the State Medicaid Agency’s Efforts to Provide Medicaid Beneficiaries with Their Health 
+Data 
+14 
+In support of the State Medicaid Agency’s requirement to comply with the 21st Century Cures Act and the 
+associated Final Rules, VITL worked with the team at DVHA to design and implement a feed of clinical data 
+for Medicaid beneficiaries to the state’s claims processor to enable the state to make individual clinical 
+and claims data available and accessible to third party applications upon the individual’s request. 
+ 
+Worked to Establish a Connection for National Data Sharing 
+The VITL team worked to build a Hub connection to eHealth Exchange, a network that enables the sharing 
+of people’s health data to support health care and public health efforts across the nation, including with 
+the Department of Veterans Affairs and the Department of Defense. Initial planning and implementation 
+began in the spring, with go-live on the Hub planned for the end of the year. 
+ 
+15 
+Strategy 
+In previous years, the focus of the HIE Plan was building the technical foundation needed to advance 
+health data exchange in response to local needs and national requirements. While technical 
+enhancements will continue to be necessary as part of ongoing work of the HIE, the technical 
+fundamentals are largely in place and operational. As such, Vermont and its partners are shifting the focus 
+to leverage the systems in the Unified Health Data Space to support the myriad potential uses of a central 
+and modular health data repository built for interoperable cross-system data exchange and efficient 
+access. 
+The plan articulates a strategic framework required to execute and sustain Vermont’s Unified Health Data 
+Space. The plan specifies the recommended activities for the next few years. The Strategic Plan for the 
+Unified Health Data Space is comprised of four high level objectives of funding, governance 
+process/policy, and technology: 
+ 
+ Establish robust data governance plan 
+ Define and communicate roles for data access 
+ Optimize data utility 
+ Ensure sustainability and scalability 
+There is consensus that the Unified Health Data Space will support a wide range of needs that are likely 
+to expand and evolve over time. Below is an initial list of the ways in which the Unified Health Data Space 
+will support and advance the needs of the data users identified above. 
+ 
+ Public health, including disease surveillance, immunization, addressing key health priorities, 
+and facilitating school readiness. 
+ Population health, including providing data for a customizable, interdisciplinary approach to 
+connecting practice and policy to facilitate change at a local level 
+ Clinical decision making 
+ Value-based care and other innovative payment models 
+ Consumer empowerment and lowered cost from repetitive utilization through access to their 
+data 
+ Anticipation and planning for community health needs and resources 
+Over time, the number of ways in which the data may be used and the identification of specific use cases 
+that will define its use are likely to increase as stakeholders identify new opportunities to operationalize 
+the information. As such, it is important the HIT Plan each year addresses the evolving needs of the 
+stakeholders and the national landscape of best practices. Strong communication across the HIE Steering 
+Committee, VITL, and AHS will be critical to success. Establishing a clear communication plan will increase 
+awareness and reduce disagreements or confusion. In the following sections we will discuss in depth the 
+strategic plan for each component. 
+ 
+ 
+16 
+Strategy: Funding 
+Funding for the HIE in Vermont has evolved over time, this section provides historical context and the 
+path forward that the HIE and its provider incentive program are taking to continue to evolve the HIE. In 
+2009, the U.S. Congress passed the Health Information Technology for Economic and Clinical Health Act 
+(HITECH) as part of the American Recovery and Reinvestment Act (ARRA) to speed adoption of EHR and 
+exchange systems. Under HITECH, CMS constructed the EHR Incentive Program to provide financial 
+incentives for “Meaningful Use” of EHR technology. The Medicare EHR Incentive Program concluded in 
+2014, and CMS transitioned reporting requirements and payment adjustments for Medicare providers to 
+the Medicare Access and CHIP Reauthorization Act of 2015 (MACRA) with the Merit- based Incentive 
+Payment System (MIPS) Quality Payment Program (QPP). Incentives for Medicaid providers meeting 
+Meaningful Use criteria continued through September 2021 under the Medicaid Promoting 
+Interoperability Program. 
+It is well understood that many areas of the health care system were not eligible for these opportunities, 
+and as a result, EHR systems often may not reflect the unique needs of certain care providers such as 
+those who provide mental health care or those who offer care coordination and referral services in 
+addition to addiction treatment or physical health care. 
+As the Medicaid Promoting Interoperability Program ended, CMS offered states a new opportunity to 
+design and operate their own EHR Incentive Programs to continue the push toward digitization of health 
+records systems and make possible health data exchange across the continuum of care. CMS has notified 
+states that they will provide funding to design a continued Electronic Health Record Incentive Program. 
+In 2023, the HIE Steering Committee will provide oversight on the design of a program that will reduce 
+inequities in data access and sharing capabilities to allow a range of health services providers to 
+participate in value-based payment models. The short-term focus of the program will be on those who 
+provide Medicaid-funded long-term care, home, community based, substance use disorder, and mental 
+health services. The first step in designing the program, called the Medicaid Data Aggregation & Access 
+Program, will be to evaluate how Medicaid providers currently store, access, utilize, and share information 
+about the full range of enrollee needs and associated service utilization. Based on the findings, Vermont 
+will determine how to close gaps that are identified and connect Medicaid providers to interoperable data 
+systems. Connecting data systems to the VHIE ensures that health care experiences can be evaluated at 
+an individual and population level. 
+The State has identified funding sources for 2023 and 2024 HIE activities. This is through: CMS 
+certification; conditionally approved cost allocation methodology; the HIT fund which is from part of the 
+claims tax; and grants. The HIE Steering Committee recommends that the Vermont Legislature continue 
+the HIT Fund (currently extended through 2025) to support execution of the work described in this Plan. 
+To ensure financial sustainability and to ensure we meet the evolving needs of the stakeholders, we want 
+to continue exploring the option for diverse funding structures for the required state match portion. We 
+will continue to scan the landscape and apply for grants to further the development and grow stakeholder 
+value. We also over the course of 2023 explore viable options to diversify the funding streams with the 
+HIE Steering Committee that could potentially be applied for in 2025. It will be important to achieve the 
+milestone of operationalizing the Unified Health Data Space prior to offering private funding from the 
+health care system. Based on the HIE’s strategic path, we expect by end of calendar year 2024 to have 
+achieved great progress toward further realizing the full potential of the Unified Health Data Space. As 
+such, the HIE Steering committee in partnership with VITL expects to talk about potentially offering the 
+17 
+opportunity for members of the health care system who seek unique customization or want to invest in 
+innovative capabilities and/or technologies to pay for these specific services. Having this discussion, about 
+the potential path for private funding for customization and innovation in 2023 to potentially take effect 
+in 2025, provides adequate time to thoroughly examine the option as well as allowing members of the 
+health care system to potentially built it into their data strategy and budget cycles. It is important to 
+ensure the HIE demonstrates a high value for stakeholders as the whole health care system benefits from 
+robust engagement and sharing of electronic health records by providing the highest care and quality 
+possible for Vermonters. 
+18 
+Strategy: Governance 
+ 
+Establish Robust Data Governance 
+Data governance is essential to managing the availability, usability, integrity, and security of data 
+and forms the cornerstone for the strategic plan for the Unified Health Data Space. Vermont’s 
+updates its HIE strategic plan annually, reflecting progress since the first strategic plan developed 
+in 2018 and approved by the GMCB. 
+The governance approach for the Health Data Space should build upon the existing HIE framework 
+and align with VHIE’s existing governance structure to support the following key objectives: 
+ 
+ Improve data sharing across the Health Data Space 
+ Improve data quality 
+ Provide the right data, at the right time, to the right stakeholder 
+ Improve data analytic capacity and reporting 
+Following the Vermont HIE governance model, it will be important to establish a Data Governance 
+Council that informs key decisions. As such it is imperative that this body include representation 
+from each stakeholder group. To ensure collaboration, it will be important that all stakeholders 
+have equal input into key decisions. Discussions and any decisions must consider all perspectives 
+so that final decisions are well-informed. The near-term action plan includes: 
+ 
+ Establish the Data Governance Council and identify a representative from each of the 
+stakeholder groups to serve on the Council 
+ Establish a plan for communicating with executive sponsors/council and initial 
+domain stakeholders of Unified Health Data Space 
+ The Data Governance Council will establish a charter that outlines roles, decision- 
+making processes, meeting structure, and frequency 
+ 
+Define and Communicate Roles for Data Access 
+ 
+The Unified Health Data Space must meet the needs of multiple users who will require access to 
+data at various levels of granularity. Role-based access will ensure that individuals using the 
+Unified Health Data Space only have access to the information at the appropriate level of detail 
+required to meet their individual or organization’s needs, while aligning with federal and state 
+laws regarding the protection of patient health information (PHI). 
+Additionally, several state agencies and stakeholders require aggregated, deidentified data to 
+generate reports or target limited resources to those communities where they will be most 
+effective. To delineate roles, it will be important to identify how data is accessed and used taking 
+into consideration the following key factors: 
+19 
+ 
+Current State Future State 
+ Who has access to data?  Who else will need data access? 
+ What data is currently available to a 
+user? 
+ What data will the user need? 
+ How is data currently accessed?  How should data be accessed? 
+ What level of granularity is needed 
+(e.g., individual vs aggregated data) 
+ What level of data granularity will be 
+needed? 
+ In what format is the data currently 
+received by each user (e.g., tables, 
+reports, patient list) 
+ What is the ideal format for each user to 
+receive the data? 
+Table 3: Decision factors for data access 
+There are natural groupings of information known as data domains, which will be managed by all 
+owners of data included in the HIE. Examples of this may be claims, clinical, public health, or social 
+determinants of health. A key priority will be to identify the data needs for all stakeholders in each 
+domain and clarify which data roles can meet their needs, based on current state and desired 
+future state. Through this process, it will be possible to map each stakeholder to roles in each 
+specific data domain to which they need access. Stakeholders should specify what data is needed 
+to perform their activities. It will be important to consider any future needs that can be clearly 
+defined at this time to avoid rework. 
+ 
+It will be imperative that data be updated at a cadence that reflects the availability of new 
+information. For individuals who will need a single longitudinal record such as providers or 
+caregivers, it will be essential that they have actionable, current, information that reflects recent 
+test results, medical procedures, and diagnoses. Another consideration will be the process by 
+which data is accessed, which may vary across domains and systems. The method for organizing 
+and accessing data (e.g., dashboard, portal) by different user groups must align with the data 
+architecture and available resources. An important component of the HIE data governance is to 
+ensure it is operational. 
+ 
+The State and HIE Steering Committee recognize the criticality of data governance. As the Unified 
+Health Data Space is evolving, it is important that the data governance evolves with it. To realize 
+the vision of an integrated health data infrastructure (Unified Health Data Space), Vermont needs 
+data exchange policies and processes that recognize individualized needs while supporting holistic 
+care, system measurement, and improvement. This section outlines the data governance model 
+that will be established in 2023 and enhanced as necessary for a living and operational framework. 
+The model ensures the appropriate structure for planning and governing the health data space, 
+coordinating services, and appropriate use of the data to advance clinical and public health 
+objectives. 
+ 
+The objectives of data governance include the following themes, originating from various 
+stakeholders of the VHIE: 
+ 
+20 
+ Ensure secure access to all data provided through the Unified Health Data Space. The 
+stakeholders know the challenges and restrictions of the diversity of data on the 
+roadmap for this environment. It will take coordination and clear communication to 
+maintain the security of Vermonters’ health data and to allow the State to continue to 
+operate as good stewards of that information. 
+ Ensure the quality of data provided in the environment. Combining data in this 
+environment will have little value without confidence in its quality. The more data in the 
+environment, the more challenging maintaining quality becomes. Governance is 
+essential to guide the processes to ensure quality data. 
+ Accurately unify data into a single linkable record while maintaining integrity. Having a 
+single record increases the value of data to the State and ultimately its people by 
+introducing the ability to analyze problems beyond a single domain. Leverage unified 
+data for the benefit of public health and individual care. 
+ Enhance the usability of data for social services and healthcare institutions across the 
+State. In the end, data should be highly usable with as few barriers to access and 
+understanding as possible. Data, when available, should have a very specific purpose or 
+utility. 
+ 
+A data governance framework connects the organization’s data strategy and goals to the structure 
+necessary to manage the data that will achieve those goals. It contains the rules, processes, and 
+procedures to implement and maintain the program over time. These themes should live 
+explicitly throughout the governance program as decisions are made, priorities are set, and 
+projects are planned and implemented. 
+ 
+The data governance components for Vermont’s Unified Health Data Space are directly tied to 
+the feedback and priorities identified by involved stakeholders. The themes listed above have 
+been condensed to the following components: quality data, secure data, connected data, and 
+purposeful data. Therefore, each decision made, and priority determined, should be in pursuit of 
+these key components. 
+ 
+There are also key elements of data governance that enable the organization to realize the 
+benefits of each component but are not components in and of themselves. For Vermont, these 
+elements include communication, culture, and collaboration. For example, collaboration alone is 
+not a sufficient goal in data governance but prioritizing the element of collaboration will enable 
+the Unified Health Data Space to provide quality, secure, connected, and purposeful data. 
+ 
+The figure below illustrates the four data governance components and how they are supported 
+continually by the elements. 
+ 
+ 
+ 
+ 
+21 
+ 
+Figure 3: Data governance components 
+ 
+Governing by Domain 
+ 
+Categorizing information is one of the first steps in defining boundaries around information 
+ownership and responsibilities for maintenance. Data domains are an industry standard used to 
+segment data. A data domain is typically a logical business grouping of information, one that may 
+likely go beyond the scope of a singular system. Domains are typically derived through the 
+operations or functions an organization performs and subsequently the data used to support 
+those functions. 
+ 
+An example of a data domain in the Unified Health Data Space is providers and their data. Though 
+there may be nuanced differences in the detailed content of each provider’s data, like between a 
+commercial claim and a Medicaid claim, from the perspective of combining data for a unified view, 
+it is helpful to consider the data more generally as provider data. 
+ 
+In domain-centric governance structures, data is expected to be governed independently by the 
+domain business owners - the group of people who manage the collection and operations of the 
+business functions of the domain. Each domain is therefore responsible for maintaining the 
+quality of its information. This is done with the understanding that the domain's data can then be 
+consumed by other domains within the organization. 
+ 
+As more data domains are integrated into the Unified Health Data Space, it is helpful to refer to 
+any existing standards around domain identification and categorization. Considering and/or 
+conforming to said standards can allow for easier integration across the industry of healthcare 
+systems, making the unified data even more valuable.Error! Reference source not found. 
+ 
+For the HIE, the recommended data governance structure is depicted below. As the utility of the 
+Unified Health Data Space grows and evolves over time, the data governance structure will need 
+to adapt accordingly. This structure has the following characteristics: 
+
+22 
+ 
+ Domain-centric ownership 
+ Operates on the assumption that data is managed by domain owners 
+ Central function to define standards for integrating and accessing data 
+ Outcomes-driven operation 
+ 
+ 
+ 
+Figure 4: Data governance structure 
+ 
+Data Governance Council 
+ 
+A Data Governance Council provides executive sponsorship, prioritizes the goals, and is 
+responsible for broad decision-making for the Unified Health Data Space. In short, it is the 
+authority that manages the environment. A Unified Health Data Space Council is necessary to 
+include responsible parties who own the data that will eventually live in the environment, which 
+will extend beyond what is currently in the HIE. The Council also acts as an internal authority over 
+how the data is integrated and managed for the environment. 
+ 
+The responsibilities of the Council include: 
+ 
+ Empowering and forming Federated Teams to support the execution and operations 
+of data governance for the Unified Health Data Space. 
+ Monitoring program effectiveness by tracking the status of governance activities and 
+initiatives. This can be managed by the Governance Owner, whose role is defined 
+below, or by leveraging the Federated Teams. 
+ Setting priorities for the program by developing and/or evaluating use cases or 
+outcomes for the benefit of Vermonters. 
+ Setting and approving policies. The Council should provide executive support for 
+policy changes. The Federated Teams and subject matter experts should provide 
+evidence-based support. 
+
+23 
+ Provide executive sponsorship, including but not limited to funding support, 
+communications, and being an escalation point for Federated Teams. 
+ Communicate and educate data use and data governance across their respective 
+stakeholder groups 
+ 
+ 
+HIE Steering Committee Model and Structure 
+The steering committee model is designed to identify where decision makers go for support, who 
+is responsible for oversight, who provides HIE services, and how service providers are held 
+accountable. It also calls for the Steering Committee to: 
+1. Define an HIE investment portfolio and monitor statewide investments in service of 
+the Vermont’s HIE goals. 
+2. Assess the viability of investments, identify the needed level of investments, and 
+consider the appropriate balance of public and private sourced funds. 
+3. Advance HIE use cases, ensure accountability of all parties involved in furthering the 
+State’s HIE goals, and engage a broad range of stakeholders in the strategic planning 
+and oversight activities. 
+4. Receive the HIE Data Governance Council recommendations. 
+The Steering Committee’s goals, commitments, and membership are included in its Charter in 
+Appendix B. While the Steering Committee continues to hold the strategic vision for HIE, sub-
+committees provide subject matter expertise, operational support, and bring specific 
+recommendations to the larger body. Subcommittees have proven to be an effective element of 
+HIE governance. For 2023 there are four existing subcommittees currently identified. As needed, 
+subcommittees will be created for their specific purpose and continue or complete as needed to 
+help inform governance and project success. For some areas, these directly map to domains of 
+data. 
+ 
+2023 Subcommittees of the HIE Steering Committee 
+ 
+Connectivity Criteria Subcommittee 
+Required by 18 V.S.A. § 9352 (i)(2), Vermont’s Connectivity Criteria establishes the standards for 
+creating and maintaining connectivity to the VHIE network. An overarching clear framework 
+expressed through the Connectivity Criteria empowers data sources and data receivers to 
+confidently share health data. Vermont’s Connectivity Criteria is based in national standards like 
+the United States Core Data for Interoperability (USCDI) and standards set forth by the federal 
+“Meaningful Use” program, however, it aims to further define data standards to ensure data 
+exchange is possible to meet the specific needs of Vermont’s data users. 
+ 
+During 2019 & 2020, VITL has convened stakeholders to contribute to the annual updating of the 
+Connectivity Criteria. Last year, they expanded the purpose of this Subcommittee to allow for the 
+development of Connectivity Criteria for specific data sets. See page 43 for a description of the 
+Designated Agencies (DA’s) Connectivity Criteria effort that further defined data standards for 
+24 
+substance use disorder, mental health, and behavioral health data to enable Designated Agencies 
+to share health data using the VHIE. In 2021, the Subcommittee met in September 2021 to create 
+new criteria for Claims data from Payer organizations and to review the existing physical, mental 
+and behavioral health criteria. The group aligned the Criteria with the program needs and the 
+Office of the National Coordinator (ONC) United States Core Data Interoperability v1 (USCDI) data 
+set, as well as the CMS 837 Professional format for Claims. The recommendation from the 
+Subcommittee were to: 
+1.) Create a new Claims data contributor type to include a separate Tier 2 with data 
+elements based on the required data in the CMS 837 Professional format for the first year; 
+2.) Add COVID-19 Test Results to the Physical Health Tier 2 Criteria for 2022; 
+3.) Leave Mental/Behavioral Health Tier 2 Criteria as is for 2022 until more legal guidance 
+from the new Substance Abuse and Mental Health Services (SAMHSA) is available to 
+handle this data type. 
+In September of 2022, The HIE Steering Committee approved the recommendation that the 
+criteria remain unchanged for 2023 from that of 2022. And for future considerations – complying 
+with Federal Interoperability rules, factoring in Social Determinants of Health (SDOH), Sexual 
+Orientation and Gender Identity (SOGI), and Care plans into the Criteria with focus on data 
+completeness was also recommended. 
+See Appendix C for updated Connectivity Criteria including the criteria developed for the Claims 
+data type. 
+ 
+Part II+ Group (Domain) 
+In 2022, the group paused their work to gather stakeholder input on the development of universal 
+policies and procedures for sharing data governed by 42 CFR Part 2 including substance use 
+disorder data, awaiting further federal guidance on changes to 42 CFR Part 2. This plan proposes 
+that group be reengaged in 2023, with a data governance focus. 
+ 
+Social Determinants of Health Subcommittee (Domain - New) 
+This group will be responsible for working with the HIE data governance council to provide 
+recommendations on data governance for social determinants of health. This subcommittee will 
+be responsible for executing and operationalizing the strategic goal the HIE Steering Committee 
+has around social determinants of health. More detail regarding social determinants of health is 
+included in the Strategy: Process/Policy section. 
+ 
+Medicaid Data Aggregation & Access Program Subcommittee (New) 
+The MDAAP Subcommittee will aid the State in designing a program to onboard Medicaid 
+providers to digital health record systems or care coordination or referral tools, which will 
+ultimately be connected to the VHIE. The program will build upon the work started under the 
+HITECH Medicaid EHR Incentive Program (Promoting Interoperability Program), but Vermont now 
+has the opportunity to design program requirements to best support the needs of health care 
+systems and Medicaid providers beyond the previous scope of the program. The initial focus of 
+25 
+the program will be on mental health providers, substance use disorder providers, and long-term 
+services and supports (LTSS) providers, as they were either previously ineligible or their data 
+needs were not met by the previous EHR Incentive Program. These providers also 
+disproportionately serve populations experiencing health disparities, which further aligns with 
+the focus of the Medicaid health reform efforts and allows for shared achievements with other 
+HIE projects. Development of the program will occur in three phases: 
+ 
+Phase I: Evaluate how Medicaid providers currently store, access, utilize, and share information. 
+ 
+Phase II: Using the findings from the evaluation, design a program to increase electronic data 
+collection and exchange amongst the Medicaid provider community. 
+ 
+Phase III: Implement the data collection tool and HIE connection incentive program, now called 
+MDAAP, with pre-identified Medicaid providers that meet qualifying criteria and achieve specific 
+milestones that advance Medicaid’s goals. 
+ 
+The Medicaid Data Aggregation and Access Program Subcommittee will provide essential 
+guidance to the program staff and vendor consultant to identify an array of providers that 
+represent the landscape of current data capacity held by the targeted fields. Staff also anticipate 
+relying on the Subcommittee’s leadership and relationships to meaningfully engage with targeted 
+providers in the field so we can design an incentive program to meet providers’ and peoples’ 
+needs. MDAAP Staff will schedule recurring meetings with the Subcommittee culminating in two 
+vendor presentations to the full HIE Steering Committee for an approval vote of vendor 
+recommendations. 
+ 
+ 
+ 
+ 
+ 
+ 
+26 
+Strategy: Process/Policy 
+ 
+From a strategic perspective, it will be important to optimize data usability. To ensure that data is useful, it 
+will be important to consider the following three categories: data management; data quality; and diversifying 
+data sets in the HIE. To ensure sustainability and scalability of the HIE, it will be important to consider the 
+following items: knowledge management; human resources; stakeholder needs; and policies. 
+ 
+Data Management 
+Data ownership must be considered when establishing an integrated data system. Source data lives 
+in multiple systems which are “owned” by and managed by different entities who must coordinate to 
+ensure the accurate integration of information as well as state and federal laws related to data access. 
+The Unified Health Data Space will require coordination and collaboration across each of the data 
+owners with a single, trusted authority assuming responsibility for the comprehensive data set. 
+ 
+Data integration involves an automated process for bringing data together from multiple sources, 
+standardizing it, and preparing it for data analysis. The ultimate objective is to establish software-
+enabled automated processes that won’t require engineers to write custom scripts. In establishing 
+the Unified Health Data Space, it will be necessary to establish a clear process for data integration and 
+identify the parties responsible for managing the process. The process should include detailed steps 
+for preparing the data for integration, transforming it into a standardized format, ensuring data 
+accuracy, and synthesizing the data. 
+ 
+Data Quality 
+The Unified Health Data Space will need to have clearly defined processes for data cleaning and 
+ensuring the data is valid (correctly formatted and stored) and reliable (complete and accurate). Data 
+quality is expected to be managed by the source domain. Specific procedures should be documented 
+for maintaining data quality during the integration into the Unified Health Data Space, including 
+identifying missing data, assessing out of range values, and developing a process for correction. Data 
+completeness is an important item, ensuring the data being ingested into the HIE is as complete and 
+comprehensive as possible. Processes for data integration and the cadence at which this is performed 
+will also need to be documented. 
+ 
+ 
+27 
+Data 
+ 
+Vermont needs to consider future data sources that could augment the Unified Health Data Space but 
+are not yet readily available for inclusion. This could include people generated data, data generated 
+from devices, and new federal or state data assets such as enhanced surveillance systems or data 
+warehouses. This also includes building on the existing work and continuing to bring in data for social 
+complexity and claims data. Below includes additional details around the importance of Social 
+Determinates of Health (SDOH) and the specific strategic items for inclusion in the HIE as well as 
+opportunities for further integration. 
+ 
+Social Determinants of Health (SDoH) 
+ 
+The Healthy People 2030 initiative by the 
+U.S. Department of Health and Human 
+Services (HHS), designed to guide national 
+health promotion and disease prevention 
+efforts to improve the health of the nation, 
+defines an overarching goal specifically 
+related to SDoH: “Create social, physical, 
+and economic environments that promote 
+attaining the full potential for health and 
+well-being for all.” 
+ 
+Data is the key for building a robust and 
+efficient Social Determinants of Health 
+strategy, needed to address health and 
+health care disparities and achieve health 
+equity. CMS Framework for Health Equity 
+2022–2032 also identified Priority 1 as 
+Expand the Collection, Reporting, and 
+Analysis of Standardized Data. 
+ 
+VHIE strives to improve our collection and use of comprehensive, interoperable, standardized 
+individual-level demographic and SDoH data. As stated in CMS Framework for Health Equity 2022–
+2032, increasing our understanding of the needs of those we serve, including social risk factors and 
+changes in communities’ needs over time, gives us instruments to leverage quality improvement and 
+ensure all individuals have access to equitable care and coverage. 
+ 
+Image Source: The Institute for Clinical Systems Improvement, Going Beyond Clinical Walls: Solving Complex Programs 
+(October 2014) 
+ 
+SDoH Strategy Focus Areas: 
+ 
+ Use cases development and implementation to drive prioritization 
+ Safe aggregation and storage of SDoH data as part of a person-centered approach 
+ Engaging mental health providers, substance use disorder (SUD) treatment providers, 
+and long-term services and supports (LTSS) providers that predominantly serve the 
+
+28 
+Medicaid population 
+ Supporting communities via SDoH 
+ 
+Substance Use Disorder, Mental Health, Behavioral Health VHIE Pilot 
+ 
+Some parts of the health care system were not able to fully take advantage of the federal Medicaid 
+and Medicare EHR Incentive programs which offered funding to health care organizations to offset 
+the cost of purchasing EHR systems. In 2019, Vermont’s Joint Fiscal Office (JFO) appropriated funds 
+through a grant administered by the Department of Mental Health (DMH) to Vermont’s Designated 
+Agencies (DA) to offset the cost of upgrading EHR systems at 9 of the DAs. Vermont Care Partners, on 
+behalf of the DAs, was required to develop an interoperability strategy that considered the VHIE as a 
+key component of data integration and exchange across the health care system. As a result, VITL and 
+Vermont Care Partners developed DA-specific Connectivity Criteria to ensure that once the DA 
+systems are connected to the VHIE they can seamlessly transmit coded data that can be exchanged 
+across care settings (to the extent that consent and organizational policies allow). 
+After the HIE Steering Committee approved the DA Connectivity Criteria, VITL established a Part II+ 
+group, uniting stakeholders to create universal policies and procedures for sharing sensitive data 
+types. This subcommittee will be responsible for establishing the data governance for Part II+ group 
+within the HIE, the data elements that will be ingested in parallel while the infrastructure to connect 
+this data to the HIE is being built. 
+ 
+Integrations across the Health System: 
+To fully participate in the vision of a Unified Health Data Space, public health data and systems must 
+be integrated with the VHIE. In 2023, AHS will partner with VITL to design a strategy for bolstering 
+public health management through partnership with the VHIE. The integration strategy will consider 
+leveraging VHIE infrastructure to enhance public health operations (an effort to reuse existing 
+technical capabilities in support of 18 V.S.A 9351 (6)), incorporating public health data (e.g., 
+immunizations, birth/death, cancer records) into the health record contained on the VHIE, and 
+reporting for public health surveillance and monitoring. The strategy will build on lessons learned from 
+the COVID-19 response and account for new federal requirements for state-level reporting. The HIE 
+Steering Committee will provide feedback on the public health data strategy and use it to inform 
+ongoing efforts to propel state-wide health information exchange. In addition, for future funding 
+options, Public Health registries are also eligible for CMS certification. While there are dedicated 
+funding sources for Vermont’s Public Health registries, certifying these systems may create an 
+opportunity for Vermont to receive enhanced federal funding. It is important to note that operations 
+of the registries would have to comply with CMS guidance, such as integration with an HIE and reuse 
+of existing federal investments before certification could be obtained. Certification of public health 
+data capabilities will be further explored as part of the process of developing a public health and VHIE 
+integration strategy. 
+ 
+In addition to integrating public health systems to the HIE, the HIE will also serve as the Data 
+Warehouse for Vermont Medicaid Operations. This will include ingesting Medicaid claims into the 
+HIE, leveraging the existing technology of the HIE and providing the data for the Medicaid Analytics 
+vendor for required reporting and analytics. Having the HIE consolidate data warehouse functions 
+across the State aligns to 18 V.S.A 9351 (6). Future integrations, which also align to 18 V.S.A 9351 (6) 
+29 
+as well as the goals of the HIE Plan, include integrating the Pharmacy Drug Monitoring Program 
+(PDMP), the all-payer claims database (APCD), and integrated enrollment and eligibility data. 
+ 
+Other key items that are important to ensure the HIE is sustainable and scalable includes knowledge 
+management, human resources, and policies. Some of the biggest risks to business continuity and 
+change sustainability, especially during a transformational period, are turnover and the inability to 
+preserve knowledge throughout the organization. Knowledge management is defined as the process 
+of creating, identifying, and managing knowledge of an organization and structuring it for effective 
+and efficient use by individuals and teams. It should exist at the strategic level because operational 
+knowledge is the lifeblood of business continuity. When knowledge is effectively managed, the 
+organization is better equipped to withstand changes that come with time such as shifts in strategic 
+direction, changes in work location, adoption of new processes, or changes in systems. Knowledge 
+management will be necessary to expedite access to information, increase efficiencies, improve 
+decision making, and support innovation. It will be important to develop a knowledge management 
+framework to assess how knowledge is captured within the scope of the Unified Health Data Space as 
+well as transferred across it as necessary. As new staff are onboarded, it will be important to ensure 
+that they have the appropriate knowledge base to sustain the system. There may also be a need for 
+new staff that bring a different set of skills and expertise. This may include partnership opportunities 
+with educational institutions at all levels and providing pathways for current staff to expand their 
+knowledge and skills. It will also be important to create succession plans to minimize loss of 
+institutional knowledge when turnover occurs. As we plan for the HIE in the coming years, it will be 
+important to cultivate a workforce suited for the unique mix of technical, compliance, business, and 
+clinical skills needed for management of Unified Health Data Space. 
+ 
+Lastly, to ensure the HIE is sustainable and scalable it will be important to continue to monitor the 
+landscape for upcoming policy changes. Rules governing data interoperability and information 
+exchange will continue to be released multiple times a year and will need to be monitored. Legislation 
+often impacts or influences data collection and sharing requirements. As such, as policies evolve, the 
+HIE will need to be responsive to these changes. 
+ 
+ 
+30 
+Strategy: Technology 
+ 
+ 
+ 
+Figure 5: Technology components of the HIE 
+ 
+With its foundational technical infrastructure in place, the VHIE is well positioned to play a key role in 
+advancing VT’s population health, in-line with the State’s Strategic Plan. The technology components of the 
+HIE are shown in the figure above in the green box labeled ‘Vermont Health Information Exchange (VHIE). 
+From a technology standpoint ensuring the HIE is positioned to be sustainable and scalable over the next few 
+years a few key items are important. These include ease of use; bidirectionality of data; data matching; 
+analytics capabilities; system efficiencies; and tools. 
+ 
+Adoption and utilization of the Unified Health Data Space will depend on the ease by which its users can access 
+the information they need. Providers will need a single sign-on that is integrated into their workflow. They 
+will also look to have VHIE data available within their standard workflow and tools. Stakeholders may need 
+access to interactive dashboards to enable them to analyze data based on certain person characteristics, 
+health, or geography. Working within each user group, it will be possible to define what is currently feasible 
+(e.g., manual query or data extract) as well as begin to consider how data can be more effectively accessed 
+and shared (e.g., access to sophisticated tools like Tableau that can facilitate data visualization). The ability 
+to analyze and use the data (often called data literacy) from the Unified Health Data Space will vary across 
+user groups. Those groups who will want to run ad hoc queries will require resources to conduct these 
+analyses. These may include hiring staff with expertise in data analytics or training current staff to develop 
+data literacy. Without analytic skills, stakeholders will not be able to effectively manipulate the data to support 
+their individual use cases. Strategic investments for technology for the HIE will involve acquiring and 
+integrating modern, easy-to-use analytic tools to facilitate the effective use of the Unified Health Data Space, 
+enabling staff without training to generate meaningful insights from the data. It will also be important to 
+clearly communicate what tools and resources are available to users of Unified Health Data Space. 
+ 
+It will be important to present each different stakeholder with data fields that will be useful and presented in 
+
+31 
+a format that is meaningful. While enhancing ease of use for the consumers, it will also be important to elevate 
+data literacy skills in the process. Within each user group, it will be important to identify processes to simplify 
+access to data based on their role-based access. To ensure coordination and collaboration across all 
+stakeholders, it is critical that data flows in both directions. That is, if a stakeholder contributes data to the 
+Unified Health Data Space, they must be able to access data that aligns with their designated role, as well as 
+federal and state privacy laws. As such, data must be accessible to stakeholders that are contributing data to 
+the warehouse, aligning with policies, laws, and data security guidelines. VITL currently uses a data matching 
+algorithm that has proven to be highly effective in matching people records. Additionally, VHIE data has been 
+successfully matched to Medicaid claims. Scaling this to include all claims will require time and resources. It 
+will be important to document and automate the processes for data matching to ensure there is one record 
+for each person. 
+ 
+One of the primary benefits of the health data space will be reducing redundancy and establishing streamlined 
+processes to increase efficiency. To reduce unnecessary duplication, minimize extraneous costs, and 
+streamline processes, it will be necessary to establish a detailed plan to increase efficiency including 
+optimizing data storage, access, filtering, and sharing. This aligns to 18 V.S.A. § 9351 (3,4,6). Innovative 
+technologies are being developed and evaluated that can help increase access to protected patient data while 
+continuing to respect patient preferences for the sharing of sensitive health information. Developing a 
+strategy that can accommodate emerging technologies like data segmentation, data tagging, HL7 Clinical 
+Decision Support (CDS) Hooks, and SMART on FHIR 5 will be essential. Over time, there will be increasing 
+sophistication in the tools and methods for data automation and refinement. Anticipating the evolution of 
+data tools and algorithms to improve data is essential. Implementing the above technologies and 
+continuously scanning the national landscape of best practices will enable personal health records for 
+longitudinal health information, patient API for efficient and secure access, and the Internet of Things (IoT) 
+for data collection and health monitoring. 
+ 
+The UHDS will enable the reduction of Vermont’s Total Cost of Care (TCOC) by enabling data driven 
+personalized care through Person generated data for a complete health data profile, to promote closer people 
+engagement and drive higher-value care by reducing unnecessary and costly low-value care. Technology 
+enablers for this data driven personalized care include Patients Generated Data (PGD) through IoT devices for 
+timely and complete health data profile, SDoH data collection and access for preventing high-cost clinical 
+encounters and optimizing personalized diagnostics, treatments, and recovery. Risk stratification tools for 
+predicting high-cost encounters before they happen. Payment adjustments tools for promoting value-based 
+care and reducing paying for volume. 
+ 
+ 
+ 
+ 
+ 
+5 What is SMART on FHIR? SMART is an open-source, standards-based API that leverages the OAuth 2.0 standard to provide secure, universal access to EHRs. 
+The SMART platform builds on the existing Fast Health Interoperability Resources (hence the name "SMART on FHIR") 
+32 
+Strategy: Next Steps 
+ 
+This strategic plan outlines the key items necessary to facilitate the successful implementation of the Unified 
+Health Data Space over the course of the next few years. In the following months, AHS with the HIE Steering 
+Committee will build out an action plan for each 2023 Strategic Goal item from the below table and track 
+progress with appropriate key process indicators (KPIs) and metrics. 
+ 
+Ongoing coordination across all stakeholders will support and advance implementation, while efforts to 
+promote data literacy, including outlining use cases for how the data may be used, will increase interest in 
+and use of the Unified Health Data Space. These efforts will be paired with reviews to ensure that professional 
+practice and policy are properly followed to ensure patient education and consent. Throughout the 
+implementation process, the HIE will look for opportunities to improve implementation or make course 
+corrections that will ensure successful development and management of the Unified Health Data Space. 
+ 
+ 
+Table 4: Strategic Goals 
+Year Goal Foundational
+Value 
+Based Care 
+Mgt Governance
+Grow Value 
+for 
+Stakeholders
+Develop 
+Culture of 
+Learning 
+and 
+Innovation
+Focus on 
+Health 
+Equity
+2023 Establish Data Governance for each data type and stakeholder use of it x x
+2023 Focus on clinical data completeness, quality, and standardization x x x
+2023 Funding Structure - establish milestones and guardrails for seeking private funding x x
+2023
+Establish new / additional interfaces to increase the richness of data. Promote portability of EHI through 
+standards-based APIs and other interoperable health IT that permit individuals to readily send and receive 
+their EHI across various platforms. x x x
+2023 Enhance accessibility for Stakeholders x x x
+2023 Identify two use cases for SDoH and enable end to end implementation of it. x x x x
+2023 Deveopment work to start for HIE to serve as the Medicaid Data Warehouse x x
+2023-
+2024
+Integrate Dept of Health and HIE to include: bi - directional exchange of immunization records; vital 
+statistics; electronic case reporting; Pharmacy Drug Monitoring Program x x x x
+2024 Ongoing Technology Enhancements: ease of use, employ single sign on capability x
+2024 Expand Stakeholders to include researchers to utlize limited datasets of HIE for health improvement x x x x
+2024 Integrate all-payer claims and clinical data x x
+2024 Capability for complex care management, care coordination, and referral management x x x
+2024-
+2025 Onboard Integrated Enrollment and Eligibility data x x
+2023-
+2025 Enable HIE to ingest and use data from Home Health Devices: Wearable sensors, IOT x x
+2024-
+2025
+Enable HIE to adopt analytics to empower individuals, address patients’ full range of health needs, promote 
+healthy behaviors, and facilitate better health outcomes for individuals, families, and communities x x
+2025 Customization for Provider Portal x x
+2025 Explore person engagement platform x x
+HIE THEMES
+33 
+Appendix A: Protocols for Access to Protected Health Information on VHIE 
+ 
+Protocols for Access to Protected Health Information on VHIE 
+ 
+ 
+Section 1 – Purpose 
+ 
+Upon approval by the Green Mountain Care Board, this addendum shall be incorporated into and 
+become part of Vermont’s Health Information Technology Plan (the “Plan”). Vermont law requires 
+that the Plan include standards and protocols for the implementation of an integrated electronic 
+health information infrastructure for the sharing of electronic health information among health care 
+facilities, health care professionals, public and private payers, and individuals receiving care. In 
+particular, 18 V.S.A. § 9351(a)(3)(B) requires that: 
+ 
+The Plan shall provide for each patient's electronic health information that is contained in the 
+Vermont Health Information Exchange to be accessible to health care facilities, health care 
+professionals, and public and private payers to the extent permitted under federal law unless the 
+patient has affirmatively elected not to have the patient's electronic health information shared in 
+that manner. 
+ 
+This addendum is intended to give effect to these provisions. 
+ 
+As required by statute, Vermont Information Technology Leaders, Inc. (“VITL”) has been designated 
+to operate the Vermont Health Information Exchange (“VHIE”) in accordance with standards and 
+protocols that are consistent with those adopted under the Plan. 
+ 
+Notwithstanding the annual review and approval of the HIE Plan as a whole, these Protocols shall 
+remain in effect for the existence of the VHIE until superseded or modified with approval of the Green 
+Mountain Care Board. 
+ 
+Section 2 - Definitions 
+ 
+“Consent” means an Individual’s decision to permit access to the Individual’s Protected Health 
+Information on the VHIE by Participating Health Care Organizations and by public or private payers 
+for Permissible Purposes. No affirmative action is required from an individual to establish their 
+Consent. Individuals shall be considered to have given their Consent until and unless the individual 
+affirmatively Opts-Out. 
+ 
+“De-identified” means that all identifying information related to a Person as set forth in the HIPAA 
+Privacy and Security Rules are removed from the Protected Health Information. 
+ 
+“Health Care Operations” means any of those activities identified by federal regulations at 
+45 C.F.R. § 164.501, as may be amended, including but not limited to, quality assessment and 
+improvement, evaluations relating to the competence of treating providers or necessary 
+administrative and management activities. 
+ 
+“HIPAA” means the Health Insurance Portability and Accountability Act of 1996, as may be amended, 
+and its implementing rules promulgated in 45 C.F.R. Parts 160, 162, and 164, as may be amended. 
+ 
+34 
+“HIPAA Privacy Rules” means those privacy rules described in 45 C.F.R. Part 164, Subpart E, as 
+modified and enlarged by the Health Information Technology for Economic and Clinical Health 
+(HITECH) Act and any other subsequent amendments to the Rules. 
+ 
+“HIPAA Security Rules” means those security rules described in 45 C.F.R. Part 164, Subpart C, as 
+modified and enlarged by the HITECH Act and any other subsequent amendments to the Rules. 
+ 
+“HITECH Act” means the Health Information Technology for Economic and Clinical Health Act of 2009, 
+as may be amended, and its implementing rules promulgated at 45 C.F.R. Parts 160, 162, and 164, as 
+may be amended. 
+ 
+“Medicaid State Plan” means that there is an agreement between a state and the Federal government 
+describing how that state administers its Medicaid programs. It gives an assurance that a state will 
+abide by Federal rules and may claim Federal matching funds for its program activities. 
+ 
+“Medical Emergency” means a condition that poses an immediate threat to the health of any 
+individual and which requires immediate medical intervention. The term “Medical Emergency” 
+specifically is intended to include an “Emergency Medical Condition” which is defined as a medical 
+condition manifesting itself by acute symptoms of sufficient severity such that the absence of medical 
+attention could reasonably be expected to result in (1) placing the health of the individual in serious 
+jeopardy or (2) serious impairment to bodily functions or (3) serious dysfunction of any bodily organ 
+or part. 
+ 
+“Opt-Out” means a Person’s affirmative election to withhold Consent, communicated to VITL through 
+designated process. 
+ 
+“Participating Health Care Organization” means the individual hospital, medical practice, physician 
+practice, home health care agency or other health care provider who has entered into a VHIE Services 
+Agreement. Health Care Organization is either a recipient of Data or a supplier of Data, or both, with 
+respect to Data available through the VHIE. The term “Participating Health Care Organization” shall 
+include all the individual providers and authorized staff employed or otherwise legally associated with 
+the entity or organization. 
+ 
+"Part 2 Provider” means a Participating Health Care Organization provider that has notified VITL that 
+the organization or a unit or staff member within its organization, meets the definition of a Program 
+under 42 C.F.R. Part 2, presently located in 42 C.F.R. § 2.11. 
+ 
+"Part 2 Lawful Holder” means any entity other than a Part 2 Provider that has notified VITL that the 
+records it has provided to VITL consist or are reasonably be expected to consist, in whole or in part, 
+of records protected by 42 C.F.R. Part 2. 
+ 
+“Patient”, “Individual” or “Person” means an individual whose personal demographic information or 
+Protected Health Information is stored or transferred by the VHIE. The term includes a personal 
+representative who has the authority to authorize the disclosure of a Person’s Protected Health 
+Information pursuant to 45 C.F.R. § 164.502 (g) and any other applicable state or federal laws. 
+ 
+“Payment” means any activity undertaken to obtain or provide reimbursement for the provision of 
+health care items or services to a Person. 
+ 
+35 
+“Permissible Purposes” means Treatment, Payment, Health Care Operations, consistent with HIPAA 
+and Vermont law. 
+ 
+“Protected Health Information” and the abbreviation “PHI” shall have the same meaning as the term 
+“protected health information” in 45 C.F.R. § 160.103, limited to the individually identifiable health 
+information created or received by or on behalf of a Participating Health Care Organization. Such term 
+shall also include Electronic Protected Health Information. 
+ 
+“Public Health Authority” means an agency or authority of the United States or a State that has been 
+granted authority and responsibility to protect public health and to prevent or control disease, injury 
+or disability, and, as such, that is authorized by law to collect or receive such information for the 
+purpose of preventing or controlling disease, injury, or disability. 
+ 
+“Significant Public Health Risk” shall have the same the meaning as the term “significant public health 
+risk as” in 18 V.S.A. § 2 (12). 
+ 
+“Revoke” or “Revocation” of Opt-Out means a Person’s withdrawal of a previous election to Opt-Out. 
+ 
+"Substance Use Disorder Identifying Records” or “SUD Identifying Records” means records obtained 
+from a Part 2 Provider or Part 2 Lawful Holder that meet the applicability provisions for restrictions 
+on disclosure in 42 C.F.R. Part 2, presently located in 42 C.F.R. § 2.12(a)(1). 
+ 
+“Treatment” means the provision, coordination, or management of health care and related services 
+by one or more Health Care Organizations. 
+ 
+Section 3 –Access by Participating Health Care Organizations 
+ 
+A. General. Each Individual's electronic Protected Health Information that is contained in the 
+Vermont Health Information Exchange shall be accessible to Participating Health Care 
+Organizations to the extent permitted under law unless the Individual has affirmatively elected 
+not to have the Individual's electronic Protected Health Information shared in that manner. 
+ 
+Participating Health Care Organizations shall access Protected Health Information on the VHIE 
+only for Permissible Purposes and only with respect to Individuals with whom they have, had, or 
+are about to commence, a Treatment relationship. 
+ 
+B. Responsibilities of Participating Health Care Organizations . Participating Health Care 
+Organizations shall– 
+ 
+(i) execute a VHIE Service Agreement addressing the terms of providing Patient PHI 
+for exchange on the VHIE and the Participating Health Care Organization’s Access 
+to Patient Records 
+ 
+(ii) cooperate in good faith to execute all provider responsibilities under any processes 
+established by VITL to collect and record Individual elections to Opt-Out, and 
+ 
+ 
+(iii) have policies and procedures in place to ensure that only those individuals 
+involved in Treatment, Payment or HealthCare Operations may access a Persons’ 
+PHI on the VHIE. 
+36 
+ 
+C. VITL Responsibilities. In addition to the obligations provided elsewhere in this addendum, VITL, 
+as the operator of the VHIE, shall– 
+ 
+(i) enter into a Business Associate Agreement (“BAA”), including, if applicable, a 
+Qualified Service Organization Agreement (“QSOA”), with Participating Health Care 
+Organizations addressing the terms of VITL’s use and disclosure of Individual PHI 
+obtained from the Participating Health Care Organization and 
+ 
+(ii) ensure mechanisms exist to ensure records of patients who have Opted Out are not 
+available, except in the event of Medical Emergencies as in Section D. 
+ 
+D. Emergency Access to PHI on the VHIE . Notwithstanding a Persons’ choice to Opt-Out, a 
+Participating Health Care Organization may access the Individual’s PHI through the VHIE for use 
+in Treatment of the Individual for a Medical Emergency, but only if the Participating Health Care 
+Organization is unable to obtain Individual consent for such access. Participating Health Care 
+Organizations accessing PHI under such circumstances must notify the Individual of such access 
+as soon as is reasonably possible and must obtain a Revocation of the Individual’s Opt-Out for 
+further access to PHI of that Individual on the VHIE after the Medical Emergency has ended. 
+ 
+Section 4 – SUD Identifying Records 
+ 
+A. Protections necessary to prevent disclosures. The regulations set forth in 42 C.F.R. Part 2, 
+governing records of covered substance use disorder treatment providers, require additional 
+protections to prevent disclosure of SUD Identifying Records. 
+ 
+ 
+B. VITL Responsibilities . In addition to the obligations provided elsewhere in this addendum, 
+including those in Section 3.C, VITL, shall– 
+ 
+(i) work with AHS, Part 2 Providers, and Part 2 Lawful Holders to identify and meet all 
+applicable technical and programmatic requirements before allowing parties to 
+access SUD Identifying Records under Sections 3, 5, or 6, 
+ 
+(ii) take reasonable care to prevent unpermitted disclosure of SUD Identifying Records, 
+including working with Part 2 Providers to appropriately identify, store, and 
+manage, as required by law, SUD Identifying Records transmitted to VITL, and 
+ 
+(iii) disclose SUD Identifying Records as permitted by law and authorized by the Part 2 
+Provider or Part 2 Lawful Holder or as required by law. 
+ 
+Section 5 – Public Health Access 
+ 
+Patient PHI that is contained in the VHIE shall be accessible to a Public Health Authority for public 
+health purposes to the extent that access is authorized under state and federal law. This access 
+shall not be limited by the patient’s election not to share data with Participating Health Care 
+Organizations and public and private payers under 18 V.S.A. § 9351(a)(3)(B). A Public Health 
+Authority that receives PHI for a public health activity or purpose may only disclose such PHI to 
+the extent permitted by state and federal law. 
+ 
+Section 6 – Payer Access 
+ 
+37 
+A. General. Each Individual's electronic Protected Health Information that is contained in the 
+Vermont Health Information Exchange shall be accessible to public and private payers to the 
+extent permitted under federal and state law unless the Individual has affirmatively elected not 
+to have the Individual's electronic Protected Health Information shared in that manner. 
+ 
+Public and Private Payers shall access Protected Health Information on the VHIE only for 
+Permissible Purposes and only with respect to Individuals with whom they have or had a 
+relationship. 
+ 
+B. Payer Responsibilities. Payers shall– 
+ 
+(i) enter into a Data Use Agreement addressing the terms of their Access to Individual 
+Records and 
+ 
+(ii) have policies and procedures in place to ensure that only those individuals involved 
+in Payment or Health Care Operations may access a Person’s PHI on the VHIE. 
+ 
+ 
+C. VITL Responsibilities. In addition to the obligations provided elsewhere in this addendum, VITL, 
+as the operator of the VHIE, shall– 
+ 
+(i) if receiving PHI from the Payer entity, enter into a Business Associate Agreement 
+(“BAA”) with payers addressing the terms of VITL’s use and disclosure of Individual 
+PHI obtained from the Payer, 
+ 
+(ii) implement policies and procedures to prevent Payer Access through the VHIE to 
+PHI of Patients who have Opted Out. 
+ 
+ 
+Section 7 – Individual Rights with Respect to Access 
+ 
+A. Education. VITL and the Department of Vermont Health Access shall develop, maintain and 
+administer a program of education that enables Individuals to fully understand their rights 
+regarding the sharing of their Protected Health Information through the VHIE and provide them 
+with ways to find answers to associated questions. Educational materials and processes shall be 
+incorporated as appropriate with existing education obligations, such as Notice of Privacy 
+Practices disclosure requirements under HIPAA, and shall aim to address diverse needs, abilities, 
+and learning styles with respect to information delivery. 
+ 
+Education materials and processes shall clearly explain– 
+ 
+(i) the purpose of the VHIE; 
+ 
+(ii) the way in which Protected Health Information is collected; 
+ 
+(iii) how and with whom Protected Health Information may be shared using the VHIE; 
+ 
+(iv) the Permissible Purposes for which Protected Health Information may be shared 
+using the VHIE; 
+ 
+(v) how to Opt-Out and how to Revoke the Opt-Out; and 
+ 
+38 
+(vi) how to contact the Office of the Health Care Advocate. 
+ 
+B. Patient Opt-Out. With the exception of access by Public Health Authorities and access in a 
+Medical Emergency, Patients shall be free to Opt-Out of participation in the VHIE at any time, 
+which election shall remain in effect with respect to information requested by Participating 
+Health Care Organizations or Payers, unless and until the Patient Revokes such election in writing. 
+C. Patient Access to PHI. All patients shall be provided the right of access to their PHI contained in 
+the VHIE to the extent permitted under applicable HIPAA rules. 
+D. Patient Request for Audit Report. A Patient may request and receive an audit report of access 
+to their PHI on the VHIE by contacting VITL’s Privacy Officer. VITL shall provide the requested 
+audit report as soon as reasonably possible, but in no event longer than 30 days after request. 
+E. Revocation. A Patient who has Opted-Out shall be entitled to Revoke such Opt-Out at any time. 
+VITL shall develop and administer one or more Revocation mechanisms for this purpose, including 
+a mechanism by which the Patient’s Opt-Out revocation may be documented by the Payer entity. 
+It is the obligation of VITL to update records of the Patient’s Consent status for the VHIE. A 
+Revocation shall remain effective unless the Patient subsequently Opts Out. 
+F. Deidentified Data. De-identified patient information may be used for research, quality review, 
+population health management and public health purposes, as permitted by HIPAA. No 
+commercial use or sale of de- identified patient information is permitted. 
+ 
+G. VITL Responsibilities. 
+ 
+(i) establish one or more user-friendly mechanisms through which Patients may Opt-Out, 
+ 
+(ii) maintain updated Consent-status records of all Patients who have Opted-Out, and 
+ 
+(iii) ensure the ability to audit access to patient records to facilitate compliance by Participating 
+Health Care Organizations and participating payers with Accounting of Disclosure regulations 
+under HIPAA. 
+ 
+ 
+ 
+ 
+ 
+39 
+Appendix B: HIE Steering Committee Charter 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Health Information Exchange 
+Steering Committee Charter 
+40 
+ 
+Table of Contents 
+HIE DEFINED ....................................................................................................................... 2 
+PURPOSE OF THE HIE STEERING COMMITTEE ....................................................................... 2 
+THE STEERING COMMITTEE’S VISION & MISSION ................................................................. 2 
+THE STEERING COMMITTEE’S GUIDING PRINCIPLES ............................................................. 3 
+SCOPE ................................................................................................................................ 3 
+STEERING COMMITTEE MEMBERSHIP .................................................................................. 4 
+DECISION MAKING .............................................................................................................. 5 
+COMMUNICATIONS ............................................................................................................ 5 
+MEETINGS…........................................................................................................................ 5 
+HIE STEERING COMMITTEE WEBSITE… ..................................................................................6 
+41 
+Purpose of the HIE Steering Committee 
+ 
+The HIE Steering Committee exists to: 
+1. Serve the needs of HIE users by advancing HIE use cases; 
+2. Strengthen the relationship between authority and accountability; and 
+3. Engage a broad range of stakeholders in strategic planning and oversight activities. 
+ 
+The Steering Committee’s Vision & Mission 
+ 
+Vision: To enable health information exchange that promotes quality health care in Vermont. 
+ 
+Mission: To work across organizations and disciplines to create and endorse a shared view of the definition, 
+purpose, and goals of HIE in Vermont. 
+ 
+Ultimately, the Steering Committee exists to support development of a state-wide strategic plan (the HIE Plan) 
+and guide implementation of that plan. In 2018, the Steering Committee identified three overarching goals in the 
+HIE Plan that are intended to guide the state’s health information exchange work. The goals include: 
+ 
+1. Create One Health Record for Every Person 
+a. Support optimal care delivery and coordination by ensuring access to complete and 
+accurate health records 
+b. Reduce provider burden by aggregating essential data in one, useful location 
+c. Provide people with a comprehensive understanding of their health and care 
+ 
+2. Improve Health Care Operations 
+a. Enrich health care practices with data collection and analysis to support quality 
+improvement and reporting 
+b. Align data aggregation and data quality efforts to support real need 
+c. Reduce burden associated with reporting 
+d. Allow providers to analyze their own data and put information into action 
+ 
+3. Use Data to Enable Investment and Policy Decisions 
+a. Bolster the health system’s ability to learn and improve by using accurate, comprehensive 
+data to guide investment of time, labor, and capital, and inform policy making and program 
+development 
+b. Put data in the hands of program’s serving population-wide needs 
+c. Enable data-informed decision making 
+ 
+The Steering Committee’s Guiding Principles 
+ We commit to creating an HIE Plan that is accurate, reliable, and actionable. 
+ We drive to use technology and data to support value-based care. 
+ We are accountable for meaningful work that furthers the goals of HIE. 
+ We work to optimize what exists today and be thoughtful about future developments. 
+42 
+ We are good stewards of limited public and private resources. 
+ We exist to develop systems that better the health and well-being of Vermonters. 
+ 
+Scope 
+ 
+In 2019 and beyond, the HIE Steering Committee will: 
+ 
+ Support development, execution, and oversight of Vermont’s HIE Plan. 
+o Annually, develop and/or update the HIE Steering Committee charter and bylaws to clearly define 
+roles of members, voting procedures, and other essential operational functions. 
+o Annually, update the State’s HIE plan to support the health system’s needs and priorities. The plan 
+must comply with state law and guidance provided by the Green Mountain Care Board (GMCB) 
+through the annual plan review process. 
+o Develop and maintain a technical roadmap to support the State’s HIE network and achieve the goals 
+stated in the HIE Plan. 
+o Oversee and manage activities set forth in the annual HIE plan. 
+ 
+ Continue to grow and evolve the HIE Steering Committee to best meet the State’s needs. 
+o Identify growth opportunities for the governance body and assign ad-hoc committees as needed 
+(e.g., data governance, connectivity, finance, audit). 
+o Act as the central point of review for new or adjusted priorities with HIE stakeholders. Identifying 
+alignment opportunities to further integrate the statewide data management architecture. 
+ 
+ Support the Department of Vermont Health Access (DVHA) and other stakeholders in focusing HIE 
+investments to align with statewide HIE goals. 
+o Define the portfolio of investments needed to further HIE goals and, annually, refine the HIE 
+financial sustainability model through evaluation of progress made in the preceding year. 
+o Note: The Committee does not approve or review public investments. Rather, they aid in the 
+development of strategy that may guide both public and private investments in support of shared, 
+state-wide goals. 
+ 
+ Support development of processes and policies that enable achievement of statewide HIE goals. 
+o Provide recommendations to the legislature, GMCB and other stakeholders on actions they can take 
+to support the State’s HIE plans and goals and support the development of policy and legislation to 
+further statewide HIE goals and objectives. 
+o Identify priority policies that must be focused on to expand interoperability of health information. 
+o Review and provide feedback on policies developed by AHS, the VHIE, and other stakeholders 
+related to the exchange of health data. 
+ 
+ Engage stakeholders in the Steering Committee’s work. 
+o Actively and consistently engage with existing stakeholder advisory groups to ensure that planning 
+and implementation considers insights from impacted and interested parties. 
+o Act as ambassadors of and liaisons to individuals’ respective population or organization represented 
+as Committee members on matters discussed or pursued by the HIE Steering Committee. 
+ 
+43 
+Steering Committee Membership 
+The members of the committee were selected by the Chair to best enable HIE progress in Vermont. 
+Membership is comprised of 9 voting members and 4 non-voting members. AHS’s HIE Unit will act 
+as the Steering Committee’s administrative and operational support. 
+ 
+ 
+Name Role Population or Organization 
+Represented 
+Kristin McClure Chair / 
+Voting Member 
+Vermont’s Agency of Human 
+Services 
+Jessie Hammond Voting Member Vermont’s Department of Health 
+Jimmy Mauro 
+Blue Cross Blue Shield of 
+Vermont 
+Voting Member Payer Representative 
+Simone Rueschemeyer 
+Vermont Care Partners Voting Member 
+Mental Health & Substance Use & 
+Intellectual Developmental 
+Disabilities Representative 
+Georgia Maheras 
+Bi-State Primary 
+Care Association 
+Voting Member Primary Care Representative 
+Emma Harrigan 
+Vermont Association of Hospitals and 
+Health Systems 
+Voting Member Hospital Care Representative 
+Victor Morrison Voting Member Representative of people who engage 
+with the health care system 
+Josiah Mueller 
+OneCare Vermont Voting Member Accountable Care Organization 
+Representative 
+Tim Tremblay Voting Member The Blueprint for Health Program 
+Sandy Rousse 
+Central Vermont Home Health 
+and Hospice 
+Voting Member Home Health and Hospice 
+Representative 
+Laura Pelosi 
+Long Term Care Advocate Voting Member Long Term Care Representative 
+Kathryn O’Neill Non-Voting Member The Green Mountain Care Board 
+Vacant Non-Voting Member The Agency of Digital Services 
+Beth Anderson Non-Voting Member VITL, Vermont’s Health 
+Information Exchange Operator 
+44 
+Vacant Operational Support 
+/ Non- Voting 
+Member 
+Health Information Exchange 
+Program, Agency of Human 
+Services 
+ 
+Decision Making 
+Decisions will be made by a majority vote (unanimity minus 2). The committee will make attempts 
+to bring in affected parties beforehand for their advice. Decisions will be logged by the scribe for that 
+meeting, the Committee Coordinator or HIE Program Manager. The committee will produce a 
+decision document that names, explains, and describes the impact of all decisions. Affected entities 
+will be notified within 30 days. 
+ 
+Communications – Meetings 
+Note: In April 2020, the Steering Committee agreed to revise the in-person meeting structure 
+considering the COVID-19 pandemic and the need to physically distance from others. The Committee 
+agreed to the following: 
+ 
+ Maintain Regular Meetings 
+ Meet virtually 
+ Aim to keep meetings under 2 hours 
+ Strategically Work Through Small Groups (subcommittees) to Ensure Efficient 
+Management of Timely Activities 
+ Utilize Email More Often to Conduct Committee Business e.g., Consent Updates 
+ Host Meetings for Special Topics: Individual or Group Meetings to Get Up-to-Speed 
+on Topics like the 21st Century Cures Act 
+ 
+HIE Steering Committee Website 
+Meeting agenda, minutes, and resource materials will be posted on 
+https://healthdata.vermont.gov/. Draft materials may be sent via email from the HIE Unit directly to 
+Steering Committee members. 
+ 
+45 
+Appendix C: General Connectivity Criteria & Designated Agency Connectivity Criteria 
+Data Set and Data Quality Standards Worksheet 
+Tier 2 HC Elements 
+ 
+ 
+VHIE Connectivity Criteria Tier 2 Healthcare Common Data Elements 
+Location(s): 
+Data Contributor Type: 
+Vendor: 
+Date: 
+ 
+ 
+Concepts 
+ 
+ 
+Data Elements 
+ 
+ 
+Standardized 
+Coding 
+System(s) 
+ 
+ 
+Data 
+Contributor 
+Type 
+HCO use only 
+Documentation 
+Assessment 
+Providers are documenting 
+data sets in discrete data 
+fields 
+(Yes or No) 
+VITL use only 
+Connectivity 
+Assessment
+ EHR vendor is 
+technically capable o f 
+transmitting data 
+sets 
+ 
+ 
+ 
+ 
+Demographics 
+First Name 
+ 
+ 
+ 
+N/A 
+All 
+Last Name All 
+Middle Initial (if has middle name) All 
+Date of Birth All 
+Gender (self reported) All 
+USPS address (Street, City, State and Zip 
+Code) All 
+Medical Record Number All 
+Providers Assigned PCP NPI (Individual) National Provider 
+Index (NPI) 
+All 
+Servicing Provider NPI (Individual) All 
+46 
+ Additional Members of the Care Team 
+(if available) NPI (if available) MH/BH 
+Sending Organization N/A All 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Diagnostic Results 
+Hemoglobin A1C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Logical Observation 
+Identifiers Names and 
+Codes (LOINC) 
+All 
+LDL Physical 
+HDL Physical 
+ALT Physical 
+AST Physical 
+Cholesterol Physical 
+Triglycerides Physical 
+Fecal Occult Blood Test (FOBT) Physical 
+Stool DNA Test (FIT DNA) Physical 
+Fasting Blood Glucose Test Physical 
+Lyme Disease Test Physical 
+Cervical Cancer Screening (HPV test and 
+Date of test) Physical 
+COVID-19 Test All 
+Pregnancy MH/BH 
+Platelet Count MH/BH 
+Red Blood Cell Count (RBC) MH/BH 
+Hematocrit (HCT) MH/BH 
+Mean Corpuscular Hemoglobin MH/BH 
+Mean Corpuscular Volume MH/BH 
+Mean Corpuscular Hemoglobin 
+Concentration MH/BH 
+Red Blood Cell Distribution Width MH/BH 
+Absolute Neutrophil Count MH/BH 
+ 
+ 
+Immunizations 
+Pneumococcal 
+ 
+CVX codes 
+Physical 
+MMR Physical 
+Diphtheria, Tetanus, Pertussis (DTaP) Physical 
+Tetanus, Diphtheria, Pertussis (Tdap) Physical 
+Varicella Physical 
+47 
+ Haemophilus Influenzae Type B (HiB) Physical 
+Hep A Physical 
+Hep B Physical 
+Rotavirus Physical 
+Meningococcal ACWY (MCV4) Physical 
+Meningococcal B (MenB) Physical 
+Polio (IPV) Physical 
+HPV Physical 
+Influenza Physical 
+COVID-19 Physical 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Problems 
+Hypertension 
+ 
+ 
+IHTSDO SNOMED CT. 
+Will also accept ICD-9, 
+ICD-10, or Z Codes 
+ 
+MH/BH: MH Codes Fall 
+in the F range on ICD- 
+10 
+F01.50 - F99 Mental 
+Behavioral and 
+Neurodevelopmental 
+disorders. 
+HCO may also 
+ocassionally report Z 
+codes: (Z00 - 
+Z99)Factors influencing 
+Health status and 
+contact with health 
+services. 
+Physical 
+Diabetes Physical 
+ADHD Physical 
+Coronary Artery Disease Physical 
+Obesity Physical 
+Asthma Physical 
+End Stage Renal Disease (ESRD) Physical 
+Smoking Status Physical 
+Tobacco (Including Nicotine) Use Physical 
+COPD Physical 
+Stroke Physical 
+Anxiety All 
+Depression All 
+Colon Cancer Physical 
+F01-F09 - Mental disorders due to 
+known physiological conditions MH/BH 
+F10-F19 - Mental and behavioral 
+disorders due to psychoactive 
+substance use 
+ 
+MH/BH 
+ 
+F20-F29 - Schizophrenia, schizotypal, 
+delusional, and other non-mood 
+psychotic disorders 
+ 
+MH/BH 
+ 
+ 
+48 
+ F30-F39 - Mood [affective] disorders MH/BH 
+F40-F48 - Anxiety, dissociative, stress- 
+related, somatoform and other 
+nonpsychotic mental disorders 
+ 
+MH/BH 
+ 
+F50-F59 - Behavioral syndromes 
+associated with physiological 
+disturbances and physical factors 
+ 
+MH/BH 
+ 
+F60-F69 - Disorders of adult personality 
+and behavior MH/BH 
+F70-F79 - Intellectual disabilities MH/BH 
+F80-F89 - Pervasive and specific 
+developmental disorders MH/BH 
+F90-F98 - Behavioral and emotional 
+disorders with onset usually occurring 
+in childhood and adolescence 
+ 
+MH/BH 
+ 
+ 
+ 
+ 
+ 
+Vital Signs 
+Height 
+Logical Observation 
+Identifiers Names and 
+Codes (LOINC) in 
+Unified Code of Units 
+of Measure, Revision 
+1.9. 
+All 
+Weight All 
+BMI (if recorded in EHR) All 
+Blood Pressure - Diastolic All 
+Blood Pressure - Systolic All 
+Heart Rate All 
+Respiratory Rate All 
+Pulse Oximetry All 
+ 
+ 
+ 
+ 
+ 
+Procedures 
+Colonoscopy 
+ 
+ 
+ 
+Snomed, CPT, HCPCS, 
+Loinc 
+Physical 
+Sigmoidoscopy Physical 
+Mammography Physical 
+Colectomy Physical 
+CT Colonography Physical 
+Cervical Cancer Screening (Pap test and 
+date of test) Physical 
+Ultrasound or CT scans for cancer Physical 
+Psycho Social Rehabilitation MH/BH 
+Individual Therapy MH/BH 
+49 
+ Comprehensive Community Support MH/BH 
+Group Psychotherapy MH/BH 
+Emergency Service MH/BH 
+Crisis Intervention Service MH/BH 
+Psychiatric Evaluation MH/BH 
+Skills Train and Development MH/BH 
+ 
+ 
+ 
+Medications 
+ 
+ 
+ 
+Medications 
+RxNorm, a 
+standardized 
+nomenclature for 
+clinical drugs produced 
+by the United States 
+National Library of 
+Medicine 
+ 
+ 
+ 
+All 
+ 
+ 
+ 
+ 
+Allergies 
+ 
+ 
+ 
+Medication Allergies 
+RxNorm, a 
+standardized 
+nomenclature for 
+clinical drugs produced 
+by the United States 
+National Library of 
+Medicine 
+ 
+ 
+ 
+All 
+ 
+ 
+ 
+Screenings/Patient 
+Education 
+Tobbaco Use Screening 
+ 
+Snomed, CPT, HCPCS, 
+Loinc 
+All 
+Colorectal Cancer Screening All 
+Depression Screening All 
+Substance Use Disorder Screening All 
+Depression Screening All 
+Payers Primary Insurance Company N/A All 
+Primary Insurance Member ID All 
+ 
+ 
+Encounters 
+Hospital Inpatient Admissions (From 
+ADT) 
+ 
+ 
+N/A 
+All 
+Hospital Inpatient Discharges (From 
+ADT) All 
+Hospital Inpatient Transfers (From ADT) All 
+50 
+Tier 3 HC Elements 
+VHIE Connectivity Criteria Tier 3 Healthcare Expanded Data Elements 
+Location(s): 
+Data Contributor Type: 
+Vendor: 
+Date: 
+ 
+ 
+ 
+ 
+Concepts 
+ 
+ 
+ 
+ 
+Data Elements 
+ 
+ 
+ 
+Standardized Coding 
+System(s) 
+ 
+ 
+ 
+Data 
+Contributor 
+Type 
+HCO use only 
+Documentation 
+Assessment 
+Providers are 
+documenting data 
+sets in discrete 
+data fields 
+(Yes or No) 
+VITL use only 
+Connectivity 
+Assessment 
+EHR vendor is 
+technically 
+capable of 
+transmitting 
+data sets 
+ 
+ 
+ 
+ 
+ 
+Demographics 
+Maiden Name 
+ 
+ 
+ 
+ 
+N/A 
+All 
+Phone Number All 
+SSN All 
+Nickname All 
+Suffix All 
+Birth Sex All 
+Race All 
+Ethnicity All 
+Preferred Language All 
+Phone Type All 
+ 
+Providers Care Team Member NPI (Individual) National Provider Index 
+(NPI) All 
+Servicing Provider Site Address N/A All 
+51 
+ 
+Diagnostic Results Urinalysis results for substance use 
+and/or treatment adherence 
+Logical Observation 
+Identifiers Names and 
+Codes (LOINC) 
+ 
+Physical 
+ 
+ 
+ 
+ 
+ 
+Problems 
+Pregnancy 
+ 
+ 
+ 
+IHTSDO SNOMED CT. Will 
+also accept ICD-9, ICD-10 
+Physical 
+Fetal Loss Physical 
+Suicidality Physical 
+Opioid Use Disorder Physical 
+Alcohol Use Disorder Physical 
+Upper Respiratory Infection Physical 
+Social Determinants of Health 
+(Problems) Physical 
+Disability/Physical Limitation Physical 
+ 
+ 
+ 
+Vital Signs 
+Body temperature 
+Logical Observation 
+Identifiers Names and 
+Codes (LOINC) in Unified 
+Code of Units of Measure, 
+Revision 1.9. 
+Physical 
+Inhaled oxygen concentration Physical 
+BMI percentile per age and sex for 
+youth 2-20 Physical 
+Weights for age per length and sex Physical 
+Occipital-frontal circumference for 
+children < 3 years old Physical 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Procedures 
+Audiological Evaluation, <= 3 
+months age 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Snomed, CPT, HCPCS, Loinc 
+Physical 
+Postpartum Care between 21 and 56 
+days after delivery Physical 
+Pulmonary Function Test Physical 
+Developmental Screening <= 3 years Physical 
+HEDIS Appropriate Treatment for 
+Upper Respiratory Infection ("URI") Physical 
+Diabetes Eye Screening Physical 
+Contraceptive Counseling Physical 
+Long-Acting Reversible 
+Contraception Insertion Physical 
+Long-Acting Reversible 
+Contraception Removal Physical 
+52 
+ Childbirth (live birth) Physical 
+Abortion Physical 
+Prenatal Care Physical 
+First Trimester Care for Pregnancy Physical 
+Second Trimester Care for 
+Pregnancy Physical 
+Third Trimester Care for Pregnancy Physical 
+Advance Directives Advance Directives (Y/N) N/A Physical 
+Advance Directives Contents Physical 
+ 
+ 
+Allergies 
+ 
+Food Allergies RxNorm, a standardized 
+nomenclature for clinical 
+drugs produced by the 
+United States National 
+Library of Medicine 
+ 
+Physical 
+ 
+ 
+Latex Allergies 
+ 
+Physical 
+ 
+ 
+ 
+ 
+ 
+ 
+Screenings/Patient Education 
+Colorectal Cancer Screening Results 
+ 
+ 
+ 
+ 
+Snomed, CPT, HCPCS, Loinc 
+Physical 
+Breast Cancer Screening Results Physical 
+Tobacco Cessation Treatment or 
+Follow-Up Physical 
+Reproductive Health Screening Physical 
+Reproductive Health Follow-Up Physical 
+Depression Treatment or Follow-Up Physical 
+Substance Use Treatment or Follow- 
+Up Physical 
+Social Determinants of Health 
+Screening(s) Physical 
+Payers Secondary Insurer N/A Physical 
+Secondary Insurer Member ID Physical 
+ 
+ 
+Assessment and Plan of 
+Treatment 
+NQF 0647 + 0648 Receipt of Care 
+Transition Record at Discharge 
+ 
+ 
+N/A 
+Physical 
+NQF 0648 Timely Transmission of 
+Transition Record (Discharges from 
+an Inpatient Facility to Home/Self 
+ 
+Physical 
+ 
+53 
+ Care or Any Other Site of Care) 
+("CTR") 
+ 
+ 
+Chief Complaint 
+ 
+Chief Complaint Snomed, CPT, HCPCS, 
+Loinc, ICD-9/10 
+ 
+Physical 
+ 
+ 
+ 
+ 
+ 
+ 
+Clinical Notes 
+Consultation Note Snomed, CPT, HCPCS, 
+Loinc, ICD-9/10 Physical 
+Contraceptive Use RxNorm Physical 
+Long-Acting Reversible 
+Contraception ("LARC") Use RxNorm Physical 
+Imaging Narrative 
+ 
+Snomed, CPT, HCPCS, 
+Loinc, ICD-9/10 
+Physical 
+Laboratory Report Narrative Physical 
+Pathology Report Narrative Physical 
+Procedure Note Physical 
+Progress Note Physical 
+Discharge Instruction Discharge Instruction Snomed, CPT, HCPCS, 
+Loinc, ICD-9/10 
+Physical 
+Discharge Instruction Contents Physical 
+Family History Family History Snomed, CPT, HCPCS, 
+Loinc, ICD-9/10 
+Physical 
+Family History Contents Physical 
+Provenance Author Time Stamp N/A Physical 
+Unique Device Identifier(s) 
+for a Patient's Implantable 
+Device(s) 
+Unique Device Identifier(s) for a 
+Patient's Implantable Device(s) 
+UDI identifier as described 
+by applicable FDA 
+regulation 
+ 
+Physical 
+ 
+54 
+Tier 2 Claims Elements 
+VHIE Connectivity Criteria Tier 2 Claims Data Elements 
+Organization(s): 
+Data Contributor Type: Claims 
+Vendor: 
+Date: 
+ 
+ 
+Concepts 
+ 
+ 
+Data Elements 
+ 
+ 
+Standardized 
+Coding System(s) 
+ 
+Org use only 
+Documentation 
+Assessment 
+Organization is documenting 
+data sets in discrete data fields 
+(Yes or No) 
+ 
+VITL use only 
+Connectivity 
+Assessment 
+Vendor is technically 
+capable of transmitting 
+data sets 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Insurance and Claim 
+Primary Insurance Type 
+ 
+ 
+ 
+ 
+ 
+ 
+N/A 
+ 
+Primary Insurance Company 
+Primary Insurance Member ID 
+Primary Insurance Group Number 
+Relationship to Insured 
+Insured Name (if not Patient) 
+Insured USPS address (if not Patient) 
+(Street, City, State and Zip Code) 
+ 
+Insured Date of Birth (if not Patient) 
+Insured Sex (if not Patient) 
+Insured Phone Number (If not Patient) 
+Provider, Service, or Supplier Federal Tax 
+ID 
+ 
+Total Charges for Claim 
+55 
+ Enter Total Amount Paid by Patient 
+Physician or Supplier Signature 
+Physician or Supplier Signature Date 
+Service Facility Location 
+Billing Provider Name 
+Billing Provider Address 
+Billing Provider Zip Code 
+Billing Provider Phone Number 
+Billing Provider NPI 
+ 
+ 
+Claim Type 
+Employment Related Claim 
+ 
+N/A 
+ 
+Auto Accident Related Claim 
+Auto Accident Place (if auto related) 
+Other Accident Related Claim 
+ 
+ 
+ 
+ 
+ 
+Demographics 
+First Name 
+ 
+ 
+ 
+ 
+N/A 
+ 
+Last Name 
+Middle Initial (if has middle name) 
+Date of Birth 
+Sex (self reported) 
+USPS address (Street, City, State and Zip 
+Code) 
+ 
+Phone Number 
+Patient or Insured Signature 
+Patient or Insured Signature Date 
+Providers Referring Provider Name (if exists) National Provider Index 
+(NPI) 
+ 
+ 
+Diagnosis 
+Date of Current Illness, Injury, Pregnancy, 
+etc. 
+ 
+ICD9, ICD10 
+ 
+Diagnosis Code(s) 
+ 
+Procedures, Services or 
+Supplies - Can be a repeating 
+data element within a claim 
+Date(s) of Service 
+CPT, HCPCS, CMS Place of 
+Service (POS) Codes 
+ 
+Place of Service Code 
+Procedure, Service or Supplies 
+Charge for Procedure, Service or Supplies 
+56 
+ Number of Days or Units for Procedure, 
+Service or Supplies 
+ 
+Rendering Provider Name National Provider Index 
+(NPI) 
+ 
+57 
+VHIE Connectivity Criteria Certification Process 
+ 
+ 
+T
+h
+e
+58 
+VHIE Connectivity Workplan 
+ 
+ 
+ 
+
+59 
+ 
+ 
+ 
+
+60 
+Connectivity Criteria Stakeholder Matrix 
+ 
+ 
+
+61 
+ 
+ 
+
+62 
+ 
+ 
+ 
+
+63 
+ 
+Appendix D: Interface Prioritization Matrix 
+ 
+Highest Priority 
+ Large People Volume 
+ Easy Vendor 
+ Tier 2 Capable 
+ Site Ready 
+ No known Upgrade/switch in next 12 months 
+ Data Priority in alignment with HIE Steering Committee Direction 
+ FHIR Capable 
+ 
+Interface Prioritization – Lowest Priority 
+ Small People Volume 
+ Hard Vendor 
+ Not Tier 2 capable 
+ Site not willing 
+ Upgrading/Switching EHR in next 12 months 
+ Data Priority not in alignment with HIE Steering Committee Direction 
+ Not FHIR Capable 
+ 
+Interface Prioritization – Other Considerations/Tiebreakers 
+ Contributing Data 
+ Receiving Data 
+ Replacements in Past 
+ Programs supported 
+ Other special circumstances
+64 
+ 
+Interface Prioritization Matrix - Clinical Key 
+Categories Description Criteria 
+People Volume Site serves and generates data on 
+a large people population of 
+unique lives from existing data in 
+VHIE 
+Large (>10,000), Medium 
+(5000-10,000), Small (<5000) or 
+Unknown 
+Vendor Ease Is the vendor one we have 
+worked with in the past? Are 
+they easy to work with? 
+Easy (1-3 months), Medium (3 - 
+6 months), Hard (6 + Months or 
+custom formats needed), or 
+Unknown if new vendor 
+Vendor/Site Tier 2 capable? How capable is the vendor for 
+Tier 2? 
+Yes, No, Not Evaluated Yet, or 
+Vendor working on Tier 2 if the 
+vendor has been evaluated but 
+needs to make changes to 
+achieve Tier 2, or Does not 
+Apply if the vendor does not 
+generate all the data types in 
+Tier 2 and could never send it, 
+for example a commercial lab. 
+Site ready to engage? Has the site been vetted yet by 
+any group for willingness to 
+proceed? 
+Yes, No in 2019, or Unknown if 
+they have not been asked in 
+last year 
+Known Upgrade/Switch in 
+next 12 months? 
+Is the site planning on upgrading 
+or replacing their EHR in the next 
+12 months? Note: for 
+replacement interfaces this will 
+be No, as we have already 
+factored this into the filter 
+Yes or No 
+Data Category What type or category of data 
+does this organization generate, 
+or what sector of health care are 
+they in? Does it align with the HIE 
+Steering Committee Priorities for 
+the year? 
+Hospital, Ambulatory, 
+Pharmacy, Home Health, Long 
+Term Care (LTC), Dental, 
+Commercial Lab, COVID, SDoH, 
+MH, BH, Etc. 
+These can change each year. 
+For 2021 COVID is a high 
+priority 
+Contributing Data? Is this site currently contributing 
+some data to the VHIE? 
+No or the types of Data being 
+Contributed already 
+Receiving Data? Is this site currently receiving 
+Results Delivery data from the 
+VHIE? 
+No or the types of Data being 
+Received already 
+Replacements in Past? How many times has an interface 
+been replaced by VITL? 
+# of times replacement 
+interfaces were paid for by 
+DVHA in the past 
+65 
+ 
+Programs supported How many programs will this 
+data serve in Vermont 
+OneCare Vermont (OCV), 
+Blueprint (BP), Bi-State 
+(FQHCs), Vermont Dept of 
+Health Immunization Registry 
+(VDH), Vermont Chronic Care 
+Initiative (VCCI) 
+FHIR Capable Is the vendor capable of 
+connecting to the VHIE using 
+FHIR interfaces? 
+Yes, No, Not Evaluated Yet 
+Other special circumstances? Are there any other special 
+reasons for this to move up in 
+priority? 
+This can be they are 
+contractually required to 
+connect, or any others that 
+emerge. 
+ 
+ 
+Highest Priority Large Volume 
+ Easy Vendor 
+ Tier 2 Capable 
+ Site Ready 
+ No known Upgrade/switch in 
+next 12 months 
+ 
+ Data Priority in alignment with 
+HIE Steering Committee Direction 
+ 
+ FHIR Capable 
+ 
+Lowest Priority Small Volume 
+ Hard Vendor 
+ Not Tier 2 capable 
+ Site not willing 
+ Upgrading/Switching EHR in next 
+12 months 
+ 
+ Data Priority not in alignment 
+with HIE Steering Committee 
+Direction 
+ 
+ Not FHIR Capable 
+ 
+Other Considerations Contributing Data? 
+ Receiving Data? 
+ Replacements in Past? 
+ Programs supported 
+ Other special circumstances? 
+66 
+ 
+Interface Prioritization Matrix - Claims Key 
+Categories Description Criteria 
+People Volume Site serves and generates data on 
+a large people population of 
+unique lives from existing data in 
+VHIE 
+Large (>10,000), Medium 
+(5000-10,000), Small (<5000) or 
+Unknown 
+Vendor Ease Is the vendor one we have 
+worked with in the past? Are 
+they easy to work with? 
+Easy (1-3 months), Medium (3 - 
+6 months), Hard (6 + Months or 
+custom formats needed), or 
+Unknown if new vendor 
+Site ready to engage? Has the site been vetted yet by 
+any group for willingness to 
+proceed? 
+Yes, No, or Unknown if they 
+have not been asked in last 
+year 
+Known Upgrade/Switch in 
+next 12 months? 
+Is the site planning on upgrading 
+or replacing their EHR in the next 
+12 months? Note: for 
+replacement interfaces this will 
+be No, as we have already 
+factored this into the filter 
+Yes or No 
+Contributing Data? Is this site currently contributing 
+some data to the VHIE? 
+No or the types of Data being 
+Contributed already 
+Receiving Data? Is this site currently receiving 
+Results Delivery data from the 
+VHIE? 
+No or the types of Data being 
+Received already 
+Programs supported How many programs will this 
+data serve in Vermont 
+OneCare Vermont (OCV), 
+Blueprint (BP), Bi-State 
+(FQHCs), Vermont Dept of 
+Health (VDH), Vermont Chronic 
+Care Initiative (VCCI), DVHA 
+FHIR Capable Is the vendor capable of 
+connecting to the VHIE using 
+FHIR interfaces? 
+Yes, No, Not Evaluated Yet 
+Other special circumstances? Are there any other special 
+reasons for this to move up in 
+priority? 
+This can be they are 
+contractually required to 
+connect, or any others that 
+emerge. 
+ 
+ 
+Highest Priority Large Volume 
+ Easy Vendor 
+ Site Ready 
+ No known Upgrade/switch in 
+next 12 months 
+ 
+ FHIR Capable 
+ 
+Lowest Priority Small Volume 
+67 
+ 
+ Hard Vendor 
+ Site not willing 
+ Upgrading/Switching EHR in next 
+12 months 
+ 
+ Not FHIR Capable 
+ 
+Other Considerations Contributing Data? 
+ Receiving Data? 
+ Programs supported 
+ Other special circumstances? 
+ 
+Interface Prioritization Matrix – Clinical Scoring 
+Categories (110 Pt Scale) 
+ 
+People Volume (35 Pts) 
+Large 35 
+Medium 20 
+Small 10 
+Vendor Ease (10 Pts) 
+Easy 10 
+Medium 5 
+Hard 1 
+Vendor/Site Tier 2 capable? (20 Pts) 
+Yes 20 
+No 0 
+Not evaluated Yet 10 
+Vendor working on Tier 2 15 
+Tier 2 Does Not Apply 20 
+Site ready to engage? (20 Pts) 
+Yes 20 
+No - in 2019 5 
+Unknown 10 
+Data Category in Alignment (5 Pts) 
+Yes 5 
+No 0 
+Replacements in Past? (5 Pts) 
+0 5 
+1 2 
+2+ 0 
+FHIR Capable (10 Pts) 
+68 
+ 
+Yes 10 
+No 0 
+Not evaluated Yet 5 
+Other Circumstances (5 Pts) 
+Up 5 
+None 0 
+ 
+Known Upgrade/Switch in next 12 
+months? 
+Not needed as locations were already removed from the 
+proposed list this year 
+ 
+ 
+Highest Priority Large Volume 
+ Easy Vendor 
+ Tier 2 Capable 
+ Site Ready 
+ No known Upgrade/switch in next 12 months 
+ Data Category Priority in alignment with HIE Steering 
+Committee Direction 
+ FHIR Capable 
+ 
+Lowest Priority Small Volume 
+ Hard Vendor 
+ Not Tier 2 capable 
+ Site not willing 
+ Upgrading/Switching EHR in next 12 months 
+ Data Category Priority not in alignment with HIE Steering 
+Committee Direction 
+ Not FHIR Capable 
+ 
+Other Considerations Replacements in Past? 
+ Other special circumstances? 
+ 
+Tiebreakers Contributing Data? 
+ Receiving Data? 
+ Programs supported 
+NOTE: There are things out of VITLs 
+control that could affect this system 
+and may cause a need to rerank. Ex: If a 
+COVID Vaccine becomes available in 
+late Fall 2020. 
+ 
+69 
+ 
+Interface Prioritization Matrix – Claims Scoring 
+Categories (90 Pt Scale) 
+ 
+People Volume (35 Pts) 
+Large 35 
+Medium 20 
+Small 10 
+Vendor Ease (10 Pts) 
+Easy 10 
+Medium 5 
+Hard 1 
+Unknown 5 
+Site ready to engage? (20 Pts) 
+Yes 20 
+No 0 
+Unknown 10 
+FHIR Capable (20 Pts) 
+Yes 20 
+No 0 
+Not evaluated Yet 10 
+Other Circumstances (5 Pts) 
+Up 5 
+None 0 
+ 
+ 
+ 
+Highest Priority Large Volume 
+ Easy Vendor 
+ Site Ready 
+ No known Upgrade/switch in next 12 months 
+ FHIR Capable 
+ 
+Lowest Priority Small Volume 
+ Hard Vendor 
+ Site not willing 
+ Upgrading/Switching EHR in next 12 months 
+ Not FHIR Capable 
+ 
+Other Considerations Other special circumstances? 
+ 
+Tiebreakers Contributing Data? 
+70 
+ 
+ Receiving Data? 
+ Programs supported 
+NOTE: There are things out of VITLs 
+control that could affect this system 
+and may cause a need to rerank. 
+ 
+71 
+Appendix E: Outcomes Based Certification Metrics 
+ 
+Direct Care/Care Coordination Outcomes 
+ 
+ 
+ 
+Public Health Outcomes 
+ 
+ 
+ 
+Value Based Care Outcomes 
+ 
+ 
+ 
+
+72 
+Appendix F: Policy Background 
+ 
+HIE Ecosystem: Policy/Process 
+ 
+To realize the vision of integrated health data infrastructure (Unified Health Data Space), Vermont needs 
+data exchange policies and processes that recognize individualized needs while supporting holistic care 
+and system measurement and improvement. Since 2006, Vermont’s Legislature has repeatedly acted to 
+ensure that HIE policies bolster the health care system. 
+ 
+- Brief Review of Vermont Policy Impacts on HIE - 
+ 
+In 2006, to support the data needs related to the Global Commitment Waiver, the Vermont General 
+Assembly passed legislation6 establishing policies and standards to govern the state’s health information 
+technology infrastructure. 
+ 
+In 2007, the General Assembly authorized VITL to “operate the exclusive statewide health information 
+exchange network” and develop the State’s health information technology plan (what is now called the 
+HIE Plan). 
+ 
+In 2008, Vermont’s General Assembly established the Health-IT (HIT) Fund to provide dedicated funding 
+for “health information technology adoption and utilization.” Revenue from the health care claims tax is 
+paid by the health insurers on private health insurance claims, and the revenue collected from 0.199 of 
+1% of all health insurance claims is deposited into the General Fund, pursuant to 32 V.S.A. § 10402(b). The 
+portion of the claims tax allocated for health information exchange activities amounts to approximately 
+$3.5M-$4M annually. Each year since its establishment, the legislature has extended the HIT Fund for one 
+or two additional years; the HIT Fund is now extended to July 1, 2023. 
+ 
+In 2011, the Green Mountain Care Board (GMCB) became statutorily obligated to review and approve 
+Vermont’s statewide health information technology plan. 
+ 
+Vermont Act 54 of 2015 charged the GMCB with oversight of VITL’s budget. 
+ 
+Vermont Act 73 of 2017 required the State to conduct a comprehensive review of Vermont’s HIT Fund, 
+the Health IT Plan, the VHIE, and VITL. One of the outcomes of the evaluation was the creation of the HIE 
+Steering Committee to address issues with fragmented governance. 
+ 
+In 2018, the General Assembly passed Act 187 requiring the State and VITL to operationalize the 
+recommendations from the Act 73 Evaluation Report. Third party reports confirm that VITL and DVHA 
+satisfactorily addressed all recommendations from the evaluation. The Act also authorized the HIE 
+Steering Committee to develop the statewide Health Information Technology Plan and required DVHA to 
+produce a report on the State’s consent policy. 
+ 
+Act 53 of 2019 called for the adoption of an “opt-out” consent policy for the sharing of health information 
+ 
+6 Act 191, An act relating to health care affordability for Vermonters. (2006). 
+ 
+73 
+through the VHIE. DVHA and VITL were required to execute robust public education and provide 
+substantial opportunities for public input in the process. The consent policy officially changed on March 
+1, 2020. 
+ 
+In 2021, Vermont’s law on immunization records, 18 V.S.A. § 1129, was amended to allow immunization 
+record sharing from the Department of Health’s Immunization Registry to the Vermont Health 
+Information Exchange. 
+ 
+Policies set forth by the federal government catalyzed digitization of health records systems – particularly 
+the Health Information Technology for Economic and Clinical Health (HITECH) Act and the creation of the 
+Office of the National Coordinator for Health IT (ONC) – and have acted as a driver of health system 
+interoperability efforts. Recent federal rules aim to take this one step further by putting people at the 
+center of health care by giving individuals access to their personal electronic health information. 
+On March 9, 2020, the HHS Office of ONC and Centers for Medicare & Medicaid Services (CMS) released 
+two rules, which implement the interoperability and people access provisions of the federal 21st Century 
+Cures Act. Together, these rules mark the transition to more robust federal health care data sharing 
+policies from the federal government, requiring both public and private entities to share health 
+information with individuals while keeping information private and secure, thus allowing people 
+unprecedented access to their health data and resources to research health care providers, ultimately 
+empowering them to make informed decisions about their care. 
+The ONC rule establishes a technical framework that sets standards for information sharing and penalties 
+for information blocking. The CMS rule sets specific requirements of organizations funded by CMS to 
+share health data with peoples. 
+ 
+74 
+Federal Interoperability Rules 
+The ONC 21st Century Cures Act sets forth requirements for health information exchanges and certain health 
+care payers, providers, hospitals (health information networks), and IT developers sharing electronic health 
+information with individuals. The ONC Final Rule 
+describes a technical compliance framework that would 
+deter “information blocking” to ensure that gaining 
+access to one’s health information does not require any 
+“special effort” on the individual’s part. 
+VITL, the operator of the VHIE, is required to provide 
+people with access to their electronic health information 
+under this new ONC rule. 
+ 
+VITL is currently offering people’s access to data upon 
+request. The VHIE data platform is based on a FHIR Data 
+Exchange Standard which CMS and the ONC require in the 
+new interoperability rules. VITL has worked to augment 
+their policies and procedures to ensure that their 
+operations support compliance with the rules. 
+ 
+VITL will have the technical infrastructure available in the 
+MedicaSoft platform to aid health care payers in opening 
+clinical and claims data to individuals and transmitting 
+data with other payers, as requested by people, and 
+required by the rules. 
+ 
+ONC’s Cures Act Final Rule supports 
+seamless and secure access, exchange, 
+and use of electronic health information. 
+The rule is designed to give patients and 
+their healthcare providers secure access 
+to health information. It also aims to 
+increase innovation and competition by 
+fostering an ecosystem of new 
+applications to provide patients with 
+more choices in their healthcare. 
+It calls on the healthcare industry to 
+adopt standardized application 
+programming interfaces (APIs), which 
+will help allow individuals to securely 
+and easily access structured electronic 
+health information using smartphone 
+applications. 
+Source: https://www.healthit.gov/curesrule 
+75 
+ 
+21st Century Cures Act: Interoperability and Information Blocking (ONC Final Rule) 
+ 
+ONC’s final rule sets the technical framework for the 21 st 
+Century Cures Act. The rule establishes secure, standards-
+based application programming interface (API) 
+requirements to support people’s access to their 
+electronic health information. APIs are the foundation of 
+smartphone applications (apps). As a result of the ONC 
+rule, people will be able to obtain and use their electronic 
+health information from their providers’ medical records 
+using the smartphone app of their choice. Medical records 
+are available to people at no cost, but smartphone apps 
+may charge fees for related value-added services. 
+The ONC final rule also established a regulatory 
+framework to prevent industrywide information blocking 
+practices and other competitive behavior by those 
+entrusted to hold peoples’ electronic health information 
+(EHI). 
+Additionally, the ONC final rule requires electronic health 
+records to standardize available clinical data to promote new business models of care delivery. The rules 
+advance common data through the United States Core Data for Interoperability (USCDI). The USCDI is a 
+standardized set of health data classes and data elements that are essential for nationwide, interoperable 
+health information exchange. The USCDI includes “clinical notes,” allergies, and medications among other 
+important clinical data and social determinants of health to help improve the flow of electronic health 
+information and ensure that the information can be effectively understood when it is received. It also includes 
+essential demographic data to support people matching across care settings.7 
+To comply with the new federal interoperability rules, the VHIE continues to make people records available 
+to peoples who seek them and will soon offer an API transmission of people records to those who request 
+them through third-party applications
+ 
+7 Office of National Coordinator. (2020). The ONC Cures Act Final Rule. 
+https://www.healthit.gov/cures/sites/default/files/cures/2020-03/TheONCCuresActFinalRule.pdf 
+ 
+What are APIs? 
+APIs are technology that allow one 
+software program to access another 
+software program. APIs may modernize 
+healthcare data sharing, as they have 
+already altered data sharing in other 
+sectors. In the financial sector, online and 
+smart phone banking is enabled by APIs. 
+APIs can help health care professionals 
+improve and simplify care delivery by 
+allowing patients to access and share their 
+information, allowing providers to use 
+electronic tools to securely share health 
+data with other treating providers, and 
+facilitating submissions to registries (e.g., 
+immunizations/vaccinations.). 
+76 
+Interoperability and Patient Access Final Rule (CMS Final Rule) 
+Building on the technical and regulatory framework established by the ONC’s final rule, CMS’ Interoperability 
+and Patient Access final rule requires health plans in Medicare Advantage, Medicaid, the Children’s Health 
+Insurance Program (CHIP), and offered through the federal Health Insurance Exchanges to share claims and 
+encounter data electronically with patients. Beginning in 2021, impacted health plans are required to share 
+claims and other health information with peoples in a safe, secure, understandable, and user-friendly electronic 
+format through a Patient Access API. The goal is the same with the ONC’s final rule: with more complete data in 
+their hands, peoples can be more informed decision makers resulting in better managed care. 
+This People Access API will allow people to access their data through any third-party app they choose to connect 
+to the API and could also be used to integrate a health plan’s information to a person’s electronic health record 
+(EHR). By requiring relevant health information to be shared with them, people can take this information with 
+them as they move from plan to plan, and provider to provider throughout the health care system. 
+Additionally, to advance the mission of fostering innovation and support care coordination, the CMS final rule 
+establishes a new Condition of Participation (CoP) for all Medicare and Medicaid participating hospitals, that 
+requires electronic notifications to other health care facilities or community providers or practitioners when a 
+person is admitted, discharged, or transferred. These notifications provide information to receiving providers 
+that should lead to early outreach and immediate follow up care which in turn improves people outcomes. 
+Vermont hospitals are currently complying with this new requirement in one of two ways – (1) their electronic 
+health record (EHR) system automatically generates and sends notifications to facilitate transitions of care or 
+(2) they are taking advantage of a third-party alerting systems, such as the Route solution offered by VITL in 
+partnership with Bamboo Health (formerly PatientPing). 
+CMS is also requiring states to send enrollment data daily for beneficiaries enrolled in both Medicare and 
+Medicaid, allowing care administrators to understand how people are insured to bolster coordination of care. 
+Sharing enrollment data is expected to ensure that people gain access to appropriate services and that these 
+services are billed appropriately the first time, eliminating waste and burden. 
+ 
+In addition to the Interoperability rule, in October 2020, CMS partnered with the US Departments of Labor and 
+the US Department of the Treasury to issue a rule on price transparency. Impacting many of the actors covered 
+by the Interoperability rule, this new price transparency rule requires sharing of the cost of specific medical 
+services to allow people to evaluate cost before seeking care. The information required by both rules could be 
+presented together in apps that show people records of their care and the costs of their care with comparison 
+to average costs for like medical services. 
+ 
+ 
+ 
+ 
+ 
+ 
+77 
+TEFCA: A Basis for Nationwide Interoperability 
+In support of its goal to expand access to health 
+data to improve outcomes, in 2016 the US 
+Department of Health and Human Services (HHS), 
+Office of the National Coordinator for Health 
+Information Technology (ONC) introduced the 
+creation of the Trusted Exchange Framework and 
+Common Agreement (TEFCA) as part of the 21 st 
+Century Cures Act. In early 2022, ONC and the 
+Sequoia Project, the Regional Coordinating Entity 
+selected for implementation, published the 
+Trusted Exchange Framework, Common 
+Agreement version 1 and several Standard 
+Operating Procedures (SOPs), that set the 
+foundation for implementation. A Roadmap for 
+future FHIR support was also released. 
+Fundamentally, TEFCA creates a nationwide 
+system that enables secure sharing of health data 
+through a network of networks, in compliance with the myriad of federal and state health data privacy and 
+access laws. Interested participants, such as hospitals, primary care providers, health networks, and HIEs can 
+connect through to-be-selected Qualified Health Information Networks (QHINs), that agree to abide by TEFCA 
+technical standards (Trusted Exchange Framework) and operating terms (Common Agreement). The Recognized 
+Coordinating Entity (REC) plays an overarching role in governing data exchange across the network. 
+ Eventually, TEFCA will also provide a path for data exchange beyond traditional clinical providers, a tactic for 
+improved health data use that Vermont is already pursuing. There are no mandates for participating in TEFCA 
+and sharing data across regional partners, and there will be fees for local HIEs to connect to QHINs. 
+ 
+ 
+ 

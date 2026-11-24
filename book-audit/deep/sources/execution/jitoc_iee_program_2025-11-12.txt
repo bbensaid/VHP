@@ -1,0 +1,167 @@
+Integrated Eligibility and Enrollment (IE&E)
+Vermont Integrated Eligibility System (VT-IES) Project
+Joint Information Technology Oversight Committee 
+Date: November 12th, 2025
+Garth Walker, IE&E Program Director, Department of Vermont Health Access (DVHA)
+Andrea DeLaBruere, Deputy Secretary, Agency of Digital Services (ADS)
+Kristin McClure, Deputy Secretary, Agency of Human Services (AHS)
+V11.10.25
+Agenda
+• IE&E Overview
+• Vision, Programs & People
+• Current Challenges
+• Modernizing Vermont’s IE&E System
+• VT Integrated Eligibility System (VT-IES)
+• Supporting People, Practice, and Progress
+• Investing in People and Modern Systems
+• Vermont’s Modernization Journey
+
+3IE&E Overview: Program Vision
+“Eligible Vermonters have a simple and easy way 
+to apply for, access, and maintain health care and 
+economic benefits without coverage gaps.”
+Health Care 
+Department of Vermont Health Access (DVHA)
+Economic Benefits 
+Department of Children & Families: 
+Economic Services Division (DCF -ESD)
+
+4IE&E Overview: Programs & People
+Health Care
+• Medicaid 
+• Dr. Dynasaur (Children’s Health Insurance Program – CHIP)
+• Pharmacy Programs
+• Qualified Health Plans (QHP) 
+• Refugee Medical Assistance (RMA)
+Economic Services
+• 3SquaresVT (Supplemental Nutrition Assistance Program - SNAP)
+• Fuel Assistance (Low Income Home Energy Assistance Program LIHEAP)
+• General Assistance (GA) & Emergency Assistance (EA)
+• Reach Up (Temporary Aid for Needy Families - TANF)
+Serving over 220,000 Vermonters each year
+
+5Current Challenges
+For Vermonters
+• Repeated data entry across programs
+• No unified application or renewal process
+• Limited mobile access and language support
+• Risk of coverage gaps due to confusing notices
+For State Staff
+• Manual, time-consuming processes
+• Siloed systems and fragmented data
+• High maintenance costs and compliance risk
+
+6Current System Challenges
+Legacy systems are siloed, not mobile-friendly, and each with unique problems
+ACCESS
+Non-Modified Adjusted Gross 
+Income Medicaid (Non-MAGI)
+Economic Services Programs
+Years of ad hoc development
+Limited staff to maintain
+40+ year old outdated technology
+Siebel (VHC)
+Qualified Health Plans (QHP)
+Modified Adjusted Gross Income 
+Medicaid (MAGI)
+Highly customized
+Not modular in design
+Expensive to update
+“Retiring the ACCESS mainframe is a strategic priority” 
+
+11Vermont Integrated Eligibility System (VT-IES)
+https://humanservices.vermont.gov/highlighting -promising-practice/integrated-eligibility-and-enrollment-iee-system
+8VT-IES: One Portal, One System, All Programs
+Supporting People, Practice, and Progress
+• Enhanced Customer Experience: Streamline 
+processes for Vermonters and State staff.
+• Deliver Core Functionality: Customer Portal, 
+Case Management and Eligibility Rules Engine.
+• Retire Legacy Systems: Replace all IE&E 
+programs currently on the ACCESS mainframe 
+and VHC.
+Risk Reduction System 
+Improvement
+Functional 
+Improvement User Experience
+
+12
+Conceptual Representation of VT-IES
+
+10VT-IES: Implementing the Solution
+• Initial Releases: Single cohesive platform, 
+anonymous screening and document uploader for 
+select programs​
+• Subsequent Phases: Progressive platform and 
+automation enhancements, program integrations
+• Early Wins: Improvements within 12-months
+“A truly unified eligibility experience”
+
+11Stakeholder Engagement: Building Together
+Procurement Phase
+• RFI’s across 2022–2023 for vendor input​
+• Vendor solution demonstrations
+• Peer state engagements
+• Cost-Benefit Analysis
+• Federal partner collaboration (CMS, FNS)​
+• Independent Verification & Validation (IV&V)
+• Cross-agency input
+Implementation Phase
+• Human-centered design 
+and usability testing​
+• Multilingual, mobile-
+friendly portal​
+• Ongoing feedback with 
+state, federal and 
+community partners​ and 
+end-users
+“Built with stakeholders, refined with Vermonters”
+12The Risk of Delay
+• Compliance & Funding: Federal standards, 
+recoupment risk
+• Operational Fragility: Aging technology, sourcing 
+skilled staff for legacy system support
+• Technical Fragility: Complex programming 
+hinders timely updates and responsiveness
+• Service Impact: Benefit disruption, accessibility gaps​
+“ACCESS Mainframe risk is widely recognized – delay 
+increases exposure”
+
+13VT-IES: Investing in People & Modern Systems
+• Design & Technology: Tailored for Vermont, 
+reuse of state technology investments
+• Technical Debt Reduction: Consolidating two 
+legacy systems into a single, modern platform
+• Efficiency & Integrity: Configurable rules engine, 
+statewide health data analytics, program integrity
+• Federal Partnership: CMS/FNS co-funding, 
+strategic validation
+“Smart investment, long-term value”
+
+14Timeline – Why it Takes Time
+RFP Development (Jan 2022 – Sept 2024)
+• 3 RFIs to gather vendor input and validate feasibility
+• Federal partner collaboration with CMS and FNS
+Procurement (Oct 2024 – July 2026)
+• RFP posting, scoring, demos, contracting, federal and state reviews
+Design, Development, Implementation (2026 – 2030): 
+• Phased delivery over 3-4 years with early wins
+“Built for sustainability, not speed”
+
+15Vermont’s Modernization Journey
+What’s Different This Time?
+• Past Challenges: VHC launch, rushed timelines, lack of user support 
+and training.
+• Past Successes: System stability, security compliance, risk mitigation
+• New Approach: New IE&E leadership since 2022, change 
+management focus and stakeholder coordination.
+• Federal Alignment: Procurement rigor, outcome-driven design
+“Lessons learned, applied with discipline”
+16Why VT-IES Is a Strategic Imperative
+Transforming How Vermont Delivers Essential Services
+“VT-IES is not just a system upgrade — it’s a transformation in how 
+Vermont will deliver essential services. It reflects our values: 
+accessibility, efficiency, and empathy. With federal partnership, 
+stakeholder collaboration, and a phased, sustainable approach, we’re 
+ready to deliver meaningful change — starting now”
+Questions?

@@ -1,0 +1,417 @@
+Evaluation of Vermont
+Health Information 
+Technology Activities
+Vermont General Assembly’s 
+House Health Care Committee
+January 11, 2018
+
+Background and Context for the Evaluation
+2
+ Act 73 of 2017 required the State to conduct a comprehensive review of 
+Vermont’s:
+ Health Information Technology (HIT) Fund 
+ Health Information Technology (HIT) Plan 
+ Vermont Health Information Exchange (VHIE) 
+ Vermont Information Technology Leaders (VITL)
+ The Act specified the Evaluation Report should include:
+ An overview of health information technology and why exchanging healthcare data is critical
+ A review of other states’ Health Information Exchange Models
+ A review of Vermont’s HIT/HIE governance and structure, HIT Plan, and HIT Fund
+ An analysis of Vermont’s Health Information Exchange: How it compares to other states
+ Recommendations to improve Health Information Technology and Exchange in Vermont
+Company Overview: 
+HealthTech Solutions, LLC
+3
+ Founded in 2011 with headquarters in Frankfort, KY 
+ Over 100 consultants across the nation averaging 20+ years 
+experience in Health Information Technology 
+ Provides subject matter expertise, and 
+HIT/HIE strategic planning, consulting, 
+and implementation support in over 
+20 states and to federal Centers for 
+Medicare & Medicaid Services (CMS)
+ All HTS team members on VT 
+project have extensive HIT/HIE 
+work experience including
+managing states’ exchanges, and 
+financial/technical or legal expertise 
+
+Advancing Care Information: Health Information Exchange Defined
+4
+With today’s technology, expectation is a provider has each patient’s health care 
+records in provider’s Electronic Health Record (EHR) system 
+“HIE” is technology and systems that collect healthcare data from each provider’s 
+EHR and aggregates all of a patient’s health care records from all providers 
+HIEs aggregate health care records for all patient’s providers which are accessible by
+health caregivers regardless of where the patient goes for health care services 
+All HIEs aggregate data – sophisticated HIEs provide high-quality population health
+reports which is essential for health care reform and improved health outcomes 
+Evaluation Methodology
+5
+ Conducted a review of national literature on Health Information Technology and 
+Exchange of health care data 
+ Reviewed and analyzed State of Vermont and VITL documents 
+ Conducted interviews with nine states’ HIEs and created cross-state comparisons
+ Conducted individual and group interviews with 89 Vermont stakeholders:
+ 60 individual interviews
+ Eight focus/group interviews
+ One technical expert panel
+ Internal State of Vermont committee identified stakeholders from across the 
+state 
+ Stakeholders represented: legal, government, providers, payers, policy-makers, 
+hospitals, health care associations, patients, Information Technology, 
+and other sectors 
+ Interview questions spanned the current status of HIT/HIE in Vermont, VHIE 
+performance, governance, and funding, and the future (to-be) of HIT/HIE 
+Getting a Sense of Stakeholder Opinions
+6* 76% of 40% reserved final opinion until changes made to governance, accountability, strategic planning, and overall vision 
+Question Yes No Undecided
+Is it critical to have the VHIE in existence in Vermont? 91% 2% 7%
+Is the VHIE meeting the needs of your organization? 19% 47% 34%
+Is the VHIE meeting the needs of Vermont? 19% 51% 30%
+Is it critical to have VITL manage the VHIE moving forward? 21% 53% 26%
+Do you think the organizational structure of VITL allows them to successfully maintain 
+and operate the VHIE? 21% 42% 37%
+What about the relationship to the State? Has State provided guidance and planning? 9% 56% 35%
+Should the HIT fund continue? 58% 2% 40%*
+Summary of Survey Results: 
+▪ It is essential for Vermont to continue the VHIE 
+▪ VHIE’s current structure and governance is not meeting stakeholder and State needs 
+▪ Responses to additional questions indicate VHIE can be fixed with improved HIT/HIE 
+governance and organizational structure
+Health Information 
+Exchange: A National 
+Perspective
+7
+HIE is Essential and Meant to be Backbone of Health Data 
+8
+ Advancing Care Information: Federal Meaningful Use EHR Program:
+ Provides incentives for providers to use EHRs 
+ If providers do not exchange immunization and clinical data Medicare payments 
+are reduced
+ Healthcare providers use the HIE to:
+ Improve safety of patient care by reducing medication and medical errors
+ Provide clinical decision support tools for more effective care and treatment
+ Eliminate redundant or unnecessary testing
+ Improve public health reporting and monitoring
+ Allow community based providers to coordinate care with other caregivers
+ Vermont: Reform efforts rely on HIE to provide data for Accountable Care 
+Organizations (ACO), and policymakers to measure effectiveness and impact on costs. 
+State needs to measure and compare health care outcomes for patients under ACO 
+with patients not under ACO
+ Vermont: Recognizes HIE as a “public-utility”: State HIT Fund (health care 
+claims tax imposed on insurers) used to develop programs and initiatives that 
+promote and improve health care through health information technology
+Health Information Exchange: A National Perspective
+9
+ Sustainability challenges
+ From 2010-2014, States received Federal grants to establish HIEs with a vision they would be 
+sustainable by 2015. The vision was not realized and most HIEs still depend on public funding. 
+ In the meantime, around the country entities like University of Vermont system, developed their 
+own internal HIE capabilities, reducing the value of centralized HIE service 
+ Technological and Quality challenges
+ The wide variety of Electronic Health Record technologies available and the lack of nationwide 
+data sharing standards have resulted in data quality and exchange issues. 
+ Workflow challenges
+ Many HIEs require users to log into a second system to get to the HIE
+ Many HIEs do not successfully match patient records across providers which results in multiple 
+separate records (not a consolidated record) 
+ Many HIEs only allow users to view data—the data cannot be downloaded into the EHR or shared
+ Successful HIEs
+ Despite challenges, there are states that have successful and highly functional HIEs
+Successful HIE Models: Lessons Learned from Nine States
+10
+States: Colorado, Delaware, Maine, Maryland, Michigan, Nebraska, Oklahoma, Oregon, & 
+Utah 
+These nine states have successful HIEs and share common characteristics: 
+1. HIE activities are formally structured and governed with clearly defined roles
+2. HIEs have an effective governance model and are performance driven
+ Highly integrated with the state’s HIT/HIE structure (including Medicaid agency)
+ Strong strategic plans with clearly defined outcomes and performance measures
+ Accountable to all customers including the state
+3. Laser-focused on core HIE functions:
+ Connect all patient data to the system in a secure manner
+ Significant percentage of patients (with their records matched) accessible in HIE
+ Produce high quality data: Have complete and accurate data that support high-quality 
+health care and the ability to measure health systems
+ The system is secure, yet efficient, and easy to access and exchange health records
+4. Financial decisions are transparent and can be traced back to program goals
+Health Information 
+Exchange in Vermont
+11
+Lesson 1: HIE activities are formally structured and governed, and roles are clearly defined
+Vermont Current State: Lack of Integration of State’s Health Related Programs 
+ Accountability is difficult when State-sponsored HIT efforts are segregated and 
+spread across multiple State entities with no alignment 
+ Lack of HIT Plan hinders coordinated view of HIT/HIE efforts in Vermont 
+ Last approved Plan was 2010 (in part, because State focused on Federal HIT
+reporting requirements) 12
+Green Mountain 
+Care Board 
+VITL Budget 
+and Core 
+Activities
+Accountable 
+Care 
+Organization 
+Claims 
+Database
+HIT Plan 
+Hospital 
+Budget 
+Review
+Agency of Human 
+Services
+Health Care Reform
+Children and 
+Families 
+Dept. of Health
+Corrections
+Aging
+Mental Health 
+DVHA
+Meaningful Use 
+HIT/HIE Program
+Chronic Care
+Blueprint
+Manage HIT Fund
+Agency of 
+Digital Services 
+IT Oversight
+Contract Review 
+(including 
+HIT/HIE)
+Agency of 
+Administration 
+Manage HIT/HIE 
+Funds (delegated 
+to DVHA)
+Contract Review
+Today’s health care 
+programs and systems 
+need an integrated 
+governance model and 
+a Statewide HIT Plan. 
+Lesson 2: HIEs have an effective governance model and are performance driven
+Current VHIE Governance Structure Does Not Provide Sufficient 
+Oversight
+13
+ VHIE still relies heavily (95%+) on 
+public funding (other HIEs 33-60%) 
+ Having four State entities share 
+governance of VHIE gives high 
+degree of autonomy to VITL 
+ Close oversight is needed to 
+overcome stakeholder perceptions 
+Interviewees indicated an 
+absence of clear direction and 
+communication from the State
+Many stakeholders say they have 
+lost confidence in VITL as the 
+organization to operate VHIE 
+V
+I
+T
+L
+Board gives VITL 
+management 
+significant decision 
+making authority 
+VITL Board 
+of Directors
+Shared 
+State 
+Oversight 
+Lesson 3: Laser-focused: Significant % of patients/records and high quality data in HIE 
+Vermont Current State: Low % of Patients and Issues with Quality 
+14
+ There is a low percentage of patients’ data accessible in VHIE
+ Other HIEs Opt-out policy vs. Vermont’s Opt-In policy 
+ VHIE consent management process is cumbersome (users log into different system) 
+ VITL reports that only 19.5% of Vermonters have been asked to provide consent 
+ Patients must provide written consent to have data viewable
+ Of those asked, 96% consented—patients want their data to be accessible in VHIE 
+ End result:19% (less than one in five) patients’ records currently accessible in VHIE 
+ There are gaps in matching patients with records 
+ VITL does not have internal capability to provide 
+number of patients and addresses. (Rely on a vendor
+that provides “universe” numbers.) Vendor reported 
+more patients with VT addresses than number of VT 
+citizens--that results in duplication 
+ Records are incomplete and/or not consistently accurate
+Consistent concern about 
+data quality was expressed 
+by interviewees
+Lesson 3: Laser-focused on the core HIE functions: System is easy to use and usage is high 
+Vermont Current State: VHIE is Challenging to Use and Usage is Low
+15
+ VHIE’s technology is not as efficient and VHIE is not as easy to use as other HIEs 
+ Most users have view-only access: cannot exchange (share) health records
+ In many cases, users must log in to a different system to get access to VHIE 
+ VHIE has somewhat redundant systems
+ Usage statistics show providers generally use VHIE 
+for limited purposes
+ VHIE’s role is essentially routing messages via third 
+party vendors (e.g., an alert is sent to providers when 
+patients discharged or readmitted to a hospital)
+ Providers do not use because patient numbers are low and issues with data quality 
+ Most interviewees were not knowledgeable about VHIE services and functions 
+Providers do not get 
+high value information 
+for amount of time 
+needed to access and 
+find data
+ SFY14 - SFY16 audited financials revealed recurring/similar findings on internal controls
+ VHIE received significant federal and state funding under Meaningful Use EHR Program but 
+status of projects not included in federally mandated reports 
+ VITL has never had a corporate long-term VHIE strategic business plan
+ National standard for non-profits: At least 70% expenditures for programs (vs. overhead). 
+While VITL is within range, trend is downward, with 2016 dropping close to 70% threshold
+ Some VITL board policies out-of-date and legislatively mandated reports incomplete 
+Lesson 4: Financial decisions are transparent and can be traced back to program goals
+Current State: Issues with Financial Traceability and Transparency
+16
+VHIE Funding 
+$31,859,937 HIT Meaningful Use Program Funding (SFY 09-SFY 17)
+Of $31.8 M: $20,855,442 federal HIT funds 
+$11,004,495 direct/matched state funds
+$7,066,775 HIE Federal Grant (2010-2014)
+$5,364,658 State Innovation Model 
+$44,291,370 Total VHIE Funding 
+Analysis of Vermont’s HIT Fund
+ Healthcare claims tax which supports
+66%: Vermont Information Technology 
+Leaders
+34%: State Sponsored Programs
+ Department of Vermont Health Access 
+HIT/HIE Program 
+ Department of Health
+ Blueprint for Health
+ Department of Corrections
+ Payment Reform
+ Vermont Chronic Care Initiative
+ Green Mountain Care Board
+ SFY 18 HIT Fund $2.4M (down from $3.9 M in SFY 16)
+ HIT Fund scheduled to sunset in SFY 18
+17
+There is strong support among 
+interviewees for the HIT Fund to 
+continue, yet many interviewees 
+conditioned support on improving 
+oversight and priority setting. 
+It is important to note that a portion 
+of HIT and Blueprint funds went to 
+VITL under grants and contracts for 
+services. 
+Source: DVHA Business Office
+VITL
+66%
+State 
+Sponsor
+ed 
+Program
+s
+34%
+Recommendations
+18
+ There is a national explosion of health information technology which evolves 
+every day. Governance and structure of Vermont’s HIT/HIE initiatives no longer 
+meet ever-growing need to integrate systems and services to improve healthcare 
+delivery and outcomes. 
+ Vermont is at a crossroads and has opportunity to once again be a national leader
+ Vermont needs to develop effective HIT/HIE governance, create and execute an 
+HIT planning process, link financial investment to performance, and better 
+leverage State’s relationship with VITL 
+ Establish Governance Committee and HIT Plan process that is owned by the State 
+and done with full commitment of all stakeholders 
+ Federal and State financial investment must be linked to performance and 
+accountability to customers, including State 
+ Transform VITL Board to focus on operations and core services, and improved 
+financial oversight 19
+Go Back to Basics
+Applying Lesson 1: 
+Recommendations for Effective Structure and Governance
+ Using existing State entities and private sector leaders, establish across-the-board 
+Governance Committee to align projects and initiatives 
+ Develop broad HIT/HIE policies and strategic direction 
+ Draft and approve HIT Plan 
+ Recognizing there are existing agreements between VHIE and State sponsored programs 
+for data sharing and services, develop timelines and plans to continue that work 
+ Ensure various components, systems, and efforts tie back up to the HIT Plan
+ Oversee the State’s HIT Fund and prioritize and coordinate activities
+ Administratively attach Committee to State 
+(DVHA) with additional resources
+ Contract oversight remains with State entities
+ Subgroups (finance, technology, and clinical) draft policies for Committee approval
+ Statewide Data Governance Subcommittee 
+ Legal and Policy Subcommittee to draft data ownership and control policy 
+ HIT Plan Subcommittee to oversee annual HIT Plan updates 20
+The State and stakeholders must 
+commit to follow and meet the 
+HIT Plan goals and objectives 
+Applying Lesson 2: Recommendations for VHIE Governance
+ Transform VITL Board Membership to include users or potential users of VHIE, 
+or who have specific expertise
+ Emphasize role of VITL Board is to focus on operations — meeting core services and
+use the priorities established in HIT Plan to drive technical decision-making 
+ Fill State’s VITL Board slot with individual who has experience, credibility and trust of 
+public and private leaders, and can put in effort needed 
+ Require VITL to submit its legislatively mandated annual report through Governance 
+Committee 
+21
+Many stakeholders expressed strong support for VHIE. Given providers must exchange data 
+to meet mandates and healthcare reform, the VHIE must continue. 
+Question is who should operate it? Successful HIEs are usually public/private partnerships. 
+State may consider bidding out VHIE at some point, but now is not the time. 
+Applying Lesson 3: Recommendations for VHIE Performance 
+ Use State contract funds to improve core functions with payments tied to 
+specific deliverables and timelines
+ VITL should work with stakeholders to develop and implement mechanisms to:
+ Increase number of Vermonters who consent to have their data accessible
+ Devote resources to match patients and records 
+ Implement easier ways to access and use data, that do not burden providers
+ Once VITL meets core services obligations, high-value use case services 
+should be driven by customer demand and needs. 
+22
+An effective Governance Committee model which holds VITL accountable can 
+greatly improve VHIE performance. There is wide-spread support for VITL staff; 
+the executive management and the Board of Directors need to refocus energies 
+on operations and improving core services. 
+Applying Lesson 4: 
+Financial and Management Recommendations for VITL
+ Adopt financial reporting and transparency best practices from other HIEs
+ Require VITL to itemize income and expenses by specific source 
+ Establish Audit Committee (Use National Council of Nonprofits Toolkit for framework)
+ Conduct operational audit of VITL’s financial controls, and management practices 
+ Examine if contract with State complies with Federal and State uniform guidelines 
+ Further review if VHIE has tangible/intangible assets and how State should account for them 
+ State/VITL contract July 1, 2018-June 30, 2019 
+ Continue to involve State entity counsel throughout negotiations 
+ Add more delivery-based terms for core services with financial and legal consequences
+ Correct all findings and meet Evaluation recommendations as condition for payment
+ Consider incentives if VITL exceeds performance or completes activities under budget 
+23
+Successful HIEs Offer High-Value Services: Getting VHIE to that Level 
+24
+Once core functions and improvements completed, move to high-value services:
+ Extract sections of patient’s full record and have system search capabilities for users 
+ Allow providers and State to exchange public health reports and submit immunization 
+and specialized registry data 
+ Implement accurate and complete Master Patient Index (MPI) and Provider Directory 
+that can attribute patients to providers or Accountable Care Organizations (ACOs)
+ Provide quality reports to support data-driven care decisions 
+ Submit providers’ Meaningful Use Program reports
+directly from providers’ Electronic Health Records 
+ Coordinate with Vermont’s All Payer Claims Database
+(VHCURES) to integrate claims with clinical data and 
+link patients’ healthcare services with costs at 
+patient and the population levels. 
+Integrated 
+Whole-
+Person 
+Healthcare 
+High 
+Value 
+Uses
+Core 
+Services 
