@@ -3,3 +3,6 @@ aiml-sepsis-warning
 academyModule-vbc-fundamentals-module-3-economics-pillar
 academyModule-precision-medicine-m5-clinical
 academyModule-precision-medicine-m6-equity
+aiml-deep-learning-imaging
+academyModule-precision-medicine-m4-technology
+aiml-deterioration-models
