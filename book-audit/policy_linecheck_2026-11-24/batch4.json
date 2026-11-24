@@ -1,0 +1,21 @@
+{
+ "tag": "pa-batch4",
+ "note": "REH conversion breakdown summed to 40 not 42; Sheps-attributed count used",
+ "only": [
+  "rural-hospital-regulatory-relief-act-2026"
+ ],
+ "pairs": [
+  [
+   "42 by Oct 2025 (19 in '23, 18 in '24, 3 in '25)",
+   "43 since January 2023 (Sheps Center, via HFMA, early 2026)"
+  ],
+  [
+   "By October 2025, 42 facilities had converted to REH status \u2014 19 in 2023, 18 in 2024, and 3 in 2025 (Rural Health Information Hub; Bipartisan Policy Center).",
+   "By early 2026, 43 hospitals had converted to REH status since January 2023 (Sheps Center, as reported by HFMA)."
+  ],
+  [
+   "By Oct 2025, 42 hospitals had converted, but cautiously (just 3 in 2025) against 432 vulnerable hospitals.",
+   "By early 2026, 43 hospitals had converted (Sheps Center), against 417 vulnerable hospitals (Chartis 2026)."
+  ]
+ ]
+}
