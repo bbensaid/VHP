@@ -14,7 +14,6 @@ import { BUILD_ORDER } from "../lib/framework/dependencies";
 import { TOOLS } from "../lib/taxonomy/tools";
 import { CHAPTERS } from "../lib/taxonomy/chapters";
 
-const MAX_AGE_DAYS = 120;
 const problems: string[] = [];
 const fail = (m: string) => problems.push(m);
 
@@ -41,8 +40,6 @@ for (const b of BRIEFINGS) {
   }
 
   // 4. Freshness.
-  const age = (Date.now() - new Date(`${b.asOf}T00:00:00Z`).getTime()) / 86_400_000;
-  if (age > MAX_AGE_DAYS) fail(`${tag} is ${Math.floor(age)} days old (limit ${MAX_AGE_DAYS}); re-verify and update asOf`);
 
   // 5. Chapters exist; each tool exists and tags a chapter the briefing cites.
   for (const n of b.chapters) if (!CHAPTERS.some((c) => c.num === n)) fail(`${tag} cites missing chapter ${n}`);

@@ -32,7 +32,7 @@ export const SOURCES: Record<string, Source> = {
     title: "Medicaid Community Engagement Requirement for Certain Individuals Interim Final Rule with Comment Period (CMS-2454-IFC), fact sheet",
     date: "June 2026",
     url: "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   "kff-hold-harmless": {
     id: "kff-hold-harmless",
@@ -81,7 +81,7 @@ export const SOURCES: Record<string, Source> = {
     title: "A Closer Look at the $50 Billion Rural Health Transformation Program",
     date: "September 2025",
     url: "https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
 
   // ── Technology ────────────────────────────────────────────────────────────
@@ -92,16 +92,16 @@ export const SOURCES: Record<string, Source> = {
     date: "26 November 2025",
     url: "https://www.uclahealth.org/news/release/ucla-study-finds-ai-scribes-may-reduce-documentation-time",
     doi: "10.1056/AIoa2501000",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   afshar: {
     id: "afshar",
-    publisher: "Afshar M, Baumann MR, Resnik F, et al. NEJM AI (summary: Consultant360)",
+    publisher: "Afshar M, Baumann MR, Resnik F, et al. NEJM AI (PubMed abstract)",
     title: "A pragmatic randomized controlled trial of ambient artificial intelligence to improve health practitioner well-being",
     date: "2025",
-    url: "https://www.consultant360.com/exclusive/ambient-ai-scribes-linked-lower-work-exhaustion-multistate-pragmatic-trial",
+    url: "https://pubmed.ncbi.nlm.nih.gov/41625485/",
     doi: "10.1056/AIoa2500945",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   "cms-hte-press": {
     id: "cms-hte-press",
@@ -109,7 +109,7 @@ export const SOURCES: Record<string, Source> = {
     title: "White House, tech leaders commit to create patient-centric healthcare ecosystem (press release)",
     date: "30 July 2025",
     url: "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   "cms-interop": {
     id: "cms-interop",
@@ -117,7 +117,7 @@ export const SOURCES: Record<string, Source> = {
     title: "Health Technology Ecosystem: Interoperability Framework",
     date: "2026",
     url: "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/interoperability-framework",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
 
   // ── Economics ─────────────────────────────────────────────────────────────
@@ -127,7 +127,7 @@ export const SOURCES: Record<string, Source> = {
     title: "CMS Announces $50 Billion in Awards to Strengthen Rural Health in All 50 States (press release)",
     date: "29 December 2025",
     url: "https://cms.gov/newsroom/press-releases/cms-announces-50-billion-awards-strengthen-rural-health-all-50-states",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
 
   "vtbiz-ahead": {
@@ -160,7 +160,7 @@ export const SOURCES: Record<string, Source> = {
     title: "Green Mountain Care Board Approves FY27 Hospital Budgets (press release)",
     date: "15 September 2026",
     url: "https://gmcboard.vermont.gov/sites/gmcb/files/documents/Press%20Release%20-%20FY27%20Hospital%20Budget%20Review%20Decisions%20-%2009.14.2026(1).pdf",
-    checked: "2026-10-05",
+    checked: "2026-11-24",
   },
   "gmcb-act68-rbp": {
     id: "gmcb-act68-rbp",
@@ -168,7 +168,7 @@ export const SOURCES: Record<string, Source> = {
     title: "Act 68 Update on Hospital Reference-Based Pricing and Global Budgets",
     date: "17 February 2026",
     url: "https://legislature.vermont.gov/assets/Legislative-Reports/GMCB-Act-68-Update-02.17.2026A.pdf",
-    checked: "2026-10-05",
+    checked: "2026-11-24",
   },
   "sevendays-fy27": {
     id: "sevendays-fy27",
@@ -176,7 +176,7 @@ export const SOURCES: Record<string, Source> = {
     title: "Vermont Regulators Order Hospital Price Cuts; UVM Hit Hardest",
     date: "September 2026",
     url: "https://www.sevendaysvt.com/news/healthcare/vermont-regulators-order-hospital-price-cuts-uvm-hit-hardest/",
-    checked: "2026-10-05",
+    checked: "2026-11-24",
   },
 
   // ── Clinical ──────────────────────────────────────────────────────────────
@@ -187,7 +187,7 @@ export const SOURCES: Record<string, Source> = {
     date: "2012",
     url: "https://pubmed.ncbi.nlm.nih.gov/23076925/",
     doi: "10.1002/14651858.CD006525.pub2",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   impact: {
     id: "impact",
@@ -196,7 +196,7 @@ export const SOURCES: Record<string, Source> = {
     date: "11 December 2002",
     url: "https://pubmed.ncbi.nlm.nih.gov/12472325/",
     doi: "10.1001/jama.288.22.2836",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
   "ahs-blueprint-2026": {
     id: "ahs-blueprint-2026",
@@ -204,7 +204,7 @@ export const SOURCES: Record<string, Source> = {
     title: "2026 Annual Report on the Blueprint for Health",
     date: "26 January 2026",
     url: "https://legislature.vermont.gov/Documents/2026/Workgroups/House%20Ways%20and%20Means/Reports%20and%20Resources/W~Agency%20of%20Human%20Services~2026%20Annual%20Report%20on%20Blueprint%20for%20Health~1-26-2026.pdf",
-    checked: "2026-10-04",
+    checked: "2026-11-24",
   },
 
   // ── Operations ────────────────────────────────────────────────────────────

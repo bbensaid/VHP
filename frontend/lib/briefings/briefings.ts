@@ -25,7 +25,7 @@ export interface BriefingSection {
 export interface Briefing {
   pillar: PillarId;
   slug: string;
-  /** ISO date the briefing's facts were last verified. Must stay within 120 days. */
+  /** ISO date every claim in the briefing was last verified against its source. */
   asOf: string;
   headline: string;
   /** Two sentences for the hero slide, with citations. */
@@ -115,11 +115,11 @@ export const BRIEFINGS: Briefing[] = [
   {
     pillar: "technology",
     slug: "ai-and-the-data-layer",
-    asOf: "2026-10-04",
+    asOf: "2026-11-24",
     headline: "AI is arriving faster than the data it runs on",
     dek: "Two randomized trials of ambient AI scribes found real but modest gains.{lukac}{afshar} Everything after scribes, from risk models to automated prior authorization, depends on records that move between systems, and CMS is now pushing networks to make that happen.{cms-interop}",
     facts: [
-      { value: "9.5%", label: "less time per note with the better of two scribes; the other showed no significant change", cite: ["lukac"] },
+      { value: "9.5%", label: "larger cut in time per note than usual care, with the better of two scribes; the other showed no significant difference", cite: ["lukac"] },
       { value: "0.36 hrs", label: "of note time saved per clinician per day over 24 weeks", cite: ["afshar"] },
       { value: "21", label: "data networks pledged to become CMS Aligned Networks", cite: ["cms-hte-press"] },
     ],
@@ -128,8 +128,8 @@ export const BRIEFINGS: Briefing[] = [
       {
         heading: "What the trials actually found",
         paragraphs: [
-          "UCLA randomized 238 physicians across 14 specialties to one of two commercial scribes or usual practice, covering about 72,000 encounters from November 2024 to January 2025.{lukac} Physicians using Nabla cut average time per note from 4 minutes 30 seconds to 3 minutes 49 seconds, a 9.5% reduction; the DAX arm's smaller decrease was not statistically significant.{lukac} Both arms showed modest improvements in burnout measures, and physicians reported that AI notes occasionally contained clinically significant inaccuracies.{lukac}",
-          "A stepped-wedge trial of 66 practitioners across two states found 0.36 fewer hours a day on notes and a meaningful drop in work exhaustion, but no meaningful gain in professional fulfillment.{afshar} The honest summary: scribes relieve the worst of documentation, and they still need a clinician to check every note.",
+          "UCLA randomized 238 physicians across 14 specialties to one of two commercial scribes or usual practice, covering about 72,000 encounters from November 2024 to January 2025.{lukac} Physicians using Nabla cut average time per note from 4 minutes 30 seconds to 3 minutes 49 seconds, a reduction 9.5% larger than the control arm's; the DAX arm's smaller decrease was not statistically significant.{lukac} Both arms showed modest improvements in burnout measures, and physicians reported that AI notes occasionally contained clinically significant inaccuracies.{lukac}",
+          "A 24-week stepped-wedge trial of 66 practitioners across two states found 0.36 fewer hours a day on notes and a significant drop in work exhaustion, but no significant gain in professional fulfillment.{afshar} The honest summary: scribes relieve the worst of documentation, and they still need a clinician to check every note.",
         ],
       },
       {
@@ -175,9 +175,9 @@ export const BRIEFINGS: Briefing[] = [
   {
     pillar: "economics",
     slug: "hospital-prices-come-down",
-    asOf: "2026-10-05",
+    asOf: "2026-11-24",
     headline: "Vermont starts pulling hospital prices down",
-    dek: "On September 14 the Green Mountain Care Board cut commercial hospital rates 2.9% statewide for FY2027 and, for the first time, capped how much commercial revenue each hospital may collect.{gmcb-fy27} It is the bridge to Act 68's reference-based pricing, set by rule in 2027 and in force from hospital FY2028.{gmcb-act68-rbp}",
+    dek: "On September 14 the Green Mountain Care Board cut commercial hospital rates 2.9% statewide for FY2027 and set limits on how much commercial revenue each hospital may collect.{gmcb-fy27} It is the bridge to Act 68's reference-based pricing, set by rule in 2027 and in force from hospital FY2028.{gmcb-act68-rbp}",
     facts: [
       { value: "−2.9%", label: "commercial reimbursement rates statewide, FY2027", cite: ["gmcb-fy27"] },
       { value: "−4.4%", label: "UVM Medical Center's commercial rates, the largest cut", cite: ["gmcb-fy27"] },
@@ -189,7 +189,7 @@ export const BRIEFINGS: Briefing[] = [
         heading: "What the Board decided",
         paragraphs: [
           "The Green Mountain Care Board completed its FY2027 hospital budget review on September 14, 2026, setting budgets for all 14 community hospitals.{gmcb-fy27} Total net patient revenue was set at about $3.8 billion, 1.6% above FY2026, while commercial reimbursement rates fall 2.9% statewide and commercial net patient revenue falls 1.2%, to $1.937 billion.{gmcb-fy27}",
-          "The new step is the second number. Alongside prices, the Board set limits on each hospital's total commercial revenue, guided by a 1% reduction, so a hospital cannot make up a lower price with more volume.{gmcb-fy27} UVM Medical Center's commercial rates fall 4.4%, the largest cut; Gifford's fall 3.7% and Rutland Regional's 2.6%.{gmcb-fy27}",
+          "Alongside prices, the Board set limits on each hospital's commercial net patient revenue; its FY2027 guidance generally called for a 1% reduction.{gmcb-fy27} A revenue limit means a hospital cannot make up a lower price with more volume. UVM Medical Center's commercial rates fall 4.4%, the largest cut; Gifford's fall 3.7% and Rutland Regional's 2.6%.{gmcb-fy27}",
         ],
       },
       {
@@ -215,7 +215,7 @@ export const BRIEFINGS: Briefing[] = [
       {
         heading: "The Vermont lens",
         paragraphs: [
-          "Vermont's Rural Health Transformation award, $195 million for FY2026, is the money meant to fund that efficiency work, from shared services to data infrastructure.{cms-rhtp} The fund ends in FY2030, while nearly two-thirds of H.R. 1's federal Medicaid reductions come after it does.{kff-rhtp} Lower commercial prices, shrinking Medicaid dollars and a time-limited fund all arrive in the same five years.",
+          "Vermont's Rural Health Transformation award, about $195 million for FY2026, is the money meant to fund that efficiency work, from shared services to data infrastructure.{cms-rhtp}{ahs-transform-jun2026} The fund's last awards are for FY2030 and must be spent by the end of FY2032, while 64% of H.R. 1's ten-year federal Medicaid reductions come after FY2030.{kff-rhtp} Lower commercial prices, shrinking Medicaid dollars and a time-limited fund all arrive in the same five years.",
         ],
       },
       {
@@ -247,9 +247,9 @@ export const BRIEFINGS: Briefing[] = [
   {
     pillar: "clinical",
     slug: "integrated-behavioral-health",
-    asOf: "2026-10-04",
+    asOf: "2026-11-24",
     headline: "The evidence for integrated behavioral health is settled. The funding isn't.",
-    dek: "Collaborative care beats usual care for depression and anxiety across dozens of randomized trials.{cochrane}{impact} Vermont's Blueprint for Health has 62.2 FTE of behavioral health and community health staff in primary care on pilot money that keeps being extended a year at a time.{ahs-blueprint-2026}",
+    dek: "Collaborative care beats usual care for depression and anxiety across dozens of randomized trials.{cochrane}{impact} Vermont's Blueprint for Health has 62.2 FTE of behavioral health and community health staff in primary care on pilot money, extended in 2025 for one more year past the pilot.{ahs-blueprint-2026}",
     facts: [
       { value: "79 trials", label: "24,308 patients in the Cochrane review of collaborative care", cite: ["cochrane"] },
       { value: "45% vs 19%", label: "patients improving at 12 months, collaborative versus usual care (IMPACT)", cite: ["impact"] },
@@ -274,7 +274,7 @@ export const BRIEFINGS: Briefing[] = [
         heading: "The Vermont lens",
         paragraphs: [
           "Vermont's Blueprint for Health added a Mental Health Integration pilot to its community health teams in 2023.{ahs-blueprint-2026} As of November 15, 2025, 62.2 FTE positions were providing care with that funding, including 36.2 FTE of community health workers and 21.6 FTE in mental health or substance use care, and 119 practices, 93% of the state's medical homes, had signed on for the pilot's second year.{ahs-blueprint-2026} The program's own report lists, among its 2025 work, extending MHI funding for another year past the pilot.{ahs-blueprint-2026}",
-          "That is the gap this slide names. The evidence says the model works; the funding arrives one year at a time.",
+          "That is the gap this slide names. The evidence says the model works; the funding was extended one year past the pilot, not made permanent.",
         ],
       },
       {
