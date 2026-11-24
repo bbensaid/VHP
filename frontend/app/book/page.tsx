@@ -110,7 +110,7 @@ const READER_PROFILES = [
   {
     label: "Healthcare Executive",
     emoji: "📊",
-    desc: "Start with Chapters 6–7 (Economics), then Chapter 11 (Operations) and Chapter 15 (Portfolio Management).",
+    desc: "Start with Chapters 6–7 (Economics), then Chapter 11 (Operations) and Chapter 15 (the Unified Health Data Space and the organization that must deliver it).",
     startHref: "/economics",
     startLabel: "Economics Intelligence →",
   },

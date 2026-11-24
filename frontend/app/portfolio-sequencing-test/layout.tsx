@@ -5,7 +5,7 @@ import { brandedMetadata } from "@/lib/brand-server";
 export function generateMetadata() {
   return brandedMetadata(
     "Portfolio Sequencing Test",
-    "Run the Portfolio Manager's sequencing test from Chapter 15 on a transformation portfolio: which components are correctly waiting, which are late by dependency order, and where schedule pressure belongs."
+    "Run the book's dependency-order test (Chapter 1) on a transformation portfolio: which components are correctly waiting, which are late by dependency order, and where schedule pressure belongs."
   );
 }
 

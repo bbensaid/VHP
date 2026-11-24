@@ -257,11 +257,17 @@ export const CHAPTERS: readonly Chapter[] = [
   },
   {
     num: "15",
-    title: "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Five-Pillar Reform",
-    desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
+    title: "The Unified Health Data Space: The Infrastructure Vermont's Reform Runs On, and the Organization That Must Deliver It",
+    desc: "Why reference-based prices, global budgets, the Blueprint, public health and RHT all depend on integrated clinical, claims and social-needs data. What Vermont has built, what 18 V.S.A. § 9353 requires, seven unsolved problems (from the commercial-data gap to concentration risk), and the AHS program office, decision rights and people needed to deliver it.",
     group: "Future & Strategy",
     pillar: null,
-    platformLinks: ["portfolio-sequencing-test", "impact-simulation", "transformation-scorecard", "transformation-friction-index"],
+    platformLinks: [
+      { label: "Vermont Unified Health Data Space", href: "/vermont-uhds" },
+      { label: "RHT Year 1 Review", href: "/rht-review/vermont" },
+      { label: "Vermont Act 68 (2025)", href: "/vermont-act-68" },
+      { label: "Vermont Blueprint for Health", href: "/vermont-blueprint" },
+      { label: "Vermont RHT Program", href: "/vermont-rht-program" },
+    ],
   },
   {
     num: "16",

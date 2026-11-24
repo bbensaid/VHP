@@ -1,5 +1,5 @@
 /**
- * The Portfolio Manager's Sequencing Test — book Chapter 15, §15.7.
+ * The dependency-order sequencing test (book Chapter 1; formerly Chapter 15 §15.7, retired Nov 2026).
  *
  * For each component of a transformation portfolio:
  *   1. Which pillar does it belong to?

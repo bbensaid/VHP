@@ -1,0 +1,580 @@
+ 2021 VITL Annual Report    1
+A Message from the Board Chair and CEO
+About VITL
+VITL Services
+Protecting Patient Health Information 
+New Strategic Framework
+Collaborative Services Project
+Delivering Actionable Data
+Expanding the Types of Data Included on 
+    the Vermont Health Information Exchange
+Partnering with Public Health
+Developing Customer-Centered Services
+Financials
+For Policymakers
+The VITL Board of Directors
+2021 by the Numbers
+Table of Contents
+2
+3
+4-5
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+ 2021 VITL Annual Report    2
+A Message from the Board Chair and CEO
+We are excited to share this update about VITL’s work 
+in 2021 and preview of our plans for 2022.  
+ 
+VITL’s board of directors, leadership team, and staff entered the year 
+developing a Strategic Framework to guide our work. Together, we 
+created a plan for accomplishments that advance our mission and 
+vision, and support the State’s goals for health information exchange  
+as outlined in the Health Information Exchange Strategic Plan. This 
+report features our new Strategic Framework and the goals we have 
+set out to achieve. 
+Our work in 2021 was strongly aligned with this new Strategic 
+Framework. In last year’s report, we shared information about the 
+Collaborative Services Project, which is creating a shared health 
+data infrastructure to meet statewide needs for the aggregation, 
+standardization, and sharing of health data for Vermonters. In 2021  
+we implemented a new data repository for the Vermont Health 
+Information Exchange, which will enhance interoperability and make it 
+easier for clinicians, hospitals, practices, and patients to appropriately 
+access data from the Vermont Health Information Exchange data.
+In 2021 we also continued our work with the Vermont Department of 
+Health to provide data needed for their effective pandemic response. 
+This included building many connections to new labs performing 
+COVID-19 testing and new sites delivering immunizations and 
+boosters. In addition, the Vermont Legislature supported changes to 
+18 V.S.A. § 1129, which allowed us to integrate data from the Vermont 
+Immunization Registry with the Vermont Health Information Exchange 
+to enhance patient records and make immunization data more 
+accessible. 
+Looking beyond COVID-19, the Department of Health’s epidemiology 
+team will use the Vermont Health Information Exchange to gather 
+data related to all reportable diseases — continuing to minimize the 
+data collection burden on them and on providers.  
+In 2022, we will continue to build on this year’s work. We will roll 
+out a new version of VITLAccess, our clinical portal, which will 
+provide a more user-friendly view of an individual’s health record to 
+authorized users. We will continue our expansion of the Collaborative 
+Services Project infrastructure, and will launch a service that 
+enables individuals to access their health data through the third-
+party applications they want to use. And we will continue work to 
+expand the scope and types of data included in the Vermont Health 
+Information Exchange to provide an even more complete record of an 
+individual’s health.
+We look forward to the year ahead, to working with State agencies, 
+the Legislature, other stakeholders, and participating organizations to 
+advance our mission: to securely aggregate, standardize, and share 
+the data needed to improve the effectiveness of health care  
+for Vermonters.
+Leah Fullem, MHCDS
+Board Chair
+Beth Anderson
+President & CEO
+ 2021 VITL Annual Report    3
+HOSPITALS
+HOSPITAL-OWNED SPECIAL TY  
+AND PRIMARY CARE PRACTICES
+INDEPENDENT SPECIAL TY  
+AND PRIMARY CARE PRACTICES
+FEDERALL Y QUALIFIED HEAL TH CENTERS
+DESIGNATED AGENCIES  
+AND SPECIALIZED SERVICES AGENCIES
+HOME HEAL TH AGENCIES
+NURSING HOMES  
+AND LONG-TERM CARE FACILITIES 
+EMERGENCY MEDICAL SERVICES 
+PHARMACY CHAINS AND INDEPENDENT 
+PHARMACIES
+STATE AND COMMERCIAL LABS
+FEDERAL AND STATE AGENCIES
+About VITL
+As the operator of
+the Vermont Health 
+Information Exchange, 
+VITL aggregates patient 
+health data to create a 
+more complete health 
+record for each Vermonter 
+and brings all of those records together to help 
+partners provide better patient care, understand 
+the health of the population, and improve the 
+effectiveness and efficiency of our health 
+care system.
+Organizations that send and/or receive data 
+through the Vermont Health Information Exchange
+VITL Participants
+16
+188
+75
+11
+10
+10
+8
+34
+11
+19
+        
+3
+ 2021 VITL Annual Report    4
+VITL Services
+CONTRIBUTING DATA TO THE VHIE 
+For organizations that contribute data, connecting to the Vermont 
+Health Information Exchange is a way to ensure their patients’ data is 
+available to other clinicians when and where they need it, informing 
+high-quality care. 
+TYPES OF DATA VITL COLLECTS  
+Organizations can submit the following data types to the Vermont 
+Health Information Exchange:
+•    Admission, discharge, and transfer (ADT) notifications
+•     Patient record summaries, called Continuity of  
+Care Documents (CCDs)
+•    Laboratory test results
+•     Radiology reports (specialists’ interpretations of  
+diagnostic imaging)
+•    Clinical notes and transcriptions
+•    Immunization records 
+        •    Home health monitoring data
+BENEFIT: In addition to efficiently sharing data with other clinicians, 
+data contributors are connected to national networks, the Vermont 
+Department of Health, and the State’s health reform initiatives. One 
+connection to the Vermont Health Information Exchange does the 
+work of many point-to-point connections and countless records 
+requests, saving time and effort for contributing organizations.
+ACCESSING DATA FROM THE VHIE
+VITL offers hospitals, health centers, primary care and specialty care 
+practices, and other organizations that provide health care, a variety of 
+ways to access the data in the Vermont Health Information Exchange.
+VITLACCESS CLINICAL PORTAL
+VITLAccess is VITL’s secure, web-based clinical portal that enables 
+authorized users to view patient data submitted to the Vermont Health 
+Information Exchange from participating organizations and from 
+connected national health data sharing networks.
+BENEFIT: Multi-source patient records available in real time offer 
+clinicians more complete patient health histories, supporting safe, 
+effective care and helping avoid duplication of tests.
+RESUL TS DELIVERY
+VITL creates interfaces that deliver laboratory results, radiology 
+reports, and transcribed reports directly into electronic health records.
+BENEFIT: Clinicians at subscribing practices efficiently access 
+results of tests and procedures they have ordered, and practice staff 
+avoid time consuming phone and fax based results collection and 
+processing. 
+VITL Services continues on page 5
+ 2021 VITL Annual Report    5
+EVENT NOTIFICATION
+Through VITL and third-party partners, clinicians can send and receive 
+alerts about their patients based on admission, discharge, and transfer 
+messages submitted to the Vermont Health Information Exchange.
+BENEFIT: Subscribing primary care clinicians and practice staff can 
+be notified when patients receive care in other settings, including 
+the emergency department. This information enables effective 
+care coordination, which can support better health and reduce 
+readmissions and avoidable specialty care. 
+DATA REPORTING
+VITL processes and provides select clinical data to organizations 
+and initiatives including OneCare Vermont, Bi-State Primary Care 
+Association, the Vermont Blueprint for Health, and the Vermont 
+Chronic Care Initiative. VITL also submits immunization data to the 
+Vermont Department of Health’s Immunization Registry.
+BENEFIT: Through one connection to VITL, clinicians and 
+organizations can contribute data to public health and to many health 
+care reform initiatives, meeting program participation and funding 
+requirements without costly point-to-point connections and with fewer 
+chart chases. 
+CONSUL TING
+VITL staff also provide consulting and advisory services for 
+organizations that provide health care. More information about VITL’s 
+consulting services is available upon request. 
+VITL Services continued from page 4
+ Protecting Patient 
+Health Information
+The security and confidentiality of patient health records in the 
+Vermont Health Information Exchange has always been a focus of 
+VITL’s work. A privacy officer and a security officer oversee policy 
+development and implementation and deliver education for all VITL 
+staff. Accesses of Vermont Health Information Exchange data are 
+logged and audited regularly, in compliance with federal and state 
+laws and VITL policies. This year VITL built a Privacy and Security 
+Commitment into the organization’s Strategic Framework. VITL will 
+continue to regularly review and update its security tools and policies 
+to ensure they align with best practices and mitigate the ever-
+changing threat landscape in order to maintain effective, sustainable 
+protections across all Vermont Health Information Exchange data. 2021 VITL Annual Report    6
+VITL is excited to share our new Strategic Framework, which the 
+team — leadership, board, and staff — developed to guide VITL’s 
+work in the coming years. The Framework includes an update to 
+VITL’s Mission and Vision for better alignment with the organization’s 
+goals, five new Strategic Directions, a statement of VITL’s Privacy 
+and Security Commitment, and Values. The Framework incorporates 
+lessons VITL learned in recent years, including the opportunity for the 
+Vermont Health Information Exchange to support and inform public 
+health work, VITL’s ability to help organizations that provide health 
+care services as they navigate system changes or downtime, and the 
+capabilities of the new Collaborative Services infrastructure that VITL 
+continues to implement and enhance. The Framework also considers 
+changes occurring at a national level, including The 21st Century 
+Cures Act, aimed at putting patients in control of their health data, and 
+the Trusted Exchange Framework & Common Agreement (TEFCA), 
+with the goal of improving interoperability and data availability.
+VITL’s work will be founded on five Strategic Directions:
+•   Focus on Our Customers
+•   Tell Our Story
+•    Be the Go-To Partner for Exchanging Vermont’s 
+Health Information
+•   Build a Learning Organization
+•   Ensure Sustainability
+ 
+The Strategic Framework, and all of VITL’s work, is based on a Privacy 
+and Security Commitment – ensuring the security of patient data, 
+providing appropriate access to patient data, and honoring patients’ 
+rights and preferences.
+Staff developed a set of organizational values that define how VITL 
+works with customers, partners, colleagues, and the community: 
+•   Mission Driven
+•   Customer Centered 
+•   Quality Focused
+•   Team Inspired 
+The full Strategic Framework can be found at www.vitl.net .
+New Strategic Framework
+MISSION: To securely aggregate, 
+standardize, and share the data 
+needed to improve the effectiveness 
+of health care for Vermonters
+VISION:  To be a leader in 
+collaboratively delivering actionable 
+data that leads to better health
+ 2021 VITL Annual Report    7
+Through the Collaborative Services Project, VITL has replaced the 
+core technology underpinning the Vermont Health Information 
+Exchange with more advanced and effective tools. These new tools 
+were selected in collaboration with a multi-stakeholder group, with 
+the goals of meeting collective needs and avoiding duplicative 
+investments in essential health data sharing technology. 
+The Collaborative Services Project launched in 2019, and by the end 
+of 2020, VITL had implemented an advanced patient matching index 
+(MPI), terminology services software, and a hosted interface engine. 
+ 
+Making data more accessible to clinicians and 
+patients
+2021 marked the biggest achievement in the project to date, the 
+implementation of a new data repository which will hold all the 
+data in the Vermont Health Information Exchange in a FHIR format. 
+FHIR stands for Fast Healthcare Interoperability Resources, it is the 
+emerging industry standard for organizing and exchanging health 
+data, encouraged by the Centers for Medicare and Medicaid Services 
+(CMS) and increasingly used by health IT developers. Adopting FHIR-
+native technology is an investment in interoperability — enabling 
+faster, easier sharing of health records with participating clinicians 
+and organizations, and providing individuals more control of their 
+health records including through their preferred health data apps.
+Preventing redundant health information technology 
+investments
+VITL estimates that the Collaborative Services Project will achieve 
+savings for Vermont’s health care system. This includes direct, 
+ongoing annual savings and cost avoidance. The project also 
+eliminates the need for multiple patient-matching software purchases 
+across partners. VITL expects the new data infrastructure will result in 
+additional savings after it is fully implemented and its capabilities are 
+further extended.
+Collaborative Services Project
+ VITL’s new technology enables efficient data exchange and system-wide savings
+Recognition of VITL’s Leadership 
+The VITL team’s work is gaining national notice. 
+Civitas Networks for Health is the leading 
+industry organization for health information 
+exchanges. In 2021, Civitas presented its 
+Emerging Leader Award to VITL CEO Beth 
+Anderson. 
+This award reflects the team’s collective 
+commitment to delivering next generation 
+health information exchange services that 
+support Vermont clinicians and their patients. 2021 VITL Annual Report    8
+CONNECTING: VITL receives data through secure interfaces with 
+hospitals, practices, labs, and other organizations. VITL’s interface 
+engine processes messages from these systems – receiving, 
+acknowledging, and routing them into VITL’s data repository.
+VITL currently maintains 1,346 interfaces with organizations 
+that send and receive health data.  
+TRANSLATING & STANDARDIZING: Data arrives at VITL in many 
+different “languages,” representing variation in the way hospitals 
+and practices configure their health records and in how individual 
+clinicians enter data. VITL team members map local codes to 
+standard codes, creating a dictionary that VITL’s terminology services 
+software uses in automated translation of select incoming messages. 
+Translation makes the data in the Vermont Health Information 
+Exchange readable by clinicians for patient care and comparable in 
+population health analytics.
+In 2021, VITL mapped 3,888 local codes to standard codes. 
+VITL’s terminology services software completed 66,962,183 
+translations. 
+MATCHING: Many Vermonters see more than one clinician, most 
+of whom submit patient data to the Vermont Health Information 
+Exchange. VITL’s patient matching tool identifies when, for instance, 
+the Florence Nightingale seen at one health care facility is the same 
+person as the Flo Nightingale seen at another and merges those 
+records. The goal is one record for each Vermonter.
+Since installing the patient matching tool, VITL has 
+demonstrated a cohort match rate increase from about 65% 
+to greater than 95%. 
+  
+Delivering Actionable Data
+VITL connects to electronic health records, translates and standardizes data, and matches  
+patient records to make data actionable   2021 VITL Annual Report    9
+Expanding the Types of Data Included on 
+the Vermont Health Information Exchange
+Integrating health care claims data on the Vermont 
+Health Information Exchange
+VITL’s new data infrastructure is designed to support the inclusion of 
+new data types on the Vermont Health Information Exchange. Adding 
+health care claims data is a priority for Vermont’s Agency of Human 
+Services, and in 2021 VITL implemented the capability to import a 
+claims data file, demonstrated the ability to ingest Medicaid claims 
+data, and produced a report linking Medicaid claims and clinical data 
+at the patient level. VITL will continue to work with the Agency of 
+Human Services to define appropriate access to claims data for future 
+reporting and identify opportunities to use the data to advance health 
+care reform, recognizing that claims and clinical data together can 
+offer deeper insights into the effectiveness and efficiency of our health 
+care system than either data type alone.
+Exploring the addition of more mental health and 
+substance use disorder treatment data 
+VITL has also continued to explore the potential to connect new 
+sources of mental health and substance use disorder treatment 
+data to the Vermont Health Information Exchange. In 2022 VITL will 
+reconvene a multi-stakeholder group to consider the possibilities 
+presented by new federal guidance (expected in the first quarter) 
+about the alignment of 42 CFR Part 2 with the Health Insurance 
+Portability and Accountability Act (HIPAA). 
+Planning for the addition of new social determinants 
+of health (SDoH) data sets
+VITL will also work with the State’s Health Information Exchange 
+Steering Committee to explore inclusion of social determinants of 
+health (SDoH) data from sources beyond medical records. VITL will 
+work with stakeholders, including the State, who are interested in 
+contributing new data sets, to define governance structures and 
+appropriate access before bringing powerful new datasets onto the 
+Vermont Health Information Exchange.
+ 2021 VITL Annual Report    10
+In the first days of the COVID-19 pandemic, VITL asked the Vermont 
+Department of Health (VDH), “How can we help?” Together, VITL 
+and VDH identified a range of ways for Vermont Health Information 
+Exchange data to support the public health response to COVID-19. 
+This partnership continues, with the following advancements in 2021:
+•   VDH staff use VITLAccess to collect race and ethnicity 
+information to add to COVID-19 immunization records, 
+helping create a more complete picture of immunization 
+equity in Vermont.
+•   VDH’s infectious disease epidemiology team continues 
+to use the VITLAccess clinical portal in COVID-19 case 
+investigation. VITLAccess has proven so useful that the team 
+requested access for case surveillance for other public health 
+reportable conditions. VDH team members conducted more 
+than 118,000 searches in VITLAccess, accessing data without 
+burdening clinicians with record requests.
+In partnering to support COVID-19 response, VITL and VDH have 
+built the foundation of a creative and strategic partnership that 
+will use data in support of ongoing pandemic response and other 
+public health priorities. Plans for 2022 include continuing to advance 
+immunization data systems integration. VITL and VDH will also explore 
+shared opportunities for increasing the consistency of the data 
+needed to advance health equity, such as data about patient gender, 
+sex, race, and ethnicity. 
+•   VITL built interfaces to collect data from new sources of 
+COVID-19 lab test results and COVID-19 immunization 
+records, and delivered that information to VDH and to other 
+Vermont Health Information Exchange data users.
+•   VITL delivered daily COVID-19 hospitalization data to VDH 
+on behalf of participating hospitals.  This automation of 
+required federal reporting helps ensure consistent data quality 
+and saves hospital staff time every day.
+•   VITL provided data to support planning for Vermont’s initial 
+COVID-19 vaccination rollout.
+•   The Legislature enabled closer integration between 
+VDH’s Immunization Registry and the Vermont Health 
+Information Exchange through a statute change. Subsequently, 
+VITL imported COVID-19 immunization histories from the 
+Immunization Registry and combined those records with other 
+patient health information to help clinicians support their 
+patients, including those with risk factors for severe COVID-19.
+Partnering with Public Health
+Delivering data for COVID-19 response created a foundation for long term strategic partnership 2021 VITL Annual Report    11
+One of VITL’s new Strategic Directions is “Focus on Our Customers.” 
+VITL commits to proactive engagement to understand customer 
+needs, and to building future products and services with user 
+participation. 
+In 2021, VITL began developing a new VITLAccess clinical portal. The 
+Client Engagement Team used this opportunity to test and model 
+new approaches to engaging VITL’s customers. First, they interviewed 
+current portal users. User insights informed configuration of the new 
+portal. Next, the team will pilot the new portal with more users. User 
+experiences will inform development of portal education and training 
+resources, and their feedback will shape priorities for future portal 
+enhancements. 
+Thank you to the VITLAccess users who participated. We appreciated 
+the perspectives of professionals whose roles included: 
+Naturopathic Doctor, 
+private practice
+Case Investigator, 
+Vermont Department 
+of Health
+Medical Records 
+Team Member, 
+Federally Qualified 
+Health Center
+Primary Care Doctor, 
+private practice
+Health Information 
+Management Data 
+Integrity Specialist, 
+hospital
+Chief Operating 
+Officer, Federally 
+Qualified Health 
+Center Center
+Psychiatric Nurse 
+Practitioner, hospital
+Crisis Team 
+Psychologist, 
+Designated Agency
+Developing Customer-Centered Services
+VITL is building towards co-design of all new products and services, starting with the new VITLAccess 
+clinical portal
+Epidemiologist, 
+Vermont Department 
+of Health 2021 VITL Annual Report    12
+2021 Financials
+VITL’s audited financials for FY21 show total revenue of $8,695,000, 
+which was greater than the budgeted revenue. VITL’s CY21 contract 
+with the Department of Vermont Health Access included funding to 
+support implementation of the second phase of the Collaborative 
+Services Project, and to continue work in support of the data needs of 
+the Vermont Department of Health. In addition, new work scope was 
+added to integrate claims data on the Vermont Health Information 
+Exchange. The audited revenues also reflect adoption of the new IRS 
+revenue recognition standard. The FY21 Financial Statements are 
+available at www.vitl.net.  
+FY21 AUDITED EXPENSES
+(rounded to the nearest thousand)
+Total Audited
+Expenses
+$7,961,000
+Personnel Related 
+    Expense $3,267,000
+Information Technology 
+$1,774,000
+VHIE Hosting 
+$980,000
+Consulting 
+$1,128,000
+All Other 
+$742,000 
+Accounting Adjustments
+$70,000
+Total Audited
+Revenue
+$8,695,000 
+FY21 AUDITED REVENUE
+(rounded to the nearest thousand)
+All other sources  $227,000 
+Other client contracts $850,000
+State of Vermont Department of Vermont Health Access 
+CY20 and CY21 contracts $7,618,000 
+1M 3M 5M2M 4M 6M 7M 8M
+ 2021 VITL Annual Report    13
+States with a strong connection between their health information 
+exchange(s) and their public health authority have been able to 
+rapidly initiate data-driven responses to the pandemic, through its 
+evolutions. Many public health efforts require data from health care 
+clinicians, and often clinicians benefit from information from the 
+public health authority. Information sharing between the Vermont 
+Health Information Exchange and the Vermont Department of Health 
+(VDH) can minimize the data collection burden on both clinicians 
+and public health officials while avoiding duplicative investment in 
+technical infrastructures. As we look to 2022, VDH and VITL plan to 
+work together to identify opportunities for further partnership and 
+data sharing. An area of particular focus is using Vermont Health 
+Information Exchange data to help evaluate and advance health equity 
+in Vermont. 
+We appreciate the support the Legislature has already provided for 
+the partnership between VDH and VITL and look forward to future 
+opportunities to support public health data needs.
+For Policymakers 2021 VITL Annual Report    14
+The VITL Board of Directors
+STANDING 
+COMMITTEES
+EXECUTIVE
+Leah Fullem - Chair
+Jeff Tieman - Vice Chair
+Debra Royce - Treasurer
+Jessa Barnard - Secretary
+AUDIT
+Susan Besio - Chair 
+Mary Beth Eldredge 
+Leah Fullem
+Kelly Lange
+Debra Royce
+FINANCE
+Debra Royce - Chair 
+Susan Besio
+Mary Beth Eldredge 
+Leah Fullem
+Kelly Lange
+TECHNOLOGY
+Shawn Burroughs - Chair
+Tom Evslin
+Jeff Tieman  
+Vermont Association 
+of Hospitals & Health 
+Systems
+Susan Besio, PhD
+Retired, health policy
+Richard Elmore
+Allscripts
+Kelly Lange
+University of Vermont 
+Health Network 
+Beth Anderson
+President & CEO, VITL
+Leah Fullem, MHCDS 
+University of Vermont 
+Health Network
+Jessa Barnard, Esq.  
+Vermont Medical 
+Society
+Mary Beth Eldredge, 
+MHA, MHCDS
+Dartmouth-Hitchcock 
+Health
+Tim Kenney
+AI Certain, Inc. 
+Board member 
+through November 
+2021
+Norman Ward, MD
+University of Vermont 
+Medical Center
+Debra Royce  
+Bogner of America, Inc.
+Shawn Burroughs, 
+MBA
+Northeastern Vermont 
+Regional Hospital 
+Tom Evslin
+Retired, NG 
+Advantage
+ 2021 VITL Annual Report    15
+2021 By the Numbers
+ www.vitl.net
+Vermont Information Technology Leaders, Inc.

@@ -1,11 +1,11 @@
 "use client";
 
 /**
- * Portfolio Sequencing Test — book Chapter 15, §15.7, run on a real register.
+ * Portfolio Sequencing Test — dependency-order test from book Chapter 1, run on a real register.
  *
  * Left: the pillar profile that decides which gates are open (same engine and
  * thresholds as /htr-simulator). Right: the portfolio register — Vermont's
- * nineteen components from Figure 15.3 by default, or the reader's own.
+ * nineteen components from HTR's Vermont register by default, or the reader's own.
  * Every component gets the test's verdict; the components holding closed
  * gates are listed as the place schedule pressure belongs.
  *
@@ -104,7 +104,7 @@ export default function PortfolioSequencingTest() {
       {/* Controls */}
       <div className="flex flex-wrap items-center gap-2">
         <button onClick={loadVermont} className={`px-3 py-1.5 rounded-lg text-sm font-bold border ${isVermont ? "bg-slate-900 text-white border-slate-900" : "bg-white text-slate-700 border-slate-300 hover:bg-slate-50"}`}>
-          Vermont&apos;s 19 components (Figure 15.3)
+          Vermont&apos;s 19 components (HTR register)
         </button>
         <button onClick={startBlank} className="px-3 py-1.5 rounded-lg text-sm font-bold border bg-white text-slate-700 border-slate-300 hover:bg-slate-50">
           Start my own register
@@ -242,9 +242,9 @@ export default function PortfolioSequencingTest() {
 
           <p className="text-[11px] text-slate-400 leading-relaxed">
             Model assumptions, not book claims: gate thresholds (open {GATE_OPEN}, closed {GATE_CLOSED}) come from the shared sequence engine.
-            From the book: the four-step test (§15.7), the gate definition (§1.4), design running in parallel (§1.11.2), and the Clinical
+            From the book: the gate definition (§1.4), design running in parallel (§1.11.2), and the Clinical
             and Operations programs that proceed in parallel (Figure 1.8) — which is why those are preset as not gated. The Vermont
-            statuses are read off Figure 15.3 as of Fall 2026. Calendar targets are shown for contrast and never change a verdict.
+            statuses are HTR's register of Vermont's reform components as of Fall 2026 (formerly the book's Figure 15.3, retired when Chapter 15 was rebuilt in November 2026). Calendar targets are shown for contrast and never change a verdict.
           </p>
         </div>
       </div>
