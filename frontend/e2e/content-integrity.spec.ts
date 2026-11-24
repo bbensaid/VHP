@@ -54,3 +54,8 @@ test("pricing makes no CME claim", async ({ page }) => {
   await page.goto("/pricing");
   await expect(page.locator("body")).not.toContainText(/CME/);
 });
+
+test("Research Lab advisory panel carries no invented client statistics", async ({ page }) => {
+  await page.goto("/research-lab/policy-quality");
+  await expect(page.locator("body")).not.toContainText(/client satisfaction|states served/i);
+});
