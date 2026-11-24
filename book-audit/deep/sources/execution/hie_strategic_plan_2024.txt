@@ -1,0 +1,268 @@
+Health Information Exchange 
+Strategic Plan 2023-2027
+(2024 Update)
+November 18, 2024
+1
+Agenda
+• Goals of the Health Information Exchange
+• Steering Committee Composition
+• Components of the Health Information Exchange
+• Ecosystem – Unified Health Data Space
+• 2024 Accomplishments
+• Strategic Plan 
+2
+3
+Create 1 health record for every person
+Better health outcomes
+Improved healthcare operations
+Use data to enable investment and policy 
+decisions
+Goals of the Health Information Exchange
+4
+VOTING
+ MEMBERS
+Will Dempsey - Chair
+(Agency of Human Services)
+Jimmy Mauro
+(BCBS of VT)
+Emma Harrington
+(VAHHS)
+Mary Kate Mohlman
+(Bi-State Primary Care)
+Jessie Hammond
+(Vermont Dept. of Health)
+Ken Gingras
+(Vermont Care Partners)
+Jodi Frei
+(OneCare Vermont)
+Helen Labun
+(Long Term Care Advocate)
+Victor Morrison
+(Person Advocate)
+John Saroyan
+(Practice Innovation Lead)
+NON –VOTING
+MEMBERS
+Steven Andrews
+(Green Mountain Care Board)
+Beth Anderson
+(VITL)
+Andrea DeLaBruere
+(Agency of Digital Services)
+Sandy Rousse
+(Central Vermont Home Health and Hospice)
+Rick Dooley
+(Independent Providers)
+James LaRock
+(Privacy Expert)
+Eric Schultheis
+(Health Care Advocate)
+Song Nguyen
+(Health Equity Expert)
+New from last 
+year 
+2024 HIE Steering Committee
+4
+
+5
+5
+HIE Ecosystem: Four components
+66
+• The Unified Health Data Space (UHDS) is a collaborative initiative to streamline data services required to improve healthcare in 
+Vermont. 
+• Costs/usage of technology will be shared among participants to avoid duplicative efforts and purchases.
+• UHDS is an integral part of reform efforts supporting a broad spectrum of healthcare stakeholders/uses;
+✓ Point of Care (Providers)
+✓ Quality (ACO Provider Networks, Payers)
+✓ Policy Evaluation & Regulation (GMCB, Healthcare Reform, Blueprint)
+✓ Patients (Personal Health Responsibility)
+✓ Population Health (Health Equity, Public Health)
+• UHDS will provide those with authorized access to needed information to key stakeholders in the healthcare arena including:
+• Clinical data
+• Social Determinants of Health (SDoH) data
+• Mental Health and Substance Use Disorder data
+• Other data 
+What?
+The Unified Health Data Space (UHDS) 
+77
+
+• Funding
+✓ Continued funding sustainability using 
+our cost allocation with CMS
+• Governance
+✓ HIE Data Governance Council meetings are 
+public
+✓ Social Determinants of Health – established 
+and collaborating on a shared vision
+• Technology
+✓ Expanding bi-directional exchange of 
+immunization data
+✓ Expanded electronic lab reporting (ELR) 
+connections to VDH
+• Policy / Process
+✓ Provided Vermonters with electronic patient 
+health data education
+✓ Continued incentive program to connect 
+providers to health system electronically
+✓ Completed development of VDH-VHIE 
+Integration Strategy
+✓ All DA's contributing production data to VITL
+8 8
+2024 Key Accomplishments
+Goal Current 
+Status
+Outlook for 
+Dec 2024 
+Status
+On Track
+Data Governance
+SDoH Data Governance 100% 100% Yes
+Patient Education & Provider Outreach
+Ongoing focus on patient education and provider outreach by VITL. 80% 100% Yes
+Data Completeness, Quality, and Standardization
+Data Standardization 100% 100% Yes
+Medicaid Data Access and Aggregation (MDAAP) Implementation 25% 65% Yes
+Maintenance & Operations Cost Focus
+Focus on cost competitiveness for M&O costs - KPI development 15% 25% Yes
+Connectivity
+Provider connections/interfaces 88% 100% Yes
+Part 2 Data - all Designated Agencies are connected to the HIE 100% 100% Yes
+Development work to start for HIE to serve as the Medicaid Data Warehouse
+VITL to be operator of Unified Health Data Space (data warehouse) 45% 50% Yes
+Application Programming Interfaces (APIs) 
+Implement FHIR APIs 25% 40% Partial
+SDOH Roadmap
+Complete engagement with NORC on the development of an SDOH Roadmap for AHS. 50% 75% Yes
+Integrate Dept of Health data into the HIE 
+VDH-VHIE Integration Strategy 100% 100% Yes
+Analytics Layer
+Stakeholder and requirements gathering RFP 25% 50% Yes
+Care Coordination & Referral Management
+Scoping, Requirements Gathering, & Procurement 0% 0% No
+Provider Directory
+Scoping & Requirements Gathering, Procurement, Data Governance and Implementation 0% 5% Partial
+Explore Options - Rural/Smaller Independent Providers
+Scoping & Stakeholder Identification 15% 25% Yes
+99
+Strategic Planning Process
+HEALTH 
+INFORMATION 
+EXCHANGE
+1 Year Strategy RefreshThe AHEAD (All-Payer Health Equity Approaches and Development) Model
+Strategic planning from the HIE Steering Committee
+Current year's achievements
+Act 167 and its resulting report
+The Federal Health Information Technology Plan
+*Each item to have action plan developed by January 2025 1010
+2024 HIE Strategic Items
+Goal Foundational
+Value Based 
+MGT
+Focus on 
+Health Equity
+Create 1 
+Health 
+Record for 
+Every Person
+Better 
+Health 
+Outcomes
+Improved 
+Healthcare 
+Operations
+Use Data to 
+Enable 
+Investment and 
+Policy Decisions
+Ongoing support for Data Governance
+Patient education and ongoing 
+support for Health Data Literacy. 
+Provider outreach for HIE awareness
+Focus on data compleness, quality, 
+and standardization. Connect more 
+providers to the HIE through provider 
+incentive payments.
+Enable HIE to adopt analytics to 
+empower individuals, address 
+patient's full range of health needs, 
+and facilitate better health outcomes 
+for individuals and communities
+Focus on cost for maintenance and 
+operations.
+Capability for care coordiantion and 
+referral management
+Strategic Roadmap for Social Drivers 
+of Health
+Integration VDH Data into the HIE
+Explore options to provide technical 
+assistance to rural providers/small 
+practices.
+Ongoing technology enhancements: 
+Promote portability of EHI through 
+standards-based APIs and enabling 
+providers to utilize single-sign on 
+(SSO).
+
+1111
+HIE KPIs / Metrics
+Metric January February March April May June July August September
+Direct Care/Care Coordination
+Number of VITLAccess User Accounts 2,774 2,865 2,891 2,851 2,634 2,506 2,565 2,590 2,610
+Number of Organizations using VITLAccess 296 300 301 302 303 288 293 297 310
+Number of Potential Organizations that could use VITLAccess 1,595 1,596 1,595 1,596 1,591 1,590 1,588 1,593 1,585
+Number of Patient Queries through VITLAccess 18,843 17,671 17,840 18,673 19,366 17,900 20,759 20,053 20,181
+Number of Medicaid patient records transmitted from the 
+VHIE to the Medicaid care coordination tool 586,086 379,133 414,641 439,210 434,475 402,742 430,998 433,910 415,555
+Direct Care/Care Coordination: Event Notification
+Number of event notifications (ADT) messages sent to 
+PatientPing through VHIE connection 3,579,093 3,579,093 3,384,694 3,341,045 3,545,704 3,271,261 1,403,058 1,422,000 1,341,983
+Master Patient Index: Percent Medicaid Match Rate 98.10% 98.08% 99.62% 99.59% 99.65% 99.61% 99.57% 99.65% 99.60%
+Direct Care/Care Coordination: Electronic Results
+Number of LAB messages captured in the VHIE 585,806 553,714 561,648 561,785 590,454 558,641 582,702 581,652 562,515
+Number of RAD messages captured in the VHIE 87,307 83,784 83,603 84,771 93,106 84,933 89,219 89,294 84,422
+Number of TRANS messages captured in the VHIE 403,124 384,221 383,992 397,901 417,117 392,926 421,318 419,255 412,919
+Public Health
+The percent of total immunization messages (VXU) received 
+by the Immunization Registry from the VHIE 88% 88% 87% 87% 87% 88% 88% 88% 93%
+The percent of total death records transmitted from Death 
+Registry to VHIE 100% 100% 100% 100% 100% 100% 100% 100% 100%
+LAB messages captured in the VHIE and transmitted to the 
+Public Health Authority 3433 4799 1046 738 1575 3328 662 2622 1737
+Value Based Care
+Blueprint for Health Clinical Extract Report from the VHIE
+Provided the 
+report to 
+Blueprint on 
+03/31/2023
+Provided the 
+report to 
+Blueprint on 
+03/31/2023
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided the 
+report to 
+Blueprint on 
+4/1/2024
+Provided 
+second report 
+to Blueprint on 
+9/5/24

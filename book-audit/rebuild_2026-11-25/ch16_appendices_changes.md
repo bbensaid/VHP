@@ -59,7 +59,7 @@ A one-page profile of the institutions that carry reform, so a reader can locate
 | DVHA | Medicaid; owns the statewide HIT Plan and the Medicaid Data Warehouse (MDWAS, live January 2026 with linked claims and clinical data) | MDWAS: $66.3M implementation | 18 V.S.A. § 9351; ADS 2025 Annual Report; AHS UHDS report (Jan. 2026) |
 | Agency of Digital Services | Approves all state IT; supervises IT staff; independent review ≥ $1M | Created by EO 06-17 (2017); statute 2019 | 3 V.S.A. §§ 3301–3306 |
 | VITL | Designated operator of the exclusive statewide HIE network | 241 organizations; 98.9% of Vermonters sharing data (Feb. 2025) | 18 V.S.A. § 9352; VITL (2025) |
-| HIE Steering Committee | HIT Plan advice; § 9353 data-integration vote | 9 voting and 4 non-voting members (2022 charter) | HIE Plan 2022 |
+| HIE Steering Committee | HIT Plan advice; § 9353 UHDS data-integration vote | Chaired by AHS; 10 voting and 8 non-voting members (Jan. 2025), with GMCB, VITL, ADS and the Health Care Advocate non-voting; a GMCB voting seat required by statute since 2025; a OneCare seat after OneCare's wind-down | AHS HIT Overview (Jan. 23, 2025); 18 V.S.A. § 9351(a)(3)(D) |
 | Green Mountain Care Board | Hospital budgets; reference-based pricing; ACO certification | No longer approves the HIT Plan or VITL's budget (Act 62) | Act 62 of 2025 |
 | Health Care Delivery Advisory Committee | Develops the Strategic Plan with AHS | 18 members; chaired by the Secretary of Human Services | 18 V.S.A. § 9403a |
 | Joint Information Technology Oversight Committee | Legislative oversight of state IT and cybersecurity | Six members, three per chamber | 2 V.S.A. § 614 |

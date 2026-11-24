@@ -1,0 +1,103 @@
+ 
+ 
+Alyssa Black 
+Chair, House Healthcare Committee 
+Vermont State House 
+115 State Street 
+Montpelier, Vermont 05422-5301 
+ 
+Dear Chair Black and Members of the House Healthcare Committee (HHC): 
+The Agency of Human Services (AHS), the Green Mountain Care Board (GMCB), and the 
+Office of the Health Care Advocate (HCA) support Section 10 of S.126 contingent upon the 
+edits below. We believe that, with the adoption of the proposed edits, Section 10 of S.126 is 
+in the best interests of Vermonters. Thank you for your consideration. 
+ 
+Sincerely, 
+s/ William Dempsey 
+William Dempsey 
+Health Data Officer 
+Agency of Human Services 
+ 
+s/ Lindsay Kill 
+Lindsay Kill 
+Director of Health Systems Data & Analytics 
+Green Mountain Care Board 
+ 
+s/ Eric Schultheis 
+Eric Schultheis 
+Staff Attorney 
+Office of the Health Care Advocate 
+ 
+ 
+ 
+ 
+Consensus Recommended Language of the Agency of Human Services, the Green 
+Mountain Care Board, and the Office of the Health Care Advocate 
+AS PASSED BY SENATE - S.126 
+VT LEG #382250 v.1 
+Sec. 10. 18 V .S.A. § 9353 is added to read: 
+§ 9353. INTEGRATION OF HEALTH CARE DATA 
+(a) The Agency of Human Services shall collaborate with the Health 
+Information Exchange Steering Committee in the development of Unified 
+Health Data Spacean integrated system of clinical and claims data in 
+order to improve patient, provider, and payer access to relevant 
+information and to reduce system costs and reduce administrative 
+burdens on providers. 
+(b) The Agency’s process The development of the Unified Health Data Space 
+by the Agency shall: 
+(1) align with the statewide Health Information Technology Plan 
+established pursuant to section 9351 of this title; 
+(2) utilize the expertise of the Health Information Exchange Steering 
+Committee; 
+(3) incorporate appropriate privacy and security standards aligned 
+with the best privacy and security interests of patients; 
+(4) determine how best to integrate clinical data, claims data, and 
+data regarding social drivers of health and health-related social 
+needs, and other data types; 
+(5) integrate clinical data, claims data, data regarding social drivers of 
+health and health-related social needs, and other data types, or 
+any subset thereof, only if a majority of the voting members of the 
+Health Information Exchange Steering Committee votes that said 
+integration should occur. As used in this subsection, the 
+requirement that a majority of the Health Information Exchange 
+Steering Committee votes to approve data integration means that 
+a majority of voting members vote to approve a specific data 
+integration and not just a majority of a quorum of voting members 
+that may be present at a given meeting. 
+(6) limit the use of integrated data approved per subsection b(5) to the 
+use-restrictions established by the Health Information Exchange 
+ 
+ 
+Steering Committee when they voted to approve the integration of 
+said data; 
+(7) (5) ensure interoperability among contributing data sources and 
+applications to enable a Unified Health Data Space that is usable 
+by all stakeholders; 
+(8) (6) identify the resources necessary to complete data linkages for 
+clinical policy, health surveillance, population health 
+management, and research usage, and data integration uses 
+approved by the Health Information Exchange Steering Committee 
+pursuant to (b)(5) and (b)(6); 
+(9) (7) establish a timeline for setup and access to the integrated 
+system; 
+(10) (8) develop and implement a system that ensures rapid access 
+for patients, providers, and payers; and 
+(11) (9) identify additional opportunities for future development, 
+including incorporating new data types and larger populations. 
+(c) Health insurers, as defined in section 9402 of this title, shall provide 
+clinical and claims data to the Agency of Human Services as directed by 
+the Agency in order to facilitate the integrated system of clinical and 
+claims data as set forth in this section. 
+(d) The Agency shall provide access to data to State agencies and health 
+care providers as needed to support the goals of the Statewide Health 
+Care Delivery Plan established pursuant to section 9403 of this title, once 
+established, to the extent permitted by the data use agreements in place 
+for each data set and subject to (b)(5). 
+(e) On or before January 15 annually, the Agency of Human Services shall 
+provide an update to the House Committees on Health Care and on 
+Human Services and the Senate Committee on Health and Welfare 
+regarding the development and implementation of the integrated system 
+of clinical and claims data in accordance with this section. 
+(e)(f) A representative of the Green Mountain Care Board shall be a voting 
+member of the Health Information Exchange Steering Committee. 
+ 

@@ -1,0 +1,323 @@
+Vermont Health Information 
+Exchange (VHIE)
+Onboarding Materials
+Prepared by the HIE Program Team
+1
+What is Health Information Exchange (HIE)? 
+2
+2
+What is a Health Information Exchange (HIE)? 
+3
+3
+What does the HIE Enable?
+✓ Comprehensive electronic patient information when and where needed
+✓ Allow physicians to have complete and current information upon which to 
+base clinical decisions
+✓ Test results and imaging results always available eliminating repeat 
+tests/imaging & reducing costs
+✓ Real-time data aggregation to detect patterns (e.g.; bio surveillance) and drive 
+preventative care
+✓ Quality and payment information derived from record of care – not separate 
+reporting systems
+✓ Patients' empowerment with access to their own health records
+4
+4
+HIE Strategic Planning & Oversight 
+Framework 
+5
+5
+Health Information 
+Exchange Steering 
+Committee (HIE SC)
+Chair, Director of Data 
+Analytics, AHS
+Green 
+Mountain 
+Care Board
+Public 
+Health
+Primary 
+Care 
+Accountable 
+Care Org.
+Payer Consumer
+Hospital 
+Care
+Home 
+Health
+Health Care 
+Advocate
+Blueprint 
+for Health
+Health 
+Equity
+Privacy 
+Attorney
+Agency of 
+Digital 
+Services
+Long Term 
+Care
+Green Mountain Care Board
+VITL 
+Board
+VHIE Operations
+HIE SC 
+Membership
+Strategic 
+Plan 
+Oversight
+Strategic 
+Budget
+Oversight
+Independent 
+Provider
+6
+Vermont HIE Ecosystem 
+Four Key Components:
+➢ Finance
+➢ Technology 
+❑ Foundational 
+Services
+❑ Exchange Services
+❑ End-User Services
+➢ Governance 
+➢ Policy/Process
+6
+Goals of the Health Information Exchange
+7
+Create 1 health record for every person
+Better health outcomes
+Improved healthcare operations
+Use data to enable investment and policy 
+decisions
+
+Vermont’s Unified Health Data Space (UHDS)
+8
+99
+
+What Is Vermont’s Unified Health Data 
+Space (UHDS) ?
+• The Unified Health Data Space (UHDS) is a collaborative initiative to streamline data services required to improve healthcare in 
+Vermont. 
+• Costs/usage of technology will be shared among participants to avoid duplicative efforts and purchases.
+• UHDS is an integral part of reform efforts supporting a broad spectrum of healthcare stakeholders/uses;
+✓Point of Care (Providers)
+✓Quality (ACO Provider Networks, Payers)
+✓Policy Evaluation & Regulation (GMCB, Healthcare Reform, Blueprint)
+✓Patients (Personal Health Responsibility)
+✓Population Health (Health Equity, Public Health)
+• UHDS will provide those with authorized access to needed information to key stakeholders in the healthcare arena including:
+• Clinical data
+• Mental Health and Substance Use Disorder data
+• Social Determinants of Health (SDoH) data.
+10
+10
+HIE Strategic Plan
+• The Health Information Exchange (HIE) Strategic Plan is required by 18 V.S.A. § 9351. 
+• The purpose of the Plan is to provide a strategy for the implementation of an integrated electronic health 
+information infrastructure for the sharing of electronic health information among health care facilities, 
+health care professionals, public and private payers, and patients.
+• Also see - HIE Strategic Plan 2024 GMCB Presentation
+11
+Plan Submission Timeline (Annually)
+11
+August to 
+September
+• Strategic 
+Planning 
+Sessions
+On or before 
+November 1st
+• AHS submits HIE 
+Plan and 
+Connectivity 
+Criteria to 
+GMCB for their 
+review
+• Target date for 
+submission is 
+October 1st 
+Month of 
+November
+• Special public 
+comment 
+period 
+Mid-November
+• AHS and VITL 
+present HIE Plan 
+& Connectivity 
+Criteria; 
+• Board requests 
+changes to HIE 
+Plan
+Early-
+December
+• Resubmission of 
+HIE Plan
+Mid-December
+• Staff 
+recommendatio
+n to GMCB on 
+HIE Plan & 
+Connectivity 
+Criteria; 
+potential Board 
+votes
+VHIE 2025 Roadmap
+12
+WBS TASK NAME 2025 2026
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan
+1 Data Governance 
+2 Patient Education & Provider Outreach
+3 Connectivity
+4 Data Completeness, Quality, Standardization
+5 Analytics Layer
+5.1 Scoping & Requirements Gathering
+5.2 Procurement 
+5.3 Implementation
+6 Maintenance & Operations Cost Focus
+7 Care Coordination & Referral Management
+7.1 Scoping & Requirements Gathering
+7.2 Procurement 
+8 Strategic Roadmap - SDoH
+8.1 Analysis and Development of Strategic Roadmap Recommendation
+8.2 Implementation Recommendations from the Strategic Roadmap
+9 VDH-HIE Integration
+9.1 Phase 1: Pilot (Birth Records, Manual & Bulk Upload Immunizations)
+9.2 Phase 2: (In Planning)
+10 Explore Options - Rural/Smaller Independent Providers
+11 FHIR APIs
+11.1 Implementation
+12 Security Tags
+12.1 Implementation
+13 Medicaid Data Access and Aggregation Program
+13.1 Implementation
+13.2 Closeout
+14 National Exchange Participation 
+14.1 Scoping & Requirements Gathering
+15 Act 167 & AHEAD M odel Support
+15.1 Scale dat a plat form (including metrics and dashboards)
+15.2 Viability and impact assessment
+15.3 State-Wide EHR Feasibilit y and Readiness Assessment 
+HIE Steering Committee Charter
+• Purpose of the HIE Steering Committee
+• Serve the needs of HIE users by advancing HIE use cases;
+• Strengthen the relationship between authority and accountability; and
+• Engage a broad range of stakeholders in strategic planning and oversight activities.
+• Steering Committee’s Vision & Mission
+• Vision: To enable health information exchange that promotes quality health care in Vermont.
+• Mission: To work across organizations and disciplines to create and endorse a shared view of the 
+definition, purpose, and goals of the HIE in Vermont
+• The Steering Committee identified four overarching goals in the HIE Plan that are intended to guide 
+the state’s health information exchange work.
+• Create One Health Record for Every Person
+• Better Health Outcomes
+• Improve Health Care Operations
+• Use Data to Enable Investment and Policy Decisions
+• Ultimately, the Steering Committee exists to support development of a state-wide strategic plan (the 
+HIE Plan) and guide implementation of that plan. 
+13
+See “Appendix B: HIE Steering Committee Charter” on the HIE Strategic Plan Update 2024for more information
+13
+14
+VOTING
+ MEMBERS
+Will Dempsey - Chair
+(Agency of Human Services)
+Jimmy Mauro
+(BCBS of VT)
+Emma Harrigan
+(VAHHS)
+Mary Kate Mohlman
+(Bi-State Primary Care)
+Jessie Hammond
+(Vermont Dept. of Health)
+Ken Gingras
+(Vermont Care Partners)
+Jodi Frei
+(OneCare Vermont)
+Helen Labun
+(Long Term Care Advocate)
+Victor Morrison
+(Person Advocate)
+John Saroyan
+(Practice Innovation Lead)
+NON –VOTING
+MEMBERS
+Steven Andrews
+(Green Mountain Care Board)
+Beth Anderson
+(VITL)
+Andrea DeLaBruere
+(Agency of Digital Services)
+Sandy Rousse
+(Central Vermont Home Health and Hospice)
+Rick Dooley
+(Independent Providers)
+vacant
+(Privacy Expert)
+Eric Schultheis
+(Health Care Advocate)
+Song Nguyen
+(Health Equity Expert)
+New from last 
+year 
+2025 HIE Steering Committee
+14
+
+Logistics & Operational Support
+Committee Logistics
+• Steering Committee Meetings are held quarterly, both in-person 
+and virtually via Microsoft Teams
+• 2025 Meeting Schedule – 
+• January 27th, 2025
+• April 14th ,2025
+• July 14th, 2025
+• September 9 th, 2025 [Strategic Planning Session]
+• October 20th, 2025
+• Subcommittee meetings are scheduled separately
+• Meeting materials are posted on the committee’s website and 
+included in meeting invitations
+• https://healthdata.vermont.gov/HIESteeringCommittee
+• Steering Committee members are asked to provide a photo 
+& bio to be posted on the website
+Ops. Support - HIE Program Team
+15
+Name Role
+Will Dempsey Director of Data Analytics
+Tim Tremblay Data Integration Lead
+Bechir Bensaid Program Manager
+Inna Podgornaya Project Manager
+Mahesh ThopaSridharan Project Manager
+Alice Stecko Project Manager
+Heriberto Troche Health Care Workforce Data Center 
+Manager
+Eli Hawgood Medicaid Operations Administrator
+Heather Kendall Medicaid Operations Administrator
+Abhilash Sasidharan Business Analyst
+15
+https://healthdata.vermont.gov/HIESteeringCommittee 
+16
+16
+Vermont Information Technology Leaders 
+(VITL)
+• VITL was statutorily authorized in 2007 to be the exclusive operator of the state-wide HIE network 
+• VITL is 
+• a Non-profit Organization
+• based in Burlington, Vermont
+Please visit https://vitl.net/about-the-vhie/ to learn more about VITL and the VHIE
+• In January of 2021, VITL provided a webinar session for AHS and other stakeholders including HIE 
+Steering Committee members, and their constituents - VITL Education Series. The presentation 
+includes the following and much of the information contained is still relevant to date
+• How VITL serves
+• Who participates
+• Data & services
+• Data sharing volume
+• Recent projects
+17
+17
+Vermont’s Medicaid Agency: Agency of 
+Human Services 
+18
+18

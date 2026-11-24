@@ -1,0 +1,208 @@
+Health Information Technology Overview
+January 23, 2025
+Vermont Agency of Human Services
+1
+• Health Information Technology 101
+• Benefits 
+• Unified Health Data Space Overview
+• Health Information Exchange Steering Committee
+Agenda
+2
+Health Information Technology (HIT): 
+Foundational Concepts
+• What is HIT?
+o Technology systems designed to collect, store, and manage patient 
+health data.
+• Why does it matter?
+o Improves patient care, streamlines provider workflows, and supports 
+better decision-making.
+• What is the goal of HIT?
+o Deliver better care to patients, improve the health of the overall 
+population, and reduce costs. 
+• Examples:
+o Electronic Medical Records (EMRs), Electronic Health Records (EHRs), 
+and Health Information Exchange (HIE).
+3
+Electronic Medical Records (EMRs) vs. 
+Electronic Health Records (EHRs)
+• EMRs
+o Essentially a digital version of patient paper charts.
+o Specific for treatment of patients within one facility or by one 
+provider.
+o Track data over time of patients.
+• EHRs
+o Does what EMR’s do, and more.
+o Designed to reach beyond the facility/provider using it and 
+o Built to share information, such as patient history, lab results, 
+prescriptions, etc.
+o Focuses on whole-person care and coordination.
+4
+Health Information Exchange (HIE)
+• What is HIE?
+o Enables secure sharing of patient health information across providers, 
+both through data put straight into an EHR by the HIE and by enabling 
+access to a provider portal.
+• What’s its purpose?
+o Seamless data flow and access across providers, labs, hospitals, and 
+public health.
+• Why does it matter?
+o Prevents redundant tests.
+o Enhances patient care coordination between providers.
+o Improves population health reporting.
+• Example: VITL is the legislatively designed operator of the Vermont Health 
+Information Exchange (VHIE). 
+5
+Post Office Analogy
+6
+VHIE – Operated by VITL (per statute)
+Post Office Infrastructure
+ Roads
+ Post Office 
+ Mail Trucks
+National Standards 
+ Letter – stamp, address, envelope
+ Transportation standards (vehicles registration, driving 
+rules, road signs)
+Law, Rules, Regulations, Governance
+ Mailbox Privacy
+ Post Office process/procedures
+ Traffic law
+HIE Infrastructure
+ Integration Engine
+ MPI
+ Terminology Services
+National Standards (Interoperability)
+ USCDI (U.S. Core Data for Interoperability)
+ CMS, CDC, ONC, SAMHSA
+ FHIR (Fast Healthcare Interoperability Resources)
+Law, Rules, Regulations, Governance
+ HIPAA, Federal, State laws rules regulations
+ Data Governance
+Clinical 
+data
+Providers
+Public Health
+Payers
+Benefits of Health Information Exchange:
+Current:
+• Comprehensive electronic patient information, when and where 
+needed.
+• Allow medical professionals to have complete and current information 
+for clinical decisions.
+• Test result and imaging results are always available, eliminating 
+repeated tests and imaging.
+• Real-time aggregation to detect patterns.
+Future plans include:
+• Quality and payment information derived from record of care.
+• Patients have access to their own records.
+7
+Hospital Electronic Health Records Landscape
+Currently there are four Electronic Health Record 
+vendors connected to the VHIE from various hospitals 
+in Vermont and New Hampshire.
+*As of 1/21/25, includes 2 NH hospitals, the VPCH, and counts UVMHN hospitals 
+individually. 
+8
+Electronic Health Record Vendor Count Percentage
+Epic 4 25%
+Oracle (formerly Cerner) 5 31%
+TruBridge (formerly CPSI) 3 19%
+Meditech 4 25%
+Create 1 health record for every person
+Better health outcomes
+Improved healthcare operations
+Use data to enable investment and policy decisions
+9
+Vermont Health Information Exchange Goals:
+The Unified Health Data Space (UHDS) 
+10
+• The Unified Health Data Space (UHDS) is a collaborative initiative to streamline data services required to 
+improve healthcare in Vermont. 
+• Costs/usage of technology will be shared among participants to avoid duplicative efforts and purchases.
+• UHDS is an integral part of reform efforts supporting a broad spectrum of healthcare stakeholders/uses;
+ Point of Care (Providers)
+ Quality (ACO Provider Networks, Payers)
+ Policy Evaluation & Regulation (GMCB, Healthcare Reform, Blueprint)
+ Patients (Personal Health Responsibility)
+ Population Health (Health Equity, Public Health)
+• UHDS will provide those with authorized access to needed information to key stakeholders in the 
+healthcare arena including:
+• Clinical data
+• Mental Health and Substance Use Disorder data
+• Social Drivers of Health (SDoH) data
+• Public Health data
+Steering Committee – 18 Representatives 
+11
+VOTING
+ MEMBERS
+Will Dempsey - Chair
+(Agency of Human Services)
+Jimmy Mauro
+(BCBS of VT)
+Emma Harrington
+(VAHHS)
+Mary Kate Mohlman
+(Bi-State Primary Care)
+Jessie Hammond
+(Vermont Dept. of Health)
+Ken Gingras
+(Vermont Care Partners)
+Jodi Frei
+(OneCare Vermont)
+Helen Labun
+(Long Term Care Advocate)
+Victor Morrison
+(Person Advocate)
+John Saroyan
+(Practice Innovation Lead)
+NON –VOTING
+MEMBERS
+Steven Andrews
+(Green Mountain Care Board)
+Beth Anderson
+(VITL)
+Andrea DeLaBruere
+(Agency of Digital Services)
+Sandy Rousse
+(Central Vermont Home Health and Hospice)
+Rick Dooley
+(Independent Providers)
+Vacant
+(Privacy Expert)
+Eric Schultheis
+(Health Care Advocate)
+Song Nguyen
+(Health Equity Expert)
+
+HIE Steering Committee 
+According to 18 V.S.A. § 9351, the HIE SC is:
+1. Involved in the annual Health Information Exchange (HIE) Plan and 
+provide insights that AHS uses for scoping the next calendar years 
+Plan and setting priorities within that work.
+2. Charged with consulting on the administration of the HIE Plan during 
+each year and they are updated throughout the year by regular 
+meetings. 
+Our focus is on building a multidisciplinary, diverse team of experts to 
+ensure compliance, build engagement, and ensure representation within 
+our HIE. 
+12
+Stakeholder Engagement and Governance Process
+13
+Steering Committee 
+ Comprised of members representing different components of the health system
+ Routinely adding new roles 
+ Purpose: sets direction and reviews operational progress
+Data Governance Council
+ Host meetings open to the public
+ https://healthdata.vermont.gov/vermont-health-information-exchange-data-governance
+ Vision: Function as a collaborative oversight body to establish data governance policies that ensure the value and 
+use of data in Vermont’s Unified Health Data Space is maximized while also ensuring its quality, privacy, and 
+security. Ensure people are at the center of their health data and provide ongoing patient information education.
+ HIE Data Governance Council Charter 
+Annual Strategic Planning
+ Health Information Exchange (HIE) Strategic Planis required by 18 V.S.A. § 9351
+ HIE Steering Committee collectively assesses results of current year, set direction and priorities for future year(s)
+Green Mountain Care Board 
+ Per 18 V.S.A. § 9351 Green Mountain Care Board is required to approve/reject/modify the Strategic Plan annually
+Transparency is important, all materials can be found on our website at:
+ https://healthdata.vermont.gov/
