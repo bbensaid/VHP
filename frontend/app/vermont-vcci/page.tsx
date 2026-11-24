@@ -28,16 +28,17 @@ function SectionHeader({ label, title }: { label: string; title: string }) {
 // ─── Static content ───────────────────────────────────────────────────────────
 
 const VCCI_ELIGIBILITY = [
-  { criterion: "Vermont Medicaid primary insurer", detail: "Medicaid is the member's primary payer. Medicare–Medicaid dual eligibles are eligible if Medicaid is the primary for care management purposes." },
+  { criterion: "Vermont Medicaid primary insurer", detail: "Medicaid is the member's primary payer (DVHA eligibility criteria)." },
   { criterion: "Not in nursing home or assisted living", detail: "Members residing in nursing facilities or licensed assisted living facilities are excluded — they are served by separate long-term care case management programs." },
-  { criterion: "Not currently enrolled in another CMS-reimbursed case management", detail: "Prevents duplicate case management. Members in other waiver programs (e.g., CHOICES for Long-Term Care) are excluded." },
-  { criterion: "High risk / high cost based on claims analytics", detail: "DVHA runs monthly predictive analytics on all Medicaid claims. The top 5–15% by predicted cost are flagged. Top 5% (with CDPS ≥3.5) triggers Very High; CDPS ≥2.0 triggers High tier. Members can also qualify via referral without meeting the cost threshold if they have complex medical and social needs." },
+  { criterion: "Not currently enrolled in another CMS-reimbursed case management", detail: "Prevents duplicate case management (DVHA eligibility criteria)." },
+  { criterion: "High risk / high cost based on claims analytics", detail: "Identified by risk scores; historically the top 5% of eligible members, about 39% of Medicaid spending (DVHA, 2017)." },
+  { criterion: "Established medical home", detail: "DVHA referral criteria also ask that the member be medically, mentally and psychosocially stabilized and have an established medical home." },
   { criterion: "Impactable conditions and modifiable risk factors", detail: "VCCI targets members where care management intervention is expected to produce measurable improvement — uncontrolled chronic conditions, medication non-adherence, high ED utilization, and SDOH barriers that can be addressed through case management." },
 ];
 
 const VCCI_SERVICES = [
-  { title: "Telephonic Screening & Enrollment", desc: "Initial outreach call to assess member needs, explain VCCI services, and obtain voluntary enrollment. Includes SDOH screening across 6 domains (housing, food, SUD, mental health, IPV, transportation) using LOINC-coded tools (PHQ-9, AUDIT-C, HITS, AHC HRSN)." },
-  { title: "Dedicated Case Manager Assignment", desc: "Every enrolled member is assigned a single VCCI case manager — a registered nurse or licensed social worker with care coordination certification (CCM). Case manager serves as the primary point of contact across all care settings." },
+  { title: "Telephonic Screening & Enrollment", desc: "Initial outreach call to assess member needs, explain VCCI services, and obtain voluntary enrollment. using LOINC-coded tools (PHQ-9, AUDIT-C, HITS, AHC HRSN)." },
+  { title: "Dedicated Case Manager Assignment", desc: "Every enrolled member is assigned a single VCCI case manager — a licensed case manager. Case manager serves as the primary point of contact across all care settings." },
   { title: "Shared Care Plan Development", desc: "The VCCI case manager builds a comprehensive, individualized care plan collaboratively with the member, their PCP, and any specialists. The care plan addresses medical conditions, medications, SDOH needs, and personal health goals. Shared with all providers via secure messaging or care management platform." },
   { title: "Eco-Mapping", desc: "A structured visual mapping of the member's relationships, supports, and barriers — family, healthcare providers, community resources, and social connections. Used to identify gaps in the member's support network and prioritize intervention." },
   { title: "Care Team Conferences", desc: "Facilitated multi-disciplinary meetings bringing together the member's PCP, specialists, behavioral health providers, social workers, and community resources. VCCI case manager chairs the conference and coordinates follow-up." },
@@ -107,9 +108,9 @@ export default function VermontVCCIPage() {
         <SectionHeader label="Program Model" title="How VCCI Identifies and Enrolls Members" />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
           {[
-            { step: "1", title: "Identification", color: "bg-rose-600", desc: "DVHA runs monthly predictive analytics on all ~230,000 Vermont Medicaid members using claims data. Members in the top 5–15% by predicted annual cost are flagged. Referrals also come from PCPs, hospitals, emergency departments, Blueprint CHTs, social workers, and self-referral." },
-            { step: "2", title: "Scoring & Tier Assignment", color: "bg-orange-500", desc: "A multi-domain composite score (0–100) is calculated from claims + telephonic SDOH screening. Four domains: Utilization (35%), CDPS chronic burden (30%), SDOH vulnerability (20%), and Care Gaps (15%). Score + CDPS score + cost percentile determine the risk tier." },
-            { step: "3", title: "Enrollment & Case Management", color: "bg-emerald-600", desc: "High and Very High tier members are offered VCCI enrollment (voluntary). Upon consent, a dedicated case manager is assigned within 5 business days. Medium tier members are referred to Blueprint Community Health Teams instead of VCCI." },
+            { step: "1", title: "Identification", color: "bg-rose-600", desc: "DVHA uses claims-based risk scores to find Medicaid members at high risk and high cost — historically the top 5%, who account for about 39% of Medicaid spending (DVHA, House Health Care, 2017). Primary care practices, including Blueprint practices, can also refer members using DVHA's referral form." },
+            { step: "2", title: "Eligibility Check", color: "bg-orange-500", desc: "Medicaid must be the primary insurer; the member cannot already receive other CMS-reimbursed case management, live in a nursing home or assisted living, or be incarcerated; and the member should have an impactable condition and an established medical home." },
+            { step: "3", title: "Case Management", color: "bg-emerald-600", desc: "Licensed VCCI case managers provide holistic, intensive, short-term case management, including home visits, working with the member on a self-management plan (DVHA)." },
           ].map(s => (
             <div key={s.step} className="bg-white border border-slate-200 rounded-xl p-5">
               <div className={`w-8 h-8 rounded-full ${s.color} text-white font-black flex items-center justify-center mb-3`}>{s.step}</div>
@@ -140,9 +141,9 @@ export default function VermontVCCIPage() {
 
       {/* COMPOSITE RISK SCORE */}
       <div className="mb-12">
-        <SectionHeader label="Risk Stratification" title="VCCI Composite Risk Score (0–100)" />
+        <SectionHeader label="Risk Stratification" title="Illustrative Composite Risk Score (HTR teaching model)" />
         <div className="mb-4 p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-600">
-          The composite score combines four weighted domains. A higher score means more intense care management. The score is calculated monthly by DVHA analytics and refreshed when new screening data is received. Two additional eligibility gates — top 5% cost percentile (primary) and CDPS ≥2.0 (secondary) — must also be met for VCCI enrollment.
+          <strong>HTR teaching model — not DVHA&apos;s method.</strong> DVHA does not publish a scoring formula; it describes using claims-based risk scores to target high-risk, high-cost members. The four-domain composite below is HTR&apos;s illustration of how such a score can be built. In the model, the CDPS thresholds are teaching assumptions.
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           {VCCI_SCORING_DOMAINS.map(d => (

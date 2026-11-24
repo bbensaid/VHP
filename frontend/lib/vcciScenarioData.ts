@@ -487,7 +487,7 @@ const linda: VCCIPatient = {
       weight: 0.00,
       earnedPoints: 0,
       scoringCriteria: [
-        { criterion: 'Top 5% cost (VCCI primary eligibility gate)', points: 0, triggered: false, evidence: 'PMPY $31,200 — 88th percentile. Above VCCI threshold (typically top 10–15%) but not top 5%.' },
+        { criterion: 'Top 5% cost (VCCI primary eligibility gate)', points: 0, triggered: false, evidence: 'PMPY $31,200 — 88th percentile (synthetic). Below the historical top-5% VCCI target.' },
         { criterion: 'CDPS score ≥2.0 (VCCI secondary threshold)', points: 0, triggered: true, evidence: 'CDPS composite score: 2.94 — exceeds High threshold of 2.0. Qualifies via secondary pathway.' },
       ],
     },
