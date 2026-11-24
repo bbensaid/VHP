@@ -236,7 +236,7 @@ function PillarDetailCard({ pillar, suffix, score, onScoreChange, milestonesOpen
               <span className={`text-[9px] font-black shrink-0 mt-0.5 ${pillar.color}`}>▸</span>
               <div>
                 <span className="text-xs font-bold text-slate-700">{dim.label}</span>
-                <span className="text-[10px] text-slate-400 ml-1.5">{dim.benchmark}</span>
+                <span className="text-[10px] text-slate-400 ml-1.5">HTR suggested target: {dim.benchmark}</span>
               </div>
             </div>
           ))}
