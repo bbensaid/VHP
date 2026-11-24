@@ -73,28 +73,14 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
     return { totalCurrentLoss, totalProjectedLoss2028, totalInvestment, totalAnnualSavings, uvmmcSavingsPotential, roi };
   }, [activeRecs, projectionYear]);
 
-  const waterfallItems = [
-    { label: "Shared Services & GPO", savings: 26, color: "bg-emerald-500" },
-    { label: "VITL / Interoperability", savings: 18, color: "bg-blue-500" },
-    { label: "UVMMC Admin Reform", savings: 52, color: "bg-purple-500" },
-    { label: "Reference-Based Pricing", savings: 62, color: "bg-violet-500" },
-    { label: "Telehealth Expansion", savings: 8.4, color: "bg-sky-500" },
-    { label: "Hospital Restructuring (4 sites)", savings: 14, color: "bg-rose-500" },
-    { label: "EMS Regionalization", savings: 6.9, color: "bg-orange-500" },
-    { label: "Mental Health COE Network", savings: 10.8, color: "bg-indigo-500" },
-  ].filter((item) => {
-    // Show only items from selected recommendations or show all if none selected
-    return activeRecs.length === 0 || true;
-  });
 
-  const maxSavings = Math.max(...waterfallItems.map((i) => i.savings));
 
   return (
     <div className="space-y-6 pb-72 md:pb-64">
       {/* View Toggle */}
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <div className="flex gap-2 flex-wrap">
-          {(["system", "hospital", "waterfall"] as const).map((v) => (
+          {(["system", "hospital"] as const).map((v) => (
             <TabBtn key={v} active={view === v} onClick={() => setView(v)}>
               {v === "system" ? "📊 System Overview" : v === "hospital" ? "🏥 Hospital-by-Hospital" : "💧 Savings Waterfall"}
             </TabBtn>
@@ -139,16 +125,14 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
           <span className="flex items-center gap-3 flex-wrap text-[11px]">
             <span className="font-black uppercase tracking-widest text-blue-700">Financial Summary</span>
             <span className="text-red-600">Loss ${systemTotals.totalCurrentLoss.toFixed(0)}M</span>
-            <span className="text-emerald-700">Savings ${systemTotals.totalAnnualSavings.toFixed(0)}M</span>
-            <span className={systemTotals.roi > 0 ? "text-emerald-700" : "text-rose-600"}>ROI {systemTotals.roi.toFixed(0)}%</span>
           </span>
         }
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <MetricCard value={`$${systemTotals.totalCurrentLoss.toFixed(0)}M`} label="Current Annual Loss" sublabel="All 14 hospitals" color="text-red-600" />
           <MetricCard value={`$${systemTotals.totalProjectedLoss2028.toFixed(0)}M`} label="Projected 2028 Loss" sublabel={`Baseline at ${assumedInflation}% growth`} color="text-red-700" />
-          <MetricCard value={`$${systemTotals.totalAnnualSavings.toFixed(0)}M`} label="Potential Annual Savings" sublabel={`${selectedRecs.size > 0 ? selectedRecs.size + " selected recs" : "All recommendations"}`} color="text-emerald-600" />
-          <MetricCard value={`${systemTotals.roi.toFixed(0)}%`} label={`${projectionYear}-Year ROI`} sublabel={`$${systemTotals.totalInvestment.toFixed(0)}M investment`} color={systemTotals.roi > 0 ? "text-emerald-600" : "text-rose-600"} />
+          <MetricCard value=">$400M" label="Direct savings, 5 years" sublabel="Oliver Wyman estimate, all recommendations" color="text-emerald-600" />
+          <MetricCard value="9 of 14" label="Hospitals in loss, 2023" sublabel="Oliver Wyman" color="text-rose-600" />
         </div>
       </StickyOutputPanel>
 
@@ -263,31 +247,6 @@ export function FinancialModeling({ selectedRecs }: { selectedRecs: Set<string> 
       )}
 
       {/* Savings Waterfall */}
-      {view === "waterfall" && (
-        <div>
-          <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Illustrative Savings by Recommendation Category ($M/yr) — scenario values, not published estimates</div>
-          <div className="space-y-3">
-            {waterfallItems.sort((a, b) => b.savings - a.savings).map((item) => (
-              <div key={item.label}>
-                <div className="flex justify-between mb-1">
-                  <span className="text-xs font-bold text-slate-700">{item.label}</span>
-                  <span className="text-xs font-black text-emerald-700">${item.savings}M/yr</span>
-                </div>
-                <div className="h-4 bg-slate-100 rounded-full overflow-hidden">
-                  <div className={`h-full rounded-full ${item.color} transition-all duration-700`} style={{ width: `${(item.savings / maxSavings) * 100}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-4 p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-black text-emerald-800">Total System Savings Potential</span>
-              <span className="text-2xl font-black text-emerald-700">${waterfallItems.reduce((s, i) => s + i.savings, 0).toFixed(0)}M/yr</span>
-            </div>
-            <p className="text-xs text-emerald-600 mt-1">Illustrative scenario values for exploring trade-offs — not estimates from Oliver Wyman, the GMCB or AHS, and not all simultaneously achievable. Oliver Wyman&apos;s own figure is more than $400M in direct savings over five years, independent of payment-reform savings.</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

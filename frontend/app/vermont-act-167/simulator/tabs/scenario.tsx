@@ -72,8 +72,6 @@ export function ScenarioBuilder({ selected, onToggle, onSelectAll, onClearAll, o
           <span className="flex items-center gap-3 flex-wrap">
             <span className="text-xs font-black uppercase tracking-widest text-blue-700">Scenario Impact</span>
             <span className="text-slate-600">{selected.size} selected</span>
-            <span className="text-emerald-700 font-black">${totals.totalSavings}M savings</span>
-            <span className="text-amber-700 font-black">${totals.totalInvestment}M invest</span>
           </span>
         }
       >
@@ -82,16 +80,7 @@ export function ScenarioBuilder({ selected, onToggle, onSelectAll, onClearAll, o
             <div className="text-xs font-black uppercase tracking-widest text-blue-700 mb-1">Scenario Impact Summary</div>
             <p className="text-sm text-slate-600">{selected.size} recommendation{selected.size !== 1 ? "s" : ""} selected</p>
           </div>
-          <div className="grid grid-cols-2 gap-3 text-right">
-            <div>
-              <div className="text-xl font-black text-emerald-700">${totals.totalSavings}M</div>
-              <div className="text-[10px] text-slate-500 uppercase tracking-wide">Est. Annual Savings</div>
-            </div>
-            <div>
-              <div className="text-xl font-black text-amber-700">${totals.totalInvestment}M</div>
-              <div className="text-[10px] text-slate-500 uppercase tracking-wide">Total Investment</div>
-            </div>
-          </div>
+          <p className="text-[11px] text-slate-500 max-w-xs text-right">No dollar impact is shown: no published source estimates costs or savings per recommendation.</p>
         </div>
         <div className="flex gap-4 sm:gap-6 flex-wrap justify-center">
           {PILLARS.map(({ key, label, color }) => (
