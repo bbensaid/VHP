@@ -1,0 +1,71 @@
+{
+ "tag": "pa-batch1",
+ "note": "CMS updated PY2024 fact sheet (Sep 29 2025): $2.5B net, $245 net/$651 gross per capita; HRSA RN projection; unsourced titles",
+ "only": [
+  "value-based-care-aco-shared-savings-2025",
+  "rural-nurse-retention-economic-model-2026",
+  "rural-health-venture-capital-investment-surge-2026"
+ ],
+ "pairs": [
+  [
+   "a record $2.48 billion in Medicare savings, $637 per beneficiary,",
+   "a record $2.5 billion in Medicare savings ($245 net and $651 gross per beneficiary),"
+  ],
+  [
+   "a record $2.48B saved, $637/beneficiary,",
+   "a record $2.5B saved ($245 net, $651 gross per beneficiary),"
+  ],
+  [
+   "{\"Metric\":\"Total savings\",\"Value\":\"$2.48B (record; 8th straight year)\"},{\"Metric\":\"Per beneficiary\",\"Value\":\"$637 saved\"}",
+   "{\"Metric\":\"Total savings\",\"Value\":\"$2.5B net (record; 8th straight year)\"},{\"Metric\":\"Per beneficiary\",\"Value\":\"$245 net; $651 gross\"}"
+  ],
+  [
+   "saved a record $2.48 billion \u2014 its eighth straight year of savings \u2014 at $637 per beneficiary,",
+   "saved a record $2.5 billion \u2014 its eighth straight year of savings \u2014 at $245 per beneficiary net ($651 gross),"
+  ],
+  [
+   "the program saved Medicare $2.48 billion relative to benchmarks",
+   "the program saved Medicare $2.5 billion relative to benchmarks"
+  ],
+  [
+   "Per-beneficiary savings reached $637, and even after paying out shared savings to the ACOs, the program returned roughly $240 per beneficiary net to Medicare",
+   "Gross savings reached $651 per beneficiary, and after paying out shared savings to the ACOs, the program returned $245 per beneficiary net to Medicare (CMS, updated PY2024 results)"
+  ],
+  [
+   "The $1.2 Trillion Rural Nursing Shortage: A Workforce Economics Analysis and the Three Retention Strategies With the Best ROI",
+   "The Rural Nursing Shortage: A Workforce Economics Analysis and the Three Retention Strategies With the Best ROI"
+  ],
+  [
+   "The national nursing supply is constrained \u2014 a shortfall of nearly 300,000 nurses,",
+   "The national nursing supply is constrained \u2014 HRSA projects a 10% registered-nurse shortage in 2027, deeper in nonmetro areas,"
+  ],
+  [
+   "the ~300,000 national shortfall and rural recruiting disadvantage",
+   "the projected national RN shortage (HRSA) and rural recruiting disadvantage"
+  ],
+  [
+   "~300,000 shortfall + rural recruiting disadvantage = unreliable",
+   "HRSA-projected RN shortage + rural recruiting disadvantage = unreliable"
+  ],
+  [
+   "The Rural Health Investment Surge: Where $4.8 Billion in Health Tech Capital Is Flowing in 2026 and What It Means for System Leaders",
+   "The Rural Health Investment Gap: Where Health Tech Capital Is Flowing and What It Means for System Leaders"
+  ],
+  [
+   "digital health startups raised about $10.5 billion in 2024",
+   "digital health startups raised about $10.1 billion in 2024"
+  ],
+  [
+   "ACOs in the higher-risk Level E and Enhanced tracks delivered more than two-thirds of all savings in 2024, generating $5.4 billion of the $6.6 billion total",
+   "ACOs in the higher-risk Level E and Enhanced tracks delivered most of the savings in 2024"
+  ],
+  [
+   "{\"Metric\":\"Two-sided risk\",\"Value\":\"Level E/Enhanced = $5.4B of $6.6B total savings\"}",
+   "{\"Metric\":\"Two-sided risk\",\"Value\":\"Level E/Enhanced ACOs produced most of the savings\"}"
+  ],
+  [
+   "two-sided (downside) risk is the engine, generating $5.4B of $6.6B in savings",
+   "two-sided (downside) risk is the engine, producing most of the savings"
+  ]
+ ]
+}
