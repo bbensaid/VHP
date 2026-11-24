@@ -55,6 +55,8 @@ const ALLOWED = {
     ["app/equity/page.tsx",                      "page metadata: 'not a sixth pillar'"],
     ["app/california-calaim/page.tsx",           "CalAIM's own six pillars — a different framework"],
     ["lib/data/changelog.ts",                    "historical changelog entry, accurate as written"],
+    ["scripts/fix-six-pillar-academy.mjs",       "one-time 2026-10-04 migration that REMOVED six-pillar prose; quotes the old text it replaced"],
+    ["sanity/schemaTypes/investmentDeal.ts",     "comment recording that the retired six-pillar list was removed"],
     ["content/course_five_pillars.json",         "quiz distractors that teach the distinction"],
     ["content/_build_five_pillars_course.py",    "generator for the above"],
     ["content/SPECIMEN_lesson_01.json",          "lesson content teaching the distinction"],

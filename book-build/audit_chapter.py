@@ -53,6 +53,10 @@ def prose(block):
     for p in block.split('\n'):
         if re.match(r'^\s*[-=+|]{4,}', p) or set(p.strip()) <= set('-=+| '):
             continue                      # pandoc table rules, not prose
+        if p.lstrip().startswith('!['):
+            continue                      # image placeholder, not prose
+        if len(re.findall(r'\S {3,}\S', p)) >= 3:
+            continue                      # space-aligned table row, not prose
         p = re.sub(r'[*|]', '', p)
         for x in re.split(r'(?<=[.!?])\s+', p):
             x = x.strip()

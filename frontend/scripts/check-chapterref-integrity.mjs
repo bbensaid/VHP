@@ -18,6 +18,11 @@ import { readFileSync } from "fs";
 const ALLOWED_NON_PILLAR_COURSES = new Set([
   "hie-health-reform-onboarding", // ch 16 — AHS Restructuring, spans all pillars
   "welcome-htr-framework",        // ch 1  — Five-Pillar Framework overview
+  // Roadmap 2.1 courses (author-approved build, 2026-11-23). Each carries a
+  // catalogue pillar but cites the cross-cutting chapter that is its subject.
+  "transformation-leadership",           // ch 12 — Knowledge Transfer and Implementation
+  "political-sustainability-of-reform",  // ch 14 — Political Sustainability
+  "transformation-portfolio-management", // ch 15 — Portfolio Management (PMI)
 ]);
 
 // Same exception, for Sanity documents. A doc lands here when BOTH its pillar

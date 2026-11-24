@@ -15,9 +15,13 @@ interface TickerContextType {
 const TickerContext = createContext<TickerContextType | undefined>(undefined);
 
 const FALLBACK_HEADLINES: Headline[] = [
-  { text: "INSOLVENCY ALERT: NVRH projects $75M Deficit", url: "/dashboard/vermont/nvrh" },
-  { text: "MARKET MOVER: Medicare Advantage Denials Rise 12%", url: "/economics/market" },
-  { text: "STATE PROFILE: Vermont Rated CRITICAL (42/100)", url: "/dashboard/vermont" },
+  // Shown only until /api/ticker answers (or if it fails). Every item must be a
+  // sourced fact that the linked page states — never a placeholder headline.
+  // (Replaced 2026-11-23: the old fallbacks were invented — an "NVRH $75M deficit",
+  // an unsourced "MA denials +12%", and the deleted 42/100 performance index.)
+  { text: "RHT REVIEW: CMS awards $10B in Year 2 Rural Health Transformation funding (Nov 9, 2026)", url: "/rht-review" },
+  { text: "VERMONT: GMCB FY2027 hospital budgets cut commercial rates 2.9% statewide", url: "/vermont-act-68" },
+  { text: "THE BOOK: Health Transformation Review — read it online", url: "/book" },
 ];
 
 export const TickerProvider = ({ children }: { children: React.ReactNode }) => {

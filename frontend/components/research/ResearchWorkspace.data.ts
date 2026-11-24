@@ -262,7 +262,7 @@ export const SAMPLE_SCENARIOS: Scenario[] = [
   {
     id: "sc-3",
     name: "ACO REACH Shared Savings Projection",
-    description: "Five-year shared savings trajectory modeling for ACO REACH participation under standard and high-risk tracks.",
+    description: "Shared savings modeling for ACO REACH under its Professional and Global risk options — REACH ends after performance year 2026; CMS's LEAD model follows from January 2027.",
     category: "APM Modeling",
     tags: ["aco-reach", "shared-savings", "cms", "apm"],
     status: "Draft",
@@ -271,51 +271,55 @@ export const SAMPLE_SCENARIOS: Scenario[] = [
   },
 ];
 
+// Example notes shown in a new workspace. They are illustrations of how to use the
+// tool, so they must not assert facts that are not sourced in the note itself.
+// (Rewritten 2026-11-23: earlier examples claimed an unsourced "confirmed with GMCB staff"
+// timeline, an unverified FMAP rate, and a misdated ICER report.)
 export const SAMPLE_NOTES: ResearchNote[] = [
   {
     id: "note-1",
-    title: "HbA1c reduction may not reach minimally important difference threshold",
+    title: "Separate statistical from clinical significance",
     category: "Limitation",
     priority: "High",
-    content: "A 0.5% reduction in HbA1c, while statistically significant in the trial data, may fall below the 0.75% threshold commonly cited as the minimally important clinical difference. This should be disclosed in the limitations section.",
-    tags: ["hba1c", "mid", "diabetes"],
-    createdAt: "2025-02-01T10:00:00Z",
+    content: "A result can be statistically significant and still smaller than the minimal clinically important difference for the outcome. State the MCID you are using, cite where it comes from, and say whether the effect clears it.",
+    tags: ["mcid", "limitations", "methods"],
+    createdAt: "2026-11-01T10:00:00Z",
   },
   {
     id: "note-2",
-    title: "Check ICER 2024 update on GLP-1 pricing",
+    title: "Use ICER's December 2025 obesity report for GLP-1 inputs",
     category: "Todo",
     priority: "Medium",
-    content: "ICER released an updated evidence report on GLP-1 receptor agonists in late 2024. Verify if new price benchmarks change our ICER calculations for the obesity intervention model.",
+    content: "ICER's final obesity report (Dec 16, 2025) estimates $66,355/QALY for injectable semaglutide and $57,779/QALY for tirzepatide versus lifestyle modification, at SSR Health net prices of $6,830 and $7,973 a year. Check our price inputs against these before reporting. Source: icer.org/assessment/obesity-2025",
     tags: ["glp-1", "icer", "pricing"],
-    createdAt: "2025-02-05T15:45:00Z",
+    createdAt: "2026-11-05T15:45:00Z",
   },
   {
     id: "note-3",
-    title: "Vermont APCD data access requires DUA",
+    title: "Plan for VHCURES data access and claims run-out",
     category: "Data Finding",
     priority: "High",
-    content: "Confirmed with GMCB staff: access to Vermont All-Payer Claims Database (APCD) requires execution of a formal Data Use Agreement. Processing time is typically 6–8 weeks. Budget accordingly for project timeline.",
-    tags: ["apcd", "dua", "vermont", "data-access"],
-    createdAt: "2025-02-08T09:20:00Z",
+    content: "VHCURES (the GMCB's all-payer claims database) is collected quarterly with roughly a six-month claims run-out, so the most recent quarters are incomplete. Self-funded ERISA plans report only voluntarily since Gobeille v. Liberty Mutual (2016). Check the GMCB's current data-release requirements before fixing a timeline.",
+    tags: ["vhcures", "apcd", "vermont", "data-access"],
+    createdAt: "2026-11-08T09:20:00Z",
   },
   {
     id: "note-4",
-    title: "Monte Carlo sample size: 1,000 iterations sufficient for PSA",
+    title: "Test PSA stability before choosing an iteration count",
     category: "Method Note",
     priority: "Low",
-    content: "Internal validation confirmed that 1,000 Monte Carlo iterations produces stable PSA results for our CEA model (SE < 2% across all ICER estimates). No need to increase to 10,000 for this analysis.",
+    content: "Run the probabilistic sensitivity analysis at 1,000 and 10,000 iterations and compare the mean ICER and the probability cost-effective at your threshold. Report the count you used and the check you ran.",
     tags: ["monte-carlo", "psa", "cea", "methods"],
-    createdAt: "2025-02-12T13:30:00Z",
+    createdAt: "2026-11-12T13:30:00Z",
   },
   {
     id: "note-5",
-    title: "CMS confirmed 2025 FMAP rate at 52.47% for Vermont",
+    title: "Take the FMAP from the Federal Register for the modeled year",
     category: "Data Finding",
     priority: "Medium",
-    content: "Per CMS Federal Register publication, Vermont's Federal Medical Assistance Percentage (FMAP) for FY2025 is confirmed at 52.47%. Use this rate for all Medicaid financial modeling in the current project cycle.",
-    tags: ["fmap", "vermont", "cms", "medicaid"],
-    createdAt: "2025-02-18T11:00:00Z",
+    content: "Vermont's Federal Medical Assistance Percentage changes every federal fiscal year. Use the rate HHS publishes in the Federal Register for the year being modeled, and note it in the assumptions table.",
+    tags: ["fmap", "vermont", "medicaid", "assumptions"],
+    createdAt: "2026-11-15T11:00:00Z",
   },
 ];
 
