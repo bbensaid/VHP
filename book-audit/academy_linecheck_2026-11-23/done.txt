@@ -22,3 +22,8 @@ academyModule-five-pillars-ai-governance-clinical-decision-support
 academyModule-five-pillars-voluntary-vs-mandatory-architecture
 academyModule-vbc-clinical-m5
 interop-vermont-vitl
+mips-merit-based-incentive
+medicaid-eligibility-magi
+interop-ehr-market
+vbcfm-shared-savings-lab
+ehr-business-case-roi
