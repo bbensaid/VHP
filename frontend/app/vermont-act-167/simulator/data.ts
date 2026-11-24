@@ -1068,7 +1068,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
       },
       equity: {
         score: 98, direction: "positive",
-        headline: "HIGHEST EQUITY IMPACT: Transportation is the single largest determinant of rural health access",
+        headline: "HIGH EQUITY IMPACT: transportation barriers keep rural patients from care they need",
         actions: [
           "Priority communities: Newport, Townshend (Grace Cottage), and Randolph (Gifford)",
           "Elder-specific transport: 26–30% of at-risk HSA populations are 65+ (VDH 2025)",

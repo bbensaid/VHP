@@ -5,7 +5,7 @@ import { ADVISORY_SERVICES, ADVISORY_STATS, CLIENT_SEGMENTS, PILLAR_STYLES } fro
 export const metadata = {
   title: "HTR Advisory | Healthcare Strategy Consulting",
   description:
-    "World-class healthcare advisory services across all 5 pillars — Policy, Technology, Economics, Clinical, and Operations — each held to the Equity Imperative. Strategic consulting, IT project advisory, financial auditing, regulatory counsel, and executive training.",
+    "Healthcare advisory services across all 5 pillars — Policy, Technology, Economics, Clinical, and Operations — each held to the Equity Imperative. Strategic consulting, IT project advisory, financial auditing, regulatory counsel, and executive training.",
 };
 
 export default function AdvisoryPage() {

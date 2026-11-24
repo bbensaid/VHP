@@ -1,0 +1,13 @@
+{
+ "tag": "pages-da-count",
+ "note": "DMH: 10 DAs (mental health) + 2 SSAs; lesson elsewhere says 10 -> make the one sentence consistent",
+ "only": [
+  "vermont-designated-agencies"
+ ],
+ "pairs": [
+  [
+   "Vermont's 11 Designated Agencies (DAs) and specialized services agencies are non-profit regional organizations",
+   "Vermont's 10 Designated Agencies (DAs) and two Specialized Service Agencies are non-profit regional organizations"
+  ]
+ ]
+}

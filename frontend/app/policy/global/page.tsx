@@ -161,7 +161,7 @@ function GlobalPolicyBody() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             { label: "US Leads", color: "bg-white border-emerald-200", icon: "✅", items: ["Specialty care quality and innovation output", "Cancer 5-year survival rates (breast, prostate, colon)", "Medical device and biopharma R&D investment", "Rare disease treatment availability + FDA innovation pathway"] },
-            { label: "US Lags", color: "bg-white border-rose-200", icon: "⚠️", items: ["Life expectancy (78.4 years in 2023 — below peer nations)", "Maternal and infant mortality rates", "Administrative cost efficiency (34% vs. 17% in Canada)", "Coverage universality (8M+ remain uninsured)"] },
+            { label: "US Lags", color: "bg-white border-rose-200", icon: "⚠️", items: ["Life expectancy (78.4 years in 2023 — below peer nations)", "Maternal and infant mortality rates", "Administrative cost efficiency (34% vs. 17% in Canada; Himmelstein et al., Annals of Internal Medicine, 2020)", "Coverage universality (8.0% uninsured in 2024, about 27 million people; Census)"] },
             { label: "Reform Levers", color: "bg-white border-blue-200", icon: "🔧", items: ["Universal coverage: public option or Medicaid expansion in remaining 10 states", "Drug negotiation: IRA precedent → expand to all Medicare + Medicaid drugs", "Admin simplification: single claim form, uniform prior auth standards", "Primary care investment: redirect 2–3% specialty spend to primary + prevention"] },
           ].map((col) => (
             <div key={col.label} className={`rounded-xl p-5 border ${col.color}`}>

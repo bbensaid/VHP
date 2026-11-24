@@ -154,7 +154,7 @@ function PrecisionMedicineBody() {
               "Metabolomics: disease-specific metabolite signatures for early detection",
               "Epigenomics: DNA methylation profiling — tissue of origin, cancer early detection",
               "Transcriptomics (RNA-seq): Oncotype DX, Mammaprint — breast recurrence prediction",
-              "Spatial transcriptomics: 10x Visium — single-cell gene expression in tissue context",
+              "Spatial transcriptomics: 10x Visium — spatially resolved gene expression in tissue sections (spot-level; Visium HD approaches single-cell resolution)",
               "Multi-omic integration platforms: TCGA, GDC, ICGC — federated genomic analysis",
             ],
           },

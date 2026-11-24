@@ -3,7 +3,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
   title: "Vermont SASH Program | HTR States",
-  description: "Support and Services at Home (SASH) — Vermont's nationally recognized, housing-based care coordination program for Medicare seniors and people with disabilities. Operates in 200+ affordable housing communities, serving 13,000+ Vermonters.",
+  description: "Support and Services at Home (SASH) — Vermont's housing-based care coordination program for Medicare seniors and people with disabilities. About 5,000 participants in every Vermont county (SASH, 2025).",
 };
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -51,7 +51,7 @@ export default function VermontSASHPage() {
         <div className="flex flex-wrap items-center gap-3 mb-4">
           <span className="bg-teal-100 text-teal-700 border border-teal-200 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded">State Program · Vermont</span>
           <span className="bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">Est. 2011</span>
-          <span className="bg-teal-100 text-teal-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">Nationally Recognized</span>
+          <span className="bg-teal-100 text-teal-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">ASPE-evaluated</span>
           <span className="bg-teal-100 text-teal-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded">Free to Participants</span>
         </div>
         <h1 className="ty-h1 font-black text-slate-900 mb-4 leading-tight">
@@ -59,7 +59,7 @@ export default function VermontSASHPage() {
           <span className="block text-xl font-bold text-slate-500 mt-1">Support and Services at Home</span>
         </h1>
         <p className="ty-hero text-slate-600 leading-relaxed max-w-3xl mb-6">
-          A nationally recognized, team-based care coordination program operating in 200+ affordable housing communities across all 14 Vermont counties. SASH provides free health coordination, wellness coaching, and SDOH navigation to 13,000+ older Vermonters and people with disabilities on Medicare — with documented reductions in hospitalizations, ED visits, and Medicare spending.
+          A team-based care coordination program based in affordable housing communities, with participants in all 14 Vermont counties. SASH provides free health coordination, wellness coaching, and SDOH navigation to older Vermonters and people with disabilities on Medicare. ASPE's evaluation (2010–2016) found slower growth in Medicare spending for participants in the earliest, well-established panels.
         </p>
         <div className="flex flex-wrap gap-3">
           <ExternalLink href="https://sashvt.org/">SASH Vermont Website</ExternalLink>
@@ -72,10 +72,10 @@ export default function VermontSASHPage() {
       {/* STATS */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
         {[
-          { value: "200+", label: "Housing Communities", sub: "All 14 Vermont counties" },
-          { value: "13,000+", label: "Vermonters Served", sub: "Since 2011 launch" },
-          { value: "70+", label: "Partner Organizations", sub: "Housing, health, & community" },
-          { value: "2011", label: "Year Launched", sub: "Under Blueprint infrastructure" },
+          { value: "~5,000", label: "Participants", sub: "SASH testimony to the Legislature, Jan 2025" },
+          { value: "14", label: "Counties", sub: "Participants in every Vermont county" },
+          { value: "70–100", label: "Panel Size", sub: "Per coordinator + wellness nurse (RHIhub)" },
+          { value: "2009", label: "Pilot Began", sub: "Expanded statewide with the Blueprint" },
         ].map(s => (
           <div key={s.label} className="bg-white border border-slate-200 rounded-xl p-5 text-center">
             <div className="text-2xl font-black text-teal-700 mb-1">{s.value}</div>

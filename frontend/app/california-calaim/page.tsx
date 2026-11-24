@@ -150,7 +150,7 @@ export default function CaliforniaCalAIMPage() {
               with diabetes could get insulin but not a meal delivery program.
             </p>
             <p className="ty-body text-slate-600 leading-relaxed">
-              CalAIM breaks that wall. For the first time in California's Medicaid history, managed
+              CalAIM breaks that wall. Managed
               care plans can now pay for <strong>non-medical services</strong> — housing, nutrition,
               transportation, environmental modifications, and more — as covered Medi-Cal benefits
               for the highest-need enrollees.
@@ -279,42 +279,42 @@ export default function CaliforniaCalAIMPage() {
               label: "People Experiencing Homelessness",
               detail: "California has the largest unhoused population in the U.S. — over 180,000. CalAIM's ECM program provides dedicated care managers who meet people where they are: on the street, in shelters, in motels. Community Supports fund the housing deposits and navigation services that ECM care managers cannot provide alone.",
               stat: "180K+",
-              statLabel: "Californians unhoused",
+              statLabel: "Californians unhoused (HUD 2024 count: 187,084)",
             },
             {
               color: "bg-teal-700",
               label: "People with Serious Mental Illness or SUD",
               detail: "California's behavioral health crisis intersects directly with homelessness, incarceration, and emergency department overuse. CalAIM's behavioral health integration reforms create financial incentives for counties and managed care plans to work together on the highest-acuity cases — rather than passing them back and forth.",
-              stat: "45%",
-              statLabel: "Of Medi-Cal's top-5% cost group have SMI",
+              stat: "SMI · SUD",
+              statLabel: "ECM priority populations (DHCS)",
             },
             {
               color: "bg-teal-600",
               label: "Justice-Involved Individuals",
               detail: "In the first two weeks after prison release, people face 12.7 times the death risk of other residents, with drug overdose the leading cause (Binswanger et al., NEJM 2007). California's groundbreaking 90-day pre-release Medi-Cal benefit — the first CMS ever approved for any state — addresses this deadly gap with medication management, behavioral health, and care coordination starting before the cell door opens.",
               stat: "42K+",
-              statLabel: "Identified eligible, Oct 2024–Nov 2025",
+              statLabel: "Identified eligible, Oct 2024–Nov 2025 (DHCS)",
             },
             {
               color: "bg-slate-600",
               label: "Children and Youth in Foster Care",
               detail: "Children involved in the child welfare system have dramatically higher rates of trauma, mental health conditions, and unmet health needs. CalAIM designates foster youth as a priority ECM population and creates new pathways for coordinated care across the medical, behavioral health, and child welfare systems.",
               stat: "38K+",
-              statLabel: "Children in CA foster care (Sept 2024)",
+              statLabel: "Children in CA foster care, Sept 30, 2024 (CWLA)",
             },
             {
               color: "bg-teal-800",
               label: "High-Risk Pregnant Women & Infants",
               detail: "California's maternal mortality crisis — and stark racial disparities in birth outcomes — drove CalAIM to designate pregnant women at risk for preterm birth, pregnancy complications, or postpartum mental health conditions as a priority ECM population. ECM wraps intensive support around the highest-risk pregnancies.",
               stat: "3.6x",
-              statLabel: "Maternal mortality for Black women in CA vs. white women",
+              statLabel: "Pregnancy-related mortality, Black vs. white, CA 2019–21 (CDPH)",
             },
             {
               color: "bg-slate-700",
               label: "Adults with Complex Medical Conditions",
-              detail: "The top 5% of Medi-Cal members account for approximately 50% of costs — driven by poorly managed chronic conditions like diabetes, heart failure, COPD, and renal disease. ECM's population health stratification identifies these individuals early, assigns care managers, and prevents the preventable hospitalizations that drive costs.",
+              detail: "DHCS attributes over half of Medi-Cal spending to the 5% of members with the highest-cost needs — driven by poorly managed chronic conditions like diabetes, heart failure, COPD, and renal disease. ECM's population health stratification identifies these individuals early, assigns care managers, and prevents the preventable hospitalizations that drive costs.",
               stat: "5%",
-              statLabel: "Of members drive ~50% of costs",
+              statLabel: "Of members drive about half of costs (DHCS)",
             },
           ].map((p) => (
             <div key={p.label} className="flex gap-4 bg-white border border-slate-200 rounded-xl p-5">
@@ -584,7 +584,7 @@ export default function CaliforniaCalAIMPage() {
               <div className="text-xs font-black uppercase tracking-widest text-amber-400 mb-2">The Implementation Gap</div>
               <p className="text-sm text-slate-300 leading-relaxed">
                 CalAIM's greatest risk is the chasm between policy ambition and operational reality.
-                California designed a world-class model and then asked a workforce that didn't exist,
+                California designed an ambitious model and then asked a workforce that didn't exist,
                 a data infrastructure that wasn't built, and county-plan relationships that were never
                 designed to collaborate to execute it — simultaneously, at scale, on a political timeline.
                 The implementation gap is real and consequential.

@@ -62,7 +62,7 @@ const SERVICES = [
     href: '/advisory/capability-assessment',
     icon: '📊',
     label: 'Capability Assessment',
-    desc: 'Structured organizational readiness evaluation across 7 dimensions: leadership, data, technology, finance, clinical quality, workforce, and equity. Benchmarked against national cohorts.',
+    desc: 'Structured organizational readiness evaluation across 7 dimensions: leadership, data, technology, finance, clinical quality, workforce, and equity.',
     pillars: ['Economics', 'Technology', 'Clinical'],
     accentBg: 'bg-amber-50',
     accentBorder: 'border-amber-200',

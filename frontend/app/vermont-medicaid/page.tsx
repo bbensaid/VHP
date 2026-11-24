@@ -261,7 +261,7 @@ export default function VermontMedicaidPage() {
             tagline="Standard coverage for working-age adults"
             who="Adults age 19–64 without Medicare. Covers doctor visits, hospital care, prescriptions, mental health, substance use treatment, dental, and vision."
             incomePct="≤ 138%"
-            incomeNote="~$20,780/yr for a single adult (2026 estimate)"
+            incomeNote="~$22,025/yr for a single adult (138% of the 2026 HHS poverty guideline, $15,960)"
             color="border-rose-200 hover:border-rose-400"
             badge="bg-rose-100 text-rose-700"
           />
@@ -288,7 +288,7 @@ export default function VermontMedicaidPage() {
             tagline="Long-term services & supports (LTSS)"
             who="Adults 65+ or physically disabled adults who need nursing-facility-level care but wish to remain at home or in the community. Covers personal care aides, adult day, and residential care."
             incomePct="Functional"
-            incomeNote="Income limit ~300% SSI ($2,742/mo individual, 2026)"
+            incomeNote="Income limit ~300% SSI ($2,982/mo individual; 2026 SSI rate $994)"
             color="border-teal-200 hover:border-teal-400"
             badge="bg-teal-100 text-teal-700"
           />
@@ -297,7 +297,7 @@ export default function VermontMedicaidPage() {
             tagline="Aged, blind & disabled adults"
             who="Vermont residents who are age 65+, blind, or have a qualifying disability and receive SSI or have low income/assets. Covers all standard Medicaid benefits plus long-term care."
             incomePct="$1,375/mo"
-            incomeNote="2026 protected income level for one person outside Chittenden County; $1,483/mo in Chittenden (VT Law Help)"
+            incomeNote="2026 monthly income limit for one person outside Chittenden County; $1,483/mo in Chittenden (VT Law Help)"
             color="border-amber-200 hover:border-amber-400"
             badge="bg-amber-100 text-amber-700"
           />
@@ -458,7 +458,7 @@ export default function VermontMedicaidPage() {
           {[
             { href: "/vermont-vcci",                label: "Vermont VCCI",                  desc: "Chronic Care Initiative — intensive case management for Vermont's highest-cost Medicaid members. Top 5% of members = ~39% of Medicaid spend.", color: "border-rose-200 hover:bg-rose-50 hover:border-rose-400", text: "text-rose-700" },
             { href: "/vermont-blueprint",           label: "Blueprint for Health",           desc: "Primary care backbone for Vermont Medicaid — 128 PCMH practices, Community Health Teams, and the Mental Health Integration initiative.", color: "border-emerald-200 hover:bg-emerald-50 hover:border-emerald-400", text: "text-emerald-700" },
-            { href: "/vermont-sash",                label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors on Medicare. Reduces Medicaid and Medicare spend.", color: "border-teal-200 hover:bg-teal-50 hover:border-teal-400", text: "text-teal-700" },
+            { href: "/vermont-sash",                label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for about 5,000 Vermont seniors on Medicare.", color: "border-teal-200 hover:bg-teal-50 hover:border-teal-400", text: "text-teal-700" },
             { href: "/vermont-designated-agencies", label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional DAs provide all community mental health, SUD treatment, and developmental disability services under Medicaid contract.", color: "border-violet-200 hover:bg-violet-50 hover:border-violet-400", text: "text-violet-700" },
             { href: "/vermont-sdoh",                label: "SDOH & Social Services",          desc: "Vermont's social determinants infrastructure — 2-1-1, Community Action Agencies, food shelves, housing programs. The backbone of VCCI and Blueprint SDOH navigation.", color: "border-orange-200 hover:bg-orange-50 hover:border-orange-400", text: "text-orange-700" },
             { href: "/vermont-legislative-resources", label: "Legislative Reports Library",  desc: "DVHA VCCI reports, Blueprint annual reports, AHS Act 68 monthly updates, GMCB hospital budget decisions — all official Vermont Medicaid documents.", color: "border-slate-200 hover:bg-slate-50 hover:border-slate-400", text: "text-slate-700" },

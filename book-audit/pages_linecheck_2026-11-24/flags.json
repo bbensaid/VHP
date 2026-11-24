@@ -1,0 +1,1787 @@
+{
+"files": [
+"app/about/framework/page.tsx",
+"app/about/methodology/page.tsx",
+"app/about/page.tsx",
+"app/academy/case-studies/[slug]/page.tsx",
+"app/academy/case-studies/page.tsx",
+"app/academy/courses/CoursesClient.tsx",
+"app/academy/courses/[slug]/page.tsx",
+"app/academy/courses/page.tsx",
+"app/academy/faculty/page.tsx",
+"app/academy/getting-started/page.tsx",
+"app/academy/getting-started/research-lab/page.tsx",
+"app/academy/glossary/GlossaryClient.tsx",
+"app/academy/glossary/page.tsx",
+"app/academy/medicaid/glossary/page.tsx",
+"app/academy/medicaid/page.tsx",
+"app/academy/modules/[slug]/page.tsx",
+"app/academy/page.tsx",
+"app/academy/personalized-learning/page.tsx",
+"app/academy/tracks/[courseSlug]/[lessonSlug]/LessonPageClient.tsx",
+"app/academy/tracks/[courseSlug]/[lessonSlug]/page.tsx",
+"app/academy/tracks/[courseSlug]/page.tsx",
+"app/academy/tracks/page.tsx",
+"app/academy/webinars/[slug]/ics/route.ts",
+"app/academy/webinars/[slug]/page.tsx",
+"app/academy/webinars/page.tsx",
+"app/account/billing/page.tsx",
+"app/account/bookmarks/BookmarksList.tsx",
+"app/account/bookmarks/page.tsx",
+"app/account/courses/page.tsx",
+"app/account/layout.tsx",
+"app/account/page.tsx",
+"app/account/profile/page.tsx",
+"app/account/referrals/page.tsx",
+"app/account/subscription/EnrollRedirect.tsx",
+"app/account/subscription/page.tsx",
+"app/actions.ts",
+"app/actions/course.ts",
+"app/advisory-hub/AdvisoryHubClient.tsx",
+"app/advisory-hub/layout.tsx",
+"app/advisory-hub/page.tsx",
+"app/advisory/approach/page.tsx",
+"app/advisory/capability-assessment/page.tsx",
+"app/advisory/consulting/page.tsx",
+"app/advisory/contact/ContactForm.tsx",
+"app/advisory/contact/page.tsx",
+"app/advisory/financial-audit/page.tsx",
+"app/advisory/independent-review/page.tsx",
+"app/advisory/it-consulting/page.tsx",
+"app/advisory/layout.tsx",
+"app/advisory/page.tsx",
+"app/advisory/regulatory/page.tsx",
+"app/advisory/reports/page.tsx",
+"app/advisory/research/page.tsx",
+"app/advisory/services/page.tsx",
+"app/advisory/training/page.tsx",
+"app/ahead-model/page.tsx",
+"app/articles/[slug]/page.tsx",
+"app/articles/loading.tsx",
+"app/auth/callback/route.ts",
+"app/bed-capacity/layout.tsx",
+"app/bed-capacity/page.tsx",
+"app/beta/layout.tsx",
+"app/beta/page.tsx",
+"app/billing-policy/page.tsx",
+"app/book/listen/loading.tsx",
+"app/book/listen/page.tsx",
+"app/book/page.tsx",
+"app/briefings/[slug]/page.tsx",
+"app/briefings/page.tsx",
+"app/california-calaim/page.tsx",
+"app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+"app/california-calaim/simulator/page.tsx",
+"app/changelog/page.tsx",
+"app/chat/error.tsx",
+"app/chat/layout.tsx",
+"app/chat/loading.tsx",
+"app/chat/page.tsx",
+"app/clinical/[slug]/page.tsx",
+"app/clinical/genomics/page.tsx",
+"app/clinical/hah/page.tsx",
+"app/clinical/page.tsx",
+"app/clinical/population/page.tsx",
+"app/clinical/precision/page.tsx",
+"app/clinical/virtual/page.tsx",
+"app/community/[slug]/page.tsx",
+"app/community/layout.tsx",
+"app/community/new/NewThreadForm.tsx",
+"app/community/new/page.tsx",
+"app/community/page.tsx",
+"app/community/thread/[id]/ThreadView.tsx",
+"app/community/thread/[id]/page.tsx",
+"app/compare-states/loading.tsx",
+"app/compare-states/page.tsx",
+"app/connect-hub/ConnectHubClient.tsx",
+"app/connect-hub/layout.tsx",
+"app/connect-hub/page.tsx",
+"app/connect/ConnectHubClient.tsx",
+"app/connect/alerts/page.tsx",
+"app/connect/apply/page.tsx",
+"app/connect/ask/AskHTRClient.tsx",
+"app/connect/ask/page.tsx",
+"app/connect/directory/DirectoryClient.tsx",
+"app/connect/directory/page.tsx",
+"app/connect/forums/page.tsx",
+"app/connect/layout.tsx",
+"app/connect/page.tsx",
+"app/connect/register-office-hours/page.tsx",
+"app/connect/toolkits/page.tsx",
+"app/dashboard/DashboardIndexClient.tsx",
+"app/dashboard/[state]/StateDetailClientPage.tsx",
+"app/dashboard/[state]/hospitals/page.tsx",
+"app/dashboard/[state]/page.tsx",
+"app/dashboard/compare/CompareClient.tsx",
+"app/dashboard/compare/page.tsx",
+"app/dashboard/error.tsx",
+"app/dashboard/layout.tsx",
+"app/dashboard/loading.tsx",
+"app/dashboard/page.tsx",
+"app/dashboard/simulator/CMSRuralSimulatorClient.tsx",
+"app/dashboard/simulator/page.tsx",
+"app/dashboard/vermont/hospitals/HospitalCompareClient.tsx",
+"app/dashboard/vermont/hospitals/page.tsx",
+"app/disclaimer/page.tsx",
+"app/economics/[slug]/page.tsx",
+"app/economics/cea/page.tsx",
+"app/economics/investment/page.tsx",
+"app/economics/market/page.tsx",
+"app/economics/page.tsx",
+"app/economics/value/page.tsx",
+"app/equity/[slug]/page.tsx",
+"app/equity/access/page.tsx",
+"app/equity/bias/page.tsx",
+"app/equity/page.tsx",
+"app/equity/sdoh/page.tsx",
+"app/error.tsx",
+"app/faq/layout.tsx",
+"app/faq/page.tsx",
+"app/forgot-password/layout.tsx",
+"app/forgot-password/page.tsx",
+"app/global-error.tsx",
+"app/layout.tsx",
+"app/library/LibraryShell.tsx",
+"app/library/page.tsx",
+"app/login/layout.tsx",
+"app/login/page.tsx",
+"app/media/videos/page.tsx",
+"app/mission/page.tsx",
+"app/multimedia/MultimediaClientPage.tsx",
+"app/multimedia/page.tsx",
+"app/not-found.tsx",
+"app/onboarding/layout.tsx",
+"app/onboarding/page.tsx",
+"app/opengraph-image.tsx",
+"app/operations/[slug]/page.tsx",
+"app/operations/compliance/page.tsx",
+"app/operations/page.tsx",
+"app/operations/payer-network/page.tsx",
+"app/operations/revenue-cycle/page.tsx",
+"app/operations/supply-chain/page.tsx",
+"app/operations/workforce/page.tsx",
+"app/oregon-cco/page.tsx",
+"app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+"app/oregon-cco/simulator/page.tsx",
+"app/page.tsx",
+"app/policy/[slug]/page.tsx",
+"app/policy/feasibility/page.tsx",
+"app/policy/global/page.tsx",
+"app/policy/mandates/page.tsx",
+"app/policy/medicare-for-all/page.tsx",
+"app/policy/medicare-for-all/vermont-act-48/page.tsx",
+"app/policy/page.tsx",
+"app/policy/regulation/page.tsx",
+"app/pricing/layout.tsx",
+"app/pricing/page.tsx",
+"app/privacy/page.tsx",
+"app/read/[slug]/error.tsx",
+"app/read/[slug]/loading.tsx",
+"app/read/[slug]/page.tsx",
+"app/read/page.tsx",
+"app/reset-password/layout.tsx",
+"app/reset-password/page.tsx",
+"app/rht-review/[state]/page.tsx",
+"app/rht-review/page.tsx",
+"app/robots.ts",
+"app/saved/layout.tsx",
+"app/saved/page.tsx",
+"app/search/layout.tsx",
+"app/search/page.tsx",
+"app/setup/page.tsx",
+"app/signup/layout.tsx",
+"app/signup/page.tsx",
+"app/site-map/page.tsx",
+"app/sitemap.ts",
+"app/studio/[[...index]]/page.tsx",
+"app/subscribe/page.tsx",
+"app/system-vitals/page.tsx",
+"app/technology/[slug]/page.tsx",
+"app/technology/ai/page.tsx",
+"app/technology/digital/page.tsx",
+"app/technology/page.tsx",
+"app/technology/security/page.tsx",
+"app/technology/workflow/page.tsx",
+"app/terms/page.tsx",
+"app/tester/layout.tsx",
+"app/tester/page.tsx",
+"app/trending-topics/TrendingTopicsClientPage.tsx",
+"app/trending-topics/page.tsx",
+"app/upgrade/layout.tsx",
+"app/upgrade/page.tsx",
+"app/values/page.tsx",
+"app/verify/[hash]/page.tsx",
+"app/vermont-act-167/hospitals/[slug]/page.tsx",
+"app/vermont-act-167/page.tsx",
+"app/vermont-act-167/simulator/LeafletMap.tsx",
+"app/vermont-act-167/simulator/ShareScenarioButton.tsx",
+"app/vermont-act-167/simulator/atoms.tsx",
+"app/vermont-act-167/simulator/data.ts",
+"app/vermont-act-167/simulator/page.tsx",
+"app/vermont-act-167/simulator/tabs/benchmarks.tsx",
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+"app/vermont-act-167/simulator/tabs/financial.tsx",
+"app/vermont-act-167/simulator/tabs/hospital.tsx",
+"app/vermont-act-167/simulator/tabs/implementation.tsx",
+"app/vermont-act-167/simulator/tabs/map.tsx",
+"app/vermont-act-167/simulator/tabs/scenario.tsx",
+"app/vermont-act-167/simulator/tabs/technology.tsx",
+"app/vermont-act-167/simulator/tabs/workforce.tsx",
+"app/vermont-act-51/page.tsx",
+"app/vermont-act-68/page.tsx",
+"app/vermont-act-68/simulator/VermontAct68SimulatorClient.tsx",
+"app/vermont-act-68/simulator/page.tsx",
+"app/vermont-blueprint/page.tsx",
+"app/vermont-designated-agencies/page.tsx",
+"app/vermont-legislative-resources/page.tsx",
+"app/vermont-medicaid/page.tsx",
+"app/vermont-rht-program/page.tsx",
+"app/vermont-sash/page.tsx",
+"app/vermont-sdoh/page.tsx",
+"app/vermont-uhds/page.tsx",
+"app/vermont-vcci/page.tsx",
+"app/web-vitals.ts",
+"app/welcome/layout.tsx",
+"app/welcome/page.tsx",
+"components/AcademyContent.tsx",
+"components/AppShell.tsx",
+"components/ArticleFeed.tsx",
+"components/ArticlePageTemplate.tsx",
+"components/AudioBlock.tsx",
+"components/BackendStatus.tsx",
+"components/BookListenPlayer.tsx",
+"components/BookmarkButton.tsx",
+"components/BookmarkChapterButton.tsx",
+"components/BottomNav.tsx",
+"components/BrandContext.tsx",
+"components/Breadcrumbs.tsx",
+"components/CategoryPage.tsx",
+"components/ChapterNotes.tsx",
+"components/CitationButton.tsx",
+"components/ClientOnlyShell.tsx",
+"components/CollapsibleSidebar.tsx",
+"components/CommandPalette.tsx",
+"components/CourseBookTie.tsx",
+"components/CoursesInPillar.tsx",
+"components/DarkModeToggle.tsx",
+"components/EmailCaptureBar.tsx",
+"components/ErrorBoundary.tsx",
+"components/FivePillarFrameworkMap.tsx",
+"components/FontSizeToggle.tsx",
+"components/Footer.tsx",
+"components/FromTheBook.tsx",
+"components/FromTheBookForPillar.tsx",
+"components/FutureOfferingNotice.tsx",
+"components/Header.tsx",
+"components/HomeContent.tsx",
+"components/HomeSidebar.tsx",
+"components/HubSubscribeCTA.tsx",
+"components/LatestHubReports.tsx",
+"components/LegalPage.tsx",
+"components/ListenButton.tsx",
+"components/Logo.tsx",
+"components/NavDropdown.tsx",
+"components/OnboardingModal.tsx",
+"components/PillarOverview.tsx",
+"components/PrintButton.tsx",
+"components/RelatedEditorial.tsx",
+"components/RightSidebar.tsx",
+"components/SaveToPdfButton.tsx",
+"components/SessionTimeout.tsx",
+"components/ShareButton.tsx",
+"components/SidebarContext.tsx",
+"components/Skeleton.tsx",
+"components/StartAtHome.tsx",
+"components/StickyOutputPanel.tsx",
+"components/TesterHubButton.tsx",
+"components/ThemeProvider.tsx",
+"components/TickerContext.tsx",
+"components/TickerStrip.tsx",
+"components/UpgradePrompt.tsx",
+"components/VermontReformCascade.tsx",
+"components/VideoBlock.tsx",
+"components/VideoLibrary.tsx",
+"components/VoiceContext.tsx",
+"components/WebVitalsReporter.tsx",
+"components/WelcomeRedirect.tsx",
+"components/academy/AcademyCard.tsx",
+"components/academy/PersonalizedLearningHub.tsx",
+"components/briefings/CitedText.tsx",
+"components/connect/ConnectEarlyAccess.tsx",
+"components/course/ContentBlockRenderer.tsx",
+"components/course/CoursePlayer.tsx",
+"components/course/CourseProgressBar.tsx",
+"components/course/CourseSidebar.tsx",
+"components/course/LessonQuiz.tsx",
+"components/course/LessonView.tsx",
+"components/course/PillarBadge.tsx",
+"components/course/content-blocks/AudioSlotBlock.tsx",
+"components/course/content-blocks/CalloutBlock.tsx",
+"components/course/content-blocks/ComparisonTable.tsx",
+"components/course/content-blocks/ConceptsGrid.tsx",
+"components/course/content-blocks/GlossaryBlock.tsx",
+"components/course/content-blocks/KeyStatBlock.tsx",
+"components/course/content-blocks/TextBlock.tsx",
+"components/course/content-blocks/TimelineBlock.tsx",
+"components/course/content-blocks/VideoBlock.tsx",
+"components/course/index.ts",
+"components/dashboard/NationalMap.tsx",
+"components/framework/FrameworkMapDiagram.tsx",
+"components/framework/PillarOwnershipCheck.tsx",
+"components/home/PillarHero.tsx",
+"components/m4a/M4AParts.tsx",
+"components/policy/HR1Tracker.tsx",
+"components/rht-review/CompareCharts.tsx",
+"components/rht-review/Recipients.tsx",
+"components/rht-review/RecipientsNational.tsx",
+"components/rht-review/RhtDashboard.tsx",
+"components/rht-review/RhtStatesTable.tsx",
+"components/rht-review/VermontYear1Review.tsx",
+"components/rht-review/ui.tsx",
+"components/templates/HubPageTemplate.tsx",
+"lib/advisory-data.ts",
+"lib/ai/stream.ts",
+"lib/auth.ts",
+"lib/brand-server.ts",
+"lib/brand.ts",
+"lib/briefings/briefings.ts",
+"lib/briefings/sources.ts",
+"lib/cms-hospitals.ts",
+"lib/context/DashboardContext.tsx",
+"lib/course-api.ts",
+"lib/dashboard-types.ts",
+"lib/data/changelog.ts",
+"lib/data/medicare-for-all.ts",
+"lib/data/pillar-topics.ts",
+"lib/data/rht-program.ts",
+"lib/data/state-comparison.ts",
+"lib/data/state-indicators.ts",
+"lib/data/system-vitals-data.ts",
+"lib/db/academy.ts",
+"lib/db/client.ts",
+"lib/framework/dependencies.ts",
+"lib/narration.ts",
+"lib/rht-compare.ts",
+"lib/rht-review.ts",
+"lib/sanity-dashboard-queries.ts",
+"lib/sanity-fetch.ts",
+"lib/sanity.ts",
+"lib/taxonomy/chapters.ts",
+"lib/taxonomy/index.ts",
+"lib/taxonomy/pillars.ts",
+"lib/taxonomy/programs.ts",
+"lib/taxonomy/tools.ts",
+"lib/ticker.ts",
+"lib/webinar-calendar.ts",
+"lib/wire/feed.ts",
+"lib/wire/tag.ts",
+"sanity.config.ts",
+"sanity/components/StudioBlock.tsx",
+"sanity/env.ts",
+"sanity/lib/client.ts",
+"sanity/schemaTypes/academyModule.ts",
+"sanity/schemaTypes/analystNote.ts",
+"sanity/schemaTypes/audio.ts",
+"sanity/schemaTypes/author.ts",
+"sanity/schemaTypes/blockContent.ts",
+"sanity/schemaTypes/caseStudy.ts",
+"sanity/schemaTypes/category.ts",
+"sanity/schemaTypes/course.ts",
+"sanity/schemaTypes/dailyInsight.ts",
+"sanity/schemaTypes/definition.ts",
+"sanity/schemaTypes/hospital.ts",
+"sanity/schemaTypes/index.ts",
+"sanity/schemaTypes/instructor.ts",
+"sanity/schemaTypes/investmentDeal.ts",
+"sanity/schemaTypes/policyAnalysis.ts",
+"sanity/schemaTypes/post.ts",
+"sanity/schemaTypes/rhtState.ts",
+"sanity/schemaTypes/subscriber.ts",
+"sanity/schemaTypes/ticker.ts",
+"sanity/schemaTypes/webinar.ts",
+"sanity/structure.ts",
+"types/course.ts"
+],
+"flags": [
+[
+"app/about/framework/page.tsx",
+106,
+"blindspot: \"A transformation that requires 200 additional FTEs in a market where nursing vacancy rates exceed 20% is not a transformation \u2014 it is a plan waiting to fail. Operations analysis is the ground-truth check on every strategy that looks elegant on a whiteboard but depends on administrative i"
+],
+[
+"app/about/page.tsx",
+118,
+"\"linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)\","
+],
+[
+"app/academy/getting-started/research-lab/page.tsx",
+129,
+"tip: \"The Monte Carlo PSA runs 1,000 iterations \u2014 allow a few seconds for the simulation to complete before reading the cost-effectiveness plane.\","
+],
+[
+"app/academy/medicaid/glossary/page.tsx",
+20,
+"\"Vermont's flagship Medicaid program for children ages 0\u201318 and pregnant women. Provides comprehensive coverage including preventive care, dental, vision, mental health, and prescriptions. Children in families up to 317% of the Federal Poverty Level may qualify.\","
+],
+[
+"app/academy/medicaid/glossary/page.tsx",
+61,
+"\"A legacy Vermont program that provided Medicaid-like coverage to low-income adults before the ACA expansion. VHAP has been largely absorbed into the standard Adult Medicaid category under ACA expansion to 138% FPL.\","
+],
+[
+"app/academy/medicaid/glossary/page.tsx",
+77,
+"\"An annual income measure published by the U.S. Department of Health and Human Services (HHS) that is used to determine eligibility for many federal and state assistance programs including Medicaid. Vermont Medicaid income thresholds are expressed as percentages of FPL (e.g., 138% FPL for adult Medi"
+],
+[
+"app/academy/medicaid/glossary/page.tsx",
+116,
+"\"An amount of income that is subtracted before calculating eligibility \u2014 effectively allowing a person to have higher gross income and still qualify. Vermont's MAGI methodology includes a 5% FPL income disregard built into the threshold for most programs (e.g., the effective adult Medicaid threshold"
+],
+[
+"app/advisory/contact/ContactForm.tsx",
+106,
+"<option>Under $50M</option>"
+],
+[
+"app/advisory/contact/ContactForm.tsx",
+110,
+"<option>Over $5B</option>"
+],
+[
+"app/advisory/contact/ContactForm.tsx",
+159,
+"<option>Under $25,000</option>"
+],
+[
+"app/ahead-model/page.tsx",
+14,
+"equity: \"State-specific targets are set under the AHEAD state agreement; HTR has not verified a published Connecticut AHEAD equity benchmark. Separately, state law (Executive Order 5, codified by Public Act 22-118) sets a primary care spending target of 10% of total health care expenditure by 2025.\""
+],
+[
+"app/ahead-model/page.tsx",
+23,
+"focus: \"Led by Med-QUEST (Medicaid) and the State Health Planning and Development Agency under a $12M cooperative agreement; a statewide primary care alternative payment model is scheduled to launch January 1, 2028.\","
+],
+[
+"app/ahead-model/page.tsx",
+125,
+"{ value: \"\u2264$12M\", label: \"Cooperative Agreement / State\" },"
+],
+[
+"app/bed-capacity/page.tsx",
+705,
+"else if (algo === \"closest\")      { score+=Math.max(0,100-(driveMin/180)*100)*0.7; if(bedAvail>0)score+=20; if(hasSpec)score+=10; }"
+],
+[
+"app/billing-policy/page.tsx",
+47,
+"<td>$23 / seat</td>"
+],
+[
+"app/billing-policy/page.tsx",
+48,
+"<td>$18.42 / seat</td>"
+],
+[
+"app/california-calaim/page.tsx",
+229,
+"detail=\"First-in-the-nation federal approval for California to provide Medi-Cal benefits to incarcerated individuals 90 days before release \u2014 covering medication, care coordination, and behavioral health services during the highest-risk transition period back to the community. More than 42,000 peopl"
+],
+[
+"app/california-calaim/page.tsx",
+280,
+"detail: \"California has the largest unhoused population in the U.S. \u2014 over 180,000. CalAIM's ECM program provides dedicated care managers who meet people where they are: on the street, in shelters, in motels. Community Supports fund the housing deposits and navigation services that ECM care managers"
+],
+[
+"app/california-calaim/page.tsx",
+289,
+"statLabel: \"Of Medi-Cal's top-5% cost group have SMI\","
+],
+[
+"app/california-calaim/page.tsx",
+315,
+"detail: \"The top 5% of Medi-Cal members account for approximately 50% of costs \u2014 driven by poorly managed chronic conditions like diabetes, heart failure, COPD, and renal disease. ECM's population health stratification identifies these individuals early, assigns care managers, and prevents the preve"
+],
+[
+"app/california-calaim/page.tsx",
+317,
+"statLabel: \"Of members drive ~50% of costs\","
+],
+[
+"app/california-calaim/simulator/CalAIMSimulatorClient.tsx",
+191,
+"{[['24', 'Managed Care Plans'], ['13.7M', 'Members'], ['58', 'Counties'], ['2022\u201326', 'Waiver term']].map(([v, l]) => ("
+],
+[
+"app/chat/page.tsx",
+209,
+"{ prompt: \"What happens to our revenue if Medicaid cuts 10% in Vermont?\", label: \"Model Medicaid cut impact\", color: \"bg-rose-50 border-rose-200 hover:bg-rose-100 text-rose-800\" },"
+],
+[
+"app/clinical/genomics/page.tsx",
+57,
+"\"Coronary artery disease PRS: the top 8% of the population carries at least three-fold risk (Khera et al., Nature Genetics, 2018)\","
+],
+[
+"app/clinical/genomics/page.tsx",
+141,
+"{ gene: \"DPYD\", drugs: \"5-Fluorouracil, Capecitabine\", risk: \"Variant carriers: severe/fatal toxicity\", action: \"Reduce starting dose 50% in heterozygotes\", severity: \"high\" },"
+],
+[
+"app/clinical/genomics/page.tsx",
+188,
+"{ tier: \"2\", label: \"Likely Pathogenic\", abbr: \"LP\", color: \"bg-orange-500\", desc: \">90% probability of pathogenicity. Treat as pathogenic.\", action: \"Report + Act\" },"
+],
+[
+"app/clinical/genomics/page.tsx",
+190,
+"{ tier: \"4\", label: \"Likely Benign\", abbr: \"LB\", color: \"bg-sky-500\", desc: \">90% probability of benign. No clinical action needed.\", action: \"No Action\" },"
+],
+[
+"app/clinical/hah/page.tsx",
+41,
+"\"Randomized trial, Brigham and Women's Hospital: home-hospital patients had an adjusted cost of acute care 38% lower than usual hospital care, and a 30-day readmission rate of 7% versus 23% (Levine et al., Annals of Internal Medicine, 2020).\","
+],
+[
+"app/clinical/precision/page.tsx",
+82,
+"criteria: [\"Health-benefit price benchmark at $100,000\u2013$150,000 per QALY or evLYG gained\", \"Evidence rating matrix (A, B+, C+, \u2026 I) for comparative clinical effectiveness\", \"Weighs randomized versus single-arm evidence\", \"Reports are used by payers in coverage and pricing negotiations\"],"
+],
+[
+"app/clinical/precision/page.tsx",
+157,
+"\"Spatial transcriptomics: 10x Visium \u2014 single-cell gene expression in tissue context\","
+],
+[
+"app/clinical/precision/page.tsx",
+225,
+"body: \"Pre-authorization for CDx and targeted therapy simultaneously. Benefits investigation team. Patient assistance programs (PAP) for $0 copay programs. Appeals strategy for off-label use.\","
+],
+[
+"app/connect-hub/ConnectHubClient.tsx",
+541,
+"amount: '$2M\u2013$4M per grantee \u00b7 $200M total program',"
+],
+[
+"app/connect-hub/ConnectHubClient.tsx",
+565,
+"amount: '$3.5B program \u00b7 state and local health department allocations',"
+],
+[
+"app/connect-hub/ConnectHubClient.tsx",
+577,
+"amount: '$500K\u2013$2M per project',"
+],
+[
+"app/connect/ConnectHubClient.tsx",
+541,
+"amount: '$2M\u2013$4M per grantee \u00b7 $200M total program',"
+],
+[
+"app/connect/ConnectHubClient.tsx",
+565,
+"amount: '$3.5B program \u00b7 state and local health department allocations',"
+],
+[
+"app/connect/ConnectHubClient.tsx",
+577,
+"amount: '$500K\u2013$2M per project',"
+],
+[
+"app/connect/ask/AskHTRClient.tsx",
+30,
+"a: \"Three things. Size: an MSSP ACO needs at least 5,000 assigned beneficiaries, which pushes rural providers toward multi-county or multi-organization ACOs. Risk path: the BASIC track lets a new ACO start at low or no downside risk and move along a glide path to two-sided risk; ENHANCED carries the"
+],
+[
+"app/dashboard/simulator/CMSRuralSimulatorClient.tsx",
+106,
+"{[['$50B', 'FY2026\u20132030'], ['$10B', 'Per year'], ['50', 'States awarded'], ['$147M\u2013$281M', 'FY2026 range']].map(([v, l]) => ("
+],
+[
+"app/economics/cea/page.tsx",
+47,
+"\"Physician employment: about 78% of physicians are employed by hospitals, health systems or corporate entities (Physicians Advocacy Institute/Avalere, 2024)\","
+],
+[
+"app/economics/cea/page.tsx",
+52,
+"\"Physician burnout cost: about $4.6 billion a year in turnover and reduced hours (Han et al., Annals of Internal Medicine, 2019)\","
+],
+[
+"app/economics/cea/page.tsx",
+59,
+"\"Physician burnout prevalence: 48.2% reported at least one symptom in 2023, down from 62.8% in 2021 (AMA)\","
+],
+[
+"app/economics/cea/page.tsx",
+90,
+"\"IMG (International Medical Graduates): 25% of US physicians are IMGs (AAMC 2023)\","
+],
+[
+"app/economics/cea/page.tsx",
+91,
+"\"H-1B/J-1 visa pathways: J-1 waiver programs (Conrad 30) critical for rural/underserved area MDs\","
+],
+[
+"app/economics/cea/page.tsx",
+94,
+"\"Nursing school pipeline: 65,766 qualified applications turned away by US nursing schools in 2023 (AACN)\","
+],
+[
+"app/economics/market/page.tsx",
+56,
+"\"HHI (Herfindahl-Hirschman Index): under the 2023 Merger Guidelines, a market above 1,800 with an increase over 100 is presumed anticompetitive\","
+],
+[
+"app/economics/market/page.tsx",
+60,
+"\"Post-merger price effects: mergers of hospitals within 5 miles of each other raised prices by more than 5% (Cooper et al., Quarterly Journal of Economics, 2019)\","
+],
+[
+"app/economics/market/page.tsx",
+93,
+"\"Digital health VC: $10.7B in 2023 and $10.1B in 2024, down from $29.1B in 2021 (Rock Health)\","
+],
+[
+"app/economics/market/page.tsx",
+102,
+"\"HSR filing threshold: adjusted each year by the FTC (above $125M in 2025)\","
+],
+[
+"app/economics/market/page.tsx",
+135,
+"body: \"Optum employs or is affiliated with roughly 90,000 physicians; CVS Health owns Oak Street Health primary care. Integration gives payers network leverage and total-cost-of-care data.\","
+],
+[
+"app/economics/value/page.tsx",
+52,
+"{ model: \"MSSP Basic, Levels A\u2013B\", upside: \"Up to 40%\", downside: \"None (upside only)\", cap: \"N/A\", aapm: false },"
+],
+[
+"app/economics/value/page.tsx",
+53,
+"{ model: \"MSSP Basic, Levels C\u2013D\", upside: \"Up to 50%\", downside: \"30% of losses\", cap: \"Small revenue-based cap\", aapm: false },"
+],
+[
+"app/economics/value/page.tsx",
+54,
+"{ model: \"MSSP Basic, Level E\", upside: \"Up to 50%\", downside: \"30% of losses\", cap: \"8% of revenue, max 4% of benchmark\", aapm: true },"
+],
+[
+"app/economics/value/page.tsx",
+55,
+"{ model: \"MSSP Enhanced\", upside: \"Up to 75%\", downside: \"40\u201375% of losses\", cap: \"15% of benchmark\", aapm: true },"
+],
+[
+"app/economics/value/page.tsx",
+56,
+"{ model: \"ACO REACH (ends Dec 2026; LEAD from 2027)\", upside: \"50% Professional / 100% Global\", downside: \"Same as upside\", cap: \"Risk corridors\", aapm: true },"
+],
+[
+"app/economics/value/page.tsx",
+58,
+"{ model: \"Medicare Advantage\", upside: \"Full capitation retained\", downside: \"Full insurance risk\", cap: \"MLR \u226585% floor\", aapm: false },"
+],
+[
+"app/economics/value/page.tsx",
+85,
+"{ label: \"Attributed lives\", value: \"15,000\", note: \"Part A + B beneficiaries\" },"
+],
+[
+"app/economics/value/page.tsx",
+119,
+"\"Category 3: APMs built on fee-for-service \u2014 3A shared savings, 3B shared savings with downside risk (MSSP)\","
+],
+[
+"app/economics/value/page.tsx",
+121,
+"\"Advanced APM: Qualifying APM Participant status needs 75% of Medicare Part B payments or 50% of patients through Advanced APMs (from performance year 2025)\","
+],
+[
+"app/economics/value/page.tsx",
+133,
+"\"Minimum savings rate (MSR): 2\u20133.9% before ACO earns any shared savings\","
+],
+[
+"app/economics/value/page.tsx",
+143,
+"\"Coding intensity adjustment: statutory minimum 5.9% reduction to MA risk scores\","
+],
+[
+"app/economics/value/page.tsx",
+155,
+"\"Sharing rate: up to 40% (Basic A\u2013B), 50% (Basic C\u2013E), 75% (Enhanced)\","
+],
+[
+"app/equity/access/page.tsx",
+79,
+"\"Critical Access Hospitals (CAH): cost-based Medicare reimbursement (101% of reasonable cost)\","
+],
+[
+"app/equity/access/page.tsx",
+100,
+"\"Maternal mortality rate: Black women 50.3 vs. white women 14.5 per 100,000 in 2023 (CDC NCHS)\","
+],
+[
+"app/equity/access/page.tsx",
+102,
+"\"Maternal mortality causes: 84% preventable; hemorrhage, cardiovascular, mental health leading causes\","
+],
+[
+"app/equity/bias/page.tsx",
+114,
+"\"Disparate impact analysis: 80% rule \u2014 minority group outcome rate \u226580% of majority group rate\","
+],
+[
+"app/equity/sdoh/page.tsx",
+85,
+"\"Food insecurity: 13.5% of US households in 2023 (USDA Economic Research Service)\","
+],
+[
+"app/equity/sdoh/page.tsx",
+97,
+"\"Transportation barriers: about 3.6 million Americans miss or delay care each year for lack of transport (Wallace et al., 2005)\","
+],
+[
+"app/equity/sdoh/page.tsx",
+118,
+"\"Health literacy: 36% of US adults have basic or below-basic health literacy (National Assessment of Adult Literacy, 2003)\","
+],
+[
+"app/faq/page.tsx",
+141,
+"\"linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)\","
+],
+[
+"app/mission/page.tsx",
+103,
+"\"linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)\","
+],
+[
+"app/oregon-cco/page.tsx",
+92,
+"<StatBox value=\"1.4M\" label=\"OHP Members\" sub=\"Oregon Health Plan\" />"
+],
+[
+"app/oregon-cco/page.tsx",
+93,
+"<StatBox value=\"$325M\" label=\"2024 Quality Pool\" sub=\"4.25% of CCO capitation\" />"
+],
+[
+"app/oregon-cco/page.tsx",
+115,
+"desc=\"CCO global budgets may grow no more than 3.4% per member per year, in line with the state cost growth target.\""
+],
+[
+"app/oregon-cco/page.tsx",
+116,
+"items={['Growth cap: 3.4% per member per year', 'Goal: 70% of CCO provider payments value-based by the end of the contract period', 'Quality Pool bonus on top of capitation: 4.25% of total PMPM ($325M in 2024)']} />"
+],
+[
+"app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+49,
+"{ id: 'global-budget-reform', title: 'Global Budget Growth Methodology (current cap: 3.4%/member/yr)', category: 'global-budget', status: 'required', timelineMonths: 12, pillarScores: { policy: 85, financial: 78, equity: 60, clinical: 65 }, implementationComplexity: 55, annualCostM: 12, annualSaving"
+],
+[
+"app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+50,
+"{ id: 'downside-risk', title: 'Value-Based Payment Targets (CCO 2.0 goal: 70% of provider payments)', category: 'payment', status: 'required', timelineMonths: 18, pillarScores: { policy: 88, financial: 70, equity: 55, clinical: 60 }, implementationComplexity: 70, annualCostM: 8, annualSavingsM: 95 }"
+],
+[
+"app/oregon-cco/simulator/OregonCCOSimulatorClient.tsx",
+126,
+"{[['15', 'CCOs'], ['1.4M', 'OHP Members'], ['$325M', '2024 Quality Pool'], ['36', 'Counties']].map(([v, l]) => ("
+],
+[
+"app/policy/global/page.tsx",
+51,
+"{ country: \"Canada\", type: \"Single-payer (provincial)\", coverage: \"100%\" },"
+],
+[
+"app/policy/global/page.tsx",
+52,
+"{ country: \"United Kingdom\", type: \"Beveridge (NHS)\", coverage: \"100%\" },"
+],
+[
+"app/policy/global/page.tsx",
+53,
+"{ country: \"Japan\", type: \"SHI with tight regulation\", coverage: \"100%\" },"
+],
+[
+"app/policy/global/page.tsx",
+54,
+"{ country: \"Switzerland\", type: \"Regulated multi-payer\", coverage: \"100%\" },"
+],
+[
+"app/policy/global/page.tsx",
+55,
+"{ country: \"Australia\", type: \"Medicare + private mix\", coverage: \"100%\" },"
+],
+[
+"app/policy/global/page.tsx",
+77,
+"\"NICE (UK): cost-effectiveness threshold of \u00a325,000\u2013\u00a335,000 per QALY from April 2026, up from \u00a320,000\u2013\u00a330,000 \u2014 the first change in about two decades\","
+],
+[
+"app/policy/global/page.tsx",
+137,
+"\"Lesson 5 \u2014 Universal coverage: 100% coverage correlates with better outcomes at lower per-capita cost\","
+],
+[
+"app/policy/global/page.tsx",
+164,
+"{ label: \"US Lags\", color: \"bg-white border-rose-200\", icon: \"\u26a0\ufe0f\", items: [\"Life expectancy (78.4 years in 2023 \u2014 below peer nations)\", \"Maternal and infant mortality rates\", \"Administrative cost efficiency (34% vs. 17% in Canada)\", \"Coverage universality (8M+ remain uninsured)\"] },"
+],
+[
+"app/policy/global/page.tsx",
+165,
+"{ label: \"Reform Levers\", color: \"bg-white border-blue-200\", icon: \"\ud83d\udd27\", items: [\"Universal coverage: public option or Medicaid expansion in remaining 10 states\", \"Drug negotiation: IRA precedent \u2192 expand to all Medicare + Medicaid drugs\", \"Admin simplification: single claim form, uniform prior auth "
+],
+[
+"app/policy/regulation/page.tsx",
+96,
+"\"FTC PBM reports (2024\u20132025): the three largest PBMs handle nearly 80% of US prescriptions\","
+],
+[
+"app/policy/regulation/page.tsx",
+116,
+"\"MIPS (Merit-based Incentive Payment System): composite score 0\u2013100; +9%/\u22129% Medicare payment at stake\","
+],
+[
+"app/pricing/page.tsx",
+269,
+"{ value: \"1,200+\", label: \"Active subscribers\" },"
+],
+[
+"app/technology/ai/page.tsx",
+50,
+"{ device: \"IDx-DR (Digital Diagnostics)\", indication: \"Diabetic retinopathy screening\", pathway: \"De Novo\", perf: \"87% sensitivity, 90% specificity\", year: \"2018\" },"
+],
+[
+"app/technology/ai/page.tsx",
+51,
+"{ device: \"Paige Prostate (Paige.AI)\", indication: \"Prostate cancer DL pathology\", pathway: \"De Novo\", perf: \"Pathologists' cancer detection on slide images improved 7.3% with assistance (FDA, 2021)\", year: \"2021\" },"
+],
+[
+"app/technology/ai/page.tsx",
+53,
+"{ device: \"ProFound AI (iCAD)\", indication: \"Digital breast tomosynthesis cancer detection\", pathway: \"510(k)\", perf: \"Reader sensitivity up 8% in the pivotal reader study (Conant 2019)\", year: \"2018\" },"
+],
+[
+"app/technology/ai/page.tsx",
+115,
+"\"FDA's list of AI-enabled devices held 1,614 entries in September 2026, most of them in radiology\","
+],
+[
+"app/technology/security/page.tsx",
+78,
+"\"Change Healthcare (Feb 2024): 192.7 million notifications; UnitedHealth booked $872M of first-quarter costs\","
+],
+[
+"app/technology/workflow/page.tsx",
+40,
+"\"Alert fatigue: clinicians override roughly half to over 90% of drug-safety alerts in published studies (van der Sijs et al., JAMIA, 2006)\","
+],
+[
+"app/values/page.tsx",
+107,
+"\"linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)\","
+],
+[
+"app/vermont-act-167/hospitals/[slug]/page.tsx",
+69,
+"{ icon: \"\u2192\", title: \"Administrative Cost Reduction Target: 15\u201320%\", detail: \"Hire external consultants to reduce administrative overhead and align physician productivity with national benchmarks.\" },"
+],
+[
+"app/vermont-act-167/hospitals/[slug]/page.tsx",
+289,
+"<strong>${h.projectedLoss2028M}M</strong> if expenses grow 5% a year, <strong>${h.projectedLoss2028HighM}M</strong> at 7\u20138%."
+],
+[
+"app/vermont-act-167/page.tsx",
+239,
+"detail=\"The lowest-cost silver marketplace premium rose 108% from 2018 to 2024 while household income rose 22% \u2014 driven by high hospital prices and an aging, high-need population.\""
+],
+[
+"app/vermont-act-167/page.tsx",
+264,
+"Without action, Vermont&apos;s hospitals face a five-year gap of <strong>$0.7 billion to $2.4 billion</strong> just"
+],
+[
+"app/vermont-act-167/page.tsx",
+453,
+"{ label: \"Grant Funding\", value: \"Up to $12M per state\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+57,
+"<MetricCard value=\"21%\" label=\"No Vehicle Avg\" sublabel=\"At-risk hospital HSAs\" color=\"text-amber-600\" />"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+58,
+"<MetricCard value=\"30%\" label=\"Age 65+ Avg\" sublabel=\"At-risk hospital HSAs\" color=\"text-orange-600\" />"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+132,
+"{ group: \"Uninsured / Underinsured\", count: \"28,000\", pct: 4.4, risk: \"medium\", note: \"Concentrated in rural HSAs\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+133,
+"{ group: \"Age 65+ without vehicle\", count: \"18,400\", pct: 2.9, risk: \"high\", note: \"Critical for hospital restructuring\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+134,
+"{ group: \"Below poverty line\", count: \"52,000\", pct: 8.3, risk: \"high\", note: \"Spans urban and rural VT\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+135,
+"{ group: \"Non-English speaking\", count: \"22,000\", pct: 3.5, risk: \"medium\", note: \"Spanish, Somali, Vietnamese, Bosnian\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+136,
+"{ group: \"Disability (non-institutionalized)\", count: \"68,000\", pct: 10.8, risk: \"high\", note: \"Transportation and access barriers\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+137,
+"{ group: \"Dialysis patients (3x/wk)\", count: \"1,200\", pct: 0.2, risk: \"critical\", note: \"Life-critical transport need\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+138,
+"{ group: \"Serious mental illness\", count: \"14,000\", pct: 2.2, risk: \"high\", note: \"Psychiatric bed shortage affects directly\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+139,
+"{ group: \"Migrant agricultural workers\", count: \"8,000\", pct: 1.3, risk: \"medium\", note: \"Seasonal, often undocumented, no insurance\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+193,
+"value={transportScenario === \"baseline\" ? \"$0\" : transportScenario === \"enhanced\" ? \"$8M\" : \"$24M\"}"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+199,
+"value={transportScenario === \"baseline\" ? \"25%\" : transportScenario === \"enhanced\" ? \"12%\" : \"5%\"}"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+241,
+"{ stat: \"25\u201342%\", finding: \"Higher chronic disease complication rates among patients with transportation barriers (RWJF 2019)\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+242,
+"{ stat: \"3.6M\", finding: \"Americans miss or delay medical care each year due to transportation barriers (TransCen Inc. 2016)\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+243,
+"{ stat: \"28%\", finding: \"Reduction in avoidable hospitalizations when NEMT programs are well-funded (Medicaid Journal 2021)\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/equity.tsx",
+244,
+"{ stat: \"$6,800\", finding: \"Annual healthcare cost savings per patient when medical transport needs are met vs. unmet (Anthem, 2018)\" },"
+],
+[
+"app/vermont-act-167/simulator/tabs/map.tsx",
+212,
+"<line x1=\"0\" y1=\"4\" x2=\"28\" y2=\"4\" stroke=\"rgba(139,92,246,0.5)\" strokeWidth=\"1.5\" strokeDasharray=\"4 3\" />"
+],
+[
+"app/vermont-act-167/simulator/tabs/technology.tsx",
+24,
+"\"The \u201cAll Payer\u201d system does not include fee-for-service Medicare or 40% of the commercially insured\","
+],
+[
+"app/vermont-act-51/page.tsx",
+51,
+"\"Preventive services with no co-payment and excluded from the annual cap; diagnostic, restorative, and endodontic procedures to a maximum of $1,000 per calendar year, with DVHA able to approve more in exceptional medical circumstances. Beneficiaries in the Community Rehabilitation and Treatment and "
+],
+[
+"app/vermont-act-51/page.tsx",
+91,
+"\"Repealed the prospective repeal of 18 V.S.A. \u00a7 9473(g), keeping the PBM/340B provision in force.\","
+],
+[
+"app/vermont-act-68/page.tsx",
+154,
+"<StatBox value=\"$2M\" label=\"Transformation Grants\" sub=\"Authorized for hospitals\" />"
+],
+[
+"app/vermont-act-68/page.tsx",
+251,
+"note=\"RBP targets commercial prices that run roughly 250\u2013300% of Medicare. Global budgets change hospital financial incentives from volume maximization to population health management.\""
+],
+[
+"app/vermont-medicaid/page.tsx",
+199,
+"<StatPill value=\"~25%\" label=\"of Vermont's total population enrolled\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+201,
+"<StatPill value=\"317%\" label=\"FPL maximum for children under Dr. Dynasaur\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+264,
+"incomeNote=\"~$20,780/yr for a single adult (2026 estimate)\""
+],
+[
+"app/vermont-medicaid/page.tsx",
+291,
+"incomeNote=\"Income limit ~300% SSI ($2,742/mo individual, 2026)\""
+],
+[
+"app/vermont-medicaid/page.tsx",
+300,
+"incomeNote=\"2026 protected income level for one person outside Chittenden County; $1,483/mo in Chittenden (VT Law Help)\""
+],
+[
+"app/vermont-medicaid/page.tsx",
+338,
+"<IncomeRow household=\"1 person\"   fpl100=\"$1,330/mo\" fpl138=\"$1,835/mo\" fpl208=\"$2,833/mo\" fpl317=\"$4,216/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+339,
+"<IncomeRow household=\"2 people\"   fpl100=\"$1,803/mo\" fpl138=\"$2,489/mo\" fpl208=\"$3,841/mo\" fpl317=\"$5,717/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+340,
+"<IncomeRow household=\"3 people\"   fpl100=\"$2,277/mo\" fpl138=\"$3,142/mo\" fpl208=\"$4,849/mo\" fpl317=\"$7,217/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+341,
+"<IncomeRow household=\"4 people\"   fpl100=\"$2,750/mo\" fpl138=\"$3,795/mo\" fpl208=\"$5,858/mo\" fpl317=\"$8,718/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+342,
+"<IncomeRow household=\"5 people\"   fpl100=\"$3,223/mo\" fpl138=\"$4,448/mo\" fpl208=\"$6,866/mo\" fpl317=\"$10,218/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+343,
+"<IncomeRow household=\"6 people\"   fpl100=\"$3,697/mo\" fpl138=\"$5,101/mo\" fpl208=\"$7,874/mo\" fpl317=\"$11,718/mo\" />"
+],
+[
+"app/vermont-medicaid/page.tsx",
+459,
+"{ href: \"/vermont-vcci\",                label: \"Vermont VCCI\",                  desc: \"Chronic Care Initiative \u2014 intensive case management for Vermont's highest-cost Medicaid members. Top 5% of members = ~39% of Medicaid spend.\", color: \"border-rose-200 hover:bg-rose-50 hover:border-rose-400\", text:"
+],
+[
+"app/vermont-medicaid/page.tsx",
+461,
+"{ href: \"/vermont-sash\",                label: \"SASH Program\",                   desc: \"Support and Services at Home \u2014 housing-based care coordination for 13,000+ Vermont seniors on Medicare. Reduces Medicaid and Medicare spend.\", color: \"border-teal-200 hover:bg-teal-50 hover:border-teal-400\", text"
+],
+[
+"app/vermont-rht-program/page.tsx",
+7,
+"\"Vermont's Rural Health Transformation Program awards \u2014 $195M for FY2026 and $190M for FY2027 \u2014 the federal capital investment enabling Vermont's Act 68 transformation agenda. Investment categories, strategic rationale, the post-2030 Medicaid cliff, and how RHT funds are being deployed across Vermon"
+],
+[
+"app/vermont-rht-program/page.tsx",
+141,
+"<StatBox value=\"$195M\" label=\"Vermont FY2026 Award\" sub=\"Announced Dec 29, 2025\" />"
+],
+[
+"app/vermont-rht-program/page.tsx",
+142,
+"<StatBox value=\"$190M\" label=\"Vermont FY2027 Award\" sub=\"Announced Nov 9, 2026 \u00b7 \u2212$5.1M\" />"
+],
+[
+"app/vermont-rht-program/page.tsx",
+143,
+"<StatBox value=\"$50B\" label=\"National Program\" sub=\"$10B/year FY2026\u2013FY2030\" />"
+],
+[
+"app/vermont-rht-program/page.tsx",
+167,
+"state's award. Vermont's awards \u2014 $195M for FY2026 and $190M for FY2027 \u2014 invested wisely in structural efficiency, positions"
+],
+[
+"app/vermont-rht-program/page.tsx",
+224,
+"amount=\"$5.23M signed \u00b7 26 agreements\""
+],
+[
+"app/vermont-rht-program/page.tsx",
+235,
+"amount=\"$1.82M signed \u00b7 10 agreements\""
+],
+[
+"app/vermont-rht-program/page.tsx",
+247,
+"amount=\"$9.74M telehealth + $5.64M e-Consult signed\""
+],
+[
+"app/vermont-rht-program/page.tsx",
+248,
+"description=\"Grants to rural independent practices for secure telehealth platforms, connected diagnostic tools, and related infrastructure \u2014 the application states the funds will not be used for broadband \u2014 plus a statewide e-Consult platform giving primary care an interoperable route to specialists"
+],
+[
+"app/vermont-rht-program/page.tsx",
+258,
+"amount=\"$33.9M signed across shared services\""
+],
+[
+"app/vermont-rht-program/page.tsx",
+263,
+"\"Administrative shared services: billing, coding, credentialing, HR, IT \u2014 directly targets Vermont's $1,303/discharge administrative cost premium\","
+],
+[
+"app/vermont-rht-program/page.tsx",
+283,
+"amount=\"$8.05M signed \u00b7 3 agreements\""
+],
+[
+"app/vermont-rht-program/page.tsx",
+320,
+"[\"FY2026\", \"Active \u2014 $10B/year nationally; Vermont: $195M (FY2026 award)\", \"Modest \u2014 work requirements and six-month redeterminations begin Jan 1, 2027\"],"
+],
+[
+"app/vermont-rht-program/page.tsx",
+321,
+"[\"FY2027\", \"Active \u2014 Vermont: $190M (FY2027 award, Nov 9, 2026)\", \"Accelerating \u2014 first full year of work requirements and six-month redeterminations\"],"
+],
+[
+"app/vermont-rht-program/page.tsx",
+325,
+"[\"FY2031+\", \"No new awards; funds must be spent by Sep 30, 2032\", \"Full $911B cut trajectory \u2014 back-loaded acceleration\"],"
+],
+[
+"app/vermont-rht-program/page.tsx",
+347,
+"{ icon: \"\ud83d\udd17\", label: \"CIN & Shared Services Modeler\", desc: \"Model the RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing across the 14 hospitals against the $1,303/discharge admin premium.\", href: \"/research-lab/knowledge-workspace?tab=cin\" },"
+],
+[
+"app/vermont-sash/page.tsx",
+6,
+"description: \"Support and Services at Home (SASH) \u2014 Vermont's nationally recognized, housing-based care coordination program for Medicare seniors and people with disabilities. Operates in 200+ affordable housing communities, serving 13,000+ Vermonters.\","
+],
+[
+"app/vermont-sash/page.tsx",
+76,
+"{ value: \"13,000+\", label: \"Vermonters Served\", sub: \"Since 2011 launch\" },"
+],
+[
+"app/vermont-uhds/page.tsx",
+83,
+"<StatBox value=\"$3.1B\" label=\"Projected deficit\" sub=\"by 2028, vs 3% margin\" />"
+],
+[
+"app/vermont-uhds/page.tsx",
+303,
+"<strong>$63 million</strong>. It is the case for resilient, shared data infrastructure."
+],
+[
+"app/vermont-uhds/page.tsx",
+335,
+"[\"Statewide e-Consult Expansion\", \"$1,550,000\", \"Secure asynchronous specialist consultations, reducing unnecessary in-person referrals.\"],"
+],
+[
+"app/vermont-uhds/page.tsx",
+336,
+"[\"Closed-Loop Referral System\", \"$455,000\", \"Digital care-coordination platform connecting medical, behavioral health, and social services.\"],"
+],
+[
+"app/vermont-uhds/page.tsx",
+430,
+"{ href: \"/vermont-rht-program\", label: \"Vermont RHT Program\", desc: \"The $195M FY2026 federal award (annual awards through FY2030) funding the care-redesign services the UHDS carries.\", color: \"border-teal-200 hover:border-teal-400\" },"
+],
+[
+"app/vermont-vcci/page.tsx",
+51,
+"{ domain: \"Utilization (ED + Inpatient)\", weight: \"35%\", maxPts: 35, triggers: [\"\u22653 ED visits in 12 months (12 pts)\", \"\u22652 inpatient admissions (10 pts)\", \"30-day readmission present (8 pts)\", \"SNF utilization (5 pts)\"] },"
+],
+[
+"app/vermont-vcci/page.tsx",
+52,
+"{ domain: \"Chronic Condition Burden (CDPS)\", weight: \"30%\", maxPts: 30, triggers: [\"CDPS Very High category (weight \u22654.0) \u2014 12 pts\", \"2+ CDPS High categories (1.5\u20133.9) \u2014 10 pts\", \"Polypharmacy \u22657 medications \u2014 8 pts\", \"3+ distinct CDPS categories \u2014 7 pts\"] },"
+],
+[
+"app/vermont-vcci/page.tsx",
+53,
+"{ domain: \"SDOH Vulnerability\", weight: \"20%\", maxPts: 20, triggers: [\"Housing instability / homelessness \u2014 6 pts\", \"Food insecurity \u2014 4 pts\", \"Active SUD with treatment gap \u2014 4 pts\", \"Mental health crisis in prior 6 months \u2014 4 pts\", \"Rural access barrier (transport/broadband) \u2014 6 pts\", \"IPV screen "
+],
+[
+"app/vermont-vcci/page.tsx",
+54,
+"{ domain: \"Care Gaps & Access Indicators\", weight: \"15%\", maxPts: 15, triggers: [\"Medication PDC <60% for \u22652 medications \u2014 5 pts\", \"HEDIS quality gap present \u2014 3\u20135 pts\", \"No PCP visit in 6 months \u2014 5 pts\", \"Transportation barrier documented \u2014 2\u20135 pts\"] },"
+],
+[
+"app/vermont-vcci/page.tsx",
+93,
+"{ value: \"Top 5%\", label: \"Target Population\", sub: \"Highest-cost Medicaid members\" },"
+],
+[
+"app/vermont-vcci/page.tsx",
+94,
+"{ value: \"~39%\", label: \"Medicaid Spend Share\", sub: \"From the top 5% of members\" },"
+],
+[
+"components/FivePillarFrameworkMap.tsx",
+27,
+"technology: \"Does the data make disparities visible, or bury them in averages? Demographic stratification of VHCURES data is what makes a disparity measurable at all \u2014 Vermont's 91% primary care access rate hides a 13-point white/Hispanic gap.\","
+],
+[
+"components/FontSizeToggle.tsx",
+49,
+"{currentSize === \"base\" ? \"100%\" : currentSize === \"lg\" ? \"115%\" : \"130%\"}"
+],
+[
+"components/FromTheBookForPillar.tsx",
+55,
+"\"Chapter 11 covers the Vermont transformation operating model, the RHRC methodology for rural hospital technical assistance, regionalization across the 14-hospital system, the workforce crisis, and closing the $1,303 per-discharge administrative cost gap.\","
+],
+[
+"components/Header.tsx",
+1048,
+"{ label: \"Vermont RHT Program ($195M + $190M)\", href: \"/vermont-rht-program\", sub: [] },"
+],
+[
+"components/VermontReformCascade.tsx",
+74,
+"fullName: \"Act 55 \u2014 340B Drug Pricing and Hospital Drug Charges (H.266)\","
+],
+[
+"components/framework/FrameworkMapDiagram.tsx",
+151,
+"<textPath href={`#${idPrefix}-ring-top`} startOffset=\"50%\" textAnchor=\"middle\" dominantBaseline=\"central\">"
+],
+[
+"components/framework/FrameworkMapDiagram.tsx",
+156,
+"<textPath href={`#${idPrefix}-ring-bottom`} startOffset=\"50%\" textAnchor=\"middle\" dominantBaseline=\"central\">"
+],
+[
+"components/policy/HR1Tracker.tsx",
+24,
+"title: \"$911B Medicaid Cuts (10-Year)\","
+],
+[
+"components/policy/HR1Tracker.tsx",
+34,
+"title: \"$50B Rural Health Transformation Program\","
+],
+[
+"components/policy/HR1Tracker.tsx",
+79,
+"{ label: \"$911B\", sub: \"10-year Medicaid cuts\" },"
+],
+[
+"components/policy/HR1Tracker.tsx",
+80,
+"{ label: \"$50B\", sub: \"Rural Health Transformation Program\" },"
+],
+[
+"components/policy/HR1Tracker.tsx",
+81,
+"{ label: \"$385M\", sub: \"Vermont RHT awards, FY2026 + FY2027\" },"
+],
+[
+"components/rht-review/RecipientsNational.tsx",
+44,
+"texas: \"First-round grants: 68 hospital districts (names from HHSC; $750K each per news report)\","
+],
+[
+"components/rht-review/RecipientsNational.tsx",
+46,
+"pennsylvania: \"Authorized projects (page: $43M awarded to date)\","
+],
+[
+"components/rht-review/RecipientsNational.tsx",
+66,
+"[\"under $100K\", 1e5, \"#86b6ef\"],"
+],
+[
+"components/rht-review/RecipientsNational.tsx",
+69,
+"[\"$1M\u2013$5M\", 5e6, \"#1c5cab\"],"
+],
+[
+"components/rht-review/RecipientsNational.tsx",
+70,
+"[\"$5M and up\", Infinity, \"#104281\"],"
+],
+[
+"lib/advisory-data.ts",
+71,
+"{ value: \"$2.4B+\",label: \"Client Spend Advised\" },"
+],
+[
+"lib/advisory-data.ts",
+73,
+"{ value: \"94%\",   label: \"Client Retention Rate\" },"
+],
+[
+"lib/advisory-data.ts",
+118,
+"{ name: \"Strategy Sprint\", price: \"$45,000\", description: \"Focused 6-week strategic assessment on one pillar domain.\", includes: [\"Baseline audit\", \"Strategic options memo\", \"Recommendations briefing\", \"Executive presentation\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+119,
+"{ name: \"Full Engagement\", price: \"$120,000+\", description: \"Comprehensive multi-pillar strategy engagement over 3\u20136 months.\", includes: [\"All 5-pillar + Equity Imperative assessment\", \"Board-ready strategic plan\", \"Implementation roadmap\", \"3 quarterly check-ins\"], highlight: true },"
+],
+[
+"lib/advisory-data.ts",
+120,
+"{ name: \"Executive Retainer\", price: \"$18,000/mo\", description: \"Dedicated principal advisor on a monthly retainer for ongoing counsel.\", includes: [\"Monthly strategy sessions\", \"On-call analyst access\", \"Document review\", \"Board presentation support\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+158,
+"{ name: \"Research Brief\", price: \"$15,000\", description: \"2-week rapid intelligence memo on a focused question.\", includes: [\"Literature synthesis\", \"Data analysis\", \"10\u201315 page memo\", \"30-min debrief\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+159,
+"{ name: \"Full Research Engagement\", price: \"$40,000\", description: \"Comprehensive 6\u20138 week custom research project.\", includes: [\"Full methodology\", \"Primary interviews\", \"Financial modeling\", \"Full report + appendix\", \"Debrief + presentation\"], highlight: true },"
+],
+[
+"lib/advisory-data.ts",
+160,
+"{ name: \"Research Retainer\", price: \"$8,000/mo\", description: \"On-demand research support for teams with ongoing intelligence needs.\", includes: [\"Up to 3 briefs/quarter\", \"Priority turnaround\", \"Data access\", \"Analyst on-call\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+198,
+"{ name: \"Advisory Sprint\", price: \"$25,000\", description: \"30-day assessment + strategy document for a specific IT initiative.\", includes: [\"Current state audit\", \"Vendor shortlist\", \"Architecture memo\", \"Risk register\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+199,
+"{ name: \"Program Oversight\", price: \"From $75,000\", description: \"6-month part-time embedded advisory for active implementations.\", includes: [\"Weekly status reporting\", \"Vendor management support\", \"Go-live risk tracking\", \"Board updates\"], highlight: true },"
+],
+[
+"lib/advisory-data.ts",
+238,
+"{ name: \"Standard Review\", price: \"$40,000\", description: \"4-week independent assessment of a project up to 18 months in scope.\", includes: [\"Document review\", \"Up to 15 interviews\", \"Full written report\", \"Board briefing\", \"Remediation roadmap\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+239,
+"{ name: \"Complex / Litigation\", price: \"$75,000\u2013$150,000\", description: \"Multi-year programs, disputed contracts, or matters involving legal or regulatory proceedings.\", includes: [\"Extended discovery\", \"Unlimited interviews\", \"Expert witness support\", \"Deposition preparation\", \"Court-ready document"
+],
+[
+"lib/advisory-data.ts",
+240,
+"{ name: \"Board Retainer\", price: \"$12,000/quarter\", description: \"Quarterly independent program health reviews for boards overseeing large transformation portfolios.\", includes: [\"Quarterly health scorecard\", \"Trend analysis\", \"Executive briefing\", \"Risk flag alerts\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+278,
+"{ name: \"Core Assessment\", price: \"$30,000\", description: \"3-domain focused assessment (you choose which domains), 4-week turnaround.\", includes: [\"3-domain scoring\", \"Peer benchmarking\", \"Gap analysis\", \"Readiness memo\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+279,
+"{ name: \"Comprehensive\", price: \"$55,000\", description: \"Full 7-domain ORF assessment with complete peer benchmarking.\", includes: [\"All 7 domains\", \"Full peer benchmarking\", \"Board-ready report\", \"Executive workshop\"], highlight: true },"
+],
+[
+"lib/advisory-data.ts",
+280,
+"{ name: \"Pre-Transformation Package\", price: \"$80,000\", description: \"Full assessment plus 6-month capability development advisory.\", includes: [\"Full ORF assessment\", \"6-month follow-on advisory\", \"Quarterly maturity re-scoring\", \"Implementation support\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+318,
+"{ name: \"Rapid Review\", price: \"$35,000\", description: \"Revenue cycle focus only, 30-day turnaround.\", includes: [\"AR & denial analysis\", \"Coding spot audit\", \"Top-5 findings memo\", \"CFO briefing\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+319,
+"{ name: \"Full Financial Audit\", price: \"$65,000\u2013$100,000\", description: \"All modules \u2014 revenue cycle, cost structure, staffing, payer contracts \u2014 over 6\u20138 weeks.\", includes: [\"All 4 audit modules\", \"Live dashboard\", \"Full written report\", \"HFMA benchmarking\", \"Implementation roadmap\"], highlight: tr"
+],
+[
+"lib/advisory-data.ts",
+320,
+"{ name: \"Payer Contract Optimization\", price: \"$20,000\", description: \"Stand-alone payer contract performance review and renegotiation strategy.\", includes: [\"Contract performance analysis\", \"Rate benchmark comparison\", \"Renegotiation talking points\", \"Contract strategy memo\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+358,
+"{ name: \"Policy Brief\", price: \"$15,000\", description: \"Focused 2-week rapid evidence memo on a specific regulatory question.\", includes: [\"Literature synthesis\", \"Data analysis\", \"12\u201320 page brief\", \"Virtual debrief\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+359,
+"{ name: \"Regulatory Design Support\", price: \"$40,000\u2013$80,000\", description: \"Multi-month support for rulemaking, program design, or legislative drafting.\", includes: [\"Full evidence review\", \"Options analysis\", \"Draft language\", \"Stakeholder comment analysis\", \"Ongoing revisions\"], highlight: true }"
+],
+[
+"lib/advisory-data.ts",
+360,
+"{ name: \"Legislative Retainer\", price: \"$10,000/month\", description: \"On-call access to senior advisors throughout a legislative session or rulemaking cycle.\", includes: [\"Unlimited quick-turn briefs\", \"Testimony preparation\", \"Stakeholder meeting support\", \"Weekly intelligence updates\"], highlight:"
+],
+[
+"lib/advisory-data.ts",
+398,
+"{ name: \"Workshop (On-Site)\", price: \"$12,000\u2013$18,000\", description: \"Half-day or full-day on-site workshop for up to 25 participants.\", includes: [\"Custom curriculum\", \"Participant materials\", \"Facilitator-led delivery\", \"Certificate of completion\"], highlight: false },"
+],
+[
+"lib/advisory-data.ts",
+399,
+"{ name: \"Executive Program\", price: \"$22,000\", description: \"Full-day or 2-day intensive executive education program.\", includes: [\"C-suite tailored content\", \"Case study sessions\", \"Executive workbook\", \"Action planning workshop\", \"30-day follow-on\"], highlight: true },"
+],
+[
+"lib/advisory-data.ts",
+400,
+"{ name: \"Virtual Cohort License\", price: \"$8,000/quarter\", description: \"Quarterly virtual training cohort license for an entire organization.\", includes: [\"4 virtual sessions/quarter\", \"Async recordings\", \"All participant materials\", \"Up to 50 learners\"], highlight: false },"
+],
+[
+"lib/briefings/briefings.ts",
+205,
+"\"Hospitals argue the cuts land on already thin margins. UVM Health's CEO, Stephen Leffler, said the medical center expects to lose roughly $75 million this year and at least that much next year under the approved budget, and the state hospital association warned the decisions would further destabili"
+],
+[
+"lib/briefings/briefings.ts",
+240,
+"\"What would reference-based pricing at 200% of Medicare mean for a Vermont hospital's budget?\","
+],
+[
+"lib/data/changelog.ts",
+114,
+"\"vermont-act-167/simulator/page.tsx: 2,248 \u2192 104 lines (9 tabs in ./tabs/)\","
+],
+[
+"lib/data/changelog.ts",
+154,
+"\"Preface, Introduction, and Chapters 1\u201320 narration transcripts (~1,500 words each)\","
+],
+[
+"lib/data/medicare-for-all.ts",
+111,
+"{ label: \"Premiums and cost-sharing\", s1506: \"None, except an optional drug schedule\", hr3069: \"None\", hr10924: \"Premium capped at 8% of income; $0 below 200% FPL\", m50: \"Medicare premiums, with ACA-level subsidies\" },"
+],
+[
+"lib/data/medicare-for-all.ts",
+202,
+"{ trigger: \"A waiver under ACA \u00a7 1332\", outcome: \"Not obtained. In 2014 the method for calculating it was still under discussion with federal agencies, and the expected pass-through had fallen from $267M to $106M.\" },"
+],
+[
+"lib/data/medicare-for-all.ts",
+206,
+"{ trigger: \"Board findings: benefits worth at least 80% of costs; no negative effect on Vermont's economy; sustainable financing; lower administrative costs; slower cost growth; enough pay to recruit and keep providers\", outcome: \"Not reached. The 2014 balance sheet showed deficits from 2019.\" },"
+],
+[
+"lib/data/medicare-for-all.ts",
+221,
+"{ label: \"Public premium (0\u20139.5% of income)\", values: [1247, 1306, 1359, 1372, 1381] },"
+],
+[
+"lib/data/rht-program.ts",
+86,
+"{ label: \"EMS Home Visits\", status: \"In Progress\", target: \"5,000/yr\" },"
+],
+[
+"lib/data/rht-program.ts",
+103,
+"{ label: \"Adverse Drug Events\", status: \"Pending\", target: \"-10%\" },"
+],
+[
+"lib/data/rht-program.ts",
+113,
+"\"Focusing on high-tech Mobile Health Units with a projected $36:1 ROI and a 'Beds Not Buildings' platform for behavioral health tracking.\","
+],
+[
+"lib/data/rht-program.ts",
+119,
+"{ label: \"Mobile Unit ROI\", status: \"Pending\", target: \"$36:1\" },"
+],
+[
+"lib/data/rht-program.ts",
+120,
+"{ label: \"BH Boarding Time\", status: \"In Progress\", target: \"-20%\" },"
+],
+[
+"lib/data/rht-program.ts",
+136,
+"{ label: \"Nurse Visits\", status: \"In Progress\", target: \"100% Eligible\" },"
+],
+[
+"lib/data/rht-program.ts",
+137,
+"{ label: \"ED Psych Diversion\", status: \"Pending\", target: \"40%\" },"
+],
+[
+"lib/data/rht-program.ts",
+170,
+"{ label: \"eConsult Volume\", status: \"Pending\", target: \"50,000/yr\" },"
+],
+[
+"lib/data/rht-program.ts",
+187,
+"{ label: \"VBC Adoption\", status: \"In Progress\", target: \"60% Providers\" },"
+],
+[
+"lib/data/rht-program.ts",
+203,
+"{ label: \"CCBHC Transition\", status: \"Pending\", target: \"100%\" },"
+],
+[
+"lib/data/rht-program.ts",
+204,
+"{ label: \"Public Telehealth Use\", status: \"In Progress\", target: \"1,000 Sessions\" },"
+],
+[
+"lib/data/rht-program.ts",
+231,
+"{ label: \"Avoidable ED Visits\", status: \"Pending\", target: \"-18%\" },"
+],
+[
+"lib/data/rht-program.ts",
+232,
+"{ label: \"FQHC Capacity\", status: \"Pending\", target: \"+2,000 Patients\" },"
+],
+[
+"lib/data/rht-program.ts",
+254,
+"description: \"Maryland Department of Labor funding ($15 million in Budget Period 1) for workforce pipeline training and for training, recruitment and retention of rural physicians, PAs, dentists and other advanced practice professionals, plus expanded registered apprenticeships.\","
+],
+[
+"lib/data/rht-program.ts",
+258,
+"{ label: \"Rural Primary Care Access Funding\", status: \"In Progress\", target: \"$6.3M (Budget Period 1)\" },"
+],
+[
+"lib/data/rht-program.ts",
+259,
+"{ label: \"Eastern Shore Screenings\", status: \"In Progress\", target: \"+15,000/yr\" },"
+],
+[
+"lib/data/rht-program.ts",
+260,
+"{ label: \"Clinician Retention Rate\", status: \"Pending\", target: \"+12%\" },"
+],
+[
+"lib/data/rht-program.ts",
+292,
+"{ label: \"Primary Care PMPM Enrollees\", status: \"Pending\", target: \"50,000\" },"
+],
+[
+"lib/data/rht-program.ts",
+328,
+"{ label: \"AI Consult Volume\", status: \"Pending\", target: \"10,000/yr\" },"
+],
+[
+"lib/data/rht-program.ts",
+330,
+"{ label: \"Cybersecurity Compliance\", status: \"In Progress\", target: \"100% Rural Hospitals\" },"
+],
+[
+"lib/data/rht-program.ts",
+346,
+"{ label: \"Readmissions\", status: \"Pending\", target: \"-15%\" },"
+],
+[
+"lib/data/rht-program.ts",
+381,
+"{ label: \"SUD Treatment Access\", status: \"In Progress\", target: \"+25%\" },"
+],
+[
+"lib/data/rht-program.ts",
+415,
+"{ label: \"Cancer Screening\", status: \"In Progress\", target: \"+20%\" },"
+],
+[
+"lib/data/rht-program.ts",
+432,
+"{ label: \"EMS Diversion\", status: \"In Progress\", target: \"15%\" },"
+],
+[
+"lib/data/rht-program.ts",
+448,
+"{ label: \"App Activation\", status: \"In Progress\", target: \"50,000 Users\" },"
+],
+[
+"lib/data/rht-program.ts",
+449,
+"{ label: \"Clinician Vacancy\", status: \"Pending\", target: \"-10%\" },"
+],
+[
+"lib/data/rht-program.ts",
+465,
+"{ label: \"Dementia Screening\", status: \"Pending\", target: \"+30%\" },"
+],
+[
+"lib/data/rht-program.ts",
+466,
+"{ label: \"Transport Volume\", status: \"In Progress\", target: \"10,000 Rides\" },"
+],
+[
+"lib/data/rht-program.ts",
+482,
+"{ label: \"Postpartum Visits\", status: \"Pending\", target: \"80% Attendance\" },"
+],
+[
+"lib/data/rht-program.ts",
+499,
+"{ label: \"Digital Literacy\", status: \"In Progress\", target: \"10,000 Certified\" },"
+],
+[
+"lib/data/rht-program.ts",
+527,
+"\"'Moving Upstream' consumer tech and $50k wellness microgrants for local departments.\","
+],
+[
+"lib/data/rht-program.ts",
+530,
+"{ title: \"Wellness Microgrants\", description: \"Grants up to $50k for local health departments.\" },"
+],
+[
+"lib/data/rht-program.ts",
+553,
+"{ label: \"Children Screened\", status: \"In Progress\", target: \"50,000\" },"
+],
+[
+"lib/data/rht-program.ts",
+587,
+"{ label: \"Med Adherence\", status: \"In Progress\", target: \"+15%\" },"
+],
+[
+"lib/data/rht-program.ts",
+603,
+"{ label: \"Treat-on-Site\", status: \"Pending\", target: \"10% of Calls\" },"
+],
+[
+"lib/data/rht-program.ts",
+621,
+"{ label: \"Dental Procedures\", status: \"Pending\", target: \"+10%\" },"
+],
+[
+"lib/data/rht-program.ts",
+655,
+"{ label: \"Telehealth Usage\", status: \"Pending\", target: \"+20%\" },"
+],
+[
+"lib/data/rht-program.ts",
+672,
+"{ label: \"ED Reduction\", status: \"In Progress\", target: \"-10%\" },"
+],
+[
+"lib/data/rht-program.ts",
+706,
+"{ label: \"VR Training Hours\", status: \"In Progress\", target: \"1,000\" },"
+],
+[
+"lib/data/rht-program.ts",
+903,
+"\"$30M Accelerator for value-based care and $80M in provider incentives.\","
+],
+[
+"lib/data/rht-program.ts",
+906,
+"{ title: \"Provider Incentives\", description: \"$80M investment for living/serving in rural areas.\" },"
+],
+[
+"lib/data/rht-program.ts",
+977,
+"{ label: \"RHIN Integration\", status: \"Pending\", target: \"100%\" },"
+],
+[
+"lib/data/state-comparison.ts",
+106,
+"vermont:    { value: \"160,747\",      detail: \"\u224825% of population (DVHA, Dec 2025)\" },"
+],
+[
+"lib/data/state-comparison.ts",
+107,
+"oregon:     { value: \"1.4 million\",   detail: \"\u224833% of population\" },"
+],
+[
+"lib/data/state-comparison.ts",
+108,
+"california: { value: \"15 million\",    detail: \"\u224838% of population\" },"
+],
+[
+"lib/data/state-comparison.ts",
+114,
+"vermont:    { value: \"4.2%\",  verdict: \"best\" },"
+],
+[
+"lib/data/state-comparison.ts",
+115,
+"oregon:     { value: \"6.1%\",  verdict: \"middle\" },"
+],
+[
+"lib/data/state-comparison.ts",
+116,
+"california: { value: \"7.2%\",  verdict: \"worst\" },"
+],
+[
+"lib/data/state-comparison.ts",
+189,
+"california: { value: \"OHCA benchmark\",     detail: \"15% of spending on primary care by 2034 (adopted Oct 2024)\" },"
+],
+[
+"lib/data/state-comparison.ts",
+255,
+"vermont:    { value: \"VCCI\",            detail: \"Top 5\u201315% of Medicaid by cost/complexity\" },"
+],
+[
+"lib/data/state-comparison.ts",
+263,
+"vermont:    { value: \"SASH\",            detail: \"200+ communities, 13,000+ participants\", verdict: \"best\" },"
+],
+[
+"lib/ticker.ts",
+67,
+"if (pct < 0.10)      status = \"critical\"; // < 10% available"
+],
+[
+"lib/ticker.ts",
+68,
+"else if (pct < 0.25) status = \"warning\";  // 10\u201324% available"
+],
+[
+"lib/ticker.ts",
+69,
+"else                 status = \"good\";      // 25%+ available"
+],
+[
+"sanity/schemaTypes/blockContent.ts",
+96,
+"{ name: 'value',   type: 'string', title: 'Value (e.g. \"$4.1T\", \"37th\", \"26\u00a2\")' },"
+],
+[
+"sanity/schemaTypes/caseStudy.ts",
+58,
+"title: 'Key Metrics (e.g. \"40% Reduction\")',"
+],
+[
+"sanity/schemaTypes/course.ts",
+61,
+"type: 'string', // e.g. \"$2,995\""
+],
+[
+"sanity/schemaTypes/hospital.ts",
+69,
+"description: 'Enter just the number (e.g., 85 for $85M)',"
+],
+[
+"sanity/schemaTypes/investmentDeal.ts",
+12,
+"description: 'e.g. \"Optum acquires Amedisys for $3.3B\"',"
+],
+[
+"sanity/schemaTypes/ticker.ts",
+26,
+"description: 'e.g., +12% YoY or Critical',"
+]
+]
+}

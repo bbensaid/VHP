@@ -183,7 +183,7 @@ export default function AboutPage() {
               industry still produce so little equitable change?
             </h2>
             <p className="ty-hero text-slate-600 leading-relaxed mb-6">
-              American healthcare commands the world's largest share of GDP — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
+              American healthcare takes the largest share of GDP among wealthy (OECD) nations — yet outcomes lag peer nations, costs remain unsustainable, and access is still determined more by geography and income than by clinical need. The capital and political will exist. The missing ingredient is coordinated, cross-disciplinary intelligence.
             </p>
             <p className="ty-hero text-slate-600 leading-relaxed">
               HTR exists to close that gap. Our five-pillar framework — Policy, Technology, Economics, Clinical, and Operations — ensures that no decision is made in isolation, and the Equity Imperative tests every one of them. Every insight is stress-tested across all dimensions before it reaches you.

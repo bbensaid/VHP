@@ -97,7 +97,7 @@ const pillars = [
     border: "border-violet-200",
     bg: "bg-violet-50",
     body: "Each state must define measurable health equity targets — tied to specific populations, conditions, and disparity gaps — and demonstrate progress annually. Financial performance is partially contingent on equity improvement, making it structurally inseparable from cost and quality.",
-    impact: "For the first time in a CMS model, equity is not a reporting checkbox — it is a financial performance dimension. States that ignore disparity gaps cannot succeed under AHEAD.",
+    impact: "Equity is built into the model's targets rather than left as a reporting checkbox, so states that ignore disparity gaps put their performance at risk.",
   },
   {
     number: "04",
@@ -429,7 +429,7 @@ export default function AheadModelPage() {
               border: "border-emerald-200",
               bg: "bg-emerald-50",
               accent: "bg-emerald-600",
-              insight: "The all-payer TCOC target eliminates the cost-shift escape valve. For the first time, health system executives face a shared accountability environment where reducing Medicare costs at the expense of commercial rates is not viable.",
+              insight: "The all-payer TCOC target narrows the cost-shift escape valve: health system executives face shared accountability in which reducing Medicare costs at the expense of commercial rates does not count as success.",
             },
             {
               pillar: "Technology",

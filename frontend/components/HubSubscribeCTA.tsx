@@ -73,7 +73,7 @@ export default function HubSubscribeCTA({ pillar, bgClass, buttonClass }: HubSub
       )}
 
       <p className="text-xs text-slate-500 mt-4">
-        Join 15,000+ healthcare leaders. Unsubscribe anytime.
+        Unsubscribe anytime.
       </p>
     </div>
   );

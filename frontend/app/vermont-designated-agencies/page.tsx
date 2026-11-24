@@ -262,7 +262,7 @@ export default function VermontDesignatedAgenciesPage() {
         <p className="text-xs font-black uppercase tracking-widest text-violet-400 mb-2">Umbrella Organization</p>
         <h2 className="text-xl font-black text-white mb-3">Vermont Care Partners</h2>
         <p className="text-sm text-slate-300 leading-relaxed mb-4">
-          Vermont Care Partners is the statewide membership organization representing the 16 DAs and SSAs. It conducts policy advocacy, collective contracting, workforce development, data reporting through the Vermont Care Data Repository (vtcare.net), and legislative testimony on behalf of the DA network. Vermont Care Partners is the primary voice for the behavioral health provider community in Vermont legislative proceedings.
+          Vermont Care Partners is a statewide network of 16 nonprofit agencies, including the Designated and Specialized Service Agencies. It conducts policy advocacy, collective contracting, workforce development, data reporting through the Vermont Care Data Repository (vtcare.net), and legislative testimony on behalf of the DA network. Vermont Care Partners is the primary voice for the behavioral health provider community in Vermont legislative proceedings.
         </p>
         <div className="flex flex-wrap gap-3 text-sm">
           <ExternalLink href="https://vermontcarepartners.org/">Vermont Care Partners Website</ExternalLink>

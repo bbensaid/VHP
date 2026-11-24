@@ -67,11 +67,10 @@ export const PILLAR_STYLES: Record<Pillar, { bg: string; text: string; border: s
 
 // ─── ADVISORY STATS BAR ──────────────────────────────────────────────────────
 export const ADVISORY_STATS: AdvisoryStat[] = [
-  { value: "200+",  label: "Engagements Completed" },
-  { value: "$2.4B+",label: "Client Spend Advised" },
-  { value: "8",     label: "Service Lines" },
-  { value: "94%",   label: "Client Retention Rate" },
-  { value: "6",     label: "Pillars of Expertise" },
+  // Only facts about the offering itself. Engagement counts, client spend, retention rates and
+  // similar track-record figures were removed 2026-11-24: there was no record behind them.
+  { value: "8", label: "Service Lines" },
+  { value: "5", label: "Pillars, plus the Equity Imperative" },
 ];
 
 // ─── CLIENT SEGMENTS ─────────────────────────────────────────────────────────

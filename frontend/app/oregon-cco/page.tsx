@@ -88,7 +88,7 @@ export default function OregonCCOPage() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <StatBox value="15" label="CCOs" sub="since Feb 2026" />
+        <StatBox value="15" label="CCOs" sub="16 in 2025; PacificSource left Lane County Feb 1, 2026 (OHA)" />
         <StatBox value="1.4M" label="OHP Members" sub="Oregon Health Plan" />
         <StatBox value="$325M" label="2024 Quality Pool" sub="4.25% of CCO capitation" />
         <StatBox value="36" label="Counties" sub="covered statewide" />
@@ -113,7 +113,7 @@ export default function OregonCCOPage() {
             items={['Traditional health workers include community health workers', 'Supports the SDOH and health equity priority']} />
           <InvestCard icon="💰" title="Global Budget Methodology"
             desc="CCO global budgets may grow no more than 3.4% per member per year, in line with the state cost growth target."
-            items={['Growth cap: 3.4% per member per year', 'Goal: 70% of CCO provider payments value-based by the end of the contract period', 'Quality Pool bonus on top of capitation: 4.25% of total PMPM ($325M in 2024)']} />
+            items={['Growth cap: 3.4% per member per year', 'Goal: 70% of CCO provider payments value-based by the end of the contract period', 'Quality Pool bonus on top of capitation: 4.25% of total PMPM ($325M in 2024); cut to 3% for 2025 (OHA)']} />
         </div>
       </section>
 

@@ -2,7 +2,7 @@
 // pairs.json: {"tag": "act62", "note": "...source...", "pairs": [[old, new], ...], "residue": "regex"}
 // Applies to Sanity (full export; backup per doc in ../sanity-backups/), every Supabase content table (paginated),
 // and frontend/content course files. Prints NO HIT for any pair that matched nothing.
-// Optional "only": [sanity slugs] scopes the run to those Sanity docs + their Supabase lesson rows
+// Optional "only": [sanity slugs or _ids] scopes the run to those Sanity docs + their Supabase lesson rows
 // (other tables and content files are skipped unless listed in "files") — for generic strings like "~35%".
 import fs from 'fs';
 import { createClient } from '@supabase/supabase-js';
@@ -20,7 +20,7 @@ const residue = (where, t) => { for (const m of t.matchAll(LEFT)) console.log(' 
 const API = `https://${env.NEXT_PUBLIC_SANITY_PROJECT_ID}.api.sanity.io/v2023-10-01/data`;
 const H = { Authorization: `Bearer ${env.SANITY_API_TOKEN}`, 'Content-Type': 'application/json' };
 const nd = await (await fetch(`${API}/export/production`, { headers: H })).text();
-for (const doc of nd.split('\n').filter(Boolean).map((l) => JSON.parse(l)).filter((d) => !d._id.startsWith('drafts.') && !d._type.startsWith('sanity.') && (!ONLY || ONLY.has(d.slug?.current)))) {
+for (const doc of nd.split('\n').filter(Boolean).map((l) => JSON.parse(l)).filter((d) => !d._id.startsWith('drafts.') && !d._type.startsWith('sanity.') && (!ONLY || ONLY.has(d.slug?.current) || ONLY.has(d._id)))) {
   const raw = JSON.stringify(doc);
   const [t, n] = fix(raw);
   residue('sanity ' + doc._id, t);

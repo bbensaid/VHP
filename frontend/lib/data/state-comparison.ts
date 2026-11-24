@@ -105,15 +105,15 @@ export const SCALE_ROWS: ComparisonRow[] = [
     cells: {
       vermont:    { value: "160,747",      detail: "≈25% of population (DVHA, Dec 2025)" },
       oregon:     { value: "1.4 million",   detail: "≈33% of population" },
-      california: { value: "15 million",    detail: "≈38% of population" },
+      california: { value: "13.9 million",  detail: "≈35% of population (DHCS, Apr 2026)" },
     },
   },
   {
     label: "Uninsured rate",
     cells: {
-      vermont:    { value: "4.2%",  verdict: "best" },
-      oregon:     { value: "6.1%",  verdict: "middle" },
-      california: { value: "7.2%",  verdict: "worst" },
+      vermont:    { value: "4.2%",  detail: "ACS 2024 1-year (America's Health Rankings)", verdict: "best" },
+      oregon:     { value: "5.2%",  detail: "ACS 2024 1-year (America's Health Rankings)", verdict: "middle" },
+      california: { value: "5.9%",  detail: "ACS 2024 1-year (America's Health Rankings)", verdict: "worst" },
     },
   },
 ];
@@ -260,7 +260,7 @@ export const PROGRAM_ROWS: ComparisonRow[] = [
   {
     label: "Housing-based care signature",
     cells: {
-      vermont:    { value: "SASH",            detail: "200+ communities, 13,000+ participants", verdict: "best" },
+      vermont:    { value: "SASH",            detail: "~5,000 participants in every county (SASH, Jan 2025)", verdict: "best" },
       oregon:     { value: "Housing supports", detail: "Through CCO health-related services" },
       california: { value: "Community Supports", detail: "Housing deposits + recuperative care" },
     },

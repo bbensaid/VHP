@@ -33,6 +33,10 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
     return atRisk.reduce((s, h) => s + h.populationHSA, 0);
   }, []);
 
+  const atRisk = HOSPITALS.filter((h) => h.urgency === "urgent" || h.urgency === "major");
+  const atRiskAge65 = Math.round(atRisk.reduce((s, h) => s + h.popOver65Pct, 0) / (atRisk.length || 1));
+  const maxKm = atRisk.reduce((m, h) => { const km = kmToNearestHospital(h); return km > m.km ? { km, name: h.name } : m; }, { km: 0, name: "" });
+
   const equitySummary = useMemo(() => {
     const highRisk = countyData.filter((c) => c.accessScore < 50).length;
     const moderate = countyData.filter((c) => c.accessScore >= 50 && c.accessScore < 70).length;
@@ -52,11 +56,10 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
       </div>
 
       {/* Key equity metrics */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <MetricCard value={atRiskPopulation.toLocaleString()} label="HSA Population at Risk" sublabel="8 hospitals (urgent/major)" color="text-rose-600" />
-        <MetricCard value="21%" label="No Vehicle Avg" sublabel="At-risk hospital HSAs" color="text-amber-600" />
-        <MetricCard value="30%" label="Age 65+ Avg" sublabel="At-risk hospital HSAs" color="text-orange-600" />
-        <MetricCard value="52 min" label="Max Distance" sublabel="Grace Cottage → BMH" color="text-red-600" />
+        <MetricCard value={`${atRiskAge65}%`} label="Age 65+ Avg" sublabel="At-risk hospital HSAs (VDH 2025)" color="text-orange-600" />
+        <MetricCard value={`${maxKm.km} km`} label="Max Distance" sublabel={`${maxKm.name} → nearest hospital (straight line)`} color="text-red-600" />
       </div>
 
       {/* Sticky equity summary — derived from the live county scores so it
@@ -126,35 +129,6 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
       {view === "population" && (
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard>
-              <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Vulnerable Population Groups — Vermont</div>
-              {[
-                { group: "Uninsured / Underinsured", count: "28,000", pct: 4.4, risk: "medium", note: "Concentrated in rural HSAs" },
-                { group: "Age 65+ without vehicle", count: "18,400", pct: 2.9, risk: "high", note: "Critical for hospital restructuring" },
-                { group: "Below poverty line", count: "52,000", pct: 8.3, risk: "high", note: "Spans urban and rural VT" },
-                { group: "Non-English speaking", count: "22,000", pct: 3.5, risk: "medium", note: "Spanish, Somali, Vietnamese, Bosnian" },
-                { group: "Disability (non-institutionalized)", count: "68,000", pct: 10.8, risk: "high", note: "Transportation and access barriers" },
-                { group: "Dialysis patients (3x/wk)", count: "1,200", pct: 0.2, risk: "critical", note: "Life-critical transport need" },
-                { group: "Serious mental illness", count: "14,000", pct: 2.2, risk: "high", note: "Psychiatric bed shortage affects directly" },
-                { group: "Migrant agricultural workers", count: "8,000", pct: 1.3, risk: "medium", note: "Seasonal, often undocumented, no insurance" },
-              ].map((item) => (
-                <div key={item.group} className="flex items-center justify-between py-2 border-b border-slate-100 last:border-0">
-                  <div>
-                    <div className="text-xs font-bold text-slate-800">{item.group}</div>
-                    <div className="text-[10px] text-slate-400">{item.note}</div>
-                  </div>
-                  <div className="flex items-center gap-2 text-right">
-                    <div>
-                      <div className="text-xs font-black text-slate-700">{item.count}</div>
-                      <div className="text-[9px] text-slate-400">{item.pct}% of VT pop</div>
-                    </div>
-                    <Badge color={item.risk === "critical" ? "bg-red-100 text-red-700" : item.risk === "high" ? "bg-orange-100 text-orange-700" : "bg-yellow-100 text-yellow-700"}>
-                      {item.risk}
-                    </Badge>
-                  </div>
-                </div>
-              ))}
-            </InfoCard>
 
             <InfoCard>
               <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Equity Impact by Recommendation</div>
@@ -189,18 +163,6 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
           </div>
 
           <div className="grid grid-cols-3 gap-3">
-            <MetricCard
-              value={transportScenario === "baseline" ? "$0" : transportScenario === "enhanced" ? "$8M" : "$24M"}
-              label="Annual Investment"
-              sublabel="State + Federal match"
-              color="text-amber-700"
-            />
-            <MetricCard
-              value={transportScenario === "baseline" ? "25%" : transportScenario === "enhanced" ? "12%" : "5%"}
-              label="Missed Appt Rate"
-              sublabel="Due to transport barriers"
-              color={transportScenario === "baseline" ? "text-red-600" : transportScenario === "enhanced" ? "text-amber-600" : "text-emerald-600"}
-            />
             <MetricCard
               value={transportScenario === "baseline" ? "High" : transportScenario === "enhanced" ? "Medium" : "Low"}
               label="Restructuring Risk"
@@ -238,10 +200,7 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
             <div className="text-xs font-black uppercase tracking-widest text-blue-700 mb-3">Research Evidence: Transportation & Health Outcomes</div>
             <div className="space-y-2">
               {[
-                { stat: "25–42%", finding: "Higher chronic disease complication rates among patients with transportation barriers (RWJF 2019)" },
-                { stat: "3.6M", finding: "Americans miss or delay medical care each year due to transportation barriers (TransCen Inc. 2016)" },
-                { stat: "28%", finding: "Reduction in avoidable hospitalizations when NEMT programs are well-funded (Medicaid Journal 2021)" },
-                { stat: "$6,800", finding: "Annual healthcare cost savings per patient when medical transport needs are met vs. unmet (Anthem, 2018)" },
+                { stat: "3.6M", finding: "Americans miss or delay medical care each year because of transportation barriers (Wallace et al., Transportation Research Record, 2005)" },
               ].map(({ stat, finding }) => (
                 <div key={stat} className="flex gap-3">
                   <div className="text-lg font-black text-blue-700 shrink-0 w-14 text-right">{stat}</div>

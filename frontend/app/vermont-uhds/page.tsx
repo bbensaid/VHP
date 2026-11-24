@@ -324,7 +324,7 @@ export default function VermontUHDSPage() {
             <thead className="bg-slate-50">
               <tr>
                 <th className="text-left font-bold text-slate-700 p-3">RHT-funded project</th>
-                <th className="text-left font-bold text-slate-700 p-3 w-32">FY26</th>
+                <th className="text-left font-bold text-slate-700 p-3 w-48">FY26 (Vermont RHT Year 1 data)</th>
                 <th className="text-left font-bold text-slate-700 p-3">What it does</th>
               </tr>
             </thead>
@@ -332,8 +332,8 @@ export default function VermontUHDSPage() {
               {[
                 ["Shared EMR adoption incentives", "Not itemized", "Voluntary adoption of a shared EMR that keeps contributing data to the VHIE."],
                 ["Centralized interfacility transfer tool", "Not itemized", "Shared real-time view of bed capacity and service availability across Vermont's hospitals, modeled on Oregon's Capacity Center."],
-                ["Statewide e-Consult Expansion", "$1,550,000", "Secure asynchronous specialist consultations, reducing unnecessary in-person referrals."],
-                ["Closed-Loop Referral System", "$455,000", "Digital care-coordination platform connecting medical, behavioral health, and social services."],
+                ["Statewide e-Consult Expansion", "$2.3M planned (Jan 2026); $5.64M signed incl. VTCPAP", "Secure asynchronous specialist consultations, reducing unnecessary in-person referrals."],
+                ["Closed-Loop Referral System", "$455K planned; $425K signed (Unite Us)", "Digital care-coordination platform connecting medical, behavioral health, and social services."],
                 ["Remote Patient Monitoring support", "IT Advances", "Chronic-care management in the home, enabling earlier intervention."],
                 ["Mobile Integrated Health support", "Prevention", "Community paramedics delivering pre- and post-operative care in the home."],
               ].map((r) => (

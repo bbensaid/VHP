@@ -1,0 +1,64 @@
+{
+ "tag": "pages-casestudies",
+ "note": "Case studies verified: KP AAM (Escobar NEJM 2020), Intermountain (Dec 2023 release), CMQCC (Main 2017; Health Affairs 2018), OneCare benchmarking 2021",
+ "only": [
+  "vermont-all-payer-aco-case-study",
+  "kaiser-permanente-ai-sepsis-detection",
+  "intermountain-hospital-at-home-operations",
+  "california-cmqcc-maternal-mortality-bundles"
+ ],
+ "pairs": [
+  [
+   "visited the emergency department at a rate roughly 36% higher than peer ACOs nationally and had about 18% fewer primary care visits",
+   "visited the emergency department at a rate roughly 36% higher than peer ACOs nationally and had about 18% fewer primary care visits in 2021"
+  ],
+  [
+   "The Advance Alert Monitor (AAM) program scans nearly 100 data elements from each adult non-ICU patient's electronic record every hour",
+   "The Advance Alert Monitor (AAM) program scans each adult non-ICU patient's electronic record every hour"
+  ],
+  [
+   "an estimated 520 deaths avoided over the study period.",
+   "an estimated 520 deaths avoided per year over the 3.5-year study period."
+  ],
+  [
+   "Kaiser now runs the system across 21 Northern California hospitals.",
+   "All 21 Kaiser Permanente Northern California hospitals had adopted the program by 2019."
+  ],
+  [
+   "19 hospitals in the staggered evaluation; 21 hospitals today",
+   "19 hospitals in the staggered evaluation; all 21 KPNC hospitals by 2019"
+  ],
+  [
+   "An estimated 520 deaths avoided over the study period",
+   "An estimated 520 deaths avoided per year (3.5-year study)"
+  ],
+  [
+   "and who live near one of 16 Intermountain hospitals in Utah,",
+   "and who live near a participating Intermountain hospital in Utah,"
+  ],
+  [
+   "By late 2023 the program had treated about 1,000 patients at home. Its medical director reported readmission rates roughly 40% lower than for comparable patients treated entirely in the hospital, no serious adverse events at home, and lower overall costs; before launch, executives had projected savings of 15–30% per patient.",
+   "By December 2023 the program had treated 1,000 patients at home since May 2020 and, by Intermountain's account, saved over 3,000 hospital bed days; Castell's director of home services said care at home can cost patients up to 30% less than a hospital stay."
+  ],
+  [
+   "Readmissions roughly 40% lower than comparable inpatients, as reported by program leadership (not independently audited)",
+   "Over 3,000 bed days saved and up to 30% lower cost, as reported by Intermountain (not independently audited)"
+  ],
+  [
+   "Available to patients near 16 Utah hospitals",
+   "Available to patients near participating Utah hospitals"
+  ],
+  [
+   "delivers acute care at home to patients living near 16 Utah hospitals.",
+   "delivers acute care at home to patients living near participating Utah hospitals."
+  ],
+  [
+   " By 2016, 92% of California hospitals had adopted the hemorrhage toolkit.",
+   ""
+  ],
+  [
+   "Hemorrhage toolkit adopted by 92% of California hospitals by 2016",
+   "Hemorrhage collaborative: 126 hospitals with about 288,000 annual births (Main et al., 2017)"
+  ]
+ ]
+}

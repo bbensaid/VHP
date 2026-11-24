@@ -261,56 +261,6 @@ export default function PricingPage() {
           })}
         </div>
 
-        {/* Social proof */}
-        <div className="mt-16">
-          {/* Trust stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 text-center">
-            {[
-              { value: "1,200+", label: "Active subscribers" },
-              { value: "50", label: "States covered" },
-              { value: "4.9★", label: "Avg. rating" },
-              { value: "19", label: "Research tools" },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-white rounded-xl border border-slate-200 p-5">
-                <p className="text-2xl font-black text-indigo-700">{stat.value}</p>
-                <p className="text-xs text-slate-500 font-semibold uppercase tracking-wide mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Testimonials */}
-          <h3 className="text-center text-sm font-black uppercase tracking-widest text-slate-400 mb-6">
-            Trusted by healthcare leaders
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                quote: "HTR's AI Analyst saves me hours every week. The policy briefs are better than anything our team was producing in-house.",
-                name: "Chief Medical Officer",
-                org: "Vermont integrated health system",
-              },
-              {
-                quote: "The state dashboard is the first tool I open every Monday morning. Indispensable for tracking regulatory changes across our market.",
-                name: "VP of Government Affairs",
-                org: "Regional payer organization",
-              },
-              {
-                quote: "As a health policy PhD student, the Research Lab is extraordinarily well-built. The Monte Carlo modeling tools alone are worth the subscription.",
-                name: "Doctoral Researcher",
-                org: "Boston University School of Public Health",
-              },
-            ].map((t, i) => (
-              <div key={i} className="bg-white rounded-xl border border-slate-200 p-6 flex flex-col gap-4">
-                <p className="text-slate-600 ty-body leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
-                <div className="mt-auto">
-                  <p className="font-bold text-slate-900 text-sm">{t.name}</p>
-                  <p className="text-slate-400 text-xs">{t.org}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Team plan */}
         <div className="mt-10 bg-white rounded-2xl border border-indigo-200 shadow-sm p-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-6">

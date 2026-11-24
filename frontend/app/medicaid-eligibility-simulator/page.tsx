@@ -197,7 +197,7 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
       program: "Choices for Care (LTSS)",
       eligible: "possibly",
       reason: "Age or disability status may qualify you — functional assessment required",
-      details: "Choices for Care provides personal care, adult day services, and residential care for people who need nursing-facility-level assistance but want to remain at home or in the community. Eligibility requires a functional assessment (ADL evaluation) in addition to income screening. Income limit is ~300% SSI ($2,742/mo individual).",
+      details: "Choices for Care provides personal care, adult day services, and residential care for people who need nursing-facility-level assistance but want to remain at home or in the community. Eligibility requires a functional assessment (ADL evaluation) in addition to income screening. Income limit is ~300% SSI ($2,982/mo individual; 2026 SSI rate $994).",
       color: "border-teal-200",
       badge: "bg-teal-50 text-teal-700",
       applyUrl: "https://ahs.vermont.gov/adrc",

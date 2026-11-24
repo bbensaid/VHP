@@ -408,7 +408,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
     { href: "/vermont-rht-program",          label: "Vermont RHT Program",            desc: "$195M (FY2026) and $190M (FY2027) federal Rural Health Transformation awards" },
     { href: "/rht-review/vermont",           label: "RHT Year 1 Review",              desc: "What Vermont signed, spent and was scored on in Year 1 — every figure sourced" },
     { href: "/rht-review",                   label: "RHT Review: 50 States",          desc: "Awards, money put to work and policy commitments in every state" },
-    { href: "/vermont-sash",                 label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for 13,000+ Vermont seniors" },
+    { href: "/vermont-sash",                 label: "SASH Program",                   desc: "Support and Services at Home — housing-based care coordination for about 5,000 Vermont seniors" },
     { href: "/vermont-designated-agencies",  label: "Designated Agencies (MH/SUD)",   desc: "Vermont's 11 regional non-profit Designated Agencies providing community mental health & SUD services" },
     { href: "/vermont-sdoh",                 label: "SDOH & Social Services",         desc: "Vermont's 8 SDOH domains, 2-1-1 Vermont, community action agencies — with clinical program connections" },
     { href: "/vermont-act-167",              label: "Vermont Act 167 (2022)",          desc: "Hospital transformation & Oliver Wyman analysis" },

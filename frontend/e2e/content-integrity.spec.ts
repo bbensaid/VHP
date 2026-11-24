@@ -64,3 +64,26 @@ test("Research Lab advisory panel carries no invented client statistics", async 
   await expect(page.getByText("Talk to an HTR Advisor", { exact: false }).first()).toBeAttached({ timeout: 20_000 });
   await expect(page.locator("body")).not.toContainText(/client satisfaction|states served|to proposal/i);
 });
+
+test("pricing carries no invented social proof (subscribers, ratings, testimonials)", async ({ page }) => {
+  await page.goto("/pricing");
+  await expect(page.getByRole("heading").first()).toBeVisible();
+  await expect(page.locator("body")).not.toContainText(/Active subscribers|Avg\. rating|Trusted by healthcare leaders|Boston University/i);
+});
+
+test("advisory pages make no track-record claims", async ({ page, context }) => {
+  // Advisory renders only on the Solutions brand (lib/brand.ts showAdvisory).
+  const host = "www.healthtransformationsolutions.org";
+  await context.addCookies([{ name: "htr_beta", value: `granted:${host}`, domain: `.${host}`, path: "/" }]);
+  for (const path of ["/advisory", "/advisory-hub"]) {
+    await page.goto(`https://${host}${path}`);
+    await expect(page.getByText(/Service Lines/i).first()).toBeAttached({ timeout: 20_000 });
+    await expect(page.locator("body")).not.toContainText(/Engagements Completed|Client Spend Advised|Client Retention|World-class/i);
+  }
+});
+
+test("subscribe prompts claim no audience size", async ({ page }) => {
+  await page.goto("/policy");
+  await expect(page.getByText("Unsubscribe anytime.", { exact: false }).first()).toBeAttached({ timeout: 20_000 });
+  await expect(page.locator("body")).not.toContainText(/Join 15,000\+/);
+});

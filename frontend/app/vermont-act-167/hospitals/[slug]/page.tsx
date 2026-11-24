@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { HOSPITALS, kmToNearestHospital } from "@/app/vermont-act-167/simulator/data";
+import { HOSPITALS, RECOMMENDATIONS, kmToNearestHospital } from "@/app/vermont-act-167/simulator/data";
 import type { Metadata } from "next";
 
 // ── Static params for all 14 hospitals ───────────────────────────────────────
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!h) return { title: "Hospital Not Found" };
   return {
     title: `${h.name} | Act 167 Hospital Profile | HTR`,
-    description: `Act 167 financial profile, Oliver Wyman recommendations, and community data for ${h.name} in ${h.city}, Vermont.`,
+    description: `Act 167 financial profile, Oliver Wyman findings, and community data for ${h.name} in ${h.city}, Vermont.`,
   };
 }
 
@@ -56,17 +56,19 @@ const URGENCY_META: Record<string, { label: string; color: string; border: strin
 
 // ── Oliver Wyman recommendation themes per urgency ────────────────────────────
 
-const WYMAN_RECS: Record<string, { title: string; detail: string; icon: string }[]> = {
+// HTR's generic options by urgency tier. These are NOT Oliver Wyman recommendations; OW's own
+// hospital-specific text is shown instead where the simulator data carries it (at-risk hospitals).
+const TIER_OPTIONS: Record<string, { title: string; detail: string; icon: string }[]> = {
   urgent: [
-    { icon: "→", title: "Evaluate Conversion to FQHC or REH Status", detail: "At current loss trajectory, conversion to Federally Qualified Health Center or Rural Emergency Hospital may be the only financially sustainable path." },
+    { icon: "→", title: "Evaluate Conversion Options", detail: "Assess whether a different designation (for example Rural Emergency Hospital) is supportable in the service area; Oliver Wyman judged REH likely not supportable for several at-risk Vermont hospitals." },
     { icon: "→", title: "Consolidate to Emergency & Primary Care Only", detail: "Reduce inpatient capacity to flex beds only. Shift all elective and specialty procedures to regional Centers of Excellence." },
     { icon: "→", title: "Pursue Shared Services Aggressively", detail: "Administrative, IT, supply chain, and billing consolidation with UVM Health Network or other regional partners to reduce overhead." },
-    { icon: "→", title: "Reassess All Low-Volume Service Lines", detail: "Any service line below volume thresholds set by the Oliver Wyman Report should be closed or transferred to a designated COE facility." },
+    { icon: "→", title: "Reassess All Low-Volume Service Lines", detail: "Review low-volume service lines against quality and volume evidence and against regional alternatives." },
     { icon: "→", title: "Apply Reference-Based Pricing", detail: "Transition commercial payer contracts to Medicare reference-based pricing model to stabilize revenue." },
   ],
   major: [
     { icon: "→", title: "Consolidate Specialty Services to Regional COEs", detail: "Transfer specialty services (orthopedics, oncology, cardiology) to designated Centers of Excellence while retaining Emergency and primary care." },
-    { icon: "→", title: "Administrative Cost Reduction Target: 15–20%", detail: "Hire external consultants to reduce administrative overhead and align physician productivity with national benchmarks." },
+    { icon: "→", title: "Administrative Cost Reduction", detail: "Benchmark administrative overhead and physician productivity against peers and set a reduction target." },
     { icon: "→", title: "Expand Telehealth & Remote Monitoring", detail: "Deploy telehealth for specialist consultations and chronic disease management to maintain access without fixed overhead." },
     { icon: "→", title: "Workforce Recruitment & Retention Program", detail: "Address travel-nurse dependency with permanent recruitment pipeline and housing support programs." },
   ],
@@ -77,8 +79,8 @@ const WYMAN_RECS: Record<string, { title: string; detail: string; icon: string }
     { icon: "→", title: "Capital Plan Review", detail: "Defer all non-essential capital expenditures. Prioritize investments that directly reduce variable costs." },
   ],
   modest: [
-    { icon: "→", title: "Academic Program Outcome Review", detail: "Evaluate whether medical education and research programs generate measurable improvements in Vermonter health outcomes." },
-    { icon: "→", title: "Global Budget Leadership Role", detail: "As Vermont's only financially stable system, UVMMC should anchor Act 68 hospital global-budget implementation and serve as the anchor for COE designations statewide." },
+    { icon: "→", title: "Program Outcome Review", detail: "Evaluate whether education, research and specialty programs produce measurable improvements in Vermonters' health outcomes." },
+    { icon: "→", title: "Global Budget Leadership Role", detail: "Hospitals with positive margins can help anchor Act 68 global-budget implementation and regional service designations." },
     { icon: "→", title: "Shared Services Provider", detail: "Expand shared administrative and clinical services to smaller Vermont hospitals to reduce system-wide costs." },
   ],
 };
@@ -91,7 +93,8 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
   if (!h) notFound();
 
   const urgencyMeta = URGENCY_META[h.urgency];
-  const recs = WYMAN_RECS[h.urgency] ?? WYMAN_RECS.significant;
+  const recs = TIER_OPTIONS[h.urgency] ?? TIER_OPTIONS.significant;
+  const owFinal = RECOMMENDATIONS.find((r) => r.id.startsWith("atrisk") && r.title.startsWith(h.name.split(" ")[0]));
   const isAtRisk = h.operatingMarginPct < -10;
   const marginColor = h.operatingMarginPct >= 0 ? "emerald" : h.operatingMarginPct > -5 ? "amber" : "red";
   const lossProjectionGrowth = h.projectedLoss2028M > 0 && h.annualLossM > 0
@@ -311,14 +314,20 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
         </div>
       </section>
 
-      {/* Oliver Wyman Recommendations */}
+      {/* Options by urgency tier (HTR) + Oliver Wyman final text where available */}
       <section className="mb-12">
         <h2 className="text-xs font-black uppercase tracking-widest text-violet-600 mb-2">Act 167 Guidance</h2>
-        <h3 className="text-xl font-black text-slate-900 mb-2">Oliver Wyman Recommendations</h3>
+        <h3 className="text-xl font-black text-slate-900 mb-2">Options for a {h.urgency}-tier hospital</h3>
+        {owFinal && (
+          <div className="mb-6 bg-violet-50 border border-violet-200 rounded-lg p-5">
+            <div className="text-xs font-black uppercase tracking-widest text-violet-700 mb-2">Oliver Wyman final recommendation (Jan 2025)</div>
+            <p className="text-sm text-slate-700 leading-relaxed">{owFinal.description}</p>
+          </div>
+        )}
         <p className="text-sm text-slate-500 mb-6">
-          Based on {h.name}&apos;s urgency classification (<strong>{h.urgency}</strong>), the following
-          recommendations from the Oliver Wyman Report apply. These are illustrative based on report categories —
-          hospital-specific recommendations require the full 144-page report.
+          HTR&apos;s general options for a hospital in the <strong>{h.urgency}</strong> tier (HTR&apos;s classification from
+          Oliver Wyman&apos;s at-risk list and FY2023 margins). These are not Oliver Wyman recommendations; Oliver Wyman&apos;s
+          hospital-specific findings are in its Act 167 report.
         </p>
         <div className="space-y-4">
           {recs.map((rec) => (
