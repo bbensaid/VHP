@@ -50,7 +50,7 @@ function VCCIProgramOverview() {
             { label: 'Administered by', value: 'DVHA / AHS' },
             { label: 'Authority', value: '1115 Waiver (Global Commitment to Health)' },
             { label: 'Target population', value: 'Top 5% high-cost Medicaid members' },
-            { label: '% of Medicaid spend', value: '~39% from top 5%' },
+            { label: '% of Medicaid spend', value: '~39% from top 5% (historically; DVHA, 2017)' },
           ].map(s => (
             <div key={s.label}>
               <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">{s.label}</p>

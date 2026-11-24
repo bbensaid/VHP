@@ -18,8 +18,7 @@ const SURROGATE_ENDPOINTS = [
     validationStrength: "Strong" as const,
     note: "UKPDS 35: each 1% HbA1c reduction → 21% fewer diabetes-related deaths, 37% fewer microvascular complications. The 0.04 QALY per 1% is a model assumption.",
     studies: [
-      "UKPDS 35 (BMJ 2000)",
-      "Stratton et al. (BMJ 2000)",
+      "UKPDS 35: Stratton et al. (BMJ 2000)",
       "ACCORD, ADVANCE trials",
     ],
   },
@@ -63,7 +62,7 @@ const SURROGATE_ENDPOINTS = [
     validationStrength: "Moderate" as const,
     note: "PFS-OS correlation varies by tumor type; modest overall. ~0.035 QALY/month PFS.",
     studies: [
-      "Prasad & Gale (JAMA Oncol 2016)",
+      "Prasad, Kim & Burotto (JAMA Intern Med 2015)",
       "Buyse et al. surrogate analysis",
       "FDA 2021 surrogate endpoint table",
     ],
@@ -76,10 +75,10 @@ const SURROGATE_ENDPOINTS = [
     clinicalFactor: 0.12,
     clinicalEvent: "improvement in OS (weak correlation)",
     validationStrength: "Weak" as const,
-    note: "ORR-OS correlation weak in most solid tumors. 1% ORR increase ≈ 0.003 QALY.",
+    note: "ORR-OS correlation is weak in most solid tumors. This tool assumes 1% ORR increase ≈ 0.003 QALY (model parameter, not a published estimate).",
     studies: [
-      "Kemp et al. (BMJ 2015)",
-      "Haslam et al. (JAMA Oncol 2019)",
+      "Kemp & Prasad (BMC Med 2017)",
+      "Haslam et al. (Eur J Cancer 2019)",
     ],
   },
   {
@@ -120,7 +119,7 @@ const SURROGATE_ENDPOINTS = [
     clinicalFactor: 0.30,
     clinicalEvent: "reduction in fracture risk",
     validationStrength: "Moderate" as const,
-    note: "Osteoporosis: 1 SD T-score improvement → ~30% fracture risk reduction.",
+    note: "Osteoporosis: this tool assumes ~30% fracture-risk reduction per 1 SD T-score improvement (model parameter, not a published estimate).",
     studies: [
       "Kanis et al. (Osteoporosis Int 2008)",
       "FRAX validation studies",

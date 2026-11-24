@@ -92,7 +92,7 @@ const SCENARIOS: ScenarioTemplate[] = [
     inputs: [
       { id: "hospitals_closed", label: "Hospitals converting to REH/CACC", type: "slider", min: 0, max: 4, default: 2, unit: "hospitals" },
       { id: "transport_investment", label: "EMS & transport investment", type: "select", default: "moderate",
-        options: [{ value: "none", label: "None" }, { value: "moderate", label: "Moderate ($20M)" }, { value: "full", label: "Full ($50M+)" }] },
+        options: [{ value: "none", label: "None" }, { value: "moderate", label: "Moderate (assumed $20M)" }, { value: "full", label: "Full (assumed $50M+)" }] },
       { id: "housing_built", label: "Affordable housing units built", type: "slider", min: 0, max: 2000, default: 500, unit: "units" },
       { id: "timeline_years", label: "Implementation timeline", type: "slider", min: 2, max: 6, default: 4, unit: "years" },
     ],
@@ -244,7 +244,7 @@ const SCENARIOS: ScenarioTemplate[] = [
           direction: "positive",
           headline: "Bends premium trend — reduces affordability burden on working Vermonters",
           details: [
-            "Vermont silver plan premiums up 108% since 2018 — reference pricing directly addresses this",
+            "Vermont silver plan premiums up 108% from 2018 to 2024 (Oliver Wyman, Act 167 report) — reference pricing directly addresses this",
             scope === "all_payer" ? "All-payer scope: maximum premium reduction benefit for commercially insured Vermonters" : "Limited scope: premium reduction benefit only for covered population",
             "Savings must be reinvested in SDOH, housing, and rural access — otherwise equity gains are lost",
             "Low-income populations benefit most from premium reduction",
@@ -337,7 +337,7 @@ const SCENARIOS: ScenarioTemplate[] = [
           details: [
             broadband === "none" ? "⚠ Without broadband, HaH benefits accrue primarily to Burlington/Barre — widens rural-urban disparity" : "Broadband investment is the key equity lever for this program",
             "Must include language-accessible telehealth interfaces",
-            "Elderly patients (65+, 30%+ of Vermont by 2040) are primary beneficiaries — high alignment",
+            "Elderly patients (65+, projected above 30% of Vermont by 2040 per Oliver Wyman) are primary beneficiaries — high alignment",
             "SASH and PACE programs can provide supplemental support for HaH-enrolled patients",
           ],
         },

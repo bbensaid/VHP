@@ -238,7 +238,7 @@ export function NurseStaffingTab() {
               max={200}
               step={5}
               unit="% over staff rate"
-              info="Typical range: 50–200% above staff nurse rate"
+              info="Set from your own agency contracts (slider range 50–200%)"
               onChange={setAgencyPremium}
             />
             <Slider

@@ -1,0 +1,21 @@
+{
+ "tag": "pa-batch5-restore",
+ "note": "Restore 65+ >30% by 2040 with Oliver Wyman attribution (book Ch1/Ch8/Ch16 cite OW); removed in batch3 in error",
+ "only": [
+  "rural-precipice-nursing-workforce-vermont"
+ ],
+ "pairs": [
+  [
+   "As the over-65 share of Vermont's population keeps rising and",
+   "As the over-65 share of Vermont's population rises toward more than 30% by 2040 (Oliver Wyman's Act 167 projections), and"
+  ],
+  [
+   "Aging population; rising 65+ share",
+   "Aging population; 65+ above 30% by 2040 (Oliver Wyman)"
+  ],
+  [
+   "an aging population needs",
+   "an aging population (65+ above 30% by 2040, per Oliver Wyman) needs"
+  ]
+ ]
+}

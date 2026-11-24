@@ -450,6 +450,7 @@ function RPMCalculator() {
         {/* CMS Reimbursement */}
         <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5">
           <SectionTitle>CMS Reimbursement (CPT Codes)</SectionTitle>
+          <p className="text-[11px] text-slate-400 mb-2">CY2026 national non-facility rates: CMS Physician Fee Schedule RVU file (RVU26D), conversion factor $33.4009.</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
             {[
               { code: "99453", rate: "$21.71", desc: "Device setup (one-time)" },
@@ -1228,7 +1229,9 @@ const EHR_SPECIALTIES = [
 ];
 
 const INTERVENTIONS = [
-  { key: "ai_doc", label: "AI-Assisted Documentation", minSave: 40, maxSave: 60, cost: 120000 },
+  // AI documentation range from two 2025 RCTs: ~8 min/day (Lukac, NEJM AI: ~23 s/note net of control, ~20 notes/day)
+  // to ~22 min/day (Afshar, NEJM AI: 0.36 h/day). Every other row is a model assumption.
+  { key: "ai_doc", label: "AI-Assisted Documentation (ambient scribe)", minSave: 8, maxSave: 22, cost: 120000 },
   { key: "inbox", label: "Inbox Optimization", minSave: 20, maxSave: 30, cost: 25000 },
   { key: "order_set", label: "Order Set Optimization", minSave: 10, maxSave: 15, cost: 15000 },
   { key: "cds", label: "CDS Rationalization", minSave: 10, maxSave: 20, cost: 20000 },
@@ -1283,7 +1286,7 @@ function EHROptimization() {
 
     // Alert fatigue
     const actionableAlerts = alertsPerDay * (1 - alertFatigueRate / 100);
-    const alertCostPerDay = numPhysicians * alertsPerDay * 0.5; // $0.50/alert overhead
+    const alertCostPerDay = numPhysicians * alertsPerDay * 0.5; // $0.50/alert overhead (model assumption)
     const alertAnnualCost = alertCostPerDay * 260;
 
     // Interoperability ROI
@@ -1381,6 +1384,7 @@ function EHROptimization() {
         {/* Section B: Interventions */}
         <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5">
           <SectionTitle>Section B: Optimization Interventions</SectionTitle>
+          <p className="text-[11px] text-slate-400 mb-2">AI documentation time saved is the range found in two 2025 randomized trials (Lukac et al.; Afshar et al., NEJM AI): about 8–22 minutes a day. All other time savings and every cost are model assumptions, not measured results.</p>
           <div className="space-y-2">
             {INTERVENTIONS.map((inv) => {
               const active = activeInterventions[inv.key];
@@ -1427,6 +1431,7 @@ function EHROptimization() {
         {/* Section C: Interoperability */}
         <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5">
           <SectionTitle>Section C: Interoperability ROI</SectionTitle>
+          <p className="text-[11px] text-slate-400 mb-2">Unit values are model assumptions, not published prices: $150 per duplicate lab, $400 per duplicate image, $250 per avoidable referral, $12 per automated prior authorization.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <Label>Duplicate Labs Prevented/Year</Label>
@@ -1551,6 +1556,7 @@ function EHROptimization() {
 
         <div className="bg-slate-800/40 border border-slate-700 rounded-2xl p-5 space-y-2">
           <SectionTitle>Alert Burden Impact</SectionTitle>
+          <p className="text-[11px] text-slate-400 mb-2">Alert cost uses a model assumption of $0.50 of clinician overhead per alert.</p>
           <div className="flex justify-between py-1.5 border-b border-slate-700/50">
             <span className="text-slate-300 text-sm">Alerts/Day (All Physicians)</span>
             <span className="text-amber-400 font-bold text-sm">{fmt(alertsPerDay * numPhysicians)}</span>

@@ -99,7 +99,7 @@ export default function VBCClinicalQualityClient() {
         'Design and implement a HEDIS gap closure program for your attributed population',
         'Build HCC-accurate coding and documentation programs to optimize VBC risk adjustment',
         'Develop a 30-day readmission reduction strategy with TCM protocols and care transitions infrastructure',
-        'Implement high vs. low value care analysis to identify $1M+ in modifiable spend in your ACO',
+        'Implement high vs. low value care analysis to identify modifiable spend in your ACO',
       ]}
     >
       {/* Tab navigation */}

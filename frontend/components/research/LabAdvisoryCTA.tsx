@@ -68,20 +68,6 @@ export default function LabAdvisoryCTA({
           </div>
         </div>
 
-        {/* Right: quick stats */}
-        <div className="shrink-0 flex flex-col gap-3 md:w-48">
-          {[
-            { value: '5 days', label: 'to proposal' },
-            { value: '97%', label: 'client satisfaction' },
-            { value: '35+', label: 'states served' },
-          ].map((s) => (
-            <div key={s.label} className="bg-white border border-slate-200 rounded-xl px-4 py-3 text-center shadow-sm">
-              <div className="text-2xl font-black text-fuchsia-700">{s.value}</div>
-              <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wide">{s.label}</div>
-            </div>
-          ))}
-        </div>
-
       </div>
     </div>
   )

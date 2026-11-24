@@ -25,7 +25,7 @@ const ALGORITHM_COMPARISON = [
     primaryUse: 'Medicare ACOs, MSSP, ACO REACH, Medicare Advantage',
     inputData: 'ICD-10 diagnoses from inpatient, outpatient, and ER claims in the base year',
     outputUnit: 'RAF Score (1.0 = average expected cost)',
-    strengthsArr: ['Fully public — weights and HCC mappings published annually', 'Used by CMS for all Medicare VBC contracts', 'Audit-able and explainable at the diagnosis level', 'Well-validated against actual Medicare spend'],
+    strengthsArr: ['Fully public — weights and HCC mappings published annually', 'Used by CMS for Medicare Advantage payment and Medicare ACO benchmarks', 'Audit-able and explainable at the diagnosis level', 'Well-validated against actual Medicare spend'],
     weaknessArr: ['Claims-based — requires prior-year diagnosis history', 'Does not use lab values, vitals, or functional status', 'Retrospective — does not predict future events, only adjusts payment', 'New Medicare enrollees have limited claims history'],
     vermontNote: 'This is the operative risk adjustment methodology for Medicare ACO-attributed lives in Vermont (MSSP, ACO REACH). RAF scores update annually with prior-year diagnoses.',
   },
@@ -346,7 +346,7 @@ function PopulationTierView() {
             <div key={t.key} className={`${t.light} ${t.border} border rounded-xl px-4 py-2 flex items-center justify-between gap-4`} style={{ width: `${width}%`, minWidth: '280px' }}>
               <div>
                 <p className={`text-xs font-black ${t.text}`}>{t.label}</p>
-                <p className="text-[10px] text-slate-500">RAF {t.rafRange} · {t.pct} of pop · {t.share} of costs</p>
+                <p className="text-[10px] text-slate-500">RAF {t.rafRange} · illustrative: {t.pct} of pop · {t.share} of costs</p>
               </div>
               <div className="text-right">
                 <p className="font-black text-slate-900">{pts.length} pts</p>

@@ -870,7 +870,7 @@ function AdverseSelection() {
 
           <div className="bg-white rounded-xl border border-gray-200 p-5">
             <h3 className="text-base font-semibold text-slate-800 mb-3">Stabilization Interventions</h3>
-            <Toggle label="Individual Mandate" value={inputs.mandate} onChange={(v) => set("mandate", v)} description="Reduces exit rate by ~30%" />
+            <Toggle label="Individual Mandate" value={inputs.mandate} onChange={(v) => set("mandate", v)} description="Reduces exit rate by ~30% (model assumption)" />
             <Toggle label="Risk Corridors" value={inputs.riskCorridors} onChange={(v) => set("riskCorridors", v)} description="Limits insurer losses, stabilizes premiums" />
             <Toggle label="Reinsurance Program" value={inputs.reinsurance} onChange={(v) => set("reinsurance", v)} description="Covers high-cost outliers, reduces premium trend" />
             <Toggle label="CSR Payments" value={inputs.csrPayments} onChange={(v) => set("csrPayments", v)} description="Keeps low-income members enrolled" />
@@ -896,7 +896,7 @@ function AdverseSelection() {
             <div className="bg-emerald-50 border border-emerald-300 rounded-xl p-4 flex gap-3">
               <Shield className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
               <div className="text-sm text-emerald-800">
-                <strong>Market Stable:</strong> Risk pool remains viable through the 5-year simulation window. Insured rate stays above the 40% death spiral threshold.
+                <strong>Market Stable:</strong> Risk pool remains viable through the 5-year simulation window. Insured rate stays above this model's 40% death-spiral trigger (a modelling assumption).
               </div>
             </div>
           )}
@@ -1007,7 +1007,6 @@ function MedicareDrugPricing() {
   const [selectedDrugIdx, setSelectedDrugIdx] = useState(0);
   const [customMedicareSpending, setCustomMedicareSpending] = useState<number | null>(null);
   const [patientAnnualDrugCost, setPatientAnnualDrugCost] = useState(8000);
-  const [patientIncomeLevel, setPatientIncomeLevel] = useState<"low" | "mid" | "high">("mid");
 
   // Section C
   const [inflDrugName, setInflDrugName] = useState("Humira (adalimumab)");
@@ -1055,11 +1054,10 @@ function MedicareDrugPricing() {
     const newDeductible = Math.min(cost, NEW_DED);
     const newTotalOOP = Math.min(newDeductible + Math.max(0, cost - newDeductible) * 0.25, NEW_CAP);
 
-    // Low income subsidy adjustments
-    const liSubsidy = patientIncomeLevel === "low" ? 0.85 : patientIncomeLevel === "mid" ? 0.30 : 0;
-
-    const oldFinalOOP = oldTotalOOP * (1 - liSubsidy);
-    const newFinalOOP = newTotalOOP * (1 - liSubsidy);
+    // Standard benefit only. Extra Help (LIS) enrollees pay no deductible and small fixed copays,
+    // which this simplified calculator does not model.
+    const oldFinalOOP = oldTotalOOP;
+    const newFinalOOP = newTotalOOP;
 
     // Determine spending phase (new)
     let newPhase = "Deductible";
@@ -1073,7 +1071,7 @@ function MedicareDrugPricing() {
     else if (cost > OLD_DED) oldPhase = "Initial Coverage";
 
     return { oldTotalOOP: oldFinalOOP, newTotalOOP: newFinalOOP, savings: Math.max(0, oldFinalOOP - newFinalOOP), oldPhase, newPhase };
-  }, [patientAnnualDrugCost, patientIncomeLevel]);
+  }, [patientAnnualDrugCost]);
 
   // Section C: Inflation rebate
   const inflationRebate = useMemo(() => {
@@ -1176,26 +1174,9 @@ function MedicareDrugPricing() {
             <Slider label="Annual Drug Costs (total allowed)" value={patientAnnualDrugCost} min={0} max={30000} step={500} prefix="$" onChange={setPatientAnnualDrugCost} />
 
             <div className="mb-4">
-              <label className="text-xs font-medium text-slate-600 block mb-1">Income Level (Low-Income Subsidy)</label>
-              <div className="flex gap-2">
-                {(["low", "mid", "high"] as const).map((lvl) => (
-                  <button
-                    key={lvl}
-                    onClick={() => setPatientIncomeLevel(lvl)}
-                    className={`flex-1 py-2 text-xs font-medium rounded-lg capitalize transition-colors ${
-                      patientIncomeLevel === lvl
-                        ? "bg-emerald-600 text-white"
-                        : "bg-gray-100 text-slate-600 hover:bg-gray-200"
-                    }`}
-                  >
-                    {lvl === "low" ? "Low (LIS)" : lvl === "mid" ? "Middle" : "High"}
-                  </button>
-                ))}
-              </div>
-              <div className="text-xs text-slate-500 mt-1">
-                {patientIncomeLevel === "low" ? "Low-Income Subsidy: 85% OOP reduction" :
-                 patientIncomeLevel === "mid" ? "Partial subsidy: 30% OOP reduction" :
-                 "No subsidy — full cost sharing"}
+              <div className="text-xs text-slate-500">
+                Standard benefit. People with Extra Help (the Low-Income Subsidy, available up to 150% FPL since 2024) pay no
+                deductible and only small fixed copays, so their costs are far lower than shown here.
               </div>
             </div>
 

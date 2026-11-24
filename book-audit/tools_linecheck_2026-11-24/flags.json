@@ -1,0 +1,967 @@
+{
+"files": [
+"app/hti-dashboard/page.tsx",
+"app/htr-simulator/layout.tsx",
+"app/htr-simulator/page.tsx",
+"app/impact-simulation/layout.tsx",
+"app/impact-simulation/page.tsx",
+"app/investment-tracker/InvestmentTrackerClient.tsx",
+"app/investment-tracker/InvestmentTrackerClient.tsx",
+"app/investment-tracker/page.tsx",
+"app/medicaid-eligibility-simulator/layout.tsx",
+"app/medicaid-eligibility-simulator/page.tsx",
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+"app/policy/medicare-for-all/modeler/page.tsx",
+"app/portfolio-sequencing-test/layout.tsx",
+"app/portfolio-sequencing-test/page.tsx",
+"app/research-lab/ResearchLabHub.tsx",
+"app/research-lab/error.tsx",
+"app/research-lab/interoperability/InteroperabilityClient.tsx",
+"app/research-lab/interoperability/InteroperabilityClient.tsx",
+"app/research-lab/interoperability/page.tsx",
+"app/research-lab/knowledge-workspace/KnowledgeWorkspaceClient.tsx",
+"app/research-lab/knowledge-workspace/KnowledgeWorkspaceClient.tsx",
+"app/research-lab/knowledge-workspace/page.tsx",
+"app/research-lab/loading.tsx",
+"app/research-lab/page.tsx",
+"app/research-lab/payment-models/PaymentModelsClient.tsx",
+"app/research-lab/payment-models/PaymentModelsClient.tsx",
+"app/research-lab/payment-models/page.tsx",
+"app/research-lab/policy-quality/PolicyQualityClient.tsx",
+"app/research-lab/policy-quality/PolicyQualityClient.tsx",
+"app/research-lab/policy-quality/page.tsx",
+"app/research-lab/population-equity/PopulationEquityClient.tsx",
+"app/research-lab/population-equity/PopulationEquityClient.tsx",
+"app/research-lab/population-equity/page.tsx",
+"app/research-lab/technology-ai/TechnologyAIClient.tsx",
+"app/research-lab/technology-ai/TechnologyAIClient.tsx",
+"app/research-lab/technology-ai/page.tsx",
+"app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx",
+"app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx",
+"app/research-lab/vbc-clinical-quality/page.tsx",
+"app/the-wire/VermontBillTracker.tsx",
+"app/the-wire/VermontBillTracker.tsx",
+"app/the-wire/WireFeed.tsx",
+"app/the-wire/WireFeed.tsx",
+"app/the-wire/page.tsx",
+"app/transformation-friction-index/layout.tsx",
+"app/transformation-friction-index/page.tsx",
+"app/vermont-act-167/simulator/data.ts",
+"components/BrandContext.tsx",
+"components/ErrorBoundary.tsx",
+"components/FromTheBook.tsx",
+"components/HTIDashboard.tsx",
+"components/WireCommentDrawer.tsx",
+"components/framework/FrictionScorer.tsx",
+"components/framework/InvestmentSequencingCheck.tsx",
+"components/framework/PortfolioSequencingCheck.tsx",
+"components/framework/PortfolioSequencingTest.tsx",
+"components/framework/SequenceSimulator.tsx",
+"components/framework/ShortfallPropagation.tsx",
+"components/framework/StrategicPlanPace.tsx",
+"components/research/AIAnalyticsLab.tsx",
+"components/research/APMCalculator.tsx",
+"components/research/APMDesignLab.atoms.tsx",
+"components/research/APMDesignLab.data.ts",
+"components/research/APMDesignLab.models.ts",
+"components/research/APMDesignLab.tabs/architecture.tsx",
+"components/research/APMDesignLab.tabs/benchmark.tsx",
+"components/research/APMDesignLab.tabs/episode.tsx",
+"components/research/APMDesignLab.tabs/global-budget.tsx",
+"components/research/APMDesignLab.tsx",
+"components/research/Act68TransitionScenario.tsx",
+"components/research/ActuarialLab.tsx",
+"components/research/CEACalculator.tsx",
+"components/research/CINSharedServicesLab.tsx",
+"components/research/ClinicalQualityOptimizer.tsx",
+"components/research/ClinicalQualityOptimizer.tsx",
+"components/research/DigitalHealthLab.tsx",
+"components/research/EMREHRLab.tsx",
+"components/research/EMSTransformationLab.tsx",
+"components/research/EvidenceLibrary.tsx",
+"components/research/FHIRImplementationGuide.tsx",
+"components/research/FHIRLab.tsx",
+"components/research/GlobalBudgetTransitionModeler.tsx",
+"components/research/HCCGapClosurePlaybook.tsx",
+"components/research/HL7FHIRExplorer.tsx",
+"components/research/HR1CliffScenario.tsx",
+"components/research/HTAStudio.data.ts",
+"components/research/HTAStudio.tabs/bim.tsx",
+"components/research/HTAStudio.tabs/mcda.tsx",
+"components/research/HTAStudio.tabs/psa.tsx",
+"components/research/HTAStudio.tabs/threshold.tsx",
+"components/research/HTAStudio.tsx",
+"components/research/HealthEquityStudio.tsx",
+"components/research/HighLowValueCare.tsx",
+"components/research/HospitalFinancialScorecard.tsx",
+"components/research/InnovationLeaderboard.tsx",
+"components/research/LabAdvisoryCTA.tsx",
+"components/research/LabPageShell.tsx",
+"components/research/MedicaidWorkRequirementsCalculator.tsx",
+"components/research/PolicyImpactAssessment.tsx",
+"components/research/PolicySimulator.atoms.tsx",
+"components/research/PolicySimulator.data.ts",
+"components/research/PolicySimulator.tabs/apm.tsx",
+"components/research/PolicySimulator.tabs/expansion.tsx",
+"components/research/PolicySimulator.tabs/structural-test.tsx",
+"components/research/PolicySimulator.tabs/transparency.tsx",
+"components/research/PolicySimulator.tabs/waiver.tsx",
+"components/research/PolicySimulator.tsx",
+"components/research/PopulationHealthModeler.pqi.tsx",
+"components/research/PopulationHealthModeler.tsx",
+"components/research/ResearchWorkspace.atoms.tsx",
+"components/research/ResearchWorkspace.data.ts",
+"components/research/ResearchWorkspace.tabs/comparison.tsx",
+"components/research/ResearchWorkspace.tabs/notes.tsx",
+"components/research/ResearchWorkspace.tabs/report.tsx",
+"components/research/ResearchWorkspace.tabs/scenarios.tsx",
+"components/research/ResearchWorkspace.tsx",
+"components/research/RiskStratificationEngine.tsx",
+"components/research/RiskStratificationMethodology.tsx",
+"components/research/StatewideEHRLab.tsx",
+"components/research/ToolBookCallout.tsx",
+"components/research/ToolErrorBoundary.tsx",
+"components/research/TransformationScorecard.tsx",
+"components/research/VBCContractReviewChecklist.tsx",
+"components/research/VBCQualityDashboard.tsx",
+"components/research/VBCReadinessAssessment.tsx",
+"components/research/VCCIScenario.tsx",
+"components/research/WorkforceModeler.atoms.tsx",
+"components/research/WorkforceModeler.data.ts",
+"components/research/WorkforceModeler.tabs/rural.tsx",
+"components/research/WorkforceModeler.tabs/staffing.tsx",
+"components/research/WorkforceModeler.tabs/supply.tsx",
+"components/research/WorkforceModeler.tabs/turnover.tsx",
+"components/research/WorkforceModeler.tsx",
+"lib/auth.ts",
+"lib/brand-server.ts",
+"lib/brand.ts",
+"lib/brand.ts",
+"lib/data/gmcb-fy27-budget-orders.ts",
+"lib/data/gmcb-fy27-budget-orders.ts",
+"lib/data/green-mountain-community-hospital.ts",
+"lib/data/hti-timeseries-data.ts",
+"lib/data/hti-timeseries-data.ts",
+"lib/data/vt-pillar-history.ts",
+"lib/db/client.ts",
+"lib/framework/dependencies.ts",
+"lib/framework/dependencies.ts",
+"lib/framework/pillar-mapping.ts",
+"lib/framework/portfolio-test.ts",
+"lib/framework/sequence-engine.ts",
+"lib/framework/sequence-engine.ts",
+"lib/m4a/modeler.ts",
+"lib/m4a/vermont-hospitals.ts",
+"lib/m4a/vermont-hospitals.ts",
+"lib/sanity-fetch.ts",
+"lib/sanity.ts",
+"lib/syntheticPatients.ts",
+"lib/taxonomy/badges.ts",
+"lib/taxonomy/chapters.ts",
+"lib/taxonomy/chapters.ts",
+"lib/taxonomy/index.ts",
+"lib/taxonomy/pillars.ts",
+"lib/taxonomy/pillars.ts",
+"lib/taxonomy/programs.ts",
+"lib/taxonomy/tools.ts",
+"lib/taxonomy/tools.ts",
+"lib/vcciScenarioData.ts",
+"lib/wire/feed.ts",
+"lib/wire/tag.ts",
+"lib/wire/tag.ts",
+"lib/wire/vt-bills.ts"
+],
+"flags": [
+[
+"app/htr-simulator/page.tsx",
+199,
+"{ label: \"Per Year\", value: \"$10B\" },"
+],
+[
+"app/htr-simulator/page.tsx",
+200,
+"{ label: \"FY2026\u20132030\", value: \"$50B\" },"
+],
+[
+"app/impact-simulation/page.tsx",
+247,
+"\"Vermont silver plan premiums up 108% since 2018 \u2014 reference pricing directly addresses this\","
+],
+[
+"app/impact-simulation/page.tsx",
+340,
+"\"Elderly patients (65+, 30%+ of Vermont by 2040) are primary beneficiaries \u2014 high alignment\","
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+84,
+"reason: `Your income (${fplPct.toFixed(0)}% FPL) is at or below the 138% FPL threshold`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+94,
+"reason: `Your income (${fplPct.toFixed(0)}% FPL) exceeds the 138% FPL limit`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+95,
+"details: \"You may qualify for subsidized coverage through Vermont Health Connect. At 139\u2013400% FPL you are likely eligible for premium tax credits on a Qualified Health Plan.\","
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+111,
+"details: \"Comprehensive coverage for all children ages 0\u201318: preventive care, dental, vision, mental health, prescriptions, hospital care. No premiums for families below 225% FPL; small premiums above that.\","
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+120,
+"reason: `Household income (${fplPct.toFixed(0)}% FPL) exceeds the 317% FPL limit`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+135,
+"reason: `Income (${fplPct.toFixed(0)}% FPL) is at or below the 213% FPL threshold for pregnant women`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+145,
+"reason: `Income (${fplPct.toFixed(0)}% FPL) exceeds the 213% FPL threshold`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+176,
+"details: \"Covers all standard Medicaid benefits plus long-term care services. An asset test applies (generally $2,000 individual / $3,000 couple). SSI recipients are automatically eligible. May coordinate with Medicare.\","
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+200,
+"details: \"Choices for Care provides personal care, adult day services, and residential care for people who need nursing-facility-level assistance but want to remain at home or in the community. Eligibility requires a functional assessment (ADL evaluation) in addition to income screening. Income limi"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+264,
+"details: \"You may still qualify for subsidized coverage through Vermont Health Connect at 139\u2013400% FPL. Contact Vermont Health Connect to review all options including Qualified Health Plans and Advance Premium Tax Credits.\","
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+295,
+"body: `At ${fplPct.toFixed(0)}% FPL you are ${usd(((138 - fplPct) / 100) * fpl)} a year below the 138% line. Cross it and adult Medicaid ends; coverage moves to a Vermont Health Connect plan with premiums and cost-sharing \u2014 the point where people most often go uninsured between programs.`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+301,
+"body: `Pregnancy and postpartum coverage run to 213% FPL, through 12 months after birth. At ${fplPct.toFixed(0)}% FPL the parent is above the 138% adult limit, so when the postpartum year ends Medicaid ends with it \u2014 mid-way through the year a new infant needs the most care.`,"
+],
+[
+"app/medicaid-eligibility-simulator/page.tsx",
+307,
+"body: `Children are covered to 317% FPL; adults only to 138%. At ${fplPct.toFixed(0)}% FPL every child in this household loses Medicaid on their 19th birthday unless household income falls below 138% \u2014 a coverage break timed to the transition into adult care.`,"
+],
+[
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+18,
+"const pct = (x: number | null, d = 1) => (x === null ? \"\u2014\" : !Number.isFinite(x) ? \"< \u2212100%\" : `${(x * 100).toFixed(d)}%`);"
+],
+[
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+201,
+"<Tile value={lens === \"rate\" ? `${neutral.toFixed(0)}%` : \"0%\"} label={lens === \"rate\" ? \"Revenue-neutral single rate, % of Medicare\" : \"Operating margin of every hospital under \u00a7 611\"} />"
+],
+[
+"app/research-lab/knowledge-workspace/KnowledgeWorkspaceClient.tsx",
+60,
+"desc: \"Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium.\","
+],
+[
+"app/research-lab/policy-quality/PolicyQualityClient.tsx",
+48,
+"desc: 'Build budget impact models, run MCDA with 8 criteria, and execute real Monte Carlo PSA with 1,000 stochastic iterations using Beta, Log-normal, and Gamma distributions.',"
+],
+[
+"app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx",
+102,
+"'Implement high vs. low value care analysis to identify $1M+ in modifiable spend in your ACO',"
+],
+[
+"app/transformation-friction-index/page.tsx",
+86,
+"\"linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)\","
+],
+[
+"app/vermont-act-167/simulator/data.ts",
+535,
+"\"Academic evidence: 20% lower mortality at high-volume vs. low-volume centers (Birkmeyer et al.)\","
+],
+[
+"app/vermont-act-167/simulator/data.ts",
+778,
+"headline: \"Hospital-at-home cut direct costs 38% in a randomized trial (Levine et al., Annals of Internal Medicine, 2020)\","
+],
+[
+"components/HTIDashboard.tsx",
+284,
+"backgroundColor: \"rgba(16,185,129,0.1)\","
+],
+[
+"components/HTIDashboard.tsx",
+321,
+"backgroundColor: \"rgba(245,158,11,0.15)\","
+],
+[
+"components/research/AIAnalyticsLab.tsx",
+904,
+"{ label: \"Removing proxy variables\", impact: \"Moderate (2\u20135% AUC)\" },"
+],
+[
+"components/research/AIAnalyticsLab.tsx",
+905,
+"{ label: \"Adversarial debiasing\", impact: \"Variable (1\u20138% AUC)\" },"
+],
+[
+"components/research/AIAnalyticsLab.tsx",
+1233,
+"? \"Every governance domain clears 80%. The checklist does not block deployment.\""
+],
+[
+"components/research/APMCalculator.tsx",
+33,
+"desc: \"Entry-level ACO track. No downside risk. Up to 40% of savings once the size-based MSR (2.0\u20133.9% for 5,000\u201360,000 lives) is met; capped at 10% of benchmark.\","
+],
+[
+"components/research/ActuarialLab.tsx",
+301,
+"<strong>Actuarial Value (AV)</strong> represents the percentage of total allowed healthcare costs that a health plan pays for a standard population. Higher AV = richer benefits and higher premiums. ACA requires plans to fall within metallic tiers (\u00b12% de minimis tolerance)."
+],
+[
+"components/research/ActuarialLab.tsx",
+394,
+"<span>Bronze target 60%</span>"
+],
+[
+"components/research/ActuarialLab.tsx",
+395,
+"<span>Silver 70%</span>"
+],
+[
+"components/research/ActuarialLab.tsx",
+396,
+"<span>Gold 80%</span>"
+],
+[
+"components/research/ActuarialLab.tsx",
+397,
+"<span>Platinum 90%</span>"
+],
+[
+"components/research/ActuarialLab.tsx",
+412,
+"sub=\"vs 70% AV benchmark\""
+],
+[
+"components/research/ActuarialLab.tsx",
+434,
+"{ tier: \"Bronze\", target: 60, color: \"bg-amber-400\", range: \"target 60%\" },"
+],
+[
+"components/research/ActuarialLab.tsx",
+435,
+"{ tier: \"Silver\", target: 70, color: \"bg-emerald-400\", range: \"target 70%\" },"
+],
+[
+"components/research/ActuarialLab.tsx",
+436,
+"{ tier: \"Gold\", target: 80, color: \"bg-blue-400\", range: \"target 80%\" },"
+],
+[
+"components/research/ActuarialLab.tsx",
+437,
+"{ tier: \"Platinum\", target: 90, color: \"bg-purple-500\", range: \"target 90%\" },"
+],
+[
+"components/research/ActuarialLab.tsx",
+568,
+"<strong>Premium Rating</strong> involves setting health insurance premiums to cover expected claims, administrative costs, and margin while complying with ACA rating restrictions (3:1 age ratio, no gender rating, max 50% tobacco surcharge)."
+],
+[
+"components/research/ActuarialLab.tsx",
+899,
+"<strong>Market Stable:</strong> Risk pool remains viable through the 5-year simulation window. Insured rate stays above the 40% death spiral threshold."
+],
+[
+"components/research/ActuarialLab.tsx",
+1066,
+"if (newTotalOOP >= NEW_CAP) newPhase = \"Catastrophic ($0 after cap)\";"
+],
+[
+"components/research/ActuarialLab.tsx",
+1173,
+"<IRASec title=\"Section B \u2014 Part D Benefit Redesign: No Donut Hole, Out-of-Pocket Cap ($2,100 in 2026)\">"
+],
+[
+"components/research/ActuarialLab.tsx",
+1196,
+"{patientIncomeLevel === \"low\" ? \"Low-Income Subsidy: 85% OOP reduction\" :"
+],
+[
+"components/research/ActuarialLab.tsx",
+1197,
+"patientIncomeLevel === \"mid\" ? \"Partial subsidy: 30% OOP reduction\" :"
+],
+[
+"components/research/ActuarialLab.tsx",
+1233,
+"<StatBox label=\"OOP Under New Design\" value={fmtDollar(partDOOP.newTotalOOP, 0)} sub=\"deductible + 25% coinsurance, $2,100 cap\" color=\"emerald\" />"
+],
+[
+"components/research/ActuarialLab.tsx",
+1246,
+"{ phase: \"Deductible\", old: \"$505\", new: \"$615\", change: \"Higher\" },"
+],
+[
+"components/research/ActuarialLab.tsx",
+1247,
+"{ phase: \"Initial Coverage\", old: \"25% coins.\", new: \"25% coins.\", change: \"Same\" },"
+],
+[
+"components/research/CEACalculator.tsx",
+28,
+"{ label: \"NICE (UK, upper \u00a335k \u2248 $45k)\", value: 45000, color: \"text-emerald-600\" },"
+],
+[
+"components/research/CEACalculator.tsx",
+103,
+"if (v < 200000) return { label: \"High Cost \u2014 Above ICER's $150k Range\", color: \"text-orange-700\", bg: \"bg-orange-50 border-orange-200\" };"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+455,
+"{ code: \"99453\", rate: \"$21.71\", desc: \"Device setup (one-time)\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+456,
+"{ code: \"99454\", rate: \"$52.11/mo\", desc: \"Device supply, 16+ reading days\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+457,
+"{ code: \"99445\", rate: \"$52.11/mo\", desc: \"Device supply, 2\u201315 days (new 2026)\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+458,
+"{ code: \"99457\", rate: \"$51.77/mo\", desc: \"Mgmt, first 20 min\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+459,
+"{ code: \"99470\", rate: \"$26.05/mo\", desc: \"Mgmt, first 10 min (new 2026)\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+460,
+"{ code: \"99458\", rate: \"$41.42\", desc: \"Each additional 20 min\" },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+1536,
+"{ label: \"Duplicate Labs\", value: results.labSavings, unit: `${fmt(dupeLabs)} \u00d7 $150` },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+1537,
+"{ label: \"Duplicate Imaging\", value: results.imagingSavings, unit: `${fmt(dupeImaging)} \u00d7 $400` },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+1538,
+"{ label: \"Avoidable Referrals\", value: results.referralSavings, unit: `${fmt(avoidableReferrals)} \u00d7 $250` },"
+],
+[
+"components/research/DigitalHealthLab.tsx",
+1540,
+"{ label: \"Prior Auth Automation\", value: results.priorAuthSavings, unit: `${fmt(priorAuths)} \u00d7 $12` },"
+],
+[
+"components/research/EMREHRLab.tsx",
+302,
+"{ key: \"labs\",                label: \"Laboratory\",               value: \"HbA1c 7.8%\" },"
+],
+[
+"components/research/EvidenceLibrary.tsx",
+643,
+"{ label: \"Highly Effective (<$50K)\", cls: \"bg-emerald-100 text-emerald-700\" },"
+],
+[
+"components/research/EvidenceLibrary.tsx",
+644,
+"{ label: \"Cost-Effective ($50\u2013150K)\", cls: \"bg-blue-100 text-blue-700\" },"
+],
+[
+"components/research/EvidenceLibrary.tsx",
+645,
+"{ label: \"Borderline ($150\u2013200K)\", cls: \"bg-amber-100 text-amber-700\" },"
+],
+[
+"components/research/EvidenceLibrary.tsx",
+646,
+"{ label: \"Not Cost-Effective (>$200K)\", cls: \"bg-red-100 text-red-700\" },"
+],
+[
+"components/research/HealthEquityStudio.tsx",
+67,
+"unit: \"per 100,000 live births\","
+],
+[
+"components/research/HealthEquityStudio.tsx",
+82,
+"unit: \"per 1,000 live births\","
+],
+[
+"components/research/HealthEquityStudio.tsx",
+142,
+"unit: \"per 100,000\","
+],
+[
+"components/research/HealthEquityStudio.tsx",
+172,
+"unit: \"per 100,000\","
+],
+[
+"components/research/HealthEquityStudio.tsx",
+189,
+"{ label: \"Metropolitan Large (>1M)\", value: \"metro_large\" },"
+],
+[
+"components/research/HealthEquityStudio.tsx",
+190,
+"{ label: \"Metropolitan Small (250K\u20131M)\", value: \"metro_small\" },"
+],
+[
+"components/research/HealthEquityStudio.tsx",
+508,
+"{ label: \"NICE (UK, \u00a335k \u2248 $45k)\", value: 45_000, color: \"text-emerald-600\" },"
+],
+[
+"components/research/HealthEquityStudio.tsx",
+737,
+"? <><AlertTriangle size={12} /> Total: {popTotal}% \u2014 must equal 100%</>"
+],
+[
+"components/research/HealthEquityStudio.tsx",
+738,
+": <><CheckCircle size={12} /> Total: 100%</>}"
+],
+[
+"components/research/HospitalFinancialScorecard.tsx",
+464,
+"badge: \"Stress Test \u00b7 $911B Cuts, phased\","
+],
+[
+"components/research/MedicaidWorkRequirementsCalculator.tsx",
+125,
+"<option key={s} value={s}>{s.replace(/([A-Z])/g, ' $1').trim()}</option>"
+],
+[
+"components/research/RiskStratificationEngine.tsx",
+1531,
+"{ label: \"\u226560% Very High\", cls: \"bg-red-100 text-red-800\" },"
+],
+[
+"components/research/RiskStratificationEngine.tsx",
+1532,
+"{ label: \"40\u201360% High\", cls: \"bg-orange-100 text-orange-800\" },"
+],
+[
+"components/research/RiskStratificationEngine.tsx",
+1533,
+"{ label: \"25\u201340% Moderate\", cls: \"bg-yellow-100 text-yellow-800\" },"
+],
+[
+"components/research/RiskStratificationEngine.tsx",
+1534,
+"{ label: \"10\u201325% Low\", cls: \"bg-green-50 text-green-800\" },"
+],
+[
+"components/research/RiskStratificationEngine.tsx",
+1535,
+"{ label: \"<10% Rare\", cls: \"bg-slate-50 text-slate-500\" },"
+],
+[
+"components/research/RiskStratificationMethodology.tsx",
+323,
+"{ key: 'very-high' as const, label: 'Very High Risk', color: 'bg-red-600', light: 'bg-red-50', border: 'border-red-200', text: 'text-red-700', rafRange: '\u22651.5', pct: '5\u201310% of population', share: '40\u201350% of costs', intervention: 'Intensive case management, care coordinator, monthly outreach, 30-day "
+],
+[
+"components/research/RiskStratificationMethodology.tsx",
+324,
+"{ key: 'high' as const, label: 'High Risk', color: 'bg-orange-500', light: 'bg-orange-50', border: 'border-orange-200', text: 'text-orange-700', rafRange: '1.0\u20131.49', pct: '10\u201315% of population', share: '25\u201335% of costs', intervention: 'Care management, quarterly outreach, HEDIS gap closure, RPM enr"
+],
+[
+"components/research/RiskStratificationMethodology.tsx",
+325,
+"{ key: 'rising' as const, label: 'Rising Risk', color: 'bg-amber-400', light: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-700', rafRange: '0.5\u20130.99', pct: '20\u201330% of population', share: '15\u201320% of costs', intervention: 'Annual wellness visit, SDOH screening, preventive care gap clos"
+],
+[
+"components/research/RiskStratificationMethodology.tsx",
+326,
+"{ key: 'low' as const, label: 'Low Risk', color: 'bg-emerald-500', light: 'bg-emerald-50', border: 'border-emerald-200', text: 'text-emerald-700', rafRange: '<0.5', pct: '50\u201360% of population', share: '5\u201310% of costs', intervention: 'Preventive care, annual wellness, stay-healthy programs, telehealt"
+],
+[
+"components/research/TransformationScorecard.tsx",
+40,
+"{ label: \"APM contract portfolio maturity\", benchmark: \"\u226550% revenue in VBC contracts\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+63,
+"{ label: \"Operating margin\", benchmark: \"CAH: \u22650.8% \u00b7 PPS: \u22651.2% \u00b7 Tertiary: \u22653.1%\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+90,
+"{ label: \"Telehealth / RPM penetration\", benchmark: \"\u226520% of chronic disease panel\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+109,
+"{ label: \"PCMH / NCQA recognition\", benchmark: \"\u226580% of primary care practices recognized\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+130,
+"{ label: \"VBC readiness score (HTR assessment)\", benchmark: \"\u226560% (Advanced stage)\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+161,
+"{ label: \"SDOH screening rate\", benchmark: \"\u226580% of attributed members screened annually\" },"
+],
+[
+"components/research/TransformationScorecard.tsx",
+162,
+"{ label: \"Geographic equity (HSA variation)\", benchmark: \"\u226415% performance range across HSAs\" },"
+],
+[
+"components/research/VBCQualityDashboard.tsx",
+113,
+"fullName: 'Medication Adherence for Diabetes \u2014 PDC \u226580%',"
+],
+[
+"components/research/VCCIScenario.tsx",
+53,
+"{ label: '% of Medicaid spend', value: '~39% from top 5%' },"
+],
+[
+"components/research/VCCIScenario.tsx",
+70,
+"'Claims-based risk scores flag high-risk, high-cost members \u2014 historically the top 5% (DVHA)',"
+],
+[
+"components/research/VCCIScenario.tsx",
+79,
+"'HTR teaching model (not DVHA method): Utilization 35%, Chronic burden/CDPS 30%, SDOH 20%, Care gaps 15%',"
+],
+[
+"lib/framework/portfolio-test.ts",
+159,
+"{ id: \"pcmh\", name: \"Blueprint PCMH\", pillar: \"clinical\", status: \"implementing\", gated: false, due: \"100% PCMH by FY2028\", chapter: \"8\" },"
+],
+[
+"lib/framework/portfolio-test.ts",
+161,
+"{ id: \"cocm\", name: \"CoCM statewide deployment\", pillar: \"clinical\", status: \"implementing\", gated: false, due: \"80%+ practices FY2028\", chapter: \"9\" },"
+],
+[
+"lib/m4a/vermont-hospitals.ts",
+57,
+"nmc:           { short: \"NMC\",     cah: false, opExpense: 158_089_419,   opMarginPct: -2.9, uncomp: 4_060_102, ccn: \"470024\", incM: -4.51, dep: 6_107_165, mcr: 3274, mcd: 2018, note: \"Approved FY27 commercial revenue is $17.8M below Northwestern's submission, so the FY27 margin shown (submitted basi"
+],
+[
+"lib/syntheticPatients.ts",
+782,
+"{ measure: 'Medication Adherence \u2014 Hypertension (RAS Antagonists)', code: 'MAH', inDenominator: true, inNumerator: false, gapDescription: 'Sacubitril/valsartan PDC falls below 80% \u2014 cost barrier identified', closingAction: 'Entresto patient assistance program enrollment; consider generic ACEI bridge"
+],
+[
+"lib/taxonomy/tools.ts",
+144,
+"desc: \"Build budget impact models and run Monte Carlo PSA with 1,000 iterations.\","
+],
+[
+"lib/taxonomy/tools.ts",
+325,
+"desc: \"Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing for participating independent hospitals and providers vs. the $1,303/discharge admin-cost premium.\","
+],
+[
+"lib/vcciScenarioData.ts",
+191,
+"'Reduce A1C from 9.8% to <8.0% within 6 months via pharmacist MTM and CGM enrollment',"
+],
+[
+"lib/vcciScenarioData.ts",
+205,
+"{ name: 'Chronic systolic heart failure', icd10: 'I50.22', cdpsCategory: 'CARD_VH', cdpsWeight: 4.62, hccCode: 85, hccWeight: 0.331, severity: 'very-high', controlStatus: 'uncontrolled', relevantLoinc: '33762-6', mostRecentValue: 'NT-proBNP 3,840 pg/mL' },"
+],
+[
+"lib/vcciScenarioData.ts",
+206,
+"{ name: 'Type 2 diabetes mellitus with hyperglycemia', icd10: 'E11.65', cdpsCategory: 'DIAB_H', cdpsWeight: 1.72, hccCode: 18, hccWeight: 0.302, severity: 'high', controlStatus: 'uncontrolled', relevantLoinc: '4548-4', mostRecentValue: 'A1C 9.8%' },"
+],
+[
+"lib/vcciScenarioData.ts",
+232,
+"{ date: '2024-11-05', type: 'ed', facility: 'Rutland Regional Medical Center', principalDx: 'I50.22', cost: 2100, avoidable: true, vcciFlagReason: 'CHF \u2014 carvedilol PDC 32% \u2014 adherence failure' },"
+],
+[
+"lib/vcciScenarioData.ts",
+296,
+"{ criterion: 'Medication adherence PDC <60% for \u22652 medications', points: 5, triggered: true, evidence: 'Insulin PDC 0.48, furosemide PDC 0.62, carvedilol PDC 0.58 \u2014 3 meds below 0.60' },"
+],
+[
+"lib/vcciScenarioData.ts",
+308,
+"{ criterion: 'Top 5% cost (VCCI primary eligibility gate)', points: 0, triggered: true, evidence: 'PMPY $58,400 \u2014 97th percentile of Vermont Medicaid population. Automatic VCCI eligibility flag.' },"
+],
+[
+"lib/vcciScenarioData.ts",
+346,
+"{ reference: 'Goal/goal-raymond-a1c', display: 'Reduce A1C from 9.8% to <8.0% within 6 months' },"
+],
+[
+"lib/vcciScenarioData.ts",
+349,
+"{ reference: 'Goal/goal-raymond-moud', display: 'Maintain MOUD adherence >90% PDC' },"
+],
+[
+"lib/vcciScenarioData.ts",
+397,
+"{ name: 'Type 2 diabetes mellitus without complications', icd10: 'E11.9', cdpsCategory: 'DIAB_M', cdpsWeight: 0.94, hccCode: 19, hccWeight: 0.105, severity: 'medium', controlStatus: 'controlled', relevantLoinc: '4548-4', mostRecentValue: 'A1C 7.4%' },"
+],
+[
+"lib/vcciScenarioData.ts",
+478,
+"{ criterion: 'Medication adherence PDC <60% for \u22652 medications', points: 5, triggered: false, evidence: 'ICS/LABA PDC 0.61 \u2014 just above threshold; sertraline PDC 0.67' },"
+],
+[
+"lib/vcciScenarioData.ts",
+490,
+"{ criterion: 'Top 5% cost (VCCI primary eligibility gate)', points: 0, triggered: false, evidence: 'PMPY $31,200 \u2014 88th percentile (synthetic). Below the historical top-5% VCCI target.' },"
+],
+[
+"lib/vcciScenarioData.ts",
+607,
+"{ criterion: 'Medication adherence PDC <60%', points: 5, triggered: false, evidence: 'All meds PDC >0.60' },"
+],
+[
+"lib/vcciScenarioData.ts",
+613,
+"{ criterion: 'Top 5% cost gate', points: 0, triggered: false, evidence: 'PMPY $12,800 \u2014 72nd percentile. Does not meet top 5% cost gate.' },"
+],
+[
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+18,
+"const pct = (x: number | null, d = 1) => (x === null ? \"\u2014\" : !Number.isFinite(x) ? \"< \u2212100%\" : `${(x * 100).toFixed(d)}%`);"
+],
+[
+"app/policy/medicare-for-all/modeler/ModelerClient.tsx",
+201,
+"<Tile value={lens === \"rate\" ? `${neutral.toFixed(0)}%` : \"0%\"} label={lens === \"rate\" ? \"Revenue-neutral single rate, % of Medicare\" : \"Operating margin of every hospital under \u00a7 611\"} />"
+],
+[
+"app/research-lab/knowledge-workspace/KnowledgeWorkspaceClient.tsx",
+60,
+"desc: \"Model Vermont's RHT-funded Clinically Integrated Network: shared billing, coding, credentialing, HR, IT, and group purchasing across the 14 hospitals against the ~$1,303/discharge administrative cost premium.\","
+],
+[
+"app/research-lab/policy-quality/PolicyQualityClient.tsx",
+48,
+"desc: 'Build budget impact models, run MCDA with 8 criteria, and execute real Monte Carlo PSA with 1,000 stochastic iterations using Beta, Log-normal, and Gamma distributions.',"
+],
+[
+"app/research-lab/vbc-clinical-quality/VBCClinicalQualityClient.tsx",
+102,
+"'Implement high vs. low value care analysis to identify $1M+ in modifiable spend in your ACO',"
+],
+[
+"components/research/APMDesignLab.models.ts",
+139,
+"hcpLan: \"HCP-LAN Category 3B\","
+],
+[
+"components/research/APMDesignLab.models.ts",
+180,
+"hcpLan: \"HCP-LAN Category 4B\","
+],
+[
+"components/research/APMDesignLab.models.ts",
+194,
+"hcpLan: \"HCP-LAN Category 4B\","
+],
+[
+"components/research/APMDesignLab.tabs/architecture.tsx",
+461,
+": \"Uncapped: 100% of any overrun is absorbed\","
+],
+[
+"components/research/HTAStudio.tabs/threshold.tsx",
+34,
+"note: \"CTT Collaboration: each 1 mmol/L LDL reduction \u2192 22% CV event reduction\","
+],
+[
+"components/research/HTAStudio.tabs/threshold.tsx",
+79,
+"note: \"ORR-OS correlation weak in most solid tumors. 1% ORR increase \u2248 0.003 QALY.\","
+],
+[
+"components/research/HTAStudio.tabs/threshold.tsx",
+123,
+"note: \"Osteoporosis: 1 SD T-score improvement \u2192 ~30% fracture risk reduction.\","
+],
+[
+"components/research/LabAdvisoryCTA.tsx",
+75,
+"{ value: '97%', label: 'client satisfaction' },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+125,
+"basis: \"HOPD = PFS facility $71.48 + OPPS G0463 APC 5012 $136.02; office = PFS non-facility $117.57\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+127,
+"basis: \"HOPD = PFS facility $116.90 + OPPS G0463 APC 5012 $136.02; office = PFS non-facility $177.36\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+129,
+"basis: \"HOPD = PFS facility $135.27 + OPPS 90837 APC 5823 $181.34; office = PFS non-facility $167.00\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+131,
+"basis: \"CLFS national limit $10.56 in every setting (OPPS SI Q4: paid on the CLFS)\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+133,
+"basis: \"CLFS national limit $7.77 in every setting (OPPS SI Q4: paid on the CLFS)\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+135,
+"basis: \"HOPD = OPPS APC 5572 $356.43 + PFS -26 $105.21; office = PFS global $316.97\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+137,
+"basis: \"HOPD = OPPS APC 5523 $243.77 + PFS -26 $68.47; office = PFS global $191.72\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+139,
+"basis: \"HOPD = OPPS APC 5523 $243.77 + PFS -26 $62.79; office = PFS global $204.41\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+141,
+"basis: \"HOPD = OPPS APC 5572 $356.43 + PFS -26 $83.84; office = PFS global $300.27\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+143,
+"basis: \"HOPD = OPPS APC 5522 $106.81 + PFS -26 $37.41; office = PFS global $114.23\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+145,
+"basis: \"Paid on the PFS in every setting (OPPS SI A): global $126.26\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+147,
+"basis: \"HOPD = OPPS APC 5301 $926.63 + PFS facility $123.58; ASC = ASC $497.85 + PFS facility; office = PFS non-facility $418.85\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+149,
+"basis: \"HOPD = OPPS APC 5311 $950.10 + PFS facility $164.67; ASC = ASC $510.49 + PFS facility; office = PFS non-facility $378.10\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+151,
+"basis: \"HOPD = OPPS APC 5312 $1222.56 + PFS facility $177.69; ASC = ASC $656.75 + PFS facility; office = PFS non-facility $479.97\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+153,
+"basis: \"HOPD = OPPS APC 5312 $1222.56 + PFS facility $223.45; ASC = ASC $656.75 + PFS facility; office = PFS non-facility $500.01\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+155,
+"basis: \"HOPD = OPPS APC 5443 $903.63 + PFS facility $99.53; ASC = ASC $485.51 + PFS facility; office = PFS non-facility $264.87\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+157,
+"basis: \"HOPD = OPPS APC 5491 $2357.81 + PFS facility $462.60; ASC = ASC $1255.73 + PFS facility; office = not payable (PFS non-facility NA)\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+159,
+"basis: \"HOPD = OPPS APC 5113 $3342.87 + PFS facility $515.71; ASC = ASC $1644.87 + PFS facility; office = not payable (PFS non-facility NA)\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+161,
+"basis: \"HOPD = OPPS APC 5341 $3657.95 + PFS facility $508.03; ASC = ASC $1744.22 + PFS facility; office = not payable (PFS non-facility NA)\" },"
+],
+[
+"components/research/PolicySimulator.data.ts",
+163,
+"basis: \"HOPD = OPPS APC 5361 $6176.47 + PFS facility $631.95; ASC = ASC $3030.97 + PFS facility; office = not payable (PFS non-facility NA)\" },"
+],
+[
+"components/research/ResearchWorkspace.data.ts",
+311,
+"content: \"Run the probabilistic sensitivity analysis at 1,000 and 10,000 iterations and compare the mean ICER and the probability cost-effective at your threshold. Report the count you used and the check you ran.\","
+],
+[
+"components/research/WorkforceModeler.tabs/staffing.tsx",
+241,
+"info=\"Typical range: 50\u2013200% above staff nurse rate\""
+],
+[
+"components/research/WorkforceModeler.tabs/turnover.tsx",
+29,
+"benchmark: \"16.4% hospital RN turnover in 2024; 83 days to fill (NSI Nursing Solutions, 2025)\","
+],
+[
+"components/research/WorkforceModeler.tabs/turnover.tsx",
+423,
+"<SectionCard title=\"Fund it from the $1,303 administrative premium\">"
+],
+[
+"lib/m4a/vermont-hospitals.ts",
+57,
+"nmc:           { short: \"NMC\",     cah: false, opExpense: 158_089_419,   opMarginPct: -2.9, uncomp: 4_060_102, ccn: \"470024\", incM: -4.51, dep: 6_107_165, mcr: 3274, mcd: 2018, note: \"Approved FY27 commercial revenue is $17.8M below Northwestern's submission, so the FY27 margin shown (submitted basi"
+],
+[
+"lib/taxonomy/programs.ts",
+36,
+"{ id: \"vermont-rht-program\",         label: \"RHT Program ($195M + $190M)\",     href: \"/vermont-rht-program\",         group: \"Vermont Programs\", pillars: [\"policy\", \"operations\"], chapters: [\"2\", \"16\"] },"
+],
+[
+"lib/taxonomy/tools.ts",
+144,
+"desc: \"Build budget impact models and run Monte Carlo PSA with 1,000 iterations.\","
+],
+[
+"lib/taxonomy/tools.ts",
+325,
+"desc: \"Model Vermont's RHT-funded Clinically Integrated Network: shared billing/coding/credentialing/HR/IT and group purchasing for participating independent hospitals and providers vs. the $1,303/discharge admin-cost premium.\","
+]
+]
+}

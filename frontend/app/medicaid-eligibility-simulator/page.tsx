@@ -108,7 +108,7 @@ function computeResults(inputs: SimInputs): EligibilityResult[] {
         program: `Dr. Dynasaur (${inputs.childrenUnder19} child${inputs.childrenUnder19 > 1 ? "ren" : ""})`,
         eligible: "likely",
         reason: `Household income (${fplPct.toFixed(0)}% FPL) is at or below the 317% FPL threshold for children`,
-        details: "Comprehensive coverage for all children ages 0–18: preventive care, dental, vision, mental health, prescriptions, hospital care. No premiums for families below 225% FPL; small premiums above that.",
+        details: "Comprehensive coverage for all children ages 0–18: preventive care, dental, vision, mental health, prescriptions, hospital care. Dr. Dynasaur monthly premiums are currently suspended (Vermont Health Connect).",
         color: "border-sky-300",
         badge: "bg-sky-100 text-sky-700",
         applyUrl: "https://healthconnect.vermont.gov",

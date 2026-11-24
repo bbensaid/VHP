@@ -899,10 +899,10 @@ function BiasDetector() {
                 </p>
                 <div className="space-y-2">
                   {[
-                    { label: "Demographic Parity enforcement", impact: "Moderate AUC reduction (1–3%)" },
-                    { label: "Equal Opportunity calibration", impact: "Low AUC reduction (0.5–1.5%)" },
-                    { label: "Removing proxy variables", impact: "Moderate (2–5% AUC)" },
-                    { label: "Adversarial debiasing", impact: "Variable (1–8% AUC)" },
+                    { label: "Demographic Parity enforcement", impact: "Often reduces AUC" },
+                    { label: "Equal Opportunity calibration", impact: "Usually smaller AUC cost" },
+                    { label: "Removing proxy variables", impact: "Depends on what the proxy carried" },
+                    { label: "Adversarial debiasing", impact: "Varies by dataset" },
                   ].map((row) => (
                     <div key={row.label} className="flex justify-between text-xs">
                       <span className="text-indigo-700">{row.label}</span>
