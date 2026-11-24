@@ -103,7 +103,6 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
 
   // Federal programs & states
   { path: "/ahead-model",         priority: 0.8, changeFrequency: "monthly" },
-  { path: "/states",              priority: 0.8, changeFrequency: "monthly" },
   { path: "/compare-states",      priority: 0.7, changeFrequency: "monthly" },
   { path: "/california-calaim",   priority: 0.8, changeFrequency: "monthly" },
   { path: "/oregon-cco",          priority: 0.7, changeFrequency: "monthly" },

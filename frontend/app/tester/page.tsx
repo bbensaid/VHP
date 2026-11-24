@@ -198,10 +198,6 @@ const SECTIONS: Section[] = [
     emoji: "🗺️",
     color: "bg-lime-700",
     pages: [
-      { label: "States — Directory", href: "/states", note: "All state profiles" },
-      { label: "State → Vermont", href: "/states/vermont", note: "Vermont profile (dynamic [state] route)" },
-      { label: "State → California", href: "/states/california", note: "California profile (dynamic [state] route)" },
-      { label: "State → Oregon", href: "/states/oregon", note: "Oregon profile (dynamic [state] route)" },
       { label: "California CalAIM", href: "/california-calaim", note: "California's CalAIM initiative" },
       { label: "California CalAIM Simulator", href: "/california-calaim/simulator", note: "Simulate CalAIM scenarios" },
       { label: "Oregon CCO", href: "/oregon-cco", note: "Oregon Coordinated Care Organizations" },

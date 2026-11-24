@@ -458,7 +458,7 @@ function StatesPanel({ onClose }: { onClose: () => void }) {
             {[
               { href: "/california-calaim",   label: "California CalAIM",              desc: "Medi-Cal transformation — SDOH, justice re-entry, Enhanced Care Mgmt" },
               { href: "/oregon-cco",          label: "Oregon CCOs",                  desc: "Coordinated Care Organizations — Medicaid global budget model" },
-              { href: "/states",              label: "All States Explorer",             desc: "50-state health reform initiatives map" },
+              { href: "/rht-review",          label: "50-State RHT Review",             desc: "Every state's Rural Health Transformation awards and funded projects, sourced" },
             ].map((item) => (
               <Link key={item.href} href={item.href} onClick={onClose} className={linkCls}>
                 <span className={titleCls}>{item.label}</span>
@@ -1060,7 +1060,7 @@ const Header = () => {
                   { label: "Legislative Reports Library", href: "/vermont-legislative-resources", sub: [] },
                   { label: "California CalAIM", href: "/california-calaim", sub: [] },
                   { label: "Oregon CCOs", href: "/oregon-cco", sub: [] },
-                  { label: "All States Explorer", href: "/states", sub: [] },
+                  { label: "50-State RHT Review", href: "/rht-review", sub: [] },
                   { label: "50-State Dashboard", href: "/dashboard", sub: [] },
                   { label: "CMS Rural Health Transformation", href: "/dashboard/simulator", sub: [] },
                 ],

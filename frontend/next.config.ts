@@ -114,6 +114,10 @@ const nextConfig: NextConfig = {
       // 2026-11-23: retired pages for features that never existed behind them —
       // the "HTR Index" (no index is computed), a developer API whose tables are
       // absent, API-key management for it, and an annual survey with no tables.
+      // 2026-11-23: /states profiles carried unverified state-program facts (wrong MCO lists,
+      // retired programs); every state now has a sourced page in the RHT Program Review.
+      { source: "/states", destination: "/rht-review", permanent: false },
+      { source: "/states/:state", destination: "/rht-review/:state", permanent: false },
       { source: "/htr-index", destination: "/about/methodology", permanent: false },
       { source: "/developers", destination: "/about/methodology", permanent: false },
       { source: "/account/api-keys", destination: "/account", permanent: false },
