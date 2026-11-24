@@ -440,8 +440,8 @@ export default function VermontAct167Page() {
           <p className="text-sm text-emerald-800 leading-relaxed mb-4">
             Act 167 explicitly directs Vermont's health reform agencies to negotiate a new All-Payer Model
             agreement with the federal government — making it the direct legislative foundation for Vermont's
-            selection into the <strong>AHEAD Model (States Advancing All-Payer Health Equity Approaches
-            and Development)</strong>. Vermont signed its AHEAD agreement in January 2025 and withdrew in
+            selection into the <strong>AHEAD Model</strong> (originally States Advancing All-Payer Health Equity
+            Approaches and Development; renamed Achieving Healthcare Efficiency through Accountable Design in September 2025). Vermont signed its AHEAD agreement in January 2025 and withdrew in
             July 2026, after CMS renegotiation cut the expected EAST Fund from roughly $138M to a cap near
             $10M. The reform now proceeds under state law (Act 68).
           </p>
