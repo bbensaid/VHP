@@ -6,3 +6,7 @@ academyModule-precision-medicine-m6-equity
 aiml-deep-learning-imaging
 academyModule-precision-medicine-m4-technology
 aiml-deterioration-models
+academyModule-precision-medicine-m1
+academyModule-vbc-fundamentals-module-2-policy-pillar
+academyModule-vbc-fundamentals-module-4-technology-pillar
+aiml-llm-clinical

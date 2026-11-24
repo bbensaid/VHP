@@ -1,0 +1,38 @@
+{
+ "tag": "batch3",
+ "note": "VDH pop 2025; unconfirmed counts removed",
+ "only": [
+  "academyModule-precision-medicine-m1",
+  "academyModule-vbc-fundamentals-module-2-policy-pillar",
+  "aiml-llm-clinical",
+  "precision-medicine-m1",
+  "vbc-fundamentals-module-2-policy-pillar",
+  "aiml-llm-clinical"
+ ],
+ "pairs": [
+  [
+   "small population (660,000)",
+   "small population (about 645,000, VDH 2025)"
+  ],
+  [
+   "pre-emptively genotyped more than 14,000 patients",
+   "pre-emptively genotyped thousands of patients"
+  ],
+  [
+   "covered about 76 million people together with CHIP at the end of 2025",
+   "covers more than 70 million people together with CHIP"
+  ],
+  [
+   "For rural and safety-net hospitals, Medicaid is often the dominant payer \u2014 in some Critical Access Hospitals, Medicaid accounts for more than 40% of patient volume.",
+   "For rural and safety-net hospitals, Medicaid is often a dominant payer."
+  ],
+  [
+   "Microsoft's $19.7 billion acquisition of Nuance Communications, completed in March 2022, was the largest healthcare technology transaction in Microsoft's history.",
+   "Microsoft's $19.7 billion acquisition of Nuance Communications was completed in March 2022."
+  ],
+  [
+   "from 1.47% in structured clinical note generation to 42% of summaries containing at least one error in ED encounter summarization",
+   "as low as 1.47% in structured clinical note generation, with higher error rates reported in other tasks"
+  ]
+ ]
+}
