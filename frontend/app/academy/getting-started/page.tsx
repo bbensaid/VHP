@@ -26,7 +26,7 @@ const FEATURE_GUIDES = [
     color: "indigo",
     title: "AI Analyst",
     desc: "How to ask research questions, get platform navigation help, and use voice mode.",
-    href: "/academy/getting-started/ai-analyst",
+    href: "/chat",
   },
   {
     icon: BeakerIcon,
@@ -39,15 +39,15 @@ const FEATURE_GUIDES = [
     icon: MicrophoneIcon,
     color: "violet",
     title: "Voice Interface",
-    desc: "Hands-free navigation, AI queries, and platform control.",
-    href: "/academy/getting-started/voice",
+    desc: "Hands-free navigation, AI queries, and platform control — press ⌘⇧V (Ctrl+Shift+V) anywhere to start.",
+    href: "/chat",
   },
   {
     icon: AcademicCapIcon,
     color: "emerald",
     title: "HTR Academy",
     desc: "Courses, webinars, case studies, learning tracks, and your credential path.",
-    href: "/academy/getting-started/academy",
+    href: "/academy",
   },
 ];
 
