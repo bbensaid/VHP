@@ -356,7 +356,7 @@ export function PhysicianSupplyTab() {
               max={35}
               step={0.5}
               unit="%"
-              info="Higher aging = more demand. National avg ~17%."
+              info="Higher aging = more demand. US share 65+ is about 18% (Census)."
               onChange={setAgingFactor}
             />
             <Slider
@@ -387,10 +387,10 @@ export function PhysicianSupplyTab() {
           <div className="space-y-2">
             {(
               [
-                ["gmeExpansion", "GME Expansion (+2,000 slots nationwide)"],
-                ["loanRepayment", "Loan Repayment (+5% rural retention)"],
-                ["imgExpansion", "IMG Pathway Expansion (+3,000/yr)"],
-                ["scopeReform", "Scope of Practice Reform (+15% substitution)"],
+                ["gmeExpansion", "GME Expansion (scenario: +2,000 slots)"],
+                ["loanRepayment", "Loan Repayment (scenario: +5% rural retention)"],
+                ["imgExpansion", "IMG Pathway Expansion (scenario: +3,000/yr)"],
+                ["scopeReform", "Scope of Practice Reform (scenario: +15% substitution)"],
               ] as [keyof typeof interventions, string][]
             ).map(([key, label]) => (
               <button

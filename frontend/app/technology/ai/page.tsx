@@ -67,7 +67,7 @@ function AIMLBody() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">Source: FDA list of AI-enabled medical devices — more than 1,000 authorizations by 2025, roughly three-quarters of them in radiology.</p>
+        <p className="text-xs text-slate-400 mt-4">Source: FDA list of AI-enabled medical devices — 1,614 entries as of the September 4, 2026 update, roughly three-quarters of them in radiology.</p>
       </div>
 
       {/* Investment + GenAI Assessment */}
@@ -112,7 +112,7 @@ function AIMLBody() {
             icon: "🔬",
             title: "Diagnostic AI & Imaging",
             items: [
-              "FDA's list of AI-enabled devices passed 1,000 authorizations, most of them in radiology",
+              "FDA's list of AI-enabled devices held 1,614 entries in September 2026, most of them in radiology",
               "CT triage: Viz.ai and Aidoc flag suspected stroke, intracranial hemorrhage and pulmonary embolism",
               "Mammography AI: iCAD ProFound AI — FDA 510(k); higher reader sensitivity in its reader study",
               "Pathology AI: Paige Prostate — first FDA-authorized AI tool for prostate biopsy images (De Novo, 2021)",

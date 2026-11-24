@@ -17,7 +17,7 @@ const TERMS: Term[] = [
   {
     term: "Dr. Dynasaur",
     definition:
-      "Vermont's flagship Medicaid program for children ages 0–18 and pregnant women. Provides comprehensive coverage including preventive care, dental, vision, mental health, and prescriptions. Named after a beloved character from Vermont's public health campaigns. Children in families up to 317% of the Federal Poverty Level may qualify.",
+      "Vermont's flagship Medicaid program for children ages 0–18 and pregnant women. Provides comprehensive coverage including preventive care, dental, vision, mental health, and prescriptions. Children in families up to 317% of the Federal Poverty Level may qualify.",
     category: "Programs",
   },
   {
@@ -227,7 +227,7 @@ const TERMS: Term[] = [
   {
     term: "Dual Eligible",
     definition:
-      "An individual who qualifies for both Medicare (federal, primarily age 65+ or disability) and Medicaid (state, low-income). Dual eligibles are among the most complex and high-cost populations in American healthcare. Vermont coordinates both programs to minimize gaps and cost-sharing burdens. Approximately 30,000+ Vermonters are dual eligible.",
+      "An individual who qualifies for both Medicare (federal, primarily age 65+ or disability) and Medicaid (state, low-income). Dual eligibles are among the most complex and high-cost populations in American healthcare. Vermont coordinates both programs to minimize gaps and cost-sharing burdens.",
     category: "Administration",
   },
   {

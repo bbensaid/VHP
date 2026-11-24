@@ -158,7 +158,7 @@ const INTERVENTIONS = [
     deathReduction: 0.04,
     costPerParticipant: 1200,
     roi: 2.65,
-    evidence: "CDC-recognized. 58% T2D incidence reduction, 7% avg weight loss.",
+    evidence: "DPP trial: lifestyle intervention cut diabetes incidence 58% (Knowler et al., NEJM 2002). Other rates, cost and ROI here are model assumptions.",
     color: "#0d9488",
   },
   {
@@ -172,7 +172,7 @@ const INTERVENTIONS = [
     deathReduction: 0.06,
     costPerParticipant: 600,
     roi: 3.20,
-    evidence: "CMS CCM program. 8% ED reduction, 12% readmission reduction.",
+    evidence: "Medicare pays for chronic care management (CPT 99490). The ED, hospitalization, cost and ROI values here are model assumptions, not results from a single evaluation.",
     color: "#0891b2",
   },
   {
@@ -186,7 +186,7 @@ const INTERVENTIONS = [
     deathReduction: 0.02,
     costPerParticipant: 8500,
     roi: 1.85,
-    evidence: "38% lower cost vs inpatient, $8,500 avg episode cost.",
+    evidence: "Randomized trial (n=91): 38% lower direct cost than inpatient care, with fewer readmissions (Levine et al., Ann Intern Med 2020). Episode cost and ROI are model assumptions.",
     color: "#7c3aed",
   },
   {
@@ -200,7 +200,7 @@ const INTERVENTIONS = [
     deathReduction: 0.08,
     costPerParticipant: 1800,
     roi: 4.10,
-    evidence: "40% fewer hospital days CHF. $150/month avg device + monitoring cost.",
+    evidence: "Trial results for heart-failure remote monitoring are mixed. The rates, cost and ROI here are model assumptions — replace them with your program's data.",
     color: "#0d9488",
   },
   {
@@ -214,7 +214,7 @@ const INTERVENTIONS = [
     deathReduction: 0.05,
     costPerParticipant: 500,
     roi: 6.50,
-    evidence: "57% response rate vs 31% usual care. $500/patient avg program cost.",
+    evidence: "IMPACT trial: 45% vs 19% of patients had at least a 50% reduction in depressive symptoms at 12 months (Unützer et al., JAMA 2002). Cost and ROI are model assumptions.",
     color: "#0891b2",
   },
   {
@@ -228,7 +228,7 @@ const INTERVENTIONS = [
     deathReduction: 0.10,
     costPerParticipant: 50400,
     roi: 1.15,
-    evidence: "12% lower cost vs nursing home. $4,200/month PMPM average.",
+    evidence: "The rates, cost and ROI here are model assumptions for a PACE-style program — not published PACE results.",
     color: "#7c3aed",
   },
   {
@@ -242,7 +242,7 @@ const INTERVENTIONS = [
     deathReduction: 0.48,
     costPerParticipant: 5600,
     roi: 4.80,
-    evidence: "50% OD event reduction. $5,600/year avg medication + counseling cost.",
+    evidence: "Medication treatment was associated with lower opioid-overdose death — 59% for methadone, 38% for buprenorphine — in a Massachusetts cohort (Larochelle et al., Ann Intern Med 2018). Cost and ROI are model assumptions.",
     color: "#dc2626",
   },
   {
@@ -256,7 +256,7 @@ const INTERVENTIONS = [
     deathReduction: 0.05,
     costPerParticipant: 1800,
     roi: 2.47,
-    evidence: "$2.47 return per dollar invested. Strong SDOH impact.",
+    evidence: "IMPaCT: $2.47 returned to Medicaid per $1 invested within a year, from randomized-trial outcomes (Kangovi et al., Health Affairs 2020). Specific to that program.",
     color: "#0d9488",
   },
 ];
@@ -1116,7 +1116,7 @@ function InterventionImpactTab() {
               onChange={(e) => setEfficacyAdj(+e.target.value)}
               className="w-full accent-teal-400"
             />
-            <div className="text-xs text-slate-500">Evidence rate = 100%. Adjust for real-world fidelity.</div>
+            <div className="text-xs text-slate-500">100% = the model's assumed effect. Adjust for real-world fidelity.</div>
           </div>
 
           <div className="border-t border-slate-800 pt-3 space-y-1">
