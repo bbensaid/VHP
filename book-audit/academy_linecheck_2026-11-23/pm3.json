@@ -1,0 +1,58 @@
+{
+ "tag": "pm3-linecheck",
+ "note": "Academy line check 2026-11-23: unverifiable figures removed from precision-medicine-m3",
+ "only": [
+  "precision-medicine-m3-economics",
+  "academyModule-precision-medicine-m3-economics"
+ ],
+ "pairs": [
+  [
+   "In 2026, a clinical-grade whole-genome sequence costs under $500 and returns results in days.",
+   "Today, NHGRI's cost data put whole-genome sequencing in production settings at a few hundred dollars per genome."
+  ],
+  [
+   "Short-read whole-genome sequencing now costs under $500 at scale, with continued price pressure from long-read platforms.",
+   "Short-read whole-genome sequencing now costs a few hundred dollars per genome at scale (NHGRI cost data)."
+  ],
+  [
+   "Roughly 70% of cancer patients receive at least one chemotherapy regimen that ultimately fails \u2014 a $50,000\u2013$200,000 treatment course with significant toxicity but no durable response.",
+   "Many cancer patients receive chemotherapy regimens that fail to produce a durable response \u2014 expensive treatment courses with significant toxicity."
+  ],
+  [
+   "The test itself may cost $3,000\u2013$5,000; the savings from avoiding futile treatment can be ten times that.",
+   "The test itself costs far less than a futile course of treatment."
+  ],
+  [
+   "The median launch price for new cancer drugs approved 2020\u20132023 exceeded $148,000 per year, up from $79,000 for drugs approved 2010\u20132014.",
+   ""
+  ],
+  [
+   "A Stage I cancer caught through a multi-cancer early detection (MCED) blood test may cost $500,000\u2013$1,000,000 less to treat than the same cancer detected at Stage IV.",
+   "Cancers caught at an early stage generally cost much less to treat than the same cancers found at stage IV."
+  ],
+  [
+   "In 2023, precision medicine and genomics companies attracted over $15 billion in private investment globally.",
+   ""
+  ],
+  [
+   "Downstream savings include avoided adverse drug events (hospitalizations averaging $13,000\u2013$25,000 each)",
+   "Downstream savings include avoided adverse drug events (each one can mean a hospitalization)"
+  ],
+  [
+   ", saving an estimated $100 million annually in chemotherapy costs and the associated morbidity.",
+   ", sparing them chemotherapy's cost and morbidity."
+  ],
+  [
+   "When bluebird bio launched betibeglogene (Zynteglo) for beta-thalassemia at $2.8 million, Massachusetts Medicaid negotiated an outcomes-based contract: the state pays in installments over five years, with refunds if patients do not maintain transfusion independence.",
+   "Makers of one-time gene therapies have offered outcomes-based arrangements: payment is spread over several years, and part of it is refunded if the therapy stops working."
+  ],
+  [
+   "Five-year outcome-linked payment reduced Massachusetts Medicaid's upfront liability by approximately 60% while maintaining patient access to the therapy.",
+   "Spreading and conditioning payment shifts part of the risk that the therapy fails from the payer to the manufacturer."
+  ],
+  [
+   "ICER Evidence Report on Gene Therapies, 2023; Massachusetts Executive Office of Health and Human Services",
+   "HTR summary of outcomes-based contracting"
+  ]
+ ]
+}
