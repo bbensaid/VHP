@@ -16,7 +16,7 @@ Chapter 16 is the stronger of the two chapters: current, statute-based, and spec
 
 | Gap | What it looks like in practice | Consequence | Required structural change |
 |---|---|---|---|
-| Split authority over technology | AHS decides what it needs; ADS approves the activity, supervises the IT staff, and commissions the § 3303(d) independent review; CMS and FNS approve the contracts; JFO and JITOC review before funds are released. AHS describes the VT-IES procurement phase, from RFP posting to contract, as spanning 24 months. | Every reform deadline that depends on a system is a multi-agency deadline with no single owner. | A written AHS–ADS decision-rights charter for each reform-critical system, with one integrated roadmap and agreed turnaround times (Chapter 15.7). |
+| Price regulation and transformation in separate bodies | GMCB orders each hospital's budget and prices; AHS shapes its transformation plan and RHT funding. The two are reviewed in different buildings, on different calendars. | A hospital that loses price chooses its own cuts; the system's redesign is decided by budget orders no one reads against the plans. | A joint annual AHS–GMCB review, hospital by hospital, of budget orders beside transformation plans (Chapter 15.9). |
 
 ### C16-3 Section 16.2.2 (Act 119) — add what the review actually found
 
@@ -37,7 +37,7 @@ Chapter 16 is the stronger of the two chapters: current, statute-based, and spec
 
 ### C16-6 Section 16.6 (Strategic Plan outline), item 6 — make Data and Technology concrete
 
-**Replace the item with:** "Data and Technology Infrastructure — Technology (10–15 pp) — the § 9353 data-use decisions made by the HIE Steering Committee and the uses approved; Unified Health Data Space status; VT-IES and Medicaid system milestones against the H.R. 1 calendar; exchange performance and portability terms in the VITL contract; MDWAS and VHCURES analytic capability; the statewide-EHR decision."
+**Replace the item with:** "Data and Technology Infrastructure — Technology (10–15 pp) — the § 9353 data-use decisions made by the HIE Steering Committee and the uses approved; Unified Health Data Space phases (Medicaid live January 2026; multi-payer 2028–2029; commercial 2029–2030) set against GMCB's FY2028 price and budget dates; exchange performance and portability terms in the VITL contract; MDWAS and VHCURES analytic capability; the statewide-EHR decision."
 
 ### C16-7 Section 16.6, item 9 — add decision rights
 
@@ -56,7 +56,7 @@ A one-page profile of the institutions that carry reform, so a reader can locate
 | Institution | Role in health reform | Scale and key facts | Source |
 |---|---|---|---|
 | Agency of Human Services | Strategic Plan; Medicaid; reform coordination; monthly Act 68 reporting | Six departments; roughly 4,000 staff; multibillion-dollar budget | Act 119 Report (2025) |
-| DVHA | Medicaid; owns the statewide HIT Plan | Sponsor of VT-IES ($231.7M total IT activity cost) and MDWAS ($66.3M implementation) | 18 V.S.A. § 9351; ADS 2025 Annual Report |
+| DVHA | Medicaid; owns the statewide HIT Plan and the Medicaid Data Warehouse (MDWAS, live January 2026 with linked claims and clinical data) | MDWAS: $66.3M implementation | 18 V.S.A. § 9351; ADS 2025 Annual Report; AHS UHDS report (Jan. 2026) |
 | Agency of Digital Services | Approves all state IT; supervises IT staff; independent review ≥ $1M | Created by EO 06-17 (2017); statute 2019 | 3 V.S.A. §§ 3301–3306 |
 | VITL | Designated operator of the exclusive statewide HIE network | 241 organizations; 98.9% of Vermonters sharing data (Feb. 2025) | 18 V.S.A. § 9352; VITL (2025) |
 | HIE Steering Committee | HIT Plan advice; § 9353 data-integration vote | 9 voting and 4 non-voting members (2022 charter) | HIE Plan 2022 |
@@ -108,12 +108,13 @@ Update the Chapter 15 and 16 tool rows after the platform work is done (see Ecos
 | HIE data completeness: designated mental-health agencies contributing data | — | 0 contributing; 12 accessing (Feb. 2025) | Contributing feeds within Part 2 consent rules | VITL (2025) |
 | Share of Vermonters whose data is shared through the HIE | ~19% accessible (2017, opt-in) | 98.9% (Feb. 2025, opt-out) | Maintain ≥ 98% | HIT Evaluation (2018); VITL (2025) |
 | § 9353 data-use decisions made and published | n/a | None possible before Jan. 1, 2027 | Catalogue of approved uses published | 18 V.S.A. § 9353 |
-| Eligibility-system modernization (VT-IES) | Legacy ACCESS (45 years) and VHC | Preferred vendor selected; federal approval pending (Apr. 2026) | Phased releases live | ADS (2025); JFO (Apr. 2026) |
+| Integrated clinical + claims data coverage | Separate datasets | Medicaid linked in MDWAS (Jan. 2026) | Medicare and statewide clinical data linked (AHS target 2028–2029); commercial (2029–2030) | AHS UHDS report (Jan. 2026) |
+| RHT agreements executed and tied to a transformation-plan goal | n/a | 242 executed, $182.2M (Oct. 2026); linkage to plan goals not published | Every agreement mapped to a plan goal and an outcome measure | State RHT recipient list |
 | Named owner for each statutory deliverable | — | Not published | Published decision-rights charter | Act 119 Report (2025) |
 
 ## Ecosystem plan (after the book text is approved)
 
 1. **Website.** A new Vermont "Execution Machinery" page: the decision-rights map, the execution calendar, and the VITL designation explainer, linked from /vermont-uhds and /vermont-act-68. Fix the same ADS-as-AHS-program error anywhere it appears on the platform.
-2. **Academy.** Revise the HIE & Health Reform course's governance lessons, and add a short track: "How Vermont Executes Reform — AHS, ADS, the HIE, and the Legislature" (decision rights; the VT-IES path; the VITL designation; § 9353; the human side). New Academy content needs the author's go-ahead under the standing rule.
+2. **Academy.** Revise the HIE & Health Reform course's governance lessons, and add a short track: "How Vermont Delivers Reform" (decision rights; hospital transformation and GMCB regulation side by side; the Blueprint's financing; the data space and § 9353; RHT projects; the VITL designation; the human side). New Academy content needs the author's go-ahead under the standing rule.
 3. **Tools.** Reframe the Portfolio Sequencing Test around the execution calendar (policy deadlines against system milestones) instead of PMI levels.
-4. **Articles.** One policy analysis, "Living With a Designated HIE Operator", and one on the 2027 collision between H.R. 1 and eligibility modernization.
+4. **Articles.** One policy analysis, "Living With a Designated HIE Operator", and one on the data-timing gap: commercial prices regulated from FY2028, commercial claims in the integrated dataset only by 2029–2030.

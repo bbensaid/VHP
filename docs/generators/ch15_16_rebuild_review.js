@@ -44,10 +44,10 @@ const c = [];
 c.push(
   new Paragraph({ spacing: { before: 600, after: 200 }, children: [new TextRun({ text: "Health Transformation Review", size: 44, bold: true, color: NAVY, font: "Arial" })] }),
   new Paragraph({ spacing: { after: 360 }, children: [new TextRun({ text: "Chapters 15–16 and Appendices A–E: Rebuild for Review", size: 34, color: NAVY, font: "Arial" })] }),
-  P("**Prepared:** 25 November 2026, by Claude (Claude Code), for the author's review. **Nothing in this document has been written into HTR_Book_v42.docx yet.** On your go-ahead it will be applied with the usual backup, format check and render."),
+  P("**Prepared:** 25 November 2026 (revision 2), by Claude (Claude Code), for the author's review. **Nothing in this document has been written into HTR_Book_v42.docx yet.** On your go-ahead it will be applied with the usual backup, format check and render."),
   box("What this rebuild does", [
-    "**Chapter 15** is replaced: the PMI material (project vs program vs portfolio, knowledge areas, predictive vs adaptive) gives way to the machinery that actually executes reform in Vermont — AHS, ADS, DVHA, VITL, GMCB, the HIE Steering Committee, the Legislature's oversight committees, and the federal funders — drawn from the statutes themselves.",
-    "**Chapter 16** keeps its structure and gains what it was missing: a factual fix (ADS is not an AHS program), the split authority over technology, AHS's antitrust-supervision duty, the statutory reform coordinator, and the Act 119 findings on decision rights and staffing.",
+    "**Chapter 15** is replaced: the PMI material (project vs program vs portfolio, knowledge areas, predictive vs adaptive) gives way to Vermont's five reform workstreams — hospital transformation and finances, GMCB price and budget regulation, the Blueprint for Health, clinical and claims data integration, and the RHT program — and the institutions and people who carry them, drawn from the statutes, Oliver Wyman, GMCB, AHS and the State's own reports.",
+    "**Chapter 16** keeps its structure and gains what it was missing: a factual fix (ADS is not an AHS program), the gap between GMCB's price regulation and AHS's transformation work, AHS's antitrust-supervision duty, the statutory reform coordinator, and the Act 119 findings on decision rights and staffing.",
     "**Appendices A, B, E** gain an execution-institutions profile, the AHS deadlines missing from the Act 68 timeline, and execution-capacity indicators. Appendix C is unchanged; Appendix D waits for the platform work.",
     "**Every fact** comes from a document opened for this work; the saved copies are in book-audit/deep/sources/statutes and /execution.",
   ], NOTE_FILL),

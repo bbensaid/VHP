@@ -1,0 +1,818 @@
+ 
+Agency of Human Services Office of 
+Health Care Reform 
+Act 68 (2025) Sec. 10(d)(1) 
+Advantages and Disadvantages of Health Care Data Integration 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+REPORT DATE: SENT TO: SENT FROM: 
+STAFF HOURS SPENT 
+PREPARING THIS 
+REPORT: 
+1/14/2026 
+House Committees on 
+Health Care and on 
+Human Services and 
+the Senate Committee 
+on Health and Welfare 
+Will Dempsey, Health 
+Data Officer 112 
+Page | 2 
+ 
+EXECUTIVE SUMMARY 
+ 
+Act 68 of 2025 requires the Agency of Human Services (AHS) to evaluate integrating 
+Vermont’s major healthcare datasets including clinical, claims, social drivers of health 
+(SDOH) and other data. Today, these datasets exist separately across multiple systems. 
+Integrating them into a single, secure Unified Health Data Space (UHDS) would: 
+• Give providers and state leaders a clearer and more complete picture of how 
+Vermonters use the healthcare system, 
+• Identify where gaps exist, and 
+• Identify which interventions have the greatest impact. 
+A combined dataset would make quality measurement and reporting more reliable and 
+less costly. This would result in more effective care coordination and targeted investment 
+decisions. 
+The UHDS offers four core benefits: 
+1. Strong protections and governance 
+The UHDS would be governed by existing statutes and rules. It would operate with 
+robust privacy and security standards. There would be strict limitations on access to 
+sensitive information. These protections would ensure that data is used only for 
+approved purposes. Solutions for patient privacy will include clear and transparent 
+data governance policies, opt-out consent management for general medical 
+information, granular opt-in consent management for 42 CFR Part 2 SUD 
+information and other highly sensitive data types, strictly enforced role-based 
+access to information, and comprehensive audit mechanisms for data access. 
+ 
+2. Better patient outcomes 
+Providers can use linked healthcare data to offer effective preventive services to 
+participating patients who need it to improve health outcomes and reduce 
+avoidable future healthcare costs. 
+ 
+3. Better oversight and accountability 
+A single, comprehensive dataset would allow the State to track the healthcare 
+system more accurately and consistently. The dataset could give insight into system 
+performance, equity, access, and cost trends. 
+ 
+Page | 3 
+ 
+4. Increased efficiency and reduced provider burden 
+Providers, payers, and state programs could rely on one consolidated data 
+infrastructure. Doing so would prevent duplicating similar efforts across multiple 
+systems. This reduces administrative costs and manual reporting. Healthcare 
+organizations currently combine clinical and claims data manually to report on 
+quality measures. A linked clinical and claims dataset would save administrative 
+time and prevent duplicative work across these organizations. 
+ 
+Implementation of the UHDS could be phased over time. First, the State had the Medicaid 
+Data Warehouse and Analytics Solution (MDWAS) go live in early January 2026, including 
+linked clinical and claims data to ensure Vermont’s Medicaid program is compliant with 
+federal interoperability requirements. Second, the State could develop a UHDS for multi-
+payer patient populations by incorporating Medicare claims, statewide clinical data, 
+health-related social needs information, and other statewide non-claims datasets by 2028-
+2029 within the existing solution. Third, the State could scale the UHDS to incorporate 
+commercial claims datasets by 2029-2030. A phased approach: 
+• Keeps costs manageable, 
+• Leverages existing federal funding, 
+• Ensures consistent alignment with Vermont’s healthcare reform timeline. 
+This approach positions Vermont to make smarter, data-driven decisions that improve 
+affordability, access, and outcomes for all Vermonters. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page | 4 
+ 
+TABLE OF CONTENTS 
+Contents 
+EXECUTIVE SUMMARY ................................ ................................ ................................ ... 2 
+TABLE OF CONTENTS ................................ ................................ ................................ .... 4 
+STATUTORY PURPOSE ................................ ................................ ................................ ... 5 
+BACKGROUND AND CONTEXT ................................ ................................ ....................... 5 
+ADVANTAGES OF INTEGRATING MULTIPLE DATA TYPES IN THE UHDS .............................. 6 
+Overview of the major healthcare datasets in Vermont. ................................ ................ 6 
+INTEGRATION AND ITS MECHANISMS ................................ ................................ ............ 9 
+USE CASES ................................ ................................ ................................ ................. 10 
+IMPROVING PATIENT AND PROVIDER ACCESS TO RELEAVANT INFORMATION ................ 12 
+INCREASING EFFICIENCIES AND DECREASING ADMINISTRATIVE BURDEN ON PROVIDERS
+ ................................ ................................ ................................ ................................ .. 12 
+INCREASING ACCESS TO AND QUALITY OF HEALTHCARE FOR ALL VERMONTERS .......... 13 
+REDUCING HEALTHCARE SYSTEM COSTS ................................ ................................ .... 17 
+DISADVANTAGES, DATA PROTECTIONS, AND SOLUTIONS FOR INTEGRATION ................. 19 
+Data Privacy for Patients ................................ ................................ ....................... 19 
+IMPLEMENTATION FRAMEWORK ................................ ................................ .................. 21 
+PERFORMANCE MONITORING AND EVALUATION ................................ ......................... 22 
+RECOMMENDATIONS AND NEXT STEPS ................................ ................................ ....... 22 
+ 
+ 
+ 
+ 
+Page | 5 
+ 
+STATUTORY PURPOSE 
+ 
+This report has been produced in response to the following provision of Act 68 of 2025, 
+Section 10; 18 V .S.A. Section 9353(d)(1): 
+ 
+“On or before January 15, 2026, the Agency of Human Services shall report to the House 
+Committees on Health Care and on Human Services and the Senate Committee on Health 
+and Welfare regarding the advantages and disadvantages of integrating clinical data, 
+claims data, data regarding social drivers of health and health-related social needs, and 
+other data types in the UHDS; how an integrated system can improve patient and provider 
+access to relevant information, increase efficiencies and decrease administrative burdens 
+on providers, increase access to and quality of healthcare for Vermonters, and reduce 
+healthcare system costs; and how an integrated system can be implemented in a manner 
+that protects proprietary information relating to payers and providers. ” 
+ 
+BACKGROUND AND CONTEXT 
+ 
+Vermont’s healthcare system is currently facing a precarious financial situation with its 
+largest domestic insurer and a significant percentage of its hospitals and healthcare 
+facilities facing financial challenges. Many factors have contributed to this problem 
+including a small and rural population, an aging population, and workforce challenges that 
+amplify the drastic increases nationwide in the cost of healthcare. 
+ 
+In June 2025, the Vermont Legislature passed Act 68 of 2025. The purpose of this act is to 
+achieve transformation of and structural changes to Vermont’s healthcare system. The 
+legislation is intended to generate improvements in health outcomes, population health, 
+quality of care, regional access to services, and reducing disparities in access resulting 
+from demographic factors or health status. As these improvements are underway, it is 
+critical that data regarding how healthcare is utilized and paid for are included in outcome 
+measures. Within the Act 68 work, the State of Vermont will be considering the advantages 
+and disadvantages of integrating clinical data, claims data, data regarding social drivers of 
+health and health-related social needs, and other data types in the UHDS. Key items to be 
+covered include: 
+ 
+• How an integrated system can improve patient and provider access to relevant 
+information, 
+• Increasing efficiencies and decreasing administrative burdens on providers, 
+Page | 6 
+ 
+• Increase access to and quality of healthcare for Vermonters, 
+• Reducing healthcare system costs; 
+• How an integrated system can be implemented in a manner that protects 
+proprietary information relating to payers and providers. 
+ 
+These topics are also consistent with Vermont’s Health Information Exchange (HIE) 
+Strategic Plan1, which emphasizes data utility, patient access, and integration across state 
+platforms. 
+ADVANTAGES OF INTEGRATING MULTIPLE DATA TYPES IN THE 
+UHDS 
+ 
+Overview of the major healthcare datasets in Vermont. 
+Vermont’s major healthcare datasets include healthcare insurance claims, electronic 
+health record (EHR) clinical data, social determinants of health (SDOH) information, and 
+other data types, including administrative and survey data. 
+ 
+Health Insurance Claims. Health insurance claims are billing requests submitted by 
+healthcare providers to payers, including commercial insurers, Medicare, and Medicaid. 
+They are highly standardized and are generally based on two claim formats published by 
+the Centers for Medicare and Medicaid Services (CMS); one for professional claims (Form 
+CMS-1500), and one for facility claims (Form CMS-1450). They contain patient identifiers, 
+demographic information, billing and attending provider information, diagnostic codes, 
+service codes, and payment information, including dates, billed amounts, allowed 
+amounts, and paid amounts. The focus of these records is on the essential information 
+required by insurers for payments. Vermont currently collects Medicaid claims data in its 
+Medicaid Management Information System (MMIS) and collects multi-payer claims data 
+(including commercial insurance, Medicaid, and Medicare) in its All-Payer Claims Dataset 
+(APCD), named the Vermont Health Care Uniform Reporting and Evaluation System 
+(VHCURES).2 Historically, most standardized population health measures and healthcare 
+quality measures produced and reported by healthcare payers have been built primarily on 
+ 
+1 https://healthdata.vermont.gov/content/vermont-health-information-exchange-program 
+2 Green Mountain Care Board (GMCB). “Introduction to Available Data Sources. ” 2020. 
+https://gmcboard.vermont.gov/sites/gmcb/files/documents/Intro%20to%20Data%20Sources%20Final%200
+5.2020.pdf. 
+Page | 7 
+ 
+claims data, largely because of claims’ standardized formats and because the data is 
+readily available to insurers at a population level. 
+ 
+Clinical Data. Clinical data is information from individuals’ healthcare records maintained 
+by their healthcare providers. Its primary use is to help providers give high-quality, direct 
+healthcare services to patients. The availability of clinical data at a mass scale for 
+electronic processing and for population health analytics is relatively new and is largely the 
+consequence of federal supports and incentives in the American Recovery and 
+Reinvestment Act of 20093 to help healthcare providers migrate from paper medical 
+records to Electronic Health Record (EHR) systems. Raw clinical data in EHR systems is 
+less standardized than claims data, but all federally certified EHR systems are required to 
+at least collect and exchange a common set of data elements from the United States Core 
+Data for Interoperability (USCDI)4 standard, and to calculate a minimum set of 
+standardized electronic clinical quality measures (eCQMs)5. The USCDI common data 
+elements and eCQMs overlap substantially with the content of claims data, but clinical 
+data often contains much more detailed information about diagnoses and services, and 
+contains healthcare measurement information that generally does not appear in claims 
+data, including vital signs, observations, lab results, images, screening and test results, 
+immunizations, allergies and intolerances, healthcare status, goals, treatment plans, and 
+clinical notes. Among the more detailed service information available in clinical data is 
+more complete information on preventive healthcare services and assessments, 
+particularly those in primary care and prenatal care, which often get bundled together and 
+not specified on claims for payment. 
+ 
+Social Determinants of Health. Social Determinants of Health (SDOH), or Social Drivers of 
+Health (SDOH), are defined by the U.S. Centers for Disease Control and Prevention (CDC) 
+as “non-medical factors that affect health outcomes”6. They include demographic, 
+socioeconomic, geographic, and environmental factors that affect people’s health. A 
+closely related concept is Health Related Social Needs (HRSN), which the U.S. Department 
+of Health and Human Services (HHS) defines as unmet social needs at an individual level 
+ 
+3 Centers for Medicare & Medicaid Services (CMS). “CMS Finalizes Requirements for the Medicaid Electronic 
+Health Records (EHR) Incentive Program. ” 2010. https://www.cms.gov/newsroom/fact-sheets/cms-finalizes-
+requirements-medicaid-electronic-health-records-ehr-incentive-program. 
+4 https://www.healthit.gov/isp/united-states-core-data-interoperability-uscd 
+5 CMS. “Electronic Clinical Quality Measures Basics. ” 2024. https://www.cms.gov/medicare/regulations-
+guidance/promoting-interoperability-programs/electronic-clinical-quality-measures-basics. 
+6 Centers for Disease Control (CDC). “Social Determinants of Health. ” 2024. https://www.cdc.gov/public-
+health-gateway/php/about/social-determinants-of-health.html. 
+Page | 8 
+ 
+that “have the potential to worsen health and well-being."7 HHS makes the distinction that 
+“Social determinants of health refer to community-level factors, while HRSN refer to 
+individual-level factors, both of which impact an individual’s health and well-being.”8 
+HRSN data may be considered a subset of SDOH data. HRSN data is often stored within 
+claims data, clinical data, and administrative data related to social benefits eligibility. 
+Within claims, HRSN summary data may be coded as a specialized subset of ICD-10 
+(International Classification of Diseases, 10th Revision) diagnostic codes often referred to 
+as “Z-codes” . Within clinical data, it may be coded either as summary assessments or as 
+raw screening data (e.g., individual questionnaire responses) in SNOMED (Systematized 
+Nomenclature of Medicine) codes, or it may appear in free text in clinical notes. A 
+prominent, nationally standardized, screening instrument is the CMS Accountable Health 
+Communities Health-Related Social Needs (AHC HRSN) Screening Tool9. OneCare 
+Vermont and the Blueprint for Health program have collaborated to promote use of the first 
+ten questions of this tool among their member primary care practices for the purposes of 
+universal patient screening and referrals to assistance. A goal of the HIE is to collect and 
+share among coordinated-care providers such screenings independently of the capability 
+or limitations of providers’ particular EHR systems. In addition to those sources, and as 
+part of its commitment to addressing SDOH, the State of Vermont has recently contracted 
+for use of the Deloitte PeoplePrism10 product, which uses artificial intelligence to combine 
+U.S. Census data with commercially available consumer and demographic data to predict 
+the likelihood of health-related social needs and service needs by patient geography. 
+ 
+Other Data Types. Other major healthcare datasets in Vermont include the Vermont 
+Uniform Hospital Discharge Data Set (VUHDDS), which is administered by the Green 
+Mountain Care Board. VUHDDS tracks utilization of Vermont hospitals by all patients, not 
+just Vermont residents, but it does not contain individual patient identifiers, individual 
+provider identifiers, or service-location information below the hospital level.11 Key public 
+health surveys in Vermont include the Behavioral Risk Factor Surveillance System (BRFSS), 
+Youth Risk Behavior Survey (YRBS), Pregnancy Risk Assessment Monitoring System 
+ 
+7 U.S. Department of Health and Human Services (HHS). “Addressing Health-Related Social Needs in 
+Communities Across the Nation. ” 2023. 
+https://aspe.hhs.gov/sites/default/files/documents/3e2f6140d0087435cc6832bf8cf32618/hhs-call-to-
+action-health-related-social-needs.pdf. 
+8 HHS. “Addressing Health-Related Social Needs in Communities Across the Nation. ” 2023. 
+9 CMS. “The Accountable Health Communities Health-Related Social Needs Screening Tool. ” n.d. 
+https://www.cms.gov/priorities/innovation/files/worksheets/ahcm-screeningtool.pdf. 
+10 Deloitte. “PeoplePrism. ” 2025. https://peopleprism.ai/. 
+11 Green Mountain Care Board (GMCB). “Introduction to Available Data Sources. ” 2020. 
+Page | 9 
+ 
+(PRAMS), Adult Tobacco Survey (ATS), Household Health Insurance Survey (HHIS), and 
+Health Care Workforce Census.12 
+ 
+Survey data can complement claim and clinical data to derive more accurate and precise 
+insights.13 14 As a part of continuous quality monitoring and improvement efforts, most 
+healthcare payer and provider networks are required to regularly collect and report 
+information from patient satisfaction surveys, and in Vermont a commonly used 
+instrument is the Consumer Assessment of Healthcare Providers and Systems (CAHPS) 
+survey,15 administered nationwide by the Agency for Healthcare Research and Quality 
+(AHRQ). Patient-access and system capacity is often assessed through reference to 
+healthcare referral and wait-time data, which may be collected through a combination of 
+administrative data and practice surveys. Given issues with patient access in recent years, 
+an area of keen interest has been healthcare workforce data, including development of a 
+standardized and more complete provider roster for the state. Finally, any complete look at 
+the healthcare system needs reference to financial information, including hospital 
+budgets, actuarial data, and similar resources. 
+ 
+INTEGRATION AND ITS MECHANISMS 
+ 
+There are multiple methods or mechanisms by which the major healthcare datasets for 
+Vermont can be integrated with one another. The first is to make the various datasets 
+available in a common, or unified, analytical environment or tool set. The data need not be 
+physically located on the same server, but analysts need the ability to read, combine, 
+transform, and generate output information from multiple sources within a single query or 
+report, and having the datasets within a shared computing environment makes that more 
+cost and time efficient. Second, the datasets need to have one or more common variables 
+that can be used for matching or linking information, even if only at an aggregate level. 
+Common elements used for linkage at the aggregate level include geography, time, and 
+ 
+12 AHS. “Population Health Surveys Data. ” 2025. https://www.healthvermont.gov/stats/population-health-
+surveys-data. 
+13 Gontijo Guerra, Samantha, Djamal Berbiche, and Helen-Maria Vasiliadis. “Measuring Multimorbidity in 
+Older Adults: Comparing Different Data Sources. ” BMC Geriatrics 19, no. 1 (2019): 166. 
+https://doi.org/10.1186/s12877-019-1173-4. 
+14 Berete, Finaba, Stefaan Demarest, Rana Charafeddine, et al. “Linking Health Survey Data with Health 
+Insurance Data: Methodology, Challenges, Opportunities and Recommendations for Public Health Research. 
+An Experience from the HISlink Project in Belgium. ” Archives of Public Health 81, no. 1 (2023): 198. 
+https://doi.org/10.1186/s13690-023-01213-0. 
+15 Agency for Healthcare Research and Quality (AHRQ). “Consumer Assessment of Healthcare Providers and 
+Systems. ” 2025. https://www.ahrq.gov/cahps/index.html. 
+Page | 10 
+ 
+demographics. Finally, to link data at the level of an individual person or organization, 
+some form of shared identifiers, or identity management, for those entities across datasets 
+is required (e.g., to know which instances of “John Smith” or “Jack Smith” are referring to 
+the same person).16 For large datasets with information coming from multiple sources, that 
+is generally accomplished using a Master Person Index (MPI) and/or a Master 
+Organizational Index (MOI), which are essentially consolidated directories for people and 
+organizations which generate common identifiers for use across different datasets. 
+USE CASES 
+ 
+Why go to all the trouble of integrating or linking healthcare datasets, when one could 
+simply use each in isolation, as has been done in the past? There are multiple 
+applications, or use cases, for integrated healthcare datasets. Use cases for linking 
+multiple healthcare data types, especially claims and clinical data, are similar to those for 
+health information exchange in Vermont generally17: 
+• Create one Health Record for Every Person 
+o Support optimal care delivery and coordination by ensuring access to 
+complete and accurate health records. 
+▪ This is enabled by an effective MPI, provider portal, and patient-
+access Application Programming Interfaces (APIs). 
+• Improve Healthcare Operations 
+o Enrich healthcare operations through data collection and analysis to support 
+quality improvement and reporting. 
+• Use Data to Enable Investment and Policy Decisions (Population Health) 
+o Bolster the health system's ability to learn and improve by using accurate, 
+comprehensive data to guide investment of time, labor and capital, and 
+inform policy making and program development. 
+A few specific use case examples are provided in the following table: 
+ 
+16 Padmanabhan, Shivani, Lucy Carty, Ellen Cameron, Rebecca E. Ghosh, Rachael Williams, and Helen 
+Strongman. “Approach to Record Linkage of Primary Care Data from Clinical Practice Research Datalink to 
+Other Health-Related Patient Data: Overview and Implications. ” European Journal of Epidemiology 34, no. 1 
+(2019): 91–99. https://doi.org/10.1007/s10654-018-0442-4. 
+17 Vermont Agency of Human Services (AHS). “Vermont Health Information Exchange Use Case Scenarios. ” 
+2025. . Additional and more detailed use cases for linked claims and clinical information are presented in the 
+following file: "VHIE Claims Pilot - Use Cases Consolidated.xlsx" at 
+https://healthdata.vermont.gov/sites/healthdata/files/documents/VHIE%20Claims%20Pilot%20-
+%20Use%20Cases%20Consolidated_Copy.xlsx 
+Page | 11 
+ 
+ 
+Use Case Examples & Potential Impact 
+Use Case Data Source(s) Impact 
+Hospital transformation 
+evaluation 
+Clinical + Claims + SDOH Monitor hospital cost and 
+performance outcomes 
+AHEAD Model Reporting Clinical + Claims + SDOH + 
+Other 
+Meet AHEAD model 
+reporting requirements and 
+support value-based 
+payments 
+Health access dashboards Clinical + Census + SDOH Identify gaps in care 
+Opioid and housing risk 
+stratification 
+Clinical + Claims + SDOH + 
+stratification tool 
+Enable proactive 
+interventions 
+Health workforce planning Clinical + Claims + Vermont 
+Department of Health 
+(VDH) Census + VDH 
+licensing + Office of 
+Professional Regulation 
+(OPR) licensing 
+Inform network adequacy 
+and strategic alignment 
+Blueprint analysis Clinical + Claims + SDOH + 
+Other 
+Preventive care, care 
+coordination, quality 
+measurement (esp. hybrid 
+HEDIS measures), quality 
+improvement initiatives, 
+quality performance 
+payments, and annual 
+outcomes reporting at the 
+statewide, hospital-service-
+area and practice levels. 
+ 
+Generally, claims data are useful for measuring diagnoses and service utilization that are 
+payment-relevant (e.g., ICD-10 diagnostic codes, types of services received, billing codes). 
+Clinical data captures direct and more detailed health outcomes (e.g., detailed diagnostic 
+information, observations, vital signs, lab results, screenings, and test results). SDOH data 
+provide information on risk factors for service needs and costs. Other datasets, such as 
+those described earlier, provide further information about patient needs, service capacity, 
+and patient satisfaction. Combined, these datasets provide a more complete picture of 
+healthcare and patient outcomes in Vermont. 
+Page | 12 
+ 
+IMPROVING PATIENT AND PROVIDER ACCESS TO RELEAVANT 
+INFORMATION 
+ 
+Integrated, or linked, healthcare datasets can provide more information for more people by 
+improving both patient and provider access to relevant information. A more complete, 
+unified health record for a given patient from a single aggregation source facilitates access, 
+as does the ability to aggregate similar unified data at the levels of a practice, provider-
+network, hospital-service-area, and state for context and comparison. Relatively fixed 
+aggregate reports and interactive dashboards (with pre-configured limitations on minimum 
+sample size and cell size), such as those on health system performance, Vermont 
+population health, and healthcare quality measures, can be delivered through public web 
+resources. More dynamic, detailed, and flexible interactive reports and dashboards can be 
+delivered through a secure web portal with user role-based data-access controls, to ensure 
+that users only view the data for which they are authorized. Finally, and perhaps most 
+importantly, having linked, identified, healthcare datasets would allow healthcare 
+providers to drill-down from aggregate, hybrid, healthcare utilization and quality measures 
+to not only their own practice level but also to the specific patients in their care who are 
+identified by the measure as needing further intervention or more coordinated care. In 
+contrast to aggregate or de-identified data, linked, identified patient data is far more 
+actionable for both healthcare providers and their patients, particularly when they can 
+access it in consolidated form from a single source. Such a single, consolidated source 
+could be in the form of a secure web portal or an application programming interface (API) 
+which would securely feed data to a user’s own EHR system interface or application on the 
+user’s phone, for example. 
+INCREASING EFFICIENCIES AND DECREASING 
+ADMINISTRATIVE BURDEN ON PROVIDERS 
+ 
+Integrated healthcare datasets can increase efficiencies and decrease administrative 
+burdens for providers in several ways. First, the substantial tasks of statewide data 
+collection, aggregation, identity management, and data linkage could be centralized, 
+reducing the need for duplicated effort and investments on the parts of healthcare 
+stakeholders, particularly for providers who need access to patient information beyond 
+what they generate or already have stored in their own EHR system. Second, more users 
+could share a statewide analytics and reporting platform, reducing the need for duplicated 
+infrastructure development, maintenance, and licensing for business intelligence, 
+population health analytics, quality measurement, and reporting tools. Third, having 
+Page | 13 
+ 
+consolidated information available from a single source in a common toolset would enable 
+simplified, faster, and lower-cost information retrieval as the data can be restructured to 
+optimize (speed up) such retrieval. Having linked claims and clinical information in the 
+same system would reduce the need for manual chart abstraction (i.e., manual extraction 
+of clinical information from EHR records) for the purposes of calculating and reporting 
+standardized healthcare quality measures that are hybrid; requiring data from both claims 
+and clinical records. By minimizing manual abstraction, the task is more time and cost 
+efficient, much larger patient sample sizes can be used for greater reliability of results, and 
+the opportunities for manual data errors are reduced. Finally, having more data in one 
+place could offer the possibility of reducing duplicated reporting burden across providers, 
+such as when an individual provider, a practice, a practice parent organization, and a 
+provider network all need to calculate and report healthcare quality measures or outcomes 
+separately for various subsets of the same patient population, or to minimize duplicate 
+data-entry into multiple systems, such as the provider’s own EHR plus reporting tools or 
+systems for various payers, including that of an Accountable Care Organization (ACO). A 
+more efficient approach would be to have the data in one source and have a single report 
+developed with optional drilldowns for various patient sub-populations. 
+ 
+INCREASING ACCESS TO AND QUALITY OF HEALTHCARE FOR 
+ALL VERMONTERS 
+ 
+Increasing access to healthcare, and increasing the quality of healthcare, are important 
+components for ensuring that Vermonters can get the care they need, with the best 
+outcomes, at the lowest cost. Access and quality are both key components of major 
+healthcare reform efforts in Vermont, including primary care expansion and hospital global 
+budget initiatives. 
+ 
+Measures and Indicators 
+ 
+Patient access. Patient access to healthcare can be assessed by combining information 
+from several of the data sources mentioned earlier in this report. The CAHPS patient-
+satisfaction survey asks specifically about access and wait-times during business hours, 
+evenings, and weekends. Surveys of healthcare practices and EHR administrative data can 
+provide information from the provider side on the duration of next-available-appointment 
+scheduling, referral response times, and other wait-time data. Finally, provider roster 
+information and hospital bed data can give information on system capacity more generally. 
+Page | 14 
+ 
+ 
+Quality. Most healthcare providers and most healthcare payers are required to regularly 
+report on a set of standardized healthcare quality measures for their patient or member 
+populations. Many of those quality measures are based on Healthcare Effectiveness Data 
+and Information Set (HEDIS) measures developed and published by the National 
+Committee for Quality Assurance (NCQA) or are measures developed and published by the 
+Centers for Medicare and Medicaid Services (CMS). 
+ 
+A critical subset of those standardized measures is referred to as “hybrid” measures 
+because they require the combination of healthcare claims and clinical data; generally, to 
+obtain information about healthcare coverage and diagnoses from claims data and 
+information about vital signs, health observations, test results, or lab results from clinical 
+data. Those hybrid measures combine the greater standardization of eligibility, diagnostic, 
+and service information found in healthcare claims with the more specific healthcare 
+metrics information in clinical data. CMS has identified a core set of high-priority quality 
+measures to be used across its programs, which it refers to as “Universal Foundation” 
+measures18, of which the following are hybrid measures which also have been identified as 
+high-priority by Vermont stakeholders: 
+ 
+• Percent of patients with hypertension and blood pressure in control (CMS 167, 
+HEDIS CBP , NQF 0018). 
+• Percent of patients with diabetes and hemoglobin (Hb) A1c in poor control (CMS 
+204, HEDIS DPC, NQF 0059) 
+• Percentages of patients with screening for clinical depression and a follow-up plan 
+(CMS 672, HEDIS CDF , NQF 04189/0418e). 
+In the absence of an integrated dataset of electronic claims and clinical data, provider 
+groups and payers must resort to manual chart abstraction to obtain the clinical values 
+(e.g., blood pressure measurements, HbA1c test results, depression screening and follow-
+up information) from clinical records for such hybrid measures. Manual chart abstraction 
+can be comparatively slow and costly, and as a result, it is often done only for limited 
+patient samples (e.g., approximately 400 individuals) rather than full patient populations. 
+Having integrated electronic claims and clinical data allows for greater time and cost 
+efficiencies, enabling larger sample sizes and greater reliability and generalizability of 
+results, and more options for subgroup analyses. If the integrated data were to consist of 
+identified patient records, it would allow providers to drill-down from aggregate results to 
+ 
+18 CMS. “The Universal Foundation. ” 2025. https://www.cms.gov/medicare/quality/cms-national-quality-
+strategy/universal-foundation. 
+Page | 15 
+ 
+specific patient panels and specific individuals in need of additional intervention or care 
+coordination. 
+Integrated data would also provide a fuller picture of information about patients to support 
+healthcare quality improvement initiatives implemented by providers. Devoe et al. (2019) 
+for example find that half of Medicaid members’ cholesterol, diabetes, and kidney 
+screenings as well as influenza vaccinations are documented in clinical data but not in 
+claims data—an omission that was more likely among older members, men, and those 
+who had gaps in their insurance coverage.19 An integrated dataset containing claims and 
+clinical data would facilitate validation checks among measures generated from each 
+source and further support data and care quality within the healthcare system. 
+ 
+Improved Care Coordination 
+Integrated data would also facilitate care coordination across providers and programs by 
+providing a more complete, consolidated, and longitudinal record of diagnoses, care plans, 
+treatment providers, clinical interventions, insurer and out-of-pocket costs, and the net 
+value of care as it relates to patient outcomes. Such consolidated information can be of 
+great use for care coordination teams, such as those supported by the Blueprint for Health 
+program (regional “Community Health Teams”), the Vermont Chronic Care Initiative (VCCI), 
+and accountable care organizations (ACOs). 
+Take the example of medications: both clinical and claims data may include aligned 
+insights on the formula and dosage of prescriptions and the diagnoses behind them, but 
+cost insights are only available in claims while adherence to prescriptions and the broader 
+context of patient health and circumstances are only available in clinical data. Also, when 
+linked to clinical data in a provider web portal, prescription claims data for a given patient 
+can be used for medication reconciliation, to help providers understand and coordinate the 
+medicines a patient is taking across all their providers and reduce the chances of 
+dangerous drug interactions. Similarly, comprehensive and consolidated immunization 
+records can be used by providers and care-coordination teams for targeted outreach to 
+improve immunization rates. 
+ 
+ 
+19 DeVoe, J. E., R. Gold, P . McIntire, J. Puro, S. Chauvie, and C. A. Gallia. “Electronic Health Records vs 
+Medicaid Claims: Completeness of Diabetes Preventive Care Data in Community Health Centers. ” The 
+Annals of Family Medicine 9, no. 4 (2011): 351–58. https://doi.org/10.1370/afm.1279. 
+Page | 16 
+ 
+Financial Incentives for Quality 
+ 
+Once a statewide representative dataset of linked claims, clinical, and other healthcare 
+data has been established, and hybrid metrics (or alternatively, pooled eCQMs) can be 
+calculated for identifiable patient populations, those metrics can be used not only to 
+inform higher quality, coordinated care, but also to incentivize it financially. For more than 
+a decade, the Blueprint for Health program has directed and facilitated capitated, value-
+based incentive payments20 of up to $0.25 per member per month from insurers to 
+participating primary care providers in Vermont based on regional (hospital service area) 
+performance on quality measures, two of which are hybrid claims/clinical measures from 
+the CMS Universal Foundation measure set: 
+ 
+• Percent of patients with hypertension and blood pressure in control (CMS 167, 
+HEDIS CBP , NQF 0018). 
+• Percent of patients with diabetes and hemoglobin (Hb) A1c in poor control (CMS 
+204, HEDIS DPC, NQF 0059) 
+Similarly, Vermont’s ACO, OneCare Vermont, has distributed quality-based shared savings 
+incentive payments to its participating providers for the above two measures plus the 
+following additional CMS Universal Foundation hybrid measure21: 
+ 
+• Percentages of patients with screening for clinical depression and a follow-up plan 
+(CMS 672, HEDIS CDF , NQF 04189/0418e). 
+To the extent that such measures could be calculated from a common, integrated 
+healthcare dataset for Vermont, the process would be more cost efficient than the current 
+practice of building multiple, single purpose, linked datasets for each analysis. To the 
+extent the linked datasets are connected to identified patient records, providers could drill-
+down from their population-based, payment-related metrics to see the specific patient 
+cases that might benefit from quality improvement interventions, enabling them to close 
+any performance gaps for hospitals and/or primary care providers. In this way, data 
+collection, measurement, incentive payments, and coordinated care could all be aligned 
+to support higher-quality healthcare. 
+ 
+ 
+20 AHS. “Blueprint for Health: 2025 Performance Payment Profiles. ” 2025. 
+https://blueprintforhealth.vermont.gov/payment-profile. 
+21 OneCare Vermont. “Quality Performance. ” 2025. https://www.onecarevt.org/quality-performance/. 
+Page | 17 
+ 
+REDUCING HEALTHCARE SYSTEM COSTS 
+ 
+An integrated, whole-population, and identified dataset of clinical, claims, SDOH, and 
+other data types in a UHDS could reduce healthcare system costs by providing more 
+comprehensive patient data to providers more cost effectively. For all the reasons 
+described above, more comprehensive and accessible patient data would support better 
+and more targeted preventive care. Such a system would enable the healthcare community 
+to identify and reduce low-value or unnecessary care. A UHDS would also streamline 
+analytic work by replacing today’s fragmented, single-purpose datasets with one cohesive 
+environment for analysis (e.g., for calculating hybrid HEDIS measures for various patient 
+populations). In short, a UHDS that aligns clinical, claims, SDOH and other data at the 
+individual level over time would bolster efforts to maximize healthcare outcomes at the 
+lowest cost possible. 
+Clinical-claims integration facilitates the creation of longitudinal data, which observes 
+individuals or institutions over time, and can be used to tailor interventions at multiple 
+scales: patient, provider, region, and state. Such data are integral to value-based care as 
+one can neither glean clinical insights or SDOH from claims data, nor derive the cost of 
+care across multiple sites from clinical data. Longitudinal data can also identify which 
+high-cost treatments have not worked or been adhered to at rates required to justify their 
+costs and allow stakeholders to identify alternatives with greater promise. 
+Predictive analytics, or the use of historical and real-time data to forecast future health 
+outcomes and optimize health care interventions, also benefit from clinical-claims 
+integration. Kharrazi et al. (2017) argue that predictive analytics become more precise 
+when clinical and claims data are paired; for example, clinical data identify an additional 
+11.6% of patients with diabetes than claims alone.22 Kharrat et al. (2024) employ artificial 
+intelligence across multiple databases to identify the parameters and attributes that are 
+significantly associated with the risk of suicide at a population and individual level, e.g., 
+personal mental health utilization, social deprivation, rurality, and regional spending on 
+ 
+22 Kharrazi, Hadi, Winnie Chi, Hsien-Yen Chang, et al. “Comparing Population-Based Risk-Stratification Model 
+Performance Using Demographic, Diagnosis and Medication Data Extracted From Outpatient Electronic 
+Health Records Versus Administrative Claims. ” Medical Care 55, no. 8 (2017): 789–96. 
+https://doi.org/10.1097/MLR.0000000000000754. 
+Page | 18 
+ 
+mental health interventions.23 Similar approaches have been undertaken to predict those 
+at risk for substance use disorder and associated non-fatal and fatal overdoses.24 25 
+Such information can be used to adjust risk stratification models that are integral to value-
+based care as well as conduct outreach and deliver targeted interventions to high-risk, 
+high-cost patients prior to the emergence of higher-acuity interventions. Clinical-claims 
+integration would further facilitate the identification of those at-risk for chronic conditions 
+or poor management of existing chronic conditions by aggregating disparate data on lab 
+values, diagnoses, procedural interventions, prescription adherence, and social 
+determinants of health. 
+ 
+Longitudinal and predictive analytics would enable human service stakeholders to 
+undertake value-based care and systemic transformation with greater precision. Shared 
+savings and global budget models, for example, could leverage adherence, readmission, 
+and cost measures across multiple sources to systemically identify policy and regulatory 
+interventions. Aligning cost and utilization data from claims with clinical outcome data can 
+be used to better calculate total cost of care, a measure that currently relies on many 
+proxies and estimates in lieu of direct data and then project the impact of potential 
+interventions on patient outcomes and provider behavior, and thus total cost of care, into 
+the future. Validation checks can be undertaken with more rigor in circumstances where 
+claims data becomes less complete, for example, as the share of commercial data that 
+gets shared with the state declines as adoption of Marketplace plans falls. Finally, 
+healthcare regionalization and care transformation more broadly would benefit from cost 
+and clinical outcome comparisons that could be used to ensure that decisions taken are 
+accurate, evidence-based, efficient, and equitable. 
+ 
+23 Kharrat, Fatemeh Gholi Zadeh, Christian Gagne, Alain Lesage, et al. “Explainable Artificial Intelligence 
+Models for Predicting Risk of Suicide Using Health Administrative Data in Quebec. ” PLOS ONE 19, no. 4 
+(2024): e0301117. https://doi.org/10.1371/journal.pone.0301117. 
+24 The Ontario Drug Policy Research Network and Ontario Public Health. Healthcare Utilization and Clinical 
+Comorbidities among People Who Died of a Substance-Related Toxicity Death in Ontario. Ontario Drug Policy 
+Research Network, 2025. https://doi.org/10.31027/ODPRN.2025.01. 
+25 Zedler, Barbara K, William B Saunders, Andrew R Joyce, Catherine C Vick, and E Lenn Murrelle. “Validation 
+of a Screening Risk Index for Serious Prescription Opioid-Induced Respiratory Depression or Overdose in a US 
+Commercial Health Plan Claims Database. ” Pain Medicine 19, no. 1 (2018): 68–78. 
+https://doi.org/10.1093/pm/pnx009. 
+Page | 19 
+ 
+DISADVANTAGES, DATA PROTECTIONS, AND SOLUTIONS FOR 
+INTEGRATION 
+ 
+The primary disadvantages, or risks, for integrating healthcare data in Vermont are similar 
+to those for any large repository of sensitive data, and generally relate to data security, data 
+privacy, and investment costs for infrastructure and data-aggregation services. We will 
+review these issues individually with anticipated solutions. 
+ 
+Data Security 
+ A UHDS in Vermont will need to meet rigorous federal and State requirements for the 
+security of sensitive healthcare data, similar to those currently applied to other statewide 
+healthcare datasets in Vermont, including VHCURES, MDWAS and the VHIE. The Vermont 
+Health Care Uniform Reporting and Evaluation System (VHCURES) is compliant with 
+federal Health Insurance Portability and Accountability Act (HIPAA) rules and National 
+Institute of Standards and Technology (NIST) security guidance, and it holds both Health 
+Information Trust Alliance (HITRUST) and Service Organization Controls 3 (SOC 3) 
+certifications, while also operating under state laws like the Security Breach Notice Act. 
+The Medicaid Data Warehouse and Analytics Solution (MDWAS) is currently Minimum 
+Acceptable Risk Standards for Exchanges (MARS-E) compliant and is moving to the 
+Acceptable Risk Controls for Affordable Care Act, Medicaid, and Partner Entities (ARC-
+AMPE) framework, which is replacing MARS-E. Similarly, the Vermont Health Information 
+Exchange (VHIE), operated by VITL, complies with HIPAA and the comprehensive NIST 800-
+53 framework. It also functions in accordance with Vermont's laws on medical record 
+confidentiality and provides patients with an "opt-out" choice. VHCURES data is person-
+identified in the technical back end, but deidentified for end-users, while VHIE data is fully 
+identified throughout. The UHDS will be an identified dataset. 
+ 
+Data Privacy for Patients 
+For patients, healthcare data privacy will be critical, and risks of unauthorized data 
+disclosures from such a comprehensive dataset will need to be addressed. In particular, 
+the inclusion of sensitive SDOH and mental health and/or substance use disorder (SUD) 
+information raises the privacy needs given the potential patient trust issues involved. 
+Solutions for patient privacy will include clear and transparent data governance policies, 
+opt-out consent management for general medical information, granular opt-in consent 
+Page | 20 
+ 
+management for 42 CFR Part 2 SUD information and other highly sensitive data types, 
+strictly enforced role-based access to information, and comprehensive audit mechanisms 
+for data access. For public aggregate reports based on UHDS data, this will require 
+withholding statistics for small sample sizes of patients where reidentification is a risk, 
+consistent with cell-size suppression policies of the State of Vermont and the federal 
+Centers for Medicare and Medicaid (CMS). 
+ 
+Protecting Proprietary Information Relating to Payers and Providers 
+For healthcare providers and payers, there is an additional concern of protecting 
+proprietary and competitive business information. One solution is that provider and payer 
+access to information can be limited based on their patient/member populations using 
+role-based access to data. Another solution is that for certain datasets, the allowed and 
+payment amounts of healthcare claims can be converted into price-standardized 
+healthcare utilization units, such HealthPartners’ Total Cost of Care (TCOC) Resource Use 
+Index (RUI) units26, which have been used successfully in Vermont for analytics and 
+payment incentives by the Blueprint for Health program. It is important to note that neither 
+option would place an administrative burden on providers, solutions would be deployed by 
+the State and be made available to providers and payers. 
+ 
+Costs: Infrastructure and Licensing 
+The goal of developing an integrated healthcare dataset of claims, clinical, SDOH, and 
+other data would be to achieve a net savings in return-on-investment for the Vermont 
+healthcare system. In the short term, savings would be sought in reduced administrative 
+costs and greater efficiencies by reducing the need for manual chart reviews, reducing 
+duplicative efforts in developing single purpose, linked datasets for particular patient sub-
+populations and particular reporting requirements, and through shared hosting, 
+processing, and analytics infrastructures. Longer-term, savings would be sought through 
+improvements in preventive care, increased healthcare quality, and reduced overall 
+healthcare expenditures. Additional investments required to move from the current state 
+of multiple, isolated healthcare datasets to an integrated one would be minimized by 
+primarily using existing data infrastructures being developed under Vermont’s Medicaid 
+ 
+26 HealthPartners. “Total Cost of Care. ” 2025. https://www.healthpartners.com/about/improving-
+healthcare/tcoc/. 
+Page | 21 
+ 
+Data Warehouse & Analytics Solution (MDWAS)27 and under the Vermont Health 
+Information Exchange (VHIE)28. Costs will be minimized through technology reuse, shared 
+infrastructure, efficiencies of consolidation and scale, and maximizing use of federal 
+funding opportunities. AHS will collaborate with payers to utilize already collected claims 
+data submitted to VHCURES to support the UHDS. 
+IMPLEMENTATION FRAMEWORK 
+ 
+An integrated healthcare data system would be implemented in phases and would use the 
+following mechanisms to protect the interests of Vermonters: a clear and effective data-
+governance and consent-management structure, a flexible technical infrastructure with 
+robust security protections, implementation of relevant legal and ethical safeguards, and 
+extensive stakeholder engagement. 
+• Phased Integration Plan 
+o Begin with Medicaid claims and clinical data (through MDWAS), scale to 
+Medicare population to meet the State’s Achieving Healthcare Efficiency 
+through Accountable Design (AHEAD) model requirements, then commercial 
+claims and SDOH and HRSN based on approved use cases in alignment with 
+Act 68 requirements. 
+• Governance & Consent Structure 
+o Use HIE Steering Committee and domain teams to: 
+▪ Approve integration uses (Act 68 §10(b)(4)) 
+▪ Enforce use limitations and opt-out protocols 
+▪ Align with VHCURES statutory restrictions 
+• Legal and Ethical Safeguards 
+o Full compliance with Health Insurance Portability and Accountability Act 
+(HIPAA), 42 Code of Federal Regulations Part 2, and Vermont-specific privacy 
+standards. 
+o All linkage subject to documented governance approvals per statute. 
+• Stakeholder Engagement 
+o Engage payers, patients, hospitals, Federally Qualified Health Centers 
+(FQHCs), Blueprint providers, and healthcare advocates in design and 
+oversight. 
+ 
+27 AHS. “Welcome to MDWAS!” 2025. https://dvha.vermont.gov/initiatives/mdwas 
+28 VITL. “About VITL. ” 2025. https://vitl.net/about-vitl/. 
+Page | 22 
+ 
+PERFORMANCE MONITORING AND EVALUATION 
+ 
+To establish and maintain quality and performance, the UHDS will need performance 
+monitoring and evaluation metrics, and we propose the following ones, to be reported at 
+least annually in the HIT Strategic Plan which will be posted on a related AHS website: 
+• Technical Key Performance Indicators (KPIs) 
+o Match rates 
+o Data quality scores 
+o Latency 
+o Access time 
+• Policy KPIs 
+o Number of approved use cases 
+o User satisfaction (e.g., provider & public health users) 
+o Reduction in redundant data pulls 
+• Outcome KPIs 
+o Decreased provider reporting burden 
+o Increased care coordination across settings 
+o Healthcare access indicators stratified by geography and social risk 
+All metrics will be aligned with the VHIE’s Outcome-Based Certification (OBC) metrics, 
+GMCB’s Scorecard, the HIE Strategic Plan and VDH’s Strategic plan. 
+RECOMMENDATIONS AND NEXT STEPS 
+ 
+• AHS began a rolling go-live with linked claims, clinical, and SDOH data for the 
+Medicaid population in the MDWAS system in November 2025, with full functionality 
+scheduled to be live by the end of January 2026, and users are being added to the 
+solution. This can serve as a pilot for a UHDS for multi-payer patient populations. 
+• Develop a UHDS for multi-payer patient populations by incorporating Medicare 
+claims, statewide clinical data, and other statewide non-claims datasets by 2028-
+2029. 
+• Scale UHDS to incorporate commercial claims datasets by 2029-2030. 
+ 
