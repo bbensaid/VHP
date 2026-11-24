@@ -93,7 +93,7 @@ export default function VermontBlueprintPage() {
           <div className="bg-white border border-slate-200 rounded-xl p-6">
             <h3 className="font-black text-slate-900 mb-3">Patient-Centered Medical Homes (PCMHs)</h3>
             <p className="text-sm text-slate-600 leading-relaxed mb-3">
-              Primary care practices that earn NCQA PCMH recognition receive a per-member-per-month capitated payment from all payers — Medicare, Medicaid, and commercial insurers — to support team-based, proactive care. This payment is separate from and on top of standard fee-for-service billing.
+              Primary care practices that earn NCQA PCMH recognition receive a per-member-per-month payment from Medicaid and commercial insurers — and, until December 2025, from Medicare — to support team-based, proactive care. This payment is separate from and on top of standard fee-for-service billing.
             </p>
             <p className="text-sm text-slate-600 leading-relaxed">
               PCMH practices implement same-day access, after-hours care, proactive panel management, and care coordination for high-risk patients. The PCMH model is the primary care foundation on which Vermont's value-based payment reform and VCCI programs operate.
@@ -162,7 +162,7 @@ export default function VermontBlueprintPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div>
               <p className="text-xs font-black uppercase tracking-widest text-emerald-400 mb-2">PCMH Capitation (to Practice)</p>
-              <p className="text-sm text-slate-300 leading-relaxed">A risk-adjusted capitated payment per attributed member per month flows from every payer — Medicare, Medicaid, and commercial — directly to the PCMH-recognized practice. The payment size is tied to the practice's NCQA PCMH score and panel risk level. This is the "advanced primary care" payment that funds the care coordination infrastructure inside the practice.</p>
+              <p className="text-sm text-slate-300 leading-relaxed">A capitated payment per attributed member per month flows from the participating payers — Medicaid and commercial insurers, and Medicare until December 2025 — directly to the PCMH-recognized practice. The payment size is tied to the practice's NCQA PCMH score and panel risk level. This is the "advanced primary care" payment that funds the care coordination infrastructure inside the practice.</p>
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-widest text-emerald-400 mb-2">CHT Capitation (to Regional Entity)</p>
@@ -170,7 +170,7 @@ export default function VermontBlueprintPage() {
             </div>
           </div>
           <div className="mt-6 pt-6 border-t border-slate-700 text-xs text-slate-400">
-            Vermont is one of the only states with a true all-payer PCMH model — all three major payer types (Medicare, Medicaid, commercial) pay Blueprint capitation, which creates aligned incentives for every practice in the program regardless of their patient mix.
+            For more than a decade all three major payer types — Medicare, Medicaid and commercial insurers — paid Blueprint PMPMs, aligning incentives for every practice regardless of patient mix. Medicare&apos;s share ended with the All-Payer ACO Model agreement in December 2025; the State proposed $10.8 million in interim Global Commitment funding to cover it in 2026, and Vermont&apos;s July 2026 AHEAD withdrawal closed the Primary Care AHEAD route that was meant to replace it (book §8.2.3).
           </div>
         </div>
       </div>
