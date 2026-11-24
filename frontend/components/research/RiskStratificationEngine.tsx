@@ -553,9 +553,10 @@ function PopulationSegmentation() {
       <div className="bg-rose-50 border border-rose-200 rounded-lg p-4 flex gap-3">
         <Info className="text-rose-500 mt-0.5 shrink-0" size={18} />
         <p className="text-sm text-rose-800">
-          Configure your virtual patient panel to model population-level cost and risk. Annual cost
-          benchmarks (Low: $3,200 / Moderate: $8,500 / High: $22,000 / Very High: $68,000) are
-          derived from AHRQ MEPS and CMS claims data.
+          Configure your virtual patient panel to model population-level cost and risk. The annual cost per
+          tier (Low: $3,200 / Moderate: $8,500 / High: $22,000 / Very High: $68,000) is an illustrative
+          default that shows the steep skew of spending toward the highest-risk patients — replace it with
+          your own claims data before using the results.
         </p>
       </div>
 
