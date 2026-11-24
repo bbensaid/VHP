@@ -1,0 +1,21 @@
+{
+ "tag": "pa-batch6-rti",
+ "note": "RTI final eval tables: first 4.5 years of the model (2014-mid-2018)",
+ "only": [
+  "global-budget-models-international-lessons-rural-us"
+ ],
+ "pairs": [
+  [
+   "RTI's final evaluation for CMS estimated total Medicare savings of about $975 million over 2014–2018,",
+   "RTI's final evaluation for CMS estimated total Medicare savings of about $975 million over the model's first four and a half years (2014 to mid-2018),"
+  ],
+  [
+   "saved Medicare about $975M over 2014–2018 (RTI final evaluation)",
+   "saved Medicare about $975M over its first 4.5 years (RTI final evaluation)"
+  ],
+  [
+   "saved Medicare ~$975M over 2014–2018 (RTI)",
+   "saved Medicare ~$975M over its first 4.5 years (RTI)"
+  ]
+ ]
+}
