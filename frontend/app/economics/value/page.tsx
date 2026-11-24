@@ -72,7 +72,7 @@ function ValueBasedCareBody() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-slate-400 mt-4">AAPM = Advanced APM (qualifies for QP bonus of +3.5% of Medicare payments). Risk cap = maximum loss exposure as % of benchmark expenditures. Sources: CMS Innovation Center, MSSP program specifications.</p>
+        <p className="text-xs text-slate-400 mt-4">AAPM = Advanced APM (Qualifying APM Participants earn an APM incentive payment — 1.88% in 2026, on 2024 performance). Risk cap = maximum loss exposure as % of benchmark expenditures. Sources: CMS Innovation Center, MSSP program specifications.</p>
       </div>
 
       {/* Shared Savings Math */}

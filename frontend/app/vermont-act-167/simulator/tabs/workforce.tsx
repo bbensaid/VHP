@@ -4,187 +4,138 @@ import { useState } from "react";
 import { Badge, InfoCard, MetricCard, TabBtn } from "../atoms";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// TAB 6: WORKFORCE PLANNING
+// TAB 6: WORKFORCE — rebuilt 2026-11-23.
+//
+// The headline metrics were already Oliver Wyman figures; everything else was not:
+// per-category FTE changes (e.g. "−180 / +120"), role head-counts ("80+ community
+// paramedics", "120 CHWs"), and pipeline "targets" ("20% of graduates", "$4M/yr for
+// 30–40 providers", "200 housing units in 6 towns") had no source. They are replaced
+// by what the report actually says (Oliver Wyman, Act 167 Community Engagement:
+// Recommendations, rev. Jan 31, 2025 — book-audit/deep/sources/oliver_wyman_act167_recs_2025-01-31.txt).
 // ─────────────────────────────────────────────────────────────────────────────
 
+const NEW_ROLES = [
+  "Pharmacists used in new roles — community pharmacies for vaccines, venipuncture, routine refills of non-scheduled chronic medications and protocol-based treatment of common illness",
+  "Professional EMS and paramedics delivering home-based care (community paramedicine)",
+  "Nurse case managers and navigators for patients with complex medical problems",
+  "Additional community health workers trained in preventive measures",
+  "Immigrants with professional training allowed to practice in Vermont",
+  "Nurses permitted to function at the top of their license",
+  "Training in cultural, gender-identity and mental-health sensitivity for all patient-facing clinical staff",
+];
+
+const REDEPLOY = [
+  { how: "Add capacity at regional specialty centers", ex: "Outpatient consultations and surgeries by specialists" },
+  { how: "Redeploy into community-based programs", ex: "Primary care and advanced practitioners in telehealth, home health and care-at-home; nurses and social workers in care coordination and case management" },
+  { how: "Repurpose at restructured facilities", ex: "Rural Emergency Hospitals, community access centers, care-at-home support; administrative and facility staff in community program support and mobile health transport" },
+];
+
+const STATUS_2024: { item: string; done: boolean }[] = [
+  { item: "Joined the Social Work Licensure Compact", done: true },
+  { item: "Joined the interstate counseling compact and PSYPACT", done: true },
+  { item: "Allowed mental-health professionals without a master's degree to practice psychotherapy under the Roster of Non-licensed, Non-certified Psychotherapists", done: true },
+  { item: "Pharmacist short-term prescription extension (approved 2020)", done: true },
+  { item: "Act 117 review of mental-health licensure to remove barriers (study due December 2024)", done: false },
+];
+
+const MED_ED_MEASURES = [
+  "Share of medical school applicants and acceptances from Vermont residents",
+  "Share of residency applications and acceptances from Vermont residents",
+  "Share of medical residents employed in Vermont five years after residency",
+  "Number of residency rotation sites in community-based or rural hospitals and clinics",
+  "Provider FTEs supporting the medical school that could be repurposed for patient care",
+];
+
 export function WorkforcePlanning() {
-  const [view, setView] = useState<"needs" | "training" | "pipeline">("needs");
+  const [view, setView] = useState<"needs" | "policy" | "pipeline">("needs");
 
   return (
     <div className="space-y-6">
       <div className="flex gap-2 flex-wrap">
-        {(["needs", "training", "pipeline"] as const).map((v) => (
+        {(["needs", "policy", "pipeline"] as const).map((v) => (
           <TabBtn key={v} active={view === v} onClick={() => setView(v)}>
-            {v === "needs" ? "👩‍⚕️ Workforce Needs" : v === "training" ? "📚 Training & Roles" : "🌱 Pipeline Strategy"}
+            {v === "needs" ? "👩‍⚕️ Workforce Findings" : v === "policy" ? "📜 Licensure & Roles" : "🌱 Pipeline"}
           </TabBtn>
         ))}
       </div>
 
-      {view === "needs" && (
-        <div className="space-y-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <MetricCard value="1,393" label="Vermont Physician FTEs" sublabel="2022 baseline" />
-            <MetricCard value="203" label="UVMMC Non-Patient FTEs" sublabel="of 654 total physician FTEs" color="text-rose-600" />
-            <MetricCard value=">75%" label="UVMMC MD Below 50th %ile" sublabel="Sullivan Cotter productivity" color="text-orange-600" />
-            <MetricCard value="43" label="PCPs Needed by 2040" sublabel="White River Junction HSA" color="text-amber-600" />
-          </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <MetricCard value="1,394" label="Vermont physician FTEs" sublabel="State total, 2023 (Oliver Wyman)" />
+        <MetricCard value="203 of 654" label="UVMMC physician FTEs on non-clinical work" sublabel="~31%, FY2023 (Oliver Wyman)" color="text-rose-600" />
+        <MetricCard value="75%" label="UVMMC clinical physician FTEs below 50th percentile" sublabel="Self-reported RVUs vs Sullivan Cotter, 2023" color="text-orange-600" />
+        <MetricCard value="43" label="Primary care FTEs needed by 2040" sublabel="White River Junction HSA (Oliver Wyman)" color="text-amber-600" />
+      </div>
 
+      {view === "needs" && (
+        <div className="grid md:grid-cols-2 gap-4">
           <InfoCard>
-            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Workforce Changes by Recommendation Category</div>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Roles the report says must expand outside the hospital</div>
+            <ul className="space-y-2">
+              {NEW_ROLES.map((r) => <li key={r} className="text-xs text-slate-700 flex gap-2"><span className="text-emerald-500">→</span>{r}</li>)}
+            </ul>
+          </InfoCard>
+          <InfoCard>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">If inpatient units close: where staff go</div>
             <div className="space-y-3">
-              {[
-                { category: "Hospital Restructuring (4 sites)", change: -180, new: 120, net: -60, desc: "IP nursing reduced; psych, memory care, home care staff added" },
-                { category: "COE Surgical Network", change: -80, new: 140, net: 60, desc: "Low-volume OR staff reduced; COE surgical volume requires more specialists" },
-                { category: "Mental Health COE Network", change: 0, new: 85, net: 85, desc: "12 additional psychiatrists + 40 psychiatric nurses + 33 MH counselors" },
-                { category: "EMS Regionalization", change: 20, new: 180, net: 160, desc: "ALS paramedics statewide; community paramedicine FTEs" },
-                { category: "Telehealth Expansion", change: -40, new: 65, net: 25, desc: "Reduce some in-person admin; add telehealth coordinators and monitors" },
-                { category: "Home Care Infrastructure", change: 0, new: 240, net: 240, desc: "Hospital-at-home nurses, remote monitors, home health aides" },
-                { category: "UVMMC Productivity Reform", change: -203, new: 150, net: -53, desc: "Redirect non-patient FTEs to patient care; eliminate purely admin positions" },
-                { category: "Community Health Workers", change: 0, new: 120, net: 120, desc: "CHWs for complex populations, SDOH navigation, health equity programs" },
-              ].map((item) => (
-                <div key={item.category} className="p-3 bg-slate-50 rounded-lg">
-                  <div className="flex items-start justify-between mb-1">
-                    <div className="text-xs font-bold text-slate-800">{item.category}</div>
-                    <div className={`text-sm font-black ${item.net > 0 ? "text-emerald-600" : item.net < 0 ? "text-red-600" : "text-slate-600"}`}>
-                      {item.net > 0 ? "+" : ""}{item.net} net FTEs
-                    </div>
-                  </div>
-                  <div className="text-[10px] text-slate-500">{item.desc}</div>
-                  <div className="flex gap-4 mt-1 text-[10px]">
-                    {item.change !== 0 && <span className="text-red-600">{item.change < 0 ? "" : "+"}{item.change} reduced/redirected</span>}
-                    <span className="text-emerald-600">+{item.new} new roles</span>
+              {REDEPLOY.map((r, i) => (
+                <div key={r.how} className="flex gap-3">
+                  <div className="w-6 h-6 rounded-full bg-violet-100 text-violet-700 text-xs font-black flex items-center justify-center shrink-0">{i + 1}</div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-800">{r.how}</div>
+                    <div className="text-[11px] text-slate-500">{r.ex}</div>
                   </div>
                 </div>
               ))}
             </div>
+            <p className="text-[11px] text-slate-500 mt-3">The report&apos;s view: Vermont&apos;s workforce stays in demand as shortages persist and community programs grow.</p>
           </InfoCard>
         </div>
       )}
 
-      {view === "training" && (
-        <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard>
-              <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">New/Expanded Professional Roles</div>
-              {[
-                { role: "Community Paramedic", count: "80+ statewide", desc: "Advanced home-based care delivery, chronic disease monitoring" },
-                { role: "Community Health Worker (CHW)", count: "120 statewide", desc: "SDOH navigation, health equity, complex care support" },
-                { role: "Nurse Case Manager / Navigator", count: "65 statewide", desc: "Complex patient management across care settings" },
-                { role: "Pharmacist / PharmD (expanded role)", count: "45 in clinics", desc: "Vaccination, venipuncture, chronic disease protocol management" },
-                { role: "Telehealth Coordinator", count: "30 statewide", desc: "Kiosk operations, remote monitoring, patient onboarding" },
-                { role: "Hospital-at-Home Clinician", count: "120 statewide", desc: "Daily home visits per Medicare H@H requirements" },
-                { role: "Advanced Practice Provider (ED)", count: "40 at rural sites", desc: "Non-physician ED staffing model at restructured hospitals" },
-                { role: "Tele-Psychiatrist (contracted)", count: "18 statewide", desc: "24/7 telepsychiatry coverage for rural EDs" },
-              ].map(({ role, count, desc }) => (
-                <div key={role} className="flex gap-3 py-2 border-b border-slate-100 last:border-0">
-                  <div className="flex-1">
-                    <div className="text-xs font-bold text-slate-800">{role}</div>
-                    <div className="text-[10px] text-slate-500">{desc}</div>
-                  </div>
-                  <div className="text-[11px] font-black text-emerald-700 text-right shrink-0">{count}</div>
-                </div>
-              ))}
-            </InfoCard>
-
-            <InfoCard>
-              <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Workforce Policy Changes (Wyman Recommendations)</div>
-              {[
-                { policy: "Expand top-of-license practice for nurses", status: "Requires legislation", impact: "High" },
-                { policy: "Allow immigrant professionals to practice in VT", status: "Regulatory streamlining", impact: "High" },
-                { policy: "Act 117 mental health licensure reform", status: "Study due Dec 2024", impact: "High" },
-                { policy: "Joined Social Work Licensure Compact", status: "Completed ✓", impact: "Medium" },
-                { policy: "Joined PSYPACT for psychologist reciprocity", status: "Completed ✓", impact: "Medium" },
-                { policy: "Short-term Rx extension by pharmacist", status: "Law since 2020 ✓", impact: "Medium" },
-                { policy: "EMS professional paramedicine waiver (Medicare)", status: "Application needed", impact: "High" },
-                { policy: "Rural health track at UVM med school", status: "Needs development", impact: "Long-term" },
-              ].map(({ policy, status, impact }) => (
-                <div key={policy} className="flex gap-3 py-2 border-b border-slate-100 last:border-0">
-                  <div className="flex-1">
-                    <div className="text-[11px] font-bold text-slate-800">{policy}</div>
-                    <div className="text-[10px] text-slate-400">{status}</div>
-                  </div>
-                  <Badge color={impact === "High" ? "bg-orange-100 text-orange-700" : impact === "Long-term" ? "bg-blue-100 text-blue-700" : "bg-slate-100 text-slate-600"}>{impact}</Badge>
-                </div>
-              ))}
-            </InfoCard>
+      {view === "policy" && (
+        <InfoCard>
+          <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Licensure steps already underway — status as reported by Oliver Wyman (2024)</div>
+          <div className="space-y-2">
+            {STATUS_2024.map(({ item, done }) => (
+              <div key={item} className="flex items-start justify-between gap-3 py-1.5 border-b border-slate-100 last:border-0">
+                <div className="text-xs text-slate-700">{item}</div>
+                <Badge color={done ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}>{done ? "Done" : "Pending"}</Badge>
+              </div>
+            ))}
           </div>
-        </div>
+          <p className="text-[11px] text-slate-500 mt-3">
+            The report&apos;s action timeline adds: revise licensure for mental-health professionals, pharmacists and APRNs; conduct
+            EMS transformation; enhance local training programs and workforce pathways. Statuses are as of the report and have not
+            been re-verified since.
+          </p>
+        </InfoCard>
       )}
 
       {view === "pipeline" && (
-        <div className="space-y-4">
-          <InfoCard variant="info">
-            <div className="text-xs font-black uppercase tracking-widest text-blue-700 mb-3">Vermont Physician Pipeline — Wyman Report Findings</div>
-            <div className="grid grid-cols-3 gap-4">
-              {[
-                { stat: "No shortage", desc: "HRSA recognizes zero Health Profession Shortage Areas in VT if PCPs see 3 patients/hr" },
-                { stat: "35 hrs/wk", desc: "Clinical hours standard — if maintained, VT has sufficient PCPs for projected 2040 demand" },
-                { stat: "43 FTEs", desc: "PCPs needed in White River Junction HSA by 2040 (39.8% will be 65+ by 2040)" },
-              ].map(({ stat, desc }) => (
-                <div key={stat} className="text-center">
-                  <div className="text-xl font-black text-blue-700 mb-1">{stat}</div>
-                  <div className="text-[10px] text-slate-500">{desc}</div>
-                </div>
-              ))}
-            </div>
-          </InfoCard>
-
+        <div className="grid md:grid-cols-2 gap-4">
           <InfoCard>
-            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Strategic Workforce Pipeline Recommendations</div>
-            <div className="space-y-3">
-              {[
-                {
-                  strategy: "UVM Rural Health Track",
-                  timeline: "Year 2–5",
-                  desc: "Dedicated rural medicine track at UVM Larner College of Medicine — preference for Vermont native applicants",
-                  metric: "Target: 20% of graduates practice in Vermont rural settings",
-                  icon: "🎓",
-                },
-                {
-                  strategy: "Rural Residency Rotation Expansion",
-                  timeline: "Year 1–3",
-                  desc: "Expand primary care residency rotations at rural hospitals (IM, pediatrics, family medicine)",
-                  metric: "Target: 80% of residencies include ≥6 months rural rotation",
-                  icon: "🏥",
-                },
-                {
-                  strategy: "Immigrant Professional Pathway",
-                  timeline: "Year 1",
-                  desc: "Streamline licensure for immigrants with medical training; target Somali, Bosnian, and other VT communities",
-                  metric: "Target: 40 additional licensed providers from immigrant communities by 2028",
-                  icon: "🌍",
-                },
-                {
-                  strategy: "Loan Forgiveness for Rural Practice",
-                  timeline: "Year 1",
-                  desc: "State-funded loan forgiveness ($50K–$120K) for physicians/APPs committing to 3+ years in rural VT",
-                  metric: "Investment: $4M/yr; expected: 30–40 additional rural providers recruited annually",
-                  icon: "💰",
-                },
-                {
-                  strategy: "Housing for Healthcare Workers",
-                  timeline: "Year 1–3",
-                  desc: "Build housing in rural areas specifically for recruited healthcare workers (AHS/ACCD partnership)",
-                  metric: "Target: 200 workforce housing units in 6 rural towns",
-                  icon: "🏡",
-                },
-              ].map(({ strategy, timeline, desc, metric, icon }) => (
-                <div key={strategy} className="p-3 bg-slate-50 rounded-lg flex gap-3">
-                  <span className="text-2xl shrink-0">{icon}</span>
-                  <div>
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <span className="text-xs font-black text-slate-900">{strategy}</span>
-                      <Badge color="bg-violet-100 text-violet-700">{timeline}</Badge>
-                    </div>
-                    <p className="text-[11px] text-slate-600 mb-1">{desc}</p>
-                    <div className="text-[10px] text-emerald-700 font-bold">{metric}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">The report&apos;s primary-care argument</div>
+            <p className="text-xs text-slate-700 leading-relaxed">
+              Oliver Wyman argues that Vermont&apos;s primary-care problem is productivity as much as headcount: if primary care
+              providers were supported to see three patients an hour, there would be enough for well into the future. Its White
+              River Junction estimate — 43
+              primary-care FTEs needed by 2040 — assumes 35 clinical hours a week at three visits an hour, with 39.8% of that
+              HSA&apos;s population aged 65 or older by 2040.
+            </p>
+          </InfoCard>
+          <InfoCard>
+            <div className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3">Medical-education measures the report asks UVM to track</div>
+            <ul className="space-y-2">
+              {MED_ED_MEASURES.map((m) => <li key={m} className="text-xs text-slate-700 flex gap-2"><span className="text-violet-500">•</span>{m}</li>)}
+            </ul>
           </InfoCard>
         </div>
       )}
+
+      <p className="text-[11px] text-slate-500">
+        Source: Oliver Wyman, <em>Act 167 Community Engagement: Recommendations</em> (rev. Jan 31, 2025). The book&apos;s Chapter 11
+        treats workforce as a gating constraint on every care-model change.
+      </p>
     </div>
   );
 }
