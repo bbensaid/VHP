@@ -7,7 +7,7 @@ const { chromium } = require("@playwright/test");
   const full = args.includes("--full");
   const atIdx = args.indexOf("--at");
   const at = atIdx >= 0 ? args[atIdx + 1] : null;
-  const [url, out, ...clicks] = args.filter((a, i) => a !== "--full" && i !== atIdx && i !== atIdx + 1);
+  const [url, out, ...clicks] = args.filter((a, i) => a !== "--full" && (atIdx < 0 || (i !== atIdx && i !== atIdx + 1)));
   const u = new URL(url);
   const host = u.hostname.replace(/^www\./, "");
   const b = await chromium.launch();

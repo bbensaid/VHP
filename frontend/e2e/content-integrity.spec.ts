@@ -55,7 +55,12 @@ test("pricing makes no CME claim", async ({ page }) => {
   await expect(page.locator("body")).not.toContainText(/CME/);
 });
 
-test("Research Lab advisory panel carries no invented client statistics", async ({ page }) => {
-  await page.goto("/research-lab/policy-quality");
-  await expect(page.locator("body")).not.toContainText(/client satisfaction|states served/i);
+test("Research Lab advisory panel carries no invented client statistics", async ({ page, context }) => {
+  // The panel renders only on the Solutions brand (lib/brand.ts showAdvisory), so check that host
+  // explicitly, and assert the panel is present so the test cannot pass on an empty page.
+  const host = "www.healthtransformationsolutions.org";
+  await context.addCookies([{ name: "htr_beta", value: `granted:${host}`, domain: `.${host}`, path: "/" }]);
+  await page.goto(`https://${host}/research-lab/policy-quality`);
+  await expect(page.getByText("Talk to an HTR Advisor", { exact: false }).first()).toBeAttached({ timeout: 20_000 });
+  await expect(page.locator("body")).not.toContainText(/client satisfaction|states served|to proposal/i);
 });
