@@ -1,0 +1,45 @@
+{
+ "tag": "sepsis-linecheck",
+ "note": "Wong et al. JAMA IM 2021 PPV 12%; HCUP SB#306 $52.1B 2021 (+66.8% since 2016); SB#277 2018",
+ "only": [
+  "aiml-sepsis-warning"
+ ],
+ "pairs": [
+  [
+   "exceed $52 billion annually, making it the single most expensive condition treated in American inpatient settings.",
+   "reached $52.1 billion in 2021 (HCUP Statistical Brief #306); in 2018, septicemia was the most frequent and costliest of the ten most common principal diagnoses (HCUP Statistical Brief #277)."
+  ],
+  [
+   "At the individual episode level, costs vary sharply by severity: sepsis without organ dysfunction averages roughly $39,000 per hospitalization; severe sepsis with organ dysfunction rises to approximately $61,000; and septic shock episodes average over $68,000.",
+   "Costs rise sharply with severity, from sepsis without organ dysfunction to septic shock."
+  ],
+  [
+   "Average sepsis hospital stays cost approximately double a typical inpatient admission, and the annual growth rate of sepsis hospital costs is roughly three times that of hospital costs overall.",
+   "Aggregate hospital costs for sepsis stays rose 66.8% from 2016 to 2021 (HCUP Statistical Brief #306)."
+  ],
+  [
+   "which runs in approximately 35% of US hospitals and serves the majority of large academic medical centers",
+   "which holds the largest share of US acute-care hospitals"
+  ],
+  [
+   "Of all alerts fired, 83% were not followed by a sepsis diagnosis \u2014 the overwhelming majority were false alarms.",
+   "Its positive predictive value was 12%: about 88% of alerts were not followed by sepsis \u2014 the overwhelming majority were false alarms."
+  ],
+  [
+   "Of those alerts, 83% were not followed by a sepsis diagnosis \u2014 meaning for every 100 alerts fired, 83 were false alarms consuming nurse and physician attention.",
+   "Its positive predictive value was 12% \u2014 for every 100 alerts fired, about 88 were false alarms consuming nurse and physician attention."
+  ],
+  [
+   "is correct only 17% of the time",
+   "is correct only about 12% of the time"
+  ],
+  [
+   "with 83% of those alerts not followed by a sepsis diagnosis.",
+   "with a positive predictive value of 12% (about 88% false alarms)."
+  ],
+  [
+   "Sepsis kills over 300,000 Americans annually and costs US hospitals more than $52 billion per year",
+   "Sepsis kills at least 350,000 US adults a year (CDC) and cost US hospitals $52.1 billion in 2021 (AHRQ HCUP)"
+  ]
+ ]
+}
