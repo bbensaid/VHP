@@ -19,30 +19,33 @@ const PILLAR_COLORS: Record<string, string> = {
   General:    'bg-slate-100 text-slate-700',
 }
 
+// Example questions with sourced answers (rewritten 2026-11-23). The earlier set named
+// invented askers ("Medicaid Director, New England State Agency") and staff ("Practice
+// Lead"), claimed HTR testimony to CMS, and carried stale or wrong rule details.
 const FEATURED_QA = [
   {
     id: 'aco-rural',
     pillar: 'Policy',
-    q: 'What are the key regulatory considerations for launching an MSSP ACO in a predominantly rural state?',
-    a: "Rural MSSP ACOs face three compounding challenges: (1) minimum beneficiary thresholds — the 5,000 Medicare beneficiary floor is difficult to meet in low-density markets, making regional convener models worth exploring; (2) attribution methodology — claims-based attribution consistently under-counts rural patient panels where multiple providers share care across long distances; (3) benchmark design — CMS's regional expenditure benchmarks disadvantage historically low-cost rural markets, a structural inequity that HTR's testimony to CMS has flagged repeatedly. For a rural state launch, we typically recommend a phased approach: start with a Track 1 shared-savings model using a convener structure, build the data infrastructure for 18–24 months, then apply for advanced track participation.",
-    askedBy: 'Medicaid Director, New England State Agency',
-    answeredBy: 'HTR Policy Practice Lead',
+    q: 'What should a rural organization weigh before launching a Medicare Shared Savings Program ACO?',
+    a: "Three things. Size: an MSSP ACO needs at least 5,000 assigned beneficiaries, which pushes rural providers toward multi-county or multi-organization ACOs. Risk path: the BASIC track lets a new ACO start at low or no downside risk and move along a glide path to two-sided risk; ENHANCED carries the most risk and reward. Capital: since 2024, eligible new, low-revenue ACOs can receive advance investment payments to build care coordination before savings arrive. Benchmarks and attribution deserve the closest modeling — attribution can be unstable where patients split care across distant providers. The book's Chapter 7 and the APM Shared Savings Calculator walk through the arithmetic.",
+    askedBy: 'Example question',
+    answeredBy: 'HTR analysis',
   },
   {
     id: 'fhir-roadmap',
     pillar: 'Technology',
-    q: 'How should we sequence our FHIR R4 compliance roadmap given CMS interoperability and prior authorization rules?',
-    a: 'The 2024 CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) creates a sequenced compliance ladder: Patient Access API and Provider Directory API were enforcement-priority in 2026; the Prior Authorization API and the Payer-to-Payer exchange requirements phase in through 2027. For sequencing, we recommend: first, audit your current HL7 v2 and CDA infrastructure to identify FHIR R4 translation gaps; second, prioritize the Patient Access API because it has the widest audit surface and patient complaint risk; third, build a SMART on FHIR authorization layer before touching Prior Auth API since that dependency will block you otherwise. The ONC Information Blocking rules run parallel — do not treat them as a separate workstream; they share the same data availability requirements.',
-    askedBy: 'Chief Information Officer, Regional Health Plan',
-    answeredBy: 'HTR Health IT Practice Lead',
+    q: "How should a payer sequence work under CMS's Interoperability and Prior Authorization rule (CMS-0057-F)?",
+    a: "Start with the dates. The rule's operational prior-authorization requirements — decisions within 72 hours for expedited and seven calendar days for standard requests, a specific reason for each denial, and public reporting of prior-authorization metrics — began in 2026. The new FHIR APIs — Provider Access, Payer-to-Payer and Prior Authorization — are due January 1, 2027, and prior-authorization information must be added to the existing Patient Access API. A sensible order: measure current prior-authorization performance first (it is now reported publicly), then map data gaps against the HL7 Da Vinci implementation guides, then build the Prior Authorization API with provider EHR partners. The book's Chapters 4 and 5 cover the Technology pillar this sits in.",
+    askedBy: 'Example question',
+    answeredBy: 'HTR analysis',
   },
   {
     id: 'global-budget',
     pillar: 'Economics',
-    q: 'What financial benchmarking methodology does HTR use when helping a state design a hospital global budget?',
-    a: "HTR's global budget framework draws from three primary data sources: HCRIS (Medicare cost reports), AHRQ HCUP state inpatient databases, and CMS Medicare claims — triangulated against GMCB public data where available. For benchmark construction, we use a base-period expenditure approach (typically a 3-year average, weighted for trend), then apply a growth rate cap derived from state GDP growth or a negotiated percentage — whichever is lower. The critical technical question is risk adjustment: global budgets should adjust for changes in case mix index and population demographics over time, or hospitals will face structural underpayment in aging markets. We also recommend building explicit carve-out categories for pass-through payments (capital, DSH, GME) so the global budget operates on a clean operating-cost base. The Vermont GMCB model is the most mature reference point; the AHEAD model builds on it with modifications for multi-payer all-inclusive populations.",
-    askedBy: 'Deputy Director, State Office of Health Care Affordability',
-    answeredBy: 'HTR Health Economics Practice Lead',
+    q: 'What are the core design choices in a hospital global budget?',
+    a: "Five: the base (usually a hospital's historical revenue over a defined period); the update factor (inflation, a growth cap, or both); adjustments for volume that legitimately moves between hospitals or into the community; which payers are in (Maryland's model covers all payers; Vermont's Act 68 global budgets include Medicare where federal law permits and exclude Medicaid by statute); and what is carved out. Maryland's all-payer hospital rate-setting is the longest-running US reference point. The book's Chapter 6 compares Maryland, Pennsylvania's rural model and Vermont's Act 68 design, and the Global Budget Transition Modeler lets you test the choices.",
+    askedBy: 'Example question',
+    answeredBy: 'HTR analysis',
   },
 ]
 
@@ -261,9 +264,9 @@ export default function AskHTRClient() {
                 <h3 className="text-base font-black mb-4 border-b border-teal-500 pb-3">What Happens Next</h3>
                 <div className="space-y-4">
                   {[
-                    { n: '1', title: 'Within 4 hours', body: 'Your question is routed to the appropriate HTR practice lead based on the pillar you selected.' },
-                    { n: '2', title: 'Within 48 hours', body: 'A named HTR advisor writes and reviews a response. You receive it by email.' },
-                    { n: '3', title: 'With your permission', body: 'Anonymized versions of high-value questions are added to the public Q&A library for other members.' },
+                    { n: '1', title: 'You send it', body: 'Submitting opens an email to HTR with your question and the pillar you selected.' },
+                    { n: '2', title: 'HTR replies', body: 'Questions are read and answered by email, drawing on the book and the platform\'s sources.' },
+                    { n: '3', title: 'With your permission', body: 'Anonymized versions of useful questions may be added to the public Q&A library.' },
                   ].map(s => (
                     <div key={s.n} className="flex gap-3">
                       <span className="w-6 h-6 rounded-full bg-white text-teal-700 flex items-center justify-center text-xs font-black shrink-0">{s.n}</span>

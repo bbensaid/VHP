@@ -61,7 +61,7 @@ export default function RegulatoryAdvisoryPage() {
           <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
             <div className="text-emerald-700 text-2xl mb-3">💡</div>
             <h3 className="font-bold text-slate-900 mb-2">Practitioner Perspective</h3>
-            <p className="text-slate-600 ty-body leading-relaxed">Unlike academia, our analysts work with health systems and payers daily. We know which policy designs work in practice — and which create unintended operational consequences.</p>
+            <p className="text-slate-600 ty-body leading-relaxed">Analysis built on the five-pillar framework in the book: every policy design is tested for whether the technology, economics, clinical model and operations it depends on are actually in place — and for the unintended operational consequences when they are not.</p>
           </div>
           <div className="bg-red-50 border border-red-200 rounded-xl p-6">
             <div className="text-red-700 text-2xl mb-3">⚡</div>
