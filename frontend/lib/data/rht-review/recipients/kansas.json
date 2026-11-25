@@ -1,0 +1,326 @@
+{
+ "state": "Kansas",
+ "slug": "kansas",
+ "asOf": "2026-05-29",
+ "source": {
+  "label": "U.S. Sen. Jerry Moran, \"Sen. Moran Applauds Nearly $80 Million in Federal Investments for 39 Kansas Hospitals & Providers\" (May 29, 2026), itemizing KDHE's first-round awards",
+  "url": "https://www.moran.senate.gov/public/index.cfm/2026/5/sen-moran-applauds-nearly-80-million-in-federal-investments-for-39-kansas-hospitals-providers"
+ },
+ "announcedTotal": 79100000.0,
+ "areaLabel": null,
+ "rows": [
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 1,
+   "recipient": "Hutchinson Regional Healthcare System",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 2,
+   "recipient": "Gove County Medical Center",
+   "county": "Not stated",
+   "amount": 3000000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 3,
+   "recipient": "Clara Barton Medical Center in Hoisington",
+   "county": "Not stated",
+   "amount": 2933500.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 4,
+   "recipient": "Pratt Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2869082.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 5,
+   "recipient": "Freeman Fort Scott Hospital",
+   "county": "Not stated",
+   "amount": 2502999.4,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 6,
+   "recipient": "Hays Medical Center",
+   "county": "Not stated",
+   "amount": 2478316.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 7,
+   "recipient": "South Central Kansas Health in Arkansas City",
+   "county": "Not stated",
+   "amount": 2378188.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 8,
+   "recipient": "Labette Health",
+   "county": "Not stated",
+   "amount": 2145677.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 9,
+   "recipient": "PrairieStar Health Center in Hutchinson",
+   "county": "Not stated",
+   "amount": 1987287.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 10,
+   "recipient": "Wilson Medical Center in Neodesha",
+   "county": "Not stated",
+   "amount": 1555143.45,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 11,
+   "recipient": "Memorial Health System in Abilene",
+   "county": "Not stated",
+   "amount": 1500000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 12,
+   "recipient": "Hillsboro Community Hospital",
+   "county": "Not stated",
+   "amount": 837000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 13,
+   "recipient": "Smith County Memorial Hospital",
+   "county": "Not stated",
+   "amount": 550000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 14,
+   "recipient": "Greeley County Health Services",
+   "county": "Not stated",
+   "amount": 458286.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 15,
+   "recipient": "Mercy Hospital Columbus",
+   "county": "Not stated",
+   "amount": 375981.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 16,
+   "recipient": "Ashland District Hospital",
+   "county": "Not stated",
+   "amount": 361478.86,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "REH Conversion / Transformative Capital Investment Grant Program (May 2026)",
+   "n": 17,
+   "recipient": "Compass Behavioral Health",
+   "county": "Not stated",
+   "amount": 165000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 18,
+   "recipient": "Children\u2019s Mercy Hospital",
+   "county": "Not stated",
+   "amount": 6096062.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 19,
+   "recipient": "Stormont Vail Health",
+   "county": "Not stated",
+   "amount": 5465969.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 20,
+   "recipient": "Great Plains Health Alliance",
+   "county": "Not stated",
+   "amount": 5000000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 21,
+   "recipient": "Recovery Unlimited",
+   "county": "Not stated",
+   "amount": 4290000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 22,
+   "recipient": "Garden City Community College",
+   "county": "Not stated",
+   "amount": 3439901.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 23,
+   "recipient": "Citizens Foundation (Citizens Health) in Colby",
+   "county": "Not stated",
+   "amount": 2832423.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 24,
+   "recipient": "Special Olympics Kansas",
+   "county": "Not stated",
+   "amount": 2546981.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 25,
+   "recipient": "Clay County Medical Center",
+   "county": "Not stated",
+   "amount": 2536000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 26,
+   "recipient": "Coffeyville Regional Medical Center",
+   "county": "Not stated",
+   "amount": 2500000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 27,
+   "recipient": "InterHab (StationMD)",
+   "county": "Not stated",
+   "amount": 2028980.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 28,
+   "recipient": "Iroquois Center for Human Development in Greensburg",
+   "county": "Not stated",
+   "amount": 1720957.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 29,
+   "recipient": "High Plains Mental Health Center",
+   "county": "Not stated",
+   "amount": 1660879.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 30,
+   "recipient": "Greeley County Health Services",
+   "county": "Not stated",
+   "amount": 1541906.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 31,
+   "recipient": "Kansas Council on Developmental Disabilities",
+   "county": "Not stated",
+   "amount": 1460000.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 32,
+   "recipient": "AdventHealth Ottawa",
+   "county": "Not stated",
+   "amount": 1395814.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 33,
+   "recipient": "Labette County Medical Center",
+   "county": "Not stated",
+   "amount": 1383289.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 34,
+   "recipient": "Kanza Mental Health & Guidance Center",
+   "county": "Not stated",
+   "amount": 1354975.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 35,
+   "recipient": "Salina Regional Health Center",
+   "county": "Not stated",
+   "amount": 932310.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 36,
+   "recipient": "Mercy Hospital in Pittsburg",
+   "county": "Not stated",
+   "amount": 681711.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 37,
+   "recipient": "Kansas Health Science University in Wichita",
+   "county": "Not stated",
+   "amount": 677248.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 38,
+   "recipient": "InterHab (CIDDH Curriculum)",
+   "county": "Not stated",
+   "amount": 196650.0,
+   "purpose": "Not stated in the release"
+  },
+  {
+   "program": "Regional Partnerships Grant Program (May 2026)",
+   "n": 39,
+   "recipient": "Grace Team",
+   "county": "Not stated",
+   "amount": 173355.0,
+   "purpose": "Not stated in the release"
+  }
+ ],
+ "note": "The 39 first-round awards KDHE made on May 29, 2026, as itemized in Senator Moran's release (17 REH conversion / capital grants, 22 regional partnership grants). The itemized amounts sum to $79.01 million against the release's \"$79.1 million\"; the difference is stated, not reconciled. Greeley County Health Services and InterHab each hold two awards, so the 39 awards go to 37 organizations. Later Kansas rounds (Community Health Worker and Food is Medicine, Aug 2026; Emerging Technology, 14 providers and $16 million, and Interfacility Transport, Sept 2026) are announced on kdhe.ks.gov, which refuses automated requests, so they are not itemized here."
+}

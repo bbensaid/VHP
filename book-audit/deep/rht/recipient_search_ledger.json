@@ -55,7 +55,7 @@
   "urls": [
    "https://hcpf.colorado.gov/rural-health-transformation-program"
   ],
-  "note": "hcpf.colorado.gov returns 403 to curl AND to the web-fetch tool (2026-11-22); state says 91 grantees/~250 projects/$169.6M with a list on its site \u2014 needs a browser download by the author or another route"
+  "note": "hcpf.colorado.gov returns 403 to curl AND to the web-fetch tool (2026-11-22); state says 91 grantees/~250 projects/$169.6M with a list on its site \u2014 needs a browser download by the author or another route | 2026-11-25: CMS release Sept 28, 2026: $169.6M, 91 grantees, ~250 projects; list at hcpf.colorado.gov/RHTP-awardees (403 to curl; annual report xlsx also 403) \u2014 needs browser download"
  },
  "Michigan": {
   "status": "parsed",
@@ -211,14 +211,15 @@
   "note": "announced awards by initiative with amounts and counties (per search) \u2014 earlier 'none' verdict was wrong"
  },
  "Kansas": {
-  "status": "blocked",
+  "status": "parsed",
   "urls": [
+   "https://www.moran.senate.gov/public/index.cfm/2026/5/sen-moran-applauds-nearly-80-million-in-federal-investments-for-39-kansas-hospitals-providers",
    "https://www.kdhe.ks.gov/rhtp",
    "https://www.kdhe.ks.gov/CivicAlerts.aspx?AID=1957",
    "https://www.haysmed.com/wp-content/uploads/2026/05/rpgp-and-REH-CAP-Press-Release-vF-1.pdf",
    "https://www.kdhe.ks.gov/DocumentCenter/View/60654"
   ],
-  "note": "kdhe.ks.gov 403 to curl; award PDFs exist (REH-CAP/RPGP, CHW+AFIM, Emerging Tech); partial lists appear in hospital-hosted copies of KDHE releases (e.g. haysmed.com RPGP PDF) \u2014 not yet parsed"
+  "note": "2026-11-25: first round (39 awards, $79.01M itemized vs $79.1M stated) parsed from Sen. Moran release; later KDHE rounds (CHW/AFIM, Emerging Tech $16M/14, IFT) not itemized \u2014 kdhe.ks.gov 403"
  },
  "Arkansas": {
   "status": "parsed",

@@ -466,11 +466,15 @@
   }
  },
  "kansas": {
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-25",
   "notes": [
    {
     "text": "CMS announced on Sep 14, 2026: “The Trump Administration announced today that a nearly $17 million investment is being delivered to support rural healthcare technology and increase patient transportation options for Kansans through the federal Rural Health Transformation Program (RHTP).” It added: “As part of today’s announcement, $16 million will be allocated to Emerging Technology Grants to help 14 rural providers adopt technologies like diagnostic tools and remote patient monitoring. An additional $780,000 will support the Interfacility Transport Project to improve regional transportation coordination, helping rural patients safely reach specialty and behavioral healthcare faster.”",
     "src": "cms1"
+   },
+   {
+    "text": "High Plains Public Radio reported on Nov 18, 2026: “In the program’s first year, the Kansas Department of Health and Environment, which oversees the state’s money, dispersed almost $99 million directly to rural healthcare providers and community groups.”",
+    "src": "hppr1"
    }
   ],
   "quotes": [],
@@ -478,6 +482,10 @@
    "cms1": {
     "label": "CMS, “Trump Administration Announces Nearly $17 Million to Adopt Emerging Healthcare Technologies and Improve Patient Transportation Between Facilities Across Rural Kansas” (Sep 14, 2026)",
     "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-17-million-adopt-emerging-healthcare-technologies-improve"
+   },
+   "hppr1": {
+    "label": "High Plains Public Radio, “Rural healthcare in Kansas receives $226 million boost” (Nov 18, 2026)",
+    "url": "https://www.hppr.org/hppr-news/2026-11-18/rural-healthcare-in-kansas-receives-226-million-boost"
    }
   }
  },

@@ -9,6 +9,7 @@
   "Florida",
   "Idaho",
   "Illinois",
+  "Kansas",
   "Maryland",
   "Michigan",
   "Minnesota",
@@ -56,9 +57,8 @@
  ],
  "blocked": [
   "Colorado",
-  "Kansas",
   "New Hampshire"
  ],
  "toParse": [],
- "searchedOn": "2026-11-23"
+ "searchedOn": "2026-11-25"
 }

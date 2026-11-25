@@ -43,6 +43,7 @@ const BASIS: Record<string, string> = {
   illinois: "State grants-portal (GATA) agreements by RHTP sub-program",
   texas: "First-round grants: 68 hospital districts (names from HHSC; $750K each per news report)",
   "south-carolina": "Year One Award List (223 entries; announcement reported 228)",
+  kansas: "First-round KDHE awards itemized in Sen. Moran's release (May 29, 2026)",
   pennsylvania: "Authorized projects (page: $43M awarded to date)",
 };
 
