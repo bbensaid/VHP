@@ -132,7 +132,7 @@ Clinical leader engagement in global budget governance and Statewide Strategic P
 
 9.9 Clinical Pillar Implementation Matrix.
 
-The following matrix provides implementation guidance for the key Clinical pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Clinical pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs, timelines and ROI crossover points are HTR's indicative planning estimates, not published figures; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Investment                                                 Estimated cost                   Timeline to value   ROI crossover            Vermont benchmark
 -------------------------------------------------------------- ------------------------------------ ----------------------- ---------------------------- ---------------------------------------------------------------------------------------------------------

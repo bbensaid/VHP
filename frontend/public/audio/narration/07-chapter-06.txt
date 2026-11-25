@@ -65,7 +65,7 @@ Vermont is not designing RBP in a vacuum. Three states have implemented meaningf
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 State / Program        Design                                                                                                   Scope                                       Key Results
 -------------------------- ------------------------------------------------------------------------------------------------------------ ----------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Oregon (2019)              200% of Medicare in-network; 185% out-of-network. CAH exemptions.                                            State employee plan (~300,000 covered lives)   $107.5M saved in first 27 months (Health Affairs). All 24 affected hospitals remained in-network. No documented access harm.
+Oregon (2019)              200% of Medicare in-network; 185% out-of-network. CAH exemptions.                                            State employee plan (~300,000 covered lives)   $107.5M saved in first 27 months. Provider participation was maintained (Milbank, 2024). No documented access harm.
 Montana (2016)             Direct contracting at % of Medicare for state employee plan.                                                 State employee plan                             $48M initial savings. Politically fragile without statutory mandate --- illustrates Vermont's correct choice to legislate rather than demonstrate.
 Washington (2021)          'Cascade Care' public option. 160% of Medicare for participating networks.                                   Voluntary public option                         Expanding to state employee plans. Growing commercial adoption.
 Maryland (2014--present)   All-payer rate setting; hospitals receive fixed annual revenue (global budget). Medicare waiver.             All payers, all hospitals statewide             $1.4B in Medicare hospital savings 2014--2018 (HSCRC; target was $330M). RTI's independent evaluation: Medicare hospital spending $796M lower and admissions 7.2% lower for Medicare beneficiaries. Succeeded by the Total Cost of Care Model (2019) and AHEAD.
@@ -161,11 +161,11 @@ The model's accountability structure has three components beyond the global budg
 6.5.3 The Results.
 
 The evidence from Maryland's global budget model is substantial and consistent across multiple independent evaluations:
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Medicare hospital savings 2014--2018 $1.4B vs. projected national trend (HSCRC)                           Reduction in hospital admissions 7% Medicare patients; avoidable admissions down >6%
--------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------
-Reduction in Medicare spending $975M total, $796M of it hospital spending (CMS/RTI evaluation, 2014--2017)   All-payer per capita growth cap 3.58% committed growth rate under Maryland model
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Medicare hospital savings 2014--2018 $1.4B vs. projected national trend (HSCRC)                                                Reduction in hospital admissions 7% Medicare patients; avoidable admissions down >6%
+----------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------
+Reduction in Medicare spending $975M total, $796M of it hospital spending (CMS/RTI evaluation, first 4.5 years, 2014--mid-2018)   All-payer per capita growth cap 3.58% committed growth rate under Maryland model
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Maryland also slowed hospital spending growth for commercial members (6.1%), reduced ED visit rates for commercial and Medicaid patients (though not for Medicare), and cut Medicare admissions, and significantly improved outcomes for dual-eligible (Medicare/Medicaid) patients --- the highest-cost, highest-complexity population segment that Vermont also needs to serve better. The 14-day follow-up visit rate and 30-day unplanned readmission rate both improved for non-teaching hospitals.
 
 6.5.4 The Limitations --- What Maryland Teaches About What Global Budgets Cannot Do Alone.
@@ -213,16 +213,16 @@ This metric shift is not cosmetic. It requires fundamental changes to hospital m
 6.7.3 The Savings Roadmap: Where Vermont's \$400M+ Can Come From.
 
 Oliver Wyman's analysis identified the specific sources of direct and indirect savings from Vermont's transformation. Understanding this roadmap is essential for any organization planning its role in Vermont's reformed system.
------------------------------------------------------------------------------
-Source of Direct & indirect savings (5-year total)         Estimate
--------------------------------------------------------------- --------------
-Close financially unsustainable inpatient facilities           $100M+
-Reduce administrative costs and shared services synergies      $115M+
-Shift procedures to ASUs and outpatient settings               $130M+
-Expand primary care to reduce preventable ED visits            $90M+
-Address SDOH to reduce avoidable hospitalizations              $80M+
------------------------------------------------------------------------------
-The largest single source of indirect savings --- shifting procedures from hospital to ambulatory surgical and outpatient settings --- reflects the third Oliver Wyman imperative: move all care possible out of hospitals. Low-risk surgical procedures performed in a hospital setting cost two to three times what the same procedure costs in a free-standing ambulatory surgical unit. Vermont currently has only two ambulatory surgical centers (both in the Burlington area), a significant gap given the breadth of the inpatient surgical capacity Oliver Wyman recommends redirecting. The RHT Program and Act 68 transformation grants are explicitly designed to fund the development of non-hospital care capacity that makes this shift possible.
+---------------------------------------------------------------------------------------------
+Source of savings (Oliver Wyman, 5-year total)                 Estimate
+------------------------------------------------------------------ --------------------------
+Close financially unsustainable inpatient facilities               $100M+
+Reduce administrative costs and capture shared-service synergies   $300M+
+Shift procedures to ASUs and outpatient settings                   Indirect; not quantified
+Expand primary care to reduce preventable ED visits                Indirect; not quantified
+Address SDOH to reduce avoidable hospitalizations                  Indirect; not quantified
+---------------------------------------------------------------------------------------------
+Among the indirect sources, shifting procedures from hospital to ambulatory surgical and outpatient settings reflects the third Oliver Wyman imperative: move all care possible out of hospitals. Medicare pays a hospital outpatient department roughly twice what it pays a free-standing ambulatory surgical center for the same low-risk procedure (CMS CY2026 OPPS and ASC rates). Vermont currently has only two ambulatory surgical centers (both in the Burlington area), a significant gap given the breadth of the inpatient surgical capacity Oliver Wyman recommends redirecting. The RHT Program and Act 68 transformation grants are explicitly designed to fund the development of non-hospital care capacity that makes this shift possible.
 
 6.8 APM Transition Strategy for Vermont Healthcare Organizations.
 

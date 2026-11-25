@@ -50,7 +50,7 @@ A care management program that prevents 50 hospitalizations in a population of 1
 
 7.3 Economics Pillar Implementation Matrix.
 
-The following matrix provides implementation guidance for the key Economics pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Economics pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs, timelines and ROI crossover points are HTR's indicative planning estimates, not published figures; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Investment                                        Estimated cost          Timeline to value   ROI crossover                          Vermont benchmark
 ----------------------------------------------------- --------------------------- ----------------------- ------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -25,18 +25,18 @@ Federal Medicaid funding. H.R. 1's $911 billion in Medicaid cuts (enacted July 2
 
 14.3 Early-Warning Signals of Political Risk.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Signal                                                                        What it indicates                                                  Severity   Monitoring source
---------------------------------------------------------------------------------- ---------------------------------------------------------------------- -------------- -----------------------------------------------------------------------------
+--------------------------------------------------------------------------------- ---------------------------------------------------------------------- -------------- ------------------------------------------------------------------------------------
 Hospital lobbying focused on RBP methodology rather than the mandate              Effort to hollow out RBP through the regulatory process                High           GMCB docket; Vermont Association of Hospitals and Health Systems statements
-Bills to extend RBP or global-budget deadlines                                    Direct challenge to Act 68's mandatory timeline                        Very High      Legislature bill tracker; HCAC testimony
+Bills to extend RBP or global-budget deadlines                                    Direct challenge to Act 68's mandatory timeline                        Very High      Legislature bill tracker; Health Care Delivery Advisory Committee (HCAC) testimony
 Global-budget levels set within 5% of current commercial rates                    Regulatory capture; budgets without pressure                           High           GMCB FY2028 budget guidance
 January 2028 Strategic Plan described as "in progress" in December 2027 reports   Operations failure; deadline unlikely to be met                        High           AHS monthly transformation reports
 CMS AHEAD waiver-modification request                                             Federal pressure (or Vermont request) to weaken AHEAD accountability   Very High      CMS AHEAD communications; AHS federal-relations reports
 Governor-candidate platforms including RBP repeal or delay                        Political threat to mandatory architecture in 2026 cycle               Very High      Governor-race coverage; candidate policy statements
 EAST Fund spending well below authorized levels                                   Resistance to transformation investment despite authorization          Moderate       DVHA AHEAD spending reports; GMCB budget documentation
 HCAC failure to reach consensus on the Strategic Plan framework                   Governance breakdown; plan unlikely to produce binding commitments     High           HCAC meeting minutes; AHS reporting
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 (See the accompanying table.)
 
 14.4 Organizational Strategies for Political Risk Management.

@@ -97,7 +97,7 @@ Vermont's RHT Program IT advance investments explicitly include cybersecurity ca
 
 5.6 Technology Pillar Implementation Matrix.
 
-The following matrix provides implementation guidance for the key Technology pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs are indicative ranges; actual costs vary by organizational size, existing infrastructure, and implementation approach.
+The following matrix provides implementation guidance for the key Technology pillar investments --- estimated cost, timeline to value, ROI crossover point, and Vermont-specific benchmarks. Costs, timelines and ROI crossover points are HTR's indicative planning estimates, not published figures; actual costs vary by organizational size, existing infrastructure, and implementation approach.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Investment                                     Estimated cost         Timeline to value   ROI crossover          Vermont benchmark
 -------------------------------------------------- -------------------------- ----------------------- -------------------------- --------------------------------------------------------------------------------------------------------------------

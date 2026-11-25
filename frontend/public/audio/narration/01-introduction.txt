@@ -54,7 +54,7 @@ This is perhaps the strongest challenge in the book, and the honest answer begin
 
 4. The Oliver Wyman Independence Question.
 
-This book relies heavily on Oliver Wyman's Act 167 analysis. Oliver Wyman was paid $1 million by the Vermont state government to produce a report that would support the case for reform. That is not independence. Readers should note that the Oliver Wyman financial projections --- hospital deficit trajectories, administrative cost benchmarks, workforce shortage estimates --- cannot all be independently verified from public sources, and the firm had a client relationship that may have shaped how it framed its conclusions.
+This book relies heavily on Oliver Wyman's Act 167 analysis. Oliver Wyman worked under a Green Mountain Care Board contract capped at $1.05 million, producing a report that would support the case for reform. That is not independence. Readers should note that the Oliver Wyman financial projections --- hospital deficit trajectories, administrative cost benchmarks, workforce shortage estimates --- cannot all be independently verified from public sources, and the firm had a client relationship that may have shaped how it framed its conclusions.
 This book treats Oliver Wyman's quantitative findings as estimates, not certainties, and notes throughout where specific figures cannot be independently confirmed. The structural argument --- that Vermont's system faces a genuine financial crisis requiring structural response --- is supported by public GMCB data, independent KFF analysis, and GMCB's own enforcement actions that do not depend on Oliver Wyman's projections.
 
 5. The Vermont-Specificity Argument.

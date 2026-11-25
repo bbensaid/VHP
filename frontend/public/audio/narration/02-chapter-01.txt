@@ -309,7 +309,7 @@ Clinical redesign comes fourth because clinical transformation without economic 
 
 1.11.5 Stage 5: Operations --- Closing the Administrative Cost Gap.
 
-Operations is the execution layer that converts all prior-stage investments into organizational reality. Vermont's PPS hospitals spend $2,730 per adjusted discharge on management and administration, compared with a national benchmark of $1,427 --- and UVMMC alone runs $3,826 against that same benchmark. This $1,303 per-discharge gap across the PPS group is the problem behind the largest category of direct savings Oliver Wyman projected --- more than $300 million over five years from reducing hospital administrative costs and sharing services.
+Operations is the execution layer that converts all prior-stage investments into organizational reality. Vermont's PPS hospitals spend $2,730 per adjusted discharge on management and administration, compared with a national benchmark of $1,427 (AHS Act 68 reports, 2025) --- and UVMMC alone runs $3,826 against that same benchmark. This $1,303 per-discharge gap across the PPS group is the problem behind the largest category of direct savings Oliver Wyman projected --- more than $300 million over five years from reducing hospital administrative costs and sharing services.
 Operations is last not because it is least important, but because operational redesign requires the technology infrastructure, payment incentives, and clinical models of the preceding stages to already be in place.
 A hospital that redesigns its administrative operations before its payment model is live will optimize for a fee-for-service world that the reform is designed to replace.
 Summary Table of the Five Stages and Their Execution Sequence:
