@@ -281,7 +281,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Transformation Scorecard",
     href: "/research-lab/knowledge-workspace?tab=scorecard",
     pillars: ["operations"],
-    chapters: ["1", "11", "12"],
+    chapters: ["1", "11", "15", "12"],
     desc: "Executive five-pillar dashboard — score all five pillars, with the Equity Imperative as a cross-cutting indicator and Vermont RHT Program milestone tracking.",
   },
   {
@@ -348,7 +348,7 @@ export const TOOLS: readonly Tool[] = [
     href: "/htr-simulator",
     pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
     // Featured in the ch 1, 13, 14, 15 and 16 platform tables.
-    chapters: ["1", "13", "14", "16"],
+    chapters: ["1", "13", "14", "15", "16"],
     desc: "Model health transformation readiness across the five HTR pillars, with the Equity Imperative scored as a cross-cutting justice check, for any organization or state.",
   },
   {
@@ -356,7 +356,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Transformation Friction Index",
     href: "/transformation-friction-index",
     pillars: ["policy", "operations"],
-    chapters: ["1", "14"],
+    chapters: ["1", "14", "15"],
     desc: "Quantify implementation barriers to health transformation across all five pillars for any state or organization.",
   },
   {
@@ -364,7 +364,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Portfolio Sequencing Test",
     href: "/portfolio-sequencing-test",
     pillars: ["policy", "technology", "economics", "clinical", "operations"],
-    chapters: ["1"],
+    chapters: ["15"],
     desc: "Run the Portfolio Manager's sequencing test on a transformation portfolio: correctly waiting, late by dependency, or running ahead of its gate.",
   },
   {
@@ -372,7 +372,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Investment Tracker",
     href: "/investment-tracker",
     pillars: ["economics"],
-    chapters: ["7"],
+    chapters: ["7", "15"],
     desc: "Track healthcare M&A, VC, PE, and strategic partnership activity by sector, geography, and deal size.",
   },
   {
@@ -380,7 +380,7 @@ export const TOOLS: readonly Tool[] = [
     label: "HTI Dashboard",
     href: "/hti-dashboard",
     pillars: ["policy", "technology", "economics", "clinical", "operations", "equity"],
-    chapters: ["13", "16"],
+    chapters: ["13", "15", "16"],
     desc: "Vermont five-pillar status: sourced pillar readiness, dated milestones per pillar, and pace to the January 2028 Strategic Plan deadline.",
   },
   {
@@ -396,7 +396,7 @@ export const TOOLS: readonly Tool[] = [
     label: "Impact Simulation",
     href: "/impact-simulation",
     pillars: ["policy", "economics", "clinical", "operations"],
-    chapters: ["1"],
+    chapters: ["1", "15"],
     desc: "Model cross-pillar impact of payment reform, care delivery change, technology adoption, workforce strategy, equity interventions, and policy shifts.",
   },
   {

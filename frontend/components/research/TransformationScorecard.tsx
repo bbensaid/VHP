@@ -468,7 +468,7 @@ export default function TransformationScorecard() {
         <p className="text-xs text-slate-500 mb-4 leading-relaxed">
           Enter the RAG status your program office currently reports for each pillar. The scorecard status is derived from the
           dependency-gated score above (≥70 green, 40–69 amber, below 40 red — the gate thresholds the HTR Simulator uses). A pillar
-          the program office reports greener than the scorecard is a governance finding in itself.
+          the PMO reports greener than the scorecard is the divergence Chapter 15 calls a governance finding in itself.
         </p>
         <div className="space-y-2">
           {PILLARS.map(pillar => {

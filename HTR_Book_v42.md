@@ -396,39 +396,39 @@ Table of Contents
 >
 > [14.8 Key Concepts in This Chapter 227](#key-concepts-in-this-chapter-13)
 
-[**Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform 229**](#chapter-15-the-unified-health-data-space-the-infrastructure-vermonts-reform-runs-on-and-the-organization-that-must-deliver-it)
+[**Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform 229**](#chapter-15-healthcare-transformation-as-portfolio-management-applying-pmi-standards-to-five-pillar-reform)
 
-> [15.1 The Project-Management Gap in Healthcare Transformation 229](#_8w9ecwgjm24n)
+> [15.1 The Project-Management Gap in Healthcare Transformation 229](#the-project-management-gap-in-healthcare-transformation)
 >
-> [15.2 Project, Program, and Portfolio: Getting the Levels Right 229](#_4vsb981of4k0)
+> [15.2 Project, Program, and Portfolio: Getting the Levels Right 229](#project-program-and-portfolio-getting-the-levels-right)
 >
-> [15.3 Vermont's Transformation Portfolio: 19 Components 230](#_rdgord7o3it)
+> [15.3 Vermont's Transformation Portfolio: 19 Components 230](#vermonts-transformation-portfolio-19-components)
 >
-> [15.4 The Case for a Portfolio Manager 232](#_d32cfshpus73)
+> [15.4 The Case for a Portfolio Manager 232](#the-case-for-a-portfolio-manager)
 >
-> [15.5 Pillar-Level Program Managers: Five Roles, One Framework 232](#_1pvvy7pa5cgn)
+> [15.5 Pillar-Level Program Managers: Five Roles, One Framework 232](#pillar-level-program-managers-five-roles-one-framework)
 >
-> [15.6 Governance Architecture and the Ten Knowledge Areas 233](#_4rh8goun9lu7)
+> [15.6 Governance Architecture and the Ten Knowledge Areas 233](#governance-architecture-and-the-ten-knowledge-areas)
 >
-> [15.7 Portfolio Sequence Is Dependency Sequence 234](#_kck01ym05auv)
+> [15.7 Portfolio Sequence Is Dependency Sequence 234](#portfolio-sequence-is-dependency-sequence)
 >
-> [15.8 Predictive vs. Adaptive Approaches 234](#_6v8sqdorbf7z)
+> [15.8 Predictive vs. Adaptive Approaches 234](#predictive-vs.-adaptive-approaches)
 >
-> [15.9 The Portfolio Risk Register 235](#_10csr7lvj81w)
+> [15.9 The Portfolio Risk Register 235](#the-portfolio-risk-register)
 >
-> [15.10 Benefits Realization: Connecting the PMO to Act 167's Five Goals 236](#_k0o49kqe8ic1)
+> [15.10 Benefits Realization: Connecting the PMO to Act 167's Five Goals 236](#benefits-realization-connecting-the-pmo-to-act-167s-five-goals)
 >
-> [15.11 The Business Case 236](#_i8ql6obz1puk)
+> [15.11 The Business Case 236](#the-business-case)
 >
-> [15.12 Implementation Roadmap 237](#_c8y87ymh8foj)
+> [15.12 Implementation Roadmap 237](#implementation-roadmap)
 >
-> [15.13 Answering the Five Objections 237](#_nr5dvmpml2bs)
+> [15.13 Answering the Five Objections 237](#answering-the-five-objections)
 >
-> [15.14 Work This Chapter on the Platform 238](#_4rza3kxsdzm3)
+> [15.14 Work This Chapter on the Platform 238](#work-this-chapter-on-the-platform-13)
 >
-> [15.15 Implications for You 239](#_j2y4j4dur31o)
+> [15.15 Implications for You 239](#implications-for-you-14)
 >
-> [15.16 Key Concepts in This Chapter 239](#_7ppi40vb80df)
+> [15.16 Key Concepts in This Chapter 239](#key-concepts-in-this-chapter-14)
 
 [**Chapter 16: The AHS Restructuring Roadmap --- A Five-Pillar Framework for System Architects 241**](#chapter-16-the-ahs-restructuring-roadmap-a-five-pillar-framework-for-system-architects)
 
@@ -1339,7 +1339,7 @@ Vermont's healthcare transformation is the closest thing to a controlled experim
 
   **Clinical**     Blueprint for Health (all-payer PCMH + CHT); CoCM and MHI behavioral health integration; CCBHC expansion (four new entities certified July 1, 2026, with Washington County following later in 2026)   Hub-and-Spoke SUD model; PACE program development; COE regionalization; dementia care infrastructure                                                                                       Chapters 8--9
 
-  **Operations**   14-hospital transformation planning (RHRC + AHS); Vermont CIN shared services; Act 68 transformation grants (\$2M); RHT program staffing                                                              EMS regionalization; administrative simplification (CON, prior auth); AHS restructuring; Division of Planning and Effectiveness                                                            Chapters 11, 16
+  **Operations**   14-hospital transformation planning (RHRC + AHS); Vermont CIN shared services; Act 68 transformation grants (\$2M); PMO establishment                                                                 EMS regionalization; administrative simplification (CON, prior auth); AHS restructuring; Division of Planning and Effectiveness                                                            Chapters 11, 16
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 1.5 --- Vermont's five-pillar transformation map. Sources: Acts 167, 51, 55, 62, 68 of 2022--2025; AHEAD State Agreement; Vermont RHT Program Application; Oliver Wyman Act 167 Report.*
@@ -1552,7 +1552,7 @@ Vermont's transformation is unusual in one critical respect: it has a legislativ
 
   **Clinical**     Parallel (2024--2028)      Blueprint PCMH expansion, CCBHC certifications, CoCM deployment proceed in parallel with Technology work --- correctly, because they produce their value regardless of whether the Technology and Economics gates have opened yet.
 
-  **Operations**   Building (2025--2028)      RHRC engagement (concluded October 2025), 14 hospital transformation plans (submitted April 2026), RHT program staff being hired (18 of 23 positions filled, July 2026) --- timed to precede the peak execution demand of FY2027--2028. The HSA Coordinator model (Chapter 16) and a Division of Planning and Effectiveness (Oliver Wyman) remain proposals; the Act 119 review kept AHS unified.
+  **Operations**   Building (2025--2028)      RHRC engagement (concluded October 2025), 14 hospital transformation plans (submitted April 2026), PMO being established --- timed to precede the peak execution demand of FY2027--2028. The HSA Coordinator model (Chapter 16) and a Division of Planning and Effectiveness (Oliver Wyman) remain proposals; the Act 119 review kept AHS unified.
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 1.8 --- Vermont's transformation timeline, by pillar. Sources: HTR Analysis (2026); Act 68 of 2025; AHEAD State Agreement.*
@@ -5511,7 +5511,7 @@ In the Academy: Track 8's lesson "Knowledge Infrastructure and Technical Assista
 
 If you are a Vermont hospital executive: Shared implementation infrastructure --- such as the shared services and analytics that Vermont's RHT plan funds through a Clinically Integrated Network of independent providers --- is not an academic exercise. It is the mechanism by which the transformation investments being made at Vermont's more advanced hospitals become available to the smaller, less resourced hospitals that cannot independently build the same capabilities. If you lead one of Vermont's larger systems, your participation in knowledge transfer is not optional generosity. It is a system obligation, and increasingly, a strategic interest: a system in which 9 of 14 hospitals reported operating losses in 2023 cannot produce the population health improvement global budgets depend on, because the fragile hospitals serve the populations whose outcomes most need to improve.
 
-If you are an AHS or GMCB official: The UHDS program office and the decision-rights charter described in Chapter 15 are the operational spine of Vermont's transformation program. Without named owners who track the data infrastructure, the analytics vendor, the hospital transformation plans, and the CCBHC certifications against one roadmap, and report to AHS leadership on the timeline's status --- Vermont's transformation will be managed as a collection of independent programs rather than an integrated system. That is how transformation programs fail. That capacity is not overhead. It is the management infrastructure that makes the statutory timeline executable. It should be established, staffed, and funded before the peak execution period of FY2027--2028.
+If you are an AHS or GMCB official: The Transformation PMO described in Chapter 15 is the operational spine of Vermont's transformation program. Without a function that tracks milestones across all five pillars, manages dependencies between the analytics vendor, the hospital transformation plans, and the CCBHC certifications, and reports to AHS leadership on the transformation timeline's status --- Vermont's transformation will be managed as a collection of independent programs rather than an integrated system. That is how transformation programs fail. The PMO is not overhead. It is the management infrastructure that makes the statutory timeline executable. It should be established, staffed, and funded before the peak execution period of FY2027--2028.
 
 If you are a Vermont legislator: This chapter calls for infrastructure that is necessary but not headline-generating: a PMO, a change management function, shared analytical tools. These investments will never produce a press release as compelling as a new hospital wing or a new clinical program. They will, however, determine whether Vermont's transformation produces results or produces reports. The legislature should require AHS to maintain and report on a consolidated transformation dashboard --- tracking milestones across all five pillars against the statutory timeline --- and to present this dashboard at each legislative reporting cycle. If the dashboard does not exist, the transformation is not being managed. If it exists but the milestones are consistently incomplete, the transformation is not on track and the legislature needs to know.
 
@@ -5642,19 +5642,19 @@ The AHEAD Model --- now operating in five states (Maryland, Connecticut, Hawaii,
 
 ## 13.4 **The Five-Pillar Forecast: 2026--2035**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**   **2026 starting point**                                                                                                                                                                                                                                          **Primary headwinds**                                                                                                                                                                          **Primary tailwinds**                                                                                                                                             **2035 assessment**
-  ------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Policy       VT: Acts 167/68 form one of the most comprehensive state reform mandates in the country. National: H.R. 1 Medicaid cuts; RHT front-loaded.                                                                                                                       Medicaid work requirements (January 2027); federal policy instability; provider-tax restrictions pressuring state budgets.                                                                     AHEAD operating in 5 states; VT mandatory RBP/global budgets as template; price-transparency momentum; BALANCE GLP-1 access in Medicaid.                          Moderate national progress; high VT-specific progress if execution holds. Mandatory APM participation is the critical unresolved national question.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **2026 starting point**                                                                                                                                                                                                                                         **Primary headwinds**                                                                                                                                                                          **Primary tailwinds**                                                                                                                                             **2035 assessment**
+  ------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Policy       VT: Acts 167/68 form one of the most comprehensive state reform mandates in the country. National: H.R. 1 Medicaid cuts; RHT front-loaded.                                                                                                                      Medicaid work requirements (January 2027); federal policy instability; provider-tax restrictions pressuring state budgets.                                                                     AHEAD operating in 5 states; VT mandatory RBP/global budgets as template; price-transparency momentum; BALANCE GLP-1 access in Medicaid.                          Moderate national progress; high VT-specific progress if execution holds. Mandatory APM participation is the critical unresolved national question.
 
-  Technology   VT: VHCURES solid; VITL/HIE voluntary and incomplete; analytics vendor procurement underway; CIN in development. National: FHIR improving interoperability; AI outpacing governance.                                                                             Published VHCURES-based measures about two years behind; incomplete FHIR at smaller hospitals; absent AI governance in most states.                                                            VT CIN providing shared analytics and AI governance; RHT grants funding EMR interoperability and a voluntary shared EMR; ambient AI reducing burden nationally.   Fastest-improving pillar nationally; FHIR operationally complete for major EHRs by \~2028. AI deployment rapid, governance lagging --- safety and equity risk if governance does not catch up.
+  Technology   VT: VHCURES solid; VITL/HIE voluntary and incomplete; analytics vendor procurement underway; CIN in development. National: FHIR improving interoperability; AI outpacing governance.                                                                            Published VHCURES-based measures about two years behind; incomplete FHIR at smaller hospitals; absent AI governance in most states.                                                            VT CIN providing shared analytics and AI governance; RHT grants funding EMR interoperability and a voluntary shared EMR; ambient AI reducing burden nationally.   Fastest-improving pillar nationally; FHIR operationally complete for major EHRs by \~2028. AI deployment rapid, governance lagging --- safety and equity risk if governance does not catch up.
 
-  Economics    VT: RBP rule-making (2027; prices from FY2028); global budgets mandated from FY2028 as resources allow; Medicaid hospital global budget halted July 2026. National: APMs \~45% of payments across all payers (HCP-LAN, 2024); global budgets rare outside MD.    H.R. 1 Medicaid revenue reductions; GLP-1 wave threatening IRA savings; commercial premium pressure.                                                                                           VT RBP producing documented savings; IRA GLP-1 negotiation (2027); Maryland AHEAD validating global budgets; LEAD replacing ACO REACH (2027).                     VT: strong progress if global budgets land on schedule. National: APM share near 45% of all payments, rising slowly by 2030; global budgets stay limited absent mandatory policy.
+  Economics    VT: RBP rule-making (2027; prices from FY2028); global budgets mandated from FY2028 as resources allow; Medicaid hospital global budget halted July 2026. National: APMs \~45% of payments across all payers (HCP-LAN, 2024); global budgets rare outside MD.   H.R. 1 Medicaid revenue reductions; GLP-1 wave threatening IRA savings; commercial premium pressure.                                                                                           VT RBP producing documented savings; IRA GLP-1 negotiation (2027); Maryland AHEAD validating global budgets; LEAD replacing ACO REACH (2027).                     VT: strong progress if global budgets land on schedule. National: APM share near 45% of all payments, rising slowly by 2030; global budgets stay limited absent mandatory policy.
 
-  Clinical     VT: Blueprint strong; CoCM/MHI effective but not permanently funded; CCBHC expanding; PACE gap; primary-care productivity constraint. National: BH access crisis worsening.                                                                                      MHI sustainability uncertain without a durable funding source after the AHEAD withdrawal; primary-care shortage (370-FTE gap by 2030 in VT); Medicaid cuts threatening safety-net providers.   Blueprint among strongest PCMH infrastructure in the country; CCBHC expansion; CoCM Medicare billing enabling sustainable financing.                              Steady national improvement in primary care and BH integration. VT: Blueprint PCMH infrastructure among the strongest in the country; BH integration is the critical clinical variable.
+  Clinical     VT: Blueprint strong; CoCM/MHI effective but not permanently funded; CCBHC expanding; PACE gap; primary-care productivity constraint. National: BH access crisis worsening.                                                                                     MHI sustainability uncertain without a durable funding source after the AHEAD withdrawal; primary-care shortage (370-FTE gap by 2030 in VT); Medicaid cuts threatening safety-net providers.   Blueprint among strongest PCMH infrastructure in the country; CCBHC expansion; CoCM Medicare billing enabling sustainable financing.                              Steady national improvement in primary care and BH integration. VT: Blueprint PCMH infrastructure among the strongest in the country; BH integration is the critical clinical variable.
 
-  Operations   VT: hospital transformation plans submitted, implementation beginning; AHS kept unified after the Act 119 review; RHT program staff being hired (18 of 23 positions filled, July 2026); CIN in development. National: administrative complexity not declining.   14 final plans at varying stages of implementation; analytics vendor not yet operational; AHS capacity must be built; RHT requires PM infrastructure VT is hiring.                             \$195M RHT capital; all 14 hospitals engaged; GMCB capacity added under Act 68; AHS analytics procurement; CIN shared services.                                   VT transformation underway --- the question is whether execution pace matches statutory deadlines. National: administrative simplification slow without federal prior-auth reform.
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Operations   VT: hospital transformation plans submitted, implementation beginning; AHS kept unified after the Act 119 review; PMO being established; CIN in development. National: administrative complexity not declining.                                                 14 final plans at varying stages of implementation; analytics vendor not yet operational; AHS capacity must be built; RHT requires PM infrastructure VT is hiring.                             \$195M RHT capital; all 14 hospitals engaged; GMCB capacity added under Act 68; AHS analytics procurement; CIN shared services.                                   VT transformation underway --- the question is whether execution pace matches statutory deadlines. National: administrative simplification slow without federal prior-auth reform.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 13.3 --- Five-pillar forecast, 2026--2035: Vermont and national. Sources: HTR analysis; sources cited throughout this chapter.*
 
@@ -5921,414 +5921,337 @@ Reform cascade --- a legislatively structured sequence in which each interventio
 
 *Sources: Act 68 of 2025; Act 167 of 2022; H.R. 1 (One Big Beautiful Bill Act, July 2025); Vermont Legislature bill tracker; GMCB regulatory docket; AHS monthly transformation reports (2025--2026); Oliver Wyman Act 167 Recommendations (August 2024); Vermont Association of Hospitals and Health Systems statements; HCAC meeting minutes; CMS AHEAD documentation; HTR Advisory political-risk monitoring framework.*
 
-# **Chapter 15: The Unified Health Data Space --- The Infrastructure Vermont's Reform Runs On, and the Organization That Must Deliver It**
+# **Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform**
 
-> *Every part of Act 68 that changes how money moves --- reference-based prices, global budgets, the Rural Health Transformation investments, the Strategic Plan's affordability benchmarks --- depends on one piece of infrastructure Vermont has only begun to build: an integrated view of what care Vermonters receive, from whom, at what cost, and with what result. This chapter sets out what that infrastructure is, what already exists, what the law requires, where the plan falls short, and the organization and people it will take to deliver it.*
+> *Vermont's five-pillar transformation is not a project, and not a single program. It is a portfolio --- a structured collection of interdependent programs and projects managed toward a strategic objective. This chapter applies PMI portfolio-management standards to Vermont's transformation, makes the case for a dedicated Portfolio Manager at the state level and Program Managers at each pillar, and provides the governance architecture, role definitions, performance framework, and risk register the Statewide Strategic Plan requires.*
 
-Oliver Wyman told Vermont what was wrong: nine of fourteen hospitals losing money in 2023, thirteen projected to by 2028, a five-year system deficit of \$700 million to \$2.4 billion, and premiums up 108% in six years. Act 68 told Vermont what to do about it: price hospitals against Medicare, move them to global budgets, plan the system as a whole, and build the data to see it. The first three are the reform's visible instruments. The fourth decides whether they can be managed.
+PMI's portfolio, program, and project standards are not Vermont-specific, or even healthcare-specific --- they are a general-purpose discipline for managing interdependent work toward a strategic objective, used across industries. Any organization running a five-pillar transformation, in any state, is by definition running a portfolio whether or not it has named it one, and the governance gap this chapter identifies --- multiple interdependent initiatives with no portfolio-level accountability --- is the default state of most transformation efforts, not a Vermont peculiarity. Vermont's 19-component portfolio is this chapter's worked example of what naming and structuring that portfolio looks like once a state's various mandates, programs, and grants are inventoried against the five-pillar framework.
 
-The Legislature named that fourth instrument the Unified Health Data Space (UHDS). It is not a technology project sitting beside the reform. It is the infrastructure the reform runs on --- the way a regulator sees what a price cut did, the way a primary care network proves what it prevents, the way a public health department sees an outbreak, and the way the State shows Washington that its rural health dollars changed anything. Whether Vermont builds it in time, governs it well, and puts people in charge of it who will stay long enough to finish it will decide whether the rest of Act 68 is managed or only hoped for.
+## 15.1 **The Project-Management Gap in Healthcare Transformation**
 
-## 15.1 **The Execution Calendar**
+Every concept in the preceding chapters maps to a project-management discipline, whether or not it was introduced in those terms. Pillar definition is scope management. The execution sequence is schedule management with dependency logic. The failure cascade is risk management. The implementation matrix is cost and resource management. The Vermont Scorecard is benefits-realization management. The five-pillar framework is, in its entirety, a portfolio-management architecture --- and Vermont's transformation is failing to be managed as one.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Date**                            **Obligation**                                                                                                                       **Carried by**                                  **Source**
-  ----------------------------------- ------------------------------------------------------------------------------------------------------------------------------------ ----------------------------------------------- -----------------------------
-  **Hospital FY2026**                 Reduce hospital spending by at least 2.5%; report monthly                                                                            AHS, with hospitals                             Act 68, Sec. 11a
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **10 of 10**                                                        **19**                                        **10**                                                 **14**
+  ------------------------------------------------------------------- --------------------------------------------- ------------------------------------------------------ -------------------------------------------------------------
+  PMI knowledge areas (PMBOK Guide, 6th ed.) addressed by this book   Vermont transformation portfolio components   Scored risks in the portfolio register (Figure 15.6)   Hospital transformation plans the portfolio must coordinate
 
-  **Monthly, Aug 2025 -- Jan 2027**   Outcome measures, savings per inefficiency, each hospital decision's system impact, transformation spending                          AHS                                             Act 68, Sec. 11b
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  **Jan 15, 2026 (delivered)**        Report on the advantages and disadvantages of integrating clinical, claims, and social-needs data in the UHDS                        AHS                                             18 V.S.A. § 9353(d)(1)
+*Figure 15.1 --- The project-management gap. Sources: PMBOK Guide, 6th ed. (2017); Figures 15.3 and 15.6; Act 68 of 2025.*
 
-  **Jan 1, 2027 (earliest)**          UHDS data integration may begin --- on a majority vote of all voting members of the HIE Steering Committee, for approved uses only   AHS + HIE Steering Committee                    18 V.S.A. § 9353(b)(4)
+## 15.2 **Project, Program, and Portfolio: Getting the Levels Right**
 
-  **Jan 15, 2027, then annually**     AHS update to the Legislature on UHDS development and implementation                                                                 AHS                                             18 V.S.A. § 9353(d)(2)
+PMI draws a useful hierarchy: projects produce deliverables; programs coordinate related projects to produce benefits that no single project could; portfolios align all of the above with organizational strategy. Vermont's transformation operates at all three levels simultaneously. The diagnostic question is not whether Vermont needs this infrastructure --- Oliver Wyman answered that in August 2024 --- but whether Vermont is building it fast enough. The honest answer from the November 2025 report is no.
 
-  **Jan 1, 2027**                     Medicaid work requirements and six-month redeterminations, reducing coverage and provider revenue                                    AHS / DVHA                                      H.R. 1
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Level**   **PMI definition**                                                                     **Vermont example**                                                                                                                                              **Who manages it**                                         **Success measure**
+  ----------- -------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------- ---------------------------------------------------------------
+  Project     Temporary endeavor creating a unique result; defined scope, schedule, budget.          VHCURES analytics-vendor deployment; HCC gap closure at Springfield; CoCM deployment at a Blueprint practice; RBP rulemaking.                                    Project Manager (pillar-, hospital-, or program-level)     On scope, schedule, budget; deliverable accepted.
 
-  **2027**                            Reference-based pricing methodology set by rule                                                                                      GMCB                                            Act 68
+  Program     Related projects managed together for benefits not achievable individually.            Technology Pillar program (VHCURES + VITL + CIN + AI governance); Blueprint PCMH expansion (13 HSA projects); global-budget design and implementation program.   Program Manager (pillar-level)                             Benefits realized; interdependencies managed.
 
-  **Sept 30, 2027**                   FY2026 Rural Health Transformation award (\$195.1M) must be spent; FY2027 (\$190.0M) follows a year later                            AHS, Office of Health Care Reform               CMS RHT terms
+  Portfolio   A collection of programs/projects/operations managed as a group to achieve strategy.   Vermont's full five-pillar transformation: all 19 components across the pillars, aligned to Act 167's five goals and the January 2028 plan.                      Portfolio Manager (AHS Secretary-level or dedicated CPO)   Strategic objectives achieved; resources optimally allocated.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  **Dec 31, 2027**                    Global Commitment to Health demonstration expires                                                                                    AHS                                             Chapter 16
+*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (4th ed., 2017); PMBOK Guide, 7th ed.; PMI Standard for Program Management (4th ed., 2017).*
 
-  **Jan 15, 2028**                    Statewide Health Care Delivery Strategic Plan due                                                                                    AHS + Health Care Delivery Advisory Committee   18 V.S.A. § 9403
+AHS is managing Vermont's transformation as a collection of projects without the program or portfolio infrastructure to coordinate them --- sequenced by who is available rather than by what the portfolio needs. This is not a criticism of AHS staff, who are executing against an extraordinary mandate with insufficient capacity. It is a structural observation: the capacity does not exist yet. This chapter is the case for building it before the January 2028 deadline makes the gap irreversible.
 
-  **Hospital FY2028**                 Reference-based prices take effect; first global budgets, resources permitting                                                       GMCB                                            Act 68
+## 15.3 **Vermont's Transformation Portfolio: 19 Components**
 
-  **2028--2029 / 2029--2030**         UHDS adds Medicare and statewide clinical data, then commercial claims (AHS plan)                                                    AHS                                             AHS UHDS report (Jan. 2026)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PMI's standard requires the portfolio to be defined --- every component identified, classified, and assigned governance. Vermont has never published such a definition; the inventory below is HTR's, assembled by reading Act 68, the AHEAD State Agreement, the RHT Program application, and the AHS transformation reports for every initiative that carries a named owner and a dated obligation, then assigning each to the pillar whose function it serves. Nineteen is what that exercise produces as of early 2026; it is not a number Vermont has adopted, and a reader repeating the exercise against later reports should expect it to move. The chapter in parentheses after each component is where the book analyses it.
 
-*Figure 15.1 --- Vermont's reform execution calendar. Sources: Act 68 of 2025; 18 V.S.A. §§ 9353, 9403; AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); CMS RHT Program terms; CMS-2454-IFC.*
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **Portfolio component**                            **Type**                 **Priority**   **Lead**                     **2026 status → stage gate**
+  ------------ -------------------------------------------------- ------------------------ -------------- ---------------------------- ---------------------------------------------------------
+  Policy       Act 68 RBP-methodology rulemaking (Ch. 2)          Compliance project       Critical       GMCB                         In progress → FY2027
 
-Read the last two rows together. Vermont will set and enforce commercial hospital prices from FY2028; by AHS's own plan, commercial claims join the integrated data space in 2029--2030. That gap is the central execution problem of Act 68, and the rest of this chapter explains where it comes from and what it would take to close it.
+  Policy       AHEAD State Agreement closeout (Ch. 3)             Ongoing program          Critical       AHS                          Withdrawn Jul 2026 → FY2027 closeout reporting
 
-## 15.2 **Why Everything Depends on One Data Space**
+  Policy       RHT Program contract management (Ch. 2)            Compliance project       High           AHS Health Reform            Active → annual federal reporting
 
-Each of the reform's commitments needs a particular kind of evidence. Almost none of it can be produced from one data source alone.
+  Policy       Statewide Strategic Plan development (Ch. 16)      Strategic project        Critical       AHS + HCAC                   In progress → Jan 2028
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Reform commitment**                                         **What it must be able to see**                                                                                                           **Why one source is not enough**                                                       **Without an integrated data space**
-  ------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
-  **GMCB reference-based prices and global budgets (FY2028)**   What each hospital's commercial, Medicare, and Medicaid patients received, and what happened to access and quality after a price change   Claims show what was paid; only clinical data shows outcomes and acuity                Prices are cut without seeing whether care moved, shrank, or worsened
+  Technology   AHS-GMCB analytics-vendor deployment (Ch. 4)       Strategic project        Critical       AHS + GMCB                   Procurement → Jan 2027 operational
 
-  **AHS hospital supervision (Act 68, Secs. 11a--11b)**         Each hospital decision's effect on system cost and premiums; savings attributable to each inefficiency                                    Requires all payers and all sites of care, linked to the same patients                 Savings are estimated hospital by hospital and cannot be added up
+  Technology   Vermont CIN build-out (Ch. 4)                      Strategic program        High           AHS + RHT                    Design → FY2028 operational
 
-  **Statewide Strategic Plan (Jan. 2028)**                      Baselines and targets for cost, quality, access, and equity, by region                                                                    Regional, multi-payer, clinically grounded measures                                    The plan sets benchmarks no one can measure
+  Technology   VITL HIE expansion / FHIR compliance (Chs. 4--5)   Technical project        High           VITL + AHS                   In progress → FY2027 mandatory
 
-  **Blueprint for Health and primary care payment**             Preventive care, chronic-disease control, avoidable ED use, follow-up after behavioral-health crises                                      "Hybrid" quality measures combine a claims-defined population with clinical results    Measures are produced by manual chart abstraction, or not at all
+  Technology   Statewide AI-governance framework (Ch. 5)          Policy project           Medium         AHS + CIN                    Not started → FY2028 adoption
 
-  **Rural Health Transformation (CMS evaluation)**              Whether each funded project changed access, outcomes, or cost                                                                             Project effects show up across payers and providers                                    Vermont reports spending, not results
+  Economics    RBP implementation (all hospitals) (Ch. 6)         Compliance program       Critical       GMCB                         Methodology design → FY2028 rates in effect
 
-  **Public health**                                             Outbreaks, immunization, reportable disease, overdose                                                                                     Clinical and laboratory data in near-real time                                         Surveillance depends on separate feeds and manual reporting
+  Economics    Global-budget design & implementation (Ch. 6)      Strategic program        Critical       GMCB + AHS                   Design → FY2028 non-CAH
 
-  **Behavioral health and whole-person care**                   What happens to people served by designated agencies across the rest of the system                                                        Agency records sit outside the exchange; substance-use records need separate consent   The highest-need Vermonters remain invisible in the data the reform is managed on
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Economics    RHT Program deployment (Ch. 2)                     Operational program      High           DVHA + AHS                   Active → annual targets
 
-*Figure 15.2 --- What each reform commitment needs from integrated data. Sources: Act 68 of 2025; 18 V.S.A. §§ 9353, 9403; AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); VITL (Feb. 4, 2025).*
+  Economics    Social-risk-adjustment methodology (Ch. 10)        Analytical project       High           GMCB + Econ PM               Design → FY2028 adoption
 
-The evidence for linkage is not abstract. A study AHS cites in its January 2026 report found that half of Medicaid members' cholesterol, diabetes, and kidney screenings, and their influenza vaccinations, were documented in clinical records but missing from claims. Health care organizations that must report hybrid quality measures today combine clinical and claims data by hand. Linked data removes much of that work and corrects what claims alone get wrong.
+  Clinical     Blueprint PCMH (Ch. 8)                             Operational program      Critical       Blueprint + DVHA             Active → 100% PCMH by FY2028
 
-This is why the UHDS is a dependency rather than a project. When it is late, nothing stops; everything else simply proceeds without being able to see what it is doing.
+  Clinical     CCBHC certification (5 entities) (Ch. 8)           Compliance project       High           AHS + providers              4 certified Jul 1, 2026 → six in all
 
-## 15.3 **What Vermont Has Already Built**
+  Clinical     CoCM statewide deployment (Ch. 9)                  Operational program      High           MHI + Blueprint              Pilot → 80%+ practices FY2028
 
-Vermont does not start from nothing. Its health information exchange went through a failure, a turnaround, and a rebuild that together give the State more foundation than most.
+  Clinical     HEROI equity-scoring methodology (Ch. 10)          Analytical project       High           AHS + Health Equity Studio   In development → iterative refinement through FY2028
 
-**A failure, then a turnaround.** In 2016 the State Auditor reported that Vermont had paid VITL, the exchange's operator, more than \$38 million since 2005 without being able to assess its performance. The evaluation ordered by Act 73 of 2017 found that only 19% of stakeholders thought the exchange met their needs and, because consent was opt-in, fewer than one in five Vermonters' records were accessible. The State took ownership of the Health Information Technology Plan through DVHA and a State-led HIE Steering Committee, and Act 53 of 2019 switched consent to opt-out from March 2020. By February 2025, VITL reported 98.9% of Vermonters sharing their data and 241 organizations contributing or accessing it.
+  Operations   14-hospital transformation planning (Ch. 11)       Operational program      Critical       AHS + RHRC successor         Final plans Mar 2026 → implementation
 
-**The rebuild.** The Collaborative Services Project, launched in 2019, replaced the exchange's core. By the end of 2020 VITL had installed a master patient index, terminology services, and a hosted interface engine; in 2021 it implemented a new data repository and the VITLAccess clinical portal. The patient-matching tool raised the exchange's cohort match rate from about 65% to more than 95% --- the difference between a set of disconnected feeds and one record per Vermonter.
+  Operations   AHS restructuring (Ch. 16 design)                  Organizational project   Critical       AHS Secretary                Not adopted: Act 119 report (Feb 2026) kept AHS unified
 
-**Proof under pressure.** During COVID-19 the exchange connected new testing laboratories and vaccination sites for the Department of Health, and a 2021 change to 18 V.S.A. § 1129 allowed immunization-registry data to be integrated with the exchange. The Department's epidemiologists planned to use it for all reportable diseases.
+  Operations   AHS PMO establishment (Ch. 12)                     Organizational project   Critical       AHS                          Not started → Q2 2027 operational
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Federal money, earned.** In May 2022 CMS certified the exchange as part of Vermont's Medicaid enterprise, which brings enhanced federal match --- about 90% for Medicaid development work and, since certification, 72% of maintenance and operations. The State match comes chiefly from the Health IT Fund, 0.199 of 1% of health insurance claims, about \$3.5--4 million a year, historically extended one or two years at a time.
+*Figure 15.3 --- Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.*
 
-**A State-owned analytic platform.** DVHA's Medicaid Data Warehouse and Analytics Solution (MDWAS), a \$66.3 million implementation, now holds linked Medicaid claims, clinical, and social-needs data (Section 15.4.3).
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **BEYOND VERMONT**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| The exercise that produced this 19-component inventory --- listing every statute, grant, model agreement, and initiative touching the five pillars, then mapping each to a pillar and an owner --- is directly repeatable by any organization or state agency, regardless of how many components the exercise turns up. Most organizations underestimate their own portfolio size until they do this inventory, because individual initiatives are usually owned by different departments that do not otherwise compare notes. The number 19 is Vermont's; the exercise is universal, and is often the single highest-value first step toward the kind of portfolio governance this chapter recommends. |
++=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Vermont therefore has two layers already in operation: an exchange that moves clinical data between providers in near-real time, and a State analytic platform that can link it with claims. The UHDS is the decision to join them, govern them as one, and extend them to every payer.
+## 15.4 **The Case for a Portfolio Manager**
 
-## 15.4 **The Unified Health Data Space in Law and in Plan**
+Nineteen components. Shared stage gates. A single January 2028 deadline. Three statutory predecessors --- Acts 167, 51, and 68 --- plus the AHEAD State Agreement's closeout obligations, each with their own federal and state reporting obligations. This is not a program-management problem. It is a portfolio-management problem, and it cannot be solved by component managers acting independently, no matter how skilled each one is. It requires a Portfolio Manager: a designated authority with the mandate and the access to manage Vermont's transformation as a whole, not as a collection of programs each doing their best.
 
-### 15.4.1 **What the law requires**
+This is not a new idea for Vermont. Oliver Wyman's Act 167 report explicitly recommended that AHS hire a dedicated project-management function and establish the "project management infrastructure needed to manage Vermont's transformation portfolio." The November 2025 report repeated the finding. The AHS Restructuring Roadmap (Chapter 16 of this book) identifies PMO establishment as a critical organizational project. What this chapter adds is a precise, PMI-grounded definition of the role, its authority, and its connection to the pillar-level Program Managers below it.
 
-Act 68, Section 10, added 18 V.S.A. § 9353. It directs AHS to develop the UHDS in collaboration with the HIE Steering Committee, "to improve patient and provider access to relevant information, increase efficiencies and decrease administrative burdens on providers, and reduce health care system costs." The development must align with the statewide HIT Plan; protect privacy and the proprietary information of payers and providers; ensure interoperability; identify the resources needed for data linkages for policy, health surveillance, population health management, and research; set a timeline; and ensure rapid access for patients and providers. Once the Strategic Plan exists, AHS must give State agencies and providers access to the data they need to pursue its goals.
+Role and authority (summary). The Portfolio Manager chairs the monthly portfolio review board; maintains the portfolio register (Figure 15.3) and risk register; authorizes component additions and removals; ensures all components stay aligned to Act 167's five goals; resolves cross-component resource conflicts; owns the Vermont Scorecard reporting to the Health Care Delivery Advisory Committee (HCAC) and the AHS Secretary; manages portfolio-level stakeholder relationships with HCAC, GMCB, hospital CEOs, the Legislature, and CMS; and tracks benefits realization, recommending component termination when benefits are no longer achievable. The role requires a direct report to the AHS Secretary, a GMCB co-reporting relationship, budget authority over the transformation PMO, and authority to require reporting from all 19 component leads. The appropriate credential is PMI's Portfolio Management Professional (PfMP), with 8+ years of program/portfolio experience and health-system or large-scale government program experience.
 
-Three conditions govern everything else. Integration of clinical, claims, social-needs, and other data "shall not begin prior to January 1, 2027." It may occur "only upon the favorable vote of a majority of all voting members" of the HIE Steering Committee. And integrated data may be used only "for the specific uses approved" by that vote. AHS must report to the Legislature every January 15 from 2027.
+## 15.5 **Pillar-Level Program Managers: Five Roles, One Framework**
 
-### 15.4.2 **How the term's meaning has moved**
+Below the Portfolio Manager, each pillar needs a Program Manager --- in PMI's terms (Figure 15.2), each pillar is a program. These roles are not AHS-exclusive --- for hospital-owned components the manager may sit in a hospital PMO; for state-administered components, in AHS. What matters is that each pillar has a designated accountability point with the skills and authority to manage its components as a coherent program.
 
-The UHDS was not invented for Act 68. Act 167 of 2022 had already directed the HIE Steering Committee to "create one health record for each person" that integrates claims, clinical, mental-health and substance-use, and social-determinants data, and to include in its 2023 strategic plan a strategy to merge VHCURES claims with the exchange's clinical data. Vermont's 2022 HIE Plan introduced the term for the exchange's "second generation": the network VITL operates, extended beyond sending clinical records into a broader set of data types and services. The HIE Strategic Plan update of November 2024 still listed "VITL to be operator of Unified Health Data Space (data warehouse)" as a goal. In AHS's January 2026 report, the UHDS has become something different: a single, secure, identified dataset that links claims, clinical, and social-needs data, built on the State's own MDWAS and scaled outward from Medicaid.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**   **Role**                                  **Recommended credential**                                      **Key deliverables**                                                                 **Reports to**
+  ------------ ----------------------------------------- --------------------------------------------------------------- ------------------------------------------------------------------------------------ ----------------------------------------------------------------
+  Policy       Policy Transformation Program Manager     PMP + health-policy experience; PMI-ACP for agile rulemaking    RBP methodology (FY2027); Strategic Plan (Jan 2028); monthly Act 68 compliance       Portfolio Manager + AHS Secretary
 
-That shift --- from an exchange-operated ecosystem to a State-run integrated dataset, with the exchange as a principal source --- is the most consequential decision in Vermont's health data strategy. It is, on balance, the right one: the reform's analytic core should sit on infrastructure the State controls. But it has not been presented as a decision. It should be stated, governed, and funded as one, so that every party --- VITL included --- knows its role.
+  Technology   Health IT Program Manager                 PMP + health informatics; PMI-ACP                               Analytics vendor operational (Jan 2027); CIN Phase 1 (FY2028); FHIR certified        Portfolio Manager + AHS technology lead
 
-### 15.4.3 **What AHS reported in January 2026**
+  Economics    Payment Reform Program Manager            PMP + healthcare finance; actuarial/financial-modeling skills   RBP rates in effect (FY2028); non-CAH global budgets (FY2028); EAST Fund closeout    Portfolio Manager + GMCB Executive Director
 
-AHS's report, prepared by its Health Data Officer, made the case for integration and set out a plan:
+  Clinical     Clinical Transformation Program Manager   PMP + clinical background (RN/LCSW); CoCM preferred             100% PCMH (FY2028); fifth new CCBHC certified; CoCM 80%+ (FY2028)                    Portfolio Manager + Blueprint Director + DVHA Medical Director
 
--   **Benefits.** A clearer picture of how Vermonters use the system; the ability to see gaps and which interventions work; more reliable and less costly quality measurement.
+  Operations   Hospital Transformation Program Manager   PMP + hospital-operations/turnaround experience                 14 plans implemented; HSA coordinators staffed (FY2027); PMO operational (Q2 2027)   Portfolio Manager + AHS Secretary
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--   **Phase 1: Medicaid.** A rolling go-live of linked Medicaid claims, clinical, and social-needs data in MDWAS from November 2025, with full functionality by the end of January 2026. AHS describes it as the pilot for a multi-payer UHDS.
+*Figure 15.4 --- Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance structure; Vermont RHT Program organizational design.*
 
--   **Phase 2: multi-payer, 2028--2029.** Medicare claims, statewide clinical data, and other statewide datasets.
+## 15.6 **Governance Architecture and the Ten Knowledge Areas**
 
--   **Phase 3: commercial claims, 2029--2030.**
+PMI defines three governance tiers: the Portfolio Governance Body (strategic oversight --- for Vermont, the AHS Secretary + HCAC + GMCB), the Portfolio Management Office (operational coordination --- currently the under-resourced AHS Health Reform Office), and the component level (individual programs and projects). The PMO establishment must fill the gaps: a dedicated Portfolio Manager (PfMP), 2 PMO analysts, portfolio-management software, standardized reporting, five pillar Program Managers, and formalized project leads for all 19 components.
 
--   **Privacy.** Opt-out consent for general medical information; granular opt-in for substance-use-disorder records protected by 42 CFR Part 2 and other highly sensitive data; role-based access; audit trails. The UHDS will be an identified dataset.
+Mapping the ten knowledge areas of the PMBOK Guide's sixth edition (2017) to Vermont's situation reveals a consistent gap (Figure 15.5): the book addresses each area analytically, but Vermont lacks the operational infrastructure to manage it. The 2025 eighth edition reorganizes the same ground into principles and performance domains; the ten areas remain the clearest checklist of what a PMO has to run.
 
--   **Measures.** Match rates, data-quality scores, latency, number of approved uses, user satisfaction, reduction in redundant data pulls and provider reporting burden, and access indicators stratified by geography and social risk --- to be reported at least annually.
+  --------------------------------------------------------------------------------------------------------------------------------------------------
+  **Knowledge area**   **Vermont's operational gap**
+  -------------------- -----------------------------------------------------------------------------------------------------------------------------
+  **Integration**      The dependency map, execution sequence, and scorecard exist analytically; operational integration does not yet exist.
 
-### 15.4.4 **The architecture the reform needs**
+  **Scope**            No formal work-breakdown structure for any pillar.
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Layer**                         **What it does**                                                                               **Who runs it today**                               **What the State must own**
-  --------------------------------- ---------------------------------------------------------------------------------------------- --------------------------------------------------- --------------------------------------------------------------------------
-  **Identity and standards**        One identity per Vermonter across sources; common clinical vocabularies; consent flags         VITL (master patient index, terminology services)   The identity index and consent records must be portable to any successor
+  **Schedule**         Statutory deadlines tracked in isolation, not as an integrated master schedule.
 
-  **Exchange**                      Moves clinical data between providers; event notifications; clinician portal                   VITL, as designated operator                        Performance terms by provider type, published
+  **Cost**             RHT spending tracked for federal compliance, not portfolio performance.
 
-  **Integrated analytic dataset**   Links clinical, claims, and social-needs data for approved uses                                DVHA, on MDWAS (Medicaid today)                     The dataset, its governance, and the pipeline for every payer
+  **Quality**          Measured program by program, with no portfolio aggregation.
 
-  **Use and access**                Dashboards, extracts, and analyses for regulators, providers, public health, and researchers   Separate tools at AHS, GMCB, VDH, the Blueprint     A catalogue of approved uses and who may see what
+  **Resource**         AHS staff overcommitted, with no formal resource leveling.
 
-  **Governance**                    Decides which data may be integrated and for which uses                                        HIE Steering Committee (§ 9353 vote)                Published decisions, owners, and privacy assessments for each use
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Communications**   Reporting runs component by component; no portfolio-level communications strategy.
 
-*Figure 15.3 --- The layers of a working UHDS. Sources: 18 V.S.A. §§ 9351--9353; VITL 2021 Annual Report (Jan. 14, 2022); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026).*
+  **Risk**             Analyzed in this book but not managed operationally through a maintained register.
 
-What national health-data organizations call a "health data utility" is this whole stack treated as public infrastructure: governed in the open, funded for the long term, and serving every legitimate user. Vermont has most of the components. It has not yet decided to run them as one utility.
+  **Procurement**      Contracts --- analytics, technical assistance --- are let one component at a time; no portfolio-level procurement strategy.
 
-## 15.5 **Seven Problems the Plan Does Not Yet Solve**
+  **Stakeholder**      Hospitals, GMCB, HCAC, the Legislature and CMS are engaged component by component; no portfolio-level stakeholder strategy.
+  --------------------------------------------------------------------------------------------------------------------------------------------------
 
-**1. The commercial data gap.** The version of Section 10 that passed the Senate required health insurers to "provide clinical and claims data to the Agency of Human Services as directed by the Agency." That sentence is not in the enacted law. AHS has no statutory power to require commercial insurers to send it data for the UHDS. Commercial claims exist in VHCURES, the all-payer claims database, but VHCURES is run by the GMCB under its own statutory use restrictions --- which AHS's plan says the UHDS must respect --- and holds only about 60% of commercial claims, because self-insured employer plans cannot be compelled to report (Chapter 4). That is why commercial data comes last. It is also why Vermont will regulate commercial prices and hospital budgets from FY2028 before its integrated data can see commercial patients.
+*Figure 15.5 --- The ten PMI knowledge areas against Vermont's operational capacity. Sources: PMBOK Guide, 6th ed. (2017); AHS Transformation Reports (2025--2026); HTR analysis.*
 
-**2. The money.** Medicaid development work is funded about 90% federally; work serving non-Medicaid populations entirely is funded by the State alone. The Medicaid phase rides on federal money. The multi-payer and commercial phases --- the phases price and budget regulation need --- are largely Vermont's to pay for, and no funding source for them has been named.
+## 15.7 **Portfolio Sequence Is Dependency Sequence**
 
-**3. The rationale for Phase 2 has gone.** AHS's implementation framework justified scaling to Medicare in order to meet the AHEAD model's requirements. Vermont withdrew from AHEAD in July 2026. The phasing should now be re-decided on the reform's needs, and those point to commercial claims and hospital data first, because that is what reference-based pricing and global budgets regulate.
+The nineteen components are not a flat list of work to be scheduled by deadline and resource availability. They inherit an order from the dependency structure established in Chapter 1, and a portfolio manager who schedules them by statutory date alone will produce exactly the failures that chapter documents.
 
-**4. Who decides.** As of January 2025 the committee whose vote unlocks integration was chaired by AHS --- the agency that proposes the uses --- with ten voting members: AHS, Blue Cross Blue Shield of Vermont, the hospital association, Bi-State Primary Care, the Department of Health, Vermont Care Partners, OneCare Vermont, a long-term-care advocate, a person advocate, and a practice-innovation lead. The GMCB, VITL, the Agency of Digital Services, the Health Care Advocate, and the health-equity and privacy experts sat as non-voting members. Legislation in 2025 has since required a GMCB representative to be a voting member (18 V.S.A. § 9351(a)(3)(D)). OneCare, which wound down at the end of 2025, held a voting seat. The majority-of-all-members rule was proposed by AHS, the GMCB, and the Health Care Advocate in consensus testimony on the bill. It is a sound protection, and it means that empty seats count as "no."
+Read Figure 15.3 by its first column and the point is immediate: the components are already grouped by pillar. What the PMI framing adds is that each pillar's components carry the *inbound dependencies of that pillar*. The Economics components --- RBP implementation, global-budget implementation, RHT Program deployment --- cannot be productively worked before the Technology components that make them measurable; only their design runs in parallel (Economics-as-design, Section 1.11.2). That is not a scheduling preference. It is the same critical-path constraint that produced the OneCare failure in Section 1.2, restated in portfolio terms.
 
-**5. What will be integrated first.** Act 68 does not say which uses come first; the committee will. Without a published priority list, the first votes in 2027 will be shaped by whichever proposals are ready, not by which uses the reform most needs.
+This gives the portfolio manager a decision rule that a Gantt chart does not:
 
-**6. "Unified" in name only.** Integrated data is being built in several places at once. The GMCB runs VHCURES with its own vendor. The Department of Health keeps registries of its own. In February 2025 the designated mental-health and specialized service agencies contributed no data feeds to the exchange --- twelve accessed data --- even though the November 2024 strategic plan update had reported the goal of connecting them complete; nursing homes and commercial payers contributed none either. And the State's Rural Health Transformation plan allocated about \$38 million to six data-related activities --- a shared electronic health record built on the exchange (\$17.25 million), transformation analytics (\$15 million), a statewide data platform modernization (\$2.6 million), e-Consult (\$1.55 million), primary care quality-measurement and analytics tools (\$1.16 million), and closed-loop referral (\$0.46 million) --- none of which the plan names as part of the UHDS or routes through the § 9353 process. Each may be sound. Together they risk building a second and third data infrastructure beside the one the law requires.
+**A component whose upstream pillar gate is still closed is not "behind schedule." It is correctly waiting.** Accelerating it consumes budget and political capital to produce output nobody can use. The AHS-GMCB analytics deployment is the clearest case --- it carries the register's highest delivery-risk score (R-01, 20, tied only with the governance risk R-10) precisely because three downstream components converge on it, not because its own deadline is nearest.
 
-**7. Concentration risk.** Consolidation is the point of the UHDS, and it also enlarges the consequence of failure. When ransomware took down the UVM Medical Center's systems on October 28, 2020, restoring access to electronic records took almost a month. That was one health system. A failure of a statewide data utility would reach every provider, payer, and patient it serves at once. Recovery-time and recovery-point targets, a tested annual failover, and cyber insurance sized to statewide impact belong in the program from the start, not after the first incident.
+The inverse rule matters as much. **A component with no unmet upstream dependency should be running now, regardless of how distant its own deadline is.** Social-risk-adjustment methodology (R-08) has a FY2028 target and no upstream blocker; it can and should proceed in parallel today. Treating it as a FY2028 problem because that is when it is due is the scheduling error that leaves equity work perpetually late.
 
-## 15.6 **The Organization and People the UHDS Needs**
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **THE PORTFOLIO MANAGER'S SEQUENCING TEST**                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                        |
+| For each component, in order:                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                        |
+| 1.  **Which pillar does it belong to?** (Figure 15.3, column one.)                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                        |
+| 2.  **Is that pillar's upstream gate open?** (Section 1.4's gate definition: open means the enabling work is finished, not that a milestone was declared. Design work, and care-model work that produces value on its own, does not wait: Section 1.11.2, Figure 1.8.) |
+|                                                                                                                                                                                                                                                                        |
+| 3.  **If closed --- what is the gating component, and is it resourced?** That component, not this one, is where the schedule pressure belongs.                                                                                                                         |
+|                                                                                                                                                                                                                                                                        |
+| 4.  **If open --- is this component running?** If not, it is late by dependency order even when it is early by calendar.                                                                                                                                               |
+|                                                                                                                                                                                                                                                                        |
+| Applied across all nineteen, this test produces the portfolio's true critical path, which will not match the order of statutory deadlines.                                                                                                                             |
++========================================================================================================================================================================================================================================================================+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The UHDS will not fail for lack of technology; Vermont has most of the components. It will fail, if it fails, for lack of an owner: a standing team with the authority, skills, and continuity to run it as a permanent public utility rather than a sequence of projects.
+## 15.8 **Predictive vs. Adaptive Approaches**
 
-### 15.6.1 **Who should own it**
+Not all 19 components should be managed identically. Predictive (waterfall) management fits components with fixed statutory deadlines and well-defined deliverables: RBP-methodology rulemaking, the Strategic Plan (with adaptive elements), analytics-vendor deployment, CCBHC certification, and AHS restructuring. Adaptive (agile) management fits components where requirements evolve and rapid learning beats adherence to a fixed plan: the statewide AI-governance framework (regulatory landscape evolving faster than any fixed plan), the CIN build-out (architecture depends on vendor outputs and the FHIR ecosystem), Blueprint PCMH expansion (practice-by-practice iteration), and HEROI methodology (iterating as data quality improves). The 14-hospital planning effort is hybrid --- fixed deliverables, hospital-specific iterative content. PMP credentials map to the predictive components; PMI-ACP to the adaptive ones.
 
-The law has already answered this. Section 9353 assigns the UHDS's development to AHS. Section 9351 gives DVHA the statewide HIT Plan, and since Act 62 of 2025 DVHA --- not the GMCB --- holds the State's main oversight of the exchange's plan and budget. Under 3 V.S.A. § 3027, the Director of Health Care Reform coordinates reform across the executive branch. And because the exchange and MDWAS are certified parts of the Medicaid enterprise, it is the Medicaid agency that answers to CMS for their performance and federal funding.
+## 15.9 **The Portfolio Risk Register**
 
-The Agency of Digital Services has a defined and necessary role: it approves executive-branch IT activities, commissions independent reviews of projects of \$1 million or more, and sets architecture and security standards (3 V.S.A. §§ 3301--3303). That is a review and standards role, mandatory and valuable. It is not the same as owning the program's outcomes, and the UHDS should not wait for ADS to drive it.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **ID**   **Risk**                                                                                                                      **Pillars**    **Prob.**   **Impact**   **Score**   **Response**                                                                                                         **Owner**
+  -------- ----------------------------------------------------------------------------------------------------------------------------- -------------- ----------- ------------ ----------- -------------------------------------------------------------------------------------------------------------------- -------------------------------
+  R-01     Analytics vendor not operational by Jan 2027; hospitals enter Act 68 global budgets without financial-management capability   Tech, Econ     High        Critical     20          Accelerate: parallel VHCURES direct-access; HCC gap closure as compensating investment                               Tech PM + Portfolio Mgr
 
-The Legislature has also shown that it will staff AHS to deliver reform directly. In February 2026 the Joint Fiscal Committee accepted the Rural Health Transformation grant, and in April it received AHS's request for twelve limited-service positions funded through September 30, 2031 --- among them a DVHA Health Care Project Director "responsible for overseeing the management and execution of RHT Technology and Shared Services Grants." By July 2026 AHS reported eighteen RHT positions filled and five in recruitment. None of those positions is a UHDS program role. The precedent exists; the UHDS needs the same treatment.
+  R-02     RBP methodology hollowed by regulatory process; no meaningful repricing                                                       Policy, Econ   Medium      Critical     15          Mitigate: hospital data submission; equity review embedded; HCAC oversight                                           Policy PM + GMCB
 
-### 15.6.2 **The UHDS program office**
+  R-03     AHS overcommitment produces a descriptive (non-binding) Jan 2028 Strategic Plan                                               Ops, Policy    High        High         16          Mitigate: PMO by Q2 2027; resource-conflict authority; external plan support                                         Ops PM + Portfolio Mgr
 
-HTR recommends a UHDS program office inside AHS, led from the Office of Health Care Reform with DVHA, staffed as follows:
+  R-04     2026 governor committed to Act 68 modification; mandatory architecture at risk                                                Policy         Low--Med    Critical     12.5        Accept + monitor: build irreversibility; document progress; legislative relationships                                Portfolio Mgr + AHS Secretary
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Role**                                      **What it is accountable for**
-  --------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **UHDS program director**                     One accountable executive for the whole stack --- exchange contract, integrated dataset, governance, funding --- with authority to decide and a direct line to the Secretary
+  R-05     H.R. 1 Medicaid cuts constrain Medicaid-funded Clinical investments; no EAST Fund backstop after the AHEAD withdrawal         Clin, Econ     Med--High   High         15          Mitigate: scenario plan for 30% reduction; alternative financing; prioritize ROI                                     Econ PM + DVHA
 
-  **Product owners, one per use domain**        Price and budget regulation (with the GMCB); quality and primary care (with the Blueprint); public health (with VDH); behavioral health (with DMH and the designated agencies). Each turns a domain's needs into use proposals and acceptance tests
+  R-06     VITL connectivity gaps persist; global-budget population-health management incomplete                                         Tech, Clin     High        High         16          Mitigate: CIN shared services for small providers; VITL as Blueprint condition                                       Tech PM
 
-  **Data architect and integration lead**       The design across exchange, MDWAS, VHCURES, and registries; the end of duplicate pipelines
+  R-07     RHRC engagement not replaced by adequate successor; planning loses momentum                                                   Ops            Med--High   High         15          Mitigate: PMO includes hospital-transformation PM; document RHRC lessons; CIN continuation                           Ops PM
 
-  **Data stewards, one per major source**       Completeness, quality, and matching for each source; the published data-quality score
+  R-08     Social-risk adjustment not adopted before FY2028 budgets; safety-net hospitals penalized                                      Econ           Medium      High         12          Accelerate: Economics PM leads SRA as co-equal to global-budget design; HCAC equity review required                  Econ PM + GMCB
 
-  **Privacy, consent, and legal lead**          Opt-out and Part 2 consent, data-use agreements, the privacy assessment attached to every use
+  R-09     Insufficient clinical-leader engagement; global budgets driven by administrators without clinical ownership                   Clinical       High        Medium       12          Mitigate: clinical advisory structure in HCAC; physician/nursing co-chairs; clinical KPIs in monthly reports         Clinical PM + HCAC
 
-  **Governance manager**                        Staffs the HIE Steering Committee; maintains the use catalogue; prepares each § 9353 proposal in writing
+  R-10     Portfolio-management infrastructure not established before 2027 deadlines; managed as a collection of projects                All            High        Critical     20          Avoid: Portfolio Manager in seat by Jan 2027; PMO operational by Q2 2027 (the primary motivation for this chapter)   AHS Secretary
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  **Vendor and contract manager**               Performance and portability terms with VITL and the MDWAS vendor; no change to scope or platform without State approval
+*Figure 15.6 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (4th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
 
-  **Security and continuity lead (with ADS)**   Recovery targets, failover tests, incident response, ADS standards
+Plotted by probability and impact (Figure 15.7), the register's shape is clearer than its rows: the two risks scored 20 share the critical corner, and one of them is the absence of the portfolio function itself. Social-risk adjustment (R-08) sits mid-map at 12 --- a reminder that a moderate score is not a licence to wait, since the sequencing test above says it should already be running.
 
-  **Federal funding lead**                      Advance planning documents, certification measures, and cost allocation --- keeping every eligible dollar of federal match
+![](media/image2.png){width="6.2in" height="4.189189632545932in"}
 
-  **Analytics and measurement lead**            The baseline and annual measures in Section 15.6.6; the evidence the reform is managed on
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*Figure 15.7 --- The portfolio risk register plotted by probability and impact; cell values are the register's own scores. Source: Figure 15.6.*
 
-*Figure 15.4 --- The UHDS program office: roles and accountabilities. HTR recommendation, built on 18 V.S.A. §§ 9351--9353, 3 V.S.A. §§ 3027, 3301--3303, and JFO #3276 (2026).*
+## 15.10 **Benefits Realization: Connecting the PMO to Act 167's Five Goals**
 
-### 15.6.3 **Decision rights**
+The Portfolio Manager's job is to ensure every component can trace its contribution to one or more of Act 167's five statutory goals, and that the portfolio as a whole produces the benefits that justify its cost.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Decision**                                                      **Decides**                                                 **Must be consulted**                  **Statute or instrument**
-  ----------------------------------------------------------------- ----------------------------------------------------------- -------------------------------------- ----------------------------
-  **Whether a data type may be integrated, and for which use**      HIE Steering Committee, by majority of all voting members   AHS (proposes), GMCB, privacy expert   18 V.S.A. § 9353
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Act 167 goal**                **Primary contributing components**                        **Measurement metric**                                         **2028 target**
+  ------------------------------- ---------------------------------------------------------- -------------------------------------------------------------- --------------------------------------------------------------------------------------------------
+  High-quality, accessible care   Blueprint PCMH; CCBHC; HEROI; CIN                          30-day BH follow-up; readmission; BIPOC access gap             90%+ BH follow-up; readmission \<12%; gap \<6 pts
 
-  **UHDS design, roadmap, and priorities**                          AHS (program director)                                      Steering Committee, GMCB, ADS          § 9353; § 3027
+  Financial sustainability        RBP; global budgets; HCC gap closure; PMO                  Operating margin; deficit trajectory; admin cost/discharge     No hospital in structural operating loss; deficit trajectory reversed; admin \<150% of benchmark
 
-  **IT project approval, independent review, security standards**   ADS                                                         AHS                                    3 V.S.A. §§ 3301--3303
+  Affordability                   RBP methodology; global budgets                            Commercial premium growth; TCOC benchmark                      Premium growth \<5%/yr; TCOC growth below CPI+1%
 
-  **Exchange plan, contract, and budget**                           DVHA                                                        Steering Committee, ADS                § 9351; Act 62 of 2025
+  Robust workforce                RHT workforce investments; AI-scribe grants                Primary-care FTE gap; vacancy rates; travel-nurse dependency   FTE gap \<200 (from 370); travel-nurse cost \<5% of labor
 
-  **Exchange operation within the contract**                        VITL                                                        DVHA                                   § 9352; contract
+  Health equity                   HEROI; HRSN screening; social-risk adjustment; SDOH data   BIPOC access; NEK uninsurance; HEDIS equity gaps               BIPOC access \>87%; NEK uninsurance \<5%; gaps documented and targeted
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  **Commercial claims access for approved uses**                    GMCB and AHS, by agreement                                  Insurers, Health Care Advocate         VHCURES statute and rules
+*Figure 15.8 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (4th ed.); Vermont Scorecard (Appendix E).*
 
-  **Federal funding and certification**                             DVHA, answering to CMS                                      ADS                                    Advance planning documents
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 15.11 **The Business Case**
 
-*Figure 15.5 --- Who decides what in the UHDS. Sources: statutes as cited; Act 62 of 2025.*
+The objection to building a PMO is always the same: we cannot afford it. The cost-benefit analysis in **Figure 15.9** answers that objection directly. A staffed PMO costs about \$0.85--1.3M a year --- \$4--6.4M over four to five years --- which is under 1% a year of the \$195M first-year RHT award it coordinates, before counting any savings from reference-based pricing.
 
-### 15.6.4 **Build with contractors; own with State staff**
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Investment**                     **Annual cost**    **Total (4--5 yr)**   **Benefit**
+  ---------------------------------- ------------------ --------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Portfolio Manager (PfMP, senior)   \$180K--\$220K     \~\$900K--\$1.1M      R-10 avoided; coordinates the \$195M first-year RHT award and the EAST Fund's wind-down after Vermont's AHEAD withdrawal; single accountability for Jan 2028
 
-No state builds infrastructure of this kind with permanent staff alone; the specialized build work goes to contractors. The failure mode is leaving it there. The model that works pairs a contracted build team --- architects, data engineers, security specialists --- with a permanent State team of product owners, data stewards, and governance staff, and moves ownership across in four deliberate stages: orientation, co-delivery, mentorship, and transition. Ownership moves when State staff have shown they can run each function, not on a calendar date. By the time the build contracts end, the State should be operating the UHDS, with contractors in support.
+  2 PMO Analysts                     \$120K--\$160K     \~\$480K--\$640K      Master schedule; risk register; stakeholder comms; dashboard
 
-### 15.6.5 **Continuity is infrastructure**
+  PPM software                       \$50K--\$100K      \~\$250K--\$500K      Real-time visibility; resource optimization; audit trail for Act 68
 
-The UHDS's history carries a plain lesson. The people who know a data system --- its interfaces, its matching rules, its consent logic, its vendor's habits --- are part of the infrastructure. When that team is reorganized away from the program, even temporarily, the cost is measured in months, and no plan records it. And a designated operator or vendor left without an active State owner will set its own roadmap, not out of bad faith but because someone has to.
+  Five pillar PMs (shared)           \$500K--\$850K     \~\$2.5M--\$4.2M      Pillar-level delivery accountability; critical-path management
 
-Three practices protect against both. First, keep the program team intact through reorganizations and give it a mandate that survives them. Second, assign a State product owner to every vendor workstream, and make no platform change without State approval through the contract and ADS review. Third, publish the roadmap the vendors' work is measured against, so that drift is visible to the Steering Committee and the Legislature as it happens, not a year later.
+  Total                              \~\$850K--\$1.3M   \~\$4M--\$6.4M        \<1% a year of the \$195M first-year RHT award it coordinates
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 15.6.6 **How to know it is working**
+*Figure 15.9 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Measure**                                     **Why it matters**                                 **Known value**                                                 **Target**
-  ----------------------------------------------- -------------------------------------------------- --------------------------------------------------------------- --------------------------------------------------------------------------
-  **Patient-match rate**                          Linkage is only as good as identity                \> 95% cohort match (2021)                                      ≥ 95%, reported by source
+The cost-benefit table omits the cost of failure. Without adequate PMO infrastructure, Vermont risks delivering the January 2028 plan as a descriptive document rather than a binding commitment --- the political-sustainability chapter's most dangerous failure mode. That is not a \$0 outcome. It is a multi-billion-dollar one: the continuation of the Oliver Wyman deficit trajectory, the failure of 13 of 14 hospitals to reach sustainability, and the loss of the political window that Vermont's mandatory architecture has opened.
 
-  **Sources contributing, by provider type**      The record is only as whole as its feeds           Designated agencies: 0 contributing, 12 accessing (Feb. 2025)   Contributing feeds from every provider type, within Part 2 consent rules
+## 15.12 **Implementation Roadmap**
 
-  **Payers in the integrated dataset**            Price regulation needs commercial data             Medicaid only (Jan. 2026)                                       Commercial claims before FY2028 prices take effect
+The roadmap is anchored to the one date that cannot move: the Statewide Strategic Plan, due January 15, 2028. AHS's March 2026 Act 68 report lists contracted transformation support (Manatt, Phelps & Phillips; a new hospital technical-assistance vendor; an analytics contract for regional planning still under negotiation) but describes no portfolio-management function. Figure 15.10 schedules the recommended build-out backward from that deadline and against the components it exists to sequence. A Portfolio Manager hired by January 2027 has nine months before FY2028 hospital budgets take effect in October 2027 --- enough only if the PMO is running before the Technology gate it is meant to protect.
 
-  **Approved uses published**                     Governance only counts if it decides               None possible before Jan. 1, 2027                               A public catalogue, with owner and privacy assessment for each
+![](media/image3.png){width="6.2in" height="4.411538713910761in"}
 
-  **Hybrid measures produced from linked data**   Replaces manual chart abstraction                  Not published                                                   Blueprint and Strategic Plan measures drawn from linked data
+*Figure 15.10 --- Implementation roadmap: the PMO build-out (top) scheduled against the gating components of Figure 15.3 (bottom); dashed bars mark design work permitted before the Technology gate opens. Sources: Figures 15.3 and 15.6; Act 68 of 2025; AHS Act 68 Transformation Report (March 2026).*
 
-  **Availability and data latency**               Clinical and public-health use is time-sensitive   Not published                                                   Published contractual targets, met
+From mid-2027 the PMO runs on a fixed cadence: monthly governance reviews, quarterly performance reviews against the Vermont Scorecard, and annual portfolio rebalancing. The January 2028 Strategic Plan should arrive with portfolio-management evidence --- benefits tracked, risks managed, resources deployed in dependency order --- after which the PMO carries the portfolio into the plan's three-year update cycle.
 
-  **Tested recovery**                             Concentration risk (Section 15.5)                  Not published                                                   Annual failover test, results published
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 15.13 **Answering the Five Objections**
 
-*Figure 15.6 --- UHDS performance measures. Sources: VITL 2021 Annual Report (Jan. 14, 2022); VITL (Feb. 4, 2025); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); 18 V.S.A. § 9353.*
+1.  "We already manage this --- we have the HCAC and monthly reports." The HCAC is a governance body, not a PMO; it provides oversight, not an integrated master schedule, resource-conflict resolution, a maintained risk register, or earned-value tracking. The monthly reports track activities, not performance metrics. The HCAC is the Portfolio Governance Body; it needs a Portfolio Manager and a PMO to give it the data it needs to govern.
 
-### 15.6.7 **What the January 2027 report should answer**
+2.  "This is government --- we don't run projects like the private sector." Vermont's transformation is a time-bounded, outcome-specified, heavily financed portfolio of interdependent programs with legally binding deadlines. The RHT Program is a federal grant with deliverables and reporting obligations; the withdrawn AHEAD State Agreement still carries federal closeout requirements; Act 68 is a statutory mandate with a January 2028 deliverable. Federal partners expect professional project management --- the GAO uses PMI's PMBOK as a reference standard.
 
-The annual reports § 9353 requires are the Legislature's main lever over the UHDS. The first, due January 15, 2027, should answer seven questions in plain terms:
+3.  "We can't afford a Portfolio Manager when we're cutting budgets." Vermont cannot afford not to have one. RHT funds are contingent on demonstrated progress; a portfolio that misses its components risks federal clawback. The \~\$4--6.4M cost is less than 2% of a single year of the value it protects, and the alternative is the multi-billion-dollar partial-transformation outcome.
 
-> **1.** **Which uses** will be put to the Steering Committee in 2027, in what order, and why --- each with its owner, purpose, privacy assessment, and data-use agreement.
->
-> **2.** **How commercial data will be obtained** --- through VHCURES under an agreement with the GMCB, through a restored insurer-reporting requirement, or both --- and when.
->
-> **3.** **How the multi-payer and commercial phases will be funded**, given that non-Medicaid work earns no federal match.
->
-> **4.** **What VITL's role is** in the State-run UHDS --- source, operator of components, or both --- and on what contract and portability terms.
->
-> **5.** **How the Steering Committee's voting membership** now stands and how vacancies will be filled.
->
-> **6.** **Who runs the program** --- the named owner, the program team, and how many of its positions are State staff rather than contractors.
->
-> **7.** **The baseline values** of the measures in Figure 15.6, so that progress can be tracked from a known starting point.
+4.  "The hospitals won't accept being managed by AHS." The Portfolio Manager does not manage the hospitals --- it manages AHS's contribution to the portfolio. Hospital plans are produced by hospitals, approved by AHS, and monitored through GMCB. The Portfolio Manager is Vermont's transformation orchestrator, not its controller.
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **BEYOND VERMONT**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Vermont has written into statute an integrated, governed, use-limited dataset joining clinical, claims, and social-needs data, with a public body that approves each use and an annual report to the Legislature. The pattern travels: put the analytic core on infrastructure the state controls; make every use of integrated data a public, recorded decision; give the price regulator the same data as the transformation agency; and staff the whole thing as a permanent utility with a named owner, not a project with an end date. |
-+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+5.  "AHS already has expert help --- consultants, a technical-assistance vendor, an analytics contractor." It does: AHS's March 2026 Act 68 report lists contracted transformation support from Manatt, Phelps & Phillips, a new hospital technical-assistance vendor, and analytics support under negotiation. But a contractor delivers a defined scope. It cannot hold a state component back until its upstream gate opens, reassign AHS staff between components, or answer to the Legislature for the portfolio as a whole. Contracted support adds capacity, not authority --- and every new contract is one more component, with its own deliverables and deadline, that someone has to sequence.
 
-## 15.7 **The Workstreams That Depend on It**
+## 15.14 **Work This Chapter on the Platform**
 
-### 15.7.1 **Hospital transformation and finances**
+A portfolio is easier to manage when you can see it. The [HTR platform](https://healthtransformationreview.org/research-lab) carries the tracking and diagnostic tools this chapter argues an AHS PMO would otherwise have to build from scratch.
 
-**The finances.** The GMCB's August 2026 staff analysis projected a system operating margin of −1.25% for FY2026 across the thirteen reporting hospitals. For FY2027, the Board cut commercial reimbursement rates 2.9% statewide and commercial net patient revenue 1.2%, with UVM Medical Center's commercial rates falling 4.4% --- while UVM Health's CEO told the Board the medical center expects to lose roughly \$75 million this year and at least as much next year.
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Do this**                                                                                              **On this tool**                                                                                            **What to look for**
+  -------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Run the sequencing test on Figure 15.3 --- or on your own register                                       **Portfolio Sequencing Test** --- /portfolio-sequencing-test                                                Which components are correctly waiting, which are late by dependency order, which are running ahead of a closed gate --- and the unfinished components where schedule pressure belongs.
 
-**The plans.** All fourteen hospitals submitted final transformation plans in spring 2026. All thirteen eligible hospitals applied for the \$2 million Act 68 grant program; by June 1, 2026, eleven had fully executed agreements. AHS's summary is that the plans reflect current initiatives and that it expects hospitals to add to them; in May 2026 the agency told VTDigger it could not yet total what they would save.
+  Identify which pillar is the binding constraint on the whole portfolio right now                         [**Transformation Friction Index**](https://healthtransformationreview.org/transformation-friction-index)   The tool finds this by sensitivity, not by the highest bar: the pillar whose improvement would lift delivered readiness most is where the portfolio manager's attention belongs --- not the component with the nearest deadline.
 
-**The new job.** Act 68 requires AHS to facilitate and supervise hospital collaboration so that it qualifies for state-action immunity under antitrust law, to report each hospital decision's effect on system costs and premiums, and to attribute savings to each inefficiency reduced. Those are a system manager's duties, and without integrated, multi-payer data they can only be estimated hospital by hospital.
+  Track the capital committed against each pillar and see where funding and dependency order disagree      [**Investment Tracker**](https://healthtransformationreview.org/investment-tracker)                         Components funded ahead of their upstream gate. Money moving faster than dependency order is the early signal of premature investment.
 
-### 15.7.2 **Price and budget regulation**
+  Watch the five-pillar status of a transformation move over time rather than at a single reporting date   [**HTI Dashboard**](https://healthtransformationreview.org/hti-dashboard)                                   Whether a pillar's status is improving, flat, or decaying between reporting intervals --- the trend a monthly report cannot show.
 
-The GMCB's February 2026 report documented commercial prices averaging roughly 250--300% of Medicare against a break-even near 136%, with outpatient imaging reaching 715--944% of Medicare at some hospitals. In FY2026 its regulatory actions removed \$230.65 million of commercial revenue: \$104.30 million from the Act 55 drug cap, \$94.58 million from budget orders, and \$31.76 million from enforcement. Reference-based prices take effect in hospital FY2028; global budgets follow as resources allow.
+  Test what happens to composite readiness when one component slips                                        [**HTR Simulator**](https://healthtransformationreview.org/htr-simulator)                                   Drop the Technology score and watch Economics and Clinical fall with it. This is the risk register's R-01 and R-06 in visual form.
 
-The execution risk sits between two agencies. A hospital that loses price must cut cost, and the cuts it chooses are transformation decisions AHS is supposed to shape. Unless the GMCB's budget orders and AHS's transformation plans are read side by side, hospital by hospital, on the same data, Vermont will regulate price in one building and redesign care in another. Payment reform also depends on federal approval: the Medicaid hospital global budget that began in January 2026 was halted in July 2026 after CMS found it unapproved under the Global Commitment demonstration.
+  Score the portfolio's five-pillar status the way an outside reviewer would                               **Transformation Scorecard** --- /research-lab/knowledge-workspace?tab=scorecard                            Divergence between the PMO's status reporting and the scorecard is itself a governance finding.
 
-### 15.7.3 **The Blueprint for Health**
+  Model what a single component slipping does to the rest of the portfolio                                 **Impact Simulation** --- /impact-simulation                                                                Which components have no slack: the ones whose slip moves other pillars' outcomes.
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The Blueprint is Vermont's primary care chassis, and its measures --- readmissions, avoidable ED visits, follow-up after behavioral-health crises --- are exactly what the UHDS should supply from linked data. As of November 15, 2025, 119 practices, 93% of the state's patient-centered medical homes, had signed on for the second year of the Mental Health Integration pilot, and 62.2 FTE of community health workers and mental-health and substance-use staff were providing care with that funding. The Blueprint's evaluations have estimated returns of about \$5.80 per \$1 (2008--2013 data) and \$3.00--\$3.80 per \$1 (2016).
+*Figure 15.11 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
-The execution problem is funding, not evidence. Medicare's share of Blueprint payments ended with OneCare in December 2025; the State proposed \$10.8 million in interim Global Commitment funding to cover it for 2026, and Mental Health Integration funding was extended for one year past the pilot. A primary care network financed one year at a time cannot recruit the staff the Strategic Plan will count on. Act 68's Steering Committee for Comprehensive Primary Health Care, convened by the Blueprint, is the forum for fixing that; the Strategic Plan is where the State should commit to a permanent source.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **TRY THIS --- Find your own portfolio's binding constraint.**                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Open the [**Transformation Friction Index**](https://healthtransformationreview.org/transformation-friction-index) and score your organization or state on each pillar. Then list your three most urgent initiatives by deadline. If none of them sits in the binding-constraint pillar the tool identifies, your portfolio is being scheduled by calendar rather than by dependency --- the failure this chapter is written to prevent. |
++==========================================================================================================================================================================================================================================================================================================================================================================================================================================+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-### 15.7.4 **The Rural Health Transformation Program**
+In the Academy: Track 8's lesson "Transformation as Portfolio Management" (/academy/tracks/five-pillars-one-imperative) introduces this chapter's argument, and the Portfolio Management for Healthcare Transformation course (/academy/tracks/transformation-portfolio-management) works it in full: fifteen lessons from defining the portfolio and staffing it to the risk register, benefits realization and the business case, ending with a capstone run on the platform's tools. The Transformation Leadership course (/academy/tracks/transformation-leadership) puts two of its techniques into practice in "Building the PMO" and "Running the Sequencing Test: A Portfolio Register Workshop."
 
-The RHT Program is the capital behind the redesign: \$195.1 million for federal FY2026 and \$190.0 million for FY2027. By the State's October 30, 2026 list, Vermont had executed 242 grant and contract agreements worth \$182.2 million:
+## 15.15 **Implications for You**
 
-  ----------------------------------------------------------------------------------------------
-  **Initiative**                                         **Executed agreements**   **Amount**
-  ------------------------------------------------------ ------------------------- -------------
-  **Regionalization and Innovative Care Strategies**     103                       \$87.5M
+**If you are an AHS or state agency leader:** the argument of this chapter is not that Vermont needs more oversight --- it has the HCAC, monthly legislative reporting, and federal review. It needs an *integrator*: one role accountable for the portfolio as a whole, with authority to resolve resource conflicts between components that today are managed by different units against different deadlines. The single most consequential decision is not whether to hire a Portfolio Manager but whether that role is given authority over sequencing. A PMO that reports status without the power to hold a component back until its upstream gate opens will document the cascade rather than prevent it.
 
-  **Clinically Integrated Network of Shared Services**   59                        \$33.9M
+**If you lead a hospital PMO or transformation office:** Figure 15.3 is a template, not a Vermont artifact. Build the same inventory for your own organization --- every initiative touching the five pillars, each assigned a pillar, an owner, a type, and a stage gate. Most organizations discover in that exercise that they are running more simultaneous transformation components than they had counted, that several have no named owner, and that two or three are downstream of a gate nobody is tracking. Then apply the sequencing test above: the components correctly waiting are not your problem; the ones running ahead of their dependencies are.
 
-  **Strengthening Primary Care**                         55                        \$29.8M
+**If you are a legislator or board member:** the oversight question that separates a real portfolio from a reporting exercise is short. *Which component is currently the binding constraint on all the others, who owns it, and what would it take to accelerate it?* An organization managing a genuine portfolio can answer in one sentence. An organization managing a list will answer with a status summary of all nineteen.
 
-  **Health Care Workforce Development**                  21                        \$26.7M
+**If you are in another state:** the portfolio does not have to be nineteen components or built on PMI's standard specifically. What transfers is the discipline of defining the portfolio at all --- naming every component, assigning each to a pillar and an owner, and scheduling by dependency rather than by deadline. States that skip this step do not avoid portfolio management; they do it implicitly, badly, and without anyone accountable for the result.
 
-  **Price Transparency and Insurance Competition**       2                         \$3.1M
-  ----------------------------------------------------------------------------------------------
+## 15.16 **Key Concepts in This Chapter**
 
-*Figure 15.7 --- Vermont RHT Year 1 executed agreements by initiative. Source: State of Vermont RHT recipient list (Oct. 30, 2026); HTR RHT Year 1 Review.*
+Portfolio · Portfolio Manager · Portfolio Management Professional (PfMP) · PMP · PMI-ACP · benefits-realization management · portfolio risk register · earned value management (EVM) · integrated master schedule · Portfolio Governance Body --- all as defined by the PMI Standard for Portfolio Management (4th ed.) and the PMBOK Guide (6th and 7th eds.), applied to Vermont's 19-component transformation portfolio measured against Act 167's five goals.
 
-Specific purchases include AI-scribe grants (\$5.2 million), remote patient monitoring (\$1.8 million), provider telehealth (\$9.7 million), e-Consult (\$5.6 million), community paramedicine (\$5.2 million), shared electronic health record adoption (\$8.0 million), and a \$15 million transformation-analytics contract. CMS counted \$28.4 million as put to work by July 31, 2026.
-
-The test is not whether the money is spent but whether each agreement is tied to a transformation-plan goal and measured --- and measurement depends on the UHDS. The RHT program is also the obvious, time-limited source for the one-time work the UHDS's non-Medicaid phases need and federal Medicaid match will not pay for: connecting the designated agencies as contributors, building the commercial-data pipeline, and folding the RHT-funded data projects (Section 15.5, problem 6) into one architecture.
-
-## 15.8 **Living With a Designated Exchange Operator**
-
-**What the law says.** Section 9352 requires that VITL "be designated in the Health Information Technology Plan to operate the exclusive statewide health information exchange network for this State," while providing that nothing in the chapter "shall impede local community providers from the exchange of electronic medical data." VITL operates under a sole-source contract administered by AHS. Since Act 62 of 2025, the GMCB no longer reviews VITL's budget; DVHA does.
-
-**Where the risks are.** One designated operator is one point of failure, and the designation limits the State's leverage at renewal. The State's move of the analytic core onto MDWAS (Section 15.4.2) reduces that dependence; it does not remove it, because the exchange remains the principal source of clinical data.
-
-**What a mature owner does.** Write completeness, timeliness, and matching-accuracy targets into the contract by provider type and publish the results; guarantee that the data, the patient index, and consent records can transfer to a successor; keep the State-controlled ingestion path that MDWAS now provides (Chapter 4); require State approval for any change to the platform or its roadmap; and fund the designated agencies' connections as data contributors within 42 CFR Part 2's consent rules.
-
-## 15.9 **The Pressures Around the Reform**
-
-Three forces outside Act 68 will shape how much of it can be delivered:
-
--   **Insurer solvency.** AHS's January 2026 report opens by noting that Vermont's largest domestic insurer faces financial challenges. Act 49 of 2025 allows the GMCB to reduce hospital rates when an insurer's solvency is threatened, and Act 68 required the Department of Financial Regulation to propose a plan for domestic-insurer sustainability by November 1, 2025. Hospital price cuts and insurer solvency are now one problem.
-
--   **Federal Medicaid reductions.** H.R. 1's work requirements and six-month redeterminations begin January 1, 2027, and most of its Medicaid reductions fall after the RHT program ends.
-
--   **The federal relationship.** With the AHEAD withdrawal in July 2026, the halted Medicaid hospital global budget, and the Global Commitment demonstration expiring December 31, 2027, Vermont's federal terms for payment reform are being renegotiated while the reform is being executed.
-
-## 15.10 **The People Across the Reform**
-
-AHS's Act 119 review --- over 325 participants plus about 950 comments and survey responses --- described an agency of six departments, roughly 4,000 staff, and a multibillion-dollar budget, and named its own constraints: unclear decision-making authority and accountability; chronic staffing shortages; fragmented technology; and the reality that "only a limited number of issues can reach the executive level at any time." Act 68 added a statewide plan, monthly reporting, antitrust supervision, a grant program, and the UHDS to that agency; the RHT program added 242 agreements to manage. The UHDS report itself took 112 staff hours from an Office of Health Care Reform whose Health Data Officer also chairs the Steering Committee.
-
-Beyond the UHDS program office (Section 15.6), four practices follow, none of which needs new law:
-
--   **One named owner per workstream** --- hospital transformation, the Blueprint's financing, and RHT --- each with authority to decide.
-
--   **A joint AHS--GMCB annual review**, hospital by hospital, of budget orders beside transformation plans, using the same data.
-
--   **Use the regional workforce Vermont already has.** The Blueprint's quality-improvement facilitators and Community Health Team leads already work in every Hospital Service Area.
-
--   **Protect executive attention** with a written rule for which decisions must reach the Secretary, and how fast.
-
-## 15.11 **A Vermont Delivery Compact**
-
-HTR proposes a **Vermont Delivery Compact** among AHS, the GMCB, the Blueprint, and VITL, renewed with each Strategic Plan:
-
-> **1.** **One integrated roadmap** showing the dates in Figure 15.1 and the work that serves them, with the UHDS phases set against the GMCB's price and budget dates.
->
-> **2.** **A funded UHDS program office** (Figure 15.4) with a named owner and a published staffing plan.
->
-> **3.** **A published UHDS use catalogue**: every proposed use of integrated data, its owner, purpose, privacy assessment, and the Steering Committee's decision.
->
-> **4.** **A commercial-data agreement** between AHS and the GMCB that makes VHCURES data available to approved UHDS uses, and a recommendation to the Legislature on restoring an insurer-reporting requirement.
->
-> **5.** **One data architecture**: every State-funded data project, including those paid for by RHT, mapped to a layer in Figure 15.3.
->
-> **6.** **One public dashboard** joining hospital finances, transformation-plan progress, RHT spending against results, Blueprint financing, and the measures in Figure 15.6.
->
-> **7.** **Published exchange performance and portability terms.**
-
-Each item builds on an obligation already in Vermont law.
-
-## 15.12 **Work This Chapter on the Platform**
-
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Do this**                                 **On this page**       **What to look for**
-  ------------------------------------------- ---------------------- -----------------------------------------------------------------------------------------------------------------
-  **Trace the UHDS from statute to phases**   /vermont-uhds          The § 9353 gate, the MDWAS-first phasing, and the commercial-data timing
-
-  **Check RHT spending by initiative**        /rht-review/vermont    Executed agreements by initiative, and planned activities with no agreement yet
-
-  **Read the Act 68 obligations**             /vermont-act-68        The reference-based pricing, global-budget, and Strategic Plan dates in Figure 15.1
-
-  **See what the Blueprint runs**             /vermont-blueprint     The medical-home, Community Health Team, and Mental Health Integration programs that linked data should measure
-
-  **Follow Vermont's RHT program**            /vermont-rht-program   The shared-EMR and e-Consult projects that build on the exchange
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-*Figure 15.8 --- Platform pages for Chapter 15.*
-
-## 15.13 **Implications for You**
-
-**If you lead at AHS:** Name the UHDS program director and fund the office in Figure 15.4 before the first § 9353 vote, and publish the 2027 use priorities now.
-
-**If you sit on the HIE Steering Committee:** Confirm the voting membership and how vacancies are filled before the first vote, and ask for every proposal in writing with an owner and a privacy assessment.
-
-**If you lead at the GMCB:** Say which integrated-data uses your price and budget regulation needs before 2029, and agree the VHCURES terms that make them possible.
-
-**If you lead a hospital or designated agency:** Tie every RHT dollar to a line in your transformation plan, and ask what it would take to send data to the exchange, not only receive it.
-
-**If you are a legislator:** Use the January 15, 2027 UHDS report to ask the seven questions in Section 15.6.7, and decide whether AHS needs the insurer-reporting authority the Senate once gave it.
-
-**If you are in another state:** Map decision rights from your own statutes, put the analytic core on infrastructure the state controls, and staff it as a utility with a named owner.
-
-## 15.14 **Key Concepts in This Chapter**
-
-Unified Health Data Space (UHDS) · § 9353 data gate · commercial data gap · health data utility · UHDS program office · designated exchange operator · concentration risk · build-with-contractors, own-with-staff · state-action supervision · Vermont Delivery Compact.
-
-*Sources: Act 68 of 2025; Act 167 of 2022; Act 62 of 2025; Act 49 of 2025; Act 73 of 2017; Act 53 of 2019; 3 V.S.A. §§ 3027, 3301--3303; 18 V.S.A. §§ 1129, 9351--9353, 9403, 9403a; S.126 as passed by the Senate, and AHS--GMCB--HCA consensus testimony on Sec. 10 (Apr. 24, 2025); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); Vermont HIE Plan 2022; HIE Strategic Plan 2024 Update (Nov. 18, 2024); AHS, Health Information Technology Overview (Senate Health and Welfare, Jan. 23, 2025); VITL 2021 Annual Report (Jan. 14, 2022); VITL (Feb. 4, 2025); Evaluation of Vermont Health Information Technology Activities (2018); Joint Fiscal Office, JFO #3272 and #3276 (2026); AHS RHT update to the Joint Fiscal Committee (July 29, 2026); Legislative JFO, RHT projects by department (Feb. 6, 2026); VTDigger (Nov. 23, 2020; May 21, 2026); Oliver Wyman, Act 167 Recommendations (2024--2025); GMCB, Act 68 Update (Feb. 17, 2026); GMCB FY27 hospital budget decisions (Sept. 2026) and staff overview (Aug. 2026); AHS Act 68 System Transformation Reports (2025--2026); 2026 Annual Report on the Blueprint for Health; State of Vermont RHT recipient list (Oct. 30, 2026); AHS Act 119 Report (Nov. 1, 2025).*
+*Sources: PMI Standard for Portfolio Management, 4th ed. (2017); PMBOK Guide, 6th ed. (2017), 7th ed. (2021) and 8th ed. (2025); PMI Standard for Program Management, 4th ed. (2017); PMI Agile Practice Guide (2017); PMI Pulse of the Profession 2017; PMI-ACP and PfMP Examination Content Outlines (2023); GAO Schedule Assessment Guide (2016); Vermont Act 68 of 2025; Act 167 of 2022; Oliver Wyman Act 167 Recommendations (August 2024); AHS Transformation Reports (August, November 2025); Vermont RHT Program Application (November 2025); AHS Hospital Transformation Analytical Support RFP (2025); AHS Act 68 Health Care System Transformation Report (March 2026).*
 
 # **Chapter 16: The AHS Restructuring Roadmap --- A Five-Pillar Framework for System Architects**
 
@@ -6370,21 +6293,19 @@ The plan is not AHS's alone to write. Act 68 created an 18-member Health Care De
 
 Oliver Wyman's recommendations point directly at AHS's own organization: review the agency structure for overlaps, align its agencies with Hospital Service Areas, integrate its subunits, and fund the staff that AHS and GMCB lack for transformation work --- paired with a new GMCB Division of Planning and Effectiveness to assist AHS's calculations. Not because AHS lacks capable people, but because it was designed for a different era and a different role. The current model is organized around funding streams and program types --- Medicaid, mental health, substance use, aging, developmental services, Blueprint, health care reform --- rather than around the populations served or the communities they live in. That made sense when AHS's job was administering categorical benefit programs. It does not make sense for an organization whose job is now managing the transformation of an interconnected delivery system that serves everyone in Vermont, all at once.
 
-### 16.2.1 **The Five Structural Gaps**
+### 16.2.1 **The Four Structural Gaps**
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Gap**                                          **What it looks like in practice**                                                                                                                                                                                                                                                                                                                                    **Consequence**                                                                                                                                                      **Required structural change**
-  ------------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Program-silo structure misaligned with HSAs      A Northeast Kingdom hospital addressing housing, transportation, BH, and primary-care gaps must work with separate AHS departments and offices (DVHA, DMH, DAIL, DCF, the Office of Health Care Reform) --- and, for anything involving technology, the Agency of Digital Services, a separate agency --- each with different requirements and funding authorities.   Hospitals experience AHS as disconnected programs. Population health management --- which crosses program boundaries --- becomes administratively near-impossible.   Designate HSA-level coordinators who convene all relevant AHS programs around each hospital's service area; establish HSA governance with regular inter-program coordination.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Gap**                                          **What it looks like in practice**                                                                                                                                                                                                                       **Consequence**                                                                                                                                                      **Required structural change**
+  ------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Program-silo structure misaligned with HSAs      A Northeast Kingdom hospital addressing housing, transportation, BH, and primary-care gaps must work with separate AHS programs (DVHA, DMH, ADS, DAIL, Health Care Reform), each with different requirements and funding authorities.                    Hospitals experience AHS as disconnected programs. Population health management --- which crosses program boundaries --- becomes administratively near-impossible.   Designate HSA-level coordinators who convene all relevant AHS programs around each hospital's service area; establish HSA governance with regular inter-program coordination.
 
-  Absence of a Planning & Effectiveness function   AHS has no dedicated analytical unit to model the cost/access impact of service-site changes, the system-wide cost of regionalization scenarios, or whether investments produce intended outcomes.                                                                                                                                                                    AHS cannot answer the questions transformation planning is supposed to generate. Strategic planning becomes opinion-based, not evidence-based.                       Build AHS's planning function jointly with the Division of Planning and Effectiveness Oliver Wyman recommended at GMCB; share a joint analytics platform; integrate VHCURES access for planning.
+  Absence of a Planning & Effectiveness function   AHS has no dedicated analytical unit to model the cost/access impact of service-site changes, the system-wide cost of regionalization scenarios, or whether investments produce intended outcomes.                                                       AHS cannot answer the questions transformation planning is supposed to generate. Strategic planning becomes opinion-based, not evidence-based.                       Build AHS's planning function jointly with the Division of Planning and Effectiveness Oliver Wyman recommended at GMCB; share a joint analytics platform; integrate VHCURES access for planning.
 
-  Under-resourcing of transformation management    AHS must simultaneously wind down AHEAD, manage 14 hospital plans, develop the Strategic Plan, oversee \$195M RHT, coordinate RBP/global budgets with GMCB, and report monthly. The Health Care Reform Office has neither the staff nor the authority.                                                                                                                Activities are sequenced by capacity, not strategy. The absence of PM infrastructure is the single most likely cause of plan failure.                                Hire dedicated transformation staff using RHT implementation funds (twelve limited-service positions approved in 2026, JFO #3276); name an owner for each workstream; clarify reporting lines and authority.
+  Under-resourcing of transformation management    AHS must simultaneously wind down AHEAD, manage 14 hospital plans, develop the Strategic Plan, oversee \$195M RHT, coordinate RBP/global budgets with GMCB, and report monthly. The Health Care Reform Office has neither the staff nor the authority.   Activities are sequenced by capacity, not strategy. The absence of PM infrastructure is the single most likely cause of plan failure.                                Hire dedicated transformation staff using RHT implementation funds (explicitly authorized); establish a PMO; clarify reporting lines and authority.
 
-  Fragmented SDOH integration                      AHS has authority over housing supports, food assistance, transportation, mental health, substance use, and developmental services --- all SDOH drivers --- but administers, reports, and evaluates them separately from healthcare outcomes.                                                                                                                         Vermont cannot achieve the SDOH-driven utilization reduction global budgets require if the SDOH programs are organizationally disconnected from delivery reform.     Establish cross-program SDOH integration protocols; link social-service utilization to healthcare outcomes through the Unified Health Data Space; include SDOH directors in HSA coordination.
-
-  No owner for the data infrastructure             The Unified Health Data Space, the exchange contract, MDWAS, VHCURES, and the RHT-funded data projects sit with different units and agencies, on different timelines.                                                                                                                                                                                                 The analytics every other gap depends on arrives late or in pieces; price regulation begins in FY2028 without commercial data in the integrated dataset.             A UHDS program office in AHS with a named director, built on the RHT staffing precedent (Chapter 15.6).
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Fragmented SDOH integration                      AHS has authority over housing supports, food assistance, transportation, mental health, substance use, and developmental services --- all SDOH drivers --- but administers, reports, and evaluates them separately from healthcare outcomes.            Vermont cannot achieve the SDOH-driven utilization reduction global budgets require if the SDOH programs are organizationally disconnected from delivery reform.     Establish cross-program SDOH integration protocols; link social-service utilization to healthcare outcomes through the Unified Health Data Space; include SDOH directors in HSA coordination.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure 16.2 --- AHS organizational gaps and required structural changes. Sources: Oliver Wyman Act 167 Recommendations (2024); AHS Transformation Reports (2025); Act 68 of 2025.*
 
@@ -6400,7 +6321,7 @@ The model AHS must become is a Population Health System Operator: an agency that
 
 ### 16.3.1 **Level 1 --- Statewide System Architect**
 
-At the statewide level, AHS sets strategic direction, establishes the payment-reform trajectory with GMCB, allocates capital (RHT, Act 68 grants), develops the accountability framework, and monitors performance against the five goals. This requires six capacities AHS is building but has not fully developed:
+At the statewide level, AHS sets strategic direction, establishes the payment-reform trajectory with GMCB, allocates capital (RHT, Act 68 grants), develops the accountability framework, and monitors performance against the five goals. This requires four capacities AHS is building but has not fully developed:
 
 -   Strategic-planning capacity --- to develop, maintain, and update the plan on a three-year cycle with required stakeholder input. A substantial ongoing function, not a one-time project.
 
@@ -6409,12 +6330,6 @@ At the statewide level, AHS sets strategic direction, establishes the payment-re
 -   Federal-relationship management --- active management of CMS, HRSA (RHT), and CMMI relationships. The immediate load is heavy: unwinding the Medicaid hospital global budget CMS found unapproved under the Global Commitment demonstration (payments stopped July 31, 2026; January--July payments reprocessed as fee-for-service by January 7, 2027), renewing that demonstration before it expires on December 31, 2027, and setting the terms of any federal partnership after the July 2026 AHEAD withdrawal.
 
 -   Legislative accountability --- producing the monthly outcome reports Act 68 requires through January 1, 2027, the January 2028 plan, and the three-year updates that begin December 1, 2030. The monthly reporting has been a real accountability mechanism, not a formality; when it ends, the plan's own reporting calendar has to replace it.
-
--   State-action supervision --- Act 68 (Sec. 11a) requires AHS to facilitate and supervise hospital collaboration so that it qualifies for state-action immunity under federal and state antitrust law. That is a legal-supervisory function --- documented decisions, conditions, and monitoring --- and it needs a named owner.
-
--   Data-infrastructure ownership --- the Unified Health Data Space, the exchange contract, and MDWAS are AHS's to deliver (18 V.S.A. §§ 9351, 9353), with ADS approving and reviewing the technology. They need a program office with a named director, product owners, data stewards, and privacy and contract staff (Chapter 15.6), not a share of a reform office's time.
-
-Act 68 also amended 3 V.S.A. § 3027 to make the Director of Health Care Reform responsible for coordinating health care system reform across all executive-branch agencies, departments, and offices, and with the GMCB, and to report every February 15 using an evidence-based evaluation framework. The coordinating role this chapter describes therefore already exists in statute; what it lacks is staff and decision rights proportionate to the mandate.
 
 The Health Care Delivery Advisory Committee (18 members, chaired by the Secretary of Human Services: the GMCB Chair, the Chief Health Care Advocate, two members of the primary-care steering committee, and representatives of hospitals, FQHCs, commercial insurers, physicians, independent practices, APRNs, designated agencies, independent mental-health clinicians, home health, long-term care, and small business) is AHS's governance partner. It has statutory authority to set affordability benchmarks and advise the legislature directly, develops and maintains the plan in collaboration with AHS, and incorporates recommendations from the primary-care steering committee. Operational implication: the committee needs dedicated staff support --- facilitation, research preparation, deliberation management, recommendation documentation --- treated as a dedicated function, not an add-on to existing Health Care Reform Office duties.
 
@@ -6466,13 +6381,13 @@ The five-pillar framework provides the analytical architecture for the Strategic
 
 Pillar 1 --- Policy (legislative compliance, federal relationships, regulatory strategy): federal strategy after the AHEAD withdrawal (unwinding the Medicaid hospital global budget under CMS's July 7, 2026 notice, renewing the Global Commitment demonstration before it expires December 31, 2027, terms for any successor federal agreement); Act 68 compliance tracking (RBP by FY2027, global budgets for one or more non-CAH hospitals by FY2028 and all hospitals by FY2030, resources permitting, plan January 2028, legislative reporting calendar); RHT Program administration (grant management, contractor oversight, annual CMS reporting); and federal-policy monitoring (Medicaid reconciliation, CMMI changes, CMS guidance).
 
-Pillar 2 --- Technology (data infrastructure, HIE governance, analytics, EHR strategy): VHCURES expansion and more-timely access (the November 2025 report acknowledged most measures reflect 2023 or earlier data, about two years behind); HIE strategic development (the Unified Health Data Space, delivered by a dedicated program office (Chapter 15.6), built with the HIE Steering Committee --- clinical--claims integration cannot begin before January 1, 2027, and only on a Steering Committee majority vote --- the statewide-EHR feasibility and readiness assessment, and the RHT-funded voluntary shared EMR whose program-manager solicitation AHS posted in May 2026); analytics-vendor implementation (the near-term investment with the shortest path to usable output); and cross-program data integration linking SDOH programs to healthcare outcomes.
+Pillar 2 --- Technology (data infrastructure, HIE governance, analytics, EHR strategy): VHCURES expansion and more-timely access (the November 2025 report acknowledged most measures reflect 2023 or earlier data, about two years behind); HIE strategic development (the Unified Health Data Space, built with the HIE Steering Committee --- clinical--claims integration cannot begin before January 1, 2027, and only on a Steering Committee majority vote --- the statewide-EHR feasibility and readiness assessment, and the RHT-funded voluntary shared EMR whose program-manager solicitation AHS posted in May 2026); analytics-vendor implementation (the near-term investment with the shortest path to usable output); and cross-program data integration linking SDOH programs to healthcare outcomes.
 
 Pillar 3 --- Economics (payment-reform sequencing, financial-sustainability monitoring, ROI): payment-reform coordination with GMCB (RBP methodology, global-budget design, premium-passthrough monitoring); hospital-financial monitoring against the Oliver Wyman projections --- particularly the CAH operating-profit gap (\$938 vs. \$2,784 benchmark) and the PPS administrative-cost premium (\$3,826 vs. \$1,427 benchmark) --- with early technical assistance; the lost federal upside (the EAST Fund cut to a cap near \$10M against the \~\$138M originally expected, then forgone with the July 2026 AHEAD withdrawal); and transformation-ROI tracking against Oliver Wyman's \$400M+ projected savings.
 
 Pillar 4 --- Clinical (primary-care expansion, BH integration, care-model design): Blueprint expansion and making the MHI behavioral-health-integration pilot permanent; CCBHC network development (four new entities certified July 1, 2026, joining two earlier CCBHCs, integrated with primary care, EDs, and 988); care-model technical assistance for the global-budget environment; and long-term-care capacity development (PACE gap, dementia-care COE, HCBS expansion).
 
-Pillar 5 --- Operations (transformation-plan management, RHRC successor, administrative simplification): hospital-transformation-plan oversight (from draft outlines to final plans for all 14 hospitals, coordinated regionally); administrative simplification (prior authorization, the CON process, Medicaid billing); named owners and a decision-rights charter for each workstream (Chapter 15); and EMS/transportation transformation (addressing the agency fragmentation that makes inter-facility transfers complex and expensive).
+Pillar 5 --- Operations (transformation-plan management, RHRC successor, administrative simplification): hospital-transformation-plan oversight (from draft outlines to final plans for all 14 hospitals, coordinated regionally); administrative simplification (prior authorization, the CON process, Medicaid billing); PMO establishment; and EMS/transportation transformation (addressing the agency fragmentation that makes inter-facility transfers complex and expensive).
 
 ## 16.5 **The AHS Restructuring Implementation Timeline**
 
@@ -6522,13 +6437,13 @@ The Strategic Plan is the most consequential document AHS will produce this deca
 
 5.  Hospital Network and Regionalization --- Operations (20--25 pp) --- confirmed tier designations; COE network; transfer infrastructure; shared services; REH/CACC conversions; workforce distribution.
 
-6.  Data and Technology Infrastructure --- Technology (10--15 pp) --- the Unified Health Data Space --- uses approved under § 9353, phases set against the GMCB's FY2028 price and budget dates, the commercial-data agreement, and the program office that runs it; exchange performance and portability terms; VHCURES and MDWAS analytic capability; the statewide-EHR decision; interoperability.
+6.  Data and Technology Infrastructure --- Technology (10--15 pp) --- VHCURES enhancement; HIE connectivity; statewide-EHR decision; analytics capabilities; interoperability.
 
 7.  Health Equity Strategy --- cross-cutting (15--20 pp) --- geographic-equity indicators by HSA; disparity measures; SDOH coordination; culturally competent care; 2028--2031 targets.
 
 8.  Workforce Strategy (15--20 pp) --- supply/demand by profession and geography; RHT workforce investments and outcomes; scope-of-practice changes; pipeline; 2030 projections.
 
-9.  AHS Organizational Architecture --- Policy & Operations (10--15 pp) --- the redesigned structure; HSA Coordinator model; Division of Planning and Effectiveness; cross-program SDOH integration; governance relationships; the decision-rights charter for every reform-critical system (Chapter 15.6.3).
+9.  AHS Organizational Architecture --- Policy & Operations (10--15 pp) --- the redesigned structure; HSA Coordinator model; Division of Planning and Effectiveness; cross-program SDOH integration; governance relationships.
 
 10. Accountability Framework (10--15 pp) --- full metrics dashboard (all 17+ Act 167/Act 68 measures); data sources and update frequencies; 2028--2031 targets; reporting calendar; revision conditions.
 
@@ -6586,7 +6501,7 @@ In the Academy: Track 8's "Capstone --- Apply the Framework to Your Own System" 
 
 ## 16.10 **Key Concepts in This Chapter**
 
-Population health system operator · HSA Coordinator · Division of Planning and Effectiveness · Statewide Health Care Delivery Strategic Plan · Health Care Delivery Advisory Committee · program-silo structure · cross-program SDOH integration · reform cascade (Act 167 → Act 51 → Act 68) · state-action supervision · Director of Health Care Reform (3 V.S.A. § 3027) · UHDS program office.
+Population health system operator · HSA Coordinator · Division of Planning and Effectiveness · Statewide Health Care Delivery Strategic Plan · Health Care Delivery Advisory Committee · program-silo structure · cross-program SDOH integration · reform cascade (Act 167 → Act 51 → Act 68).
 
 # **Conclusion --- What Vermont Proves, and What Remains to Be Proven**
 
@@ -6834,79 +6749,47 @@ Vermont's workforce faces a triple constraint no single intervention resolves. T
 
 Vermont's quality performance reflects both the strengths of a high-coverage, primary-care-oriented system and the gaps that demographic and geographic disadvantage produce. The Blueprint for Health estimated a 5.8:1 all-payer return on its primary-care investment for 2014 (DVHA, 2016); a 2023 legislative presentation put the return at about \$3--\$3.80 saved per dollar. The Blueprint provides the clinical infrastructure on which Vermont's primary-care redesign builds. Vermont's racial and ethnic gaps in having a personal health care provider, the Northeast Kingdom's elevated chronic-disease burden, and rural--urban behavioral-health disparities are the equity targets the transformation agenda must measure against (see Chapter 10 for the full equity-analytics framework).
 
-## A.9 **The Execution Institutions**
-
-Chapters 15 and 16 turn on who holds which lever. This profile locates each institution that carries the reform, and its part in the Unified Health Data Space.
-
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Institution**                                        **Role in reform**                                                                                  **Scale and key facts**                                                                                        **Source**
-  ------------------------------------------------------ --------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------
-  **Agency of Human Services**                           Strategic Plan; Medicaid; reform coordination; develops the UHDS; monthly Act 68 reporting          Six departments; roughly 4,000 staff; multibillion-dollar budget                                               Act 119 Report (2025); 18 V.S.A. § 9353
-
-  **Department of Vermont Health Access (in AHS)**       Medicaid; owns the statewide HIT Plan and the exchange contract; runs MDWAS                         MDWAS (\$66.3M implementation) live with linked Medicaid claims, clinical, and social-needs data (Jan. 2026)   18 V.S.A. § 9351; ADS 2025 Annual Report; AHS UHDS report (Jan. 2026)
-
-  **Agency of Digital Services**                         Approves executive-branch IT; supervises IT staff; independent review of projects of \$1M or more   Created by executive order (2017); in statute since 2019                                                       3 V.S.A. §§ 3301--3306
-
-  **VITL**                                               Designated operator of the exclusive statewide health information exchange network                  241 organizations; 98.9% of Vermonters sharing data (Feb. 2025)                                                18 V.S.A. § 9352; VITL (2025)
-
-  **HIE Steering Committee**                             Advises DVHA on the HIT Plan; votes on UHDS data integration and uses                               Chaired by AHS; 10 voting and 8 non-voting members (Jan. 2025); a GMCB voting seat required since 2025         AHS HIT Overview (Jan. 23, 2025); 18 V.S.A. §§ 9351(a)(3)(D), 9353
-
-  **Green Mountain Care Board**                          Hospital budgets; reference-based prices; global budgets; runs VHCURES                              No longer approves the HIT Plan or VITL's budget (Act 62)                                                      18 V.S.A. ch. 220; Act 62 of 2025
-
-  **Health Care Delivery Advisory Committee**            Develops the Strategic Plan with AHS                                                                18 members; chaired by the Secretary of Human Services                                                         18 V.S.A. § 9403a
-
-  **Joint Information Technology Oversight Committee**   Legislative oversight of State IT and cybersecurity                                                 Six members, three from each chamber                                                                           2 V.S.A. § 614
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-*Figure A.5 --- The institutions that carry Vermont's reform. Sources: statutes as cited; AHS Act 119 Report (Nov. 1, 2025); ADS 2025 Annual Report; VITL (Feb. 4, 2025); AHS, Health Information Technology Overview (Jan. 23, 2025); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026).*
-
 *Sources: AHS Hospital Tracking data (January 2026); AHS Transformation Plans Analysis (January 2026); individual hospital transformation plans (January 15--31, 2026); GMCB Annual Report 2024; GMCB FY25 and FY26 Budget Orders; Oliver Wyman Act 167 Report (September 2024); AHS Health Care System Transformation Report (November 2025); Vermont RHT Program Application (2025); AHEAD State Agreement --- Cohort 2 (2025); KFF State Health Facts --- Vermont; GMCB Act 68 RBP Update (February 2026); Mt. Ascutney Transformational Grant January 15 Report (2026); RAND Hospital Transparency; GMCB FY2026 data.*
 
 # **Appendix B --- Act 68 Statutory Timeline and Milestones**
 
 Act 68 of 2025 (S.126) established a comprehensive sequence of transformation milestones. This appendix consolidates the complete timeline for reference and folds in the Policy-pillar implementation matrix used in the in-practice chapters.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Date / deadline**               **Statutory requirement**                                                                                                                                                       **Primary authority**          **Status (April 2026; July 2026 updates)**
-  --------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------ ----------------------------------------------------------------------------------------------------------------------------------
-  January 1, 2026                   Medicaid hospital global budget launched January 2026; ruled unapproved under the Global Commitment demonstration by CMS, July 2026                                             DVHA / CMS                     Payments stopped July 31, 2026; January--July payments reprocessed as fee-for-service by January 7, 2027 (GCR 26-089)
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Date / deadline**              **Statutory requirement**                                                                                                                                                       **Primary authority**   **Status (April 2026; July 2026 updates)**
+  -------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------- ----------------------------------------------------------------------------------------------------------------------------------
+  January 1, 2026                  Medicaid hospital global budget launched January 2026; ruled unapproved under the Global Commitment demonstration by CMS, July 2026                                             DVHA / CMS              Payments stopped July 31, 2026; January--July payments reprocessed as fee-for-service by January 7, 2027 (GCR 26-089)
 
-  FY2026 (ongoing)                  Hospital budget orders reducing FY2026 commercial revenue                                                                                                                       GMCB                           In effect --- \$94.58M in FY2026 reductions ordered
+  FY2026 (ongoing)                 Hospital budget orders reducing FY2026 commercial revenue                                                                                                                       GMCB                    In effect --- \$94.58M in FY2026 reductions ordered
 
-  FY2026 (ongoing)                  \$2M Act 68 transformation grants to hospitals (HIT fund)                                                                                                                       AHS                            Launched September 2025 --- all eligible hospitals applied
+  FY2026 (ongoing)                 \$2M Act 68 transformation grants to hospitals (HIT fund)                                                                                                                       AHS                     Launched September 2025 --- all eligible hospitals applied
 
-  FY2026 (ongoing)                  Act 55 drug-pricing cap (in effect January 1, 2026)                                                                                                                             GMCB / DFR                     In effect --- \$104.3M in FY2026 drug-cap savings
+  FY2026 (ongoing)                 Act 55 drug-pricing cap (in effect January 1, 2026)                                                                                                                             GMCB / DFR              In effect --- \$104.3M in FY2026 drug-cap savings
 
-  Early 2026                        Final hospital Care Transformation Plans submitted to AHS                                                                                                                       AHS                            All 14 hospitals submitted final plans (April 2026); implementation under way
+  Early 2026                       Final hospital Care Transformation Plans submitted to AHS                                                                                                                       AHS                     All 14 hospitals submitted final plans (April 2026); implementation under way
 
-  January 15, 2026                  Report on integrating clinical, claims, and social-needs data in the Unified Health Data Space (18 V.S.A. § 9353(d)(1))                                                         AHS                            Delivered January 14, 2026; linked Medicaid data live in MDWAS by the end of January 2026
+  May 2026                         BALANCE Model GLP-1 Medicaid launch (voluntary state participation)                                                                                                             DVHA / CMS              State applications were due July 31, 2026; Vermont's decision not yet public
 
-  May 2026                          BALANCE Model GLP-1 Medicaid launch (voluntary state participation)                                                                                                             DVHA / CMS                     State applications were due July 31, 2026; Vermont's decision not yet public
+  July 1, 2026                     New CCBHC entities certified (RHT application: four, joining two earlier CCBHCs)                                                                                                AHS / DMH               Four certified July 1, 2026 (HCRS, Howard Center, NCSS, NKHS) --- six CCBHCs in all
 
-  July 1, 2026                      New CCBHC entities certified (RHT application: four, joining two earlier CCBHCs)                                                                                                AHS / DMH                      Four certified July 1, 2026 (HCRS, Howard Center, NCSS, NKHS) --- six CCBHCs in all
+  July 2026                        Medicare GLP-1 Bridge demonstration launches (\$50/month co-pay)                                                                                                                CMS                     Federal program --- Vermont Medicare beneficiaries eligible
 
-  July 2026                         Medicare GLP-1 Bridge demonstration launches (\$50/month co-pay)                                                                                                                CMS                            Federal program --- Vermont Medicare beneficiaries eligible
+  FY2027 (Oct 1, 2026)             Reference-based pricing due (statutory deadline); maximum rates set by GMCB rule in 2027, in effect FY2028                                                                      GMCB                    Methodology and vendor procurement underway
 
-  FY2027 (Oct 1, 2026)              Reference-based pricing due (statutory deadline); maximum rates set by GMCB rule in 2027, in effect FY2028                                                                      GMCB                           Methodology and vendor procurement underway
+  Postponed                        BALANCE Model Medicare Part D coverage (planned 2027; postponed by CMS in April 2026, no new date)                                                                              CMS                     Federal program
 
-  January 1, 2027                   UHDS data integration may begin, on a majority vote of all voting HIE Steering Committee members, for approved uses only (§ 9353(b)(4))                                         AHS + HIE Steering Committee   No integration vote possible before this date; use priorities not yet published
+  FY2028 (Oct 1, 2027)             Global budgets for one or more non-CAH (PPS) hospitals, to the extent resources are available                                                                                   GMCB                    Methodology under development; contingent on GMCB resources
 
-  January 15, 2027, then annually   UHDS development and implementation update to the Legislature (§ 9353(d)(2))                                                                                                    AHS                            First annual report due; Chapter 15.6.7 sets out what it should answer
+  January 15, 2028                 Statewide Strategic Plan delivered to legislature                                                                                                                               AHS + HCAC              In planning --- development begins 2026
 
-  Postponed                         BALANCE Model Medicare Part D coverage (planned 2027; postponed by CMS in April 2026, no new date)                                                                              CMS                            Federal program
+  FY2030 (Oct 1, 2029)             Global budgets for ALL hospitals including CAHs                                                                                                                                 GMCB                    Final phase of global-budget implementation
 
-  FY2028 (Oct 1, 2027)              Global budgets for one or more non-CAH (PPS) hospitals, to the extent resources are available                                                                                   GMCB                           Methodology under development; contingent on GMCB resources
+  December 2031                    BALANCE Model testing concludes                                                                                                                                                 CMS                     Federal program
 
-  January 15, 2028                  Statewide Strategic Plan delivered to legislature                                                                                                                               AHS + HCAC                     In planning --- development begins 2026
+  September 30, 2032               All RHT funds must be spent by this date or returned to the U.S. Treasury; each annual award generally remains available through the end of the following federal fiscal year   AHS / CMS               FY2026 \$195M: obligations due October 30, 2026, spending by September 30, 2027; unspent funds are redistributed to other states
 
-  FY2030 (Oct 1, 2029)              Global budgets for ALL hospitals including CAHs                                                                                                                                 GMCB                           Final phase of global-budget implementation
-
-  December 2031                     BALANCE Model testing concludes                                                                                                                                                 CMS                            Federal program
-
-  September 30, 2032                All RHT funds must be spent by this date or returned to the U.S. Treasury; each annual award generally remains available through the end of the following federal fiscal year   AHS / CMS                      FY2026 \$195M: obligations due October 30, 2026, spending by September 30, 2027; unspent funds are redistributed to other states
-
-  Every 3 years from Dec 1, 2030    Statewide Strategic Plan updated                                                                                                                                                AHS + HCAC                     Ongoing statutory obligation
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Every 3 years from Dec 1, 2030   Statewide Strategic Plan updated                                                                                                                                                AHS + HCAC              Ongoing statutory obligation
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure B.1 --- Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
 
@@ -7048,21 +6931,19 @@ This scorecard consolidates the Vermont evidence from across the book into a sin
 
 ### E.0.2 **Technology Pillar**
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                    **2022 baseline**                                                **2026 status**                                                                                                                  **2028 target**                                                                                                                                    **Source**
-  ----------------------------- ---------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------
-  All-payer claims database     VHCURES operational; published measures about two years behind   VHCURES solid; attribution modeling in progress; analytics-vendor contract under negotiation (April 2026)                        VHCURES real-time/near-real-time; vendor fully deployed                                                                                            GMCB VHCURES documentation
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                    **2022 baseline**                                                **2026 status**                                                                                             **2028 target**                                                           **Source**
+  ----------------------------- ---------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------- --------------------------------------------------
+  All-payer claims database     VHCURES operational; published measures about two years behind   VHCURES solid; attribution modeling in progress; analytics-vendor contract under negotiation (April 2026)   VHCURES real-time/near-real-time; vendor fully deployed                   GMCB VHCURES documentation
 
-  Health information exchange   VITL the designated operator; opt-out consent since March 2020   98.9% of Vermonters sharing data; 241 organizations; designated agencies contributing no feeds (Feb. 2025)                       Contributing feeds from every provider type, within Part 2 consent rules; published performance and portability terms                              VITL (Feb. 2025); 18 V.S.A. § 9352; Act 53 of 2019
+  Health information exchange   VITL operational but voluntary; incomplete adoption              VITL voluntary; CIN under development; small providers disconnected                                         VITL connectivity required for all Blueprint practices; CIN operational   VITL annual report; Act 62 of 2025
 
-  Unified Health Data Space     Clinical and claims data held separately                         Medicaid claims, clinical, and social-needs data linked in MDWAS (Jan. 2026); no integration vote possible before Jan. 1, 2027   Medicare and statewide clinical data linked (AHS target 2028--2029); commercial-data agreement before FY2028 prices; UHDS program office staffed   18 V.S.A. § 9353; AHS UHDS report (Jan. 2026)
+  FHIR compliance               Minimal across the system                                        CMS interoperability rule driving compliance; RHT grants funding upgrades                                   Full FHIR R4 compliance at all hospitals                                  CMS interoperability rule; RHT IT grants
 
-  FHIR compliance               Minimal across the system                                        CMS interoperability rule driving compliance; RHT grants funding upgrades                                                        Full FHIR R4 compliance at all hospitals                                                                                                           CMS interoperability rule; RHT IT grants
+  AI-governance framework       Does not exist                                                   AI-scribe grant program funded (\$1.03M); governance absent in most institutions                            Statewide AI-governance framework; bias testing required                  Vermont RHT Program; HTR AI Governance Checklist
 
-  AI-governance framework       Does not exist                                                   AI-scribe grant program funded (\$1.03M); governance absent in most institutions                                                 Statewide AI-governance framework; bias testing required                                                                                           Vermont RHT Program; HTR AI Governance Checklist
-
-  Race/ethnicity data quality   Incomplete VHCURES demographic fields                            Acknowledged gap; improvement underway                                                                                           Complete stratification for 90%+ of encounters                                                                                                     Vermont DOH Health Equity Data Report (Jan 2025)
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Race/ethnicity data quality   Incomplete VHCURES demographic fields                            Acknowledged gap; improvement underway                                                                      Complete stratification for 90%+ of encounters                            Vermont DOH Health Equity Data Report (Jan 2025)
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.2 --- Technology-pillar scorecard. Sources: GMCB VHCURES; VITL; Vermont DOH Health Equity Data Report (January 2025); Vermont RHT Application.*
 
@@ -7126,21 +7007,21 @@ This scorecard consolidates the Vermont evidence from across the book into a sin
 
 ### E.0.6 **Operations Pillar**
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Metric**                         **2022 baseline**                            **2026 status**                                                                                                          **2028 target**                                                                       **Source**
-  ---------------------------------- -------------------------------------------- ------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------- ---------------------------------------
-  Hospital transformation planning   No systematic process                        RHRC engagement concluded Oct 2025; all 14 submitted final plans (April 2026)                                            All 14 plans in implementation                                                        AHS Aug/Nov 2025 Reports; RHRC
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Metric**                         **2022 baseline**                            **2026 status**                                                                                   **2028 target**                                                   **Source**
+  ---------------------------------- -------------------------------------------- ------------------------------------------------------------------------------------------------- ----------------------------------------------------------------- ------------------------------------
+  Hospital transformation planning   No systematic process                        RHRC engagement concluded Oct 2025; all 14 submitted final plans (April 2026)                     All 14 plans in implementation                                    AHS Aug/Nov 2025 Reports; RHRC
 
-  AHS organizational capacity        Program-administration model                 Act 119 review kept AHS unified (Feb 2026); twelve RHT limited-service positions approved (2026); no UHDS program team   A named owner and program team for each workstream, including a UHDS program office   Act 68; JFO #3276; AHS Act 119 Report
+  AHS organizational capacity        Program-administration model; minimal PMO    PMO establishment underway; Act 119 review kept AHS unified (Feb 2026)                            Full transformation PMO; AHS restructured for system management   Act 68; AHS organizational design
 
-  Vermont CIN                        Does not exist                               Under development; RHT capital awarded                                                                                   CIN operational; shared analytics/care management for all 14                          Vermont RHT Application (Nov 2025)
+  Vermont CIN                        Does not exist                               Under development; RHT capital awarded                                                            CIN operational; shared analytics/care management for all 14      Vermont RHT Application (Nov 2025)
 
-  Administrative-cost reduction      UVMMC 268% of benchmark; PPS avg 91% above   RHRC engagement in progress; no significant reduction yet                                                                System average below 150% of benchmark by 2030                                        AHS Nov 2025 Report; NASHP
+  Administrative-cost reduction      UVMMC 268% of benchmark; PPS avg 91% above   RHRC engagement in progress; no significant reduction yet                                         System average below 150% of benchmark by 2030                    AHS Nov 2025 Report; NASHP
 
-  EMS regionalization                Fragmented local EMS                         Act 68 framework enacted; planning underway                                                                              Regional EMS in all HSAs; response-time targets met                                   Act 68; Vermont EMS planning
+  EMS regionalization                Fragmented local EMS                         Act 68 framework enacted; planning underway                                                       Regional EMS in all HSAs; response-time targets met               Act 68; Vermont EMS planning
 
-  Monthly transformation reporting   Does not exist                               Required by Act 68; monthly AHS reports since October 2025 (outcome measures since August 2025)                          Monthly reports demonstrating progress against Act 167 metrics                        Act 68; AHS reports
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Monthly transformation reporting   Does not exist                               Required by Act 68; monthly AHS reports since October 2025 (outcome measures since August 2025)   Monthly reports demonstrating progress against Act 167 metrics    Act 68; AHS reports
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Figure E.6 --- Operations-pillar scorecard. Sources: AHS Transformation Reports (August, November 2025); RHRC; Vermont RHT Program Application; Act 68.*
 
@@ -7252,19 +7133,19 @@ Every named Vermont statute, agency, or system in this book is a specific instan
 
 For each of the five pillars, identify your state's or organization's equivalent institution, statute, or data asset --- even if it is smaller, informal, or does not yet exist. Where nothing exists, that gap is itself the answer to where your sequence actually begins.
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Pillar**       **Vermont's instance**                                                                                                                    **Your state's equivalent**   **Exists? (Y/N/Partial)**
-  ---------------- ----------------------------------------------------------------------------------------------------------------------------------------- ----------------------------- ---------------------------
-  **Policy**       Acts 167, 51, 68 --- diagnostic mandate → framework statute → operational mandate with enforcement authority                                                            
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Pillar**       **Vermont's instance**                                                                                         **Your state's equivalent**   **Exists? (Y/N/Partial)**
+  ---------------- -------------------------------------------------------------------------------------------------------------- ----------------------------- ---------------------------
+  **Policy**       Acts 167, 51, 68 --- diagnostic mandate → framework statute → operational mandate with enforcement authority                                 
 
-  **Technology**   VHCURES (APCD) + VITL (HIE) + AHS analytics vendor (procurement 2025--2026)                                                                                             
+  **Technology**   VHCURES (APCD) + VITL (HIE) + AHS analytics vendor (procurement 2025--2026)                                                                  
 
-  **Economics**    Act 68 reference-based pricing (FY2027) + global hospital budgets (FY2028--2030)                                                                                        
+  **Economics**    Act 68 reference-based pricing (FY2027) + global hospital budgets (FY2028--2030)                                                             
 
-  **Clinical**     Blueprint for Health (PCMH) + CCBHC expansion + the Vermont Clinical Transformation Toolkit (Chapter 9)                                                                 
+  **Clinical**     Blueprint for Health (PCMH) + CCBHC expansion + the Vermont Clinical Transformation Toolkit (Chapter 9)                                      
 
-  **Operations**   AHS RHT program staff being hired (18 of 23 positions filled, July 2026) + 14 hospital transformation plans + RHRC technical assistance                                 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Operations**   AHS Transformation PMO (being established) + 14 hospital transformation plans + RHRC technical assistance                                    
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Sequencing check: per Chapter 1, the correct execution order is Policy → Technology → Economics → Clinical → Operations. Wherever your worksheet shows a "Y" later in this sequence than the first "N," that pillar is very likely where your organization's transformation effort is at risk of repeating OneCare Vermont's sequencing failure --- flag it for priority attention before further investment downstream.
 
@@ -7555,21 +7436,27 @@ The Stage 5 question: *Is operational capacity keeping pace with the statutory t
 
 *Figure 14.3 --- Hands-on platform tools for Chapter 14: monitoring political risk.*
 
-*Figure 15.1 --- Vermont's reform execution calendar. Sources: Act 68 of 2025; 18 V.S.A. §§ 9353, 9403; AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); CMS RHT Program terms; CMS-2454-IFC.*
+*Figure 15.1 --- The project-management gap. Sources: PMBOK Guide, 6th ed. (2017); Figures 15.3 and 15.6; Act 68 of 2025.*
 
-*Figure 15.2 --- What each reform commitment needs from integrated data. Sources: Act 68 of 2025; 18 V.S.A. §§ 9353, 9403; AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); VITL (Feb. 4, 2025).*
+*Figure 15.2 --- PMI hierarchy applied to Vermont's transformation. Sources: PMI Standard for Portfolio Management (4th ed., 2017); PMBOK Guide, 7th ed.; PMI Standard for Program Management (4th ed., 2017).*
 
-*Figure 15.3 --- The layers of a working UHDS. Sources: 18 V.S.A. §§ 9351--9353; VITL 2021 Annual Report (Jan. 14, 2022); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026).*
+*Figure 15.3 --- Vermont's 19-component transformation portfolio. Sources: Act 68 of 2025; AHS Transformation Reports; Vermont RHT Program Application; CMS AHEAD documentation.*
 
-*Figure 15.4 --- The UHDS program office: roles and accountabilities. HTR recommendation, built on 18 V.S.A. §§ 9351--9353, 3 V.S.A. §§ 3027, 3301--3303, and JFO #3276 (2026).*
+*Figure 15.4 --- Pillar-level role matrix. Sources: PMI credential requirements; Act 68 governance structure; Vermont RHT Program organizational design.*
 
-*Figure 15.5 --- Who decides what in the UHDS. Sources: statutes as cited; Act 62 of 2025.*
+*Figure 15.5 --- The ten PMI knowledge areas against Vermont's operational capacity. Sources: PMBOK Guide, 6th ed. (2017); AHS Transformation Reports (2025--2026); HTR analysis.*
 
-*Figure 15.6 --- UHDS performance measures. Sources: VITL 2021 Annual Report (Jan. 14, 2022); VITL (Feb. 4, 2025); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026); 18 V.S.A. § 9353.*
+*Figure 15.6 --- Vermont's portfolio risk register (PMI format). Risk score = probability (Low=1, Low--Med=2.5, Medium=3, Med--High=3.75, High=4) × impact (Low=1, Medium=3, High=4, Critical=5); hyphenated bands are scored at the midpoint. Sources: PMI Standard for Portfolio Management (4th ed.); analytical risk assessment throughout this book; AHS November 2025 Report.*
 
-*Figure 15.7 --- Vermont RHT Year 1 executed agreements by initiative. Source: State of Vermont RHT recipient list (Oct. 30, 2026); HTR RHT Year 1 Review.*
+*Figure 15.7 --- The portfolio risk register plotted by probability and impact; cell values are the register's own scores. Source: Figure 15.6.*
 
-*Figure 15.8 --- Platform pages for Chapter 15.*
+*Figure 15.8 --- Benefits-realization plan. Sources: Act 167 of 2022; PMI Standard for Portfolio Management (4th ed.); Vermont Scorecard (Appendix E).*
+
+*Figure 15.9 --- Business case for portfolio-management investment. Sources: PMI Pulse of the Profession (2017); Vermont RHT Program Application; AHEAD State Agreement (EAST Fund); PMI salary data.*
+
+*Figure 15.10 --- Implementation roadmap: the PMO build-out (top) scheduled against the gating components of Figure 15.3 (bottom); dashed bars mark design work permitted before the Technology gate opens. Sources: Figures 15.3 and 15.6; Act 68 of 2025; AHS Act 68 Transformation Report (March 2026).*
+
+*Figure 15.11 --- Hands-on platform tools for Chapter 15: running the transformation portfolio.*
 
 *Figure 16.1 --- Act 68 statutory requirements for the Strategic Plan. Sources: Act 68 of 2025; 18 V.S.A. § 9403a.*
 
@@ -7590,8 +7477,6 @@ The Stage 5 question: *Is operational capacity keeping pace with the statutory t
 *Figure A.3 --- Vermont's 14 hospitals: typology, grant status, focus, and challenges. Sources: AHS Hospital Tracking data (January 2026); individual transformation plans (January 15, 2026); GMCB FY26 Budget Orders.*
 
 *Figure A.4 --- Vermont hospital transformation initiative themes, January 2026 (148 initiatives). Source: AHS Transformation Plans Analysis (January 2026).*
-
-*Figure A.5 --- The institutions that carry Vermont's reform. Sources: statutes as cited; AHS Act 119 Report (Nov. 1, 2025); ADS 2025 Annual Report; VITL (Feb. 4, 2025); AHS, Health Information Technology Overview (Jan. 23, 2025); AHS, Advantages and Disadvantages of Health Care Data Integration (Jan. 14, 2026).*
 
 *Figure B.1 --- Act 68 statutory timeline and milestones. Source: Act 68 of 2025.*
 

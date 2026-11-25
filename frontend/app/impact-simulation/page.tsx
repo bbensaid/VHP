@@ -593,10 +593,10 @@ export default function ImpactSimulationPage() {
       {/* ── FROM THE BOOK ─────────────────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <FromTheBook
-          chapter="Chapter 1"
-          chapterTitle="The Core Argument: Dependency Logic Determines Sequence"
-          excerpt="The execution sequence is determined by dependency logic — the structural reality that some things cannot produce value until other things are already in place."
-          href="/read/chapter-01"
+          chapter="Chapter 15"
+          chapterTitle="Healthcare Transformation as Portfolio Management"
+          excerpt="Chapter 15 treats a transformation agenda as a portfolio with dependencies rather than a list of initiatives — which is what this engine models. The propagation logic it runs on is Chapter 1's: a shortfall in one pillar surfaces in another's results a year later, which is precisely why it gets missed."
+          href="/read/chapter-15"
         />
       </section>
 

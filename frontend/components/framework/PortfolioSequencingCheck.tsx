@@ -77,7 +77,7 @@ export default function PortfolioSequencingCheck() {
         <p className="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
           List your initiatives, the pillar each one builds, and the capital committed. Score where each pillar stands today.
           Any initiative whose pillar sits behind a closed or partial upstream gate is funded ahead of sequence — the early
-          signal of premature investment (Chapter 7 §7.9).
+          signal of premature investment (Chapter 7 §7.9, Chapter 15 §15.14).
         </p>
       </header>
 

@@ -26,10 +26,10 @@ export default function PortfolioSequencingTestPage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
         <FromTheBook
-          chapter="Chapter 1"
-          chapterTitle="The Core Argument: Dependency Logic Determines Sequence"
-          excerpt="The execution sequence is determined by dependency logic — the structural reality that some things cannot produce value until other things are already in place."
-          href="/read/chapter-01"
+          chapter="Chapter 15"
+          chapterTitle="Healthcare Transformation as Portfolio Management"
+          excerpt="Applied across all nineteen components, the Portfolio Manager's sequencing test produces the portfolio's true critical path — which will not match the order of statutory deadlines. This tool runs that test (§15.7) on Figure 15.3's register, or on yours."
+          href="/read/chapter-15"
         />
       </section>
 
