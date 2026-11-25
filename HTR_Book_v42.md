@@ -40,507 +40,509 @@ Table of Contents
 >
 > [1.4 The Architecture of Interdependency: The Dependency Matrix 21](#the-architecture-of-interdependency-the-dependency-matrix)
 >
-> [1.5 The Failure Cascade: What Happens When a Pillar Is Missing 29](#the-failure-cascade-what-happens-when-a-pillar-is-missing)
+> [1.5 The Failure Cascade: What Happens When a Pillar Is Missing 30](#the-failure-cascade-what-happens-when-a-pillar-is-missing)
 >
-> [1.6 Using the Dependency Map as an Analytical Tool 30](#using-the-dependency-map-as-an-analytical-tool)
+> [1.6 Using the Dependency Map as an Analytical Tool 31](#using-the-dependency-map-as-an-analytical-tool)
 >
-> [1.7 The Vermont Thread: Five Pillars in One System 31](#the-vermont-thread-five-pillars-in-one-system)
+> [1.7 The Vermont Thread: Five Pillars in One System 32](#the-vermont-thread-five-pillars-in-one-system)
 >
-> [1.8 From Framework to Sequence: Why Order Is Not Optional 32](#from-framework-to-sequence-why-order-is-not-optional)
+> [1.8 From Framework to Sequence: Why Order Is Not Optional 33](#from-framework-to-sequence-why-order-is-not-optional)
 >
-> [1.9 The Core Argument: Dependency Logic Determines Sequence 32](#the-core-argument-dependency-logic-determines-sequence)
+> [1.9 The Core Argument: Dependency Logic Determines Sequence 33](#the-core-argument-dependency-logic-determines-sequence)
 >
-> [1.10 The Critics: Why Sequencing Logic Has Real Opponents 33](#the-critics-why-sequencing-logic-has-real-opponents)
+> [1.10 The Critics: Why Sequencing Logic Has Real Opponents 34](#the-critics-why-sequencing-logic-has-real-opponents)
 >
-> [1.11 The Five Stages: Resolved 34](#the-five-stages-resolved)
+> [1.11 The Five Stages: Resolved 35](#the-five-stages-resolved)
 >
-> [1.12 Three Sequencing Principles in Practice 37](#three-sequencing-principles-in-practice)
+> [1.12 Three Sequencing Principles in Practice 38](#three-sequencing-principles-in-practice)
 >
 > [1.13 Five Sequencing Decisions That Organizations Get Wrong 39](#five-sequencing-decisions-that-organizations-get-wrong)
 >
-> [1.14 Vermont's Implementation Timeline: Reading the Sequence in Statutory Deadlines 39](#vermonts-implementation-timeline-reading-the-sequence-in-statutory-deadlines)
+> [1.14 Vermont's Implementation Timeline: Reading the Sequence in Statutory Deadlines 40](#vermonts-implementation-timeline-reading-the-sequence-in-statutory-deadlines)
 >
-> [1.15 EXPLORE ON THE PLATFORM 40](#explore-on-the-platform)
+> [1.15 EXPLORE ON THE PLATFORM 41](#explore-on-the-platform)
 >
-> [1.16 GO DEEPER --- ACADEMY 41](#go-deeper-academy)
+> [1.16 GO DEEPER --- ACADEMY 42](#go-deeper-academy)
 >
-> [1.17 Implications for You 42](#implications-for-you)
+> [1.17 Implications for You 43](#implications-for-you)
 >
-> [1.18 Key Concepts in This Chapter 42](#key-concepts-in-this-chapter)
+> [1.18 Key Concepts in This Chapter 43](#key-concepts-in-this-chapter)
 
-[**Chapter 2: The Policy Pillar --- Legislative Architecture for Structural Reform 44**](#chapter-2-the-policy-pillar-legislative-architecture-for-structural-reform)
+[**Chapter 2: The Policy Pillar --- Legislative Architecture for Structural Reform 45**](#chapter-2-the-policy-pillar-legislative-architecture-for-structural-reform)
 
-> [2.1 The Anatomy of a System-Level Reform Mandate 44](#the-anatomy-of-a-system-level-reform-mandate)
+> [2.1 The Anatomy of a System-Level Reform Mandate 45](#the-anatomy-of-a-system-level-reform-mandate)
 >
-> [2.2 The Three Imperatives: Oliver Wyman's Central Finding 45](#the-three-imperatives-oliver-wymans-central-finding)
+> [2.2 The Three Imperatives: Oliver Wyman's Central Finding 47](#the-three-imperatives-oliver-wymans-central-finding)
 >
-> [2.3 The Platform for Change: Vermont's System in Crisis 46](#the-platform-for-change-vermonts-system-in-crisis)
+> [2.3 The Platform for Change: Vermont's System in Crisis 48](#the-platform-for-change-vermonts-system-in-crisis)
 >
-> [2.4 The Perception vs. Reality Problem 49](#the-perception-vs.-reality-problem)
+> [2.4 The Perception vs. Reality Problem 51](#the-perception-vs.-reality-problem)
 >
-> [2.5 Act 167 (2022): The Diagnostic Mandate 50](#act-167-2022-the-diagnostic-mandate)
+> [2.5 Act 167 (2022): The Diagnostic Mandate 51](#act-167-2022-the-diagnostic-mandate)
 >
-> [2.6 The Oliver Wyman System Redesign Blueprint 51](#the-oliver-wyman-system-redesign-blueprint)
+> [2.6 The Oliver Wyman System Redesign Blueprint 53](#the-oliver-wyman-system-redesign-blueprint)
 >
-> [2.7 Act 68 (2025): The Operational Mandate 55](#act-68-2025-the-operational-mandate)
+> [2.7 Act 68 (2025): The Operational Mandate 56](#act-68-2025-the-operational-mandate)
 >
-> [2.8 The Rural Health Transformation Program: Capital for an Operational Strategy 58](#the-rural-health-transformation-program-capital-for-an-operational-strategy)
+> [2.8 The Rural Health Transformation Program: Capital for an Operational Strategy 59](#the-rural-health-transformation-program-capital-for-an-operational-strategy)
 >
-> [2.9 Cross-State Lessons: What Vermont's Model Generalizes 58](#cross-state-lessons-what-vermonts-model-generalizes)
+> [2.9 Cross-State Lessons: What Vermont's Model Generalizes 60](#cross-state-lessons-what-vermonts-model-generalizes)
 >
-> [2.10 Work This Chapter on the Platform 59](#work-this-chapter-on-the-platform)
+> [2.10 Work This Chapter on the Platform 61](#work-this-chapter-on-the-platform)
 >
-> [2.11 Implications for You 60](#implications-for-you-1)
+> [2.11 Implications for You 62](#implications-for-you-1)
 >
-> [2.12 Key Concepts in This Chapter 60](#key-concepts-in-this-chapter-1)
+> [2.12 Key Concepts in This Chapter 62](#key-concepts-in-this-chapter-1)
 
-[**Chapter 3: The Policy Pillar in Practice --- CMMI Models, Waiver Strategy, and the Federal-State Interface 62**](#chapter-3-the-policy-pillar-in-practice-cmmi-models-waiver-strategy-and-the-federal-state-interface)
+[**Chapter 3: The Policy Pillar in Practice --- CMMI Models, Waiver Strategy, and the Federal-State Interface 64**](#chapter-3-the-policy-pillar-in-practice-cmmi-models-waiver-strategy-and-the-federal-state-interface)
 
-> [3.1 From Policy Architecture to Policy Practice 62](#from-policy-architecture-to-policy-practice)
+> [3.1 From Policy Architecture to Policy Practice 64](#from-policy-architecture-to-policy-practice)
 >
-> [3.2 The CMMI Landscape --- What Exists, What Works, and What Has Been Discontinued 62](#the-cmmi-landscape-what-exists-what-works-and-what-has-been-discontinued)
+> [3.2 The CMMI Landscape --- What Exists, What Works, and What Has Been Discontinued 64](#the-cmmi-landscape-what-exists-what-works-and-what-has-been-discontinued)
 >
-> [3.3 Section 1115 Waivers --- The State's Primary Federal Policy Tool 64](#section-1115-waivers-the-states-primary-federal-policy-tool)
+> [3.3 Section 1115 Waivers --- The State's Primary Federal Policy Tool 67](#section-1115-waivers-the-states-primary-federal-policy-tool)
 >
-> [3.4 Prior Authorization Reform --- The Administrative Pillar of Policy Strategy 66](#prior-authorization-reform-the-administrative-pillar-of-policy-strategy)
+> [3.4 Prior Authorization Reform --- The Administrative Pillar of Policy Strategy 68](#prior-authorization-reform-the-administrative-pillar-of-policy-strategy)
 >
-> [3.5 The State-Federal Policy Interface --- Navigating the Relationship 67](#the-state-federal-policy-interface-navigating-the-relationship)
+> [3.5 The State-Federal Policy Interface --- Navigating the Relationship 69](#the-state-federal-policy-interface-navigating-the-relationship)
 >
-> [3.6 The Medicaid Policy Landscape --- What H.R. 1 Changes and What It Does Not 68](#the-medicaid-policy-landscape-what-h.r.-1-changes-and-what-it-does-not)
+> [3.6 The Medicaid Policy Landscape --- What H.R. 1 Changes and What It Does Not 70](#the-medicaid-policy-landscape-what-h.r.-1-changes-and-what-it-does-not)
 >
-> [3.7 Policy Strategy for Healthcare Leaders --- The Practitioner Framework 69](#policy-strategy-for-healthcare-leaders-the-practitioner-framework)
+> [3.7 Policy Strategy for Healthcare Leaders --- The Practitioner Framework 72](#policy-strategy-for-healthcare-leaders-the-practitioner-framework)
 >
-> [3.8 Work This Chapter on the Platform 70](#work-this-chapter-on-the-platform-1)
+> [3.8 Work This Chapter on the Platform 73](#work-this-chapter-on-the-platform-1)
 >
-> [3.9 Implications for You 71](#implications-for-you-2)
+> [3.9 Implications for You 73](#implications-for-you-2)
 >
-> [3.10 Key Concepts in This Chapter 72](#key-concepts-in-this-chapter-2)
+> [3.10 Key Concepts in This Chapter 74](#key-concepts-in-this-chapter-2)
 
-[**Chapter 4: The Technology Pillar --- Data Infrastructure for a Transformed Health System 73**](#chapter-4-the-technology-pillar-data-infrastructure-for-a-transformed-health-system)
+[**Chapter 4: The Technology Pillar --- Data Infrastructure for a Transformed Health System 75**](#chapter-4-the-technology-pillar-data-infrastructure-for-a-transformed-health-system)
 
-> [4.1 The Technology Pillar: Why Data Infrastructure Is the Foundation of Everything Else 73](#the-technology-pillar-why-data-infrastructure-is-the-foundation-of-everything-else)
+> [4.1 The Technology Pillar: Why Data Infrastructure Is the Foundation of Everything Else 75](#the-technology-pillar-why-data-infrastructure-is-the-foundation-of-everything-else)
 >
-> [4.2 VHCURES --- Vermont's All-Payer Claims Database 74](#vhcures-vermonts-all-payer-claims-database)
+> [4.2 VHCURES --- Vermont's All-Payer Claims Database 76](#vhcures-vermonts-all-payer-claims-database)
 >
-> [4.3 The Vermont HIE --- VITL, the Governance Shift, and the Integration Imperative 75](#the-vermont-hie-vitl-the-governance-shift-and-the-integration-imperative)
+> [4.3 The Vermont HIE --- VITL, the Governance Shift, and the Integration Imperative 77](#the-vermont-hie-vitl-the-governance-shift-and-the-integration-imperative)
 >
-> [4.4 The Vermont Clinically Integrated Network --- A New Technology Institution 83](#the-vermont-clinically-integrated-network-a-new-technology-institution)
+> [4.4 The Vermont Clinically Integrated Network --- A New Technology Institution 85](#the-vermont-clinically-integrated-network-a-new-technology-institution)
 >
-> [4.5 FHIR Interoperability --- The National Standard and Vermont's Compliance Path 84](#fhir-interoperability-the-national-standard-and-vermonts-compliance-path)
+> [4.5 FHIR Interoperability --- The National Standard and Vermont's Compliance Path 86](#fhir-interoperability-the-national-standard-and-vermonts-compliance-path)
 >
-> [4.6 AI and Digital Health Technologies --- Vermont's Targeted Investment Strategy 85](#ai-and-digital-health-technologies-vermonts-targeted-investment-strategy)
+> [4.6 AI and Digital Health Technologies --- Vermont's Targeted Investment Strategy 88](#ai-and-digital-health-technologies-vermonts-targeted-investment-strategy)
 >
-> [4.7 AI Governance --- Vermont's Responsibility Before the Risk Arrives 88](#ai-governance-vermonts-responsibility-before-the-risk-arrives)
+> [4.7 AI Governance --- Vermont's Responsibility Before the Risk Arrives 90](#ai-governance-vermonts-responsibility-before-the-risk-arrives)
 >
-> [4.8 Vermont's Target Technology Architecture --- A Framework for the Strategic Plan 89](#vermonts-target-technology-architecture-a-framework-for-the-strategic-plan)
+> [4.8 Vermont's Target Technology Architecture --- A Framework for the Strategic Plan 91](#vermonts-target-technology-architecture-a-framework-for-the-strategic-plan)
 >
-> [4.9 Work This Chapter on the Platform 90](#work-this-chapter-on-the-platform-2)
+> [4.9 Work This Chapter on the Platform 92](#work-this-chapter-on-the-platform-2)
 >
-> [4.10 Implications for You 91](#implications-for-you-3)
+> [4.10 Implications for You 93](#implications-for-you-3)
 >
-> [4.11 Key Concepts in This Chapter 91](#key-concepts-in-this-chapter-3)
+> [4.11 Key Concepts in This Chapter 94](#key-concepts-in-this-chapter-3)
 
-[**Chapter 5: The Technology Pillar in Practice --- FHIR, AI Governance, and Clinical Decision Support 93**](#chapter-5-the-technology-pillar-in-practice-fhir-ai-governance-and-clinical-decision-support)
+[**Chapter 5: The Technology Pillar in Practice --- FHIR, AI Governance, and Clinical Decision Support 96**](#chapter-5-the-technology-pillar-in-practice-fhir-ai-governance-and-clinical-decision-support)
 
-> [5.1 From Architecture to Implementation 93](#from-architecture-to-implementation)
+> [5.1 From Architecture to Implementation 96](#from-architecture-to-implementation)
 >
-> [5.2 FHIR Implementation --- From Standard to Working System 93](#fhir-implementation-from-standard-to-working-system)
+> [5.2 FHIR Implementation --- From Standard to Working System 96](#fhir-implementation-from-standard-to-working-system)
 >
-> [5.3 AI Clinical Governance --- The Complete Framework 95](#ai-clinical-governance-the-complete-framework)
+> [5.3 AI Clinical Governance --- The Complete Framework 98](#ai-clinical-governance-the-complete-framework)
 >
-> [5.4 Clinical Decision Support --- From Alerts to Intelligence 96](#clinical-decision-support-from-alerts-to-intelligence)
+> [5.4 Clinical Decision Support --- From Alerts to Intelligence 100](#clinical-decision-support-from-alerts-to-intelligence)
 >
-> [5.5 Cybersecurity in Rural Health Infrastructure 98](#cybersecurity-in-rural-health-infrastructure)
+> [5.5 Cybersecurity in Rural Health Infrastructure 101](#cybersecurity-in-rural-health-infrastructure)
 >
-> [5.6 Technology Pillar Implementation Matrix 98](#technology-pillar-implementation-matrix)
+> [5.6 Technology Pillar Implementation Matrix 102](#technology-pillar-implementation-matrix)
 >
-> [5.7 Work This Chapter on the Platform 99](#work-this-chapter-on-the-platform-3)
+> [5.7 Work This Chapter on the Platform 102](#work-this-chapter-on-the-platform-3)
 >
-> [5.8 Implications for You 100](#implications-for-you-4)
+> [5.8 Implications for You 103](#implications-for-you-4)
 >
-> [5.9 Key Concepts in This Chapter 100](#key-concepts-in-this-chapter-4)
+> [5.9 Key Concepts in This Chapter 104](#key-concepts-in-this-chapter-4)
 
-[**Chapter 6: The Economics Pillar --- Global Budgets, Reference-Based Pricing, and Financial Reform 102**](#chapter-6-the-economics-pillar-global-budgets-reference-based-pricing-and-financial-reform)
+[**Chapter 6: The Economics Pillar --- Global Budgets, Reference-Based Pricing, and Financial Reform 106**](#chapter-6-the-economics-pillar-global-budgets-reference-based-pricing-and-financial-reform)
 
-> [6.1 The Economics Pillar: Why Payment Reform Is a Master Variable 102](#the-economics-pillar-why-payment-reform-is-a-master-variable)
+> [6.1 The Economics Pillar: Why Payment Reform Is a Master Variable 106](#the-economics-pillar-why-payment-reform-is-a-master-variable)
 >
-> [6.2 The Fee-for-Service Trap --- Why the Current System Fails 102](#the-fee-for-service-trap-why-the-current-system-fails)
+> [6.2 The Fee-for-Service Trap --- Why the Current System Fails 106](#the-fee-for-service-trap-why-the-current-system-fails)
 >
-> [6.3 Reference-Based Pricing --- Mechanics, Evidence, and Vermont's Design 104](#reference-based-pricing-mechanics-evidence-and-vermonts-design)
+> [6.3 Reference-Based Pricing --- Mechanics, Evidence, and Vermont's Design 108](#reference-based-pricing-mechanics-evidence-and-vermonts-design)
 >
-> [6.4 Hospital Global Budgets --- Architecture, History, and Vermont's Mandate 107](#hospital-global-budgets-architecture-history-and-vermonts-mandate)
+> [6.4 Hospital Global Budgets --- Architecture, History, and Vermont's Mandate 111](#hospital-global-budgets-architecture-history-and-vermonts-mandate)
 >
-> [6.5 Maryland --- A Decade of Global Budget Evidence 110](#maryland-a-decade-of-global-budget-evidence)
+> [6.5 Maryland --- A Decade of Global Budget Evidence 114](#maryland-a-decade-of-global-budget-evidence)
 >
-> [6.6 The AHEAD Model --- Medicare's Entry That Vermont Signed, Then Withdrew 111](#the-ahead-model-medicares-entry-that-vermont-signed-then-withdrew)
+> [6.6 The AHEAD Model --- Medicare's Entry That Vermont Signed, Then Withdrew 116](#the-ahead-model-medicares-entry-that-vermont-signed-then-withdrew)
 >
-> [6.7 Hospital Financial Modeling --- Reading the Numbers That Matter 112](#hospital-financial-modeling-reading-the-numbers-that-matter)
+> [6.7 Hospital Financial Modeling --- Reading the Numbers That Matter 116](#hospital-financial-modeling-reading-the-numbers-that-matter)
 >
-> [6.8 APM Transition Strategy for Vermont Healthcare Organizations 114](#apm-transition-strategy-for-vermont-healthcare-organizations)
+> [6.8 APM Transition Strategy for Vermont Healthcare Organizations 118](#apm-transition-strategy-for-vermont-healthcare-organizations)
 >
-> [6.9 Work This Chapter on the Platform 115](#work-this-chapter-on-the-platform-4)
+> [6.9 Work This Chapter on the Platform 119](#work-this-chapter-on-the-platform-4)
 >
-> [6.10 Implications for You 115](#implications-for-you-5)
+> [6.10 Implications for You 120](#implications-for-you-5)
 >
-> [6.11 Key Concepts in This Chapter 116](#key-concepts-in-this-chapter-5)
+> [6.11 Key Concepts in This Chapter 121](#key-concepts-in-this-chapter-5)
 
-[**Chapter 7: The Economics Pillar in Practice --- VBC Financial Modeling and APM Readiness 118**](#chapter-7-the-economics-pillar-in-practice-vbc-financial-modeling-and-apm-readiness)
+[**Chapter 7: The Economics Pillar in Practice --- VBC Financial Modeling and APM Readiness 123**](#chapter-7-the-economics-pillar-in-practice-vbc-financial-modeling-and-apm-readiness)
 
-> [7.1 From Payment Architecture to Financial Practice 118](#from-payment-architecture-to-financial-practice)
+> [7.1 From Payment Architecture to Financial Practice 123](#from-payment-architecture-to-financial-practice)
 >
-> [7.2 The APM Financial Modeling Framework 118](#the-apm-financial-modeling-framework)
+> [7.2 The APM Financial Modeling Framework 123](#the-apm-financial-modeling-framework)
 >
-> [7.3 Economics Pillar Implementation Matrix 121](#economics-pillar-implementation-matrix)
+> [7.3 Economics Pillar Implementation Matrix 126](#economics-pillar-implementation-matrix)
 >
-> [7.4 APM Readiness Assessment --- The 30-Dimension Framework 121](#apm-readiness-assessment-the-30-dimension-framework)
+> [7.4 APM Readiness Assessment --- The 30-Dimension Framework 126](#apm-readiness-assessment-the-30-dimension-framework)
 >
-> [7.5 Contract Analysis --- Reading an APM Contract for Financial Risk 122](#contract-analysis-reading-an-apm-contract-for-financial-risk)
+> [7.5 Contract Analysis --- Reading an APM Contract for Financial Risk 127](#contract-analysis-reading-an-apm-contract-for-financial-risk)
 >
-> [7.6 Hospital Financial Modeling Under Global Budgets --- The Vermont Framework 123](#hospital-financial-modeling-under-global-budgets-the-vermont-framework)
+> [7.6 Hospital Financial Modeling Under Global Budgets --- The Vermont Framework 128](#hospital-financial-modeling-under-global-budgets-the-vermont-framework)
 >
-> [7.7 The ROI of Transformation --- Building the Financial Case 125](#the-roi-of-transformation-building-the-financial-case)
+> [7.7 The ROI of Transformation --- Building the Financial Case 130](#the-roi-of-transformation-building-the-financial-case)
 >
-> [7.8 Primary Care Investment --- Vermont's Primary Care Economics 126](#primary-care-investment-vermonts-primary-care-economics)
+> [7.8 Primary Care Investment --- Vermont's Primary Care Economics 131](#primary-care-investment-vermonts-primary-care-economics)
 >
-> [7.9 Work This Chapter on the Platform 126](#work-this-chapter-on-the-platform-5)
+> [7.9 Work This Chapter on the Platform 131](#work-this-chapter-on-the-platform-5)
 >
-> [7.10 Implications for You 127](#implications-for-you-6)
+> [7.10 Implications for You 132](#implications-for-you-6)
 >
-> [7.11 Key Concepts in This Chapter 128](#key-concepts-in-this-chapter-6)
+> [7.11 Key Concepts in This Chapter 133](#key-concepts-in-this-chapter-6)
 
-[**Chapter 8: The Clinical Pillar --- Redesigning Care Delivery for a Transformed System 129**](#chapter-8-the-clinical-pillar-redesigning-care-delivery-for-a-transformed-system)
+[**Chapter 8: The Clinical Pillar --- Redesigning Care Delivery for a Transformed System 135**](#chapter-8-the-clinical-pillar-redesigning-care-delivery-for-a-transformed-system)
 
-> [8.1 The Clinical Pillar: What It Is and Why It Is Not the Same as Clinical Quality 129](#the-clinical-pillar-what-it-is-and-why-it-is-not-the-same-as-clinical-quality)
+> [8.1 The Clinical Pillar: What It Is and Why It Is Not the Same as Clinical Quality 135](#the-clinical-pillar-what-it-is-and-why-it-is-not-the-same-as-clinical-quality)
 >
-> [8.2 The Vermont Blueprint for Health --- Two Decades of Primary Care Transformation 130](#the-vermont-blueprint-for-health-two-decades-of-primary-care-transformation)
+> [8.2 The Vermont Blueprint for Health --- Two Decades of Primary Care Transformation 135](#the-vermont-blueprint-for-health-two-decades-of-primary-care-transformation)
 >
-> [8.3 The Behavioral Health Crisis --- Vermont's Most Urgent Clinical Challenge 132](#the-behavioral-health-crisis-vermonts-most-urgent-clinical-challenge)
+> [8.3 The Behavioral Health Crisis --- Vermont's Most Urgent Clinical Challenge 138](#the-behavioral-health-crisis-vermonts-most-urgent-clinical-challenge)
 >
-> [8.4 Primary Care Redesign --- Vermont's Strategy for the Front Door 135](#primary-care-redesign-vermonts-strategy-for-the-front-door)
+> [8.4 Primary Care Redesign --- Vermont's Strategy for the Front Door 140](#primary-care-redesign-vermonts-strategy-for-the-front-door)
 >
-> [8.5 Vermont's Clinical Quality Architecture --- Measuring What Matters 136](#vermonts-clinical-quality-architecture-measuring-what-matters)
+> [8.5 Vermont's Clinical Quality Architecture --- Measuring What Matters 142](#vermonts-clinical-quality-architecture-measuring-what-matters)
 >
-> [8.6 Care for Vermont's Aging Population --- The Clinical Imperative 138](#care-for-vermonts-aging-population-the-clinical-imperative)
+> [8.6 Care for Vermont's Aging Population --- The Clinical Imperative 144](#care-for-vermonts-aging-population-the-clinical-imperative)
 >
-> [8.7 Clinical Pillar Implications for AHS's Statewide Strategic Plan 139](#clinical-pillar-implications-for-ahss-statewide-strategic-plan)
+> [8.7 Clinical Pillar Implications for AHS's Statewide Strategic Plan 145](#clinical-pillar-implications-for-ahss-statewide-strategic-plan)
 >
-> [8.8 Work This Chapter on the Platform 140](#work-this-chapter-on-the-platform-6)
+> [8.8 Work This Chapter on the Platform 145](#work-this-chapter-on-the-platform-6)
 >
-> [8.9 Implications for You 140](#implications-for-you-7)
+> [8.9 Implications for You 146](#implications-for-you-7)
 >
-> [8.10 Key Concepts in This Chapter 141](#key-concepts-in-this-chapter-7)
+> [8.10 Key Concepts in This Chapter 147](#key-concepts-in-this-chapter-7)
 
-[**Chapter 9: The Clinical Pillar in Practice --- Care Model Implementation, Quality Mechanics, and the Vermont Clinical Transformation Toolkit 143**](#chapter-9-the-clinical-pillar-in-practice-care-model-implementation-quality-mechanics-and-the-vermont-clinical-transformation-toolkit)
+[**Chapter 9: The Clinical Pillar in Practice --- Care Model Implementation, Quality Mechanics, and the Vermont Clinical Transformation Toolkit 148**](#chapter-9-the-clinical-pillar-in-practice-care-model-implementation-quality-mechanics-and-the-vermont-clinical-transformation-toolkit)
 
-> [9.1 From Clinical Architecture to Clinical Practice 143](#from-clinical-architecture-to-clinical-practice)
+> [9.1 From Clinical Architecture to Clinical Practice 148](#from-clinical-architecture-to-clinical-practice)
 >
-> [9.2 PCMH Transformation --- The Blueprint Practice Implementation Playbook 143](#pcmh-transformation-the-blueprint-practice-implementation-playbook)
+> [9.2 PCMH Transformation --- The Blueprint Practice Implementation Playbook 148](#pcmh-transformation-the-blueprint-practice-implementation-playbook)
 >
-> [9.3 Deploying the Collaborative Care Model --- Operational Requirements 146](#deploying-the-collaborative-care-model-operational-requirements)
+> [9.3 Deploying the Collaborative Care Model --- Operational Requirements 151](#deploying-the-collaborative-care-model-operational-requirements)
 >
-> [9.4 HEDIS Improvement Methodology --- Vermont Context 148](#hedis-improvement-methodology-vermont-context)
+> [9.4 HEDIS Improvement Methodology --- Vermont Context 153](#hedis-improvement-methodology-vermont-context)
 >
-> [9.5 The Clinical Data Infrastructure --- Connecting Care to Population Health Management 149](#the-clinical-data-infrastructure-connecting-care-to-population-health-management)
+> [9.5 The Clinical Data Infrastructure --- Connecting Care to Population Health Management 154](#the-clinical-data-infrastructure-connecting-care-to-population-health-management)
 >
-> [9.6 The Care Transition Protocol --- Closing the Loop Between Hospital and Community 150](#the-care-transition-protocol-closing-the-loop-between-hospital-and-community)
+> [9.6 The Care Transition Protocol --- Closing the Loop Between Hospital and Community 155](#the-care-transition-protocol-closing-the-loop-between-hospital-and-community)
 >
-> [9.7 Clinical Leadership in Transformation --- The Under-Resourced Capability 150](#clinical-leadership-in-transformation-the-under-resourced-capability)
+> [9.7 Clinical Leadership in Transformation --- The Under-Resourced Capability 156](#clinical-leadership-in-transformation-the-under-resourced-capability)
 >
-> [9.8 Clinical Pillar Implementation Commitments for AHS's Statewide Strategic Plan 151](#clinical-pillar-implementation-commitments-for-ahss-statewide-strategic-plan)
+> [9.8 Clinical Pillar Implementation Commitments for AHS's Statewide Strategic Plan 156](#clinical-pillar-implementation-commitments-for-ahss-statewide-strategic-plan)
 >
-> [9.9 Clinical Pillar Implementation Matrix 152](#clinical-pillar-implementation-matrix)
+> [9.9 Clinical Pillar Implementation Matrix 157](#clinical-pillar-implementation-matrix)
 >
-> [9.10 Work This Chapter on the Platform 153](#work-this-chapter-on-the-platform-7)
+> [9.10 Work This Chapter on the Platform 158](#work-this-chapter-on-the-platform-7)
 >
-> [9.11 Implications for You 153](#implications-for-you-8)
+> [9.11 Implications for You 158](#implications-for-you-8)
 >
-> [9.12 Key Concepts in This Chapter 154](#key-concepts-in-this-chapter-8)
+> [9.12 Key Concepts in This Chapter 159](#key-concepts-in-this-chapter-8)
 
-[**Chapter 10: The Equity Imperative --- Closing Gaps, Not Just Averaging Them 156**](#chapter-10-the-equity-imperative-closing-gaps-not-just-averaging-them)
+[**Chapter 10: The Equity Imperative --- Closing Gaps, Not Just Averaging Them 161**](#chapter-10-the-equity-imperative-closing-gaps-not-just-averaging-them)
 
-> [10.1 The Equity Imperative: Why Average Outcomes Are the Wrong Target 156](#the-equity-imperative-why-average-outcomes-are-the-wrong-target)
+> [10.1 The Equity Imperative: Why Average Outcomes Are the Wrong Target 161](#the-equity-imperative-why-average-outcomes-are-the-wrong-target)
 >
-> [10.2 Vermont's Equity Landscape --- What the Data Shows 157](#vermonts-equity-landscape-what-the-data-shows)
+> [10.2 Vermont's Equity Landscape --- What the Data Shows 162](#vermonts-equity-landscape-what-the-data-shows)
 >
-> [10.3 The Disparity Root Cause Taxonomy --- Why Vermont's Equity Gaps Exist 159](#the-disparity-root-cause-taxonomy-why-vermonts-equity-gaps-exist)
+> [10.3 The Disparity Root Cause Taxonomy --- Why Vermont's Equity Gaps Exist 164](#the-disparity-root-cause-taxonomy-why-vermonts-equity-gaps-exist)
 >
-> [10.4 Rural Equity --- Vermont's Defining Challenge 160](#rural-equity-vermonts-defining-challenge)
+> [10.4 Rural Equity --- Vermont's Defining Challenge 165](#rural-equity-vermonts-defining-challenge)
 >
-> [10.5 The GLP-1 Access Crisis --- The Most Important New Equity Issue 161](#the-glp-1-access-crisis-the-most-important-new-equity-issue)
+> [10.5 The GLP-1 Access Crisis --- The Most Important New Equity Issue 166](#the-glp-1-access-crisis-the-most-important-new-equity-issue)
 >
-> [10.6 Vermont's Equity Architecture --- What Is Already Built and What Remains 163](#vermonts-equity-architecture-what-is-already-built-and-what-remains)
+> [10.6 Vermont's Equity Architecture --- What Is Already Built and What Remains 168](#vermonts-equity-architecture-what-is-already-built-and-what-remains)
 >
-> [10.7 Equity and the Five-Pillar Framework --- How Every Pillar Has an Equity Dimension 164](#equity-and-the-five-pillar-framework-how-every-pillar-has-an-equity-dimension)
+> [10.7 Equity and the Five-Pillar Framework --- How Every Pillar Has an Equity Dimension 169](#equity-and-the-five-pillar-framework-how-every-pillar-has-an-equity-dimension)
 >
-> [10.8 Vermont's Equity Accountability Framework 165](#vermonts-equity-accountability-framework)
+> [10.8 Vermont's Equity Accountability Framework 170](#vermonts-equity-accountability-framework)
 >
-> [10.9 Measuring Equity: HEROI, HEDIS Stratification, and VBC Safeguards 167](#measuring-equity-heroi-hedis-stratification-and-vbc-safeguards)
+> [10.9 Measuring Equity: HEROI, HEDIS Stratification, and VBC Safeguards 172](#measuring-equity-heroi-hedis-stratification-and-vbc-safeguards)
 >
-> [10.10 From Identifying Disparities to Eliminating Them 167](#from-identifying-disparities-to-eliminating-them)
+> [10.10 From Identifying Disparities to Eliminating Them 172](#from-identifying-disparities-to-eliminating-them)
 >
-> [10.11 Stratified HEDIS Measurement --- The Foundation of Equity Analytics 167](#stratified-hedis-measurement-the-foundation-of-equity-analytics)
+> [10.11 Stratified HEDIS Measurement --- The Foundation of Equity Analytics 172](#stratified-hedis-measurement-the-foundation-of-equity-analytics)
 >
-> [10.12 Equity Imperative Implementation Matrix 168](#equity-imperative-implementation-matrix)
+> [10.12 Equity Imperative Implementation Matrix 173](#equity-imperative-implementation-matrix)
 >
-> [10.13 The HEROI Framework --- A Composite Equity Score 169](#the-heroi-framework-a-composite-equity-score)
+> [10.13 The HEROI Framework --- A Composite Equity Score 174](#the-heroi-framework-a-composite-equity-score)
 >
-> [10.14 Root Cause Analytics --- Matching Interventions to Causes 170](#root-cause-analytics-matching-interventions-to-causes)
+> [10.14 Root Cause Analytics --- Matching Interventions to Causes 175](#root-cause-analytics-matching-interventions-to-causes)
 >
-> [10.15 Equity in VBC Contracting --- Protecting Against Unintended Consequences 172](#equity-in-vbc-contracting-protecting-against-unintended-consequences)
+> [10.15 Equity in VBC Contracting --- Protecting Against Unintended Consequences 177](#equity-in-vbc-contracting-protecting-against-unintended-consequences)
 >
-> [10.16 Vermont's Population Health Equity Analytics Architecture 173](#vermonts-population-health-equity-analytics-architecture)
+> [10.16 Vermont's Population Health Equity Analytics Architecture 178](#vermonts-population-health-equity-analytics-architecture)
 >
-> [10.17 Work This Chapter on the Platform 174](#work-this-chapter-on-the-platform-8)
+> [10.17 Work This Chapter on the Platform 179](#work-this-chapter-on-the-platform-8)
 >
-> [10.18 Implications for You 174](#implications-for-you-9)
+> [10.18 Implications for You 179](#implications-for-you-9)
 >
-> [10.19 Key Concepts in This Chapter 175](#key-concepts-in-this-chapter-9)
+> [10.19 Key Concepts in This Chapter 180](#key-concepts-in-this-chapter-9)
 
-[**Chapter 11: The Operations Pillar --- Executing Hospital System Transformation 177**](#chapter-11-the-operations-pillar-executing-hospital-system-transformation)
+[**Chapter 11: The Operations Pillar --- Executing Hospital System Transformation 182**](#chapter-11-the-operations-pillar-executing-hospital-system-transformation)
 
-> [11.1 The Operations Pillar: Where Strategy Meets Reality 177](#the-operations-pillar-where-strategy-meets-reality)
+> [11.1 The Operations Pillar: Where Strategy Meets Reality 182](#the-operations-pillar-where-strategy-meets-reality)
 >
-> [11.2 The Vermont Transformation Operating Model 177](#the-vermont-transformation-operating-model)
+> [11.2 The Vermont Transformation Operating Model 183](#the-vermont-transformation-operating-model)
 >
-> [11.3 The RHRC Methodology --- Technical Assistance for Rural Hospital Transformation 180](#the-rhrc-methodology-technical-assistance-for-rural-hospital-transformation)
+> [11.3 The RHRC Methodology --- Technical Assistance for Rural Hospital Transformation 185](#the-rhrc-methodology-technical-assistance-for-rural-hospital-transformation)
 >
-> [11.4 The Vermont Hospital Performance Dashboard --- Where Each Hospital Stands 181](#the-vermont-hospital-performance-dashboard-where-each-hospital-stands)
+> [11.4 The Vermont Hospital Performance Dashboard --- Where Each Hospital Stands 186](#the-vermont-hospital-performance-dashboard-where-each-hospital-stands)
 >
-> [11.5 Regionalization --- The Operational Logic of Right-Sizing a 14-Hospital System 183](#regionalization-the-operational-logic-of-right-sizing-a-14-hospital-system)
+> [11.5 Regionalization --- The Operational Logic of Right-Sizing a 14-Hospital System 188](#regionalization-the-operational-logic-of-right-sizing-a-14-hospital-system)
 >
-> [11.6 The Workforce Crisis --- Operations' Most Binding Constraint 186](#the-workforce-crisis-operations-most-binding-constraint)
+> [11.6 The Workforce Crisis --- Operations' Most Binding Constraint 191](#the-workforce-crisis-operations-most-binding-constraint)
 >
-> [11.7 The Operations Metrics Framework --- What AHS Must Track 188](#the-operations-metrics-framework-what-ahs-must-track)
+> [11.7 The Operations Metrics Framework --- What AHS Must Track 193](#the-operations-metrics-framework-what-ahs-must-track)
 >
-> [11.8 AHS as System Operator --- Organizational Design for the 2028 Mandate 189](#ahs-as-system-operator-organizational-design-for-the-2028-mandate)
+> [11.8 AHS as System Operator --- Organizational Design for the 2028 Mandate 195](#ahs-as-system-operator-organizational-design-for-the-2028-mandate)
 >
-> [11.9 Revenue Cycle, HCC Coding, Credentialing, and Administrative Simplification 191](#revenue-cycle-hcc-coding-credentialing-and-administrative-simplification)
+> [11.9 Revenue Cycle, HCC Coding, Credentialing, and Administrative Simplification 196](#revenue-cycle-hcc-coding-credentialing-and-administrative-simplification)
 >
-> [11.10 Operations Where Money Actually Lives 191](#operations-where-money-actually-lives)
+> [11.10 Operations Where Money Actually Lives 196](#operations-where-money-actually-lives)
 >
-> [11.11 Revenue Cycle Transformation --- From FFS Optimization to VBC Management 191](#revenue-cycle-transformation-from-ffs-optimization-to-vbc-management)
+> [11.11 Revenue Cycle Transformation --- From FFS Optimization to VBC Management 196](#revenue-cycle-transformation-from-ffs-optimization-to-vbc-management)
 >
-> [11.12 HCC Coding Excellence --- The Risk Adjustment Foundation 193](#hcc-coding-excellence-the-risk-adjustment-foundation)
+> [11.12 HCC Coding Excellence --- The Risk Adjustment Foundation 198](#hcc-coding-excellence-the-risk-adjustment-foundation)
 >
-> [11.13 Credentialing Efficiency --- The Hidden Operations Bottleneck 194](#credentialing-efficiency-the-hidden-operations-bottleneck)
+> [11.13 Credentialing Efficiency --- The Hidden Operations Bottleneck 199](#credentialing-efficiency-the-hidden-operations-bottleneck)
 >
-> [11.14 Workforce Operations --- Managing the Care Team in a Transformed System 195](#workforce-operations-managing-the-care-team-in-a-transformed-system)
+> [11.14 Workforce Operations --- Managing the Care Team in a Transformed System 200](#workforce-operations-managing-the-care-team-in-a-transformed-system)
 >
-> [11.15 Administrative Simplification --- The Vermont Agenda 196](#administrative-simplification-the-vermont-agenda)
+> [11.15 Administrative Simplification --- The Vermont Agenda 201](#administrative-simplification-the-vermont-agenda)
 >
-> [11.16 Operations Pillar Implementation Matrix 197](#operations-pillar-implementation-matrix)
+> [11.16 Operations Pillar Implementation Matrix 202](#operations-pillar-implementation-matrix)
 >
-> [11.17 Work This Chapter on the Platform 197](#work-this-chapter-on-the-platform-9)
+> [11.17 Work This Chapter on the Platform 203](#work-this-chapter-on-the-platform-9)
 >
-> [11.18 Implications for You 198](#implications-for-you-10)
+> [11.18 Implications for You 203](#implications-for-you-10)
 >
-> [11.19 Key Concepts in This Chapter 199](#key-concepts-in-this-chapter-10)
+> [11.19 Key Concepts in This Chapter 205](#key-concepts-in-this-chapter-10)
 
-[**Chapter 12: Infrastructure for Knowledge Transfer and Implementation 201**](#chapter-12-infrastructure-for-knowledge-transfer-and-implementation)
+[**Chapter 12: Infrastructure for Knowledge Transfer and Implementation 206**](#chapter-12-infrastructure-for-knowledge-transfer-and-implementation)
 
-> [12.1 The Gap Between Understanding and Doing 201](#the-gap-between-understanding-and-doing)
+> [12.1 The Gap Between Understanding and Doing 206](#the-gap-between-understanding-and-doing)
 >
-> [12.2 The Knowledge and Implementation Infrastructure 201](#the-knowledge-and-implementation-infrastructure)
+> [12.2 The Knowledge and Implementation Infrastructure 206](#the-knowledge-and-implementation-infrastructure)
 >
-> [12.3 The Transformation Advisory Domains --- Structured for the Five Pillars 202](#the-transformation-advisory-domains-structured-for-the-five-pillars)
+> [12.3 The Transformation Advisory Domains --- Structured for the Five Pillars 207](#the-transformation-advisory-domains-structured-for-the-five-pillars)
 >
-> [12.4 The Change Management Science Behind Healthcare Transformation 204](#the-change-management-science-behind-healthcare-transformation)
+> [12.4 The Change Management Science Behind Healthcare Transformation 209](#the-change-management-science-behind-healthcare-transformation)
 >
-> [12.5 The HTR Implementation Toolkit 206](#the-htr-implementation-toolkit)
+> [12.5 The HTR Implementation Toolkit 211](#the-htr-implementation-toolkit)
 >
-> [12.6 A Framework for Selecting Advisory Support 207](#a-framework-for-selecting-advisory-support)
+> [12.6 A Framework for Selecting Advisory Support 212](#a-framework-for-selecting-advisory-support)
 >
-> [12.7 Work This Chapter on the Platform 208](#work-this-chapter-on-the-platform-10)
+> [12.7 Work This Chapter on the Platform 212](#work-this-chapter-on-the-platform-10)
 >
-> [12.8 Implications for You 208](#implications-for-you-11)
+> [12.8 Implications for You 213](#implications-for-you-11)
 >
-> [12.9 Key Concepts in This Chapter 209](#key-concepts-in-this-chapter-11)
+> [12.9 Key Concepts in This Chapter 214](#key-concepts-in-this-chapter-11)
 
-[**Chapter 13: The Future of Healthcare Transformation --- 2026, What Vermont Proves, and What Remains 211**](#chapter-13-the-future-of-healthcare-transformation-2026-what-vermont-proves-and-what-remains)
+[**Chapter 13: The Future of Healthcare Transformation --- 2026, What Vermont Proves, and What Remains 215**](#chapter-13-the-future-of-healthcare-transformation-2026-what-vermont-proves-and-what-remains)
 
-> [13.1 Vermont Transformation Scorecard: Five-Pillar Status, July 2026 211](#vermont-transformation-scorecard-five-pillar-status-july-2026)
+> [13.1 Vermont Transformation Scorecard: Five-Pillar Status, July 2026 215](#vermont-transformation-scorecard-five-pillar-status-july-2026)
 >
-> [13.2 Where the System Stands in July 2026 --- A Necessary Update 212](#where-the-system-stands-in-july-2026-a-necessary-update)
+> [13.2 Where the System Stands in July 2026 --- A Necessary Update 216](#where-the-system-stands-in-july-2026-a-necessary-update)
 >
-> [13.3 Five Forces Shaping the Next Decade 213](#five-forces-shaping-the-next-decade)
+> [13.3 Five Forces Shaping the Next Decade 218](#five-forces-shaping-the-next-decade)
 >
-> [13.4 The Five-Pillar Forecast: 2026--2035 216](#the-five-pillar-forecast-20262035)
+> [13.4 The Five-Pillar Forecast: 2026--2035 220](#the-five-pillar-forecast-20262035)
 >
-> [13.5 Vermont's Ten-Year Trajectory: Two Scenarios 217](#vermonts-ten-year-trajectory-two-scenarios)
+> [13.5 Vermont's Ten-Year Trajectory: Two Scenarios 221](#vermonts-ten-year-trajectory-two-scenarios)
 >
-> [13.6 Vermont as National Template --- The Decisions That Will Determine Outcomes 218](#vermont-as-national-template-the-decisions-that-will-determine-outcomes)
+> [13.6 Vermont as National Template --- The Decisions That Will Determine Outcomes 223](#vermont-as-national-template-the-decisions-that-will-determine-outcomes)
 >
-> [13.7 Work This Chapter on the Platform 219](#work-this-chapter-on-the-platform-11)
+> [13.7 Work This Chapter on the Platform 223](#work-this-chapter-on-the-platform-11)
 >
-> [13.8 Implications for You 220](#implications-for-you-12)
+> [13.8 Implications for You 224](#implications-for-you-12)
 >
-> [13.9 Key Concepts in This Chapter 220](#key-concepts-in-this-chapter-12)
+> [13.9 Key Concepts in This Chapter 225](#key-concepts-in-this-chapter-12)
 >
-> [13.10 A Closing Note: What This Book Is Betting On 220](#a-closing-note-what-this-book-is-betting-on)
+> [13.10 A Closing Note: What This Book Is Betting On 225](#a-closing-note-what-this-book-is-betting-on)
 
-[**Chapter 14: Political Sustainability --- Protecting Transformation Across Election Cycles 222**](#chapter-14-political-sustainability-protecting-transformation-across-election-cycles)
+[**Chapter 14: Political Sustainability --- Protecting Transformation Across Election Cycles 226**](#chapter-14-political-sustainability-protecting-transformation-across-election-cycles)
 
-> [14.1 Why Political Sustainability Is an Analytical Problem, Not Only a Political One 222](#why-political-sustainability-is-an-analytical-problem-not-only-a-political-one)
+> [14.1 Why Political Sustainability Is an Analytical Problem, Not Only a Political One 226](#why-political-sustainability-is-an-analytical-problem-not-only-a-political-one)
 >
-> [14.2 The Structural Durability of Vermont's Reform Architecture 222](#the-structural-durability-of-vermonts-reform-architecture)
+> [14.2 The Structural Durability of Vermont's Reform Architecture 226](#the-structural-durability-of-vermonts-reform-architecture)
 >
-> [14.3 Early-Warning Signals of Political Risk 223](#early-warning-signals-of-political-risk)
+> [14.3 Early-Warning Signals of Political Risk 227](#early-warning-signals-of-political-risk)
 >
-> [14.4 Organizational Strategies for Political Risk Management 224](#organizational-strategies-for-political-risk-management)
+> [14.4 Organizational Strategies for Political Risk Management 229](#organizational-strategies-for-political-risk-management)
 >
-> [14.5 Vermont's Reform Cascade as Political-Sustainability Architecture 226](#vermonts-reform-cascade-as-political-sustainability-architecture)
+> [14.5 Vermont's Reform Cascade as Political-Sustainability Architecture 230](#vermonts-reform-cascade-as-political-sustainability-architecture)
 >
-> [14.6 Work This Chapter on the Platform 226](#work-this-chapter-on-the-platform-12)
+> [14.6 Work This Chapter on the Platform 231](#work-this-chapter-on-the-platform-12)
 >
-> [14.7 Implications for You 227](#implications-for-you-13)
+> [14.7 Implications for You 231](#implications-for-you-13)
 >
-> [14.8 Key Concepts in This Chapter 227](#key-concepts-in-this-chapter-13)
+> [14.8 Key Concepts in This Chapter 232](#key-concepts-in-this-chapter-13)
 
-[**Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform 229**](#chapter-15-healthcare-transformation-as-portfolio-management-applying-pmi-standards-to-five-pillar-reform)
+[**Chapter 15: Healthcare Transformation as Portfolio Management --- Applying PMI Standards to Five-Pillar Reform 233**](#chapter-15-healthcare-transformation-as-portfolio-management-applying-pmi-standards-to-five-pillar-reform)
 
-> [15.1 The Project-Management Gap in Healthcare Transformation 229](#the-project-management-gap-in-healthcare-transformation)
+> [15.1 The Project-Management Gap in Healthcare Transformation 233](#the-project-management-gap-in-healthcare-transformation)
 >
-> [15.2 Project, Program, and Portfolio: Getting the Levels Right 229](#project-program-and-portfolio-getting-the-levels-right)
+> [15.2 Project, Program, and Portfolio: Getting the Levels Right 233](#project-program-and-portfolio-getting-the-levels-right)
 >
-> [15.3 Vermont's Transformation Portfolio: 19 Components 230](#vermonts-transformation-portfolio-19-components)
+> [15.3 Vermont's Transformation Portfolio: 19 Components 234](#vermonts-transformation-portfolio-19-components)
 >
-> [15.4 The Case for a Portfolio Manager 232](#the-case-for-a-portfolio-manager)
+> [15.4 The Case for a Portfolio Manager 236](#the-case-for-a-portfolio-manager)
 >
-> [15.5 Pillar-Level Program Managers: Five Roles, One Framework 232](#pillar-level-program-managers-five-roles-one-framework)
+> [15.5 Pillar-Level Program Managers: Five Roles, One Framework 237](#pillar-level-program-managers-five-roles-one-framework)
 >
-> [15.6 Governance Architecture and the Ten Knowledge Areas 233](#governance-architecture-and-the-ten-knowledge-areas)
+> [15.6 Governance Architecture and the Ten Knowledge Areas 237](#governance-architecture-and-the-ten-knowledge-areas)
 >
-> [15.7 Portfolio Sequence Is Dependency Sequence 234](#portfolio-sequence-is-dependency-sequence)
+> [15.7 Portfolio Sequence Is Dependency Sequence 238](#portfolio-sequence-is-dependency-sequence)
 >
-> [15.8 Predictive vs. Adaptive Approaches 234](#predictive-vs.-adaptive-approaches)
+> [15.8 The Critical-Path Component: The Unified Health Data Space 239](#the-critical-path-component-the-unified-health-data-space)
 >
-> [15.9 The Portfolio Risk Register 235](#the-portfolio-risk-register)
+> [15.9 Predictive vs. Adaptive Approaches 243](#predictive-vs.-adaptive-approaches)
 >
-> [15.10 Benefits Realization: Connecting the PMO to Act 167's Five Goals 236](#benefits-realization-connecting-the-pmo-to-act-167s-five-goals)
+> [15.10 The Portfolio Risk Register 244](#the-portfolio-risk-register)
 >
-> [15.11 The Business Case 236](#the-business-case)
+> [15.11 Benefits Realization: Connecting the PMO to Act 167's Five Goals 245](#benefits-realization-connecting-the-pmo-to-act-167s-five-goals)
 >
-> [15.12 Implementation Roadmap 237](#implementation-roadmap)
+> [15.12 The Business Case 246](#the-business-case)
 >
-> [15.13 Answering the Five Objections 237](#answering-the-five-objections)
+> [15.13 Implementation Roadmap 247](#implementation-roadmap)
 >
-> [15.14 Work This Chapter on the Platform 238](#work-this-chapter-on-the-platform-13)
+> [15.14 Answering the Five Objections 247](#answering-the-five-objections)
 >
-> [15.15 Implications for You 239](#implications-for-you-14)
+> [15.15 Work This Chapter on the Platform 248](#work-this-chapter-on-the-platform-13)
 >
-> [15.16 Key Concepts in This Chapter 239](#key-concepts-in-this-chapter-14)
+> [15.16 Implications for You 250](#implications-for-you-14)
+>
+> [15.17 Key Concepts in This Chapter 250](#key-concepts-in-this-chapter-14)
 
-[**Chapter 16: The AHS Restructuring Roadmap --- A Five-Pillar Framework for System Architects 241**](#chapter-16-the-ahs-restructuring-roadmap-a-five-pillar-framework-for-system-architects)
+[**Chapter 16: The AHS Restructuring Roadmap --- A Five-Pillar Framework for System Architects 251**](#chapter-16-the-ahs-restructuring-roadmap-a-five-pillar-framework-for-system-architects)
 
-> [16.1 The Statutory Mandate --- What Act 68 Actually Requires AHS to Do 241](#the-statutory-mandate-what-act-68-actually-requires-ahs-to-do)
+> [16.1 The Statutory Mandate --- What Act 68 Actually Requires AHS to Do 251](#the-statutory-mandate-what-act-68-actually-requires-ahs-to-do)
 >
-> [16.2 The Organizational Diagnosis --- Why AHS Must Restructure, Not Just Plan 242](#the-organizational-diagnosis-why-ahs-must-restructure-not-just-plan)
+> [16.2 The Organizational Diagnosis --- Why AHS Must Restructure, Not Just Plan 252](#the-organizational-diagnosis-why-ahs-must-restructure-not-just-plan)
 >
-> [16.3 The Redesigned AHS Operating Model --- A Population Health System Operator 243](#the-redesigned-ahs-operating-model-a-population-health-system-operator)
+> [16.3 The Redesigned AHS Operating Model --- A Population Health System Operator 254](#the-redesigned-ahs-operating-model-a-population-health-system-operator)
 >
-> [16.4 The Five-Pillar Framework Applied to AHS's Mandate 246](#the-five-pillar-framework-applied-to-ahss-mandate)
+> [16.4 The Five-Pillar Framework Applied to AHS's Mandate 257](#the-five-pillar-framework-applied-to-ahss-mandate)
 >
-> [16.5 The AHS Restructuring Implementation Timeline 247](#the-ahs-restructuring-implementation-timeline)
+> [16.5 The AHS Restructuring Implementation Timeline 257](#the-ahs-restructuring-implementation-timeline)
 >
-> [16.6 A Framework for the 2028 Statewide Strategic Plan 248](#a-framework-for-the-2028-statewide-strategic-plan)
+> [16.6 A Framework for the 2028 Statewide Strategic Plan 259](#a-framework-for-the-2028-statewide-strategic-plan)
 >
-> [16.7 Vermont as National Template --- Why This Restructuring Matters Beyond Vermont 249](#vermont-as-national-template-why-this-restructuring-matters-beyond-vermont)
+> [16.7 Vermont as National Template --- Why This Restructuring Matters Beyond Vermont 260](#vermont-as-national-template-why-this-restructuring-matters-beyond-vermont)
 >
-> [16.8 Work This Chapter on the Platform 249](#work-this-chapter-on-the-platform-14)
+> [16.8 Work This Chapter on the Platform 260](#work-this-chapter-on-the-platform-14)
 >
-> [16.9 Implications for You 250](#implications-for-you-15)
+> [16.9 Implications for You 261](#implications-for-you-15)
 >
-> [16.10 Key Concepts in This Chapter 250](#key-concepts-in-this-chapter-15)
+> [16.10 Key Concepts in This Chapter 261](#key-concepts-in-this-chapter-15)
 
-[**Conclusion --- What Vermont Proves, and What Remains to Be Proven 251**](#conclusion-what-vermont-proves-and-what-remains-to-be-proven)
+[**Conclusion --- What Vermont Proves, and What Remains to Be Proven 262**](#conclusion-what-vermont-proves-and-what-remains-to-be-proven)
 
-> [What Failure Actually Looks Like 251](#what-failure-actually-looks-like)
+> [What Failure Actually Looks Like 262](#what-failure-actually-looks-like)
 >
-> [The Three Decisions That Are Not Yet Made 251](#the-three-decisions-that-are-not-yet-made)
+> [The Three Decisions That Are Not Yet Made 262](#the-three-decisions-that-are-not-yet-made)
 >
-> [What Vermont Has Proved --- As of July 2026 252](#what-vermont-has-proved-as-of-july-2026)
+> [What Vermont Has Proved --- As of July 2026 264](#what-vermont-has-proved-as-of-july-2026)
 >
-> [The People This Book Cannot Reach 253](#the-people-this-book-cannot-reach)
+> [The People This Book Cannot Reach 264](#the-people-this-book-cannot-reach)
 >
-> [The Call 253](#the-call)
+> [The Call 265](#the-call)
 >
-> [Key Concepts in This Chapter 254](#key-concepts-in-this-chapter-16)
+> [Key Concepts in This Chapter 265](#key-concepts-in-this-chapter-16)
 
-[**Appendix A --- Vermont System Portrait 256**](#appendix-a-vermont-system-portrait)
+[**Appendix A --- Vermont System Portrait 267**](#appendix-a-vermont-system-portrait)
 
-> [A.1 Vermont: The State 256](#a.1-vermont-the-state)
+> [A.1 Vermont: The State 267](#a.1-vermont-the-state)
 >
-> [A.2 Demographics and Population Projections 256](#a.2-demographics-and-population-projections)
+> [A.2 Demographics and Population Projections 267](#a.2-demographics-and-population-projections)
 >
-> [A.3 Regulatory Architecture: The Green Mountain Care Board 257](#a.3-regulatory-architecture-the-green-mountain-care-board)
+> [A.3 Regulatory Architecture: The Green Mountain Care Board 268](#a.3-regulatory-architecture-the-green-mountain-care-board)
 >
-> [A.4 The Hospital System 258](#a.4-the-hospital-system)
+> [A.4 The Hospital System 269](#a.4-the-hospital-system)
 >
-> [A.5 The Transformation Plans: A System in Motion 260](#a.5-the-transformation-plans-a-system-in-motion)
+> [A.5 The Transformation Plans: A System in Motion 271](#a.5-the-transformation-plans-a-system-in-motion)
 >
-> [A.6 The Insurance and Premium Crisis 261](#a.6-the-insurance-and-premium-crisis)
+> [A.6 The Insurance and Premium Crisis 272](#a.6-the-insurance-and-premium-crisis)
 >
-> [A.7 Healthcare Workforce 261](#a.7-healthcare-workforce)
+> [A.7 Healthcare Workforce 272](#a.7-healthcare-workforce)
 >
-> [A.8 Clinical Quality Indicators 262](#a.8-clinical-quality-indicators)
+> [A.8 Clinical Quality Indicators 273](#a.8-clinical-quality-indicators)
 
-[**Appendix B --- Act 68 Statutory Timeline and Milestones 263**](#appendix-b-act-68-statutory-timeline-and-milestones)
+[**Appendix B --- Act 68 Statutory Timeline and Milestones 274**](#appendix-b-act-68-statutory-timeline-and-milestones)
 
-[**Appendix C --- The 14-Hospital Centers of Excellence Assignment Framework 265**](#appendix-c-the-14-hospital-centers-of-excellence-assignment-framework)
+[**Appendix C --- The 14-Hospital Centers of Excellence Assignment Framework 277**](#appendix-c-the-14-hospital-centers-of-excellence-assignment-framework)
 
-[**Appendix D --- HTR Platform Tools and Methodology Overview 267**](#appendix-d-htr-platform-tools-and-methodology-overview)
+[**Appendix D --- HTR Platform Tools and Methodology Overview 279**](#appendix-d-htr-platform-tools-and-methodology-overview)
 
-[**Appendix E --- Vermont Transformation Scorecard: 2022 Baseline, 2026 Status, 2028 Target 269**](#appendix-e-vermont-transformation-scorecard-2022-baseline-2026-status-2028-target)
+[**Appendix E --- Vermont Transformation Scorecard: 2022 Baseline, 2026 Status, 2028 Target 281**](#appendix-e-vermont-transformation-scorecard-2022-baseline-2026-status-2028-target)
 
-[**Appendix F --- A Reader's Guide to the Health Transformation Review Platform 274**](#appendix-f-a-readers-guide-to-the-health-transformation-review-platform)
+[**Appendix F --- A Reader's Guide to the Health Transformation Review Platform 286**](#appendix-f-a-readers-guide-to-the-health-transformation-review-platform)
 
-> [F.1 What This Platform Is 274](#f.1-what-this-platform-is)
+> [F.1 What This Platform Is 286](#f.1-what-this-platform-is)
 >
-> [F.2 Navigating the Platform 274](#f.2-navigating-the-platform)
+> [F.2 Navigating the Platform 286](#f.2-navigating-the-platform)
 >
-> [F.3 The Five Pillars of Intelligence 274](#f.3-the-five-pillars-of-intelligence)
+> [F.3 The Five Pillars of Intelligence 286](#f.3-the-five-pillars-of-intelligence)
 >
-> [F.4 The Academy 274](#f.4-the-academy)
+> [F.4 The Academy 286](#f.4-the-academy)
 >
-> [F.5 The Research Lab 275](#f.5-the-research-lab)
+> [F.5 The Research Lab 287](#f.5-the-research-lab)
 >
-> [F.6 States & Programs 275](#f.6-states-programs)
+> [F.6 States & Programs 287](#f.6-states-programs)
 >
-> [F.7 Advisory & Services and the AI Analyst 275](#f.7-advisory-services-and-the-ai-analyst)
+> [F.7 Advisory & Services and the AI Analyst 287](#f.7-advisory-services-and-the-ai-analyst)
 >
-> [F.8 Reader Profiles and Recommended Paths 275](#f.8-reader-profiles-and-recommended-paths)
+> [F.8 Reader Profiles and Recommended Paths 287](#f.8-reader-profiles-and-recommended-paths)
 
-[**Appendix G --- Adapting and Stress-Testing the Framework 277**](#appendix-g-adapting-and-stress-testing-the-framework)
+[**Appendix G --- Adapting and Stress-Testing the Framework 289**](#appendix-g-adapting-and-stress-testing-the-framework)
 
-> [G.1 Glossary of Vermont-Specific Acronyms and Institutions 277](#g.1-glossary-of-vermont-specific-acronyms-and-institutions)
+> [G.1 Glossary of Vermont-Specific Acronyms and Institutions 289](#g.1-glossary-of-vermont-specific-acronyms-and-institutions)
 >
-> [G.2 Worksheet --- Adapt This Framework to Your State 278](#g.2-worksheet-adapt-this-framework-to-your-state)
+> [G.2 Worksheet --- Adapt This Framework to Your State 290](#g.2-worksheet-adapt-this-framework-to-your-state)
 >
-> [G.3 The Transition Window --- Financing FY2027--2030 278](#g.3-the-transition-window-financing-fy20272030)
+> [G.3 The Transition Window --- Financing FY2027--2030 290](#g.3-the-transition-window-financing-fy20272030)
 >
-> [G.4 Enforcement Mechanics --- What "Mandatory" Means in Practice 279](#g.4-enforcement-mechanics-what-mandatory-means-in-practice)
+> [G.4 Enforcement Mechanics --- What "Mandatory" Means in Practice 291](#g.4-enforcement-mechanics-what-mandatory-means-in-practice)
 
-[**Appendix H --- The HTR Lab Workbook: A Five-Pillar Practicum 281**](#appendix-h-the-htr-lab-workbook-a-five-pillar-practicum)
+[**Appendix H --- The HTR Lab Workbook: A Five-Pillar Practicum 293**](#appendix-h-the-htr-lab-workbook-a-five-pillar-practicum)
 
-> [H.1 How to Use This Workbook 281](#h.1-how-to-use-this-workbook)
+> [H.1 How to Use This Workbook 293](#h.1-how-to-use-this-workbook)
 >
-> [H.2 Stage 1 --- Policy: Establish the Mandate 281](#h.2-stage-1-policy-establish-the-mandate)
+> [H.2 Stage 1 --- Policy: Establish the Mandate 293](#h.2-stage-1-policy-establish-the-mandate)
 >
-> [H.3 Stage 2 --- Technology: Build the Substrate 281](#h.3-stage-2-technology-build-the-substrate)
+> [H.3 Stage 2 --- Technology: Build the Substrate 293](#h.3-stage-2-technology-build-the-substrate)
 >
-> [H.4 Stage 3 --- Economics: Put Incentives on a Visible System 281](#h.4-stage-3-economics-put-incentives-on-a-visible-system)
+> [H.4 Stage 3 --- Economics: Put Incentives on a Visible System 293](#h.4-stage-3-economics-put-incentives-on-a-visible-system)
 >
-> [H.5 Stage 4 --- Clinical: Redesign Care on Aligned Incentives 282](#h.5-stage-4-clinical-redesign-care-on-aligned-incentives)
+> [H.5 Stage 4 --- Clinical: Redesign Care on Aligned Incentives 294](#h.5-stage-4-clinical-redesign-care-on-aligned-incentives)
 >
-> [H.6 The Equity Imperative: Calibrate for the Gap, Not the Average 282](#h.6-the-equity-imperative-calibrate-for-the-gap-not-the-average)
+> [H.6 The Equity Imperative: Calibrate for the Gap, Not the Average 294](#h.6-the-equity-imperative-calibrate-for-the-gap-not-the-average)
 >
-> [H.7 Stage 5 --- Operations: Close the Execution Gap 282](#h.7-stage-5-operations-close-the-execution-gap)
+> [H.7 Stage 5 --- Operations: Close the Execution Gap 294](#h.7-stage-5-operations-close-the-execution-gap)
 
-[**Figure Index 282**](#figure-index)
+[**Figure Index 294**](#figure-index)
 
-[**Bibliography and Source Notes 290**](#bibliography-and-source-notes)
+[**Bibliography and Source Notes 302**](#bibliography-and-source-notes)
 
-[**Index (Selected) 291**](#index-selected)
+[**Index (Selected) 303**](#index-selected)
 
 # **PREFACE**
 
