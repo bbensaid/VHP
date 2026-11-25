@@ -91,8 +91,8 @@ export default function VermontUHDSPage() {
       <div className="mb-12">
         <FromTheBook
           chapter="Chapter 15"
-          chapterTitle="The Critical-Path Component: The Unified Health Data Space (§15.8)"
-          excerpt="Every state attempting value-based payment faces the same dependency: total cost lives in claims, outcomes live in clinical records, and the causes of both live in social and behavioral-health data that neither captures. No one source can show whether a reform is working; only unified data can."
+          chapterTitle="The Critical-Path Component: Unified Health Data (§15.8)"
+          excerpt="Total cost lives in claims; outcomes live in clinical records; the causes of both live in social and behavioral-health data that neither captures. No single source can show whether a value-based reform is working; only unified data can."
           href="/read/chapter-15"
         />
       </div>
@@ -329,7 +329,7 @@ export default function VermontUHDSPage() {
           </table>
         </div>
         <p className="text-xs text-slate-500 leading-relaxed mt-4">
-          Source: <Link href="/read/chapter-15" className="underline">Health Transformation Review, Chapter 15, §15.8.4 and Figure 15.7</Link>.
+          Source: <Link href="/read/chapter-15" className="underline">Health Transformation Review, Chapter 4, §4.3 and Chapter 15, §15.8.4</Link>.
         </p>
       </section>
 

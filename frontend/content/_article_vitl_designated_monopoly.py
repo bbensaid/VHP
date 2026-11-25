@@ -44,7 +44,7 @@ p('The law adds its own obstacles', 'h2')
 p("The designation is not the only barrier written into statute. The version of Act 68's data section that passed the Senate required health insurers to provide clinical and claims data to the Agency of Human Services as directed; the enacted law dropped that sentence, so the State must negotiate for commercial claims rather than require them. Federal match pays roughly 90% of Medicaid data development and nothing for the commercial and Medicare phases, and § 9353 names no State source for them. And because integration needs a majority of all voting members of the Steering Committee, every vacant or absent seat counts as a “no,” while the statute sets no priority among uses.")
 
 p('A structural fix that does not require starting over', 'h2')
-p("Vermont does not need to replace its exchange. It needs to change the terms on which the exchange operates. The HTR book (Chapter 15, Figure 15.7) sets out seven changes:")
+p("Vermont does not need to replace its exchange. It needs to change the terms on which the exchange operates. The HTR book sets out the remedy (Chapter 4, §4.3; Chapter 15, §15.8.4); in full, it comes to seven changes:")
 p("1. Amend § 9352 so that the State owns the core data assets — the patient index, the consent registry, the clinical repository — and contracts for their operation on fixed terms, competitively at each renewal.")
 p("2. Write completeness, timeliness, and matching-accuracy targets into the contract by provider type, publish them quarterly, and attach financial consequences.")
 p("3. Open the data layer: standards-based FHIR access for any certified application, so that e-Consult, referral, analytics, and patient tools compete on one shared, unified foundation.")
@@ -59,7 +59,7 @@ p("Every state attempting value-based payment faces the same dependency: total c
 
 p('Sources', 'h2')
 for s in [
-    "HTR book, Transforming Healthcare (v42), Chapter 15, §15.8 and Figures 15.6–15.7 — https://healthtransformationreview.org/read/chapter-15",
+    "HTR book, Transforming Healthcare (v42), Chapter 4, §4.3 and Chapter 15, §15.8 (Figure 15.7: seven conditions for unified data) — https://healthtransformationreview.org/read/chapter-15",
     "18 V.S.A. § 9352 (designation of VITL) — https://legislature.vermont.gov/statutes/section/18/219/09352",
     "18 V.S.A. § 9353 (Unified Health Data Space) — https://legislature.vermont.gov/statutes/section/18/219/09353",
     "18 V.S.A. § 9410 (subsection (e) repealed; amendment history cites Act 167 of 2022, § 5) — https://legislature.vermont.gov/statutes/section/18/221/09410",

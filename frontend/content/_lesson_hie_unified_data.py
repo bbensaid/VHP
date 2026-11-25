@@ -11,7 +11,7 @@ SLUG = 'hie-unified-health-data-space'
 TITLE = 'Unified Data and the Designated Exchange: Vermont’s Unified Health Data Space'
 LEG = 'https://legislature.vermont.gov'
 SRC = [
-    ("Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15, §15.8 The Critical-Path Component: The Unified Health Data Space — https://healthtransformationreview.org/read/chapter-15", "the lesson's argument, Figures 15.6 and 15.7"),
+    ("Health Transformation Review, Transforming Healthcare (HTR book v42), Chapter 15, §15.8 The Critical-Path Component: Unified Health Data — https://healthtransformationreview.org/read/chapter-15", "the lesson's argument; Figure 15.6; Figure 15.7 (seven conditions for unified data)"),
     (f"18 V.S.A. § 9353, Unified Health Data Space — {LEG}/statutes/section/18/219/09353", "the January 1, 2027 gate, the majority-of-all-voting-members vote, approved uses only"),
     (f"18 V.S.A. § 9352, designation of VITL — {LEG}/statutes/section/18/219/09352", "“the exclusive statewide health information exchange network”"),
     (f"Agency of Human Services, Act 68 Section 10 — Integration of Health Care Data (Jan 14, 2026) — {LEG}/Documents/2026/Workgroups/House%20Health%20Care/Reports%20and%20Resources/W~Agency%20of%20Human%20Services~Act%2068%20Section%2010%20-%20Integration%20of%20Health%20Care%20Data%20~1-15-2026.pdf", "phases, MDWAS go-live, hybrid measures, the screenings-missing-from-claims study"),
@@ -66,7 +66,7 @@ body = [
     compare('s5cmp1', 'Two ways to run a state health data exchange',
         'Statutory exclusive operator (Vermont today)', ['Operator named in law, not procured', 'No competitor to benchmark price or performance', 'Weak leverage at contract renewal', 'Operator also gatekeeps who builds on the data'],
         'State-owned utility, competitively operated', ['State owns the patient index, consent registry, and repository', 'Operation contracted on fixed terms at each renewal', 'Published performance targets with consequences', 'Open FHIR access so applications compete on one foundation']),
-    steps('s5st1', 'Fixing the designation without replacing the exchange (HTR book, Figure 15.7)', [
+    steps('s5st1', 'Fixing the designation without replacing the exchange (HTR book, Chapter 4 §4.3 and Chapter 15 §15.8.4)', [
         ('Own the core assets', 'Amend § 9352 so the State owns the patient index, consent registry, and clinical repository, and contracts for their operation competitively.'),
         ('Publish performance', 'Completeness, timeliness, and matching-accuracy targets by provider type, published quarterly, with financial consequences.'),
         ('Open the data layer', 'Standards-based FHIR access for any certified application, so e-Consult, referral, analytics, and patient tools compete on one unified foundation.'),
@@ -77,7 +77,7 @@ body = [
     h2('s6h1', 'Applying It: Your Own Unified-Data Test'),
     blk('s6p1', "The same test works in any state or health system. For each value-based arrangement you run or regulate, list the five tasks in the table above and ask which of the four sources you can actually join, for the same person, today. Where a task depends on a source you cannot reach, the arrangement is scheduled ahead of the data it depends on."),
     example('s6ex1', 'Vermont, read through the test', "Total cost of care for commercial patients needs commercial claims; in Vermont's plan those join in 2029–2030, after commercial prices are regulated from FY2028. Whole-person risk adjustment needs behavioral-health data; the designated agencies that hold much of it contributed no feeds to the exchange in February 2025.\nThe test does not say Vermont's reform is wrong. It says which data must arrive first for the reform to be managed rather than hoped for."),
-    quote('s6q1', "“No one source can show whether a reform is working; only unified data can.” — HTR book, Chapter 15, §15.8"),
+    quote('s6q1', "“No single source can show whether a value-based reform is working; only unified data can.” — HTR book, Chapter 15, §15.8"),
 
     takeaway('tk1', [
         "Value-based care needs unified data: claims, clinical, social-determinants, and behavioral-health data joined for the same person.",
@@ -108,3 +108,15 @@ print(f"blocks={len(body)} sections={h2s} words={words} sources={len(SRC)} takea
 assert len(body) >= 20 and h2s >= 5 and len(SRC) >= 4 and 6 <= len(tw['points']) <= 8 and words >= 1200 and len(keys) == len(set(keys))
 if '--commit' in sys.argv:
     post(SLUG, TITLE, body, course_slug='hie-health-reform-onboarding', order=8)
+    # post() is createOrReplace, which drops course metadata; re-apply it every time.
+    META = {'courseTitle': 'HIE & Health Reform', 'moduleNumber': 8, 'totalModules': 14,
+            'prevModuleSlug': 'hie-integration-architecture', 'nextModuleSlug': 'hie-ffs-vs-vbc',
+            'pillar': 'Technology', 'level': 'Intermediate', 'estimatedReadTime': 25,
+            'summary': 'Why value-based care cannot be managed on claims or clinical data alone, what Vermont has built toward unified claims, clinical, social, and behavioral-health data, where the law stands in the way, and how the exclusive designation of the state health information exchange slows unification.',
+            'learningObjectives': ['Explain why value-based care needs claims, clinical, social-determinants, and behavioral-health data unified for the same person',
+                                   "Describe the 18 V.S.A. § 9353 rules for Vermont's Unified Health Data Space and its phased timeline",
+                                   'Identify three statutory obstacles to unification in Vermont',
+                                   'Evaluate the costs of a statutory exclusive exchange operator and the structural fixes']}
+    req = urllib.request.Request(API, data=json.dumps({'mutations': [{'patch': {'id': SLUG, 'set': META}}]}).encode(),
+                                 headers={'Content-Type': 'application/json', 'Authorization': f'Bearer {_read_token()}'})
+    print('metadata', urllib.request.urlopen(req).status)
