@@ -6,7 +6,7 @@ import { VERMONT_YEAR1 as V, rhtState, usd, usdM, pct, CMS_DOCS } from "@/lib/rh
 import { Ext, Section, Stat, SourceNote, StatusPill } from "./ui";
 
 const SRC = {
-  list: { label: "State of Vermont, RHT Year 1 Awards and Contracts (executed agreements; Oct 30, 2026 update)", url: "https://healthcarereform.vermont.gov/rht-year-1-executed-agreements-and-contracts" },
+  list: { label: "State of Vermont, RHT Year 1 Awards and Contracts (executed agreements; Nov 12, 2026 update — unchanged from Oct 30: same 242 agreements and total)", url: "https://healthcarereform.vermont.gov/rht-year-1-executed-agreements-and-contracts" },
   budget: { label: "Vermont RHT Program Budget Narrative (updated Jan 30, 2026), Joint Fiscal Committee", url: "https://ljfo.vermont.gov/assets/Meetings/Joint-Fiscal-Committee/2026-02-06/Vermont-RHT-Budget-Narrative-UPDATED-01-30-26.pdf" },
   july: { label: "AHS, Vermont's RHT Program Update, Joint Fiscal Committee (July 2026)", url: "https://ljfo.vermont.gov/assets/Meetings/Joint-Fiscal-Committee/2026-07-28/RHT-JFC-7.29.26.pdf" },
   feb: { label: "AHS, Rural Health Transformation, Joint Fiscal Committee (Feb 6, 2026)", url: "https://ljfo.vermont.gov/assets/Meetings/Joint-Fiscal-Committee/2026-02-06/JFC-RHT-20260205.pdf" },
