@@ -258,10 +258,10 @@ export const CHAPTERS: readonly Chapter[] = [
   {
     num: "15",
     title: "Healthcare Transformation as Portfolio Management: Applying PMI Standards to Five-Pillar Reform",
-    desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
+    desc: "Project, program, and portfolio levels. Vermont's 19-component transformation portfolio and its critical-path component: the Unified Health Data Space, unifying claims, clinical, social, and behavioral-health data, without which value-based care cannot be managed. The portfolio risk register, benefits realization, and the case for a transformation portfolio office.",
     group: "Future & Strategy",
     pillar: null,
-    platformLinks: ["portfolio-sequencing-test", "impact-simulation", "transformation-scorecard", "transformation-friction-index"],
+    platformLinks: [{ label: "Vermont Unified Health Data Space", href: "/vermont-uhds" }, "portfolio-sequencing-test", "impact-simulation", "transformation-scorecard", "transformation-friction-index"],
   },
   {
     num: "16",

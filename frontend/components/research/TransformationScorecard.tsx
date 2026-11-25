@@ -305,7 +305,7 @@ export default function TransformationScorecard() {
   const [equityScore, setEquityScore] = useState(25);
   const [showMilestones, setShowMilestones] = useState<Record<string, boolean>>({});
   // What the PMO's own status report says for each pillar — compared below against
-  // the dependency-gated score (Chapter 15 §15.14: divergence is a governance finding).
+  // the dependency-gated score (Chapter 15 §15.15: divergence is a governance finding).
   const [pmoStatus, setPmoStatus] = useState<Record<string, Rag | "">>({});
 
   function setScore(pillarId: string, value: number) {

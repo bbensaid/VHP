@@ -55,7 +55,7 @@ export default function ShortfallPropagation() {
   );
   const healthy = useMemo(() => runSequence(BASELINE).effectiveComposite, []);
 
-  // Slack ranking (Chapter 15 §15.14: "which components have no slack: the ones whose
+  // Slack ranking (Chapter 15 §15.15: "which components have no slack: the ones whose
   // slip moves other pillars' outcomes"). The same slip applied to every pillar in turn;
   // a pillar has no slack if its slip moves at least one OTHER pillar's result.
   const slack = useMemo(

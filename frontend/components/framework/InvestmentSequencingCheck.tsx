@@ -3,7 +3,7 @@
 /**
  * The dependency-order check Investment Tracker was missing.
  *
- * Built 2026-09-21 because Chapter 7 §7.9 and Chapter 15 §15.14 both cite this tool as tracking
+ * Built 2026-09-21 because Chapter 7 §7.9 and Chapter 15 §15.15 both cite this tool as tracking
  * "capital committed against each pillar" and flagging "where funding runs ahead of dependency
  * order" / "components funded ahead of their upstream gate" — and it didn't do either. The deal feed
  * itself (Sanity `investmentDeal` docs) is a real, different, legitimate tool — an industry M&A/PE/VC

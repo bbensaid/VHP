@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { brandedMetadata } from "@/lib/brand-server";
 import Link from "next/link";
+import FromTheBook from "@/components/FromTheBook";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -76,15 +77,24 @@ export default function VermontUHDSPage() {
         <p className="text-lg text-slate-600 leading-relaxed mb-6">
           Vermont&apos;s solvency crisis is, in the Legislature&apos;s reading, a data problem.
           The state&apos;s answer is to convert its Health Information Exchange into a{" "}
-          <strong>Unified Health Data Space</strong> — clinical, claims, and social data merged
+          <strong>Unified Health Data Space</strong> — claims, clinical, social, and behavioral-health data unified
           into one longitudinal record, run as public infrastructure.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <StatBox value="$3.1B" label="Projected deficit" sub="by 2028, vs 3% margin" />
           <StatBox value="13 of 14" label="Hospitals in loss" sub="projected 2028" />
-          <StatBox value="3" label="Data types merged" sub="clinical · claims · SDOH" />
+          <StatBox value="4" label="Data types to unify" sub="claims · clinical · SDOH · behavioral health" />
           <StatBox value="2030" label="Full multi-payer" sub="commercial claims + SDOH" />
         </div>
+      </div>
+
+      <div className="mb-12">
+        <FromTheBook
+          chapter="Chapter 15"
+          chapterTitle="The Critical-Path Component: The Unified Health Data Space (§15.8)"
+          excerpt="Every state attempting value-based payment faces the same dependency: total cost lives in claims, outcomes live in clinical records, and the causes of both live in social and behavioral-health data that neither captures. No one source can show whether a reform is working; only unified data can."
+          href="/read/chapter-15"
+        />
       </div>
 
       {/* ── WHAT IT IS ────────────────────────────────────────────────────── */}
@@ -276,6 +286,50 @@ export default function VermontUHDSPage() {
           The § 9410(e) repeal deserves emphasis. Accurate record matching across organizations is
           the foundation everything else rests on — and until that repeal, Vermont&apos;s own
           statute prevented it.
+        </p>
+      </section>
+
+      {/* ── DESIGNATED MONOPOLY (book §15.8.4) ─────────────────────────────── */}
+      <section className="mb-16">
+        <SectionHeader label="Structure" title="The designated monopoly — and how to fix it" />
+        <p className="text-sm text-slate-600 leading-relaxed mb-4">
+          18 V.S.A. § 9352 requires that VITL be designated to operate &ldquo;the exclusive statewide health
+          information exchange network.&rdquo; Vermont did not procure its exchange operator; it legislated one.
+          Every attempt to unify clinical data with claims, social, and behavioral-health data runs through that
+          franchise. The public record: the State Auditor found in 2016 that Vermont had paid VITL more than
+          $38 million since 2005 without being able to assess its performance; the November 2024 HIE Strategic
+          Plan update put FHIR APIs at 25% complete and only partially on track; in February 2025 designated
+          mental-health agencies, nursing homes, and commercial payers contributed no data; and Act 62 of 2025
+          ended the GMCB&apos;s review of VITL&apos;s budget.
+        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs border border-slate-200 rounded-xl overflow-hidden">
+            <thead className="bg-slate-50">
+              <tr>
+                <th className="text-left font-bold text-slate-700 p-3 w-48">Problem</th>
+                <th className="text-left font-bold text-slate-700 p-3">Structural fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Exclusive designation in statute", "Amend § 9352 so the State owns the core data assets (patient index, consent registry, clinical repository) and contracts for their operation on fixed terms, competitively at each renewal."],
+                ["No benchmark for price or performance", "Contract targets for completeness, timeliness, and matching accuracy by provider type, published quarterly, with financial consequences."],
+                ["A closed data layer", "Open, standards-based (FHIR) access for any certified application, so e-Consult, referral, analytics, and patient tools compete on one shared, unified foundation."],
+                ["Behavioral-health and long-term-care data missing", "Funded contributor connections for designated agencies and nursing homes, within 42 CFR Part 2 consent rules."],
+                ["Lock-in at renewal", "Guaranteed transfer of data, patient index, and consent records to any successor operator."],
+                ["Single point of failure", "A second, State-controlled ingestion path, starting with the clinical data already flowing into MDWAS."],
+                ["Narrowed oversight", "Independent annual review of the operator's budget and performance by a body other than the contracting department."],
+              ].map((r) => (
+                <tr key={r[0]} className="border-t border-slate-200">
+                  <td className="p-3 font-semibold text-slate-700 align-top">{r[0]}</td>
+                  <td className="p-3 text-slate-600">{r[1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-slate-500 leading-relaxed mt-4">
+          Source: <Link href="/read/chapter-15" className="underline">Health Transformation Review, Chapter 15, §15.8.4 and Figure 15.7</Link>.
         </p>
       </section>
 

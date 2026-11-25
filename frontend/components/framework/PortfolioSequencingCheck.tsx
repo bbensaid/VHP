@@ -4,7 +4,7 @@
  * Your own portfolio, checked against dependency order.
  *
  * Chapter 7 §7.9 ("Track capital committed against each pillar and find where funding runs
- * ahead of dependency order") and Chapter 15 §15.14 ("Components funded ahead of their
+ * ahead of dependency order") and Chapter 15 §15.15 ("Components funded ahead of their
  * upstream gate") are written for a reader managing a transformation portfolio — a hospital
  * or an AHS PMO. InvestmentSequencingCheck answers that question for the industry deal feed
  * on this page; this component answers it for the reader's OWN initiatives.
@@ -77,7 +77,7 @@ export default function PortfolioSequencingCheck() {
         <p className="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
           List your initiatives, the pillar each one builds, and the capital committed. Score where each pillar stands today.
           Any initiative whose pillar sits behind a closed or partial upstream gate is funded ahead of sequence — the early
-          signal of premature investment (Chapter 7 §7.9, Chapter 15 §15.14).
+          signal of premature investment (Chapter 7 §7.9, Chapter 15 §15.15).
         </p>
       </header>
 
