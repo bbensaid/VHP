@@ -74,6 +74,12 @@ L7 = [
         ("Re-run on gate changes", "The critical path moves as upstream work finishes."),
     ]),
 
+    h2('s6h1', 'The Critical-Path Component: Unified Data'),
+    blk('s6p1', "Chapter 15, §15.8 applies the test to the component that sits upstream of almost everything else in a value-based portfolio: unified data, meaning claims, clinical, social-determinants, and behavioral-health data joined for the same person. Every Economics component that pays on outcomes or total cost waits behind it, and so does every Clinical component that claims to reduce avoidable use. States call it different things; Vermont's statute calls it the Unified Health Data Space."),
+    blk('s6p2', "Read the test's pressure list in that light. Two of the four Technology components where Vermont's schedule pressure belongs, the analytics deployment and the health information exchange expansion, are pieces of unified data. The calendar shows the cost of getting this wrong: the Green Mountain Care Board's reference-based prices take effect in hospital fiscal year 2028, but under the Agency of Human Services' own plan commercial claims join Vermont's unified data only in 2029–2030. That is a downstream component scheduled ahead of its gate, and the dependency behind risk R-01 in the portfolio risk register (Figure 15.8)."),
+    blk('s6p3', "To find where your own portfolio stands, §15.8 sets out seven conditions any state must meet for unified data to arrive in time (Figure 15.7): a mandate to unify all four sources; the legal and technical ability to match the same person across sources; access to every payer's claims, including commercial; funding beyond Medicaid; governance that decides uses promptly and by reform priority; behavioral-health and social-services contributors connected; and an exchange operator that competes on performance and opens its data. Vermont meets the first two and not yet the other five. The conditions a state has not met are its true critical path."),
+    quote('s6q1', "“A component scheduled ahead of that gate is not on time; it is running blind. Its results cannot be measured, and its failures will be discovered late.” — HTR book, Chapter 15, §15.8.2"),
+
     takeaway('tw', [
         "In a five-pillar portfolio each component inherits its pillar's inbound dependencies, so order comes from the dependency chain, not the calendar.",
         "Scheduling Economics components by deadline ahead of their Technology gate repeats the OneCare failure in portfolio form.",
@@ -82,6 +88,7 @@ L7 = [
         "Design work runs in parallel under a closed gate; only implementation waits.",
         "On Vermont's Fall 2026 inputs the test finds 12 components on track, one running ahead of its gate, three late by dependency, and four Technology components where pressure belongs.",
         "Re-run the test whenever a gate status changes, because the portfolio's true critical path moves.",
+        "Unified claims, clinical, social, and behavioral-health data is the critical-path component of a value-based portfolio (§15.8); in Vermont, commercial claims join it only after FY2028 price regulation begins.",
     ]),
     quiz('qz',
         "Social-risk-adjustment methodology is due in FY2028 and has no unmet upstream dependency. According to Chapter 15, what should the portfolio manager do?",
@@ -99,6 +106,7 @@ L7 = [
     blk('src3', "[3] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — verdicts and pressure points for the Vermont preset, Fall 2026 scores"),
     blk('src4', "[4] U.S. Government Accountability Office, Schedule Assessment Guide, GAO-16-89G (December 2015) — https://www.gao.gov/products/gao-16-89g — critical path and schedule logic"),
     blk('src5', "[5] HTR Academy, Transformation Leadership: Running the Sequencing Test: A Portfolio Register Workshop — https://healthtransformationreview.org/academy/tracks/transformation-leadership — the companion workshop"),
+    blk('src6', "[6] " + BOOK15 + " — §15.8 The Critical-Path Component: Unified Health Data; Figure 15.7 (seven conditions for unified data)"),
 ]
 
 # ════════════════════════════════════════════════════════════════════════════
