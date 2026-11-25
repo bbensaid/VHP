@@ -129,7 +129,7 @@ L5 = [
     blk('s4p3', "What did change is the financing and federal approval pathway for the Medicare side of the plan. Without AHEAD, Vermont has no CMS-designed Medicare global budget methodology and no AHEAD cooperative agreement funding. The state will need a different federal vehicle, a waiver or a future model, to apply global budgets to Medicare payments."),
 
     h2('s5h1', 'The Pivot to the Rural Health Transformation Program'),
-    blk('s5p1', "The state's announcement paired the withdrawal with a commitment to the Rural Health Transformation Program. Local reporting says the program allocates $195 million a year for five years to Vermont, with priorities including primary care, mental health and keeping rural hospitals open, and that further detail would follow. Secretary Samuelson called it a once-in-a-lifetime opportunity to bring federal dollars into the state."),
+    blk('s5p1', "The state's announcement paired the withdrawal with a commitment to the Rural Health Transformation Program. CMS awarded Vermont $195 million for FY2026 and $190 million for FY2027, with awards set annually through FY2030, with priorities including primary care, mental health and keeping rural hospitals open, and that further detail would follow. Secretary Samuelson called it a once-in-a-lifetime opportunity to bring federal dollars into the state."),
     blk('s5p2', "The comparison with AHEAD is instructive. AHEAD was a long-term, model-based commitment tied to total cost of care targets through 2035. The Rural Health Transformation Program is a time-limited funding stream. Chapter 3 notes that the program's funds expire in 2030 while Medicaid cuts under H.R. 1 accelerate after 2030, which is why the book calls the arithmetic unforgiving. The funds can accelerate transformation, but they are not a payment model."),
 
     h2('s6h1', 'Lessons for Any State'),
@@ -147,7 +147,7 @@ L5 = [
         "Chapter 3 reports the expected EAST Fund fell from about $138 million in the first performance year to a cap of about $10 million; the published accounts give no dollar amounts.",
         "The agreement gave Vermont withdrawal rights (30 days before launch, six months after), protection for the Green Mountain Care Board's independence, and methodology and dispute provisions.",
         "Act 68 of 2025 keeps hospital global budgets on Vermont's own statutory timetable regardless of AHEAD, and state officials say the withdrawal does not increase costs or reduce access.",
-        "The Rural Health Transformation Program, reported at $195 million a year for five years, is a time-limited funding stream and not a payment model.",
+        "The Rural Health Transformation Program, which awarded Vermont $195 million for FY2026 and $190 million for FY2027 (CMS), is a time-limited funding stream and not a payment model.",
     ]),
     quiz('qz',
         "Why was Vermont able to withdraw from AHEAD without legal action, according to Chapter 3?",

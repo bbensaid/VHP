@@ -172,7 +172,7 @@ L12 = [
     blk('intro3', "The last section is a one-page template. Lesson 15's capstone uses it."),
 
     h2('s1h1', 'The Money Available, and Its Limits'),
-    blk('s1p1', "Three funding streams shape the cases Vermont organizations can make. The first is the Rural Health Transformation Program, which local reporting says allocates $195 million a year for five years to Vermont, with priorities including primary care, mental health and keeping rural hospitals open. Chapter 7 includes remote monitoring grants from the program in its examples, and Chapter 3 notes the program's national funds, $50 billion, expire in 2030 while Medicaid reductions accelerate afterward. The money is real and time-limited, so a case funded by it needs a plan for what happens after 2030."),
+    blk('s1p1', "Three funding streams shape the cases Vermont organizations can make. The first is the Rural Health Transformation Program, under which CMS awarded Vermont $195 million for FY2026 and $190 million for FY2027, with priorities including primary care, mental health and keeping rural hospitals open. Chapter 7 includes remote monitoring grants from the program in its examples, and Chapter 3 notes the program's national funds, $50 billion, expire in 2030 while Medicaid reductions accelerate afterward. The money is real and time-limited, so a case funded by it needs a plan for what happens after 2030."),
     blk('s1p2', "The second is the savings the payment system itself creates: shared savings under contracts, margin under global budgets and the savings from reference-based pricing that the statute requires to reach premiums. The third is state appropriations, as the Blueprint's Medicare backfill shows: the legislature can fund a gap, once, if the case is compelling. Each stream has a different timing and a different owner, which matters when a case proposes to sustain a program beyond a grant."),
     callout('s1c1', "A case funded by time-limited money must show how the program is financed when the money ends: through savings captured, a payer contract or a state appropriation."),
 
@@ -206,7 +206,7 @@ L12 = [
     warning('s5w1', "A single number is not a case", "A one-page case that gives one return figure and no range, no share-of-savings adjustment and no financing plan after the grant will not survive a skeptical reader."),
 
     takeaway('tw', [
-        "Vermont's time-limited funding, reported at $195 million a year for five years from the Rural Health Transformation Program, requires a plan for financing after the money ends.",
+        "Vermont's time-limited funding, from the Rural Health Transformation Program — $195 million for FY2026 and $190 million for FY2027, set annually through FY2030, requires a plan for financing after the money ends.",
         "To a board, lead with the modeled cost of doing nothing, show a three-case return with the share of savings kept, and spend first on the binding readiness constraint.",
         "To a payer, use contract renewals to negotiate shared savings, aligned quality measures and administrative simplification, with a clear position on benchmarks and carve-outs.",
         "Reference-based pricing is itself a savings stream for payers, and the statute requires the Board to monitor whether price decreases reach premiums.",

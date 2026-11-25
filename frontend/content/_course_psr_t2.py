@@ -83,7 +83,7 @@ L5 = [
     blk('s1p3', "What the sources do not establish is the vote count in either chamber, whether an override was planned, or hospital association and insurer positions. This lesson did not find them."),
 
     h2('s2h1', 'July: The AHEAD Withdrawal'),
-    blk('s2p1', "On July 24 the Agency of Human Services announced that Vermont had formally notified CMS it was withdrawing from AHEAD after new policy and operational guidance substantially reduced anticipated funding. The Green Mountain Care Board's chair supported the withdrawal, saying nothing changes for hospitals and providers because the state never began the model. The Agency's secretary said the decision would not increase costs or reduce access and pointed to the Rural Health Transformation Program, reported at $195 million a year for five years."),
+    blk('s2p1', "On July 24 the Agency of Human Services announced that Vermont had formally notified CMS it was withdrawing from AHEAD after new policy and operational guidance substantially reduced anticipated funding. The Green Mountain Care Board's chair supported the withdrawal, saying nothing changes for hospitals and providers because the state never began the model. The Agency's secretary said the decision would not increase costs or reduce access and pointed to the Rural Health Transformation Program, which awarded Vermont $195 million for FY2026 and $190 million for FY2027 (CMS)."),
     blk('s2p2', "The event tested the durability of a federal agreement, with a clear result: it did not hold, but the state's own authority did. That is the chapter's central contrast between federal and statutory foundations."),
 
     h2('s3h1', 'September: The Medical Center Budget Order'),
