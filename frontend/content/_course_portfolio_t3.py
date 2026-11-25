@@ -2,7 +2,7 @@ exec(open('CONTENT_TEMPLATE.py').read())
 exec(open('frontend/content/_course_portfolio_common.py').read())
 
 # Track 3 — Sequencing and Scheduling
-# Vermont facts: HTR book Chapter 15 (§15.7-15.8, §15.12, Figure 15.6) and Chapter 1 (§1.4, §1.11.2).
+# Vermont facts: HTR book Chapter 15 (§15.7-15.8, §15.13, Figure 15.8) and Chapter 1 (§1.4, §1.11.2).
 # Portfolio Sequencing Test results: produced 2026-10-27 by running runPortfolioTest(VERMONT_PORTFOLIO,
 # vermont-2026 preset) from frontend/lib/framework/portfolio-test.ts.
 # Agile Practice Guide (PMI and Agile Alliance, 2017): life-cycle chapter (predictive, iterative,
@@ -94,7 +94,7 @@ L7 = [
         "The book's second decision rule says a component with no unmet upstream dependency should be running now regardless of how distant its deadline is. Treating social-risk adjustment as a FY2028 problem because that is when it is due is the scheduling error the book says leaves equity work perpetually late."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.7 (Portfolio Sequence Is Dependency Sequence; the Sequencing Test), Figure 15.6 (R-01 and R-08 scores)"),
+    blk('src1', "[1] " + BOOK15 + " — §15.7 (Portfolio Sequence Is Dependency Sequence; the Sequencing Test), Figure 15.8 (R-01 and R-08 scores)"),
     blk('src2', "[2] Health Transformation Review, Transforming Healthcare, Chapter 1 — https://healthtransformationreview.org/read/chapter-01 — §1.2 OneCare autopsy, §1.4 gate definition, §1.11.2 Economics-as-design"),
     blk('src3', "[3] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — verdicts and pressure points for the Vermont preset, Fall 2026 scores"),
     blk('src4', "[4] U.S. Government Accountability Office, Schedule Assessment Guide, GAO-16-89G (December 2015) — https://www.gao.gov/products/gao-16-89g — critical path and schedule logic"),
@@ -124,7 +124,7 @@ L8 = [
     blk('s2p1', "The book assigns predictive management to components with fixed statutory deadlines and well-defined deliverables: the reference-based-pricing methodology rulemaking, the Statewide Strategic Plan (with adaptive elements), the analytics-vendor deployment, Certified Community Behavioral Health Clinic certification, and AHS restructuring. Each has a defined end product and a date that cannot move."),
     blk('s2p2', "Adaptive management goes to components where requirements evolve and rapid learning beats adherence to a fixed plan. The statewide AI-governance framework is the clearest case, because the regulatory landscape is changing faster than any fixed plan could anticipate. The Care Integration Network build-out depends on vendor outputs and an evolving FHIR ecosystem. Blueprint medical-home expansion proceeds practice by practice. And the HEROI equity-scoring methodology iterates as data quality improves."),
     blk('s2p3', "The fourteen-hospital transformation planning effort is the book's hybrid example: fixed deliverables, because each hospital's plan is due on a schedule, with hospital-specific content developed iteratively inside that frame."),
-    table('s2t1', "Vermont's components by approach (Chapter 15, §15.8)", [
+    table('s2t1', "Vermont's components by approach (Chapter 15, §15.9)", [
         {'Approach': 'Predictive', 'Components': 'RBP-methodology rulemaking; Strategic Plan (with adaptive elements); analytics-vendor deployment; CCBHC certification; AHS restructuring'},
         {'Approach': 'Adaptive', 'Components': 'AI-governance framework; CIN build-out; Blueprint PCMH expansion; HEROI methodology'},
         {'Approach': 'Hybrid', 'Components': '14-hospital transformation planning'},
@@ -175,7 +175,7 @@ L8 = [
         "The book classifies the AI-governance framework as adaptive because the regulatory landscape evolves faster than any fixed plan. Reporting it against a detailed predictive baseline will show it as permanently late regardless of progress. It should report cycle outputs against its outcome and need-by date, with agreed evidence for readiness."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.8 (predictive vs adaptive approaches; component classification; PMP and PMI-ACP mapping), §15.12 (governance cadence)"),
+    blk('src1', "[1] " + BOOK15 + " — §15.9 (predictive vs adaptive approaches; component classification; PMP and PMI-ACP mapping), §15.13 (governance cadence)"),
     blk('src2', "[2] Project Management Institute and Agile Alliance, Agile Practice Guide (2017) — https://www.pmi.org/shop/p-/book/agile-practice-guide-%28english%29/00101602301 — predictive, iterative, incremental, agile and hybrid life cycles"),
     blk('src3', "[3] Project Management Institute, PMBOK Guide, 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — process guidance applicable to predictive, agile and hybrid work"),
     blk('src4', "[4] Project Management Institute, PMI Agile Certified Practitioner (PMI-ACP) — https://www.pmi.org/acp — the adaptive-practice credential"),
@@ -263,7 +263,7 @@ L9 = [
         "Earned value measures adherence to the component's own plan, not whether that plan respects the portfolio's dependencies. A perfectly on-plan component can still be implementing ahead of a closed upstream gate. That is why the portfolio office reads earned value and sequencing verdicts together."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.13 objections 1 and 2 (earned-value tracking; federal expectations), §15.6 (no work-breakdown structure), §15.16 Key Concepts (EVM)"),
+    blk('src1', "[1] " + BOOK15 + " — §15.14 objections 1 and 2 (earned-value tracking; federal expectations), §15.6 (no work-breakdown structure), §15.17 Key Concepts (EVM)"),
     blk('src2', "[2] U.S. Government Accountability Office, Cost Estimating and Assessment Guide, GAO-20-195G (March 2020) — https://www.gao.gov/products/gao-20-195g — earned value management process, execution and validation"),
     blk('src3', "[3] GAO Innovation Lab, Federal and Industry Guidelines for Implementing EVM — https://gaoinnovations.gov/cost-guide/federal-and-industry-guidelines-for-implementing-evm.html — EIA-748 guidelines and agency implementation"),
     blk('src4', "[4] Project Management Institute, PMBOK Guide, 8th edition (November 2025) — https://www.pmi.org/standards/pmbok — performance measurement in project management"),

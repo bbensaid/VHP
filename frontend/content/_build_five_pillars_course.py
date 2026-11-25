@@ -10740,7 +10740,7 @@ SUSTAIN = [{'id': 'lesson_5p_portfolio_management',
                                {'value': '10',
                                 'label': "Scored risks in Vermont's portfolio risk register -- two "
                                          'of them at the maximum score of 20',
-                                'source': 'HTR portfolio risk register (book Chapter 15, Figure 15.6)'}]},
+                                'source': 'HTR portfolio risk register (book Chapter 15, Figure 15.8)'}]},
                     {'type': 'text',
                      'heading': 'Project, Program, Portfolio: Getting the Levels Right',
                      'body': 'The diagnostic question is not whether this '

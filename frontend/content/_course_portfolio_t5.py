@@ -2,7 +2,7 @@ exec(open('CONTENT_TEMPLATE.py').read())
 exec(open('frontend/content/_course_portfolio_common.py').read())
 
 # Track 5 — Making the Case and Making It Stick
-# Vermont facts: HTR book Chapter 15 (§15.11-15.15, Figures 15.9-15.11).
+# Vermont facts: HTR book Chapter 15 (§15.12-15.15, Figures 15.11-15.11).
 # Platform routes checked 2026-10-27: /portfolio-sequencing-test, /transformation-friction-index,
 # /investment-tracker, /impact-simulation, /htr-simulator, /research-lab/knowledge-workspace?tab=scorecard
 # (registered in lib/taxonomy/tools.ts), /hti-dashboard (Subscriber plan, proxy.ts).
@@ -17,10 +17,10 @@ L13 = [
     blk('intro3', "The aim is a case that a budget office, a board or a legislature can test: costs that are explicit, benefits tied to specific risks, and a clear statement of what is assumed."),
 
     h2('s1h1', 'What the Portfolio Office Costs'),
-    blk('s1p1', "Figure 15.9 of the book costs a staffed portfolio office for Vermont at about $0.85 million to $1.3 million a year, or roughly $4 million to $6.4 million over four to five years. The largest line is the five pillar program managers, shared across agencies and hospitals, at $500,000 to $850,000 a year. The senior Portfolio Manager, with the PfMP credential, is costed at $180,000 to $220,000 a year; two analysts at $120,000 to $160,000; and portfolio-management software at $50,000 to $100,000."),
+    blk('s1p1', "Figure 15.11 of the book costs a staffed portfolio office for Vermont at about $0.85 million to $1.3 million a year, or roughly $4 million to $6.4 million over four to five years. The largest line is the five pillar program managers, shared across agencies and hospitals, at $500,000 to $850,000 a year. The senior Portfolio Manager, with the PfMP credential, is costed at $180,000 to $220,000 a year; two analysts at $120,000 to $160,000; and portfolio-management software at $50,000 to $100,000."),
     blk('s1p2', "Each line is paired with the benefit it buys. The Portfolio Manager provides single accountability for the January 2028 deadline and directly avoids R-10, the risk that the transformation is managed as a collection of projects. The analysts maintain the master schedule, the risk register and the dashboard. The software provides real-time visibility, resource optimization and an audit trail for Act 68. The program managers carry delivery accountability and critical-path management within each pillar."),
     blk('s1p3', "The book's comparison is with the money the office coordinates. At under 1% a year of the $195 million first-year Rural Health Transformation Program award alone, before counting any savings from reference-based pricing, the office is a small fraction of the investment it protects."),
-    table('s1t1', 'Business case for portfolio-management investment (Figure 15.9)', [
+    table('s1t1', 'Business case for portfolio-management investment (Figure 15.11)', [
         {'Investment': 'Portfolio Manager (PfMP, senior)', 'Annual cost': '$180K-$220K', 'Total (4-5 yr)': '~$0.9M-$1.1M', 'Benefit': 'R-10 avoided; single accountability for Jan 2028'},
         {'Investment': 'Two PMO analysts', 'Annual cost': '$120K-$160K', 'Total (4-5 yr)': '~$0.48M-$0.64M', 'Benefit': 'Master schedule; risk register; dashboard'},
         {'Investment': 'Portfolio-management software', 'Annual cost': '$50K-$100K', 'Total (4-5 yr)': '~$0.25M-$0.5M', 'Benefit': 'Visibility; resource optimization; Act 68 audit trail'},
@@ -88,7 +88,7 @@ L13 = [
         "Presented as overhead, the office is easy to cut. Tied to specific, scored risks and compared with the value those risks threaten, its cost becomes a visible trade-off. Cross-industry waste figures establish scale but are not a forecast, and deferring the office removes most of its value because it matters most before the gates it protects."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.11 and Figure 15.9 (business case and cost of failure), §15.12 (roadmap timing), §15.13 objection 3"),
+    blk('src1', "[1] " + BOOK15 + " — §15.12 and Figure 15.11 (business case and cost of failure), §15.13 (roadmap timing), §15.14 objection 3"),
     blk('src2', "[2] Project Management Institute, Pulse of the Profession 2017 (survey report) — https://sitsd.mt.gov/_docs/ITMC/SMPMAW/2017.08.23/PMIs-Pulse-of-the-Profession-2017-Survey.pdf — about 9.7% of project spending wasted through poor performance"),
     blk('src3', "[3] Health Transformation Review, Transforming Healthcare, Chapter 14 — https://healthtransformationreview.org/read/chapter-14 — political sustainability and the descriptive-plan failure mode"),
     blk('src4', "[4] Centers for Medicare & Medicaid Services, CMS Launches Landmark $50 Billion Rural Health Transformation Program (press release, September 15, 2025) — https://www.cms.gov/newsroom/press-releases/cms-launches-landmark-50-billion-rural-health-transformation-program — the federal program whose award the office coordinates"),
@@ -112,7 +112,7 @@ L14 = [
     blk('s2p1', "The third objection is cost in a year of budget cuts. Lesson 13 gave the full answer: Rural Health Transformation Program funds depend on demonstrated progress, the office costs a small fraction of the value it protects, and the alternative is a partial transformation that costs far more. The fourth is that hospitals will not accept being managed by AHS. The book's answer clarifies the role: the Portfolio Manager does not manage hospitals but manages AHS's contribution to the portfolio. Hospital plans are produced by hospitals, approved by AHS and monitored through the Green Mountain Care Board."),
     blk('s2p2', "The fifth objection is the newest: AHS already has expert help. Its March 2026 Act 68 report lists contracted support from Manatt, Phelps & Phillips, a new hospital technical-assistance vendor and analytics support under negotiation. The book's answer is that a contractor delivers a defined scope. It cannot hold a state component back until its upstream gate opens, reassign agency staff between components, or answer to the Legislature for the portfolio as a whole. Contracted support adds capacity, not authority, and every new contract is another component that someone has to sequence."),
     blk('s2p3', "Taken together, the five answers define the role by contrast. It is not oversight, not a private-sector import, not an unaffordable luxury, not control over hospitals and not something a contractor can supply. It is the integrating authority that none of the existing arrangements provides."),
-    table('s2t1', 'The five objections and the short answer to each (Chapter 15, §15.13)', [
+    table('s2t1', 'The five objections and the short answer to each (Chapter 15, §15.14)', [
         {'Objection': 'We already manage this (HCAC, monthly reports)', 'Short answer': 'The HCAC is a governance body; it needs a portfolio office to supply schedule, risk, resource and earned-value data'},
         {'Objection': "Government doesn't run projects like the private sector", 'Short answer': 'A time-bounded, financed portfolio with binding deadlines and federal obligations needs professional delivery'},
         {'Objection': "We can't afford it", 'Short answer': 'RHT funds depend on progress; the office is a small fraction of the value it protects'},
@@ -121,10 +121,10 @@ L14 = [
     ]),
 
     h2('s3h1', 'The Implementation Roadmap'),
-    blk('s3p1', "The book anchors its roadmap to the one date that cannot move: the Statewide Strategic Plan, due January 15, 2028. Figure 15.10 schedules the portfolio office's build-out backward from that deadline and against the components it exists to sequence. A Portfolio Manager hired by January 2027 has nine months before FY2028 hospital budgets take effect in October 2027, which the book judges enough only if the office is running before the Technology gate it is meant to protect."),
+    blk('s3p1', "The book anchors its roadmap to the one date that cannot move: the Statewide Strategic Plan, due January 15, 2028. Figure 15.12 schedules the portfolio office's build-out backward from that deadline and against the components it exists to sequence. A Portfolio Manager hired by January 2027 has nine months before FY2028 hospital budgets take effect in October 2027, which the book judges enough only if the office is running before the Technology gate it is meant to protect."),
     blk('s3p2', "From mid-2027 the office runs on a fixed cadence: monthly governance reviews, quarterly performance reviews against the Vermont Scorecard, and annual portfolio rebalancing. The book's aim is that the January 2028 plan arrives with portfolio-management evidence, benefits tracked, risks managed and resources deployed in dependency order, after which the office carries the portfolio into the plan's three-year update cycle."),
     blk('s3p3', "Scheduling backward from a fixed deadline is itself a portfolio technique. It exposes how little time remains for each step and makes the cost of delay concrete: every month the portfolio office is late is a month of gating decisions made without it."),
-    steps('s3st1', 'The roadmap, scheduled backward (Chapter 15, §15.12)', [
+    steps('s3st1', 'The roadmap, scheduled backward (Chapter 15, §15.13)', [
         ("By January 2027", "Portfolio Manager in seat."),
         ("By Q2 2027", "Portfolio office operational: analysts, software, standard reporting, pillar program managers."),
         ("October 2027", "FY2028 hospital budgets take effect; the office must already be running."),
@@ -164,7 +164,7 @@ L14 = [
         "The book offers this question precisely because only a portfolio function can answer it briefly: it requires knowing the dependencies, having assigned ownership and having considered resources across components. A status summary of every component is the characteristic answer of an organization managing a list."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.12 (implementation roadmap, Figure 15.10), §15.13 (the five objections), §15.15 (Implications for legislators and board members)"),
+    blk('src1', "[1] " + BOOK15 + " — §15.13 (implementation roadmap, Figure 15.12), §15.14 (the five objections), §15.16 (Implications for legislators and board members)"),
     blk('src2', "[2] Vermont Agency of Human Services, Act 68 Health Care System Transformation Report (March 2026), as cited in Chapter 15 — https://humanservices.vermont.gov — contracted transformation support"),
     blk('src3', "[3] Vermont Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — the January 2028 Strategic Plan obligation"),
     blk('src4', "[4] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — governance body and portfolio office roles"),
@@ -247,7 +247,7 @@ L15 = [
         "Chapter 15's Try This exercise makes exactly this comparison. If urgency is driven by deadlines that all fall outside the binding-constraint pillar, attention and resources are going where the calendar points rather than where the dependency logic says delivered readiness is being held back."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.14 Work This Chapter on the Platform (Figure 15.11) and the Try This exercise; §15.15 Implications for You"),
+    blk('src1', "[1] " + BOOK15 + " — §15.15 Work This Chapter on the Platform (Figure 15.13) and the Try This exercise; §15.16 Implications for You"),
     blk('src2', "[2] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — verdicts and pressure points"),
     blk('src3', "[3] Transformation Friction Index — https://healthtransformationreview.org/transformation-friction-index — binding constraint by sensitivity"),
     blk('src4', "[4] HTR Investment Tracker — https://healthtransformationreview.org/investment-tracker — portfolio check of capital against gates"),

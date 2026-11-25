@@ -2,7 +2,7 @@ exec(open('CONTENT_TEMPLATE.py').read())
 exec(open('frontend/content/_course_portfolio_common.py').read())
 
 # Track 2 — Structure: Roles, Governance and Authority
-# Vermont facts: HTR book Chapter 15 (§15.4-15.6, Figures 15.4-15.5, §15.13, §15.15).
+# Vermont facts: HTR book Chapter 15 (§15.4-15.6, Figures 15.4-15.5, §15.14, §15.16).
 # Credential facts verified 2026-10-27 on pmi.org certification pages (PfMP, PMP, PMI-ACP).
 # GAO Schedule Assessment Guide GAO-16-89G (Dec 2015): ten best practices, four characteristics.
 
@@ -89,7 +89,7 @@ L4 = [
         "The book is explicit that a portfolio office reporting status without power over sequencing will document the failure cascade rather than prevent it. Hospital plans are approved by AHS and monitored through the GMCB, not run by the Portfolio Manager, and contractors add capacity rather than authority."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.4 (role and authority), §15.13 objections 4 and 5, §15.15 Implications for You"),
+    blk('src1', "[1] " + BOOK15 + " — §15.4 (role and authority), §15.14 objections 4 and 5, §15.16 Implications for You"),
     blk('src2', "[2] Project Management Institute, Portfolio Management Professional (PfMP) — https://www.pmi.org/certifications/portfolio-management-pfmp — eligibility paths and experience requirements"),
     blk('src3', "[3] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — the portfolio manager's role"),
     blk('src4', "[4] Oliver Wyman, Act 167 Community Engagement and recommendations to the Green Mountain Care Board (2024) — https://gmcboard.vermont.gov/hospitalsustainability — recommendation for a dedicated project-management function"),
@@ -169,7 +169,7 @@ L5 = [
         "PMI separates the governance tier, which provides oversight and makes strategic decisions, from the portfolio office, which runs the operational machinery. The book's answer is that the HCAC is the right governance body but needs a Portfolio Manager and an office to give it the data it needs to govern; it does not replace either."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.5 and Figure 15.4 (pillar roles), §15.6 (governance tiers and PMO gaps), §15.13 objection 1, §15.15"),
+    blk('src1', "[1] " + BOOK15 + " — §15.5 and Figure 15.4 (pillar roles), §15.6 (governance tiers and PMO gaps), §15.14 objection 1, §15.16"),
     blk('src2', "[2] Project Management Institute, Project Management Professional (PMP) — https://www.pmi.org/certifications/types/project-management-pmp — eligibility paths, education hours and experience window"),
     blk('src3', "[3] Project Management Institute, PMI Agile Certified Practitioner (PMI-ACP) — https://www.pmi.org/acp — agile training and experience requirements"),
     blk('src4', "[4] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio governance tiers"),

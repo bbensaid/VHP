@@ -51,9 +51,9 @@ L1 = [
     blk('s4p3', "The scale is what makes the gap dangerous. Chapter 15 counts 19 components in the transformation portfolio, ten scored risks in its register, and fourteen hospital transformation plans the portfolio must coordinate. No component manager, however capable, can see across all of that from inside one component."),
     stat_grid('s4sg1', [
         ('19', 'Components in Vermont\'s transformation portfolio', 'HTR inventory, Chapter 15, Figure 15.3'),
-        ('10', 'Scored risks in the portfolio register', 'Chapter 15, Figure 15.6'),
+        ('10', 'Scored risks in the portfolio register', 'Chapter 15, Figure 15.8'),
         ('14', 'Hospital transformation plans to coordinate', 'Act 68 of 2025; Chapter 15, Figure 15.1'),
-        ('Jan 15, 2028', 'Statewide Strategic Plan due', 'Act 68 of 2025; Chapter 15, §15.12'),
+        ('Jan 15, 2028', 'Statewide Strategic Plan due', 'Act 68 of 2025; Chapter 15, §15.13'),
     ]),
 
     h2('s5h1', 'What This Course Covers'),
@@ -261,7 +261,7 @@ L3 = [
         "The book's method counts an initiative only if it has a named owner and a dated obligation, and assigns it to exactly one pillar by function. Aspirations without an owner or date are not yet components; if they matter, assigning an owner is the first action, and until then they belong on the risk register."
     ),
     h2('src', 'Sources'),
-    blk('src1', "[1] " + BOOK15 + " — §15.3, Figure 15.3 (the 19-component inventory and its method), Beyond Vermont box, §15.15 Implications for You"),
+    blk('src1', "[1] " + BOOK15 + " — §15.3, Figure 15.3 (the 19-component inventory and its method), Beyond Vermont box, §15.16 Implications for You"),
     blk('src2', "[2] Project Management Institute, The Standard for Portfolio Management, 4th edition (2017) — https://www.pmi.org/pmbok-guide-standards/foundational/standard-for-portfolio-management — portfolio definition and component identification"),
     blk('src3', "[3] Vermont Act 68 of 2025, as enacted — https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT068/ACT068%20As%20Enacted.pdf — statutory obligations behind several components"),
     blk('src4', "[4] HTR Portfolio Sequencing Test — https://healthtransformationreview.org/portfolio-sequencing-test — Vermont preset of the 19 components; add, edit and remove components"),
