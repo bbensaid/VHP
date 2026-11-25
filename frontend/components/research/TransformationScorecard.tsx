@@ -84,7 +84,7 @@ const PILLARS: PillarConfig[] = [
     labHref: "/research-lab/interoperability?tab=fhir",
     dimensions: [
       { label: "FHIR R4 API implementation", benchmark: "ONC-certified, payer-facing API active" },
-      { label: "HIE connectivity (VITL/VHIE)", benchmark: "Active — Act 68 mandatory requirement" },
+      { label: "HIE connectivity (VITL/VHIE)", benchmark: "Active — required of every hospital in GMCB budget review (18 V.S.A. § 9456); voluntary for other providers" },
       { label: "AI clinical governance framework", benchmark: "65-dimension evaluation complete" },
       { label: "EHR optimization for VBC", benchmark: "Population health workflows active" },
       { label: "Telehealth / RPM penetration", benchmark: "≥20% of chronic disease panel" },
@@ -92,7 +92,7 @@ const PILLARS: PillarConfig[] = [
     milestones: [
       { label: "July 2025: Act 62 ends GMCB approval of HIE planning (DVHA runs the HIT Plan)", date: "Jul 2025", status: "complete" },
       { label: "FY2026: RHT AI scribe + RPM deployment", date: "FY2026", status: "active", vermont: "Vermont RHT-funded AI scribe and remote patient monitoring investments" },
-      { label: "FY2027: VITL mandatory connectivity (Act 68)", date: "FY2027", status: "upcoming" },
+      { label: "Jan 1, 2027: earliest clinical–claims integration in the Unified Health Data Space (18 V.S.A. § 9353)", date: "FY2027", status: "upcoming" },
       { label: "FY2028: FHIR interoperability for global budget data exchange", date: "FY2028", status: "upcoming" },
     ],
   },
