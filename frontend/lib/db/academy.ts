@@ -2,7 +2,7 @@
  * Academy — enrollments, progress, certifications
  * All functions require an authenticated user (server-side or client-side).
  */
-import { db } from "./client";
+import { db, dbAdmin } from "./client";
 
 // ─── ENROLLMENTS ─────────────────────────────────────────────────────────────
 
@@ -18,7 +18,9 @@ export type EnrollmentRow = {
 export async function getUserEnrollments(
   userId: string
 ): Promise<EnrollmentRow[]> {
-  const { data, error } = await db
+  // Service role, scoped by the server-verified userId: RLS only shows a user's
+  // own enrollments to a session client, so the anon `db` always returned [].
+  const { data, error } = await dbAdmin
     .from("course_enrollments")
     .select("*")
     .eq("user_id", userId)
@@ -142,7 +144,7 @@ export type CertificationRow = {
 export async function getUserCertifications(
   userId: string
 ): Promise<CertificationRow[]> {
-  const { data, error } = await db
+  const { data, error } = await dbAdmin
     .from("certifications")
     .select("*")
     .eq("user_id", userId)

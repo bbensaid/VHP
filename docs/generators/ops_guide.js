@@ -102,7 +102,10 @@ add(
 add(
   H1("3. Administrator guide"),
   H2("3.1 Signing in"),
-  P("Go to /login on healthtransformationreview.org and sign in with bechir.bensaid@gmail.com, then open **/admin**. The admin pages check your role themselves, so they stay protected even while sign-in is otherwise relaxed for the beta."),
+  P("Every page, /login included, sits behind the beta gate, so the order is fixed:"),
+  N("Open healthtransformationreview.org. You land on /beta. Enter an access code (any active code on the Access Codes page works for you too). The browser remembers it for 7 days."),
+  N("Go to /login and sign in with bechir.bensaid@gmail.com. Once signed in, the header shows **Account** instead of Login."),
+  N("Open **/admin**. The admin pages check your role themselves, so they stay protected even while sign-in is otherwise relaxed for the beta. Your account page shows the badge ADMIN; if it shows FREE, the role check is broken: tell Claude."),
   H2("3.2 Giving someone access (access codes)"),
   L(),
   N("Open /admin, then Access Codes."),

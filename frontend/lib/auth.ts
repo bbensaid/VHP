@@ -7,7 +7,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { db } from "@/lib/db/client";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -80,10 +79,13 @@ export async function getUser(): Promise<AuthUser | null> {
   if (!user) return null;
 
   // Fetch profile + role + subscription in parallel
+  // Must use the session-bearing client: RLS on profiles/user_roles/subscriptions
+  // only exposes the caller's own rows to auth.uid(). The anon `db` client has no
+  // session, saw zero rows, and so demoted every user (admins included) to "free".
   const [profileRes, roleRes, subRes] = await Promise.all([
-    db.from("profiles").select("full_name,avatar_url").eq("id", user.id).single(),
-    db.from("user_roles").select("role").eq("user_id", user.id).order("role"),
-    db.from("subscriptions").select("plan").eq("user_id", user.id).single(),
+    supabase.from("profiles").select("full_name,avatar_url").eq("id", user.id).single(),
+    supabase.from("user_roles").select("role").eq("user_id", user.id).order("role"),
+    supabase.from("subscriptions").select("plan").eq("user_id", user.id).single(),
   ]);
 
   // Determine highest role

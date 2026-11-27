@@ -9,7 +9,9 @@
 
 import { NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/auth";
-import { db } from "@/lib/db/client";
+// Service role, every query scoped to the session-verified user.id below. The
+// anon client has no session, so RLS made every read empty and every write fail.
+import { dbAdmin as db } from "@/lib/db/client";
 
 export async function GET() {
   const supabase = await createSupabaseServerClient();

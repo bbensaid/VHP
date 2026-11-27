@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { createBrowserClient } from "@supabase/ssr";
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
 import BackendStatus from "./BackendStatus";
@@ -581,6 +582,18 @@ const Header = () => {
   useEffect(() => { setMounted(true); }, []);
   const [dateString, setDateString] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // Signed-in state: the Login link used to be hard-coded, so a signed-in
+  // admin still saw "Login" in the header.
+  const [signedIn, setSignedIn] = useState(false);
+  useEffect(() => {
+    const sb = createBrowserClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
+    sb.auth.getSession().then(({ data }) => setSignedIn(!!data.session));
+    const { data: { subscription } } = sb.auth.onAuthStateChange((_e, session) => setSignedIn(!!session));
+    return () => subscription.unsubscribe();
+  }, []);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeMegaMenu, setActiveMegaMenu] = useState<MegaMenuType>(null);
@@ -723,8 +736,8 @@ const Header = () => {
               buttonClassName="flex items-center gap-1 text-[10px] font-bold tracking-wider uppercase hover:text-zinc-300 transition-colors text-white"
             />
             <div className="h-3 w-px bg-neutral-700" />
-            <Link href="/login" className="text-white hover:text-zinc-300 transition-colors">
-              Login
+            <Link href={signedIn ? "/account" : "/login"} className="text-white hover:text-zinc-300 transition-colors">
+              {signedIn ? "Account" : "Login"}
             </Link>
             <Link
               href="/pricing"
@@ -1123,11 +1136,11 @@ const Header = () => {
             <div className="bg-slate-50 dark:bg-slate-800 px-4 py-4 flex flex-col gap-3">
               <div className="flex gap-3">
                 <Link
-                  href="/login"
+                  href={signedIn ? "/account" : "/login"}
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex-1 text-center border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 text-sm font-bold py-3 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-colors min-h-12 flex items-center justify-center"
                 >
-                  Log In
+                  {signedIn ? "Account" : "Log In"}
                 </Link>
                 <Link
                   href="/pricing"
