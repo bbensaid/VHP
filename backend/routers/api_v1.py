@@ -90,41 +90,29 @@ async def require_api_key(
 
 # ── Endpoints ──────────────────────────────────────────────────────────────────
 
-@router.get("/states", summary="List all state performance profiles")
+@router.get("/states", summary="List sourced indicators for all 50 states")
 async def list_states(_key: APIKeyMeta = Depends(require_api_key)):
     """
-    Returns all 50-state HTR Performance Index profiles as a JSON array.
-    Each record includes overall score, status, tier-level metrics, and narrative summary.
+    Returns sourced per-state indicators (CDC BRFSS, CMS Care Compare, KFF, CMS
+    AHEAD and Rural Health Transformation awards) for all 50 states. There is no
+    composite score: the retired "HTR Performance Index" had hand-entered values.
     """
-    supabase = get_supabase()
-    result = supabase.table("state_performance_index") \
-        .select("*") \
-        .order("state_name") \
-        .execute()
-
-    if result.data is None:
-        raise HTTPException(status_code=503, detail="Data unavailable.")
-
-    return {"data": result.data, "count": len(result.data)}
+    from services import state_indicators
+    states = state_indicators.load()["states"]
+    data = [state_indicators.as_record(code, row) for code, row in sorted(states.items(), key=lambda kv: kv[1]["name"])]
+    return {"data": data, "count": len(data), **state_indicators.sources()}
 
 
-@router.get("/states/{state_id}", summary="Get a single state performance profile")
+@router.get("/states/{state_id}", summary="Sourced indicators for one state")
 async def get_state(state_id: str, _key: APIKeyMeta = Depends(require_api_key)):
     """
-    Returns the full HTR Performance Index profile for a single state.
-    `state_id` is the lowercase state slug (e.g. `vermont`, `california`).
+    `state_id` is a postal code (`VT`), a name (`Vermont`) or a slug (`new-york`).
     """
-    supabase = get_supabase()
-    result = supabase.table("state_performance_index") \
-        .select("*") \
-        .eq("id", state_id) \
-        .single() \
-        .execute()
-
-    if not result.data:
+    from services import state_indicators
+    hit = state_indicators.find(state_id)
+    if not hit:
         raise HTTPException(status_code=404, detail=f"State '{state_id}' not found.")
-
-    return {"data": result.data}
+    return {"data": state_indicators.as_record(*hit), **state_indicators.sources()}
 
 
 @router.get("/survey/results", summary="Aggregate survey results (current edition)")

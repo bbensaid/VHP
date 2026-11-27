@@ -4,10 +4,10 @@ backend/services/tools.py
 LlamaIndex FunctionTools available to the agentic chat pipeline.
 
 Tools:
-  query_state_metrics(state)              — fetch live state performance data from Supabase
+  query_state_metrics(state)              — sourced state indicators (services/state_indicators.py)
   list_research_lab_tools(topic)          — surface relevant Research Lab tools by topic keyword
   query_vermont_hospital_financials(name) — operating margin, loss, 2028 projection for a VT hospital
-  query_vermont_bed_capacity(hospital, bed_type) — live/latest bed availability for VT hospitals
+  query_vermont_bed_capacity(hospital, bed_type) — /bed-capacity demonstration figures (no real-time feed exists)
   query_act167_recommendations(hospital)  — Wyman report recommendations for a specific hospital
   find_best_transfer(from_hospital, acuity, specialty) — run transfer-routing algorithm
   query_vermont_hsa_population(hsa)       — HSA population, aging trend, decline projection
@@ -211,48 +211,21 @@ _VT_HSA_DATA = {
 
 def query_state_metrics(state: str) -> str:
     """
-    Retrieve health system performance metrics for a US state from the HTR database.
+    Retrieve sourced health-system indicators for a US state: health insurance
+    coverage, cost barriers, routine checkups and personal-provider access (CDC
+    BRFSS), hospital counts and CMS star ratings (CMS Care Compare), Medicaid
+    expansion (KFF), AHEAD participation and the FY2026 Rural Health
+    Transformation award (CMS). No composite score.
 
     Args:
-        state: The US state name or abbreviation (e.g. "Vermont", "VT", "California").
+        state: The US state name or postal code (e.g. "Vermont", "VT", "California").
     """
-    from services.db import get_supabase
-    supabase = get_supabase()
-    if not supabase:
-        return f"State metrics database unavailable. Cannot retrieve data for {state}."
-
-    state_key = state.lower().strip().replace(" ", "_").replace("-", "_")
+    from services import state_indicators
     try:
-        res = supabase.table("state_performance_index") \
-            .select("*").ilike("state_id", f"%{state_key}%").limit(1).execute()
-        if not res.data:
-            res = supabase.table("state_performance_index") \
-                .select("*").ilike("state_name", f"%{state}%").limit(1).execute()
-        if not res.data:
-            return f"No performance data found for '{state}' in the HTR database."
-
-        row = res.data[0]
-        lines = [f"## HTR Performance Index: {row.get('state_name', state)}"]
-        for field, label in [
-            ("performance_score",   "Overall Performance Score"),
-            ("cost_index",          "Cost Index"),
-            ("quality_score",       "Quality Score"),
-            ("access_score",        "Access Score"),
-            ("equity_score",        "Equity Score"),
-            ("innovation_score",    "Innovation Score"),
-            ("preventive_care_rate","Preventive Care Rate"),
-            ("uninsured_rate",      "Uninsured Rate"),
-        ]:
-            val = row.get(field)
-            if val is not None:
-                lines.append(f"- **{label}**: {val}")
-        if row.get("data_year"):
-            lines.append(f"\n*Data year: {row['data_year']}*")
-        return "\n".join(lines)
-
+        return state_indicators.describe(state)
     except Exception as e:
         log.warning(f"query_state_metrics error for {state}: {e}")
-        return f"Error retrieving metrics for {state}: {e}"
+        return f"Error retrieving indicators for {state}: {e}"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -414,23 +387,29 @@ def query_vermont_bed_capacity(hospital_name: str = "all", bed_type: str = "all"
                 pct = avail / total
                 status = "🔴 Critical" if pct < 0.05 else "🟡 Limited" if pct < 0.2 else "🟢 Available"
                 lines.append(f"  - {bk.upper()}: {avail}/{total} {status}")
-        source = "live" if hid in live else "baseline"
-        lines.append(f"  *(source: {source})*")
+        if hid in live:
+            when = (live[hid].get("updated_at") or "")[:10]
+            lines.append(f"  *(entered by a platform user{' on ' + when if when else ''}; not an official feed)*")
+        else:
+            lines.append("  *(illustrative demonstration figures)*")
         return "\n".join(lines)
 
     if hospital_name.lower() == "all":
-        lines = ["## Vermont Statewide Bed Capacity\n"]
+        lines = ["## Vermont Statewide Bed Capacity (demonstration)\n",
+                 "Vermont publishes no real-time bed-availability feed. These figures are illustrative "
+                 "unless marked as entered by a platform user; do not present them as actual availability.\n"]
         for hid in _STATIC_BED_CAPACITY:
             lines.append(_fmt(hid))
             lines.append("")
-        lines.append("🔗 [Live Bed Capacity & Transfer Tool](/bed-capacity)")
+        lines.append("🔗 [Bed Capacity & Transfer demonstration](/bed-capacity)")
         return "\n".join(lines)
 
     key = _resolve_hospital(hospital_name)
     if not key or key not in _STATIC_BED_CAPACITY:
         return f"Hospital '{hospital_name}' not found. Use 'all' or try 'UVMMC', 'Gifford', 'North Country'."
 
-    return _fmt(key) + "\n\n🔗 [Live Bed Capacity & Transfer Tool](/bed-capacity)"
+    return ("Demonstration figures: Vermont publishes no real-time bed-availability feed.\n\n"
+            + _fmt(key) + "\n\n🔗 [Bed Capacity & Transfer demonstration](/bed-capacity)")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -804,9 +783,10 @@ STATE_METRICS_TOOL = FunctionTool.from_defaults(
     fn=query_state_metrics,
     name="query_state_metrics",
     description=(
-        "Fetch live health system performance metrics for a US state from the HTR database. "
-        "Use for state performance scores, cost index, quality, access, or equity. "
-        "Input: state name or abbreviation."
+        "Fetch sourced health-system indicators for a US state: insurance coverage, cost barriers to care, "
+        "routine checkups, personal-provider access and its education gap (CDC BRFSS), hospital counts and CMS "
+        "star ratings, Medicaid expansion, AHEAD participation, FY2026 Rural Health Transformation award. "
+        "There is no composite or ranking score. Input: state name or postal code."
     ),
 )
 
@@ -835,9 +815,9 @@ VT_BED_CAPACITY_TOOL = FunctionTool.from_defaults(
     fn=query_vermont_bed_capacity,
     name="query_vermont_bed_capacity",
     description=(
-        "Get current bed availability for Vermont hospitals by type (ICU, med/surg, behavioral, SNF). "
-        "Queries live Supabase data first, falls back to baseline. "
-        "Use for questions about Vermont hospital capacity or which hospitals have open beds. "
+        "Bed counts for Vermont hospitals by type (ICU, med/surg, behavioral, SNF) from the platform's "
+        "/bed-capacity DEMONSTRATION: illustrative figures, overlaid with any numbers a platform user entered. "
+        "Vermont publishes no real-time bed feed, so never present the result as actual current availability. "
         "Input: hospital name or 'all', bed type or 'all'."
     ),
 )

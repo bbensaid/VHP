@@ -98,4 +98,6 @@ const out = {
 };
 const miss = Object.entries(out.states).filter(([, s]) => !s.brfss || !s.cms.hospitals || !s.rhtAwardFY26).map(([k]) => k);
 fs.writeFileSync('lib/data/state-indicators.json', JSON.stringify(out, null, 1));
+// Same data for the AI Analyst's state tool + public API (backend deploys only backend/).
+fs.writeFileSync('../backend/data/state-indicators.json', JSON.stringify(out, null, 1));
 console.log('hospitals', hosp.length, 'missing', miss, 'VT', JSON.stringify(out.states.VT));

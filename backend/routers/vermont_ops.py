@@ -158,8 +158,9 @@ async def update_bed_capacity(
         for bed_type in ("icu", "medsurg", "behavioral", "snf"):
             avail_field = f"{bed_type}_avail"
             total_field = f"{bed_type}_total"
-            avail = update_data.get(avail_field) or _STATIC_BEDS[hospital_id].get(avail_field, 0)
-            total = update_data.get(total_field) or _STATIC_BEDS[hospital_id].get(total_field, 0)
+            # `x or baseline` treated a reported 0 as missing, so zero beds never alerted.
+            avail = update_data[avail_field] if avail_field in update_data else _STATIC_BEDS[hospital_id].get(avail_field, 0)
+            total = update_data[total_field] if total_field in update_data else _STATIC_BEDS[hospital_id].get(total_field, 0)
             if total > 0 and avail / total <= _ALERT_THRESHOLDS.get(bed_type, 0.05):
                 _write_capacity_alert(supabase, hospital_id, bed_type, avail, total)
 
