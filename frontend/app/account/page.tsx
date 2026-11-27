@@ -1,5 +1,6 @@
 import { requireAuth } from "@/lib/auth";
 import Link from "next/link";
+import SignOutButton from "./SignOutButton";
 import { getUserCertifications, getUserEnrollments } from "@/lib/db/academy";
 
 export default async function AccountPage() {
@@ -47,6 +48,7 @@ export default async function AccountPage() {
             className="text-sm font-semibold text-indigo-600 hover:text-indigo-800 border border-indigo-200 rounded-lg px-4 py-2 hover:bg-indigo-50 transition-colors">
             Edit Profile
           </Link>
+          <SignOutButton />
         </div>
 
         {/* Stats row */}

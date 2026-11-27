@@ -11,7 +11,7 @@
  */
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { createBrowserClient } from "@supabase/ssr";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 const IDLE_TIMEOUT_MS  = 30 * 60 * 1000; // 30 min total idle before sign-out
@@ -21,7 +21,9 @@ const WARN_DURATION_MS = IDLE_TIMEOUT_MS - IDLE_WARN_MS; // 5-min warning window
 const ACTIVITY_EVENTS = ["mousemove", "mousedown", "keydown", "touchstart", "scroll"] as const;
 
 function getSupabase() {
-  return createClient(
+  // Cookie-based client: sessions are set by @supabase/ssr, so the plain
+  // supabase-js (localStorage) client never saw one and the timeout never fired.
+  return createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );

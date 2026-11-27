@@ -35,7 +35,7 @@ async function getStats() {
     dbAdmin.from("user_roles").select("role"),
     dbAdmin.from("bookmarks").select("id", { count: "exact", head: true }),
     dbAdmin.from("user_learning_paths").select("id", { count: "exact", head: true }),
-    dbAdmin.from("rag_query_log").select("id,created_at,response_ms").order("created_at", { ascending: false }).limit(1),
+    dbAdmin.from("rag_query_log").select("id,created_at,latency_ms").order("created_at", { ascending: false }).limit(1),
     dbAdmin.from("subscriptions").select("plan"),
   ]);
 
@@ -240,8 +240,8 @@ export default async function AdminDashboard() {
               <p className="text-xs font-bold text-slate-500 mb-1">Last AI Query</p>
               <p className="text-xs text-slate-400">
                 {new Date(stats.lastQuery.created_at).toLocaleString()}
-                {stats.lastQuery.response_ms && (
-                  <span className="ml-2 text-emerald-600 font-bold">{stats.lastQuery.response_ms}ms</span>
+                {stats.lastQuery.latency_ms && (
+                  <span className="ml-2 text-emerald-600 font-bold">{stats.lastQuery.latency_ms}ms</span>
                 )}
               </p>
             </div>

@@ -12,7 +12,7 @@ export const revalidate = 0;
 async function getIngestData() {
   const { data: queryLog } = await dbAdmin
     .from("rag_query_log")
-    .select("id,created_at,response_ms")
+    .select("id,created_at,latency_ms")
     .order("created_at", { ascending: false })
     .limit(20);
 
@@ -24,7 +24,7 @@ export default async function IngestMonitorPage() {
   const { queryLog } = await getIngestData();
 
   const avgResponseMs = queryLog.length > 0
-    ? Math.round(queryLog.reduce((sum, q) => sum + (q.response_ms ?? 0), 0) / queryLog.length)
+    ? Math.round(queryLog.reduce((sum, q) => sum + (q.latency_ms ?? 0), 0) / queryLog.length)
     : null;
 
   const lastQuery = queryLog[0] ?? null;
@@ -106,9 +106,9 @@ export default async function IngestMonitorPage() {
                       {new Date(q.created_at).toLocaleString()}
                     </td>
                     <td className="px-6 py-3 text-right font-mono font-bold"
-                      style={{ color: (q.response_ms ?? 0) > 3000 ? "#ef4444" : (q.response_ms ?? 0) > 1500 ? "#f59e0b" : "#10b981" }}
+                      style={{ color: (q.latency_ms ?? 0) > 3000 ? "#ef4444" : (q.latency_ms ?? 0) > 1500 ? "#f59e0b" : "#10b981" }}
                     >
-                      {q.response_ms ?? "—"}
+                      {q.latency_ms ?? "—"}
                     </td>
                   </tr>
                 ))}
