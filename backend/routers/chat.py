@@ -5,6 +5,7 @@ backend/routers/chat.py
 /api/suggest — follow-up question suggestions (open)
 """
 
+import re
 import asyncio
 import json
 import logging
@@ -12,7 +13,7 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import StreamingResponse
-from llama_index.core.agent import ReActAgent
+from llama_index.core.agent.workflow import AgentStream, FunctionAgent, ToolCallResult
 from llama_index.core.chat_engine import ContextChatEngine
 from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.core.memory import ChatMemoryBuffer
@@ -43,6 +44,19 @@ from services.retrieval import (
     trim_llm_metadata,
 )
 from services.tools import ALL_TOOLS
+
+def _function_calling_llm(llm):
+    """First model in a FallbackLLM chain (or the LLM itself) that supports
+    native tool calling, else None (the caller then skips the agent)."""
+    chain = [getattr(llm, "_primary", llm)] + list(getattr(llm, "_fallbacks", []))
+    for m in chain:
+        try:
+            if m.metadata.is_function_calling_model:
+                return m
+        except Exception:
+            continue
+    return None
+
 
 # Roles that get the full agentic (ReAct) pipeline
 AGENTIC_ROLES = {"professional", "advisory", "admin"}
@@ -391,14 +405,33 @@ _MEDICAID_QUESTION_PHRASES = (
 )
 
 
+_MEDICAID_PROGRAM_RE = re.compile(
+    r"\b(medicaid|dr\.? dynasaur|vhap|mabd|magi|choices for care|vpharm|green mountain care|catamount|"
+    r"vermont health connect|healthconnect|katie beckett|ltc medicaid|dvha|hbee|spend[- ]down)\b"
+)
+_MEDICAID_PERSONAL_RE = re.compile(
+    r"\b(am i|do i|can i|could i|will i|would i|should i|my (income|household|family|wife|husband|child|kids|parent|mother|father)|"
+    r"i make|i earn|we make|we earn|how (do|can) (i|we) (apply|enroll|sign up))\b"
+)
+_MEDICAID_CONCEPT_RE = re.compile(
+    r"\b(eligib\w*|qualif\w*|coverage|covered|health insurance|insurance|income limits?|fpl|federal poverty|"
+    r"household size|asset limits?|resource limits?|enroll\w*|apply|nursing home|long[- ]term care|aca|affordable care act)\b"
+)
+
+
 def _detect_medicaid_intent(message: str) -> bool:
-    """Return True if the message is asking about Vermont Medicaid eligibility."""
+    """True if the message is asking about Vermont Medicaid eligibility.
+
+    Whole-word matching. Plain substring matching used to fire on 'academy'
+    ('aca'), 'imagine' ('magi') and any policy question mentioning 'coverage' or
+    'health insurance', which swapped the whole system prompt for the eligibility
+    prompt and skipped the tools. Now: a Medicaid program is named, or the
+    question is personal AND about eligibility/coverage.
+    """
     lower = message.lower()
-    # Direct phrase match
-    if any(phrase in lower for phrase in _MEDICAID_QUESTION_PHRASES):
+    if _MEDICAID_PROGRAM_RE.search(lower):
         return True
-    # Keyword match — require at least one Medicaid-domain keyword
-    return any(kw in lower for kw in _MEDICAID_KEYWORDS)
+    return bool(_MEDICAID_PERSONAL_RE.search(lower) and _MEDICAID_CONCEPT_RE.search(lower))
 
 
 def _get_llm_for_medicaid(user: "AuthedUser"):
@@ -681,17 +714,8 @@ async def chat(
         tier_llm = _get_llm_for_medicaid(user) if is_medicaid_query else get_llm_for_role(user.role)
         use_agent = user.role in AGENTIC_ROLES
 
-        if use_agent:
-            engine = ReActAgent.from_tools(
-                tools=ALL_TOOLS,
-                llm=tier_llm,
-                memory=memory,
-                system_prompt=system_prompt,
-                max_iterations=5,
-                verbose=False,
-            )
-        else:
-            engine = ContextChatEngine.from_defaults(
+        def _context_engine():
+            return ContextChatEngine.from_defaults(
                 retriever=StaticNodeRetriever(nodes),
                 memory=memory,
                 llm=tier_llm,
@@ -701,15 +725,48 @@ async def chat(
 
         # ── Stream LLM response ────────────────────────────────────────────────
         full_response = []
-        try:
-            streaming_response = await engine.astream_chat(request.message)
-            async for token in streaming_response.async_response_gen():
-                full_response.append(token)
-                yield token
-        except Exception as e:
-            log.error(f"Streaming error for user {user.user_id}: {e}")
-            yield "\n\n[STREAM_ERROR]"
-            return
+        agent_llm = _function_calling_llm(tier_llm) if use_agent else None
+        if agent_llm is not None:
+            # LlamaIndex 0.14 removed ReActAgent.from_tools; the old call raised on
+            # every request, so professional/advisory/admin users got an empty reply
+            # (it had never run live: everyone was 'dev'/subscriber until 2026-11-27).
+            # FunctionAgent uses native tool calling on the tier's primary model and
+            # now also receives the retrieved library passages (the old agent did not).
+            context = "\n\n".join(n.node.get_content()[:1500] for n in nodes[:5])
+            agent = FunctionAgent(
+                tools=ALL_TOOLS,
+                llm=agent_llm,
+                system_prompt=system_prompt + ("\n\nRETRIEVED LIBRARY CONTEXT:\n" + context if context else ""),
+            )
+            try:
+                handler = agent.run(user_msg=request.message, memory=memory, max_iterations=6)
+                async for ev in handler.stream_events():
+                    if isinstance(ev, ToolCallResult):
+                        log.info(f"Agent tool call: {ev.tool_name}({str(ev.tool_kwargs)[:120]})")
+                    if isinstance(ev, AgentStream) and ev.delta:
+                        full_response.append(ev.delta)
+                        yield ev.delta
+                result = await handler
+                if not full_response:
+                    text = str(result.response.content or "")
+                    full_response.append(text)
+                    yield text
+            except Exception as e:
+                log.error(f"Agent error for user {user.user_id}: {e!r}")
+                if full_response:
+                    yield "\n\n[STREAM_ERROR]"
+                    return
+                agent_llm = None  # nothing sent yet: answer with the context engine instead
+        if agent_llm is None:
+            try:
+                streaming_response = await _context_engine().astream_chat(request.message)
+                async for token in streaming_response.async_response_gen():
+                    full_response.append(token)
+                    yield token
+            except Exception as e:
+                log.error(f"Streaming error for user {user.user_id}: {e}")
+                yield "\n\n[STREAM_ERROR]"
+                return
 
         # ── Deterministic HTR LAB section ──────────────────────────────────────
         # Strip whatever HTR LAB section the LLM produced (it may be wrong or incomplete)

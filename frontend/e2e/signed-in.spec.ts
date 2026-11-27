@@ -183,15 +183,18 @@ test.describe("admin (author's account)", () => {
     }
   });
 
-  test("AI Analyst answers a state question from the sourced indicators", async () => {
-    test.setTimeout(120_000);
+  test("AI Analyst (admin = tool-using agent) answers from the state tool", async () => {
+    test.setTimeout(150_000);
+    // Only query_state_metrics knows this (CMS Care Compare via state-indicators.json): 31 hospitals, 19 CAH.
     const r = await page.request.post("/api/chat", {
-      data: { message: "Use your state metrics tool: according to CDC BRFSS, what percentage of Vermont adults have some form of health insurance? Give the number." },
-      timeout: 110_000,
+      data: { message: "How many hospitals does CMS Care Compare list for Wyoming, and how many are critical access hospitals?" },
+      timeout: 140_000,
     });
-    const text = await r.text();
+    const text = (await r.text()).split("[CITATIONS]")[0];
     expect(r.status(), text.slice(0, 500)).toBe(200);
-    expect(text, text.slice(0, 800)).toMatch(/95\.9/);
+    expect(text.trim().length, "empty AI answer").toBeGreaterThan(20);
+    expect(text, text.slice(0, 800)).toMatch(/\b31\b/);
+    expect(text, text.slice(0, 800)).toMatch(/\b19\b/);
   });
 
   test("access codes page lists the real codes", async () => {
