@@ -66,17 +66,13 @@ interface FlagEntry {
   created_at?: string;
 }
 
-const BACKEND = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:8000";
-
+// Same-origin route app/api/vermont/[...path] forwards to the backend with the
+// cookie session. (Calling the backend directly used NEXT_PUBLIC_BACKEND_URL,
+// never set in production, so the live page called localhost:8000.)
 async function apiFetch(path: string, opts?: RequestInit) {
-  const token = typeof window !== "undefined" ? localStorage.getItem("sb-access-token") : null;
-  return fetch(`${BACKEND}${path}`, {
+  return fetch(path, {
     ...opts,
-    headers: {
-      "Content-Type": "application/json",
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(opts?.headers ?? {}),
-    },
+    headers: { "Content-Type": "application/json", ...(opts?.headers ?? {}) },
   });
 }
 

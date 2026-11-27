@@ -116,6 +116,29 @@ test("beta gate: /login is gated, a real code lets you through", async ({ browse
   await ctx.close();
 });
 
+test("email links are not swallowed by the beta gate", async ({ playwright, baseURL }) => {
+  const req = await playwright.request.newContext({ baseURL, storageState: undefined });
+  const cb = await req.get("/auth/callback?code=invalid", { maxRedirects: 0 });
+  expect(cb.headers()["location"] ?? "", "/auth/callback must reach its handler, not /beta").toContain("/login?error=auth_callback_failed");
+  const rp = await req.get("/reset-password", { maxRedirects: 0 });
+  expect(rp.status(), "/reset-password must not redirect to /beta").toBe(200);
+  await req.dispose();
+});
+
+test("reset password without a valid link explains itself", async ({ browser, baseURL }) => {
+  const ctx = await browser.newContext({ baseURL, storageState: undefined });
+  await ctx.clearCookies();
+  const page = await ctx.newPage();
+  await page.goto("/reset-password");
+  await page.waitForTimeout(2500);
+  const pw = page.locator("input[type=password]");
+  await pw.nth(0).fill("abcdefgh1");
+  await pw.nth(1).fill("abcdefgh1");
+  await page.locator("form button[type=submit]").click();
+  await expect(page.getByText(/expired or was opened in a different browser/)).toBeVisible();
+  await ctx.close();
+});
+
 test.describe("admin (author's account)", () => {
   test.skip(!ADMIN_EMAIL, "HTR_ADMIN_EMAIL not set");
   let ctx: BrowserContext; let page: Page;
@@ -133,6 +156,35 @@ test.describe("admin (author's account)", () => {
   for (const p of ["/admin", "/admin/access-codes", "/admin/users", "/admin/role-changes", "/admin/tester-feedback", "/admin/analytics", "/admin/revenue", "/admin/ingest"]) {
     test(`admin page ${p} opens for the admin`, async () => { await visitOk(page, p); });
   }
+
+  test("/bed-capacity reaches the backend: read, update, alert", async () => {
+    const [res] = await Promise.all([
+      page.waitForResponse((r) => r.url().includes("/api/vermont/bed-capacity") && r.request().method() === "GET", { timeout: 30_000 }),
+      visitOk(page, "/bed-capacity"),
+    ]);
+    expect(res.status(), await res.text()).toBe(200);
+    const before = await admin.from("vt_bed_capacity").select("hospital_id").eq("hospital_id", "gifford");
+    try {
+      const up = await page.request.patch("/api/vermont/bed-capacity/gifford", { data: { icu_avail: 0, icu_total: 4, notes: "e2e" } });
+      expect(up.status(), await up.text()).toBe(200);
+      const alerts = await (await page.request.get("/api/vermont/alerts")).json();
+      expect(JSON.stringify(alerts)).toContain("Gifford Medical Center ICU at 0%");
+    } finally {
+      await admin.from("vt_capacity_alerts").delete().eq("hospital_id", "gifford");
+      if (!before.data?.length) await admin.from("vt_bed_capacity").delete().eq("hospital_id", "gifford");
+    }
+  });
+
+  test("AI Analyst answers a state question from the sourced indicators", async () => {
+    test.setTimeout(120_000);
+    const r = await page.request.post("/api/chat", {
+      data: { message: "Use your state metrics tool: according to CDC BRFSS, what percentage of Vermont adults have some form of health insurance? Give the number." },
+      timeout: 110_000,
+    });
+    const text = await r.text();
+    expect(r.status(), text.slice(0, 500)).toBe(200);
+    expect(text, text.slice(0, 800)).toMatch(/95\.9/);
+  });
 
   test("access codes page lists the real codes", async () => {
     const { data } = await admin.from("beta_access_codes").select("code").limit(1);
@@ -154,6 +206,11 @@ test.describe("free-tier user (throwaway)", () => {
     const body = await visitOk(page, "/account");
     expect(body).toContain(TEST_EMAIL);
     expect(body).toMatch(/\bfree\b/i);
+  });
+
+  test("/bed-capacity backend refuses a free user (subscriber tool)", async () => {
+    const r = await page.request.get("/api/vermont/bed-capacity");
+    expect([401, 403]).toContain(r.status());
   });
 
   test("/admin is refused to a free user", async () => {

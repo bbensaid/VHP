@@ -66,7 +66,13 @@ app = FastAPI(title="HTR AI Brain", version="4.2.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=list({FRONTEND_URL, "http://localhost:3000"}),
+    # All four brand domains (frontend/lib/brand.ts), apex and www: /bed-capacity
+    # calls this API straight from the browser, and FRONTEND_URL is only one of them.
+    allow_origins=list({FRONTEND_URL, "http://localhost:3000"} | {
+        f"https://{w}{d}" for d in ("healthtransformationreview.org", "healthtransformationreview.com",
+                                     "healthtransformationsolutions.org", "healthtransformationsolutions.com")
+        for w in ("", "www.")
+    }),
     allow_credentials=True,
     allow_methods=["GET", "POST", "PATCH"],
     allow_headers=["Content-Type", "Authorization", "X-HTR-API-Key"],

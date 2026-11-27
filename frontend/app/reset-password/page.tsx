@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
@@ -16,9 +16,27 @@ export default function ResetPasswordPage() {
   const [confirm, setConfirm] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // The email link's ?code= is exchanged for a recovery session by the browser
+  // client on load. Wait for it; without it updateUser fails with a cryptic
+  // "Auth session missing!" (expired link, or opened in another browser).
+  const [session, setSession] = useState<"checking" | "ok" | "missing">("checking");
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, s) => {
+      if (s && (event === "PASSWORD_RECOVERY" || event === "SIGNED_IN" || event === "INITIAL_SESSION")) setSession("ok");
+    });
+    const t = setTimeout(async () => {
+      const { data } = await supabase.auth.getSession();
+      setSession(data.session ? "ok" : "missing");
+    }, 1500);
+    return () => { clearTimeout(t); subscription.unsubscribe(); };
+  }, []);
 
   async function handleReset(e: React.FormEvent) {
     e.preventDefault();
+    if (session !== "ok") {
+      setError("This reset link has expired or was opened in a different browser. Request a new one from the Forgot password page, and open it in this browser.");
+      return;
+    }
     if (password !== confirm) { setError("Passwords do not match."); return; }
     if (password.length < 8) { setError("Password must be at least 8 characters."); return; }
     setLoading(true);

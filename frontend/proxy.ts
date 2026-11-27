@@ -118,6 +118,11 @@ export async function proxy(request: NextRequest) {
   const betaExempt =
     pathname.startsWith("/beta") ||
     pathname.startsWith("/api/") ||
+    // Email links (signup confirmation, Google sign-in, password reset) land here,
+    // often in a browser that never entered a code; gating them dropped the
+    // one-time ?code and broke the link. Neither shows platform content.
+    pathname.startsWith("/auth/callback") ||
+    pathname === "/reset-password" ||
     pathname.startsWith("/studio") ||
     pathname === "/robots.txt" ||
     pathname === "/sitemap.xml" ||
