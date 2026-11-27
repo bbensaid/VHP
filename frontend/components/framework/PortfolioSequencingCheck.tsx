@@ -46,7 +46,7 @@ const STARTER: Initiative[] = [
 ];
 
 function fmtM(m: number): string {
-  return m >= 1000 ? `$${(m / 1000).toFixed(1)}B` : `$${m.toLocaleString(undefined, { maximumFractionDigits: 1 })}M`;
+  return m >= 1000 ? `$${(m / 1000).toFixed(1)}B` : `$${m.toLocaleString("en-US", { maximumFractionDigits: 1 })}M`;
 }
 
 export default function PortfolioSequencingCheck() {

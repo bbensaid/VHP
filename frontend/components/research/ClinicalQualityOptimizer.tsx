@@ -819,7 +819,7 @@ function StarsTab() {
         </h3>
         <div className="mb-4">
           <label className="text-xs font-semibold text-violet-700">
-            Medicare Advantage Enrollment: {enrollment.toLocaleString()} beneficiaries
+            Medicare Advantage Enrollment: {enrollment.toLocaleString("en-US")} beneficiaries
           </label>
           <input
             type="range"
@@ -1076,14 +1076,14 @@ function QPPTab() {
               </div>
               <div className="bg-white/10 rounded-lg p-3">
                 <div className="text-xs opacity-70">Annual Benefit</div>
-                <div className="font-bold">${(partBVolume * 0.05).toLocaleString()}</div>
+                <div className="font-bold">${(partBVolume * 0.05).toLocaleString("en-US")}</div>
               </div>
             </div>
           )}
         </div>
         <div className="bg-white rounded-xl border border-violet-100 p-4">
           <label className="text-xs font-semibold text-violet-700">
-            Medicare Part B Billing Volume: ${partBVolume.toLocaleString()}
+            Medicare Part B Billing Volume: ${partBVolume.toLocaleString("en-US")}
           </label>
           <input
             type="range"
@@ -1177,7 +1177,7 @@ function QPPTab() {
             {paymentAdj >= 0 ? "+" : ""}{(paymentAdj * 100).toFixed(0)}%
           </div>
           <div className={`text-sm font-semibold ${dollarImpact >= 0 ? "text-green-700" : "text-red-700"}`}>
-            {dollarImpact >= 0 ? "+" : "−"}${Math.abs(dollarImpact).toLocaleString()}
+            {dollarImpact >= 0 ? "+" : "−"}${Math.abs(dollarImpact).toLocaleString("en-US")}
           </div>
         </div>
         <div className="text-right min-w-[140px]">
@@ -1405,7 +1405,7 @@ function P4PTab() {
           </div>
           <div>
             <label className="text-xs font-semibold text-violet-700 block mb-1">
-              Member Population: {memberCount.toLocaleString()}
+              Member Population: {memberCount.toLocaleString("en-US")}
             </label>
             <input
               type="range"
@@ -1459,7 +1459,7 @@ function P4PTab() {
                 />
                 <span className="text-xs font-semibold text-slate-800">{m.name}</span>
                 <span className="ml-auto text-[10px] text-violet-600 font-semibold">
-                  ${m.baseBonus.toLocaleString()}/1% per 1K members
+                  ${m.baseBonus.toLocaleString("en-US")}/1% per 1K members
                 </span>
               </div>
               {selectedMeasures.has(m.id) && (
@@ -1521,7 +1521,7 @@ function P4PTab() {
                 min: 40000,
                 max: 150000,
                 step: 5000,
-                format: (v: number) => `$${v.toLocaleString()}`,
+                format: (v: number) => `$${v.toLocaleString("en-US")}`,
               },
               {
                 label: "Technology & Analytics",
@@ -1530,7 +1530,7 @@ function P4PTab() {
                 min: 0,
                 max: 1000000,
                 step: 10000,
-                format: (v: number) => `$${v.toLocaleString()}`,
+                format: (v: number) => `$${v.toLocaleString("en-US")}`,
               },
               {
                 label: "Training & Workflow Redesign",
@@ -1539,7 +1539,7 @@ function P4PTab() {
                 min: 0,
                 max: 200000,
                 step: 5000,
-                format: (v: number) => `$${v.toLocaleString()}`,
+                format: (v: number) => `$${v.toLocaleString("en-US")}`,
               },
               {
                 label: "Physician Incentive Costs",
@@ -1548,7 +1548,7 @@ function P4PTab() {
                 min: 0,
                 max: 500000,
                 step: 10000,
-                format: (v: number) => `$${v.toLocaleString()}`,
+                format: (v: number) => `$${v.toLocaleString("en-US")}`,
               },
             ].map((f) => (
               <div key={f.label}>
@@ -1569,7 +1569,7 @@ function P4PTab() {
             ))}
             <div className="mt-3 pt-3 border-t border-red-100 text-xs font-bold text-red-700 flex justify-between">
               <span>Total {timeline}-Month Investment</span>
-              <span>${costs.total.toLocaleString()}</span>
+              <span>${costs.total.toLocaleString("en-US")}</span>
             </div>
           </div>
         </div>
@@ -1609,7 +1609,7 @@ function P4PTab() {
               <div key={f.label}>
                 <div className="flex justify-between text-xs mb-1">
                   <span className="text-slate-600 font-medium">{f.label}</span>
-                  <span className="text-green-600 font-semibold">${f.value.toLocaleString()}</span>
+                  <span className="text-green-600 font-semibold">${f.value.toLocaleString("en-US")}</span>
                 </div>
                 <input
                   type="range"
@@ -1625,7 +1625,7 @@ function P4PTab() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-2">
               <div className="text-xs font-bold text-green-700 mb-1">VBC Quality Bonus Revenue</div>
               <div className="text-xs text-green-600 font-semibold">
-                ${revenue.perMeasureRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                ${revenue.perMeasureRevenue.toLocaleString("en-US", { maximumFractionDigits: 0 })}
                 <span className="font-normal text-slate-500 ml-1">
                   from {selectedMeasuresList.length} measures over {timeline} months
                 </span>
@@ -1633,7 +1633,7 @@ function P4PTab() {
             </div>
             <div className="mt-3 pt-3 border-t border-green-100 text-xs font-bold text-green-700 flex justify-between">
               <span>Total {timeline}-Month Revenue</span>
-              <span>${revenue.totalRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
+              <span>${revenue.totalRevenue.toLocaleString("en-US", { maximumFractionDigits: 0 })}</span>
             </div>
           </div>
         </div>
@@ -1652,7 +1652,7 @@ function P4PTab() {
           <div className="bg-white/10 rounded-xl p-4">
             <div className="text-xs opacity-70">Net Return</div>
             <div className="text-2xl font-black mt-1">
-              {roi.net >= 0 ? "+" : "−"}${Math.abs(roi.net).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+              {roi.net >= 0 ? "+" : "−"}${Math.abs(roi.net).toLocaleString("en-US", { maximumFractionDigits: 0 })}
             </div>
           </div>
           <div className="bg-white/10 rounded-xl p-4">
@@ -1686,18 +1686,18 @@ function P4PTab() {
         <div className="mt-5 grid grid-cols-3 gap-3 text-center text-xs">
           <div className="bg-white/10 rounded-lg p-3">
             <div className="opacity-70">Total Cost</div>
-            <div className="font-bold text-base mt-1">${costs.total.toLocaleString(undefined, { maximumFractionDigits: 0 })}</div>
+            <div className="font-bold text-base mt-1">${costs.total.toLocaleString("en-US", { maximumFractionDigits: 0 })}</div>
           </div>
           <div className="bg-white/10 rounded-lg p-3">
             <div className="opacity-70">Total Revenue</div>
-            <div className="font-bold text-base mt-1">${revenue.totalRevenue.toLocaleString(undefined, { maximumFractionDigits: 0 })}</div>
+            <div className="font-bold text-base mt-1">${revenue.totalRevenue.toLocaleString("en-US", { maximumFractionDigits: 0 })}</div>
           </div>
           <div
             className={`rounded-lg p-3 ${roi.net >= 0 ? "bg-white/20" : "bg-white/5"}`}
           >
             <div className="opacity-70">Net</div>
             <div className="font-black text-base mt-1">
-              {roi.net >= 0 ? "+" : "−"}${Math.abs(roi.net).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+              {roi.net >= 0 ? "+" : "−"}${Math.abs(roi.net).toLocaleString("en-US", { maximumFractionDigits: 0 })}
             </div>
           </div>
         </div>

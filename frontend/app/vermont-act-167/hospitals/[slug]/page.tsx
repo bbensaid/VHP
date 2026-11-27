@@ -185,7 +185,7 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
           />
           <StatCard
             label="Total FTEs"
-            value={h.fteCount.toLocaleString()}
+            value={h.fteCount.toLocaleString("en-US")}
             sub="Full-time equivalents"
             accent="slate"
           />
@@ -228,8 +228,8 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
         <h3 className="text-xl font-black text-slate-900 mb-5">Hospital Operations</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <StatCard label="Beds" value={String(h.beds)} sub={`${h.hospitalType} · CMS cost report FY2023`} />
-          <StatCard label="Discharges" value={h.annualAdmissions.toLocaleString()} sub="FY2023, CMS cost report" />
-          <StatCard label="ED Visits" value={h.annualEDVisits.toLocaleString()} sub={`2022 · ${h.edAvoidablePct}% potentially avoidable (Oliver Wyman)`} />
+          <StatCard label="Discharges" value={h.annualAdmissions.toLocaleString("en-US")} sub="FY2023, CMS cost report" />
+          <StatCard label="ED Visits" value={h.annualEDVisits.toLocaleString("en-US")} sub={`2022 · ${h.edAvoidablePct}% potentially avoidable (Oliver Wyman)`} />
           <StatCard
             label="Nearest Other Hospital"
             value={`${kmToNearestHospital(h)} km`}
@@ -246,7 +246,7 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <StatCard
             label="HSA Population"
-            value={h.populationHSA.toLocaleString()}
+            value={h.populationHSA.toLocaleString("en-US")}
             sub={`${h.hsa} HSA · Vermont Dept. of Health, 2025`}
           />
           <StatCard
@@ -262,7 +262,7 @@ export default async function HospitalProfilePage({ params }: { params: Promise<
           />
           <StatCard
             label="Staff (FTEs)"
-            value={h.fteCount.toLocaleString()}
+            value={h.fteCount.toLocaleString("en-US")}
             sub="CMS cost report FY2023"
           />
         </div>

@@ -199,7 +199,7 @@ export default function LeafletMap({
             <Tooltip direction="top" offset={[0, -r - 2]}>
               <div style={{ fontSize: 12, lineHeight: 1.5 }}>
                 <strong style={{ fontSize: 13 }}>{h.name}</strong>
-                <div style={{ color: "#64748b" }}>{h.city} · {h.beds} beds · {h.fteCount.toLocaleString()} FTEs</div>
+                <div style={{ color: "#64748b" }}>{h.city} · {h.beds} beds · {h.fteCount.toLocaleString("en-US")} FTEs</div>
                 <div style={{ color: h.operatingMarginPct >= 0 ? "#16a34a" : "#dc2626", fontWeight: 600 }}>
                   Margin: {h.operatingMarginPct > 0 ? "+" : ""}{h.operatingMarginPct}%
                   {h.annualLossM > 0 ? ` (–$${h.annualLossM}M/yr)` : ""}
@@ -220,13 +220,13 @@ export default function LeafletMap({
                     ["Beds",             String(h.beds)],
                     ["Type",             h.hospitalType],
                     ["Op. Margin",       `${h.operatingMarginPct > 0 ? "+" : ""}${h.operatingMarginPct}%`],
-                    ["ED Visits/yr",     h.annualEDVisits.toLocaleString()],
-                    ["FTEs",             h.fteCount.toLocaleString()],
+                    ["ED Visits/yr",     h.annualEDVisits.toLocaleString("en-US")],
+                    ["FTEs",             h.fteCount.toLocaleString("en-US")],
                     ["Nearest hospital", `${kmToNearestHospital(h)} km`],
                     ["CMS stars",        h.cmsStarRating == null ? "Not rated" : `${h.cmsStarRating}/5`],
                     ["ED avoidable",     `${h.edAvoidablePct}%`],
                     ["Over 65",          `${h.popOver65Pct}%`],
-                    ["HSA population",   h.populationHSA.toLocaleString()],
+                    ["HSA population",   h.populationHSA.toLocaleString("en-US")],
                   ].map(([l, v]) => (
                     <div key={l} style={{ background: "#f8fafc", borderRadius: 6, padding: "4px 6px" }}>
                       <div style={{ fontSize: 9, color: "#94a3b8", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 700 }}>{l}</div>

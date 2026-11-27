@@ -221,7 +221,7 @@ export default async function AdminDashboard() {
               </p>
               {ingest?.completed_at && (
                 <p className="text-xs text-slate-400 mt-0.5">
-                  Last run: {new Date(ingest.completed_at).toLocaleString()}
+                  Last run: {new Date(ingest.completed_at).toLocaleString("en-US", { timeZone: "America/New_York" })}
                 </p>
               )}
               {ingest?.error && (
@@ -239,7 +239,7 @@ export default async function AdminDashboard() {
             <div className="border-t border-slate-100 pt-3">
               <p className="text-xs font-bold text-slate-500 mb-1">Last AI Query</p>
               <p className="text-xs text-slate-400">
-                {new Date(stats.lastQuery.created_at).toLocaleString()}
+                {new Date(stats.lastQuery.created_at).toLocaleString("en-US", { timeZone: "America/New_York" })}
                 {stats.lastQuery.latency_ms && (
                   <span className="ml-2 text-emerald-600 font-bold">{stats.lastQuery.latency_ms}ms</span>
                 )}

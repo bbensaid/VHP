@@ -208,7 +208,7 @@ export function ThresholdTab() {
               >
                 {[50000, 100000, 150000, 200000].map((v) => (
                   <option key={v} value={v}>
-                    ${v.toLocaleString()}/QALY
+                    ${v.toLocaleString("en-US")}/QALY
                   </option>
                 ))}
               </select>

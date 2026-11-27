@@ -18,7 +18,7 @@ import { TrendingUp, Clock } from "lucide-react";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const fmtUSD = (n: number) =>
-  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString()}`;
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString("en-US")}`;
 
 export default function EMSTransformationLab() {
   const [agencies, setAgencies] = useState(174);                // licensed services, 2020 (EMS Advisory Committee)
@@ -73,11 +73,11 @@ export default function EMSTransformationLab() {
         </Field>
         <Field label="Removable overhead per service (assumption)">
           <input type="range" min={0} max={200_000} step={5_000} value={overheadPerAgency} onChange={(e) => setOverheadPerAgency(+e.target.value)} className="w-full accent-teal-600" />
-          <span className="text-sm font-bold text-slate-900">${overheadPerAgency.toLocaleString()}</span>
+          <span className="text-sm font-bold text-slate-900">${overheadPerAgency.toLocaleString("en-US")}</span>
         </Field>
         <Field label="Annual 911 EMS responses (assumption)">
           <input type="range" min={20_000} max={200_000} step={5_000} value={annual911} onChange={(e) => setAnnual911(+e.target.value)} className="w-full accent-teal-600" />
-          <span className="text-sm font-bold text-slate-900">{annual911.toLocaleString()}</span>
+          <span className="text-sm font-bold text-slate-900">{annual911.toLocaleString("en-US")}</span>
         </Field>
         <Field label="Non-emergent share (%) (assumption)">
           <input type="range" min={10} max={55} value={nonEmergentPct} onChange={(e) => setNonEmergentPct(+e.target.value)} className="w-full accent-teal-600" />
@@ -89,14 +89,14 @@ export default function EMSTransformationLab() {
         </Field>
         <Field label="Avoidable ED visit cost (assumption)">
           <input type="range" min={600} max={3_000} step={50} value={edVisitCost} onChange={(e) => setEdVisitCost(+e.target.value)} className="w-full accent-teal-600" />
-          <span className="text-sm font-bold text-slate-900">${edVisitCost.toLocaleString()}</span>
+          <span className="text-sm font-bold text-slate-900">${edVisitCost.toLocaleString("en-US")}</span>
         </Field>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <Stat label="Agencies consolidated" value={`${r.agenciesReduced}`} />
-        <Stat label="ED visits diverted / yr" value={Math.round(r.diverted).toLocaleString()} tone="good" />
-        <Stat label="Admissions prevented / yr" value={Math.round(r.admissionsPrevented).toLocaleString()} tone="good" />
+        <Stat label="ED visits diverted / yr" value={Math.round(r.diverted).toLocaleString("en-US")} tone="good" />
+        <Stat label="Admissions prevented / yr" value={Math.round(r.admissionsPrevented).toLocaleString("en-US")} tone="good" />
         <Stat label="CP program cost / yr" value={fmtUSD(r.cpProgramCost)} tone="warn" />
       </div>
 
@@ -109,7 +109,7 @@ export default function EMSTransformationLab() {
       <div className={`flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold ${r.netSavings > 0 ? "bg-emerald-50 text-emerald-800" : "bg-amber-50 text-amber-800"}`}>
         <TrendingUp className="w-4 h-4 shrink-0" />
         {r.netSavings > 0
-          ? `Net ${fmtUSD(r.netSavings)}/yr: regionalization + ${Math.round(r.diverted).toLocaleString()} diverted ED visits outweigh the community-paramedicine program cost.`
+          ? `Net ${fmtUSD(r.netSavings)}/yr: regionalization + ${Math.round(r.diverted).toLocaleString("en-US")} diverted ED visits outweigh the community-paramedicine program cost.`
           : "At these inputs the program cost exceeds savings — raise community-paramedicine reach or consolidate more agencies."}
       </div>
       <Disclaimer text="Illustrative model of Vermont's RHT EMS-transformation thesis. Only the service and district counts are sourced (EMS Advisory Committee, 2020); every other input, the 8% admission share and the $380K-per-region program cost are assumptions." />

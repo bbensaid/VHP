@@ -79,7 +79,7 @@ function A1CBPPanel() {
               { label: 'Diabetic Patients', value: diabeticPatients.length, color: 'text-slate-900' },
               { label: 'A1C Controlled (<8%)', value: a1cControlledN, color: 'text-emerald-600' },
               { label: 'A1C Uncontrolled', value: a1cData.length - a1cControlledN, color: 'text-red-600' },
-              { label: 'VBC Quality Opportunity', value: `$${potentialA1CSavings.toLocaleString()}`, color: 'text-amber-600' },
+              { label: 'VBC Quality Opportunity', value: `$${potentialA1CSavings.toLocaleString("en-US")}`, color: 'text-amber-600' },
             ].map(s => (
               <div key={s.label} className="p-4 bg-white border border-slate-200 rounded-xl text-center">
                 <p className={`text-2xl font-black ${s.color}`}>{s.value}</p>
@@ -130,7 +130,7 @@ function A1CBPPanel() {
                         ))}
                       </div>
                     </td>
-                    <td className="px-4 py-3 text-right font-bold text-amber-700">{d.controlled ? '—' : `$${d.vbcValue.toLocaleString()}`}</td>
+                    <td className="px-4 py-3 text-right font-bold text-amber-700">{d.controlled ? '—' : `$${d.vbcValue.toLocaleString("en-US")}`}</td>
                   </tr>
                 ))}
               </tbody>
@@ -149,7 +149,7 @@ function A1CBPPanel() {
                       <p className="font-black text-slate-800">{d.patient.name} — A1C {d.latest?.value}%</p>
                       <p className="text-xs text-slate-500 mt-0.5">RAF: {d.patient.rafScore} · Risk tier: {d.patient.riskTier}</p>
                     </div>
-                    <span className="text-sm font-black text-amber-700">Δ${d.vbcValue.toLocaleString()}/yr</span>
+                    <span className="text-sm font-black text-amber-700">Δ${d.vbcValue.toLocaleString("en-US")}/yr</span>
                   </div>
                   {gaps.length > 0 && (
                     <div className="mt-2 flex flex-wrap gap-1.5">{gaps.map(g => <span key={g.code} className="px-2 py-0.5 bg-red-100 text-red-800 text-[10px] font-bold rounded border border-red-200">Gap: {g.code}</span>)}</div>
@@ -171,7 +171,7 @@ function A1CBPPanel() {
               { label: 'HTN Patients', value: hypertensivePatients.length, color: 'text-slate-900' },
               { label: 'BP Controlled (<140/90)', value: bpControlledN, color: 'text-emerald-600' },
               { label: 'BP Uncontrolled', value: bpData.length - bpControlledN, color: 'text-red-600' },
-              { label: 'VBC Opportunity', value: `$${potentialBPSavings.toLocaleString()}`, color: 'text-amber-600' },
+              { label: 'VBC Opportunity', value: `$${potentialBPSavings.toLocaleString("en-US")}`, color: 'text-amber-600' },
             ].map(s => (
               <div key={s.label} className="p-4 bg-white border border-slate-200 rounded-xl text-center">
                 <p className={`text-2xl font-black ${s.color}`}>{s.value}</p>
@@ -245,7 +245,7 @@ function ChoosingWiselyScan() {
         {[
           { label: 'Choosing Wisely Flags', value: CHOOSING_WISELY_FLAGS.length, color: 'text-slate-900' },
           { label: 'Flags Triggered (Panel)', value: flagsWithPatients.filter(f => f.encounters.length > 0).length, color: 'text-amber-600' },
-          { label: 'Potential Waste', value: `$${totalPotentialWaste.toLocaleString()}`, color: 'text-red-600' },
+          { label: 'Potential Waste', value: `$${totalPotentialWaste.toLocaleString("en-US")}`, color: 'text-red-600' },
         ].map(s => (
           <div key={s.label} className="p-4 bg-white border border-slate-200 rounded-xl text-center">
             <p className={`text-2xl font-black ${s.color}`}>{s.value}</p>
@@ -275,7 +275,7 @@ function ChoosingWiselyScan() {
                   <p className="text-xs font-bold text-slate-800 leading-snug">{flag.recommendation}</p>
                 </div>
                 <div className="text-right shrink-0">
-                  {triggered ? <p className="font-black text-amber-700">${totalWaste.toLocaleString()}</p> : <p className="text-slate-400 text-xs">$0</p>}
+                  {triggered ? <p className="font-black text-amber-700">${totalWaste.toLocaleString("en-US")}</p> : <p className="text-slate-400 text-xs">$0</p>}
                   <p className="text-[9px] text-slate-400">est. waste</p>
                 </div>
               </button>
@@ -294,7 +294,7 @@ function ChoosingWiselyScan() {
                         return (
                           <div key={p.id} className="p-3 bg-amber-50 border border-amber-200 rounded-lg mb-2">
                             <p className="font-bold text-slate-800 text-xs">{p.name} — {ptEncs.length} qualifying encounter{ptEncs.length > 1 ? 's' : ''}</p>
-                            <p className="text-[10px] text-amber-700 mt-0.5">Estimated waste: ${(ptEncs.length * flag.estimatedWastePerEvent).toLocaleString()}</p>
+                            <p className="text-[10px] text-amber-700 mt-0.5">Estimated waste: ${(ptEncs.length * flag.estimatedWastePerEvent).toLocaleString("en-US")}</p>
                             <div className="mt-1 flex flex-wrap gap-1">
                               {ptEncs.map(e => (
                                 <span key={e.id} className="text-[10px] font-mono bg-white border border-amber-200 px-1.5 py-0.5 rounded">{e.admitDate}: CPT {flag.cptCodes.filter(c => e.cptCodes.includes(c)).join(', ')}</span>
@@ -400,14 +400,14 @@ function TCOCDecomposition() {
               </div>
             </div>
             <div className="w-24 shrink-0">
-              <p className="text-sm font-black text-slate-800">${c.cost.toLocaleString()}</p>
+              <p className="text-sm font-black text-slate-800">${c.cost.toLocaleString("en-US")}</p>
             </div>
           </div>
         ))}
         <div className="flex items-center gap-3 pt-2 border-t border-slate-200">
           <div className="w-32 shrink-0 text-right"><p className="text-xs font-black text-slate-900">TOTAL PMPY</p></div>
           <div className="flex-1 h-8" />
-          <div className="w-24 shrink-0"><p className="text-sm font-black text-slate-900">${totalPMPY.toLocaleString()}</p></div>
+          <div className="w-24 shrink-0"><p className="text-sm font-black text-slate-900">${totalPMPY.toLocaleString("en-US")}</p></div>
         </div>
       </div>
 
@@ -422,7 +422,7 @@ function TCOCDecomposition() {
           ].map(s => (
             <div key={s.label} className={`p-4 rounded-xl border ${s.border} ${s.bg}`}>
               <p className="text-[10px] font-black uppercase tracking-widest text-slate-600 mb-1">{s.label}</p>
-              <p className={`text-2xl font-black ${s.color}`}>${s.value.toLocaleString()}<span className="text-base text-slate-500 ml-1">({s.pct}%)</span></p>
+              <p className={`text-2xl font-black ${s.color}`}>${s.value.toLocaleString("en-US")}<span className="text-base text-slate-500 ml-1">({s.pct}%)</span></p>
               <p className="text-xs text-slate-600 mt-1">{s.note}</p>
             </div>
           ));
@@ -435,7 +435,7 @@ function TCOCDecomposition() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
           <div>
             <p className="text-[10px] text-slate-500 uppercase font-bold mb-0.5">Panel Average PMPY</p>
-            <p className="font-black text-slate-900">${Math.round(SYNTHETIC_PATIENTS.reduce((s, p) => s + p.totalCostPMPY, 0) / SYNTHETIC_PATIENTS.length).toLocaleString()}</p>
+            <p className="font-black text-slate-900">${Math.round(SYNTHETIC_PATIENTS.reduce((s, p) => s + p.totalCostPMPY, 0) / SYNTHETIC_PATIENTS.length).toLocaleString("en-US")}</p>
           </div>
           <div>
             <p className="text-[10px] text-slate-500 uppercase font-bold mb-0.5">This Patient vs. Panel</p>
@@ -443,7 +443,7 @@ function TCOCDecomposition() {
           </div>
           <div>
             <p className="text-[10px] text-slate-500 uppercase font-bold mb-0.5">Expected TCOC (RAF-adj)</p>
-            <p className="font-black text-indigo-700">${Math.round(patient.rafScore * 18400).toLocaleString()}</p>
+            <p className="font-black text-indigo-700">${Math.round(patient.rafScore * 18400).toLocaleString("en-US")}</p>
             <p className="text-[10px] text-slate-400">CMS benchmark = RAF × $18,400 base rate</p>
           </div>
         </div>

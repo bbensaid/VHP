@@ -285,7 +285,7 @@ function computeTransitions(inputs: SimInputs): Transition[] {
   if (!inputs.isVermont) return [];
   const fpl = getFPL(inputs.householdSize);
   const fplPct = inputs.annualIncome > 0 ? (inputs.annualIncome / fpl) * 100 : 0;
-  const usd = (n: number) => `$${Math.round(n).toLocaleString()}`;
+  const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
   const out: Transition[] = [];
   const adult = inputs.age >= 19 && inputs.age <= 64 && !inputs.hasMedicare;
 
@@ -541,7 +541,7 @@ function FPLIndicator({ annualIncome, householdSize }: { annualIncome: number; h
         ))}
       </div>
       <p className="text-[11px] text-slate-400 mt-2">
-        2026 FPL for household of {householdSize}: ${fpl.toLocaleString()}/year
+        2026 FPL for household of {householdSize}: ${fpl.toLocaleString("en-US")}/year
       </p>
     </div>
   );

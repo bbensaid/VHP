@@ -33,21 +33,21 @@ export function ExpansionTab() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           <SelectRow label="Non-expansion state" value={state} options={stateKeys.map((k) => ({ value: k, label: k }))} onChange={setState} />
           <SliderRow label="Take-up among adults in the gap (your assumption)" value={takeUp} min={20} max={100} step={5} onChange={setTakeUp} format={(v) => `${v}%`} />
-          <SliderRow label="Annual cost per new enrollee (your assumption)" value={costPerEnrollee} min={3000} max={10000} step={250} onChange={setCostPerEnrollee} format={(v) => `$${v.toLocaleString()}`} />
+          <SliderRow label="Annual cost per new enrollee (your assumption)" value={costPerEnrollee} min={3000} max={10000} step={250} onChange={setCostPerEnrollee} format={(v) => `$${v.toLocaleString("en-US")}`} />
         </div>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard label="Adults in the coverage gap" value={s.coverageGap.toLocaleString()} sub="KFF, 2024" icon={<Users size={16} />} />
-        <StatCard label="New enrollees (modelled)" value={r.newEnrollees.toLocaleString()} sub={`${takeUp}% take-up`} icon={<Users size={16} />} />
+        <StatCard label="Adults in the coverage gap" value={s.coverageGap.toLocaleString("en-US")} sub="KFF, 2024" icon={<Users size={16} />} />
+        <StatCard label="New enrollees (modelled)" value={r.newEnrollees.toLocaleString("en-US")} sub={`${takeUp}% take-up`} icon={<Users size={16} />} />
         <StatCard label="Federal cost / yr (90%)" value={fmtM(r.federal)} color="green" icon={<DollarSign size={16} />} />
         <StatCard label="State cost / yr (10%)" value={fmtM(r.state)} color="red" icon={<DollarSign size={16} />} />
       </div>
 
       <div className="bg-white border border-slate-200 rounded-xl p-5 text-sm text-slate-600 space-y-2">
-        <p><span className="font-semibold text-slate-800">{state}:</span> population {s.population.toLocaleString()} (Census, 2025); regular FMAP {s.fmap}% in FY2027 against 90% for expansion adults.</p>
+        <p><span className="font-semibold text-slate-800">{state}:</span> population {s.population.toLocaleString("en-US")} (Census, 2025); regular FMAP {s.fmap}% in FY2027 against 90% for expansion adults.</p>
         {s.coverageGap === 0 && <p>{state} covers adults up to 100% of poverty through a Section 1115 waiver, so it has no coverage gap; expansion would reach adults from 100% to 138% of poverty, who are not counted here.</p>}
-        <p>Across the ten non-expansion states KFF counts {totalGap.toLocaleString()} adults in the gap. Expansion would also make eligible about as many again with incomes of 100–138% of poverty (KFF), not modelled here.</p>
+        <p>Across the ten non-expansion states KFF counts {totalGap.toLocaleString("en-US")} adults in the gap. Expansion would also make eligible about as many again with incomes of 100–138% of poverty (KFF), not modelled here.</p>
       </div>
 
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">

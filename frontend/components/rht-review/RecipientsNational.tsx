@@ -125,7 +125,7 @@ export default function RecipientsNational() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         {[
           [String(recs.length), "states with an itemized list HTR could read"],
-          [allRows.length.toLocaleString(), "awards listed"],
+          [allRows.length.toLocaleString("en-US"), "awards listed"],
           [M(allTotal), "sum of listed awards"],
           [pct(hospShare), "of listed dollars to hospitals & health systems"],
         ].map(([v, l]) => (

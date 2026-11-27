@@ -128,7 +128,7 @@ export default async function CategoryPage({ params }: Props) {
                   <div className="shrink-0 text-right text-xs text-slate-400 space-y-1 ml-4 hidden sm:block">
                     <p className="font-semibold text-slate-600">{thread.reply_count} {thread.reply_count === 1 ? "reply" : "replies"}</p>
                     {thread.last_reply_at && (
-                      <p>Last: {new Date(thread.last_reply_at).toLocaleDateString()}</p>
+                      <p>Last: {new Date(thread.last_reply_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}</p>
                     )}
                   </div>
                 </Link>

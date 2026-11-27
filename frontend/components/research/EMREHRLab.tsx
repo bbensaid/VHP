@@ -86,7 +86,7 @@ const VENDORS: Vendor[] = [
 const vendorById = (id: VendorId) => VENDORS.find((v) => v.id === id)!;
 
 const fmtUSD = (n: number) =>
-  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString()}`;
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString("en-US")}`;
 
 const HOSTING_LABEL = { cloud: "Cloud / SaaS", onprem: "On-premise", hybrid: "Hybrid" } as const;
 

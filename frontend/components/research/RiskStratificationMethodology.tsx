@@ -185,7 +185,7 @@ function HCCPatientWalkthrough({ patient }: { patient: SyntheticPatient }) {
         <div className="p-3 bg-sky-50 border border-sky-200 rounded-lg text-xs">
           <p className="font-bold text-sky-800 mb-1">What RAF {patient.rafScore} Means in VBC</p>
           <p className="text-sky-700 leading-relaxed">
-            A RAF score of {patient.rafScore} means CMS expects this patient to cost <strong>{Math.round(patient.rafScore * 100)}%</strong> of the average Medicare beneficiary. At a national average PMPM of ~$1,533, the expected annual cost for this patient is <strong>${Math.round(patient.rafScore * 18400).toLocaleString()}</strong>. The actual PMPY is ${patient.totalCostPMPY.toLocaleString()} — {patient.totalCostPMPY > patient.rafScore * 18400 ? `$${(patient.totalCostPMPY - Math.round(patient.rafScore * 18400)).toLocaleString()} above expected` : `$${(Math.round(patient.rafScore * 18400) - patient.totalCostPMPY).toLocaleString()} below expected`}.
+            A RAF score of {patient.rafScore} means CMS expects this patient to cost <strong>{Math.round(patient.rafScore * 100)}%</strong> of the average Medicare beneficiary. At a national average PMPM of ~$1,533, the expected annual cost for this patient is <strong>${Math.round(patient.rafScore * 18400).toLocaleString("en-US")}</strong>. The actual PMPY is ${patient.totalCostPMPY.toLocaleString("en-US")} — {patient.totalCostPMPY > patient.rafScore * 18400 ? `$${(patient.totalCostPMPY - Math.round(patient.rafScore * 18400)).toLocaleString("en-US")} above expected` : `$${(Math.round(patient.rafScore * 18400) - patient.totalCostPMPY).toLocaleString("en-US")} below expected`}.
           </p>
         </div>
 
@@ -267,7 +267,7 @@ function StaffingByRisk() {
               {rows.map(r => (
                 <tr key={r.key} className="border-b border-slate-100">
                   <td className={`py-1.5 pr-3 font-bold ${r.text}`}>{r.label}</td>
-                  <td className="py-1.5 pr-3 text-right tabular-nums">{r.patients.toLocaleString()}</td>
+                  <td className="py-1.5 pr-3 text-right tabular-nums">{r.patients.toLocaleString("en-US")}</td>
                   <td className="py-1.5 pr-3 text-right">
                     <input
                       type="number"
@@ -286,7 +286,7 @@ function StaffingByRisk() {
               ))}
               <tr>
                 <td className="py-1.5 pr-3 font-black text-slate-800">Total</td>
-                <td className="py-1.5 pr-3 text-right tabular-nums">{panel.toLocaleString()}</td>
+                <td className="py-1.5 pr-3 text-right tabular-nums">{panel.toLocaleString("en-US")}</td>
                 <td />
                 <td className="py-1.5 pr-3 text-right tabular-nums font-black">{totalFte.toFixed(1)}</td>
                 <td className="py-1.5 pr-3 text-right text-slate-500">100%</td>
@@ -350,7 +350,7 @@ function PopulationTierView() {
               </div>
               <div className="text-right">
                 <p className="font-black text-slate-900">{pts.length} pts</p>
-                {pts.length > 0 && <p className="text-[10px] text-slate-500">avg ${avgCost(pts).toLocaleString()}/yr</p>}
+                {pts.length > 0 && <p className="text-[10px] text-slate-500">avg ${avgCost(pts).toLocaleString("en-US")}/yr</p>}
               </div>
             </div>
           );

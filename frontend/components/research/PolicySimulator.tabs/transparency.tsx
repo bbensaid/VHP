@@ -302,7 +302,7 @@ export function TransparencyTab() {
               max={10000}
               step={50}
               onChange={setVolume}
-              format={(v) => v.toLocaleString()}
+              format={(v) => v.toLocaleString("en-US")}
             />
             <SliderRow
               label="Commercial price (% of Medicare)"
@@ -372,7 +372,7 @@ export function TransparencyTab() {
                     <span>
                       {row.rate == null
                         ? "not payable"
-                        : `$${row.rate.toLocaleString()}`}
+                        : `$${row.rate.toLocaleString("en-US")}`}
                     </span>
                     {row.rate != null &&
                       row.rate === siteNeutral.neutralRate &&
@@ -488,7 +488,7 @@ export function TransparencyTab() {
               max={20000}
               step={100}
               onChange={setNsaVolume}
-              format={(v) => v.toLocaleString()}
+              format={(v) => v.toLocaleString("en-US")}
             />
             <SliderRow
               label="Average Out-of-Network Charge"
@@ -497,7 +497,7 @@ export function TransparencyTab() {
               max={50000}
               step={500}
               onChange={setNsaAvgCharge}
-              format={(v) => `$${v.toLocaleString()}`}
+              format={(v) => `$${v.toLocaleString("en-US")}`}
             />
             <SliderRow
               label="QPA as % of Charge"
@@ -544,7 +544,7 @@ export function TransparencyTab() {
                 NSA Context — {nsaSpecialty}
               </p>
               <p>
-                The QPA (${nsa.qpa.toLocaleString()}) serves as the starting
+                The QPA (${nsa.qpa.toLocaleString("en-US")}) serves as the starting
                 offer in Independent Dispute Resolution (IDR). Arbitrators must
                 consider QPA as the primary factor, then consider additional
                 criteria (training, experience, market share). The NSA caps

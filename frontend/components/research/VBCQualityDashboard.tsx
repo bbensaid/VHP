@@ -541,13 +541,13 @@ function ReadmissionView() {
                         <p className="font-black uppercase tracking-widest text-[10px] text-slate-500 mb-2">Index Admission</p>
                         <p className="font-bold text-slate-800">{r.indexEncounter.drgDescription ?? r.indexEncounter.principalDx}</p>
                         <p className="text-slate-500 mt-1">{r.indexEncounter.admitDate} → {r.indexEncounter.dischargeDate}</p>
-                        <p className="text-slate-500">DRG: {r.indexEncounter.drg} · Cost: ${r.indexEncounter.totalCost.toLocaleString()}</p>
+                        <p className="text-slate-500">DRG: {r.indexEncounter.drg} · Cost: ${r.indexEncounter.totalCost.toLocaleString("en-US")}</p>
                       </div>
                       <div className="p-4 bg-red-50 rounded-xl">
                         <p className="font-black uppercase tracking-widest text-[10px] text-red-600 mb-2">Readmission ({r.daysToReadmit} days later)</p>
                         <p className="font-bold text-slate-800">{r.readmitEncounter.drgDescription ?? r.readmitEncounter.principalDx}</p>
                         <p className="text-slate-500 mt-1">{r.readmitEncounter.admitDate} → {r.readmitEncounter.dischargeDate}</p>
-                        <p className="text-slate-500">Cost: ${r.readmitEncounter.totalCost.toLocaleString()}</p>
+                        <p className="text-slate-500">Cost: ${r.readmitEncounter.totalCost.toLocaleString("en-US")}</p>
                       </div>
                     </div>
                     {r.preventable && (
@@ -581,7 +581,7 @@ function ReadmissionView() {
                   <td className="px-4 py-2"><span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${e.type === 'inpatient' ? 'bg-slate-100 text-slate-700' : e.type === 'ed' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'}`}>{e.type}</span></td>
                   <td className="px-4 py-2 font-mono text-slate-500">{e.admitDate}{e.type !== 'ed' ? ` → ${e.dischargeDate}` : ''}</td>
                   <td className="px-4 py-2 text-slate-700">{e.principalDx}</td>
-                  <td className="px-4 py-2 text-right font-bold text-slate-700">${e.totalCost.toLocaleString()}</td>
+                  <td className="px-4 py-2 text-right font-bold text-slate-700">${e.totalCost.toLocaleString("en-US")}</td>
                   <td className="px-4 py-2 text-center">
                     {e.readmission && <span className="px-1.5 py-0.5 bg-red-100 text-red-700 rounded text-[9px] font-bold">Readmit</span>}
                     {e.avoidable && !e.readmission && <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 rounded text-[9px] font-bold">Avoidable</span>}
@@ -620,7 +620,7 @@ function AvoidableEDView() {
           { label: 'Total ED Visits', value: totalEDs, color: 'text-slate-900' },
           { label: 'Avoidable (ACSC)', value: avoidableEDs.length, color: 'text-red-600' },
           { label: 'Avoidable Rate', value: `${Math.round((avoidableEDs.length / totalEDs) * 100)}%`, color: 'text-red-600' },
-          { label: 'Avoidable Cost', value: `$${avoidableCost.toLocaleString()}`, color: 'text-amber-600' },
+          { label: 'Avoidable Cost', value: `$${avoidableCost.toLocaleString("en-US")}`, color: 'text-amber-600' },
         ].map(s => (
           <div key={s.label} className="p-4 bg-white border border-slate-200 rounded-xl text-center">
             <p className={`text-2xl font-black ${s.color}`}>{s.value}</p>
@@ -644,7 +644,7 @@ function AvoidableEDView() {
                   <p className="text-xs text-slate-600 font-bold">{e.admitDate} — ED Visit</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-lg font-black text-amber-700">${e.totalCost.toLocaleString()}</p>
+                  <p className="text-lg font-black text-amber-700">${e.totalCost.toLocaleString("en-US")}</p>
                   <p className="text-[10px] text-slate-500">Encounter cost</p>
                 </div>
               </div>

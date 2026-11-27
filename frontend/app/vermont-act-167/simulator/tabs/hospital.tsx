@@ -99,8 +99,8 @@ export function HospitalDeepDive({ selectedRecs }: { selectedRecs: Set<string> }
         <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
           {[
             { v: hospital.beds, l: "Licensed Beds" },
-            { v: hospital.annualAdmissions.toLocaleString(), l: "Annual Admissions" },
-            { v: hospital.annualEDVisits.toLocaleString(), l: "ED Visits/yr" },
+            { v: hospital.annualAdmissions.toLocaleString("en-US"), l: "Annual Admissions" },
+            { v: hospital.annualEDVisits.toLocaleString("en-US"), l: "ED Visits/yr" },
             { v: `$${hospital.annualLossM}M`, l: "Annual Loss" },
             { v: `${hospital.popOver65Pct}%`, l: "Aged 65+" },
             { v: `${kmToNearestHospital(hospital)} km`, l: "Next Hospital" },

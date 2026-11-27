@@ -609,7 +609,7 @@ const STATUS_CONFIG = {
 
 function fmt(n: number, dec = 1) { return n.toLocaleString("en-US", { maximumFractionDigits: dec }); }
 function fmtUSD(n: number) {
-  // Sign goes before the "$", not after it — n.toLocaleString() puts "-" on the
+  // Sign goes before the "$", not after it — n.toLocaleString("en-US") puts "-" on the
   // digits, which previously produced "$-10,967,892" for a loss (found live in
   // the H.R. 1 stress-test scenario, which routinely pushes net income negative).
   // Magnitude is also checked via Math.abs so large losses still get the "M"

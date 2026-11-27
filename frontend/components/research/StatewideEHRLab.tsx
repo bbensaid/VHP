@@ -18,7 +18,7 @@ import { Building2, GitCompare, AlertTriangle, CheckCircle, Clock } from "lucide
 // ─────────────────────────────────────────────────────────────────────────────
 
 const fmtUSD = (n: number) =>
-  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString()}`;
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString("en-US")}`;
 
 export default function StatewideEHRLab() {
   const [hospitals, setHospitals] = useState(14);            // Vermont's 14 hospitals

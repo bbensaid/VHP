@@ -279,7 +279,7 @@ function CDPSWalkthrough({ patient }: { patient: VCCIPatient }) {
       <div className="p-4 bg-sky-50 border border-sky-200 rounded-xl text-xs">
         <p className="font-bold text-sky-800 mb-1">What CDPS {patient.cdpsScore} Means for VCCI</p>
         <p className="text-sky-700 leading-relaxed">
-          A CDPS score of <strong>{patient.cdpsScore}</strong> means Vermont Medicaid expects this member to cost <strong>{Math.round(patient.cdpsScore * 100)}%</strong> of the average Medicaid member PMPM. At an assumed (illustrative) Medicaid average PMPM of $800, this member&apos;s expected cost is <strong>${Math.round(patient.cdpsScore * 9600).toLocaleString()}/year</strong>. Actual PMPY is <strong>${patient.totalCostPMPY.toLocaleString()}</strong> — {patient.totalCostPMPY > patient.cdpsScore * 9600 ? 'above' : 'below'} expected. A CDPS score ≥{patient.riskTier === 'very-high' ? '3.5' : patient.riskTier === 'high' ? '2.0' : '1.0'} triggers automatic VCCI eligibility review.
+          A CDPS score of <strong>{patient.cdpsScore}</strong> means Vermont Medicaid expects this member to cost <strong>{Math.round(patient.cdpsScore * 100)}%</strong> of the average Medicaid member PMPM. At an assumed (illustrative) Medicaid average PMPM of $800, this member&apos;s expected cost is <strong>${Math.round(patient.cdpsScore * 9600).toLocaleString("en-US")}/year</strong>. Actual PMPY is <strong>${patient.totalCostPMPY.toLocaleString("en-US")}</strong> — {patient.totalCostPMPY > patient.cdpsScore * 9600 ? 'above' : 'below'} expected. A CDPS score ≥{patient.riskTier === 'very-high' ? '3.5' : patient.riskTier === 'high' ? '2.0' : '1.0'} triggers automatic VCCI eligibility review.
         </p>
       </div>
     </div>
@@ -573,8 +573,8 @@ function EncounterTimeline({ patient }: { patient: VCCIPatient }) {
         {[
           { label: 'Total Encounters', value: patient.encounters.length, color: 'text-slate-900' },
           { label: 'Avoidable', value: patient.encounters.filter(e => e.avoidable).length, color: 'text-amber-600' },
-          { label: 'Claims Cost (shown)', value: `$${totalCost.toLocaleString()}`, color: 'text-slate-900' },
-          { label: 'Avoidable Cost', value: `$${avoidableCost.toLocaleString()}`, color: 'text-red-600' },
+          { label: 'Claims Cost (shown)', value: `$${totalCost.toLocaleString("en-US")}`, color: 'text-slate-900' },
+          { label: 'Avoidable Cost', value: `$${avoidableCost.toLocaleString("en-US")}`, color: 'text-red-600' },
         ].map(s => (
           <div key={s.label} className="p-3 bg-white border border-slate-200 rounded-xl text-center flex-1 min-w-[100px]">
             <p className={`text-xl font-black ${s.color}`}>{s.value}</p>
@@ -597,7 +597,7 @@ function EncounterTimeline({ patient }: { patient: VCCIPatient }) {
               <p className="text-xs text-slate-500">DX: {enc.principalDx}{enc.los ? ` · LOS: ${enc.los} days` : ''}</p>
               {enc.vcciFlagReason && <p className="text-xs text-amber-700 mt-0.5 italic">{enc.vcciFlagReason}</p>}
             </div>
-            <span className="font-black text-sm text-slate-700 shrink-0">${enc.cost.toLocaleString()}</span>
+            <span className="font-black text-sm text-slate-700 shrink-0">${enc.cost.toLocaleString("en-US")}</span>
           </div>
         ))}
       </div>

@@ -50,7 +50,7 @@ export default function Recipients({ rec }: { rec: Rec }) {
     <div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
         {[
-          [rec.rows.length.toLocaleString(), "awards listed"],
+          [rec.rows.length.toLocaleString("en-US"), "awards listed"],
           [M(total), "sum of listed awards"],
           area === "County" ? [String(counties), "counties"] : [String(orgs), "organizations"],
           [median >= 1e6 ? `$${(median / 1e6).toFixed(2)}M` : `$${Math.round(median / 1e3)}K`, "median award"],

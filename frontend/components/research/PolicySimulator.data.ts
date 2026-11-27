@@ -179,7 +179,7 @@ export const fmt = (n: number, decimals = 1) =>
 export const fmtM = (n: number) => {
   if (Math.abs(n) >= 1e9) return `$${(n / 1e9).toFixed(2)}B`;
   if (Math.abs(n) >= 1e6) return `$${(n / 1e6).toFixed(1)}M`;
-  return `$${n.toLocaleString()}`;
+  return `$${n.toLocaleString("en-US")}`;
 };
 
 export const fmtPct = (n: number) => `${n.toFixed(1)}%`;

@@ -1303,7 +1303,7 @@ export default function SystemVitalsPage() {
             </span>
             {lastRefresh && (
               <span className="text-[11px] text-slate-400 font-medium">
-                Updated {lastRefresh.toLocaleTimeString()}
+                Updated {lastRefresh.toLocaleTimeString("en-US", { timeZone: "America/New_York" })}
               </span>
             )}
             <button onClick={refresh} disabled={loading}

@@ -52,7 +52,7 @@ export default async function LatestHubReports({
               </span>
             )}
             <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">
-              {report.publishedAt ? new Date(report.publishedAt).toLocaleDateString() : ""}
+              {report.publishedAt ? new Date(report.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : ""}
             </div>
             <h3 className={`font-bold text-slate-900 mb-3 ${titleHoverClass} transition-colors leading-snug`}>
               {report.title}

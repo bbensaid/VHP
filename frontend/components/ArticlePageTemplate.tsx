@@ -350,7 +350,7 @@ export default async function ArticlePageTemplate({
                       className="group block bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700 hover:shadow-md transition-all"
                     >
                       <div className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
-                        {related.publishedAt ? new Date(related.publishedAt).toLocaleDateString() : ""}
+                        {related.publishedAt ? new Date(related.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : ""}
                       </div>
                       <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-indigo-600 transition-colors">
                         {related.title}

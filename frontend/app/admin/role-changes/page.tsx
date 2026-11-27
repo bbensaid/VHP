@@ -80,7 +80,7 @@ export default async function RoleChangesPage({
           <h1 className="text-3xl font-black text-slate-900">Role Change Audit Log</h1>
           <p className="text-slate-500 text-sm mt-1">
             Every role assignment and change, automatically recorded by database trigger.
-            {count !== null && ` ${count.toLocaleString()} total events.`}
+            {count !== null && ` ${count.toLocaleString("en-US")} total events.`}
           </p>
         </div>
 

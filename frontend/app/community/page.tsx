@@ -114,7 +114,7 @@ export default async function CommunityPage() {
                     </Link>
                     <p className="text-xs text-slate-400 mt-0.5">
                       {t.reply_count} {t.reply_count === 1 ? "reply" : "replies"} ·{" "}
-                      {new Date(t.created_at).toLocaleDateString()}
+                      {new Date(t.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                     </p>
                   </li>
                 ))}

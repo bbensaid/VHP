@@ -15,11 +15,11 @@ const METRICS = [
   { key: "operatingMarginPct",         label: "Operating Margin",        format: (v: number) => `${v > 0 ? "+" : ""}${v.toFixed(1)}%`, lowerBetter: false },
   { key: "annualLossM",                label: "Annual Loss ($M)",         format: (v: number) => v === 0 ? "Profitable" : `-$${v.toFixed(1)}M`, lowerBetter: true },
   { key: "projectedLoss2028M",         label: "2028 Projected Loss ($M)", format: (v: number) => v === 0 ? "Profitable" : `-$${v.toFixed(1)}M`, lowerBetter: true },
-  { key: "beds",                       label: "Licensed Beds",            format: (v: number) => v.toLocaleString(), lowerBetter: false },
+  { key: "beds",                       label: "Licensed Beds",            format: (v: number) => v.toLocaleString("en-US"), lowerBetter: false },
   { key: "icuBeds",                    label: "ICU Beds",                 format: (v: number) => String(v), lowerBetter: false },
-  { key: "annualAdmissions",           label: "Annual Admissions",        format: (v: number) => v.toLocaleString(), lowerBetter: false },
-  { key: "annualEDVisits",             label: "Annual ED Visits",         format: (v: number) => v.toLocaleString(), lowerBetter: false },
-  { key: "fteCount",                   label: "Total FTEs",               format: (v: number) => v.toLocaleString(), lowerBetter: false },
+  { key: "annualAdmissions",           label: "Annual Admissions",        format: (v: number) => v.toLocaleString("en-US"), lowerBetter: false },
+  { key: "annualEDVisits",             label: "Annual ED Visits",         format: (v: number) => v.toLocaleString("en-US"), lowerBetter: false },
+  { key: "fteCount",                   label: "Total FTEs",               format: (v: number) => v.toLocaleString("en-US"), lowerBetter: false },
   { key: "popOver65Pct",              label: "Pop. Over 65 (%)",         format: (v: number) => `${v.toFixed(1)}%`, lowerBetter: false },
   { key: "avgTravelToNextHospitalMin", label: "Travel to Next Hospital",  format: (v: number) => `${v} min`, lowerBetter: false },
   { key: "lowIncomePct",              label: "Low Income (%)",           format: (v: number) => `${v.toFixed(1)}%`, lowerBetter: false },
@@ -195,7 +195,7 @@ export default function HospitalCompareClient() {
                         <div className="text-[10px] text-slate-400 uppercase tracking-wide">Beds</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-lg font-black text-slate-800">{h.annualEDVisits.toLocaleString()}</div>
+                        <div className="text-lg font-black text-slate-800">{h.annualEDVisits.toLocaleString("en-US")}</div>
                         <div className="text-[10px] text-slate-400 uppercase tracking-wide">ED Visits</div>
                       </div>
                     </div>

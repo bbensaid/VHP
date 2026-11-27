@@ -225,8 +225,8 @@ export default function VermontAct68SimulatorClient() {
                 {[
                   { v: hospital.opResultM <= 0 ? `+${fmtM(hospital.opResultM)}` : `−${fmtM(hospital.opResultM)}`, l: '2023 operating result (OW)' },
                   { v: `${fmtM(hospital.fy28[0])}–${fmtM(hospital.fy28[1])}`, l: 'FY2028 projected loss (OW)' },
-                  { v: hospital.beds.toLocaleString(), l: 'Beds (CMS FY2023)' },
-                  { v: hospital.discharges.toLocaleString(), l: 'Discharges (CMS FY2023)' },
+                  { v: hospital.beds.toLocaleString("en-US"), l: 'Beds (CMS FY2023)' },
+                  { v: hospital.discharges.toLocaleString("en-US"), l: 'Discharges (CMS FY2023)' },
                 ].map(({ v, l }) => (
                   <div key={l} className="bg-slate-50 rounded-xl p-3 text-center border border-slate-100">
                     <div className="text-lg font-black text-slate-900">{v}</div>

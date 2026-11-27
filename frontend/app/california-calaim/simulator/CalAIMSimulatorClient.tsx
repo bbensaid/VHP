@@ -322,7 +322,7 @@ export default function CalAIMSimulatorClient() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {[
                   { v: (plan.enrollees / 1000000).toFixed(1) + 'M', l: 'Enrollees' },
-                  { v: `$${plan.medicaidRevM.toLocaleString()}M`, l: 'Medi-Cal Revenue' },
+                  { v: `$${plan.medicaidRevM.toLocaleString("en-US")}M`, l: 'Medi-Cal Revenue' },
                   { v: `${plan.ecmReadiness}%`, l: 'ECM Readiness' },
                   { v: `${plan.sdohBurdenScore}/10`, l: 'SDOH Burden Score' },
                 ].map(({ v, l }) => (

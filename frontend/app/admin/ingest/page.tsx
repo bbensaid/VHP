@@ -57,7 +57,7 @@ export default async function IngestMonitorPage() {
           </div>
           <div className="text-lg font-black text-slate-900 dark:text-slate-100">
             {lastQuery
-              ? new Date(lastQuery.created_at).toLocaleString()
+              ? new Date(lastQuery.created_at).toLocaleString("en-US", { timeZone: "America/New_York" })
               : "No data"}
           </div>
         </div>
@@ -103,7 +103,7 @@ export default async function IngestMonitorPage() {
                   <tr key={q.id} className="hover:bg-slate-50 dark:hover:bg-slate-800">
                     <td className="px-6 py-3 font-mono text-slate-500 dark:text-slate-400 text-xs">{q.id}</td>
                     <td className="px-6 py-3 text-slate-700 dark:text-slate-300">
-                      {new Date(q.created_at).toLocaleString()}
+                      {new Date(q.created_at).toLocaleString("en-US", { timeZone: "America/New_York" })}
                     </td>
                     <td className="px-6 py-3 text-right font-mono font-bold"
                       style={{ color: (q.latency_ms ?? 0) > 3000 ? "#ef4444" : (q.latency_ms ?? 0) > 1500 ? "#f59e0b" : "#10b981" }}

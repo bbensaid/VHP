@@ -15,7 +15,7 @@
 import { useState } from "react";
 
 const usd = (n: number) =>
-  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M` : `$${Math.round(n).toLocaleString()}`;
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M` : `$${Math.round(n).toLocaleString("en-US")}`;
 
 function Num({ label, value, set, step = 1, hint }: { label: string; value: number; set: (v: number) => void; step?: number; hint?: string }) {
   return (
@@ -99,8 +99,8 @@ export default function HCCGapClosurePlaybook() {
         <div className="mt-4 grid sm:grid-cols-3 gap-3">
           <div className="rounded-lg bg-slate-50 border border-slate-200 p-3">
             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">HCCs not yet recaptured</p>
-            <p className="text-xl font-black text-slate-900">{Math.round(uncaptured).toLocaleString()}</p>
-            <p className="text-[11px] text-slate-500">of {Math.round(priorYearHccs).toLocaleString()} carried last year</p>
+            <p className="text-xl font-black text-slate-900">{Math.round(uncaptured).toLocaleString("en-US")}</p>
+            <p className="text-[11px] text-slate-500">of {Math.round(priorYearHccs).toLocaleString("en-US")} carried last year</p>
           </div>
           <div className="rounded-lg bg-slate-50 border border-slate-200 p-3">
             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">RAF missing per patient</p>

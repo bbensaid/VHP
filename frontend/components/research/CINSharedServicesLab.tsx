@@ -18,7 +18,7 @@ import { TrendingUp, Clock } from "lucide-react";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const fmtUSD = (n: number) =>
-  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString()}`;
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(1)}M` : `$${Math.round(n).toLocaleString("en-US")}`;
 
 // Shared-service domains: each cuts a fraction of its share of the admin premium
 // when consolidated across hospitals.
@@ -81,11 +81,11 @@ export default function CINSharedServicesLab() {
         </Field>
         <Field label="Discharges / hospital / yr">
           <input type="range" min={800} max={12_000} step={100} value={dischargesPerHospital} onChange={(e) => setDischargesPerHospital(+e.target.value)} className="w-full accent-teal-600" />
-          <span className="text-sm font-bold text-slate-900">{dischargesPerHospital.toLocaleString()}</span>
+          <span className="text-sm font-bold text-slate-900">{dischargesPerHospital.toLocaleString("en-US")}</span>
         </Field>
         <Field label="Admin premium / discharge">
           <input type="range" min={400} max={2_500} step={25} value={adminPremium} onChange={(e) => setAdminPremium(+e.target.value)} className="w-full accent-teal-600" />
-          <span className="text-sm font-bold text-slate-900">${adminPremium.toLocaleString()}</span>
+          <span className="text-sm font-bold text-slate-900">${adminPremium.toLocaleString("en-US")}</span>
         </Field>
         <Field label="Combined supply spend">
           <input type="range" min={50_000_000} max={400_000_000} step={10_000_000} value={groupPurchasingSpend} onChange={(e) => setGroupPurchasingSpend(+e.target.value)} className="w-full accent-teal-600" />
@@ -110,7 +110,7 @@ export default function CINSharedServicesLab() {
         <Stat label="Annual admin savings" value={fmtUSD(r.adminSavings)} tone="good" />
         <Stat label="Group-purchasing savings" value={fmtUSD(r.gpoSavings)} tone="good" />
         <Stat label="CIN annual operating cost" value={fmtUSD(r.annualOperating)} tone="warn" />
-        <Stat label="Premium reduction / discharge" value={`$${Math.round(r.premiumReduction).toLocaleString()}`} tone="good" />
+        <Stat label="Premium reduction / discharge" value={`$${Math.round(r.premiumReduction).toLocaleString("en-US")}`} tone="good" />
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">

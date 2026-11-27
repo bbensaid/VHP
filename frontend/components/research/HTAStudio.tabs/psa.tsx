@@ -312,7 +312,7 @@ export function PSATab() {
             ) : (
               <Play size={15} />
             )}
-            {running ? "Running..." : `Run ${iterations.toLocaleString()} Iterations`}
+            {running ? "Running..." : `Run ${iterations.toLocaleString("en-US")} Iterations`}
           </button>
           <p className="text-xs text-slate-400">
             Monte Carlo simulation using Math.random() — samples from specified

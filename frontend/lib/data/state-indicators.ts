@@ -60,9 +60,9 @@ export const INDICATORS: Indicator[] = [
   { key: "stars", label: "Mean CMS hospital star rating", pillar: "clinical", source: "cms", higherIsBetter: true,
     get: (s) => s.cms.meanStarRating, format: (v) => v.toFixed(2), note: "Average of rated hospitals (1–5); many small hospitals are not rated." },
   { key: "hospitals", label: "Hospitals listed by CMS", pillar: "operations", source: "cms", higherIsBetter: null,
-    get: (s) => s.cms.hospitals, format: (v) => v.toLocaleString() },
+    get: (s) => s.cms.hospitals, format: (v) => v.toLocaleString("en-US") },
   { key: "cah", label: "Critical access hospitals", pillar: "operations", source: "cms", higherIsBetter: null,
-    get: (s) => s.cms.criticalAccess, format: (v) => v.toLocaleString() },
+    get: (s) => s.cms.criticalAccess, format: (v) => v.toLocaleString("en-US") },
   { key: "rht", label: "Rural Health Transformation award, FY2026", pillar: "policy", source: "rht", higherIsBetter: null,
     get: (s) => s.rhtAwardFY26, format: (v) => `$${(v / 1e6).toFixed(1)}M` },
 ];

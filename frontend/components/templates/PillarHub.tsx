@@ -159,7 +159,7 @@ export function PillarHub({
               {featured && (
                 <div className="mt-8 pt-8 border-t border-slate-200/50 dark:border-slate-700/50">
                   <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Published</p>
-                  <p className="text-slate-700 dark:text-slate-300 font-medium">{new Date(featured.publishedAt).toLocaleDateString()}</p>
+                  <p className="text-slate-700 dark:text-slate-300 font-medium">{new Date(featured.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}</p>
                 </div>
               )}
             </div>
@@ -191,7 +191,7 @@ export function PillarHub({
                         {article.category}
                       </span>
                       <span className="text-xs bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 px-2 py-1 rounded text-slate-500 dark:text-slate-400 font-medium">
-                        {new Date(article.publishedAt).toLocaleDateString()}
+                        {new Date(article.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                       </span>
                     </div>
                     <h4 className={`text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors leading-snug ${theme.hoverText}`}>

@@ -100,7 +100,7 @@ export default async function RevenuePage() {
 
       {/* Stat cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <StatCard icon={CurrencyDollarIcon} label="MRR" value={`$${data.mrr.toLocaleString()}`} sub="active + trialing" color="emerald" />
+        <StatCard icon={CurrencyDollarIcon} label="MRR" value={`$${data.mrr.toLocaleString("en-US")}`} sub="active + trialing" color="emerald" />
         <StatCard icon={UsersIcon} label="Active" value={String(data.active)} sub={`${data.trials} trialing`} color="indigo" />
         <StatCard icon={ArrowTrendingDownIcon} label="Churned (30d)" value={String(data.churned)} color="rose" />
         <StatCard icon={BeakerIcon} label="Trial → Paid" value={`${data.conversionRate}%`} sub="all-time estimate" color="amber" />
@@ -127,7 +127,7 @@ export default async function RevenuePage() {
                     <td className="py-2 font-semibold text-slate-700 capitalize">{plan}</td>
                     <td className="py-2 text-right text-slate-600">{count}</td>
                     <td className="py-2 text-right text-slate-500">${price}</td>
-                    <td className="py-2 text-right font-bold text-slate-800">${(count * price).toLocaleString()}</td>
+                    <td className="py-2 text-right font-bold text-slate-800">${(count * price).toLocaleString("en-US")}</td>
                   </tr>
                 );
               })}
@@ -135,11 +135,11 @@ export default async function RevenuePage() {
             <tfoot>
               <tr className="border-t-2 border-slate-200">
                 <td colSpan={3} className="pt-3 text-sm font-black text-slate-700">Total MRR</td>
-                <td className="pt-3 text-right text-sm font-black text-emerald-600">${data.mrr.toLocaleString()}</td>
+                <td className="pt-3 text-right text-sm font-black text-emerald-600">${data.mrr.toLocaleString("en-US")}</td>
               </tr>
               <tr>
                 <td colSpan={3} className="text-xs text-slate-400">ARR (est.)</td>
-                <td className="text-right text-xs text-slate-400">${(data.mrr * 12).toLocaleString()}</td>
+                <td className="text-right text-xs text-slate-400">${(data.mrr * 12).toLocaleString("en-US")}</td>
               </tr>
             </tfoot>
           </table>

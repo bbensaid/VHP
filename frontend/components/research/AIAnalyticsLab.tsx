@@ -411,7 +411,7 @@ function PredictiveComparator() {
 
               <tr className="bg-indigo-50">
                 <td colSpan={activeModels.length + 1} className="px-4 py-2 text-xs font-bold text-indigo-600 uppercase tracking-wider">
-                  Clinical Impact (per {activeModels[0]?.populationSize.toLocaleString()} patients)
+                  Clinical Impact (per {activeModels[0]?.populationSize.toLocaleString("en-US")} patients)
                 </td>
               </tr>
 
@@ -432,7 +432,7 @@ function PredictiveComparator() {
                         : val === Math.max(...metrics.map((x) => (x as Record<string, unknown>)[row.key] as number));
                     return (
                       <td key={i} className={`px-4 py-2.5 text-center font-medium ${best ? "text-green-700 bg-green-50" : "text-slate-700"}`}>
-                        {typeof val === "number" ? val.toLocaleString() : String(val)}
+                        {typeof val === "number" ? val.toLocaleString("en-US") : String(val)}
                         {best && <span className="ml-1 text-green-500 text-xs">★</span>}
                       </td>
                     );
@@ -450,7 +450,7 @@ function PredictiveComparator() {
                 <td className="px-4 py-2.5 text-slate-600 font-medium">Net Monetary Value</td>
                 {metrics.map((met, i) => (
                   <td key={i} className={`px-4 py-2.5 text-center font-bold ${met.nmv === bestNmv ? "text-green-700 bg-green-50" : met.nmv < 0 ? "text-red-600" : "text-slate-700"}`}>
-                    ${met.nmv.toLocaleString()}
+                    ${met.nmv.toLocaleString("en-US")}
                     {met.nmv === bestNmv && <span className="ml-1 text-green-500 text-xs">★ Best</span>}
                   </td>
                 ))}
@@ -1465,8 +1465,8 @@ function calcBuildBuy(inp: BuildBuyInputs) {
     annualBenefit,
     recommendation: buyNpv > buildNpv ? "Buy" : "Build",
     recRationale: buyNpv > buildNpv
-      ? `Buying achieves faster go-live (${inp.buyGoLiveMonths} vs ${inp.devMonths} months) and a better 3-year NPV ($${Math.round(buyNpv).toLocaleString()} vs $${Math.round(buildNpv).toLocaleString()}).`
-      : `Building offers a better 3-year NPV ($${Math.round(buildNpv).toLocaleString()} vs $${Math.round(buyNpv).toLocaleString()}), though requires ${inp.devMonths} months before benefit realization.`,
+      ? `Buying achieves faster go-live (${inp.buyGoLiveMonths} vs ${inp.devMonths} months) and a better 3-year NPV ($${Math.round(buyNpv).toLocaleString("en-US")} vs $${Math.round(buildNpv).toLocaleString("en-US")}).`
+      : `Building offers a better 3-year NPV ($${Math.round(buildNpv).toLocaleString("en-US")} vs $${Math.round(buyNpv).toLocaleString("en-US")}), though requires ${inp.devMonths} months before benefit realization.`,
   };
 }
 
@@ -1505,7 +1505,7 @@ function AiRoiCalculator() {
   const bbResults = useMemo(() => calcBuildBuy(bb), [bb]);
   const scribeResults = useMemo(() => calcScribe(scribe), [scribe]);
 
-  const fmt$ = (n: number) => `$${Math.abs(Math.round(n)).toLocaleString()}${n < 0 ? " (loss)" : ""}`;
+  const fmt$ = (n: number) => `$${Math.abs(Math.round(n)).toLocaleString("en-US")}${n < 0 ? " (loss)" : ""}`;
 
   return (
     <div className="space-y-6">
@@ -1651,8 +1651,8 @@ function AiRoiCalculator() {
                 </thead>
                 <tbody>
                   {[
-                    { label: "3-Year Total Cost of Ownership", build: `$${Math.round(bbResults.buildTco).toLocaleString()}`, buy: `$${Math.round(bbResults.buyTco).toLocaleString()}`, lowerBetter: true },
-                    { label: "3-Year Expected Benefit", build: `$${Math.round(bbResults.buildBenefit).toLocaleString()}`, buy: `$${Math.round(bbResults.buyBenefit).toLocaleString()}`, lowerBetter: false },
+                    { label: "3-Year Total Cost of Ownership", build: `$${Math.round(bbResults.buildTco).toLocaleString("en-US")}`, buy: `$${Math.round(bbResults.buyTco).toLocaleString("en-US")}`, lowerBetter: true },
+                    { label: "3-Year Expected Benefit", build: `$${Math.round(bbResults.buildBenefit).toLocaleString("en-US")}`, buy: `$${Math.round(bbResults.buyBenefit).toLocaleString("en-US")}`, lowerBetter: false },
                     { label: "Net ROI", build: `${bbResults.buildRoi.toFixed(1)}%`, buy: `${bbResults.buyRoi.toFixed(1)}%`, lowerBetter: false },
                     { label: "Break-even Month", build: `Month ${bbResults.buildBreakEven}`, buy: `Month ${bbResults.buyBreakEven}`, lowerBetter: true },
                     { label: "Risk-adjusted NPV", build: fmt$(bbResults.buildNpv), buy: fmt$(bbResults.buyNpv), lowerBetter: false },
@@ -1754,11 +1754,11 @@ function AiRoiCalculator() {
                 <p className="text-xs font-bold text-indigo-700 uppercase tracking-wider">Annual Results</p>
                 {[
                   { label: "Doc min saved per encounter", value: `${scribeResults.docMinSaved.toFixed(1)} min` },
-                  { label: "Total physician hours saved/yr", value: `${scribeResults.annualHoursSaved.toLocaleString()} hrs` },
-                  { label: "Time savings value", value: `$${scribeResults.annualTimeSavingsValue.toLocaleString()}` },
-                  { label: "New encounters enabled", value: scribeResults.newEncounters.toLocaleString() },
-                  { label: "Revenue from new encounters", value: `$${scribeResults.annualRevenueGenerated.toLocaleString()}` },
-                  { label: "Annual scribe cost", value: `$${scribeResults.annualScribeCost.toLocaleString()}` },
+                  { label: "Total physician hours saved/yr", value: `${scribeResults.annualHoursSaved.toLocaleString("en-US")} hrs` },
+                  { label: "Time savings value", value: `$${scribeResults.annualTimeSavingsValue.toLocaleString("en-US")}` },
+                  { label: "New encounters enabled", value: scribeResults.newEncounters.toLocaleString("en-US") },
+                  { label: "Revenue from new encounters", value: `$${scribeResults.annualRevenueGenerated.toLocaleString("en-US")}` },
+                  { label: "Annual scribe cost", value: `$${scribeResults.annualScribeCost.toLocaleString("en-US")}` },
                 ].map((row) => (
                   <div key={row.label} className="flex justify-between text-xs">
                     <span className="text-slate-600">{row.label}</span>
@@ -1768,7 +1768,7 @@ function AiRoiCalculator() {
                 <div className="border-t border-indigo-200 pt-2 flex justify-between items-center">
                   <span className="text-sm font-bold text-slate-700">Net Annual ROI</span>
                   <span className={`text-xl font-black ${scribeResults.netAnnualRoi >= 0 ? "text-green-700" : "text-red-600"}`}>
-                    {scribeResults.netAnnualRoi >= 0 ? "+" : ""}${scribeResults.netAnnualRoi.toLocaleString()}
+                    {scribeResults.netAnnualRoi >= 0 ? "+" : ""}${scribeResults.netAnnualRoi.toLocaleString("en-US")}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -1793,7 +1793,7 @@ function AiRoiCalculator() {
                 <div key={row.label}>
                   <div className="flex justify-between text-xs text-slate-600 mb-1">
                     <span>{row.label}</span>
-                    <span className="font-semibold">${row.value.toLocaleString()}</span>
+                    <span className="font-semibold">${row.value.toLocaleString("en-US")}</span>
                   </div>
                   <div className="w-full bg-slate-100 rounded-full h-3">
                     <div

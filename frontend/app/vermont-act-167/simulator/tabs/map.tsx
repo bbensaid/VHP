@@ -235,7 +235,7 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
                 {[
                   { v: String(selectedH.beds), l: "Beds" },
                   { v: `${selectedH.operatingMarginPct > 0 ? "+" : ""}${selectedH.operatingMarginPct}%`, l: "Op. Margin", red: selectedH.operatingMarginPct < 0 },
-                  { v: selectedH.annualEDVisits.toLocaleString(), l: "ED Visits/yr" },
+                  { v: selectedH.annualEDVisits.toLocaleString("en-US"), l: "ED Visits/yr" },
                   { v: `${kmToNearestHospital(selectedH)} km`, l: "To Next Hospital" },
                 ].map(({ v, l, red }) => (
                   <div key={l} className="bg-slate-50 rounded-lg p-2 text-center">
@@ -273,7 +273,7 @@ export function GeographicMap({ selectedRecs }: { selectedRecs: Set<string> }) {
               <div>
                 <div className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1.5">Population Served</div>
                 {[
-                  { l: "HSA population",       v: selectedH.populationHSA.toLocaleString() },
+                  { l: "HSA population",       v: selectedH.populationHSA.toLocaleString("en-US") },
                   { l: "CMS star rating",       v: selectedH.cmsStarRating == null ? "Not rated" : `${selectedH.cmsStarRating} of 5` },
                   { l: "ED visits avoidable",   v: `${selectedH.edAvoidablePct}%` },
                   { l: "Over 65",               v: `${selectedH.popOver65Pct}%` },

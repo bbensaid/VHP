@@ -57,7 +57,7 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
 
       {/* Key equity metrics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <MetricCard value={atRiskPopulation.toLocaleString()} label="HSA Population at Risk" sublabel="8 hospitals (urgent/major)" color="text-rose-600" />
+        <MetricCard value={atRiskPopulation.toLocaleString("en-US")} label="HSA Population at Risk" sublabel="8 hospitals (urgent/major)" color="text-rose-600" />
         <MetricCard value={`${atRiskAge65}%`} label="Age 65+ Avg" sublabel="At-risk hospital HSAs (VDH 2025)" color="text-orange-600" />
         <MetricCard value={`${maxKm.km} km`} label="Max Distance" sublabel={`${maxKm.name} → nearest hospital (straight line)`} color="text-red-600" />
       </div>
@@ -81,7 +81,7 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
           <MetricCard value={String(equitySummary.highRisk)} label="High-Risk Counties" sublabel="Access score < 50" color="text-red-600" />
           <MetricCard value={String(equitySummary.moderate)} label="Moderate-Risk Counties" sublabel="Score 50–69" color="text-amber-600" />
           <MetricCard value={String(equitySummary.avgScore)} label="Avg Access Score" sublabel={`Transport scenario: ${transportScenario}`} color={equitySummary.avgScore < 50 ? "text-red-600" : equitySummary.avgScore < 70 ? "text-amber-600" : "text-emerald-700"} />
-          <MetricCard value={atRiskPopulation.toLocaleString()} label="Population at Risk" sublabel="HSA total" color="text-rose-600" />
+          <MetricCard value={atRiskPopulation.toLocaleString("en-US")} label="Population at Risk" sublabel="HSA total" color="text-rose-600" />
         </div>
       </StickyOutputPanel>
 
@@ -105,7 +105,7 @@ export function EquityAnalysis({ selectedRecs }: { selectedRecs: Set<string> }) 
                     </div>
                   </div>
                   <div className="grid grid-cols-3 gap-2 text-center text-[10px]">
-                    <div><div className="font-black text-slate-700">{c.population.toLocaleString()}</div><div className="text-slate-400">Population</div></div>
+                    <div><div className="font-black text-slate-700">{c.population.toLocaleString("en-US")}</div><div className="text-slate-400">Population</div></div>
                     <div><div className={`font-black ${c.over65Pct > 28 ? "text-orange-600" : "text-slate-700"}`}>{c.over65Pct}%</div><div className="text-slate-400">65+ years</div></div>
                     <div><div className={`font-black ${c.km > 40 ? "text-red-600" : "text-slate-700"}`}>{c.km} km</div><div className="text-slate-400">Nearest other hospital</div></div>
                   </div>

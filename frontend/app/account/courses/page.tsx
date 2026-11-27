@@ -91,7 +91,7 @@ export default async function MyCoursesPage() {
                       {isComplete && (
                         <div className="flex items-center gap-1 mt-1 text-xs text-emerald-600 font-semibold">
                           <CheckCircle size={10} />
-                          Completed {new Date(enroll.completed_at!).toLocaleDateString()}
+                          Completed {new Date(enroll.completed_at!).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                         </div>
                       )}
                     </div>
@@ -135,7 +135,7 @@ export default async function MyCoursesPage() {
                         year: "numeric", month: "long", day: "numeric",
                       })}</span>
                       {cert.expires_at && (
-                        <span>· Expires {new Date(cert.expires_at).toLocaleDateString()}</span>
+                        <span>· Expires {new Date(cert.expires_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}</span>
                       )}
                     </div>
                   </div>

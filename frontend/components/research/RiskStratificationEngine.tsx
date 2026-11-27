@@ -569,7 +569,7 @@ function PopulationSegmentation() {
           <div>
             <label className="block text-xs font-medium text-slate-600 mb-1">
               Total Panel Size:{" "}
-              <span className="font-bold text-rose-700">{panelSize.toLocaleString()}</span> patients
+              <span className="font-bold text-rose-700">{panelSize.toLocaleString("en-US")}</span> patients
             </label>
             <input
               type="range"
@@ -628,7 +628,7 @@ function PopulationSegmentation() {
                 <span className={`font-medium ${TIER_TEXT[tier]}`}>{tier}</span>
                 <span className="text-slate-500">
                   {tierDist[tier]}% ={" "}
-                  <strong>{Math.round((tierDist[tier] / 100) * panelSize).toLocaleString()}</strong>{" "}
+                  <strong>{Math.round((tierDist[tier] / 100) * panelSize).toLocaleString("en-US")}</strong>{" "}
                   pts
                 </span>
               </div>
@@ -677,7 +677,7 @@ function PopulationSegmentation() {
                 <span className="text-slate-600">{k}</span>
                 <span className="font-semibold text-rose-700">
                   {prevalence[k]}% ≈{" "}
-                  {Math.round((prevalence[k] / 100) * panelSize).toLocaleString()} pts
+                  {Math.round((prevalence[k] / 100) * panelSize).toLocaleString("en-US")} pts
                 </span>
               </div>
               <input
@@ -703,7 +703,7 @@ function PopulationSegmentation() {
               <div className="flex justify-between text-xs mb-1">
                 <span className="text-slate-600">{k}</span>
                 <span className="font-semibold text-rose-700">
-                  {sdoh[k]}% ≈ {Math.round((sdoh[k] / 100) * panelSize).toLocaleString()} pts
+                  {sdoh[k]}% ≈ {Math.round((sdoh[k] / 100) * panelSize).toLocaleString("en-US")} pts
                 </span>
               </div>
               <input
@@ -750,21 +750,21 @@ function PopulationSegmentation() {
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">Patients changing tier</div>
                 <div className="text-xl font-bold text-rose-900" data-testid="sdoh-moved-total">
-                  {sdohAdjusted.movedTotal.toLocaleString()}
+                  {sdohAdjusted.movedTotal.toLocaleString("en-US")}
                 </div>
               </div>
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">High/Very High before</div>
                 <div className="text-xl font-bold text-rose-900" data-testid="sdoh-high-before">
-                  {sdohAdjusted.highRiskBefore.toLocaleString()}
+                  {sdohAdjusted.highRiskBefore.toLocaleString("en-US")}
                 </div>
               </div>
               <div className="bg-rose-50 border border-rose-100 rounded-lg p-3">
                 <div className="text-xs text-rose-700 mb-1">High/Very High after</div>
                 <div className="text-xl font-bold text-rose-900">
-                  <span data-testid="sdoh-high-after">{sdohAdjusted.highRiskAfter.toLocaleString()}</span>
+                  <span data-testid="sdoh-high-after">{sdohAdjusted.highRiskAfter.toLocaleString("en-US")}</span>
                   <span className="text-xs font-medium text-rose-500 ml-1">
-                    (+{(sdohAdjusted.highRiskAfter - sdohAdjusted.highRiskBefore).toLocaleString()})
+                    (+{(sdohAdjusted.highRiskAfter - sdohAdjusted.highRiskBefore).toLocaleString("en-US")})
                   </span>
                 </div>
               </div>
@@ -774,11 +774,11 @@ function PopulationSegmentation() {
                 <div key={t} className="flex items-center gap-3 text-xs">
                   <span className={`w-20 font-medium ${TIER_TEXT[t]}`}>{t}</span>
                   <span className="text-slate-500 tabular-nums">
-                    {sdohAdjusted.counts[t].toLocaleString()}
+                    {sdohAdjusted.counts[t].toLocaleString("en-US")}
                   </span>
                   <span className="text-slate-300">→</span>
                   <span className="font-semibold text-slate-800 tabular-nums">
-                    {sdohAdjusted.adjusted[t].toLocaleString()}
+                    {sdohAdjusted.adjusted[t].toLocaleString("en-US")}
                   </span>
                   <span
                     className={`ml-auto font-bold tabular-nums ${
@@ -790,7 +790,7 @@ function PopulationSegmentation() {
                     }`}
                   >
                     {sdohAdjusted.adjusted[t] - sdohAdjusted.counts[t] > 0 ? "+" : ""}
-                    {(sdohAdjusted.adjusted[t] - sdohAdjusted.counts[t]).toLocaleString()}
+                    {(sdohAdjusted.adjusted[t] - sdohAdjusted.counts[t]).toLocaleString("en-US")}
                   </span>
                 </div>
               ))}
@@ -839,10 +839,10 @@ function PopulationSegmentation() {
                 High-tier patients receiving no care management
               </div>
               <div className="text-3xl font-bold text-rose-900" data-testid="cm-gap-after">
-                {cmGap.gapAfter.toLocaleString()}
+                {cmGap.gapAfter.toLocaleString("en-US")}
               </div>
               <div className="text-xs text-rose-600 mt-1">
-                of {sdohAdjusted.highRiskAfter.toLocaleString()} in High/Very High once social risk is
+                of {sdohAdjusted.highRiskAfter.toLocaleString("en-US")} in High/Very High once social risk is
                 included — {cmGap.coverageAfter.toFixed(0)}% covered
               </div>
             </div>
@@ -852,11 +852,11 @@ function PopulationSegmentation() {
                 The part quality measures do not surface
               </div>
               <div className="text-2xl font-bold text-amber-900" data-testid="cm-gap-hidden">
-                +{cmGap.hidden.toLocaleString()}
+                +{cmGap.hidden.toLocaleString("en-US")}
               </div>
               <div className="text-xs text-amber-700 mt-1">
-                Clinical stratification alone shows a gap of {cmGap.gapBefore.toLocaleString()}. Once
-                social risk is included the gap is {cmGap.gapAfter.toLocaleString()} — the difference
+                Clinical stratification alone shows a gap of {cmGap.gapBefore.toLocaleString("en-US")}. Once
+                social risk is included the gap is {cmGap.gapAfter.toLocaleString("en-US")} — the difference
                 is patients who are high-risk in fact but not on any registry that triggers outreach.
               </div>
             </div>
@@ -878,12 +878,12 @@ function PopulationSegmentation() {
           <div className="bg-white/10 rounded-lg p-4">
             <div className="text-xs text-rose-200 mb-1">Cost per Patient</div>
             <div className="text-2xl font-bold">
-              ${Math.round(metrics.totalCost / panelSize).toLocaleString()}
+              ${Math.round(metrics.totalCost / panelSize).toLocaleString("en-US")}
             </div>
           </div>
           <div className="bg-white/10 rounded-lg p-4">
             <div className="text-xs text-rose-200 mb-1">High / Very High Risk</div>
-            <div className="text-2xl font-bold">{metrics.highRisk.toLocaleString()}</div>
+            <div className="text-2xl font-bold">{metrics.highRisk.toLocaleString("en-US")}</div>
             <div className="text-xs text-rose-300 mt-0.5">Rising risk patients</div>
           </div>
           <div className="bg-white/10 rounded-lg p-4">
@@ -914,7 +914,7 @@ function PopulationSegmentation() {
                   ${((t.count * t.cost) / 1_000_000).toFixed(2)}M
                 </span>
                 <span className="text-xs text-rose-300 w-16 text-right">
-                  {t.count.toLocaleString()} pts
+                  {t.count.toLocaleString("en-US")} pts
                 </span>
               </div>
             ))}
@@ -948,17 +948,17 @@ function PopulationSegmentation() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
                 <div>
                   <div className="text-xs text-rose-200">Attributed lives</div>
-                  <div className="text-xl font-bold">{attributed.toLocaleString()}</div>
+                  <div className="text-xl font-bold">{attributed.toLocaleString("en-US")}</div>
                   <div className="text-[10px] text-rose-300">the attribution list a TCOC budget is set on</div>
                 </div>
                 <div>
                   <div className="text-xs text-rose-200">Risk-weighted budget base</div>
                   <div className="text-xl font-bold">${(budgetBase / 1_000_000).toFixed(1)}M</div>
-                  <div className="text-[10px] text-rose-300">${Math.round(perPatient / 12).toLocaleString()} PMPM at this tier mix</div>
+                  <div className="text-[10px] text-rose-300">${Math.round(perPatient / 12).toLocaleString("en-US")} PMPM at this tier mix</div>
                 </div>
                 <div>
                   <div className="text-xs text-rose-200">Not attributable</div>
-                  <div className="text-xl font-bold">{unattributed.toLocaleString()}</div>
+                  <div className="text-xl font-bold">{unattributed.toLocaleString("en-US")}</div>
                   <div className="text-[10px] text-rose-300">patients you treat but cannot budget or manage</div>
                 </div>
               </div>
@@ -1571,7 +1571,7 @@ function ComorbidityVisualizer() {
                 Typical Annual Cost
               </div>
               <div className="text-2xl font-bold text-rose-900">
-                ${CONDITION_META[selectedCondition].annualCost.toLocaleString()}
+                ${CONDITION_META[selectedCondition].annualCost.toLocaleString("en-US")}
               </div>
               <div className="text-xs text-slate-500 mt-1">Medicare FFS average</div>
             </div>
