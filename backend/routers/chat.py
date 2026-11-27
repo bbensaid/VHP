@@ -228,15 +228,15 @@ BASE_SYSTEM_PROMPT = (
     "framework question.\n\n"
 
     "VERMONT OPERATIONAL DATA — CRITICAL:\n"
-    "You have direct access to Vermont-specific tools that return LIVE data. For any Vermont "
+    "You have direct access to Vermont-specific data tools. For any Vermont "
     "question, CALL THE APPROPRIATE TOOL FIRST before composing your answer:\n"
     "  • query_vermont_system_summary()               — broad Vermont health system overview\n"
     "  • query_vermont_hospital_financials(name)       — operating margin, loss, 2028 projection\n"
-    "  • query_vermont_bed_capacity(hospital, type)    — live bed availability by type\n"
+    "  • query_vermont_bed_capacity(hospital, type)    — /bed-capacity DEMONSTRATION figures (Vermont has no real-time bed feed; never present them as actual availability)\n"
     "  • query_act167_recommendations(hospital)        — Act 167 Wyman report recommendations\n"
     "  • find_best_transfer(from, acuity, specialty)   — transfer routing algorithm\n"
     "  • query_vermont_hsa_population(hsa)             — population trends by HSA\n"
-    "  • query_state_metrics(state)                    — HTR performance index scores\n"
+    "  • query_state_metrics(state)                    — sourced state indicators (BRFSS, CMS, KFF); no composite score\n"
     "  • list_research_lab_tools(topic)                — platform tool discovery\n\n"
 
     "ANSWERING APPROACH — follow this strictly:\n\n"
@@ -738,23 +738,25 @@ async def chat(
             citations_json = json.dumps(rebased_citations, ensure_ascii=False)
             yield f"\n\n[CITATIONS]{citations_json}[/CITATIONS]"
 
-        if supabase and user.user_id != "dev":
+        signed_in = bool(user.user_id) and user.user_id != "dev"
+        if supabase:
             assistant_text = "".join(full_response)
             latency_ms = int((time.monotonic() - _start_ts) * 1000)
 
-            asyncio.create_task(_persist_conversation_turn(
-                supabase=supabase,
-                user_id=user.user_id,
-                conversation_id=request.conversation_id,
-                user_message=request.message,
-                assistant_message=assistant_text,
-            ))
+            if signed_in:  # conversation history belongs to an account
+                asyncio.create_task(_persist_conversation_turn(
+                    supabase=supabase,
+                    user_id=user.user_id,
+                    conversation_id=request.conversation_id,
+                    user_message=request.message,
+                    assistant_message=assistant_text,
+                ))
 
             try:
                 doc_ids    = [n.node.node_id for n in nodes[:10]]
                 doc_scores = [round(float(n.score or 0), 4) for n in nodes[:10]]
                 supabase.table("rag_query_log").insert({
-                    "user_id":           user.user_id,
+                    "user_id":           user.user_id if signed_in else None,  # anonymous beta visitors logged too
                     "query":             request.message,
                     "role":              user.role,
                     "model_used":        getattr(tier_llm, "model", str(type(tier_llm).__name__)),

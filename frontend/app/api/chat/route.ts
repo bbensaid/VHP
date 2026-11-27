@@ -8,6 +8,7 @@
 // Python backend: cd backend && uvicorn main:app --reload --port 8000
 // Set PYTHON_BACKEND_URL in .env.local for production.
 
+import { backendAuthHeader } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
@@ -55,9 +56,8 @@ export async function POST(req: Request) {
     );
   }
 
-  // Forward the user's cookie-based session token if present, otherwise send
-  // a dev placeholder so the backend's auth_header check is satisfied.
-  const authHeader = req.headers.get("Authorization") || "Bearer dev";
+  // The caller's real session token (lib/auth backendAuthHeader); none if anonymous.
+  const authHeaders = await backendAuthHeader();
 
   // Forward the requesting domain so the backend can brand its URLs
   // (healthtransformationreview.* vs healthtransformationsolutions.*).
@@ -71,7 +71,7 @@ export async function POST(req: Request) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": authHeader,
+        ...authHeaders,
         "X-HTR-Host": hostHeader,
       },
       body: JSON.stringify(parsed.data),

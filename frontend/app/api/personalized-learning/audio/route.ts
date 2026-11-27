@@ -4,6 +4,8 @@
 // Returns raw MP3 audio bytes from OpenAI TTS via the Python backend.
 // Forwards the user's auth token for subscriber gating.
 
+import { backendAuthHeader } from "@/lib/auth";
+
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
 
 export async function POST(req: Request) {
@@ -14,7 +16,7 @@ export async function POST(req: Request) {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const authHeader = req.headers.get("Authorization") || "Bearer dev";
+  const authHeaders = await backendAuthHeader();
 
   try {
     const upstream = await fetch(
@@ -23,7 +25,7 @@ export async function POST(req: Request) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: authHeader,
+          ...authHeaders,
         },
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(30_000),

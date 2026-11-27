@@ -45,7 +45,9 @@ test("crawl every page signed in", async ({ browser, baseURL, request }) => {
   const ind = JSON.parse(fs.readFileSync("lib/data/state-indicators.json", "utf8")).states as Record<string, { name: string }>;
   for (const s of Object.values(ind)) paths.add(`/dashboard/${s.name.toLowerCase().replace(/ /g, "-")}`);
 
-  const ctx = await browser.newContext({ baseURL, storageState: undefined });
+  // Worst case for hydration: non-US locale and a time zone far from UTC/ET, so
+  // any locale- or zone-dependent text rendered on first paint throws #418.
+  const ctx = await browser.newContext({ baseURL, storageState: undefined, locale: "fr-FR", timezoneId: "Pacific/Honolulu" });
   await ctx.clearCookies();
   await ctx.addInitScript(() => { try { localStorage.setItem("htr-user-role", "all"); } catch {} });
   const gate = await ctx.newPage();

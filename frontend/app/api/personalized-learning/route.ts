@@ -3,6 +3,7 @@
 // Thin proxy to the Python AI Brain for personalized learning path generation.
 // Forwards the user's auth token to the Python backend for subscriber gating.
 
+import { backendAuthHeader } from "@/lib/auth";
 import { NextResponse } from "next/server";
 
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
@@ -15,7 +16,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const authHeader = req.headers.get("Authorization") || "Bearer dev";
+  const authHeaders = await backendAuthHeader();
 
   try {
     const upstream = await fetch(
@@ -24,7 +25,7 @@ export async function POST(req: Request) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: authHeader,
+          ...authHeaders,
         },
         body: JSON.stringify(body),
         // Allow up to 90 seconds — LLM generation of multi-week curriculum takes time

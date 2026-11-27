@@ -20,7 +20,7 @@ from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 
-from services.auth import AuthedUser, require_subscriber
+from services.auth import AuthedUser, require_signed_in_subscriber
 from services.db import get_supabase
 
 log = logging.getLogger("htr-brain")
@@ -118,7 +118,7 @@ class FlagUpdateRequest(BaseModel):
 # ─── Endpoints ────────────────────────────────────────────────────────────────
 
 @router.get("/vermont/bed-capacity")
-async def get_bed_capacity(user: AuthedUser = Depends(require_subscriber)):
+async def get_bed_capacity(user: AuthedUser = Depends(require_signed_in_subscriber)):
     """Return all Vermont hospital bed counts, merging live Supabase data over static baseline."""
     hospitals = _merge_with_live(_STATIC_BEDS)
     return {"hospitals": hospitals, "count": len(hospitals)}
@@ -128,7 +128,7 @@ async def get_bed_capacity(user: AuthedUser = Depends(require_subscriber)):
 async def update_bed_capacity(
     hospital_id: str,
     body: BedUpdateRequest,
-    user: AuthedUser = Depends(require_subscriber),
+    user: AuthedUser = Depends(require_signed_in_subscriber),
 ):
     """Update bed counts for a hospital. Creates or upserts the Supabase row."""
     if hospital_id not in _STATIC_BEDS:
@@ -142,7 +142,7 @@ async def update_bed_capacity(
     update_data = {
         "hospital_id": hospital_id,
         "updated_at":  now,
-        "updated_by":  user.sub,
+        "updated_by":  user.user_id,
     }
     for field in ("icu_avail", "icu_total", "medsurg_avail", "medsurg_total",
                   "behavioral_avail", "behavioral_total", "snf_avail", "snf_total", "notes"):
@@ -152,7 +152,7 @@ async def update_bed_capacity(
 
     try:
         supabase.table("vt_bed_capacity").upsert(update_data, on_conflict="hospital_id").execute()
-        log.info(f"Bed capacity updated: {hospital_id} by {user.sub}")
+        log.info(f"Bed capacity updated: {hospital_id} by {user.user_id}")
 
         # Check if this update triggers a critical alert and write it
         for bed_type in ("icu", "medsurg", "behavioral", "snf"):
@@ -191,7 +191,7 @@ def _write_capacity_alert(supabase, hospital_id: str, bed_type: str, avail: int,
 
 
 @router.get("/vermont/alerts")
-async def get_capacity_alerts(user: AuthedUser = Depends(require_subscriber)):
+async def get_capacity_alerts(user: AuthedUser = Depends(require_signed_in_subscriber)):
     """Return active (unresolved) capacity alerts."""
     supabase = get_supabase()
     if not supabase:
@@ -229,7 +229,7 @@ async def get_capacity_alerts(user: AuthedUser = Depends(require_subscriber)):
 
 
 @router.post("/vermont/transfer-log")
-async def log_transfer(body: TransferLogRequest, user: AuthedUser = Depends(require_subscriber)):
+async def log_transfer(body: TransferLogRequest, user: AuthedUser = Depends(require_signed_in_subscriber)):
     """Log a transfer initiation or completion."""
     supabase = get_supabase()
     if not supabase:
@@ -243,13 +243,13 @@ async def log_transfer(body: TransferLogRequest, user: AuthedUser = Depends(requ
         "specialty":     body.specialty,
         "status":        body.status,
         "notes":         body.notes,
-        "created_by":    user.sub,
+        "created_by":    user.user_id,
         "created_at":    datetime.now(timezone.utc).isoformat(),
     }
     try:
         res = supabase.table("vt_transfer_log").insert(row).execute()
         record = res.data[0] if res.data else row
-        log.info(f"Transfer logged: {body.from_hospital}→{body.to_hospital} by {user.sub}")
+        log.info(f"Transfer logged: {body.from_hospital}→{body.to_hospital} by {user.user_id}")
         return {"ok": True, "id": record.get("id"), "status": body.status}
     except Exception as e:
         log.error(f"Transfer log failed: {e}")
@@ -260,7 +260,7 @@ async def log_transfer(body: TransferLogRequest, user: AuthedUser = Depends(requ
 async def get_transfer_log(
     limit: int = 50,
     hospital_id: Optional[str] = None,
-    user: AuthedUser = Depends(require_subscriber),
+    user: AuthedUser = Depends(require_signed_in_subscriber),
 ):
     """Retrieve recent transfer log entries, optionally filtered by hospital."""
     supabase = get_supabase()
@@ -279,7 +279,7 @@ async def get_transfer_log(
 
 
 @router.post("/vermont/flags")
-async def create_flag(body: FlagRequest, user: AuthedUser = Depends(require_subscriber)):
+async def create_flag(body: FlagRequest, user: AuthedUser = Depends(require_signed_in_subscriber)):
     """Flag a hospital, capacity issue, or operational concern for AHS review."""
     supabase = get_supabase()
     if not supabase:
@@ -293,13 +293,13 @@ async def create_flag(body: FlagRequest, user: AuthedUser = Depends(require_subs
         "severity":     body.severity,
         "status":       "open",
         "assigned_to":  body.assigned_to,
-        "created_by":   user.sub,
+        "created_by":   user.user_id,
         "created_at":   datetime.now(timezone.utc).isoformat(),
     }
     try:
         res = supabase.table("vt_flags").insert(row).execute()
         record = res.data[0] if res.data else row
-        log.info(f"Flag created: {body.title} by {user.sub}")
+        log.info(f"Flag created: {body.title} by {user.user_id}")
         return {"ok": True, "id": record.get("id")}
     except Exception as e:
         log.error(f"Flag creation failed: {e}")
@@ -310,7 +310,7 @@ async def create_flag(body: FlagRequest, user: AuthedUser = Depends(require_subs
 async def get_flags(
     status: Optional[str] = "open",
     hospital_id: Optional[str] = None,
-    user: AuthedUser = Depends(require_subscriber),
+    user: AuthedUser = Depends(require_signed_in_subscriber),
 ):
     """Retrieve flags, optionally filtered by status or hospital."""
     supabase = get_supabase()
@@ -334,14 +334,14 @@ async def get_flags(
 async def update_flag(
     flag_id: str,
     body: FlagUpdateRequest,
-    user: AuthedUser = Depends(require_subscriber),
+    user: AuthedUser = Depends(require_signed_in_subscriber),
 ):
     """Update a flag's status, assignment, or resolution."""
     supabase = get_supabase()
     if not supabase:
         raise HTTPException(status_code=503, detail="Database unavailable.")
 
-    update_data = {"updated_by": user.sub, "updated_at": datetime.now(timezone.utc).isoformat()}
+    update_data = {"updated_by": user.user_id, "updated_at": datetime.now(timezone.utc).isoformat()}
     if body.status:
         update_data["status"] = body.status
     if body.assigned_to:

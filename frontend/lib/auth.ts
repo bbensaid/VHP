@@ -141,3 +141,16 @@ export async function canAccess(required: UserRole): Promise<boolean> {
   if (!user) return false;
   return roleAtLeast(user.role, required);
 }
+
+/**
+ * Authorization header for calls from Next route handlers to the Python
+ * backend: the caller's real Supabase access token when signed in. These routes
+ * used to send "Bearer dev" always, so the backend never knew who was asking
+ * (no history, no per-user log, no role-based tools). Anonymous callers send no
+ * token; the backend decides (ALLOW_ANONYMOUS_AI during beta).
+ */
+export async function backendAuthHeader(): Promise<Record<string, string>> {
+  const supabase = await createSupabaseServerClient();
+  const { data: { session } } = await supabase.auth.getSession();
+  return session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : {};
+}

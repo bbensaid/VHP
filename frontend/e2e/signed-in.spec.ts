@@ -125,6 +125,14 @@ test("email links are not swallowed by the beta gate", async ({ playwright, base
   await req.dispose();
 });
 
+test("AI Analyst still answers a visitor who is not signed in (beta policy)", async ({ playwright, baseURL }) => {
+  test.setTimeout(120_000);
+  const req = await playwright.request.newContext({ baseURL, storageState: undefined });
+  const r = await req.post("/api/chat", { data: { message: "In one sentence, what is Vermont's Act 167?" }, timeout: 110_000 });
+  expect(r.status(), (await r.text()).slice(0, 300)).toBe(200);
+  await req.dispose();
+});
+
 test("reset password without a valid link explains itself", async ({ browser, baseURL }) => {
   const ctx = await browser.newContext({ baseURL, storageState: undefined });
   await ctx.clearCookies();
