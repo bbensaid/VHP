@@ -44,6 +44,8 @@ test("crawl every page signed in", async ({ browser, baseURL, request }) => {
   const paths = new Set([...xml.matchAll(/<loc>https?:\/\/[^/]+([^<]*)<\/loc>/g)].map((m) => m[1] || "/"));
   const ind = JSON.parse(fs.readFileSync("lib/data/state-indicators.json", "utf8")).states as Record<string, { name: string }>;
   for (const s of Object.values(ind)) paths.add(`/dashboard/${s.name.toLowerCase().replace(/ /g, "-")}`);
+  // CRAWL_ONLY="/a,/b" rechecks just those paths (e.g. after a transient timeout).
+  if (process.env.CRAWL_ONLY) { paths.clear(); process.env.CRAWL_ONLY.split(",").forEach((p) => paths.add(p.trim())); }
 
   // Worst case for hydration: non-US locale and a time zone far from UTC/ET, so
   // any locale- or zone-dependent text rendered on first paint throws #418.
