@@ -26,7 +26,7 @@ const RATING_META: Record<Rating, { emoji: string; label: string; order: number;
 
 function fmtDate(iso: string): string {
   return new Date(iso).toLocaleString("en-US", {
-    month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit",
+    month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York",
   });
 }
 

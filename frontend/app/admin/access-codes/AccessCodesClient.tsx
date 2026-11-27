@@ -228,7 +228,7 @@ export default function AccessCodesClient({ initialCodes }: { initialCodes: Code
                     <div className="flex items-center gap-3">
                       {c.label && <span className="text-xs text-slate-500">{c.label}</span>}
                       <span className="text-[10px] text-slate-400">
-                        Added {new Date(c.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                        Added {new Date(c.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                       </span>
                     </div>
                   </div>
