@@ -27,6 +27,9 @@ function LoginForm() {
   const fromParam = searchParams.get("from");
   const redirectTo = fromParam ?? "/account";
   const isTimeout = searchParams.get("timeout") === "1";
+  // /auth/callback sends a link it could not use back here; say why.
+  const linkFailed = searchParams.get("error") === "auth_callback_failed";
+  const linkWasReset = (searchParams.get("next") ?? "").startsWith("/reset-password");
 
   // Where "skip" should land: back where the user was headed if it's a
   // browsable page; otherwise home (so a gated `from` doesn't bounce them
@@ -98,6 +101,13 @@ function LoginForm() {
           </div>
 
           <form onSubmit={handleLogin} className="space-y-4">
+            {linkFailed && !error && (
+              <div className="bg-amber-50 border border-amber-200 text-amber-800 text-sm px-4 py-3 rounded-xl">
+                {linkWasReset
+                  ? "That password-reset link could not be used: it has expired, was already used, or was opened in a different browser from the one you requested it in. Use “Forgot password?” to get a new one, and open it in this browser."
+                  : "That link could not sign you in: it has expired, was already used, or was opened in a different browser. If it was your signup confirmation, your email address is confirmed: sign in below with your email and password."}
+              </div>
+            )}
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl">{error}</div>
             )}

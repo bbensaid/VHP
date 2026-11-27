@@ -45,7 +45,12 @@ function SignupForm() {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: fullName, referral_code: refCode ?? undefined } },
+      options: {
+        data: { full_name: fullName, referral_code: refCode ?? undefined },
+        // Without this the confirmation link returns to Supabase's Site URL
+        // (it was http://localhost:3000), not to the site the person signed up on.
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding`,
+      },
     });
 
     if (error) { setError(error.message); setLoading(false); return; }
