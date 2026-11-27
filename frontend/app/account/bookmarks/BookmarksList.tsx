@@ -65,7 +65,7 @@ export default function BookmarksList({ initialBookmarks }: { initialBookmarks: 
                       {b.title}
                     </Link>
                     {b.note && <p className="text-sm text-slate-500 mt-1 italic">&ldquo;{b.note}&rdquo;</p>}
-                    <p className="text-xs text-slate-400 mt-1">{new Date(b.created_at).toLocaleDateString()}</p>
+                    <p className="text-xs text-slate-400 mt-1">{new Date(b.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}</p>
                   </div>
                   <div className="flex items-center gap-2 shrink-0">
                     <Link href={`/articles/${b.slug}`} className="text-slate-300 hover:text-indigo-400 text-lg">→</Link>

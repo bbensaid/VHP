@@ -312,7 +312,7 @@ function SearchResults() {
                       <div className="flex flex-col items-end gap-2 shrink-0">
                         {r._createdAt && (
                           <time className="text-xs text-slate-400 whitespace-nowrap">
-                            {new Date(r._createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                            {new Date(r._createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                           </time>
                         )}
                       </div>

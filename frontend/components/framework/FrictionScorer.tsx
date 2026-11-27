@@ -223,7 +223,7 @@ export default function FrictionScorer() {
             {snapshot ? (
               <>
                 <p className="text-[11px] text-slate-500 mb-2">
-                  Change since your scoring of {new Date(snapshot.savedAt).toLocaleDateString()}:
+                  Change since your scoring of {new Date(snapshot.savedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}:
                 </p>
                 <ul className="space-y-1">
                   {BUILD_ORDER.map((id) => {

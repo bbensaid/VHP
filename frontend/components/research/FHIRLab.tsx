@@ -1923,7 +1923,7 @@ function ComplianceTab() {
         <div className="rounded-xl border border-indigo-200 bg-white overflow-hidden">
           <div className="bg-indigo-700 px-5 py-3 flex items-center justify-between">
             <p className="font-bold text-white text-sm">ONC HTI-1 / 21st Century Cures Compliance Report</p>
-            <p className="text-indigo-200 text-xs">Generated {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
+            <p className="text-indigo-200 text-xs">Generated {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "America/New_York" })}</p>
           </div>
           <div className="p-5 space-y-4">
             <div className="grid grid-cols-3 gap-4 text-center">

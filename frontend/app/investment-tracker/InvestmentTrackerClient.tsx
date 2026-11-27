@@ -53,7 +53,10 @@ function formatValue(usd: number | null): string {
 
 function formatDate(iso: string | null): string {
   if (!iso) return "—";
-  return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  // Date-only values ("2026-03-01") parse as UTC midnight: format them in UTC or
+  // Vermont readers see the previous day, and server/browser text differs (#418).
+  const timeZone = /^\d{4}-\d{2}-\d{2}$/.test(iso) ? "UTC" : "America/New_York";
+  return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone });
 }
 
 const ALL_DEAL_TYPES = ["ma", "vc", "pe", "ipo", "partnership", "debt"];

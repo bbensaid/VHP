@@ -83,7 +83,7 @@ export default function ThreadView({ threadId, initialPosts, locked, userId }: P
             <div className="flex items-start justify-between gap-3">
               <div className="flex-1">
                 <p className="text-xs text-slate-400 mb-2">
-                  Reply #{idx + 1} · {new Date(post.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                  Reply #{idx + 1} · {new Date(post.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
                   {post.updated_at !== post.created_at && " · edited"}
                 </p>
                 <p className="text-slate-700 leading-relaxed whitespace-pre-wrap">{post.body}</p>

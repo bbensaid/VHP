@@ -1373,7 +1373,7 @@ function PathListCard({
                 {path.preferences.difficulty}
               </span>
               <span className="text-[10px] text-slate-400">
-                Created {new Date(path.created_at).toLocaleDateString()}
+                Created {new Date(path.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}
               </span>
             </div>
             <h3 className="text-base font-black text-slate-900 leading-tight mb-1">{path.path.title}</h3>

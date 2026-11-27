@@ -14,9 +14,9 @@ export default function CitationButton({ title, publishedAt }: CitationButtonPro
 
   const getCitation = (format: "APA" | "MLA") => {
     const date = new Date(publishedAt);
-    const year = date.getFullYear();
-    const month = date.toLocaleString('default', { month: 'long' });
-    const day = date.getDate();
+    const year = date.getUTCFullYear();
+    const month = date.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+    const day = date.getUTCDate();
     const url = typeof window !== 'undefined' ? window.location.href : '';
 
     if (format === "APA") {

@@ -28,6 +28,7 @@ const MAX_LEN = 4000;
 
 function fmtTimestamp(iso: string): string {
   return new Date(iso).toLocaleString("en-US", {
+    timeZone: "America/New_York",
     month: "short",
     day: "numeric",
     year: "numeric",

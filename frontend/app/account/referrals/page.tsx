@@ -146,7 +146,7 @@ export default function ReferralsPage() {
                 </span>
               </div>
               <div className="text-right">
-                <p className="text-xs text-slate-400">{new Date(e.created_at).toLocaleDateString()}</p>
+                <p className="text-xs text-slate-400">{new Date(e.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" })}</p>
                 {e.reward_months > 0 && (
                   <p className="text-xs text-emerald-600 font-semibold">+{e.reward_months} month{e.reward_months > 1 ? "s" : ""}</p>
                 )}
