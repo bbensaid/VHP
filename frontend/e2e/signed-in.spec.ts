@@ -99,7 +99,10 @@ test.beforeAll(async () => {
 });
 
 test.afterAll(async () => {
-  if (testUserId) await admin.auth.admin.deleteUser(testUserId);
+  if (!testUserId) return;
+  // course_player_enrollments has no FK to auth.users, so it does not cascade.
+  await admin.from("course_player_enrollments").delete().eq("user_id", testUserId);
+  await admin.auth.admin.deleteUser(testUserId);
 });
 
 test("beta gate: /login is gated, a real code lets you through", async ({ browser, baseURL }) => {
