@@ -20,9 +20,14 @@ export async function getUserEnrollments(
 ): Promise<EnrollmentRow[]> {
   // Service role, scoped by the server-verified userId: RLS only shows a user's
   // own enrollments to a session client, so the anon `db` always returned [].
+  //
+  // Reads course_player_enrollments: that is what the course player
+  // (lib/course-api enrollUser) writes. The legacy course_enrollments table has
+  // no writer anywhere, so reading it showed 0 courses for everyone.
+  // percent_complete is maintained by trigger trg_enrollment_progress.
   const { data, error } = await dbAdmin
-    .from("course_enrollments")
-    .select("*")
+    .from("course_player_enrollments")
+    .select("id,user_id,enrolled_at,completed_at,percent_complete,courses(slug)")
     .eq("user_id", userId)
     .order("enrolled_at", { ascending: false });
 
@@ -30,7 +35,20 @@ export async function getUserEnrollments(
     console.error("getUserEnrollments:", error.message);
     return [];
   }
-  return data as EnrollmentRow[];
+  type Row = { id: string; user_id: string; enrolled_at: string; completed_at: string | null; percent_complete: number | null; courses: { slug: string } | { slug: string }[] | null };
+  return (data as unknown as Row[])
+    .map((r) => {
+      const c = Array.isArray(r.courses) ? r.courses[0] : r.courses;
+      return {
+        id: r.id,
+        user_id: r.user_id,
+        course_slug: c?.slug ?? "",
+        enrolled_at: r.enrolled_at,
+        completed_at: r.completed_at,
+        progress_pct: Math.round(Number(r.percent_complete ?? 0)),
+      };
+    })
+    .filter((r) => r.course_slug);
 }
 
 export async function enrollInCourse(
@@ -112,19 +130,31 @@ export async function getUserModuleProgress(
   userId: string,
   courseSlug?: string
 ): Promise<ModuleProgressRow[]> {
-  let query = db
-    .from("module_progress")
-    .select("*")
+  // Reads course_lesson_progress (what the course player writes); the legacy
+  // module_progress table has no writer. A "module" here is a lesson.
+  const { data, error } = await dbAdmin
+    .from("course_lesson_progress")
+    .select("id,user_id,started_at,completed_at,time_spent_seconds,lessons(slug),course_player_enrollments(courses(slug))")
     .eq("user_id", userId);
 
-  if (courseSlug) query = query.eq("course_slug", courseSlug);
-
-  const { data, error } = await query;
   if (error) {
     console.error("getUserModuleProgress:", error.message);
     return [];
   }
-  return data as ModuleProgressRow[];
+  const one = <T,>(x: T | T[] | null | undefined): T | undefined => (Array.isArray(x) ? x[0] : x ?? undefined);
+  type Row = { id: string; user_id: string; started_at: string; completed_at: string | null; time_spent_seconds: number | null;
+    lessons: { slug: string } | { slug: string }[] | null;
+    course_player_enrollments: { courses: { slug: string } | { slug: string }[] | null } | { courses: { slug: string } | { slug: string }[] | null }[] | null };
+  const rows = (data as unknown as Row[]).map((r) => ({
+    id: r.id,
+    user_id: r.user_id,
+    module_slug: one(r.lessons)?.slug ?? "",
+    course_slug: one(one(r.course_player_enrollments)?.courses)?.slug ?? null,
+    started_at: r.started_at,
+    completed_at: r.completed_at,
+    time_spent_seconds: r.time_spent_seconds ?? 0,
+  }));
+  return courseSlug ? rows.filter((r) => r.course_slug === courseSlug) : rows;
 }
 
 // ─── CERTIFICATIONS ──────────────────────────────────────────────────────────

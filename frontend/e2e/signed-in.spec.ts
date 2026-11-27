@@ -189,6 +189,14 @@ test.describe("free-tier user (throwaway)", () => {
     expect(del.status(), await del.text()).toBeLessThan(300);
   });
 
+  test("academy: opening a course enrolls you and My Courses lists it", async () => {
+    const { data } = await admin.from("courses").select("slug").eq("is_published", true).limit(1);
+    const slug = data![0].slug as string;
+    await visitOk(page, `/academy/tracks/${slug}`);
+    const body = await visitOk(page, "/account/courses");
+    expect(body.toLowerCase(), `My Courses should list ${slug}`).toContain(slug.replace(/-/g, " ").toLowerCase());
+  });
+
   test("chapter notes API: add, list, remove", async () => {
     const add = await page.request.post("/api/chapter-notes", { data: { slug: "chapter-1", content: "e2e note" } });
     expect(add.status(), await add.text()).toBeLessThan(300);
