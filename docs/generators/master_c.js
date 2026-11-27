@@ -12,7 +12,7 @@ module.exports = ({ D, S, T, SC, H, add }) => {
       ["Database", "Academy structure, access codes, profiles, AI library, audio files", "Supabase Postgres with pgvector and Storage, project ref clryhwqaqhvdikgesjbc, Pro plan"],
       ["Content library", "Lesson bodies, analyses, definitions, case studies, deals, RHT state notes", "Sanity project fxz10xl7, dataset production, free plan; Studio embedded at /studio"],
       ["Code and automation", "Source, history, CI, backend deploy", "GitHub bbensaid/VHP (public), workflows ci.yml and fly-deploy.yml"],
-      ["AI models", "Answers, embeddings, audio", "Groq (answers, free), OpenAI (embeddings, backup answers, audio), Anthropic (wired for advisory users, no key set)"],
+      ["AI models", "Answers, embeddings, audio", "Groq (answers, every tier), OpenAI (embeddings, backup answers, audio)"],
     ], [16, 36, 48]),
     H2("10.2 Repository map"),
     table(["Folder", "What is in it"], [
@@ -73,7 +73,7 @@ module.exports = ({ D, S, T, SC, H, add }) => {
       ["OpenAI", "Embeddings, backup answers, audio", "Prepaid usage", "Cents"],
       ["Google Workspace", "contact@ inbox for four domains", "1 user plus 3 free alias domains (15 Nov)", "One user (see Google bill)"],
       ["Domains (4)", "Addresses", "Bought and renewed through Vercel", "About $4 averaged"],
-      ["Anthropic, Resend, Loops, Stripe, Sentry", "Wired in code, not switched on", "No keys in production", "$0"],
+      ["Resend, Loops, Stripe, Sentry", "Wired in code, not switched on", "No keys in production", "$0"],
     ], [18, 28, 32, 22]),
     box("Total", ["Roughly **$40–45 a month**: about $35 Supabase, under $6 Fly, about $4 of domain fees spread over the year, plus one Workspace user. The Claude Code subscription is separate. Plans were read from the accounts on 14–15 November; invoices are visible only on each provider's billing page, so compare them with this table monthly."]),
     H2("11.2 What each service does, and what breaks without it"),

@@ -7,6 +7,9 @@
  * existing specs signed in, and all of them planted the beta cookie instead of
  * passing the gate, so none could see any of it.
  *
+ * The AI Analyst requires sign-in (author's decision 2026-11-27): the anonymous
+ * test asserts the refusal, the free-user test asserts a real answer.
+ *
  * Needs SUPABASE_SERVICE_ROLE_KEY (read from .env.local). It mints real sessions
  * via a one-time magic-link token (no email is sent), and creates one throwaway
  * free-tier user that is deleted in afterAll.
@@ -125,12 +128,33 @@ test("email links are not swallowed by the beta gate", async ({ playwright, base
   await req.dispose();
 });
 
-test("AI Analyst still answers a visitor who is not signed in (beta policy)", async ({ playwright, baseURL }) => {
-  test.setTimeout(120_000);
+test("AI Analyst refuses a visitor who is not signed in, with a clear message", async ({ browser, playwright, baseURL }) => {
+  test.setTimeout(90_000);
+  // API: the site route and the backend itself both refuse, no answer is generated.
   const req = await playwright.request.newContext({ baseURL, storageState: undefined });
-  const r = await req.post("/api/chat", { data: { message: "In one sentence, what is Vermont's Act 167?" }, timeout: 110_000 });
-  expect(r.status(), (await r.text()).slice(0, 300)).toBe(200);
+  const r = await req.post("/api/chat", { data: { message: "In one sentence, what is Vermont's Act 167?" } });
+  expect(r.status()).toBe(401);
+  expect(await r.json()).toMatchObject({ code: "signin_required" });
+  const s = await req.post("/api/suggest", { data: { message: "Act 167" } });
+  expect(await s.json()).toEqual({ suggestions: [] });
   await req.dispose();
+  const direct = await playwright.request.newContext({ storageState: undefined });
+  const b = await direct.post("https://vhp-backend.fly.dev/api/chat", { data: { message: "hi" }, timeout: 60_000 });
+  expect(b.status(), "backend must refuse an anonymous request").toBe(401);
+  const bd = await direct.post("https://vhp-backend.fly.dev/api/chat", { data: { message: "hi" }, headers: { Authorization: "Bearer dev" } });
+  expect(bd.status(), "backend must refuse the old 'dev' token").toBe(401);
+  await direct.dispose();
+  // UI: /chat and the side panel show the sign-in notice instead of an input.
+  const ctx = await browser.newContext({ baseURL, storageState: undefined });
+  await ctx.clearCookies();
+  await ctx.addInitScript(() => { try { localStorage.setItem("htr-user-role", "all"); } catch {} });
+  const page = await ctx.newPage();
+  await passGate(page);
+  await page.goto("/chat", { waitUntil: "load" });
+  await expect(page.getByText("Sign in to use the AI Analyst").first()).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole("link", { name: "Sign in" }).first()).toHaveAttribute("href", /\/login\?from=%2Fchat/);
+  await expect(page.locator("textarea")).toHaveCount(0);
+  await ctx.close();
 });
 
 test("reset password without a valid link explains itself", async ({ browser, baseURL }) => {
@@ -276,6 +300,17 @@ test.describe("free-tier user (throwaway)", () => {
     expect(note, JSON.stringify(list)).toBeTruthy();
     const del = await page.request.delete(`/api/chapter-notes?id=${note.id}`);
     expect(del.status(), await del.text()).toBeLessThan(300);
+  });
+
+  test("AI Analyst answers a signed-in free user (free model), and /chat shows the input", async () => {
+    test.setTimeout(150_000);
+    const r = await page.request.post("/api/chat", { data: { message: "In one sentence, what is Vermont's Act 167?" }, timeout: 140_000 });
+    const text = (await r.text()).split("[CITATIONS]")[0];
+    expect(r.status(), text.slice(0, 500)).toBe(200);
+    expect(text.trim().length, "empty AI answer").toBeGreaterThan(20);
+    await visitOk(page, "/chat");
+    await expect(page.getByText("Sign in to use the AI Analyst")).toHaveCount(0);
+    await expect(page.locator("textarea").first()).toBeVisible();
   });
 
   for (const p of ["/account/subscription", "/account/billing", "/account/courses", "/account/referrals", "/account/bookmarks", "/library"]) {

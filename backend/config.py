@@ -13,15 +13,14 @@ load_dotenv(override=True)
 
 # ── LLM ───────────────────────────────────────────────────────────────────────
 GROQ_API_KEY: str | None = os.getenv("GROQ_API_KEY")
-ANTHROPIC_API_KEY: str | None = os.getenv("ANTHROPIC_API_KEY")
 OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
 
-# Model routing by tier
+# Model routing by tier. Every tier is Groq (author's decision 2026-11-27);
+# professional/advisory/admin use MODEL_SUBSCRIBER. No Anthropic model is used.
 # Groq retired the Llama 3.x models (by 2026-11); these are its current ones.
 MODEL_FREE       = "openai/gpt-oss-20b"
 MODEL_SUBSCRIBER = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 GROQ_CONTEXT_WINDOW = 131072  # llama_index assumes 3,900 for model names it doesn't know
-MODEL_ADVISORY   = "claude-sonnet-4-6"
 EMBEDDING_MODEL  = "text-embedding-3-small"
 
 # ── Supabase ──────────────────────────────────────────────────────────────────

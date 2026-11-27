@@ -17,7 +17,7 @@ It is built from three cooperating systems:
 | **Frontend / web app** | Next.js 16 (App Router), React 19, TypeScript, Tailwind v4 | All pages, UI, route handlers (`/api/*`), Stripe, auth session, Sanity Studio mount |
 | **CMS** | Sanity (project `fxz10xl7`, dataset `production`) | Editorial content: Analyses, Courses, Case Studies, Webinars, Reports, Glossary, Ticker, etc. |
 | **Application database** | Supabase (Postgres + Auth + Storage + pgvector) | Users, roles, subscriptions, course progress, bookmarks, community, RAG vectors |
-| **AI Brain (backend)** | FastAPI (Python), LlamaIndex, Groq/Anthropic/OpenAI | RAG chat, suggestions, content ingest, embeddings, Vermont-ops tools |
+| **AI Brain (backend)** | FastAPI (Python), LlamaIndex, Groq/OpenAI | RAG chat, suggestions, content ingest, embeddings, Vermont-ops tools |
 
 ---
 

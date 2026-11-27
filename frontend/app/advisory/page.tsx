@@ -128,12 +128,12 @@ export default function AdvisoryPage() {
               <span className="text-xs font-black text-fuchsia-400 uppercase tracking-widest block mb-3">For HTR Platform Members</span>
               <h2 className="text-3xl font-black text-white mb-4">Advisory Tier Unlocks the Full Platform</h2>
               <p className="text-slate-400 leading-relaxed mb-6">
-                HTR Advisory clients receive full platform access alongside their engagement — including the most powerful AI model and exclusive intelligence tools.
+                HTR Advisory clients receive full platform access alongside their engagement — including the AI Analyst's data tools and exclusive intelligence tools.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: "Claude (Anthropic)", desc: "Frontier model for advisory-tier analysis" },
-                  { label: "Agentic AI Tools", desc: "Tool-use, web search, data retrieval" },
+                  { label: "AI Analyst", desc: "Groq gpt-oss-120b with the library and data tools" },
+                  { label: "Agentic AI Tools", desc: "State indicators, Vermont hospital and HSA data, Research Lab finder" },
                   { label: "Priority Intelligence", desc: "Pre-publication briefings & reports" },
                   { label: "Research Lab", desc: "Full access to every Research Lab tool" },
                 ].map((item) => (

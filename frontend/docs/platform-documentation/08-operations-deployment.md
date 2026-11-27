@@ -126,7 +126,7 @@ Backend has fallback descriptors for **Railway** (`railway.toml`, nixpacks, `/he
 **Backend dependency bump**
 1. Update `backend/requirements.txt` (versions are pinned to the working venv).
 2. Recreate venv, `pip install -r requirements.txt`, run app + `/health`.
-3. Watch LlamaIndex core/integration version compatibility (it moves fast) and Groq/OpenAI/Anthropic SDK changes.
+3. Watch LlamaIndex core/integration version compatibility (it moves fast) and Groq/OpenAI SDK changes.
 
 **LLM model upgrade**
 - Change `GROQ_MODEL` / `MODEL_*` constants in `backend/config.py` (or env). The fallback chain in `services/llm.py` insulates against a bad model. Re-test chat for each role.

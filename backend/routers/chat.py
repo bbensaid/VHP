@@ -2,7 +2,7 @@
 backend/routers/chat.py
 ────────────────────────
 /api/chat  — streaming RAG chat (subscriber+)
-/api/suggest — follow-up question suggestions (open)
+/api/suggest — follow-up question suggestions (signed-in accounts)
 """
 
 import re
@@ -26,7 +26,7 @@ from pydantic import BaseModel, field_validator
 
 from config import GROQ_API_KEY, MAX_SYSTEM_PROMPT_LEN, MODEL_FREE, MODEL_SUBSCRIBER
 from platform_catalog import BASE_URL as DEFAULT_BASE_URL
-from services.auth import AuthedUser, require_subscriber
+from services.auth import AuthedUser, require_signed_in
 from services.catalog_search import (
     build_guaranteed_lab_section,
     find_relevant_tools_semantic,
@@ -438,7 +438,7 @@ def _get_llm_for_medicaid(user: "AuthedUser"):
     """
     For Medicaid eligibility queries, ensure a minimum model quality regardless of tier.
     Free/student → bumped to subscriber model (70B).
-    Advisory/admin → stays on Claude (handled by standard routing).
+    Every other tier already gets the subscriber model (all tiers are Groq).
     """
     if user.role in ("free", "student"):
         from services.llm import groq_with_openai_fallback
@@ -543,7 +543,7 @@ async def _persist_conversation_turn(
 async def chat(
     request: ChatRequest,
     fastapi_request: Request,
-    user: AuthedUser = Depends(require_subscriber),
+    user: AuthedUser = Depends(require_signed_in),
 ):
     """
     RAG-enhanced streaming chat with JWT auth and tier-aware model routing.
@@ -813,7 +813,7 @@ async def chat(
                 doc_ids    = [n.node.node_id for n in nodes[:10]]
                 doc_scores = [round(float(n.score or 0), 4) for n in nodes[:10]]
                 supabase.table("rag_query_log").insert({
-                    "user_id":           user.user_id if signed_in else None,  # anonymous beta visitors logged too
+                    "user_id":           user.user_id if signed_in else None,  # "dev" only in local dev mode
                     "query":             request.message,
                     "role":              user.role,
                     "model_used":        getattr(tier_llm, "model", str(type(tier_llm).__name__)),
@@ -830,9 +830,10 @@ async def chat(
 
 
 @router.post("/api/suggest")
-async def suggest(request: ChatRequest):
+async def suggest(request: ChatRequest, _user: AuthedUser = Depends(require_signed_in)):
     """
-    Generate 3 follow-up question suggestions. No auth required.
+    Generate 3 follow-up question suggestions. Same access rule as /api/chat
+    (any signed-in account).
     Uses the fast model to keep latency low.
     """
     history_text = "\n".join(

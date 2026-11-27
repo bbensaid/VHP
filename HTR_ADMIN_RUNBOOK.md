@@ -315,7 +315,9 @@ question
 ```
 
 `/health` on 2026-11-15: `model_subscriber: openai/gpt-oss-120b`,
-`reranker: flashrank`, `retrieval: hybrid_bm25_vector_rrf`, `auth_enabled: false`.
+`reranker: flashrank`, `retrieval: hybrid_bm25_vector_rrf`. Since 2026-11-27 `auth_enabled: true`:
+the AI Analyst requires sign-in (any account; free accounts get gpt-oss-20b), and
+every tier runs on Groq; there is no Claude/Anthropic model.
 Groq free tier measured 2026-11-14: 8,000 tokens/min, 1,000 requests/day per
 model. No model runs locally.
 
@@ -416,7 +418,7 @@ provider's billing page; check them monthly.
 | **Groq** | Answers | Free | $0 |
 | **GitHub** | Repo + Actions | Free | $0 |
 | **Domains** ×4 | | Vercel / Name.com | ~$4/mo averaged |
-| Resend, Loops, Stripe, Sentry, Anthropic | | Not configured in production | $0 |
+| Resend, Loops, Stripe, Sentry | | Not configured in production | $0 |
 
 Total ≈ **$40–45/month**.
 

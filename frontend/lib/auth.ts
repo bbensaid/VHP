@@ -147,7 +147,7 @@ export async function canAccess(required: UserRole): Promise<boolean> {
  * backend: the caller's real Supabase access token when signed in. These routes
  * used to send "Bearer dev" always, so the backend never knew who was asking
  * (no history, no per-user log, no role-based tools). Anonymous callers send no
- * token; the backend decides (ALLOW_ANONYMOUS_AI during beta).
+ * token, and both app/api/chat and the backend refuse them (sign-in required).
  */
 export async function backendAuthHeader(): Promise<Record<string, string>> {
   const supabase = await createSupabaseServerClient();

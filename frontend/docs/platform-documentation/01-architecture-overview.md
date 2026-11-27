@@ -144,7 +144,7 @@ This is the single most important integration to understand: **the CMS is the so
 
 **Cross-cutting:** Sentry (init before app code), CORS (locked to `FRONTEND_URL` + localhost), `slowapi` rate limiting, `/health` healthcheck.
 
-**LLM providers:** Groq (default, `llama-3.3-70b-versatile`), Anthropic, OpenAI — selected per role. Embeddings via OpenAI. See [Doc 06](./06-ai-analyst-rag.md).
+**LLM providers:** Groq for every tier (`openai/gpt-oss-20b` free/student, `openai/gpt-oss-120b` for all others), OpenAI `gpt-4o-mini` as backup. Embeddings via OpenAI. See [Doc 06](./06-ai-analyst-rag.md).
 
 ## 7. Data stores and what lives where
 
@@ -176,7 +176,7 @@ This is the single most important integration to understand: **the CMS is the so
 | **Sanity** | CMS | `NEXT_PUBLIC_SANITY_PROJECT_ID`, `SANITY_API_TOKEN`, `SANITY_WEBHOOK_SECRET` |
 | **Supabase** | DB/Auth/Storage/pgvector | `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_JWT_SECRET`, `SUPABASE_DB_URL` |
 | **Stripe** | Subscriptions + team checkout | `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICE_*` |
-| **Groq / Anthropic / OpenAI** | LLM + embeddings | `GROQ_API_KEY`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` |
+| **Groq / OpenAI** | LLM + embeddings | `GROQ_API_KEY`, `OPENAI_API_KEY` |
 | **Loops** | Transactional/marketing email | `LOOPS_API_KEY`, `LOOPS_TEMPLATE_*` |
 | **Sentry** | Error monitoring | `SENTRY_DSN`, `SENTRY_AUTH_TOKEN` |
 | **Piper** | Local TTS narration (voice) | (`.piper-venv`, `.piper-voices`) |

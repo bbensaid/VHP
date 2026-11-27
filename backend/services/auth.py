@@ -5,7 +5,6 @@ JWT-based Supabase auth: user extraction and role-gating FastAPI dependencies.
 """
 
 import logging
-import os
 
 import jwt
 from fastapi import HTTPException, Request
@@ -24,13 +23,14 @@ ROLE_HIERARCHY = ["free", "subscriber", "student", "professional", "advisory", "
 # every request, signed in or not, as user "dev" with role subscriber.
 _JWKS = jwt.PyJWKClient(f"{SUPABASE_URL}/auth/v1/.well-known/jwks.json", cache_keys=True) if SUPABASE_URL else None
 
-# Beta policy, explicit instead of accidental: visitors who are not signed in may
-# use the AI Analyst at subscriber level while this is "true". Unset it at launch.
-ALLOW_ANONYMOUS_AI = os.getenv("ALLOW_ANONYMOUS_AI", "").lower() == "true"
+# The AI Analyst is for signed-in members only (author's decision 2026-11-27).
+# There is deliberately no switch for anonymous access: a request without a valid
+# Supabase token is refused with 401, whatever the environment says.
+SIGN_IN_REQUIRED = "Sign in to use the AI Analyst. It is available only to signed-in members."
 
 
 class AuthedUser(BaseModel):
-    user_id: str  # "" for an anonymous visitor
+    user_id: str
     email: str
     role: str
 
@@ -55,18 +55,19 @@ async def get_auth_user(request: Request) -> AuthedUser:
     auth_header = request.headers.get("Authorization", "")
     token = auth_header.split(" ", 1)[1].strip() if auth_header.startswith("Bearer ") else ""
     if not token or token == "dev":
-        if ALLOW_ANONYMOUS_AI:
-            return AuthedUser(user_id="", email="", role="subscriber")
-        raise HTTPException(status_code=401, detail="Sign in required")
+        raise HTTPException(status_code=401, detail=SIGN_IN_REQUIRED)
 
     try:
         payload = _decode(token)
     except jwt.ExpiredSignatureError:
-        raise HTTPException(status_code=401, detail="Token expired")
+        raise HTTPException(status_code=401, detail=SIGN_IN_REQUIRED)
     except (jwt.InvalidTokenError, jwt.PyJWKClientError) as e:
-        raise HTTPException(status_code=401, detail=f"Invalid token: {e}")
+        log.info(f"Rejected token: {e}")
+        raise HTTPException(status_code=401, detail=SIGN_IN_REQUIRED)
 
     user_id = payload.get("sub")
+    if not user_id:
+        raise HTTPException(status_code=401, detail=SIGN_IN_REQUIRED)
     email   = payload.get("email", "")
 
     supabase = get_supabase()
@@ -85,20 +86,25 @@ async def get_auth_user(request: Request) -> AuthedUser:
     return AuthedUser(user_id=user_id or "", email=email, role=role)
 
 
+async def require_signed_in(request: Request) -> AuthedUser:
+    """Any signed-in account, free included. The AI Analyst's rule: signed in,
+    or no AI Analyst. The model then follows the role (services/llm.py): free and
+    student get the free model, the rest the subscriber model; data tools are
+    professional and above."""
+    return await get_auth_user(request)
+
+
 async def require_subscriber(request: Request) -> AuthedUser:
     user = await get_auth_user(request)
     if ROLE_HIERARCHY.index(user.role) < ROLE_HIERARCHY.index("subscriber"):
         raise HTTPException(
             status_code=403,
-            detail="A Subscriber plan or higher is required to use the AI Analyst."
+            detail="The AI Analyst is part of the Subscriber plan. See /pricing to upgrade."
         )
     return user
 
 
 async def require_signed_in_subscriber(request: Request) -> AuthedUser:
-    """Subscriber AND a real account: anonymous beta visitors may read the AI
-    Analyst but must not write operational records (/bed-capacity)."""
-    user = await require_subscriber(request)
-    if not user.user_id:
-        raise HTTPException(status_code=401, detail="Sign in required")
-    return user
+    """Kept as a name for /bed-capacity: every subscriber is now a real,
+    signed-in account (there is no anonymous access)."""
+    return await require_subscriber(request)

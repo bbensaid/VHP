@@ -8,6 +8,8 @@ import { SparklesIcon, ArrowsPointingOutIcon, PaperAirplaneIcon, StopIcon, Trash
 import ReactMarkdown from "react-markdown";
 
 import { consumeChatStream, type Citation } from "@/lib/ai/stream";
+import AiSignInRequired, { useSignedIn } from "@/components/AiSignInRequired";
+import { AI_PLAN_MESSAGE, AI_SIGN_IN_MESSAGE } from "@/lib/ai/signin";
 
 interface Message {
   role: "user" | "ai";
@@ -106,10 +108,13 @@ function getPageContext(path: string): string | undefined {
 
 function classifyError(status: number | null, message: string): string {
   if (status === 503 || message.includes("fetch") || message.includes("network") || message.includes("Failed to fetch")) {
-    return "**AI backend is offline.**\n\nIf running locally:\n```\ncd backend\nsource venv/bin/activate\nuvicorn main:app --reload --port 8000\n```\n\nOtherwise, the backend may be restarting on Railway — try again in 30 seconds.";
+    return "**The AI Analyst is not reachable right now.** It may be starting up — try again in 30 seconds.";
   }
-  if (status === 401 || status === 403) {
-    return "**Authentication required.** Please [log in](/login) to use the AI Analyst.";
+  if (status === 401) {
+    return `**Sign in to use the AI Analyst.** ${AI_SIGN_IN_MESSAGE} [Sign in](/login) · [Create account](/signup)`;
+  }
+  if (status === 403) {
+    return `**Subscriber plan required.** ${AI_PLAN_MESSAGE} [See plans](/pricing)`;
   }
   if (status === 429) {
     return "**Rate limit reached.** You've sent too many requests. Please wait a moment before trying again.";
@@ -144,6 +149,7 @@ export default function RightSidebar() {
   const activePillar = getPillarFromPath(pathname);
   const voice = useVoice();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const signedIn = useSignedIn();
 
   // Inject voice transcript into this textarea
   useEffect(() => {
@@ -305,6 +311,9 @@ export default function RightSidebar() {
           </div>
         </div>
 
+        {signedIn === false ? (
+          <div className="flex-1 min-h-0 overflow-y-auto"><AiSignInRequired compact /></div>
+        ) : (<>
         {/* Messages */}
         <div
           ref={messagesContainerRef}
@@ -496,6 +505,7 @@ export default function RightSidebar() {
             )}
           </div>
         </div>
+        </>)}
       </div>
     </aside>
   );

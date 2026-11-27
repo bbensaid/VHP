@@ -46,6 +46,7 @@ from config import (
     MODEL_SUBSCRIBER,
     SUPABASE_DB_URL,
     SUPABASE_JWT_SECRET,
+    SUPABASE_URL,
 )
 from routers.api_v1 import router as api_v1_router
 from routers.chat import router as chat_router
@@ -149,7 +150,9 @@ def health():
         "model_subscriber": MODEL_SUBSCRIBER,
         "embedding_model": EMBEDDING_MODEL,
         "vector_store":    "pgvector" if SUPABASE_DB_URL else "local_json",
-        "auth_enabled":    bool(SUPABASE_JWT_SECRET),
+        # Tokens are verified against Supabase's published keys (JWKS), so auth
+        # is on whenever SUPABASE_URL is set; it used to report the unused HS256 secret.
+        "auth_enabled":    bool(SUPABASE_URL or SUPABASE_JWT_SECRET),
         "reranker":        "flashrank" if get_ranker() is not None else "disabled",
         "retrieval":       "hybrid_bm25_vector_rrf",
         "chunking":        "sentence_window_3",

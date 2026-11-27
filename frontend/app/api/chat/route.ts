@@ -1,14 +1,15 @@
 // app/api/chat/route.ts
 //
 // Thin proxy to the Python AI Brain (backend/main.py).
-// Auth is handled by the Python backend (JWT validation + tier detection).
-// When SUPABASE_JWT_SECRET is not set on the backend, it runs in dev mode and
-// accepts any request.
+// The AI Analyst is for signed-in members only (author's decision 2026-11-27):
+// a request with no session is refused here with a clear message, and the
+// backend independently refuses any request without a valid Supabase token.
 //
 // Python backend: cd backend && uvicorn main:app --reload --port 8000
 // Set PYTHON_BACKEND_URL in .env.local for production.
 
 import { backendAuthHeader } from "@/lib/auth";
+import { AI_PLAN_REQUIRED, AI_SIGN_IN_REQUIRED } from "@/lib/ai/signin";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
@@ -58,6 +59,9 @@ export async function POST(req: Request) {
 
   // The caller's real session token (lib/auth backendAuthHeader); none if anonymous.
   const authHeaders = await backendAuthHeader();
+  if (!authHeaders.Authorization) {
+    return NextResponse.json(AI_SIGN_IN_REQUIRED, { status: 401 });
+  }
 
   // Forward the requesting domain so the backend can brand its URLs
   // (healthtransformationreview.* vs healthtransformationsolutions.*).
@@ -81,15 +85,15 @@ export async function POST(req: Request) {
       const detail = await upstream.text();
       console.error("Python backend error:", upstream.status, detail);
 
-      if (upstream.status === 401 || upstream.status === 403) {
-        return NextResponse.json(
-          { error: "Access denied. Check backend auth configuration." },
-          { status: 403 }
-        );
+      if (upstream.status === 401) {
+        return NextResponse.json(AI_SIGN_IN_REQUIRED, { status: 401 });
+      }
+      if (upstream.status === 403) {
+        return NextResponse.json(AI_PLAN_REQUIRED, { status: 403 });
       }
 
       return NextResponse.json(
-        { error: "The AI backend returned an error. Is the Python server running?" },
+        { error: "The AI Analyst returned an error. Please try again." },
         { status: upstream.status }
       );
     }
@@ -101,7 +105,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Proxy error:", error);
     return NextResponse.json(
-      { error: "Cannot reach the AI backend. Start it with: cd backend && uvicorn main:app --reload --port 8000" },
+      { error: "The AI Analyst is not reachable right now. It may be starting up — try again in 30 seconds." },
       { status: 503 }
     );
   }

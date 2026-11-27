@@ -57,12 +57,13 @@ CORS is locked to `FRONTEND_URL` + `localhost:3000`. Rate limiting via `slowapi`
 
 | Role | Primary model | Fallback chain |
 |---|---|---|
-| `free` / `student` | Groq `llama-3.1-8b-instant` (`MODEL_FREE`) | → OpenAI `gpt-4o-mini` |
-| `subscriber` / `professional` | Groq `llama-3.3-70b-versatile` (`MODEL_SUBSCRIBER`) | → `llama-3.1-8b-instant` → `gpt-4o-mini` |
-| `advisory` / `admin` | Anthropic `claude-sonnet-4-6` (`MODEL_ADVISORY`) | → `llama-3.3-70b-versatile` → `gpt-4o-mini` |
+| `free` / `student` | Groq `openai/gpt-oss-20b` (`MODEL_FREE`) | → OpenAI `gpt-4o-mini` |
+| `subscriber` / `professional` / `advisory` / `admin` | Groq `openai/gpt-oss-120b` (`MODEL_SUBSCRIBER`) | → `gpt-oss-20b` → `gpt-4o-mini` |
+
+Every tier runs on Groq (author's decision, 2026-11-27). There is no Anthropic/Claude path in the code; setting an `ANTHROPIC_API_KEY` does nothing.
 
 - **Embeddings:** OpenAI (`EMBEDDING_MODEL`) — required for RAG. Without `OPENAI_API_KEY`, ingest and retrieval cannot embed.
-- Models are configurable via env (`GROQ_MODEL`, etc.). Anthropic is an **optional** dependency — if the package/key is absent, advisory/admin gracefully fall back to the subscriber model.
+- Models are configurable via env (`GROQ_MODEL`).
 
 ## 4. Retrieval pipeline
 
@@ -157,10 +158,9 @@ These also back the agentic tools in §5 (e.g. `find_best_transfer`).
 | "No context"/empty answers | Empty/stale RAG index | Run full ingest `POST /api/ingest` |
 | Ingest webhook ignored | `INGEST_SECRET` mismatch or doc `_type` not in filter | Align secrets; check webhook filter |
 | Slow first response | Backend cold start (Fly scale-to-zero, `min_machines_running=0`) | Expected; first call warms it. Raise min machines if needed |
-| Advisory role gets generic answers | Anthropic key/package missing → fell back to Groq | Set `ANTHROPIC_API_KEY`, install the Anthropic LlamaIndex integration |
 | Embeddings error | Missing `OPENAI_API_KEY` | Set it; embeddings are OpenAI-only |
 | Rate-limited | `slowapi` limits hit | Tune limits in `main.py` |
 
-**Cost control:** Groq is the cheap default; Anthropic only fires for advisory/admin. Embeddings (OpenAI) cost scales with ingest volume — full re-indexes are the expensive operation, so prefer incremental webhook ingest.
+**Cost control:** every tier is Groq. Embeddings (OpenAI) cost scales with ingest volume — full re-indexes are the expensive operation, so prefer incremental webhook ingest.
 
 Continue to → [07 — Tooling & Scripts Reference](./07-tooling-scripts.md)

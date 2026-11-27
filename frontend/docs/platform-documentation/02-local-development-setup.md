@@ -95,7 +95,6 @@ cp frontend/.env.production.example frontend/.env.local
 | Var | Default | Purpose |
 |---|---|---|
 | `GROQ_API_KEY` | — | Default chat LLM |
-| `ANTHROPIC_API_KEY` | — | Alt LLM (higher roles) |
 | `OPENAI_API_KEY` | — | **Embeddings** (required for RAG) |
 | `GROQ_MODEL` | `llama-3.3-70b-versatile` | Subscriber model |
 | `SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_URL` | — | DB |

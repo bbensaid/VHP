@@ -38,7 +38,7 @@ The platform offers these tiers (see `/pricing`):
 | **Student** | Learners | Academy + discounted access |
 | **Subscriber** | Professionals | Full content + AI Analyst (RAG) |
 | **Professional** | Power users | Agentic AI (tool-using), deeper data |
-| **Advisory** | Consulting clients | Advisory hub, premium AI (Claude), reports |
+| **Advisory** | Consulting clients | Advisory hub, AI Analyst with data tools (Groq), reports |
 
 Manage your plan at `/account/subscription` and `/account/billing` (Stripe-powered, including team checkout). Upgrade prompts appear on gated content.
 

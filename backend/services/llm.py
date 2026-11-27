@@ -27,25 +27,15 @@ from llama_index.llms.groq import Groq as GroqLLM
 from llama_index.llms.openai import OpenAI as OpenAILLM
 
 from config import (
-    ANTHROPIC_API_KEY,
     EMBEDDING_MODEL,
     GROQ_API_KEY,
     GROQ_CONTEXT_WINDOW,
-    MODEL_ADVISORY,
     MODEL_FREE,
     MODEL_SUBSCRIBER,
     OPENAI_API_KEY,
 )
 
 log = logging.getLogger("htr-brain")
-
-# Anthropic LLM — optional dependency
-try:
-    from llama_index.llms.anthropic import Anthropic as AnthropicLLM
-    _ANTHROPIC_AVAILABLE = True
-except ImportError:
-    AnthropicLLM = None  # type: ignore
-    _ANTHROPIC_AVAILABLE = False
 
 
 # ── Fallback LLM wrapper ───────────────────────────────────────────────────────
@@ -237,8 +227,11 @@ def get_llm_for_role(role: str) -> LLM:
       subscriber           → MODEL_SUBSCRIBER (Groq)
                              fallback: MODEL_FREE → gpt-4o-mini
 
-      advisory / admin     → MODEL_ADVISORY (Anthropic)
-                             fallback: MODEL_SUBSCRIBER → gpt-4o-mini
+      professional / advisory / admin → MODEL_SUBSCRIBER (Groq), same as subscriber
+                             fallback: MODEL_FREE → gpt-4o-mini
+
+    Every tier runs on Groq by the author's decision (2026-11-27). There is no
+    Anthropic/Claude path: adding an ANTHROPIC_API_KEY changes nothing.
     """
     fast_llm = _groq(MODEL_FREE)
     sub_llm  = _groq(MODEL_SUBSCRIBER)
@@ -251,20 +244,13 @@ def get_llm_for_role(role: str) -> LLM:
         except Exception:
             pass
 
-    if role in ("advisory", "admin"):
-        if _ANTHROPIC_AVAILABLE and ANTHROPIC_API_KEY and AnthropicLLM is not None:
-            log.info(f"Model routing: role={role} → {MODEL_ADVISORY} (Anthropic) w/ Groq+OpenAI fallback")
-            primary = AnthropicLLM(model=MODEL_ADVISORY, api_key=ANTHROPIC_API_KEY)
-            return FallbackLLM(primary=primary, fallbacks=[sub_llm, fast_llm] + openai_fallback)
-        log.warning(f"Model routing: advisory role but Anthropic unavailable — using {MODEL_SUBSCRIBER}")
-
     if role in ("free", "student"):
         log.info(f"Model routing: role={role} → {MODEL_FREE} (Groq) w/ OpenAI fallback")
         if openai_fallback:
             return FallbackLLM(primary=fast_llm, fallbacks=openai_fallback)
         return fast_llm
 
-    # subscriber / professional
+    # subscriber / professional / advisory / admin
     log.info(f"Model routing: role={role} → {MODEL_SUBSCRIBER} (Groq) w/ fast+OpenAI fallback")
     return FallbackLLM(primary=sub_llm, fallbacks=[fast_llm] + openai_fallback)
 

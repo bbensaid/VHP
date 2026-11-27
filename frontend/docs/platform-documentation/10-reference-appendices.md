@@ -50,7 +50,6 @@ Lookup tables for the whole platform: environment variables, API routes, page ro
 | Var | Default | Purpose |
 |---|---|---|
 | `GROQ_API_KEY` | — | Default LLM |
-| `ANTHROPIC_API_KEY` | — | Advisory/admin LLM (optional) |
 | `OPENAI_API_KEY` | — | Embeddings + last-resort LLM |
 | `GROQ_MODEL` | `llama-3.3-70b-versatile` | Subscriber model |
 | `SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_URL` | — | DB |

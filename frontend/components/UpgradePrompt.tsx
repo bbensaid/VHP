@@ -40,7 +40,7 @@ const TIER_CONFIG: Record<Tier, {
     headline: "This feature requires a subscription",
     subline: "Unlock the full intelligence platform — AI chat, live content feeds, and analytical tools.",
     perks: [
-      "Full AI Analyst powered by Llama 3.3 70b",
+      "Full AI Analyst (Groq gpt-oss-120b)",
       "The Wire — real-time healthcare intelligence",
       `Research Lab — ${RESEARCH_LAB_TOOL_COUNT} interactive tools`,
       "Unlimited policy analysis access",
@@ -103,7 +103,7 @@ const TIER_CONFIG: Record<Tier, {
     headline: "Advisory tier required",
     subline: "This feature is available exclusively to HTR Advisory clients with dedicated expert support.",
     perks: [
-      "Claude Sonnet 4.6 — most powerful AI model",
+      "AI Analyst with data tools (Groq gpt-oss-120b)",
       "Dedicated advisory team access",
       "Custom research & analysis",
       "Executive briefings & reports",

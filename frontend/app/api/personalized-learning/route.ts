@@ -4,6 +4,7 @@
 // Forwards the user's auth token to the Python backend for subscriber gating.
 
 import { backendAuthHeader } from "@/lib/auth";
+import { AI_SIGN_IN_REQUIRED } from "@/lib/ai/signin";
 import { NextResponse } from "next/server";
 
 const PYTHON_BACKEND = process.env.PYTHON_BACKEND_URL || "http://localhost:8000";
@@ -17,6 +18,7 @@ export async function POST(req: Request) {
   }
 
   const authHeaders = await backendAuthHeader();
+  if (!authHeaders.Authorization) return NextResponse.json(AI_SIGN_IN_REQUIRED, { status: 401 });
 
   try {
     const upstream = await fetch(
@@ -49,7 +51,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       {
         error:
-          "Cannot reach the AI backend. Ensure it is running: cd backend && uvicorn main:app --reload --port 8000",
+          "The AI service is not reachable right now. It may be starting up — try again in 30 seconds.",
       },
       { status: 503 }
     );

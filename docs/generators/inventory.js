@@ -98,7 +98,7 @@ add(
   new Paragraph({ spacing: { after: 480 }, children: [new TextRun({ text: "Infrastructure and Software Inventory", size: 34, color: NAVY, font: "Arial" })] }),
   P("Every system, service, tool and Python installation involved in running, building and editing the platform, what each one does, how they connect, and what is free versus paid."),
   P("**Prepared:** 14 November 2026, by Claude (Claude Code), for Bechir Ben Said."),
-  P("**How this was checked:** every service and setting below was found in the project's code, configuration files, or on this Mac, and checked on 14 November 2026. Everything that can be tested from outside was tested live. The few facts that only your own account logins can show (Vercel's plan and settings, the Anthropic key stored on Fly, invoices) are marked as such, and Section 11 says exactly which login unlocks each. Prices marked “list price” are the provider's published rates as known to me; confirm them against your invoices."),
+  P("**How this was checked:** every service and setting below was found in the project's code, configuration files, or on this Mac, and checked on 14 November 2026. Everything that can be tested from outside was tested live. The few facts that only your own account logins can show (Vercel's plan and settings, invoices) are marked as such, and Section 11 says exactly which login unlocks each. Prices marked “list price” are the provider's published rates as known to me; confirm them against your invoices."),
   gap(),
   box("Reading guide", [
     "**Section 1** describes the whole HTR ecosystem: the framework, the book, the website, the Academy, the tools and the AI Analyst. **Section 2** explains the four web addresses and the two brands.",
@@ -293,7 +293,7 @@ add(
     ["The database", "Stores user data, Academy structure (courses, tracks, lessons), access codes, narration audio files, and the AI Analyst's searchable library.", "Supabase"],
     ["The content library", "Articles, lesson bodies, case studies, definitions, reports. Where editors write and publish.", "Sanity"],
     ["The code storage", "Holds all the code and its history. Pushing code here automatically updates the website and the AI program.", "GitHub"],
-    ["The AI models", "Write the chat answers and turn text into searchable form. Rented per use.", "Groq (main, free), OpenAI (search + backup + audio), Anthropic (wired but unused)"],
+    ["The AI models", "Write the chat answers and turn text into searchable form. Rented per use.", "Groq (every tier), OpenAI (search + backup + audio)"],
     ["The book", "You edit the manuscript in Google Docs; the website serves the exported PDF and an HTML reader built from it.", "Google Docs / Drive"],
     ["Your Mac", "Where code is written and tested, the book is checked, and narration audio is made. Not needed for the live site to run.", "Apple + Homebrew + others"],
   ], [20, 58, 22]),
@@ -327,7 +327,6 @@ add(
     ["**GitHub**", "Code storage; triggers automatic updates", "Required", "Free"],
     ["**Groq**", "Writes AI Analyst answers", "Required, live", "Free (with limits)"],
     ["**OpenAI**", "Search embeddings; backup answer writer; Personalized Learning audio", "Required, live", "Paid per use: cents"],
-    ["**Anthropic (Claude API)**", "Answer writer for advisory/admin users only", "Wired, not used (nobody has those roles in beta)", "Paid per use if ever enabled"],
     ["**Resend**", "Sends transactional email", "Wired; key on the Mac only, not in production", "Free tier (3,000 emails/mo, list)"],
     ["**Loops**", "Email campaigns (welcome, digest, payment failed…)", "Wired, not live", "Free up to 1,000 contacts (list)"],
     ["**Stripe**", "Paid subscriptions (8 price plans in code)", "Not configured (verified live)", "No monthly fee; % per sale"],
@@ -429,17 +428,7 @@ add(service("5.7 OpenAI", {
   settings: "platform.openai.com → Billing. Key stored as OPENAI_API_KEY.",
   status: "Working (embeddings and backup answers both used successfully today).",
 }));
-add(service("5.8 Anthropic (Claude API)", {
-  what: "The company that makes Claude, used here as a pay-per-use service. Separate from your Claude Code subscription.",
-  use: "Coded to write answers for users with the advisory or admin role (model claude-sonnet-4-6).",
-  links: "Fly program only.",
-  plan: "**No key anywhere**: none in the local backend settings, and none among the live Fly secrets (read 14 November). Without it, advisory and admin users simply get the same Groq model as subscribers (the code falls back; it does not fail).",
-  cost: "$0 today: the AI program's own sign-in check is off (its live health check reports auth_enabled: false), so it treats every question as coming from a subscriber and this path never runs.",
-  breaks: "Nothing today.",
-  settings: "ANTHROPIC_API_KEY (Fly secret, not set).",
-  status: "Not exercised.",
-}));
-add(service("5.9 Email, payments and error tracking (built, not switched on)", {
+add(service("5.8 Email, payments and error tracking (built, not switched on)", {
   what: "Resend (transactional email), Loops (email campaigns), Stripe (card payments), Sentry (error reports).",
   use: "Resend: code for sending emails, key present locally. Loops: welcome, trial-ending, digest, survey and payment-failed emails. Stripe: 8 subscription prices (subscriber, student, professional, team; monthly and yearly). Sentry: crash reports from the website and the AI program.",
   links: "All called from the website's server functions (Vercel); Sentry also from Fly.",
@@ -449,7 +438,7 @@ add(service("5.9 Email, payments and error tracking (built, not switched on)", {
   settings: "Vercel environment variables (RESEND_API_KEY, LOOPS_API_KEY, STRIPE_*, NEXT_PUBLIC_SENTRY_DSN) and Fly secrets (SENTRY_DSN). None of them is set in either place (both read 14 November).",
   status: "Resend: the key in this project works and is limited to sending email (verified with Resend). The three older Resend strings still stored in .claude/settings.local.json are all rejected by Resend, so the key exposed in July is dead. That file is excluded from GitHub.",
 }));
-add(service("5.10 Google Drive / Google Docs: the book", {
+add(service("5.9 Google Drive / Google Docs: the book", {
   what: "Google's document editor and file storage.",
   use: "The live manuscript (HTR_Book_v42) is a Google Doc. You edit it there and export the PDF. A local copy, HTR_Book_v42.docx, is downloaded for checks and for building the web reader.",
   links: "PDF → frontend/public/HTR_Book_v42.pdf → served by Vercel at /book and /read. The .docx → pandoc → frontend/content/book-html (the web reader) and into the AI library.",
@@ -459,7 +448,7 @@ add(service("5.10 Google Drive / Google Docs: the book", {
   settings: "Google Drive. Several files share the title HTR_Book_v42; the newest is the live one.",
   status: "Not changed today.",
 }));
-add(service("5.11 Domains", {
+add(service("5.10 Domains", {
   what: "The four web addresses.",
   use: "healthtransformationreview.org and .com show the “Review” brand; healthtransformationsolutions.org and .com show the “Solutions” brand with Advisory Services.",
   links: "Point to Vercel.",
@@ -631,7 +620,7 @@ add(
     ["Google Drive", "Your account", "$0", "Storage beyond your Google plan", "—"],
     ["Google Workspace (email)", "1 user: contact@healthtransformationreview.org; the 3 other domains are free alias domains", "One user at your Workspace plan's price (see the Google bill)", "Adding a second user (each one is billed); aliases and alias domains cost nothing", "admin.google.com → Billing"],
     ["Domains (4)", "Bought through Vercel (verified)", "~$4 averaged (.com renewal $12.03/yr; 3 of 4 auto-renew)", "—", "vercel.com → Domains"],
-    ["Anthropic, Resend, Loops, Stripe, Sentry", "Not active", "$0", "Switching them on", "—"],
+    ["Resend, Loops, Stripe, Sentry", "Not active", "$0", "Switching them on", "—"],
   ], [16, 16, 20, 28, 20]),
   gap(),
   box("Total", [

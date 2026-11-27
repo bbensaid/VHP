@@ -1,5 +1,6 @@
 "use client";
 
+import AiSignInRequired, { useSignedIn } from "@/components/AiSignInRequired";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -295,6 +296,7 @@ function applyStripLab(text: string): string {
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function ChatPage() {
+  const signedIn = useSignedIn();
   const router = useRouter();
   const { setRightOpen } = useSidebar();
   const voice = useVoice();
@@ -532,6 +534,23 @@ export default function ChatPage() {
   };
 
   // ── Render ─────────────────────────────────────────────────────────────────
+
+  if (signedIn === false) {
+    return (
+      <div className="h-full flex flex-col bg-slate-50 dark:bg-slate-950">
+        <header className="shrink-0 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 px-4 md:px-6 pt-4 pb-3 flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+            <ArrowLeftIcon className="w-4 h-4" />
+            <span className="hidden sm:inline">Home</span>
+          </Link>
+          <span className="text-slate-300 dark:text-slate-600">|</span>
+          <SparklesIcon className="w-5 h-5 text-indigo-600" />
+          <span className="font-black text-slate-900 dark:text-slate-100 tracking-tight">HTR AI Analyst</span>
+        </header>
+        <div className="flex-1 flex items-center justify-center"><AiSignInRequired /></div>
+      </div>
+    );
+  }
 
   return (
     <div className="h-full flex flex-col bg-slate-50 dark:bg-slate-950">
